@@ -9,6 +9,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from functools import lru_cache
+from typing import Callable
 
 import numpy as np
 
@@ -206,13 +207,16 @@ def integrate_direction(
 
 
 def sky_grid(observer: Observer, sources: Sources, azimuths: np.ndarray, altitudes: np.ndarray,
-             atmosphere: Atmosphere = Atmosphere(), settings: SolverSettings = SolverSettings()) -> np.ndarray:
+             atmosphere: Atmosphere = Atmosphere(), settings: SolverSettings = SolverSettings(),
+             source_factory: Callable[[float,float], Sources] | None = None) -> np.ndarray:
     result = np.zeros((len(altitudes),len(azimuths)))
     for row, altitude in enumerate(altitudes):
         if altitude == 90:
-            result[row,:] = integrate_direction(observer,sources,0,90,atmosphere,settings)
+            selected = source_factory(0,90) if source_factory else sources
+            result[row,:] = integrate_direction(observer,selected,0,90,atmosphere,settings)
         else:
             for col, azimuth in enumerate(azimuths):
-                result[row,col] = integrate_direction(observer,sources,float(azimuth),float(altitude),atmosphere,settings)
+                selected = source_factory(float(azimuth),float(altitude)) if source_factory else sources
+                result[row,col] = integrate_direction(observer,selected,float(azimuth),float(altitude),atmosphere,settings)
         print(f"Sky altitude {altitude:g} deg done", flush=True)
     return result

@@ -1,0 +1,1106 @@
+[
+  {
+    "filename": "libdouble-conversion3_3.3.0-1build1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/d/double-conversion/libdouble-conversion3_3.3.0-1build1_amd64.deb",
+    "bytes": 40294,
+    "sha256": "856f534738da20fa9d8c271e17781fba3dc180bbbab116c22a0b569f6f506e25"
+  },
+  {
+    "filename": "libpcre2-16-0_10.42-4ubuntu2.2_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/libpcre2-16-0_10.42-4ubuntu2.2_amd64.deb",
+    "bytes": 211640,
+    "sha256": "a6365e17d88d5fb6223fe2b8cb4c8c65425aeac056e1a212a0151c95e83edf38"
+  },
+  {
+    "filename": "libqt5core5t64_5.15.13+dfsg-1ubuntu1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/q/qtbase-opensource-src/libqt5core5t64_5.15.13%2bdfsg-1ubuntu1_amd64.deb",
+    "bytes": 2010540,
+    "sha256": "8fb5c6a51ae436fefc41e0c9ad7a363ba8ab6b35db727eff5a469de2ee9f52bc"
+  },
+  {
+    "filename": "fontconfig_2.15.0-1.1ubuntu2_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/f/fontconfig/fontconfig_2.15.0-1.1ubuntu2_amd64.deb",
+    "bytes": 180204,
+    "sha256": "ddf0aace42b13a5bc38904e848b145b787ea254cddf5213d150254bd654db6e5"
+  },
+  {
+    "filename": "libglvnd0_1.7.0-1build1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libg/libglvnd/libglvnd0_1.7.0-1build1_amd64.deb",
+    "bytes": 69594,
+    "sha256": "33f5e07c74f73c2bfb44086ae0f9e6da52acd6c104d30ffe8fd768d8253d5e82"
+  },
+  {
+    "filename": "libpciaccess0_0.17-3ubuntu0.24.04.3_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libp/libpciaccess/libpciaccess0_0.17-3ubuntu0.24.04.3_amd64.deb",
+    "bytes": 19220,
+    "sha256": "87a3b1c2a09f54d229e5e1f5424adc806e8f99bbb8aa8c8dea114b727f7a5a96"
+  },
+  {
+    "filename": "libdrm-intel1_2.4.125-1ubuntu0.1~24.04.2_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-intel1_2.4.125-1ubuntu0.1%7e24.04.2_amd64.deb",
+    "bytes": 63868,
+    "sha256": "847195765b9ef7e7886677aeae9987aa54e496758b4e6e5a4ed2cb580b252244"
+  },
+  {
+    "filename": "libllvm20_1%3a20.1.2-0ubuntu1~24.04.3_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-20/libllvm20_20.1.2-0ubuntu1%7e24.04.3_amd64.deb",
+    "bytes": 30574382,
+    "sha256": "f018e71c72c7a4742fb1aff9dc98b45586f42e6ea464d4918af7e3772b7f0658"
+  },
+  {
+    "filename": "libx11-xcb1_2%3a1.8.7-1ubuntu0.1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11-xcb1_1.8.7-1ubuntu0.1_amd64.deb",
+    "bytes": 7796,
+    "sha256": "5ce7093e58aaaf753ed0904351a4e07f209e0c282ee8ef4f5f7988d0b40dccc1"
+  },
+  {
+    "filename": "libxcb-dri3-0_1.15-1ubuntu2_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb-dri3-0_1.15-1ubuntu2_amd64.deb",
+    "bytes": 7142,
+    "sha256": "3d3d0e95e56ae16010a84883196b8153cba62d6831f9aaee2a68c46f20c7c004"
+  },
+  {
+    "filename": "libxcb-present0_1.15-1ubuntu2_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb-present0_1.15-1ubuntu2_amd64.deb",
+    "bytes": 5676,
+    "sha256": "2e36e6557e87dbfd64df3143cbf81a4f75c3447501a545b4730511d228b0dd17"
+  },
+  {
+    "filename": "libxcb-randr0_1.15-1ubuntu2_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb-randr0_1.15-1ubuntu2_amd64.deb",
+    "bytes": 17862,
+    "sha256": "b5cb519823a05a617b543dc9b6a9289b7648b20048244abe021caa706309835a"
+  },
+  {
+    "filename": "libxcb-sync1_1.15-1ubuntu2_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb-sync1_1.15-1ubuntu2_amd64.deb",
+    "bytes": 9312,
+    "sha256": "14286795a258593259923619073e50c15345673befae2733f7b0577b07359aa8"
+  },
+  {
+    "filename": "libxcb-xfixes0_1.15-1ubuntu2_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb-xfixes0_1.15-1ubuntu2_amd64.deb",
+    "bytes": 10190,
+    "sha256": "0b2ab64af92a71e3d1a35e3c819880ee28d04bfac81360df68ae8d8e9663ebd2"
+  },
+  {
+    "filename": "libxshmfence1_1.3-1build5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libx/libxshmfence/libxshmfence1_1.3-1build5_amd64.deb",
+    "bytes": 4764,
+    "sha256": "bc6de4bfaf9050a8ba83d4bcfb114131b081084a7972c03417f8523d52b5c742"
+  },
+  {
+    "filename": "mesa-libgallium_25.2.8-0ubuntu0.24.04.4_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa-libgallium_25.2.8-0ubuntu0.24.04.4_amd64.deb",
+    "bytes": 10783312,
+    "sha256": "0c50c3c18c1b3f3ac4243bbf1533c9202f9d7b4f646807e9ef0df4c801414256"
+  },
+  {
+    "filename": "libgbm1_25.2.8-0ubuntu0.24.04.4_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/m/mesa/libgbm1_25.2.8-0ubuntu0.24.04.4_amd64.deb",
+    "bytes": 34172,
+    "sha256": "4bfe348b456db5b445a80e0a3ffb9e9a01b91499bb86e0e568ca3634b134da7e"
+  },
+  {
+    "filename": "libwayland-client0_1.22.0-2.1build1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/w/wayland/libwayland-client0_1.22.0-2.1build1_amd64.deb",
+    "bytes": 26406,
+    "sha256": "6af0aed41d75149bea22fa468f01eb058ffe3e35ef07ff2f13fb88a90387881d"
+  },
+  {
+    "filename": "libxcb-shm0_1.15-1ubuntu2_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb-shm0_1.15-1ubuntu2_amd64.deb",
+    "bytes": 5756,
+    "sha256": "229d1280d459f1ba44c22939d3f9b61d9d20932d9a646b3fe4ce50be4cdf2325"
+  },
+  {
+    "filename": "libegl-mesa0_25.2.8-0ubuntu0.24.04.4_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/m/mesa/libegl-mesa0_25.2.8-0ubuntu0.24.04.4_amd64.deb",
+    "bytes": 117224,
+    "sha256": "2b8363cb29868603c827cb569a19373a45bebb29bdca5cd34de42dce2f3c9419"
+  },
+  {
+    "filename": "libegl1_1.7.0-1build1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libg/libglvnd/libegl1_1.7.0-1build1_amd64.deb",
+    "bytes": 28670,
+    "sha256": "e549f7776216f7bd3b1c216729fb40a97a562e2eb7c563cde632b4931f9a4e57"
+  },
+  {
+    "filename": "libxcb-glx0_1.15-1ubuntu2_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb-glx0_1.15-1ubuntu2_amd64.deb",
+    "bytes": 24774,
+    "sha256": "d07cde26c70fe92df7c327928371e495cc4570fed2d6518758a5db5715cb34c1"
+  },
+  {
+    "filename": "libxxf86vm1_1%3a1.1.4-1build4_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libx/libxxf86vm/libxxf86vm1_1.1.4-1build4_amd64.deb",
+    "bytes": 9282,
+    "sha256": "48b2799f52b86505d2bc91dcb1bfa6536545635b9849cb693d274d934116a8da"
+  },
+  {
+    "filename": "libvulkan1_1.3.275.0-1build1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/v/vulkan-loader/libvulkan1_1.3.275.0-1build1_amd64.deb",
+    "bytes": 142010,
+    "sha256": "ccf4fe8f4461442f27ea2494c7ae650b60bd396fec2688b0c44a27d66a222f74"
+  },
+  {
+    "filename": "libgl1-mesa-dri_25.2.8-0ubuntu0.24.04.4_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/m/mesa/libgl1-mesa-dri_25.2.8-0ubuntu0.24.04.4_amd64.deb",
+    "bytes": 37950,
+    "sha256": "2dabbe4292b201ca07b38c0672352f68dbfc55b5850f96f89ef54d3b4b6c8a59"
+  },
+  {
+    "filename": "libglx-mesa0_25.2.8-0ubuntu0.24.04.4_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/m/mesa/libglx-mesa0_25.2.8-0ubuntu0.24.04.4_amd64.deb",
+    "bytes": 110128,
+    "sha256": "5aa6164059989d476b15caa8ade892b1dec37593934dc4f617ece7ea0d639bc0"
+  },
+  {
+    "filename": "libglx0_1.7.0-1build1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libg/libglvnd/libglx0_1.7.0-1build1_amd64.deb",
+    "bytes": 38558,
+    "sha256": "aa4953182f30abde90cb5b072e83d7286b557b325769b8686196a7bd396d8795"
+  },
+  {
+    "filename": "libgl1_1.7.0-1build1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libg/libglvnd/libgl1_1.7.0-1build1_amd64.deb",
+    "bytes": 101990,
+    "sha256": "e2b2fadeb883f073b566ad1d7874f6702397514d258473e96152a89d4d502a09"
+  },
+  {
+    "filename": "x11-common_1%3a7.7+23ubuntu3_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/x/xorg/x11-common_7.7%2b23ubuntu3_all.deb",
+    "bytes": 21748,
+    "sha256": "b545fa5196dd7467ba3770d6ce575abcd7941071961ea9f7535a319d9d20fd46"
+  },
+  {
+    "filename": "libice6_2%3a1.0.10-1build3_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libi/libice/libice6_1.0.10-1build3_amd64.deb",
+    "bytes": 41398,
+    "sha256": "ad1edb5303574fee154e487947177e5bd15363aa71b92f78f5a2a7145fdb81c5"
+  },
+  {
+    "filename": "libmtdev1t64_1.1.6-1.1build1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/m/mtdev/libmtdev1t64_1.1.6-1.1build1_amd64.deb",
+    "bytes": 14380,
+    "sha256": "fa86080d67defabc076ead97d86ccff14c906d21fe4cc1625ba73a8cf8022dfa"
+  },
+  {
+    "filename": "libwacom-common_2.10.0-2_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libw/libwacom/libwacom-common_2.10.0-2_all.deb",
+    "bytes": 63364,
+    "sha256": "416099ceae870ec8ce13f875dfdf71f81a884b3641e404a74eafd378c15a78b4"
+  },
+  {
+    "filename": "libwacom9_2.10.0-2_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libw/libwacom/libwacom9_2.10.0-2_amd64.deb",
+    "bytes": 23874,
+    "sha256": "87c707e4e7cbef1080b7c6cfb14acb0e5b0a4b07b19ce5545923952fbcf82298"
+  },
+  {
+    "filename": "libinput-bin_1.25.0-1ubuntu3.7_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput-bin_1.25.0-1ubuntu3.7_amd64.deb",
+    "bytes": 23570,
+    "sha256": "c5abfbe403051ab17721cf21369919a18bf83024c9594248ebb30375ca7d0d0b"
+  },
+  {
+    "filename": "libinput10_1.25.0-1ubuntu3.7_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput10_1.25.0-1ubuntu3.7_amd64.deb",
+    "bytes": 133474,
+    "sha256": "dd76b865f149d0b072d21a532539effefdce7983feb232b25e2adf354207237b"
+  },
+  {
+    "filename": "libmd4c0_0.4.8-1build1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/m/md4c/libmd4c0_0.4.8-1build1_amd64.deb",
+    "bytes": 42274,
+    "sha256": "34fd2e7a7aa62ada2597cffd4529f086cb5058a6d7ac0048695254bd9fd882d7"
+  },
+  {
+    "filename": "libqt5dbus5t64_5.15.13+dfsg-1ubuntu1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/q/qtbase-opensource-src/libqt5dbus5t64_5.15.13%2bdfsg-1ubuntu1_amd64.deb",
+    "bytes": 219892,
+    "sha256": "c40a1469d41339bb8888f35d7dc6327d4bdd634b69974eaaaabe1b03f8924344"
+  },
+  {
+    "filename": "libqt5network5t64_5.15.13+dfsg-1ubuntu1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/q/qtbase-opensource-src/libqt5network5t64_5.15.13%2bdfsg-1ubuntu1_amd64.deb",
+    "bytes": 722778,
+    "sha256": "1b331252a34b1eb66e6deb8012d45db993fe3eb27ac6ded4978c7886471659d6"
+  },
+  {
+    "filename": "libsm6_2%3a1.2.3-1build3_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libs/libsm/libsm6_1.2.3-1build3_amd64.deb",
+    "bytes": 15684,
+    "sha256": "1d27ebc381b499075a28c504be4d7d424c63b6866354736ac7f8d25813860cdf"
+  },
+  {
+    "filename": "libxcb-icccm4_0.4.1-1.1build3_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/x/xcb-util-wm/libxcb-icccm4_0.4.1-1.1build3_amd64.deb",
+    "bytes": 10788,
+    "sha256": "9e0e349f3904cd5bc07fea45498c4d03527a5d1178edd78555e84fdbd3793708"
+  },
+  {
+    "filename": "libxcb-util1_0.4.0-1build3_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/x/xcb-util/libxcb-util1_0.4.0-1build3_amd64.deb",
+    "bytes": 10678,
+    "sha256": "b6ff05729519514bddcbcd460f8be7e55c986daa5a97ecdc612b2815614194ab"
+  },
+  {
+    "filename": "libxcb-image0_0.4.0-2build1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/x/xcb-util-image/libxcb-image0_0.4.0-2build1_amd64.deb",
+    "bytes": 10810,
+    "sha256": "6af300eeef5523aa0d8dbfab3a23c1fe7006ecc19f8abdc5c636d734d7bb5287"
+  },
+  {
+    "filename": "libxcb-keysyms1_0.4.0-1build4_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/x/xcb-util-keysyms/libxcb-keysyms1_0.4.0-1build4_amd64.deb",
+    "bytes": 7956,
+    "sha256": "6c261aae923175b88a032018c530873ffb40f2bf96b045fdda42bd8bc74cb1c3"
+  },
+  {
+    "filename": "libxcb-render0_1.15-1ubuntu2_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb-render0_1.15-1ubuntu2_amd64.deb",
+    "bytes": 16230,
+    "sha256": "7d83a0668b1a693b5ea2e496206e8371fb6beda4c54a2b4b3902005915c272c5"
+  },
+  {
+    "filename": "libxcb-render-util0_0.3.9-1build4_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/x/xcb-util-renderutil/libxcb-render-util0_0.3.9-1build4_amd64.deb",
+    "bytes": 9608,
+    "sha256": "95d895ceb921e38e4edd85555b407b1a0564d8ad097ec7566e261764ce27787b"
+  },
+  {
+    "filename": "libxcb-shape0_1.15-1ubuntu2_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb-shape0_1.15-1ubuntu2_amd64.deb",
+    "bytes": 6100,
+    "sha256": "ad57fed687ec9c2a4808b8e30ab1753d57daeddc9ad7fb883bfa0701f6da57c8"
+  },
+  {
+    "filename": "libxcb-xinerama0_1.15-1ubuntu2_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb-xinerama0_1.15-1ubuntu2_amd64.deb",
+    "bytes": 5410,
+    "sha256": "9fea44960e39646a22139f4daca03c3d26190e0dcecf2300b665ed23ea316b54"
+  },
+  {
+    "filename": "libxcb-xinput0_1.15-1ubuntu2_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb-xinput0_1.15-1ubuntu2_amd64.deb",
+    "bytes": 33240,
+    "sha256": "8ed274ebfa657a079895a0b60b399394db29305f4ad3fc29dc10558bed14bd7a"
+  },
+  {
+    "filename": "libxcb-xkb1_1.15-1ubuntu2_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb-xkb1_1.15-1ubuntu2_amd64.deb",
+    "bytes": 32302,
+    "sha256": "53bc0a58834c981fa8ce5c3ab6195387e5c8a417039d82cc7a8b49724fa53228"
+  },
+  {
+    "filename": "libxkbcommon-x11-0_1.6.0-1build1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libx/libxkbcommon/libxkbcommon-x11-0_1.6.0-1build1_amd64.deb",
+    "bytes": 14536,
+    "sha256": "3befe840ce612ddfc0998d8610c6eed295726722a78e75cd08520bbd75065a23"
+  },
+  {
+    "filename": "libxrender1_1%3a0.9.10-1.1build1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libx/libxrender/libxrender1_0.9.10-1.1build1_amd64.deb",
+    "bytes": 19016,
+    "sha256": "d70bd831aebe8d4834b5dd2ed98df26dd6bd27f1042c47543bd7f66df1ae22ea"
+  },
+  {
+    "filename": "libqt5gui5t64_5.15.13+dfsg-1ubuntu1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/q/qtbase-opensource-src/libqt5gui5t64_5.15.13%2bdfsg-1ubuntu1_amd64.deb",
+    "bytes": 3747576,
+    "sha256": "e2c8a969c3566bdad2b692c611ec0e6bbeaeed88db55e71bbd4f61a414b89252"
+  },
+  {
+    "filename": "libqt5qml5_5.15.13+dfsg-1ubuntu0.1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/q/qtdeclarative-opensource-src/libqt5qml5_5.15.13%2bdfsg-1ubuntu0.1_amd64.deb",
+    "bytes": 1482036,
+    "sha256": "b27c6430066ba004d23af7f2191bfd73b67918f00d15059acf5a2e721c3ce4e6"
+  },
+  {
+    "filename": "libqt5qmlmodels5_5.15.13+dfsg-1ubuntu0.1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/q/qtdeclarative-opensource-src/libqt5qmlmodels5_5.15.13%2bdfsg-1ubuntu0.1_amd64.deb",
+    "bytes": 202694,
+    "sha256": "b38374c11623b258156679f8f44a4aee66995f7b87c7d749949aadecf1a4e658"
+  },
+  {
+    "filename": "libqt5quick5_5.15.13+dfsg-1ubuntu0.1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/q/qtdeclarative-opensource-src/libqt5quick5_5.15.13%2bdfsg-1ubuntu0.1_amd64.deb",
+    "bytes": 1732980,
+    "sha256": "8cd382f273e4a8b061fa722146bfeeaff2ea63a612b42493f6630ac85925cd86"
+  },
+  {
+    "filename": "qml-module-qtquick-window2_5.15.13+dfsg-1ubuntu0.1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/q/qtdeclarative-opensource-src/qml-module-qtquick-window2_5.15.13%2bdfsg-1ubuntu0.1_amd64.deb",
+    "bytes": 26172,
+    "sha256": "1ef8117db0779096275c458c0077c24f19e63e4b1a884159cb41d9a9747aef80"
+  },
+  {
+    "filename": "libqt5qmlworkerscript5_5.15.13+dfsg-1ubuntu0.1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/q/qtdeclarative-opensource-src/libqt5qmlworkerscript5_5.15.13%2bdfsg-1ubuntu0.1_amd64.deb",
+    "bytes": 33576,
+    "sha256": "78711de2b9d63c197b74aa689a5edbccbfb191aabcac519eea1543fcd875844e"
+  },
+  {
+    "filename": "qml-module-qtquick2_5.15.13+dfsg-1ubuntu0.1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/q/qtdeclarative-opensource-src/qml-module-qtquick2_5.15.13%2bdfsg-1ubuntu0.1_amd64.deb",
+    "bytes": 33690,
+    "sha256": "cf5b35bf15e09510abd8581bbcdc36e8cb4dd0ca02c5591b946eac1815394753"
+  },
+  {
+    "filename": "qml-module-qtgraphicaleffects_5.15.13-1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/q/qtgraphicaleffects-opensource-src/qml-module-qtgraphicaleffects_5.15.13-1_amd64.deb",
+    "bytes": 74418,
+    "sha256": "dfc9e65070aea2ff37d87f9fc54f34ae2aa65ea26b2036e693d9f4e70a78b0cd"
+  },
+  {
+    "filename": "qml-module-qtqml_5.15.13+dfsg-1ubuntu0.1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/q/qtdeclarative-opensource-src/qml-module-qtqml_5.15.13%2bdfsg-1ubuntu0.1_amd64.deb",
+    "bytes": 17262,
+    "sha256": "8ef4797d54b154423d8ead2d8e3cb9efd193372918d3713c53ba9bd370b0a0e3"
+  },
+  {
+    "filename": "qml-module-qtqml-models2_5.15.13+dfsg-1ubuntu0.1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/q/qtdeclarative-opensource-src/qml-module-qtqml-models2_5.15.13%2bdfsg-1ubuntu0.1_amd64.deb",
+    "bytes": 18148,
+    "sha256": "b77ea1a6aa54d33cb6b2dd6da06b864464cd3211d558517cd85d30864bbded1e"
+  },
+  {
+    "filename": "qml-module-qtquick-layouts_5.15.13+dfsg-1ubuntu0.1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/q/qtdeclarative-opensource-src/qml-module-qtquick-layouts_5.15.13%2bdfsg-1ubuntu0.1_amd64.deb",
+    "bytes": 54592,
+    "sha256": "e250a14ce124b5e54ee612d28c505c70a4ec65ebbb6a43434ea033c1d641b2f2"
+  },
+  {
+    "filename": "libqt5widgets5t64_5.15.13+dfsg-1ubuntu1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/q/qtbase-opensource-src/libqt5widgets5t64_5.15.13%2bdfsg-1ubuntu1_amd64.deb",
+    "bytes": 2560968,
+    "sha256": "bdcb4395194d5062fcbda9ba70ae6d4deef75671d70140543d58ef34728dff53"
+  },
+  {
+    "filename": "qml-module-qtquick-controls_5.15.13-1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/q/qtquickcontrols-opensource-src/qml-module-qtquick-controls_5.15.13-1_amd64.deb",
+    "bytes": 573708,
+    "sha256": "3b6ed58e5dffcb06fb1fd8ccecbae5ff51e53c812f487bc6dedbafb671dffb83"
+  },
+  {
+    "filename": "libkf5config-data_5.115.0-0ubuntu5_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kconfig/libkf5config-data_5.115.0-0ubuntu5_all.deb",
+    "bytes": 105088,
+    "sha256": "90c7ba241f2b1b88e64d8cbe2f91108692b53e5022d0f11fff2e00c7cc3c864a"
+  },
+  {
+    "filename": "libkf5configcore5_5.115.0-0ubuntu5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kconfig/libkf5configcore5_5.115.0-0ubuntu5_amd64.deb",
+    "bytes": 147254,
+    "sha256": "5b18c12ed477e3d26b02fb6d7deb6a75f89d00b93498673558defcdfdc0ad5db"
+  },
+  {
+    "filename": "libkf5coreaddons-data_5.115.0-0ubuntu5_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kcoreaddons/libkf5coreaddons-data_5.115.0-0ubuntu5_all.deb",
+    "bytes": 148568,
+    "sha256": "e44f71305e57cf6816478abe46031e4d18649edb8adfb8e33257ea46498222d2"
+  },
+  {
+    "filename": "libkf5coreaddons5_5.115.0-0ubuntu5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kcoreaddons/libkf5coreaddons5_5.115.0-0ubuntu5_amd64.deb",
+    "bytes": 273886,
+    "sha256": "fe7e9cb3840846e02cced54898121ddb4c61cc18f79ac112c55a120d67e34887"
+  },
+  {
+    "filename": "libqt5x11extras5_5.15.13-1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/q/qtx11extras-opensource-src/libqt5x11extras5_5.15.13-1_amd64.deb",
+    "bytes": 10922,
+    "sha256": "2a6013a82155fa0825737ea115e64dd13f554cf06f1fb636a9dc052245103c2b"
+  },
+  {
+    "filename": "libkf5crash5_5.115.0-0ubuntu5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kcrash/libkf5crash5_5.115.0-0ubuntu5_amd64.deb",
+    "bytes": 20376,
+    "sha256": "bc869e8ef0b11513a048a3e903ccda5c7805c9bd46cad9d37e2b0d5177dc765b"
+  },
+  {
+    "filename": "libkf5dbusaddons-data_5.115.0-0ubuntu5_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kdbusaddons/libkf5dbusaddons-data_5.115.0-0ubuntu5_all.deb",
+    "bytes": 19906,
+    "sha256": "21061f463d52f2bb0296463571eba33746ccf7de79d7600b5ab8781f170f7f88"
+  },
+  {
+    "filename": "libkf5dbusaddons5_5.115.0-0ubuntu5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kdbusaddons/libkf5dbusaddons5_5.115.0-0ubuntu5_amd64.deb",
+    "bytes": 40582,
+    "sha256": "21388a25162f7975a41b20a54d511be3302afaf3104c4930170f303d69f8265c"
+  },
+  {
+    "filename": "libkf5i18n-data_5.115.0-0ubuntu6_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/ki18n/libkf5i18n-data_5.115.0-0ubuntu6_all.deb",
+    "bytes": 1200592,
+    "sha256": "b95b643d3a004117e1749b1056e67be704c3e126b77fcce043c1b932c9ea9470"
+  },
+  {
+    "filename": "libkf5i18n5_5.115.0-0ubuntu6_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/ki18n/libkf5i18n5_5.115.0-0ubuntu6_amd64.deb",
+    "bytes": 120144,
+    "sha256": "7544f307bba30ab356b19dd88a039e0226cd6c8bc268addbe48ac0c800668dfc"
+  },
+  {
+    "filename": "libkf5service-data_5.115.0-0ubuntu4_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kservice/libkf5service-data_5.115.0-0ubuntu4_all.deb",
+    "bytes": 76796,
+    "sha256": "99f0484c5d7c41dc45993d2bc0c0df1cfadc48d262702bc4018163a13a543bc4"
+  },
+  {
+    "filename": "libqt5xml5t64_5.15.13+dfsg-1ubuntu1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/q/qtbase-opensource-src/libqt5xml5t64_5.15.13%2bdfsg-1ubuntu1_amd64.deb",
+    "bytes": 124102,
+    "sha256": "01defcb7aa581d1a744e9824394c783b38623fc51ecc500b75d52abedf8982af"
+  },
+  {
+    "filename": "libkf5service5_5.115.0-0ubuntu4_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kservice/libkf5service5_5.115.0-0ubuntu4_amd64.deb",
+    "bytes": 200792,
+    "sha256": "862c54197e9db1c884d8aafb6940e86ace1a70a00bc5395a3d47caf0c80bd55d"
+  },
+  {
+    "filename": "libkf5service-bin_5.115.0-0ubuntu4_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kservice/libkf5service-bin_5.115.0-0ubuntu4_amd64.deb",
+    "bytes": 50508,
+    "sha256": "8d93ec17be2235bdfa2a4b131aaa2e1c5645f47f84c8f2194a4a9a68fddd7827"
+  },
+  {
+    "filename": "kded5_5.115.0-0ubuntu5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kded/kded5_5.115.0-0ubuntu5_amd64.deb",
+    "bytes": 60890,
+    "sha256": "0ea404f41f3c0a68762d9223505b8fa04d29c172a2a6e6fb16e0fd78f6350012"
+  },
+  {
+    "filename": "libkf5archive-data_5.115.0-0ubuntu5_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/karchive/libkf5archive-data_5.115.0-0ubuntu5_all.deb",
+    "bytes": 51168,
+    "sha256": "e89c48d21bda9fcbd883cb4a7ecf60a927664c7cbe0c15f1154d93b258dea0c1"
+  },
+  {
+    "filename": "libkf5archive5_5.115.0-0ubuntu5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/karchive/libkf5archive5_5.115.0-0ubuntu5_amd64.deb",
+    "bytes": 97406,
+    "sha256": "4fe8022579f789c313a8c5d1d2bafe17b3c1f21d886ab415a9eabda2d1b852a8"
+  },
+  {
+    "filename": "libkf5auth-data_5.115.0-0ubuntu5_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kauth/libkf5auth-data_5.115.0-0ubuntu5_all.deb",
+    "bytes": 28004,
+    "sha256": "fb2e74a4c06220cb4cbcf86465bfe57e8256b83d30c2977b833d512ccdc7c3a2"
+  },
+  {
+    "filename": "libpolkit-qt5-1-1_0.200.0-1build4_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/p/polkit-qt-1/libpolkit-qt5-1-1_0.200.0-1build4_amd64.deb",
+    "bytes": 60022,
+    "sha256": "afd69c369c1059ce2d188be56bef751ffd033a9ee38adf1162293f2f833fbc67"
+  },
+  {
+    "filename": "libkf5authcore5_5.115.0-0ubuntu5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kauth/libkf5authcore5_5.115.0-0ubuntu5_amd64.deb",
+    "bytes": 57500,
+    "sha256": "169c00f409b5c44b85b5d87da42aeb0036b69348a88392077f2062a154b6f78c"
+  },
+  {
+    "filename": "libkf5configwidgets-data_5.115.0-0ubuntu5_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kconfigwidgets/libkf5configwidgets-data_5.115.0-0ubuntu5_all.deb",
+    "bytes": 246256,
+    "sha256": "745d22a95165c2ec7930a17959cb9d8171a4c2d6b79529f1ad4170d279ffc4da"
+  },
+  {
+    "filename": "libkf5codecs-data_5.115.0-0ubuntu5_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kcodecs/libkf5codecs-data_5.115.0-0ubuntu5_all.deb",
+    "bytes": 55208,
+    "sha256": "9d8979488e12be81f6727fa183e3eaf7a7b019d0e6a5deb2dc92946fafb755f5"
+  },
+  {
+    "filename": "libkf5codecs5_5.115.0-0ubuntu5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kcodecs/libkf5codecs5_5.115.0-0ubuntu5_amd64.deb",
+    "bytes": 98278,
+    "sha256": "60c7232c5bb26f4363297433b170692bf3b96638329196f917f2e6e72c6065e9"
+  },
+  {
+    "filename": "libkf5configgui5_5.115.0-0ubuntu5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kconfig/libkf5configgui5_5.115.0-0ubuntu5_amd64.deb",
+    "bytes": 52224,
+    "sha256": "522788622fb279d9cc027634269cbd8f3ae09c44ca647de31bc3ff1a34c808f2"
+  },
+  {
+    "filename": "libkf5guiaddons-bin_5.115.0-0ubuntu5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kguiaddons/libkf5guiaddons-bin_5.115.0-0ubuntu5_amd64.deb",
+    "bytes": 11698,
+    "sha256": "b2baa9d8bde19e910a530914961fab737718de943b2784cb4f213b28ea47bd43"
+  },
+  {
+    "filename": "libkf5guiaddons-data_5.115.0-0ubuntu5_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kguiaddons/libkf5guiaddons-data_5.115.0-0ubuntu5_all.deb",
+    "bytes": 7736,
+    "sha256": "717b63a5755a50dd7b1007cb32ae0396ca92c537622bc4d42a8f1e50b32e9265"
+  },
+  {
+    "filename": "libwayland-cursor0_1.22.0-2.1build1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/w/wayland/libwayland-cursor0_1.22.0-2.1build1_amd64.deb",
+    "bytes": 10406,
+    "sha256": "29c20da27e8e37c984cf0518635c11cd0441f4cb6a2919a9f6eee1809171d327"
+  },
+  {
+    "filename": "libqt5waylandclient5_5.15.13-1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/q/qtwayland-opensource-src/libqt5waylandclient5_5.15.13-1_amd64.deb",
+    "bytes": 405284,
+    "sha256": "399bc67fb5efaf46293ff2d0b85a37cf5a3f2a52a9480b8e217448db5046949c"
+  },
+  {
+    "filename": "libkf5guiaddons5_5.115.0-0ubuntu5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kguiaddons/libkf5guiaddons5_5.115.0-0ubuntu5_amd64.deb",
+    "bytes": 85000,
+    "sha256": "354b3315ed3575e4e2cdbc787e7cd917a7d5210deab66c187ca7e53380f08cc5"
+  },
+  {
+    "filename": "libkf5widgetsaddons-data_5.115.0-0ubuntu4_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kwidgetsaddons/libkf5widgetsaddons-data_5.115.0-0ubuntu4_all.deb",
+    "bytes": 1194784,
+    "sha256": "29536eb0f2d98aa7c629bcad6a422d6a719e2c9b0b3e37f930def5e3b0e62519"
+  },
+  {
+    "filename": "libkf5widgetsaddons5_5.115.0-0ubuntu4_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kwidgetsaddons/libkf5widgetsaddons5_5.115.0-0ubuntu4_amd64.deb",
+    "bytes": 416634,
+    "sha256": "6facccb112ab22b163f1e503d40464f43092d6e4d3a7f42873105469d6053964"
+  },
+  {
+    "filename": "libkf5configwidgets5_5.115.0-0ubuntu5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kconfigwidgets/libkf5configwidgets5_5.115.0-0ubuntu5_amd64.deb",
+    "bytes": 154992,
+    "sha256": "db02fa29c264a3bebcc90231e20b9b1d5f9ee0f806ac2949a41eff2947094885"
+  },
+  {
+    "filename": "libkf5doctools5_5.115.0-0ubuntu5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kdoctools/libkf5doctools5_5.115.0-0ubuntu5_amd64.deb",
+    "bytes": 17700,
+    "sha256": "dc75e03ec99747c26f3746e8d85fc832de07336d93b4824625382ec4101deb02"
+  },
+  {
+    "filename": "libkf5itemviews-data_5.115.0-0ubuntu5_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kitemviews/libkf5itemviews-data_5.115.0-0ubuntu5_all.deb",
+    "bytes": 13902,
+    "sha256": "e54b3d55fb4bbf43e97025b2c51227657e9e4dd7159cc91c9bd5eb174ca5c06b"
+  },
+  {
+    "filename": "libkf5itemviews5_5.115.0-0ubuntu5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kitemviews/libkf5itemviews5_5.115.0-0ubuntu5_amd64.deb",
+    "bytes": 82534,
+    "sha256": "e2ad935ba0bcbfa251446b3202951ba8797c0ed4a37208d3ce351bab4c6e8d66"
+  },
+  {
+    "filename": "libkf5kiocore5_5.115.0-0ubuntu6_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kio/libkf5kiocore5_5.115.0-0ubuntu6_amd64.deb",
+    "bytes": 560266,
+    "sha256": "57f7d94231e257b8be34022e6743bd17fe3a65b832378b3d807977fe9f2420f3"
+  },
+  {
+    "filename": "libkf5windowsystem-data_5.115.0-0ubuntu4_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kwindowsystem/libkf5windowsystem-data_5.115.0-0ubuntu4_all.deb",
+    "bytes": 13036,
+    "sha256": "4b22f528e603324b7e018f422ea3ae2bd96aaf1e01728e5d4155f052eb83fdcb"
+  },
+  {
+    "filename": "libxcb-res0_1.15-1ubuntu2_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb-res0_1.15-1ubuntu2_amd64.deb",
+    "bytes": 6682,
+    "sha256": "da25049a081ffd88b3389758b743eae177e4c46ce77a1d9714783e85b0e97acd"
+  },
+  {
+    "filename": "libxfixes3_1%3a6.0.0-2build1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libx/libxfixes/libxfixes3_6.0.0-2build1_amd64.deb",
+    "bytes": 10764,
+    "sha256": "0ee1015cccd063249e01c0cd0bf45f513c8ac9a1e5e485070c12e69192455e4a"
+  },
+  {
+    "filename": "libkf5windowsystem5_5.115.0-0ubuntu4_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kwindowsystem/libkf5windowsystem5_5.115.0-0ubuntu4_amd64.deb",
+    "bytes": 153724,
+    "sha256": "ef5bb24ced76343cbf59edaa9edf1d4ca534553c956f850b076038fee738dcbb"
+  },
+  {
+    "filename": "libkf5kiogui5_5.115.0-0ubuntu6_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kio/libkf5kiogui5_5.115.0-0ubuntu6_amd64.deb",
+    "bytes": 104064,
+    "sha256": "326e2c19fbd8b2c771bfcae7021b9f47030947eecdbd647e8be3ef128180ff6e"
+  },
+  {
+    "filename": "libkf5kiontlm5_5.115.0-0ubuntu6_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kio/libkf5kiontlm5_5.115.0-0ubuntu6_amd64.deb",
+    "bytes": 23768,
+    "sha256": "da0690f0fe14d14e541992106ed7ba972fb1de64d607c8ae0e620eec5fc3aaa3"
+  },
+  {
+    "filename": "libkf5completion-data_5.115.0-0ubuntu5_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kcompletion/libkf5completion-data_5.115.0-0ubuntu5_all.deb",
+    "bytes": 19166,
+    "sha256": "a4f1619cc6aedff6c52acb61267b1ab0a310d2a1c7ea5c28473165a3dd5c1827"
+  },
+  {
+    "filename": "libkf5completion5_5.115.0-0ubuntu5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kcompletion/libkf5completion5_5.115.0-0ubuntu5_amd64.deb",
+    "bytes": 90980,
+    "sha256": "8dc4fa0fe152ae6b111ae52b458215956c15d09924d88791095c2f668ed303b9"
+  },
+  {
+    "filename": "libkf5iconthemes-data_5.115.0-0ubuntu6_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kiconthemes/libkf5iconthemes-data_5.115.0-0ubuntu6_all.deb",
+    "bytes": 32740,
+    "sha256": "6a9cfcc1964b087bba1ebbe3866c692f0d4835097b825fcd53c16ac218718de8"
+  },
+  {
+    "filename": "libqt5svg5_5.15.13-1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/q/qtsvg-opensource-src/libqt5svg5_5.15.13-1_amd64.deb",
+    "bytes": 146010,
+    "sha256": "b96fb780917887196ee0be72340f71387ee77f4565113c660b8b08c64c0ec316"
+  },
+  {
+    "filename": "libkf5iconthemes5_5.115.0-0ubuntu6_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kiconthemes/libkf5iconthemes5_5.115.0-0ubuntu6_amd64.deb",
+    "bytes": 102826,
+    "sha256": "ad464eea526fc9cf61fae6eb54832f4c53ffb102732e12710fe8e20e0cd5829d"
+  },
+  {
+    "filename": "libkf5jobwidgets-data_5.115.0-0ubuntu5_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kjobwidgets/libkf5jobwidgets-data_5.115.0-0ubuntu5_all.deb",
+    "bytes": 38704,
+    "sha256": "b209a829f170cb957c0c9f46fc8800283273fd282d6aedc843a60112100d4b7d"
+  },
+  {
+    "filename": "libkf5jobwidgets5_5.115.0-0ubuntu5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kjobwidgets/libkf5jobwidgets5_5.115.0-0ubuntu5_amd64.deb",
+    "bytes": 64618,
+    "sha256": "7869aecfee2ebc6ef133d13630ad3e04b3ec56d49320f0f15b5e012d0a0797d6"
+  },
+  {
+    "filename": "libkf5solid5-data_5.115.0-0ubuntu5_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/s/solid/libkf5solid5-data_5.115.0-0ubuntu5_all.deb",
+    "bytes": 112220,
+    "sha256": "64ce7f046b8adf1be0c328f3a4587ab32a87076ca439ea5a5f8bca0f2fa2f08e"
+  },
+  {
+    "filename": "libplist-2.0-4_2.3.0-1~exp2build2_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libp/libplist/libplist-2.0-4_2.3.0-1%7eexp2build2_amd64.deb",
+    "bytes": 47994,
+    "sha256": "e425c79a3e6e336ce05be7ad7d4171d0a956437cd69d13f27e0df98e272a6f26"
+  },
+  {
+    "filename": "libusbmuxd6_2.0.2-4build3_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libu/libusbmuxd/libusbmuxd6_2.0.2-4build3_amd64.deb",
+    "bytes": 20312,
+    "sha256": "7370f350f059d6b3c8ab8b6a9f0044c0589fc0eb87551273b71b49cc771fbf9b"
+  },
+  {
+    "filename": "libimobiledevice6_1.3.0-8.1build3_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libi/libimobiledevice/libimobiledevice6_1.3.0-8.1build3_amd64.deb",
+    "bytes": 70302,
+    "sha256": "9c9f291b97eba10d9f0494c20bd309c36905d6aa01ae0a255802a7120c3243f7"
+  },
+  {
+    "filename": "libkf5solid5_5.115.0-0ubuntu5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/s/solid/libkf5solid5_5.115.0-0ubuntu5_amd64.deb",
+    "bytes": 212592,
+    "sha256": "c51010172c89fc22983b109f99cec55567101fe985e20e12a764abde8ac255f8"
+  },
+  {
+    "filename": "libkf5kiowidgets5_5.115.0-0ubuntu6_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kio/libkf5kiowidgets5_5.115.0-0ubuntu6_amd64.deb",
+    "bytes": 451776,
+    "sha256": "b25d57856181ca767a3113e47d712aefc9cbaf3777d0b2cfda347740970c6c33"
+  },
+  {
+    "filename": "libkf5notifications-data_5.115.0-0ubuntu6_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/knotifications/libkf5notifications-data_5.115.0-0ubuntu6_all.deb",
+    "bytes": 19220,
+    "sha256": "459017daf29e0698202d4b8295f81ac105e5d39351f290216a41fe5f7956cf21"
+  },
+  {
+    "filename": "libasound2-data_1.2.11-1ubuntu0.3_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/libasound2-data_1.2.11-1ubuntu0.3_all.deb",
+    "bytes": 21350,
+    "sha256": "0c26896193480d9dbb055e85e8ddfb9c9f34cf19afee340987cd6311e2886fc1"
+  },
+  {
+    "filename": "libasound2t64_1.2.11-1ubuntu0.3_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/libasound2t64_1.2.11-1ubuntu0.3_amd64.deb",
+    "bytes": 397772,
+    "sha256": "5d17bfb5683eb99f1be951fe48e1be5bf3c52391913b6b74a8aecf9b4f5e779f"
+  },
+  {
+    "filename": "libltdl7_2.4.7-7build1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libt/libtool/libltdl7_2.4.7-7build1_amd64.deb",
+    "bytes": 40258,
+    "sha256": "02d0d2d7e1bf73f838a92f8df7a9b07b698c837e82bd89aee6a581cf793cd966"
+  },
+  {
+    "filename": "libtdb1_1.4.10-1build1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/t/tdb/libtdb1_1.4.10-1build1_amd64.deb",
+    "bytes": 46772,
+    "sha256": "5b647b74d61b8bfe32f7bc03ffd22bac146a557df0724bd8e361b09f55237860"
+  },
+  {
+    "filename": "libogg0_1.3.5-3build1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libo/libogg/libogg0_1.3.5-3build1_amd64.deb",
+    "bytes": 22686,
+    "sha256": "fbdb2fedbafb02c3f07f2c2ddeb4018b5e94e13462f93fbececdcefc06fe2ac1"
+  },
+  {
+    "filename": "libvorbis0a_1.3.7-1build3_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libv/libvorbis/libvorbis0a_1.3.7-1build3_amd64.deb",
+    "bytes": 97554,
+    "sha256": "d704ac0a5dd7a9797a2f2dc86fc8333c9973023b98b3510dcd2f1cc00da3624d"
+  },
+  {
+    "filename": "libvorbisfile3_1.3.7-1build3_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libv/libvorbis/libvorbisfile3_1.3.7-1build3_amd64.deb",
+    "bytes": 17092,
+    "sha256": "fa12c52814bbfddff78186e7300b535bed30db02e4532fafae969aa9e5a79316"
+  },
+  {
+    "filename": "sound-theme-freedesktop_0.8-2ubuntu1_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/s/sound-theme-freedesktop/sound-theme-freedesktop_0.8-2ubuntu1_all.deb",
+    "bytes": 383992,
+    "sha256": "ce13c4dbf52340888a3cdd9563799cc74ccf03ce428dd2cee13e820caaabdc34"
+  },
+  {
+    "filename": "libcanberra0t64_0.30-10ubuntu10_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libc/libcanberra/libcanberra0t64_0.30-10ubuntu10_amd64.deb",
+    "bytes": 39418,
+    "sha256": "a7d61d9dc9911fe5af1dfe4021b3796c1a055aade3d44c71a36aebf46c786691"
+  },
+  {
+    "filename": "libdbusmenu-qt5-2_0.9.3+16.04.20160218-2build3_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/libd/libdbusmenu-qt/libdbusmenu-qt5-2_0.9.3%2b16.04.20160218-2build3_amd64.deb",
+    "bytes": 61720,
+    "sha256": "e9635fd32d0bc21e59f7044c5efd83a988898d65a23e26480801168d80a4b9ad"
+  },
+  {
+    "filename": "libqt5texttospeech5_5.15.13-1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/q/qtspeech-opensource-src/libqt5texttospeech5_5.15.13-1_amd64.deb",
+    "bytes": 21080,
+    "sha256": "e61472d8ff27e4d2db46806ff2afbaa4d9aa62467afbf29207fb9887f2dd55ef"
+  },
+  {
+    "filename": "libkf5notifications5_5.115.0-0ubuntu6_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/knotifications/libkf5notifications5_5.115.0-0ubuntu6_amd64.deb",
+    "bytes": 112366,
+    "sha256": "1cd3e89e852565ed342822fada5248683afbf230442199211dba158f7ac5f566"
+  },
+  {
+    "filename": "libkf5textwidgets-data_5.115.0-0ubuntu4_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/ktextwidgets/libkf5textwidgets-data_5.115.0-0ubuntu4_all.deb",
+    "bytes": 206506,
+    "sha256": "d1ab0be654030b89de0421d474001998b45606ff3dbbc0372565731a9a31399e"
+  },
+  {
+    "filename": "libkf5sonnet5-data_5.115.0-0ubuntu5_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/s/sonnet/libkf5sonnet5-data_5.115.0-0ubuntu5_all.deb",
+    "bytes": 106796,
+    "sha256": "20b36765b00cde92c6e10dd65df60cc7d780e442e564e421b020b30b1805147b"
+  },
+  {
+    "filename": "libkf5sonnetcore5_5.115.0-0ubuntu5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/s/sonnet/libkf5sonnetcore5_5.115.0-0ubuntu5_amd64.deb",
+    "bytes": 136948,
+    "sha256": "903355d8c6e0f9256442ec345121d62416492e1c655779e6f300c5e9b1587b51"
+  },
+  {
+    "filename": "libkf5sonnetui5_5.115.0-0ubuntu5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/s/sonnet/libkf5sonnetui5_5.115.0-0ubuntu5_amd64.deb",
+    "bytes": 50154,
+    "sha256": "db04f90a582bb8cbfee05f0854a4b25bace4caef40e9a4c48334a9523da89b0b"
+  },
+  {
+    "filename": "libkf5textwidgets5_5.115.0-0ubuntu4_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/ktextwidgets/libkf5textwidgets5_5.115.0-0ubuntu4_amd64.deb",
+    "bytes": 84118,
+    "sha256": "9d80fa37cd9d7fcf23272de6e8ae2524a1384f62a84c97c73547d9f6810ab08c"
+  },
+  {
+    "filename": "libkf5wallet-data_5.115.0-0ubuntu3_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kwallet-kf5/libkf5wallet-data_5.115.0-0ubuntu3_all.deb",
+    "bytes": 220328,
+    "sha256": "657b502d161e6e14d589fa6b61d9bc0d222549f710fdfbc689d6eda08f89f820"
+  },
+  {
+    "filename": "libgpgmepp6t64_1.18.0-4.1ubuntu4_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/g/gpgme1.0/libgpgmepp6t64_1.18.0-4.1ubuntu4_amd64.deb",
+    "bytes": 119480,
+    "sha256": "52d1d13d77303d55db140409c2c352b667ce32102e651ab095419094459d043f"
+  },
+  {
+    "filename": "libkwalletbackend5-5_5.115.0-0ubuntu3_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kwallet-kf5/libkwalletbackend5-5_5.115.0-0ubuntu3_amd64.deb",
+    "bytes": 53914,
+    "sha256": "798089bce39249fae8e8b33720efeaad7fb458d6e5c04d87c9628d78693e43de"
+  },
+  {
+    "filename": "libkf5wallet5_5.115.0-0ubuntu3_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kwallet-kf5/libkf5wallet5_5.115.0-0ubuntu3_amd64.deb",
+    "bytes": 41424,
+    "sha256": "db69e76c07c42cad34ca59f6335716e6b0249405ff4211f56d53abbbbd7014a8"
+  },
+  {
+    "filename": "libqca-qt5-2_2.3.8-1build3_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/q/qca2/libqca-qt5-2_2.3.8-1build3_amd64.deb",
+    "bytes": 332552,
+    "sha256": "92f752829a771000c39c5f307d05b7cad1ab9d16d605214bfd9f07b59350f1b1"
+  },
+  {
+    "filename": "libkf5wallet-bin_5.115.0-0ubuntu3_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kwallet-kf5/libkf5wallet-bin_5.115.0-0ubuntu3_amd64.deb",
+    "bytes": 164480,
+    "sha256": "f143a5be239a2ec57792f4e72dc3ceba838ff3f954f74f29cbe6b3ca71b73933"
+  },
+  {
+    "filename": "kio_5.115.0-0ubuntu6_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kio/kio_5.115.0-0ubuntu6_amd64.deb",
+    "bytes": 3381682,
+    "sha256": "fc20a9c3a78174e776a74e99bbf4cc706c4f3c52e640a5ea56b26d5316609f0c"
+  },
+  {
+    "filename": "libkf5package-data_5.115.0-0ubuntu5_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kpackage/libkf5package-data_5.115.0-0ubuntu5_all.deb",
+    "bytes": 79306,
+    "sha256": "feb8c100e3729af76f9cac766a1e169d5f073188ee69b733b439a2b04f1db4f2"
+  },
+  {
+    "filename": "libkf5package5_5.115.0-0ubuntu5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kpackage/libkf5package5_5.115.0-0ubuntu5_amd64.deb",
+    "bytes": 54710,
+    "sha256": "dee5e68d20b218161c80dceabd0162f6d380d42627e0db7b94e3a8c7ee72d90b"
+  },
+  {
+    "filename": "kpackagetool5_5.115.0-0ubuntu5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kpackage/kpackagetool5_5.115.0-0ubuntu5_amd64.deb",
+    "bytes": 54506,
+    "sha256": "1f9ad1614c921f3294f00ec286057b3f39a02157283c2fe73db94c984a0f601f"
+  },
+  {
+    "filename": "kstars-data_5%3a3.6.2-2ubuntu5_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kstars/kstars-data_3.6.2-2ubuntu5_all.deb",
+    "bytes": 70291402,
+    "sha256": "9d4f97c2e1fe981463ade8dd5c85174081335d1844334366ec5d082026969af2"
+  },
+  {
+    "filename": "libqt5sql5t64_5.15.13+dfsg-1ubuntu1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/q/qtbase-opensource-src/libqt5sql5t64_5.15.13%2bdfsg-1ubuntu1_amd64.deb",
+    "bytes": 121962,
+    "sha256": "b03b73eda8d1a7c441c8e23d9e87644aec97cbfc0fcafb2a557269f3981483e1"
+  },
+  {
+    "filename": "libqt5sql5-sqlite_5.15.13+dfsg-1ubuntu1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/q/qtbase-opensource-src/libqt5sql5-sqlite_5.15.13%2bdfsg-1ubuntu1_amd64.deb",
+    "bytes": 51504,
+    "sha256": "81b377bd7e2faa6c1930d60ad71f72be9661705de7a7ecc6179dd2881d276762"
+  },
+  {
+    "filename": "libcfitsio10t64_4.3.1-1.1build2_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/c/cfitsio/libcfitsio10t64_4.3.1-1.1build2_amd64.deb",
+    "bytes": 527630,
+    "sha256": "2ff680293eebb0977554f126ee62910c7caf172abcab7d7e7e51e37a5e4b1654"
+  },
+  {
+    "filename": "libgslcblas0_2.7.1+dfsg-6ubuntu2_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/g/gsl/libgslcblas0_2.7.1%2bdfsg-6ubuntu2_amd64.deb",
+    "bytes": 103606,
+    "sha256": "34ba0c31dd59224734a8cfba704ac381a11bcdb2ba91ff09888e8eda173617d4"
+  },
+  {
+    "filename": "libgsl27_2.7.1+dfsg-6ubuntu2_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/g/gsl/libgsl27_2.7.1%2bdfsg-6ubuntu2_amd64.deb",
+    "bytes": 986886,
+    "sha256": "a633774cf0eb1e5cd9fa7671da18ce503ef4d31585d52e27c56de7effcdb321e"
+  },
+  {
+    "filename": "libindi-data_1.9.9+dfsg-3build3_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/i/indi/libindi-data_1.9.9%2bdfsg-3build3_all.deb",
+    "bytes": 10586,
+    "sha256": "293e3b185b7f5b864dc1651ad8d84e285ed3ade43b77d32c46c2338d6a0ae077"
+  },
+  {
+    "filename": "libnova-0.16-0t64_0.16-5.1build1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/libn/libnova/libnova-0.16-0t64_0.16-5.1build1_amd64.deb",
+    "bytes": 952624,
+    "sha256": "c98b08323b8a8e9d6c8da1c9cb665f37fa0f22d525fdf0962f171e3d0ce31173"
+  },
+  {
+    "filename": "libindiclient1_1.9.9+dfsg-3build3_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/i/indi/libindiclient1_1.9.9%2bdfsg-3build3_amd64.deb",
+    "bytes": 148808,
+    "sha256": "5408a344d1b1f144b4b96e395652849b92e1f51a3eb70e99c30e43b230749d90"
+  },
+  {
+    "filename": "libkf5newstuff-data_5.115.0-0ubuntu5_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/knewstuff/libkf5newstuff-data_5.115.0-0ubuntu5_all.deb",
+    "bytes": 429866,
+    "sha256": "b1c2d3c7c39366cbad0283dc16c945afdc42ae407c1cd37ea7fd6fd7dbdd64f0"
+  },
+  {
+    "filename": "libkf5attica5_5.115.0-0ubuntu5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/a/attica-kf5/libkf5attica5_5.115.0-0ubuntu5_amd64.deb",
+    "bytes": 152666,
+    "sha256": "df01f3b84555ecd8f0e549b9b939f7af1ea1d34bfea23754a0e162590403e408"
+  },
+  {
+    "filename": "libkf5syndication5abi1_1%3a5.115.0-0ubuntu5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/s/syndication/libkf5syndication5abi1_5.115.0-0ubuntu5_amd64.deb",
+    "bytes": 189926,
+    "sha256": "0481edb43bed64af019d09e48cd68bad887013e6c33f35372efc66dbf7ec4bde"
+  },
+  {
+    "filename": "libkf5newstuffcore5_5.115.0-0ubuntu5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/knewstuff/libkf5newstuffcore5_5.115.0-0ubuntu5_amd64.deb",
+    "bytes": 262162,
+    "sha256": "e9e53080fb12ee85c89bbce3749ab3334c1d5625e1709021dcf81e75eb09a14f"
+  },
+  {
+    "filename": "libkf5xmlgui-data_5.115.0-0ubuntu5_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kxmlgui/libkf5xmlgui-data_5.115.0-0ubuntu5_all.deb",
+    "bytes": 438742,
+    "sha256": "29bbb8a86241514fcd7de07735e8b214ce92934fc7ff121a6c443636952ed3ed"
+  },
+  {
+    "filename": "libkf5globalaccel-data_5.115.0-0ubuntu5_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kglobalaccel/libkf5globalaccel-data_5.115.0-0ubuntu5_all.deb",
+    "bytes": 28066,
+    "sha256": "29768c584dca74e73e6b8fac513161f782bd34279a23314e25e70cc4ae5a923c"
+  },
+  {
+    "filename": "libkf5globalaccel5_5.115.0-0ubuntu5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kglobalaccel/libkf5globalaccel5_5.115.0-0ubuntu5_amd64.deb",
+    "bytes": 49008,
+    "sha256": "434293ccd7918e9d17d873ba13ac9f3f51bf9602d4684800489751a0d384f867"
+  },
+  {
+    "filename": "libkf5globalaccelprivate5_5.115.0-0ubuntu5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kglobalaccel/libkf5globalaccelprivate5_5.115.0-0ubuntu5_amd64.deb",
+    "bytes": 55884,
+    "sha256": "74e9d29211bc5ab17ee6d4d440249f74068df8c1ae74b4e7ac2ab53c9600d126"
+  },
+  {
+    "filename": "libxcb-record0_1.15-1ubuntu2_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb-record0_1.15-1ubuntu2_amd64.deb",
+    "bytes": 7368,
+    "sha256": "a08ebcbfe9305574da19b34902c48b52537e8f0d0071b619ccdf699620bb6112"
+  },
+  {
+    "filename": "libkf5globalaccel-bin_5.115.0-0ubuntu5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kglobalaccel/libkf5globalaccel-bin_5.115.0-0ubuntu5_amd64.deb",
+    "bytes": 15526,
+    "sha256": "3eb42245ea2c2cf0e88375cb0c5e393134b7d2eddbe5b3b319d774fb783534d3"
+  },
+  {
+    "filename": "libavahi-common-data_0.8-13ubuntu6.2_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/a/avahi/libavahi-common-data_0.8-13ubuntu6.2_amd64.deb",
+    "bytes": 30052,
+    "sha256": "9a03de928ae470c8d127a22dcb8fb8b582922a8f9406fc3ea879f5e98a02eab4"
+  },
+  {
+    "filename": "libavahi-common3_0.8-13ubuntu6.2_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/a/avahi/libavahi-common3_0.8-13ubuntu6.2_amd64.deb",
+    "bytes": 23444,
+    "sha256": "edd1f7a4a21e70504d0872c429600f2e13fdff7775c0952145f1afeacede1c82"
+  },
+  {
+    "filename": "libavahi-client3_0.8-13ubuntu6.2_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/a/avahi/libavahi-client3_0.8-13ubuntu6.2_amd64.deb",
+    "bytes": 26810,
+    "sha256": "00609b52ea5a1a9e35fcee4bfba03b6ff743a8015649026cb9109c356762f4d9"
+  },
+  {
+    "filename": "libcups2t64_2.4.7-1.2ubuntu7.14_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/c/cups/libcups2t64_2.4.7-1.2ubuntu7.14_amd64.deb",
+    "bytes": 274470,
+    "sha256": "b815a3d936718614e403035bb4a545e1323305ea624709bff2e9d94c214f9cc4"
+  },
+  {
+    "filename": "libqt5printsupport5t64_5.15.13+dfsg-1ubuntu1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/q/qtbase-opensource-src/libqt5printsupport5t64_5.15.13%2bdfsg-1ubuntu1_amd64.deb",
+    "bytes": 208366,
+    "sha256": "7576b79215515f2a126da74d5542ed7769974d8e96069c7fd68a4f44e56b538e"
+  },
+  {
+    "filename": "libkf5xmlgui5_5.115.0-0ubuntu5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kxmlgui/libkf5xmlgui5_5.115.0-0ubuntu5_amd64.deb",
+    "bytes": 272954,
+    "sha256": "e3b740f932a4eaa11e85a3a0a98a228530a7094b84faf6c67c285214bc9f66a9"
+  },
+  {
+    "filename": "libkf5newstuff5_5.115.0-0ubuntu5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/knewstuff/libkf5newstuff5_5.115.0-0ubuntu5_amd64.deb",
+    "bytes": 124896,
+    "sha256": "b5fb1626b7fa19bbc76c8a4128c7df26f3eb9359a11e57cfb066b801dca1feb3"
+  },
+  {
+    "filename": "libkf5notifyconfig-data_5.115.0-0ubuntu6_all.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/knotifyconfig/libkf5notifyconfig-data_5.115.0-0ubuntu6_all.deb",
+    "bytes": 55202,
+    "sha256": "ef844ba100d2aa01230b69859071f2c654f7a93aef0c366598cd3f8b0ca6de09"
+  },
+  {
+    "filename": "libkf5notifyconfig5_5.115.0-0ubuntu6_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/knotifyconfig/libkf5notifyconfig5_5.115.0-0ubuntu6_amd64.deb",
+    "bytes": 33100,
+    "sha256": "223c09973bd0642e0ed76bcf244a0c09570da54618b903c4bd32aa90768165e5"
+  },
+  {
+    "filename": "libkf5plotting5_5.115.0-0ubuntu4_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kplotting/libkf5plotting5_5.115.0-0ubuntu4_amd64.deb",
+    "bytes": 31628,
+    "sha256": "b0a1d9f0cf24f11ab5938328ebe98659723bfcd3e494e19c2261281498e177a9"
+  },
+  {
+    "filename": "libqt5concurrent5t64_5.15.13+dfsg-1ubuntu1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/q/qtbase-opensource-src/libqt5concurrent5t64_5.15.13%2bdfsg-1ubuntu1_amd64.deb",
+    "bytes": 35676,
+    "sha256": "ad738879b1ffc32339a52295b0bf50b8a6edb2f29080aa055a2212182f5b9ad8"
+  },
+  {
+    "filename": "libqt5datavisualization5_5.15.13-1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/q/qtdatavis3d-everywhere-src/libqt5datavisualization5_5.15.13-1_amd64.deb",
+    "bytes": 430348,
+    "sha256": "1487d6afac67d3658e8ab370221424d0efb7a39e23181d44f090efdadfcff73a"
+  },
+  {
+    "filename": "libqt5keychain1_0.14.2-1build5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/q/qtkeychain/libqt5keychain1_0.14.2-1build5_amd64.deb",
+    "bytes": 50446,
+    "sha256": "28dbe89063bc57a5db47610b6aa90a0d41ec7006dadf26c85007cce434ceb749"
+  },
+  {
+    "filename": "libqt5websockets5_5.15.13-1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/q/qtwebsockets-opensource-src/libqt5websockets5_5.15.13-1_amd64.deb",
+    "bytes": 60114,
+    "sha256": "f634b6940ac5070edf5a9c67a2625c8c96c55d8fd5da3fa891dce3c43cb4b81c"
+  },
+  {
+    "filename": "libraw23t64_0.21.2-2.1ubuntu0.24.04.2_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libr/libraw/libraw23t64_0.21.2-2.1ubuntu0.24.04.2_amd64.deb",
+    "bytes": 379252,
+    "sha256": "0bc45859a07b3986d160f04be52a80d5d274151b02142def3755124263105035"
+  },
+  {
+    "filename": "libwcs8_8.2.2+ds-3build2_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/w/wcslib/libwcs8_8.2.2%2bds-3build2_amd64.deb",
+    "bytes": 263196,
+    "sha256": "39b5fd05adf1dc6d3a1dc1c3b5995ec7502254d49e8243f3c68b27456adc3d3a"
+  },
+  {
+    "filename": "libstellarsolver2_2.5-1ubuntu1_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/s/stellarsolver/libstellarsolver2_2.5-1ubuntu1_amd64.deb",
+    "bytes": 415134,
+    "sha256": "4c214ef4ec437b9acaf4dd0e3e7c035932da63b65c723b762b73922097c08ca1"
+  },
+  {
+    "filename": "kstars_5%3a3.6.2-2ubuntu5_amd64.deb",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kstars/kstars_3.6.2-2ubuntu5_amd64.deb",
+    "bytes": 5918130,
+    "sha256": "99b47815de1542f56b93d71d78c5d688c3754c2f1b84ed9d7a9d6cc41fac8ee3"
+  }
+]

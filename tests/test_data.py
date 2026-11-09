@@ -165,3 +165,16 @@ def test_aggregation_does_not_move_a_local_exclusion_ring_onto_the_observer():
     assert sources.power.sum()==pytest.approx(1)
     assert report['nearest_effective_source_chord_m']>=500-0.001
     assert 0<report['weight_removed_local_fraction']<1
+
+
+def test_distant_city_is_resolved_when_a_low_sightline_passes_above_it():
+    bounds=Bounds(30.30,59.95,30.30+8/240,59.95+8/240)
+    observer=Observer(60.30,30.315,20)
+    key='NearNadir_Composite_Snow_Free'
+    arrays={key:np.ones((8,8)),key+'_Quality':np.zeros((8,8)),
+            key+'_Num':np.full((8,8),10),'Land_Water_Mask':np.ones((8,8))}
+    coarse,_=regional_sources(arrays,bounds,observer,block=8)
+    toward,_=regional_sources(arrays,bounds,observer,block=8,refinement_direction=(180,1))
+    away,_=regional_sources(arrays,bounds,observer,block=8,refinement_direction=(0,1))
+    assert len(toward.power)>len(coarse.power)==len(away.power)==1
+    assert toward.power.sum()==pytest.approx(coarse.power.sum())

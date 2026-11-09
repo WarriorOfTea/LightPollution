@@ -1,0 +1,1 @@
+dbus-send --dest=org.kde.kstars /KStars org.kde.kstars.setAltAz double:90 double:180

@@ -34,16 +34,28 @@ def make_parser() -> argparse.ArgumentParser:
     check.add_argument('--year',type=int,default=2025)
     check.add_argument('--directory',type=Path)
     check.add_argument('--output',type=Path)
+    view=commands.add_parser('render',help='Stars and computed skyglow as seen from the saved observer')
+    view.add_argument('--sky',type=Path,default=Path('artifacts/petersburg-2025/observer-sky/sky-grid.npz'))
+    view.add_argument('--output',type=Path,default=Path('artifacts/petersburg-2025/observer-view'))
+    view.add_argument('--utc',required=True,help='Explicit UTC time, e.g. 2026-11-09T21:00:00Z')
+    view.add_argument('--artificial-zenith-mag',type=float,required=True,
+                      help='ASSUMED artificial zenith V brightness in mag/arcsec2; not satellite calibration')
+    view.add_argument('--natural-mag',type=float,default=21.6)
+    view.add_argument('--dark-limiting-mag',type=float,default=6.5)
+    view.add_argument('--kstars-directory',type=Path,help='Also composite the computed field on an exported KStars raster')
+    view.add_argument('--look-azimuth',type=float,default=180)
+    view.add_argument('--look-altitude',type=float,default=35)
+    view.add_argument('--horizontal-fov',type=float,default=110)
     for name,help_text in (('simulate','Calculate from a successfully audited NASA region'),
                            ('demo','Synthetic two-city example; not NASA measurements')):
         run=commands.add_parser(name,help=help_text)
-        run.add_argument('--output',type=Path,default=Path('artifacts/'+('synthetic-demo' if name=='demo' else 'petersburg-2025/sky')))
+        run.add_argument('--output',type=Path,default=Path('artifacts/'+('synthetic-demo' if name=='demo' else 'petersburg-2025/observer-sky')))
         run.add_argument('--region',type=Path,default=Path('artifacts/petersburg-2025/source-grid.npz'))
         run.add_argument('--latitude',type=float,default=60.30)
         run.add_argument('--longitude',type=float,default=30.315)
         run.add_argument('--height',type=float,default=20)
         run.add_argument('--azimuth-step',type=float,default=10)
-        run.add_argument('--altitudes',type=float,nargs='+',default=DEFAULT_ALTITUDES)
+        run.add_argument('--altitudes',type=float,nargs='+',default=DEFAULT_ALTITUDES if name=='demo' else [0,.5]+DEFAULT_ALTITUDES)
         run.add_argument('--ray-segments',type=int,default=96)
         run.add_argument('--path-quadrature',type=int,default=12)
         run.add_argument('--aod',type=float,default=0.10)
@@ -51,6 +63,8 @@ def make_parser() -> argparse.ArgumentParser:
         run.add_argument('--block',type=int,default=12)
         run.add_argument('--exclude-radius-m',type=float,default=3000)
         run.add_argument('--include-water',action='store_true')
+        run.add_argument('--refine-below-altitude',type=float,default=5,
+                         help='Refine source patches near sightlines at/below this altitude')
     return parser
 
 
@@ -63,6 +77,7 @@ def run_simulation(args) -> dict:
     atmosphere=Atmosphere(aerosol_optical_depth=args.aod)
     settings=SolverSettings(args.ray_segments,args.path_quadrature,args.horizontal_fraction)
     if args.command=='demo':
+        source_factory=None
         sources=synthetic_cities(observer)
         provenance={"input_kind":"synthetic", "actual_nasa_pixels":0,
                     "description":"Two specified test cities: 40 km south and 25 km east; total test power 1.25 W.",
@@ -72,11 +87,25 @@ def run_simulation(args) -> dict:
         arrays,bounds,metadata=load_region(args.region)
         sources,provenance=regional_sources(arrays,bounds,observer,args.block,args.exclude_radius_m,include_water=args.include_water)
         provenance.update({"input_kind":"blackmarble", "region_file":str(args.region),"region_metadata":metadata})
+        refined_counts=[]
+        if not 0<=args.refine_below_altitude<=90:
+            raise ValueError('Ray refinement altitude must be in [0,90].')
+        def source_factory(az,alt):
+            if alt>args.refine_below_altitude:
+                return sources
+            selected,_=regional_sources(arrays,bounds,observer,args.block,args.exclude_radius_m,
+                                         include_water=args.include_water,refinement_direction=(az,alt))
+            refined_counts.append(len(selected.power))
+            return selected
         title=f"Петербург, VIIRS {metadata.get('year','')}: условный региональный сценарий"
     azimuths=np.arange(0,360,args.azimuth_step)
     altitudes=np.asarray(args.altitudes)
     started=time.perf_counter()
-    radiance=sky_grid(observer,sources,azimuths,altitudes,atmosphere,settings)
+    radiance=sky_grid(observer,sources,azimuths,altitudes,atmosphere,settings,source_factory=source_factory)
+    if args.command!='demo':
+        provenance['ray_refinement']={'at_or_below_altitude_deg':args.refine_below_altitude,
+                                      'minimum_effective_sources':min(refined_counts,default=len(sources.power)),
+                                      'maximum_effective_sources':max(refined_counts,default=len(sources.power))}
     elapsed=time.perf_counter()-started
     location=np.unravel_index(np.argmax(radiance),radiance.shape)
     summary={"provenance":provenance,"observer":asdict(observer),"atmosphere":asdict(atmosphere),
@@ -123,6 +152,21 @@ def main():
             save_region(args.output/'source-grid.npz',arrays,Bounds(),{"year":args.year,"product":"VNP46A4.002", "inputs":inputs})
             source_map(arrays,Bounds(),args.output/'sources.png',year=args.year)
             print(json.dumps(report,ensure_ascii=False,indent=2))
+        elif args.command=='render':
+            from .skyview import DisplayScenario, render_observer
+            scenario=DisplayScenario(args.artificial_zenith_mag,args.natural_mag,args.dark_limiting_mag)
+            if args.kstars_directory:
+                kstars_metadata=json.loads((args.kstars_directory/'kstars-summary.json').read_text())
+                if kstars_metadata['utc']!=args.utc:
+                    raise ValueError('KStars export and observer renderer timestamps differ.')
+            summary=render_observer(args.sky,args.output,args.utc,scenario,
+                                    args.look_azimuth,args.look_altitude,args.horizontal_fov)
+            if args.kstars_directory:
+                from .skyview import composite_kstars
+                composite_kstars(args.sky,args.kstars_directory,scenario)
+            print(json.dumps({key:summary[key] for key in ('observer','astrometry','display_scenario',
+                                                         'catalogue_rows','above_horizon','dark_visible','scenario_visible')},
+                             ensure_ascii=False,indent=2))
         else:
             print(json.dumps(run_simulation(args),ensure_ascii=False,indent=2))
     except (ValueError,RuntimeError,OSError,requests.RequestException,KeyError) as exc:

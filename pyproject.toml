@@ -8,6 +8,7 @@ dependencies = [
     "h5py>=3.12,<4",
     "matplotlib>=3.9,<4",
     "requests>=2.32,<3",
+    "astropy>=7,<9",
 ]
 
 [project.scripts]

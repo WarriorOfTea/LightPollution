@@ -1,0 +1,17 @@
+{
+  "version": "kstars 3.6.2 Stable",
+  "utc": "2026-11-09T21:00:00Z",
+  "observer": {
+    "latitude_deg": 60.3,
+    "longitude_deg": 30.315,
+    "height_m": 20
+  },
+  "projection": "KStars AzimuthalEquidistant, zenith focus, azimuth=180, rotation=0",
+  "size": 1600,
+  "zoom_pixels_per_radian": 468.5521524625399,
+  "refraction": false,
+  "is_patched_kstars": false,
+  "purpose": "Actual KStars catalogue raster, before skyglow compositing",
+  "source": "https://invent.kde.org/education/kstars",
+  "documentation": "docs/OBSERVER_VIEW.md"
+}

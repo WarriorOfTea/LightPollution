@@ -1,0 +1,31 @@
+{
+  "catalogue": "Bright Star Catalogue, 5th Revised Edition (preliminary), Hoffleit & Warren (1991)",
+  "provider": "NASA HEASARC BSC5P",
+  "documentation": "https://heasarc.gsfc.nasa.gov/W3Browse/catalog/bsc5p.html",
+  "download_url": "https://heasarc.gsfc.nasa.gov/FTP/heasarc/dbase/tdat_files/heasarc_bsc5p.tdat.gz",
+  "retrieved_utc": "2026-11-09",
+  "source_sha256": "122628cde2d8bedf7e16ddf5f888167ac58c04b5592d6155408ce297f3073931",
+  "csv_sha256": "3af32c163259640118f3522d452aaa3fe765b6906a8bc9b6925e3e67aacd9e54",
+  "input_rows": 9110,
+  "retained_rows": 9096,
+  "omitted_hr": [
+    "95",
+    "3671",
+    "7189",
+    "6515",
+    "6309",
+    "3515",
+    "7539",
+    "2472",
+    "1841",
+    "2496",
+    "182",
+    "8296",
+    "1057",
+    "92"
+  ],
+  "selection": "Require Vmag, spectral type and coordinates; excludes non-stellar/empty records.",
+  "frame": "FK5 J2000; proper motions in arcsec/year, RA tangent component includes cos(dec)",
+  "precision": "HEASARC coordinates as supplied; not a catalogue complete to arbitrary faint magnitudes.",
+  "reuse": "Astronomical catalogue data from NASA HEASARC. Cite original authors and provider; no external software source copied."
+}

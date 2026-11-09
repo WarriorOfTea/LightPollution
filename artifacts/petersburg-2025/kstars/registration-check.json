@@ -1,0 +1,83 @@
+{
+  "method": "Six named catalogue stars compared to actual white KStars pixels in a 9x9 window; visual registration check, not astrometric error bound.",
+  "stars": [
+    {
+      "hr": 424,
+      "altitude_deg": 60.90670885390495,
+      "expected_xy": [
+        798.8142069270414,
+        562.0844852162232
+      ],
+      "bright_pixel_in_9x9": 1.0,
+      "centroid_delta_pixels": [
+        -1.5602775368603643,
+        -0.8979473836368892
+      ]
+    },
+    {
+      "hr": 1708,
+      "altitude_deg": 60.11242469549288,
+      "expected_xy": [
+        557.8438257282296,
+        833.1446195409038
+      ],
+      "bright_pixel_in_9x9": 1.0,
+      "centroid_delta_pixels": [
+        -0.6435230760321975,
+        -0.14198853436794368
+      ]
+    },
+    {
+      "hr": 7924,
+      "altitude_deg": 40.99664569760879,
+      "expected_xy": [
+        1170.7387963210106,
+        647.8680709809869
+      ],
+      "bright_pixel_in_9x9": 1.0,
+      "centroid_delta_pixels": [
+        -0.5820041162850531,
+        -0.5815538976074093
+      ]
+    },
+    {
+      "hr": 7001,
+      "altitude_deg": 22.448836988188486,
+      "expected_xy": [
+        1222.4366885213574,
+        444.03183771079046
+      ],
+      "bright_pixel_in_9x9": 1.0,
+      "centroid_delta_pixels": [
+        -0.17197889182058024,
+        -0.17192612137203156
+      ]
+    },
+    {
+      "hr": 1457,
+      "altitude_deg": 39.538452187773075,
+      "expected_xy": [
+        505.734337599869,
+        1089.3073438062138
+      ],
+      "bright_pixel_in_9x9": 1.0,
+      "centroid_delta_pixels": [
+        -1.1128097377191715,
+        -0.5474568903057526
+      ]
+    },
+    {
+      "hr": 1017,
+      "altitude_deg": 75.80750736578476,
+      "expected_xy": [
+        709.8825906088224,
+        873.1401688753816
+      ],
+      "bright_pixel_in_9x9": 1.0,
+      "centroid_delta_pixels": [
+        -1.0590062111801242,
+        -0.2897587750975008
+      ]
+    }
+  ]
+}

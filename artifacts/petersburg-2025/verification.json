@@ -1,0 +1,78 @@
+{
+  "verified_at": "2026-11-09T23:11:27+01:00",
+  "tests": {
+    "passed": 49,
+    "failed": 0,
+    "skipped": 0,
+    "seconds": 6.36
+  },
+  "sky_values": 1080,
+  "independent_rays": 1009,
+  "low_rays_refined": 432,
+  "control_directions": 8,
+  "max_quadrature_difference": 0.0018283258222591137,
+  "max_aggregation_difference": 0.005034019135543577,
+  "above_horizon_catalogue_rows": 4540,
+  "scenario_visible_rows": 826,
+  "dark_visible_rows": 2325,
+  "perspective_visible_rows": 217,
+  "data_consistency": "All eight control rays match the delivered grid; star table matches image metadata.",
+  "images": [
+    {
+      "path": "artifacts/petersburg-2025/observer-view/observer-perspective.png",
+      "dimensions": [
+        2380,
+        1564
+      ],
+      "bytes": 207185,
+      "sha256": "38d09ed8ab7befcfe440d0670257e530f3f77f9b336ed7914eea3e8439a811a5"
+    },
+    {
+      "path": "artifacts/petersburg-2025/observer-view/observer-sky.png",
+      "dimensions": [
+        2700,
+        1512
+      ],
+      "bytes": 413971,
+      "sha256": "9108273068416c43c3100624f2e845f33b8dc1e6094d105061d55dbd50a91fb6"
+    },
+    {
+      "path": "artifacts/petersburg-2025/observer-view/observer-view.png",
+      "dimensions": [
+        1620,
+        1800
+      ],
+      "bytes": 218638,
+      "sha256": "aa8cc53c0654b5e9c961a50b296cc11a81a9c08dd7eef543c57974461f920d4c"
+    },
+    {
+      "path": "artifacts/petersburg-2025/kstars/kstars-with-skyglow.png",
+      "dimensions": [
+        1700,
+        1870
+      ],
+      "bytes": 786977,
+      "sha256": "9ad61ec615a033154998a1419b74837dde9a0f14c7caed2083f77fa473ccf4af"
+    },
+    {
+      "path": "artifacts/petersburg-2025/kstars/kstars-baseline.png",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 185187,
+      "sha256": "43e51032ba6ca493bb5410d7196abf06eb52d3362ca427a89597a17a647b3ff7"
+    }
+  ],
+  "physical_accuracy_bound": null,
+  "ground_calibrated": false,
+  "checks": [
+    "pytest",
+    "Python compilation",
+    "uv lock --check",
+    "wheel contains catalogue and provenance",
+    "all eight numeric controls match delivered grid",
+    "PNG integrity and visual inspection",
+    "six-star KStars registration"
+  ]
+}

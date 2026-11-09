@@ -12,7 +12,8 @@ from .physics import EARTH_RADIUS_M, Observer, Sources, cell_areas, unit_positio
 
 def regional_sources(arrays: dict, bounds: Bounds, observer: Observer, block: int = 12,
                      exclude_radius_m: float = 3000, composite: str = "NearNadir",
-                     include_water: bool = False) -> tuple[Sources, dict]:
+                     include_water: bool = False,
+                     refinement_direction: tuple[float,float] | None = None) -> tuple[Sources, dict]:
     if block < 1 or exclude_radius_m < 0:
         raise ValueError("Invalid aggregation block or local-source exclusion radius.")
     key = composite+"_Composite_Snow_Free"
@@ -42,6 +43,7 @@ def regional_sources(arrays: dict, bounds: Bounds, observer: Observer, block: in
     if not total_retained > 0:
         raise ValueError("No sources remain after masking.")
     positions, powers, patch_sizes = [], [], []
+    ray = observer.direction(*refinement_direction) if refinement_direction is not None else None
 
     def add_patch(row: int, bottom: int, col: int, right: int):
         window = (slice(row,bottom),slice(col,right))
@@ -53,9 +55,17 @@ def regional_sources(arrays: dict, bounds: Bounds, observer: Observer, block: in
         normal = centroid/np.linalg.norm(centroid)
         patch_radius = float(np.max(np.linalg.norm(normals[window][w>0]-normal,axis=1))*EARTH_RADIUS_M)
         observer_distance = float(np.linalg.norm(normal-observer_normal)*EARTH_RADIUS_M)
+        near_ray = False
+        if ray is not None:
+            displacement = EARTH_RADIUS_M*normal-observer.position
+            along = max(0,float(np.dot(displacement,ray)))
+            distance_to_ray = float(np.linalg.norm(displacement-along*ray))
+            # A block far from the observer can still lie immediately below
+            # a low sightline. Resolve it before treating it as one emitter.
+            near_ray = distance_to_ray < 4*patch_radius
         # Do not move an excluded ring of pixels into the observer's vicinity
         # by replacing the whole ring section with one large centred emitter.
-        if max(bottom-row,right-col)>1 and (observer_distance<3*patch_radius or observer_distance<exclude_radius_m):
+        if max(bottom-row,right-col)>1 and (observer_distance<3*patch_radius or observer_distance<exclude_radius_m or near_ray):
             rows=sorted(set((row,(row+bottom)//2,bottom)))
             cols=sorted(set((col,(col+right)//2,right)))
             for r0,r1 in zip(rows[:-1],rows[1:],strict=True):
@@ -82,6 +92,7 @@ def regional_sources(arrays: dict, bounds: Bounds, observer: Observer, block: in
         "weight_removed_local_fraction": local_removed/total_valid,
         "retained_weight_fraction": total_retained/total_valid,
         "largest_patch_radius_m": max(patch_sizes),
+        "ray_refinement_azimuth_altitude_deg": refinement_direction,
         "nearest_retained_pixel_m": float(distance[weights>0].min()),
         "nearest_effective_source_chord_m": float(np.linalg.norm(sources.positions_m-EARTH_RADIUS_M*observer_normal,axis=1).min()),
         "unmodelled_sources_outside_bounds": asdict(bounds),

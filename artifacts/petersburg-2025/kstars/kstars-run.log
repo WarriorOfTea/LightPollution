@@ -1,0 +1,42 @@
+Call to writableLocation without an application-based location.
+Reading time zone rules
+Upgrade existing user city db to support geographic elevation.
+Loading city data
+Loading User Information
+org.kde.kstars: User DB does not exist. New User DB will be created.
+org.kde.kstars: Rebuilding User Database
+Loading sky objects
+org.kde.kstars: Processing  "unnamedstars.dat" , HTMesh Level 3
+org.kde.kstars:   Sky Mesh Size:  512
+org.kde.kstars: Loaded DSO catalog file:  "unnamedstars.dat"
+Loading Small Magellanic Clouds (1%)
+Loading Large Magellanic Clouds (1%)
+Loading Milky Way (1%)
+Loading Milky Way (20%)
+Loading Milky Way (40%)
+Loading Milky Way (60%)
+Loading Milky Way (80%)
+Loading Milky Way (100%)
+Loading Constellation Boundaries (1%)
+Loading Constellation Boundaries (10%)
+Loading Constellation Boundaries (20%)
+Loading Constellation Boundaries (30%)
+Loading Constellation Boundaries (40%)
+Loading Constellation Boundaries (50%)
+Loading Constellation Boundaries (60%)
+Loading Constellation Boundaries (70%)
+Loading Constellation Boundaries (80%)
+Loading Constellation Boundaries (90%)
+Loading Constellation Boundaries (100%)
+org.kde.kstars: "Star HD20,794 not found."
+org.kde.kstars: "Star HD98,230 not found."
+org.kde.kstars: Loaded DSO catalogs.
+org.kde.kstars: Loading asteroids
+org.kde.kstars: Loading asteroid objects failed.
+org.kde.kstars: " -> was trying to read /home/myuser/pignity/projects/LightPollution/scratch/kstars-export/data/kstars/asteroids.dat"
+org.kde.kstars: Loading comets
+Loading Image URLs
+bool KStarsData::openUrlFile(const QString&, QFile&) No localized URL file; using default English file.
+bool KStarsData::openUrlFile(const QString&, QFile&) No localized URL file; using default English file.
+Script executed.
+Loading satellites

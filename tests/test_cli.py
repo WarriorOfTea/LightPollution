@@ -6,6 +6,14 @@ import pytest
 from lightpollution.cli import make_parser,run_simulation
 
 
+def test_simulate_defaults_produce_the_full_field_read_by_render():
+    parser=make_parser()
+    simulate=parser.parse_args(['simulate'])
+    render=parser.parse_args(['render','--utc','2026-11-09T21:00:00Z','--artificial-zenith-mag','20.5'])
+    assert simulate.output/'sky-grid.npz'==render.sky
+    assert simulate.altitudes[0]==0 and simulate.altitudes[-1]==90
+
+
 def test_demo_exports_coordinates_raw_numbers_and_synthetic_provenance(tmp_path):
     args=make_parser().parse_args(['demo','--output',str(tmp_path),'--azimuth-step','90',
                                   '--altitudes','5','45','90','--ray-segments','8','--path-quadrature','2'])
