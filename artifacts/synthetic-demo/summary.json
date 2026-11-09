@@ -1,0 +1,48 @@
+{
+  "provenance": {
+    "input_kind": "synthetic",
+    "actual_nasa_pixels": 0,
+    "description": "Two specified test cities: 40 km south and 25 km east; total test power 1.25 W.",
+    "source_power_units": "W (synthetic)",
+    "effective_sources": 98
+  },
+  "observer": {
+    "latitude_deg": 60.3,
+    "longitude_deg": 30.315,
+    "height_m": 20
+  },
+  "atmosphere": {
+    "reference_wavelength_nm": 550.0,
+    "rayleigh_scale_height_m": 8000.0,
+    "aerosol_scale_height_m": 1200.0,
+    "aerosol_optical_depth": 0.1,
+    "aerosol_single_scattering_albedo": 0.9,
+    "aerosol_g": 0.8,
+    "rayleigh_multiplier": 1.0,
+    "top_m": 80000.0
+  },
+  "solver": {
+    "ray_segments": 384,
+    "path_quadrature": 24,
+    "horizontal_fraction": 0,
+    "near_ray_scale_m": 500.0
+  },
+  "shape": [
+    13,
+    72
+  ],
+  "elapsed_seconds": 49.32330553093925,
+  "azimuth_convention": "North=0, East=90, clockwise",
+  "raw_units": "W/(m2 sr)",
+  "absolute_visible_photometry_calibrated": false,
+  "maximum": {
+    "azimuth_deg": 90.0,
+    "altitude_deg": 1.0,
+    "value": 9.200600332829653e-11
+  },
+  "physical_error_bound": null,
+  "model_document": "docs/MODEL.md",
+  "south_over_north_at_5deg": 2338.572499964994,
+  "south_over_north_at_15deg": 76.16252546062044,
+  "south_over_north_at_45deg": 2.9264175039783105
+}

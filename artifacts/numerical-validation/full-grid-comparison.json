@@ -1,0 +1,12 @@
+{
+  "comparison": "192 vs 384 LOS segments, same 24-node path quadrature",
+  "input_kind": "synthetic",
+  "sampled_grid_points": 936,
+  "maximum_relative_difference": 0.006417247884811239,
+  "median_relative_difference": 6.837988170221854e-05,
+  "maximum_at_azimuth_deg": 90.0,
+  "maximum_at_altitude_deg": 1.0,
+  "relative_L2_difference": 0.0035640034085267194,
+  "maximum_above_5deg": 8.717111628842034e-05,
+  "physical_validation": false
+}

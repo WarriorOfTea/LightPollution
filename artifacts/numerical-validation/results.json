@@ -1,0 +1,438 @@
+{
+  "input_kind": "synthetic",
+  "actual_nasa_pixels": 0,
+  "created_at": "2026-11-09T20:44:12+00:00",
+  "observer": {
+    "latitude_deg": 60.3,
+    "longitude_deg": 30.315,
+    "height_m": 20.0
+  },
+  "atmosphere": {
+    "reference_wavelength_nm": 550.0,
+    "rayleigh_scale_height_m": 8000.0,
+    "aerosol_scale_height_m": 1200.0,
+    "aerosol_optical_depth": 0.1,
+    "aerosol_single_scattering_albedo": 0.9,
+    "aerosol_g": 0.8,
+    "rayleigh_multiplier": 1.0,
+    "top_m": 80000.0
+  },
+  "source_count": 98,
+  "source_total_power_W": 1.2499999999999998,
+  "directions_azimuth_altitude_deg": [
+    [
+      0,
+      5
+    ],
+    [
+      90,
+      1
+    ],
+    [
+      90,
+      5
+    ],
+    [
+      180,
+      1
+    ],
+    [
+      180,
+      5
+    ],
+    [
+      180,
+      15
+    ],
+    [
+      270,
+      5
+    ],
+    [
+      0,
+      45
+    ],
+    [
+      180,
+      45
+    ],
+    [
+      0,
+      90
+    ]
+  ],
+  "reference": {
+    "settings": {
+      "ray_segments": 768,
+      "path_quadrature": 64,
+      "horizontal_fraction": 0.0,
+      "near_ray_scale_m": 500.0
+    },
+    "elapsed_seconds": 2.775336710968986,
+    "values": [
+      1.1560113778032923e-14,
+      9.201662131767671e-11,
+      2.554713960202232e-11,
+      6.569355562560784e-11,
+      2.7034162984645817e-11,
+      6.5131675582127185e-12,
+      1.1557613224619725e-14,
+      1.761308514404889e-13,
+      5.154324029262509e-13,
+      1.9563920583833614e-13
+    ]
+  },
+  "ray_convergence": [
+    {
+      "ray_segments": 48,
+      "elapsed_seconds": 0.1536325530614704,
+      "maximum_relative_difference": 0.16208473866292816,
+      "median_relative_difference": 0.0016249105378570716,
+      "directions_denominator": 10,
+      "values": [
+        1.1539221109761266e-14,
+        7.710213129875546e-11,
+        2.5548401827745906e-11,
+        6.020773720195157e-11,
+        2.697455077143246e-11,
+        6.503770538911175e-12,
+        1.1536728056566066e-14,
+        1.7594503423234833e-13,
+        5.148889673591924e-13,
+        1.954582491295106e-13
+      ]
+    },
+    {
+      "ray_segments": 96,
+      "elapsed_seconds": 0.25292397011071444,
+      "maximum_relative_difference": 0.007631585830546683,
+      "median_relative_difference": 0.00044602208538008226,
+      "directions_denominator": 10,
+      "values": [
+        1.155493630481799e-14,
+        9.131438857425395e-11,
+        2.553578482403749e-11,
+        6.583519077817117e-11,
+        2.702147421567961e-11,
+        6.510829978210478e-12,
+        1.1552440263462899e-14,
+        1.7608489921579703e-13,
+        5.152980230819835e-13,
+        1.9559452653957847e-13
+      ]
+    },
+    {
+      "ray_segments": 192,
+      "elapsed_seconds": 0.6497016530483961,
+      "maximum_relative_difference": 0.006301115304645499,
+      "median_relative_difference": 0.00010548164060714127,
+      "directions_denominator": 10,
+      "values": [
+        1.1558883758088027e-14,
+        9.25964286585433e-11,
+        2.5544368340650565e-11,
+        6.552774671115414e-11,
+        2.7031336259608284e-11,
+        6.512610807014983e-12,
+        1.1556380904058085e-14,
+        1.7611990852398893e-13,
+        5.15400401839223e-13,
+        1.9562856362498138e-13
+      ]
+    },
+    {
+      "ray_segments": 384,
+      "elapsed_seconds": 1.5528982789255679,
+      "maximum_relative_difference": 0.00045877774995828347,
+      "median_relative_difference": 2.129735203354466e-05,
+      "directions_denominator": 10,
+      "values": [
+        1.1559866944947428e-14,
+        9.200600332829739e-11,
+        2.5546595265878096e-11,
+        6.572369436724451e-11,
+        2.7033586940706274e-11,
+        6.5130561951342404e-12,
+        1.1557367191035791e-14,
+        1.7612866297269728e-13,
+        5.154260022755948e-13,
+        1.9563707743166075e-13
+      ]
+    }
+  ],
+  "path_convergence": [
+    {
+      "path_quadrature": 4,
+      "elapsed_seconds": 0.4741975599899888,
+      "maximum_relative_difference": 0.01838367052481593,
+      "median_relative_difference": 0.0013741706289739364,
+      "directions_denominator": 10,
+      "values": [
+        1.1571278289142423e-14,
+        9.201662131736497e-11,
+        2.554717293036957e-11,
+        6.56935556174123e-11,
+        2.7034327840772314e-11,
+        6.532710452255067e-12,
+        1.157821539375996e-14,
+        1.7855112652488073e-13,
+        5.249079423994613e-13,
+        1.987851114861662e-13
+      ]
+    },
+    {
+      "path_quadrature": 8,
+      "elapsed_seconds": 0.5368053140118718,
+      "maximum_relative_difference": 5.578392462091131e-05,
+      "median_relative_difference": 1.9633795611539995e-07,
+      "directions_denominator": 10,
+      "values": [
+        1.1560115361424141e-14,
+        9.201662131766893e-11,
+        2.5547139606047784e-11,
+        6.569355562560379e-11,
+        2.7034162993910725e-11,
+        6.513172059841376e-12,
+        1.1557616179967324e-14,
+        1.761369245848771e-13,
+        5.154593232555537e-13,
+        1.9565011936104754e-13
+      ]
+    },
+    {
+      "path_quadrature": 12,
+      "elapsed_seconds": 0.687960711074993,
+      "maximum_relative_difference": 1.0134786920801275e-07,
+      "median_relative_difference": 8.452127886471317e-13,
+      "directions_denominator": 10,
+      "values": [
+        1.156011377803619e-14,
+        9.201662131767319e-11,
+        2.5547139602021893e-11,
+        6.56935556256018e-11,
+        2.703416298464603e-11,
+        6.513167561040671e-12,
+        1.1557613224635999e-14,
+        1.761308609542104e-13,
+        5.154324394635589e-13,
+        1.9563922566595279e-13
+      ]
+    },
+    {
+      "path_quadrature": 24,
+      "elapsed_seconds": 1.0726206579711288,
+      "maximum_relative_difference": 1.4011014570769476e-13,
+      "median_relative_difference": 4.674038933671909e-14,
+      "directions_denominator": 10,
+      "values": [
+        1.1560113778031593e-14,
+        9.20166213176752e-11,
+        2.5547139602021292e-11,
+        6.569355562560437e-11,
+        2.7034162984644266e-11,
+        6.513167558212403e-12,
+        1.1557613224618106e-14,
+        1.7613085144048098e-13,
+        5.154324029262312e-13,
+        1.9563920583832897e-13
+      ]
+    },
+    {
+      "path_quadrature": 48,
+      "elapsed_seconds": 1.6426993270870298,
+      "maximum_relative_difference": 4.474198789239381e-14,
+      "median_relative_difference": 2.2370993946196904e-14,
+      "directions_denominator": 10,
+      "values": [
+        1.156011377803244e-14,
+        9.20166213176739e-11,
+        2.5547139602021518e-11,
+        6.569355562560498e-11,
+        2.7034162984645442e-11,
+        6.513167558212627e-12,
+        1.1557613224619207e-14,
+        1.7613085144048643e-13,
+        5.154324029262456e-13,
+        1.9563920583833397e-13
+      ]
+    }
+  ],
+  "sensitivity": [
+    {
+      "scenario": "aod_0.03",
+      "atmosphere": {
+        "reference_wavelength_nm": 550.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.03,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 1.0,
+        "top_m": 80000.0
+      },
+      "settings": {
+        "ray_segments": 384,
+        "path_quadrature": 48,
+        "horizontal_fraction": 0.0,
+        "near_ray_scale_m": 500.0
+      },
+      "elapsed_seconds": 0.831582201179117,
+      "ratio_to_baseline": [
+        5.230735024003609,
+        1.531623930322515,
+        1.3746510594913801,
+        2.753195720599273,
+        1.833523188684852,
+        1.42239821932075,
+        5.968722422031835,
+        1.4999366086637733,
+        1.3314751311751047,
+        1.3552468921883913
+      ],
+      "minimum_ratio": 1.3314751311751047,
+      "maximum_ratio": 5.968722422031835,
+      "directions_denominator": 10
+    },
+    {
+      "scenario": "aod_0.30",
+      "atmosphere": {
+        "reference_wavelength_nm": 550.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.3,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 1.0,
+        "top_m": 80000.0
+      },
+      "settings": {
+        "ray_segments": 384,
+        "path_quadrature": 48,
+        "horizontal_fraction": 0.0,
+        "near_ray_scale_m": 500.0
+      },
+      "elapsed_seconds": 0.948307930957526,
+      "ratio_to_baseline": [
+        0.013106428504529888,
+        0.08009987131142308,
+        0.21581865086202376,
+        0.017485809440833725,
+        0.12612205542675814,
+        0.3497835612724896,
+        0.006378387710683085,
+        0.36249638479607244,
+        0.47262168985811953,
+        0.461590129204813
+      ],
+      "minimum_ratio": 0.006378387710683085,
+      "maximum_ratio": 0.47262168985811953,
+      "directions_denominator": 10
+    },
+    {
+      "scenario": "g_0.6",
+      "atmosphere": {
+        "reference_wavelength_nm": 550.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.1,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.6,
+        "rayleigh_multiplier": 1.0,
+        "top_m": 80000.0
+      },
+      "settings": {
+        "ray_segments": 384,
+        "path_quadrature": 48,
+        "horizontal_fraction": 0.0,
+        "near_ray_scale_m": 500.0
+      },
+      "elapsed_seconds": 0.7758717332035303,
+      "ratio_to_baseline": [
+        1.1841184128212867,
+        1.0459019026183352,
+        1.071533582183438,
+        1.0496780919503166,
+        1.028452285383732,
+        1.0018127484793853,
+        1.1169470193662294,
+        1.0183171321300997,
+        1.0181669324090934,
+        1.0164115868149348
+      ],
+      "minimum_ratio": 1.0018127484793853,
+      "maximum_ratio": 1.1841184128212867,
+      "directions_denominator": 10
+    },
+    {
+      "scenario": "horizontal_fraction_0.1",
+      "atmosphere": {
+        "reference_wavelength_nm": 550.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.1,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 1.0,
+        "top_m": 80000.0
+      },
+      "settings": {
+        "ray_segments": 384,
+        "path_quadrature": 48,
+        "horizontal_fraction": 0.1,
+        "near_ray_scale_m": 500.0
+      },
+      "elapsed_seconds": 0.7644349739421159,
+      "ratio_to_baseline": [
+        7.694958587884243,
+        1.7261292032102784,
+        1.4353954462611391,
+        1.64544543921396,
+        1.2866284823778769,
+        1.0914265153086242,
+        7.738843616607226,
+        1.4251668721790391,
+        1.1615101258003568,
+        1.2281763225084155
+      ],
+      "minimum_ratio": 1.0914265153086242,
+      "maximum_ratio": 7.738843616607226,
+      "directions_denominator": 10
+    },
+    {
+      "scenario": "horizontal_fraction_0.3",
+      "atmosphere": {
+        "reference_wavelength_nm": 550.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.1,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 1.0,
+        "top_m": 80000.0
+      },
+      "settings": {
+        "ray_segments": 384,
+        "path_quadrature": 48,
+        "horizontal_fraction": 0.3,
+        "near_ray_scale_m": 500.0
+      },
+      "elapsed_seconds": 0.911142717115581,
+      "ratio_to_baseline": [
+        21.08487576365272,
+        3.178387609630835,
+        2.306186338783417,
+        2.9363363176418784,
+        1.8598854471336297,
+        1.2742795459258727,
+        21.21653084982168,
+        2.2755006165371165,
+        1.484530377401071,
+        1.6845289675252462
+      ],
+      "minimum_ratio": 1.2742795459258727,
+      "maximum_ratio": 21.21653084982168,
+      "directions_denominator": 10
+    }
+  ],
+  "limitation": "Numerical comparisons against the same solver are not independent physical validation."
+}
