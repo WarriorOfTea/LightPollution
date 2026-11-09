@@ -1,0 +1,1546 @@
+{
+  "h20v02": {
+    "filename": "VNP46A4.A2025001.h20v02.002.2026076194841.h5",
+    "sha256": "5175fffbfdc3657b12c481d9f0e796745f7ea238b90e8859d4f6b044d784b371",
+    "global_attributes": {
+      "AlgorithmType": "SCI",
+      "AlgorithmVersion": "NPP_PR46A3 2.0.0",
+      "Conventions": "CF-1.6",
+      "DataResolution": "15 arc second",
+      "DayNightFlag": "Night",
+      "EastBoundingCoord": 30.0,
+      "EndTime": "2026-01-01 00:00:00",
+      "GRingPointLatitude": [
+        60.0,
+        70.0,
+        70.0,
+        60.0
+      ],
+      "GRingPointLongitude": [
+        20.0,
+        20.0,
+        30.0,
+        30.0
+      ],
+      "GRingPointSequenceNo": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "GranuleDayNightFlag": "Night",
+      "HorizontalTileNumber": "20",
+      "LocalGranuleID": "VNP46A4.A2025001.h20v02.002.2026076194841.h5",
+      "LongName": "VIIRS/NPP Lunar BRDF-Adjusted Nighttime Lights Yearly L3 Global 15 arc second Linear Lat Lon Grid",
+      "NorthBoundingCoord": 70.0,
+      "NumberofInputGranules": "324",
+      "PGENumber": "557",
+      "PGEVersion": "2.0.5",
+      "PGE_EndTime": "2026-01-01 00:00:00.000",
+      "PGE_Name": "PGE557",
+      "PGE_StartTime": "2025-01-01 00:00:00.000",
+      "PlatformShortName": "SUOMI-NPP",
+      "ProcessVersion": "002",
+      "ProcessingCenter": "LandSIPS",
+      "ProcessingEnvironment": "Linux minion20441 5.4.0-1125-fips #135-Ubuntu SMP Mon Sep 22 20:40:31 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux",
+      "ProductionTime": "2026-03-17 19:48:41.000",
+      "RangeBeginningDate": "2025-01-01",
+      "RangeBeginningTime": "00:00:00.000000",
+      "RangeEndingDate": "2025-12-31",
+      "RangeEndingTime": "23:59:00.000000",
+      "SatelliteInstrument": "NPP_OPS",
+      "SensorShortname": "VIIRS",
+      "ShortName": "VNP46A4",
+      "SouthBoundingCoord": 60.0,
+      "StartTime": "2025-01-01 00:00:00",
+      "TileID": "61020002",
+      "VersionID": "002",
+      "VerticalTileNumber": "02",
+      "WestBoundingCoord": 20.0,
+      "creator_email": "modis-ops@lists.nasa.gov",
+      "creator_name": "VIIRS Land SIPS Processing Group",
+      "creator_url": "https://ladsweb.modaps.eosdis.nasa.gov",
+      "identifier_product_doi": "10.5067/VIIRS/VNP46A4.002",
+      "identifier_product_doi_authority": "https://doi.org",
+      "naming_authority": "gov.nasa.gsfc.VIIRSland",
+      "publisher_email": "modis-ops@lists.nasa.gov",
+      "publisher_name": "LAADS",
+      "publisher_url": "https://ladsweb.modaps.eosdis.nasa.gov"
+    },
+    "datasets": {
+      "NearNadir_Composite_Snow_Free": {
+        "dtype": "float32",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            -999.9000244140625
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Temporal Radiance Composite Using Near Nadir Angle Observations (View Zenith Angle 0-20 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "nWatts/(cm^2 sr)",
+          "valid_range": ">= 0.0"
+        }
+      },
+      "NearNadir_Composite_Snow_Free_Quality": {
+        "dtype": "uint8",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "Description": "Quality:\n\t  0 = Good quality\n\t  1 = Poor quality\n\t  2 = Gap filled\n\t  255 = Fill value",
+          "_FillValue": [
+            255
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Quality Flag of Temporal Radiance Composite Using Near Nadir Angle Observations (View Zenith Angle 0-20 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "flag, no units",
+          "valid_range": [
+            0,
+            254
+          ]
+        }
+      },
+      "NearNadir_Composite_Snow_Free_Num": {
+        "dtype": "uint16",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            65535
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Number of Observations of Temporal Radiance Composite Using Near Nadir Angle Observations (View Zenith Angle 0-20 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "number of observations",
+          "valid_range": [
+            0,
+            65534
+          ]
+        }
+      },
+      "NearNadir_Composite_Snow_Free_Std": {
+        "dtype": "float32",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            -999.9000244140625
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Standard Deviation of Temporal Radiance Composite Using Near Nadir Angle Observations (View Zenith Angle 0-20 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "nWatts/(cm^2 sr)",
+          "valid_range": ">= 0.0"
+        }
+      },
+      "OffNadir_Composite_Snow_Free": {
+        "dtype": "float32",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            -999.9000244140625
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Temporal Radiance Composite Using Off Nadir Angle Observations (View Zenith Angle 40-60 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "nWatts/(cm^2 sr)",
+          "valid_range": ">= 0.0"
+        }
+      },
+      "OffNadir_Composite_Snow_Free_Quality": {
+        "dtype": "uint8",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "Description": "Quality:\n\t  0 = Good quality\n\t  1 = Poor quality\n\t  2 = Gap filled\n\t  255 = Fill value",
+          "_FillValue": [
+            255
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Quality Flag of Temporal Radiance Composite Using Off Nadir Angle Observations (View Zenith Angle 40-60 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "flag, no units",
+          "valid_range": [
+            0,
+            254
+          ]
+        }
+      },
+      "OffNadir_Composite_Snow_Free_Num": {
+        "dtype": "uint16",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            65535
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Number of Observations of Temporal Radiance Composite Using Off Nadir Angle Observations (View Zenith Angle 40-60 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "number of observations",
+          "valid_range": [
+            0,
+            65534
+          ]
+        }
+      },
+      "OffNadir_Composite_Snow_Free_Std": {
+        "dtype": "float32",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            -999.9000244140625
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Standard Deviation of Temporal Radiance Composite Using Off Nadir Angle Observations (View Zenith Angle 40-60 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "nWatts/(cm^2 sr)",
+          "valid_range": ">= 0.0"
+        }
+      },
+      "AllAngle_Composite_Snow_Free": {
+        "dtype": "float32",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            -999.9000244140625
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Temporal Radiance Composite Using All Observations During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "nWatts/(cm^2 sr)",
+          "valid_range": ">= 0.0"
+        }
+      },
+      "AllAngle_Composite_Snow_Free_Quality": {
+        "dtype": "uint8",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "Description": "Quality:\n\t  0 = Good quality\n\t  1 = Poor quality\n\t  2 = Gap filled\n\t  255 = Fill value",
+          "_FillValue": [
+            255
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Quality Flag of Temporal Radiance Composite Using All Observations During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "flag, no units",
+          "valid_range": [
+            0,
+            254
+          ]
+        }
+      },
+      "AllAngle_Composite_Snow_Free_Num": {
+        "dtype": "uint16",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            65535
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Number of Observations of Temporal Radiance Composite Using All Observations During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "number of observations",
+          "valid_range": [
+            0,
+            65534
+          ]
+        }
+      },
+      "AllAngle_Composite_Snow_Free_Std": {
+        "dtype": "float32",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            -999.9000244140625
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Standard Deviation of Temporal Radiance Composite Using All Observations During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "nWatts/(cm^2 sr)",
+          "valid_range": ">= 0.0"
+        }
+      },
+      "Land_Water_Mask": {
+        "dtype": "uint8",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "Description": "Land/Water:\n\t  0 = Land & Desert \n\t  1 = Land no Desert \n\t  2 = Inland Water \n\t  3 = Sea Water \n\t  5 = Coastal",
+          "_FillValue": [
+            255
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Land Water Mask",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "land water mask, no units",
+          "valid_range": [
+            0,
+            254
+          ]
+        }
+      }
+    },
+    "coordinate_conventions": {
+      "lat": "upper_left_edges",
+      "lon": "upper_left_edges"
+    }
+  },
+  "h21v02": {
+    "filename": "VNP46A4.A2025001.h21v02.002.2026076221750.h5",
+    "sha256": "033bce269125713b33530798dfddd4dc41ce939fcadb274b1afc47a024171d20",
+    "global_attributes": {
+      "AlgorithmType": "SCI",
+      "AlgorithmVersion": "NPP_PR46A3 2.0.0",
+      "Conventions": "CF-1.6",
+      "DataResolution": "15 arc second",
+      "DayNightFlag": "Night",
+      "EastBoundingCoord": 40.0,
+      "EndTime": "2026-01-01 00:00:00",
+      "GRingPointLatitude": [
+        60.0,
+        70.0,
+        70.0,
+        60.0
+      ],
+      "GRingPointLongitude": [
+        30.0,
+        30.0,
+        40.0,
+        40.0
+      ],
+      "GRingPointSequenceNo": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "GranuleDayNightFlag": "Night",
+      "HorizontalTileNumber": "21",
+      "LocalGranuleID": "VNP46A4.A2025001.h21v02.002.2026076221750.h5",
+      "LongName": "VIIRS/NPP Lunar BRDF-Adjusted Nighttime Lights Yearly L3 Global 15 arc second Linear Lat Lon Grid",
+      "NorthBoundingCoord": 70.0,
+      "NumberofInputGranules": "325",
+      "PGENumber": "557",
+      "PGEVersion": "2.0.5",
+      "PGE_EndTime": "2026-01-01 00:00:00.000",
+      "PGE_Name": "PGE557",
+      "PGE_StartTime": "2025-01-01 00:00:00.000",
+      "PlatformShortName": "SUOMI-NPP",
+      "ProcessVersion": "002",
+      "ProcessingCenter": "LandSIPS",
+      "ProcessingEnvironment": "Linux minion20441 5.4.0-1125-fips #135-Ubuntu SMP Mon Sep 22 20:40:31 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux",
+      "ProductionTime": "2026-03-17 22:17:50.000",
+      "RangeBeginningDate": "2025-01-01",
+      "RangeBeginningTime": "00:00:00.000000",
+      "RangeEndingDate": "2025-12-31",
+      "RangeEndingTime": "23:59:00.000000",
+      "SatelliteInstrument": "NPP_OPS",
+      "SensorShortname": "VIIRS",
+      "ShortName": "VNP46A4",
+      "SouthBoundingCoord": 60.0,
+      "StartTime": "2025-01-01 00:00:00",
+      "TileID": "61021002",
+      "VersionID": "002",
+      "VerticalTileNumber": "02",
+      "WestBoundingCoord": 30.0,
+      "creator_email": "modis-ops@lists.nasa.gov",
+      "creator_name": "VIIRS Land SIPS Processing Group",
+      "creator_url": "https://ladsweb.modaps.eosdis.nasa.gov",
+      "identifier_product_doi": "10.5067/VIIRS/VNP46A4.002",
+      "identifier_product_doi_authority": "https://doi.org",
+      "naming_authority": "gov.nasa.gsfc.VIIRSland",
+      "publisher_email": "modis-ops@lists.nasa.gov",
+      "publisher_name": "LAADS",
+      "publisher_url": "https://ladsweb.modaps.eosdis.nasa.gov"
+    },
+    "datasets": {
+      "NearNadir_Composite_Snow_Free": {
+        "dtype": "float32",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            -999.9000244140625
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Temporal Radiance Composite Using Near Nadir Angle Observations (View Zenith Angle 0-20 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "nWatts/(cm^2 sr)",
+          "valid_range": ">= 0.0"
+        }
+      },
+      "NearNadir_Composite_Snow_Free_Quality": {
+        "dtype": "uint8",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "Description": "Quality:\n\t  0 = Good quality\n\t  1 = Poor quality\n\t  2 = Gap filled\n\t  255 = Fill value",
+          "_FillValue": [
+            255
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Quality Flag of Temporal Radiance Composite Using Near Nadir Angle Observations (View Zenith Angle 0-20 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "flag, no units",
+          "valid_range": [
+            0,
+            254
+          ]
+        }
+      },
+      "NearNadir_Composite_Snow_Free_Num": {
+        "dtype": "uint16",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            65535
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Number of Observations of Temporal Radiance Composite Using Near Nadir Angle Observations (View Zenith Angle 0-20 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "number of observations",
+          "valid_range": [
+            0,
+            65534
+          ]
+        }
+      },
+      "NearNadir_Composite_Snow_Free_Std": {
+        "dtype": "float32",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            -999.9000244140625
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Standard Deviation of Temporal Radiance Composite Using Near Nadir Angle Observations (View Zenith Angle 0-20 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "nWatts/(cm^2 sr)",
+          "valid_range": ">= 0.0"
+        }
+      },
+      "OffNadir_Composite_Snow_Free": {
+        "dtype": "float32",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            -999.9000244140625
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Temporal Radiance Composite Using Off Nadir Angle Observations (View Zenith Angle 40-60 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "nWatts/(cm^2 sr)",
+          "valid_range": ">= 0.0"
+        }
+      },
+      "OffNadir_Composite_Snow_Free_Quality": {
+        "dtype": "uint8",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "Description": "Quality:\n\t  0 = Good quality\n\t  1 = Poor quality\n\t  2 = Gap filled\n\t  255 = Fill value",
+          "_FillValue": [
+            255
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Quality Flag of Temporal Radiance Composite Using Off Nadir Angle Observations (View Zenith Angle 40-60 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "flag, no units",
+          "valid_range": [
+            0,
+            254
+          ]
+        }
+      },
+      "OffNadir_Composite_Snow_Free_Num": {
+        "dtype": "uint16",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            65535
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Number of Observations of Temporal Radiance Composite Using Off Nadir Angle Observations (View Zenith Angle 40-60 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "number of observations",
+          "valid_range": [
+            0,
+            65534
+          ]
+        }
+      },
+      "OffNadir_Composite_Snow_Free_Std": {
+        "dtype": "float32",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            -999.9000244140625
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Standard Deviation of Temporal Radiance Composite Using Off Nadir Angle Observations (View Zenith Angle 40-60 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "nWatts/(cm^2 sr)",
+          "valid_range": ">= 0.0"
+        }
+      },
+      "AllAngle_Composite_Snow_Free": {
+        "dtype": "float32",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            -999.9000244140625
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Temporal Radiance Composite Using All Observations During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "nWatts/(cm^2 sr)",
+          "valid_range": ">= 0.0"
+        }
+      },
+      "AllAngle_Composite_Snow_Free_Quality": {
+        "dtype": "uint8",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "Description": "Quality:\n\t  0 = Good quality\n\t  1 = Poor quality\n\t  2 = Gap filled\n\t  255 = Fill value",
+          "_FillValue": [
+            255
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Quality Flag of Temporal Radiance Composite Using All Observations During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "flag, no units",
+          "valid_range": [
+            0,
+            254
+          ]
+        }
+      },
+      "AllAngle_Composite_Snow_Free_Num": {
+        "dtype": "uint16",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            65535
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Number of Observations of Temporal Radiance Composite Using All Observations During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "number of observations",
+          "valid_range": [
+            0,
+            65534
+          ]
+        }
+      },
+      "AllAngle_Composite_Snow_Free_Std": {
+        "dtype": "float32",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            -999.9000244140625
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Standard Deviation of Temporal Radiance Composite Using All Observations During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "nWatts/(cm^2 sr)",
+          "valid_range": ">= 0.0"
+        }
+      },
+      "Land_Water_Mask": {
+        "dtype": "uint8",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "Description": "Land/Water:\n\t  0 = Land & Desert \n\t  1 = Land no Desert \n\t  2 = Inland Water \n\t  3 = Sea Water \n\t  5 = Coastal",
+          "_FillValue": [
+            255
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Land Water Mask",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "land water mask, no units",
+          "valid_range": [
+            0,
+            254
+          ]
+        }
+      }
+    },
+    "coordinate_conventions": {
+      "lat": "upper_left_edges",
+      "lon": "upper_left_edges"
+    }
+  },
+  "h20v03": {
+    "filename": "VNP46A4.A2025001.h20v03.002.2026076194940.h5",
+    "sha256": "1e6629232c61146b3c4be53cbad206afbd0a19acaaf3cf9c1573da0440139651",
+    "global_attributes": {
+      "AlgorithmType": "SCI",
+      "AlgorithmVersion": "NPP_PR46A3 2.0.0",
+      "Conventions": "CF-1.6",
+      "DataResolution": "15 arc second",
+      "DayNightFlag": "Night",
+      "EastBoundingCoord": 30.0,
+      "EndTime": "2026-01-01 00:00:00",
+      "GRingPointLatitude": [
+        50.0,
+        60.0,
+        60.0,
+        50.0
+      ],
+      "GRingPointLongitude": [
+        20.0,
+        20.0,
+        30.0,
+        30.0
+      ],
+      "GRingPointSequenceNo": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "GranuleDayNightFlag": "Night",
+      "HorizontalTileNumber": "20",
+      "LocalGranuleID": "VNP46A4.A2025001.h20v03.002.2026076194940.h5",
+      "LongName": "VIIRS/NPP Lunar BRDF-Adjusted Nighttime Lights Yearly L3 Global 15 arc second Linear Lat Lon Grid",
+      "NorthBoundingCoord": 60.0,
+      "NumberofInputGranules": "363",
+      "PGENumber": "557",
+      "PGEVersion": "2.0.5",
+      "PGE_EndTime": "2026-01-01 00:00:00.000",
+      "PGE_Name": "PGE557",
+      "PGE_StartTime": "2025-01-01 00:00:00.000",
+      "PlatformShortName": "SUOMI-NPP",
+      "ProcessVersion": "002",
+      "ProcessingCenter": "LandSIPS",
+      "ProcessingEnvironment": "Linux minion20432 5.4.0-1125-fips #135-Ubuntu SMP Mon Sep 22 20:40:31 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux",
+      "ProductionTime": "2026-03-17 19:49:40.000",
+      "RangeBeginningDate": "2025-01-01",
+      "RangeBeginningTime": "00:00:00.000000",
+      "RangeEndingDate": "2025-12-31",
+      "RangeEndingTime": "23:59:00.000000",
+      "SatelliteInstrument": "NPP_OPS",
+      "SensorShortname": "VIIRS",
+      "ShortName": "VNP46A4",
+      "SouthBoundingCoord": 50.0,
+      "StartTime": "2025-01-01 00:00:00",
+      "TileID": "61020003",
+      "VersionID": "002",
+      "VerticalTileNumber": "03",
+      "WestBoundingCoord": 20.0,
+      "creator_email": "modis-ops@lists.nasa.gov",
+      "creator_name": "VIIRS Land SIPS Processing Group",
+      "creator_url": "https://ladsweb.modaps.eosdis.nasa.gov",
+      "identifier_product_doi": "10.5067/VIIRS/VNP46A4.002",
+      "identifier_product_doi_authority": "https://doi.org",
+      "naming_authority": "gov.nasa.gsfc.VIIRSland",
+      "publisher_email": "modis-ops@lists.nasa.gov",
+      "publisher_name": "LAADS",
+      "publisher_url": "https://ladsweb.modaps.eosdis.nasa.gov"
+    },
+    "datasets": {
+      "NearNadir_Composite_Snow_Free": {
+        "dtype": "float32",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            -999.9000244140625
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Temporal Radiance Composite Using Near Nadir Angle Observations (View Zenith Angle 0-20 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "nWatts/(cm^2 sr)",
+          "valid_range": ">= 0.0"
+        }
+      },
+      "NearNadir_Composite_Snow_Free_Quality": {
+        "dtype": "uint8",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "Description": "Quality:\n\t  0 = Good quality\n\t  1 = Poor quality\n\t  2 = Gap filled\n\t  255 = Fill value",
+          "_FillValue": [
+            255
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Quality Flag of Temporal Radiance Composite Using Near Nadir Angle Observations (View Zenith Angle 0-20 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "flag, no units",
+          "valid_range": [
+            0,
+            254
+          ]
+        }
+      },
+      "NearNadir_Composite_Snow_Free_Num": {
+        "dtype": "uint16",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            65535
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Number of Observations of Temporal Radiance Composite Using Near Nadir Angle Observations (View Zenith Angle 0-20 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "number of observations",
+          "valid_range": [
+            0,
+            65534
+          ]
+        }
+      },
+      "NearNadir_Composite_Snow_Free_Std": {
+        "dtype": "float32",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            -999.9000244140625
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Standard Deviation of Temporal Radiance Composite Using Near Nadir Angle Observations (View Zenith Angle 0-20 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "nWatts/(cm^2 sr)",
+          "valid_range": ">= 0.0"
+        }
+      },
+      "OffNadir_Composite_Snow_Free": {
+        "dtype": "float32",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            -999.9000244140625
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Temporal Radiance Composite Using Off Nadir Angle Observations (View Zenith Angle 40-60 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "nWatts/(cm^2 sr)",
+          "valid_range": ">= 0.0"
+        }
+      },
+      "OffNadir_Composite_Snow_Free_Quality": {
+        "dtype": "uint8",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "Description": "Quality:\n\t  0 = Good quality\n\t  1 = Poor quality\n\t  2 = Gap filled\n\t  255 = Fill value",
+          "_FillValue": [
+            255
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Quality Flag of Temporal Radiance Composite Using Off Nadir Angle Observations (View Zenith Angle 40-60 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "flag, no units",
+          "valid_range": [
+            0,
+            254
+          ]
+        }
+      },
+      "OffNadir_Composite_Snow_Free_Num": {
+        "dtype": "uint16",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            65535
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Number of Observations of Temporal Radiance Composite Using Off Nadir Angle Observations (View Zenith Angle 40-60 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "number of observations",
+          "valid_range": [
+            0,
+            65534
+          ]
+        }
+      },
+      "OffNadir_Composite_Snow_Free_Std": {
+        "dtype": "float32",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            -999.9000244140625
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Standard Deviation of Temporal Radiance Composite Using Off Nadir Angle Observations (View Zenith Angle 40-60 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "nWatts/(cm^2 sr)",
+          "valid_range": ">= 0.0"
+        }
+      },
+      "AllAngle_Composite_Snow_Free": {
+        "dtype": "float32",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            -999.9000244140625
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Temporal Radiance Composite Using All Observations During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "nWatts/(cm^2 sr)",
+          "valid_range": ">= 0.0"
+        }
+      },
+      "AllAngle_Composite_Snow_Free_Quality": {
+        "dtype": "uint8",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "Description": "Quality:\n\t  0 = Good quality\n\t  1 = Poor quality\n\t  2 = Gap filled\n\t  255 = Fill value",
+          "_FillValue": [
+            255
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Quality Flag of Temporal Radiance Composite Using All Observations During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "flag, no units",
+          "valid_range": [
+            0,
+            254
+          ]
+        }
+      },
+      "AllAngle_Composite_Snow_Free_Num": {
+        "dtype": "uint16",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            65535
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Number of Observations of Temporal Radiance Composite Using All Observations During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "number of observations",
+          "valid_range": [
+            0,
+            65534
+          ]
+        }
+      },
+      "AllAngle_Composite_Snow_Free_Std": {
+        "dtype": "float32",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            -999.9000244140625
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Standard Deviation of Temporal Radiance Composite Using All Observations During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "nWatts/(cm^2 sr)",
+          "valid_range": ">= 0.0"
+        }
+      },
+      "Land_Water_Mask": {
+        "dtype": "uint8",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "Description": "Land/Water:\n\t  0 = Land & Desert \n\t  1 = Land no Desert \n\t  2 = Inland Water \n\t  3 = Sea Water \n\t  5 = Coastal",
+          "_FillValue": [
+            255
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Land Water Mask",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "land water mask, no units",
+          "valid_range": [
+            0,
+            254
+          ]
+        }
+      }
+    },
+    "coordinate_conventions": {
+      "lat": "upper_left_edges",
+      "lon": "upper_left_edges"
+    }
+  },
+  "h21v03": {
+    "filename": "VNP46A4.A2025001.h21v03.002.2026076222151.h5",
+    "sha256": "ec4e6252fb1495e817500245ed288ae0b8ffd7b81a0670dd43857a8594e7f301",
+    "global_attributes": {
+      "AlgorithmType": "SCI",
+      "AlgorithmVersion": "NPP_PR46A3 2.0.0",
+      "Conventions": "CF-1.6",
+      "DataResolution": "15 arc second",
+      "DayNightFlag": "Night",
+      "EastBoundingCoord": 40.0,
+      "EndTime": "2026-01-01 00:00:00",
+      "GRingPointLatitude": [
+        50.0,
+        60.0,
+        60.0,
+        50.0
+      ],
+      "GRingPointLongitude": [
+        30.0,
+        30.0,
+        40.0,
+        40.0
+      ],
+      "GRingPointSequenceNo": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "GranuleDayNightFlag": "Night",
+      "HorizontalTileNumber": "21",
+      "LocalGranuleID": "VNP46A4.A2025001.h21v03.002.2026076222151.h5",
+      "LongName": "VIIRS/NPP Lunar BRDF-Adjusted Nighttime Lights Yearly L3 Global 15 arc second Linear Lat Lon Grid",
+      "NorthBoundingCoord": 60.0,
+      "NumberofInputGranules": "363",
+      "PGENumber": "557",
+      "PGEVersion": "2.0.5",
+      "PGE_EndTime": "2026-01-01 00:00:00.000",
+      "PGE_Name": "PGE557",
+      "PGE_StartTime": "2025-01-01 00:00:00.000",
+      "PlatformShortName": "SUOMI-NPP",
+      "ProcessVersion": "002",
+      "ProcessingCenter": "LandSIPS",
+      "ProcessingEnvironment": "Linux minion20493 5.4.0-1125-fips #135-Ubuntu SMP Mon Sep 22 20:40:31 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux",
+      "ProductionTime": "2026-03-17 22:21:51.000",
+      "RangeBeginningDate": "2025-01-01",
+      "RangeBeginningTime": "00:00:00.000000",
+      "RangeEndingDate": "2025-12-31",
+      "RangeEndingTime": "23:59:00.000000",
+      "SatelliteInstrument": "NPP_OPS",
+      "SensorShortname": "VIIRS",
+      "ShortName": "VNP46A4",
+      "SouthBoundingCoord": 50.0,
+      "StartTime": "2025-01-01 00:00:00",
+      "TileID": "61021003",
+      "VersionID": "002",
+      "VerticalTileNumber": "03",
+      "WestBoundingCoord": 30.0,
+      "creator_email": "modis-ops@lists.nasa.gov",
+      "creator_name": "VIIRS Land SIPS Processing Group",
+      "creator_url": "https://ladsweb.modaps.eosdis.nasa.gov",
+      "identifier_product_doi": "10.5067/VIIRS/VNP46A4.002",
+      "identifier_product_doi_authority": "https://doi.org",
+      "naming_authority": "gov.nasa.gsfc.VIIRSland",
+      "publisher_email": "modis-ops@lists.nasa.gov",
+      "publisher_name": "LAADS",
+      "publisher_url": "https://ladsweb.modaps.eosdis.nasa.gov"
+    },
+    "datasets": {
+      "NearNadir_Composite_Snow_Free": {
+        "dtype": "float32",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            -999.9000244140625
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Temporal Radiance Composite Using Near Nadir Angle Observations (View Zenith Angle 0-20 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "nWatts/(cm^2 sr)",
+          "valid_range": ">= 0.0"
+        }
+      },
+      "NearNadir_Composite_Snow_Free_Quality": {
+        "dtype": "uint8",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "Description": "Quality:\n\t  0 = Good quality\n\t  1 = Poor quality\n\t  2 = Gap filled\n\t  255 = Fill value",
+          "_FillValue": [
+            255
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Quality Flag of Temporal Radiance Composite Using Near Nadir Angle Observations (View Zenith Angle 0-20 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "flag, no units",
+          "valid_range": [
+            0,
+            254
+          ]
+        }
+      },
+      "NearNadir_Composite_Snow_Free_Num": {
+        "dtype": "uint16",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            65535
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Number of Observations of Temporal Radiance Composite Using Near Nadir Angle Observations (View Zenith Angle 0-20 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "number of observations",
+          "valid_range": [
+            0,
+            65534
+          ]
+        }
+      },
+      "NearNadir_Composite_Snow_Free_Std": {
+        "dtype": "float32",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            -999.9000244140625
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Standard Deviation of Temporal Radiance Composite Using Near Nadir Angle Observations (View Zenith Angle 0-20 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "nWatts/(cm^2 sr)",
+          "valid_range": ">= 0.0"
+        }
+      },
+      "OffNadir_Composite_Snow_Free": {
+        "dtype": "float32",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            -999.9000244140625
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Temporal Radiance Composite Using Off Nadir Angle Observations (View Zenith Angle 40-60 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "nWatts/(cm^2 sr)",
+          "valid_range": ">= 0.0"
+        }
+      },
+      "OffNadir_Composite_Snow_Free_Quality": {
+        "dtype": "uint8",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "Description": "Quality:\n\t  0 = Good quality\n\t  1 = Poor quality\n\t  2 = Gap filled\n\t  255 = Fill value",
+          "_FillValue": [
+            255
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Quality Flag of Temporal Radiance Composite Using Off Nadir Angle Observations (View Zenith Angle 40-60 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "flag, no units",
+          "valid_range": [
+            0,
+            254
+          ]
+        }
+      },
+      "OffNadir_Composite_Snow_Free_Num": {
+        "dtype": "uint16",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            65535
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Number of Observations of Temporal Radiance Composite Using Off Nadir Angle Observations (View Zenith Angle 40-60 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "number of observations",
+          "valid_range": [
+            0,
+            65534
+          ]
+        }
+      },
+      "OffNadir_Composite_Snow_Free_Std": {
+        "dtype": "float32",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            -999.9000244140625
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Standard Deviation of Temporal Radiance Composite Using Off Nadir Angle Observations (View Zenith Angle 40-60 degree) During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "nWatts/(cm^2 sr)",
+          "valid_range": ">= 0.0"
+        }
+      },
+      "AllAngle_Composite_Snow_Free": {
+        "dtype": "float32",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            -999.9000244140625
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Temporal Radiance Composite Using All Observations During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "nWatts/(cm^2 sr)",
+          "valid_range": ">= 0.0"
+        }
+      },
+      "AllAngle_Composite_Snow_Free_Quality": {
+        "dtype": "uint8",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "Description": "Quality:\n\t  0 = Good quality\n\t  1 = Poor quality\n\t  2 = Gap filled\n\t  255 = Fill value",
+          "_FillValue": [
+            255
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Quality Flag of Temporal Radiance Composite Using All Observations During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "flag, no units",
+          "valid_range": [
+            0,
+            254
+          ]
+        }
+      },
+      "AllAngle_Composite_Snow_Free_Num": {
+        "dtype": "uint16",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            65535
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Number of Observations of Temporal Radiance Composite Using All Observations During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "number of observations",
+          "valid_range": [
+            0,
+            65534
+          ]
+        }
+      },
+      "AllAngle_Composite_Snow_Free_Std": {
+        "dtype": "float32",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "_FillValue": [
+            -999.9000244140625
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Standard Deviation of Temporal Radiance Composite Using All Observations During Snow-free Period",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "nWatts/(cm^2 sr)",
+          "valid_range": ">= 0.0"
+        }
+      },
+      "Land_Water_Mask": {
+        "dtype": "uint8",
+        "shape": [
+          2400,
+          2400
+        ],
+        "attributes": {
+          "Description": "Land/Water:\n\t  0 = Land & Desert \n\t  1 = Land no Desert \n\t  2 = Inland Water \n\t  3 = Sea Water \n\t  5 = Coastal",
+          "_FillValue": [
+            255
+          ],
+          "coordinates": "latitude longitude",
+          "long_name": "Land Water Mask",
+          "offset": [
+            0.0
+          ],
+          "scale_factor": [
+            1.0
+          ],
+          "units": "land water mask, no units",
+          "valid_range": [
+            0,
+            254
+          ]
+        }
+      }
+    },
+    "coordinate_conventions": {
+      "lat": "upper_left_edges",
+      "lon": "upper_left_edges"
+    }
+  }
+}

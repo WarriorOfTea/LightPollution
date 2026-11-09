@@ -52,13 +52,20 @@ def make_tile(path: Path,h:int,v:int,value:float,year=2025):
         fields.create_dataset('lon',data=-180+10*h+(np.arange(2400)+0.5)/240)
 
 
-def test_four_tile_mosaic_is_north_to_south_without_seam(tmp_path):
+@pytest.mark.parametrize('coordinate_convention',['cell_centres','upper_left_edges'])
+def test_four_tile_mosaic_is_north_to_south_without_seam(tmp_path,coordinate_convention):
     bounds=Bounds(30-1/240,60-1/240,30+1/240,60+1/240)
     for h,v,value in ((20,2,1),(21,2,2),(20,3,3),(21,3,4)):
         make_tile(tmp_path/f'VNP46A4.A2025001.h{h:02}v{v:02}.002.2026001000000.h5',h,v,value)
+    if coordinate_convention=='upper_left_edges':
+        for path in tmp_path.glob('*.h5'):
+            with h5py.File(path,'r+') as f:
+                f[GRID+'/lat'][:]+=1/480
+                f[GRID+'/lon'][:]-=1/480
     arrays,metadata=read_region(tmp_path,bounds)
     np.testing.assert_array_equal(arrays['NearNadir_Composite_Snow_Free'],[[1,2],[3,4]])
     assert len(metadata)==4
+    assert all(m['coordinate_conventions']['lat']==coordinate_convention for m in metadata.values())
     summary=audit(arrays,bounds)
     assert summary['composites']['NearNadir']['accepted_pixels']==4
     path=tmp_path/'window.npz'
@@ -70,6 +77,16 @@ def test_four_tile_mosaic_is_north_to_south_without_seam(tmp_path):
 
 def test_missing_tile_fails_instead_of_silently_filling_dark(tmp_path):
     with pytest.raises(ValueError,match='pinned file'): read_region(tmp_path,Bounds())
+
+
+def test_nonstandard_coordinate_shift_is_rejected(tmp_path):
+    bounds=Bounds(30,59.5,30+1/240,59.5+1/240)
+    path=tmp_path/'VNP46A4.A2025001.h21v03.002.2026001000000.h5'
+    make_tile(path,21,3,1)
+    with h5py.File(path,'r+') as f:
+        f[GRID+'/lat'][:]+=0.001
+    with pytest.raises(ValueError,match='Coordinate order'):
+        read_region(tmp_path,bounds)
 
 
 def test_aggregation_preserves_weights_and_uses_correct_water_classes():

@@ -134,6 +134,7 @@ def read_region(directory: Path, bounds: Bounds, year: int = 2025) -> tuple[dict
                 "sha256": sha256(path),
                 "global_attributes": {key: json_value(value) for key, value in handle.attrs.items() if key != "InputPointer"},
                 "datasets": {},
+                "coordinate_conventions": {},
             }
             names = [f"{prefix}_Composite_Snow_Free{suffix}" for prefix in COMPOSITES
                      for suffix in ("", "_Quality", "_Num", "_Std")] + ["Land_Water_Mask"]
@@ -157,15 +158,23 @@ def read_region(directory: Path, bounds: Bounds, year: int = 2025) -> tuple[dict
                     coordinate_data = fields[coordinate]
                     if coordinate_data.ndim == 1:
                         part = np.asarray(coordinate_data[src[0] if coordinate == "lat" else src[1]])
-                        if not np.allclose(part, expected, rtol=0, atol=1e-5):
-                            raise ValueError(f"Coordinate order/centres disagree in {path.name}.")
+                        target = expected
                     elif coordinate_data.ndim == 2:
                         part = np.asarray(coordinate_data[src])
                         target = expected[:, None] if coordinate == "lat" else expected[None, :]
-                        if not np.allclose(part, target, rtol=0, atol=1e-5):
-                            raise ValueError(f"Coordinate order/centres disagree in {path.name}.")
                     else:
                         raise ValueError(f"Unexpected coordinate dimensions in {path.name}.")
+                    # Actual VNP46A4.002 files label the upper-left pixel edges
+                    # in lat/lon. Keep cell centres for finite-area integration,
+                    # derived from checked tile bounds and 2400 grid dimensions.
+                    edge_shift = 1/480 if coordinate == "lat" else -1/480
+                    if np.allclose(part,target,rtol=0,atol=1e-5):
+                        convention = "cell_centres"
+                    elif np.allclose(part,target+edge_shift,rtol=0,atol=1e-5):
+                        convention = "upper_left_edges"
+                    else:
+                        raise ValueError(f"Coordinate order/centres/edges disagree in {path.name}.")
+                    tile_info["coordinate_conventions"][coordinate] = convention
             attributes[tile] = tile_info
         coverage[dst] += 1
     if not np.all(coverage == 1):
