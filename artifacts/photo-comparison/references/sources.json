@@ -1,0 +1,38 @@
+[
+  {
+    "file": "galactic-2012.jpg",
+    "author": "Nicholas A. Tonelli",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Galactic_(7990986814).jpg",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "changes": "Original 1728x2304 JPEG, unchanged",
+    "sha256": "b2ecf03acfc7a3779d2c999bc615e10d18ffe85d5909d795f4b5945647217997"
+  },
+  {
+    "file": "sweet-spot-2014.jpg",
+    "author": "Christian Reimer",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Sweet_spot_-_Flickr_-_christianreimer.jpg",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "changes": "Wikimedia 1280px thumbnail, unchanged",
+    "sha256": "5f9ec28d287e60086e6ded57c2af7a558e255c6fce457de0b049855f4a84331c"
+  },
+  {
+    "file": "luhasoo-2015.jpg",
+    "author": "Martin Mark",
+    "source_page": "https://commons.wikimedia.org/wiki/File:In_the_photo_there_is_one_Perseid,_Milky_Way_and_Andromega_galaxy_and_light_pollution_on_the_horizon_-_Luhasoo_bog_in_Estonia.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Resized only to width 1600; original colour processing retained",
+    "sha256": "cb104c21dbaa68f6c3443fcbcfbd73db39584e84f4bafaa98a5f2528b52a4fb8"
+  },
+  {
+    "file": "ruka-clouds-2013.jpg",
+    "author": "Timo Newton-Syms",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Orange_Skies_(8455770342).jpg",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "changes": "Original JPEG, unchanged; clouds, snow and ski-slope lighting; NOT a clear-sky benchmark",
+    "sha256": "e1bfed11b093465fd4b268cc5fdc84966e103e0c4d3db55541de7674b50b2e22"
+  }
+]

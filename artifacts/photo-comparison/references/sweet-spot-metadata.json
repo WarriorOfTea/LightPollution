@@ -1,0 +1,46 @@
+{
+  "source": "Wikimedia Commons API imageinfo metadata and extmetadata",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Sweet_spot_-_Flickr_-_christianreimer.jpg",
+  "retrieved_date_utc": "2026-11-09",
+  "commons_description_fields": {
+    "GPSLatitude": {
+      "value": "49.532563",
+      "source": "commons-desc-page"
+    },
+    "GPSLongitude": {
+      "value": "6.549911",
+      "source": "commons-desc-page"
+    },
+    "DateTimeOriginal": {
+      "value": "Taken on 14 September 2014, 22:08",
+      "source": "commons-desc-page"
+    },
+    "Artist": {
+      "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/74395916@N08\">Christian Reimer</a>",
+      "source": "commons-desc-page"
+    },
+    "LicenseShortName": {
+      "value": "CC BY-SA 2.0",
+      "source": "commons-desc-page",
+      "hidden": ""
+    },
+    "LicenseUrl": {
+      "value": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source": "commons-desc-page"
+    }
+  },
+  "original_file_exif": {
+    "Make": "SONY",
+    "Model": "ILCE-7",
+    "Software": "Adobe Photoshop Lightroom 5.6 (Macintosh)",
+    "DateTime": "2014:09:22 23:17:43",
+    "ExposureTime": "15/1",
+    "FNumber": "35/10",
+    "ISOSpeedRatings": 6400,
+    "DateTimeOriginal": "2014:09:22 22:08:19",
+    "DateTimeDigitized": "2014:09:22 22:08:19",
+    "FocalLength": "28/1",
+    "WhiteBalance": 0
+  },
+  "interpretation": "Date conflict retained; timezone and exact camera position accuracy not independently established."
+}

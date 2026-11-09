@@ -1,0 +1,76 @@
+{
+  "sky": {
+    "shape": [
+      15,
+      72
+    ],
+    "finite_positive_values": 1080,
+    "unique_integrated_rays": 1009,
+    "csv_npz_consistent": true,
+    "zenith_unique": true
+  },
+  "controls": {
+    "rays": 4,
+    "matches_final_grid": true,
+    "max_quadrature_relative_difference": 0.00026027807372452916,
+    "max_aggregation_relative_difference": 0.004699417206242895
+  },
+  "sources": {
+    "year": 2014,
+    "base_sources": 3253,
+    "weight_sum": 1.0000000000000002
+  },
+  "photographs": [
+    {
+      "file": "galactic-2012.jpg",
+      "hash_verified": true,
+      "license": "CC BY 2.0"
+    },
+    {
+      "file": "sweet-spot-2014.jpg",
+      "hash_verified": true,
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "file": "luhasoo-2015.jpg",
+      "hash_verified": true,
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "file": "ruka-clouds-2013.jpg",
+      "hash_verified": true,
+      "license": "CC BY-SA 2.0"
+    }
+  ],
+  "figures": {
+    "real-sky-examples.png": {
+      "sha256": "3c83565cd57f91a128f8f9ac90f0053916d468745312bd778f2aae9976e82856",
+      "size_pixels": [
+        2210,
+        1870
+      ],
+      "image_decodes": true,
+      "visually_reviewed": true
+    },
+    "photo-vs-model.png": {
+      "sha256": "824a4c9489ce6bc8f365988fd91868c0ef8fc3544f145c170ff982cd2d1f1a88",
+      "size_pixels": [
+        2880,
+        1920
+      ],
+      "image_decodes": true,
+      "visually_reviewed": true
+    }
+  },
+  "documentation_local_links_exist": true,
+  "automated_tests": {
+    "passed": 52,
+    "failed": 0,
+    "skipped": 0,
+    "duration_seconds": 14.19
+  },
+  "compilation_passed": true,
+  "lock_consistent": true,
+  "physical_accuracy_bound": null,
+  "registration_verified": false
+}

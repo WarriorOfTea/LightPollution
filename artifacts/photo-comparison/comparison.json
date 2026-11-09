@@ -1,0 +1,70 @@
+{
+  "observer": {
+    "latitude_deg": 49.532563,
+    "longitude_deg": 6.549911,
+    "height_m": 20
+  },
+  "source_year": 2014,
+  "astrometry_assumed": {
+    "utc": "2014-09-14T20:08:00Z",
+    "sun_altitude_deg": -21.798387559862153,
+    "moon_altitude_deg": -7.490768445062498,
+    "refraction": false,
+    "proper_motion": "J2000 tangent-vector propagation; no perspective acceleration or stellar parallax",
+    "iers": "Offline bundled tables from lock-pinned astropy-iers-data",
+    "earth_geometry": "WGS84 astrometry; spherical Earth in transfer solver"
+  },
+  "astrometry_alternate": {
+    "utc": "2014-09-22T20:08:19Z",
+    "sun_altitude_deg": -24.830789589230474,
+    "moon_altitude_deg": -30.229240083944124,
+    "refraction": false,
+    "proper_motion": "J2000 tangent-vector propagation; no perspective acceleration or stellar parallax",
+    "iers": "Offline bundled tables from lock-pinned astropy-iers-data",
+    "earth_geometry": "WGS84 astrometry; spherical Earth in transfer solver"
+  },
+  "photograph_registration_verified": false,
+  "colour_prediction_implemented": false,
+  "physical_accuracy_bound": null,
+  "display_scenarios": [
+    {
+      "artificial_zenith_mag": 20.5,
+      "visible_catalogue_rows": 744
+    },
+    {
+      "artificial_zenith_mag": 23.5,
+      "visible_catalogue_rows": 1830
+    }
+  ],
+  "profiles": [
+    {
+      "altitude_deg": 1,
+      "sampled_peak_azimuth_deg": 145.0,
+      "peak_artificial_radiance_over_zenith": 49.19005909876849,
+      "peak_over_azimuthal_minimum": 17.582905111142278
+    },
+    {
+      "altitude_deg": 5,
+      "sampled_peak_azimuth_deg": 145.0,
+      "peak_artificial_radiance_over_zenith": 25.081390770212685,
+      "peak_over_azimuthal_minimum": 9.840351409529417
+    },
+    {
+      "altitude_deg": 15,
+      "sampled_peak_azimuth_deg": 285.0,
+      "peak_artificial_radiance_over_zenith": 9.032026188514138,
+      "peak_over_azimuthal_minimum": 4.579430753354462
+    },
+    {
+      "altitude_deg": 45,
+      "sampled_peak_azimuth_deg": 270.0,
+      "peak_artificial_radiance_over_zenith": 1.8782570771275684,
+      "peak_over_azimuthal_minimum": 1.6092801883274421
+    }
+  ],
+  "comparison_scope": "Same published location, different fields of view. No brightness, exposure, colour or atmosphere fitted to the photograph.",
+  "output_sha256": {
+    "real-sky-examples.png": "3c83565cd57f91a128f8f9ac90f0053916d468745312bd778f2aae9976e82856",
+    "photo-vs-model.png": "824a4c9489ce6bc8f365988fd91868c0ef8fc3544f145c170ff982cd2d1f1a88"
+  }
+}

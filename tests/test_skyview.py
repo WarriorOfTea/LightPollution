@@ -75,3 +75,27 @@ def test_real_astrometry_polaris_is_north_and_clock_changes_other_stars():
         horizontal_stars(stars,observer,'2026-11-09T21:00:00')
     with pytest.raises(ValueError,match='Sun'):
         horizontal_stars(stars,observer,'2026-11-09T10:00:00Z')
+
+
+def test_render_new_location_does_not_claim_petersburg_or_the_wrong_source_year(tmp_path, monkeypatch):
+    import json
+    from matplotlib.figure import Figure
+    from lightpollution import skyview
+
+    observer = {'latitude_deg':49.532563, 'longitude_deg':6.549911, 'height_m':20}
+    metadata = {'observer':observer, 'atmosphere':{},
+                'provenance':{'input_kind':'blackmarble', 'region_metadata':{'year':2014}}}
+    source = tmp_path/'sky.npz'
+    np.savez(source, azimuth_deg=[0,90,180,270], altitude_deg=[0,45,90],
+             radiance=[[4,6,8,6],[2,3,4,3],[1,1,1,1]], metadata_json=json.dumps(metadata))
+    captions = []
+    monkeypatch.setattr(Figure, 'savefig', lambda fig, *args, **kwargs:
+                        captions.extend(text.get_text() for text in fig.texts))
+    monkeypatch.setattr(skyview, '_perspective', lambda *args, **kwargs: {})
+    result = skyview.render_observer(source, tmp_path/'render', '2014-09-14T20:08:00Z',
+                                     DisplayScenario(23.5))
+    text = '\n'.join(captions)
+    assert 'VNP46A4 (2014)' in text
+    assert '2025' not in text and 'Петербург' not in text
+    assert result['observer'] == observer
+    assert result['astrometry']['utc'] == '2014-09-14T20:08:00Z'

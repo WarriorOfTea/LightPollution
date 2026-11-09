@@ -1,0 +1,86 @@
+{
+  "directions_az_alt_deg": [
+    [
+      145,
+      1
+    ],
+    [
+      285,
+      15
+    ],
+    [
+      0,
+      45
+    ],
+    [
+      0,
+      90
+    ]
+  ],
+  "saved_grid_values": [
+    3.5203404780104013e-12,
+    6.463868507666087e-13,
+    1.0649961604404304e-13,
+    7.156609572153444e-14
+  ],
+  "runs": [
+    {
+      "block": 12,
+      "settings": {
+        "ray_segments": 384,
+        "path_quadrature": 48,
+        "horizontal_fraction": 0.0,
+        "near_ray_scale_m": 500.0
+      },
+      "radiance": [
+        3.5212569839952848e-12,
+        6.464310388343311e-13,
+        1.065048919754697e-13,
+        7.15691988435467e-14
+      ],
+      "source_counts": [
+        6258,
+        3253,
+        3253,
+        3253
+      ]
+    },
+    {
+      "block": 6,
+      "settings": {
+        "ray_segments": 384,
+        "path_quadrature": 48,
+        "horizontal_fraction": 0.0,
+        "near_ray_scale_m": 500.0
+      },
+      "radiance": [
+        3.5212952589897925e-12,
+        6.494832315076444e-13,
+        1.0696218028289644e-13,
+        7.188814961082475e-14
+      ],
+      "source_counts": [
+        12846,
+        10537,
+        10537,
+        10537
+      ]
+    }
+  ],
+  "quadrature_relative_difference": [
+    -0.00026027807372452916,
+    -6.835697091855941e-05,
+    -4.953698678811236e-05,
+    -4.3358344964050666e-05
+  ],
+  "aggregation_relative_difference": [
+    -1.0869578292216353e-05,
+    -0.004699417206242895,
+    -0.004275233603291295,
+    -0.004436764181645181
+  ],
+  "max_abs_quadrature_relative_difference": 0.00026027807372452916,
+  "max_abs_aggregation_relative_difference": 0.004699417206242895,
+  "physical_accuracy_bound": null,
+  "scope": "Four selected rays, including the sampled peaks at 1 and 15 degrees; not a hemisphere error bound or a physical validation."
+}

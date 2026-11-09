@@ -1,0 +1,24 @@
+{
+  "product": "VNP46A4",
+  "collection": "002",
+  "archive_set": "5200",
+  "year": 2012,
+  "tiles": [
+    "h10v04"
+  ],
+  "listing_url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/details/allData/5200/VNP46A4/2012/001",
+  "retrieved_at": "2026-11-09T22:17:04+00:00",
+  "files": [
+    {
+      "downloadsLink": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VNP46A4/2012/001/VNP46A4.A2012001.h10v04.002.2025086170022.h5",
+      "mtime": 1743130572,
+      "name": "VNP46A4.A2012001.h10v04.002.2025086170022.h5",
+      "resourceType": "File",
+      "self": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/details/allData/5200/VNP46A4/2012/001/VNP46A4.A2012001.h10v04.002.2025086170022.h5",
+      "size": 153748808,
+      "status": "Online",
+      "download_verified": true,
+      "sha256": "466377b330acc070e815c8bd4dbe452763d8368a9968ecde22afc5aab2655c16"
+    }
+  ]
+}

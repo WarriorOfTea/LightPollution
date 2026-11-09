@@ -1,0 +1,53 @@
+{
+  "purpose": "Attempted astrometric registration of the photo, NOT a photometric validation",
+  "registration_verified": false,
+  "accepted_matches": 0,
+  "tetra3_source": "https://github.com/esa/tetra3",
+  "tetra3_commit": "f9fa2eb9a32a5efc529e2d86f0b59f35b1e9028d",
+  "database": "Bundled default, Hipparcos, 10–30 degree FOV, magnitude limit 7",
+  "last_attempt": {
+    "image": "references/sweet-spot-2014.jpg",
+    "channel": "green",
+    "crop_boxes_xyxy": [
+      [
+        320,
+        40,
+        960,
+        680
+      ],
+      [
+        0,
+        0,
+        640,
+        640
+      ],
+      [
+        640,
+        200,
+        1280,
+        840
+      ]
+    ],
+    "centroid_extraction": {
+      "sigma": 4,
+      "bg_sub_mode": "local_median",
+      "sigma_mode": "global_median_abs",
+      "filtsize": 21,
+      "max_axis_ratio": 3,
+      "max_returned": 60
+    },
+    "solver": {
+      "pattern_checking_stars": 20,
+      "solve_timeout_ms": 15000,
+      "distortion_range": [
+        -0.08,
+        0.08
+      ],
+      "match_radius": 0.008
+    },
+    "result": "All three crops returned RA=None; no accepted solution"
+  },
+  "compatibility": "Research process only: np.math=math for the pinned solver under NumPy 2; factorial operation unchanged. No runtime dependency was added.",
+  "other_attempts": "Earlier Tetra3 default extraction and Astroalign attempts did not yield a reliable registration.",
+  "conclusion": "No camera azimuth, altitude, roll or matched field of view is claimed."
+}

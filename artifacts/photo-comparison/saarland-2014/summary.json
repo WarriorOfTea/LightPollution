@@ -1,0 +1,93 @@
+{
+  "provenance": {
+    "composite": "NearNadir",
+    "observer": {
+      "latitude_deg": 49.532563,
+      "longitude_deg": 6.549911,
+      "height_m": 20
+    },
+    "block_pixels": 12,
+    "effective_sources": 3253,
+    "retained_positive_pixels": 215716,
+    "normalisation": "Total source power = 1 arbitrary unit; weights proportional to radiance * spherical cell area.",
+    "unknown_pixels_are_not_dark_measurements": true,
+    "excluded_local_radius_m": 3000,
+    "include_water": false,
+    "weight_denominator_radiance_times_area": 111722552228.75385,
+    "weight_removed_water_fraction": 1.6745229234580292e-05,
+    "weight_removed_unknown_surface_fraction": 0.0,
+    "weight_removed_local_fraction": 0.00011033162067580224,
+    "retained_weight_fraction": 0.9998729231500895,
+    "largest_patch_radius_m": 5466.003292630562,
+    "ray_refinement_azimuth_altitude_deg": null,
+    "nearest_retained_pixel_m": 3019.358810367583,
+    "nearest_effective_source_chord_m": 3172.9102546764125,
+    "unmodelled_sources_outside_bounds": {
+      "west": 4.5,
+      "south": 48.0,
+      "east": 9.0,
+      "north": 50.0
+    },
+    "input_kind": "blackmarble",
+    "region_file": "artifacts/photo-comparison/saarland-2014/source-grid.npz",
+    "region_metadata": {
+      "bounds": {
+        "west": 4.5,
+        "south": 48.0,
+        "east": 9.0,
+        "north": 50.0
+      },
+      "year": 2014,
+      "product": "VNP46A4.002",
+      "inputs": [
+        {
+          "filename": "VNP46A4.A2014001.h18v04.002.2025090174541.h5",
+          "sha256": "ce9f0e0dd66574b0f17eba1f8206d06e28627c72fcd02349813331b1bcd3de69"
+        }
+      ]
+    },
+    "ray_refinement": {
+      "at_or_below_altitude_deg": 5,
+      "minimum_sources": 3253,
+      "maximum_sources": 7618
+    }
+  },
+  "observer": {
+    "latitude_deg": 49.532563,
+    "longitude_deg": 6.549911,
+    "height_m": 20
+  },
+  "atmosphere": {
+    "reference_wavelength_nm": 550.0,
+    "rayleigh_scale_height_m": 8000.0,
+    "aerosol_scale_height_m": 1200.0,
+    "aerosol_optical_depth": 0.1,
+    "aerosol_single_scattering_albedo": 0.9,
+    "aerosol_g": 0.8,
+    "rayleigh_multiplier": 1.0,
+    "top_m": 80000.0
+  },
+  "solver": {
+    "ray_segments": 192,
+    "path_quadrature": 24,
+    "horizontal_fraction": 0.0,
+    "near_ray_scale_m": 500.0
+  },
+  "shape": [
+    15,
+    72
+  ],
+  "timing": {
+    "current_invocation_elapsed_seconds": 0.0032107201404869556,
+    "rays_reused": 1009,
+    "rays_computed_this_invocation": 0,
+    "full_campaign_elapsed_seconds": null,
+    "scope": "Current invocation only; interrupted earlier passes are not timed here."
+  },
+  "raw_units": "m^-2 sr^-1 per unit total assumed source power",
+  "absolute_visible_photometry_calibrated": false,
+  "physical_error_bound": null,
+  "azimuth_convention": "North=0, East=90, clockwise",
+  "model_document": "docs/MODEL.md",
+  "photo_case": "artifacts/photo-comparison/case.json"
+}

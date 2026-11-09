@@ -227,7 +227,7 @@ def _draw_dome(ax, az_grid, alt_grid, field, stars, az, alt, extinction, scenari
     rgb = np.repeat(_tone(image)[...,None],3,axis=2)
     rgb[~inside] = np.array([7,11,18])/255
     ax.imshow(rgb,extent=(axis[0],axis[-1],axis[0],axis[-1]),origin="upper",interpolation="nearest")
-    for angle,label in [(0,"С"),(90,"В"),(180,"Ю · Петербург"),(270,"З")]:
+    for angle,label in [(0,"С"),(90,"В"),(180,"Ю"),(270,"З")]:
         tx,ty = dome_coordinates(angle,0)
         ax.text(tx*1.07,ty*1.07,label,color="#bfcbd8",ha="center",va="center",fontsize=11)
     ax.set(xlim=(-1.13,1.13),ylim=(-1.13,1.13),aspect="equal")
@@ -250,6 +250,8 @@ def render_observer(sky_path: Path, output: Path, timestamp: str, scenario: Disp
     field = values/zenith
     observer = Observer(**transfer["observer"])
     atmosphere = Atmosphere(**transfer["atmosphere"])
+    source_year = transfer.get("provenance",{}).get("region_metadata",{}).get("year")
+    source_label = f"VNP46A4 ({source_year})" if source_year is not None else "VNP46A4 (год не указан)"
     stars,catalogue = load_stars()
     az,alt,astrometry = horizontal_stars(stars,observer,timestamp)
     above = alt>=0
@@ -267,7 +269,7 @@ def render_observer(sky_path: Path, output: Path, timestamp: str, scenario: Disp
     fig.text(0.5,0.911,f"{observer.latitude_deg:.3f}° N, {observer.longitude_deg:.3f}° E · {observer.height_m:g} м · {timestamp.replace('T',' ').replace('Z',' UTC')}",ha="center",fontsize=12,color="#b6c4d4")
     fig.text(0.5,0.866,"Весь небесный купол: зенит в центре, горизонт по краю. Вид снизу вверх, восток слева.",ha="center",fontsize=10,color="#8da0b8")
     fig.text(0.5,0.101,f"СЦЕНАРИЙ, НЕ ФОТОГРАФИЯ: искусственный фон в зените {scenario.artificial_zenith_mag:g} mag/arcsec² задан вручную.",ha="center",fontsize=11,color="#e2c68f")
-    fig.text(0.5,0.065,"Форма засветки — перенос света от VNP46A4 (2025). Звёзды — BSC5/HEASARC; одинаковые экспозиция и атмосфера.",ha="center",fontsize=9,color="#8da0b8")
+    fig.text(0.5,0.065,f"Форма засветки — перенос света от {source_label}. Звёзды — BSC5/HEASARC; одинаковые экспозиция и атмосфера.",ha="center",fontsize=9,color="#8da0b8")
     fig.text(0.5,0.031,"Число звёзд зависит от условного порога контраста; естественный фон однородный, Луна и Солнце под горизонтом.",ha="center",fontsize=9,color="#8da0b8")
     fig.savefig(output/"observer-sky.png",dpi=180,facecolor=fig.get_facecolor())
     plt.close(fig)
@@ -277,7 +279,7 @@ def render_observer(sky_path: Path, output: Path, timestamp: str, scenario: Disp
     fig,ax = plt.subplots(figsize=(9,10),facecolor="#070b12")
     fig.subplots_adjust(left=.035,right=.965,top=.9,bottom=.14)
     _draw_dome(ax,az_grid,alt_grid,field,stars,az,alt,extinction,scenario,True,size=1600)
-    fig.text(.5,.95,"Звёзды и засветка · севернее Петербурга",ha="center",fontsize=16)
+    fig.text(.5,.95,"Звёзды и засветка · точка наблюдения",ha="center",fontsize=16)
     fig.text(.5,.91,f"{observer.latitude_deg:.3f}° N · {observer.longitude_deg:.3f}° E · {timestamp.replace('T',' ').replace('Z',' UTC')}",ha="center",fontsize=10,color="#8da0b8")
     fig.text(.5,.09,f"Условный искусственный фон зенита: {scenario.artificial_zenith_mag:g} mag/arcsec².",ha="center",fontsize=10,color="#e2c68f")
     fig.text(.5,.055,"Результат запуска модели; не фотография и не калиброванный прогноз.",ha="center",fontsize=9,color="#8da0b8")
