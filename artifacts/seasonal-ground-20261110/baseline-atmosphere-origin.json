@@ -1,0 +1,16 @@
+{
+  "kind": "baseline_scenario",
+  "user_parameters": [],
+  "default_parameters": [
+    "aerosol_g",
+    "aerosol_optical_depth",
+    "aerosol_scale_height_m",
+    "aerosol_single_scattering_albedo",
+    "rayleigh_multiplier",
+    "rayleigh_scale_height_m",
+    "reference_wavelength_nm",
+    "top_m"
+  ],
+  "measured_weather": false,
+  "regional_probability_estimated": false
+}

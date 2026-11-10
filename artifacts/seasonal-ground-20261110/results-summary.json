@@ -1,0 +1,29 @@
+{
+  "nasa_files": 16,
+  "nasa_bytes": 1212560492,
+  "nasa_downloads_verified": 16,
+  "factor_count": 65,
+  "publication_qa_rows": 18,
+  "training_nights": 1,
+  "training_samples": 9,
+  "held_out_nights": 1,
+  "held_out_samples": 9,
+  "held_out_residual_mag": -0.13585455333450724,
+  "held_out_model_over_observed": 1.1332919954993095,
+  "global_physical_error_bound": null,
+  "new_sky_images": 0,
+  "common_support": {
+    "2015": {
+      "roi_pixels": 518400,
+      "reference_land_domain_pixels": 518169,
+      "common_pixels": 416859,
+      "common_fraction_of_reference_land": 0.8044846372515531
+    },
+    "2017": {
+      "roi_pixels": 518400,
+      "reference_land_domain_pixels": 518169,
+      "common_pixels": 477828,
+      "common_fraction_of_reference_land": 0.9221470215315852
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "bounds": {
+    "west": 29.0,
+    "south": 59.0,
+    "east": 32.0,
+    "north": 61.0
+  },
+  "crs": "EPSG:4326",
+  "shape": [
+    480,
+    720
+  ],
+  "total_pixels": 345600,
+  "step_arcseconds": 15,
+  "units": "nW/(cm^2 sr)",
+  "radiance_to_W_m2_sr": 1e-05,
+  "quality_policy": "Quality == 0, Num > 3, finite radiance >= 0",
+  "land_water_counts": {
+    "1": 43727,
+    "2": 66,
+    "5": 966,
+    "fill_or_nan": 300841
+  },
+  "composites": {
+    "NearNadir": {
+      "denominator": 345600,
+      "quality_counts": {
+        "2": 44759,
+        "fill_or_nan": 300841
+      },
+      "accepted_pixels": 0,
+      "accepted_fraction": 0.0,
+      "missing_radiance": 300841,
+      "negative_nonfill_radiance": 0,
+      "inconsistent_quality_vs_num": 0,
+      "zero_pixels_accepted": 0,
+      "radiance": {
+        "count": 0
+      },
+      "observations": {
+        "count": 0
+      },
+      "std": {
+        "count": 0
+      },
+      "missing_or_negative_std_accepted": 0,
+      "land_radiance": {
+        "count": 0
+      },
+      "water_radiance": {
+        "count": 0
+      },
+      "coastal_radiance": {
+        "count": 0
+      }
+    },
+    "OffNadir": {
+      "denominator": 345600,
+      "quality_counts": {
+        "2": 44759,
+        "fill_or_nan": 300841
+      },
+      "accepted_pixels": 0,
+      "accepted_fraction": 0.0,
+      "missing_radiance": 300841,
+      "negative_nonfill_radiance": 0,
+      "inconsistent_quality_vs_num": 0,
+      "zero_pixels_accepted": 0,
+      "radiance": {
+        "count": 0
+      },
+      "observations": {
+        "count": 0
+      },
+      "std": {
+        "count": 0
+      },
+      "missing_or_negative_std_accepted": 0,
+      "land_radiance": {
+        "count": 0
+      },
+      "water_radiance": {
+        "count": 0
+      },
+      "coastal_radiance": {
+        "count": 0
+      }
+    },
+    "AllAngle": {
+      "denominator": 345600,
+      "quality_counts": {
+        "1": 44759,
+        "fill_or_nan": 300841
+      },
+      "accepted_pixels": 0,
+      "accepted_fraction": 0.0,
+      "missing_radiance": 300841,
+      "negative_nonfill_radiance": 0,
+      "inconsistent_quality_vs_num": 0,
+      "zero_pixels_accepted": 0,
+      "radiance": {
+        "count": 0
+      },
+      "observations": {
+        "count": 0
+      },
+      "std": {
+        "count": 0
+      },
+      "missing_or_negative_std_accepted": 0,
+      "land_radiance": {
+        "count": 0
+      },
+      "water_radiance": {
+        "count": 0
+      },
+      "coastal_radiance": {
+        "count": 0
+      }
+    }
+  },
+  "angle_comparison": {
+    "common_good_pixels": 0,
+    "positive_pair_pixels": 0,
+    "off_over_near": {
+      "count": 0
+    },
+    "interpretation": "Composite angular differences are not an identified emission function."
+  }
+}

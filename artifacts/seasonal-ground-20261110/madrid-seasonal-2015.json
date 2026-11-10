@@ -1,0 +1,53 @@
+{
+  "reference_period": "2015-01",
+  "bounds": {
+    "west": -5,
+    "south": 39,
+    "east": -2,
+    "north": 42
+  },
+  "selection": {
+    "observer": {
+      "latitude_deg": 40.451111,
+      "longitude_deg": -3.726111,
+      "height_m": 650
+    },
+    "exclude_radius_m": 3000,
+    "include_water": false
+  },
+  "composite": "NearNadir",
+  "roi_pixels": 518400,
+  "reference_land_domain_pixels": 518169,
+  "common_pixels": 416859,
+  "common_fraction_of_reference_land": 0.8044846372515531,
+  "minimum_common_fraction": 0.8,
+  "common_mask_sha256": "9f77ac1e30c1491ab845fbcb94f001772657f32d7a13e0b7c8c7d0bcda4e5f5c",
+  "radiance_units": "nW/(cm2 sr); sum uses spherical cell area in m2",
+  "periods": [
+    {
+      "period": "2015-01",
+      "input": "data/seasonal-ground-20261110/madrid-2015-01/source-grid.npz",
+      "input_sha256": "90d1ef5ca3c90e05b1bbd4eabd303fb793bd688e2fe3ce8cd512b3b35c10ae1c",
+      "accepted_on_reference_domain": 417864,
+      "radiance_area_sum": 96268468449.0728,
+      "source_power_multiplier": 1.0,
+      "prepared_region": "data/seasonal-ground-20261110/madrid-matched-2015/2015-01/source-grid.npz"
+    },
+    {
+      "period": "2015-07",
+      "input": "data/seasonal-ground-20261110/madrid-2015-07/source-grid.npz",
+      "input_sha256": "c4d5cf1fde96e18338c7e4917d957e8108b89a204bc6e3a6e2245dda3eb7ffc6",
+      "accepted_on_reference_domain": 517028,
+      "radiance_area_sum": 93415144978.94481,
+      "source_power_multiplier": 0.9703607680053886,
+      "prepared_region": "data/seasonal-ground-20261110/madrid-matched-2015/2015-07/source-grid.npz"
+    }
+  ],
+  "conversion_to_upward_power": "relative proxy, not physical inversion",
+  "assumption": "Same DNB-to-V and angular-emission mapping across compared months; unvalidated.",
+  "not_modelled": [
+    "monthly snow reflection",
+    "hourly light switching",
+    "measured atmosphere"
+  ]
+}

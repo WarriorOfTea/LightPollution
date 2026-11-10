@@ -1,0 +1,10 @@
+{
+  "reference_wavelength_nm": 550.0,
+  "rayleigh_scale_height_m": 8000.0,
+  "aerosol_scale_height_m": 1200.0,
+  "aerosol_optical_depth": 0.1,
+  "aerosol_single_scattering_albedo": 0.9,
+  "aerosol_g": 0.8,
+  "rayleigh_multiplier": 1.0,
+  "top_m": 80000.0
+}

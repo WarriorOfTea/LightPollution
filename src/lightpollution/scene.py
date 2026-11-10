@@ -13,6 +13,7 @@ from pathlib import Path
 
 import numpy as np
 
+from .atmosphere_config import atmosphere_from_mapping, atmosphere_origin
 from .moonlight import (REFERENCE_DISTANCE_KM, nanolambert_to_v_mag,
                         scattered_moonlight, separation_angle)
 from .observation import observation_context
@@ -69,6 +70,19 @@ def vertical_extinction_v(observer: Observer, atmosphere: Atmosphere):
     return float(2.5/np.log(10)*tau)
 
 
+def _transfer_grid(path: Path, observer: Observer, atmosphere: Atmosphere):
+    with np.load(path,allow_pickle=False) as data:
+        az,alt,raw=(np.array(data[key],copy=True) for key in ('azimuth_deg','altitude_deg','radiance'))
+        metadata=json.loads(str(data['metadata_json'].item()))
+    if (not np.all(np.isfinite(az)) or not np.all(np.isfinite(alt))
+            or metadata.get('observer')!=asdict(observer) or metadata.get('atmosphere')!=asdict(atmosphere)):
+        raise ValueError('Sky grid observer/atmosphere must exactly match the scene.')
+    sample_sky(az,alt,raw,0,90)  # Full shape/order/nonnegative-field validation.
+    if not np.allclose(raw[-1],raw[-1,0],rtol=1e-10,atol=0):
+        raise ValueError('A physical sky grid must have a unique zenith.')
+    return az,alt,raw,metadata
+
+
 def calculate_observation(config: dict, base_directory: Path = Path('.')) -> dict:
     """Validate the complete scene before returning strict-JSON-compatible results."""
     config = deepcopy(config)
@@ -84,8 +98,8 @@ def calculate_observation(config: dict, base_directory: Path = Path('.')) -> dic
     observer_values = _object(config['observer'], {'latitude_deg','longitude_deg','height_m'},
                               {'latitude_deg','longitude_deg','height_m'})
     observer = Observer(**{key: _finite(value, key) for key,value in observer_values.items()})
-    atmosphere_values = _object(config.get('atmosphere', {}), Atmosphere.__dataclass_fields__)
-    atmosphere = Atmosphere(**{key: _finite(value, key) for key,value in atmosphere_values.items()})
+    atmosphere_values = config.get('atmosphere', {})
+    atmosphere = atmosphere_from_mapping(atmosphere_values)
     if atmosphere.reference_wavelength_nm != 550.:
         raise ValueError("The effective V bridge requires the declared 550 nm transfer scenario.")
     directions = config['directions']
@@ -151,7 +165,7 @@ def calculate_observation(config: dict, base_directory: Path = Path('.')) -> dic
     else:
         raise ValueError("Natural mode must be uniform with magnitude, or none.")
 
-    artificial = _object(config['artificial'], {'mode','sky_grid','anchor_direction',
+    artificial = _object(config['artificial'], {'mode','sky_grid','reference_sky_grid','anchor_direction',
                          'anchor_v_mag_arcsec2','scale_origin','source','band_bridge'}, {'mode'})
     grid = None
     grid_provenance = None
@@ -163,17 +177,34 @@ def calculate_observation(config: dict, base_directory: Path = Path('.')) -> dic
         path = Path(_source(artificial.get('sky_grid')))
         if not path.is_absolute():
             path = base_directory / path
-        with np.load(path, allow_pickle=False) as data:
-            az, alt, raw = (np.array(data[key], copy=True) for key in ('azimuth_deg','altitude_deg','radiance'))
-            metadata = json.loads(str(data['metadata_json'].item()))
-        if (not np.all(np.isfinite(az)) or not np.all(np.isfinite(alt))
-                or metadata.get('observer') != asdict(observer)
-                or metadata.get('atmosphere') != asdict(atmosphere)):
-            raise ValueError("Sky grid observer/atmosphere must exactly match the scene.")
+        az,alt,raw,metadata=_transfer_grid(path,observer,atmosphere)
         anchor = _direction(artificial.get('anchor_direction',[0,90]))
-        anchor_raw = float(sample_sky(az,alt,raw,*anchor))
-        if not np.allclose(raw[-1],raw[-1,0],rtol=1e-10,atol=0):
-            raise ValueError("A physical sky grid must have a unique zenith.")
+        reference_provenance=None
+        reference_field=(az,alt,raw)
+        if 'reference_sky_grid' in artificial:
+            reference_path=Path(_source(artificial['reference_sky_grid']))
+            if not reference_path.is_absolute():
+                reference_path=base_directory/reference_path
+            raz,ralt,rraw,rmeta=_transfer_grid(reference_path,observer,atmosphere)
+            current_region=metadata.get('provenance',{}).get('region_metadata',{})
+            reference_region=rmeta.get('provenance',{}).get('region_metadata',{})
+            if current_region.get('common_mask_sha256') and (
+                    current_region.get('common_mask_sha256')!=reference_region.get('common_mask_sha256')
+                    or current_region.get('normalisation_reference_period')!=reference_region.get('normalisation_reference_period')
+                    or current_region.get('source_composite')!=reference_region.get('source_composite')):
+                raise ValueError('Shared seasonal calibration needs the same common mask and source reference.')
+            reference_field=(raz,ralt,rraw)
+            reference_provenance={'path':artificial['reference_sky_grid'],
+                                  'sha256':hashlib.sha256(reference_path.read_bytes()).hexdigest()}
+        else:
+            region=metadata.get('provenance',{}).get('region_metadata',{})
+            period=f"{region.get('year')}-{region.get('month'):02}" if region.get('month') is not None else None
+            if (region.get('source_power_multiplier',1.)!=1. or region.get('normalisation_reference_period')
+                    and period!=region['normalisation_reference_period']):
+                raise ValueError('Seasonal amplitude needs reference_sky_grid; per-month anchoring would erase it.')
+        if utc:
+            warnings.append('source_composite_is_not_an_hourly_lighting_forecast')
+        anchor_raw = float(sample_sky(*reference_field,*anchor))
         if anchor_raw <= 0:
             raise ValueError("Artificial calibration anchor must have positive raw brightness.")
         anchor_q = float(scale.from_magnitudes(SurfaceBrightness(
@@ -181,6 +212,7 @@ def calculate_observation(config: dict, base_directory: Path = Path('.')) -> dic
         grid = (az,alt,raw,anchor_q/anchor_raw)
         grid_provenance = {'path':artificial['sky_grid'], 'sha256':hashlib.sha256(path.read_bytes()).hexdigest(),
                            'input_metadata':metadata, 'anchor_raw':anchor_raw,
+                           'reference_sky_grid':reference_provenance,
                            'anchor_relative':anchor_q, 'scale_origin':artificial['scale_origin'],
                            'source':artificial['source'], 'calibration_independently_verified':False}
     elif artificial['mode'] != 'none' or set(artificial) != {'mode'}:
@@ -247,7 +279,8 @@ def calculate_observation(config: dict, base_directory: Path = Path('.')) -> dic
                          'exported':len(star_rows), 'detected_by_eye_not_modelled':True,
                          'flux_reference':'V magnitude 0 point-source flux; NOT the diffuse Bref'}
     return {'schema_version':1, 'mode':config['mode'], 'utc':utc, 'input_scene':config,
-            'observer':asdict(observer), 'atmosphere':asdict(atmosphere), 'cloud_free':True,
+            'observer':asdict(observer), 'atmosphere':asdict(atmosphere),
+            'atmosphere_origin':atmosphere_origin(atmosphere_values), 'cloud_free':True,
             'geometry':context, 'moon':lunar,
             'photometry':{'band':asdict(KS_V_BAND), 'reference_v_mag_arcsec2':scale.reference_mag_arcsec2,
                           'diffuse_units':'B/Bref, common reference; linear addition',

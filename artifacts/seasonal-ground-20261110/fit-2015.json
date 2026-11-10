@@ -1,0 +1,309 @@
+{
+  "status": "provisional_unverified_clouds",
+  "coefficient_city_relative": 48.213033431995896,
+  "reference_city_mag_arcsec2": 17.792088857595505,
+  "reference_mag_arcsec2": 22.0,
+  "natural_mag_arcsec2": 21.6,
+  "model_relative_predictions": {
+    "2015-01": 1.0,
+    "2015-07": 0.7600193431008727
+  },
+  "training_periods": [
+    "2015-01"
+  ],
+  "training": {
+    "nights": 8,
+    "samples": 195,
+    "bias_mag": -0.15323514636652336,
+    "mae_mag": 0.4398240581446431,
+    "rmse_mag": 0.5154809448369055,
+    "records": [
+      {
+        "period": "2015-01",
+        "night_id": "2015-01-20",
+        "samples": 30,
+        "brightness_relative": 142.73669000876075,
+        "mag_arcsec2": 16.613660946326135,
+        "cloud_free_confirmed": null,
+        "within_night_relative_std": 144.82417781639575,
+        "weight": 1.0,
+        "predicted_mag_arcsec2": 17.760016593438614,
+        "predicted_relative": 49.658473202741824,
+        "residual_mag_model_minus_observed": 1.146355647112479
+      },
+      {
+        "period": "2015-01",
+        "night_id": "2015-01-21",
+        "samples": 30,
+        "brightness_relative": 35.169959755271215,
+        "mag_arcsec2": 18.134570321606965,
+        "cloud_free_confirmed": null,
+        "within_night_relative_std": 4.233871503970672,
+        "weight": 1.0,
+        "predicted_mag_arcsec2": 17.760016593438614,
+        "predicted_relative": 49.658473202741824,
+        "residual_mag_model_minus_observed": -0.3745537281683511
+      },
+      {
+        "period": "2015-01",
+        "night_id": "2015-01-22",
+        "samples": 30,
+        "brightness_relative": 36.223561119051105,
+        "mag_arcsec2": 18.10252214165834,
+        "cloud_free_confirmed": null,
+        "within_night_relative_std": 1.1798703578165615,
+        "weight": 1.0,
+        "predicted_mag_arcsec2": 17.760016593438614,
+        "predicted_relative": 49.658473202741824,
+        "residual_mag_model_minus_observed": -0.34250554821972656
+      },
+      {
+        "period": "2015-01",
+        "night_id": "2015-01-23",
+        "samples": 30,
+        "brightness_relative": 38.97655495279335,
+        "mag_arcsec2": 18.022991374507708,
+        "cloud_free_confirmed": null,
+        "within_night_relative_std": 3.7000805237235976,
+        "weight": 1.0,
+        "predicted_mag_arcsec2": 17.760016593438614,
+        "predicted_relative": 49.658473202741824,
+        "residual_mag_model_minus_observed": -0.26297478106909367
+      },
+      {
+        "period": "2015-01",
+        "night_id": "2015-01-24",
+        "samples": 30,
+        "brightness_relative": 35.96388106775544,
+        "mag_arcsec2": 18.110333618031156,
+        "cloud_free_confirmed": null,
+        "within_night_relative_std": 1.2394913324867838,
+        "weight": 1.0,
+        "predicted_mag_arcsec2": 17.760016593438614,
+        "predicted_relative": 49.658473202741824,
+        "residual_mag_model_minus_observed": -0.35031702459254177
+      },
+      {
+        "period": "2015-01",
+        "night_id": "2015-01-25",
+        "samples": 23,
+        "brightness_relative": 35.98924208251637,
+        "mag_arcsec2": 18.109568248250106,
+        "cloud_free_confirmed": null,
+        "within_night_relative_std": 0.7634828139833089,
+        "weight": 1.0,
+        "predicted_mag_arcsec2": 17.760016593438614,
+        "predicted_relative": 49.658473202741824,
+        "residual_mag_model_minus_observed": -0.3495516548114921
+      },
+      {
+        "period": "2015-01",
+        "night_id": "2015-01-26",
+        "samples": 16,
+        "brightness_relative": 36.51502371921179,
+        "mag_arcsec2": 18.093821032290037,
+        "cloud_free_confirmed": null,
+        "within_night_relative_std": 2.329842365227456,
+        "weight": 1.0,
+        "predicted_mag_arcsec2": 17.760016593438614,
+        "predicted_relative": 49.658473202741824,
+        "residual_mag_model_minus_observed": -0.3338044388514234
+      },
+      {
+        "period": "2015-01",
+        "night_id": "2015-01-27",
+        "samples": 6,
+        "brightness_relative": 35.69287291657465,
+        "mag_arcsec2": 18.11854623577065,
+        "cloud_free_confirmed": null,
+        "within_night_relative_std": 0.32601009010730575,
+        "weight": 1.0,
+        "predicted_mag_arcsec2": 17.760016593438614,
+        "predicted_relative": 49.658473202741824,
+        "residual_mag_model_minus_observed": -0.3585296423320372
+      }
+    ]
+  },
+  "held_out": {
+    "nights": 8,
+    "samples": 172,
+    "bias_mag": 0.6010842212934877,
+    "mae_mag": 0.6218590092059308,
+    "rmse_mag": 0.9929621044589041,
+    "records": [
+      {
+        "period": "2015-07",
+        "night_id": "2015-07-09",
+        "samples": 17,
+        "brightness_relative": 44.80837791808214,
+        "mag_arcsec2": 17.8716019436082,
+        "cloud_free_confirmed": null,
+        "within_night_relative_std": 3.161280100053222,
+        "weight": 1.0,
+        "predicted_mag_arcsec2": 18.048021660792475,
+        "predicted_relative": 38.08827776863186,
+        "residual_mag_model_minus_observed": 0.17641971718427385
+      },
+      {
+        "period": "2015-07",
+        "night_id": "2015-07-10",
+        "samples": 21,
+        "brightness_relative": 43.79158857550648,
+        "mag_arcsec2": 17.896523250341055,
+        "cloud_free_confirmed": null,
+        "within_night_relative_std": 2.787332201898349,
+        "weight": 1.0,
+        "predicted_mag_arcsec2": 18.048021660792475,
+        "predicted_relative": 38.08827776863186,
+        "residual_mag_model_minus_observed": 0.15149841045142054
+      },
+      {
+        "period": "2015-07",
+        "night_id": "2015-07-11",
+        "samples": 27,
+        "brightness_relative": 44.7937136479668,
+        "mag_arcsec2": 17.871957326587427,
+        "cloud_free_confirmed": null,
+        "within_night_relative_std": 2.4875269831697837,
+        "weight": 1.0,
+        "predicted_mag_arcsec2": 18.048021660792475,
+        "predicted_relative": 38.08827776863186,
+        "residual_mag_model_minus_observed": 0.17606433420504786
+      },
+      {
+        "period": "2015-07",
+        "night_id": "2015-07-16",
+        "samples": 33,
+        "brightness_relative": 170.25511705904475,
+        "mag_arcsec2": 16.422249565981257,
+        "cloud_free_confirmed": null,
+        "within_night_relative_std": 166.5073459397001,
+        "weight": 1.0,
+        "predicted_mag_arcsec2": 18.048021660792475,
+        "predicted_relative": 38.08827776863186,
+        "residual_mag_model_minus_observed": 1.625772094811218
+      },
+      {
+        "period": "2015-07",
+        "night_id": "2015-07-17",
+        "samples": 33,
+        "brightness_relative": 294.64382499842736,
+        "mag_arcsec2": 15.826756640513462,
+        "cloud_free_confirmed": null,
+        "within_night_relative_std": 246.74620403133156,
+        "weight": 1.0,
+        "predicted_mag_arcsec2": 18.048021660792475,
+        "predicted_relative": 38.08827776863186,
+        "residual_mag_model_minus_observed": 2.221265020279013
+      },
+      {
+        "period": "2015-07",
+        "night_id": "2015-07-18",
+        "samples": 31,
+        "brightness_relative": 58.2201587338379,
+        "mag_arcsec2": 17.587316537043094,
+        "cloud_free_confirmed": null,
+        "within_night_relative_std": 33.12257447684227,
+        "weight": 1.0,
+        "predicted_mag_arcsec2": 18.048021660792475,
+        "predicted_relative": 38.08827776863186,
+        "residual_mag_model_minus_observed": 0.46070512374938133
+      },
+      {
+        "period": "2015-07",
+        "night_id": "2015-07-19",
+        "samples": 4,
+        "brightness_relative": 41.00252708925768,
+        "mag_arcsec2": 17.967973439475156,
+        "cloud_free_confirmed": null,
+        "within_night_relative_std": 0.5274376922940948,
+        "weight": 1.0,
+        "predicted_mag_arcsec2": 18.048021660792475,
+        "predicted_relative": 38.08827776863186,
+        "residual_mag_model_minus_observed": 0.0800482213173197
+      },
+      {
+        "period": "2015-07",
+        "night_id": "2015-07-23",
+        "samples": 6,
+        "brightness_relative": 35.28187646635981,
+        "mag_arcsec2": 18.131120812442248,
+        "cloud_free_confirmed": null,
+        "within_night_relative_std": 0.8625934697343401,
+        "weight": 1.0,
+        "predicted_mag_arcsec2": 18.048021660792475,
+        "predicted_relative": 38.08827776863186,
+        "residual_mag_model_minus_observed": -0.08309915164977255
+      }
+    ]
+  },
+  "independent_night_split": true,
+  "field_accuracy_certified": false,
+  "assumptions": [
+    "Native AstMon Johnson-V treated as effective V; residual response/zero-point uncertainty.",
+    "Fixed natural background and baseline atmosphere; no measured cloud/aerosol reconstruction.",
+    "Equal weight per night; reported per-sample errors are not independent night uncertainties."
+  ],
+  "selection": {
+    "dataset": "Madrid AstMon Johnson-V, doi:10.5281/zenodo.4633001",
+    "input_sha256": "f477416f47487ad918484392fd5c368744d5807c22edf5c0e69ed7450fad88a9",
+    "year": 2015,
+    "months": [
+      1,
+      7
+    ],
+    "selected_native_rows": 1957,
+    "finite_positive_error_rows": 1957,
+    "local_hour_rows": 916,
+    "astronomical_moonless_candidates": 367,
+    "astronomical_rejections_after_hour_filter": 549,
+    "certified_cloud_free_candidates": 0,
+    "unknown_cloud_candidates": 367,
+    "timezone": "Europe/Madrid",
+    "local_hour_window": [
+      0,
+      4
+    ],
+    "sun_altitude_max_deg": -18,
+    "moon_altitude_max_deg": -5,
+    "observer": {
+      "latitude_deg": 40.451111,
+      "longitude_deg": -3.726111,
+      "height_m": 650
+    },
+    "night_definition": "local noon-to-noon, identified by previous evening date",
+    "height_and_atmosphere_are_scenarios": true,
+    "cloud_flags_in_file": false
+  },
+  "model_inputs": {
+    "reference_period": "2015-01",
+    "reference_raw_zenith": 3.1945304957327093e-12,
+    "common_mask_sha256": "9f77ac1e30c1491ab845fbcb94f001772657f32d7a13e0b7c8c7d0bcda4e5f5c",
+    "observer": {
+      "latitude_deg": 40.451111,
+      "longitude_deg": -3.726111,
+      "height_m": 650
+    },
+    "atmosphere": {
+      "reference_wavelength_nm": 550.0,
+      "rayleigh_scale_height_m": 8000.0,
+      "aerosol_scale_height_m": 1200.0,
+      "aerosol_optical_depth": 0.1,
+      "aerosol_single_scattering_albedo": 0.9,
+      "aerosol_g": 0.8,
+      "rayleigh_multiplier": 1.0,
+      "top_m": 80000.0
+    },
+    "composite": "NearNadir",
+    "inputs": [
+      {
+        "path": "artifacts/seasonal-ground-20261110/madrid-model-2015-01/sky-grid.npz",
+        "sha256": "860c08dda43b092b7f3a8d2d5780c23654352d040097bc8e0b127b782cafcac1"
+      },
+      {
+        "path": "artifacts/seasonal-ground-20261110/madrid-model-2015-07/sky-grid.npz",
+        "sha256": "7861a1a19e29aa29198de6fecf38cd5d147d1fab483a72553f334fba891ea869"
+      }
+    ]
+  }
+}

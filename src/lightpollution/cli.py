@@ -12,9 +12,10 @@ import numpy as np
 import requests
 
 from .data import Bounds, audit, load_region, read_region, save_region
+from .atmosphere_config import atmosphere_from_mapping, atmosphere_origin
 from .download import catalogue, download_composite, write_manifest
 from .periods import CompositePeriod
-from .physics import Atmosphere, Observer, SolverSettings, sky_grid
+from .physics import Atmosphere, Observer, SolverSettings, Sources, sky_grid
 from .sources import regional_sources, synthetic_cities
 from .visualization import source_map, sky_plot
 
@@ -43,6 +44,35 @@ def make_parser() -> argparse.ArgumentParser:
     ground.add_argument('--kind',required=True,choices=['astmon','galicia'])
     ground.add_argument('--file',type=Path,required=True)
     ground.add_argument('--output',type=Path,required=True)
+    select=commands.add_parser('select-ground',help='Select native V nighttime/Moon-below-horizon candidates; clouds remain unknown')
+    select.add_argument('--file',type=Path,required=True)
+    select.add_argument('--year',type=int,required=True)
+    select.add_argument('--months',type=int,nargs='+',required=True)
+    select.add_argument('--latitude',type=float,required=True)
+    select.add_argument('--longitude',type=float,required=True)
+    select.add_argument('--height',type=float,required=True)
+    select.add_argument('--timezone',default='Europe/Madrid')
+    select.add_argument('--first-hour',type=int,default=0)
+    select.add_argument('--last-hour',type=int,default=4)
+    select.add_argument('--output',type=Path,required=True)
+    fit=commands.add_parser('fit-ground',help='Fit a city scale on training nights and evaluate disjoint held-out periods')
+    fit.add_argument('--selection',type=Path,required=True)
+    fit.add_argument('--model-grids',type=Path,nargs='+',required=True)
+    fit.add_argument('--training-periods',nargs='+',required=True)
+    fit.add_argument('--allow-unverified-clouds',action='store_true')
+    fit.add_argument('--output',type=Path,required=True)
+    atmosphere=commands.add_parser('atmosphere',help='Export editable baseline atmospheric coefficients, not measured weather')
+    atmosphere.add_argument('--output',type=Path,required=True)
+    seasonal=commands.add_parser('prepare-seasonal',help='Match monthly QA/coverage and preserve the common source amplitude')
+    seasonal.add_argument('--regions',type=Path,nargs='+',required=True)
+    seasonal.add_argument('--output',type=Path,required=True)
+    seasonal.add_argument('--reference',required=True,help='Reference period, e.g. 2025-01')
+    seasonal.add_argument('--latitude',type=float,default=60.30)
+    seasonal.add_argument('--longitude',type=float,default=30.315)
+    seasonal.add_argument('--height',type=float,default=20)
+    seasonal.add_argument('--exclude-radius-m',type=float,default=3000)
+    seasonal.add_argument('--minimum-common-fraction',type=float,default=.8)
+    seasonal.add_argument('--composite',choices=['NearNadir','OffNadir','AllAngle'],default='NearNadir')
     context=commands.add_parser('context',help='Sun/Moon geometry; not a prediction of lunar sky brightness')
     context.add_argument('--utc',required=True)
     context.add_argument('--latitude',type=float,default=60.30)
@@ -78,9 +108,12 @@ def make_parser() -> argparse.ArgumentParser:
         run.add_argument('--altitudes',type=float,nargs='+',default=DEFAULT_ALTITUDES if name=='demo' else [0,.5]+DEFAULT_ALTITUDES)
         run.add_argument('--ray-segments',type=int,default=96)
         run.add_argument('--path-quadrature',type=int,default=12)
-        run.add_argument('--aod',type=float,default=0.10)
+        run.add_argument('--aod',type=float,help='Override aerosol optical depth in the atmospheric scenario')
+        run.add_argument('--atmosphere-file',type=Path,help='JSON atmospheric parameters; remaining parameters use baseline values')
+        run.add_argument('--no-plots',action='store_true',help='Numerical outputs only')
         run.add_argument('--horizontal-fraction',type=float,default=0)
         run.add_argument('--block',type=int,default=12)
+        run.add_argument('--composite',choices=['NearNadir','OffNadir','AllAngle'])
         run.add_argument('--exclude-radius-m',type=float,default=3000)
         run.add_argument('--include-water',action='store_true')
         run.add_argument('--refine-below-altitude',type=float,default=5,
@@ -94,7 +127,12 @@ def run_simulation(args) -> dict:
     if args.altitudes != sorted(set(args.altitudes)) or not (0 <= min(args.altitudes) <= max(args.altitudes) <= 90):
         raise ValueError("Altitudes must be unique, increasing and inside [0,90].")
     observer=Observer(args.latitude,args.longitude,args.height)
-    atmosphere=Atmosphere(aerosol_optical_depth=args.aod)
+    atmospheric_parameters=json.loads(args.atmosphere_file.read_text()) if args.atmosphere_file else {}
+    if not isinstance(atmospheric_parameters,dict):
+        raise ValueError('Atmosphere file must be a JSON object of physical parameters.')
+    if args.aod is not None:
+        atmospheric_parameters['aerosol_optical_depth']=args.aod
+    atmosphere=atmosphere_from_mapping(atmospheric_parameters)
     settings=SolverSettings(args.ray_segments,args.path_quadrature,args.horizontal_fraction)
     if args.command=='demo':
         source_factory=None
@@ -105,7 +143,21 @@ def run_simulation(args) -> dict:
         title='Учебный пример: два заданных города. Это не данные NASA'
     else:
         arrays,bounds,metadata=load_region(args.region)
-        sources,provenance=regional_sources(arrays,bounds,observer,args.block,args.exclude_radius_m,include_water=args.include_water)
+        source_scale=float(metadata.get('source_power_multiplier',1.))
+        composite=args.composite or metadata.get('source_composite','NearNadir')
+        if metadata.get('source_composite',composite)!=composite:
+            raise ValueError('Cannot change the composite after seasonal support matching.')
+        if not np.isfinite(source_scale) or source_scale<=0:
+            raise ValueError('Source amplitude multiplier must be positive and finite.')
+        if 'seasonal_selection' in metadata and metadata['seasonal_selection'] != {
+                'observer':asdict(observer),'exclude_radius_m':args.exclude_radius_m,'include_water':args.include_water}:
+            raise ValueError('Seasonal source selection must match observer, exclusion radius and water policy.')
+        sources,provenance=regional_sources(arrays,bounds,observer,args.block,args.exclude_radius_m,
+                                          include_water=args.include_water,composite=composite)
+        sources=Sources(sources.positions_m,sources.power*source_scale)
+        provenance['source_power_multiplier']=source_scale
+        if 'source_power_multiplier' in metadata:
+            provenance['normalisation']=f'Total source proxy = {source_scale:.12g} relative to the fixed reference month.'
         provenance.update({"input_kind":"blackmarble", "region_file":str(args.region),"region_metadata":metadata})
         refined_counts=[]
         if not 0<=args.refine_below_altitude<=90:
@@ -114,11 +166,11 @@ def run_simulation(args) -> dict:
             if alt>args.refine_below_altitude:
                 return sources
             selected,_=regional_sources(arrays,bounds,observer,args.block,args.exclude_radius_m,
-                                         include_water=args.include_water,refinement_direction=(az,alt))
+                                         include_water=args.include_water,refinement_direction=(az,alt),composite=composite)
             refined_counts.append(len(selected.power))
-            return selected
+            return Sources(selected.positions_m,selected.power*source_scale)
         period_label=CompositePeriod(metadata['year'],metadata.get('month')).label
-        title=f"Петербург, VIIRS {period_label}: условный региональный сценарий"
+        title=f"VIIRS {period_label}, {observer.latitude_deg:g}°N {observer.longitude_deg:g}°E: условный сценарий"
     azimuths=np.arange(0,360,args.azimuth_step)
     altitudes=np.asarray(args.altitudes)
     started=time.perf_counter()
@@ -130,8 +182,9 @@ def run_simulation(args) -> dict:
     elapsed=time.perf_counter()-started
     location=np.unravel_index(np.argmax(radiance),radiance.shape)
     summary={"provenance":provenance,"observer":asdict(observer),"atmosphere":asdict(atmosphere),
+             "atmosphere_origin":atmosphere_origin(atmospheric_parameters),
              "solver":asdict(settings),"shape":list(radiance.shape),"elapsed_seconds":elapsed,
-             "azimuth_convention":"North=0, East=90, clockwise", "raw_units":"W/(m2 sr)" if args.command=='demo' else "m^-2 sr^-1 per unit total assumed source power",
+             "azimuth_convention":"North=0, East=90, clockwise", "raw_units":"W/(m2 sr)" if args.command=='demo' else "m^-2 sr^-1 per unit reference assumed source power",
              "absolute_visible_photometry_calibrated":False,
              "maximum":{"azimuth_deg":float(azimuths[location[1]]),"altitude_deg":float(altitudes[location[0]]),"value":float(radiance[location])},
              "physical_error_bound":None,"model_document":"docs/MODEL.md"}
@@ -147,7 +200,8 @@ def run_simulation(args) -> dict:
     np.savetxt(args.output/'sky-grid.csv',np.column_stack((az_mesh.ravel(),alt_mesh.ravel(),radiance.ravel())),
                delimiter=',',header='azimuth_deg,altitude_deg,radiance',comments='',fmt='%.12g')
     (args.output/'summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n')
-    sky_plot(azimuths,altitudes,radiance,args.output/'sky.png',title)
+    if not args.no_plots:
+        sky_plot(azimuths,altitudes,radiance,args.output/'sky.png',title)
     return summary
 
 
@@ -179,6 +233,29 @@ def main():
                         {**period.metadata(),"product":period.product+'.002',"inputs":inputs})
             if not args.no_plots:
                 source_map(arrays,Bounds(),args.output/'sources.png',year=args.year,month=args.month)
+            print(json.dumps(report,ensure_ascii=False,indent=2))
+        elif args.command=='select-ground':
+            from .calibration import astmon_candidates
+            rows,selection=astmon_candidates(args.file,Observer(args.latitude,args.longitude,args.height),
+                                             args.year,args.months,args.timezone,args.first_hour,args.last_hour)
+            write_manifest(args.output,{'selection':selection,'records':rows})
+            print(json.dumps(selection,ensure_ascii=False))
+        elif args.command=='fit-ground':
+            from .calibration import fit_and_check, model_zenith_predictions, nightly_values
+            data=json.loads(args.selection.read_text())
+            predictions,provenance=model_zenith_predictions(args.model_grids,Observer(**data['selection']['observer']))
+            report=fit_and_check(nightly_values(data['records']),predictions,args.training_periods,
+                                allow_unverified_clouds=args.allow_unverified_clouds)
+            write_manifest(args.output,{**report,'selection':data['selection'],'model_inputs':provenance})
+            print(json.dumps({key:report[key] for key in ['status','reference_city_mag_arcsec2']},ensure_ascii=False))
+        elif args.command=='atmosphere':
+            write_manifest(args.output,asdict(Atmosphere()))
+            print(json.dumps(atmosphere_origin(),ensure_ascii=False))
+        elif args.command=='prepare-seasonal':
+            from .seasonal import prepare_seasonal
+            report=prepare_seasonal(args.regions,args.output,args.reference,
+                    Observer(args.latitude,args.longitude,args.height),args.exclude_radius_m,
+                    minimum_common_fraction=args.minimum_common_fraction,composite=args.composite)
             print(json.dumps(report,ensure_ascii=False,indent=2))
         elif args.command=='audit-ground':
             from .ground import audit_astmon, audit_galicia

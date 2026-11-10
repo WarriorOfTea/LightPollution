@@ -1,0 +1,18 @@
+[
+  {
+    "file": "implementation-report.pdf",
+    "pages": 6,
+    "preview_page": 4,
+    "preview": "scratch/seasonal-report-qa/implementation-report-page-4.png",
+    "text_bounds_ok": true,
+    "text_extractable": true
+  },
+  {
+    "file": "light-factors.pdf",
+    "pages": 14,
+    "preview_page": 7,
+    "preview": "scratch/seasonal-report-qa/light-factors-page-7.png",
+    "text_bounds_ok": true,
+    "text_extractable": true
+  }
+]

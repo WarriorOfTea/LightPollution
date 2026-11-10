@@ -1,0 +1,142 @@
+{
+  "status": "QA_supplied_externally",
+  "coefficient_city_relative": 50.70179496656537,
+  "reference_city_mag_arcsec2": 17.737441663290156,
+  "reference_mag_arcsec2": 22.0,
+  "natural_mag_arcsec2": 21.6,
+  "model_relative_predictions": {
+    "2017-03": 1.0,
+    "2017-11": 0.9635987506709374
+  },
+  "training_periods": [
+    "2017-03"
+  ],
+  "training": {
+    "nights": 1,
+    "samples": 9,
+    "bias_mag": 0.0,
+    "mae_mag": 0.0,
+    "rmse_mag": 0.0,
+    "records": [
+      {
+        "period": "2017-03",
+        "night_id": "2017-03-19",
+        "samples": 9,
+        "brightness_relative": 52.1472347373113,
+        "mag_arcsec2": 17.7069217909684,
+        "cloud_free_confirmed": true,
+        "within_night_relative_std": 0.6424095702355611,
+        "weight": 1.0,
+        "predicted_mag_arcsec2": 17.7069217909684,
+        "predicted_relative": 52.1472347373113,
+        "residual_mag_model_minus_observed": 0.0
+      }
+    ]
+  },
+  "held_out": {
+    "nights": 1,
+    "samples": 9,
+    "bias_mag": -0.13585455333450724,
+    "mae_mag": 0.13585455333450724,
+    "rmse_mag": 0.13585455333450724,
+    "records": [
+      {
+        "period": "2017-11",
+        "night_id": "2017-11-19",
+        "samples": 9,
+        "brightness_relative": 44.38540663577192,
+        "mag_arcsec2": 17.881899492469074,
+        "cloud_free_confirmed": true,
+        "within_night_relative_std": 1.0740419432039439,
+        "weight": 1.0,
+        "predicted_mag_arcsec2": 17.746044939134567,
+        "predicted_relative": 50.30162605730234,
+        "residual_mag_model_minus_observed": -0.13585455333450724
+      }
+    ]
+  },
+  "independent_night_split": true,
+  "field_accuracy_certified": false,
+  "assumptions": [
+    "Native AstMon Johnson-V treated as effective V; residual response/zero-point uncertainty.",
+    "Fixed natural background and baseline atmosphere; no measured cloud/aerosol reconstruction.",
+    "Equal weight per night; reported per-sample errors are not independent night uncertainties."
+  ],
+  "selection": {
+    "dataset": "Madrid AstMon Johnson-V, doi:10.5281/zenodo.4633001",
+    "input_sha256": "f477416f47487ad918484392fd5c368744d5807c22edf5c0e69ed7450fad88a9",
+    "year": 2017,
+    "months": [
+      3,
+      11
+    ],
+    "selected_native_rows": 3576,
+    "finite_positive_error_rows": 3576,
+    "local_hour_rows": 365,
+    "astronomical_moonless_candidates": 237,
+    "astronomical_rejections_after_hour_filter": 128,
+    "certified_cloud_free_candidates": 18,
+    "unknown_cloud_candidates": 0,
+    "timezone": "Europe/Madrid",
+    "local_hour_window": [
+      23,
+      24
+    ],
+    "sun_altitude_max_deg": -18,
+    "moon_altitude_max_deg": -5,
+    "observer": {
+      "latitude_deg": 40.451111,
+      "longitude_deg": -3.726111,
+      "height_m": 650
+    },
+    "night_definition": "local noon-to-noon, identified by previous evening date",
+    "height_and_atmosphere_are_scenarios": true,
+    "cloud_flags_in_file": false,
+    "publication_windows": [
+      {
+        "start": "2017-03-19T22:00:00Z",
+        "end": "2017-03-19T23:00:00Z",
+        "figure": 5
+      },
+      {
+        "start": "2017-11-19T22:00:00Z",
+        "end": "2017-11-19T23:00:00Z",
+        "figure": 6
+      }
+    ],
+    "cloud_qa_method": "Manual transcription of author-labelled figures, not an imported CSV flag.",
+    "parent_astronomical_candidates": 237,
+    "records_exported": 18
+  },
+  "model_inputs": {
+    "reference_period": "2017-03",
+    "reference_raw_zenith": 2.3413298021694653e-12,
+    "common_mask_sha256": "6188af8303da511711ed6604e4a7602c03b974c7dca2dd7c3cd0560f39062fb7",
+    "observer": {
+      "latitude_deg": 40.451111,
+      "longitude_deg": -3.726111,
+      "height_m": 650
+    },
+    "atmosphere": {
+      "reference_wavelength_nm": 550.0,
+      "rayleigh_scale_height_m": 8000.0,
+      "aerosol_scale_height_m": 1200.0,
+      "aerosol_optical_depth": 0.1,
+      "aerosol_single_scattering_albedo": 0.9,
+      "aerosol_g": 0.8,
+      "rayleigh_multiplier": 1.0,
+      "top_m": 80000.0
+    },
+    "composite": "NearNadir",
+    "inputs": [
+      {
+        "path": "artifacts/seasonal-ground-20261110/madrid-model-2017-03/sky-grid.npz",
+        "sha256": "9d5353cbad91d5c51af4566dc0a790490fa79f18b4e916c4977316d0cc7c9835"
+      },
+      {
+        "path": "artifacts/seasonal-ground-20261110/madrid-model-2017-11/sky-grid.npz",
+        "sha256": "c3fb2e3859c4c085360b44e1c9e414808ae2cb04a76deb16aaa0916505e3d27f"
+      }
+    ]
+  }
+}

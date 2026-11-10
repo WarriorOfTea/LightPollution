@@ -1,0 +1,329 @@
+{
+  "checked_at": "2026-11-10T15:05:04+01:00",
+  "base_commit": "ea5a67183864704615113ced448ad0060d9d2353",
+  "python_version": "3.12.3",
+  "scope": "Manual atmospheric parameters, matched monthly amplitudes, limited native-V ground comparison; no new sky rendering.",
+  "tests": {
+    "command": "uv run pytest -q -p no:cacheprovider --junitxml=artifacts/seasonal-ground-20261110/pytest.xml",
+    "passed": 96,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "console_seconds": 16.27,
+    "junit_suite_seconds": 16.225,
+    "junit_timestamp": "2026-11-10T14:43:23.396065+01:00",
+    "code_changed_after_full_suite": false
+  },
+  "other_code_checks": {
+    "uv_lock_check": "passed",
+    "python_compileall": "passed",
+    "git_diff_check": "passed",
+    "live_network_or_credentials_in_unit_tests": false
+  },
+  "source_data": {
+    "NASA_HDF5_files": [
+      {
+        "filename": "VNP46A3.A2015001.h17v04.002.2025093111457.h5",
+        "bytes": 75598817,
+        "sha256": "1dbd1549a9f2a302583e25a68f7a57534cc24bb77ea901efdbd87abf8691db14",
+        "signature_size_sha256_verified": true
+      },
+      {
+        "filename": "VNP46A3.A2015001.h17v05.002.2025093111523.h5",
+        "bytes": 77995412,
+        "sha256": "9257090cdc7adf4f9c0b69b29964c2642cd604ed45b2b838532bf1a6904e953f",
+        "signature_size_sha256_verified": true
+      },
+      {
+        "filename": "VNP46A3.A2015182.h17v04.002.2025099113943.h5",
+        "bytes": 71484289,
+        "sha256": "84d97f0f5dc11620c7252bb9c838f642557d2b68d4d9bbf4993ab1fe84b6652a",
+        "signature_size_sha256_verified": true
+      },
+      {
+        "filename": "VNP46A3.A2015182.h17v05.002.2025099113941.h5",
+        "bytes": 83013782,
+        "sha256": "9164de4924c95054a1f64b2fb347fa6312a833b185f17c85abc1e0def3f889b1",
+        "signature_size_sha256_verified": true
+      },
+      {
+        "filename": "VNP46A3.A2017060.h17v04.002.2025101152242.h5",
+        "bytes": 68556497,
+        "sha256": "8ff2148f9734c4537b9248ccd117d23b5f5e6e8c3b0c8140143c7869e0029faf",
+        "signature_size_sha256_verified": true
+      },
+      {
+        "filename": "VNP46A3.A2017060.h17v05.002.2025101152248.h5",
+        "bytes": 78580163,
+        "sha256": "bf51b9cdeafde99ef3361f3dbf8dcce062ba013e6bfcbde144ffe063f7af5569",
+        "signature_size_sha256_verified": true
+      },
+      {
+        "filename": "VNP46A3.A2017305.h17v04.002.2025101174416.h5",
+        "bytes": 76003289,
+        "sha256": "ff9161590b874ef8d7206590e7dc14facf52605f69d93038c4505691fbfa3c50",
+        "signature_size_sha256_verified": true
+      },
+      {
+        "filename": "VNP46A3.A2017305.h17v05.002.2025101174426.h5",
+        "bytes": 80679915,
+        "sha256": "fff8dcc596fc108c3f18c60cdee99cdd7d5331140bc3b04e999e03318885a17e",
+        "signature_size_sha256_verified": true
+      },
+      {
+        "filename": "VNP46A3.A2025001.h20v02.002.2026064124555.h5",
+        "bytes": 145600000,
+        "sha256": "af4b03c63c003d62b0f9bf7facd43436f2c774bb7fd0a97fb6c65b5f4d581750",
+        "signature_size_sha256_verified": true
+      },
+      {
+        "filename": "VNP46A3.A2025001.h21v02.002.2026064124542.h5",
+        "bytes": 135134537,
+        "sha256": "bde9fb4a3629770e6386d6d427eef9ba03e1df02a5d8854e8807e78e054629f5",
+        "signature_size_sha256_verified": true
+      },
+      {
+        "filename": "VNP46A3.A2025001.h20v03.002.2026064124605.h5",
+        "bytes": 94338145,
+        "sha256": "5814afcb64c6453944393005800716439293d68033d534f49d4837b6a6c558db",
+        "signature_size_sha256_verified": true
+      },
+      {
+        "filename": "VNP46A3.A2025001.h21v03.002.2026064124550.h5",
+        "bytes": 117162245,
+        "sha256": "dd1439d7e86e0582208eea9ef0877f60571f7ccb6fdc4a660fb2ec8dfc55c24b",
+        "signature_size_sha256_verified": true
+      },
+      {
+        "filename": "VNP46A3.A2025182.h20v02.002.2026071165643.h5",
+        "bytes": 742042,
+        "sha256": "83b5676b9add62aae89d9cbd6a05b868bf320e9718877efda224a00469eff154",
+        "signature_size_sha256_verified": true
+      },
+      {
+        "filename": "VNP46A3.A2025182.h21v02.002.2026071165701.h5",
+        "bytes": 742028,
+        "sha256": "49c1025dc78a8e45e8e3110dd9d511e721139d6c8a583d9eb62a92214ed2b394",
+        "signature_size_sha256_verified": true
+      },
+      {
+        "filename": "VNP46A3.A2025182.h20v03.002.2026071165649.h5",
+        "bytes": 45453892,
+        "sha256": "d6214168870a77ef882c83853d410998566bd9b7a0f9c02c799fa0810970fab7",
+        "signature_size_sha256_verified": true
+      },
+      {
+        "filename": "VNP46A3.A2025182.h21v03.002.2026071165701.h5",
+        "bytes": 61475439,
+        "sha256": "3e0c565ac447d3305b941ede88ed4ea142f5eb8faa1e72f968e9fd9154e352ea",
+        "signature_size_sha256_verified": true
+      }
+    ],
+    "file_count": 16,
+    "total_bytes": 1212560492,
+    "astmon_sha256": "f477416f47487ad918484392fd5c368744d5807c22edf5c0e69ed7450fad88a9",
+    "astmon_license": "CC-BY-4.0",
+    "astmon_dataset": "https://zenodo.org/records/4633001",
+    "manual_cloud_QA_figures": [
+      {
+        "figure": 5,
+        "url": "https://mdpi-res.com/remotesensing/remotesensing-13-01511/article_deploy/html/images/remotesensing-13-01511-g005-550.jpg",
+        "sha256": "3acaefc25e8c82fb5cc8490682672f9c6d5ae1191b230ab0d28fe6dc8b153810",
+        "redistributed": false
+      },
+      {
+        "figure": 6,
+        "url": "https://mdpi-res.com/remotesensing/remotesensing-13-01511/article_deploy/html/images/remotesensing-13-01511-g006-550.jpg",
+        "sha256": "0646e462b3d5f8eb33c024f67b403e3406c909e1166e73920344f32dbfa9e094",
+        "redistributed": false
+      }
+    ],
+    "cloud_QA_limits": "Manual transcription of two conservative figure intervals; no native CSV cloud flags."
+  },
+  "result_summary": {
+    "nasa_files": 16,
+    "nasa_bytes": 1212560492,
+    "nasa_downloads_verified": 16,
+    "factor_count": 65,
+    "publication_qa_rows": 18,
+    "training_nights": 1,
+    "training_samples": 9,
+    "held_out_nights": 1,
+    "held_out_samples": 9,
+    "held_out_residual_mag": -0.13585455333450724,
+    "held_out_model_over_observed": 1.1332919954993095,
+    "global_physical_error_bound": null,
+    "new_sky_images": 0,
+    "common_support": {
+      "2015": {
+        "roi_pixels": 518400,
+        "reference_land_domain_pixels": 518169,
+        "common_pixels": 416859,
+        "common_fraction_of_reference_land": 0.8044846372515531
+      },
+      "2017": {
+        "roi_pixels": 518400,
+        "reference_land_domain_pixels": 518169,
+        "common_pixels": 477828,
+        "common_fraction_of_reference_land": 0.9221470215315852
+      }
+    }
+  },
+  "scene_checks": [
+    {
+      "month": "2017-03",
+      "fit_predicted_mag": 17.7069217909684,
+      "observe_predicted_mag": 17.7069217909684,
+      "agreement_abs_mag": 0.0
+    },
+    {
+      "month": "2017-11",
+      "fit_predicted_mag": 17.746044939134567,
+      "observe_predicted_mag": 17.746044939134567,
+      "agreement_abs_mag": 0.0
+    }
+  ],
+  "strict_CLI_fit_agreement": true,
+  "document_checks": {
+    "local_links_checked": 175,
+    "missing_links": [],
+    "factor_rows": 65,
+    "factor_ids_unique": true,
+    "all_user_priorities_blank": true,
+    "CSV_uses_LF_only": true
+  },
+  "pdf_checks": {
+    "all_pages_text_extractable_and_within_page_bounds": true,
+    "representative_pages_visually_reviewed": {
+      "implementation-report.pdf": [
+        4
+      ],
+      "light-factors.pdf": [
+        7
+      ]
+    },
+    "details": [
+      {
+        "file": "implementation-report.pdf",
+        "pages": 6,
+        "preview_page": 4,
+        "preview": "scratch/seasonal-report-qa/implementation-report-page-4.png",
+        "text_bounds_ok": true,
+        "text_extractable": true
+      },
+      {
+        "file": "light-factors.pdf",
+        "pages": 14,
+        "preview_page": 7,
+        "preview": "scratch/seasonal-report-qa/light-factors-page-7.png",
+        "text_bounds_ok": true,
+        "text_extractable": true
+      }
+    ]
+  },
+  "limitations": [
+    "One held-out clear interval at one zenith is not a global error bound.",
+    "2015 larger test has unknown cloud QA and substantially larger residuals.",
+    "Atmosphere and natural background are scenarios; DNB-to-V and angular mapping assumed stable.",
+    "Observer height is approximate; city source heights and terrain DEM are not represented.",
+    "No full-sky ground validation, physical eye model, camera sensor or display validation."
+  ],
+  "code_sha256": {
+    "src/lightpollution/__init__.py": "efcc299d2065b20ca259aa7b8d52eb38646155d03a61a3d9c45ea3b90723c2f9",
+    "src/lightpollution/atmosphere_config.py": "ec58c23a5264b9416699a3ba11b85297babc33a0f4f9ac7c4b101042f354fb45",
+    "src/lightpollution/calibration.py": "61832ff9161978d00f1b5eceef93edb89ccbbf5ecd5ef97f074644909568d381",
+    "src/lightpollution/cli.py": "dc4be0165a30224e6bba63be059ef7dc5f932dd85909aba41791b204a96906e6",
+    "src/lightpollution/data.py": "a7546632eeed17b736f05c67dacadab873a3376a4a022f3bc5dad10007801b45",
+    "src/lightpollution/download.py": "c17dc458a621b97fbb7a2cc3d50d8a01a02bfb0bba7e42181473d7c12b84f4e3",
+    "src/lightpollution/ground.py": "4d98d73ebd3a610966cd653da07c30293e6e9e6cd7f9eea428f47bda7351832e",
+    "src/lightpollution/moonlight.py": "8b4aeca4e38b7f968bcf992cd5d3a1e6973920c3e7d944f43f19f943e318e71f",
+    "src/lightpollution/observation.py": "fcff5e411f626bfc512576463665f63648147076da5d70741db282f557b3795d",
+    "src/lightpollution/periods.py": "80c8371ff1422c2f4652ec4b7a3b360ccf90e7e24603ae836a6663be71090a17",
+    "src/lightpollution/photometry.py": "d370963d6f59603a26f7f13ae0d3117622d2df981b1889618417db4f8b292aa5",
+    "src/lightpollution/physics.py": "e40a32ef636a48d2397957afb4357936e28f1a349d4f4fd17b1f76c34a55618a",
+    "src/lightpollution/scene.py": "55237141ef3df0fc2dbb3516bfae93d7599aa4d2cf5d9c6b692690239bdd6297",
+    "src/lightpollution/seasonal.py": "ad3ca89fee13486ffa33268195b96a7c39c1bc8ebabfffb04974b01652feed05",
+    "src/lightpollution/skyview.py": "429dbcc10e8568d3023f7bc89cb6c5f293a8eb957c8c4c1fc7d433bcf348b03d",
+    "src/lightpollution/sources.py": "c4c1e568482b53bd9423c0b9b60862e375f252bfd39da25a7b2a8733949f71e8",
+    "src/lightpollution/visualization.py": "ead498593c25bb4afa7774a031b794e805f3a2bc6f6f414234d136a370e220f9",
+    "scripts/run_seasonal_ground.py": "720fb8994cc322a60328e0111b55ab9f5e6eb71886fd54f0be2cde3e1443cafc",
+    "tests/test_seasonal_calibration.py": "e4b2e871731bd6db1289731892a590af6c446e536047e189d9d1de73dcc79b02",
+    "uv.lock": "cbee868eb31ba7829b4927634b8f22f8c1e8f2ce65eabd72602c833bbfda7cb5"
+  },
+  "documentation_sha256": {
+    "docs/CODE_CHANGELOG.md": "331eb027c07ce8eb4575824fd2e7b3e45f9a7c2de5511aeb341a32dbc123da53",
+    "docs/DATA_AUDIT.md": "de3b0faeb4d31f5611643bafea836c8aa8f76ac1fd5b06f54b31422795333052",
+    "docs/DATA_SOURCES.md": "dff179c905e6227f47ca920cf10913f2f3d8e5855fec95fe5ff1e66c2b19bc20",
+    "docs/KSTARS_CAMERA_AUDIT.md": "7441e26365e9e9c1a229d125b3296c54780ac2c0b3101de1be907bcbe188f6b9",
+    "docs/LIGHT_FACTORS.md": "e67bb78da715d7e4df8661018556550a1cb8d5bdd00008d9d95f893abab474bd",
+    "docs/LITERATURE.md": "23aca7121eda807e4d3524d91a756e57e753f11a10d69a091b63d3972fe1d702",
+    "docs/MODEL.md": "99fa80f24d6f6050bd20d68e3091a1e76829f5170cb059d9b87f5da1024f46fe",
+    "docs/OBSERVATION_MODEL.md": "e056e8b8abb0ec76a9f8c160e67c6720345c43ee40dc2a367e5c45bece974c4b",
+    "docs/OBSERVATION_PLAN.md": "54e0dc9831b9a8277c0e7ee6f881d0cbc9c86be215f4d216860ff6dfd9777a60",
+    "docs/OBSERVER_VIEW.md": "b325fe0a30588dbec648d323cb941a34a7b5f2b0b268970a1fdbc72bf3c44a40",
+    "docs/PHOTO_COMPARISON.md": "0f71383c17f811e756f9bbc86209c1be6211c3edec881f7dde37297b568fe617",
+    "docs/PHYSICS_AND_MATH_GUIDE.md": "b1a67cad9f0b36261475a96616546c13c3d8606eaa58a1c245f5e1bcb6ed7e7b",
+    "docs/QUICKSTART.md": "6b7996d5b68025edceed9f827e9c44bb8c5569f30901bc7c18fcd7fec1efd331",
+    "docs/REVIEW_AND_PLAN.md": "244c5f74d7a234b76349d4894a224cb541cbad381786faec91a778c9cedbb167",
+    "docs/SEASONAL_CALIBRATION.md": "48dae53c2267fabb00fa1557dd54495487fba6648fe3bd2caa946d75a1f589b2",
+    "README.md": "cde5252cb8756b9ab06675db164313ae214d7fcc383a65c1142127456b701c64",
+    "HISTORY.md": "e38d17908c11b8c1ca72f2b701aa4b098ed8b7ab15768e8ebd77dda6e4cf4991",
+    "docs/LIGHT_FACTORS.csv": "dfef69c5bb0542d13a54583208a8eb4f0b10daf624bd40ac52508eceb6b1f947"
+  },
+  "artifact_sha256": {
+    "artifacts/seasonal-ground-20261110/README.md": "87fc6b5584d90279c7742ce7f948233b125d7d0ae5c10e847eb7bf40a33b1006",
+    "artifacts/seasonal-ground-20261110/astmon-publication-qa.json": "039a2d41060073500eec97363f83198cadeb41caeb0b594b695b5b81c1fa28b8",
+    "artifacts/seasonal-ground-20261110/astmon-selection-2015.json": "6a4f92784a96c1dfd75162c5a7fdb0bbd209b1614374ebd2755bba3758302082",
+    "artifacts/seasonal-ground-20261110/astmon-selection-2017.json": "830cb42b1e4ecabb2eb6ac34ded53aff0e95d6cb9ea06ed4c860e6d57afabe18",
+    "artifacts/seasonal-ground-20261110/baseline-atmosphere-origin.json": "5b3fc9a47246efafb6e6956db964fc538e1aa961b8c5684477bb8670899fc434",
+    "artifacts/seasonal-ground-20261110/baseline-atmosphere.json": "f17212bd7f4b5daacc6c0619c099759140309ea1f197e9d60308786da5f03e17",
+    "artifacts/seasonal-ground-20261110/fit-2015.json": "a9e1fe3d5984bf4a0543de64de14738ca99896a824f16d34b8408e053d9be7a4",
+    "artifacts/seasonal-ground-20261110/fit-2017.json": "e1b701dcbf616a16c849168a972fd649353551510ad0306e367646592169f367",
+    "artifacts/seasonal-ground-20261110/implementation-report.pdf": "a8b9ebc14e5178af4f4ffc0f3712573e1223d38983c2912e95800a36cf0cf3da",
+    "artifacts/seasonal-ground-20261110/light-factors.pdf": "da9be4a8cac7cf5c805d60e0d348e57ea0d9baa57b8f696a03420af0895a6b69",
+    "artifacts/seasonal-ground-20261110/madrid-2015-01/audit.json": "2b4a1c7d55e6709b759aebcb2433ce25aeeec9a84cfc089ea8c8ea6cd7697ade",
+    "artifacts/seasonal-ground-20261110/madrid-2015-01/download-manifest.json": "edd7a92a980e5af1a3b49fbee74afd77b71a04a560df5012e7f6d40e5905967e",
+    "artifacts/seasonal-ground-20261110/madrid-2015-01/metadata.json": "c9e6cca8be441a84afe1c9c3f1c2e4ed3a880a648a0b112c80247c62d20be65d",
+    "artifacts/seasonal-ground-20261110/madrid-2015-07/audit.json": "21236ff12500fe1b4e24e88cd1ca1e53a23f4da67ea9ad2848cd7a74caecc389",
+    "artifacts/seasonal-ground-20261110/madrid-2015-07/download-manifest.json": "70a17cce8cb0fa18d77f138514cf0d5c1344c9e2ad52a1ff524f95ea0b4cfb75",
+    "artifacts/seasonal-ground-20261110/madrid-2015-07/metadata.json": "a52a03a1938e151c5696dc46ca71cfab8cbe458ebb3d3fb04a6d7851fc4590d5",
+    "artifacts/seasonal-ground-20261110/madrid-2017-03/audit.json": "4db30b2630bbc455ac755c3981702d7d016621b00b5909f1145513263a1afbd7",
+    "artifacts/seasonal-ground-20261110/madrid-2017-03/download-manifest.json": "24c5d879928387931b5fca80a34fb4e55d1810fd5b4279505d2cdb25fabbba04",
+    "artifacts/seasonal-ground-20261110/madrid-2017-03/metadata.json": "3fdf87bbc62a06738f859c5a4b1dbf71569e47003c612e46552f5fc2fad5f788",
+    "artifacts/seasonal-ground-20261110/madrid-2017-11/audit.json": "629124917974c0021833e0238eabdcd442f790854ad637847470879ff25a9724",
+    "artifacts/seasonal-ground-20261110/madrid-2017-11/download-manifest.json": "58148c06145e021d7d3257a0c784280c07ac9090696b373e2cf3dbd44e8f695e",
+    "artifacts/seasonal-ground-20261110/madrid-2017-11/metadata.json": "f46e5bb91b581394a975fd56267abb30ccec3fbd008b2b93e86cfd77f1ceacba",
+    "artifacts/seasonal-ground-20261110/madrid-model-2015-01/sky-grid.csv": "c9d8f8913955c5dc97101c686c75998d6a4f221717a4881e71c1decc4533c151",
+    "artifacts/seasonal-ground-20261110/madrid-model-2015-01/sky-grid.npz": "860c08dda43b092b7f3a8d2d5780c23654352d040097bc8e0b127b782cafcac1",
+    "artifacts/seasonal-ground-20261110/madrid-model-2015-01/summary.json": "da228c3c2def3fe16c73a8f8f4bb9a4a4cddf0dcd0d9f4e892e35f90c8722604",
+    "artifacts/seasonal-ground-20261110/madrid-model-2015-07/sky-grid.csv": "d19eec44e839ab99b7fee746234b8ab9fc8f4bb540fc502127d7efe69cab4814",
+    "artifacts/seasonal-ground-20261110/madrid-model-2015-07/sky-grid.npz": "7861a1a19e29aa29198de6fecf38cd5d147d1fab483a72553f334fba891ea869",
+    "artifacts/seasonal-ground-20261110/madrid-model-2015-07/summary.json": "6803f2a64c9c42f5d200f1eb93f41849a5166629319f31ad5c103d5ce29328e8",
+    "artifacts/seasonal-ground-20261110/madrid-model-2017-03/sky-grid.csv": "45ef60b0f2fca9dc9994043b8ac45ac9f274f0048ef524f5cea15aad5c4e761c",
+    "artifacts/seasonal-ground-20261110/madrid-model-2017-03/sky-grid.npz": "9d5353cbad91d5c51af4566dc0a790490fa79f18b4e916c4977316d0cc7c9835",
+    "artifacts/seasonal-ground-20261110/madrid-model-2017-03/summary.json": "4f1c57c2f6219018aa1df53bd7e915ce3b37a95f8ab4d86e92dc40bbda1e0051",
+    "artifacts/seasonal-ground-20261110/madrid-model-2017-11/sky-grid.csv": "3cd74b1c86225671b0f9b4fd322f760085a11ec31c34f2345aebe6288d98685a",
+    "artifacts/seasonal-ground-20261110/madrid-model-2017-11/sky-grid.npz": "c3fb2e3859c4c085360b44e1c9e414808ae2cb04a76deb16aaa0916505e3d27f",
+    "artifacts/seasonal-ground-20261110/madrid-model-2017-11/summary.json": "568c3aca5c99a60647485ce786785dff284b707dc8630773bad897c500e383f1",
+    "artifacts/seasonal-ground-20261110/madrid-seasonal-2015.json": "42041d8b770bdf4c9a220e81f394eab7ecbe11b986d6dfabae99477037a3b17e",
+    "artifacts/seasonal-ground-20261110/madrid-seasonal-2017.json": "e14fe6fcf2a994f0553e727b97bd777f1111ae5fc336f4471ed732e22e812a91",
+    "artifacts/seasonal-ground-20261110/observe-2017-03/directions.csv": "57f71df5a4758258625bc37918ba6c18c982cfa532c8d2932df6418581e952ff",
+    "artifacts/seasonal-ground-20261110/observe-2017-03/observation.json": "b9d6756b29f5df1fd2286d6a7474c657bf120c4ff3156ad72dc41fc9d36664ce",
+    "artifacts/seasonal-ground-20261110/observe-2017-03/stars.csv": "68d17a2a74422f496882d7226e579eacd7715a2f9edb9b3c2003788dbaa303dc",
+    "artifacts/seasonal-ground-20261110/observe-2017-11/directions.csv": "7e9302dd9c8ad41ff185e61f1a379c2ceb9b572a5a1d21cac40580e43882495d",
+    "artifacts/seasonal-ground-20261110/observe-2017-11/observation.json": "61b441920c047b5decbe87403ee32dd9af85fbd5b708aba36a3e00bfc61cbf6f",
+    "artifacts/seasonal-ground-20261110/observe-2017-11/stars.csv": "188c09848b25a31cdc32029f02e9018b8f78d93e14ad7b6037c872c247274db8",
+    "artifacts/seasonal-ground-20261110/pdf-check.json": "e15b8996b0b46f1aaeec552f414f2611075dfaf5e8f6d15b95a696c34ae6524d",
+    "artifacts/seasonal-ground-20261110/petersburg-2025-01/audit.json": "ad9e17226c9453a5752ce2332be5b1ac8d2e253b5389dfc0f9501038ab26f9ed",
+    "artifacts/seasonal-ground-20261110/petersburg-2025-01/download-manifest.json": "6986bff6e58a71db2ad0cb56c5b856301ce2a7fe6d8cf299fcb98732479cc1a8",
+    "artifacts/seasonal-ground-20261110/petersburg-2025-01/metadata.json": "317d940784de4bc74f6099c8750a7ca8712143749e3e64767685e98ce350e856",
+    "artifacts/seasonal-ground-20261110/petersburg-2025-07/audit.json": "bea5b7c5a121909f414ddee85fadaed2f33fc3e41c535efdfd6703514524aea2",
+    "artifacts/seasonal-ground-20261110/petersburg-2025-07/download-manifest.json": "5e31b4168e220723f187e6ed39789eef81ee89c05397211851f3afdc808e056e",
+    "artifacts/seasonal-ground-20261110/petersburg-2025-07/metadata.json": "0e8847abdebfa40aca936fd170663d6fc4baa5a3a7f5a44c46ee55ee4345d199",
+    "artifacts/seasonal-ground-20261110/petersburg-unavailable.json": "5574795354ebdc183278c1bbd8c0549ecae2c38005bb1a5a4bfb91b49e7531dc",
+    "artifacts/seasonal-ground-20261110/pytest.xml": "802232672f2d4b30d2f7f90f3ab7df214cd867a94279fc43d277eb1889ad1bfc",
+    "artifacts/seasonal-ground-20261110/results-summary.json": "c0bc750bc805f9306f449669a2fac2a0d3efee10ff38ec6b8f7dd2bc39c1d870",
+    "artifacts/seasonal-ground-20261110/scene-2017-03.json": "9ea2e7d2879da1abaf299f57cf9732385d3504e341240f2c10121549647509d7",
+    "artifacts/seasonal-ground-20261110/scene-2017-11.json": "3d492b9607b099303be76b2fa1b35620d425bd0d2d3bd268d17b07d4ba975015"
+  }
+}

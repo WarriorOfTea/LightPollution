@@ -1,0 +1,134 @@
+{
+  "provenance": {
+    "composite": "NearNadir",
+    "observer": {
+      "latitude_deg": 40.451111,
+      "longitude_deg": -3.726111,
+      "height_m": 650.0
+    },
+    "block_pixels": 12,
+    "effective_sources": 2530,
+    "retained_positive_pixels": 60139,
+    "normalisation": "Total source proxy = 0.970360768005 relative to the fixed reference month.",
+    "unknown_pixels_are_not_dark_measurements": true,
+    "excluded_local_radius_m": 3000,
+    "include_water": false,
+    "weight_denominator_radiance_times_area": 93415144978.94481,
+    "weight_removed_water_fraction": 0.0,
+    "weight_removed_unknown_surface_fraction": 0.0,
+    "weight_removed_local_fraction": 0.0,
+    "retained_weight_fraction": 1.0,
+    "largest_patch_radius_m": 5679.129516746037,
+    "ray_refinement_azimuth_altitude_deg": null,
+    "nearest_retained_pixel_m": 3001.987158924819,
+    "nearest_effective_source_chord_m": 3046.686676785959,
+    "unmodelled_sources_outside_bounds": {
+      "west": -5,
+      "south": 39,
+      "east": -2,
+      "north": 42
+    },
+    "source_power_multiplier": 0.9703607680053886,
+    "input_kind": "blackmarble",
+    "region_file": "data/seasonal-ground-20261110/madrid-matched-2015/2015-07/source-grid.npz",
+    "region_metadata": {
+      "bounds": {
+        "west": -5,
+        "south": 39,
+        "east": -2,
+        "north": 42
+      },
+      "product": "VNP46A3.002",
+      "collection": "002",
+      "year": 2015,
+      "month": 7,
+      "period_start": "2015-07-01",
+      "period_end": "2015-07-31",
+      "temporal_resolution": "monthly",
+      "inputs": [
+        {
+          "filename": "VNP46A3.A2015182.h17v04.002.2025099113943.h5",
+          "sha256": "84d97f0f5dc11620c7252bb9c838f642557d2b68d4d9bbf4993ab1fe84b6652a"
+        },
+        {
+          "filename": "VNP46A3.A2015182.h17v05.002.2025099113941.h5",
+          "sha256": "9164de4924c95054a1f64b2fb347fa6312a833b185f17c85abc1e0def3f889b1"
+        }
+      ],
+      "source_power_multiplier": 0.9703607680053886,
+      "seasonal_selection": {
+        "observer": {
+          "latitude_deg": 40.451111,
+          "longitude_deg": -3.726111,
+          "height_m": 650
+        },
+        "exclude_radius_m": 3000,
+        "include_water": false
+      },
+      "source_composite": "NearNadir",
+      "normalisation_reference_period": "2015-01",
+      "common_mask_sha256": "9f77ac1e30c1491ab845fbcb94f001772657f32d7a13e0b7c8c7d0bcda4e5f5c",
+      "radiance_area_sum": 93415144978.94481,
+      "reference_radiance_area_sum": 96268468449.0728
+    },
+    "ray_refinement": {
+      "at_or_below_altitude_deg": 5,
+      "minimum_effective_sources": 2530,
+      "maximum_effective_sources": 2530
+    }
+  },
+  "observer": {
+    "latitude_deg": 40.451111,
+    "longitude_deg": -3.726111,
+    "height_m": 650.0
+  },
+  "atmosphere": {
+    "reference_wavelength_nm": 550.0,
+    "rayleigh_scale_height_m": 8000.0,
+    "aerosol_scale_height_m": 1200.0,
+    "aerosol_optical_depth": 0.1,
+    "aerosol_single_scattering_albedo": 0.9,
+    "aerosol_g": 0.8,
+    "rayleigh_multiplier": 1.0,
+    "top_m": 80000.0
+  },
+  "atmosphere_origin": {
+    "kind": "baseline_scenario",
+    "user_parameters": [],
+    "default_parameters": [
+      "aerosol_g",
+      "aerosol_optical_depth",
+      "aerosol_scale_height_m",
+      "aerosol_single_scattering_albedo",
+      "rayleigh_multiplier",
+      "rayleigh_scale_height_m",
+      "reference_wavelength_nm",
+      "top_m"
+    ],
+    "measured_weather": false,
+    "regional_probability_estimated": false
+  },
+  "solver": {
+    "ray_segments": 192,
+    "path_quadrature": 24,
+    "horizontal_fraction": 0,
+    "near_ray_scale_m": 500.0
+  },
+  "shape": [
+    3,
+    4
+  ],
+  "elapsed_seconds": 6.569005765020847,
+  "azimuth_convention": "North=0, East=90, clockwise",
+  "raw_units": "m^-2 sr^-1 per unit reference assumed source power",
+  "absolute_visible_photometry_calibrated": false,
+  "maximum": {
+    "azimuth_deg": 180.0,
+    "altitude_deg": 15.0,
+    "value": 1.1061259013837349e-11
+  },
+  "physical_error_bound": null,
+  "model_document": "docs/MODEL.md",
+  "south_over_north_at_15deg": 2.79580948388511,
+  "south_over_north_at_45deg": 1.4148177809972537
+}

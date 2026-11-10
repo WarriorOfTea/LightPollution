@@ -7,6 +7,44 @@ Python ≥3.12, `uv`. Команды выполняются из корня Ligh
 
 ## Численная сцена: общая V-шкала и Луна
 
+Дополнение этапов 4–5 — [методика](SEASONAL_CALIBRATION.md).
+
+```bash
+uv run lightpollution atmosphere --output scratch/atmosphere.json
+uv run lightpollution demo --atmosphere-file scratch/atmosphere.json \
+  --aod 0.15 --no-plots --output scratch/atmosphere-demo
+uv run lightpollution observe \
+  --scene artifacts/seasonal-ground-20261110/scene-2017-11.json \
+  --output scratch/seasonal-observation
+```
+
+Все восемь полей атмосферного файла можно менять в физических пределах.
+Значения — сценарные; изменение атмосферы требует пересчёта городского поля.
+При межмесячном сравнении `reference_sky_grid` задаёт один V-якорь.
+
+Сопоставление источников и строгая наземная проверка:
+
+```bash
+uv run lightpollution prepare-seasonal \
+  --regions data/seasonal-ground-20261110/madrid-2017-03/source-grid.npz \
+            data/seasonal-ground-20261110/madrid-2017-11/source-grid.npz \
+  --reference 2017-03 --latitude 40.451111 --longitude -3.726111 \
+  --height 650 --output data/seasonal-ground-20261110/repeated-matching
+uv run lightpollution fit-ground \
+  --selection artifacts/seasonal-ground-20261110/astmon-publication-qa.json \
+  --model-grids artifacts/seasonal-ground-20261110/madrid-model-2017-03/sky-grid.npz \
+                artifacts/seasonal-ground-20261110/madrid-model-2017-11/sky-grid.npz \
+  --training-periods 2017-03 --output scratch/ground-check.json
+```
+
+Исходные региональные NPZ в `data/` восстанавливает
+`uv run python scripts/run_seasonal_ground.py` из заранее скачанных HDF5.
+Их точные имена, URL и SHA-256 — в `download-manifest.json` каждого случая
+в [отчёте](../artifacts/seasonal-ground-20261110/README.md).
+`select-ground` создаёт только геометрических кандидатов; отсутствие облачных
+флагов не исправляется отбором тёмных значений. Для непроверенных кандидатов
+`fit-ground` требует явный `--allow-unverified-clouds`, а результат помечается предварительным.
+
 ```bash
 uv run lightpollution observe \
   --scene artifacts/observation-core-20261110/dated-2025.scene.json \

@@ -1,0 +1,248 @@
+{
+  "selection": {
+    "dataset": "Madrid AstMon Johnson-V, doi:10.5281/zenodo.4633001",
+    "input_sha256": "f477416f47487ad918484392fd5c368744d5807c22edf5c0e69ed7450fad88a9",
+    "year": 2017,
+    "months": [
+      3,
+      11
+    ],
+    "selected_native_rows": 3576,
+    "finite_positive_error_rows": 3576,
+    "local_hour_rows": 365,
+    "astronomical_moonless_candidates": 237,
+    "astronomical_rejections_after_hour_filter": 128,
+    "certified_cloud_free_candidates": 18,
+    "unknown_cloud_candidates": 0,
+    "timezone": "Europe/Madrid",
+    "local_hour_window": [
+      23,
+      24
+    ],
+    "sun_altitude_max_deg": -18,
+    "moon_altitude_max_deg": -5,
+    "observer": {
+      "latitude_deg": 40.451111,
+      "longitude_deg": -3.726111,
+      "height_m": 650
+    },
+    "night_definition": "local noon-to-noon, identified by previous evening date",
+    "height_and_atmosphere_are_scenarios": true,
+    "cloud_flags_in_file": false,
+    "publication_windows": [
+      {
+        "start": "2017-03-19T22:00:00Z",
+        "end": "2017-03-19T23:00:00Z",
+        "figure": 5
+      },
+      {
+        "start": "2017-11-19T22:00:00Z",
+        "end": "2017-11-19T23:00:00Z",
+        "figure": 6
+      }
+    ],
+    "cloud_qa_method": "Manual transcription of author-labelled figures, not an imported CSV flag.",
+    "parent_astronomical_candidates": 237,
+    "records_exported": 18
+  },
+  "records": [
+    {
+      "utc": "2017-03-19T22:04:48Z",
+      "period": "2017-03",
+      "night_id": "2017-03-19",
+      "mag_arcsec2": 17.685003,
+      "reported_error_mag": 0.022143,
+      "cloud_free_confirmed": true,
+      "cloud_qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 5: filled clear/moonless markers; conservative interior interval.",
+      "sun_altitude_deg": -39.05713225376412,
+      "moon_altitude_deg": -31.904329393429467
+    },
+    {
+      "utc": "2017-03-19T22:11:13Z",
+      "period": "2017-03",
+      "night_id": "2017-03-19",
+      "mag_arcsec2": 17.701933,
+      "reported_error_mag": 0.022143,
+      "cloud_free_confirmed": true,
+      "cloud_qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 5: filled clear/moonless markers; conservative interior interval.",
+      "sun_altitude_deg": -39.93145768866713,
+      "moon_altitude_deg": -30.7354137953778
+    },
+    {
+      "utc": "2017-03-19T22:17:38Z",
+      "period": "2017-03",
+      "night_id": "2017-03-19",
+      "mag_arcsec2": 17.701017999999998,
+      "reported_error_mag": 0.022143,
+      "cloud_free_confirmed": true,
+      "cloud_qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 5: filled clear/moonless markers; conservative interior interval.",
+      "sun_altitude_deg": -40.779141608634525,
+      "moon_altitude_deg": -29.56579478803092
+    },
+    {
+      "utc": "2017-03-19T22:24:03Z",
+      "period": "2017-03",
+      "night_id": "2017-03-19",
+      "mag_arcsec2": 17.700198,
+      "reported_error_mag": 0.022143,
+      "cloud_free_confirmed": true,
+      "cloud_qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 5: filled clear/moonless markers; conservative interior interval.",
+      "sun_altitude_deg": -41.598671083822445,
+      "moon_altitude_deg": -28.39584232478019
+    },
+    {
+      "utc": "2017-03-19T22:30:28Z",
+      "period": "2017-03",
+      "night_id": "2017-03-19",
+      "mag_arcsec2": 17.699371,
+      "reported_error_mag": 0.022143,
+      "cloud_free_confirmed": true,
+      "cloud_qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 5: filled clear/moonless markers; conservative interior interval.",
+      "sun_altitude_deg": -42.38848423783564,
+      "moon_altitude_deg": -27.22591428160696
+    },
+    {
+      "utc": "2017-03-19T22:36:52Z",
+      "period": "2017-03",
+      "night_id": "2017-03-19",
+      "mag_arcsec2": 17.704089,
+      "reported_error_mag": 0.022143,
+      "cloud_free_confirmed": true,
+      "cloud_qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 5: filled clear/moonless markers; conservative interior interval.",
+      "sun_altitude_deg": -43.14504727782814,
+      "moon_altitude_deg": -26.05939525467702
+    },
+    {
+      "utc": "2017-03-19T22:43:17Z",
+      "period": "2017-03",
+      "night_id": "2017-03-19",
+      "mag_arcsec2": 17.719676,
+      "reported_error_mag": 0.022143,
+      "cloud_free_confirmed": true,
+      "cloud_qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 5: filled clear/moonless markers; conservative interior interval.",
+      "sun_altitude_deg": -43.87066144791277,
+      "moon_altitude_deg": -24.89054777811006
+    },
+    {
+      "utc": "2017-03-19T22:49:41Z",
+      "period": "2017-03",
+      "night_id": "2017-03-19",
+      "mag_arcsec2": 17.719303,
+      "reported_error_mag": 0.022143,
+      "cloud_free_confirmed": true,
+      "cloud_qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 5: filled clear/moonless markers; conservative interior interval.",
+      "sun_altitude_deg": -44.55989521025036,
+      "moon_altitude_deg": -23.725773629644962
+    },
+    {
+      "utc": "2017-03-19T22:56:06Z",
+      "period": "2017-03",
+      "night_id": "2017-03-19",
+      "mag_arcsec2": 17.732449,
+      "reported_error_mag": 0.022143,
+      "cloud_free_confirmed": true,
+      "cloud_qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 5: filled clear/moonless markers; conservative interior interval.",
+      "sun_altitude_deg": -45.21465179659186,
+      "moon_altitude_deg": -22.559331483461307
+    },
+    {
+      "utc": "2017-11-19T22:06:11Z",
+      "period": "2017-11",
+      "night_id": "2017-11-19",
+      "mag_arcsec2": 17.85,
+      "reported_error_mag": 0.02,
+      "cloud_free_confirmed": true,
+      "cloud_qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 6: filled clear/moonless markers; conservative interior interval.",
+      "sun_altitude_deg": -57.95862982547458,
+      "moon_altitude_deg": -45.38859991278905
+    },
+    {
+      "utc": "2017-11-19T22:12:39Z",
+      "period": "2017-11",
+      "night_id": "2017-11-19",
+      "mag_arcsec2": 17.86,
+      "reported_error_mag": 0.02,
+      "cloud_free_confirmed": true,
+      "cloud_qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 6: filled clear/moonless markers; conservative interior interval.",
+      "sun_altitude_deg": -58.99095144581918,
+      "moon_altitude_deg": -46.52211878604746
+    },
+    {
+      "utc": "2017-11-19T22:19:05Z",
+      "period": "2017-11",
+      "night_id": "2017-11-19",
+      "mag_arcsec2": 17.86,
+      "reported_error_mag": 0.02,
+      "cloud_free_confirmed": true,
+      "cloud_qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 6: filled clear/moonless markers; conservative interior interval.",
+      "sun_altitude_deg": -59.991769164629794,
+      "moon_altitude_deg": -47.64123299422292
+    },
+    {
+      "utc": "2017-11-19T22:25:33Z",
+      "period": "2017-11",
+      "night_id": "2017-11-19",
+      "mag_arcsec2": 17.87,
+      "reported_error_mag": 0.02,
+      "cloud_free_confirmed": true,
+      "cloud_qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 6: filled clear/moonless markers; conservative interior interval.",
+      "sun_altitude_deg": -60.96848875811622,
+      "moon_altitude_deg": -48.75661137935929
+    },
+    {
+      "utc": "2017-11-19T22:31:59Z",
+      "period": "2017-11",
+      "night_id": "2017-11-19",
+      "mag_arcsec2": 17.88,
+      "reported_error_mag": 0.02,
+      "cloud_free_confirmed": true,
+      "cloud_qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 6: filled clear/moonless markers; conservative interior interval.",
+      "sun_altitude_deg": -61.90778909009606,
+      "moon_altitude_deg": -49.85574999205845
+    },
+    {
+      "utc": "2017-11-19T22:38:25Z",
+      "period": "2017-11",
+      "night_id": "2017-11-19",
+      "mag_arcsec2": 17.88,
+      "reported_error_mag": 0.02,
+      "cloud_free_confirmed": true,
+      "cloud_qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 6: filled clear/moonless markers; conservative interior interval.",
+      "sun_altitude_deg": -62.81122117451404,
+      "moon_altitude_deg": -50.94332991908704
+    },
+    {
+      "utc": "2017-11-19T22:44:52Z",
+      "period": "2017-11",
+      "night_id": "2017-11-19",
+      "mag_arcsec2": 17.89,
+      "reported_error_mag": 0.02,
+      "cloud_free_confirmed": true,
+      "cloud_qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 6: filled clear/moonless markers; conservative interior interval.",
+      "sun_altitude_deg": -63.67707115381155,
+      "moon_altitude_deg": -52.02092117260514
+    },
+    {
+      "utc": "2017-11-19T22:51:18Z",
+      "period": "2017-11",
+      "night_id": "2017-11-19",
+      "mag_arcsec2": 17.91,
+      "reported_error_mag": 0.02,
+      "cloud_free_confirmed": true,
+      "cloud_qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 6: filled clear/moonless markers; conservative interior interval.",
+      "sun_altitude_deg": -64.49662260286583,
+      "moon_altitude_deg": -53.081640079098975
+    },
+    {
+      "utc": "2017-11-19T22:57:44Z",
+      "period": "2017-11",
+      "night_id": "2017-11-19",
+      "mag_arcsec2": 17.94,
+      "reported_error_mag": 0.02,
+      "cloud_free_confirmed": true,
+      "cloud_qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 6: filled clear/moonless markers; conservative interior interval.",
+      "sun_altitude_deg": -65.26761003097114,
+      "moon_altitude_deg": -54.12684846664093
+    }
+  ]
+}

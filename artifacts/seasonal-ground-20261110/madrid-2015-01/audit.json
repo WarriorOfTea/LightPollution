@@ -1,0 +1,251 @@
+{
+  "bounds": {
+    "west": -5,
+    "south": 39,
+    "east": -2,
+    "north": 42
+  },
+  "crs": "EPSG:4326",
+  "shape": [
+    720,
+    720
+  ],
+  "total_pixels": 518400,
+  "step_arcseconds": 15,
+  "units": "nW/(cm^2 sr)",
+  "radiance_to_W_m2_sr": 1e-05,
+  "quality_policy": "Quality == 0, Num > 3, finite radiance >= 0",
+  "land_water_counts": {
+    "0": 12,
+    "1": 514746,
+    "2": 57,
+    "5": 3585,
+    "fill_or_nan": 0
+  },
+  "composites": {
+    "NearNadir": {
+      "denominator": 518400,
+      "quality_counts": {
+        "0": 418038,
+        "1": 99918,
+        "2": 444,
+        "fill_or_nan": 0
+      },
+      "accepted_pixels": 418038,
+      "accepted_fraction": 0.806400462962963,
+      "missing_radiance": 0,
+      "negative_nonfill_radiance": 0,
+      "inconsistent_quality_vs_num": 0,
+      "zero_pixels_accepted": 363501,
+      "radiance": {
+        "count": 418038,
+        "min": 0.0,
+        "median": 0.0,
+        "p95": 1.6631430029868841,
+        "p99": 48.782037429809584,
+        "max": 560.3346557617188,
+        "mean": 1.4363017143765529
+      },
+      "observations": {
+        "count": 418038,
+        "min": 4.0,
+        "median": 5.0,
+        "p95": 7.0,
+        "p99": 7.0,
+        "max": 9.0,
+        "mean": 5.013240423119429
+      },
+      "std": {
+        "count": 418038,
+        "min": 0.0,
+        "median": 0.1787177473306656,
+        "p95": 0.8126539647579182,
+        "p99": 10.229504365921047,
+        "max": 203.36866760253906,
+        "mean": 0.5158516484823582
+      },
+      "missing_or_negative_std_accepted": 0,
+      "land_radiance": {
+        "count": 415359,
+        "min": 0.0,
+        "median": 0.0,
+        "p95": 1.6725484371185284,
+        "p99": 49.14891990661618,
+        "max": 560.3346557617188,
+        "mean": 1.4438647974699492
+      },
+      "water_radiance": {
+        "count": 13,
+        "min": 0.0,
+        "median": 0.0,
+        "p95": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "coastal_radiance": {
+        "count": 2666,
+        "min": 0.0,
+        "median": 0.0,
+        "p95": 1.135949283838272,
+        "p99": 4.728930974006649,
+        "max": 37.2447624206543,
+        "mean": 0.26498787030186405
+      }
+    },
+    "OffNadir": {
+      "denominator": 518400,
+      "quality_counts": {
+        "0": 517316,
+        "1": 913,
+        "2": 171,
+        "fill_or_nan": 0
+      },
+      "accepted_pixels": 517316,
+      "accepted_fraction": 0.9979089506172839,
+      "missing_radiance": 0,
+      "negative_nonfill_radiance": 0,
+      "inconsistent_quality_vs_num": 0,
+      "zero_pixels_accepted": 396198,
+      "radiance": {
+        "count": 517316,
+        "min": 0.0,
+        "median": 0.0,
+        "p95": 4.735464692115784,
+        "p99": 51.463374710082924,
+        "max": 368.3094787597656,
+        "mean": 1.7749567748454704
+      },
+      "observations": {
+        "count": 517316,
+        "min": 4.0,
+        "median": 10.0,
+        "p95": 13.0,
+        "p99": 14.0,
+        "max": 15.0,
+        "mean": 9.962848626371501
+      },
+      "std": {
+        "count": 517316,
+        "min": 0.0,
+        "median": 0.24155519902706146,
+        "p95": 2.5040230751037598,
+        "p99": 15.913794517517083,
+        "max": 142.9960479736328,
+        "mean": 0.7978390196520097
+      },
+      "missing_or_negative_std_accepted": 0,
+      "land_radiance": {
+        "count": 513837,
+        "min": 0.0,
+        "median": 0.0,
+        "p95": 4.77094488143918,
+        "p99": 51.69171615600587,
+        "max": 368.3094787597656,
+        "mean": 1.7835772798499834
+      },
+      "water_radiance": {
+        "count": 48,
+        "min": 0.0,
+        "median": 0.0,
+        "p95": 0.5406964361667633,
+        "p99": 0.6677870088815689,
+        "max": 0.7006368041038513,
+        "mean": 0.0716533325612545
+      },
+      "coastal_radiance": {
+        "count": 3431,
+        "min": 0.0,
+        "median": 0.0,
+        "p95": 2.0503504276275635,
+        "p99": 8.318548870086653,
+        "max": 64.0441665649414,
+        "mean": 0.507753083567618
+      }
+    },
+    "AllAngle": {
+      "denominator": 518400,
+      "quality_counts": {
+        "0": 518105,
+        "1": 206,
+        "2": 89,
+        "fill_or_nan": 0
+      },
+      "accepted_pixels": 518105,
+      "accepted_fraction": 0.9994309413580247,
+      "missing_radiance": 0,
+      "negative_nonfill_radiance": 0,
+      "inconsistent_quality_vs_num": 0,
+      "zero_pixels_accepted": 418407,
+      "radiance": {
+        "count": 518105,
+        "min": 0.0,
+        "median": 0.0,
+        "p95": 4.353150272369376,
+        "p99": 47.65328811645509,
+        "max": 383.1798400878906,
+        "mean": 1.6247500094492089
+      },
+      "observations": {
+        "count": 518105,
+        "min": 4.0,
+        "median": 22.0,
+        "p95": 25.0,
+        "p99": 26.0,
+        "max": 28.0,
+        "mean": 21.63007884502176
+      },
+      "std": {
+        "count": 518105,
+        "min": 0.0,
+        "median": 0.24869729578495026,
+        "p95": 2.496795654296873,
+        "p99": 16.03812492370616,
+        "max": 195.54006958007812,
+        "mean": 0.8159481028532136
+      },
+      "missing_or_negative_std_accepted": 0,
+      "land_radiance": {
+        "count": 514507,
+        "min": 0.0,
+        "median": 0.0,
+        "p95": 4.395905542373646,
+        "p99": 47.95466094970705,
+        "max": 383.1798400878906,
+        "mean": 1.633139395258778
+      },
+      "water_radiance": {
+        "count": 53,
+        "min": 0.0,
+        "median": 0.0,
+        "p95": 0.6403132081031795,
+        "p99": 0.8347218632698059,
+        "max": 0.837645411491394,
+        "mean": 0.05672579441430434
+      },
+      "coastal_radiance": {
+        "count": 3545,
+        "min": 0.0,
+        "median": 0.0,
+        "p95": 1.8344458103179915,
+        "p99": 6.871126880645746,
+        "max": 50.345149993896484,
+        "mean": 0.43059135181106867
+      }
+    }
+  },
+  "angle_comparison": {
+    "common_good_pixels": 417888,
+    "positive_pair_pixels": 49194,
+    "off_over_near": {
+      "count": 49194,
+      "min": 0.06159447682172155,
+      "median": 1.2934037403766339,
+      "p95": 2.4361174244366692,
+      "p99": 3.8926418122426574,
+      "max": 27.568330350987043,
+      "mean": 1.4055079243717103
+    },
+    "interpretation": "Composite angular differences are not an identified emission function."
+  }
+}
