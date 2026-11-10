@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "mode": "undated",
+  "cloud_free": true,
+  "observer": {
+    "latitude_deg": 60.3,
+    "longitude_deg": 30.315,
+    "height_m": 20.0
+  },
+  "directions": [
+    [
+      0,
+      15
+    ],
+    [
+      90,
+      15
+    ],
+    [
+      180,
+      15
+    ],
+    [
+      270,
+      15
+    ],
+    [
+      0,
+      45
+    ],
+    [
+      90,
+      45
+    ],
+    [
+      180,
+      45
+    ],
+    [
+      270,
+      45
+    ],
+    [
+      0,
+      90
+    ],
+    [
+      180,
+      30
+    ]
+  ],
+  "reference_v_mag_arcsec2": 22.0,
+  "natural": {
+    "mode": "uniform",
+    "v_mag_arcsec2": 21.6,
+    "source": "Assumed isotropic V background; not measured."
+  },
+  "artificial": {
+    "mode": "grid",
+    "sky_grid": "../petersburg-2025/observer-sky/sky-grid.npz",
+    "anchor_direction": [
+      0,
+      90
+    ],
+    "anchor_v_mag_arcsec2": 20.5,
+    "scale_origin": "scenario",
+    "source": "Assumed artificial zenith 20.5 V mag/arcsec2; not NASA calibration.",
+    "band_bridge": "effective_550nm_shape_anchored_in_V"
+  },
+  "moon": {
+    "mode": "none"
+  }
+}

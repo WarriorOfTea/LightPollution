@@ -51,6 +51,9 @@ def make_parser() -> argparse.ArgumentParser:
     context.add_argument('--look-azimuth',type=float,default=180)
     context.add_argument('--look-altitude',type=float,default=35)
     context.add_argument('--output',type=Path,required=True)
+    observe=commands.add_parser('observe',help='Numerical dated/undated V-band scene with separate lunar/city/natural components')
+    observe.add_argument('--scene',type=Path,required=True,help='Versioned JSON scene; grid paths relative to this file')
+    observe.add_argument('--output',type=Path,required=True)
     view=commands.add_parser('render',help='Stars and computed skyglow as seen from the saved observer')
     view.add_argument('--sky',type=Path,default=Path('artifacts/petersburg-2025/observer-sky/sky-grid.npz'))
     view.add_argument('--output',type=Path,default=Path('artifacts/petersburg-2025/observer-view'))
@@ -188,6 +191,14 @@ def main():
                                        args.look_azimuth,args.look_altitude)
             write_manifest(args.output,report)
             print(json.dumps(report,ensure_ascii=False,indent=2))
+        elif args.command=='observe':
+            from .scene import calculate_observation, write_observation
+            report=calculate_observation(json.loads(args.scene.read_text()),args.scene.resolve().parent)
+            write_observation(report,args.output)
+            print(json.dumps({'mode':report['mode'],'utc':report['utc'],
+                              'directions':len(report['directions']),
+                              'supported_directions':sum(row['supported'] for row in report['directions']),
+                              'stars':len(report['stars']),'output':str(args.output)},ensure_ascii=False))
         elif args.command=='render':
             from .skyview import DisplayScenario, render_observer
             scenario=DisplayScenario(args.artificial_zenith_mag,args.natural_mag,args.dark_limiting_mag)

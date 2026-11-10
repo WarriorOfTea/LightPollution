@@ -1,0 +1,387 @@
+{
+  "schema_version": 1,
+  "mode": "undated",
+  "utc": null,
+  "input_scene": {
+    "schema_version": 1,
+    "mode": "undated",
+    "cloud_free": true,
+    "observer": {
+      "latitude_deg": 60.3,
+      "longitude_deg": 30.315,
+      "height_m": 20.0
+    },
+    "directions": [
+      [
+        0,
+        15
+      ],
+      [
+        90,
+        15
+      ],
+      [
+        180,
+        15
+      ],
+      [
+        270,
+        15
+      ],
+      [
+        0,
+        45
+      ],
+      [
+        90,
+        45
+      ],
+      [
+        180,
+        45
+      ],
+      [
+        270,
+        45
+      ],
+      [
+        0,
+        90
+      ],
+      [
+        180,
+        30
+      ]
+    ],
+    "reference_v_mag_arcsec2": 22.0,
+    "natural": {
+      "mode": "uniform",
+      "v_mag_arcsec2": 21.6,
+      "source": "Assumed isotropic V background; not measured."
+    },
+    "artificial": {
+      "mode": "grid",
+      "sky_grid": "../petersburg-2025/observer-sky/sky-grid.npz",
+      "anchor_direction": [
+        0,
+        90
+      ],
+      "anchor_v_mag_arcsec2": 20.5,
+      "scale_origin": "scenario",
+      "source": "Assumed artificial zenith 20.5 V mag/arcsec2; not NASA calibration.",
+      "band_bridge": "effective_550nm_shape_anchored_in_V"
+    },
+    "moon": {
+      "mode": "manual",
+      "azimuth_deg": 180.0,
+      "altitude_deg": 30.0,
+      "phase_angle_deg": 90,
+      "distance_km": 384400.0
+    }
+  },
+  "observer": {
+    "latitude_deg": 60.3,
+    "longitude_deg": 30.315,
+    "height_m": 20.0
+  },
+  "atmosphere": {
+    "reference_wavelength_nm": 550.0,
+    "rayleigh_scale_height_m": 8000.0,
+    "aerosol_scale_height_m": 1200.0,
+    "aerosol_optical_depth": 0.1,
+    "aerosol_single_scattering_albedo": 0.9,
+    "aerosol_g": 0.8,
+    "rayleigh_multiplier": 1.0,
+    "top_m": 80000.0
+  },
+  "cloud_free": true,
+  "geometry": null,
+  "moon": {
+    "mode": "manual",
+    "azimuth_deg": 180.0,
+    "altitude_deg": 30.0,
+    "phase_angle_deg": 90.0,
+    "distance_km": 384400.0,
+    "illuminated_fraction": 0.5
+  },
+  "photometry": {
+    "band": {
+      "name": "V",
+      "zero_point_system": "KS1991 empirical V convention",
+      "response_reference": "doi:10.1086/132921; no numerical spectral response imported"
+    },
+    "reference_v_mag_arcsec2": 22.0,
+    "diffuse_units": "B/Bref, common reference; linear addition",
+    "extinction_v_mag_airmass": 0.2242409030127214,
+    "band_bridge": "effective 550 nm grey transfer shape anchored in V; not a spectral inversion"
+  },
+  "artificial_provenance": {
+    "path": "../petersburg-2025/observer-sky/sky-grid.npz",
+    "sha256": "a459622fba3d38bd4638b6952139c0f88add85983c0ce30eba332593dd2ff4c4",
+    "input_metadata": {
+      "provenance": {
+        "composite": "NearNadir",
+        "observer": {
+          "latitude_deg": 60.3,
+          "longitude_deg": 30.315,
+          "height_m": 20.0
+        },
+        "block_pixels": 8,
+        "effective_sources": 2768,
+        "retained_positive_pixels": 88498,
+        "normalisation": "Total source power = 1 arbitrary unit; weights proportional to radiance * spherical cell area.",
+        "unknown_pixels_are_not_dark_measurements": true,
+        "excluded_local_radius_m": 3000,
+        "include_water": false,
+        "weight_denominator_radiance_times_area": 103972243853.30128,
+        "weight_removed_water_fraction": 0.01259578869011988,
+        "weight_removed_unknown_surface_fraction": 0.0,
+        "weight_removed_local_fraction": 0.0004551161307559425,
+        "retained_weight_fraction": 0.9869490951791243,
+        "largest_patch_radius_m": 3226.554348845645,
+        "nearest_retained_pixel_m": 3000.0698111623283,
+        "nearest_effective_source_chord_m": 3019.7864384577792,
+        "unmodelled_sources_outside_bounds": {
+          "west": 29.0,
+          "south": 59.0,
+          "east": 32.0,
+          "north": 61.0
+        },
+        "input_kind": "blackmarble",
+        "region_file": "artifacts/petersburg-2025/source-grid.npz",
+        "region_metadata": {
+          "bounds": {
+            "west": 29.0,
+            "south": 59.0,
+            "east": 32.0,
+            "north": 61.0
+          },
+          "year": 2025,
+          "product": "VNP46A4.002",
+          "inputs": [
+            {
+              "filename": "VNP46A4.A2025001.h20v02.002.2026076194841.h5",
+              "sha256": "5175fffbfdc3657b12c481d9f0e796745f7ea238b90e8859d4f6b044d784b371"
+            },
+            {
+              "filename": "VNP46A4.A2025001.h21v02.002.2026076221750.h5",
+              "sha256": "033bce269125713b33530798dfddd4dc41ce939fcadb274b1afc47a024171d20"
+            },
+            {
+              "filename": "VNP46A4.A2025001.h20v03.002.2026076194940.h5",
+              "sha256": "1e6629232c61146b3c4be53cbad206afbd0a19acaaf3cf9c1573da0440139651"
+            },
+            {
+              "filename": "VNP46A4.A2025001.h21v03.002.2026076222151.h5",
+              "sha256": "ec4e6252fb1495e817500245ed288ae0b8ffd7b81a0670dd43857a8594e7f301"
+            }
+          ]
+        },
+        "ray_refinement": {
+          "at_or_below_altitude_deg": 5,
+          "minimum_effective_sources": 3094,
+          "maximum_effective_sources": 6375,
+          "refined_directions": 432,
+          "workers": 4
+        }
+      },
+      "observer": {
+        "latitude_deg": 60.3,
+        "longitude_deg": 30.315,
+        "height_m": 20.0
+      },
+      "atmosphere": {
+        "reference_wavelength_nm": 550.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.1,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 1.0,
+        "top_m": 80000.0
+      },
+      "solver": {
+        "ray_segments": 192,
+        "path_quadrature": 24,
+        "horizontal_fraction": 0,
+        "near_ray_scale_m": 500.0
+      },
+      "shape": [
+        15,
+        72
+      ],
+      "elapsed_seconds": 1007.656527682906,
+      "azimuth_convention": "North=0, East=90, clockwise",
+      "raw_units": "m^-2 sr^-1 per unit total assumed source power",
+      "absolute_visible_photometry_calibrated": false,
+      "maximum": {
+        "azimuth_deg": 180.0,
+        "altitude_deg": 0.0,
+        "value": 2.5169925401707496e-11
+      },
+      "physical_error_bound": null,
+      "model_document": "docs/MODEL.md",
+      "south_over_north_at_5deg": 22.793815020336798,
+      "south_over_north_at_15deg": 12.645185275046858,
+      "south_over_north_at_45deg": 2.577913301497394,
+      "initial_elapsed_seconds": 767.8276850709226,
+      "refinement_elapsed_seconds": 239.82884261198342
+    },
+    "anchor_raw": 1.9425900838157745e-13,
+    "anchor_relative": 3.981071705534973,
+    "scale_origin": "scenario",
+    "source": "Assumed artificial zenith 20.5 V mag/arcsec2; not NASA calibration.",
+    "calibration_independently_verified": false
+  },
+  "directions": [
+    {
+      "azimuth_deg": 0.0,
+      "altitude_deg": 15.0,
+      "artificial_relative": 7.080976039480115,
+      "natural_relative": 1.4454397707459257,
+      "moon_relative": 5.613627070824404,
+      "total_relative": 14.140042881050444,
+      "total_v_mag_arcsec2": 19.12387318374254,
+      "moon_separation_deg": 135.0,
+      "supported": true,
+      "status": "ok",
+      "low_altitude_caution": false
+    },
+    {
+      "azimuth_deg": 90.0,
+      "altitude_deg": 15.0,
+      "artificial_relative": 6.483410826405294,
+      "natural_relative": 1.4454397707459257,
+      "moon_relative": 4.059321436047836,
+      "total_relative": 11.988172033199056,
+      "total_v_mag_arcsec2": 19.303117583624253,
+      "moon_separation_deg": 82.56452777386814,
+      "supported": true,
+      "status": "ok",
+      "low_altitude_caution": false
+    },
+    {
+      "azimuth_deg": 180.0,
+      "altitude_deg": 15.0,
+      "artificial_relative": 89.54025394739357,
+      "natural_relative": 1.4454397707459257,
+      "moon_relative": 16.500815020566158,
+      "total_relative": 107.48650873870565,
+      "total_v_mag_arcsec2": 16.921615107929746,
+      "moon_separation_deg": 14.999999999999996,
+      "supported": true,
+      "status": "ok",
+      "low_altitude_caution": false
+    },
+    {
+      "azimuth_deg": 270.0,
+      "altitude_deg": 15.0,
+      "artificial_relative": 8.446752105597993,
+      "natural_relative": 1.4454397707459257,
+      "moon_relative": 4.059321436047836,
+      "total_relative": 13.951513312391754,
+      "total_v_mag_arcsec2": 19.138446705424787,
+      "moon_separation_deg": 82.56452777386814,
+      "supported": true,
+      "status": "ok",
+      "low_altitude_caution": false
+    },
+    {
+      "azimuth_deg": 0.0,
+      "altitude_deg": 45.0,
+      "artificial_relative": 4.267065956646162,
+      "natural_relative": 1.4454397707459257,
+      "moon_relative": 2.161974628697296,
+      "total_relative": 7.874480356089384,
+      "total_v_mag_arcsec2": 19.759445240172614,
+      "moon_separation_deg": 105.00000000000001,
+      "supported": true,
+      "status": "ok",
+      "low_altitude_caution": false
+    },
+    {
+      "azimuth_deg": 90.0,
+      "altitude_deg": 45.0,
+      "artificial_relative": 4.9228110448546705,
+      "natural_relative": 1.4454397707459257,
+      "moon_relative": 2.4603948136444704,
+      "total_relative": 8.828645629245067,
+      "total_v_mag_arcsec2": 19.63526478716579,
+      "moon_separation_deg": 69.29518894536457,
+      "supported": true,
+      "status": "ok",
+      "low_altitude_caution": false
+    },
+    {
+      "azimuth_deg": 180.0,
+      "altitude_deg": 45.0,
+      "artificial_relative": 11.000126088004842,
+      "natural_relative": 1.4454397707459257,
+      "moon_relative": 8.698452619586172,
+      "total_relative": 21.14401847833694,
+      "total_v_mag_arcsec2": 18.68703117583584,
+      "moon_separation_deg": 15.000000000000018,
+      "supported": true,
+      "status": "ok",
+      "low_altitude_caution": false
+    },
+    {
+      "azimuth_deg": 270.0,
+      "altitude_deg": 45.0,
+      "artificial_relative": 5.01800457781702,
+      "natural_relative": 1.4454397707459257,
+      "moon_relative": 2.4603948136444704,
+      "total_relative": 8.923839162207416,
+      "total_v_mag_arcsec2": 19.62362066443623,
+      "moon_separation_deg": 69.29518894536457,
+      "supported": true,
+      "status": "ok",
+      "low_altitude_caution": false
+    },
+    {
+      "azimuth_deg": 0.0,
+      "altitude_deg": 90.0,
+      "artificial_relative": 3.981071705534973,
+      "natural_relative": 1.4454397707459257,
+      "moon_relative": 2.1355030103691885,
+      "total_relative": 7.562014486650087,
+      "total_v_mag_arcsec2": 19.803406237472664,
+      "moon_separation_deg": 60.00000000000001,
+      "supported": true,
+      "status": "ok",
+      "low_altitude_caution": false
+    },
+    {
+      "azimuth_deg": 180.0,
+      "altitude_deg": 30.0,
+      "artificial_relative": 25.740871308848895,
+      "natural_relative": 1.4454397707459257,
+      "moon_relative": null,
+      "total_relative": null,
+      "total_v_mag_arcsec2": null,
+      "moon_separation_deg": 0.0,
+      "supported": false,
+      "status": "moon_separation_below_10deg",
+      "low_altitude_caution": false
+    }
+  ],
+  "stars_metadata": {
+    "available": false,
+    "reason": "No date: no unique horizontal stellar positions."
+  },
+  "assumptions_and_limitations": [
+    "effective_550nm_shape_anchored_in_V_not_spectral_integration",
+    "no_independent_field_validation",
+    "no_clouds_refraction_terrain_or_eye_camera_model",
+    "manual_geometry_not_a_prediction_of_a_specific_night; no_eclipse_assumed",
+    "uniform_natural_background_is_a_scenario"
+  ],
+  "model": {
+    "moonlight": "Krisciunas-Schaefer 1991 eqs 1,3,8,9,15,21; rho>=10 deg",
+    "distance_correction_reference_km": 384400.0,
+    "lunar_opposition_surge": false,
+    "lunar_eclipse_model": false,
+    "physical_error_bound": null,
+    "document": "docs/OBSERVATION_MODEL.md"
+  }
+}

@@ -45,3 +45,47 @@ def sum_surface_brightness(*components: SurfaceBrightness) -> SurfaceBrightness:
     logs = np.broadcast_arrays(*[-0.4 * np.log(10) * c.mag_arcsec2 for c in components])
     total = np.logaddexp.reduce(np.stack(logs), axis=0)
     return SurfaceBrightness(-2.5 * total / np.log(10), components[0].band)
+
+
+KS_V_BAND = PhotometricBand(
+    "V", "KS1991 empirical V convention",
+    "doi:10.1086/132921; no numerical spectral response imported")
+
+
+@dataclass(frozen=True)
+class RelativeScale:
+    """One common surface-brightness reference for ALL diffuse components."""
+    band: PhotometricBand = KS_V_BAND
+    reference_mag_arcsec2: float = 22.
+
+    def __post_init__(self):
+        if not isinstance(self.band, PhotometricBand) or not np.isfinite(self.reference_mag_arcsec2):
+            raise ValueError("Relative scale needs a band and finite reference magnitude.")
+
+    def from_magnitudes(self, magnitude: SurfaceBrightness) -> RelativeBrightness:
+        reference = SurfaceBrightness(self.reference_mag_arcsec2, self.band)
+        return RelativeBrightness(magnitude.ratio_to(reference), self)
+
+
+@dataclass(frozen=True)
+class RelativeBrightness:
+    """Linear diffuse brightness B/Bref; zero is a valid absent component."""
+    values: np.ndarray
+    scale: RelativeScale
+
+    def __post_init__(self):
+        values = np.array(self.values, dtype=float, copy=True)
+        if (not isinstance(self.scale, RelativeScale) or not values.size
+                or np.any(~np.isfinite(values)) or np.any(values < 0)):
+            raise ValueError("Relative brightness needs a scale and finite nonnegative values.")
+        values.flags.writeable = False
+        object.__setattr__(self, "values", values)
+
+    def __add__(self, other: RelativeBrightness) -> RelativeBrightness:
+        if not isinstance(other, RelativeBrightness) or self.scale != other.scale:
+            raise ValueError("Components must share exactly the same band and reference scale.")
+        return RelativeBrightness(self.values + other.values, self.scale)
+
+    def magnitudes(self) -> np.ndarray:
+        with np.errstate(divide="ignore"):
+            return self.scale.reference_mag_arcsec2 - 2.5*np.log10(self.values)

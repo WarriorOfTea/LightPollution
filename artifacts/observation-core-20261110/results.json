@@ -1,0 +1,317 @@
+{
+  "cases": {
+    "undated-moonless": {
+      "utc": null,
+      "rays": 10,
+      "supported_rays": 10,
+      "stars_exported": 0,
+      "moon": {
+        "mode": "none"
+      },
+      "zenith": {
+        "azimuth_deg": 0.0,
+        "altitude_deg": 90.0,
+        "artificial_relative": 3.981071705534973,
+        "natural_relative": 1.4454397707459257,
+        "moon_relative": 0.0,
+        "total_relative": 5.426511476280899,
+        "total_v_mag_arcsec2": 20.163698185458546,
+        "moon_separation_deg": null,
+        "supported": true,
+        "status": "ok",
+        "low_altitude_caution": false
+      }
+    },
+    "undated-phase-30": {
+      "utc": null,
+      "rays": 10,
+      "supported_rays": 9,
+      "stars_exported": 0,
+      "moon": {
+        "mode": "manual",
+        "azimuth_deg": 180.0,
+        "altitude_deg": 30.0,
+        "phase_angle_deg": 30.0,
+        "distance_km": 384400.0,
+        "illuminated_fraction": 0.9330127018922194
+      },
+      "zenith": {
+        "azimuth_deg": 0.0,
+        "altitude_deg": 90.0,
+        "artificial_relative": 3.981071705534973,
+        "natural_relative": 1.4454397707459257,
+        "moon_relative": 11.40710599366943,
+        "total_relative": 16.83361746995033,
+        "total_v_mag_arcsec2": 18.93455636507823,
+        "moon_separation_deg": 60.00000000000001,
+        "supported": true,
+        "status": "ok",
+        "low_altitude_caution": false
+      }
+    },
+    "undated-phase-60": {
+      "utc": null,
+      "rays": 10,
+      "supported_rays": 9,
+      "stars_exported": 0,
+      "moon": {
+        "mode": "manual",
+        "azimuth_deg": 180.0,
+        "altitude_deg": 30.0,
+        "phase_angle_deg": 60.0,
+        "distance_km": 384400.0,
+        "illuminated_fraction": 0.75
+      },
+      "zenith": {
+        "azimuth_deg": 0.0,
+        "altitude_deg": 90.0,
+        "artificial_relative": 3.981071705534973,
+        "natural_relative": 1.4454397707459257,
+        "moon_relative": 5.317868852773628,
+        "total_relative": 10.744380329054527,
+        "total_v_mag_arcsec2": 19.422046567330522,
+        "moon_separation_deg": 60.00000000000001,
+        "supported": true,
+        "status": "ok",
+        "low_altitude_caution": false
+      }
+    },
+    "undated-phase-90": {
+      "utc": null,
+      "rays": 10,
+      "supported_rays": 9,
+      "stars_exported": 0,
+      "moon": {
+        "mode": "manual",
+        "azimuth_deg": 180.0,
+        "altitude_deg": 30.0,
+        "phase_angle_deg": 90.0,
+        "distance_km": 384400.0,
+        "illuminated_fraction": 0.5
+      },
+      "zenith": {
+        "azimuth_deg": 0.0,
+        "altitude_deg": 90.0,
+        "artificial_relative": 3.981071705534973,
+        "natural_relative": 1.4454397707459257,
+        "moon_relative": 2.1355030103691885,
+        "total_relative": 7.562014486650087,
+        "total_v_mag_arcsec2": 19.803406237472664,
+        "moon_separation_deg": 60.00000000000001,
+        "supported": true,
+        "status": "ok",
+        "low_altitude_caution": false
+      }
+    },
+    "undated-phase-120": {
+      "utc": null,
+      "rays": 10,
+      "supported_rays": 9,
+      "stars_exported": 0,
+      "moon": {
+        "mode": "manual",
+        "azimuth_deg": 180.0,
+        "altitude_deg": 30.0,
+        "phase_angle_deg": 120.0,
+        "distance_km": 384400.0,
+        "illuminated_fraction": 0.2500000000000001
+      },
+      "zenith": {
+        "azimuth_deg": 0.0,
+        "altitude_deg": 90.0,
+        "artificial_relative": 3.981071705534973,
+        "natural_relative": 1.4454397707459257,
+        "moon_relative": 0.6175948646689705,
+        "total_relative": 6.044106340949869,
+        "total_v_mag_arcsec2": 20.046669758052317,
+        "moon_separation_deg": 60.00000000000001,
+        "supported": true,
+        "status": "ok",
+        "low_altitude_caution": false
+      }
+    },
+    "dated-2025": {
+      "utc": "2025-01-12T21:00:00Z",
+      "rays": 10,
+      "supported_rays": 10,
+      "stars_exported": 4535,
+      "moon": {
+        "mode": "ephemeris",
+        "azimuth_deg": 175.2325403701224,
+        "altitude_deg": 57.16562477511485,
+        "phase_angle_deg": 14.197944826700748,
+        "distance_km": 372251.4707011172,
+        "possible_lunar_eclipse": false,
+        "illuminated_fraction": 0.9847270741673801
+      },
+      "zenith": {
+        "azimuth_deg": 0.0,
+        "altitude_deg": 90.0,
+        "artificial_relative": 3.981071705534973,
+        "natural_relative": 1.4454397707459257,
+        "moon_relative": 36.95658292795008,
+        "total_relative": 42.38309440423098,
+        "total_v_mag_arcsec2": 17.93201834619718,
+        "moon_separation_deg": 32.83437522488516,
+        "supported": true,
+        "status": "ok",
+        "low_altitude_caution": false
+      }
+    },
+    "future-2027": {
+      "utc": "2027-01-20T21:00:00Z",
+      "rays": 10,
+      "supported_rays": 10,
+      "stars_exported": 4541,
+      "moon": {
+        "mode": "ephemeris",
+        "azimuth_deg": 191.45697960619538,
+        "altitude_deg": 55.611676671956296,
+        "phase_angle_deg": 23.441662012982576,
+        "distance_km": 353053.1072259658,
+        "possible_lunar_eclipse": false,
+        "illuminated_fraction": 0.9587328006237531
+      },
+      "zenith": {
+        "azimuth_deg": 0.0,
+        "altitude_deg": 90.0,
+        "artificial_relative": 3.981071705534973,
+        "natural_relative": 1.4454397707459257,
+        "moon_relative": 31.486391129845195,
+        "total_relative": 36.912902606126096,
+        "total_v_mag_arcsec2": 18.08205450796317,
+        "moon_separation_deg": 34.38832332804371,
+        "supported": true,
+        "status": "ok",
+        "low_altitude_caution": false
+      }
+    }
+  },
+  "reference_checks": {
+    "source": "Krisciunas-Schaefer 1991 Table 2, excluding rho=5deg",
+    "comparisons": [
+      {
+        "phase_angle_deg": 30,
+        "separation_deg": 30,
+        "published_nL": 1160,
+        "calculated_nL": 1160.3432811188263,
+        "absolute_difference_nL": 0.34328111882632584
+      },
+      {
+        "phase_angle_deg": 30,
+        "separation_deg": 60,
+        "published_nL": 530,
+        "calculated_nL": 529.754189570545,
+        "absolute_difference_nL": 0.2458104294549912
+      },
+      {
+        "phase_angle_deg": 30,
+        "separation_deg": 90,
+        "published_nL": 437,
+        "calculated_nL": 437.0228055195328,
+        "absolute_difference_nL": 0.022805519532823837
+      },
+      {
+        "phase_angle_deg": 30,
+        "separation_deg": 120,
+        "published_nL": 818,
+        "calculated_nL": 818.1459440859197,
+        "absolute_difference_nL": 0.14594408591972297
+      },
+      {
+        "phase_angle_deg": 60,
+        "separation_deg": 30,
+        "published_nL": 541,
+        "calculated_nL": 540.936755523207,
+        "absolute_difference_nL": 0.06324447679298828
+      },
+      {
+        "phase_angle_deg": 60,
+        "separation_deg": 60,
+        "published_nL": 247,
+        "calculated_nL": 246.96442612638418,
+        "absolute_difference_nL": 0.03557387361581732
+      },
+      {
+        "phase_angle_deg": 60,
+        "separation_deg": 90,
+        "published_nL": 204,
+        "calculated_nL": 203.73427618716616,
+        "absolute_difference_nL": 0.2657238128338406
+      },
+      {
+        "phase_angle_deg": 60,
+        "separation_deg": 120,
+        "published_nL": 381,
+        "calculated_nL": 381.40886385930406,
+        "absolute_difference_nL": 0.40886385930406277
+      },
+      {
+        "phase_angle_deg": 90,
+        "separation_deg": 30,
+        "published_nL": 217,
+        "calculated_nL": 217.22334238949915,
+        "absolute_difference_nL": 0.22334238949915175
+      },
+      {
+        "phase_angle_deg": 90,
+        "separation_deg": 60,
+        "published_nL": 99,
+        "calculated_nL": 99.17321673323823,
+        "absolute_difference_nL": 0.1732167332382346
+      },
+      {
+        "phase_angle_deg": 90,
+        "separation_deg": 90,
+        "published_nL": 82,
+        "calculated_nL": 81.81333581201423,
+        "absolute_difference_nL": 0.18666418798576956
+      },
+      {
+        "phase_angle_deg": 90,
+        "separation_deg": 120,
+        "published_nL": 153,
+        "calculated_nL": 153.16191288270673,
+        "absolute_difference_nL": 0.16191288270673
+      },
+      {
+        "phase_angle_deg": 120,
+        "separation_deg": 30,
+        "published_nL": 63,
+        "calculated_nL": 62.821238171445096,
+        "absolute_difference_nL": 0.1787618285549044
+      },
+      {
+        "phase_angle_deg": 120,
+        "separation_deg": 60,
+        "published_nL": 29,
+        "calculated_nL": 28.681007299187375,
+        "absolute_difference_nL": 0.31899270081262543
+      },
+      {
+        "phase_angle_deg": 120,
+        "separation_deg": 90,
+        "published_nL": 24,
+        "calculated_nL": 23.660509953075003,
+        "absolute_difference_nL": 0.33949004692499685
+      },
+      {
+        "phase_angle_deg": 120,
+        "separation_deg": 120,
+        "published_nL": 44,
+        "calculated_nL": 44.2945997522952,
+        "absolute_difference_nL": 0.2945997522951984
+      }
+    ],
+    "within_published_half_nL_rounding": 16,
+    "total_comparisons": 16,
+    "maximum_absolute_difference_nL": 0.40886385930406277,
+    "specsim_documented_mag": 19.855,
+    "specsim_calculated_mag": 19.854844454885594,
+    "reference_change_max_mag_difference": 3.552713678800501e-15
+  },
+  "physical_validation": false,
+  "physical_error_bound": null,
+  "new_satellite_files_downloaded": 0,
+  "eye_camera_rendering_performed": false
+}

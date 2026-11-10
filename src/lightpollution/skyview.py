@@ -49,7 +49,8 @@ def load_stars() -> tuple[dict[str, np.ndarray], dict]:
     return stars, metadata
 
 
-def horizontal_stars(stars: dict, observer: Observer, timestamp: str) -> tuple[np.ndarray, np.ndarray, dict]:
+def horizontal_stars(stars: dict, observer: Observer, timestamp: str, *,
+                     allow_moon: bool = False) -> tuple[np.ndarray, np.ndarray, dict]:
     # Require explicit UTC: an accidentally interpreted local time moves the sky.
     if not timestamp.endswith("Z"):
         raise ValueError("Supply an ISO UTC timestamp ending in Z.")
@@ -82,7 +83,7 @@ def horizontal_stars(stars: dict, observer: Observer, timestamp: str) -> tuple[n
                 "earth_geometry": "WGS84 astrometry; spherical Earth in transfer solver"}
     if sun.alt.deg > -18:
         raise ValueError("The Sun is above -18 degrees: twilight is outside this renderer's model.")
-    if moon.alt.deg > 0:
+    if moon.alt.deg > 0 and not allow_moon:
         raise ValueError("The Moon is above the horizon: lunar sky brightness is not modelled.")
     return horizontal.az.deg, horizontal.alt.deg, metadata
 

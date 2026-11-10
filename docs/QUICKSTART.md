@@ -4,6 +4,39 @@
 Python ≥3.12, `uv`. Команды выполняются из корня LightPollution. Код не зависит
 от KStars. Физические определения и ограничения — [MODEL.md](MODEL.md), состояние
 исследования и дальнейшие этапы — [OBSERVATION_PLAN.md](OBSERVATION_PLAN.md).
+
+## Численная сцена: общая V-шкала и Луна
+
+```bash
+uv run lightpollution observe \
+  --scene artifacts/observation-core-20261110/dated-2025.scene.json \
+  --output scratch/dated-observation
+uv run lightpollution observe \
+  --scene artifacts/observation-core-20261110/undated-phase-60.scene.json \
+  --output scratch/manual-observation
+```
+
+Результаты: `observation.json`, `directions.csv`, `stars.csv`. Городской,
+естественный и лунный фоны разделены и приведены к одной опоре. В условном
+режиме CSV звёзд пуст, кроме заголовка. `null` у лунного/суммарного фона
+означает неподдерживаемое направление, а не отсутствие света.
+Изображения, порог глаза и кадры камеры этой командой не создаются.
+
+JSON допускает только явные режимы `dated/undated`; время с часовым поясом
+обязательно для первого. Пути NPZ считаются относительно JSON. Входные точка
+и атмосфера должны совпадать с сохранённым полем; спектральное приближение
+и происхождение масштаба обязательны. В примерах масштаб **сценарный**.
+Полный контракт, физические формулы и ограничения:
+[OBSERVATION_MODEL.md](OBSERVATION_MODEL.md).
+
+Воспроизвести семь численных случаев и проверку опубликованной таблицы:
+
+```bash
+uv run python scripts/run_observation_cases.py
+```
+
+Сохранённое годовое поле NASA 2025 используется повторно. Выбор даты 2027
+определяет эфемериды, но не заменяет карту освещения прогнозом будущего.
 Рабочая ветка — `main`. Объяснение с основ — [PHYSICS_AND_MATH_GUIDE.md](PHYSICS_AND_MATH_GUIDE.md).
 
 ## Технические входы: месяц, измерения и Луна

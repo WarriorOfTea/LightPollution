@@ -34,6 +34,12 @@ def observation_context(observer: Observer, utc: str, azimuth_deg: float = 180,
         to_sun, to_earth = s-m, -m
         cosine = np.dot(to_sun, to_earth)/(np.linalg.norm(to_sun)*np.linalg.norm(to_earth))
         phase = np.arccos(np.clip(cosine, -1, 1))
+        # Conservative geometric penumbra screen, including the lunar radius.
+        # It excludes possible eclipses; it does not model their attenuation.
+        eclipse_limit = (np.arcsin(6378.137/np.linalg.norm(m))
+                         + np.arcsin(695700/np.linalg.norm(to_sun))
+                         + np.arcsin(1737.4/np.linalg.norm(m)))
+        possible_eclipse = bool(phase < eclipse_limit)
         target = SkyCoord(az=azimuth_deg*u.deg, alt=altitude_deg*u.deg, frame=frame)
         separation = target.separation(moon).deg
     sun_alt = float(sun.alt.deg)
@@ -46,6 +52,7 @@ def observation_context(observer: Observer, utc: str, azimuth_deg: float = 180,
                  "topocentric_distance_km": float(moon.distance.to_value(u.km)),
                  "geocentric_phase_angle_deg": float(np.rad2deg(phase)),
                  "geocentric_illuminated_fraction": float((1+np.cos(phase))/2),
+                 "possible_lunar_eclipse": possible_eclipse,
                  "target_separation_deg": float(separation)},
         "astronomical_darkness": sun_alt <= -18,
         "moon_center_above_geometric_horizon": moon_alt > 0,
@@ -54,5 +61,6 @@ def observation_context(observer: Observer, utc: str, azimuth_deg: float = 180,
         "method": {"ephemeris": "astropy builtin", "iers": "offline bundled tables",
                    "atmospheric_refraction": False, "terrain_horizon": False,
                    "phase_reference": "geocentric; illuminated fraction is not lunar flux",
+                   "eclipse_screen": "Conservative spherical penumbra geometry; no eclipse photometry.",
                    "limitations": "Geometry only; no scattered moonlight, horizon glow or optics glare."},
     }
