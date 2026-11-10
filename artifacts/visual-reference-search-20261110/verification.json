@@ -1,0 +1,61 @@
+{
+  "checked_date": "2026-11-10",
+  "photo_files": [
+    {
+      "filename": "odense-2021.jpg",
+      "sha256_verified": true,
+      "image_decodes": true,
+      "size": [
+        1280,
+        960
+      ]
+    },
+    {
+      "filename": "pattaya-2026.jpg",
+      "sha256_verified": true,
+      "image_decodes": true,
+      "size": [
+        1280,
+        853
+      ]
+    },
+    {
+      "filename": "varanasi-moon-2026.jpg",
+      "sha256_verified": true,
+      "image_decodes": true,
+      "size": [
+        1280,
+        1707
+      ]
+    },
+    {
+      "filename": "moscow-winter-2024.jpg",
+      "sha256_verified": true,
+      "image_decodes": true,
+      "size": [
+        1280,
+        844
+      ]
+    },
+    {
+      "filename": "lailai-author-comparison-2023.jpg",
+      "sha256_verified": true,
+      "image_decodes": true,
+      "size": [
+        1280,
+        853
+      ]
+    }
+  ],
+  "local_document_links_exist": true,
+  "published_coordinate_records": 5,
+  "calibrated_naked_eye_references_found": 0,
+  "source_parameters_preserved": true,
+  "new_sky_calculations": 0,
+  "new_nasa_downloads": 0,
+  "new_kstars_runs": 0,
+  "project_code_changed": false,
+  "model_tests_run": false,
+  "correction_during_review": "Moscow lens aperture corrected to f/2.4 from source EXIF before publication.",
+  "scope": "Search, metadata and source review only. Photographs visually inspected; no visual photometric calibration."
+}

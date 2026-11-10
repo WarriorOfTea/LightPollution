@@ -1,0 +1,28 @@
+{
+  "commit": "7aea013b99165e80d1426d183de4a31ae22b0ca5",
+  "paths": [
+    "kstars/skyqpainter.cpp",
+    "kstars/skypainter.cpp",
+    "kstars/skycomponents/starcomponent.cpp"
+  ],
+  "checked_date": "2026-11-10",
+  "documentation_version": "KStars Handbook 3.7.6",
+  "previous_local_dump_version": "3.6.2; not run in this task",
+  "sources": [
+    {
+      "path": "kstars/skyqpainter.cpp",
+      "url": "https://github.com/KDE/kstars/blob/7aea013b99165e80d1426d183de4a31ae22b0ca5/kstars/skyqpainter.cpp",
+      "sha256": "00c2fe0bc1b07f4c22cdd3a80298e6812d0867fe1a3259696c90bb9c79812da5"
+    },
+    {
+      "path": "kstars/skypainter.cpp",
+      "url": "https://github.com/KDE/kstars/blob/7aea013b99165e80d1426d183de4a31ae22b0ca5/kstars/skypainter.cpp",
+      "sha256": "bb3eefdb01948a2d3d5ea80eb8dd01129a981cb46dcde0ce27023f2ecc3254b3"
+    },
+    {
+      "path": "kstars/skycomponents/starcomponent.cpp",
+      "url": "https://github.com/KDE/kstars/blob/7aea013b99165e80d1426d183de4a31ae22b0ca5/kstars/skycomponents/starcomponent.cpp",
+      "sha256": "052166165318aa509bc2dbf21f35aa45713bd1a4d40e2f26defcbe78ef50e4c4"
+    }
+  ]
+}
