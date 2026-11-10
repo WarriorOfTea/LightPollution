@@ -1,0 +1,41 @@
+{
+  "completed_at": "2026-11-10T10:21:03+01:00",
+  "scope": "documentation-only; no model implementation or new point calculations",
+  "documents_checked": 9,
+  "local_file_links_checked": 80,
+  "broken_local_links": [],
+  "downloaded_source_hashes_verified": 17,
+  "paper_hashes_verified": 7,
+  "pdf": {
+    "path": "artifacts/research-20261110/observation-research-20261110.pdf",
+    "pages": 14,
+    "bytes": 132996,
+    "sha256": "89326831c98f424b1d875c3154832d2b880e75d7966743df5a072116b42a6ebd",
+    "text_spans_outside_page": [],
+    "replacement_characters": 0,
+    "visually_reviewed_sample_pages": [
+      1,
+      3,
+      8,
+      14
+    ],
+    "visual_review_note": "Samples rendered and inspected; final edits change only wording in literature and report retention section."
+  },
+  "git_diff_check": "passed",
+  "application_tests": {
+    "run": false,
+    "reason": "No source code, scripts, tests, configuration templates or computational results changed."
+  },
+  "kstars_or_indi_runtime_audit": false,
+  "new_point_simulations": 0,
+  "claims_not_validated": [
+    "Absolute sky photometry",
+    "Naked-eye appearance or visibility in the field",
+    "Camera SNR or accuracy benefit over existing tools"
+  ],
+  "artifacts_reproduced_from": [
+    "docs/OBSERVATION_PLAN.md",
+    "docs/KSTARS_CAMERA_AUDIT.md",
+    "docs/LITERATURE.md"
+  ]
+}

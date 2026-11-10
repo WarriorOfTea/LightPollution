@@ -1,0 +1,276 @@
+{
+  "created_at": "2026-11-10T10:17:47+01:00",
+  "project": "WarriorOfTea/LightPollution",
+  "task": "Research and documentation for naked-eye and camera observation modes",
+  "local_baseline_commit": "95a9e8f6cf84f6924b0ed3cf100ec2795dd8a816",
+  "new_point_simulations": 0,
+  "downloaded_source_files": [
+    {
+      "repo": "indilib/indi",
+      "revision": "76b457edca2d3ab7f30527f9b93b53ed58c2cb2c",
+      "path": "drivers/ccd/ccd_simulator.cpp",
+      "url": "https://raw.githubusercontent.com/indilib/indi/76b457edca2d3ab7f30527f9b93b53ed58c2cb2c/drivers/ccd/ccd_simulator.cpp",
+      "sha256": "902f25a3833682e1c6ce9684c773193c5660785e3559ac126c6557510fbddb20"
+    },
+    {
+      "repo": "indilib/indi",
+      "revision": "76b457edca2d3ab7f30527f9b93b53ed58c2cb2c",
+      "path": "drivers/ccd/ccd_simulator.h",
+      "url": "https://raw.githubusercontent.com/indilib/indi/76b457edca2d3ab7f30527f9b93b53ed58c2cb2c/drivers/ccd/ccd_simulator.h",
+      "sha256": "47a3e3cfe59fdeef3f69863cf6d1e40280870fe9ef77b25e788c91e2172496e2"
+    },
+    {
+      "repo": "indilib/indi",
+      "revision": "76b457edca2d3ab7f30527f9b93b53ed58c2cb2c",
+      "path": "drivers/ccd/sky_renderer.cpp",
+      "url": "https://raw.githubusercontent.com/indilib/indi/76b457edca2d3ab7f30527f9b93b53ed58c2cb2c/drivers/ccd/sky_renderer.cpp",
+      "sha256": "649c24a8f7cafa49140f9a6aa51ac3b91c513c5b953763ead86e6b77a184d562"
+    },
+    {
+      "repo": "indilib/indi",
+      "revision": "76b457edca2d3ab7f30527f9b93b53ed58c2cb2c",
+      "path": "drivers/ccd/sky_renderer.h",
+      "url": "https://raw.githubusercontent.com/indilib/indi/76b457edca2d3ab7f30527f9b93b53ed58c2cb2c/drivers/ccd/sky_renderer.h",
+      "sha256": "9b2b16fa3833d7c865b0ecede3853a27b96b9feca23b7af67d6e26941933f8d4"
+    },
+    {
+      "repo": "indilib/indi",
+      "revision": "76b457edca2d3ab7f30527f9b93b53ed58c2cb2c",
+      "path": "test/drivers/test_ccd_simulator.cpp",
+      "url": "https://raw.githubusercontent.com/indilib/indi/76b457edca2d3ab7f30527f9b93b53ed58c2cb2c/test/drivers/test_ccd_simulator.cpp",
+      "sha256": "6b4653c6702b063306a950d38bef83d5bceea360ad88d643735bd8eb9c306575"
+    },
+    {
+      "repo": "KDE/kstars",
+      "revision": "7aea013b99165e80d1426d183de4a31ae22b0ca5",
+      "path": "kstars/ekos/capture/exposurecalculator/calculatedgainsubexposuretime.cpp",
+      "url": "https://raw.githubusercontent.com/KDE/kstars/7aea013b99165e80d1426d183de4a31ae22b0ca5/kstars/ekos/capture/exposurecalculator/calculatedgainsubexposuretime.cpp",
+      "sha256": "f1379941911fef06165e2945f6b1b1f294e29b87ee9855c9d5b1d255168f650e"
+    },
+    {
+      "repo": "KDE/kstars",
+      "revision": "7aea013b99165e80d1426d183de4a31ae22b0ca5",
+      "path": "kstars/ekos/capture/exposurecalculator/cameradatafileutilitydialog.cpp",
+      "url": "https://raw.githubusercontent.com/KDE/kstars/7aea013b99165e80d1426d183de4a31ae22b0ca5/kstars/ekos/capture/exposurecalculator/cameradatafileutilitydialog.cpp",
+      "sha256": "e06721449f8fec9bf708737166613f0550248c6a4f5ceb21cf8f36260643d2cd"
+    },
+    {
+      "repo": "KDE/kstars",
+      "revision": "7aea013b99165e80d1426d183de4a31ae22b0ca5",
+      "path": "kstars/ekos/capture/exposurecalculator/cameraexposureenvelope.cpp",
+      "url": "https://raw.githubusercontent.com/KDE/kstars/7aea013b99165e80d1426d183de4a31ae22b0ca5/kstars/ekos/capture/exposurecalculator/cameraexposureenvelope.cpp",
+      "sha256": "f28cbc5089c0907e05a0d5410ab27f5f99d0fc302a88cd6df13bffb596cb24d9"
+    },
+    {
+      "repo": "KDE/kstars",
+      "revision": "7aea013b99165e80d1426d183de4a31ae22b0ca5",
+      "path": "kstars/ekos/capture/exposurecalculator/cameragainreadmode.cpp",
+      "url": "https://raw.githubusercontent.com/KDE/kstars/7aea013b99165e80d1426d183de4a31ae22b0ca5/kstars/ekos/capture/exposurecalculator/cameragainreadmode.cpp",
+      "sha256": "b54b5f9c8c7075a8291fc6e4cb9eebb737d95da4ac3d0f243f8bb3098f7ee93f"
+    },
+    {
+      "repo": "KDE/kstars",
+      "revision": "7aea013b99165e80d1426d183de4a31ae22b0ca5",
+      "path": "kstars/ekos/capture/exposurecalculator/cameragainreadnoise.cpp",
+      "url": "https://raw.githubusercontent.com/KDE/kstars/7aea013b99165e80d1426d183de4a31ae22b0ca5/kstars/ekos/capture/exposurecalculator/cameragainreadnoise.cpp",
+      "sha256": "3f2f703b71dff155652bb118439d8f1e720e3b493bfd5211f544255a474e33af"
+    },
+    {
+      "repo": "KDE/kstars",
+      "revision": "7aea013b99165e80d1426d183de4a31ae22b0ca5",
+      "path": "kstars/ekos/capture/exposurecalculator/exposurecalculatordialog.cpp",
+      "url": "https://raw.githubusercontent.com/KDE/kstars/7aea013b99165e80d1426d183de4a31ae22b0ca5/kstars/ekos/capture/exposurecalculator/exposurecalculatordialog.cpp",
+      "sha256": "2a1aef1434a83e82ec72ea133f2f45d277765c3e52948bd813899ec31ec2db08"
+    },
+    {
+      "repo": "KDE/kstars",
+      "revision": "7aea013b99165e80d1426d183de4a31ae22b0ca5",
+      "path": "kstars/ekos/capture/exposurecalculator/fileutilitycameradata.cpp",
+      "url": "https://raw.githubusercontent.com/KDE/kstars/7aea013b99165e80d1426d183de4a31ae22b0ca5/kstars/ekos/capture/exposurecalculator/fileutilitycameradata.cpp",
+      "sha256": "1169cf34e3e0af543ec130ef7f088a757a239e3e83a633e4294543e306ed21de"
+    },
+    {
+      "repo": "KDE/kstars",
+      "revision": "7aea013b99165e80d1426d183de4a31ae22b0ca5",
+      "path": "kstars/ekos/capture/exposurecalculator/fileutilitycameradatadialog.cpp",
+      "url": "https://raw.githubusercontent.com/KDE/kstars/7aea013b99165e80d1426d183de4a31ae22b0ca5/kstars/ekos/capture/exposurecalculator/fileutilitycameradatadialog.cpp",
+      "sha256": "3592ac5123295307bee50f51963fe34b187ef855ccb61805de6219cb05a4456b"
+    },
+    {
+      "repo": "KDE/kstars",
+      "revision": "7aea013b99165e80d1426d183de4a31ae22b0ca5",
+      "path": "kstars/ekos/capture/exposurecalculator/imagingcameradata.cpp",
+      "url": "https://raw.githubusercontent.com/KDE/kstars/7aea013b99165e80d1426d183de4a31ae22b0ca5/kstars/ekos/capture/exposurecalculator/imagingcameradata.cpp",
+      "sha256": "2339cdb315a76f46f378a24c2c1fdb380673b44a31b2f6f3a1641d12fd4eb8d5"
+    },
+    {
+      "repo": "KDE/kstars",
+      "revision": "7aea013b99165e80d1426d183de4a31ae22b0ca5",
+      "path": "kstars/ekos/capture/exposurecalculator/optimalexposuredetail.cpp",
+      "url": "https://raw.githubusercontent.com/KDE/kstars/7aea013b99165e80d1426d183de4a31ae22b0ca5/kstars/ekos/capture/exposurecalculator/optimalexposuredetail.cpp",
+      "sha256": "d7ca2f4d0a976c8e9c73de392bfcd774dd33041265eb55acf2782ce3d76c35eb"
+    },
+    {
+      "repo": "KDE/kstars",
+      "revision": "7aea013b99165e80d1426d183de4a31ae22b0ca5",
+      "path": "kstars/ekos/capture/exposurecalculator/optimalexposurestack.cpp",
+      "url": "https://raw.githubusercontent.com/KDE/kstars/7aea013b99165e80d1426d183de4a31ae22b0ca5/kstars/ekos/capture/exposurecalculator/optimalexposurestack.cpp",
+      "sha256": "e341d544b33e4678460f81401dcd26e1e957f62ea19e2658aeb3a0f044422bad"
+    },
+    {
+      "repo": "KDE/kstars",
+      "revision": "7aea013b99165e80d1426d183de4a31ae22b0ca5",
+      "path": "kstars/ekos/capture/exposurecalculator/optimalsubexposurecalculator.cpp",
+      "url": "https://raw.githubusercontent.com/KDE/kstars/7aea013b99165e80d1426d183de4a31ae22b0ca5/kstars/ekos/capture/exposurecalculator/optimalsubexposurecalculator.cpp",
+      "sha256": "050909ed9c776ae38281c911762d7ff9fa2e6403e560a3b57a22c6dbc6f7fcbb"
+    }
+  ],
+  "reviewed_source_paths": [
+    {
+      "repo": "indilib/indi",
+      "path": "drivers/ccd/ccd_simulator.cpp",
+      "functions": [
+        "initProperties: SIM_SKYGLOW and noise settings",
+        "DrawCcdFrame: renderer setup, effective exposure, skyglow, noise and defects"
+      ]
+    },
+    {
+      "repo": "indilib/indi",
+      "path": "drivers/ccd/sky_renderer.cpp",
+      "functions": [
+        "flux",
+        "drawImageStar",
+        "drawSkyGlow",
+        "renderFrame",
+        "applyReadoutNoise",
+        "generateDefects",
+        "applyDefects"
+      ]
+    },
+    {
+      "repo": "indilib/indi",
+      "path": "drivers/ccd/sky_renderer.h",
+      "scope": "RenderConfig, public renderer API and unit comments"
+    },
+    {
+      "repo": "KDE/kstars",
+      "path": "kstars/ekos/capture/exposurecalculator/optimalsubexposurecalculator.cpp",
+      "functions": [
+        "calculateLightPollutionElectronBaseRate",
+        "calculateLightPolutionForOpticFocalRatio",
+        "calculateCFactor",
+        "calculateGainSubExposureVector",
+        "calculateSubExposureDetail"
+      ]
+    },
+    {
+      "repo": "KDE/kstars",
+      "path": "kstars/ekos/capture/exposurecalculator/exposurecalculatordialog.cpp",
+      "scope": "selected call sites and inputs, not complete file audit"
+    }
+  ],
+  "papers": [
+    {
+      "id": "crumey-2014",
+      "url": "https://arxiv.org/pdf/1405.4209v1",
+      "sha256": "fa6ef183f9402be4d321bff5fa2c112510f89ca683b534e33c63fdb6538e50a4",
+      "bytes": 1348165,
+      "study_scope": "scotopic threshold, spectral conventions, point-source model; not a colour appearance model",
+      "redistributed": false
+    },
+    {
+      "id": "cinzano-falchi-2012",
+      "url": "https://arxiv.org/pdf/1209.2031v1",
+      "sha256": "f443e7d60fabfaf7a691aae68be68ba34c349d8b443afa0c436b8edfe1da4f83",
+      "bytes": 833186,
+      "study_scope": "radiative transfer setup and modelled effects",
+      "redistributed": false
+    },
+    {
+      "id": "bará-etal-2020",
+      "url": "https://arxiv.org/pdf/2002.01494v2",
+      "sha256": "c2dd4021795ecfd5ed968cbb44652eddfb315450fbbb5561d1a9418b6a63276e",
+      "bytes": 1736120,
+      "study_scope": "radiometric conventions, spectrum-dependent photometric conversions",
+      "redistributed": false
+    },
+    {
+      "id": "ferwerda-1996",
+      "url": "https://www.cs.ucf.edu/~sumant/publications/sig96.pdf",
+      "sha256": "46dc554778e734f2b9497560abe0d1b301c60e521abad544e006a8072891e9aa",
+      "bytes": 617509,
+      "study_scope": "adaptation model foundations, colour and acuity sections",
+      "redistributed": false
+    },
+    {
+      "id": "jensen-etal-2001",
+      "url": "https://graphics.cs.yale.edu/sites/default/files/nightsky.pdf",
+      "sha256": "1a1952dd14e4485c98eea1c30811e8b68e7aed73ae22a7c133b95c361759067d",
+      "bytes": 3732514,
+      "study_scope": "natural sky components, star radiometry and tone mapping",
+      "redistributed": false
+    },
+    {
+      "id": "emva-1288-4.0-linear",
+      "url": "https://www.emva.org/wp-content/uploads/EMVA1288Linear_4.0Release.pdf",
+      "sha256": "7d9839c3d09421696d2ed2ac35135fe2be3d7c0fd7c2ad51d737f6264683297a",
+      "bytes": 3170905,
+      "study_scope": "linear camera, photon and read noise, dark current and nonuniformity",
+      "redistributed": false
+    },
+    {
+      "id": "black-marble-c2",
+      "url": "https://viirsland.gsfc.nasa.gov/PDF/BlackMarbleUserGuide_Collection2.0.pdf",
+      "sha256": "3bd88ecfb70594286d0613dc3cf180260f0d614150d6f74f00d1ba6650fa4da9",
+      "bytes": 1515442,
+      "study_scope": "algorithm, product temporal support and radiometric meaning",
+      "redistributed": false
+    }
+  ],
+  "additional_primary_sources": [
+    {
+      "url": "https://kstars-docs.kde.org/en/user_manual/ekos-capture.html",
+      "scope": "Capture and Exposure Calculator, handbook labelled 3.7.6"
+    },
+    {
+      "url": "https://kstars.kde.org/features/",
+      "scope": "purpose and supported workflows"
+    },
+    {
+      "url": "https://kstars-docs.kde.org/en/user_manual/tool-eyepieceview.html",
+      "scope": "eyepiece field/orientation and DSS overlay"
+    },
+    {
+      "url": "https://www.cie.co.at/datatable/cie-spectral-luminous-efficiency-photopic-vision",
+      "scope": "dataset definition, DOI and stated checksum; numerical tables not imported"
+    },
+    {
+      "url": "https://www.cie.co.at/datatable/cie-spectral-luminous-efficiency-scotopic-vision",
+      "scope": "dataset definition, DOI and stated checksum; numerical tables not imported"
+    },
+    {
+      "url": "https://www.cie.co.at/publications/recommended-system-mesopic-photometry-based-visual-performance",
+      "scope": "open description only; full paid CIE 191 report NOT read"
+    },
+    {
+      "url": "https://www.nps.gov/subjects/nightskies/methods.htm",
+      "scope": "calibrated all-sky acquisition and measurement conditions"
+    },
+    {
+      "url": "https://arxiv.org/abs/2202.08258",
+      "scope": "2020 publication, 2022 preprint; paper studied in earlier project stage; raw validation dataset not obtained"
+    },
+    {
+      "url": "https://data.nasa.gov/dataset/merra-2-tavg1-2d-aer-nx-2d1-hourlytime-averagedsingle-levelassimilationaerosol-diagnostics-b1b07",
+      "scope": "MERRA-2 M2T1NXAER metadata; data not downloaded"
+    }
+  ],
+  "limitations": [
+    "Static source review only; no benchmark or simulator runtime validation",
+    "The physical models described in OBSERVATION_PLAN.md are planned, not implemented",
+    "Literature study is limited to recorded sections and does not imply reproduction or validation",
+    "No third-party full paper PDFs or source copies are redistributed",
+    "No calibrated naked-eye reference or new atmospheric/camera measurements were acquired"
+  ],
+  "kstars_or_indi_built_or_executed_in_this_audit": false
+}
