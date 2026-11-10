@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LightPollution — условия наблюдения</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+<header><div><span class="eyebrow">ПЛАНИРОВЩИК НАБЛЮДЕНИЙ · MVP</span>
+  <h1>LightPollution<span class="brand-dot">.</span></h1>
+  <p>Город, Луна и звёзды из выбранной точки</p></div>
+  <span class="pill">Ясная ночь · эффективная V</span></header>
+<main>
+  <aside class="panel">
+    <div class="section-title"><h2>Сценарий</h2><label class="import">Открыть JSON<input id="import" type="file" accept=".json,application/json" hidden></label></div>
+    <form id="scenario">
+      <label>Регион<select id="region" required></select></label>
+      <p id="region-note" class="hint"></p>
+      <label>Источники освещения<select id="period" required></select></label>
+      <div class="pair"><label>Широта, °<input id="latitude" type="number" step="any" min="-90" max="90" required></label>
+      <label>Долгота, °<input id="longitude" type="number" step="any" min="-180" max="180" required></label></div>
+      <label>Высота над условной поверхностью, м<input id="height" type="number" min="0" max="100" step="any" value="20" required></label>
+      <p class="hint">Плоская местность: источники на общем уровне. Реальные горы и здания пока не учитываются.</p>
+      <label>Время<select id="mode"><option value="dated">С датой: Солнце, Луна и звёзды</option><option value="undated">Без даты: условный безлунный фон</option></select></label>
+      <div id="dated-controls" class="pair time-pair"><label>Дата и местное время<input id="time" type="datetime-local" step="1"></label>
+      <label>Смещение от UTC<select id="offset"><option value="Z">UTC</option><option value="+03:00">UTC+03:00</option><option value="+01:00">UTC+01:00</option><option value="+02:00">UTC+02:00</option><option value="-05:00">UTC−05:00</option><option value="-08:00">UTC−08:00</option></select></label></div>
+      <p class="hint">Дата наблюдения и период спутниковых источников независимы. Для будущей даты освещение и атмосфера задаются сценарием.</p>
+      <label>Направления: азимут, высота<textarea id="directions" rows="4">0,90
+0,45
+90,45
+180,45
+270,45</textarea></label>
+      <p class="hint">По одному направлению в строке. Север 0°, восток 90°. Высота от 10°; до 16 направлений.</p>
+      <label>Аэрозольная оптическая толщина, AOD<input data-atmo="aerosol_optical_depth" type="number" min="0" step="0.01" value="0.10" required></label>
+      <details><summary>Атмосфера и масштаб яркости</summary>
+        <p class="hint">Базовые коэффициенты — сценарий ясной атмосферы. Измеренная погода не подставляется.</p>
+        <div class="pair">
+          <label>Высота молекулярного слоя, м<input data-atmo="rayleigh_scale_height_m" type="number" min="1" value="8000"></label>
+          <label>Высота аэрозольного слоя, м<input data-atmo="aerosol_scale_height_m" type="number" min="1" value="1200"></label>
+          <label>Доля аэрозольного рассеяния<input data-atmo="aerosol_single_scattering_albedo" type="number" min="0" max="1" step="0.01" value="0.9"></label>
+          <label>Асимметрия рассеяния g<input data-atmo="aerosol_g" type="number" min="-0.99" max="0.99" step="0.01" value="0.8"></label>
+          <label>Множитель молекулярной плотности<input data-atmo="rayleigh_multiplier" type="number" min="0" step="0.1" value="1"></label>
+          <label>Верх атмосферы, м<input data-atmo="top_m" type="number" min="101" value="80000"></label>
+        </div>
+        <label>Искусственный фон опорного зенита, V mag/arcsec²<input id="anchor" type="number" min="10" max="30" step="0.1" value="20.5"></label>
+        <label>Однородный естественный фон, V mag/arcsec²<input id="natural" type="number" min="10" max="30" step="0.1" value="21.6"></label>
+        <p class="hint">Это заданные яркости. При смене AOD масштаб источников остаётся привязан к опорной атмосфере.</p>
+        <label>Численный профиль<select id="profile"><option value="standard">Стандартный</option><option value="quick">Быстрый, приближённый</option></select></label>
+      </details>
+      <label class="check"><input id="download-missing" type="checkbox">Загрузить недостающие NASA-файлы, если доступ Earthdata настроен</label>
+      <div class="actions"><button id="calculate" type="submit">Рассчитать сценарий</button><button id="cancel" class="secondary" type="button" disabled>Отменить</button></div>
+    </form>
+  </aside>
+  <section class="content">
+    <div id="message" role="alert" hidden></div>
+    <section id="progress-panel" class="panel" hidden><div class="section-title"><h2 id="phase">Расчёт</h2><span id="progress-count"></span></div><progress id="progress"></progress><p class="hint">Завершённые направления сохраняются. Отмена срабатывает между блоками расчёта.</p></section>
+    <section id="empty" class="panel empty"><span class="eyebrow">ИЗ ТОЧКИ НАБЛЮДЕНИЯ</span><h2>Начните со сценария</h2><p>Выберите подготовленный регион или учебный пример. Здесь появятся раздельные составляющие фона и каталожные звёзды.</p><p class="hint">Это численный планировщик. Видимость невооружённым глазом, физический сенсор и реалистичное изображение пока не рассчитываются.</p></section>
+    <div id="result" hidden></div>
+    <section class="panel"><div class="section-title"><h2>Сравнить сценарии</h2></div><p class="hint">Одна точка и общая опора источников. Дату, атмосферу и месяц можно менять в пределах этой опоры.</p><div class="compare-form"><select id="compare-left" aria-label="Первый сценарий"></select><span>→</span><select id="compare-right" aria-label="Второй сценарий"></select><button id="compare" class="secondary">Сравнить</button></div><div id="comparison"></div></section>
+    <section class="panel"><div class="section-title"><h2>Сохранённые расчёты</h2><button id="refresh" class="text-button">Обновить</button></div><div id="history" class="hint">Пока нет расчётов</div></section>
+  </section>
+</main>
+<footer>Сферическая Земля · однократное рассеяние · сценарный масштаб · без модели глаза и камеры</footer>
+<script id="regions-data" type="application/json">{{ regions | tojson }}</script>
+</body></html>

@@ -1,0 +1,1 @@
+"""LightPollution domain layer."""

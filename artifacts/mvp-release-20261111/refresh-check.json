@@ -1,0 +1,12 @@
+{
+  "cases": [
+    "offline-demo",
+    "petersburg-annual",
+    "madrid-2017-03",
+    "madrid-2017-11",
+    "petersburg-aod-02"
+  ],
+  "unchanged_numeric_fields_and_stars": true,
+  "new_transfer_calculations": 0,
+  "purpose": "Final metadata/contracts refreshed from cache; original cold/warm timings kept separately in benchmark.json."
+}

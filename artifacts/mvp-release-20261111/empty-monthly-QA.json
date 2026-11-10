@@ -1,0 +1,8 @@
+{
+  "code": "insufficient_coverage",
+  "message": "Недостаточно общей области качественных измерений; пропуски не являются темнотой.",
+  "details": {
+    "reason": "Insufficient common monthly support: 0/261765 eligible land pixels (0.0000%); required 80.0%. Missing data are not darkness.",
+    "region": "petersburg-monthly-2025"
+  }
+}

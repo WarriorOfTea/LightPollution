@@ -1,0 +1,18 @@
+{
+  "schema_version": 2,
+  "region": "demo",
+  "period": "synthetic",
+  "mode": "dated",
+  "time": "2026-11-09T21:00:00Z",
+  "observer": {
+    "latitude_deg": 60.3,
+    "longitude_deg": 30.315,
+    "height_m": 20
+  },
+  "directions": [[0, 90], [0, 45], [90, 45], [180, 45], [270, 45]],
+  "atmosphere": {},
+  "reference_atmosphere": {},
+  "profile": "standard",
+  "anchor_v_mag_arcsec2": 20.5,
+  "natural_v_mag_arcsec2": 21.6
+}

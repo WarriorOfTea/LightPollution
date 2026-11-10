@@ -1,0 +1,47 @@
+{
+  "directions": [
+    {
+      "azimuth_deg": 0.0,
+      "altitude_deg": 90.0,
+      "supported": true,
+      "right_over_left": 0.7992617218900838,
+      "right_minus_left_mag": 0.24327746422858,
+      "reason": null
+    },
+    {
+      "azimuth_deg": 0.0,
+      "altitude_deg": 45.0,
+      "supported": true,
+      "right_over_left": 0.7840775040412451,
+      "right_minus_left_mag": 0.2641025157576493,
+      "reason": null
+    },
+    {
+      "azimuth_deg": 90.0,
+      "altitude_deg": 45.0,
+      "supported": true,
+      "right_over_left": 0.7712193564679345,
+      "right_minus_left_mag": 0.28205519704431836,
+      "reason": null
+    },
+    {
+      "azimuth_deg": 180.0,
+      "altitude_deg": 45.0,
+      "supported": true,
+      "right_over_left": 0.7539661051007712,
+      "right_minus_left_mag": 0.30662044400784083,
+      "reason": null
+    },
+    {
+      "azimuth_deg": 270.0,
+      "altitude_deg": 45.0,
+      "supported": true,
+      "right_over_left": 0.7729204485695581,
+      "right_minus_left_mag": 0.279663006876703,
+      "reason": null
+    }
+  ],
+  "comparison_basis_id": "2ade75066d5c981b026058a5c4ce5566f4ba43cc8d2fe293c0772da1d7fd29cb",
+  "scale_origin": "scenario",
+  "physical_accuracy_claimed": false
+}

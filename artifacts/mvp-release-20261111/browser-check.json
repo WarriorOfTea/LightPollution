@@ -1,0 +1,63 @@
+{
+  "browser": "Chromium / Playwright",
+  "region": "petersburg-2025",
+  "first_job": "c79acb5a9cbb453bba53d0f2d5006fc7",
+  "second_job": "3bc73ce4ce4d44ae9a1dc055d729c207",
+  "submit_completed": 2,
+  "comparison_rendered": true,
+  "comparison_ratios": [
+    {
+      "azimuth_deg": 0.0,
+      "altitude_deg": 90.0,
+      "supported": true,
+      "right_over_left": 0.7992617218900838,
+      "right_minus_left_mag": 0.24327746422858,
+      "reason": null
+    },
+    {
+      "azimuth_deg": 0.0,
+      "altitude_deg": 45.0,
+      "supported": true,
+      "right_over_left": 0.7840775040412451,
+      "right_minus_left_mag": 0.2641025157576493,
+      "reason": null
+    },
+    {
+      "azimuth_deg": 90.0,
+      "altitude_deg": 45.0,
+      "supported": true,
+      "right_over_left": 0.7712193564679345,
+      "right_minus_left_mag": 0.28205519704431836,
+      "reason": null
+    },
+    {
+      "azimuth_deg": 180.0,
+      "altitude_deg": 45.0,
+      "supported": true,
+      "right_over_left": 0.7539661051007712,
+      "right_minus_left_mag": 0.30662044400784083,
+      "reason": null
+    },
+    {
+      "azimuth_deg": 270.0,
+      "altitude_deg": 45.0,
+      "supported": true,
+      "right_over_left": 0.7729204485695581,
+      "right_minus_left_mag": 0.279663006876703,
+      "reason": null
+    }
+  ],
+  "scenario_downloaded": true,
+  "scenario_import_restored": true,
+  "console_errors": [],
+  "mobile_horizontal_overflow": false,
+  "desktop_viewport": [
+    1440,
+    1080
+  ],
+  "mobile_viewport": [
+    390,
+    844
+  ],
+  "runtime_dependencies": "Optional browser runtime; local shared libraries supplied separately if required."
+}

@@ -1,0 +1,49 @@
+{
+  "anchor_v_mag_arcsec2": 20.5,
+  "atmosphere": {
+    "aerosol_g": 0.8,
+    "aerosol_optical_depth": 0.1,
+    "aerosol_scale_height_m": 1200,
+    "aerosol_single_scattering_albedo": 0.9,
+    "rayleigh_multiplier": 1,
+    "rayleigh_scale_height_m": 8000,
+    "reference_wavelength_nm": 550,
+    "top_m": 80000
+  },
+  "directions": [
+    [
+      0.0,
+      90.0
+    ],
+    [
+      0.0,
+      45.0
+    ],
+    [
+      90.0,
+      45.0
+    ],
+    [
+      180.0,
+      45.0
+    ],
+    [
+      270.0,
+      45.0
+    ]
+  ],
+  "download_missing": false,
+  "mode": "dated",
+  "natural_v_mag_arcsec2": 21.6,
+  "observer": {
+    "height_m": 20.0,
+    "latitude_deg": 60.3,
+    "longitude_deg": 30.315
+  },
+  "period": "2025",
+  "profile": "standard",
+  "reference_atmosphere": {},
+  "region": "petersburg-2025",
+  "schema_version": 2,
+  "time": "2026-11-09T21:00:00Z"
+}

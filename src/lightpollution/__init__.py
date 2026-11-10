@@ -1,1 +1,3 @@
-"""Research prototype: satellite source weights and artificial skyglow."""
+"""Numerical skyglow planner with a reusable physical scene and explicit data provenance."""
+
+__version__ = "0.2.0"

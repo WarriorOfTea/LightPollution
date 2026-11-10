@@ -1,0 +1,145 @@
+[
+  {
+    "id": "demo",
+    "title": "Учебный пример: два заданных города",
+    "kind": "synthetic",
+    "periods": [
+      "synthetic"
+    ],
+    "reference_period": "synthetic",
+    "observer": {
+      "latitude_deg": 60.3,
+      "longitude_deg": 30.315,
+      "height_m": 20
+    },
+    "default_time": "2026-11-09T21:00:00Z",
+    "bounds": {
+      "west": 29,
+      "south": 59,
+      "east": 32,
+      "north": 61
+    },
+    "description": "Искусственные источники, без спутниковых измерений. Масштаб яркости задан сценарием."
+  },
+  {
+    "id": "petersburg-2025",
+    "title": "Петербург и окрестности · NASA 2025",
+    "kind": "blackmarble",
+    "periods": [
+      "2025"
+    ],
+    "reference_period": "2025",
+    "observer": {
+      "latitude_deg": 60.3,
+      "longitude_deg": 30.315,
+      "height_m": 20
+    },
+    "default_time": "2026-11-09T21:00:00Z",
+    "bounds": {
+      "west": 29,
+      "south": 59,
+      "east": 32,
+      "north": 61
+    },
+    "folders": {
+      "2025": "2025"
+    },
+    "manifests": {
+      "2025": "petersburg-2025.json"
+    },
+    "description": "Годовой VNP46A4.002. Ближние 3 км и источники вне окна исключены."
+  },
+  {
+    "id": "madrid-2017",
+    "title": "Мадрид · NASA 2017",
+    "kind": "blackmarble",
+    "periods": [
+      "2017-03",
+      "2017-11"
+    ],
+    "reference_period": "2017-03",
+    "observer": {
+      "latitude_deg": 40.451111,
+      "longitude_deg": -3.726111,
+      "height_m": 20
+    },
+    "default_time": "2017-11-19T22:30:00Z",
+    "bounds": {
+      "west": -5,
+      "south": 39,
+      "east": -2,
+      "north": 42
+    },
+    "folders": {
+      "2017-03": "madrid-2017-03",
+      "2017-11": "madrid-2017-11"
+    },
+    "manifests": {
+      "2017-03": "madrid-2017-03.json",
+      "2017-11": "madrid-2017-11.json"
+    },
+    "description": "Месячные VNP46A3.002 на общей маске. Плоский сценарий; историческая калибровка станции на 650 м не переносится."
+  },
+  {
+    "id": "madrid-2015",
+    "title": "Мадрид · NASA 2015",
+    "kind": "blackmarble",
+    "periods": [
+      "2015-01",
+      "2015-07"
+    ],
+    "reference_period": "2015-01",
+    "observer": {
+      "latitude_deg": 40.451111,
+      "longitude_deg": -3.726111,
+      "height_m": 20
+    },
+    "default_time": "2015-01-23T23:00:00Z",
+    "bounds": {
+      "west": -5,
+      "south": 39,
+      "east": -2,
+      "north": 42
+    },
+    "folders": {
+      "2015-01": "madrid-2015-01",
+      "2015-07": "madrid-2015-07"
+    },
+    "manifests": {
+      "2015-01": "madrid-2015-01.json",
+      "2015-07": "madrid-2015-07.json"
+    },
+    "description": "Месячные VNP46A3.002 на общей маске. Плоский сценарий; историческая калибровка станции на 650 м не переносится."
+  },
+  {
+    "id": "petersburg-monthly-2025",
+    "title": "Петербург · месячный QA-контроль",
+    "kind": "blackmarble",
+    "periods": [
+      "2025-01",
+      "2025-07"
+    ],
+    "reference_period": "2025-01",
+    "observer": {
+      "latitude_deg": 60.3,
+      "longitude_deg": 30.315,
+      "height_m": 20
+    },
+    "default_time": "2026-11-09T21:00:00Z",
+    "bounds": {
+      "west": 29,
+      "south": 59,
+      "east": 32,
+      "north": 61
+    },
+    "folders": {
+      "2025-01": "2025-01",
+      "2025-07": "2025-07"
+    },
+    "manifests": {
+      "2025-01": "petersburg-2025-01.json",
+      "2025-07": "petersburg-2025-07.json"
+    },
+    "description": "Контроль отказа: общая строгая маска января/июля пустая. Используйте годовой набор явно."
+  }
+]

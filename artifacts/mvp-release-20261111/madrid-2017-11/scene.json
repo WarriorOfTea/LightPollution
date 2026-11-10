@@ -1,0 +1,40 @@
+{
+  "anchor_v_mag_arcsec2": 20.5,
+  "atmosphere": {},
+  "directions": [
+    [
+      0.0,
+      90.0
+    ],
+    [
+      0.0,
+      45.0
+    ],
+    [
+      90.0,
+      45.0
+    ],
+    [
+      180.0,
+      45.0
+    ],
+    [
+      270.0,
+      45.0
+    ]
+  ],
+  "download_missing": false,
+  "mode": "dated",
+  "natural_v_mag_arcsec2": 21.6,
+  "observer": {
+    "height_m": 20.0,
+    "latitude_deg": 40.451111,
+    "longitude_deg": -3.726111
+  },
+  "period": "2017-11",
+  "profile": "standard",
+  "reference_atmosphere": {},
+  "region": "madrid-2017",
+  "schema_version": 2,
+  "time": "2017-11-19T22:30:00Z"
+}

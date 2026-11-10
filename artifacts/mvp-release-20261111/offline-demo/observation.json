@@ -1,0 +1,353 @@
+{
+  "schema_version": 1,
+  "mode": "dated",
+  "utc": "2026-11-09T21:00:00Z",
+  "input_scene": {
+    "schema_version": 1,
+    "mode": "dated",
+    "observer": {
+      "latitude_deg": 60.3,
+      "longitude_deg": 30.315,
+      "height_m": 20.0
+    },
+    "directions": [
+      [
+        0.0,
+        90.0
+      ],
+      [
+        0.0,
+        45.0
+      ],
+      [
+        90.0,
+        45.0
+      ],
+      [
+        180.0,
+        45.0
+      ],
+      [
+        270.0,
+        45.0
+      ]
+    ],
+    "atmosphere": {
+      "reference_wavelength_nm": 550.0,
+      "rayleigh_scale_height_m": 8000.0,
+      "aerosol_scale_height_m": 1200.0,
+      "aerosol_optical_depth": 0.1,
+      "aerosol_single_scattering_albedo": 0.9,
+      "aerosol_g": 0.8,
+      "rayleigh_multiplier": 1.0,
+      "top_m": 80000.0
+    },
+    "natural": {
+      "mode": "uniform",
+      "v_mag_arcsec2": 21.6,
+      "source": "Uniform natural-background scenario; not measured separately."
+    },
+    "artificial": {
+      "mode": "grid",
+      "sky_grid": "current-transfer-field",
+      "anchor_v_mag_arcsec2": 20.5,
+      "scale_origin": "scenario",
+      "source": "Fixed source coefficient of the reference scene; no independent absolute inversion.",
+      "band_bridge": "effective_550nm_shape_anchored_in_V"
+    },
+    "time": "2026-11-09T21:00:00Z"
+  },
+  "observer": {
+    "latitude_deg": 60.3,
+    "longitude_deg": 30.315,
+    "height_m": 20.0
+  },
+  "atmosphere": {
+    "reference_wavelength_nm": 550.0,
+    "rayleigh_scale_height_m": 8000.0,
+    "aerosol_scale_height_m": 1200.0,
+    "aerosol_optical_depth": 0.1,
+    "aerosol_single_scattering_albedo": 0.9,
+    "aerosol_g": 0.8,
+    "rayleigh_multiplier": 1.0,
+    "top_m": 80000.0
+  },
+  "atmosphere_origin": {
+    "kind": "baseline_scenario",
+    "user_parameters": [],
+    "default_parameters": [
+      "aerosol_g",
+      "aerosol_optical_depth",
+      "aerosol_scale_height_m",
+      "aerosol_single_scattering_albedo",
+      "rayleigh_multiplier",
+      "rayleigh_scale_height_m",
+      "reference_wavelength_nm",
+      "top_m"
+    ],
+    "measured_weather": false,
+    "regional_probability_estimated": false
+  },
+  "cloud_free": true,
+  "geometry": {
+    "utc": "2026-11-09T21:00:00Z",
+    "observer": {
+      "latitude_deg": 60.3,
+      "longitude_deg": 30.315,
+      "height_m": 20.0
+    },
+    "target": {
+      "azimuth_deg": 0.0,
+      "altitude_deg": 90.0
+    },
+    "sun": {
+      "altitude_deg": -46.06976977101476,
+      "azimuth_deg": 345.2481134524408
+    },
+    "moon": {
+      "altitude_deg": -52.22467135691371,
+      "azimuth_deg": 335.9748468429085,
+      "topocentric_distance_km": 404455.4693991133,
+      "geocentric_phase_angle_deg": 171.7082017777416,
+      "geocentric_illuminated_fraction": 0.005226778382117325,
+      "possible_lunar_eclipse": false,
+      "target_separation_deg": 142.22467135691372
+    },
+    "astronomical_darkness": true,
+    "moon_center_above_geometric_horizon": false,
+    "legacy_moonless_renderer_applicable": true,
+    "lunar_sky_radiance_modelled": false,
+    "method": {
+      "ephemeris": "astropy builtin",
+      "iers": "offline bundled tables",
+      "atmospheric_refraction": false,
+      "terrain_horizon": false,
+      "phase_reference": "geocentric; illuminated fraction is not lunar flux",
+      "eclipse_screen": "Conservative spherical penumbra geometry; no eclipse photometry.",
+      "limitations": "Geometry only; no scattered moonlight, horizon glow or optics glare."
+    }
+  },
+  "moon": {
+    "mode": "ephemeris",
+    "azimuth_deg": 335.9748468429085,
+    "altitude_deg": -52.22467135691371,
+    "phase_angle_deg": 171.7082017777416,
+    "distance_km": 404455.4693991133,
+    "possible_lunar_eclipse": false,
+    "illuminated_fraction": 0.005226778382117325
+  },
+  "photometry": {
+    "band": {
+      "name": "V",
+      "zero_point_system": "KS1991 empirical V convention",
+      "response_reference": "doi:10.1086/132921; no numerical spectral response imported"
+    },
+    "reference_v_mag_arcsec2": 22.0,
+    "diffuse_units": "B/Bref, common reference; linear addition",
+    "extinction_v_mag_airmass": 0.2242409030127214,
+    "band_bridge": "effective 550 nm grey transfer shape anchored in V; not a spectral inversion"
+  },
+  "artificial_provenance": {
+    "path": "current-transfer-field",
+    "sha256": "a6d53fc240639109992da9342d82c93f9bc085dbb5fb620ec7dd66b4fabd7cbb",
+    "input_metadata": {
+      "observer": {
+        "latitude_deg": 60.3,
+        "longitude_deg": 30.315,
+        "height_m": 20.0
+      },
+      "atmosphere": {
+        "reference_wavelength_nm": 550.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.1,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 1.0,
+        "top_m": 80000.0
+      },
+      "source_basis_id": "373a4b7bffd6b2f9b4b8fd8c1404a78271dcc53d21bc67d70f7e7a83765e028c",
+      "provenance": {
+        "input_kind": "synthetic",
+        "actual_nasa_pixels": 0,
+        "description": "Two specified test cities; no satellite measurements.",
+        "source_basis_id": "373a4b7bffd6b2f9b4b8fd8c1404a78271dcc53d21bc67d70f7e7a83765e028c",
+        "source_power_multiplier": 1.0
+      },
+      "solver": {
+        "ray_segments": 192,
+        "path_quadrature": 24,
+        "horizontal_fraction": 0.0,
+        "near_ray_scale_m": 500.0
+      },
+      "solver_version": "single-scattering-sphere-1"
+    },
+    "anchor_raw": 1.9562856362497368e-13,
+    "reference_sky_grid": {
+      "origin": "scenario",
+      "reference_period": "synthetic",
+      "reference_atmosphere": {
+        "reference_wavelength_nm": 550.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.1,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 1.0,
+        "top_m": 80000.0
+      },
+      "reference_raw_zenith": 1.9562856362497368e-13,
+      "anchor_v_mag_arcsec2": 20.5,
+      "source_coefficient": 20350155579360.164,
+      "reference_numerical_profile": "standard",
+      "field_accuracy_certified": false,
+      "scope": {
+        "source_basis_id": "373a4b7bffd6b2f9b4b8fd8c1404a78271dcc53d21bc67d70f7e7a83765e028c",
+        "observer": {
+          "latitude_deg": 60.3,
+          "longitude_deg": 30.315,
+          "height_m": 20.0
+        },
+        "band": "effective V; 550 nm grey shape",
+        "height_datum": "height above common hypothetical spherical ground z=0; geographic terrain not reconstructed"
+      }
+    },
+    "anchor_relative": 3.981071705534973,
+    "scale_origin": "scenario",
+    "source": "Fixed source coefficient of the reference scene; no independent absolute inversion.",
+    "calibration_independently_verified": false
+  },
+  "directions": [
+    {
+      "azimuth_deg": 0.0,
+      "altitude_deg": 90.0,
+      "artificial_relative": 3.981071705534973,
+      "natural_relative": 1.4454397707459257,
+      "moon_relative": 0.0,
+      "total_relative": 5.426511476280899,
+      "total_v_mag_arcsec2": 20.163698185458546,
+      "moon_separation_deg": 142.22467135691372,
+      "supported": true,
+      "status": "ok",
+      "low_altitude_caution": false
+    },
+    {
+      "azimuth_deg": 0.0,
+      "altitude_deg": 45.0,
+      "artificial_relative": 3.5840675390857157,
+      "natural_relative": 1.4454397707459257,
+      "moon_relative": 0.0,
+      "total_relative": 5.029507309831642,
+      "total_v_mag_arcsec2": 20.246186390790317,
+      "moon_separation_deg": 99.39765586791886,
+      "supported": true,
+      "status": "ok",
+      "low_altitude_caution": false
+    },
+    {
+      "azimuth_deg": 90.0,
+      "altitude_deg": 45.0,
+      "artificial_relative": 11.256145113624004,
+      "natural_relative": 1.4454397707459257,
+      "moon_relative": 0.0,
+      "total_relative": 12.70158488436993,
+      "total_v_mag_arcsec2": 19.24035521265113,
+      "moon_separation_deg": 137.32938069837047,
+      "supported": true,
+      "status": "ok",
+      "low_altitude_caution": false
+    },
+    {
+      "azimuth_deg": 180.0,
+      "altitude_deg": 45.0,
+      "artificial_relative": 10.488478363092552,
+      "natural_relative": 1.4454397707459257,
+      "moon_relative": 0.0,
+      "total_relative": 11.933918133838478,
+      "total_v_mag_arcsec2": 19.308042364307596,
+      "moon_separation_deg": 162.65663717121205,
+      "supported": true,
+      "status": "ok",
+      "low_altitude_caution": false
+    },
+    {
+      "azimuth_deg": 270.0,
+      "altitude_deg": 45.0,
+      "artificial_relative": 3.482632171792806,
+      "natural_relative": 1.4454397707459257,
+      "moon_relative": 0.0,
+      "total_relative": 4.928071942538732,
+      "total_v_mag_arcsec2": 20.268307401855665,
+      "moon_separation_deg": 112.49227171526955,
+      "supported": true,
+      "status": "ok",
+      "low_altitude_caution": false
+    }
+  ],
+  "stars_metadata": {
+    "available": true,
+    "catalogue": {
+      "catalogue": "Bright Star Catalogue, 5th Revised Edition (preliminary), Hoffleit & Warren (1991)",
+      "provider": "NASA HEASARC BSC5P",
+      "documentation": "https://heasarc.gsfc.nasa.gov/W3Browse/catalog/bsc5p.html",
+      "download_url": "https://heasarc.gsfc.nasa.gov/FTP/heasarc/dbase/tdat_files/heasarc_bsc5p.tdat.gz",
+      "retrieved_utc": "2026-11-09",
+      "source_sha256": "122628cde2d8bedf7e16ddf5f888167ac58c04b5592d6155408ce297f3073931",
+      "csv_sha256": "3af32c163259640118f3522d452aaa3fe765b6906a8bc9b6925e3e67aacd9e54",
+      "input_rows": 9110,
+      "retained_rows": 9096,
+      "omitted_hr": [
+        "95",
+        "3671",
+        "7189",
+        "6515",
+        "6309",
+        "3515",
+        "7539",
+        "2472",
+        "1841",
+        "2496",
+        "182",
+        "8296",
+        "1057",
+        "92"
+      ],
+      "selection": "Require Vmag, spectral type and coordinates; excludes non-stellar/empty records.",
+      "frame": "FK5 J2000; proper motions in arcsec/year, RA tangent component includes cos(dec)",
+      "precision": "HEASARC coordinates as supplied; not a catalogue complete to arbitrary faint magnitudes.",
+      "reuse": "Astronomical catalogue data from NASA HEASARC. Cite original authors and provider; no external software source copied."
+    },
+    "astrometry": {
+      "utc": "2026-11-09T21:00:00Z",
+      "sun_altitude_deg": -46.069771171173734,
+      "moon_altitude_deg": -52.22467135691371,
+      "refraction": false,
+      "proper_motion": "J2000 tangent-vector propagation; no perspective acceleration or stellar parallax",
+      "iers": "Offline bundled tables from lock-pinned astropy-iers-data",
+      "earth_geometry": "WGS84 astrometry; spherical Earth in transfer solver"
+    },
+    "above_geometric_horizon": 4540,
+    "outside_grid_altitude_coverage": 710,
+    "exported": 3830,
+    "detected_by_eye_not_modelled": true,
+    "flux_reference": "V magnitude 0 point-source flux; NOT the diffuse Bref"
+  },
+  "assumptions_and_limitations": [
+    "effective_550nm_shape_anchored_in_V_not_spectral_integration",
+    "no_independent_field_validation",
+    "no_clouds_refraction_terrain_or_eye_camera_model",
+    "moon_below_horizon_set_to_zero; upper_atmosphere_residual_omitted",
+    "low_moon; empirical_airmass_and_no_refraction",
+    "uniform_natural_background_is_a_scenario",
+    "fixed_source_coefficient_from_reference_atmosphere; scenario_not_new_calibration",
+    "source_composite_is_not_an_hourly_lighting_forecast"
+  ],
+  "model": {
+    "moonlight": "Krisciunas-Schaefer 1991 eqs 1,3,8,9,15,21; rho>=10 deg",
+    "distance_correction_reference_km": 384400.0,
+    "lunar_opposition_surge": false,
+    "lunar_eclipse_model": false,
+    "physical_error_bound": null,
+    "document": "docs/OBSERVATION_MODEL.md"
+  }
+}

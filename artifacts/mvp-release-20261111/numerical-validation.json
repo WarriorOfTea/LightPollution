@@ -1,0 +1,44 @@
+{
+  "declared_relative_tolerance": 0.01,
+  "selected_directions": 4,
+  "passed": true,
+  "records": [
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 10,
+      "baseline": 4.1357771883543935e-13,
+      "refined_quadrature": 4.1360883747115316e-13,
+      "refined_aggregation": 4.137417136680105e-13,
+      "quadrature_relative_difference": 7.524253434509909e-05,
+      "aggregation_relative_difference": 0.00039652724289140906
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 10,
+      "baseline": 7.078966790206113e-12,
+      "refined_quadrature": 7.079500566969149e-12,
+      "refined_aggregation": 7.080737352512349e-12,
+      "quadrature_relative_difference": 7.540320202870099e-05,
+      "aggregation_relative_difference": 0.00025011592209844835
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "baseline": 5.344299744880831e-13,
+      "refined_quadrature": 5.34456478910018e-13,
+      "refined_aggregation": 5.38126604383501e-13,
+      "quadrature_relative_difference": 4.9593816215720565e-05,
+      "aggregation_relative_difference": 0.006916958389092676
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "baseline": 1.9346044243885584e-13,
+      "refined_quadrature": 1.9346882689968668e-13,
+      "refined_aggregation": 1.94709209889499e-13,
+      "quadrature_relative_difference": 4.3339406884168596e-05,
+      "aggregation_relative_difference": 0.006454898143003263
+    }
+  ],
+  "scope": "Only these four rays for this source region; not a full-sky or physical accuracy bound."
+}

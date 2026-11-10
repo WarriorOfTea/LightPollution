@@ -1,0 +1,341 @@
+{
+  "base_commit": "06786fa",
+  "purpose": "Frozen before refactoring; direction values and stellar outputs from public schema v1.",
+  "grid": {
+    "azimuth_deg": [
+      0,
+      90,
+      180,
+      270
+    ],
+    "altitude_deg": [
+      10,
+      45,
+      90
+    ],
+    "radiance": [
+      [
+        4,
+        6,
+        8,
+        6
+      ],
+      [
+        2,
+        3,
+        4,
+        3
+      ],
+      [
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "metadata": {
+      "observer": {
+        "latitude_deg": 60.3,
+        "longitude_deg": 30.315,
+        "height_m": 20.0
+      },
+      "atmosphere": {
+        "reference_wavelength_nm": 550.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.1,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 1.0,
+        "top_m": 80000.0
+      }
+    }
+  },
+  "cases": [
+    {
+      "name": "moon-only",
+      "scene": {
+        "schema_version": 1,
+        "mode": "undated",
+        "observer": {
+          "latitude_deg": 60.3,
+          "longitude_deg": 30.315,
+          "height_m": 20.0
+        },
+        "directions": [
+          [
+            0,
+            90
+          ],
+          [
+            90,
+            45
+          ],
+          [
+            180,
+            30
+          ]
+        ],
+        "moon": {
+          "mode": "manual",
+          "azimuth_deg": 180,
+          "altitude_deg": 30,
+          "phase_angle_deg": 60
+        },
+        "natural": {
+          "mode": "uniform",
+          "v_mag_arcsec2": 21.6,
+          "source": "Frozen legacy fixture"
+        },
+        "artificial": {
+          "mode": "none"
+        }
+      },
+      "expected_directions": [
+        {
+          "azimuth_deg": 0.0,
+          "altitude_deg": 90.0,
+          "artificial_relative": 0.0,
+          "natural_relative": 1.4454397707459257,
+          "moon_relative": 5.317868852773628,
+          "total_relative": 6.7633086235195545,
+          "total_v_mag_arcsec2": 19.92460198595632,
+          "moon_separation_deg": 60.00000000000001,
+          "supported": true,
+          "status": "ok",
+          "low_altitude_caution": false
+        },
+        {
+          "azimuth_deg": 90.0,
+          "altitude_deg": 45.0,
+          "artificial_relative": 0.0,
+          "natural_relative": 1.4454397707459257,
+          "moon_relative": 6.126920393684539,
+          "total_relative": 7.5723601644304654,
+          "total_v_mag_arcsec2": 19.801921844633508,
+          "moon_separation_deg": 69.29518894536457,
+          "supported": true,
+          "status": "ok",
+          "low_altitude_caution": false
+        },
+        {
+          "azimuth_deg": 180.0,
+          "altitude_deg": 30.0,
+          "artificial_relative": 0.0,
+          "natural_relative": 1.4454397707459257,
+          "moon_relative": null,
+          "total_relative": null,
+          "total_v_mag_arcsec2": null,
+          "moon_separation_deg": 0.0,
+          "supported": false,
+          "status": "moon_separation_below_10deg",
+          "low_altitude_caution": false
+        }
+      ],
+      "expected_star_count": 0,
+      "expected_first_stars": []
+    },
+    {
+      "name": "city-and-moon",
+      "scene": {
+        "schema_version": 1,
+        "mode": "undated",
+        "observer": {
+          "latitude_deg": 60.3,
+          "longitude_deg": 30.315,
+          "height_m": 20.0
+        },
+        "directions": [
+          [
+            0,
+            90
+          ],
+          [
+            90,
+            45
+          ],
+          [
+            180,
+            30
+          ]
+        ],
+        "moon": {
+          "mode": "manual",
+          "azimuth_deg": 180,
+          "altitude_deg": 30,
+          "phase_angle_deg": 60
+        },
+        "natural": {
+          "mode": "uniform",
+          "v_mag_arcsec2": 21.6,
+          "source": "Frozen legacy fixture"
+        },
+        "artificial": {
+          "mode": "grid",
+          "sky_grid": "field.npz",
+          "anchor_v_mag_arcsec2": 20.5,
+          "scale_origin": "scenario",
+          "source": "Frozen legacy fixture",
+          "band_bridge": "effective_550nm_shape_anchored_in_V"
+        }
+      },
+      "expected_directions": [
+        {
+          "azimuth_deg": 0.0,
+          "altitude_deg": 90.0,
+          "artificial_relative": 3.981071705534973,
+          "natural_relative": 1.4454397707459257,
+          "moon_relative": 5.317868852773628,
+          "total_relative": 10.744380329054527,
+          "total_v_mag_arcsec2": 19.422046567330522,
+          "moon_separation_deg": 60.00000000000001,
+          "supported": true,
+          "status": "ok",
+          "low_altitude_caution": false
+        },
+        {
+          "azimuth_deg": 90.0,
+          "altitude_deg": 45.0,
+          "artificial_relative": 11.94321511660492,
+          "natural_relative": 1.4454397707459257,
+          "moon_relative": 6.126920393684539,
+          "total_relative": 19.515575281035385,
+          "total_v_mag_arcsec2": 18.774046605102775,
+          "moon_separation_deg": 69.29518894536457,
+          "supported": true,
+          "status": "ok",
+          "low_altitude_caution": false
+        },
+        {
+          "azimuth_deg": 180.0,
+          "altitude_deg": 30.0,
+          "artificial_relative": 22.74898117448556,
+          "natural_relative": 1.4454397707459257,
+          "moon_relative": null,
+          "total_relative": null,
+          "total_v_mag_arcsec2": null,
+          "moon_separation_deg": 0.0,
+          "supported": false,
+          "status": "moon_separation_below_10deg",
+          "low_altitude_caution": false
+        }
+      ],
+      "expected_star_count": 0,
+      "expected_first_stars": []
+    },
+    {
+      "name": "dated-city",
+      "scene": {
+        "schema_version": 1,
+        "mode": "dated",
+        "observer": {
+          "latitude_deg": 60.3,
+          "longitude_deg": 30.315,
+          "height_m": 20.0
+        },
+        "directions": [
+          [
+            0,
+            90
+          ],
+          [
+            90,
+            45
+          ],
+          [
+            180,
+            30
+          ]
+        ],
+        "natural": {
+          "mode": "uniform",
+          "v_mag_arcsec2": 21.6,
+          "source": "Frozen legacy fixture"
+        },
+        "artificial": {
+          "mode": "grid",
+          "sky_grid": "field.npz",
+          "anchor_v_mag_arcsec2": 20.5,
+          "scale_origin": "scenario",
+          "source": "Frozen legacy fixture",
+          "band_bridge": "effective_550nm_shape_anchored_in_V"
+        },
+        "time": "2025-01-12T21:00:00Z"
+      },
+      "expected_directions": [
+        {
+          "azimuth_deg": 0.0,
+          "altitude_deg": 90.0,
+          "artificial_relative": 3.981071705534973,
+          "natural_relative": 1.4454397707459257,
+          "moon_relative": 36.95658292795008,
+          "total_relative": 42.38309440423098,
+          "total_v_mag_arcsec2": 17.93201834619718,
+          "moon_separation_deg": 32.83437522488516,
+          "supported": true,
+          "status": "ok",
+          "low_altitude_caution": false
+        },
+        {
+          "azimuth_deg": 90.0,
+          "altitude_deg": 45.0,
+          "artificial_relative": 11.94321511660492,
+          "natural_relative": 1.4454397707459257,
+          "moon_relative": 32.45072056459423,
+          "total_relative": 45.839375451945074,
+          "total_v_mag_arcsec2": 17.84690327033845,
+          "moon_separation_deg": 51.24395903560593,
+          "supported": true,
+          "status": "ok",
+          "low_altitude_caution": false
+        },
+        {
+          "azimuth_deg": 180.0,
+          "altitude_deg": 30.0,
+          "artificial_relative": 22.74898117448556,
+          "natural_relative": 1.4454397707459257,
+          "moon_relative": 74.1330398336143,
+          "total_relative": 98.32746077884579,
+          "total_v_mag_arcsec2": 17.018312939925824,
+          "moon_separation_deg": 27.368800595746738,
+          "supported": true,
+          "status": "ok",
+          "low_altitude_caution": false
+        }
+      ],
+      "expected_star_count": 3804,
+      "expected_first_stars": [
+        {
+          "hr": 1,
+          "name": "HR 1",
+          "azimuth_deg": 301.0068806687705,
+          "altitude_deg": 35.44617393032573,
+          "catalogue_v_mag": 6.7,
+          "extinction_v_mag": 0.3860992120469496,
+          "observed_v_mag": 7.08609921204695,
+          "flux_relative_to_v_mag0": 0.001464064853984488
+        },
+        {
+          "hr": 5,
+          "name": "HR 5",
+          "azimuth_deg": 312.2181478414243,
+          "altitude_deg": 45.57266232031117,
+          "catalogue_v_mag": 5.96,
+          "extinction_v_mag": 0.3137779292545172,
+          "observed_v_mag": 6.273777929254517,
+          "flux_relative_to_v_mag0": 0.003093775730778331
+        },
+        {
+          "hr": 7,
+          "name": "10    Cas",
+          "azimuth_deg": 318.4448903248125,
+          "altitude_deg": 49.51565972942656,
+          "catalogue_v_mag": 5.59,
+          "extinction_v_mag": 0.29466790775742235,
+          "observed_v_mag": 5.884667907757422,
+          "flux_relative_to_v_mag0": 0.004427237668028671
+        }
+      ]
+    }
+  ]
+}

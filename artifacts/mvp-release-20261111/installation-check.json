@@ -1,0 +1,19 @@
+{
+  "package_version": "0.2.0",
+  "wheel": "lightpollution-0.2.0-py3-none-any.whl",
+  "sha256": "0dd1165299dd05c33e2c58ab5d47c011b3e07ceda039fa8cedf2c7c9d5052fcd",
+  "wheel_bytes": 262385,
+  "isolated_environment": true,
+  "editable_project_imported": false,
+  "offline_demo_completed": true,
+  "directions": 5,
+  "stars": 3830,
+  "source_kind": "synthetic",
+  "runtime": {
+    "elapsed_seconds": 2.2324761680793017
+  },
+  "package_assets_verified": true,
+  "updated_mobile_styles_present": true,
+  "manifest_files": 7,
+  "installed_files_equal_final_source": true
+}

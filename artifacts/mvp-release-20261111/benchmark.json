@@ -1,0 +1,48 @@
+{
+  "cases": {
+    "offline-demo": {
+      "first_seconds": 2.336508110165596,
+      "repeat_seconds": 0.1698744089808315,
+      "cache": {
+        "scene_hit": false,
+        "transfer_hits": 1,
+        "transfer_misses": 9
+      },
+      "repeat_scene_hit": true
+    },
+    "petersburg-annual": {
+      "first_seconds": 15.009623271180317,
+      "repeat_seconds": 0.4115182659588754,
+      "cache": {
+        "scene_hit": false,
+        "transfer_hits": 1,
+        "transfer_misses": 9
+      },
+      "repeat_scene_hit": true
+    },
+    "madrid-2017-03": {
+      "first_seconds": 24.67129130498506,
+      "repeat_seconds": 0.2698326089885086,
+      "cache": {
+        "scene_hit": false,
+        "transfer_hits": 1,
+        "transfer_misses": 9
+      },
+      "repeat_scene_hit": true
+    },
+    "madrid-2017-11": {
+      "first_seconds": 13.116222242824733,
+      "repeat_seconds": 0.2113706290256232,
+      "cache": {
+        "scene_hit": false,
+        "transfer_hits": 1,
+        "transfer_misses": 9
+      },
+      "repeat_scene_hit": true
+    }
+  },
+  "peak_process_RSS_MiB": 416.90625,
+  "platform_note": "Linux ru_maxrss in KiB; process-wide peak across the complete script.",
+  "new_NASA_downloads": 0,
+  "source_files": "Pinned pre-existing local HDF5, verified against package manifests."
+}

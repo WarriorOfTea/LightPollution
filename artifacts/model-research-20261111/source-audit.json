@@ -1,0 +1,79 @@
+{
+  "source": "CIE 2018, DOI 10.25039/CIE.DS.vgssnyfg",
+  "retrieval": "2026-11-11 Europe/Berlin",
+  "files": {
+    "CIE_illum_LEDs.csv": {
+      "url": "https://files.cie.co.at/Publications-datasets/CIE_illum_LEDs.csv",
+      "bytes": 4333,
+      "sha256": "6147313bd1ec570ef308df222e1fe1e58115fde1ad0a7d4ba91fb9dcb776b267"
+    },
+    "CIE_illum_LEDs.csv_metadata_v2.json": {
+      "url": "https://files.cie.co.at/Publications-datasets/CIE_illum_LEDs.csv_metadata_v2.json",
+      "bytes": 6626,
+      "sha256": "cd36ae5bc2a311663cc5a61cb2521edbf5f5466ca60f8b794fba205dd34b9192"
+    }
+  },
+  "rows": 81,
+  "spectral_templates": 9,
+  "wavelength_nm": [
+    380.0,
+    780.0
+  ],
+  "step_nm": 5,
+  "rights": [
+    {
+      "rights": "Creative Commons Attribution-ShareAlike 4.0 International",
+      "rightsURI": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "rightsIdentifier": "CC BY-SA 4.0"
+    }
+  ],
+  "publisher_checksum_verified": true,
+  "imported_into_physical_model": false,
+  "raw_tables_redistributed": false,
+  "limits": [
+    "Typical LED reference shapes, not a lamp inventory for a city.",
+    "380–780 nm table does not independently describe the entire VIIRS DNB near-IR response."
+  ],
+  "other_sources_reviewed": [
+    {
+      "url": "https://www.nps.gov/subjects/nightskies/methods.htm",
+      "status": "method documentation checked; full calibrated RAW not obtained",
+      "numeric_data_downloaded_this_turn": false
+    },
+    {
+      "url": "https://www.nps.gov/subjects/nightskies/datacollectionsites.htm",
+      "status": "published-site descriptions checked; raw package availability remains open",
+      "numeric_data_downloaded_this_turn": false
+    },
+    {
+      "url": "https://www.eso.org/observing/etc/doc/skycalc/helpskycalc.html",
+      "status": "components, units and site limits checked",
+      "numeric_data_downloaded_this_turn": false
+    },
+    {
+      "url": "https://nsidc.org/data/mod10a1/versions/61",
+      "status": "product, QA and access limits checked",
+      "numeric_data_downloaded_this_turn": false
+    },
+    {
+      "url": "https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM",
+      "status": "DSM versus DTM, access and attribution checked",
+      "numeric_data_downloaded_this_turn": false
+    },
+    {
+      "url": "https://github.com/gaia-dpci/GaiaXPy",
+      "status": "public BP/RP package and BSD-3-Clause license checked",
+      "numeric_data_downloaded_this_turn": false
+    },
+    {
+      "url": "https://arxiv.org/abs/astro-ph/0604128",
+      "status": "primary abstract checked; further transfer-model research planned",
+      "numeric_data_downloaded_this_turn": false
+    },
+    {
+      "url": "https://arxiv.org/abs/1405.4209",
+      "status": "primary abstract and existing project literature reviewed; new eye implementation not started",
+      "numeric_data_downloaded_this_turn": false
+    }
+  ]
+}

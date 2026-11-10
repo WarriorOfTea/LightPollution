@@ -5,6 +5,34 @@ Python ≥3.12, `uv`. Команды выполняются из корня Ligh
 от KStars. Физические определения и ограничения — [MODEL.md](MODEL.md), состояние
 исследования и дальнейшие этапы — [OBSERVATION_PLAN.md](OBSERVATION_PLAN.md).
 
+## MVP 0.2: одна форма или одна команда
+
+Linux, Python ≥3.12. Подробная схема запросов и границы — [MVP.md](MVP.md).
+
+```bash
+uv sync --locked
+uv run lightpollution serve
+```
+
+Адрес `http://127.0.0.1:8765`. Выберите регион, время и направления,
+измените атмосферу, запустите расчёт. Сохраните `scene.json` и откройте
+его снова в форме. Обычный маршрут не требует ручной подготовки NPZ.
+
+```bash
+uv run lightpollution example --output data/example.json
+uv run lightpollution plan --scene data/example.json \
+  --output data/example-result
+uv run lightpollution datasets
+uv run lightpollution compare \
+  --left data/first/result.json --right data/second/result.json
+```
+
+Учебный пример — искусственные источники. Для NASA нужны локальные HDF5
+либо настроенный Earthdata-доступ и явная загрузка
+`uv run lightpollution datasets --download petersburg-2025`.
+Карта источников и QA готовятся автоматически; плохое покрытие отклоняется.
+Прежние команды ниже сохранены для исследований и сцен схемы 1.
+
 ## Численная сцена: общая V-шкала и Луна
 
 Дополнение этапов 4–5 — [методика](SEASONAL_CALIBRATION.md).
