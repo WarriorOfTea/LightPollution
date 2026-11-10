@@ -46,3 +46,14 @@ def test_selecting_another_year_does_not_overwrite_the_2025_catalogue(tmp_path,m
     cli.main()
     assert json.loads((tmp_path/'artifacts/nasa-2024-catalogue.json').read_text())['year']==2024
     assert not (tmp_path/'artifacts/nasa-2025-catalogue.json').exists()
+
+
+def test_monthly_catalogue_has_its_own_output_and_passes_month(tmp_path,monkeypatch):
+    import sys
+    from lightpollution import cli
+    monkeypatch.chdir(tmp_path)
+    monkeypatch.setattr(sys,'argv',['lightpollution','catalogue','--year','2025','--month','1'])
+    monkeypatch.setattr(cli,'catalogue',lambda year,month:{'year':year,'month':month,'files':[]})
+    cli.main()
+    assert json.loads((tmp_path/'artifacts/nasa-2025-01-catalogue.json').read_text())['month']==1
+    assert not (tmp_path/'artifacts/nasa-2025-catalogue.json').exists()

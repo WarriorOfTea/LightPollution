@@ -1,0 +1,105 @@
+{
+  "dataset": "AstMon_evol.csv, Madrid zenith time series",
+  "filename": "AstMon_evol.csv",
+  "sha256": "f477416f47487ad918484392fd5c368744d5807c22edf5c0e69ed7450fad88a9",
+  "columns": [
+    "Julian_Dates",
+    "Datetime_Raw",
+    "Datetime_UTC",
+    "Filter",
+    "Pixel_x",
+    "Pixely",
+    "Pos_0",
+    "Magnitude",
+    "Error"
+  ],
+  "rows": 452321,
+  "utc_start": "2010-08-12T22:46:50+00:00",
+  "utc_end": "2020-11-22T05:23:21+00:00",
+  "bands": {
+    "Johnson-B": {
+      "rows": 145434,
+      "finite_magnitude_and_error": 145434,
+      "finite_with_positive_reported_error": 145434,
+      "native_mag_arcsec2": {
+        "count": 145434,
+        "min": 11.996831,
+        "median": 18.444896999999997,
+        "p95": 19.216275800000002,
+        "p99": 19.35568603,
+        "max": 22.22458,
+        "mean": 18.220504097521896
+      },
+      "reported_error_mag": {
+        "count": 145434,
+        "min": 0.01,
+        "median": 0.057116,
+        "p95": 0.12,
+        "p99": 0.12,
+        "max": 0.12,
+        "mean": 0.06257786102286947
+      },
+      "brightest_over_faintest_flux_ratio": 12333.876628085658
+    },
+    "Johnson-V": {
+      "rows": 153132,
+      "finite_magnitude_and_error": 153132,
+      "finite_with_positive_reported_error": 153132,
+      "native_mag_arcsec2": {
+        "count": 153132,
+        "min": 8.007228999999999,
+        "median": 17.3866365,
+        "p95": 18.04,
+        "p99": 18.14288483,
+        "max": 19.858293,
+        "mean": 16.92201548313873
+      },
+      "reported_error_mag": {
+        "count": 153132,
+        "min": 0.011685,
+        "median": 0.022143,
+        "p95": 0.057116,
+        "p99": 0.057116,
+        "max": 0.12,
+        "mean": 0.026070861772849563
+      },
+      "brightest_over_faintest_flux_ratio": 55007.96770067504
+    },
+    "Johnson-R": {
+      "rows": 153755,
+      "finite_magnitude_and_error": 153755,
+      "finite_with_positive_reported_error": 153755,
+      "native_mag_arcsec2": {
+        "count": 153755,
+        "min": 8.526861,
+        "median": 16.743084,
+        "p95": 17.446724,
+        "p99": 17.57235222,
+        "max": 18.16,
+        "mean": 16.219044293304282
+      },
+      "reported_error_mag": {
+        "count": 153755,
+        "min": 0.01,
+        "median": 0.014972999999999998,
+        "p95": 0.022143,
+        "p99": 0.022143,
+        "max": 0.057116,
+        "mean": 0.014745411388247533
+      },
+      "brightest_over_faintest_flux_ratio": 7132.7269666666225
+    }
+  },
+  "clear_sky_flags_available": false,
+  "moon_flags_available": false,
+  "rows_confirmed_clear_and_moonless_by_this_import": 0,
+  "all_sky_maps_in_this_file": false,
+  "absolute_radiance_conversion_applied": false,
+  "spatial_header_warning": true,
+  "limitations": [
+    "Finite values and positive reported errors are numerical checks, not weather QA.",
+    "Native B, V, R samples are sequential; colour indices require time matching.",
+    "No natural/artificial/moonlight decomposition, sensor QE or full camera calibration.",
+    "Pixel_x contains Pos labels in this release; do not use these columns as astrometric coordinates."
+  ]
+}

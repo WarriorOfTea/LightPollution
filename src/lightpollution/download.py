@@ -1,4 +1,4 @@
-"""Download a pinned annual Black Marble release without exposing credentials."""
+"""Download pinned Black Marble composites without exposing credentials."""
 
 from __future__ import annotations
 
@@ -11,6 +11,8 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 import requests
+
+from .periods import CompositePeriod
 
 HOST = "ladsweb.modaps.eosdis.nasa.gov"
 BASE = f"https://{HOST}"
@@ -36,14 +38,15 @@ def token_from_environment() -> str:
     return token
 
 
-def select_files(entries: list[dict], year: int, tiles: tuple[str, ...]) -> list[dict]:
+def select_files(entries: list[dict], year: int, tiles: tuple[str, ...], month: int | None = None) -> list[dict]:
     """Prefer the latest processing timestamp; never guess a filename."""
+    period = CompositePeriod(year, month)
     selected = []
     for tile in tiles:
-        pattern = re.compile(rf"^VNP46A4\.A{year}001\.{tile}\.002\.\d{{13}}\.h5$")
+        pattern = re.compile(rf"^{period.product}\.A{year:04d}{period.day_of_year}\.{tile}\.002\.\d{{13}}\.h5$")
         candidates = [e for e in entries if pattern.fullmatch(e.get("name", ""))]
         if not candidates:
-            raise ValueError(f"No VNP46A4.002 file for {year}, {tile}.")
+            raise ValueError(f"No {period.product}.002 file for {period.label}, {tile}.")
         selected.append(max(candidates, key=lambda e: e["name"]))
     return selected
 
@@ -73,35 +76,40 @@ def write_manifest(path: Path, manifest: dict) -> None:
     temporary.replace(path)
 
 
-def catalogue(year: int = 2025, tiles: tuple[str, ...] = TILES) -> dict:
-    listing = f"{BASE}/api/v2/content/details/allData/5200/VNP46A4/{year}/001"
+def catalogue(year: int = 2025, tiles: tuple[str, ...] = TILES, month: int | None = None) -> dict:
+    period = CompositePeriod(year, month)
+    listing = f"{BASE}/api/v2/content/details/allData/5200/{period.product}/{year}/{period.day_of_year}"
     response = requests.get(listing, timeout=(20, 60))
     response.raise_for_status()
-    records = select_files(response.json()["content"], year, tiles)
+    records = select_files(response.json()["content"], year, tiles, month)
     return {
-        "product": "VNP46A4", "collection": "002", "archive_set": "5200",
-        "year": year, "tiles": list(tiles), "listing_url": listing,
+        **period.metadata(), "archive_set": "5200",
+        "tiles": list(tiles), "listing_url": listing,
         "retrieved_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "files": [{**record,"download_verified":False} for record in records],
     }
 
 
-def download_annual(
+def download_composite(
     directory: Path,
     year: int = 2025,
     tiles: tuple[str, ...] = TILES,
     manifest_path: Path | None = None,
+    month: int | None = None,
 ) -> dict:
     """A saved manifest pins filenames and hashes for subsequent runs."""
+    period = CompositePeriod(year, month)
     directory.mkdir(parents=True, exist_ok=True)
     manifest_path = manifest_path or directory / "manifest.json"
     if manifest_path.exists():
         manifest = json.loads(manifest_path.read_text())
-        if manifest["year"] != year or manifest["tiles"] != list(tiles):
-            raise ValueError("Manifest year/tiles differ from the requested release.")
+        if (manifest["year"] != year or manifest["tiles"] != list(tiles)
+                or manifest.get("month") != month or manifest.get("product") != period.product
+                or manifest.get("collection") != "002"):
+            raise ValueError("Manifest product/period/tiles differ from the requested release.")
         records = manifest["files"]
     else:
-        manifest = catalogue(year,tiles)
+        manifest = catalogue(year,tiles,month)
         records = manifest["files"]
     # Pin the selected release even if authentication or a later tile fails.
     write_manifest(manifest_path,manifest)
@@ -146,3 +154,9 @@ def download_annual(
         print(f"Downloaded and verified {name}", flush=True)
     write_manifest(manifest_path,manifest)
     return manifest
+
+
+def download_annual(directory: Path, year: int = 2025, tiles: tuple[str, ...] = TILES,
+                    manifest_path: Path | None = None) -> dict:
+    """Backward-compatible annual entry point."""
+    return download_composite(directory, year, tiles, manifest_path)

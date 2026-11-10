@@ -1,0 +1,78 @@
+{
+  "completed_at": "2026-11-10T11:20:09+01:00",
+  "working_branch": "main",
+  "base_commit": "a09e3f7aebafb0fe603a70874e31686841b2192a",
+  "tests": {
+    "tests": 64,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "pytest_reported_seconds": 21.3,
+    "junit": "pytest.xml"
+  },
+  "uv_lock_check": "passed",
+  "compileall": "passed",
+  "git_diff_check": "passed",
+  "local_links_checked": 91,
+  "broken_local_links": [],
+  "credential_pattern_hits_in_changed_text": [],
+  "pdfs": [
+    {
+      "file": "physics-and-math-guide.pdf",
+      "source": "docs/PHYSICS_AND_MATH_GUIDE.md",
+      "source_sha256": "42da25739dbcb7ef87d74ca01fa9d459780f4e7cd01ca3385df0a694e5586f80",
+      "pages": 14,
+      "sha256": "b5548e79f75cd0c99ab5a14754bed85e4a670f69ecee72be5176f680f011589e",
+      "text_outside_page": [],
+      "replacement_characters": 0,
+      "visually_reviewed_pages": [
+        1,
+        8,
+        14
+      ],
+      "repository_links_target": "main"
+    },
+    {
+      "file": "data-sources-report.pdf",
+      "source": "docs/DATA_SOURCES.md",
+      "source_sha256": "165a89803993ee70bbe2b7bd6503a4b30fd1336c5c53799484019f4ac68b51d3",
+      "pages": 4,
+      "sha256": "dc6fd3780ae721b27226aba1078dd8cfa9fd679ca8d2766acb321d0a27db3f15",
+      "text_outside_page": [],
+      "replacement_characters": 0,
+      "visually_reviewed_pages": [
+        1,
+        3
+      ],
+      "repository_links_target": "main"
+    }
+  ],
+  "monthly_catalogues": [
+    {
+      "file": "nasa-2025-01-catalogue.json",
+      "period_start": "2025-01-01",
+      "period_end": "2025-01-31",
+      "catalogue_files": 4,
+      "files_downloaded": 0
+    },
+    {
+      "file": "nasa-2025-07-catalogue.json",
+      "period_start": "2025-07-01",
+      "period_end": "2025-07-31",
+      "catalogue_files": 4,
+      "files_downloaded": 0
+    }
+  ],
+  "ground_imports": {
+    "astmon_rows": 452321,
+    "astmon_weather_and_moon_quality": "unknown",
+    "galicia_rows": 6668098,
+    "galicia_positive_finite_rows": 3577032,
+    "galicia_sites": 14,
+    "galicia_weather_and_moon_quality": "unknown"
+  },
+  "physical_calibration_validated": false,
+  "new_sky_renders": 0,
+  "lunar_radiance_implemented": false,
+  "seasonal_total_amplitude_implemented": false
+}

@@ -4,6 +4,8 @@ Run: uv run python scripts/build_report.py
 This renderer handles the Markdown subset used by REVIEW_AND_PLAN.md.
 """
 
+import argparse
+from datetime import date
 from html import escape
 from pathlib import Path
 import re
@@ -29,8 +31,9 @@ def inline(value):
     def link(match):
         label,url=match.groups()
         if not url.startswith(('https://','http://')):
-            relative=(Path('docs')/url).as_posix()
-            url='https://github.com/WarriorOfTea/LightPollution/blob/feature/black-marble-prototype/'+relative
+            path,marker,fragment=url.partition('#')
+            relative=(SOURCE.parent/path).resolve().relative_to(ROOT).as_posix()
+            url='https://github.com/WarriorOfTea/LightPollution/blob/main/'+relative+(marker+fragment if marker else '')
         return f'<link href="{url}" color="#135D83">{label}</link>'
     value=re.sub(r'\[([^\]]+)\]\(([^)]+)\)',link,value)
     value=re.sub(r'\*\*(.+?)\*\*',r'<b>\1</b>',value)
@@ -39,6 +42,14 @@ def inline(value):
 
 
 def main():
+    global SOURCE,OUTPUT
+    parser=argparse.ArgumentParser(description='Export a repository Markdown report as a readable Unicode PDF')
+    parser.add_argument('--source',type=Path,default=SOURCE)
+    parser.add_argument('--output',type=Path,default=OUTPUT)
+    parser.add_argument('--date',type=date.fromisoformat,default=date(2026,11,9))
+    args=parser.parse_args()
+    SOURCE,OUTPUT=args.source.resolve(),args.output.resolve()
+    report_date=args.date.isoformat()
     fonts=Path(matplotlib.get_data_path())/'fonts/ttf'
     for name,filename in [('DejaVu','DejaVuSans.ttf'),('DejaVuBold','DejaVuSans-Bold.ttf'),('DejaVuMono','DejaVuSansMono.ttf')]:
         pdfmetrics.registerFont(TTFont(name,str(fonts/filename)))
@@ -104,13 +115,14 @@ def main():
     def footer(canvas,document):
         canvas.setFont('DejaVu',7)
         canvas.setFillColor(colors.HexColor('#5c7480'))
-        canvas.drawString(18*mm,12*mm,'LightPollution · исследовательский прототип · 2026-11-09')
+        canvas.drawString(18*mm,12*mm,'LightPollution · исследовательский прототип · '+report_date)
         canvas.drawRightString(A4[0]-18*mm,12*mm,str(document.page))
 
     OUTPUT.parent.mkdir(parents=True,exist_ok=True)
     document=SimpleDocTemplate(str(OUTPUT),pagesize=A4,leftMargin=18*mm,rightMargin=18*mm,
                                topMargin=16*mm,bottomMargin=20*mm,
-                               title='LightPollution: проверка README, NASA и план реализации',author='LightPollution')
+                               title=next((line.removeprefix('# ').strip() for line in lines if line.startswith('# ')),
+                                          'LightPollution: исследовательский отчёт'),author='LightPollution')
     document.build(story,onFirstPage=footer,onLaterPages=footer)
     print(OUTPUT.relative_to(ROOT))
 

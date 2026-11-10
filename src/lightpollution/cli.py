@@ -12,7 +12,8 @@ import numpy as np
 import requests
 
 from .data import Bounds, audit, load_region, read_region, save_region
-from .download import catalogue, download_annual, write_manifest
+from .download import catalogue, download_composite, write_manifest
+from .periods import CompositePeriod
 from .physics import Atmosphere, Observer, SolverSettings, sky_grid
 from .sources import regional_sources, synthetic_cities
 from .visualization import source_map, sky_plot
@@ -25,15 +26,31 @@ def make_parser() -> argparse.ArgumentParser:
     commands=parser.add_subparsers(dest='command',required=True)
     cat=commands.add_parser('catalogue',help='Inspect public NASA file metadata; no authentication needed')
     cat.add_argument('--year',type=int,default=2025)
+    cat.add_argument('--month',type=int,choices=range(1,13),help='Monthly VNP46A3; omit for annual VNP46A4')
     cat.add_argument('--output',type=Path)
     fetch=commands.add_parser('download',help='Download four pinned Petersburg HDF5 tiles')
     fetch.add_argument('--year',type=int,default=2025)
+    fetch.add_argument('--month',type=int,choices=range(1,13))
     fetch.add_argument('--directory',type=Path)
     fetch.add_argument('--manifest',type=Path)
     check=commands.add_parser('audit',help='Check and extract the 29–32 E, 59–61 N window')
     check.add_argument('--year',type=int,default=2025)
+    check.add_argument('--month',type=int,choices=range(1,13))
     check.add_argument('--directory',type=Path)
     check.add_argument('--output',type=Path)
+    check.add_argument('--no-plots',action='store_true',help='Export numerical audit only')
+    ground=commands.add_parser('audit-ground',help='Audit a downloaded public native-band reference; no rendering')
+    ground.add_argument('--kind',required=True,choices=['astmon','galicia'])
+    ground.add_argument('--file',type=Path,required=True)
+    ground.add_argument('--output',type=Path,required=True)
+    context=commands.add_parser('context',help='Sun/Moon geometry; not a prediction of lunar sky brightness')
+    context.add_argument('--utc',required=True)
+    context.add_argument('--latitude',type=float,default=60.30)
+    context.add_argument('--longitude',type=float,default=30.315)
+    context.add_argument('--height',type=float,default=20)
+    context.add_argument('--look-azimuth',type=float,default=180)
+    context.add_argument('--look-altitude',type=float,default=35)
+    context.add_argument('--output',type=Path,required=True)
     view=commands.add_parser('render',help='Stars and computed skyglow as seen from the saved observer')
     view.add_argument('--sky',type=Path,default=Path('artifacts/petersburg-2025/observer-sky/sky-grid.npz'))
     view.add_argument('--output',type=Path,default=Path('artifacts/petersburg-2025/observer-view'))
@@ -97,7 +114,8 @@ def run_simulation(args) -> dict:
                                          include_water=args.include_water,refinement_direction=(az,alt))
             refined_counts.append(len(selected.power))
             return selected
-        title=f"Петербург, VIIRS {metadata.get('year','')}: условный региональный сценарий"
+        period_label=CompositePeriod(metadata['year'],metadata.get('month')).label
+        title=f"Петербург, VIIRS {period_label}: условный региональный сценарий"
     azimuths=np.arange(0,360,args.azimuth_step)
     altitudes=np.asarray(args.altitudes)
     started=time.perf_counter()
@@ -135,22 +153,40 @@ def main():
     args=parser.parse_args()
     try:
         if args.command=='catalogue':
-            manifest=catalogue(args.year)
-            write_manifest(args.output or Path(f'artifacts/nasa-{args.year}-catalogue.json'),manifest)
+            period=CompositePeriod(args.year,args.month)
+            manifest=catalogue(args.year) if args.month is None else catalogue(args.year,month=args.month)
+            write_manifest(args.output or Path(f'artifacts/nasa-{period.label}-catalogue.json'),manifest)
             print(f"Catalogue only: {len(manifest['files'])} files; not downloaded.")
         elif args.command=='download':
-            download_annual(args.directory or Path(f'data/blackmarble/{args.year}'),args.year,manifest_path=args.manifest)
+            period=CompositePeriod(args.year,args.month)
+            download_composite(args.directory or Path(f'data/blackmarble/{period.label}'),args.year,
+                               manifest_path=args.manifest,month=args.month)
         elif args.command=='audit':
-            args.directory=args.directory or Path(f'data/blackmarble/{args.year}')
-            args.output=args.output or Path(f'artifacts/petersburg-{args.year}')
-            arrays,attributes=read_region(args.directory,Bounds(),args.year)
+            period=CompositePeriod(args.year,args.month)
+            args.directory=args.directory or Path(f'data/blackmarble/{period.label}')
+            args.output=args.output or Path(f'artifacts/petersburg-{period.label}')
+            arrays,attributes=read_region(args.directory,Bounds(),args.year,args.month)
             report=audit(arrays,Bounds())
+            report['observation_period']=period.metadata()
             args.output.mkdir(parents=True,exist_ok=True)
             (args.output/'audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
             (args.output/'metadata.json').write_text(json.dumps(attributes,ensure_ascii=False,indent=2)+'\n')
             inputs=[{"filename":value['filename'],"sha256":value['sha256']} for value in attributes.values()]
-            save_region(args.output/'source-grid.npz',arrays,Bounds(),{"year":args.year,"product":"VNP46A4.002", "inputs":inputs})
-            source_map(arrays,Bounds(),args.output/'sources.png',year=args.year)
+            save_region(args.output/'source-grid.npz',arrays,Bounds(),
+                        {**period.metadata(),"product":period.product+'.002',"inputs":inputs})
+            if not args.no_plots:
+                source_map(arrays,Bounds(),args.output/'sources.png',year=args.year,month=args.month)
+            print(json.dumps(report,ensure_ascii=False,indent=2))
+        elif args.command=='audit-ground':
+            from .ground import audit_astmon, audit_galicia
+            report=(audit_astmon if args.kind=='astmon' else audit_galicia)(args.file)
+            write_manifest(args.output,report)
+            print(json.dumps({key:report[key] for key in ('dataset','rows','sha256')},ensure_ascii=False,indent=2))
+        elif args.command=='context':
+            from .observation import observation_context
+            report=observation_context(Observer(args.latitude,args.longitude,args.height),args.utc,
+                                       args.look_azimuth,args.look_altitude)
+            write_manifest(args.output,report)
             print(json.dumps(report,ensure_ascii=False,indent=2))
         elif args.command=='render':
             from .skyview import DisplayScenario, render_observer

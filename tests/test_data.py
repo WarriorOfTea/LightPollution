@@ -79,6 +79,22 @@ def test_missing_tile_fails_instead_of_silently_filling_dark(tmp_path):
     with pytest.raises(ValueError,match='pinned file'): read_region(tmp_path,Bounds())
 
 
+def test_monthly_reader_checks_actual_product_and_calendar_period(tmp_path):
+    bounds=Bounds(30,59.5,30+1/240,59.5+1/240)
+    path=tmp_path/'VNP46A3.A2024032.h21v03.002.2026001000000.h5'
+    make_tile(path,21,3,5,year=2024)
+    with h5py.File(path,'r+') as handle:
+        handle.attrs.update({'ShortName':'VNP46A3','RangeBeginningDate':'2024-02-01',
+                             'RangeEndingDate':'2024-02-29'})
+    arrays,metadata=read_region(tmp_path,bounds,year=2024,month=2)
+    assert arrays['NearNadir_Composite_Snow_Free'][0,0]==5
+    assert metadata['h21v03']['global_attributes']['ShortName']=='VNP46A3'
+    with h5py.File(path,'r+') as handle:
+        handle.attrs['RangeEndingDate']='2024-02-28'
+    with pytest.raises(ValueError,match='observation period'):
+        read_region(tmp_path,bounds,year=2024,month=2)
+
+
 def test_nonstandard_coordinate_shift_is_rejected(tmp_path):
     bounds=Bounds(30,59.5,30+1/240,59.5+1/240)
     path=tmp_path/'VNP46A4.A2025001.h21v03.002.2026001000000.h5'

@@ -3,7 +3,42 @@
 
 Python ≥3.12, `uv`. Команды выполняются из корня LightPollution. Код не зависит
 от KStars. Физические определения и ограничения — [MODEL.md](MODEL.md), состояние
-исследования и дальнейшие этапы — [REVIEW_AND_PLAN.md](REVIEW_AND_PLAN.md).
+исследования и дальнейшие этапы — [OBSERVATION_PLAN.md](OBSERVATION_PLAN.md).
+Рабочая ветка — `main`. Объяснение с основ — [PHYSICS_AND_MATH_GUIDE.md](PHYSICS_AND_MATH_GUIDE.md).
+
+## Технические входы: месяц, измерения и Луна
+
+Для месячного A3 указывается `--month`; без него сохраняется годовой A4.
+Периоды используют разные каталоги и манифесты. Последние две команды ниже
+требуют NASA-доступа и реальных месячных файлов; в текущем этапе проверен
+реальный каталог, а чтение HDF5 — регрессионным тестом.
+
+```bash
+uv run lightpollution catalogue --year 2025 --month 1
+uv run lightpollution download --year 2025 --month 1
+uv run lightpollution audit --year 2025 --month 1 --no-plots
+```
+
+Аудит скачанного численного эталона и отдельная геометрия без рендера:
+
+```bash
+uv run lightpollution audit-ground --kind astmon \
+  --file data/references/AstMon_evol.csv --output artifacts/astmon-audit.json
+uv run lightpollution context --utc 2025-06-21T00:00:00Z \
+  --output artifacts/observation-context.json
+```
+
+`audit-ground` не придумывает маски облаков/Луны. `context` возвращает
+фазу, расстояние, положение и угловое разделение; рассеянный лунный свет
+ещё не вычисляет. Месячная нормировка источников пока не переносит изменение
+общего излучения между месяцами. [Проверенные базы и ограничения](DATA_SOURCES.md).
+
+Отчёт из выбранного документа:
+
+```bash
+uv run python scripts/build_report.py --source docs/PHYSICS_AND_MATH_GUIDE.md \
+  --output artifacts/physics-and-math-guide.pdf --date 2026-11-10
+```
 
 ## Окружение и проверки
 

@@ -1,0 +1,36 @@
+{
+  "utc": "2025-06-21T00:00:00Z",
+  "observer": {
+    "latitude_deg": 60.3,
+    "longitude_deg": 30.315,
+    "height_m": 20
+  },
+  "target": {
+    "azimuth_deg": 180.0,
+    "altitude_deg": 35.0
+  },
+  "sun": {
+    "altitude_deg": -2.790944174407545,
+    "azimuth_deg": 27.232022750372217
+  },
+  "moon": {
+    "altitude_deg": 13.047510115435362,
+    "azimuth_deg": 86.47529293229299,
+    "topocentric_distance_km": 364687.3181640032,
+    "geocentric_phase_angle_deg": 118.80975672599149,
+    "geocentric_illuminated_fraction": 0.25904855462729237,
+    "target_separation_deg": 85.38674348600523
+  },
+  "astronomical_darkness": false,
+  "moon_center_above_geometric_horizon": true,
+  "legacy_moonless_renderer_applicable": false,
+  "lunar_sky_radiance_modelled": false,
+  "method": {
+    "ephemeris": "astropy builtin",
+    "iers": "offline bundled tables",
+    "atmospheric_refraction": false,
+    "terrain_horizon": false,
+    "phase_reference": "geocentric; illuminated fraction is not lunar flux",
+    "limitations": "Geometry only; no scattered moonlight, horizon glow or optics glare."
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "audited_at": "2026-11-10T11:07:09+01:00",
+  "downloaded_ground_datasets": [
+    {
+      "id": "zenodo-4633001",
+      "title": "Evolution of Brightness and Color of the Night Sky in Madrid",
+      "url": "https://zenodo.org/records/4633001",
+      "download_url": "https://zenodo.org/records/4633001/files/AstMon_evol.csv?download=1",
+      "file": "AstMon_evol.csv",
+      "bytes": 45527631,
+      "publisher_checksum": "md5:634f098973251bf41f7d8a12b0a8ab45",
+      "publisher_checksum_verified": true,
+      "sha256": "f477416f47487ad918484392fd5c368744d5807c22edf5c0e69ed7450fad88a9",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "creators": [
+        {
+          "name": "Robles, José",
+          "affiliation": "Universidad Complutense de Madrid"
+        },
+        {
+          "name": "Zamorano, Jaime",
+          "affiliation": "Universidad Complutense de Madrid",
+          "orcid": "0000-0002-8993-5894"
+        },
+        {
+          "name": "Pascual, Sergio",
+          "affiliation": "Universidad Complutense de Madrid",
+          "orcid": "0000-0002-9351-6051"
+        },
+        {
+          "name": "Alejandro Sánchez de Miguel",
+          "affiliation": "Environment and Sustainability Institute, University of Exeter, Penryn, Cornwall TR10 9FE, U.K.",
+          "orcid": "0000-0002-5007-3799"
+        },
+        {
+          "name": "Gallego, Jesús",
+          "affiliation": "Universidad Complutense de Madrid",
+          "orcid": "0000-0003-1439-7697"
+        },
+        {
+          "name": "Kevin J. Gaston",
+          "affiliation": "Environment and Sustainability Institute, University of Exeter, Penryn, Cornwall TR10 9FE, U.K.",
+          "orcid": "0000-0002-7235-7928"
+        }
+      ],
+      "raw_file_in_git": false
+    },
+    {
+      "id": "zenodo-4977265",
+      "title": "Data from: Anthropogenic disruption of the night sky darkness in urban and rural areas",
+      "url": "https://zenodo.org/records/4977265",
+      "download_url": "https://zenodo.org/records/4977265/files/NightSkyBrightnessData_2015.zip?download=1",
+      "file": "NightSkyBrightnessData_2015.zip",
+      "bytes": 23915784,
+      "publisher_checksum": "md5:66ba8914ace008440756b0977a8c0b0f",
+      "publisher_checksum_verified": true,
+      "sha256": "7fc9be329a61eb060465ee047b62b392a0cc73627d14971c6b72b60a6de3901c",
+      "license": {
+        "id": "cc-zero"
+      },
+      "creators": [
+        {
+          "name": "Bará, Salvador",
+          "affiliation": "University of Santiago de Compostela"
+        }
+      ],
+      "raw_file_in_git": false
+    },
+    {
+      "id": "nps-craters-2019",
+      "url": "https://catalog.data.gov/dataset/annual-sky-quality-meter-sqm-data-for-craters-of-the-moon-national-monument-and-preserve",
+      "download_url": "https://irma.nps.gov/DataStore/DownloadFile/629626?Reference=2266678",
+      "file": "Dark Sky SQM Data 2019.xlsx",
+      "bytes": 13767,
+      "sha256": "48ebf6dbb176d406b233cdd511ae9bd1b07aeb819818eed51a492578681faa4b",
+      "download_verified_as_xlsx": true,
+      "publisher_checksum_verified": false,
+      "raw_file_in_git": false,
+      "limitations": [
+        "Clock time zone not established from downloaded sheet",
+        "Directional SQM readings need exact pointing/true-north conventions",
+        "Template/example sheet must be distinguished from observations",
+        "Not a calibrated linear all-sky spectral image"
+      ]
+    }
+  ],
+  "monthly_nasa_catalogues": [
+    "nasa-2025-01-catalogue.json",
+    "nasa-2025-07-catalogue.json"
+  ],
+  "monthly_hdf5_files_downloaded": 0,
+  "other_sources": [
+    {
+      "url": "https://dataservices.gfz.de/10.5880/gfz.1.4.2022.008/software-for-analyzing-globe-at-night-data",
+      "status": "Landing page downloaded; resource files list empty in this session; numerical observations not downloaded"
+    },
+    {
+      "url": "https://globeatnight.org/maps-data/",
+      "status": "HTTP 403 in web tool; numerical observations not downloaded"
+    },
+    {
+      "url": "https://guaix.fis.ucm.es/lamps_spectra",
+      "status": "Published library found; regional lamp mixture unknown; redistribution permission not established"
+    },
+    {
+      "url": "https://www.eso.org/observing/etc/doc/skycalc/helpskycalc.html",
+      "status": "Model documentation read; not a ground measurement archive for Petersburg"
+    },
+    {
+      "url": "https://data.nasa.gov/dataset/merra-2-tavg1-2d-aer-nx-2d1-hourlytime-averagedsingle-levelassimilationaerosol-diagnostics-b1b07",
+      "status": "Metadata reviewed in preceding research; atmospheric arrays not downloaded"
+    }
+  ]
+}

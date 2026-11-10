@@ -1,0 +1,271 @@
+{
+  "dataset": "GalicianNightSkyBrightnessData_2015",
+  "filename": "NightSkyBrightnessData_2015.zip",
+  "sha256": "7fc9be329a61eb060465ee047b62b392a0cc73627d14971c6b72b60a6de3901c",
+  "sites": [
+    {
+      "site": "01_Lardeira",
+      "rows": 524448,
+      "positive_finite_native_readings": 284723,
+      "nonpositive_or_nonfinite_readings": 239725,
+      "offset_subtracted_mag": 0.0173,
+      "first_row_utc": "2015-01-01T12:00:00+00:00",
+      "last_row_utc": "2016-01-01T11:59:00+00:00",
+      "corrected_native_mag_arcsec2": {
+        "count": 284723,
+        "min": -0.0163,
+        "median": 19.8927,
+        "p95": 21.7027,
+        "p99": 22.372700000000002,
+        "max": 23.4727,
+        "mean": 17.91415314920115
+      }
+    },
+    {
+      "site": "02_Cebreiro",
+      "rows": 517053,
+      "positive_finite_native_readings": 281728,
+      "nonpositive_or_nonfinite_readings": 235325,
+      "offset_subtracted_mag": -0.0024,
+      "first_row_utc": "2015-01-01T12:00:00+00:00",
+      "last_row_utc": "2016-01-01T11:59:00+00:00",
+      "corrected_native_mag_arcsec2": {
+        "count": 281728,
+        "min": 5.812399999999999,
+        "median": 19.2524,
+        "p95": 21.572400000000002,
+        "p99": 21.762400000000003,
+        "max": 22.5024,
+        "mean": 17.635319908564295
+      }
+    },
+    {
+      "site": "03_Guisamo",
+      "rows": 524470,
+      "positive_finite_native_readings": 280834,
+      "nonpositive_or_nonfinite_readings": 243636,
+      "offset_subtracted_mag": 0.0071,
+      "first_row_utc": "2015-01-01T12:00:00+00:00",
+      "last_row_utc": "2016-01-01T11:59:00+00:00",
+      "corrected_native_mag_arcsec2": {
+        "count": 280834,
+        "min": -0.0061,
+        "median": 17.3429,
+        "p95": 19.872899999999998,
+        "p99": 20.0129,
+        "max": 20.2229,
+        "mean": 16.329302365810406
+      }
+    },
+    {
+      "site": "04_Areeiro",
+      "rows": 524467,
+      "positive_finite_native_readings": 280323,
+      "nonpositive_or_nonfinite_readings": 244144,
+      "offset_subtracted_mag": -0.0587,
+      "first_row_utc": "2015-01-01T12:00:00+00:00",
+      "last_row_utc": "2016-01-01T11:59:00+00:00",
+      "corrected_native_mag_arcsec2": {
+        "count": 280323,
+        "min": 0.0597,
+        "median": 17.3987,
+        "p95": 19.768700000000003,
+        "p99": 19.8887,
+        "max": 20.088700000000003,
+        "mean": 16.39843595102792
+      }
+    },
+    {
+      "site": "05_Manzaneda",
+      "rows": 304506,
+      "positive_finite_native_readings": 178265,
+      "nonpositive_or_nonfinite_readings": 126241,
+      "offset_subtracted_mag": -0.0059,
+      "first_row_utc": "2015-01-01T12:00:00+00:00",
+      "last_row_utc": "2016-01-01T11:59:00+00:00",
+      "corrected_native_mag_arcsec2": {
+        "count": 178265,
+        "min": 0.0069,
+        "median": 19.9359,
+        "p95": 22.2259,
+        "p99": 23.0559,
+        "max": 23.6659,
+        "mean": 18.12131324432727
+      }
+    },
+    {
+      "site": "06_Xares",
+      "rows": 428668,
+      "positive_finite_native_readings": 229204,
+      "nonpositive_or_nonfinite_readings": 199464,
+      "offset_subtracted_mag": 0.0642,
+      "first_row_utc": "2015-01-01T12:00:00+00:00",
+      "last_row_utc": "2016-01-01T11:59:00+00:00",
+      "corrected_native_mag_arcsec2": {
+        "count": 229204,
+        "min": -0.06319999999999999,
+        "median": 19.9158,
+        "p95": 22.1858,
+        "p99": 23.2258,
+        "max": 27.8158,
+        "mean": 17.95723843475681
+      }
+    },
+    {
+      "site": "07_PortoiVigo",
+      "rows": 524415,
+      "positive_finite_native_readings": 279662,
+      "nonpositive_or_nonfinite_readings": 244753,
+      "offset_subtracted_mag": -0.0087,
+      "first_row_utc": "2015-01-01T12:00:00+00:00",
+      "last_row_utc": "2016-01-01T11:59:00+00:00",
+      "corrected_native_mag_arcsec2": {
+        "count": 279662,
+        "min": 0.0097,
+        "median": 16.518700000000003,
+        "p95": 18.6487,
+        "p99": 18.7787,
+        "max": 22.6387,
+        "mean": 15.564568090766711
+      }
+    },
+    {
+      "site": "08_Fontaneira",
+      "rows": 524389,
+      "positive_finite_native_readings": 283422,
+      "nonpositive_or_nonfinite_readings": 240967,
+      "offset_subtracted_mag": 0.0366,
+      "first_row_utc": "2015-01-01T12:00:00+00:00",
+      "last_row_utc": "2016-01-01T11:59:00+00:00",
+      "corrected_native_mag_arcsec2": {
+        "count": 283422,
+        "min": -0.0356,
+        "median": 19.6634,
+        "p95": 21.6734,
+        "p99": 22.0434,
+        "max": 23.9134,
+        "mean": 17.834951315705908
+      }
+    },
+    {
+      "site": "09_Santiago",
+      "rows": 524419,
+      "positive_finite_native_readings": 281664,
+      "nonpositive_or_nonfinite_readings": 242755,
+      "offset_subtracted_mag": -0.0017,
+      "first_row_utc": "2015-01-01T12:00:00+00:00",
+      "last_row_utc": "2016-01-01T11:59:00+00:00",
+      "corrected_native_mag_arcsec2": {
+        "count": 281664,
+        "min": 0.0027,
+        "median": 16.3017,
+        "p95": 19.1817,
+        "p99": 19.3517,
+        "max": 19.6317,
+        "mean": 15.583495934162688
+      }
+    },
+    {
+      "site": "10_Labrada",
+      "rows": 524482,
+      "positive_finite_native_readings": 282982,
+      "nonpositive_or_nonfinite_readings": 241500,
+      "offset_subtracted_mag": 0.0315,
+      "first_row_utc": "2015-01-01T12:00:00+00:00",
+      "last_row_utc": "2016-01-01T11:59:00+00:00",
+      "corrected_native_mag_arcsec2": {
+        "count": 282982,
+        "min": -0.0305,
+        "median": 19.4985,
+        "p95": 21.4485,
+        "p99": 21.6285,
+        "max": 22.4285,
+        "mean": 17.70279746061587
+      }
+    },
+    {
+      "site": "11_Cies",
+      "rows": 524352,
+      "positive_finite_native_readings": 280389,
+      "nonpositive_or_nonfinite_readings": 243963,
+      "offset_subtracted_mag": 0.0585,
+      "first_row_utc": "2015-01-01T12:00:00+00:00",
+      "last_row_utc": "2016-01-01T11:59:00+00:00",
+      "corrected_native_mag_arcsec2": {
+        "count": 280389,
+        "min": -0.0575,
+        "median": 19.4115,
+        "p95": 21.1615,
+        "p99": 21.951500000000003,
+        "max": 23.5115,
+        "mean": 17.660154686881437
+      }
+    },
+    {
+      "site": "12_Paramos",
+      "rows": 524471,
+      "positive_finite_native_readings": 251074,
+      "nonpositive_or_nonfinite_readings": 273397,
+      "offset_subtracted_mag": -0.008,
+      "first_row_utc": "2015-01-01T12:00:00+00:00",
+      "last_row_utc": "2016-01-01T11:59:00+00:00",
+      "corrected_native_mag_arcsec2": {
+        "count": 251074,
+        "min": 0.009000000000000001,
+        "median": 19.148,
+        "p95": 21.118,
+        "p99": 21.268,
+        "max": 21.598,
+        "mean": 17.455256203350405
+      }
+    },
+    {
+      "site": "13_Ons",
+      "rows": 524449,
+      "positive_finite_native_readings": 278964,
+      "nonpositive_or_nonfinite_readings": 245485,
+      "offset_subtracted_mag": 0.0227,
+      "first_row_utc": "2015-01-01T12:00:00+00:00",
+      "last_row_utc": "2016-01-01T11:59:00+00:00",
+      "corrected_native_mag_arcsec2": {
+        "count": 278964,
+        "min": -0.0217,
+        "median": 19.1973,
+        "p95": 21.0173,
+        "p99": 21.27099999999995,
+        "max": 22.1473,
+        "mean": 17.577087685866275
+      }
+    },
+    {
+      "site": "14_Salvora",
+      "rows": 173509,
+      "positive_finite_native_readings": 103798,
+      "nonpositive_or_nonfinite_readings": 69711,
+      "offset_subtracted_mag": -0.0675,
+      "first_row_utc": "2015-09-03T00:01:00+00:00",
+      "last_row_utc": "2016-01-01T11:59:00+00:00",
+      "corrected_native_mag_arcsec2": {
+        "count": 103798,
+        "min": 0.0685,
+        "median": 20.0075,
+        "p95": 21.4875,
+        "p99": 22.0775,
+        "max": 23.0775,
+        "mean": 18.111979527543884
+      }
+    }
+  ],
+  "site_count": 14,
+  "rows": 6668098,
+  "positive_finite_native_readings": 3577032,
+  "band": "SQM network common reference; not Johnson V or CIE scotopic",
+  "offset_rule": "mag_corrected = mag_raw - offset; never apply to placeholder values",
+  "clear_sky_flags_available": false,
+  "moon_flags_available": false,
+  "limitations": [
+    "Nonpositive readings excluded by project QC; never interpreted as zero light.",
+    "Daylight, cloud, moon and instrument-state selection still required.",
+    "Relative network offsets are not a conversion to spectral radiance."
+  ]
+}

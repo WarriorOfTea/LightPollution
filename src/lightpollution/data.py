@@ -1,4 +1,4 @@
-"""Read geographical windows and audit actual VNP46A4 Collection 2 attributes."""
+"""Read geographical windows of VNP46A3/A4 Collection 2 and audit their attributes."""
 
 from __future__ import annotations
 
@@ -11,6 +11,7 @@ import h5py
 import numpy as np
 
 from .download import sha256
+from .periods import CompositePeriod
 
 PIXELS_PER_DEGREE = 240
 GRID = "HDFEOS/GRIDS/VIIRS_Grid_DNB_2d/Data Fields"
@@ -101,12 +102,14 @@ def good_mask(radiance: np.ndarray, quality: np.ndarray, observations: np.ndarra
     return np.isfinite(radiance) & (radiance >= 0) & (quality == 0) & (observations > 3)
 
 
-def read_region(directory: Path, bounds: Bounds, year: int = 2025) -> tuple[dict, dict]:
+def read_region(directory: Path, bounds: Bounds, year: int = 2025,
+                month: int | None = None) -> tuple[dict, dict]:
+    period = CompositePeriod(year, month)
     arrays: dict[str, np.ndarray] = {}
     attributes: dict = {}
     coverage = np.zeros(bounds.shape, dtype=np.uint8)
     for tile in bounds.tiles():
-        files = sorted(directory.glob(f"VNP46A4.A{year}001.{tile}.002.*.h5"))
+        files = sorted(directory.glob(f"{period.product}.A{year:04d}{period.day_of_year}.{tile}.002.*.h5"))
         if len(files) != 1:
             raise ValueError(f"Expected one pinned file for {tile}; found {len(files)}.")
         path = files[0]
@@ -120,9 +123,10 @@ def read_region(directory: Path, bounds: Bounds, year: int = 2025) -> tuple[dict
         dst = (slice(round((bounds.north-top)*240), round((bounds.north-bottom)*240)),
                slice(round((left-bounds.west)*240), round((right-bounds.west)*240)))
         with h5py.File(path, "r") as handle:
-            if text_attribute(handle.attrs, "ShortName") != "VNP46A4" or text_attribute(handle.attrs, "VersionID") != "002":
+            if text_attribute(handle.attrs, "ShortName") != period.product or text_attribute(handle.attrs, "VersionID") != "002":
                 raise ValueError(f"Wrong product or collection in {path.name}.")
-            if text_attribute(handle.attrs, "RangeBeginningDate") != f"{year}-01-01" or text_attribute(handle.attrs, "RangeEndingDate") != f"{year}-12-31":
+            if (text_attribute(handle.attrs, "RangeBeginningDate") != period.start.isoformat()
+                    or text_attribute(handle.attrs, "RangeEndingDate") != period.end.isoformat()):
                 raise ValueError(f"Unexpected observation period in {path.name}.")
             for name, expected in (("WestBoundingCoord", west), ("EastBoundingCoord", west+10),
                                    ("NorthBoundingCoord", north), ("SouthBoundingCoord", north-10)):

@@ -1,0 +1,60 @@
+{
+  "product": "VNP46A3",
+  "collection": "002",
+  "year": 2025,
+  "month": 1,
+  "period_start": "2025-01-01",
+  "period_end": "2025-01-31",
+  "temporal_resolution": "monthly",
+  "archive_set": "5200",
+  "tiles": [
+    "h20v02",
+    "h21v02",
+    "h20v03",
+    "h21v03"
+  ],
+  "listing_url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/details/allData/5200/VNP46A3/2025/001",
+  "retrieved_at": "2026-11-10T10:04:43+00:00",
+  "files": [
+    {
+      "downloadsLink": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VNP46A3/2025/001/VNP46A3.A2025001.h20v02.002.2026064124555.h5",
+      "mtime": 1772715357,
+      "name": "VNP46A3.A2025001.h20v02.002.2026064124555.h5",
+      "resourceType": "File",
+      "self": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/details/allData/5200/VNP46A3/2025/001/VNP46A3.A2025001.h20v02.002.2026064124555.h5",
+      "size": 145600000,
+      "status": "Online",
+      "download_verified": false
+    },
+    {
+      "downloadsLink": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VNP46A3/2025/001/VNP46A3.A2025001.h21v02.002.2026064124542.h5",
+      "mtime": 1772715327,
+      "name": "VNP46A3.A2025001.h21v02.002.2026064124542.h5",
+      "resourceType": "File",
+      "self": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/details/allData/5200/VNP46A3/2025/001/VNP46A3.A2025001.h21v02.002.2026064124542.h5",
+      "size": 135134537,
+      "status": "Online",
+      "download_verified": false
+    },
+    {
+      "downloadsLink": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VNP46A3/2025/001/VNP46A3.A2025001.h20v03.002.2026064124605.h5",
+      "mtime": 1772715327,
+      "name": "VNP46A3.A2025001.h20v03.002.2026064124605.h5",
+      "resourceType": "File",
+      "self": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/details/allData/5200/VNP46A3/2025/001/VNP46A3.A2025001.h20v03.002.2026064124605.h5",
+      "size": 94338145,
+      "status": "Online",
+      "download_verified": false
+    },
+    {
+      "downloadsLink": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VNP46A3/2025/001/VNP46A3.A2025001.h21v03.002.2026064124550.h5",
+      "mtime": 1772715327,
+      "name": "VNP46A3.A2025001.h21v03.002.2026064124550.h5",
+      "resourceType": "File",
+      "self": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/details/allData/5200/VNP46A3/2025/001/VNP46A3.A2025001.h21v03.002.2026064124550.h5",
+      "size": 117162245,
+      "status": "Online",
+      "download_verified": false
+    }
+  ]
+}

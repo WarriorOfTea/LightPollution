@@ -12,9 +12,12 @@ import numpy as np
 
 from .data import COMPOSITES, Bounds, good_mask
 from .physics import Observer
+from .periods import CompositePeriod
 
 
-def source_map(arrays: dict, bounds: Bounds, path: Path, observer: Observer = Observer(), year: int = 2025):
+def source_map(arrays: dict, bounds: Bounds, path: Path, observer: Observer = Observer(), year: int = 2025,
+               month: int | None = None):
+    period=CompositePeriod(year,month)
     fig,axes=plt.subplots(1,3,figsize=(15,6),layout="constrained")
     all_values=[]
     for prefix in COMPOSITES:
@@ -36,7 +39,7 @@ def source_map(arrays: dict, bounds: Bounds, path: Path, observer: Observer = Ob
         ax.legend(fontsize=7,loc='lower right')
         ax.grid(alpha=0.15)
     fig.colorbar(image,ax=axes,shrink=0.75,label='Яркость VIIRS, nW/(cm² sr); шкала symlog')
-    fig.suptitle(f"NASA VNP46A4.002, {year}, без снега. Серый — данные не приняты по качеству",fontsize=12)
+    fig.suptitle(f"NASA {period.product}.002, {period.label}, без снега. Серый — данные не приняты по качеству",fontsize=12)
     path.parent.mkdir(parents=True,exist_ok=True)
     fig.savefig(path,dpi=160)
     plt.close(fig)
