@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-11-10T22:43:34+01:00",
+  "base_commit": "6d42288f19f23a011e72765f76dbd9b8cc9c296e",
+  "scope": "MVP proposal and architecture plan only; implementation not started.",
+  "model_code_changed": false,
+  "tests_rerun": false,
+  "test_policy": "Documentation-only change: checked links, plan completeness and exported PDF; prior 96-test result is historical.",
+  "planned_deliveries": 6,
+  "pages": 5,
+  "six_delivery_sections_present": true,
+  "contracts_present": [
+    "SceneSpec",
+    "SkyField",
+    "StarFluxTable",
+    "RunResult"
+  ],
+  "local_links_checked": 86,
+  "missing_local_links": [],
+  "all_pdf_pages_have_extractable_text": true,
+  "all_pdf_word_bounds_inside_page": true,
+  "preview_pages": [
+    1,
+    2,
+    3
+  ],
+  "sources_reviewed": [
+    "https://fastapi.tiangolo.com/advanced/templates/",
+    "https://fastapi.tiangolo.com/tutorial/background-tasks/",
+    "https://kstars-docs.kde.org/en/user_manual/tool-scriptbuilder.html"
+  ],
+  "sha256": {
+    "README.md": "fc8904cf807615d4f3cd6b3863769e26add392b115ca93ad72cab6e6fe9bcc80",
+    "HISTORY.md": "ae4e887f17fbf0384eecf888c212d7d71deea9e95c511aba63996582f78b639f",
+    "docs/OBSERVATION_PLAN.md": "3910309988a607194e562d1200f55df79daf00a4bc9ec4fdfb92e56466ca371d",
+    "artifacts/mvp-plan-20261110/README.md": "f4630da1051f13fa9d6cdec4b5455523b28cb3c0094eb2c8bac1cc95663170a4",
+    "artifacts/mvp-plan-20261110/mvp-plan.pdf": "139680d4004ee664eb781c8acaa82508e0994be5c6d84161a8d1ed73b03dfca1"
+  },
+  "source_amplitude_fixed_for_atmosphere_comparisons_documented": true
+}
