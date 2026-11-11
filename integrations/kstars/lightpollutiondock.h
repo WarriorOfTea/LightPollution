@@ -49,7 +49,7 @@ private:
     QTimer m_Timer;
     QComboBox *m_Region, *m_Period, *m_Terrain;
     QDoubleSpinBox *m_Height, *m_AOD;
-    QCheckBox *m_Near, *m_Follow, *m_Spectral, *m_Eye;
+    QCheckBox *m_Near, *m_Follow, *m_Spectral, *m_Eye, *m_Colour;
     QPushButton *m_OpenEye;
     QLabel *m_Position, *m_Status, *m_Scale;
     QTableWidget *m_Values;

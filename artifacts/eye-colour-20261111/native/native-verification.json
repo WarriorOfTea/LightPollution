@@ -1,0 +1,31 @@
+{
+  "completed_at": "2026-11-11T23:23:37+01:00",
+  "kstars_version": "3.6.2",
+  "compiled_binary_sha256": "d790a94730e2a46215c499f18b25c4cfb08911bdeb6881e0ff4fe0a44900b3a0",
+  "jobs_completed": 2,
+  "jobs_requested": 2,
+  "geometry_round_trip_checked": true,
+  "stale_after_map_change_checked": true,
+  "AGL_vs_MSL_checked": true,
+  "native_star_B_V_spectral_type_HD_checked": true,
+  "native_eye_preview_opened": true,
+  "native_experimental_colour_checked": true,
+  "screenshots_from_native_Qt_widget": true,
+  "platform": "Qt offscreen / private session D-Bus",
+  "build_excludes_INDI_Ekos_device_control": true,
+  "original_user_settings_modified": false,
+  "job_ids": [
+    "6d399d01fca3414c8168dc3176442cfb",
+    "5bec1d6d87234739bc1795ec98df8f52"
+  ],
+  "nearest_city_timezone_read_from_actual_KStars_location_API": {
+    "country": "",
+    "latitude": 60.3,
+    "longitude": 30.315,
+    "name": "GPS Location",
+    "province": "",
+    "tz": 3,
+    "tz0": 3
+  },
+  "field_accuracy_validated": false
+}

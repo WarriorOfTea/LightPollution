@@ -1,0 +1,127 @@
+{
+  "checked_at": "2026-11-11T23:25:15+01:00",
+  "CIE_provenance": {
+    "tables": [
+      {
+        "file": "CIE_xyz_1931_2deg.csv",
+        "metadata_file": "CIE_xyz_1931_2deg.csv_metadata.json",
+        "doi": "10.25039/CIE.DS.xvudnb9b",
+        "url": "https://files.cie.co.at/Publications-datasets/CIE_xyz_1931_2deg.csv",
+        "sha256": "fa663e3535a7e0763a745993a1f0a192eb0275ac46ad2d1befd7626841e713c1",
+        "rights": [
+          {
+            "rights": "Creative Commons Attribution-ShareAlike 4.0 International",
+            "rightsURI": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "rightsIdentifier": "CC BY-SA 4.0"
+          }
+        ],
+        "publisher_checksums_verified": true
+      },
+      {
+        "file": "CIE_lms_cf_2deg.csv",
+        "metadata_file": "CIE_lms_cf_2deg.csv_metadata.json",
+        "doi": "10.25039/CIE.DS.tijidesg",
+        "url": "https://files.cie.co.at/Publications-datasets/CIE_lms_cf_2deg.csv",
+        "sha256": "f48160edf11c1a121aaaf41d4c3b7513385bfc9c60d726b88e735519f6d37b1f",
+        "rights": [
+          {
+            "rights": "Creative Commons Attribution-ShareAlike 4.0 International",
+            "rightsURI": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "rightsIdentifier": "CC BY-SA 4.0"
+          }
+        ],
+        "publisher_checksums_verified": true
+      },
+      {
+        "file": "CIE_std_illum_D65.csv",
+        "metadata_file": "CIE_std_illum_D65.csv_metadata_v2.json",
+        "doi": "10.25039/CIE.DS.hjfjmt59",
+        "url": "https://files.cie.co.at/Publications-datasets/CIE_std_illum_D65.csv",
+        "sha256": "e76f210bffff3d552ef7113025da5f325d5dfec200dd4b878b1a2f3a507032cb",
+        "rights": [
+          {
+            "rights": "Creative Commons Attribution-ShareAlike 4.0 International",
+            "rightsURI": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "rightsIdentifier": "CC BY-SA 4.0"
+          }
+        ],
+        "publisher_checksums_verified": true
+      }
+    ],
+    "raw_tables_unchanged": true,
+    "processing": "Linear resampling; zero extrapolation per publisher; S NaN beyond615nm set zero only outside declared valid range.",
+    "sha256": {
+      "CIE_lms_cf_2deg.csv": "f48160edf11c1a121aaaf41d4c3b7513385bfc9c60d726b88e735519f6d37b1f",
+      "CIE_lms_cf_2deg.csv_metadata.json": "c488310e9f076a9e00bff69d206eae8821bd17137e6a3ba260570eae4ff91fab",
+      "CIE_std_illum_D65.csv": "e76f210bffff3d552ef7113025da5f325d5dfec200dd4b878b1a2f3a507032cb",
+      "CIE_std_illum_D65.csv_metadata_v2.json": "71994379b81c65db111f652e747a00b599b5456c2a8242e9a0d6f379f560a14e",
+      "CIE_xyz_1931_2deg.csv": "fa663e3535a7e0763a745993a1f0a192eb0275ac46ad2d1befd7626841e713c1",
+      "CIE_xyz_1931_2deg.csv_metadata.json": "03abcaecf4e63d77045ef57c4514b52c8bb1a46dd18e1f93a50044a0f4f481c8"
+    }
+  },
+  "publisher_checksums_passed": 6,
+  "publisher_checksums_checked": 6,
+  "checksums": [
+    {
+      "file": "CIE_lms_cf_2deg.csv",
+      "method": "md5",
+      "expected": "dba2e9d1f5e6667575aa069832159510",
+      "actual": "dba2e9d1f5e6667575aa069832159510",
+      "passed": true
+    },
+    {
+      "file": "CIE_lms_cf_2deg.csv",
+      "method": "sha256",
+      "expected": "f48160edf11c1a121aaaf41d4c3b7513385bfc9c60d726b88e735519f6d37b1f",
+      "actual": "f48160edf11c1a121aaaf41d4c3b7513385bfc9c60d726b88e735519f6d37b1f",
+      "passed": true
+    },
+    {
+      "file": "CIE_std_illum_D65.csv",
+      "method": "md5",
+      "expected": "03d4eb9b837c60671627c946fb534deb",
+      "actual": "03d4eb9b837c60671627c946fb534deb",
+      "passed": true
+    },
+    {
+      "file": "CIE_std_illum_D65.csv",
+      "method": "sha256",
+      "expected": "e76f210bffff3d552ef7113025da5f325d5dfec200dd4b878b1a2f3a507032cb",
+      "actual": "e76f210bffff3d552ef7113025da5f325d5dfec200dd4b878b1a2f3a507032cb",
+      "passed": true
+    },
+    {
+      "file": "CIE_xyz_1931_2deg.csv",
+      "method": "md5",
+      "expected": "17cca777db64b17170f06f67ce9d3ab7",
+      "actual": "17cca777db64b17170f06f67ce9d3ab7",
+      "passed": true
+    },
+    {
+      "file": "CIE_xyz_1931_2deg.csv",
+      "method": "sha256",
+      "expected": "fa663e3535a7e0763a745993a1f0a192eb0275ac46ad2d1befd7626841e713c1",
+      "actual": "fa663e3535a7e0763a745993a1f0a192eb0275ac46ad2d1befd7626841e713c1",
+      "passed": true
+    }
+  ],
+  "new_NASA_files": 0,
+  "new_DSM_files": 0,
+  "new_human_observers": 0,
+  "new_ground_nights": 0,
+  "papers_full_text_read": [
+    {
+      "title": "Kirk and OBrien 2011",
+      "DOI": "10.1145/2010324.1964937",
+      "url": "https://jamesobrien.com/papers/Kirk-PBT-2011-08/index.html",
+      "equations_implemented": "10–13 paper-normalized only",
+      "physical_normalization_and_display_bridge": "not established"
+    },
+    {
+      "title": "Ferwerda et al 1996",
+      "url": "https://jamesferwerda.com/wp-content/uploads/2015/06/j03_ferwerda96_sig.pdf",
+      "applied": "TVI; colour gate and angular pool are our experimental control, not the paper equations"
+    }
+  ],
+  "raw_paper_PDFs_republished": false
+}

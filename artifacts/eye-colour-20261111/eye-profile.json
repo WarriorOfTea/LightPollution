@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "kind": "eye_view_profile",
+  "eye": {
+    "observer_factor": 2.0,
+    "unresolved_background_sp_ratio": 1.408,
+    "adaptation": "complete",
+    "optics": {
+      "pupil_diameter_mm": 6.0
+    },
+    "appearance": {
+      "mode": "experimental_stellar_colour"
+    },
+    "observer_profile": {
+      "profile_id": "nominal-observer-1",
+      "origin": "nominal",
+      "colour_integration_diameter_arcmin": 5.0,
+      "calibration_id": null
+    },
+    "display": {
+      "white_cd_m2": 100.0,
+      "black_cd_m2": 0.05,
+      "adaptation_cd_m2": 20.0,
+      "world_adaptation_scotopic_cd_m2": 0.002,
+      "profile_id": "nominal-srgb-1",
+      "origin": "nominal",
+      "window_width_mm": null,
+      "viewing_distance_mm": null,
+      "ambient_illuminance_lux": null,
+      "measured_at": null,
+      "instrument": null
+    }
+  }
+}

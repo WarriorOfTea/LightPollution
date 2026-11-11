@@ -1,0 +1,26 @@
+{
+  "independent_decoder": "pypng 0.20220715.0",
+  "RGB_channel_bit_depth": 16,
+  "image_size": [
+    1800,
+    1100
+  ],
+  "channel_values_matching_expected": 5940000,
+  "channel_values_checked": 5940000,
+  "maximum_rounding_error_code": 0.4999996975147951,
+  "display_Y_preservation_error": 3.3306690738754696e-16,
+  "monochrome_pixel_array_equality_against_0_7": {
+    "eye-view.png": true,
+    "eye-preview.png": true,
+    "eye-mobile.png": true,
+    "eye-view-16bit.png": true
+  },
+  "pure_background_pixels": 105032,
+  "pure_background_max_RGB_code_difference": 0,
+  "pixels_with_any_channel_255": 13,
+  "pixels_with_all_channels_255": 3,
+  "human_observers": 0,
+  "ground_nights": 0,
+  "Git_index_original_CIE_bytes_checked": 6,
+  "Git_index_original_CIE_bytes_matching": 6
+}

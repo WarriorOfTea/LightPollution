@@ -51,19 +51,24 @@ LightPollutionDock::LightPollutionDock(KStars *parent) : QDockWidget("LightPollu
     m_Near=new QCheckBox(tr("Конечные ближние ячейки"),body);m_Near->setChecked(true);
     m_Spectral=new QCheckBox(tr("Спектральный сценарий"),body);
     m_Eye=new QCheckBox(tr("Порог невооружённого глаза"),body);
-    m_OpenEye=new QPushButton(tr("Открыть монохромный вид"),body);m_OpenEye->setEnabled(false);
+    m_Colour=new QCheckBox(tr("Экспериментальный цвет звёзд"),body);
+    m_OpenEye=new QPushButton(tr("Открыть модель неба"),body);m_OpenEye->setEnabled(false);
     m_Follow=new QCheckBox(tr("Следить за картой и временем"),body);
     form->addRow(tr("Источники"),m_Region);form->addRow(tr("Период"),m_Period);
     form->addRow(tr("Рельеф"),m_Terrain);form->addRow(tr("Высота над DSM, м"),m_Height);
     form->addRow(tr("AOD 550 нм"),m_AOD);layout->addLayout(form);
     layout->addWidget(m_Near);layout->addWidget(m_Spectral);layout->addWidget(m_Eye);
-    layout->addWidget(m_OpenEye);layout->addWidget(m_Follow);
+    layout->addWidget(m_Colour);layout->addWidget(m_OpenEye);layout->addWidget(m_Follow);
     auto *buttons=new QHBoxLayout;
     auto *run=new QPushButton(tr("Рассчитать"),body);auto *cancel=new QPushButton(tr("Отменить"),body);
     buttons->addWidget(run);buttons->addWidget(cancel);layout->addLayout(buttons);
     auto *files=new QHBoxLayout;
     auto *load=new QPushButton(tr("Открыть сценарий"),body);auto *save=new QPushButton(tr("Сохранить результат"),body);
     files->addWidget(load);files->addWidget(save);layout->addLayout(files);
+    auto *profiles=new QHBoxLayout;
+    auto *loadProfile=new QPushButton(tr("Открыть профиль глаза"),body);
+    auto *saveProfile=new QPushButton(tr("Сохранить профиль глаза"),body);
+    profiles->addWidget(loadProfile);profiles->addWidget(saveProfile);layout->addLayout(profiles);
     m_Status=new QLabel(tr("Подключение к локальному расчётному ядру…"),body);m_Status->setWordWrap(true);layout->addWidget(m_Status);
     m_Values=new QTableWidget(0,2,body);m_Values->setHorizontalHeaderLabels({tr("Компонент"),tr("Значение")});
     m_Values->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
@@ -76,6 +81,24 @@ LightPollutionDock::LightPollutionDock(KStars *parent) : QDockWidget("LightPollu
         m_URL="http://127.0.0.1:8765";
     connect(run,&QPushButton::clicked,this,&LightPollutionDock::calculate);
     connect(m_Eye,&QCheckBox::toggled,this,[this](bool enabled){if(enabled)m_Spectral->setChecked(true);});
+    connect(m_Colour,&QCheckBox::toggled,this,[this](bool enabled){if(enabled){m_Eye->setChecked(true);m_Spectral->setChecked(true);}});
+    connect(loadProfile,&QPushButton::clicked,this,[this](){
+        const QString path=QFileDialog::getOpenFileName(this,tr("Профиль глаза и экрана"),{},"JSON (*.json)");
+        QFile file(path);if(!file.open(QIODevice::ReadOnly))return;
+        const auto profile=QJsonDocument::fromJson(file.readAll()).object();
+        request("/api/eye-profile/merge",{{"eye",scene().value("eye").toObject()},{"profile",profile}},
+            [this](const QJsonObject &eye,const QString &error){
+                if(!error.isEmpty()){setStatus(error);return;}
+                m_Base.insert("eye",eye);m_Eye->setChecked(true);
+                m_Colour->setChecked(eye.value("appearance").toObject().value("mode").toString()=="experimental_stellar_colour");
+                setStatus(tr("Профиль загружен. Место, UTC и геометрия карты сохранены; точность восприятия не подтверждена."));});});
+    connect(saveProfile,&QPushButton::clicked,this,[this](){
+        const QString path=QFileDialog::getSaveFileName(this,tr("Профиль глаза и экрана"),"eye-profile.json","JSON (*.json)");
+        if(path.isEmpty())return;
+        request("/api/eye-profile/export",{{"eye",scene().value("eye").toObject()}},
+            [this,path](const QJsonObject &profile,const QString &error){
+                if(!error.isEmpty()){setStatus(error);return;}
+                QFile file(path);if(file.open(QIODevice::WriteOnly))file.write(QJsonDocument(profile).toJson());});});
     connect(m_OpenEye,&QPushButton::clicked,this,&LightPollutionDock::showEyeView);
     connect(cancel,&QPushButton::clicked,this,[this](){m_Follow->setChecked(false);if(!m_Job.isEmpty())request("/api/jobs/"+m_Job+"/cancel",{},[](const QJsonObject &,const QString &){});});
     connect(load,&QPushButton::clicked,this,[this](){const QString path=QFileDialog::getOpenFileName(this,tr("Сценарий"),{},"JSON (*.json)");QFile file(path);if(file.open(QIODevice::ReadOnly))setSceneJSON(QString::fromUtf8(file.readAll()));});
@@ -119,7 +142,11 @@ QJsonObject LightPollutionDock::scene() const
     auto atmosphere=value.value("atmosphere").toObject();atmosphere.insert("aerosol_optical_depth",m_AOD->value());value.insert("atmosphere",atmosphere);
     if(m_Near->isChecked())value.insert("near_field",value.value("near_field").toObject());else value.remove("near_field");
     if(m_Spectral->isChecked())value.insert("spectrum",value.value("spectrum").toObject());else value.remove("spectrum");
-    if(m_Eye->isChecked())value.insert("eye",value.value("eye").toObject());else value.remove("eye");
+    if(m_Eye->isChecked()){
+        auto eye=value.value("eye").toObject();
+        eye.insert("appearance",QJsonObject{{"mode",m_Colour->isChecked()?"experimental_stellar_colour":"monochrome"}});
+        value.insert("eye",eye);
+    }else value.remove("eye");
     if(!m_Terrain->currentData().toString().isEmpty()){auto t=value.value("terrain").toObject();t.insert("dataset",m_Terrain->currentData().toString());value.insert("terrain",t);}else value.remove("terrain");
     if(!value.contains("background"))value.insert("background",QJsonObject{{"twilight","patat2006"}});
     return value;
@@ -156,6 +183,7 @@ bool LightPollutionDock::setSceneJSON(const QString &json)
     m_AOD->setValue(m_Base.value("atmosphere").toObject().value("aerosol_optical_depth").toDouble(.1));
     m_Near->setChecked(m_Base.contains("near_field"));m_Spectral->setChecked(m_Base.contains("spectrum"));
     m_Eye->setChecked(m_Base.contains("eye"));
+    m_Colour->setChecked(m_Base.value("eye").toObject().value("appearance").toObject().value("mode").toString()=="experimental_stellar_colour");
     m_Terrain->setCurrentIndex(std::max(0,m_Terrain->findData(m_Base.value("terrain").toObject().value("dataset").toString())));
     return true;
 }
@@ -175,7 +203,7 @@ void LightPollutionDock::showEyeView()
         if(reply->error()!=QNetworkReply::NoError || !picture.loadFromData(reply->readAll()))
         {setStatus(tr("Изображение недоступно; проверьте область модели глаза."));reply->deleteLater();return;}
         auto *dialog=new QDialog(m_KStars);dialog->setAttribute(Qt::WA_DeleteOnClose);
-        dialog->setWindowTitle(tr("Модель потока и оптики · монохромный вид"));
+        dialog->setWindowTitle(tr("Модель потока и оптики · вид невооружённым глазом"));
         auto *layout=new QVBoxLayout(dialog);auto *scroll=new QScrollArea(dialog);auto *label=new QLabel;
         // The backend integrated stellar flux at this exact pixel resolution.
         // Rescaling an encoded point image here would change its brightness.

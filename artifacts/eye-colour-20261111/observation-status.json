@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "kind": "eye_observation_audit",
+  "dataset_id": "e90e71603e18d50be6995680e7fa8678ef14ad76d8129babf65f4f992d599a57",
+  "status": "prepared_not_observed",
+  "records_submitted": 0,
+  "records_usable": 0,
+  "excluded_records": 0,
+  "exclusions": {},
+  "observers": 0,
+  "nights": 0,
+  "reported_colour_records": 0,
+  "case_and_night_disjoint_splits": true,
+  "fit_uses_validation_labels": false,
+  "source_coefficient_refitted": false,
+  "colour_accuracy_validated": false,
+  "observer_results": [],
+  "limitations": [
+    "F may absorb bias in the sky, atmosphere and observer; it is not independent sky calibration.",
+    "No calibrated colour categories or display-primary spectra are inferred.",
+    "Human observation records are user supplied; their authenticity is not established by the importer."
+  ]
+}

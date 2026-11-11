@@ -1,0 +1,16 @@
+{
+  "jobs_completed": 1,
+  "jobs_requested": 1,
+  "eye_controls_and_dimensions_round_trip": true,
+  "optional_exports_checked": 10,
+  "portable_profile_export_import_round_trip": true,
+  "experimental_colour": true,
+  "mobile_uses_reintegrated_390px_image": true,
+  "bundle_contains_eye_exports": true,
+  "eye_display_available": true,
+  "javascript_errors": [],
+  "mobile_width_px": 390,
+  "mobile_horizontal_overflow": false,
+  "job_id": "b5af8ef26aac4f57937024a7a5eb3762",
+  "independent_human_validation": false
+}

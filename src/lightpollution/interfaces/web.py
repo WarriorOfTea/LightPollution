@@ -86,6 +86,35 @@ def create_app(workspace: Path = Path('data/mvp'), raw_directory: Path | None = 
         return fit_dataset(payload, {name: app.state.jobs.result(job_id)
                                     for name, job_id in payload['cases'].items()})
 
+    @app.post('/api/eye-profile/export')
+    def export_eye_profile(payload: dict):
+        from ..models.eye_profiles import profile_document
+        try:
+            if set(payload)!={'eye'}:raise ValueError('Укажите только eye.')
+            return profile_document(payload['eye'])
+        except (ValueError,TypeError,KeyError) as exc:
+            raise DomainError('invalid_eye_profile',str(exc)) from exc
+
+    @app.post('/api/eye-profile/merge')
+    def merge_eye_profile(payload: dict):
+        from ..models.eye_profiles import apply_profile
+        try:
+            if set(payload)!={'eye','profile'}:raise ValueError('Укажите eye и profile.')
+            return apply_profile(payload['profile'],payload['eye'])
+        except (ValueError,TypeError,KeyError) as exc:
+            raise DomainError('invalid_eye_profile',str(exc)) from exc
+
+    @app.post('/api/eye-profile/apply')
+    def apply_eye_profile(payload: dict):
+        from ..models.eye_profiles import apply_profile
+        try:
+            if set(payload)!={'scene','profile'}:raise ValueError('Укажите scene и profile.')
+            scene=SceneSpec.from_mapping(payload['scene']).to_dict()
+            scene['eye']=apply_profile(payload['profile'],scene.get('eye') or {})
+            return SceneSpec.from_mapping(scene).to_dict()
+        except (ValueError,TypeError,KeyError) as exc:
+            raise DomainError('invalid_eye_profile',str(exc)) from exc
+
     @app.get('/api/jobs')
     def jobs():
         return app.state.jobs.list()

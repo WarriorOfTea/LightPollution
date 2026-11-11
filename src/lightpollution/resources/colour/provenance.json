@@ -1,0 +1,59 @@
+{
+  "tables": [
+    {
+      "file": "CIE_xyz_1931_2deg.csv",
+      "metadata_file": "CIE_xyz_1931_2deg.csv_metadata.json",
+      "doi": "10.25039/CIE.DS.xvudnb9b",
+      "url": "https://files.cie.co.at/Publications-datasets/CIE_xyz_1931_2deg.csv",
+      "sha256": "fa663e3535a7e0763a745993a1f0a192eb0275ac46ad2d1befd7626841e713c1",
+      "rights": [
+        {
+          "rights": "Creative Commons Attribution-ShareAlike 4.0 International",
+          "rightsURI": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "rightsIdentifier": "CC BY-SA 4.0"
+        }
+      ],
+      "publisher_checksums_verified": true
+    },
+    {
+      "file": "CIE_lms_cf_2deg.csv",
+      "metadata_file": "CIE_lms_cf_2deg.csv_metadata.json",
+      "doi": "10.25039/CIE.DS.tijidesg",
+      "url": "https://files.cie.co.at/Publications-datasets/CIE_lms_cf_2deg.csv",
+      "sha256": "f48160edf11c1a121aaaf41d4c3b7513385bfc9c60d726b88e735519f6d37b1f",
+      "rights": [
+        {
+          "rights": "Creative Commons Attribution-ShareAlike 4.0 International",
+          "rightsURI": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "rightsIdentifier": "CC BY-SA 4.0"
+        }
+      ],
+      "publisher_checksums_verified": true
+    },
+    {
+      "file": "CIE_std_illum_D65.csv",
+      "metadata_file": "CIE_std_illum_D65.csv_metadata_v2.json",
+      "doi": "10.25039/CIE.DS.hjfjmt59",
+      "url": "https://files.cie.co.at/Publications-datasets/CIE_std_illum_D65.csv",
+      "sha256": "e76f210bffff3d552ef7113025da5f325d5dfec200dd4b878b1a2f3a507032cb",
+      "rights": [
+        {
+          "rights": "Creative Commons Attribution-ShareAlike 4.0 International",
+          "rightsURI": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "rightsIdentifier": "CC BY-SA 4.0"
+        }
+      ],
+      "publisher_checksums_verified": true
+    }
+  ],
+  "raw_tables_unchanged": true,
+  "processing": "Linear resampling; zero extrapolation per publisher; S NaN beyond615nm set zero only outside declared valid range.",
+  "sha256": {
+    "CIE_lms_cf_2deg.csv": "f48160edf11c1a121aaaf41d4c3b7513385bfc9c60d726b88e735519f6d37b1f",
+    "CIE_lms_cf_2deg.csv_metadata.json": "c488310e9f076a9e00bff69d206eae8821bd17137e6a3ba260570eae4ff91fab",
+    "CIE_std_illum_D65.csv": "e76f210bffff3d552ef7113025da5f325d5dfec200dd4b878b1a2f3a507032cb",
+    "CIE_std_illum_D65.csv_metadata_v2.json": "71994379b81c65db111f652e747a00b599b5456c2a8242e9a0d6f379f560a14e",
+    "CIE_xyz_1931_2deg.csv": "fa663e3535a7e0763a745993a1f0a192eb0275ac46ad2d1befd7626841e713c1",
+    "CIE_xyz_1931_2deg.csv_metadata.json": "03abcaecf4e63d77045ef57c4514b52c8bb1a46dd18e1f93a50044a0f4f481c8"
+  }
+}

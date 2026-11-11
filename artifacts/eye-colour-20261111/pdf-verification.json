@@ -1,0 +1,9 @@
+{
+  "pages": 6,
+  "extracted_characters": 13223,
+  "text_geometry_issues": [],
+  "embedded_images": 2,
+  "replacement_characters": 0,
+  "tool": "PyMuPDF 2.1",
+  "first_and_third_pages_rendered_for_inspection": true
+}

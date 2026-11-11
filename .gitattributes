@@ -2,3 +2,5 @@
 *.png binary
 *.npz binary
 *.csv text eol=lf
+# Preserve publisher bytes in CIE CSV/metadata, checked by cryptographic hashes.
+src/lightpollution/resources/colour/CIE_* -text -eol -whitespace

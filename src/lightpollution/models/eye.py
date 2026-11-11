@@ -7,6 +7,8 @@ The observer factor here excludes atmospheric transmission explicitly.
 
 import numpy as np
 
+from .eye_profiles import DISPLAY_DEFAULTS,OBSERVER_DEFAULTS,validate_profiles
+
 MODEL = 'crumey2014_scotopic_at_eye_1'
 R1, R2 = 6.505e-4, -8.461e-4
 REFERENCE_SP = 1.408
@@ -17,7 +19,7 @@ V22_LUMINANCE = PHOTOPIC_V0_LUX * (180*3600/np.pi)**2 * 10**(-.4*22)
 
 
 def eye_config(value):
-    if not isinstance(value, dict) or set(value)-{'observer_factor','unresolved_background_sp_ratio','adaptation','view','sampling','optics','display'}:
+    if not isinstance(value, dict) or set(value)-{'observer_factor','unresolved_background_sp_ratio','adaptation','view','sampling','optics','display','appearance','observer_profile'}:
         raise ValueError('Unknown eye settings.')
     config = {'observer_factor':2.,'unresolved_background_sp_ratio':REFERENCE_SP,
               'adaptation':'complete', **value}
@@ -31,12 +33,17 @@ def eye_config(value):
     for name, defaults in [
             ('sampling', {'target_relative_error':.01, 'max_grid_size':5, 'validation':'none'}),
             ('optics', {'pupil_diameter_mm':6.}),
+            ('appearance', {'mode':'monochrome'}),
+            ('observer_profile', OBSERVER_DEFAULTS),
             ('display', {'white_cd_m2':100., 'black_cd_m2':.05, 'adaptation_cd_m2':20.,
-                         'world_adaptation_scotopic_cd_m2':.002})]:
+                         'world_adaptation_scotopic_cd_m2':.002,**DISPLAY_DEFAULTS})]:
         supplied = config.get(name, {})
         if not isinstance(supplied, dict) or set(supplied)-set(defaults):
             raise ValueError(f'Unknown eye {name} settings.')
         config[name] = {**defaults, **supplied}
+    if config['appearance']['mode'] not in ('monochrome','experimental_stellar_colour'):
+        raise ValueError('Appearance mode must be monochrome or experimental_stellar_colour.')
+    validate_profiles(config)
     numeric = [('sampling','target_relative_error',.001,.1), ('optics','pupil_diameter_mm',2,6),
         ('display','white_cd_m2',20,500), ('display','black_cd_m2',0,2),
         ('display','adaptation_cd_m2',2,100), ('display','world_adaptation_scotopic_cd_m2',1e-5,.004224)]

@@ -7,15 +7,20 @@ import matplotlib
 import numpy as np
 
 from ..adapters.storage import write_json
+from ..adapters.png16 import write_rgb16
 from ..application.eye import sample_eye_field
+from ..application.eye_appearance import ensure_eye_appearance,export_eye_colour
 from ..models.eye import evaluate_detection, eye_config
 from ..models.eye_display import (VERSION as TONE_VERSION, DITHER_SEED, display_scale,
     quantize, srgb_encode, tone_linear)
 from ..models.eye_optics import VERSION as OPTICS_VERSION, deposit_star, optical_mixture, pixel_solid_angles
+from ..models.eye_colour import RGB_LUMINANCE,gamut_preserving_luminance
+from ..models.eye_profiles import display_geometry
 from ..skyview import camera_basis
 
 DISPLAY_VERSION = 'flux_integrated_achromatic_eye_2'
-IMAGE_EXPORTS = ('eye-view.png', 'eye-preview.png', 'eye-mobile.png', 'eye-view-16bit.png', 'eye-linear.npz')
+COLOUR_DISPLAY_VERSION = 'experimental_spectral_star_colour_3'
+IMAGE_EXPORTS = ('eye-view.png', 'eye-preview.png', 'eye-mobile.png', 'eye-view-16bit.png', 'eye-linear.npz','eye-colour.csv')
 
 
 def _unavailable(output, record):
@@ -70,6 +75,9 @@ def render_linear_field(result, view):
     omega = pixel_solid_angles(view)
     physical_flux = np.zeros((height, width))
     appearance_flux = np.zeros_like(physical_flux)
+    appearance=ensure_eye_appearance(result)
+    colour_rows={r['hr']:r for r in appearance['rows']} if appearance else {}
+    colour_flux=np.zeros((height,width,3)) if appearance else None
     mixture = optical_mixture(config['optics']['pupil_diameter_mm'])
     forward, right, up, edge = basis
     step = 2*edge/width
@@ -103,8 +111,11 @@ def render_linear_field(result, view):
             continue
         valid_pixel = inside and supported[min(height-1, max(0, int(py+.5))), min(width-1, max(0, int(px+.5)))]
         visible = bool(row['above_threshold'] and row['supported'] and valid_pixel)
+        colour=colour_rows.get(row['hr'],{})
+        unit_rgb=colour.get('appearance_unit_Y_rgb') or [1.,1.,1.]
         ledger = deposit_star(physical_flux, px, py, irradiance, scales, mixture,
-            correlation=correlation, appearance_buffer=appearance_flux if visible else None)
+            correlation=correlation, appearance_buffer=appearance_flux if visible else None,
+            colour_buffer=colour_flux if visible else None,unit_Y_rgb=unit_rgb)
         ledgers.append({'hr': row['hr'], 'centre_in_field': bool(inside), 'appearance_included': visible, **ledger})
         if visible:
             displayed.append({'hr': row['hr'], 'name': row['name'], 'x_px': px, 'y_px': py,
@@ -112,13 +123,35 @@ def render_linear_field(result, view):
                 'scotopic_illuminance_lux': irradiance})
     background = np.asarray(s, dtype=np.float32)
     scene = (background+appearance_flux/omega).astype(np.float32)
-    return {'background_scotopic_cd_m2': background, 'photopic_background_cd_m2': np.asarray(p, np.float32),
+    record={'background_scotopic_cd_m2': background, 'photopic_background_cd_m2': np.asarray(p, np.float32),
         'stellar_physical_pixel_illuminance_lux': physical_flux.astype(np.float32),
         'stellar_appearance_pixel_illuminance_lux': appearance_flux.astype(np.float32),
         'appearance_scotopic_cd_m2': scene, 'pixel_solid_angle_sr': omega.astype(np.float32),
         'supported': supported, 'displayed_star_rows': displayed, 'flux_ledger': ledgers,
         'catalogue_stars_in_view': within, 'unavailable_stellar_thresholds_in_view': int(unavailable),
         'optics': mixture}
+    if colour_flux is not None:
+        record['appearance_rgb_unitY_carrier']=(background[...,None]+colour_flux/omega[...,None]).astype(np.float32)
+    return record
+
+
+def encode_field(arrays,profile):
+    target=tone_linear(arrays['appearance_scotopic_cd_m2'],profile)
+    if 'appearance_rgb_unitY_carrier' not in arrays:
+        return srgb_encode(target),{'colour_mode':'achromatic','gamut_compressed_pixels':0}
+    carrier=np.asarray(arrays['appearance_rgb_unitY_carrier'],dtype=float)
+    carrier_y=carrier@RGB_LUMINANCE
+    ratio=np.divide(target,carrier_y,out=np.zeros_like(target),where=carrier_y>0)
+    linear,factors=gamut_preserving_luminance(carrier*ratio[...,None])
+    return srgb_encode(linear),{'colour_mode':'experimental_stellar_colour',
+        'gamut_compressed_pixels':int(np.count_nonzero(factors<1-1e-10)),
+        'maximum_display_Y_error':float(np.max(abs(linear@RGB_LUMINANCE-target)))}
+
+
+def _mark_unsupported(codes,supported,step):
+    yy,xx=np.indices(supported.shape)
+    marked=np.where(((xx[~supported]+yy[~supported])//step)%2,38,48)
+    codes[~supported]=marked[:,None] if codes.ndim==3 else marked
 
 
 def _png_info():
@@ -129,7 +162,7 @@ def _png_info():
 
 
 def _frame(pixels, result, view, displayed, title, *, scale=1.):
-    height, width = pixels.shape
+    height, width = pixels.shape[:2]
     header, footer = round(80*scale), round(90*scale)
     frame = Image.new('RGB', (width, height+header+footer), (10, 13, 18))
     frame.paste(Image.fromarray(pixels).convert('RGB'), (0, header))
@@ -143,8 +176,11 @@ def _frame(pixels, result, view, displayed, title, *, scale=1.):
     text(28, 48, line, 17, (144, 156, 170))
     text(28, (height+header)/scale+14,
          f"Азимут {view['azimuth_deg']:g}° · высота {view['altitude_deg']:g}° · поле {view['horizontal_fov_deg']:g}° · звёзд выше порога: {displayed}", 18)
-    text(28, (height+header)/scale+43,
-         'Модель потока и оптики · монохромный режим · экранная яркость и восприятие не калиброваны', 17, (144, 156, 170))
+    mode=result['eye']['config'].get('appearance',{}).get('mode','monochrome')
+    line=('Модель потока и оптики · экспериментальный цвет звёзд · восприятие не калибровано'
+          if mode!='monochrome' else
+          'Модель потока и оптики · монохромный режим · экранная яркость и восприятие не калиброваны')
+    text(28, (height+header)/scale+43,line,17,(144,156,170))
     return frame
 
 
@@ -157,9 +193,10 @@ def render_eye_view(result, output, *, title='НОЧНОЕ НЕБО · МОДЕ�
             **config.get('view', {})}
     if 'view' not in config:
         view['azimuth_deg'], view['altitude_deg'] = result['request']['directions'][0]
-    record = {'schema_version': 2, 'display_version': DISPLAY_VERSION, 'view': view,
+    experimental=config['appearance']['mode']!='monochrome'
+    record = {'schema_version': 3, 'display_version': COLOUR_DISPLAY_VERSION if experimental else DISPLAY_VERSION, 'view': view,
         'image_is_photograph': False, 'calibrated_eye_appearance': False,
-        'colour_mode': 'achromatic; bright-star cone colour deferred',
+        'colour_mode': 'experimental_stellar_colour' if experimental else 'achromatic',
         'point_kernel': OPTICS_VERSION, 'brightness_transfer': TONE_VERSION,
         'display_profile': config['display'], 'display_scale': display_scale(config['display']),
         'dither_seed': DITHER_SEED, 'dither_bound_code_8bit': 1., 'rounding_bound_code_16bit': .5,
@@ -170,6 +207,8 @@ def render_eye_view(result, output, *, title='НОЧНОЕ НЕБО · МОДЕ�
         'unresolved_starlight': 'diffuse residual excludes catalogue point sources by convention; source separation not independently measured',
         'unavailable_spectra': 'not replaced with invented flux',
         'camera_or_glare_model': False}
+    record['observer_profile']=config['observer_profile']
+    record['display_geometry']=display_geometry(config['display'],view['horizontal_fov_deg'])
     if not eye['available']:
         record.update(available=False, reasons=eye['global_restrictions'])
         return _unavailable(output, record)
@@ -180,29 +219,30 @@ def render_eye_view(result, output, *, title='НОЧНОЕ НЕБО · МОДЕ�
     if not np.any(supported):
         record['reasons'] = ['No supported scotopic sightlines in this field.']
         return _unavailable(output, record)
-    encoded = srgb_encode(tone_linear(arrays['appearance_scotopic_cd_m2'], config['display']))
+    encoded,colour_summary=encode_field(arrays,config['display'])
+    record['appearance_encoding']=colour_summary
     pixels = quantize(encoded)
-    yy, xx = np.indices(pixels.shape)
-    pixels[~supported] = np.where(((xx[~supported]+yy[~supported])//12) % 2, 38, 48)
+    _mark_unsupported(pixels,supported,12)
     _frame(pixels, result, view, len(arrays['displayed_star_rows']), title).save(output/'eye-view.png', pnginfo=_png_info())
     # Unannotated 16-bit display export; physical values are in the NPZ, not here.
     quantized16 = quantize(encoded, 16, dither=False)
     quantized16[~supported] = 0
-    Image.fromarray(quantized16).save(output/'eye-view-16bit.png', pnginfo=_png_info())
+    if quantized16.ndim==3:write_rgb16(output/'eye-view-16bit.png',quantized16)
+    else:Image.fromarray(quantized16).save(output/'eye-view-16bit.png', pnginfo=_png_info())
     np.savez_compressed(output/'eye-linear.npz', **{k: v for k, v in arrays.items() if isinstance(v, np.ndarray)})
     record['previews'] = []
     for width, filename in [(900, 'eye-preview.png'), (390, 'eye-mobile.png')]:
         preview = {**view, 'width': width, 'height': round(view['height']*width/view['width'])}
         field = render_linear_field(result, preview)
-        codes = quantize(srgb_encode(tone_linear(field['appearance_scotopic_cd_m2'], config['display'])))
-        iy, ix = np.indices(codes.shape)
-        codes[~field['supported']] = np.where(((ix[~field['supported']]+iy[~field['supported']])//6) % 2, 38, 48)
+        preview_encoded,preview_summary=encode_field(field,config['display'])
+        codes = quantize(preview_encoded)
+        _mark_unsupported(codes,field['supported'],6)
         # At 390 px the field is unannotated; UI/chat supplies its provenance.
         image = (_frame(codes, result, preview, len(field['displayed_star_rows']), title, scale=width/view['width'])
                  if width == 900 else Image.fromarray(codes).convert('RGB'))
         image.save(output/filename, pnginfo=_png_info())
         record['previews'].append({'file': filename, 'view': preview, 'reintegrated_before_tone': True,
-            'displayed_stars': len(field['displayed_star_rows']),
+            'displayed_stars': len(field['displayed_star_rows']),'appearance_encoding':preview_summary,
             'physical_deposited_scotopic_lux': float(field['stellar_physical_pixel_illuminance_lux'].sum(dtype=np.float64))})
     limits = [r['reference_A0_observed_v_limit'] for r in eye['directions'] if r['supported']]
     record.update(displayed_stars=len(arrays['displayed_star_rows']),
@@ -210,7 +250,13 @@ def render_eye_view(result, output, *, title='НОЧНОЕ НЕБО · МОДЕ�
         unavailable_stellar_thresholds_in_view=arrays['unavailable_stellar_thresholds_in_view'],
         displayed_star_rows=arrays['displayed_star_rows'], flux_ledger=arrays['flux_ledger'], optics=arrays['optics'],
         field_crop_offset_y_px=80, field_pixel_max_code=int(pixels[supported].max()),
-        saturated_field_pixels=int(np.count_nonzero((pixels == 255) & supported)),
+        saturated_field_pixels=int(np.count_nonzero(
+            (np.any(pixels == 255,axis=-1) if pixels.ndim==3 else pixels == 255) & supported)),
         reference_A0_limit_range=[min(limits), max(limits)] if limits else None)
+    if eye.get('appearance'):
+        record['colour_model']={k:v for k,v in eye['appearance'].items() if k!='rows'}
+        export_eye_colour(eye,output)
+    elif (output/'eye-colour.csv').is_file():
+        (output/'eye-colour.csv').replace(output/'eye-colour.previous.csv')
     write_json(output/'eye-display.json', record)
     return record

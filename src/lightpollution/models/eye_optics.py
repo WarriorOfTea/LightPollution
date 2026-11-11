@@ -78,7 +78,7 @@ def _gaussian_cdf_grid(x, y, correlation):
 
 
 def deposit_star(buffer, x_px, y_px, illuminance_lux, radians_per_pixel, mixture, *,
-                 correlation=0., cutoff_sigma=6., appearance_buffer=None):
+                 correlation=0., cutoff_sigma=6., appearance_buffer=None,colour_buffer=None,unit_Y_rgb=None):
     """Integrate an elliptical angular PSF into pixel flux (lux), not peaks.
 
     Local tangent axes and their correlation use the differential metric of the
@@ -116,6 +116,8 @@ def deposit_star(buffer, x_px, y_px, illuminance_lux, radians_per_pixel, mixture
         buffer[y0:y1, x0:x1] += illuminance_lux*weight*mass
         if appearance_buffer is not None:
             appearance_buffer[y0:y1, x0:x1] += illuminance_lux*weight*mass
+        if colour_buffer is not None:
+            colour_buffer[y0:y1,x0:x1] += (illuminance_lux*weight*mass)[...,None]*np.asarray(unit_Y_rgb)
         deposited += illuminance_lux*weight*float(mass.sum())
         truncated += illuminance_lux*weight*2*(1-erf(cutoff_sigma/np.sqrt(2)))
     return {'input_scotopic_illuminance_lux': float(illuminance_lux),

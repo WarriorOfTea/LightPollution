@@ -91,7 +91,11 @@
         <label>S/P неизвестного фонового спектра<input id="eye-background-sp" type="number" min="0.2" max="5" step="any" value="1.408"></label>
         <div class="pair"><label>Азимут вида, °<input id="eye-azimuth" type="number" min="0" max="360" step="any" value="180"></label><label>Высота вида, °<input id="eye-altitude" type="number" min="10" max="90" step="any" value="50"></label></div>
         <label>Поле зрения по горизонтали, °<input id="eye-fov" type="number" min="20" max="110" step="any" value="90"></label>
-        <p class="hint">Спектральный расчёт включается автоматически. Первый режим: слабые звёзды, без Луны и прямых фонарей, тёмный фон. Экранный вид монохромный и не калиброван по индивидуальному восприятию.</p>
+        <label>Цвет изображения<select id="eye-colour"><option value="monochrome">Монохромный</option><option value="experimental_stellar_colour">Экспериментальный цвет звёзд</option></select></label>
+        <label>Угловой диаметр интеграции цвета, ′<input id="eye-colour-pool" type="number" min="0.5" max="30" step="any" value="5"></label>
+        <div class="pair"><label class="file-label">Открыть профиль<input id="eye-profile-import" type="file" accept=".json,application/json" hidden></label><button id="eye-profile-export" type="button" class="secondary">Сохранить профиль</button></div>
+        <p id="eye-profile-note" class="hint">Номинальные наблюдатель и экран. Калибровка восприятия не подтверждена.</p>
+        <p class="hint">Спектральный расчёт включается автоматически. Без Луны и прямых фонарей, тёмный фон. Цвет слабых звёзд подавляется; спектр всего фона неизвестен, поэтому фон остаётся серым. Цвет и субъективная яркость пока не проверены наблюдениями.</p>
       </details>
       <label class="check"><input id="download-missing" type="checkbox">Загрузить недостающие NASA-файлы, если доступ Earthdata настроен</label>
       <div class="actions"><button id="calculate" type="submit">Рассчитать сценарий</button><button id="cancel" class="secondary" type="button" disabled>Отменить</button></div>

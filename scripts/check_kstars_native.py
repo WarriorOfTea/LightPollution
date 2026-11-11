@@ -111,6 +111,10 @@ ShowHorizon=true
         if args.eye:
             base.update(background={},surface={},eye={'view':{'azimuth_deg':180.,
                 'altitude_deg':75.,'horizontal_fov_deg':60.,'width':1800,'height':1100}})
+        if args.colour:
+            if not args.eye:raise ValueError('--colour requires --eye')
+            base['eye'].update(appearance={'mode':'experimental_stellar_colour'},
+                observer_profile={'profile_id':'native-control-1','origin':'user_supplied'})
         assert await call('setSceneJSON',[json.dumps(base)],'s')
         async with httpx2.AsyncClient(base_url=args.url,timeout=30) as client:
             async def calculate(name):
@@ -136,6 +140,9 @@ ShowHorizon=true
             assert await call('savePanelScreenshot',[str(out/'kstars-native-panel.png')],'s')
             if args.eye:
                 assert first_value['eye']['display']['available']
+                if args.colour:
+                    assert first_value['eye']['display']['colour_mode']=='experimental_stellar_colour'
+                    assert first_value['eye']['config']['observer_profile']['profile_id']=='native-control-1'
                 await call('showEyeView')
                 async def preview_ready():
                     return (await status()).get('eye_preview_ready',False)
@@ -164,6 +171,7 @@ ShowHorizon=true
                 'stale_after_map_change_checked':True,'AGL_vs_MSL_checked':True,
                 'native_star_B_V_spectral_type_HD_checked':True,
                 'native_eye_preview_opened':bool(args.eye),
+                'native_experimental_colour_checked':bool(args.colour),
                 'screenshots_from_native_Qt_widget':True,'platform':'Qt offscreen / private session D-Bus',
                 'build_excludes_INDI_Ekos_device_control':True,
                 'original_user_settings_modified':False,'job_ids':[first['job_id'],second['job_id']],
@@ -185,6 +193,7 @@ def main():
     parser.add_argument('--data-root',type=Path,default=Path('scratch/kstars-runtime'))
     parser.add_argument('--url',default='http://127.0.0.1:8766')
     parser.add_argument('--eye',action='store_true',help='Verify the bounded eye model and native PNG viewer.')
+    parser.add_argument('--colour',action='store_true',help='Check experimental stellar colour and observer-profile round trip.')
     parser.add_argument('--output',type=Path,default=Path('artifacts/kstars-terrain-near-20261111'))
     asyncio.run(verify(parser.parse_args()))
 

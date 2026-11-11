@@ -52,7 +52,8 @@ def quantize(encoded, bits=8, *, dither=True, seed=DITHER_SEED):
     scaled = np.clip(np.asarray(encoded, dtype=float), 0, 1)*(2**bits-1)
     if bits == 8 and dither:
         floor = np.floor(scaled)
-        uniform = np.random.default_rng(seed).random(scaled.shape)
+        shape=(*scaled.shape[:-1],1) if scaled.ndim==3 and scaled.shape[-1]==3 else scaled.shape
+        uniform = np.random.default_rng(seed).random(shape)
         codes = floor+(uniform < scaled-floor)
     else:
         codes = np.rint(scaled)

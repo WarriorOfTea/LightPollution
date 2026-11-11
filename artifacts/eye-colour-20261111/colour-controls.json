@@ -1,0 +1,272 @@
+{
+  "synthetic_controls_not_observations": true,
+  "background_P_S_cd_m2": [
+    0.0002,
+    0.00028
+  ],
+  "SED_normalized_at_observed_V": true,
+  "stellar_transmission_in_this_control": "none: already at-eye synthetic SED",
+  "ferwerda_control_samples": [
+    {
+      "temperature_K": 3500,
+      "observed_V_mag": -2,
+      "photopic_illuminance_lux": 1.7415651149611344e-05,
+      "scotopic_illuminance_lux": 2.940685877796317e-05,
+      "cone_colour_weight": 0.9891625908217219,
+      "linear_display_Y": 0.12,
+      "gamut_common_chroma_scale": 1.0,
+      "srgb": [
+        0.4696062714969967,
+        0.3610834001884126,
+        0.24637790930061515
+      ]
+    },
+    {
+      "temperature_K": 3500,
+      "observed_V_mag": 0,
+      "photopic_illuminance_lux": 2.760194694929658e-06,
+      "scotopic_illuminance_lux": 4.660673028885916e-06,
+      "cone_colour_weight": 0.7357437157164656,
+      "linear_display_Y": 0.12,
+      "gamut_common_chroma_scale": 1.0,
+      "srgb": [
+        0.4489811215218575,
+        0.3663366187285035,
+        0.28816617349954443
+      ]
+    },
+    {
+      "temperature_K": 3500,
+      "observed_V_mag": 2,
+      "photopic_illuminance_lux": 4.374613781861295e-07,
+      "scotopic_illuminance_lux": 7.386668955768407e-07,
+      "cone_colour_weight": 0.06136827245953764,
+      "linear_display_Y": 0.12,
+      "gamut_common_chroma_scale": 1.0,
+      "srgb": [
+        0.38732167656546074,
+        0.37988781725437865,
+        0.37439117792372323
+      ]
+    },
+    {
+      "temperature_K": 3500,
+      "observed_V_mag": 4,
+      "photopic_illuminance_lux": 6.933295602518531e-08,
+      "scotopic_illuminance_lux": 1.1707081342961187e-07,
+      "cone_colour_weight": 0.0004438978763194323,
+      "linear_display_Y": 0.12,
+      "gamut_common_chroma_scale": 1.0,
+      "srgb": [
+        0.38113736908898843,
+        0.38108316597466063,
+        0.3810439067321187
+      ]
+    },
+    {
+      "temperature_K": 3500,
+      "observed_V_mag": 6,
+      "photopic_illuminance_lux": 1.0988533001752187e-08,
+      "scotopic_illuminance_lux": 1.8554473524047685e-08,
+      "cone_colour_weight": 2.9726144984992937e-06,
+      "linear_display_Y": 0.12,
+      "gamut_common_chroma_scale": 1.0,
+      "srgb": [
+        0.3810921633045748,
+        0.3810918003057167,
+        0.38109153742531104
+      ]
+    },
+    {
+      "temperature_K": 3500,
+      "observed_V_mag": 8,
+      "photopic_illuminance_lux": 1.7415651149611333e-09,
+      "scotopic_illuminance_lux": 2.9406858777963155e-09,
+      "cone_colour_weight": 3.777395828176e-08,
+      "linear_display_Y": 0.12,
+      "gamut_common_chroma_scale": 1.0,
+      "srgb": [
+        0.38109186238858855,
+        0.38109185777584476,
+        0.3810918544353418
+      ]
+    },
+    {
+      "temperature_K": 6000,
+      "observed_V_mag": -2,
+      "photopic_illuminance_lux": 1.6807926207862536e-05,
+      "scotopic_illuminance_lux": 3.966024116232025e-05,
+      "cone_colour_weight": 1.0,
+      "linear_display_Y": 0.12,
+      "gamut_common_chroma_scale": 1.0,
+      "srgb": [
+        0.39683565860889597,
+        0.3771305349458442,
+        0.3724145781213104
+      ]
+    },
+    {
+      "temperature_K": 6000,
+      "observed_V_mag": 0,
+      "photopic_illuminance_lux": 2.663876782623007e-06,
+      "scotopic_illuminance_lux": 6.28572462295274e-06,
+      "cone_colour_weight": 0.7580246968693904,
+      "linear_display_Y": 0.12,
+      "gamut_common_chroma_scale": 1.0,
+      "srgb": [
+        0.39309690174941864,
+        0.3780937324796088,
+        0.3745368043224976
+      ]
+    },
+    {
+      "temperature_K": 6000,
+      "observed_V_mag": 2,
+      "photopic_illuminance_lux": 4.221960178334417e-07,
+      "scotopic_illuminance_lux": 9.962202164602997e-07,
+      "cone_colour_weight": 0.06035002145000011,
+      "linear_display_Y": 0.12,
+      "gamut_common_chroma_scale": 1.0,
+      "srgb": [
+        0.38206460418887456,
+        0.38085422019006765,
+        0.3805750303409097
+      ]
+    },
+    {
+      "temperature_K": 6000,
+      "observed_V_mag": 4,
+      "photopic_illuminance_lux": 6.691355945484125e-08,
+      "scotopic_illuminance_lux": 1.5789026392600653e-07,
+      "cone_colour_weight": 0.00040684758093505923,
+      "linear_display_Y": 0.12,
+      "gamut_common_chroma_scale": 1.0,
+      "srgb": [
+        0.3810984264199918,
+        0.3810902570919208,
+        0.381088377206831
+      ]
+    },
+    {
+      "temperature_K": 6000,
+      "observed_V_mag": 6,
+      "photopic_illuminance_lux": 1.060508448633198e-08,
+      "scotopic_illuminance_lux": 2.5023920445221614e-08,
+      "cone_colour_weight": 2.3480555730791494e-06,
+      "linear_display_Y": 0.12,
+      "gamut_common_chroma_scale": 1.0,
+      "srgb": [
+        0.38109189642154007,
+        0.3810918492731994,
+        0.38109183842383204
+      ]
+    },
+    {
+      "temperature_K": 6000,
+      "observed_V_mag": 8,
+      "photopic_illuminance_lux": 1.6807926207862528e-09,
+      "scotopic_illuminance_lux": 3.966024116232023e-09,
+      "cone_colour_weight": 2.71371490775443e-08,
+      "linear_display_Y": 0.12,
+      "gamut_common_chroma_scale": 1.0,
+      "srgb": [
+        0.38109185895362596,
+        0.38109185840871906,
+        0.38109185828332987
+      ]
+    },
+    {
+      "temperature_K": 10000,
+      "observed_V_mag": -2,
+      "photopic_illuminance_lux": 1.6575659160087064e-05,
+      "scotopic_illuminance_lux": 4.686291622865104e-05,
+      "cone_colour_weight": 1.0,
+      "linear_display_Y": 0.12,
+      "gamut_common_chroma_scale": 1.0,
+      "srgb": [
+        0.35689276784030416,
+        0.38010871719940964,
+        0.45127328936263517
+      ]
+    },
+    {
+      "temperature_K": 10000,
+      "observed_V_mag": 0,
+      "photopic_illuminance_lux": 2.627064936337768e-06,
+      "scotopic_illuminance_lux": 7.427271690966446e-06,
+      "cone_colour_weight": 0.772663299407436,
+      "linear_display_Y": 0.12,
+      "gamut_common_chroma_scale": 1.0,
+      "srgb": [
+        0.3625672889318815,
+        0.38033249435109784,
+        0.4365384086612409
+      ]
+    },
+    {
+      "temperature_K": 10000,
+      "observed_V_mag": 2,
+      "photopic_illuminance_lux": 4.163617333755017e-07,
+      "scotopic_illuminance_lux": 1.1771432341571863e-06,
+      "cone_colour_weight": 0.060639420933550355,
+      "linear_display_Y": 0.12,
+      "gamut_common_chroma_scale": 1.0,
+      "srgb": [
+        0.37967780593622985,
+        0.38103232976115897,
+        0.38580144051196075
+      ]
+    },
+    {
+      "temperature_K": 10000,
+      "observed_V_mag": 4,
+      "photopic_illuminance_lux": 6.598888768281417e-08,
+      "scotopic_illuminance_lux": 1.8656462983673828e-07,
+      "cone_colour_weight": 0.00040271694356929915,
+      "linear_display_Y": 0.12,
+      "gamut_common_chroma_scale": 1.0,
+      "srgb": [
+        0.38108248871174294,
+        0.38109146321224635,
+        0.38112337085953485
+      ]
+    },
+    {
+      "temperature_K": 10000,
+      "observed_V_mag": 6,
+      "photopic_illuminance_lux": 1.0458533886657314e-08,
+      "scotopic_illuminance_lux": 2.9568501178227383e-08,
+      "cone_colour_weight": 2.109679317697491e-06,
+      "linear_display_Y": 0.12,
+      "gamut_common_chroma_scale": 1.0,
+      "srgb": [
+        0.3810918094314682,
+        0.3810918564446947,
+        0.3810920236049031
+      ]
+    },
+    {
+      "temperature_K": 10000,
+      "observed_V_mag": 8,
+      "photopic_illuminance_lux": 1.6575659160087054e-09,
+      "scotopic_illuminance_lux": 4.686291622865102e-09,
+      "cone_colour_weight": 2.310105774916868e-08,
+      "linear_display_Y": 0.12,
+      "gamut_common_chroma_scale": 1.0,
+      "srgb": [
+        0.38109185797806333,
+        0.38109185849285965,
+        0.38109186032326986
+      ]
+    }
+  ],
+  "kirk_input_domain": "paper_normalized; not our physical CIE2006 integrals",
+  "kirk_control_qL_qM_qS": [
+    0.8,
+    0.6,
+    0.3
+  ],
+  "kirk_rod_zero_identity_error": 0.0,
+  "kirk_absolute_conversion_known": false,
+  "comparison_is_not_human_validation": true
+}

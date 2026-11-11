@@ -1,0 +1,135 @@
+{
+  "version": "0.8.0",
+  "full_pytest": {
+    "passed": 267,
+    "failed": 0,
+    "elapsed_seconds": 72.44,
+    "command": "uv run pytest -q -p no:cacheprovider"
+  },
+  "earlier_full_pytest": {
+    "passed": 266,
+    "failed": 0,
+    "elapsed_seconds": 71.91
+  },
+  "fixes_after_initial_checks": [
+    "RGB supported-mask saturation counter broadcasting",
+    "colour-cache identity includes local P/S backgrounds and optical code"
+  ],
+  "lock_check": {
+    "passed": true,
+    "command": "uv lock --check"
+  },
+  "javascript_syntax": {
+    "passed": true,
+    "command": "node --check src/lightpollution/interfaces/static/app.js"
+  },
+  "browser": {
+    "jobs_completed": 1,
+    "jobs_requested": 1,
+    "eye_controls_and_dimensions_round_trip": true,
+    "optional_exports_checked": 10,
+    "portable_profile_export_import_round_trip": true,
+    "experimental_colour": true,
+    "mobile_uses_reintegrated_390px_image": true,
+    "bundle_contains_eye_exports": true,
+    "eye_display_available": true,
+    "javascript_errors": [],
+    "mobile_width_px": 390,
+    "mobile_horizontal_overflow": false,
+    "job_id": "b5af8ef26aac4f57937024a7a5eb3762",
+    "independent_human_validation": false
+  },
+  "native": {
+    "completed_at": "2026-11-11T23:23:37+01:00",
+    "kstars_version": "3.6.2",
+    "compiled_binary_sha256": "d790a94730e2a46215c499f18b25c4cfb08911bdeb6881e0ff4fe0a44900b3a0",
+    "jobs_completed": 2,
+    "jobs_requested": 2,
+    "geometry_round_trip_checked": true,
+    "stale_after_map_change_checked": true,
+    "AGL_vs_MSL_checked": true,
+    "native_star_B_V_spectral_type_HD_checked": true,
+    "native_eye_preview_opened": true,
+    "native_experimental_colour_checked": true,
+    "screenshots_from_native_Qt_widget": true,
+    "platform": "Qt offscreen / private session D-Bus",
+    "build_excludes_INDI_Ekos_device_control": true,
+    "original_user_settings_modified": false,
+    "job_ids": [
+      "6d399d01fca3414c8168dc3176442cfb",
+      "5bec1d6d87234739bc1795ec98df8f52"
+    ],
+    "nearest_city_timezone_read_from_actual_KStars_location_API": {
+      "country": "",
+      "latitude": 60.3,
+      "longitude": 30.315,
+      "name": "GPS Location",
+      "province": "",
+      "tz": 3,
+      "tz0": 3
+    },
+    "field_accuracy_validated": false
+  },
+  "native_command": "dbus-run-session -- uv run --extra kstars python scripts/check_kstars_native.py --eye --colour --binary scratch/kstars-native-build/bin/kstars --runtime scratch/kstars-buildroot --data-root scratch/kstars-runtime --output data/eye-colour-20261111/native-final --url http://127.0.0.1:8766",
+  "browser_command": "uv run --with playwright python scripts/check_eye_browser.py --output artifacts/eye-colour-20261111/browser --library-directory scratch/browser-runtime/root/usr/lib/x86_64-linux-gnu",
+  "wheel": {
+    "version": "0.8.0",
+    "python": "3.12.3",
+    "working_directory": "/tmp",
+    "installed_path": "/home/myuser/pignity/projects/LightPollution/scratch/wheel-terrain-env/lib/python3.12/site-packages/lightpollution",
+    "package_files_matching_checkout": 85,
+    "package_files_checked": 85,
+    "distributions_in_isolated_environment": 37,
+    "offline_eye_scene_completed": true,
+    "image_exports_checked": 5,
+    "eye_exports_and_PNG_available": true,
+    "experimental_colour_checked": true
+  },
+  "independent_human_observers": 0,
+  "new_ground_nights": 0,
+  "observation_status": "prepared_not_observed",
+  "stage_4": "spectral integration plus experimental colour control; Kirk absolute bridge pending",
+  "stage_5": "technical tooling ready; field validation pending",
+  "completed_at": "2026-11-11T23:32:35+01:00",
+  "last_source_edit_at": "2026-11-11T23:31:33+01:00",
+  "encoding": {
+    "independent_decoder": "pypng 0.20220715.0",
+    "RGB_channel_bit_depth": 16,
+    "image_size": [
+      1800,
+      1100
+    ],
+    "channel_values_matching_expected": 5940000,
+    "channel_values_checked": 5940000,
+    "maximum_rounding_error_code": 0.4999996975147951,
+    "display_Y_preservation_error": 3.3306690738754696e-16,
+    "monochrome_pixel_array_equality_against_0_7": {
+      "eye-view.png": true,
+      "eye-preview.png": true,
+      "eye-mobile.png": true,
+      "eye-view-16bit.png": true
+    },
+    "pure_background_pixels": 105032,
+    "pure_background_max_RGB_code_difference": 0,
+    "pixels_with_any_channel_255": 13,
+    "pixels_with_all_channels_255": 3,
+    "human_observers": 0,
+    "ground_nights": 0,
+    "Git_index_original_CIE_bytes_checked": 6,
+    "Git_index_original_CIE_bytes_matching": 6
+  },
+  "pdf": {
+    "pages": 6,
+    "extracted_characters": 13223,
+    "text_geometry_issues": [],
+    "embedded_images": 2,
+    "replacement_characters": 0,
+    "tool": "PyMuPDF 2.1",
+    "first_and_third_pages_rendered_for_inspection": true
+  },
+  "staged_diff_whitespace_check": {
+    "passed": true,
+    "raw_CIE_exempt_from_style_checks": true,
+    "raw_CIE_content_validated_by_SHA256": true
+  }
+}
