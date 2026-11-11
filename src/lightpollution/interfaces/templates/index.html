@@ -47,9 +47,25 @@
         <p class="hint">Опора относится к фиксированной точке региона. При перемещении наблюдателя мощность источников не перенормируется.</p>
         <label class="file-label">Загрузить общую калибровку<input id="calibration-import" type="file" accept=".json,application/json" hidden></label>
         <p id="calibration-note" class="hint">Калибровка по измерениям не подключена.</p><button id="calibration-clear" class="text-button" type="button">Использовать сценарную опору</button>
-        <label>Однородный естественный фон, V mag/arcsec²<input id="natural" type="number" min="10" max="30" step="0.1" value="21.6"></label>
+        <label>Естественный ночной фон в зените, V mag/arcsec²<input id="natural" type="number" min="10" max="30" step="0.1" value="21.6"></label>
         <p class="hint">Это заданные яркости. При смене AOD масштаб источников остаётся привязан к опорной атмосфере.</p>
         <label>Численный профиль<select id="profile"><option value="standard">Стандартный</option><option value="quick">Быстрый, приближённый</option></select></label>
+      </details>
+      <details><summary>Естественный фон и сумерки</summary>
+        <label>Ночной фон<select id="background-mode"><option value="airglow_layer">Свечение сферического слоя атмосферы</option><option value="uniform">Однородный сценарий</option><option value="legacy">Прежний однородный режим</option></select></label>
+        <label>Доля свечения атмосферы в ночном зените<input id="airglow-fraction" type="number" min="0" max="1" step="0.05" value="0.6"></label>
+        <label>Высота светящегося слоя, м<input id="airglow-height" type="number" min="80000" max="400000" step="1000" value="90000"></label>
+        <label>Сумерки<select id="twilight-mode"><option value="none">Отключены: только Солнце ≤−18°</option><option value="patat2006">Сценарий Paranal: Солнце −15…−5°, взгляд ≥50°</option></select></label>
+        <p class="hint">Яркость и доли задаются сценарием. Карты Млечного Пути и зодиакального света пока не подключены. Для сумерек вне указанной области сумма недоступна; перенос Paranal на другую площадку не проверен.</p>
+      </details>
+      <details><summary>Снег и отражение поверхности</summary>
+        <label class="check"><input id="surface-enabled" type="checkbox">Разделять прямой и отражённый свет при фиксированных лампах</label>
+        <label>Доля снега на освещённой поверхности источников<input id="snow-fraction" type="number" min="0" max="1" step="0.1" value="0"></label>
+        <label>Альбедо поверхности без снега<input id="bare-albedo" type="number" min="0" max="1" step="0.05" value="0.15"></label>
+        <label>Альбедо снега<input id="snow-albedo" type="number" min="0" max="1" step="0.05" value="0.8"></label>
+        <label>Доля мощности ламп, уходящая прямо вверх<input id="direct-upward" type="number" min="0" max="1" step="0.05" value="0.15"></label>
+        <label>Доля низкоугловой компоненты прямого света<input id="direct-horizontal" type="number" min="0" max="1" step="0.05" value="0"></label>
+        <p class="hint">Это единый сценарий для освещённой земли региона, а не снег только возле наблюдателя. Альбедо серое; автоматической снежной карты и прогноза нет. Snow-Free VIIRS учитывается как исходное уходящее вверх излучение.</p>
       </details>
       <details><summary>Спектральный расчёт</summary>
         <label>Режим<select id="spectrum-mode"><option value="off">Эффективная V-модель, 550 нм</option><option value="on">Спектры города и звёзд</option></select></label>

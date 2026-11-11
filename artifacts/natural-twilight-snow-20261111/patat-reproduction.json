@@ -1,0 +1,38 @@
+{
+  "source": "Patat et al. 2006 Table 1 V",
+  "coefficients": [
+    11.84,
+    1.518,
+    -0.057
+  ],
+  "rms_mag": 0.18,
+  "rows": [
+    {
+      "sun_depression_deg": 5,
+      "total_v_mag_arcsec2": 11.84,
+      "total_over_reference_night": 8016.780633876806
+    },
+    {
+      "sun_depression_deg": 6,
+      "total_v_mag_arcsec2": 13.301,
+      "total_over_reference_night": 2087.372703910554
+    },
+    {
+      "sun_depression_deg": 9,
+      "total_v_mag_arcsec2": 17.0,
+      "total_over_reference_night": 69.18309709189377
+    },
+    {
+      "sun_depression_deg": 12,
+      "total_v_mag_arcsec2": 19.673000000000002,
+      "total_over_reference_night": 5.899293451041436
+    },
+    {
+      "sun_depression_deg": 15,
+      "total_v_mag_arcsec2": 21.32,
+      "total_over_reference_night": 1.2941958414499874
+    }
+  ],
+  "local_field_validation": false,
+  "night_floor": "Patat 2003 V=21.6 mag/arcsec2"
+}

@@ -1,0 +1,436 @@
+{
+  "created_at": "2026-11-11T11:22:49+01:00",
+  "scope": "Changed tracked/new project files before commit; excludes this manifest. Raw sources and credentials excluded.",
+  "files": [
+    {
+      "path": "HISTORY.md",
+      "bytes": 48431,
+      "sha256": "fb8dca65850ed86b90ab4d529d01774673f29b0627bd6f5bd26a3e5332e0be0e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 18914,
+      "sha256": "ae9e6a56c082fa05f1473269fa5aeafac7de9252643868a0df2d1bacccb319ac"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/README.md",
+      "bytes": 15051,
+      "sha256": "8dc89f8eff1bf3fa17a284c0e16ace97ee0ae8e99b96ea7c110c3512bc3b280f"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/background-snow-experiment.png",
+      "bytes": 189293,
+      "sha256": "540d11536bb1e0ce80ecff87d5185f4b1f37c47f8047b92af1bd69b16bf16fce"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/bare/directions.csv",
+      "bytes": 1538,
+      "sha256": "e7114943562faf07ab43ce440bde7a2464f85a531e7b8bb7a0858217be7f40f7"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/bare/observation.json",
+      "bytes": 19805,
+      "sha256": "b9b89f7e156c4b36ae1d267a670ff0cb73e2ca340e7f006981768f4181fae767"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/bare/resolved-scene.json",
+      "bytes": 2426,
+      "sha256": "f78293aba783ebf0ce473479def5ca50299129b71f74145e6d2398fc6cdb0f1c"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/bare/result.json",
+      "bytes": 56229,
+      "sha256": "5ef1e6486b8fb6b0c75a07d49cfe37c2750168cc785b3392bac6207c10ebd1fc"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/bare/scene.json",
+      "bytes": 1084,
+      "sha256": "1a70d6acf511691159ee03bf437c2b377192c82140e5e81e24e71b61e4e2d0ef"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/bare/stars.csv",
+      "bytes": 105,
+      "sha256": "17aeb9d97cc886b128a076c7780533d764fe9985fde543f1af0b052e814921a4"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/browser-background-scene.json",
+      "bytes": 1178,
+      "sha256": "d13401e99098081ab307b6704607ba9eb604607c7240c96896a56898382b82f0"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/browser-background.png",
+      "bytes": 191672,
+      "sha256": "e1202d6020e10397aba657f81ea39ee36ec3fb0f16886b6a5f9136f1a7155a44"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/browser-check.json",
+      "bytes": 2088,
+      "sha256": "2e045227259acd345861c3ef64cac9ce74928eb22cef2e1d789877bef6685307"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/browser-mobile-background.png",
+      "bytes": 61638,
+      "sha256": "c2530b417a9453ccd4f19cf64cac73a591942526be63506b657b9d3e5b3657f9"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/deep-transition-unsupported/directions.csv",
+      "bytes": 1654,
+      "sha256": "d6be103baaedc52477d5b36867b5481d7b198c184f9eb51ead5a440fba76769b"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/deep-transition-unsupported/observation.json",
+      "bytes": 21117,
+      "sha256": "6e8f0f866d70efa31195b67dada98be34c8562b19cd360e36935d093446bb3d3"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/deep-transition-unsupported/resolved-scene.json",
+      "bytes": 2278,
+      "sha256": "432d06242336034a4ca7f84c36bfe6faa110eff381cc6f5497ef4e1ef0902546"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/deep-transition-unsupported/result.json",
+      "bytes": 3549870,
+      "sha256": "ff7db9da0d010a67940057997773914c2a495631bbc953198a82b723811331c1"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/deep-transition-unsupported/scene.json",
+      "bytes": 916,
+      "sha256": "84bd7699f33578935f0dee2d08d04cd05896c33dc9dc77049ac98b975b45751b"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/deep-transition-unsupported/stars.csv",
+      "bytes": 1597265,
+      "sha256": "a5c88de1f76e9c92d60c4d6f0624578ddb7b363f38c78a539513170ae36c841b"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/half-snow/directions.csv",
+      "bytes": 1539,
+      "sha256": "cd6303dfac7e5e572d44bef4f4bb0616f5c2bd825dd27e418f7fe7c523c469a7"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/half-snow/observation.json",
+      "bytes": 19824,
+      "sha256": "48d12a1522e758e145d6f3dd3c81e6f4a1a163c54e9d72ac7f13f442fd0b3d53"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/half-snow/resolved-scene.json",
+      "bytes": 2426,
+      "sha256": "2183a0e346ad52193d863b525419d413e3da3b8d788a20b23cfa65beeed7122e"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/half-snow/result.json",
+      "bytes": 56210,
+      "sha256": "47e3a219339574fc80688d91f8b3cdd017044a9fbc0efa6f542f1afef66e3af2"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/half-snow/scene.json",
+      "bytes": 1084,
+      "sha256": "1f41048f8aafcf207c19c02320007b4baa043eacb0b7f57eddd0f5992a82a726"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/half-snow/stars.csv",
+      "bytes": 105,
+      "sha256": "17aeb9d97cc886b128a076c7780533d764fe9985fde543f1af0b052e814921a4"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/implementation-report.pdf",
+      "bytes": 286445,
+      "sha256": "b6a37f6c179723470d24979c2620c3f63730b05145df30caacb7f6c61db49dc9"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/lambert-bare/directions.csv",
+      "bytes": 1534,
+      "sha256": "b16330c9b329e918243d3f14b98e9b0536c9f5c5a4679bda10cac415fafead34"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/lambert-bare/observation.json",
+      "bytes": 19798,
+      "sha256": "9782423b4ab9e0953327e016e5eaead38a38c8135a62cee412fe60c66b3a099a"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/lambert-bare/resolved-scene.json",
+      "bytes": 2426,
+      "sha256": "c8ac6437e676c4fec7294485f5d1c1ee4df762de1089ab8cf9117eb4c3e50fc8"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/lambert-bare/result.json",
+      "bytes": 56184,
+      "sha256": "de32dd342ffeddd245ec77361f9ed66e28907bb3a4a2b1c37e6cf1093c7e36b9"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/lambert-bare/scene.json",
+      "bytes": 1084,
+      "sha256": "c1669b79b0bd193033c1329c2978ef2af1458b8d32f7b9f25ec8c21fb1db56ed"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/lambert-bare/stars.csv",
+      "bytes": 105,
+      "sha256": "17aeb9d97cc886b128a076c7780533d764fe9985fde543f1af0b052e814921a4"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/lambert-snow/directions.csv",
+      "bytes": 1543,
+      "sha256": "97595a6c62c598a89dc360b81848185815c5e5417cb3a83d4474e2bda639ae74"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/lambert-snow/observation.json",
+      "bytes": 19818,
+      "sha256": "5dbba0ab37f9cc7461002563b1a2e970aa1ae76084accda0f68f05b48c9dfc17"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/lambert-snow/resolved-scene.json",
+      "bytes": 2426,
+      "sha256": "9d77cc69cbb23c2f33715e935178836eaff72178cd31cdf9ba44f392a19cc634"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/lambert-snow/result.json",
+      "bytes": 56205,
+      "sha256": "50362864ef0546ab375d9d5187026df05de3528e595f65b0ddf3d213d86f51fd"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/lambert-snow/scene.json",
+      "bytes": 1084,
+      "sha256": "77bc648bebf06bfebe28791c0dfe608d5f1fbf9008addd36e08413365a161ceb"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/lambert-snow/stars.csv",
+      "bytes": 105,
+      "sha256": "17aeb9d97cc886b128a076c7780533d764fe9985fde543f1af0b052e814921a4"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/literature-audit.json",
+      "bytes": 3297,
+      "sha256": "2f78d16225c3b71b9fc53887db560b581de7ba2f6d5401d68a45ceee579370c8"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/natural-geometry.csv",
+      "bytes": 547,
+      "sha256": "25cfea1645f67def911cc560965d30bbc29417b83f4c73d3f5773c908e096335"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/patat-reproduction.json",
+      "bytes": 910,
+      "sha256": "e56474889020d6ce1147b1d654026a13838fba4116c7a764296f0371e6045e04"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/pdf-check.json",
+      "bytes": 355,
+      "sha256": "9ff835ea40feafbe4ed6511305c3d1581d5778f4668726020365883ab32e3ac6"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/predeclared-criteria.json",
+      "bytes": 478,
+      "sha256": "f4b27dda2db590092124bb0701609ae0c5e8953278d0523b4ee57c759180e6a1"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/snow-comparisons.json",
+      "bytes": 3130,
+      "sha256": "013353f02be3a2b4c35363d87f947aafb61cc886e96b5b1a75573a98b0b04566"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/snow/directions.csv",
+      "bytes": 1537,
+      "sha256": "a66db0ec1b4a32ca28fa0e4b44a6e4afd1531cdfd667f7dfe212ccd3f27b0c4e"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/snow/observation.json",
+      "bytes": 19815,
+      "sha256": "6b511430518dcaf4e147c7d31722dca57b97f3f7561c13498838b1b625648261"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/snow/resolved-scene.json",
+      "bytes": 2426,
+      "sha256": "64bd5b8809e70c2728dafd44a6fd35fc7f95f614ae9a3d0841dbc05e6d8c6efa"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/snow/result.json",
+      "bytes": 56179,
+      "sha256": "8a5e3aaf11b2e3b3bf486440527418d0f7082d56058aa16ea941ebb53902e929"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/snow/scene.json",
+      "bytes": 1084,
+      "sha256": "566c4cce72fd085d663a8201eb8b9767047a8e00ba5c0eb94bfac53e8305fd56"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/snow/stars.csv",
+      "bytes": 105,
+      "sha256": "17aeb9d97cc886b128a076c7780533d764fe9985fde543f1af0b052e814921a4"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/summary.json",
+      "bytes": 19816,
+      "sha256": "4886eb9c47af6c8dec12033334bccf41cbb6e65ff819cb97c7754ffc0cae6143"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/theory-from-zero.md",
+      "bytes": 168771,
+      "sha256": "95bcfa776690ffdcee688736a440d5e3b4e473e5c4528b62d1045709050f5095"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/theory-from-zero.pdf",
+      "bytes": 231859,
+      "sha256": "ed35940b8657ec8f90a512086e643ba1a331522c61ce02e18d708243e2f2e160"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/theory-source-check.json",
+      "bytes": 383,
+      "sha256": "a5a5349d5742ed94367639fe3c057b24ee2b25c6a253586509af036ca19a2a61"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/verification.json",
+      "bytes": 4444,
+      "sha256": "f622c690aad71371956369ca5c97408c137d4cf2a5e012ea1522f5f6dd49b39c"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/wheel-check.json",
+      "bytes": 568,
+      "sha256": "7d64c8da5e86f6325fb3ea1607a2476446e20bb9226aa0eba152d0e544cda392"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/white-night/directions.csv",
+      "bytes": 1789,
+      "sha256": "115e2aa29d53953d9b17e2838ae26e948c89d4e9cf90371a1de9bd600a1e7b28"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/white-night/observation.json",
+      "bytes": 21322,
+      "sha256": "edc178162a10cc129cb59165567980484a1bd21b17b0f050f99a973628a9d93b"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/white-night/resolved-scene.json",
+      "bytes": 2278,
+      "sha256": "aa1a2ce45908ac51d75d29b92c652dd52a37dafcb5206738049426ed7fbccad0"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/white-night/result.json",
+      "bytes": 3363895,
+      "sha256": "a106f703390963b55603e528517ef9eef7fb3c9b278df3ddd03ee3f3caa094ac"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/white-night/scene.json",
+      "bytes": 916,
+      "sha256": "6310d715e3e6d7d04c4fc1e7858176b7240738c892bc57ed81eb96258281747c"
+    },
+    {
+      "path": "artifacts/natural-twilight-snow-20261111/white-night/stars.csv",
+      "bytes": 1507220,
+      "sha256": "ce59113a63fa1615edfaa2d02a434f544bb40b17ca754b1da2bf5de185f7f96b"
+    },
+    {
+      "path": "docs/CODE_CHANGELOG.md",
+      "bytes": 67425,
+      "sha256": "ed2ce290c765fcf07a559bd9260ff2547058def5e2222b2b10cdade42ef7ee41"
+    },
+    {
+      "path": "docs/DATA_SOURCES.md",
+      "bytes": 18362,
+      "sha256": "3c64acd2d99d4ad8f9aba2eb53e70f3dea95e7bdbccc8e31c67649ed7ba138c2"
+    },
+    {
+      "path": "docs/LITERATURE.md",
+      "bytes": 22816,
+      "sha256": "38fa105708dce3897bd24fcc5dc7ecb2f254c923f500783ae125357e739c53b1"
+    },
+    {
+      "path": "docs/MODEL.md",
+      "bytes": 18628,
+      "sha256": "15ccdfad9636d873d7bba17e64bd8c73cfe2bb7cc4ed20706d8423112035d96f"
+    },
+    {
+      "path": "docs/MODEL_ROADMAP.md",
+      "bytes": 24397,
+      "sha256": "18be0e28d09d611f0ae1851ad6f74761bf31f4f7b08fa401282aea202f276d7b"
+    },
+    {
+      "path": "docs/MVP.md",
+      "bytes": 17632,
+      "sha256": "2853eba7a40c981aaaba2da8568d6be7b0a44e9ba34a2418100c548c9cae7260"
+    },
+    {
+      "path": "docs/NATURAL_TWILIGHT_SNOW.md",
+      "bytes": 42239,
+      "sha256": "02079b6ef8de7215127280e88c2a0e6b9c436445e2d9653c4dfdef1c371b1f69"
+    },
+    {
+      "path": "docs/OBSERVATION_PLAN.md",
+      "bytes": 75019,
+      "sha256": "7d07508e40cc41d8fb1e15c0f2494a499938d737440bdfaafb57bed5806da0bf"
+    },
+    {
+      "path": "docs/PHYSICS_AND_MATH_GUIDE.md",
+      "bytes": 85118,
+      "sha256": "2696eea5b28f1c74b52530edf1431ad592997af4f1ac12ceb0a42f3b5814fd05"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 697,
+      "sha256": "c7392108238ef787f9f5467cfd2157350aa81159cadce72fce024a90bd9badf2"
+    },
+    {
+      "path": "scripts/check_background_browser.py",
+      "bytes": 5003,
+      "sha256": "b7ad7de847479f800797acf7b931e8561c65b35b38dd2bb678c9bd228297f621"
+    },
+    {
+      "path": "scripts/run_background_surface.py",
+      "bytes": 11279,
+      "sha256": "f13ed3d04df87d8f7a789741102afcd860a8ff124e34d9772a53023f57de6c84"
+    },
+    {
+      "path": "src/lightpollution/__init__.py",
+      "bytes": 116,
+      "sha256": "ef83060e67fa2ac81ac5931a5d6778e54e6a0eca6a338fbef6a4ad66ec0d5f1c"
+    },
+    {
+      "path": "src/lightpollution/application/planner.py",
+      "bytes": 27576,
+      "sha256": "8d0ec3580336979f450d901f10713a81e5b62732f05cb99fb7ecf23d342014f0"
+    },
+    {
+      "path": "src/lightpollution/domain/scene.py",
+      "bytes": 12227,
+      "sha256": "f30eceeb8e10c1dd7f4d3d51ec2a8f3d8780fcd4d5abfe0b4379c320572bdef4"
+    },
+    {
+      "path": "src/lightpollution/interfaces/static/app.js",
+      "bytes": 19400,
+      "sha256": "64ff7c27b6ba13af801580c0a06453b208ca6e249cf5cf330534da76911cc7fb"
+    },
+    {
+      "path": "src/lightpollution/interfaces/templates/index.html",
+      "bytes": 13138,
+      "sha256": "f5c18daf4da7995e3858b912a7d9c75a017d5e89b9e50daa9f321c48d580fd48"
+    },
+    {
+      "path": "src/lightpollution/models/background.py",
+      "bytes": 7522,
+      "sha256": "e964610ead83c4f478f247e8f9db50c759b2ef25fd55fd817d62c609d58ae148"
+    },
+    {
+      "path": "src/lightpollution/models/observation.py",
+      "bytes": 20895,
+      "sha256": "5de4ffe50bce880db282a4e295cd226381261892bfbc3e7cc9e57204a5910436"
+    },
+    {
+      "path": "src/lightpollution/models/surface.py",
+      "bytes": 3126,
+      "sha256": "72f813e8c9cfce184551b6074aa3b421deb823e2b13212d8ed3161e24f569473"
+    },
+    {
+      "path": "src/lightpollution/skyview.py",
+      "bytes": 23520,
+      "sha256": "109f28fbeaf9b239ee370a2a9e42c9396e8ebbe1f4d71254c5546fcd266a0651"
+    },
+    {
+      "path": "tests/test_background_surface.py",
+      "bytes": 12607,
+      "sha256": "2bb79e3dbfaff9ebb59be7ac4620443d0165d44ae958dd065ea197e83138206f"
+    },
+    {
+      "path": "uv.lock",
+      "bytes": 296125,
+      "sha256": "ebee644d6ce70ce259cf54548c1172672ebc9f9b279012ef26cc1de375199692"
+    }
+  ]
+}

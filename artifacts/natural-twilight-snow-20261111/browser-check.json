@@ -1,0 +1,80 @@
+{
+  "browser": "Chromium / Playwright",
+  "completed_jobs": 3,
+  "total_jobs": 3,
+  "job_ids": [
+    "052681c69a374c869d39d1d7750f207a",
+    "25ac3cfc9595461abdd86aa02c5f1374",
+    "85fc7508dfe84820adbf35022b84edfb"
+  ],
+  "fixed_lamp_snow_comparison": {
+    "directions": [
+      {
+        "azimuth_deg": 0.0,
+        "altitude_deg": 90.0,
+        "supported": true,
+        "right_over_left": 2.345770535977038,
+        "right_minus_left_mag": -0.9257138175807569,
+        "reason": null
+      },
+      {
+        "azimuth_deg": 0.0,
+        "altitude_deg": 50.0,
+        "supported": true,
+        "right_over_left": 2.271588686602885,
+        "right_minus_left_mag": -0.8908242426525028,
+        "reason": null
+      },
+      {
+        "azimuth_deg": 90.0,
+        "altitude_deg": 45.0,
+        "supported": true,
+        "right_over_left": 2.344332138203072,
+        "right_minus_left_mag": -0.9250478532309359,
+        "reason": null
+      },
+      {
+        "azimuth_deg": 180.0,
+        "altitude_deg": 45.0,
+        "supported": true,
+        "right_over_left": 2.616124707515985,
+        "right_minus_left_mag": -1.0441461061022466,
+        "reason": null
+      },
+      {
+        "azimuth_deg": 270.0,
+        "altitude_deg": 45.0,
+        "supported": true,
+        "right_over_left": 2.352443619581772,
+        "right_minus_left_mag": -0.9287980589964384,
+        "reason": null
+      }
+    ],
+    "comparison_basis_id": "dcc029b4d1f1846b178fc7a67f9770c4d47c0715526e89dde365569426e81482",
+    "left_observer": {
+      "height_m": 20.0,
+      "latitude_deg": 60.3,
+      "longitude_deg": 30.315
+    },
+    "right_observer": {
+      "height_m": 20.0,
+      "latitude_deg": 60.3,
+      "longitude_deg": 30.315
+    },
+    "scale_origin": "scenario",
+    "physical_accuracy_claimed": false
+  },
+  "twilight_partial_support_directions": 2,
+  "twilight_total_directions": 5,
+  "scenario_export_preserves_background": true,
+  "javascript_errors": [],
+  "mobile_horizontal_overflow": false,
+  "desktop_viewport": [
+    1440,
+    1080
+  ],
+  "mobile_viewport": [
+    390,
+    844
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "version": "0.4.0",
+  "run_outside_checkout": "/tmp",
+  "imported_from_isolated_wheel": true,
+  "spectral_wavelengths": 95,
+  "stars_exported": 3574,
+  "supported_directions": 1,
+  "total_directions": 2,
+  "surface_model": "fixed_lamp_first_lambertian_ground_reflection_1",
+  "runtime_seconds": 4.153295638971031,
+  "no_nasa_or_network_required": true,
+  "wheel_sha256": "477288602f67ba0d7c3e95aa7b694350b16fc1ca7878b0bc50f244882eb5e686",
+  "wheel_bytes": 364921,
+  "package_files_checked": 60,
+  "package_files_match_source": true,
+  "runtime_dependencies": 36
+}

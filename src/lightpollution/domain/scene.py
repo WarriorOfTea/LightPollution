@@ -9,6 +9,8 @@ import numpy as np
 
 from ..atmosphere_config import atmosphere_from_mapping, atmosphere_origin
 from ..physics import Atmosphere, Observer
+from ..models.background import background_config
+from ..models.surface import surface_config
 
 
 class DomainError(ValueError):
@@ -43,7 +45,7 @@ class SceneSpec:
         allowed = {'schema_version', 'region', 'period', 'mode', 'time', 'observer',
                    'directions', 'atmosphere', 'reference_atmosphere', 'profile',
                    'anchor_v_mag_arcsec2', 'natural_v_mag_arcsec2', 'moon', 'download_missing',
-                   'anchor_observer', 'photometric_calibration', 'spectrum'}
+                   'anchor_observer', 'photometric_calibration', 'spectrum', 'background', 'surface'}
         if set(data) - allowed:
             raise DomainError('invalid_input', 'В сценарии есть неизвестные поля.',
                               {'fields': sorted(set(data) - allowed)})
@@ -119,6 +121,12 @@ class SceneSpec:
             spectrum.setdefault('stars', 'catalogue_continuum')
             if spectrum['stars'] not in ['catalogue_continuum', 'measured_only']:
                 raise DomainError('invalid_spectrum', 'Спектры звёзд: catalogue_continuum или measured_only.')
+        for key, validator in [('background', background_config), ('surface', surface_config)]:
+            if key in data:
+                try:
+                    data[key] = validator(data[key])
+                except ValueError as exc:
+                    raise DomainError('invalid_' + key, str(exc)) from exc
         directions = data.get('directions', [[0, 90], [0, 45], [90, 45], [180, 45], [270, 45]])
         if not isinstance(directions, list) or not 1 <= len(directions) <= 16:
             raise DomainError('invalid_direction', 'Задайте от 1 до 16 направлений.')
@@ -172,6 +180,8 @@ class SceneSpec:
         data['reference_v_mag_arcsec2'] = 22.
         data['height_datum'] = 'height above common hypothetical spherical ground z=0; geographic terrain not reconstructed'
         data['scale_origin'] = 'scenario'
+        data['background_origin'] = 'explicit_scenario' if 'background' in data else 'legacy_uniform_scenario'
+        data['surface_origin'] = 'explicit_scenario' if 'surface' in data else 'legacy_undecomposed_snow_free_uplight'
         if 'photometric_calibration' in data:
             data['scale_origin'] = 'provided_calibration'
         return data

@@ -18,6 +18,7 @@ from ..photometry import KS_V_BAND, RelativeBrightness, RelativeScale, SurfaceBr
 from ..physics import Atmosphere, Observer
 from ..domain.fields import ObservationResources
 from ..skyview import horizontal_stars, sample_sky, stellar_extinction
+from .background import BackgroundModel
 
 
 def _object(value, allowed, required=()):
@@ -79,7 +80,8 @@ def _transfer_grid(resource, observer: Observer, atmosphere: Atmosphere):
     return az,alt,raw,metadata
 
 
-def calculate_scene(config: dict, resources: ObservationResources) -> dict:
+def calculate_scene(config: dict, resources: ObservationResources, *,
+                    background: BackgroundModel | None = None) -> dict:
     """Validate the complete scene before returning strict-JSON-compatible results."""
     config = deepcopy(config)
     _object(config, {'schema_version','mode','time','observer','directions','atmosphere',
@@ -112,7 +114,7 @@ def calculate_scene(config: dict, resources: ObservationResources) -> dict:
             raise ValueError("Dated mode computes the Moon; manual lunar parameters are forbidden.")
         utc = _utc(config.get('time'))
         context = observation_context(observer, utc, *directions[0])
-        if not context['astronomical_darkness']:
+        if not context['astronomical_darkness'] and not (background and background.allows_twilight):
             raise ValueError("Sun is above -18 degrees; twilight is outside this scene model.")
         moon = context['moon']
         lunar = {'mode':'ephemeris', 'azimuth_deg':moon['azimuth_deg'],
@@ -160,6 +162,15 @@ def calculate_scene(config: dict, resources: ObservationResources) -> dict:
         warnings.append('natural_background_explicitly_disabled')
     else:
         raise ValueError("Natural mode must be uniform with magnitude, or none.")
+    if background is not None:
+        warnings = [w for w in warnings if w != 'uniform_natural_background_is_a_scenario']
+        warnings += ['natural_diffuse_components_are_scenarios_not_local_measurements',
+                     'no_galactic_or_zodiacal_angular_maps',
+                     'airglow_scattering_into_line_of_sight_omitted']
+        if background.allows_twilight:
+            warnings += ['twilight_paranal_empirical_not_local_validation',
+                         'twilight_has_explicit_solar_and_angular_domain_gaps',
+                         'twilight_not_adjusted_for_current_atmosphere_or_snow']
 
     artificial = _object(config['artificial'], {'mode','sky_grid','reference_sky_grid','anchor_direction',
                          'anchor_v_mag_arcsec2','scale_origin','source','band_bridge'}, {'mode'})
@@ -231,6 +242,11 @@ def calculate_scene(config: dict, resources: ObservationResources) -> dict:
         separation = np.full(azimuth.shape,np.nan)
         valid = np.ones(azimuth.shape,dtype=bool)
         eclipse = False
+        background_rows = background.evaluate(azimuth, altitude, context) if background else None
+        twilight_values = np.zeros(azimuth.shape)
+        if background_rows is not None:
+            natural_values = np.asarray([r['natural_relative'] for r in background_rows]).reshape(azimuth.shape)
+            twilight_values = np.asarray([r['twilight_relative'] or 0. for r in background_rows]).reshape(azimuth.shape)
         if lunar['mode'] != 'none':
             separation = separation_angle(azimuth,altitude,lunar['azimuth_deg'],lunar['altitude_deg'])
             if lunar['altitude_deg'] > 0:
@@ -245,20 +261,33 @@ def calculate_scene(config: dict, resources: ObservationResources) -> dict:
                         nanolambert_to_v_mag(nL[nonzero]),KS_V_BAND)).values
                     moon_q[valid] = values
         total = (RelativeBrightness(city,scale) + RelativeBrightness(natural_values,scale)
-                 + RelativeBrightness(moon_q,scale))
+                 + RelativeBrightness(moon_q,scale) + RelativeBrightness(twilight_values,scale))
         result = []
         for i in range(azimuth.size):
-            ok = bool(valid.flat[i])
+            moon_ok = bool(valid.flat[i])
+            background_ok = background_rows is None or background_rows[i]['background_supported']
+            ok = moon_ok and background_ok
             q = float(total.values.flat[i])
             result.append({'azimuth_deg':float(azimuth.flat[i]), 'altitude_deg':float(altitude.flat[i]),
                            'artificial_relative':float(city.flat[i]), 'natural_relative':float(natural_values.flat[i]),
-                           'moon_relative':float(moon_q.flat[i]) if ok else None,
+                           'moon_relative':float(moon_q.flat[i]) if moon_ok else None,
                            'total_relative':q if ok else None,
                            'total_v_mag_arcsec2':float(scale.reference_mag_arcsec2-2.5*np.log10(q)) if ok and q>0 else None,
                            'moon_separation_deg':float(separation.flat[i]) if np.isfinite(separation.flat[i]) else None,
                            'supported':ok,
                            'status':('possible_lunar_eclipse' if eclipse else 'moon_separation_below_10deg') if not ok else 'ok',
                            'low_altitude_caution':bool(altitude.flat[i]<10)})
+            if background_rows is not None:
+                result[-1].update(background_rows[i])
+                moon_status = ('possible_lunar_eclipse' if eclipse else 'moon_separation_below_10deg') if not moon_ok else 'ok'
+                reasons = ([] if moon_ok else [moon_status]) + ([] if background_ok else [background_rows[i]['background_status']])
+                result[-1].update(moon_supported=moon_ok, moon_status=moon_status, support_reasons=reasons)
+                if len(reasons) > 1:
+                    result[-1]['status'] = 'multiple_model_restrictions'
+                elif not background_ok:
+                    result[-1]['status'] = background_rows[i]['background_status']
+                elif ok:
+                    result[-1]['status'] = background_rows[i]['background_status']
         return result
 
     rows = fields(directions[:,0],directions[:,1])
@@ -268,7 +297,8 @@ def calculate_scene(config: dict, resources: ObservationResources) -> dict:
         if resources.catalogue is None:
             raise ValueError("Dated scenes require an explicitly loaded stellar catalogue.")
         stars, provenance = resources.catalogue
-        star_az, star_alt, astrometry = horizontal_stars(stars,observer,utc,allow_moon=True)
+        star_az, star_alt, astrometry = horizontal_stars(stars,observer,utc,allow_moon=True,
+            allow_twilight=bool(background and background.allows_twilight))
         selected = np.flatnonzero(star_alt >= 0)
         # A cached grid has a finite altitude domain; never extrapolate its shape.
         covered = np.ones(selected.shape,dtype=bool) if grid is None else star_alt[selected] >= grid[1][0]

@@ -1,6 +1,6 @@
 """One public application use case for CLI, jobs and HTTP."""
 
-from dataclasses import asdict
+from dataclasses import asdict, replace
 import hashlib
 import json
 from pathlib import Path
@@ -16,6 +16,8 @@ from ..domain.fields import ObservationResources, RunResult, SkyField, SourceSca
 from ..domain.calibration import calibration_key
 from ..domain.scene import Cancelled, DomainError, SceneSpec
 from ..models.observation import calculate_scene
+from ..models.background import BackgroundModel
+from ..models.surface import surface_balance, surface_metadata, surface_reference
 from ..models.transfer import SingleScatteringSolver, TransferSolver
 from ..models.spectra import (ARCSEC2_PER_SR, band_integral,
                              response_summary, stellar_spectral_observation)
@@ -24,7 +26,7 @@ from ..physics import Observer, SolverSettings
 from ..skyview import load_stars
 
 ROOT = Path(__file__).resolve().parents[1]
-MODEL_VERSION = 'shared-regional-photometry-2'
+MODEL_VERSION = 'natural-twilight-snow-1'
 PROFILES = {'quick': (SolverSettings(96, 12), 24),
             'standard': (SolverSettings(192, 24), 12)}
 
@@ -78,8 +80,8 @@ class Planner:
                 context = observation_context(observer, data['time'], *data['directions'][0])
             except (ValueError, OverflowError) as exc:
                 raise DomainError('invalid_time', 'Не удалось вычислить эфемериды для указанного времени.') from exc
-            if not context['astronomical_darkness']:
-                raise DomainError('twilight', 'Солнце выше −18°: сумеречный фон в MVP не реализован.',
+            if not context['astronomical_darkness'] and data.get('background', {}).get('twilight') != 'patat2006':
+                raise DomainError('twilight', 'Солнце выше −18°: включите ограниченную модель сумерек Patat в настройках фона.',
                                   {'sun_altitude_deg': context['sun']['altitude_deg']})
         return entry
 
@@ -110,7 +112,7 @@ class Planner:
         scene_code = _code_identity(['models/observation.py', 'photometry.py', 'moonlight.py',
                                      'skyview.py', 'observation.py', 'catalogues/bsc5.csv',
                                      'application/planner.py', 'domain/scene.py', 'domain/calibration.py',
-                                     'adapters/spectral_library.py'])
+                                     'adapters/spectral_library.py', 'models/background.py', 'models/surface.py'])
         request_key = content_key({'scene': resolved, 'source_basis': group.identity,
             'transfer_code': transfer_code, 'scene_code': scene_code, 'solver': self.solver.version,
             'application_model': MODEL_VERSION, 'spectral_library': library.identity if library else None})
@@ -124,11 +126,14 @@ class Planner:
             return RunResult(cached)
 
         settings, block = PROFILES[data['profile']]
+        surface = data.get('surface')
         observer, atmosphere = spec.observer, spec.atmosphere
         reference_atmosphere = atmosphere_from_mapping(data['reference_atmosphere'])
         azimuths = np.asarray(sorted({0., 90., 180., 270., *[v[0] for v in data['directions']]}))
         altitudes = np.asarray(sorted({10., 90., *[v[1] for v in data['directions']]}))
         total = 1 + 1 + len(azimuths) * (len(altitudes) - 1)
+        if surface and surface['direct_horizontal_fraction'] > 0 and surface['direct_upward_fraction'] > 0:
+            total *= 2
         stats = {'scene_hit': False, 'transfer_hits': 0, 'transfer_misses': 0}
         completed = 0
         groups = {tuple(asdict(observer).values()): group}
@@ -140,8 +145,11 @@ class Planner:
                  'band': 'Generic/Johnson.V energy response' if library else 'effective_V_550nm',
                  'spectral_library': library.identity if library else None,
                  'reference_v_mag_arcsec2': 22., 'height_datum': resolved['height_datum']}
+        if surface:
+            scope['surface_reference'] = {'model': 'fixed_lamp_first_lambertian_ground_reflection_1',
+                'code': _code_identity(['models/surface.py']), **surface_reference(surface)}
 
-        def response(period, az, alt, atm, numerical, aggregation, target=None):
+        def kernel(period, az, alt, atm, numerical, aggregation, target=None):
             nonlocal completed
             check()
             target = target or observer
@@ -188,8 +196,23 @@ class Planner:
                       'cached_directions': stats['transfer_hits']})
             return value
 
+        def response(period, az, alt, atm, numerical, aggregation, target=None, *, reference_surface=False):
+            if surface is None:
+                return kernel(period, az, alt, atm, numerical, aggregation, target), None, None
+            balance = surface_balance(surface, reference=reference_surface)
+            dm = balance['direct_multiplier_of_reference_upward_power']
+            rm = balance['reflected_multiplier_of_reference_upward_power']
+            lambert = kernel(period, az, alt, atm, replace(numerical, horizontal_fraction=0.), aggregation, target)
+            if surface['direct_horizontal_fraction'] == 0 or dm == 0:
+                direct_kernel = lambert
+            else:
+                direct_kernel = kernel(period, az, alt, atm,
+                    replace(numerical, horizontal_fraction=surface['direct_horizontal_fraction']), aggregation, target)
+            direct, reflected = dm*direct_kernel, rm*lambert
+            return direct+reflected, direct, reflected
+
         reference_values = response(group.reference_period, 0, 90, reference_atmosphere,
-                                    *PROFILES['standard'], target=anchor_observer)
+                                    *PROFILES['standard'], target=anchor_observer, reference_surface=True)[0]
         reference = (float(band_integral(library.wavelengths, reference_values*reference_mix,
                                          library.responses['johnson_v'])) if library else reference_values)
         if reference <= 0:
@@ -213,23 +236,31 @@ class Planner:
             'reference_mix': spectral_config['reference_mix'] if library else None}
         scale = SourceScale(group.identity, coefficient, reference, anchor_q, calibration)
         raw = np.zeros((len(altitudes), len(azimuths)))
+        direct_raw = np.zeros_like(raw) if surface else None
+        reflected_raw = np.zeros_like(raw) if surface else None
         spectral_raw = np.zeros((*raw.shape, len(library.wavelengths))) if library else None
         for row, altitude in enumerate(altitudes):
             if altitude == 90:
-                values = response(data['period'], 0, 90, atmosphere, settings, block)
+                values, direct, reflected = response(data['period'], 0, 90, atmosphere, settings, block)
                 if library:
                     spectral_raw[row, :, :] = values
                     raw[row, :] = band_integral(library.wavelengths, values*mix, library.responses['johnson_v'])
                 else:
                     raw[row, :] = values
+                if surface:
+                    direct_raw[row, :] = band_integral(library.wavelengths, direct*mix, library.responses['johnson_v']) if library else direct
+                    reflected_raw[row, :] = band_integral(library.wavelengths, reflected*mix, library.responses['johnson_v']) if library else reflected
             else:
                 for col, azimuth in enumerate(azimuths):
-                    values = response(data['period'], azimuth, altitude, atmosphere, settings, block)
+                    values, direct, reflected = response(data['period'], azimuth, altitude, atmosphere, settings, block)
                     if library:
                         spectral_raw[row, col] = values
                         raw[row, col] = band_integral(library.wavelengths, values*mix, library.responses['johnson_v'])
                     else:
                         raw[row, col] = values
+                    if surface:
+                        direct_raw[row, col] = band_integral(library.wavelengths, direct*mix, library.responses['johnson_v']) if library else direct
+                        reflected_raw[row, col] = band_integral(library.wavelengths, reflected*mix, library.responses['johnson_v']) if library else reflected
         check()
         _, source_provenance = group.select(data['period'], block)
         metadata = {'observer': asdict(observer), 'atmosphere': asdict(atmosphere),
@@ -252,7 +283,15 @@ class Planner:
         progress({'phase': 'Луна, звёзды и общая сцена', 'completed': total, 'total': total})
         resources = ObservationResources({'current-transfer-field': grid},
             load_stars() if data['mode'] == 'dated' else None, scale)
-        observation = calculate_scene(legacy, resources)
+        background = (BackgroundModel(data['background'], observer, atmosphere, data['natural_v_mag_arcsec2'])
+                      if 'background' in data else None)
+        observation = calculate_scene(legacy, resources, background=background)
+        if background:
+            observation['background_model'] = background.metadata()
+        if surface:
+            observation['surface_model'] = surface_metadata(surface)
+            observation['assumptions_and_limitations'] += ['snow_fraction_and_albedos_are_scenarios',
+                'grey_first_surface_reflection_only_no_repeated_ground_atmosphere_feedback']
         observation['atmosphere_origin'] = resolved['atmosphere_origin']
         if provided:
             observation['assumptions_and_limitations'] = [
@@ -265,6 +304,9 @@ class Planner:
             col = int(np.flatnonzero(azimuths == direction['azimuth_deg'])[0])
             row = int(np.flatnonzero(altitudes == direction['altitude_deg'])[0])
             direction['raw_transfer_response'] = float(raw[row, col])
+            if surface:
+                direction['artificial_direct_relative'] = float(direct_raw[row, col]*coefficient)
+                direction['artificial_reflected_relative'] = float(reflected_raw[row, col]*coefficient)
         spectral_output = None
         if library:
             reference_radiance = library.zero_v * 10**(-.4*22) * ARCSEC2_PER_SR
@@ -298,6 +340,10 @@ class Planner:
                 'stellar_examples': examples, 'stellar_summary': stellar_metadata,
                 'reference_v_radiance_W_m2_sr': reference_radiance,
                 'inferred_local_lamp_inventory': False, 'display_colour_modelled': False}
+            if surface:
+                spectral_output['source_power_scale_reference'] = 'snow_free_upward_power_before_observer_exclusions'
+                spectral_output['source_lamp_power_scale_W'] = (coefficient*reference_radiance /
+                    surface_balance(surface, reference=True)['snow_free_upward_fraction_of_lamp_power'])
         resolved['scale_origin'] = scale_origin
         result = {'schema_version': 1, 'application': 'lightpollution-mvp', 'model_version': MODEL_VERSION,
             'request': data, 'resolved_scene': resolved,
@@ -319,6 +365,12 @@ class Planner:
             result['capabilities'] += ['city_spectral_radiance', 'spectral_band_responses']
             result['unavailable_capabilities'].remove('spectral_radiance')
             result['unavailable_capabilities'].append('total_sky_spectral_radiance')
+        if background:
+            result['capabilities'] += ['directional_natural_background']
+            if background.allows_twilight:
+                result['capabilities'].append('bounded_empirical_twilight')
+        if surface:
+            result['capabilities'].append('fixed_lamp_snow_scenarios')
         _write_checked(scene_path, result)
         progress({'phase': 'Готово', 'completed': total, 'total': total})
         return RunResult(result)

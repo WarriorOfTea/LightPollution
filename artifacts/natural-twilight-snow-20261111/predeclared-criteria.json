@@ -1,0 +1,22 @@
+{
+  "declared_at": "2026-11-11T11:01:04+01:00",
+  "energy_balance_absolute_tolerance": 1e-12,
+  "natural_slant_tau_relative_tolerance": 1e-06,
+  "tau_altitudes_deg": [
+    10,
+    20,
+    30,
+    45,
+    60,
+    90
+  ],
+  "sun_depressions_deg": [
+    5,
+    6,
+    9,
+    12,
+    15
+  ],
+  "site": "60.3 N, 30.315 E, 20 m above hypothetical common ground",
+  "field_validation": "No independent clear-night snow or twilight observations supplied; no physical accuracy score."
+}

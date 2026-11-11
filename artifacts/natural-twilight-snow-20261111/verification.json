@@ -1,0 +1,154 @@
+{
+  "pytest": {
+    "source": "actual final console summary, 2026-11-11",
+    "passed": 165,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "warnings": 0,
+    "elapsed_seconds": 37.38,
+    "new_cases": 25
+  },
+  "uv_lock_check": {
+    "passed": true,
+    "locked_packages": 48
+  },
+  "numerical_checks": {
+    "energy_balance_cases": 225,
+    "energy_balance_max_absolute_error": 1.1102230246251565e-16,
+    "tau_directions": 6,
+    "tau_max_relative_error": 2.807754029277021e-13,
+    "lambert_snow_directions": 5,
+    "lambert_snow_max_relative_error": 3.3306690738754696e-16
+  },
+  "browser": {
+    "browser": "Chromium / Playwright",
+    "completed_jobs": 3,
+    "total_jobs": 3,
+    "job_ids": [
+      "052681c69a374c869d39d1d7750f207a",
+      "25ac3cfc9595461abdd86aa02c5f1374",
+      "85fc7508dfe84820adbf35022b84edfb"
+    ],
+    "fixed_lamp_snow_comparison": {
+      "directions": [
+        {
+          "azimuth_deg": 0.0,
+          "altitude_deg": 90.0,
+          "supported": true,
+          "right_over_left": 2.345770535977038,
+          "right_minus_left_mag": -0.9257138175807569,
+          "reason": null
+        },
+        {
+          "azimuth_deg": 0.0,
+          "altitude_deg": 50.0,
+          "supported": true,
+          "right_over_left": 2.271588686602885,
+          "right_minus_left_mag": -0.8908242426525028,
+          "reason": null
+        },
+        {
+          "azimuth_deg": 90.0,
+          "altitude_deg": 45.0,
+          "supported": true,
+          "right_over_left": 2.344332138203072,
+          "right_minus_left_mag": -0.9250478532309359,
+          "reason": null
+        },
+        {
+          "azimuth_deg": 180.0,
+          "altitude_deg": 45.0,
+          "supported": true,
+          "right_over_left": 2.616124707515985,
+          "right_minus_left_mag": -1.0441461061022466,
+          "reason": null
+        },
+        {
+          "azimuth_deg": 270.0,
+          "altitude_deg": 45.0,
+          "supported": true,
+          "right_over_left": 2.352443619581772,
+          "right_minus_left_mag": -0.9287980589964384,
+          "reason": null
+        }
+      ],
+      "comparison_basis_id": "dcc029b4d1f1846b178fc7a67f9770c4d47c0715526e89dde365569426e81482",
+      "left_observer": {
+        "height_m": 20.0,
+        "latitude_deg": 60.3,
+        "longitude_deg": 30.315
+      },
+      "right_observer": {
+        "height_m": 20.0,
+        "latitude_deg": 60.3,
+        "longitude_deg": 30.315
+      },
+      "scale_origin": "scenario",
+      "physical_accuracy_claimed": false
+    },
+    "twilight_partial_support_directions": 2,
+    "twilight_total_directions": 5,
+    "scenario_export_preserves_background": true,
+    "javascript_errors": [],
+    "mobile_horizontal_overflow": false,
+    "desktop_viewport": [
+      1440,
+      1080
+    ],
+    "mobile_viewport": [
+      390,
+      844
+    ]
+  },
+  "independent_field_validation": {
+    "snow_nights": 0,
+    "twilight_nights": 0,
+    "accuracy_metrics": null,
+    "reason": "Matched local observations not obtained."
+  },
+  "pdf_sources": [
+    "docs/PHYSICS_AND_MATH_GUIDE.md",
+    "docs/PHOTOMETRY_AND_SPECTRA.md",
+    "docs/OBSERVATION_MODEL.md",
+    "docs/NATURAL_TWILIGHT_SNOW.md"
+  ],
+  "file_audit": {
+    "changed_files": 86,
+    "bytes": 12548632,
+    "json_files_valid": 39,
+    "markdown_files": 13,
+    "local_links_checked": 219,
+    "broken_links": 0,
+    "credential_patterns": 0
+  },
+  "wheel": {
+    "version": "0.4.0",
+    "run_outside_checkout": "/tmp",
+    "imported_from_isolated_wheel": true,
+    "spectral_wavelengths": 95,
+    "stars_exported": 3574,
+    "supported_directions": 1,
+    "total_directions": 2,
+    "surface_model": "fixed_lamp_first_lambertian_ground_reflection_1",
+    "runtime_seconds": 4.153295638971031,
+    "no_nasa_or_network_required": true,
+    "wheel_sha256": "477288602f67ba0d7c3e95aa7b694350b16fc1ca7878b0bc50f244882eb5e686",
+    "wheel_bytes": 364921,
+    "package_files_checked": 60,
+    "package_files_match_source": true,
+    "runtime_dependencies": 36
+  },
+  "theory_source": {
+    "source_documents": [
+      "docs/PHYSICS_AND_MATH_GUIDE.md",
+      "docs/PHOTOMETRY_AND_SPECTRA.md",
+      "docs/OBSERVATION_MODEL.md",
+      "docs/NATURAL_TWILIGHT_SNOW.md"
+    ],
+    "fenced_code_and_formula_blocks": 55,
+    "all_blocks_preserved_byte_for_byte": true,
+    "link_rewriting_excludes_fenced_and_inline_code": true,
+    "earlier_link_rewriting_corruption_found_and_corrected": 3
+  }
+}

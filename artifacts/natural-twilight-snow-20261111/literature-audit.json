@@ -1,0 +1,105 @@
+{
+  "sources": [
+    {
+      "id": "patat2006",
+      "url": "https://arxiv.org/html/astro-ph/0604128",
+      "status": 200,
+      "retrieved": true,
+      "bytes": 196611,
+      "sha256": "ef8e6f0ad47f8737a1c426de9c1b2c1ced5779f82cd59e2fa50c0f60d2f4a8e9",
+      "raw_republished": false,
+      "method": "HTTP GET, no credentials"
+    },
+    {
+      "id": "noll2012",
+      "url": "https://www.aanda.org/articles/aa/pdf/2012/07/aa19040-12.pdf",
+      "status": 403,
+      "retrieved": false,
+      "bytes": 93,
+      "sha256": null,
+      "raw_republished": false,
+      "method": "HTTP GET, no credentials"
+    },
+    {
+      "id": "patat2003",
+      "url": "https://www.aanda.org/articles/aa/pdf/2003/12/aa3223.pdf",
+      "status": 403,
+      "retrieved": false,
+      "bytes": 93,
+      "sha256": null,
+      "raw_republished": false,
+      "method": "HTTP GET, no credentials"
+    },
+    {
+      "id": "mod10a1",
+      "url": "https://nsidc.org/data/mod10a1/versions/61",
+      "status": 200,
+      "retrieved": true,
+      "bytes": 133919,
+      "sha256": "84798e7c16879f47693a87f733d266ada1d1a6417ac8ea0d2557e8db56eac05a",
+      "raw_republished": false,
+      "method": "HTTP GET, no credentials"
+    },
+    {
+      "id": "blackmarble-c2",
+      "url": "https://viirsland.gsfc.nasa.gov/PDF/BlackMarbleUserGuide_Collection2.0.pdf",
+      "status": 200,
+      "retrieved": true,
+      "bytes": 1515442,
+      "sha256": "3bd88ecfb70594286d0613dc3cf180260f0d614150d6f74f00d1ba6650fa4da9",
+      "raw_republished": false,
+      "method": "HTTP GET, no credentials"
+    },
+    {
+      "id": "snicar",
+      "url": "https://gmd.copernicus.org/articles/14/7673/2021/",
+      "status": 200,
+      "retrieved": true,
+      "bytes": 724462,
+      "sha256": "adef41e04dcbbb1e57353158d5901134e4e083e12dd2742524bd6122fbc3d287",
+      "raw_republished": false,
+      "method": "HTTP GET, no credentials"
+    },
+    {
+      "id": "snowglow2019",
+      "url": "https://www.mdpi.com/2313-433X/5/8/69",
+      "status": 403,
+      "retrieved": false,
+      "bytes": 396,
+      "sha256": null,
+      "raw_republished": false,
+      "method": "HTTP GET, no credentials"
+    },
+    {
+      "id": "noll2012-arxiv",
+      "url": "https://arxiv.org/pdf/1205.2003",
+      "status": 200,
+      "retrieved": true,
+      "bytes": 1212061,
+      "sha256": "5ef90980d909ad03d20e5a13ee8d24484375cd350a08ccbf214ebdf95f06f8ff",
+      "raw_republished": false,
+      "method": "HTTP GET, no credentials"
+    },
+    {
+      "id": "patat2003-arxiv",
+      "url": "https://arxiv.org/pdf/astro-ph/0301115",
+      "status": 200,
+      "retrieved": true,
+      "bytes": 923913,
+      "sha256": "ba4f1b6fd68810723ec434e53228a7e4fa968a3e877b16c9bfa056ed3edf4a59",
+      "raw_republished": false,
+      "method": "HTTP GET, no credentials"
+    },
+    {
+      "id": "mcd43a3-guide",
+      "url": "https://www.umb.edu/spectralmass/modis-user-guide-v006-and-v0061/mcd43a3-albedo-product/",
+      "status": 200,
+      "retrieved": true,
+      "bytes": 41405,
+      "sha256": "417f22c84c44663d317a306e4ea48983401a1513c2700881f09dd65ae362cc01",
+      "raw_republished": false,
+      "method": "HTTP GET, no credentials"
+    }
+  ],
+  "purpose": "Primary formulas and limits only; no downloaded local snow or twilight field observations."
+}
