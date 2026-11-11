@@ -45,7 +45,8 @@ class SceneSpec:
         allowed = {'schema_version', 'region', 'period', 'mode', 'time', 'observer',
                    'directions', 'atmosphere', 'reference_atmosphere', 'profile',
                    'anchor_v_mag_arcsec2', 'natural_v_mag_arcsec2', 'moon', 'download_missing',
-                   'anchor_observer', 'photometric_calibration', 'spectrum', 'background', 'surface'}
+                   'anchor_observer', 'photometric_calibration', 'spectrum', 'background', 'surface',
+                   'near_field', 'terrain', 'integration'}
         if set(data) - allowed:
             raise DomainError('invalid_input', 'В сценарии есть неизвестные поля.',
                               {'fields': sorted(set(data) - allowed)})
@@ -127,6 +128,41 @@ class SceneSpec:
                     data[key] = validator(data[key])
                 except ValueError as exc:
                     raise DomainError('invalid_' + key, str(exc)) from exc
+        if 'near_field' in data:
+            near = data['near_field']
+            if not isinstance(near, dict) or set(near)-{'radius_m', 'minimum_patch_m', 'quadrature_order'}:
+                raise DomainError('invalid_near_field', 'Проверьте настройки конечных ближних ячеек.')
+            near = {'radius_m': 3000., 'minimum_patch_m': 2., 'quadrature_order': 3, **near}
+            for key, lower, upper in [('radius_m', 1000, 10000), ('minimum_patch_m', 2, 100), ('quadrature_order', 1, 4)]:
+                val = number(near[key], key)
+                if not lower <= val <= upper or (key=='quadrature_order' and int(val)!=val):
+                    raise DomainError('invalid_near_field', f'{key}: вне поддерживаемого диапазона.')
+            near['quadrature_order'] = int(near['quadrature_order'])
+            if observer['height_m'] < .5:
+                raise DomainError('unsupported_height', 'Для конечных ближних источников нужна высота наблюдателя ≥0,5 м над поверхностью.')
+            data['near_field'] = near
+        if 'terrain' in data:
+            terrain = data['terrain']
+            if not isinstance(terrain, dict) or set(terrain)-{'dataset', 'visibility_step_m', 'horizon_range_m'}:
+                raise DomainError('invalid_terrain', 'Проверьте параметры рельефа.')
+            terrain = {'visibility_step_m': 100., 'horizon_range_m': 30000., **terrain}
+            if terrain.get('dataset') not in ['demo-flat', 'demo-ridge', 'petersburg-copdem90', 'madrid-copdem90']:
+                raise DomainError('invalid_terrain', 'Неизвестный закреплённый набор высот.')
+            for key, lower, upper in [('visibility_step_m', 25, 500), ('horizon_range_m', 1000, 50000)]:
+                terrain[key] = number(terrain[key], key)
+                if not lower <= terrain[key] <= upper:
+                    raise DomainError('invalid_terrain', f'{key}: вне поддерживаемого диапазона.')
+            data['terrain'] = terrain
+        if 'integration' in data:
+            origin = data['integration']
+            if (not isinstance(origin, dict) or set(origin)-{'provider', 'version', 'snapshot_id',
+                    'site_elevation_m', 'focused_object', 'altitude_convention', 'artificial_horizon_visible'}
+                    or origin.get('provider') != 'KStars'
+                    or not isinstance(origin.get('snapshot_id'), str)
+                    or len(origin['snapshot_id']) != 64):
+                raise DomainError('invalid_kstars_snapshot', 'Некорректное происхождение сценария KStars.')
+            if type(origin.get('artificial_horizon_visible')) not in [bool, type(None)]:
+                raise DomainError('invalid_kstars_snapshot', 'Некорректная маска горизонта KStars.')
         directions = data.get('directions', [[0, 90], [0, 45], [90, 45], [180, 45], [270, 45]])
         if not isinstance(directions, list) or not 1 <= len(directions) <= 16:
             raise DomainError('invalid_direction', 'Задайте от 1 до 16 направлений.')

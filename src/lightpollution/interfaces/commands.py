@@ -48,6 +48,17 @@ def run_command(args):
         if args.output:
             write_json(args.output, value)
         print(json.dumps(library.catalogue(), ensure_ascii=False, indent=2))
+    elif args.command == 'prepare-terrain':
+        from ..adapters.terrain import prepare_terrain
+        value = prepare_terrain(args.dataset, args.directory)
+        print(json.dumps({k: value[k] for k in ['id', 'shape', 'prepared_sha256',
+                                               'minimum_height_m', 'maximum_height_m']}, indent=2))
+    elif args.command == 'kstars-snapshot':
+        import asyncio
+        from ..adapters.kstars import read_native_snapshot
+        value = asyncio.run(read_native_snapshot())
+        write_json(args.output, value)
+        print(f'Состояние KStars сохранено: {args.output}')
     else:
         data = read_json(args.scene) if args.scene else offline_example()
         if args.calibration:

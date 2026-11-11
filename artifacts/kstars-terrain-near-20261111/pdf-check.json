@@ -1,0 +1,14 @@
+{
+  "theory-from-zero.pdf": {
+    "pages": 46,
+    "replacement_characters": 0,
+    "words_outside_page_safe_margin": [],
+    "sha256": "e12bcaf0ce8bd6b458eaddee82bc6f6bcb42b5dc03de3b53efc410b1cdb15bc3"
+  },
+  "implementation-report.pdf": {
+    "pages": 5,
+    "replacement_characters": 0,
+    "words_outside_page_safe_margin": [],
+    "sha256": "79926d087fae66fb20b84998522683e5fd13121d04c752658e3e12beaa5f7c71"
+  }
+}

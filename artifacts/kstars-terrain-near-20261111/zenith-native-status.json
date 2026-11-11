@@ -1,0 +1,109 @@
+{
+  "busy": false,
+  "integration": {
+    "altitude_convention": "geometric_unrefracted",
+    "artificial_horizon_visible": true,
+    "focused_object": "",
+    "provider": "KStars",
+    "site_elevation_m": 120,
+    "snapshot_id": "96e7223424e6306b921056cd4a547f039d969ae15574e442abdf61c240c9b224",
+    "version": "3.6.2"
+  },
+  "job_id": "9a4bd66faacc44edaa9e18c099d27fd2",
+  "message": "Готово для снимка состояния: 2026-11-11T21:00:00Z",
+  "request": {
+    "anchor_v_mag_arcsec2": 20.5,
+    "atmosphere": {
+      "aerosol_optical_depth": 0.1
+    },
+    "background": {
+      "airglow_fraction": 0.6,
+      "airglow_height_m": 90000,
+      "mode": "airglow_layer",
+      "twilight": "patat2006"
+    },
+    "directions": [
+      [
+        0,
+        90
+      ]
+    ],
+    "download_missing": false,
+    "integration": {
+      "altitude_convention": "geometric_unrefracted",
+      "artificial_horizon_visible": true,
+      "focused_object": "",
+      "provider": "KStars",
+      "site_elevation_m": 120,
+      "snapshot_id": "96e7223424e6306b921056cd4a547f039d969ae15574e442abdf61c240c9b224",
+      "version": "3.6.2"
+    },
+    "mode": "dated",
+    "natural_v_mag_arcsec2": 21.6,
+    "near_field": {
+      "minimum_patch_m": 2,
+      "quadrature_order": 3,
+      "radius_m": 3000
+    },
+    "observer": {
+      "height_m": 2,
+      "latitude_deg": 59.95,
+      "longitude_deg": 30.3
+    },
+    "period": "2025",
+    "profile": "quick",
+    "reference_atmosphere": {},
+    "region": "petersburg-2025",
+    "schema_version": 2,
+    "terrain": {
+      "dataset": "petersburg-copdem90",
+      "horizon_range_m": 30000,
+      "visibility_step_m": 100
+    },
+    "time": "2026-11-11T21:00:00Z"
+  },
+  "sky": {
+    "capabilities": [
+      "relative_background"
+    ],
+    "directions": [
+      {
+        "airglow_relative": 0.8672638624475554,
+        "altitude_deg": 90,
+        "artificial_relative": 236.01915622584207,
+        "azimuth_deg": 0,
+        "background_status": "ok",
+        "background_supported": true,
+        "diffuse_residual_relative": 0.5781759082983703,
+        "low_altitude_caution": false,
+        "moon_relative": 0,
+        "moon_separation_deg": 138.1092160911133,
+        "moon_status": "ok",
+        "moon_supported": true,
+        "natural_relative": 1.4454397707459257,
+        "patat_total_v_mag_arcsec2": null,
+        "raw_transfer_response": 1.454517368161878e-11,
+        "status": "ok",
+        "support_reasons": [],
+        "supported": true,
+        "terrain_obstructed": false,
+        "total_relative": 237.464595996588,
+        "total_v_mag_arcsec2": 16.061002827302644,
+        "twilight_relative": 0
+      }
+    ],
+    "photometry": {
+      "band": {
+        "name": "V",
+        "response_reference": "doi:10.1086/132921; no numerical spectral response imported",
+        "zero_point_system": "KS1991 empirical V convention"
+      },
+      "band_bridge": "effective 550 nm grey transfer shape anchored in V; not a spectral inversion",
+      "diffuse_units": "B/Bref, common reference; linear addition",
+      "extinction_v_mag_airmass": 0.22480869680274598,
+      "reference_v_mag_arcsec2": 22
+    },
+    "spectral_axis": null
+  },
+  "stale": false
+}

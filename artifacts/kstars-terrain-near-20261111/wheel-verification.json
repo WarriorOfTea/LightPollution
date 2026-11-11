@@ -1,0 +1,18 @@
+{
+  "version": "0.5.0",
+  "source_checkout_current_directory": false,
+  "new_models_run_from_installed_wheel": true,
+  "all_installed_package_files_equal_source": true,
+  "compared_files": 65,
+  "runtime_dependencies_checked_against_uv_lock": 36,
+  "terrain_optional_rasterio_required_for_loading_NPZ": false,
+  "stars": 3830,
+  "wheel_sha256": "b26b8b30647685fc530c96ed8e08322a5944d2f04f8e193ff0f8b5ce0b40d315",
+  "terrain_and_finite_source_capabilities": [
+    "relative_background",
+    "stellar_geometry",
+    "relative_stellar_flux",
+    "terrain_height_and_sampled_occlusion",
+    "finite_nearby_emitting_cells"
+  ]
+}

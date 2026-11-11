@@ -26,7 +26,7 @@ from ..physics import Observer, SolverSettings
 from ..skyview import load_stars
 
 ROOT = Path(__file__).resolve().parents[1]
-MODEL_VERSION = 'natural-twilight-snow-1'
+MODEL_VERSION = 'terrain-finite-near-field-kstars-1'
 PROFILES = {'quick': (SolverSettings(96, 12), 24),
             'standard': (SolverSettings(192, 24), 12)}
 
@@ -97,6 +97,25 @@ class Planner:
         data, resolved = spec.to_dict(), spec.resolved()
         anchor_observer = Observer(**data['anchor_observer']) if 'anchor_observer' in data else region_anchor(entry)
         resolved['anchor_observer'] = asdict(anchor_observer)
+        terrain = None
+        solver = self.solver
+        observer = spec.observer
+        if 'terrain' in data:
+            from ..adapters.terrain import load_terrain
+            from ..models.topographic_transfer import TopographicSolver
+            terrain = load_terrain(data['terrain']['dataset'], self.workspace.parent/'terrain')
+            try:
+                observer = terrain.observer(observer)
+                anchor_observer = terrain.observer(anchor_observer)
+            except ValueError as exc:
+                raise DomainError('terrain_coverage', str(exc)) from exc
+            solver = TopographicSolver(terrain, data['terrain']['visibility_step_m'])
+            resolved['observer_msl'] = asdict(observer)
+            resolved['anchor_observer_msl'] = asdict(anchor_observer)
+            resolved['height_datum'] = 'Input height is AGL above DSM; transfer radial height approximates EGM2008 orthometric MSL on a sphere.'
+            resolved['terrain'] = terrain.metadata
+            if min(spec.atmosphere.top_m, atmosphere_from_mapping(data['reference_atmosphere']).top_m) <= max(observer.height_m, anchor_observer.height_m):
+                raise DomainError('unsupported_atmosphere', 'Верх атмосферы должен находиться выше наблюдателя и опорной точки с учётом DSM.')
         library = None
         spectral_config = data.get('spectrum')
         if spectral_config is not None:
@@ -108,13 +127,14 @@ class Planner:
         group = self.sources.prepare(data['region'], data['period'], spec.observer,
                                      allow_download=data['download_missing'])
         check()
-        transfer_code = _code_identity(['physics.py', 'models/transfer.py', 'models/spectra.py', 'sources.py'])
+        transfer_code = _code_identity(['physics.py', 'models/transfer.py', 'models/spectra.py', 'sources.py',
+                                       'models/terrain.py', 'models/topographic_transfer.py'])
         scene_code = _code_identity(['models/observation.py', 'photometry.py', 'moonlight.py',
                                      'skyview.py', 'observation.py', 'catalogues/bsc5.csv',
                                      'application/planner.py', 'domain/scene.py', 'domain/calibration.py',
                                      'adapters/spectral_library.py', 'models/background.py', 'models/surface.py'])
         request_key = content_key({'scene': resolved, 'source_basis': group.identity,
-            'transfer_code': transfer_code, 'scene_code': scene_code, 'solver': self.solver.version,
+            'transfer_code': transfer_code, 'scene_code': scene_code, 'solver': solver.version,
             'application_model': MODEL_VERSION, 'spectral_library': library.identity if library else None})
         scene_path = self.workspace / 'cache/scenes' / (request_key + '.json')
         cached = _read_checked(scene_path)
@@ -127,7 +147,7 @@ class Planner:
 
         settings, block = PROFILES[data['profile']]
         surface = data.get('surface')
-        observer, atmosphere = spec.observer, spec.atmosphere
+        atmosphere = spec.atmosphere
         reference_atmosphere = atmosphere_from_mapping(data['reference_atmosphere'])
         azimuths = np.asarray(sorted({0., 90., 180., 270., *[v[0] for v in data['directions']]}))
         altitudes = np.asarray(sorted({10., 90., *[v[1] for v in data['directions']]}))
@@ -141,13 +161,19 @@ class Planner:
                      'wavelength_nm': library.wavelengths.tolist() if library else [550.],
                      'angstrom_exponent': spectral_config['angstrom_exponent'] if library else None}
         scope = {'source_basis_id': group.identity, 'transfer_code': transfer_code,
-                 'solver_version': self.solver.version, 'transport': transport,
+                 'solver_version': solver.version, 'transport': transport,
                  'band': 'Generic/Johnson.V energy response' if library else 'effective_V_550nm',
                  'spectral_library': library.identity if library else None,
                  'reference_v_mag_arcsec2': 22., 'height_datum': resolved['height_datum']}
         if surface:
             scope['surface_reference'] = {'model': 'fixed_lamp_first_lambertian_ground_reflection_1',
                 'code': _code_identity(['models/surface.py']), **surface_reference(surface)}
+        if 'near_field' in data:
+            scope['near_field'] = data['near_field']
+        if terrain:
+            scope['terrain'] = {'id': data['terrain']['dataset'],
+                'prepared_sha256': terrain.metadata.get('prepared_sha256', content_key(terrain.metadata)),
+                'visibility_step_m': data['terrain']['visibility_step_m']}
 
         def kernel(period, az, alt, atm, numerical, aggregation, target=None):
             nonlocal completed
@@ -161,12 +187,21 @@ class Planner:
             if selected_group.identity != group.identity:
                 raise DomainError('incompatible_scale', 'Источники опорной и текущей точки имеют разные нормировки.')
             direction = (float(az), float(alt)) if alt <= 10 else None
-            sources, provenance = selected_group.select(period, aggregation, direction)
+            near = None
+            if 'near_field' in data:
+                near = {**data['near_field'], 'observer_agl_m': (
+                    data.get('anchor_observer', asdict(region_anchor(entry)))['height_m']
+                    if target == anchor_observer else data['observer']['height_m'])}
+            sources, provenance = (selected_group.select(period, aggregation, direction, finite_cells=near)
+                                   if near else selected_group.select(period, aggregation, direction))
+            if terrain:
+                sources = terrain.lift_sources(sources)
             source_digest = hashlib.sha256(sources.positions_m.tobytes() + sources.power.tobytes()).hexdigest()
             identity = content_key({'source_basis': group.identity, 'source_arrays': source_digest,
                 'period': period, 'observer': asdict(target), 'atmosphere': asdict(atm),
                 'settings': asdict(numerical), 'block': aggregation, 'azimuth': float(az),
-                'altitude': float(alt), 'solver': self.solver.version, 'code': transfer_code, 'transport': transport})
+                'altitude': float(alt), 'solver': solver.version, 'code': transfer_code, 'transport': transport,
+                'terrain': scope.get('terrain'), 'near_field': data.get('near_field')})
             path = self.workspace / 'cache/transfer' / (identity + '.json')
             stored = _read_checked(path)
             try:
@@ -180,12 +215,12 @@ class Planner:
                 stats['transfer_hits'] += 1
             else:
                 if library:
-                    value = np.asarray(self.solver.spectrum(target, sources, float(az), float(alt), atm, numerical,
+                    value = np.asarray(solver.spectrum(target, sources, float(az), float(alt), atm, numerical,
                                         library.wavelengths, spectral_config['angstrom_exponent']), dtype=float)
                     if value.shape != library.wavelengths.shape:
                         raise DomainError('invalid_solver_output', 'Решатель вернул спектр другой размерности.')
                 else:
-                    value = float(self.solver.direction(target, sources, float(az), float(alt), atm, numerical))
+                    value = float(solver.direction(target, sources, float(az), float(alt), atm, numerical))
                 if np.any(~np.isfinite(value)) or np.any(np.asarray(value) < 0):
                     raise DomainError('invalid_solver_output', 'Решатель вернул недопустимое значение.')
                 check()
@@ -262,10 +297,11 @@ class Planner:
                         direct_raw[row, col] = band_integral(library.wavelengths, direct*mix, library.responses['johnson_v']) if library else direct
                         reflected_raw[row, col] = band_integral(library.wavelengths, reflected*mix, library.responses['johnson_v']) if library else reflected
         check()
-        _, source_provenance = group.select(data['period'], block)
+        _, source_provenance = (group.select(data['period'], block, finite_cells={**data['near_field'],
+            'observer_agl_m': data['observer']['height_m']}) if 'near_field' in data else group.select(data['period'], block))
         metadata = {'observer': asdict(observer), 'atmosphere': asdict(atmosphere),
                     'source_basis_id': group.identity, 'provenance': source_provenance,
-                    'solver': asdict(settings), 'solver_version': self.solver.version}
+                    'solver': asdict(settings), 'solver_version': solver.version}
         grid = TransferGrid(azimuths, altitudes, raw, metadata,
                             content_key({'metadata': metadata, 'values': raw.tolist()}))
         legacy = {'schema_version': 1, 'mode': data['mode'], 'observer': asdict(observer),
@@ -344,6 +380,63 @@ class Planner:
                 spectral_output['source_power_scale_reference'] = 'snow_free_upward_power_before_observer_exclusions'
                 spectral_output['source_lamp_power_scale_W'] = (coefficient*reference_radiance /
                     surface_balance(surface, reference=True)['snow_free_upward_fraction_of_lamp_power'])
+        terrain_output = None
+        if terrain:
+            azimuth_axis = np.arange(0., 360., 2.)
+            try:
+                horizon = terrain.horizon(observer, azimuth_axis, data['terrain']['horizon_range_m'],
+                                          data['terrain']['visibility_step_m'])
+            except ValueError as exc:
+                raise DomainError('terrain_coverage', str(exc)) from exc
+            def obstruction(az, alt):
+                # Exact sampled ray visibility for the actual requested sightline.
+                end = observer.position + 1000000*observer.direction(float(az), float(alt))
+                return not bool(terrain.visible(observer.position, end, data['terrain']['visibility_step_m']))
+            blocked = []
+            if stars:
+                endpoints = np.asarray([observer.position+1000000*observer.direction(
+                    row['azimuth_deg'], row['altitude_deg']) for row in stars])
+                visible_stars = terrain.visible(observer.position, endpoints, data['terrain']['visibility_step_m'])
+                blocked = [row for row, visible in zip(stars, visible_stars, strict=True) if not visible]
+            rejected = {r['hr'] for r in blocked}
+            stars = [r for r in stars if r['hr'] not in rejected]
+            observation['stars_metadata']['blocked_by_terrain'] = len(blocked)
+            observation['stars_metadata']['exported'] = len(stars)
+            if library:
+                observation['stars_metadata']['spectral_counts_before_terrain_mask'] = dict(stellar_metadata)
+                visible_counts = {'measured': 0, 'catalogue_continuum': 0, 'unavailable': 0}
+                for star in stars:
+                    recipe = star.get('spectrum_recipe', {}).get('kind')
+                    kind = ('measured' if recipe == 'measured_reference_shape' else
+                            'catalogue_continuum' if recipe == 'B_V_fitted_Planck_continuum' else 'unavailable')
+                    visible_counts[kind] += 1
+                visible_summary = {**stellar_metadata, **visible_counts,
+                    'available': len(stars)-visible_counts['unavailable'], 'total_catalogue_rows': len(stars),
+                    'scope': 'exported stars after DSM visibility mask'}
+                observation['stars_metadata']['spectral'] = visible_summary
+                spectral_output['stellar_summary'] = visible_summary
+                spectral_output['stellar_examples'] = [row for row in spectral_output['stellar_examples'] if row['hr'] not in rejected]
+            for direction in observation['directions']:
+                hidden = obstruction(direction['azimuth_deg'], direction['altitude_deg'])
+                direction['terrain_obstructed'] = hidden
+                if hidden:
+                    direction.setdefault('support_reasons', []).append('terrain_obstructed_unknown_ground_radiance')
+                    direction.update(supported=False, status='terrain_obstructed_unknown_ground_radiance',
+                                     total_relative=None, total_v_mag_arcsec2=None)
+            terrain_output = {'dataset': terrain.metadata, 'horizon_azimuth_deg': azimuth_axis.tolist(),
+                'horizon_altitude_deg': horizon.tolist(), 'range_m': data['terrain']['horizon_range_m'],
+                'visibility_step_m': data['terrain']['visibility_step_m'],
+                'observer_msl': asdict(observer), 'observer_agl_m': data['observer']['height_m'],
+                'source_to_scatter_occlusion': True, 'scatter_to_observer_occlusion': True,
+                'source_facets_horizontal': True, 'individual_buildings_or_lamps_reconstructed': False,
+                'blocked_stars': len(blocked), 'physical_error_bound': None}
+            observation['terrain_model'] = terrain_output
+            observation['assumptions_and_limitations'].append('DSM_sampled_occlusion_and_spherical_EGM2008_approximation_not_city_mesh')
+        if data.get('integration', {}).get('artificial_horizon_visible') is False:
+            for direction in observation['directions']:
+                direction.setdefault('support_reasons', []).append('kstars_artificial_horizon_obstructed')
+                direction.update(supported=False, status='kstars_artificial_horizon_obstructed',
+                                 total_relative=None, total_v_mag_arcsec2=None)
         resolved['scale_origin'] = scale_origin
         result = {'schema_version': 1, 'application': 'lightpollution-mvp', 'model_version': MODEL_VERSION,
             'request': data, 'resolved_scene': resolved,
@@ -352,8 +445,9 @@ class Planner:
             'observation': observation, 'calibration': calibration,
             'comparison_basis_id': content_key({'scope': scope, 'source_coefficient': coefficient,
                 'origin': scale_origin, 'provided_id': provided['id'] if provided else None}),
-            'data_provenance': {'region': entry, 'QA': group.report, 'source_basis_id': group.identity,
-                                'source_period': data['period'], 'geographic_terrain_reconstructed': False},
+            'data_provenance': {'region': entry, 'QA': {**group.report, **({'local_exclusion_radius_m': 0} if 'near_field' in data else {})},
+                                'source_basis_id': group.identity, 'source_period': data['period'],
+                                'geographic_terrain_reconstructed': terrain is not None},
             'capabilities': ['relative_background'] + (['stellar_geometry', 'relative_stellar_flux']
                                                       if data['mode'] == 'dated' else []),
             'unavailable_capabilities': ['eye_detection', 'camera_electrons', 'spectral_radiance', 'validated_display'],
@@ -371,6 +465,13 @@ class Planner:
                 result['capabilities'].append('bounded_empirical_twilight')
         if surface:
             result['capabilities'].append('fixed_lamp_snow_scenarios')
+        if terrain:
+            result['terrain'] = terrain_output
+            result['capabilities'].append('terrain_height_and_sampled_occlusion')
+        if 'near_field' in data:
+            result['capabilities'].append('finite_nearby_emitting_cells')
+        if 'integration' in data:
+            result['integration'] = data['integration']
         _write_checked(scene_path, result)
         progress({'phase': 'Готово', 'completed': total, 'total': total})
         return RunResult(result)

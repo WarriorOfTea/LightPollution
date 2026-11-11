@@ -52,6 +52,11 @@ def make_parser() -> argparse.ArgumentParser:
     shared.add_argument('--output',type=Path,required=True)
     spectral=commands.add_parser('spectral-library',help='Inspect verified offline lamp, band and stellar spectra')
     spectral.add_argument('--output',type=Path)
+    terrain=commands.add_parser('prepare-terrain',help='Explicitly download and prepare a checked Copernicus DSM region')
+    terrain.add_argument('--dataset',choices=['petersburg-copdem90','madrid-copdem90'],required=True)
+    terrain.add_argument('--directory',type=Path,default=Path('data/terrain'))
+    snapshot=commands.add_parser('kstars-snapshot',help='Read the atomic live context of the native KStars dock over D-Bus')
+    snapshot.add_argument('--output',type=Path,required=True)
     cat=commands.add_parser('catalogue',help='Inspect public NASA file metadata; no authentication needed')
     cat.add_argument('--year',type=int,default=2025)
     cat.add_argument('--month',type=int,choices=range(1,13),help='Monthly VNP46A3; omit for annual VNP46A4')
@@ -153,7 +158,7 @@ def main():
     parser=make_parser()
     args=parser.parse_args()
     try:
-        if args.command in ('plan','example','datasets','serve','compare','fit-photometry','spectral-library'):
+        if args.command in ('plan','example','datasets','serve','compare','fit-photometry','spectral-library','prepare-terrain','kstars-snapshot'):
             from .interfaces.commands import run_command
             run_command(args)
         elif args.command=='catalogue':

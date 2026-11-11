@@ -1,0 +1,174 @@
+{
+  "files": [
+    {
+      "path": "KStars-source-audit.json",
+      "bytes": 2355,
+      "sha256": "bb91b4a9390d9a5981418db8970da736515a0a05ed0e24a9803ee8b3870118a4"
+    },
+    {
+      "path": "README.md",
+      "bytes": 17278,
+      "sha256": "d298f11dc16ad3bd99b0dd9db034bd77926984c98c7b740f07742561bd111373"
+    },
+    {
+      "path": "browser-import-scene.json",
+      "bytes": 1132,
+      "sha256": "5ee58c0c33d533a17bcc55aa4f70fa0b3f9a8a7fd4e3f5e59d060915c0ef6cab"
+    },
+    {
+      "path": "browser-spatial-controls.png",
+      "bytes": 190031,
+      "sha256": "a2d79253945012b7c11a05bb013cd6818b04e42be1726fe83caa25573da80afe"
+    },
+    {
+      "path": "browser-verification.json",
+      "bytes": 407,
+      "sha256": "9accbc5596bbcbe680364be179a01e3e9865101cac824bff035826a99cafa2a6"
+    },
+    {
+      "path": "finite-cell-convergence.json",
+      "bytes": 1790,
+      "sha256": "ed383ed7e15f58cde3f71a7330ec9bec73e9a38647ae261a16d017e616401fa6"
+    },
+    {
+      "path": "implementation-report.pdf",
+      "bytes": 551059,
+      "sha256": "79926d087fae66fb20b84998522683e5fd13121d04c752658e3e12beaa5f7c71"
+    },
+    {
+      "path": "kstars-native-panel.png",
+      "bytes": 123486,
+      "sha256": "32e06d29dae9ac883149600746ea7a6ddeace61c5c02ed22797f9aafe4f01ef9"
+    },
+    {
+      "path": "kstars-native-south45.png",
+      "bytes": 127652,
+      "sha256": "ab4d9aa477e3c6fbaa09fb330ac888c4c67560b83fb4983a8ecc39aa40f7452a"
+    },
+    {
+      "path": "kstars-native-window.png",
+      "bytes": 267660,
+      "sha256": "9fb7f352850415571db31480ff0fa6e6d5d21a5933742d4d25aa15353dbbdbae"
+    },
+    {
+      "path": "madrid-copdem90-manifest.json",
+      "bytes": 6836,
+      "sha256": "36ba177bfa4b369d92c472ec32adef6d0a08bbcd75ab3482a952b4295ee41598"
+    },
+    {
+      "path": "native-build-provenance.json",
+      "bytes": 211562,
+      "sha256": "97359c1e94b3d85659c72a390ed78e89ff21e54a3e79f595b28d12cdfd4069cd"
+    },
+    {
+      "path": "native-initial-snapshot.json",
+      "bytes": 501,
+      "sha256": "cc64b287fe4e4d8b5c3e77c0aaef384ba4f65a97e73f2051c2e77e3d6c12bd5a"
+    },
+    {
+      "path": "native-location-API.json",
+      "bytes": 129,
+      "sha256": "90043ecef05655dcde6764f542ef6194cf9a3eda45cf404a42b9f0be714abbbb"
+    },
+    {
+      "path": "native-performance.json",
+      "bytes": 11988,
+      "sha256": "6e58512141e50821c6cd470313d22e5299ae16b5b2f4840dbded93a2fdb8e093"
+    },
+    {
+      "path": "native-star-catalogue-snapshot.json",
+      "bytes": 662,
+      "sha256": "e0b01d86196305f266edb72d0f832df997cdf3d6c0a2e8cc85119f1741076cc2"
+    },
+    {
+      "path": "native-verification.json",
+      "bytes": 924,
+      "sha256": "64b4e8739a4cf87d48e11372872218b1f836484ff41e95d05c126a30f3d6369f"
+    },
+    {
+      "path": "numerical-checks.png",
+      "bytes": 158255,
+      "sha256": "8ff184d442213dd3fb55b1c60be70d82398768dac0ba35d2c131cd73626032a6"
+    },
+    {
+      "path": "pdf-check.json",
+      "bytes": 419,
+      "sha256": "4707489ffd8f8bdccb0c90e21eea01493031ea294f3e8a3ea998ea8cd4191d39"
+    },
+    {
+      "path": "petersburg-copdem90-manifest.json",
+      "bytes": 13678,
+      "sha256": "5ad3284ffe907436bfe1655bab81b8337e0bba8314216c56e07b980d6bbbaa68"
+    },
+    {
+      "path": "predeclared-criteria.json",
+      "bytes": 407,
+      "sha256": "9a101ad12c280047639b492bc8d0c1127bab14f3819960bb836f2d1376c9e56a"
+    },
+    {
+      "path": "python-verification.json",
+      "bytes": 769,
+      "sha256": "507614a90df7dad12a1b77f7af2454d156b64b75fe6abaf0020d2bb2260f8547"
+    },
+    {
+      "path": "real-DSM-transfer.json",
+      "bytes": 26953,
+      "sha256": "3df4c0c818aed47ca2b9f4b8a3f85f65f3e29017b2bdd436926a1b48eb477992"
+    },
+    {
+      "path": "report-sample.png",
+      "bytes": 98417,
+      "sha256": "1785a0728708cb7c023feb29caf26336e74d256cb632a3bc51393fc83fded0e1"
+    },
+    {
+      "path": "south45-native-status.json",
+      "bytes": 3222,
+      "sha256": "6c77fe3157eaee5ad03ebfa886d08b6e4a744a2466ae72b664d927cf04d3ab38"
+    },
+    {
+      "path": "south45-result.json",
+      "bytes": 1368636,
+      "sha256": "b35e3b5e8433848a7786485e8fa5c4867b0c93cba6a8b1906a9b4c1752709010"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 8315,
+      "sha256": "795913d1e5e93d9c074e66b37b28a69bd13e57075fe850aed114ddb1f0d45249"
+    },
+    {
+      "path": "theory-from-zero.md",
+      "bytes": 211543,
+      "sha256": "d92f75ac55abb085ef6877e8f15d89a17630e452442c6b5c6e722ccb2a66da53"
+    },
+    {
+      "path": "theory-from-zero.pdf",
+      "bytes": 269581,
+      "sha256": "e12bcaf0ce8bd6b458eaddee82bc6f6bcb42b5dc03de3b53efc410b1cdb15bc3"
+    },
+    {
+      "path": "theory-sample.png",
+      "bytes": 97287,
+      "sha256": "c6ade9c2da2cd2882893bdc1f032e189fa6eb4e580caf71fe9da48df841ae17d"
+    },
+    {
+      "path": "theory-source-check.json",
+      "bytes": 1190,
+      "sha256": "08aba272397df5e9faa40958a4f64802edbc26e8eb18ecabb4726cb5e0ecca19"
+    },
+    {
+      "path": "wheel-verification.json",
+      "bytes": 624,
+      "sha256": "919887c84678a54d1bbdf6f59eba7b9fe85e384815a768f2fb783fa14ae2d6a6"
+    },
+    {
+      "path": "zenith-native-status.json",
+      "bytes": 3218,
+      "sha256": "9b069d1dc3da5f2e90c0ed5c75befb9d5cadab1b87c765a2779d76649a6b1d22"
+    },
+    {
+      "path": "zenith-result.json",
+      "bytes": 1368623,
+      "sha256": "7aa97f0fa03e65ce39bc90e003c251ef0446368fcce1f3f1500e77e37f9f66a8"
+    }
+  ]
+}

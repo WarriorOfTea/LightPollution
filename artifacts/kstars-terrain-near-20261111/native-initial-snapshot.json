@@ -1,0 +1,21 @@
+{
+  "altitude_convention": "geometric_unrefracted",
+  "artificial_horizon_visible": true,
+  "focus": {
+    "altitude_deg": 90,
+    "azimuth_deg": 0,
+    "dec_jnow_deg": 59.949999999999996,
+    "fov_deg": 151.74380493164062,
+    "object_name": "",
+    "ra_jnow_deg": 36.31860174944988
+  },
+  "kstars_version": "3.6.2",
+  "location": {
+    "elevation_m": 120,
+    "latitude_deg": 59.95,
+    "longitude_deg": 30.3,
+    "name": "GPS Location"
+  },
+  "schema_version": 1,
+  "utc": "2026-11-11T21:00:00Z"
+}

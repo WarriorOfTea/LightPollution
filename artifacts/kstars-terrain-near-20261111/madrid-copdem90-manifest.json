@@ -1,0 +1,228 @@
+{
+  "id": "madrid-copdem90",
+  "kind": "Copernicus GLO-90 DSM",
+  "vertical_datum": "EGM2008 orthometric metres",
+  "horizontal_crs": "EPSG:4326",
+  "source_release": "AWS Copernicus DEM 2021 release",
+  "attribution": "Copernicus DEM GLO-90; © DLR e.V. 2010–2014 and © Airbus Defence and Space GmbH 2014–2018; provided under the Copernicus DEM licence. Modified: bilinear common-grid regional mosaic. https://registry.opendata.aws/copernicus-dem/",
+  "bounds": [
+    -5,
+    39,
+    -2,
+    42
+  ],
+  "shape": [
+    3596,
+    3596
+  ],
+  "minimum_height_m": 352.0,
+  "maximum_height_m": 2416.38671875,
+  "native_nominal_resolution_m": 90,
+  "prepared_grid_degrees": 0.0008333333333333334,
+  "cropped_unobserved_outer_border_cells": 2,
+  "upsampling_adds_no_information": true,
+  "source_tiles": [
+    {
+      "filename": "Copernicus_DSM_COG_30_N39_00_W005_00_DEM.tif",
+      "url": "https://copernicus-dem-90m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_30_N39_00_W005_00_DEM/Copernicus_DSM_COG_30_N39_00_W005_00_DEM.tif",
+      "bytes": 5068779,
+      "sha256": "e11dc092c453851eeb654f542bf57d645ee97e6869ea18f7272bb9614cb6abe4",
+      "transform": [
+        0.0008333333333333334,
+        0.0,
+        -5.000416666666666,
+        0.0,
+        -0.0008333333333333334,
+        40.000416666666666,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        1200,
+        1200
+      ],
+      "AREA_OR_POINT": "Point"
+    },
+    {
+      "filename": "Copernicus_DSM_COG_30_N39_00_W004_00_DEM.tif",
+      "url": "https://copernicus-dem-90m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_30_N39_00_W004_00_DEM/Copernicus_DSM_COG_30_N39_00_W004_00_DEM.tif",
+      "bytes": 4574978,
+      "sha256": "8a34263390d51f438d776648780570571ca6389808426546d39d6dd6e67ee201",
+      "transform": [
+        0.0008333333333333334,
+        0.0,
+        -4.000416666666666,
+        0.0,
+        -0.0008333333333333334,
+        40.000416666666666,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        1200,
+        1200
+      ],
+      "AREA_OR_POINT": "Point"
+    },
+    {
+      "filename": "Copernicus_DSM_COG_30_N39_00_W003_00_DEM.tif",
+      "url": "https://copernicus-dem-90m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_30_N39_00_W003_00_DEM/Copernicus_DSM_COG_30_N39_00_W003_00_DEM.tif",
+      "bytes": 4664699,
+      "sha256": "04f0b1da9830adc9eaa6dee4e3ff6dceaafd0dd7396eace106d4def93e419771",
+      "transform": [
+        0.0008333333333333334,
+        0.0,
+        -3.0004166666666667,
+        0.0,
+        -0.0008333333333333334,
+        40.000416666666666,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        1200,
+        1200
+      ],
+      "AREA_OR_POINT": "Point"
+    },
+    {
+      "filename": "Copernicus_DSM_COG_30_N40_00_W005_00_DEM.tif",
+      "url": "https://copernicus-dem-90m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_30_N40_00_W005_00_DEM/Copernicus_DSM_COG_30_N40_00_W005_00_DEM.tif",
+      "bytes": 4922319,
+      "sha256": "6741eafe928c4f1ae931c221a99806ae2acb89b96bcbf738c2424980a3da53ad",
+      "transform": [
+        0.0008333333333333334,
+        0.0,
+        -5.000416666666666,
+        0.0,
+        -0.0008333333333333334,
+        41.000416666666666,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        1200,
+        1200
+      ],
+      "AREA_OR_POINT": "Point"
+    },
+    {
+      "filename": "Copernicus_DSM_COG_30_N40_00_W004_00_DEM.tif",
+      "url": "https://copernicus-dem-90m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_30_N40_00_W004_00_DEM/Copernicus_DSM_COG_30_N40_00_W004_00_DEM.tif",
+      "bytes": 4951630,
+      "sha256": "a0afcd0cddedd7ed40f2134b4530e9c1c1d40ed334cb052e7d71499169f063da",
+      "transform": [
+        0.0008333333333333334,
+        0.0,
+        -4.000416666666666,
+        0.0,
+        -0.0008333333333333334,
+        41.000416666666666,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        1200,
+        1200
+      ],
+      "AREA_OR_POINT": "Point"
+    },
+    {
+      "filename": "Copernicus_DSM_COG_30_N40_00_W003_00_DEM.tif",
+      "url": "https://copernicus-dem-90m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_30_N40_00_W003_00_DEM/Copernicus_DSM_COG_30_N40_00_W003_00_DEM.tif",
+      "bytes": 5030470,
+      "sha256": "ee3fa6b2735a9235ccb5dd2493104736744ee2977ba6f3c3a7da4555921548bb",
+      "transform": [
+        0.0008333333333333334,
+        0.0,
+        -3.0004166666666667,
+        0.0,
+        -0.0008333333333333334,
+        41.000416666666666,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        1200,
+        1200
+      ],
+      "AREA_OR_POINT": "Point"
+    },
+    {
+      "filename": "Copernicus_DSM_COG_30_N41_00_W005_00_DEM.tif",
+      "url": "https://copernicus-dem-90m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_30_N41_00_W005_00_DEM/Copernicus_DSM_COG_30_N41_00_W005_00_DEM.tif",
+      "bytes": 4637310,
+      "sha256": "93e46fdfc3fd79cf7a77917e768152860b9e7f2ab1f4d899cff3af3ad11f80db",
+      "transform": [
+        0.0008333333333333334,
+        0.0,
+        -5.000416666666666,
+        0.0,
+        -0.0008333333333333334,
+        42.000416666666666,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        1200,
+        1200
+      ],
+      "AREA_OR_POINT": "Point"
+    },
+    {
+      "filename": "Copernicus_DSM_COG_30_N41_00_W004_00_DEM.tif",
+      "url": "https://copernicus-dem-90m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_30_N41_00_W004_00_DEM/Copernicus_DSM_COG_30_N41_00_W004_00_DEM.tif",
+      "bytes": 4880276,
+      "sha256": "578a04aa571d38cc89a0bb39ebd99f559172e93555c46f48f11d16ce43aab96c",
+      "transform": [
+        0.0008333333333333334,
+        0.0,
+        -4.000416666666666,
+        0.0,
+        -0.0008333333333333334,
+        42.000416666666666,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        1200,
+        1200
+      ],
+      "AREA_OR_POINT": "Point"
+    },
+    {
+      "filename": "Copernicus_DSM_COG_30_N41_00_W003_00_DEM.tif",
+      "url": "https://copernicus-dem-90m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_30_N41_00_W003_00_DEM/Copernicus_DSM_COG_30_N41_00_W003_00_DEM.tif",
+      "bytes": 4834154,
+      "sha256": "fa0e8f69362fa33c91f398e66449e9119a1d15dc0615e6f1a197d39aead31169",
+      "transform": [
+        0.0008333333333333334,
+        0.0,
+        -3.0004166666666667,
+        0.0,
+        -0.0008333333333333334,
+        42.000416666666666,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        1200,
+        1200
+      ],
+      "AREA_OR_POINT": "Point"
+    }
+  ],
+  "prepared_sha256": "6ec9d174eb716ebde35b175b69fbc6a3089d2c59d674450fd2ddecee00ea6c18",
+  "build": "rasterio merge bilinear; checked actual COG affine transforms",
+  "spherical_geoid_approximation": true,
+  "is_bare_ground_DTM": false
+}

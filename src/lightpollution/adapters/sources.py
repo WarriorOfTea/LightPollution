@@ -41,8 +41,8 @@ class PreparedSources:
         self.reference_period = entry['reference_period']
         self._arrays, self._selected = {}, {}
 
-    def select(self, period, block=12, direction=None):
-        key = (period, block, direction)
+    def select(self, period, block=12, direction=None, *, finite_cells=None):
+        key = (period, block, direction, json.dumps(finite_cells, sort_keys=True))
         if key in self._selected:
             return self._selected[key]
         if self.entry['kind'] == 'synthetic':
@@ -55,8 +55,8 @@ class PreparedSources:
                 self._arrays[period] = load_region(self.paths[period])
             arrays, bounds, metadata = self._arrays[period]
             sources, provenance = regional_sources(arrays, bounds, self.observer, block=block,
-                exclude_radius_m=3000, include_water=False, refinement_direction=direction,
-                normalisation_radiance_area=metadata['reference_radiance_area_sum'])
+                exclude_radius_m=0 if finite_cells else 3000, include_water=False, refinement_direction=direction,
+                normalisation_radiance_area=metadata['reference_radiance_area_sum'], finite_cells=finite_cells)
             multiplier = metadata.get('source_power_multiplier', 1.)
             provenance.update({'input_kind': 'blackmarble', 'source_basis_id': self.identity,
                                'source_power_multiplier': multiplier,

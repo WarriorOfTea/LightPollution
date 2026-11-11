@@ -1,0 +1,77 @@
+{
+  "commit": "50e6b7b70078da6107616671b019f0eccbca1266",
+  "files": [
+    {
+      "path": "kstars/org.kde.kstars.xml",
+      "status": 200,
+      "sha256": "28ca1f7374a90a799f2823f8bfa12d74f891c7ca202b834a528b2646a9cf8b77"
+    },
+    {
+      "path": "kstars/kstars.h",
+      "status": 200,
+      "sha256": "f6357031efb1b8e5a89475b4f155fc037278e51cf50fcceeb5b241ef50a3afda"
+    },
+    {
+      "path": "kstars/kstarsdbus.cpp",
+      "status": 200,
+      "sha256": "d461565060750576cf0de1c3df04d6c863502d5888b12fd5ec01f1a8d2a94397"
+    },
+    {
+      "path": "kstars/org.kde.kstars.SimClock.xml",
+      "status": 200,
+      "sha256": "c22810955e0742a6c93e387b32e1d7214ca73e3bd789bb96546b320e27a099ae"
+    },
+    {
+      "path": "kstars/simclock.h",
+      "status": 404,
+      "sha256": null
+    },
+    {
+      "path": "kstars/kstars.kcfg",
+      "status": 200,
+      "sha256": "67d1c1d2a5b7da80f86f797d09ad4d96179bf40a5e4e72261a2e1b9588355a98"
+    },
+    {
+      "path": "kstars/skycomponents/terraincomponent.cpp",
+      "status": 200,
+      "sha256": "b3a1ee40b33ef4b060a58d9446fc325cd76d488604ff490aac1d7890f972039d"
+    },
+    {
+      "path": "kstars/skycomponents/artificialhorizoncomponent.cpp",
+      "status": 200,
+      "sha256": "e8f96e255def23389cfa72e701bccf779b9494171c5e601e069d6e6417505386"
+    },
+    {
+      "path": "kstars/tools/execute.cpp",
+      "status": 404,
+      "sha256": null
+    },
+    {
+      "path": "kstars/kstarsactions.cpp",
+      "status": 200,
+      "sha256": "d8ef317031288264f402dae9c6f415880df7832cf5fc21fd6fba5e4f5560f9f5"
+    },
+    {
+      "path": "kstars/kstarsinit.cpp",
+      "status": 200,
+      "sha256": "82eeb4b115d3f01d8d816f87cd2583a7d6f05b29a42c47e4c9ae15a3a83abd12"
+    },
+    {
+      "path": "kstars/skymapdrawabstract.cpp",
+      "status": 200,
+      "sha256": "ec0ac45c7aa6fc85f98f9bbedc030ea87a58268fd8affd7bf0c983f702a00723"
+    },
+    {
+      "path": "kstars/time/simclock.h",
+      "status": 200,
+      "sha256": "d81f5b42d22587ce731ce61ebd61da2cb3628d82431ba50566ec0d439275f718",
+      "note": "Corrected source path after initial lookup."
+    },
+    {
+      "path": "kstars/skycomponents/artificialhorizoncomponent.h",
+      "status": 200,
+      "sha256": "cbb94987256625da162ae2df6d9fd89bb6b4f02969b8774084cf9ca4b2761a6a",
+      "note": "Corrected source path after initial lookup."
+    }
+  ]
+}

@@ -20,8 +20,17 @@
       <label>Источники освещения<select id="period" required></select></label>
       <div class="pair"><label>Широта, °<input id="latitude" type="number" step="any" min="-90" max="90" required></label>
       <label>Долгота, °<input id="longitude" type="number" step="any" min="-180" max="180" required></label></div>
-      <label>Высота над условной поверхностью, м<input id="height" type="number" min="0" max="100" step="any" value="20" required></label>
-      <p class="hint">Плоская местность: источники на общем уровне. Реальные горы и здания пока не учитываются.</p>
+      <label>Высота над поверхностью, AGL, м<input id="height" type="number" min="0" max="100" step="any" value="20" required></label>
+      <p class="hint">При включённом DSM высота отсчитывается от его поверхности; высота места над морем добавляется отдельно.</p>
+      <details><summary>Рельеф и ближние источники</summary>
+        <label>Поверхность<select id="terrain-dataset"><option value="">Общая сферическая поверхность</option><option value="petersburg-copdem90">Петербург · Copernicus DSM 90 м</option><option value="madrid-copdem90">Мадрид · Copernicus DSM 90 м</option><option value="demo-flat">Учебная плоская поверхность</option><option value="demo-ridge">Учебный горный хребет</option></select></label>
+        <label>Шаг проверки заслонения, м<input id="terrain-step" type="number" min="25" max="500" value="100"></label>
+        <label>Дальность профиля горизонта, м<input id="horizon-range" type="number" min="1000" max="50000" value="30000"></label>
+        <label class="check"><input id="near-enabled" type="checkbox">Учитывать ближние протяжённые светящиеся ячейки</label>
+        <div class="pair"><label>Радиус детализации, м<input id="near-radius" type="number" min="1000" max="10000" value="3000"></label><label>Минимальная подячейка, м<input id="near-patch" type="number" min="2" max="100" value="2"></label></div>
+        <label>Порядок квадратуры ячейки<input id="near-order" type="number" min="1" max="4" value="3"></label>
+        <p class="hint">Реальный DSM нужно предварительно подготовить. Сетка 90 м не восстанавливает отдельные фонари и дворы; детализация светящейся ячейки задаёт способ интегрирования, а не новые измерения.</p>
+      </details>
       <label>Время<select id="mode"><option value="dated">С датой: Солнце, Луна и звёзды</option><option value="undated">Без даты: условный безлунный фон</option></select></label>
       <div id="dated-controls" class="pair time-pair"><label>Дата и местное время<input id="time" type="datetime-local" step="1"></label>
       <label>Смещение от UTC<select id="offset"><option value="Z">UTC</option><option value="+03:00">UTC+03:00</option><option value="+01:00">UTC+01:00</option><option value="+02:00">UTC+02:00</option><option value="-05:00">UTC−05:00</option><option value="-08:00">UTC−08:00</option></select></label></div>

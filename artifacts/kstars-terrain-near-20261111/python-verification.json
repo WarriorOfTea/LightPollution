@@ -1,0 +1,18 @@
+{
+  "completed_at": "2026-11-11T13:00:03+01:00",
+  "time_is_record_creation_not_test_finish": true,
+  "command": "uv run pytest -q -p no:cacheprovider",
+  "passed": 190,
+  "failed": 0,
+  "errors": 0,
+  "skipped": 0,
+  "warnings": 0,
+  "seconds": 49.95,
+  "raw_output": "........................................................................ [ 37%]\n........................................................................ [ 75%]\n..............................................                           [100%]\n190 passed in 49.95s\n",
+  "new_test_cases": 25,
+  "targeted_regressions_passed": 23,
+  "targeted_seconds": 13.12,
+  "targeted_precedes_last_nan_star_case": true,
+  "latest_topography_regression_count": 13,
+  "latest_topography_regression_seconds": 7.57
+}

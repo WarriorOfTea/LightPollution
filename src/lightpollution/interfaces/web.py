@@ -61,6 +61,23 @@ def create_app(workspace: Path = Path('data/mvp'), raw_directory: Path | None = 
         from ..adapters.spectral_library import load_spectral_library
         return load_spectral_library().catalogue()
 
+    @app.get('/api/kstars/capabilities')
+    def kstars_capabilities():
+        from ..adapters.terrain import DEFINITIONS
+        return {'schema_version': 1, 'backend_version': __version__, 'snapshot_schema': 1,
+                'terrain_datasets': [{'id': key, 'prepared': (workspace.parent/'terrain'/key/'manifest.json').exists()}
+                                     for key in DEFINITIONS],
+                'native_photometric_display_available': False}
+
+    @app.post('/api/kstars/jobs', status_code=202)
+    def create_kstars(payload: dict):
+        from ..application.kstars import scene_from_kstars
+        from ..adapters.storage import write_json
+        spec, snapshot = scene_from_kstars(payload)
+        job = app.state.jobs.create(spec)
+        write_json(workspace/'kstars-frames'/(job['id']+'.json'), snapshot)
+        return job
+
     @app.post('/api/photometry/fit')
     def photometry_fit(payload: dict):
         from ..application.photometry import fit_dataset

@@ -1,0 +1,49 @@
+{
+  "anchor_v_mag_arcsec2": 20.5,
+  "atmosphere": {},
+  "background": {
+    "airglow_fraction": 0.6,
+    "airglow_height_m": 90000.0,
+    "mode": "airglow_layer",
+    "twilight": "none"
+  },
+  "directions": [
+    [
+      0.0,
+      90.0
+    ]
+  ],
+  "download_missing": false,
+  "integration": {
+    "altitude_convention": "geometric_unrefracted",
+    "artificial_horizon_visible": true,
+    "focused_object": "",
+    "provider": "KStars",
+    "site_elevation_m": 120.0,
+    "snapshot_id": "df22b0a28892713ed320f6f78e4d9e04346a748874850aeaaa4cd0814a80f8b5",
+    "version": "contract fixture, not live execution"
+  },
+  "mode": "dated",
+  "natural_v_mag_arcsec2": 21.6,
+  "near_field": {
+    "minimum_patch_m": 2.0,
+    "quadrature_order": 3,
+    "radius_m": 3000.0
+  },
+  "observer": {
+    "height_m": 2.0,
+    "latitude_deg": 60.3,
+    "longitude_deg": 30.315
+  },
+  "period": "synthetic",
+  "profile": "quick",
+  "reference_atmosphere": {},
+  "region": "demo",
+  "schema_version": 2,
+  "terrain": {
+    "dataset": "demo-flat",
+    "horizon_range_m": 30000.0,
+    "visibility_step_m": 100.0
+  },
+  "time": "2026-11-11T21:00:00Z"
+}

@@ -1,0 +1,237 @@
+{
+  "completed_at": "2026-11-11T12:41:55+01:00",
+  "analytic_cell_cases": 6,
+  "cases": 3,
+  "cell_checks": [
+    {
+      "height_agl_m": 2.0,
+      "minimum_patch_m": 10.0,
+      "quadrature_order": 2,
+      "quadrature_emitters": 3424,
+      "power_sum": 1.0,
+      "analytic_planar_response": 1.8573460545651592e-05,
+      "computed_response": 1.923740525500709e-05,
+      "relative_error": 0.03574695774778158
+    },
+    {
+      "height_agl_m": 2.0,
+      "minimum_patch_m": 5.0,
+      "quadrature_order": 2,
+      "quadrature_emitters": 4624,
+      "power_sum": 1.0,
+      "analytic_planar_response": 1.8573460545651592e-05,
+      "computed_response": 1.8830512139651398e-05,
+      "relative_error": 0.013839725417242432
+    },
+    {
+      "height_agl_m": 2.0,
+      "minimum_patch_m": 2.0,
+      "quadrature_order": 3,
+      "quadrature_emitters": 13104,
+      "power_sum": 1.0000000000000002,
+      "analytic_planar_response": 1.8573460545651592e-05,
+      "computed_response": 1.857240313756515e-05,
+      "relative_error": 5.693112943827572e-05
+    },
+    {
+      "height_agl_m": 20.0,
+      "minimum_patch_m": 10.0,
+      "quadrature_order": 2,
+      "quadrature_emitters": 3424,
+      "power_sum": 1.0,
+      "analytic_planar_response": 1.649990683645952e-05,
+      "computed_response": 1.649957973026545e-05,
+      "relative_error": 1.9824729758366466e-05
+    },
+    {
+      "height_agl_m": 20.0,
+      "minimum_patch_m": 5.0,
+      "quadrature_order": 2,
+      "quadrature_emitters": 4624,
+      "power_sum": 1.0,
+      "analytic_planar_response": 1.649990683645952e-05,
+      "computed_response": 1.6499568974419272e-05,
+      "relative_error": 2.0476602904384578e-05
+    },
+    {
+      "height_agl_m": 20.0,
+      "minimum_patch_m": 2.0,
+      "quadrature_order": 3,
+      "quadrature_emitters": 10404,
+      "power_sum": 1.0000000000000004,
+      "analytic_planar_response": 1.649990683645952e-05,
+      "computed_response": 1.649965159561894e-05,
+      "relative_error": 1.546922919692939e-05
+    }
+  ],
+  "real_site_summaries": [
+    {
+      "name": "petersburg-centre",
+      "region": "petersburg-2025",
+      "period": "2025",
+      "source_basis_id": "a38b9bd5b751d63a7d5063360370ef8f98768938b1aefc886bf430718f1b03b6",
+      "observer_agl": {
+        "latitude_deg": 59.95,
+        "longitude_deg": 30.3,
+        "height_m": 2.0
+      },
+      "observer_msl": {
+        "latitude_deg": 59.95,
+        "longitude_deg": 30.3,
+        "height_m": 14.533818483352661
+      },
+      "terrain_id": "petersburg-copdem90",
+      "DSM_height_m": 12.533818483352661,
+      "old_effective_emitters": 561,
+      "near_effective_emitters": 9026,
+      "finite_emitting_pixels": 311,
+      "new_default_effective_emitters": 24981,
+      "coarse_near_settings": {
+        "radius_m": 3000.0,
+        "minimum_patch_m": 10.0,
+        "quadrature_order": 2,
+        "observer_agl_m": 2.0
+      },
+      "new_default_near_settings": {
+        "radius_m": 3000.0,
+        "minimum_patch_m": 2.0,
+        "quadrature_order": 3,
+        "observer_agl_m": 2.0
+      },
+      "old_selected_power": 0.9368834108344958,
+      "near_selected_power": 0.9999999999999998,
+      "raw_zenith_transfer": {
+        "old_3km_exclusion": 4.343663410828598e-12,
+        "finite_cells_flat": 1.455673276749964e-11,
+        "finite_cells_DSM_step100m": 1.454583332262556e-11,
+        "finite_cells_DSM_step50m": 1.454396413082421e-11
+      },
+      "new_default_raw_transfer": {
+        "DSM_step100m": 1.454517368161878e-11,
+        "DSM_step50m": 1.4542915342913332e-11,
+        "DSM_step50m_standard_192_24": 1.45461166666505e-11
+      },
+      "coarse_vs_new_default_relative_change": 4.535119492010686e-05,
+      "new_default_step100_vs50_relative_change": 0.00015528789463448156,
+      "quick_vs_standard_selected_ray_relative_change": 0.00022008098866044268,
+      "step100_vs50_relative_change": 0.00012852010528474622,
+      "near_flat_over_old": 3.3512570820313163,
+      "DSM_over_near_flat": 0.9992512437338675,
+      "seconds": 112.63391489908099,
+      "field_validated": false
+    },
+    {
+      "name": "petersburg-north",
+      "region": "petersburg-2025",
+      "period": "2025",
+      "source_basis_id": "a38b9bd5b751d63a7d5063360370ef8f98768938b1aefc886bf430718f1b03b6",
+      "observer_agl": {
+        "latitude_deg": 60.3,
+        "longitude_deg": 30.315,
+        "height_m": 2.0
+      },
+      "observer_msl": {
+        "latitude_deg": 60.3,
+        "longitude_deg": 30.315,
+        "height_m": 61.44025802612305
+      },
+      "terrain_id": "petersburg-copdem90",
+      "DSM_height_m": 59.44025802612305,
+      "old_effective_emitters": 593,
+      "near_effective_emitters": 7493,
+      "finite_emitting_pixels": 201,
+      "new_default_effective_emitters": 21719,
+      "coarse_near_settings": {
+        "radius_m": 3000.0,
+        "minimum_patch_m": 10.0,
+        "quadrature_order": 2,
+        "observer_agl_m": 2.0
+      },
+      "new_default_near_settings": {
+        "radius_m": 3000.0,
+        "minimum_patch_m": 2.0,
+        "quadrature_order": 3,
+        "observer_agl_m": 2.0
+      },
+      "old_selected_power": 0.9995390781955931,
+      "near_selected_power": 0.9999999999999998,
+      "raw_zenith_transfer": {
+        "old_3km_exclusion": 1.9076525085911445e-13,
+        "finite_cells_flat": 2.422475863295967e-13,
+        "finite_cells_DSM_step100m": 2.431500303978738e-13,
+        "finite_cells_DSM_step50m": 2.431090049239417e-13
+      },
+      "new_default_raw_transfer": {
+        "DSM_step100m": 2.4314285747503075e-13,
+        "DSM_step50m": 2.431030068996549e-13,
+        "DSM_step50m_standard_192_24": null
+      },
+      "coarse_vs_new_default_relative_change": 2.9500857716024953e-05,
+      "new_default_step100_vs50_relative_change": 0.00016392465022985192,
+      "quick_vs_standard_selected_ray_relative_change": null,
+      "step100_vs50_relative_change": 0.00016875341143740563,
+      "near_flat_over_old": 1.2698727112963746,
+      "DSM_over_near_flat": 1.003725296428957,
+      "seconds": 54.151119865942746,
+      "field_validated": false
+    },
+    {
+      "name": "madrid-ucm",
+      "region": "madrid-2017",
+      "period": "2017-03",
+      "source_basis_id": "0f2ca8b107a3e567d1588075e011f908f1ddda3d6fcfbe3d01a4fadc3e1eb322",
+      "observer_agl": {
+        "latitude_deg": 40.451111,
+        "longitude_deg": -3.726111,
+        "height_m": 2.0
+      },
+      "observer_msl": {
+        "latitude_deg": 40.451111,
+        "longitude_deg": -3.726111,
+        "height_m": 654.652853721045
+      },
+      "terrain_id": "madrid-copdem90",
+      "DSM_height_m": 652.652853721045,
+      "old_effective_emitters": 983,
+      "near_effective_emitters": 6480,
+      "finite_emitting_pixels": 182,
+      "new_default_effective_emitters": 16909,
+      "coarse_near_settings": {
+        "radius_m": 3000.0,
+        "minimum_patch_m": 10.0,
+        "quadrature_order": 2,
+        "observer_agl_m": 2.0
+      },
+      "new_default_near_settings": {
+        "radius_m": 3000.0,
+        "minimum_patch_m": 2.0,
+        "quadrature_order": 3,
+        "observer_agl_m": 2.0
+      },
+      "old_selected_power": 0.9855695810510613,
+      "near_selected_power": 1.0000000000000002,
+      "raw_zenith_transfer": {
+        "old_3km_exclusion": 2.2361411222122136e-12,
+        "finite_cells_flat": 5.187911940159749e-12,
+        "finite_cells_DSM_step100m": 4.99698413786516e-12,
+        "finite_cells_DSM_step50m": 4.996381864818316e-12
+      },
+      "new_default_raw_transfer": {
+        "DSM_step100m": 4.996746118041532e-12,
+        "DSM_step50m": 4.996171426276721e-12,
+        "DSM_step50m_standard_192_24": null
+      },
+      "coarse_vs_new_default_relative_change": 4.76349644358276e-05,
+      "new_default_step100_vs50_relative_change": 0.00011502643039618121,
+      "quick_vs_standard_selected_ray_relative_change": null,
+      "step100_vs50_relative_change": 0.00012054183670073826,
+      "near_flat_over_old": 2.320028860713115,
+      "DSM_over_near_flat": 0.9631975630086138,
+      "seconds": 158.45874355104752,
+      "field_validated": false
+    }
+  ],
+  "independent_clear_sky_terrain_or_near_lamp_nights": 0,
+  "field_accuracy": null,
+  "note": "Numerical convergence is not empirical accuracy. Raw transfer has common unit-source weights, no auto-refit between variants."
+}

@@ -6,7 +6,7 @@ from dataclasses import asdict
 
 import numpy as np
 
-from .data import Bounds, good_mask
+from .data import Bounds, PIXELS_PER_DEGREE, good_mask
 from .physics import EARTH_RADIUS_M, Observer, Sources, cell_areas, unit_position
 
 
@@ -14,7 +14,8 @@ def regional_sources(arrays: dict, bounds: Bounds, observer: Observer, block: in
                      exclude_radius_m: float = 3000, composite: str = "NearNadir",
                      include_water: bool = False,
                      refinement_direction: tuple[float,float] | None = None,
-                     normalisation_radiance_area: float | None = None) -> tuple[Sources, dict]:
+                     normalisation_radiance_area: float | None = None,
+                     finite_cells: dict | None = None) -> tuple[Sources, dict]:
     if block < 1 or exclude_radius_m < 0:
         raise ValueError("Invalid aggregation block or local-source exclusion radius.")
     key = composite+"_Composite_Snow_Free"
@@ -48,6 +49,40 @@ def regional_sources(arrays: dict, bounds: Bounds, observer: Observer, block: in
         raise ValueError('Source normalisation requires a positive finite radiance-area reference.')
     positions, powers, patch_sizes = [], [], []
     ray = observer.direction(*refinement_direction) if refinement_direction is not None else None
+    finite_pixel_count = 0
+
+    def add_finite_cell(row, col, power):
+        nonlocal finite_pixel_count
+        finite_pixel_count += 1
+        half = 1/(2*PIXELS_PER_DEGREE)
+        lat0, lat1 = np.sin(np.deg2rad([bounds.latitude[row]-half, bounds.latitude[row]+half]))
+        lon0, lon1 = np.deg2rad([bounds.longitude[col]-half, bounds.longitude[col]+half])
+        order = finite_cells['quadrature_order']
+        nodes, weights1 = np.polynomial.legendre.leggauss(order)
+        def split(y0, y1, x0, x1, fraction, depth=0):
+            latitude = np.rad2deg(np.arcsin((y0+y1)/2))
+            longitude = np.rad2deg((x0+x1)/2)
+            centre = unit_position(latitude, longitude)
+            distance = float(np.linalg.norm(centre-observer_normal)*EARTH_RADIUS_M)
+            width = (x1-x0)*np.sqrt(1-((y0+y1)/2)**2)*EARTH_RADIUS_M
+            height = (np.arcsin(y1)-np.arcsin(y0))*EARTH_RADIUS_M
+            target = max(finite_cells['minimum_patch_m'],
+                         .25*max(finite_cells.get('observer_agl_m', observer.height_m), distance))
+            if max(width, height) > target and depth < 12:
+                ym, xm = (y0+y1)/2, (x0+x1)/2
+                for ya, yb in [(y0, ym), (ym, y1)]:
+                    for xa, xb in [(x0, xm), (xm, x1)]:
+                        split(ya, yb, xa, xb, fraction/4, depth+1)
+                return
+            ys = (y0+y1)/2+nodes*(y1-y0)/2
+            xs = (x0+x1)/2+nodes*(x1-x0)/2
+            yy, xx = np.meshgrid(ys, xs, indexing='ij')
+            pp = unit_position(np.rad2deg(np.arcsin(yy)), np.rad2deg(xx)).reshape(-1, 3)
+            ww = (weights1[:, None]*weights1[None, :]/4).reshape(-1)
+            positions.extend(EARTH_RADIUS_M*pp)
+            powers.extend(power*fraction*ww/denominator)
+            patch_sizes.extend([0.]*len(ww))
+        split(lat0, lat1, lon0, lon1, 1.)
 
     def add_patch(row: int, bottom: int, col: int, right: int):
         window = (slice(row,bottom),slice(col,right))
@@ -76,6 +111,18 @@ def regional_sources(arrays: dict, bounds: Bounds, observer: Observer, block: in
                 for c0,c1 in zip(cols[:-1],cols[1:],strict=True):
                     add_patch(r0,r1,c0,c1)
             return
+        if (finite_cells is not None and bottom-row == 1 and right-col == 1
+                and observer_distance <= finite_cells['radius_m']+500):
+            add_finite_cell(row, col, power)
+            return
+        if finite_cells is not None and observer_distance < finite_cells['radius_m']+patch_radius:
+            if max(bottom-row, right-col)>1:
+                rows=sorted(set((row,(row+bottom)//2,bottom)))
+                cols=sorted(set((col,(col+right)//2,right)))
+                for r0,r1 in zip(rows[:-1],rows[1:],strict=True):
+                    for c0,c1 in zip(cols[:-1],cols[1:],strict=True):
+                        add_patch(r0,r1,c0,c1)
+                return
         positions.append(EARTH_RADIUS_M*normal)
         powers.append(power/denominator)
         patch_sizes.append(patch_radius)
@@ -102,6 +149,8 @@ def regional_sources(arrays: dict, bounds: Bounds, observer: Observer, block: in
         "ray_refinement_azimuth_altitude_deg": refinement_direction,
         "nearest_retained_pixel_m": float(distance[weights>0].min()),
         "nearest_effective_source_chord_m": float(np.linalg.norm(sources.positions_m-EARTH_RADIUS_M*observer_normal,axis=1).min()),
+        "finite_emitting_pixels": finite_pixel_count,
+        "finite_cell_settings": finite_cells,
         "unmodelled_sources_outside_bounds": asdict(bounds),
     }
     return sources,report
