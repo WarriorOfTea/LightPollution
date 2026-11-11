@@ -1,0 +1,48 @@
+{
+  "input_basis": "synthetic one-degree foveal scotopic area means; low-light comparator extension",
+  "star_fluxes_scotopic_lux": [
+    1e-07,
+    3.9810717055349716e-08,
+    1.5848931924611133e-08,
+    6.30957344480193e-09,
+    2.5118864315095795e-09,
+    1e-09,
+    3.981071705534969e-10,
+    1.5848931924611124e-10
+  ],
+  "solid_angle_per_cell_sr": 0.00030461741978670857,
+  "ferwerda_background_code": 31.228465914851295,
+  "ward_background_code": 238.48324297389442,
+  "ward_curve": {
+    "version": "ward1997_histogram_tvi_core_1",
+    "mode": "linear_range_fits",
+    "scale": 42950.14891963381,
+    "foveal_samples": 2400,
+    "iterations": 0,
+    "complete_pcond_implementation": false
+  },
+  "ferwerda_stellar_cell_codes": [
+    34.163917529605065,
+    32.429075828417304,
+    31.711859371567396,
+    31.421792057760417,
+    31.305572102334093,
+    31.259184995713913,
+    31.24069898241003,
+    31.233336554757184
+  ],
+  "ward_stellar_cell_codes": [
+    254.99999999999997,
+    245.23551445627422,
+    241.20135657620025,
+    239.57023158876302,
+    238.91676454172972,
+    238.65595578181424,
+    238.55202099099427,
+    238.5106271376124
+  ],
+  "selected": "ferwerda1996 fixed profile + explicit shoulder",
+  "selection_reason": "fixed adaptation and mapping can be held across city-on/off; no histogram-driven re-exposure",
+  "human_preference_or_accuracy_test": false,
+  "full_pcond_features_implemented": false
+}

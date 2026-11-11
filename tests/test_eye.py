@@ -134,7 +134,8 @@ def test_eye_requires_date_and_enables_physical_spectra():
     with pytest.raises(DomainError):SceneSpec.from_mapping(data)
 
 
-def test_eye_changes_reuse_transfer_and_never_refit_city_sources(tmp_path):
+def test_eye_changes_reuse_transfer_and_never_refit_city_sources(tmp_path,monkeypatch):
+    from types import SimpleNamespace
     class SpectralSolver:
         version='test-constant-spectral-1'
         calls=0
@@ -142,8 +143,12 @@ def test_eye_changes_reuse_transfer_and_never_refit_city_sources(tmp_path):
             self.calls+=1
             return np.ones(len(wavelengths))
     solver=SpectralSolver();planner=Planner(tmp_path,solver=solver)
+    # Solver calls are a deterministic clock: adaptive rays must be included
+    # in reported runtime, not just in the transfer counters.
+    monkeypatch.setattr('lightpollution.application.planner.time',SimpleNamespace(perf_counter=lambda:solver.calls))
     data=offline_example();data.update(profile='quick',directions=[[180,50]],eye={})
     a=planner.run(SceneSpec.from_mapping(data)).value;n=solver.calls
+    assert a['runtime']['elapsed_seconds']==n
     assert not a['stars']['metadata']['detected_by_eye_not_modelled']
     assert not a['observation']['stars_metadata']['detected_by_eye_not_modelled']
     assert 'eye_detection' not in a['unavailable_capabilities']

@@ -26,7 +26,7 @@ from ..physics import Observer, SolverSettings
 from ..skyview import load_stars
 
 ROOT = Path(__file__).resolve().parents[1]
-MODEL_VERSION = 'terrain-finite-near-field-kstars-eye-1'
+MODEL_VERSION = 'terrain-finite-near-field-kstars-eye-2'
 PROFILES = {'quick': (SolverSettings(96, 12), 24),
             'standard': (SolverSettings(192, 24), 12)}
 
@@ -133,7 +133,7 @@ class Planner:
                                      'skyview.py', 'observation.py', 'catalogues/bsc5.csv',
                                      'application/planner.py', 'domain/scene.py', 'domain/calibration.py',
                                      'adapters/spectral_library.py', 'models/background.py', 'models/surface.py',
-                                     'models/eye.py', 'application/eye.py'])
+                                     'models/eye.py', 'models/eye_field.py', 'application/eye.py'])
         request_key = content_key({'scene': resolved, 'source_basis': group.identity,
             'transfer_code': transfer_code, 'scene_code': scene_code, 'solver': solver.version,
             'application_model': MODEL_VERSION, 'spectral_library': library.identity if library else None})
@@ -497,6 +497,39 @@ class Planner:
                 'unresolved_v_relative':np.asarray([r['natural_relative']+(r.get('moon_relative') or 0.)+
                     (r.get('twilight_relative') or 0.) for r in angular_rows]).reshape(raw.shape).tolist(),
                 'source_basis_id':group.identity,'calibration_origin':scale_origin}
+            # Refine the requested view without changing the source coefficient.
+            geometry=observation.get('geometry') or {}
+            moon=observation.get('moon') or {}
+            if (geometry.get('sun',{}).get('altitude_deg',90)<=-18 and moon.get('altitude_deg',-90)<=0
+                    and data.get('integration',{}).get('artificial_horizon_visible') is not False):
+                from ..models.eye import eye_config
+                from ..models.eye_field import build_view_patch
+                config=eye_config(data['eye'])
+                view={'azimuth_deg':data['directions'][0][0],'altitude_deg':data['directions'][0][1],
+                      'horizontal_fov_deg':90.,'width':1800,'height':1100,**config.get('view',{})}
+                def eye_ray(az,alt,numerical=settings,aggregation=block):
+                    if abs(alt-90)<1e-8:az,alt=0.,90.
+                    values=response(data['period'],az,alt,atmosphere,numerical,aggregation)[0]
+                    radiance=values*mix*coefficient*reference_radiance
+                    p=float(683*band_integral(library.wavelengths,radiance,library.responses['photopic']))
+                    s=float(1700*band_integral(library.wavelengths,radiance,library.responses['scotopic']))
+                    residual=(background.evaluate(np.asarray(az),np.asarray(alt),geometry)[0]['natural_relative']
+                        if background else 10**(-.4*(data['natural_v_mag_arcsec2']-22.)))
+                    supported=True
+                    if terrain:
+                        endpoint=observer.position+1000000*observer.direction(az,alt)
+                        supported=bool(terrain.visible(observer.position,endpoint,data['terrain']['visibility_step_m']))
+                    progress({'phase':'Уточнение поля глаза; контрольные лучи',
+                              'completed':stats['transfer_hits']+stats['transfer_misses'],'total':None})
+                    return [p,s,float(residual),supported]
+                sampling=config['sampling']
+                total=None  # adaptive work is not known before its probes
+                field['view_patch']=build_view_patch(view,eye_ray,
+                    target=sampling['target_relative_error'],max_grid_size=sampling['max_grid_size'],
+                    validation=sampling['validation'],check=check,
+                    evaluate_standard=lambda az,alt:eye_ray(az,alt,*PROFILES['standard']))
+                field['view_patch']['numerical_profile']=data['profile']
+                total=stats['transfer_hits']+stats['transfer_misses']
             reference_star = 1700*band_integral(library.wavelengths,library.measured[7001],
                                               library.responses['scotopic'])*10**(.4*.03)
             result['eye'] = build_eye_result(result,data['eye'],field,float(reference_star))
@@ -506,6 +539,7 @@ class Planner:
             result['stars']['detected_by_eye'] = result['eye']['summary']['above_threshold']
             result['stars']['metadata']['detected_by_eye_not_modelled'] = False
             observation['stars_metadata']['detected_by_eye_not_modelled'] = False
+        result['runtime']['elapsed_seconds']=time.perf_counter()-started
         _write_checked(scene_path, result)
         progress({'phase': 'Готово', 'completed': total, 'total': total})
         return RunResult(result)

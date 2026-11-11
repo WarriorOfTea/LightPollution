@@ -167,7 +167,7 @@ void LightPollutionDock::showEyeView()
 {
     if(m_Busy || !m_OpenEye->isEnabled())return;
     const QString requestedJob=m_Job;
-    auto *reply=m_Network.get(QNetworkRequest(QUrl(m_URL+"/api/jobs/"+m_Job+"/export/eye-view.png")));
+    auto *reply=m_Network.get(QNetworkRequest(QUrl(m_URL+"/api/jobs/"+m_Job+"/export/eye-preview.png")));
     QTimer::singleShot(15000,reply,&QNetworkReply::abort);
     connect(reply,&QNetworkReply::finished,this,[this,reply,requestedJob](){
         if(m_Busy || m_Job!=requestedJob){reply->deleteLater();return;}
@@ -175,10 +175,12 @@ void LightPollutionDock::showEyeView()
         if(reply->error()!=QNetworkReply::NoError || !picture.loadFromData(reply->readAll()))
         {setStatus(tr("Изображение недоступно; проверьте область модели глаза."));reply->deleteLater();return;}
         auto *dialog=new QDialog(m_KStars);dialog->setAttribute(Qt::WA_DeleteOnClose);
-        dialog->setWindowTitle(tr("Монохромная иллюстрация · сохранённый сценарий"));
+        dialog->setWindowTitle(tr("Модель потока и оптики · монохромный вид"));
         auto *layout=new QVBoxLayout(dialog);auto *scroll=new QScrollArea(dialog);auto *label=new QLabel;
-        label->setPixmap(picture.scaled(1200,800,Qt::KeepAspectRatio,Qt::SmoothTransformation));
-        scroll->setWidget(label);layout->addWidget(scroll);dialog->resize(1230,840);dialog->show();
+        // The backend integrated stellar flux at this exact pixel resolution.
+        // Rescaling an encoded point image here would change its brightness.
+        label->setPixmap(picture);
+        scroll->setWidget(label);layout->addWidget(scroll);dialog->resize(picture.width()+40,picture.height()+50);dialog->show();
         m_EyeDialog=dialog;m_EyePreviewReady=true;reply->deleteLater();});
 }
 void LightPollutionDock::setStatus(const QString &text){m_Status->setText(text);}

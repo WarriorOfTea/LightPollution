@@ -1,0 +1,72 @@
+{
+  "version": "0.7.0",
+  "full_pytest": {
+    "passed": 243,
+    "total": 243,
+    "seconds": 66.14,
+    "command": "uv run pytest -q -p no:cacheprovider",
+    "includes_runtime_regression": true
+  },
+  "followup_display_tests_after_removing_unused_comparator": {
+    "passed": 31,
+    "total": 31,
+    "seconds": 4.97
+  },
+  "targeted_development_pass": {
+    "passed": 53,
+    "total": 53,
+    "seconds": 26.07
+  },
+  "runtime_regression": {
+    "passed": 1,
+    "total": 1
+  },
+  "resolved_development_failures": [
+    "New test imported non-package tests path; corrected to pytest test module import.",
+    "Unjustified 0.007 MTF maximum bound at pupil 2 mm failed (actual 0.02293); positive Gaussian cutoff approximation limit documented, RMS/max bounds explicit.",
+    "Ward black endpoint differed by 6.94e-20 from zero; test uses floating-point tolerance.",
+    "Planner elapsed-time field initially excluded local rays; fixed and regression tested."
+  ],
+  "uv_lock_check": true,
+  "javascript_syntax_check": true,
+  "git_diff_check": true,
+  "numerical_flux_checks": {
+    "passed": 24,
+    "total": 24,
+    "max_relative_error": 3.096179979067415e-10,
+    "max_float32_relative_error": 2.5875492415394774e-08
+  },
+  "interpolation_heldout": {
+    "passed": 24,
+    "total": 24,
+    "max_relative_error": 0.00798775200286057,
+    "used_to_refine": false,
+    "field_accuracy_established": false
+  },
+  "standard_profile_comparisons": 4,
+  "native_Qt_build": true,
+  "native_final_jobs": {
+    "completed": 2,
+    "requested": 2
+  },
+  "native_previous_round_jobs": {
+    "completed": 2,
+    "requested": 2
+  },
+  "browser": {
+    "completed": 1,
+    "requested": 1,
+    "exports_available": 9,
+    "exports_checked": 9,
+    "javascript_errors": 0,
+    "mobile_horizontal_overflow": false
+  },
+  "wheel": {
+    "package_files_matching": 71,
+    "package_files_checked": 71,
+    "runtime_distributions_excluding_project": 36,
+    "offline_eye_case_completed": true
+  },
+  "independent_human_observers": 0,
+  "new_ground_nights": 0
+}

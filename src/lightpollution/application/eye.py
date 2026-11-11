@@ -9,6 +9,7 @@ from ..adapters.storage import write_json
 from ..models.eye import (MODEL, REFERENCE_SP, SCOTOPIC_MAXIMUM, V22_LUMINANCE,
                           evaluate_detection)
 from ..skyview import sample_sky
+from ..models.eye_field import interpolate_patch, patch_support, tangent_coordinates
 
 
 def sample_eye_field(field, azimuth, altitude):
@@ -16,6 +17,15 @@ def sample_eye_field(field, azimuth, altitude):
     p=sample_sky(*args,field['photopic_luminance_cd_m2'],azimuth,altitude)
     s=sample_sky(*args,field['scotopic_luminance_cd_m2'],azimuth,altitude)
     support=sample_sky(*args,np.asarray(field['physical_supported'],float),azimuth,altitude)>=1-1e-12
+    if 'view_patch' in field:
+        patch=field['view_patch']
+        x,y,front=tangent_coordinates(patch['view'],azimuth,altitude)
+        inside=front&(abs(x)<=1)&(abs(y)<=1)
+        if np.any(inside):
+            # np.where also supports a scalar query; no mutation of caller arrays.
+            p=np.where(inside,interpolate_patch(patch,patch['photopic_luminance_cd_m2'],x,y),p)
+            s=np.where(inside,interpolate_patch(patch,patch['scotopic_luminance_cd_m2'],x,y),s)
+            support=np.where(inside,patch_support(patch,x,y),support)
     return p,s,support
 
 
@@ -29,6 +39,14 @@ def build_eye_result(result, config, angular_field, reference_star_scotopic_lux_
     field={**angular_field,'photopic_luminance_cd_m2':p.tolist(),
            'scotopic_luminance_cd_m2':s.tolist(),
            'interpolation':'periodic bilinear in linear light; no inferred sub-grid sky structure'}
+    if 'view_patch' in angular_field:
+        patch=angular_field['view_patch']
+        residual=np.asarray(patch['unresolved_v_relative'])*V22_LUMINANCE
+        field['view_patch']={**patch,
+            'photopic_luminance_cd_m2':(np.asarray(patch['city_photopic_luminance_cd_m2'])+residual).tolist(),
+            'scotopic_luminance_cd_m2':(np.asarray(patch['city_scotopic_luminance_cd_m2'])+
+                residual*config['unresolved_background_sp_ratio']).tolist()}
+        field['interpolation']='view-local positive tensor PCHIP on unit-sphere gnomonic rays; periodic bilinear outside patch'
     geometry=result['observation'].get('geometry') or {}
     moon=result['observation'].get('moon') or {}
     reasons=[]

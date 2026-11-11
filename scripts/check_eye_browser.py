@@ -45,7 +45,9 @@ def main():
         result=page.evaluate('currentResult')
         assert result['eye']['display']['available'],result['eye']['display']
         base=f'{args.url}/api/jobs/{job}/export/'
-        for name in ['eye.json','eye-stars.csv','eye-directions.csv','eye-display.json','eye-view.png']:
+        export_names=['eye.json','eye-stars.csv','eye-directions.csv','eye-display.json','eye-view.png',
+            'eye-preview.png','eye-mobile.png','eye-view-16bit.png','eye-linear.npz']
+        for name in export_names:
             downloaded=page.request.get(base+name)
             assert downloaded.status==200,(name,downloaded.status)
             assert len(downloaded.body())>0,name
@@ -55,19 +57,21 @@ def main():
         assert bundle.status==200
         with zipfile.ZipFile(io.BytesIO(bundle.body())) as archive:
             names=archive.namelist()
-            assert {'eye.json','eye-view.png','eye-stars.csv'}<=set(names)
+            assert set(export_names)<=set(names)
         page.get_by_text('Невооружённый глаз',exact=True).click()
         page.screenshot(path=str(args.output/'eye-controls.png'),full_page=True)
         page.set_viewport_size({'width':390,'height':844})
+        page.wait_for_function('document.querySelector("picture img").currentSrc.endsWith("eye-mobile.png")')
         assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
         assert not errors,errors
         write_json(args.output/'verification.json',{'jobs_completed':1,'jobs_requested':1,
-            'eye_controls_and_dimensions_round_trip':True,'optional_exports_checked':5,
+            'eye_controls_and_dimensions_round_trip':True,'optional_exports_checked':len(export_names),
+            'mobile_uses_reintegrated_390px_image':True,
             'bundle_contains_eye_exports':True,'eye_display_available':True,
             'javascript_errors':errors,'mobile_width_px':390,'mobile_horizontal_overflow':False,
             'job_id':job,'independent_human_validation':False})
         browser.close()
-        print('Browser eye: 1/1 jobs, 5/5 exports, ZIP, controls, mobile layout; zero JS errors.')
+        print('Browser eye: 1/1 jobs, 9/9 exports, ZIP, model options, 390 px image; zero JS errors.')
 
 
 if __name__=='__main__':main()

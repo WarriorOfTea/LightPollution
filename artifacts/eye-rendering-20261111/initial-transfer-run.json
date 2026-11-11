@@ -1,0 +1,13 @@
+{
+  "initial_cache": {
+    "scene_hit": false,
+    "transfer_hits": 34,
+    "transfer_misses": 41
+  },
+  "initial_pre_eye_runtime_field_seconds": 16.708186746109277,
+  "initial_runtime_field_omits_extra_view_rays": true,
+  "wall_seconds_from_preregistration_to_result_file": 844.166178226471,
+  "wall_time_is_file_timestamp_estimate_not_perf_counter": true,
+  "runtime_reporting_fixed_after_detection": true,
+  "scientific_values_changed_by_fix": false
+}

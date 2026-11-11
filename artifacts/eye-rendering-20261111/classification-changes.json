@@ -1,0 +1,54 @@
+{
+  "stellar_flux_table_identical": true,
+  "source_coefficient_identical": true,
+  "changed_rows": [
+    {
+      "hr": 157,
+      "name": "HR 157",
+      "old_above": false,
+      "new_above": true,
+      "old_q": 0.989153936281145,
+      "new_q": 1.0057005232547793,
+      "stellar_scotopic_illuminance_lux": 2.669462295331586e-08
+    },
+    {
+      "hr": 389,
+      "name": "91    Psc",
+      "old_above": false,
+      "new_above": true,
+      "old_q": 0.9853451979539615,
+      "new_q": 1.0022351463079893,
+      "stellar_scotopic_illuminance_lux": 2.773206467865826e-08
+    },
+    {
+      "hr": 511,
+      "name": "HR 511",
+      "old_above": false,
+      "new_above": true,
+      "old_q": 0.9986083861728827,
+      "new_q": 1.0034572398919623,
+      "stellar_scotopic_illuminance_lux": 2.4803338781053186e-08
+    },
+    {
+      "hr": 944,
+      "name": "55    Ari",
+      "old_above": false,
+      "new_above": true,
+      "old_q": 0.9888130188302579,
+      "new_q": 1.0076675455023325,
+      "stellar_scotopic_illuminance_lux": 2.78483294658099e-08
+    },
+    {
+      "hr": 954,
+      "name": "56    Ari",
+      "old_above": false,
+      "new_above": true,
+      "old_q": 0.9918750826431642,
+      "new_q": 1.0101232551924821,
+      "stellar_scotopic_illuminance_lux": 2.823415207435197e-08
+    }
+  ],
+  "changed_total_catalogue_stars": 5,
+  "old_display_count": 220,
+  "new_display_count": 225
+}

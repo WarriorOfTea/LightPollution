@@ -19,7 +19,8 @@ from .planner import Planner, export_result
 TERMINAL = {'completed', 'cancelled', 'error'}
 EXPORTS = ('scene.json', 'resolved-scene.json', 'observation.json', 'result.json',
            'directions.csv', 'stars.csv', 'bundle.zip')
-OPTIONAL_EXPORTS = ('eye.json', 'eye-directions.csv', 'eye-stars.csv', 'eye-display.json', 'eye-view.png')
+OPTIONAL_EXPORTS = ('eye.json', 'eye-directions.csv', 'eye-stars.csv', 'eye-display.json', 'eye-view.png',
+                    'eye-preview.png', 'eye-mobile.png', 'eye-view-16bit.png', 'eye-linear.npz')
 
 
 def timestamp():

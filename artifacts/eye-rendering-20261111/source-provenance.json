@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-11-11T22:09:44+01:00",
+  "version": "0.7.0",
+  "source_audit_reused": "artifacts/eye-visualization-research-20261111/source-audit.json",
+  "source_audit_sha256": "a11088a623b103019af57270ee97b690358d9f058aa41e77f35ebff6065913f3",
+  "sources": [
+    {
+      "work": "Watson 2013",
+      "doi": "10.1167/13.6.18",
+      "url": "https://doi.org/10.1167/13.6.18",
+      "access": "full PDF previously obtained",
+      "local_pdf_sha256": "b98ea733f597693dd8a98a19a15175c9b41a788ede01b5b6528644b8b60330eb",
+      "used": "equations 1–5, pupil 2–6 mm, mean radial optical MTF; positive Gaussian approximation is our own"
+    },
+    {
+      "work": "Ferwerda et al. 1996",
+      "doi": "10.1145/237170.237262",
+      "url": "https://jamesferwerda.com/wp-content/uploads/2015/06/j03_ferwerda96_sig.pdf",
+      "access": "full author PDF previously obtained",
+      "local_pdf_sha256": "46dc554778e734f2b9497560abe0d1b301c60e521abad544e006a8072891e9aa",
+      "used": "equations 3–5 TVI scale; fixed profile and soft shoulder are explicit engineering choices"
+    },
+    {
+      "work": "Ward Larson et al. 1997",
+      "doi": "10.1109/2945.646233",
+      "url": "https://radsite.lbl.gov/radiance/papers/lbnl39882/tonemap.pdf",
+      "access": "full institutional PDF obtained and reopened",
+      "local_pdf_sha256": "ddecc65047bef74411e1dd6e2fbc38ed37c904164f04f9c603228c7014466d3c",
+      "used": "sections 4.2–4.5 histogram/TVI core and linear fallback; not all pcond features"
+    },
+    {
+      "work": "Fritsch & Butland 1984",
+      "doi": "10.1137/0905021",
+      "url": "https://epubs.siam.org/doi/10.1137/0905021",
+      "access": "official abstract and bibliography; full closed text not obtained",
+      "used": "method attribution; own explicit harmonic/Hermite implementation and direct-ray tests"
+    }
+  ],
+  "new_NASA_or_DSM_files": 0,
+  "new_human_observers": 0,
+  "raw_third_party_papers_in_git": false,
+  "implementation_sha256": {
+    "src/lightpollution/models/eye_field.py": "b40dc3c0d9829102ffa61cb6260a3e46c33db938aab7b6b7bae0f0e46901943a",
+    "src/lightpollution/models/eye_optics.py": "8ec8e0674d2ca0b633f24ee58024352722e95c663fc8373c1c7e1f9daba1cb8d",
+    "src/lightpollution/models/eye_display.py": "273ef2c3f3b8aee2bff0c869b6406e43a1b4f69fb1f09c3279fc309344303379",
+    "src/lightpollution/application/eye.py": "ef9f41350b51d4c2332f6d2fb41271e5754b27e28b6305d59f1417eecaf514f9",
+    "src/lightpollution/application/planner.py": "20c179368ac344f1b1d08ca24fd92e0fd7a1c43f51884ceabd84746ffb6e6f0e",
+    "src/lightpollution/interfaces/eye_view.py": "ee3f96a22bcac8de494fb025c599f76c0ad0883dd7aa050533a1681c82b1c546"
+  }
+}

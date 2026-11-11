@@ -17,7 +17,7 @@ V22_LUMINANCE = PHOTOPIC_V0_LUX * (180*3600/np.pi)**2 * 10**(-.4*22)
 
 
 def eye_config(value):
-    if not isinstance(value, dict) or set(value)-{'observer_factor','unresolved_background_sp_ratio','adaptation','view'}:
+    if not isinstance(value, dict) or set(value)-{'observer_factor','unresolved_background_sp_ratio','adaptation','view','sampling','optics','display'}:
         raise ValueError('Unknown eye settings.')
     config = {'observer_factor':2.,'unresolved_background_sp_ratio':REFERENCE_SP,
               'adaptation':'complete', **value}
@@ -28,6 +28,28 @@ def eye_config(value):
         config[key]=float(x)
     if config['adaptation']!='complete':
         raise ValueError('This eye model requires completed adaptation; no time-course is fitted.')
+    for name, defaults in [
+            ('sampling', {'target_relative_error':.01, 'max_grid_size':5, 'validation':'none'}),
+            ('optics', {'pupil_diameter_mm':6.}),
+            ('display', {'white_cd_m2':100., 'black_cd_m2':.05, 'adaptation_cd_m2':20.,
+                         'world_adaptation_scotopic_cd_m2':.002})]:
+        supplied = config.get(name, {})
+        if not isinstance(supplied, dict) or set(supplied)-set(defaults):
+            raise ValueError(f'Unknown eye {name} settings.')
+        config[name] = {**defaults, **supplied}
+    numeric = [('sampling','target_relative_error',.001,.1), ('optics','pupil_diameter_mm',2,6),
+        ('display','white_cd_m2',20,500), ('display','black_cd_m2',0,2),
+        ('display','adaptation_cd_m2',2,100), ('display','world_adaptation_scotopic_cd_m2',1e-5,.004224)]
+    for group,key,lo,hi in numeric:
+        x=config[group][key]
+        if isinstance(x,bool) or not isinstance(x,(int,float)) or not np.isfinite(x) or not lo<=x<=hi:
+            raise ValueError(f'Eye {group}.{key} must be finite in [{lo},{hi}].')
+        config[group][key]=float(x)
+    if (type(config['sampling']['max_grid_size']) is not int or config['sampling']['max_grid_size'] not in (3,5,9)
+            or config['sampling']['validation'] not in ('none','heldout_24')):
+        raise ValueError('Eye sampling requires a grid limit 3/5/9 and validation none/heldout_24.')
+    if not config['display']['black_cd_m2'] < config['display']['adaptation_cd_m2'] < config['display']['white_cd_m2']:
+        raise ValueError('Display black < adaptation < white required.')
     if 'view' in config:
         view=config['view']
         if not isinstance(view,dict) or set(view)-{'azimuth_deg','altitude_deg','horizontal_fov_deg','width','height'}:

@@ -46,6 +46,11 @@ def main():
     field=deepcopy(city['eye']['field'])
     field['city_photopic_luminance_cd_m2']=np.zeros_like(field['city_photopic_luminance_cd_m2']).tolist()
     field['city_scotopic_luminance_cd_m2']=np.zeros_like(field['city_scotopic_luminance_cd_m2']).tolist()
+    if 'view_patch' in field:
+        patch=field['view_patch']
+        for key in ['city_photopic_luminance_cd_m2','city_scotopic_luminance_cd_m2']:
+            patch[key]=np.zeros_like(patch[key]).tolist()
+        patch['counterfactual_city_emission_multiplier']=0.
     field['counterfactual_city_emission_multiplier']=0.
     dark=deepcopy(city)
     dark['eye']=build_eye_result(dark,city['eye']['config'],field,reference)
