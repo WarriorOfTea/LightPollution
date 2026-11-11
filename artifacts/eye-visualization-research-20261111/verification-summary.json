@@ -1,0 +1,22 @@
+{
+  "completed_at": "2026-11-11T21:22:12+01:00",
+  "audit_command": "uv run python scripts/audit_eye_visualization.py",
+  "audit_completed": true,
+  "input_hash_checks": {
+    "passed": 3,
+    "total": 3
+  },
+  "CIE_file_hash_checks": {
+    "passed": 4,
+    "total": 4
+  },
+  "compile_check": true,
+  "uv_lock_check": true,
+  "application_and_native_code_unchanged": true,
+  "full_pytest_run": false,
+  "full_pytest_not_run_reason": "Research/docs and a read-only diagnostic script; application behaviour unchanged.",
+  "independent_transfer_rays": 0,
+  "independent_visual_observers": 0,
+  "PDF_pages": 8,
+  "source_baseline_commit": "f69a8c83f8eef3e026b244bc3ee13761d8cc2546"
+}

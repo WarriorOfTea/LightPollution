@@ -1,0 +1,179 @@
+{
+  "completed_at": "2026-11-11T21:18:27+01:00",
+  "papers_full_text": [
+    {
+      "name": "jensen2001",
+      "primary_url": "https://graphics.stanford.edu/papers/nightsky/nightsky.pdf",
+      "doi": "10.1145/383259.383306",
+      "access_scope": "full PDF; spectral sky, human and camera rendering distinguished",
+      "bytes": 3732514,
+      "sha256": "1a1952dd14e4485c98eea1c30811e8b68e7aed73ae22a7c133b95c361759067d",
+      "pages": 10,
+      "full_document_redistributed": false
+    },
+    {
+      "name": "ferwerda1996",
+      "primary_url": "https://jamesferwerda.com/wp-content/uploads/2015/06/j03_ferwerda96_sig.pdf",
+      "doi": "10.1145/237170.237262",
+      "access_scope": "full PDF; threshold versus suprathreshold appearance; adaptation estimates in section 4.4",
+      "bytes": 617509,
+      "sha256": "46dc554778e734f2b9497560abe0d1b301c60e521abad544e006a8072891e9aa",
+      "pages": 10,
+      "full_document_redistributed": false
+    },
+    {
+      "name": "kirk2011",
+      "primary_url": "https://jamesobrien.com/papers/Kirk-PBT-2011-08/Kirk-PBT-2011-08.pdf",
+      "doi": "10.1145/2010324.1964937",
+      "access_scope": "full PDF; section 3.2, normalized LMSR, selected coefficients and separate display range compression",
+      "bytes": 102596760,
+      "sha256": "48261fdd3b3a6189920f47a8480e2ebc935d59806f77e399fd6567414a1f2635",
+      "pages": 10,
+      "full_document_redistributed": false
+    },
+    {
+      "name": "ward1997",
+      "primary_url": "https://radsite.lbl.gov/radiance/papers/lbnl39882/tonemap.pdf",
+      "doi": "10.1109/2945.646233",
+      "access_scope": "full 36-page LBNL technical report; visibility, adaptation, display and glare",
+      "bytes": 905243,
+      "sha256": "ddecc65047bef74411e1dd6e2fbc38ed37c904164f04f9c603228c7014466d3c",
+      "pages": 36,
+      "full_document_redistributed": false
+    },
+    {
+      "name": "watson2013-backup",
+      "primary_url": "https://doi.org/10.1167/13.6.18",
+      "doi": "10.1167/13.6.18",
+      "access_scope": "full PDF from indexed mirror; core MTF for 2-6 mm, Light scatter section",
+      "bytes": 1500515,
+      "sha256": "b98ea733f597693dd8a98a19a15175c9b41a788ede01b5b6528644b8b60330eb",
+      "pages": 11,
+      "full_document_redistributed": false,
+      "download_url": "https://pdfs.semanticscholar.org/0076/a29a8f07e8d2e8b6f9bc4951310f329ef4dc.pdf"
+    }
+  ],
+  "verified_tables": [
+    {
+      "name": "CIE_lms_cf_2deg.csv",
+      "url": "https://files.cie.co.at/Publications-datasets/CIE_lms_cf_2deg.csv",
+      "doi": "10.25039/CIE.DS.tijidesg",
+      "rows": 89,
+      "columns": 4,
+      "wavelength_nm": [
+        390.0,
+        830.0
+      ],
+      "wavelength_step_nm": 5.0,
+      "nonfinite_per_column": [
+        0,
+        0,
+        0,
+        43
+      ],
+      "finite_nonnegative": true,
+      "checksums_verified": {
+        "md5": "dba2e9d1f5e6667575aa069832159510",
+        "sha256": "f48160edf11c1a121aaaf41d4c3b7513385bfc9c60d726b88e735519f6d37b1f"
+      },
+      "license": "CC BY-SA 4.0",
+      "interpolation": "linear",
+      "extrapolation": "zero",
+      "working_spectral_library_modified": false
+    },
+    {
+      "name": "CIE_xyz_1931_2deg.csv",
+      "url": "https://files.cie.co.at/Publications-datasets/CIE_xyz_1931_2deg.csv",
+      "doi": "10.25039/CIE.DS.xvudnb9b",
+      "rows": 471,
+      "columns": 4,
+      "wavelength_nm": [
+        360.0,
+        830.0
+      ],
+      "wavelength_step_nm": 1.0,
+      "nonfinite_per_column": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "finite_nonnegative": true,
+      "checksums_verified": {
+        "md5": "17cca777db64b17170f06f67ce9d3ab7",
+        "sha256": "fa663e3535a7e0763a745993a1f0a192eb0275ac46ad2d1befd7626841e713c1"
+      },
+      "license": "CC BY-SA 4.0",
+      "interpolation": "linear",
+      "extrapolation": "zero",
+      "working_spectral_library_modified": false
+    }
+  ],
+  "limited_access_sources": [
+    {
+      "title": "Watson & Yellott 2012",
+      "doi": "10.1167/12.10.12",
+      "access": "primary abstract/metadata and indexed text; attempted PDF mirror returned an empty file; coefficients not implemented"
+    },
+    {
+      "title": "Spencer et al. 1995",
+      "doi": "10.1145/218380.218466",
+      "access": "indexed original paper passages; Cornell PDF now redirects to general department page; not a verified local full PDF"
+    },
+    {
+      "title": "CIE 146:2002",
+      "url": "https://cie.co.at/publications/cie-collection-glare-2002",
+      "access": "official description including angular domains; full normative report not obtained"
+    },
+    {
+      "title": "CIE 191:2010",
+      "url": "https://www.cie.co.at/publications/recommended-system-mesopic-photometry-based-visual-performance",
+      "access": "official scope; no claim to have reproduced complete normative method"
+    },
+    {
+      "title": "Navarro & Losada 1997",
+      "doi": "10.1364/JOSAA.14.000353",
+      "url": "https://opg.optica.org/josaa/abstract.cfm?uri=josaa-14-2-353",
+      "access": "publisher abstract including experiment; full text requires access"
+    },
+    {
+      "title": "Sun & Baranoski 2025",
+      "doi": "10.1145/3763356",
+      "url": "https://cuca.cs.uwaterloo.ca/people/yuxiang/",
+      "access": "primary author description/indexed abstract; numerical diffraction method not reproduced"
+    }
+  ],
+  "software_reference": {
+    "revision": "c7d94aca958dd0ff7b2bf3a20b42dac5cd3cdc73",
+    "files": {
+      "StelToneReproducer.cpp": {
+        "url": "https://raw.githubusercontent.com/Stellarium/stellarium/c7d94aca958dd0ff7b2bf3a20b42dac5cd3cdc73/src/core/StelToneReproducer.cpp",
+        "sha256": "7f3b37d2e1d30c09f9aea914be099d89462fa229d81afbb93debff7018194d34"
+      },
+      "StelToneReproducer.hpp": {
+        "url": "https://raw.githubusercontent.com/Stellarium/stellarium/c7d94aca958dd0ff7b2bf3a20b42dac5cd3cdc73/src/core/StelToneReproducer.hpp",
+        "sha256": "95c629ec09067a0a4ebd28fc80267cbb51cb262a8602c6d78fd5c15810ec94e2"
+      },
+      "StelSkyDrawer.cpp": {
+        "url": "https://raw.githubusercontent.com/Stellarium/stellarium/c7d94aca958dd0ff7b2bf3a20b42dac5cd3cdc73/src/core/StelSkyDrawer.cpp",
+        "sha256": "ff872bd5717a07bd378c1f2989eedf7b5c58d2e793a63f42653a0722824840c0"
+      }
+    }
+  },
+  "local_KStars": {
+    "version": "3.6.2",
+    "reviewed_paths": [
+      "kstars/skyqpainter.cpp",
+      "kstars/skyglpainter.cpp"
+    ],
+    "checked_behavior": "spectral-class palette and magnitude-based sprite sizes; not a physiological reference",
+    "code_redistributed_in_this_task": false
+  },
+  "retrieval_issues": [
+    "Some primary NASA/Cornell URLs timed out or redirected; sources with limited access are marked explicitly.",
+    "An initially unbounded batch transfer was stopped after local copies of three full PDFs had been obtained. Tables were then fetched using actual publisher links and a 20-second total limit.",
+    "Cached search snippet for LMS listed a different checksum; current publisher page, metadata and downloaded bytes agree."
+  ],
+  "new_visual_model_implemented": false,
+  "independent_visual_observers": 0
+}

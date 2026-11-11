@@ -1,0 +1,235 @@
+{
+  "completed_at": "2026-11-11T21:20:24+01:00",
+  "baseline_commit": "f69a8c83f8eef3e026b244bc3ee13761d8cc2546",
+  "source_directory": "artifacts/eye-model-20261111/city",
+  "source_sha256": {
+    "result.json": "db7adcec9d61f61bbf7fdf82398ac228b7c187a9558617bfd705d8ca0da599e6",
+    "eye-display.json": "badbc72d8bd9cecf556bcc6550d2cbce9612a91920c822f169a0f57915f65ced",
+    "eye-view.png": "7efc2c9acec7c5b2b9b8548f908c38063dd3d653c0ed2977185c06a891d3c40b"
+  },
+  "source_files_unchanged": true,
+  "physical_model_recomputed": false,
+  "new_eye_or_camera_model_implemented": false,
+  "view": {
+    "azimuth_deg": 180.0,
+    "altitude_deg": 75.0,
+    "horizontal_fov_deg": 60.0,
+    "width": 1800,
+    "height": 1100
+  },
+  "field_pixels": 1980000,
+  "grid_azimuth_deg": [
+    0.0,
+    45.0,
+    90.0,
+    135.0,
+    180.0,
+    225.0,
+    270.0,
+    315.0
+  ],
+  "grid_altitude_deg": [
+    10.0,
+    20.0,
+    45.0,
+    70.0,
+    90.0
+  ],
+  "background_scotopic_cd_m2_range": [
+    0.0019202274246324235,
+    0.003261624447394095
+  ],
+  "background_photopic_cd_m2_range": [
+    0.0009549299185401914,
+    0.0015926117224933818
+  ],
+  "background_float_display_code_range": [
+    19.538119794785654,
+    22.322982351301345
+  ],
+  "background_quantized_levels": [
+    20,
+    21,
+    22
+  ],
+  "background_pixels_per_level": [
+    1102362,
+    574136,
+    303502
+  ],
+  "identical_RGB_pixels": 1980000,
+  "saturated_field_pixels": 0,
+  "field_max_code": 164,
+  "displayed_stars": 220,
+  "catalogue_stars_in_view": 537,
+  "stellar_flux_over_threshold_quantiles": [
+    1.0017643363905018,
+    1.8695785240561533,
+    155.27008994672516
+  ],
+  "resize_diagnostics": [
+    {
+      "width_px": 1800,
+      "height_px": 1100,
+      "field_max_code": 164,
+      "stellar_local_peak_excess_code_quantiles": [
+        0.0,
+        46.0,
+        92.29999999999998,
+        144.0
+      ],
+      "star_positions_with_no_positive_code_in_3x3": 1,
+      "star_positions_checked": 220,
+      "not_a_human_detection_test": true,
+      "not_a_measurement_of_Telegram_resampling": true
+    },
+    {
+      "width_px": 900,
+      "height_px": 550,
+      "field_max_code": 130,
+      "stellar_local_peak_excess_code_quantiles": [
+        0.0,
+        23.0,
+        53.0,
+        110.0
+      ],
+      "star_positions_with_no_positive_code_in_3x3": 1,
+      "star_positions_checked": 220,
+      "not_a_human_detection_test": true,
+      "not_a_measurement_of_Telegram_resampling": true
+    },
+    {
+      "width_px": 390,
+      "height_px": 238,
+      "field_max_code": 48,
+      "stellar_local_peak_excess_code_quantiles": [
+        0.0,
+        6.0,
+        13.0,
+        28.0
+      ],
+      "star_positions_with_no_positive_code_in_3x3": 10,
+      "star_positions_checked": 220,
+      "not_a_human_detection_test": true,
+      "not_a_measurement_of_Telegram_resampling": true
+    }
+  ],
+  "angular_grid_derivative_diagnostics": [
+    {
+      "azimuth_deg": 0.0,
+      "altitude_deg": 45.0,
+      "left_derivative_cd_m2_per_degree": -3.76867138884851e-06,
+      "right_derivative_cd_m2_per_degree": -2.7522960147942366e-06,
+      "slope_jump_cd_m2_per_degree": 1.0163753740542736e-06
+    },
+    {
+      "azimuth_deg": 45.0,
+      "altitude_deg": 45.0,
+      "left_derivative_cd_m2_per_degree": -2.7522960143605557e-06,
+      "right_derivative_cd_m2_per_degree": 2.8230021371748737e-06,
+      "slope_jump_cd_m2_per_degree": 5.575298151535429e-06
+    },
+    {
+      "azimuth_deg": 90.0,
+      "altitude_deg": 45.0,
+      "left_derivative_cd_m2_per_degree": 2.8230021371748737e-06,
+      "right_derivative_cd_m2_per_degree": 1.7963662967291488e-05,
+      "slope_jump_cd_m2_per_degree": 1.5140660830116615e-05
+    },
+    {
+      "azimuth_deg": 135.0,
+      "altitude_deg": 45.0,
+      "left_derivative_cd_m2_per_degree": 1.796366296772517e-05,
+      "right_derivative_cd_m2_per_degree": 2.1923002112029383e-05,
+      "slope_jump_cd_m2_per_degree": 3.959339144304214e-06
+    },
+    {
+      "azimuth_deg": 180.0,
+      "altitude_deg": 45.0,
+      "left_derivative_cd_m2_per_degree": 2.1923002112463064e-05,
+      "right_derivative_cd_m2_per_degree": -2.1310407939158227e-05,
+      "slope_jump_cd_m2_per_degree": -4.323341005162129e-05
+    },
+    {
+      "azimuth_deg": 225.0,
+      "altitude_deg": 45.0,
+      "left_derivative_cd_m2_per_degree": -2.1310407939591908e-05,
+      "right_derivative_cd_m2_per_degree": -1.4743591431921887e-05,
+      "slope_jump_cd_m2_per_degree": 6.56681650767002e-06
+    },
+    {
+      "azimuth_deg": 270.0,
+      "altitude_deg": 45.0,
+      "left_derivative_cd_m2_per_degree": -1.4743591431488207e-05,
+      "right_derivative_cd_m2_per_degree": -1.347004426402454e-07,
+      "slope_jump_cd_m2_per_degree": 1.4608890988847961e-05
+    },
+    {
+      "azimuth_deg": 315.0,
+      "altitude_deg": 45.0,
+      "left_derivative_cd_m2_per_degree": -1.347004426402454e-07,
+      "right_derivative_cd_m2_per_degree": -3.76867138884851e-06,
+      "slope_jump_cd_m2_per_degree": -3.6339709462082648e-06
+    },
+    {
+      "azimuth_deg": 0.0,
+      "altitude_deg": 70.0,
+      "left_derivative_cd_m2_per_degree": -9.831332284729322e-07,
+      "right_derivative_cd_m2_per_degree": -5.025703961065303e-07,
+      "slope_jump_cd_m2_per_degree": 4.805628323664018e-07
+    },
+    {
+      "azimuth_deg": 45.0,
+      "altitude_deg": 70.0,
+      "left_derivative_cd_m2_per_degree": -5.025703961065303e-07,
+      "right_derivative_cd_m2_per_degree": 1.3093575754880016e-06,
+      "slope_jump_cd_m2_per_degree": 1.811927971594532e-06
+    },
+    {
+      "azimuth_deg": 90.0,
+      "altitude_deg": 70.0,
+      "left_derivative_cd_m2_per_degree": 1.3093575754880016e-06,
+      "right_derivative_cd_m2_per_degree": 3.553259612758264e-06,
+      "slope_jump_cd_m2_per_degree": 2.2439020372702623e-06
+    },
+    {
+      "azimuth_deg": 135.0,
+      "altitude_deg": 70.0,
+      "left_derivative_cd_m2_per_degree": 3.553259612758264e-06,
+      "right_derivative_cd_m2_per_degree": 2.5443373762035204e-06,
+      "slope_jump_cd_m2_per_degree": -1.0089222365547434e-06
+    },
+    {
+      "azimuth_deg": 180.0,
+      "altitude_deg": 70.0,
+      "left_derivative_cd_m2_per_degree": 2.5443373762035204e-06,
+      "right_derivative_cd_m2_per_degree": -1.909805396292652e-06,
+      "slope_jump_cd_m2_per_degree": -4.454142772496172e-06
+    },
+    {
+      "azimuth_deg": 225.0,
+      "altitude_deg": 70.0,
+      "left_derivative_cd_m2_per_degree": -1.909805395858971e-06,
+      "right_derivative_cd_m2_per_degree": -2.7688760394738166e-06,
+      "slope_jump_cd_m2_per_degree": -8.590706436148454e-07
+    },
+    {
+      "azimuth_deg": 270.0,
+      "altitude_deg": 70.0,
+      "left_derivative_cd_m2_per_degree": -2.7688760390401357e-06,
+      "right_derivative_cd_m2_per_degree": -1.2425695047543761e-06,
+      "slope_jump_cd_m2_per_degree": 1.5263065342857596e-06
+    },
+    {
+      "azimuth_deg": 315.0,
+      "altitude_deg": 70.0,
+      "left_derivative_cd_m2_per_degree": -1.2425695047543761e-06,
+      "right_derivative_cd_m2_per_degree": -9.831332284729322e-07,
+      "slope_jump_cd_m2_per_degree": 2.5943627628144394e-07
+    }
+  ],
+  "independent_held_out_transfer_rays": 0,
+  "independent_visual_observers": 0,
+  "angular_field_accuracy_established": false,
+  "perceptual_brightness_accuracy_established": false
+}
