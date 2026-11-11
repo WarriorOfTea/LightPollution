@@ -81,7 +81,7 @@ def _transfer_grid(resource, observer: Observer, atmosphere: Atmosphere):
 
 
 def calculate_scene(config: dict, resources: ObservationResources, *,
-                    background: BackgroundModel | None = None) -> dict:
+                    background: BackgroundModel | None = None, sample_directions=None) -> dict:
     """Validate the complete scene before returning strict-JSON-compatible results."""
     config = deepcopy(config)
     _object(config, {'schema_version','mode','time','observer','directions','atmosphere',
@@ -315,7 +315,7 @@ def calculate_scene(config: dict, resources: ObservationResources, *,
                          'outside_grid_altitude_coverage':int(np.count_nonzero(~covered)),
                          'exported':len(star_rows), 'detected_by_eye_not_modelled':True,
                          'flux_reference':'V magnitude 0 point-source flux; NOT the diffuse Bref'}
-    return {'schema_version':1, 'mode':config['mode'], 'utc':utc, 'input_scene':config,
+    output = {'schema_version':1, 'mode':config['mode'], 'utc':utc, 'input_scene':config,
             'observer':asdict(observer), 'atmosphere':asdict(atmosphere),
             'atmosphere_origin':atmosphere_origin(atmosphere_values), 'cloud_free':True,
             'geometry':context, 'moon':lunar,
@@ -330,3 +330,7 @@ def calculate_scene(config: dict, resources: ObservationResources, *,
                      'distance_correction_reference_km':REFERENCE_DISTANCE_KM,
                      'lunar_opposition_surge':False, 'lunar_eclipse_model':False,
                      'physical_error_bound':None, 'document':'docs/OBSERVATION_MODEL.md'}}
+    if sample_directions is not None:
+        samples=np.asarray([_direction(v) for v in sample_directions])
+        output['sampled_directions']=fields(samples[:,0],samples[:,1])
+    return output

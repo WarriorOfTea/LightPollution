@@ -2,6 +2,7 @@
 #pragma once
 
 #include <QDockWidget>
+#include <QPointer>
 #include <QJsonObject>
 #include <QNetworkAccessManager>
 #include <QTimer>
@@ -14,6 +15,7 @@ class QLabel;
 class QPushButton;
 class QTableWidget;
 class KStars;
+class QDialog;
 
 /** Native KStars dock; physical calculations stay in the versioned local backend. */
 class LightPollutionDock : public QDockWidget
@@ -29,6 +31,8 @@ public slots:
     Q_SCRIPTABLE void calculate();
     Q_SCRIPTABLE bool savePanelScreenshot(const QString &path);
     Q_SCRIPTABLE bool saveWindowScreenshot(const QString &path);
+    Q_SCRIPTABLE bool saveEyeScreenshot(const QString &path);
+    Q_SCRIPTABLE void showEyeView();
 private:
     QJsonObject snapshot() const;
     QJsonObject scene() const;
@@ -45,11 +49,14 @@ private:
     QTimer m_Timer;
     QComboBox *m_Region, *m_Period, *m_Terrain;
     QDoubleSpinBox *m_Height, *m_AOD;
-    QCheckBox *m_Near, *m_Follow, *m_Spectral;
+    QCheckBox *m_Near, *m_Follow, *m_Spectral, *m_Eye;
+    QPushButton *m_OpenEye;
     QLabel *m_Position, *m_Status, *m_Scale;
     QTableWidget *m_Values;
     QJsonObject m_Base, m_LastResult, m_Regions;
     QString m_URL, m_Job, m_SubmittedKey, m_CurrentKey;
     bool m_Busy=false, m_PollPending=false, m_CancelSent=false;
     int m_StableTicks=0;
+    bool m_EyePreviewReady=false;
+    QPointer<QDialog> m_EyeDialog;
 };

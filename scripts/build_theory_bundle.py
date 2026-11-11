@@ -12,7 +12,7 @@ from lightpollution.adapters.storage import file_hash, write_json
 ROOT=Path(__file__).resolve().parents[1]
 DOCUMENTS=['PHYSICS_AND_MATH_GUIDE.md','PHOTOMETRY_AND_SPECTRA.md',
     'OBSERVATION_MODEL.md','NATURAL_TWILIGHT_SNOW.md',
-    'TOPOGRAPHY_AND_NEAR_FIELD.md','KSTARS_INTEGRATION.md']
+    'TOPOGRAPHY_AND_NEAR_FIELD.md','KSTARS_INTEGRATION.md','EYE_MODEL.md']
 
 
 def main():
@@ -20,8 +20,8 @@ def main():
     parser.add_argument('--output',type=Path,default=Path('artifacts/kstars-terrain-near-20261111'))
     args=parser.parse_args()
     output=args.output.resolve();output.mkdir(parents=True,exist_ok=True)
-    chunks=['# LightPollution 0.5: теория с основ и интеграция\n> Дата создания: '+date.today().isoformat()+'\n\n'
-        'Основы оптики → геометрия → перенос → фотометрия → фон/снег → рельеф и ближний свет → KStars.\n'
+    chunks=['# LightPollution 0.6: теория с основ, глаз и интеграция\n> Дата создания: '+date.today().isoformat()+'\n\n'
+        'Основы оптики → геометрия → перенос → фотометрия → фон/снег → рельеф и ближний свет → KStars → порог зрения.\n'
         'Это объяснение реализованных приближений; формализм не доказывает точность полевого прогноза.\n']
     records=[];original_blocks=[]
     token=re.compile(r'(```[^\n]*\n[\s\S]*?\n```|`[^`\n]*`)|(\[[^\]\n]+\]\()([^\s)]+)(\))')

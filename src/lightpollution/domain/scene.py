@@ -11,6 +11,7 @@ from ..atmosphere_config import atmosphere_from_mapping, atmosphere_origin
 from ..physics import Atmosphere, Observer
 from ..models.background import background_config
 from ..models.surface import surface_config
+from ..models.eye import eye_config
 
 
 class DomainError(ValueError):
@@ -46,7 +47,7 @@ class SceneSpec:
                    'directions', 'atmosphere', 'reference_atmosphere', 'profile',
                    'anchor_v_mag_arcsec2', 'natural_v_mag_arcsec2', 'moon', 'download_missing',
                    'anchor_observer', 'photometric_calibration', 'spectrum', 'background', 'surface',
-                   'near_field', 'terrain', 'integration'}
+                   'near_field', 'terrain', 'integration', 'eye'}
         if set(data) - allowed:
             raise DomainError('invalid_input', 'В сценарии есть неизвестные поля.',
                               {'fields': sorted(set(data) - allowed)})
@@ -100,6 +101,14 @@ class SceneSpec:
                 raise DomainError('invalid_calibration', 'Калибровка должна содержать область применимости и контрольный идентификатор.')
             if number(calibration.get('source_coefficient'), 'source_coefficient') <= 0:
                 raise DomainError('invalid_calibration', 'Коэффициент калибровки должен быть положительным.')
+        if 'eye' in data:
+            if data['mode']!='dated':
+                raise DomainError('invalid_eye', 'Для модели звёздного зрения нужна дата.')
+            try:
+                data['eye']=eye_config(data['eye'])
+            except ValueError as exc:
+                raise DomainError('invalid_eye',str(exc)) from exc
+            data.setdefault('spectrum',{})
         if 'spectrum' in data:
             spectrum = data['spectrum']
             if not isinstance(spectrum, dict) or set(spectrum) - {'mix', 'reference_mix', 'angstrom_exponent', 'stars'}:

@@ -26,7 +26,7 @@ from ..physics import Observer, SolverSettings
 from ..skyview import load_stars
 
 ROOT = Path(__file__).resolve().parents[1]
-MODEL_VERSION = 'terrain-finite-near-field-kstars-1'
+MODEL_VERSION = 'terrain-finite-near-field-kstars-eye-1'
 PROFILES = {'quick': (SolverSettings(96, 12), 24),
             'standard': (SolverSettings(192, 24), 12)}
 
@@ -132,7 +132,8 @@ class Planner:
         scene_code = _code_identity(['models/observation.py', 'photometry.py', 'moonlight.py',
                                      'skyview.py', 'observation.py', 'catalogues/bsc5.csv',
                                      'application/planner.py', 'domain/scene.py', 'domain/calibration.py',
-                                     'adapters/spectral_library.py', 'models/background.py', 'models/surface.py'])
+                                     'adapters/spectral_library.py', 'models/background.py', 'models/surface.py',
+                                     'models/eye.py', 'application/eye.py'])
         request_key = content_key({'scene': resolved, 'source_basis': group.identity,
             'transfer_code': transfer_code, 'scene_code': scene_code, 'solver': solver.version,
             'application_model': MODEL_VERSION, 'spectral_library': library.identity if library else None})
@@ -151,6 +152,11 @@ class Planner:
         reference_atmosphere = atmosphere_from_mapping(data['reference_atmosphere'])
         azimuths = np.asarray(sorted({0., 90., 180., 270., *[v[0] for v in data['directions']]}))
         altitudes = np.asarray(sorted({10., 90., *[v[1] for v in data['directions']]}))
+        if 'eye' in data:
+            # A view must not silently rely on the sparse single-ray grid.
+            # These extra samples are physical transfers, not interpolated data.
+            azimuths=np.unique(np.r_[azimuths,np.arange(0.,360.,45.)])
+            altitudes=np.unique(np.r_[altitudes,20.,45.,70.])
         total = 1 + 1 + len(azimuths) * (len(altitudes) - 1)
         if surface and surface['direct_horizontal_fraction'] > 0 and surface['direct_upward_fraction'] > 0:
             total *= 2
@@ -321,7 +327,9 @@ class Planner:
             load_stars() if data['mode'] == 'dated' else None, scale)
         background = (BackgroundModel(data['background'], observer, atmosphere, data['natural_v_mag_arcsec2'])
                       if 'background' in data else None)
-        observation = calculate_scene(legacy, resources, background=background)
+        sampled = [[float(az),float(alt)] for alt in altitudes for az in azimuths] if 'eye' in data else None
+        observation = calculate_scene(legacy, resources, background=background, sample_directions=sampled)
+        angular_rows = observation.pop('sampled_directions', None)
         if background:
             observation['background_model'] = background.metadata()
         if surface:
@@ -472,6 +480,32 @@ class Planner:
             result['capabilities'].append('finite_nearby_emitting_cells')
         if 'integration' in data:
             result['integration'] = data['integration']
+        if 'eye' in data:
+            from .eye import build_eye_result
+            assert library is not None and spectral_raw is not None
+            radiance = spectral_raw*mix*coefficient*reference_radiance
+            photopic = 683*band_integral(library.wavelengths,radiance,library.responses['photopic'])
+            scotopic = 1700*band_integral(library.wavelengths,radiance,library.responses['scotopic'])
+            supported = np.asarray([r['supported'] for r in angular_rows],dtype=bool)
+            if terrain:
+                endpoints = np.asarray([observer.position+1000000*observer.direction(*direction) for direction in sampled])
+                supported &= terrain.visible(observer.position,endpoints,data['terrain']['visibility_step_m'])
+            field = {'azimuth_deg':azimuths.tolist(),'altitude_deg':altitudes.tolist(),
+                'city_photopic_luminance_cd_m2':photopic.tolist(),
+                'city_scotopic_luminance_cd_m2':scotopic.tolist(),
+                'physical_supported':supported.reshape(raw.shape).tolist(),
+                'unresolved_v_relative':np.asarray([r['natural_relative']+(r.get('moon_relative') or 0.)+
+                    (r.get('twilight_relative') or 0.) for r in angular_rows]).reshape(raw.shape).tolist(),
+                'source_basis_id':group.identity,'calibration_origin':scale_origin}
+            reference_star = 1700*band_integral(library.wavelengths,library.measured[7001],
+                                              library.responses['scotopic'])*10**(.4*.03)
+            result['eye'] = build_eye_result(result,data['eye'],field,float(reference_star))
+            result['capabilities'].append('bounded_scotopic_eye_threshold')
+            result['unavailable_capabilities'].remove('eye_detection')
+            result['unavailable_capabilities'] += ['validated_eye_appearance','eye_colour','adaptation_time_course']
+            result['stars']['detected_by_eye'] = result['eye']['summary']['above_threshold']
+            result['stars']['metadata']['detected_by_eye_not_modelled'] = False
+            observation['stars_metadata']['detected_by_eye_not_modelled'] = False
         _write_checked(scene_path, result)
         progress({'phase': 'Готово', 'completed': total, 'total': total})
         return RunResult(result)
@@ -482,6 +516,11 @@ def export_result(result: RunResult, output: Path):
     write_json(output / 'scene.json', value['request'])
     write_json(output / 'resolved-scene.json', value['resolved_scene'])
     write_observation({**value['observation'], 'stars': value['stars']['rows']}, output)
+    if 'eye' in value:
+        from .eye import export_eye
+        from ..interfaces.eye_view import render_eye_view
+        value['eye']['display']=render_eye_view(value,output)
+        export_eye(value['eye'],output)
     write_json(output / 'result.json', value)
 
 

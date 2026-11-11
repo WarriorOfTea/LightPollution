@@ -1,0 +1,11 @@
+{
+  "declared_at": "2026-11-11T17:33:20+01:00",
+  "Crumey_dark_reference_mag": 6.18,
+  "reference_tolerance_mag": 0.015,
+  "equation54_max_error_mag": 0.011,
+  "eye_probability_model_fitted": false,
+  "stellar_extinction_count": 1,
+  "same_view_and_display_scale_city_on_off": true,
+  "independent_human_observers": 0,
+  "image_claim": "model illustration under stated conditions, not a calibrated photograph"
+}

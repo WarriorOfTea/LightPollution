@@ -1,0 +1,42 @@
+{
+  "source_documents": [
+    {
+      "path": "docs/PHYSICS_AND_MATH_GUIDE.md",
+      "sha256": "c0625562a641e7eb6b5ec8957c4b74f052cd801f73a6e96f0f9df8d7f1823803",
+      "fenced_blocks": 21
+    },
+    {
+      "path": "docs/PHOTOMETRY_AND_SPECTRA.md",
+      "sha256": "164edf2c5f12d708c11d2674c3da47830df9af1bd278d6507b8af4d49cd23c1b",
+      "fenced_blocks": 8
+    },
+    {
+      "path": "docs/OBSERVATION_MODEL.md",
+      "sha256": "8bb9b5760c5e23b0366cae5ab466b53a1db137149ca8d15d27076834e37c696d",
+      "fenced_blocks": 9
+    },
+    {
+      "path": "docs/NATURAL_TWILIGHT_SNOW.md",
+      "sha256": "02079b6ef8de7215127280e88c2a0e6b9c436445e2d9653c4dfdef1c371b1f69",
+      "fenced_blocks": 17
+    },
+    {
+      "path": "docs/TOPOGRAPHY_AND_NEAR_FIELD.md",
+      "sha256": "6ecf3fae4c78fd5b0a3a18afba753938fca6e4f09a33cb77e248a45886842595",
+      "fenced_blocks": 6
+    },
+    {
+      "path": "docs/KSTARS_INTEGRATION.md",
+      "sha256": "4709b846519404610077425bc1407a80219df6b2a60940ca14996a589cf3a249",
+      "fenced_blocks": 2
+    },
+    {
+      "path": "docs/EYE_MODEL.md",
+      "sha256": "3ed5dfd131a5c98d7cd9d58bfa303f96d414565009a1e6a879aff862d35c0559",
+      "fenced_blocks": 5
+    }
+  ],
+  "fenced_code_and_formula_blocks": 68,
+  "all_blocks_preserved_byte_for_byte": true,
+  "link_rewriting_excludes_fenced_and_inline_code": true
+}

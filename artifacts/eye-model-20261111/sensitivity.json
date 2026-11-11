@@ -1,0 +1,62 @@
+[
+  {
+    "observer_factor": 1.4,
+    "unresolved_background_sp_ratio": 1.408,
+    "catalogue_stars_after_terrain_mask": 3832,
+    "threshold_supported_stars": 2781,
+    "above_threshold": 1322,
+    "below_threshold": 1459,
+    "unavailable": 1051,
+    "not_a_detection_probability": true
+  },
+  {
+    "observer_factor": 1.4,
+    "unresolved_background_sp_ratio": 2.5,
+    "catalogue_stars_after_terrain_mask": 3832,
+    "threshold_supported_stars": 2647,
+    "above_threshold": 1229,
+    "below_threshold": 1418,
+    "unavailable": 1185,
+    "not_a_detection_probability": true
+  },
+  {
+    "observer_factor": 2.0,
+    "unresolved_background_sp_ratio": 1.408,
+    "catalogue_stars_after_terrain_mask": 3832,
+    "threshold_supported_stars": 2781,
+    "above_threshold": 867,
+    "below_threshold": 1914,
+    "unavailable": 1051,
+    "not_a_detection_probability": true
+  },
+  {
+    "observer_factor": 2.0,
+    "unresolved_background_sp_ratio": 2.5,
+    "catalogue_stars_after_terrain_mask": 3832,
+    "threshold_supported_stars": 2647,
+    "above_threshold": 809,
+    "below_threshold": 1838,
+    "unavailable": 1185,
+    "not_a_detection_probability": true
+  },
+  {
+    "observer_factor": 2.4,
+    "unresolved_background_sp_ratio": 1.408,
+    "catalogue_stars_after_terrain_mask": 3832,
+    "threshold_supported_stars": 2781,
+    "above_threshold": 696,
+    "below_threshold": 2085,
+    "unavailable": 1051,
+    "not_a_detection_probability": true
+  },
+  {
+    "observer_factor": 2.4,
+    "unresolved_background_sp_ratio": 2.5,
+    "catalogue_stars_after_terrain_mask": 3832,
+    "threshold_supported_stars": 2647,
+    "above_threshold": 645,
+    "below_threshold": 2002,
+    "unavailable": 1185,
+    "not_a_detection_probability": true
+  }
+]

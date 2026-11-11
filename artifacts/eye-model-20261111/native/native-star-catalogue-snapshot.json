@@ -1,0 +1,25 @@
+{
+  "altitude_convention": "geometric_unrefracted",
+  "artificial_horizon_visible": true,
+  "focus": {
+    "altitude_deg": 21.70913918371772,
+    "azimuth_deg": 311.57293080047134,
+    "catalogue_magnitude": 0.029999999329447746,
+    "dec_jnow_deg": 38.81123730233632,
+    "fov_deg": 151.74380493164062,
+    "object_name": "Vega",
+    "ra_jnow_deg": 279.45778414670525,
+    "star_b_v": null,
+    "star_hd": 172167,
+    "star_spectral_type": "A0"
+  },
+  "kstars_version": "3.6.2",
+  "location": {
+    "elevation_m": 120,
+    "latitude_deg": 60.3,
+    "longitude_deg": 30.315,
+    "name": "GPS Location"
+  },
+  "schema_version": 1,
+  "utc": "2026-11-11T21:00:00Z"
+}

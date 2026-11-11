@@ -19,6 +19,7 @@ from .planner import Planner, export_result
 TERMINAL = {'completed', 'cancelled', 'error'}
 EXPORTS = ('scene.json', 'resolved-scene.json', 'observation.json', 'result.json',
            'directions.csv', 'stars.csv', 'bundle.zip')
+OPTIONAL_EXPORTS = ('eye.json', 'eye-directions.csv', 'eye-stars.csv', 'eye-display.json', 'eye-view.png')
 
 
 def timestamp():
@@ -51,8 +52,8 @@ def _worker(workspace: str, raw_directory: str | None, job_id: str, owner_pid: i
         export_result(result, output)
         with atomic_target(output / 'bundle.zip') as temporary:
             with zipfile.ZipFile(temporary, 'w', zipfile.ZIP_DEFLATED) as archive:
-                for name in EXPORTS:
-                    if name != 'bundle.zip':
+                for name in EXPORTS+OPTIONAL_EXPORTS:
+                    if name != 'bundle.zip' and (output/name).is_file():
                         archive.write(output / name, arcname=name)
         if cancelled():
             raise Cancelled()
@@ -152,11 +153,14 @@ class JobManager:
         return read_json(self._path(job_id) / 'output/result.json')
 
     def export(self, job_id, name):
-        if name not in EXPORTS:
+        if name not in EXPORTS+OPTIONAL_EXPORTS:
             raise DomainError('unknown_export', 'Этот файл не входит в результат.')
         if self.get(job_id)['state'] != 'completed':
             raise DomainError('result_unavailable', 'Экспорт доступен после успешного завершения.')
-        return self._path(job_id) / 'output' / name
+        path=self._path(job_id) / 'output' / name
+        if not path.is_file():
+            raise DomainError('unknown_export','Для этого сценария файл недоступен; проверьте область модели глаза.')
+        return path
 
     def close(self):
         with self._mutex:

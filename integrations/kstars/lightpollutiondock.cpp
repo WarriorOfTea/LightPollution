@@ -15,6 +15,9 @@
 #include <QCryptographicHash>
 #include <QDBusConnection>
 #include <QDoubleSpinBox>
+#include <QDialog>
+#include <QScrollArea>
+#include <QPixmap>
 #include <QFile>
 #include <QFileDialog>
 #include <QFormLayout>
@@ -47,11 +50,14 @@ LightPollutionDock::LightPollutionDock(KStars *parent) : QDockWidget("LightPollu
     m_AOD=new QDoubleSpinBox(body);m_AOD->setRange(0,2);m_AOD->setSingleStep(.05);m_AOD->setValue(.1);
     m_Near=new QCheckBox(tr("Конечные ближние ячейки"),body);m_Near->setChecked(true);
     m_Spectral=new QCheckBox(tr("Спектральный сценарий"),body);
+    m_Eye=new QCheckBox(tr("Порог невооружённого глаза"),body);
+    m_OpenEye=new QPushButton(tr("Открыть монохромный вид"),body);m_OpenEye->setEnabled(false);
     m_Follow=new QCheckBox(tr("Следить за картой и временем"),body);
     form->addRow(tr("Источники"),m_Region);form->addRow(tr("Период"),m_Period);
     form->addRow(tr("Рельеф"),m_Terrain);form->addRow(tr("Высота над DSM, м"),m_Height);
     form->addRow(tr("AOD 550 нм"),m_AOD);layout->addLayout(form);
-    layout->addWidget(m_Near);layout->addWidget(m_Spectral);layout->addWidget(m_Follow);
+    layout->addWidget(m_Near);layout->addWidget(m_Spectral);layout->addWidget(m_Eye);
+    layout->addWidget(m_OpenEye);layout->addWidget(m_Follow);
     auto *buttons=new QHBoxLayout;
     auto *run=new QPushButton(tr("Рассчитать"),body);auto *cancel=new QPushButton(tr("Отменить"),body);
     buttons->addWidget(run);buttons->addWidget(cancel);layout->addLayout(buttons);
@@ -62,13 +68,15 @@ LightPollutionDock::LightPollutionDock(KStars *parent) : QDockWidget("LightPollu
     m_Values=new QTableWidget(0,2,body);m_Values->setHorizontalHeaderLabels({tr("Компонент"),tr("Значение")});
     m_Values->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
     m_Values->verticalHeader()->hide();m_Values->setEditTriggers(QAbstractItemView::NoEditTriggers);layout->addWidget(m_Values);
-    m_Scale=new QLabel(tr("Сценарный масштаб. Это расчёт фона; восприятие глазом и сигнал камеры ещё не моделируются."),body);
+    m_Scale=new QLabel(tr("Сценарный масштаб. Порог глаза — ограниченный режим полной адаптации; цвет и сенсор не калиброваны."),body);
     m_Scale->setWordWrap(true);layout->addWidget(m_Scale);setWidget(body);
     m_URL=qEnvironmentVariable("LIGHTPOLLUTION_URL","http://127.0.0.1:8765");
     const QUrl url(m_URL);
     if(url.scheme()!="http" || !(url.host()=="127.0.0.1" || url.host()=="localhost" || url.host()=="::1"))
         m_URL="http://127.0.0.1:8765";
     connect(run,&QPushButton::clicked,this,&LightPollutionDock::calculate);
+    connect(m_Eye,&QCheckBox::toggled,this,[this](bool enabled){if(enabled)m_Spectral->setChecked(true);});
+    connect(m_OpenEye,&QPushButton::clicked,this,&LightPollutionDock::showEyeView);
     connect(cancel,&QPushButton::clicked,this,[this](){m_Follow->setChecked(false);if(!m_Job.isEmpty())request("/api/jobs/"+m_Job+"/cancel",{},[](const QJsonObject &,const QString &){});});
     connect(load,&QPushButton::clicked,this,[this](){const QString path=QFileDialog::getOpenFileName(this,tr("Сценарий"),{},"JSON (*.json)");QFile file(path);if(file.open(QIODevice::ReadOnly))setSceneJSON(QString::fromUtf8(file.readAll()));});
     connect(save,&QPushButton::clicked,this,[this](){if(m_LastResult.isEmpty())return;const QString path=QFileDialog::getSaveFileName(this,tr("Результат"),"lightpollution-result.json","JSON (*.json)");QFile file(path);if(file.open(QIODevice::WriteOnly))file.write(QJsonDocument(m_LastResult).toJson());});
@@ -111,6 +119,7 @@ QJsonObject LightPollutionDock::scene() const
     auto atmosphere=value.value("atmosphere").toObject();atmosphere.insert("aerosol_optical_depth",m_AOD->value());value.insert("atmosphere",atmosphere);
     if(m_Near->isChecked())value.insert("near_field",value.value("near_field").toObject());else value.remove("near_field");
     if(m_Spectral->isChecked())value.insert("spectrum",value.value("spectrum").toObject());else value.remove("spectrum");
+    if(m_Eye->isChecked())value.insert("eye",value.value("eye").toObject());else value.remove("eye");
     if(!m_Terrain->currentData().toString().isEmpty()){auto t=value.value("terrain").toObject();t.insert("dataset",m_Terrain->currentData().toString());value.insert("terrain",t);}else value.remove("terrain");
     if(!value.contains("background"))value.insert("background",QJsonObject{{"twilight","patat2006"}});
     return value;
@@ -132,7 +141,9 @@ QString LightPollutionDock::statusJSON() const
     QJsonObject summary{{"busy",m_Busy},{"job_id",m_Job},{"message",m_Status->text()},
         {"stale",!m_SubmittedKey.isEmpty() && m_SubmittedKey!=contextKey()},
         {"integration",m_LastResult.value("integration")},{"sky",m_LastResult.value("sky")},
-        {"request",m_LastResult.value("request")}};
+        {"request",m_LastResult.value("request")},
+        {"eye_display",m_LastResult.value("eye").toObject().value("display")},
+        {"eye_preview_ready",m_EyePreviewReady}};
     return QString::fromUtf8(QJsonDocument(summary).toJson(QJsonDocument::Compact));
 }
 bool LightPollutionDock::setSceneJSON(const QString &json)
@@ -144,11 +155,32 @@ bool LightPollutionDock::setSceneJSON(const QString &json)
     m_Height->setValue(m_Base.value("observer").toObject().value("height_m").toDouble(2));
     m_AOD->setValue(m_Base.value("atmosphere").toObject().value("aerosol_optical_depth").toDouble(.1));
     m_Near->setChecked(m_Base.contains("near_field"));m_Spectral->setChecked(m_Base.contains("spectrum"));
+    m_Eye->setChecked(m_Base.contains("eye"));
     m_Terrain->setCurrentIndex(std::max(0,m_Terrain->findData(m_Base.value("terrain").toObject().value("dataset").toString())));
     return true;
 }
 bool LightPollutionDock::savePanelScreenshot(const QString &path){return grab().save(path);}
 bool LightPollutionDock::saveWindowScreenshot(const QString &path){return m_KStars->grab().save(path);}
+bool LightPollutionDock::saveEyeScreenshot(const QString &path)
+{return m_EyeDialog && m_EyeDialog->isVisible() && m_EyeDialog->grab().save(path);}
+void LightPollutionDock::showEyeView()
+{
+    if(m_Busy || !m_OpenEye->isEnabled())return;
+    const QString requestedJob=m_Job;
+    auto *reply=m_Network.get(QNetworkRequest(QUrl(m_URL+"/api/jobs/"+m_Job+"/export/eye-view.png")));
+    QTimer::singleShot(15000,reply,&QNetworkReply::abort);
+    connect(reply,&QNetworkReply::finished,this,[this,reply,requestedJob](){
+        if(m_Busy || m_Job!=requestedJob){reply->deleteLater();return;}
+        QPixmap picture;
+        if(reply->error()!=QNetworkReply::NoError || !picture.loadFromData(reply->readAll()))
+        {setStatus(tr("Изображение недоступно; проверьте область модели глаза."));reply->deleteLater();return;}
+        auto *dialog=new QDialog(m_KStars);dialog->setAttribute(Qt::WA_DeleteOnClose);
+        dialog->setWindowTitle(tr("Монохромная иллюстрация · сохранённый сценарий"));
+        auto *layout=new QVBoxLayout(dialog);auto *scroll=new QScrollArea(dialog);auto *label=new QLabel;
+        label->setPixmap(picture.scaled(1200,800,Qt::KeepAspectRatio,Qt::SmoothTransformation));
+        scroll->setWidget(label);layout->addWidget(scroll);dialog->resize(1230,840);dialog->show();
+        m_EyeDialog=dialog;m_EyePreviewReady=true;reply->deleteLater();});
+}
 void LightPollutionDock::setStatus(const QString &text){m_Status->setText(text);}
 
 void LightPollutionDock::request(const QString &path,const QJsonObject &payload,
@@ -181,7 +213,7 @@ void LightPollutionDock::calculate()
     if(m_Region->count()==0){fetchCatalogue();return;}
     const auto frame=snapshot();const double alt=frame.value("focus").toObject().value("altitude_deg").toDouble();
     if(alt<10 || alt>90){setStatus(tr("Количественный режим поддерживает высоты 10–90°. Переместите центр карты."));return;}
-    m_SubmittedKey=contextKey();m_Busy=true;m_CancelSent=false;m_Job.clear();setStatus(tr("Расчёт снимка состояния KStars…"));
+    m_SubmittedKey=contextKey();m_Busy=true;m_CancelSent=false;m_Job.clear();m_OpenEye->setEnabled(false);m_EyePreviewReady=false;setStatus(tr("Расчёт снимка состояния KStars…"));
     request("/api/kstars/jobs",{{"scene",scene()},{"snapshot",frame}},[this](const QJsonObject &data,const QString &error){if(!error.isEmpty() || data.value("id").toString().isEmpty()){m_Busy=false;setStatus(error.isEmpty()?tr("Ядро не вернуло идентификатор задания."):error);return;}m_Job=data.value("id").toString();poll();});
 }
 void LightPollutionDock::tick()
@@ -205,9 +237,10 @@ void LightPollutionDock::poll()
 }
 void LightPollutionDock::showResult(const QJsonObject &value)
 {
+    m_OpenEye->setEnabled(value.value("eye").toObject().value("display").toObject().value("available").toBool());
     m_LastResult=value;const auto rows=value.value("sky").toObject().value("directions").toArray();if(rows.isEmpty())return;const auto d=rows.first().toObject();
     const QList<QPair<QString,QString>> fields={{tr("Город, B/Bref"),"artificial_relative"},{tr("Прямой городской"),"artificial_direct_relative"},{tr("Отражённый городской"),"artificial_reflected_relative"},{tr("Луна, B/Bref"),"moon_relative"},{tr("Ночной естественный"),"natural_relative"},{tr("Сумерки, B/Bref"),"twilight_relative"},{tr("Сумма, V mag/arcsec²"),"total_v_mag_arcsec2"}};
     m_Values->setRowCount(fields.size());for(int i=0;i<fields.size();++i){m_Values->setItem(i,0,new QTableWidgetItem(fields[i].first));const auto v=d.value(fields[i].second);m_Values->setItem(i,1,new QTableWidgetItem(v.isDouble()?QString::number(v.toDouble(),'g',7):QString::fromUtf8("—")));}
-    m_Scale->setText(tr("Масштаб: ")+value.value("calibration").toObject().value("origin").toString()+tr(". Высота KStars сохранена как справочная; AGL задаётся отдельно. Нет модели адаптации глаза или сенсора."));
+    m_Scale->setText(tr("Масштаб: ")+value.value("calibration").toObject().value("origin").toString()+tr(". Высота KStars сохранена как справочная; AGL задаётся отдельно. Для глаза доступен порог полной адаптации; экранный вид и сенсор не калиброваны."));
     setStatus(m_SubmittedKey!=contextKey()?tr("Получен предыдущий снимок; карта уже изменилась."):(d.value("supported").toBool()?tr("Готово для снимка состояния: ")+value.value("request").toObject().value("time").toString():tr("Сумма недоступна: ")+d.value("status").toString()));
 }

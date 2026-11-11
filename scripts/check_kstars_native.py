@@ -89,7 +89,8 @@ ShowHorizon=true
     try:
         await wait_until(snapshot)
         await call('stop',path='/KStars/SimClock',interface='org.kde.kstars.SimClock')
-        assert await official('setGPSLocation',[30.3,59.95,120.,0.],'dddd')
+        latitude,longitude=(60.3,30.315) if args.eye else (59.95,30.3)
+        assert await official('setGPSLocation',[longitude,latitude,120.,0.],'dddd')
         # KStars 3.6.2 chooses the nearest city's timezone, overriding tz0
         # when a nearby location exists. Read the actual zone, never assume 0.
         location=json.loads(await official('location',[],''))
@@ -99,7 +100,7 @@ ShowHorizon=true
         await official('setAltAz',[90.,0.,False],'ddb')
         await asyncio.sleep(2)
         frame=await snapshot()
-        assert abs(frame['location']['latitude_deg']-59.95)<1e-6,frame
+        assert abs(frame['location']['latitude_deg']-latitude)<1e-6,frame
         assert abs(frame['focus']['altitude_deg']-90)<.05,frame
         assert frame['utc']=='2026-11-11T21:00:00Z',frame
         write_json(out/'native-initial-snapshot.json',frame)
@@ -107,6 +108,9 @@ ShowHorizon=true
             'observer':{'height_m':2.},'near_field':{},
             'terrain':{'dataset':'petersburg-copdem90','visibility_step_m':100},
             'background':{'twilight':'patat2006'},'profile':'quick'}
+        if args.eye:
+            base.update(background={},surface={},eye={'view':{'azimuth_deg':180.,
+                'altitude_deg':75.,'horizontal_fov_deg':60.,'width':1800,'height':1100}})
         assert await call('setSceneJSON',[json.dumps(base)],'s')
         async with httpx2.AsyncClient(base_url=args.url,timeout=30) as client:
             async def calculate(name):
@@ -130,6 +134,13 @@ ShowHorizon=true
                 return result,value
             first,first_value=await calculate('zenith')
             assert await call('savePanelScreenshot',[str(out/'kstars-native-panel.png')],'s')
+            if args.eye:
+                assert first_value['eye']['display']['available']
+                await call('showEyeView')
+                async def preview_ready():
+                    return (await status()).get('eye_preview_ready',False)
+                await wait_until(preview_ready,30)
+                assert await call('saveEyeScreenshot',[str(out/'kstars-native-eye-window.png')],'s')
             await official('setAltAz',[45.,180.,False],'ddb')
             await asyncio.sleep(2)
             assert (await status())['stale']
@@ -152,6 +163,7 @@ ShowHorizon=true
                 'jobs_completed':2,'jobs_requested':2,'geometry_round_trip_checked':True,
                 'stale_after_map_change_checked':True,'AGL_vs_MSL_checked':True,
                 'native_star_B_V_spectral_type_HD_checked':True,
+                'native_eye_preview_opened':bool(args.eye),
                 'screenshots_from_native_Qt_widget':True,'platform':'Qt offscreen / private session D-Bus',
                 'build_excludes_INDI_Ekos_device_control':True,
                 'original_user_settings_modified':False,'job_ids':[first['job_id'],second['job_id']],
@@ -172,6 +184,7 @@ def main():
     parser.add_argument('--runtime',type=Path,required=True)
     parser.add_argument('--data-root',type=Path,default=Path('scratch/kstars-runtime'))
     parser.add_argument('--url',default='http://127.0.0.1:8766')
+    parser.add_argument('--eye',action='store_true',help='Verify the bounded eye model and native PNG viewer.')
     parser.add_argument('--output',type=Path,default=Path('artifacts/kstars-terrain-near-20261111'))
     asyncio.run(verify(parser.parse_args()))
 

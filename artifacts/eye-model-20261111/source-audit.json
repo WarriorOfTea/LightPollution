@@ -1,0 +1,25 @@
+{
+  "Crumey2014": {
+    "url": "https://arxiv.org/pdf/1405.4209v1",
+    "doi": "10.1093/mnras/stu992",
+    "downloaded_bytes": 1348165,
+    "sha256": "fa6ef183f9402be4d321bff5fa2c112510f89ca683b534e33c63fdb6538e50a4",
+    "equations_used": [
+      5,
+      23,
+      26,
+      32,
+      48,
+      53,
+      54
+    ],
+    "copyrighted_PDF_redistributed": false,
+    "Blackwell_original_table_independently_digitised": false
+  },
+  "CIE1912010": {
+    "url": "https://www.cie.co.at/publications/recommended-system-mesopic-photometry-based-visual-performance",
+    "used_for": "scope of mesopic visual tasks; not implemented as a star-colour rendering law"
+  },
+  "spectral_tables": "Existing committed library; see photometry-spectra-20261111 and docs/DATA_SOURCES.md.",
+  "NASA_DSM_and_stellar_provenance": "city/result.json; NASA annual 2025 and Copernicus DSM are not measurements of 2026-11-11 weather/lighting."
+}

@@ -1,0 +1,11 @@
+{
+  "version": "0.6.0",
+  "python": "3.12.3",
+  "working_directory": "/tmp",
+  "installed_path": "/home/myuser/pignity/projects/LightPollution/scratch/wheel-terrain-env/lib/python3.12/site-packages/lightpollution",
+  "package_files_matching_checkout": 68,
+  "package_files_checked": 68,
+  "distributions_in_isolated_environment": 37,
+  "offline_eye_scene_completed": true,
+  "eye_exports_and_PNG_available": true
+}

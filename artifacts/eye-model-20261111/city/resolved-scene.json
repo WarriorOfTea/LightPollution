@@ -1,0 +1,648 @@
+{
+  "anchor_v_mag_arcsec2": 20.5,
+  "atmosphere": {
+    "reference_wavelength_nm": 550.0,
+    "rayleigh_scale_height_m": 8000.0,
+    "aerosol_scale_height_m": 1200.0,
+    "aerosol_optical_depth": 0.1,
+    "aerosol_single_scattering_albedo": 0.9,
+    "aerosol_g": 0.8,
+    "rayleigh_multiplier": 1.0,
+    "top_m": 80000.0
+  },
+  "background": {
+    "airglow_fraction": 0.6,
+    "airglow_height_m": 90000.0,
+    "mode": "airglow_layer",
+    "twilight": "none"
+  },
+  "directions": [
+    [
+      90.0,
+      20.0
+    ],
+    [
+      135.0,
+      20.0
+    ],
+    [
+      180.0,
+      20.0
+    ],
+    [
+      225.0,
+      20.0
+    ],
+    [
+      270.0,
+      20.0
+    ],
+    [
+      90.0,
+      45.0
+    ],
+    [
+      135.0,
+      45.0
+    ],
+    [
+      180.0,
+      45.0
+    ],
+    [
+      225.0,
+      45.0
+    ],
+    [
+      270.0,
+      45.0
+    ],
+    [
+      90.0,
+      70.0
+    ],
+    [
+      135.0,
+      70.0
+    ],
+    [
+      180.0,
+      70.0
+    ],
+    [
+      225.0,
+      70.0
+    ],
+    [
+      270.0,
+      70.0
+    ],
+    [
+      0.0,
+      90.0
+    ]
+  ],
+  "download_missing": false,
+  "eye": {
+    "adaptation": "complete",
+    "observer_factor": 2.0,
+    "unresolved_background_sp_ratio": 1.408,
+    "view": {
+      "altitude_deg": 75.0,
+      "azimuth_deg": 180.0,
+      "height": 1100,
+      "horizontal_fov_deg": 60.0,
+      "width": 1800
+    }
+  },
+  "mode": "dated",
+  "natural_v_mag_arcsec2": 21.6,
+  "near_field": {
+    "minimum_patch_m": 2.0,
+    "quadrature_order": 3,
+    "radius_m": 3000.0
+  },
+  "observer": {
+    "height_m": 2.0,
+    "latitude_deg": 60.3,
+    "longitude_deg": 30.315
+  },
+  "period": "2025",
+  "profile": "quick",
+  "reference_atmosphere": {
+    "reference_wavelength_nm": 550.0,
+    "rayleigh_scale_height_m": 8000.0,
+    "aerosol_scale_height_m": 1200.0,
+    "aerosol_optical_depth": 0.1,
+    "aerosol_single_scattering_albedo": 0.9,
+    "aerosol_g": 0.8,
+    "rayleigh_multiplier": 1.0,
+    "top_m": 80000.0
+  },
+  "region": "petersburg-2025",
+  "schema_version": 2,
+  "spectrum": {
+    "angstrom_exponent": 1.3,
+    "mix": {
+      "LED-B3": 1.0
+    },
+    "reference_mix": {
+      "LED-B3": 1.0
+    },
+    "stars": "catalogue_continuum"
+  },
+  "surface": {
+    "bare_albedo": 0.15,
+    "direct_horizontal_fraction": 0.0,
+    "direct_upward_fraction": 0.15,
+    "snow_albedo": 0.8,
+    "snow_fraction": 0.0
+  },
+  "terrain": {
+    "id": "petersburg-copdem90",
+    "kind": "Copernicus GLO-90 DSM",
+    "vertical_datum": "EGM2008 orthometric metres",
+    "horizontal_crs": "EPSG:4326",
+    "source_release": "AWS Copernicus DEM 2021 release",
+    "attribution": "Copernicus DEM GLO-90; © DLR e.V. 2010–2014 and © Airbus Defence and Space GmbH 2014–2018; provided under the Copernicus DEM licence. Modified: bilinear common-grid regional mosaic. https://registry.opendata.aws/copernicus-dem/",
+    "bounds": [
+      28,
+      58,
+      33,
+      62
+    ],
+    "shape": [
+      4796,
+      5996
+    ],
+    "minimum_height_m": -59.612674713134766,
+    "maximum_height_m": 255.60926818847656,
+    "native_nominal_resolution_m": 90,
+    "prepared_grid_degrees": 0.0008333333333333334,
+    "cropped_unobserved_outer_border_cells": 2,
+    "upsampling_adds_no_information": true,
+    "source_tiles": [
+      {
+        "filename": "Copernicus_DSM_COG_30_N58_00_E028_00_DEM.tif",
+        "url": "https://copernicus-dem-90m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_30_N58_00_E028_00_DEM/Copernicus_DSM_COG_30_N58_00_E028_00_DEM.tif",
+        "bytes": 3735486,
+        "sha256": "f7bad517e62059a2482660464b6d0847197794e2680b0c50b1d153856a068537",
+        "transform": [
+          0.00125,
+          0.0,
+          27.999375,
+          0.0,
+          -0.0008333333333333334,
+          59.000416666666666,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "shape": [
+          1200,
+          800
+        ],
+        "AREA_OR_POINT": "Point"
+      },
+      {
+        "filename": "Copernicus_DSM_COG_30_N58_00_E029_00_DEM.tif",
+        "url": "https://copernicus-dem-90m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_30_N58_00_E029_00_DEM/Copernicus_DSM_COG_30_N58_00_E029_00_DEM.tif",
+        "bytes": 3731084,
+        "sha256": "01e9b340742df1ff1965a298680892106d8c5111a3a9daba15b3c09ea2d7fee5",
+        "transform": [
+          0.00125,
+          0.0,
+          28.999375,
+          0.0,
+          -0.0008333333333333334,
+          59.000416666666666,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "shape": [
+          1200,
+          800
+        ],
+        "AREA_OR_POINT": "Point"
+      },
+      {
+        "filename": "Copernicus_DSM_COG_30_N58_00_E030_00_DEM.tif",
+        "url": "https://copernicus-dem-90m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_30_N58_00_E030_00_DEM/Copernicus_DSM_COG_30_N58_00_E030_00_DEM.tif",
+        "bytes": 3708261,
+        "sha256": "d2d2757a844caea1275bb88dc2acaceeddd36f67fd1cfac94d1e055a6fc0fef6",
+        "transform": [
+          0.00125,
+          0.0,
+          29.999375,
+          0.0,
+          -0.0008333333333333334,
+          59.000416666666666,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "shape": [
+          1200,
+          800
+        ],
+        "AREA_OR_POINT": "Point"
+      },
+      {
+        "filename": "Copernicus_DSM_COG_30_N58_00_E031_00_DEM.tif",
+        "url": "https://copernicus-dem-90m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_30_N58_00_E031_00_DEM/Copernicus_DSM_COG_30_N58_00_E031_00_DEM.tif",
+        "bytes": 3313185,
+        "sha256": "a37416e5818b18999e83a39a76bde17796852d5cdd4ce46c119a5bf690d75c1e",
+        "transform": [
+          0.00125,
+          0.0,
+          30.999375,
+          0.0,
+          -0.0008333333333333334,
+          59.000416666666666,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "shape": [
+          1200,
+          800
+        ],
+        "AREA_OR_POINT": "Point"
+      },
+      {
+        "filename": "Copernicus_DSM_COG_30_N58_00_E032_00_DEM.tif",
+        "url": "https://copernicus-dem-90m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_30_N58_00_E032_00_DEM/Copernicus_DSM_COG_30_N58_00_E032_00_DEM.tif",
+        "bytes": 3751556,
+        "sha256": "84b132fe5c6183082214da856ea43994b4a324bd61ee24faa38f889a5ab25eb2",
+        "transform": [
+          0.00125,
+          0.0,
+          31.999375,
+          0.0,
+          -0.0008333333333333334,
+          59.000416666666666,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "shape": [
+          1200,
+          800
+        ],
+        "AREA_OR_POINT": "Point"
+      },
+      {
+        "filename": "Copernicus_DSM_COG_30_N59_00_E028_00_DEM.tif",
+        "url": "https://copernicus-dem-90m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_30_N59_00_E028_00_DEM/Copernicus_DSM_COG_30_N59_00_E028_00_DEM.tif",
+        "bytes": 2905234,
+        "sha256": "89e10c39b841c7bdbfb1b6e67da9532e3fd84896ba74890a8ca67871bcf5c884",
+        "transform": [
+          0.00125,
+          0.0,
+          27.999375,
+          0.0,
+          -0.0008333333333333334,
+          60.000416666666666,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "shape": [
+          1200,
+          800
+        ],
+        "AREA_OR_POINT": "Point"
+      },
+      {
+        "filename": "Copernicus_DSM_COG_30_N59_00_E029_00_DEM.tif",
+        "url": "https://copernicus-dem-90m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_30_N59_00_E029_00_DEM/Copernicus_DSM_COG_30_N59_00_E029_00_DEM.tif",
+        "bytes": 3544579,
+        "sha256": "e7a57ada1be7bf1b13a9137af0d2e7c87cb4bce46059d589f21ba9602d159299",
+        "transform": [
+          0.00125,
+          0.0,
+          28.999375,
+          0.0,
+          -0.0008333333333333334,
+          60.000416666666666,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "shape": [
+          1200,
+          800
+        ],
+        "AREA_OR_POINT": "Point"
+      },
+      {
+        "filename": "Copernicus_DSM_COG_30_N59_00_E030_00_DEM.tif",
+        "url": "https://copernicus-dem-90m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_30_N59_00_E030_00_DEM/Copernicus_DSM_COG_30_N59_00_E030_00_DEM.tif",
+        "bytes": 3681622,
+        "sha256": "62b02f41ec6d89bd14381040d3585d49c8ed5eaaa9843c9ffe4ea1d7129afee5",
+        "transform": [
+          0.00125,
+          0.0,
+          29.999375,
+          0.0,
+          -0.0008333333333333334,
+          60.000416666666666,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "shape": [
+          1200,
+          800
+        ],
+        "AREA_OR_POINT": "Point"
+      },
+      {
+        "filename": "Copernicus_DSM_COG_30_N59_00_E031_00_DEM.tif",
+        "url": "https://copernicus-dem-90m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_30_N59_00_E031_00_DEM/Copernicus_DSM_COG_30_N59_00_E031_00_DEM.tif",
+        "bytes": 3707283,
+        "sha256": "3e51022b106c9b419c7b1b7e23d7fda771c3506b705418675570085a8f2475e3",
+        "transform": [
+          0.00125,
+          0.0,
+          30.999375,
+          0.0,
+          -0.0008333333333333334,
+          60.000416666666666,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "shape": [
+          1200,
+          800
+        ],
+        "AREA_OR_POINT": "Point"
+      },
+      {
+        "filename": "Copernicus_DSM_COG_30_N59_00_E032_00_DEM.tif",
+        "url": "https://copernicus-dem-90m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_30_N59_00_E032_00_DEM/Copernicus_DSM_COG_30_N59_00_E032_00_DEM.tif",
+        "bytes": 3793584,
+        "sha256": "151a47925bcc70a60b23d7b238e0ec6486472a8ecd7b100f6aca0ab2fdd2a043",
+        "transform": [
+          0.00125,
+          0.0,
+          31.999375,
+          0.0,
+          -0.0008333333333333334,
+          60.000416666666666,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "shape": [
+          1200,
+          800
+        ],
+        "AREA_OR_POINT": "Point"
+      },
+      {
+        "filename": "Copernicus_DSM_COG_30_N60_00_E028_00_DEM.tif",
+        "url": "https://copernicus-dem-90m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_30_N60_00_E028_00_DEM/Copernicus_DSM_COG_30_N60_00_E028_00_DEM.tif",
+        "bytes": 1737898,
+        "sha256": "ec0ab884f1e4f519df091bbe337ddb542dfa2f03e9547168684da9761d7465cc",
+        "transform": [
+          0.0016666666666666668,
+          0.0,
+          27.999166666666667,
+          0.0,
+          -0.0008333333333333334,
+          61.000416666666666,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "shape": [
+          1200,
+          600
+        ],
+        "AREA_OR_POINT": "Point"
+      },
+      {
+        "filename": "Copernicus_DSM_COG_30_N60_00_E029_00_DEM.tif",
+        "url": "https://copernicus-dem-90m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_30_N60_00_E029_00_DEM/Copernicus_DSM_COG_30_N60_00_E029_00_DEM.tif",
+        "bytes": 2449394,
+        "sha256": "a2f67c89d793597124afe50ff8ab945333d601ffc8c90c4006f103551637faf0",
+        "transform": [
+          0.0016666666666666668,
+          0.0,
+          28.999166666666667,
+          0.0,
+          -0.0008333333333333334,
+          61.000416666666666,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "shape": [
+          1200,
+          600
+        ],
+        "AREA_OR_POINT": "Point"
+      },
+      {
+        "filename": "Copernicus_DSM_COG_30_N60_00_E030_00_DEM.tif",
+        "url": "https://copernicus-dem-90m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_30_N60_00_E030_00_DEM/Copernicus_DSM_COG_30_N60_00_E030_00_DEM.tif",
+        "bytes": 2123655,
+        "sha256": "2ebd068498a08ed109ed701e7fe0a077f89a3b052e520f069e4ee32febd18c2d",
+        "transform": [
+          0.0016666666666666668,
+          0.0,
+          29.999166666666667,
+          0.0,
+          -0.0008333333333333334,
+          61.000416666666666,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "shape": [
+          1200,
+          600
+        ],
+        "AREA_OR_POINT": "Point"
+      },
+      {
+        "filename": "Copernicus_DSM_COG_30_N60_00_E031_00_DEM.tif",
+        "url": "https://copernicus-dem-90m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_30_N60_00_E031_00_DEM/Copernicus_DSM_COG_30_N60_00_E031_00_DEM.tif",
+        "bytes": 424641,
+        "sha256": "54d4f6c0f00357e2e7d3b89f1ce5d2dcca518431ab8b82cd4fa80ab7b9de8722",
+        "transform": [
+          0.0016666666666666668,
+          0.0,
+          30.999166666666667,
+          0.0,
+          -0.0008333333333333334,
+          61.000416666666666,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "shape": [
+          1200,
+          600
+        ],
+        "AREA_OR_POINT": "Point"
+      },
+      {
+        "filename": "Copernicus_DSM_COG_30_N60_00_E032_00_DEM.tif",
+        "url": "https://copernicus-dem-90m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_30_N60_00_E032_00_DEM/Copernicus_DSM_COG_30_N60_00_E032_00_DEM.tif",
+        "bytes": 1257577,
+        "sha256": "91935a4ed127290fd37bde80bc6e7c0ba6af5c052fae31329ee8c2d1862da79a",
+        "transform": [
+          0.0016666666666666668,
+          0.0,
+          31.999166666666667,
+          0.0,
+          -0.0008333333333333334,
+          61.000416666666666,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "shape": [
+          1200,
+          600
+        ],
+        "AREA_OR_POINT": "Point"
+      },
+      {
+        "filename": "Copernicus_DSM_COG_30_N61_00_E028_00_DEM.tif",
+        "url": "https://copernicus-dem-90m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_30_N61_00_E028_00_DEM/Copernicus_DSM_COG_30_N61_00_E028_00_DEM.tif",
+        "bytes": 2393416,
+        "sha256": "f31dfe4e4bee035ed56a5d9274785623617cb89b783887e56d2ff112692d68b0",
+        "transform": [
+          0.0016666666666666668,
+          0.0,
+          27.999166666666667,
+          0.0,
+          -0.0008333333333333334,
+          62.000416666666666,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "shape": [
+          1200,
+          600
+        ],
+        "AREA_OR_POINT": "Point"
+      },
+      {
+        "filename": "Copernicus_DSM_COG_30_N61_00_E029_00_DEM.tif",
+        "url": "https://copernicus-dem-90m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_30_N61_00_E029_00_DEM/Copernicus_DSM_COG_30_N61_00_E029_00_DEM.tif",
+        "bytes": 2636733,
+        "sha256": "ed3e8312d8ac9dd8c36e0818276e9093a08c6fd2045b945eda0443af00465c9c",
+        "transform": [
+          0.0016666666666666668,
+          0.0,
+          28.999166666666667,
+          0.0,
+          -0.0008333333333333334,
+          62.000416666666666,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "shape": [
+          1200,
+          600
+        ],
+        "AREA_OR_POINT": "Point"
+      },
+      {
+        "filename": "Copernicus_DSM_COG_30_N61_00_E030_00_DEM.tif",
+        "url": "https://copernicus-dem-90m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_30_N61_00_E030_00_DEM/Copernicus_DSM_COG_30_N61_00_E030_00_DEM.tif",
+        "bytes": 1648249,
+        "sha256": "c7c4ad251af1ac3cbbbdb0af7778d133cd23bcfc1836b7ba7aaac083767c7762",
+        "transform": [
+          0.0016666666666666668,
+          0.0,
+          29.999166666666667,
+          0.0,
+          -0.0008333333333333334,
+          62.000416666666666,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "shape": [
+          1200,
+          600
+        ],
+        "AREA_OR_POINT": "Point"
+      },
+      {
+        "filename": "Copernicus_DSM_COG_30_N61_00_E031_00_DEM.tif",
+        "url": "https://copernicus-dem-90m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_30_N61_00_E031_00_DEM/Copernicus_DSM_COG_30_N61_00_E031_00_DEM.tif",
+        "bytes": 1581611,
+        "sha256": "bf72d2dfec68409d923ea09c43db5281b5a32e0982efcc6329af3e243b26e060",
+        "transform": [
+          0.0016666666666666668,
+          0.0,
+          30.999166666666667,
+          0.0,
+          -0.0008333333333333334,
+          62.000416666666666,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "shape": [
+          1200,
+          600
+        ],
+        "AREA_OR_POINT": "Point"
+      },
+      {
+        "filename": "Copernicus_DSM_COG_30_N61_00_E032_00_DEM.tif",
+        "url": "https://copernicus-dem-90m.s3.eu-central-1.amazonaws.com/Copernicus_DSM_COG_30_N61_00_E032_00_DEM/Copernicus_DSM_COG_30_N61_00_E032_00_DEM.tif",
+        "bytes": 2549273,
+        "sha256": "a46dda785d0b650ea5035bd39c5229000d37e585d7dd5f1a5445084302e65e1f",
+        "transform": [
+          0.0016666666666666668,
+          0.0,
+          31.999166666666667,
+          0.0,
+          -0.0008333333333333334,
+          62.000416666666666,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "shape": [
+          1200,
+          600
+        ],
+        "AREA_OR_POINT": "Point"
+      }
+    ],
+    "prepared_sha256": "0866d0ba40e44f591d2660c3ee1bf49d8dd17b4a19f3d3b77452d3dcc363c3c4",
+    "build": "rasterio merge bilinear; checked actual COG affine transforms",
+    "spherical_geoid_approximation": true,
+    "is_bare_ground_DTM": false
+  },
+  "time": "2026-11-11T21:00:00Z",
+  "atmosphere_origin": {
+    "kind": "baseline_scenario",
+    "user_parameters": [],
+    "default_parameters": [
+      "aerosol_g",
+      "aerosol_optical_depth",
+      "aerosol_scale_height_m",
+      "aerosol_single_scattering_albedo",
+      "rayleigh_multiplier",
+      "rayleigh_scale_height_m",
+      "reference_wavelength_nm",
+      "top_m"
+    ],
+    "measured_weather": false,
+    "regional_probability_estimated": false
+  },
+  "reference_v_mag_arcsec2": 22.0,
+  "height_datum": "Input height is AGL above DSM; transfer radial height approximates EGM2008 orthometric MSL on a sphere.",
+  "scale_origin": "scenario",
+  "background_origin": "explicit_scenario",
+  "surface_origin": "explicit_scenario",
+  "anchor_observer": {
+    "latitude_deg": 60.3,
+    "longitude_deg": 30.315,
+    "height_m": 20
+  },
+  "observer_msl": {
+    "latitude_deg": 60.3,
+    "longitude_deg": 30.315,
+    "height_m": 61.44025802612305
+  },
+  "anchor_observer_msl": {
+    "latitude_deg": 60.3,
+    "longitude_deg": 30.315,
+    "height_m": 79.44025802612305
+  }
+}

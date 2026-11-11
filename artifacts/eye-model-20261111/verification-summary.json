@@ -1,0 +1,19 @@
+{
+  "completed_at": "2026-11-11T18:07:24+01:00",
+  "command": "uv run pytest -q -p no:cacheprovider",
+  "passed": 212,
+  "failed": 0,
+  "errors": 0,
+  "skipped": 0,
+  "duration_seconds": 65.25,
+  "new_eye_cases": 22,
+  "uv_lock_check": true,
+  "javascript_syntax": true,
+  "git_diff_check": true,
+  "browser_jobs_completed": 1,
+  "browser_jobs_requested": 1,
+  "native_jobs_completed": 2,
+  "native_jobs_requested": 2,
+  "independent_human_observers": 0,
+  "field_accuracy_established": false
+}

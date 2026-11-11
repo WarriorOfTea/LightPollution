@@ -1,0 +1,39 @@
+{
+  "completed_at": "2026-11-11T18:05:38+01:00",
+  "published_references": [
+    {
+      "background_cd_m2": 0.0002,
+      "observer_factor": 1.0,
+      "published_rounded_reference_mag": 6.93,
+      "actual_mag": 6.934452493489795,
+      "absolute_residual_mag": 0.004452493489795373
+    },
+    {
+      "background_cd_m2": 0.0002,
+      "observer_factor": 2.0,
+      "published_rounded_reference_mag": 6.18,
+      "actual_mag": 6.181877504329842,
+      "absolute_residual_mag": 0.001877504329842239
+    }
+  ],
+  "equation54_grid_points": 101,
+  "equation54_max_residual_mag": 0.009412531112918288,
+  "Planck2850K_computed_S_P": 1.4096364040000173,
+  "Planck2850K_relative_difference_from_rounded_1_408": 0.0011622187500124337,
+  "single_attenuation_flux_ratios": [
+    2.0,
+    1.0
+  ],
+  "shared_supported_stars_city_on_off": 2781,
+  "same_stellar_flux_and_monotone_city_off_checked": true,
+  "same_view_and_fixed_display_transfer": true,
+  "independent_human_observers": 0,
+  "independent_visual_detections": 0,
+  "field_MAE_mag": null,
+  "field_MAE_unavailable_reason": "No matched independent naked-eye observations or local spectral background measurements.",
+  "image_hashes": {
+    "city/eye-view.png": "7efc2c9acec7c5b2b9b8548f908c38063dd3d653c0ed2977185c06a891d3c40b",
+    "city-off/eye-view.png": "711fbd928eaf0443d6c20d140aa51835bee1b10c2534174c6e27c3ab4337f01f",
+    "eye-comparison.png": "7f033737d032a1f5654a5d29a4ba4d491670f92a887fcac9272efb172a62335b"
+  }
+}
