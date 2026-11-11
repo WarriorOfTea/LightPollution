@@ -44,9 +44,21 @@
           <label>Верх атмосферы, м<input data-atmo="top_m" type="number" min="101" value="80000"></label>
         </div>
         <label>Искусственный фон опорного зенита, V mag/arcsec²<input id="anchor" type="number" min="10" max="30" step="0.1" value="20.5"></label>
+        <p class="hint">Опора относится к фиксированной точке региона. При перемещении наблюдателя мощность источников не перенормируется.</p>
+        <label class="file-label">Загрузить общую калибровку<input id="calibration-import" type="file" accept=".json,application/json" hidden></label>
+        <p id="calibration-note" class="hint">Калибровка по измерениям не подключена.</p><button id="calibration-clear" class="text-button" type="button">Использовать сценарную опору</button>
         <label>Однородный естественный фон, V mag/arcsec²<input id="natural" type="number" min="10" max="30" step="0.1" value="21.6"></label>
         <p class="hint">Это заданные яркости. При смене AOD масштаб источников остаётся привязан к опорной атмосфере.</p>
         <label>Численный профиль<select id="profile"><option value="standard">Стандартный</option><option value="quick">Быстрый, приближённый</option></select></label>
+      </details>
+      <details><summary>Спектральный расчёт</summary>
+        <label>Режим<select id="spectrum-mode"><option value="off">Эффективная V-модель, 550 нм</option><option value="on">Спектры города и звёзд</option></select></label>
+        <p class="hint">360–830 нм. Состав ламп задаётся сценарием; это не восстановление спектров из NASA и не цветовое изображение.</p>
+        <label>Доли мощности ламп, JSON<textarea id="spectral-mix" rows="2">{"LED-B3":1}</textarea></label>
+        <p class="hint">LED-B1…B5, LED-BH1, LED-RGB1, LED-V1/V2; HP1/HP2 — натриевые, HP3…HP5 — металлогалогенные. Сумма долей 1.</p>
+        <label>Показатель Ангстрема<input id="angstrom" type="number" min="0" max="4" step="0.1" value="1.3"></label>
+        <label>Спектры звёзд<select id="spectral-stars"><option value="catalogue_continuum">Измеренные; для остальных континуум по B−V</option><option value="measured_only">Только имеющиеся измеренные</option></select></label>
+        <p id="spectral-reference-note" class="hint">Мощность привязана к опорной смеси LED-B3. Смена текущей смеси не восстанавливает прежнюю V-яркость.</p>
       </details>
       <label class="check"><input id="download-missing" type="checkbox">Загрузить недостающие NASA-файлы, если доступ Earthdata настроен</label>
       <div class="actions"><button id="calculate" type="submit">Рассчитать сценарий</button><button id="cancel" class="secondary" type="button" disabled>Отменить</button></div>
@@ -57,7 +69,7 @@
     <section id="progress-panel" class="panel" hidden><div class="section-title"><h2 id="phase">Расчёт</h2><span id="progress-count"></span></div><progress id="progress"></progress><p class="hint">Завершённые направления сохраняются. Отмена срабатывает между блоками расчёта.</p></section>
     <section id="empty" class="panel empty"><span class="eyebrow">ИЗ ТОЧКИ НАБЛЮДЕНИЯ</span><h2>Начните со сценария</h2><p>Выберите подготовленный регион или учебный пример. Здесь появятся раздельные составляющие фона и каталожные звёзды.</p><p class="hint">Это численный планировщик. Видимость невооружённым глазом, физический сенсор и реалистичное изображение пока не рассчитываются.</p></section>
     <div id="result" hidden></div>
-    <section class="panel"><div class="section-title"><h2>Сравнить сценарии</h2></div><p class="hint">Одна точка и общая опора источников. Дату, атмосферу и месяц можно менять в пределах этой опоры.</p><div class="compare-form"><select id="compare-left" aria-label="Первый сценарий"></select><span>→</span><select id="compare-right" aria-label="Второй сценарий"></select><button id="compare" class="secondary">Сравнить</button></div><div id="comparison"></div></section>
+    <section class="panel"><div class="section-title"><h2>Сравнить сценарии</h2></div><p class="hint">Общая область источников и масштаб. Можно сравнивать разные точки, даты, атмосферу и месяцы внутри этой опоры. Физическая точность не удостоверена.</p><div class="compare-form"><select id="compare-left" aria-label="Первый сценарий"></select><span>→</span><select id="compare-right" aria-label="Второй сценарий"></select><button id="compare" class="secondary">Сравнить</button></div><div id="comparison"></div></section>
     <section class="panel"><div class="section-title"><h2>Сохранённые расчёты</h2><button id="refresh" class="text-button">Обновить</button></div><div id="history" class="hint">Пока нет расчётов</div></section>
   </section>
 </main>

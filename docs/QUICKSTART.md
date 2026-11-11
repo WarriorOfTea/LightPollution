@@ -1,6 +1,26 @@
 # Воспроизводимый запуск прототипа
 > Дата создания: 2026-11-09
 
+Версия 0.3: [общая калибровка и спектры](PHOTOMETRY_AND_SPECTRA.md).
+Офлайн-спектральный пример без NASA:
+
+```bash
+uv sync --locked
+uv run lightpollution example --spectral --output data/spectral-scene.json
+uv run lightpollution plan --scene data/spectral-scene.json --output data/spectral-result
+```
+
+Реальный пример калибровки после подготовки результатов:
+
+```bash
+uv run lightpollution fit-photometry \
+  --dataset artifacts/photometry-spectra-20261111/ground-dataset.json \
+  --output data/shared-calibration.json
+uv run lightpollution plan \
+  --scene artifacts/photometry-spectra-20261111/madrid-2017-11/scene.json \
+  --calibration data/shared-calibration.json --output data/calibrated-result
+```
+
 Python ≥3.12, `uv`. Команды выполняются из корня LightPollution. Код не зависит
 от KStars. Физические определения и ограничения — [MODEL.md](MODEL.md), состояние
 исследования и дальнейшие этапы — [OBSERVATION_PLAN.md](OBSERVATION_PLAN.md).

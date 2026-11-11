@@ -99,8 +99,12 @@ def test_fixed_source_scale_cache_invalidation_and_comparison(undated, tmp_path)
     assert compare_results(first, second)['directions'][0]['right_over_left'] > 1
     changed['observer']['longitude_deg'] += .01
     third = planner.run(SceneSpec.from_mapping(changed)).to_dict()
-    with pytest.raises(DomainError, match='одной точки'):
-        compare_results(first, third)
+    assert third['calibration']['source_coefficient'] == first['calibration']['source_coefficient']
+    assert compare_results(first, third)['right_observer'] != first['request']['observer']
+    incompatible = deepcopy(third)
+    incompatible['comparison_basis_id'] = 'another-source-scale'
+    with pytest.raises(DomainError, match='общей области'):
+        compare_results(first, incompatible)
     assert all(cap not in first['capabilities'] for cap in ['eye_detection', 'camera_electrons'])
     assert 'stellar_geometry' not in first['capabilities']  # No date means no stellar positions.
 
@@ -198,10 +202,13 @@ def test_prepared_months_share_support_and_preserve_source_power(tmp_path, monke
     prepared = repository.prepare('fixture', '2017-03', observer)
     a, _ = prepared.select('2017-03')
     b, _ = prepared.select('2017-11')
-    assert a.power.sum() == pytest.approx(1.) and b.power.sum() == pytest.approx(2.)
+    assert 0 < a.power.sum() < 1.  # The removed local power is no longer restored.
+    assert b.power.sum() / a.power.sum() == pytest.approx(2.)
     np.testing.assert_allclose(a.positions_m, b.positions_m)
     changed = repository.prepare('fixture', '2017-11', Observer(59.06, 29.05, 20))
-    assert prepared.identity != changed.identity
+    assert prepared.identity == changed.identity  # Same reference before either local mask.
+    moved, _ = changed.select('2017-03')
+    assert moved.power.sum() != pytest.approx(a.power.sum())
     prepared.paths['2017-03'].write_bytes(b'corrupt')
     with pytest.raises(DomainError) as error:
         repository.prepare('fixture', '2017-03', observer)

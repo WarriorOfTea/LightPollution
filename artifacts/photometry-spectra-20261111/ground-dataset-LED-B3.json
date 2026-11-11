@@ -1,0 +1,212 @@
+{
+  "schema_version": 1,
+  "band": "Johnson-V",
+  "timezone": "Europe/Madrid",
+  "source": "AstMon, doi:10.5281/zenodo.4633001; Robles et al. 2021 Figure 5/6 clear interval transcription.",
+  "rights": "CC BY 4.0, authors of Zenodo 4633001.",
+  "cases": {
+    "2017-03": "madrid-LED-B3-2017-03/result.json",
+    "2017-11": "madrid-LED-B3-2017-11/result.json"
+  },
+  "samples": [
+    {
+      "id": "2017-03-19T22:04:48Z",
+      "site_id": "UCM-AstMon",
+      "case_id": "2017-03",
+      "utc": "2017-03-19T22:04:48Z",
+      "night_id": "2017-03-19",
+      "role": "training",
+      "observed_v_mag_arcsec2": 17.685003,
+      "cloud_free_confirmed": true,
+      "qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 5: filled clear/moonless markers; conservative interior interval."
+    },
+    {
+      "id": "2017-03-19T22:11:13Z",
+      "site_id": "UCM-AstMon",
+      "case_id": "2017-03",
+      "utc": "2017-03-19T22:11:13Z",
+      "night_id": "2017-03-19",
+      "role": "training",
+      "observed_v_mag_arcsec2": 17.701933,
+      "cloud_free_confirmed": true,
+      "qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 5: filled clear/moonless markers; conservative interior interval."
+    },
+    {
+      "id": "2017-03-19T22:17:38Z",
+      "site_id": "UCM-AstMon",
+      "case_id": "2017-03",
+      "utc": "2017-03-19T22:17:38Z",
+      "night_id": "2017-03-19",
+      "role": "training",
+      "observed_v_mag_arcsec2": 17.701017999999998,
+      "cloud_free_confirmed": true,
+      "qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 5: filled clear/moonless markers; conservative interior interval."
+    },
+    {
+      "id": "2017-03-19T22:24:03Z",
+      "site_id": "UCM-AstMon",
+      "case_id": "2017-03",
+      "utc": "2017-03-19T22:24:03Z",
+      "night_id": "2017-03-19",
+      "role": "training",
+      "observed_v_mag_arcsec2": 17.700198,
+      "cloud_free_confirmed": true,
+      "qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 5: filled clear/moonless markers; conservative interior interval."
+    },
+    {
+      "id": "2017-03-19T22:30:28Z",
+      "site_id": "UCM-AstMon",
+      "case_id": "2017-03",
+      "utc": "2017-03-19T22:30:28Z",
+      "night_id": "2017-03-19",
+      "role": "training",
+      "observed_v_mag_arcsec2": 17.699371,
+      "cloud_free_confirmed": true,
+      "qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 5: filled clear/moonless markers; conservative interior interval."
+    },
+    {
+      "id": "2017-03-19T22:36:52Z",
+      "site_id": "UCM-AstMon",
+      "case_id": "2017-03",
+      "utc": "2017-03-19T22:36:52Z",
+      "night_id": "2017-03-19",
+      "role": "training",
+      "observed_v_mag_arcsec2": 17.704089,
+      "cloud_free_confirmed": true,
+      "qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 5: filled clear/moonless markers; conservative interior interval."
+    },
+    {
+      "id": "2017-03-19T22:43:17Z",
+      "site_id": "UCM-AstMon",
+      "case_id": "2017-03",
+      "utc": "2017-03-19T22:43:17Z",
+      "night_id": "2017-03-19",
+      "role": "training",
+      "observed_v_mag_arcsec2": 17.719676,
+      "cloud_free_confirmed": true,
+      "qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 5: filled clear/moonless markers; conservative interior interval."
+    },
+    {
+      "id": "2017-03-19T22:49:41Z",
+      "site_id": "UCM-AstMon",
+      "case_id": "2017-03",
+      "utc": "2017-03-19T22:49:41Z",
+      "night_id": "2017-03-19",
+      "role": "training",
+      "observed_v_mag_arcsec2": 17.719303,
+      "cloud_free_confirmed": true,
+      "qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 5: filled clear/moonless markers; conservative interior interval."
+    },
+    {
+      "id": "2017-03-19T22:56:06Z",
+      "site_id": "UCM-AstMon",
+      "case_id": "2017-03",
+      "utc": "2017-03-19T22:56:06Z",
+      "night_id": "2017-03-19",
+      "role": "training",
+      "observed_v_mag_arcsec2": 17.732449,
+      "cloud_free_confirmed": true,
+      "qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 5: filled clear/moonless markers; conservative interior interval."
+    },
+    {
+      "id": "2017-11-19T22:06:11Z",
+      "site_id": "UCM-AstMon",
+      "case_id": "2017-11",
+      "utc": "2017-11-19T22:06:11Z",
+      "night_id": "2017-11-19",
+      "role": "validation",
+      "observed_v_mag_arcsec2": 17.85,
+      "cloud_free_confirmed": true,
+      "qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 6: filled clear/moonless markers; conservative interior interval."
+    },
+    {
+      "id": "2017-11-19T22:12:39Z",
+      "site_id": "UCM-AstMon",
+      "case_id": "2017-11",
+      "utc": "2017-11-19T22:12:39Z",
+      "night_id": "2017-11-19",
+      "role": "validation",
+      "observed_v_mag_arcsec2": 17.86,
+      "cloud_free_confirmed": true,
+      "qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 6: filled clear/moonless markers; conservative interior interval."
+    },
+    {
+      "id": "2017-11-19T22:19:05Z",
+      "site_id": "UCM-AstMon",
+      "case_id": "2017-11",
+      "utc": "2017-11-19T22:19:05Z",
+      "night_id": "2017-11-19",
+      "role": "validation",
+      "observed_v_mag_arcsec2": 17.86,
+      "cloud_free_confirmed": true,
+      "qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 6: filled clear/moonless markers; conservative interior interval."
+    },
+    {
+      "id": "2017-11-19T22:25:33Z",
+      "site_id": "UCM-AstMon",
+      "case_id": "2017-11",
+      "utc": "2017-11-19T22:25:33Z",
+      "night_id": "2017-11-19",
+      "role": "validation",
+      "observed_v_mag_arcsec2": 17.87,
+      "cloud_free_confirmed": true,
+      "qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 6: filled clear/moonless markers; conservative interior interval."
+    },
+    {
+      "id": "2017-11-19T22:31:59Z",
+      "site_id": "UCM-AstMon",
+      "case_id": "2017-11",
+      "utc": "2017-11-19T22:31:59Z",
+      "night_id": "2017-11-19",
+      "role": "validation",
+      "observed_v_mag_arcsec2": 17.88,
+      "cloud_free_confirmed": true,
+      "qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 6: filled clear/moonless markers; conservative interior interval."
+    },
+    {
+      "id": "2017-11-19T22:38:25Z",
+      "site_id": "UCM-AstMon",
+      "case_id": "2017-11",
+      "utc": "2017-11-19T22:38:25Z",
+      "night_id": "2017-11-19",
+      "role": "validation",
+      "observed_v_mag_arcsec2": 17.88,
+      "cloud_free_confirmed": true,
+      "qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 6: filled clear/moonless markers; conservative interior interval."
+    },
+    {
+      "id": "2017-11-19T22:44:52Z",
+      "site_id": "UCM-AstMon",
+      "case_id": "2017-11",
+      "utc": "2017-11-19T22:44:52Z",
+      "night_id": "2017-11-19",
+      "role": "validation",
+      "observed_v_mag_arcsec2": 17.89,
+      "cloud_free_confirmed": true,
+      "qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 6: filled clear/moonless markers; conservative interior interval."
+    },
+    {
+      "id": "2017-11-19T22:51:18Z",
+      "site_id": "UCM-AstMon",
+      "case_id": "2017-11",
+      "utc": "2017-11-19T22:51:18Z",
+      "night_id": "2017-11-19",
+      "role": "validation",
+      "observed_v_mag_arcsec2": 17.91,
+      "cloud_free_confirmed": true,
+      "qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 6: filled clear/moonless markers; conservative interior interval."
+    },
+    {
+      "id": "2017-11-19T22:57:44Z",
+      "site_id": "UCM-AstMon",
+      "case_id": "2017-11",
+      "utc": "2017-11-19T22:57:44Z",
+      "night_id": "2017-11-19",
+      "role": "validation",
+      "observed_v_mag_arcsec2": 17.94,
+      "cloud_free_confirmed": true,
+      "qa_source": "https://www.mdpi.com/2072-4292/13/8/1511, Figure 6: filled clear/moonless markers; conservative interior interval."
+    }
+  ],
+  "model_height_note": "20 m over common hypothetical ground; geographic 650 m plateau and DEM not reconstructed."
+}

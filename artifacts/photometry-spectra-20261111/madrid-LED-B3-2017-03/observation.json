@@ -1,0 +1,384 @@
+{
+  "schema_version": 1,
+  "mode": "undated",
+  "utc": null,
+  "input_scene": {
+    "schema_version": 1,
+    "mode": "undated",
+    "observer": {
+      "latitude_deg": 40.451111,
+      "longitude_deg": -3.726111,
+      "height_m": 20.0
+    },
+    "directions": [
+      [
+        0.0,
+        90.0
+      ]
+    ],
+    "atmosphere": {
+      "reference_wavelength_nm": 550.0,
+      "rayleigh_scale_height_m": 8000.0,
+      "aerosol_scale_height_m": 1200.0,
+      "aerosol_optical_depth": 0.1,
+      "aerosol_single_scattering_albedo": 0.9,
+      "aerosol_g": 0.8,
+      "rayleigh_multiplier": 1.0,
+      "top_m": 80000.0
+    },
+    "natural": {
+      "mode": "uniform",
+      "v_mag_arcsec2": 21.6,
+      "source": "Uniform natural-background scenario; not measured separately."
+    },
+    "artificial": {
+      "mode": "grid",
+      "sky_grid": "current-transfer-field",
+      "anchor_v_mag_arcsec2": 20.5,
+      "scale_origin": "scenario",
+      "source": "Fixed source coefficient of the reference scene; no independent absolute inversion.",
+      "band_bridge": "effective_550nm_shape_anchored_in_V"
+    },
+    "moon": {
+      "mode": "none"
+    }
+  },
+  "observer": {
+    "latitude_deg": 40.451111,
+    "longitude_deg": -3.726111,
+    "height_m": 20.0
+  },
+  "atmosphere": {
+    "reference_wavelength_nm": 550.0,
+    "rayleigh_scale_height_m": 8000.0,
+    "aerosol_scale_height_m": 1200.0,
+    "aerosol_optical_depth": 0.1,
+    "aerosol_single_scattering_albedo": 0.9,
+    "aerosol_g": 0.8,
+    "rayleigh_multiplier": 1.0,
+    "top_m": 80000.0
+  },
+  "atmosphere_origin": {
+    "kind": "baseline_scenario",
+    "user_parameters": [],
+    "default_parameters": [
+      "aerosol_g",
+      "aerosol_optical_depth",
+      "aerosol_scale_height_m",
+      "aerosol_single_scattering_albedo",
+      "rayleigh_multiplier",
+      "rayleigh_scale_height_m",
+      "reference_wavelength_nm",
+      "top_m"
+    ],
+    "measured_weather": false,
+    "regional_probability_estimated": false
+  },
+  "cloud_free": true,
+  "geometry": null,
+  "moon": {
+    "mode": "none"
+  },
+  "photometry": {
+    "band": {
+      "name": "V",
+      "zero_point_system": "KS1991 empirical V convention",
+      "response_reference": "doi:10.1086/132921; no numerical spectral response imported"
+    },
+    "reference_v_mag_arcsec2": 22.0,
+    "diffuse_units": "B/Bref, common reference; linear addition",
+    "extinction_v_mag_airmass": 0.2242409030127214,
+    "band_bridge": "City: explicit Generic/Johnson.V integration; Moon: empirical KS V; natural: V-only scenario."
+  },
+  "artificial_provenance": {
+    "path": "current-transfer-field",
+    "sha256": "72eeed2819ed8463e923a1419d45ef0a79694e51038f85306af1266b79ad81b5",
+    "input_metadata": {
+      "observer": {
+        "latitude_deg": 40.451111,
+        "longitude_deg": -3.726111,
+        "height_m": 20.0
+      },
+      "atmosphere": {
+        "reference_wavelength_nm": 550.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.1,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 1.0,
+        "top_m": 80000.0
+      },
+      "source_basis_id": "94c2474a9b3b4592f7c5bc8c70f3ab335a8d67e37d5e8efe024928ac4ad75f83",
+      "provenance": {
+        "composite": "NearNadir",
+        "observer": {
+          "latitude_deg": 40.451111,
+          "longitude_deg": -3.726111,
+          "height_m": 20.0
+        },
+        "block_pixels": 12,
+        "effective_sources": 2621,
+        "retained_positive_pixels": 70769,
+        "normalisation": "Fixed regional radiance-area reference before observer exclusions; removed power is not restored.",
+        "normalisation_radiance_area": 113682506105.37863,
+        "retained_radiance_area": 112042019915.11273,
+        "unknown_pixels_are_not_dark_measurements": true,
+        "excluded_local_radius_m": 3000,
+        "include_water": false,
+        "weight_denominator_radiance_times_area": 113682506105.37863,
+        "weight_removed_water_fraction": 0.0,
+        "weight_removed_unknown_surface_fraction": 0.0,
+        "weight_removed_local_fraction": 0.014430418948938943,
+        "retained_weight_fraction": 0.9855695810510613,
+        "largest_patch_radius_m": 5694.941601745361,
+        "ray_refinement_azimuth_altitude_deg": null,
+        "nearest_retained_pixel_m": 3001.987158924819,
+        "nearest_effective_source_chord_m": 3046.686676786241,
+        "unmodelled_sources_outside_bounds": {
+          "west": -5,
+          "south": 39,
+          "east": -2,
+          "north": 42
+        },
+        "input_kind": "blackmarble",
+        "source_basis_id": "94c2474a9b3b4592f7c5bc8c70f3ab335a8d67e37d5e8efe024928ac4ad75f83",
+        "source_power_multiplier": 1.0,
+        "region_metadata": {
+          "bounds": {
+            "west": -5,
+            "south": 39,
+            "east": -2,
+            "north": 42
+          },
+          "product": "VNP46A3.002",
+          "collection": "002",
+          "year": 2017,
+          "month": 3,
+          "period_start": "2017-03-01",
+          "period_end": "2017-03-31",
+          "temporal_resolution": "monthly",
+          "inputs": [
+            {
+              "filename": "VNP46A3.A2017060.h17v04.002.2025101152242.h5",
+              "sha256": "8ff2148f9734c4537b9248ccd117d23b5f5e6e8c3b0c8140143c7869e0029faf"
+            },
+            {
+              "filename": "VNP46A3.A2017060.h17v05.002.2025101152248.h5",
+              "sha256": "bf51b9cdeafde99ef3361f3dbf8dcce062ba013e6bfcbde144ffe063f7af5569"
+            }
+          ],
+          "source_power_multiplier": 1.0,
+          "seasonal_selection": {
+            "observer": {
+              "latitude_deg": 40.451111,
+              "longitude_deg": -3.726111,
+              "height_m": 20
+            },
+            "exclude_radius_m": 0,
+            "include_water": false
+          },
+          "source_composite": "NearNadir",
+          "normalisation_reference_period": "2017-03",
+          "common_mask_sha256": "9ace86ef475a88dc7a8f2f1cf291885457e188ec0f7ca62b000c16c7d0da405f",
+          "radiance_area_sum": 113682506105.37863,
+          "reference_radiance_area_sum": 113682506105.37863
+        }
+      },
+      "solver": {
+        "ray_segments": 192,
+        "path_quadrature": 24,
+        "horizontal_fraction": 0.0,
+        "near_ray_scale_m": 500.0
+      },
+      "solver_version": "single-scattering-sphere-1"
+    },
+    "anchor_raw": 8.10729179440499e-13,
+    "reference_sky_grid": {
+      "reference_period": "2017-03",
+      "reference_atmosphere": {
+        "reference_wavelength_nm": 550.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.1,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 1.0,
+        "top_m": 80000.0
+      },
+      "reference_raw_zenith": 8.10729179440499e-13,
+      "anchor_v_mag_arcsec2": 20.5,
+      "source_coefficient": 4910482817804.082,
+      "reference_numerical_profile": "standard",
+      "field_accuracy_certified": false,
+      "scope": {
+        "source_basis_id": "94c2474a9b3b4592f7c5bc8c70f3ab335a8d67e37d5e8efe024928ac4ad75f83",
+        "transfer_code": "1ab9e208867fef8ebeff5c495ea7d24c3b7565a2b4fe2388cb334b76d5471d6d",
+        "solver_version": "single-scattering-sphere-1",
+        "transport": {
+          "mode": "spectral_single_scattering",
+          "wavelength_nm": [
+            360.0,
+            365.0,
+            370.0,
+            375.0,
+            380.0,
+            385.0,
+            390.0,
+            395.0,
+            400.0,
+            405.0,
+            410.0,
+            415.0,
+            420.0,
+            425.0,
+            430.0,
+            435.0,
+            440.0,
+            445.0,
+            450.0,
+            455.0,
+            460.0,
+            465.0,
+            470.0,
+            475.0,
+            480.0,
+            485.0,
+            490.0,
+            495.0,
+            500.0,
+            505.0,
+            510.0,
+            515.0,
+            520.0,
+            525.0,
+            530.0,
+            535.0,
+            540.0,
+            545.0,
+            550.0,
+            555.0,
+            560.0,
+            565.0,
+            570.0,
+            575.0,
+            580.0,
+            585.0,
+            590.0,
+            595.0,
+            600.0,
+            605.0,
+            610.0,
+            615.0,
+            620.0,
+            625.0,
+            630.0,
+            635.0,
+            640.0,
+            645.0,
+            650.0,
+            655.0,
+            660.0,
+            665.0,
+            670.0,
+            675.0,
+            680.0,
+            685.0,
+            690.0,
+            695.0,
+            700.0,
+            705.0,
+            710.0,
+            715.0,
+            720.0,
+            725.0,
+            730.0,
+            735.0,
+            740.0,
+            745.0,
+            750.0,
+            755.0,
+            760.0,
+            765.0,
+            770.0,
+            775.0,
+            780.0,
+            785.0,
+            790.0,
+            795.0,
+            800.0,
+            805.0,
+            810.0,
+            815.0,
+            820.0,
+            825.0,
+            830.0
+          ],
+          "angstrom_exponent": 1.3
+        },
+        "band": "Generic/Johnson.V energy response",
+        "spectral_library": "2850d66ef40df0e878145c5abd89528e2015ddbff21c6eb6ba197bd516791011",
+        "reference_v_mag_arcsec2": 22.0,
+        "height_datum": "height above common hypothetical spherical ground z=0; geographic terrain not reconstructed"
+      },
+      "origin": "scenario",
+      "anchor_observer": {
+        "latitude_deg": 40.451111,
+        "longitude_deg": -3.726111,
+        "height_m": 20
+      },
+      "provided_calibration_id": null,
+      "reference_mix": {
+        "LED-B3": 1.0
+      }
+    },
+    "anchor_relative": 3.981071705534973,
+    "scale_origin": "scenario",
+    "source": "Fixed source coefficient of the reference scene; no independent absolute inversion.",
+    "calibration_independently_verified": false
+  },
+  "directions": [
+    {
+      "azimuth_deg": 0.0,
+      "altitude_deg": 90.0,
+      "artificial_relative": 3.981071705534973,
+      "natural_relative": 1.4454397707459257,
+      "moon_relative": 0.0,
+      "total_relative": 5.426511476280899,
+      "total_v_mag_arcsec2": 20.163698185458546,
+      "moon_separation_deg": null,
+      "supported": true,
+      "status": "ok",
+      "low_altitude_caution": false,
+      "raw_transfer_response": 8.10729179440499e-13
+    }
+  ],
+  "stars_metadata": {
+    "available": false,
+    "reason": "No date: no unique horizontal stellar positions.",
+    "spectral": {
+      "available": 0,
+      "total_catalogue_rows": 0,
+      "measured": 0,
+      "catalogue_continuum": 0,
+      "unavailable": 0
+    }
+  },
+  "assumptions_and_limitations": [
+    "no_independent_field_validation",
+    "no_clouds_refraction_terrain_or_eye_camera_model",
+    "uniform_natural_background_is_a_scenario",
+    "fixed_source_coefficient_from_reference_atmosphere; scenario_not_new_calibration",
+    "uniform_scenario_lamp_spectrum_not_inverted_from_DNB",
+    "no_gas_absorption_or_spectral_SSA_g",
+    "moon_and_natural_spectra_unavailable"
+  ],
+  "model": {
+    "moonlight": "Krisciunas-Schaefer 1991 eqs 1,3,8,9,15,21; rho>=10 deg",
+    "distance_correction_reference_km": 384400.0,
+    "lunar_opposition_surge": false,
+    "lunar_eclipse_model": false,
+    "physical_error_bound": null,
+    "document": "docs/OBSERVATION_MODEL.md"
+  }
+}

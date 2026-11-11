@@ -1,0 +1,142 @@
+{
+  "records": [
+    {
+      "hr": 7001,
+      "name": "Vega",
+      "source": "CALSPEC",
+      "url": "https://ssb.stsci.edu/trds/calspec/alpha_lyr_stis_011.fits",
+      "raw_absolute_flux": true,
+      "wavelength_medium": "vacuum",
+      "raw_synthetic_V": 0.030000000000000006,
+      "bsc_V": 0.03,
+      "residual_synthetic_minus_BSC_mag": 6.938893903907228e-18,
+      "renormalised_to_BSC_for_this_check": false
+    },
+    {
+      "hr": 2491,
+      "name": "Sirius",
+      "source": "CALSPEC",
+      "url": "https://ssb.stsci.edu/trds/calspec/sirius_stis_005.fits",
+      "raw_absolute_flux": true,
+      "wavelength_medium": "vacuum",
+      "raw_synthetic_V": -1.437136889909959,
+      "bsc_V": -1.46,
+      "residual_synthetic_minus_BSC_mag": 0.02286311009004094,
+      "renormalised_to_BSC_for_this_check": false
+    },
+    {
+      "hr": 6689,
+      "name": "HR 6689",
+      "source": "Gaia DR3 XP_SAMPLED",
+      "source_id": "4371553920172973312",
+      "matching_epoch": "J2016, BSC tangent proper motion",
+      "match_separation_arcsec": 1.0754830548721932,
+      "catalogue_v_mag": 5.97,
+      "catalogue_b_v": 0.1,
+      "url": "https://gea.esac.esa.int/data-server/data?RETRIEVAL_TYPE=XP_SAMPLED&ID=4371553920172973312&RELEASE=Gaia+DR3&FORMAT=votable",
+      "raw_absolute_flux": true,
+      "sample_errors_correlated": true,
+      "wavelength_medium": "vacuum",
+      "raw_synthetic_V": 6.101719044636487,
+      "bsc_V": 5.97,
+      "residual_synthetic_minus_BSC_mag": 0.13171904463648687,
+      "renormalised_to_BSC_for_this_check": false
+    },
+    {
+      "hr": 1691,
+      "name": "HR 1691",
+      "source": "Gaia DR3 XP_SAMPLED",
+      "source_id": "3233898035000478464",
+      "matching_epoch": "J2016, BSC tangent proper motion",
+      "match_separation_arcsec": 0.8979272014172419,
+      "catalogue_v_mag": 5.89,
+      "catalogue_b_v": 0.66,
+      "url": "https://gea.esac.esa.int/data-server/data?RETRIEVAL_TYPE=XP_SAMPLED&ID=3233898035000478464&RELEASE=Gaia+DR3&FORMAT=votable",
+      "raw_absolute_flux": true,
+      "sample_errors_correlated": true,
+      "wavelength_medium": "vacuum",
+      "raw_synthetic_V": 6.167507481292115,
+      "bsc_V": 5.89,
+      "residual_synthetic_minus_BSC_mag": 0.27750748129211544,
+      "renormalised_to_BSC_for_this_check": false
+    },
+    {
+      "hr": 1988,
+      "name": "HR 1988",
+      "source": "Gaia DR3 XP_SAMPLED",
+      "source_id": "3219847066672970368",
+      "matching_epoch": "J2016, BSC tangent proper motion",
+      "match_separation_arcsec": 1.3372635585076502,
+      "catalogue_v_mag": 5.95,
+      "catalogue_b_v": 0.78,
+      "url": "https://gea.esac.esa.int/data-server/data?RETRIEVAL_TYPE=XP_SAMPLED&ID=3219847066672970368&RELEASE=Gaia+DR3&FORMAT=votable",
+      "raw_absolute_flux": true,
+      "sample_errors_correlated": true,
+      "wavelength_medium": "vacuum",
+      "raw_synthetic_V": 5.933906604161071,
+      "bsc_V": 5.95,
+      "residual_synthetic_minus_BSC_mag": -0.016093395838929325,
+      "renormalised_to_BSC_for_this_check": false
+    },
+    {
+      "hr": 6136,
+      "name": "HR 6136",
+      "source": "Gaia DR3 XP_SAMPLED",
+      "source_id": "4431639310048958208",
+      "matching_epoch": "J2016, BSC tangent proper motion",
+      "match_separation_arcsec": 0.3998919536598227,
+      "catalogue_v_mag": 5.39,
+      "catalogue_b_v": 1.46,
+      "url": "https://gea.esac.esa.int/data-server/data?RETRIEVAL_TYPE=XP_SAMPLED&ID=4431639310048958208&RELEASE=Gaia+DR3&FORMAT=votable",
+      "raw_absolute_flux": true,
+      "sample_errors_correlated": true,
+      "wavelength_medium": "vacuum",
+      "raw_synthetic_V": 5.39605649143175,
+      "bsc_V": 5.39,
+      "residual_synthetic_minus_BSC_mag": 0.006056491431750466,
+      "renormalised_to_BSC_for_this_check": false
+    },
+    {
+      "hr": 8287,
+      "name": "HR 8287",
+      "source": "Gaia DR3 XP_SAMPLED",
+      "source_id": "2693541327543209472",
+      "matching_epoch": "J2016, BSC tangent proper motion",
+      "match_separation_arcsec": 0.19304001440066199,
+      "catalogue_v_mag": 5.67,
+      "catalogue_b_v": 1.44,
+      "url": "https://gea.esac.esa.int/data-server/data?RETRIEVAL_TYPE=XP_SAMPLED&ID=2693541327543209472&RELEASE=Gaia+DR3&FORMAT=votable",
+      "raw_absolute_flux": true,
+      "sample_errors_correlated": true,
+      "wavelength_medium": "vacuum",
+      "raw_synthetic_V": 5.655728616082197,
+      "bsc_V": 5.67,
+      "residual_synthetic_minus_BSC_mag": -0.014271383917803249,
+      "renormalised_to_BSC_for_this_check": false
+    }
+  ],
+  "gaia_targets": 9,
+  "gaia_spectra_obtained": 5,
+  "gaia_rejected": [
+    {
+      "hr": 2801,
+      "reason": "no_unique_XP_match_within_2arcsec"
+    },
+    {
+      "hr": 7596,
+      "reason": "no_unique_XP_match_within_2arcsec"
+    },
+    {
+      "hr": 672,
+      "reason": "no_unique_XP_match_within_2arcsec"
+    },
+    {
+      "hr": 4371,
+      "reason": "no_unique_XP_match_within_2arcsec"
+    }
+  ],
+  "gaia_mean_absolute_V_residual_mag": 0.08912955942341708,
+  "gaia_max_absolute_V_residual_mag": 0.27750748129211544,
+  "physical_accuracy_certified": false,
+  "note": "Raw absolute XP flux vs BSC, before V normalisation. Generic filter, epochs, bright-source XP and catalogue systematics remain."
+}

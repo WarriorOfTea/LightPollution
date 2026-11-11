@@ -39,9 +39,11 @@ def write_observation(report: dict, output: Path):
     output.mkdir(parents=True,exist_ok=True)
     (output/'observation.json').write_text(serialized)
     for name,rows in [('directions',report['directions']),('stars',stars)]:
-        columns = list(rows[0]) if rows else ['hr','name','azimuth_deg','altitude_deg',
+        columns = list(dict.fromkeys(key for row in rows for key in row)) if rows else ['hr','name','azimuth_deg','altitude_deg',
                     'catalogue_v_mag','extinction_v_mag','observed_v_mag','flux_relative_to_v_mag0']
         with (output/f'{name}.csv').open('w',newline='') as stream:
             writer = csv.DictWriter(stream,fieldnames=columns,lineterminator='\n')
             writer.writeheader()
-            writer.writerows(rows)
+            writer.writerows({key: json.dumps(value, ensure_ascii=False, sort_keys=True)
+                              if isinstance(value, (dict, list)) else value for key, value in row.items()}
+                             for row in rows)

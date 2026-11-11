@@ -27,7 +27,8 @@ def create_app(workspace: Path = Path('data/mvp'), raw_directory: Path | None = 
             yield
         finally:
             app.state.jobs.close()
-    app = FastAPI(title='LightPollution', version='0.2.0', lifespan=lifespan)
+    from .. import __version__
+    app = FastAPI(title='LightPollution', version=__version__, lifespan=lifespan)
     app.mount('/static', StaticFiles(directory=HERE / 'static'), name='static')
     templates = Jinja2Templates(directory=HERE / 'templates')
 
@@ -54,6 +55,19 @@ def create_app(workspace: Path = Path('data/mvp'), raw_directory: Path | None = 
     @app.get('/api/catalogue')
     def catalogue():
         return sources.catalogue()
+
+    @app.get('/api/spectral-library')
+    def spectral_catalogue():
+        from ..adapters.spectral_library import load_spectral_library
+        return load_spectral_library().catalogue()
+
+    @app.post('/api/photometry/fit')
+    def photometry_fit(payload: dict):
+        from ..application.photometry import fit_dataset
+        if not isinstance(payload.get('cases'), dict):
+            raise DomainError('invalid_photometry', 'Укажите cases: имена завершённых заданий.')
+        return fit_dataset(payload, {name: app.state.jobs.result(job_id)
+                                    for name, job_id in payload['cases'].items()})
 
     @app.get('/api/jobs')
     def jobs():

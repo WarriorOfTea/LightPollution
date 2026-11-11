@@ -13,7 +13,8 @@ from .physics import EARTH_RADIUS_M, Observer, Sources, cell_areas, unit_positio
 def regional_sources(arrays: dict, bounds: Bounds, observer: Observer, block: int = 12,
                      exclude_radius_m: float = 3000, composite: str = "NearNadir",
                      include_water: bool = False,
-                     refinement_direction: tuple[float,float] | None = None) -> tuple[Sources, dict]:
+                     refinement_direction: tuple[float,float] | None = None,
+                     normalisation_radiance_area: float | None = None) -> tuple[Sources, dict]:
     if block < 1 or exclude_radius_m < 0:
         raise ValueError("Invalid aggregation block or local-source exclusion radius.")
     key = composite+"_Composite_Snow_Free"
@@ -42,6 +43,9 @@ def regional_sources(arrays: dict, bounds: Bounds, observer: Observer, block: in
     total_retained = float(weights.sum())
     if not total_retained > 0:
         raise ValueError("No sources remain after masking.")
+    denominator = total_retained if normalisation_radiance_area is None else float(normalisation_radiance_area)
+    if not np.isfinite(denominator) or denominator <= 0:
+        raise ValueError('Source normalisation requires a positive finite radiance-area reference.')
     positions, powers, patch_sizes = [], [], []
     ray = observer.direction(*refinement_direction) if refinement_direction is not None else None
 
@@ -73,7 +77,7 @@ def regional_sources(arrays: dict, bounds: Bounds, observer: Observer, block: in
                     add_patch(r0,r1,c0,c1)
             return
         positions.append(EARTH_RADIUS_M*normal)
-        powers.append(power/total_retained)
+        powers.append(power/denominator)
         patch_sizes.append(patch_radius)
 
     for row in range(0,bounds.shape[0],block):
@@ -83,7 +87,10 @@ def regional_sources(arrays: dict, bounds: Bounds, observer: Observer, block: in
     report = {
         "composite": composite, "observer": asdict(observer), "block_pixels": block,
         "effective_sources": len(powers), "retained_positive_pixels": int((weights>0).sum()),
-        "normalisation": "Total source power = 1 arbitrary unit; weights proportional to radiance * spherical cell area.",
+        "normalisation": ("Total retained power = 1 arbitrary unit." if normalisation_radiance_area is None
+                          else "Fixed regional radiance-area reference before observer exclusions; removed power is not restored."),
+        "normalisation_radiance_area": denominator,
+        "retained_radiance_area": total_retained,
         "unknown_pixels_are_not_dark_measurements": True,
         "excluded_local_radius_m": exclude_radius_m, "include_water": include_water,
         "weight_denominator_radiance_times_area": total_valid,

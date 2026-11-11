@@ -1,0 +1,84 @@
+{
+  "anchor_v_mag_arcsec2": 20.5,
+  "atmosphere": {
+    "reference_wavelength_nm": 550.0,
+    "rayleigh_scale_height_m": 8000.0,
+    "aerosol_scale_height_m": 1200.0,
+    "aerosol_optical_depth": 0.1,
+    "aerosol_single_scattering_albedo": 0.9,
+    "aerosol_g": 0.8,
+    "rayleigh_multiplier": 1.0,
+    "top_m": 80000.0
+  },
+  "directions": [
+    [
+      0.0,
+      90.0
+    ],
+    [
+      0.0,
+      45.0
+    ],
+    [
+      90.0,
+      45.0
+    ],
+    [
+      180.0,
+      45.0
+    ],
+    [
+      270.0,
+      45.0
+    ]
+  ],
+  "download_missing": false,
+  "mode": "undated",
+  "moon": {
+    "mode": "none"
+  },
+  "natural_v_mag_arcsec2": 21.6,
+  "observer": {
+    "height_m": 20.0,
+    "latitude_deg": 60.3,
+    "longitude_deg": 30.315
+  },
+  "period": "2025",
+  "profile": "standard",
+  "reference_atmosphere": {
+    "reference_wavelength_nm": 550.0,
+    "rayleigh_scale_height_m": 8000.0,
+    "aerosol_scale_height_m": 1200.0,
+    "aerosol_optical_depth": 0.1,
+    "aerosol_single_scattering_albedo": 0.9,
+    "aerosol_g": 0.8,
+    "rayleigh_multiplier": 1.0,
+    "top_m": 80000.0
+  },
+  "region": "petersburg-2025",
+  "schema_version": 2,
+  "atmosphere_origin": {
+    "kind": "baseline_scenario",
+    "user_parameters": [],
+    "default_parameters": [
+      "aerosol_g",
+      "aerosol_optical_depth",
+      "aerosol_scale_height_m",
+      "aerosol_single_scattering_albedo",
+      "rayleigh_multiplier",
+      "rayleigh_scale_height_m",
+      "reference_wavelength_nm",
+      "top_m"
+    ],
+    "measured_weather": false,
+    "regional_probability_estimated": false
+  },
+  "reference_v_mag_arcsec2": 22.0,
+  "height_datum": "height above common hypothetical spherical ground z=0; geographic terrain not reconstructed",
+  "scale_origin": "scenario",
+  "anchor_observer": {
+    "latitude_deg": 60.3,
+    "longitude_deg": 30.315,
+    "height_m": 20
+  }
+}

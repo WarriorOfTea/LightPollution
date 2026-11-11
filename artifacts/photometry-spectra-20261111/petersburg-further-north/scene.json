@@ -1,0 +1,42 @@
+{
+  "anchor_v_mag_arcsec2": 20.5,
+  "atmosphere": {},
+  "directions": [
+    [
+      0.0,
+      90.0
+    ],
+    [
+      0.0,
+      45.0
+    ],
+    [
+      90.0,
+      45.0
+    ],
+    [
+      180.0,
+      45.0
+    ],
+    [
+      270.0,
+      45.0
+    ]
+  ],
+  "download_missing": false,
+  "mode": "undated",
+  "moon": {
+    "mode": "none"
+  },
+  "natural_v_mag_arcsec2": 21.6,
+  "observer": {
+    "height_m": 20.0,
+    "latitude_deg": 60.65,
+    "longitude_deg": 30.315
+  },
+  "period": "2025",
+  "profile": "standard",
+  "reference_atmosphere": {},
+  "region": "petersburg-2025",
+  "schema_version": 2
+}

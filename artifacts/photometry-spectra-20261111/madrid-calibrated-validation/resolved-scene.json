@@ -1,0 +1,170 @@
+{
+  "anchor_v_mag_arcsec2": 20.5,
+  "atmosphere": {
+    "reference_wavelength_nm": 550.0,
+    "rayleigh_scale_height_m": 8000.0,
+    "aerosol_scale_height_m": 1200.0,
+    "aerosol_optical_depth": 0.1,
+    "aerosol_single_scattering_albedo": 0.9,
+    "aerosol_g": 0.8,
+    "rayleigh_multiplier": 1.0,
+    "top_m": 80000.0
+  },
+  "directions": [
+    [
+      0.0,
+      90.0
+    ]
+  ],
+  "download_missing": false,
+  "mode": "undated",
+  "moon": {
+    "mode": "none"
+  },
+  "natural_v_mag_arcsec2": 21.6,
+  "observer": {
+    "height_m": 20.0,
+    "latitude_deg": 40.451111,
+    "longitude_deg": -3.726111
+  },
+  "period": "2017-11",
+  "photometric_calibration": {
+    "assumptions": [
+      "One positive coefficient; natural background and atmospheric scenarios fixed by model cases.",
+      "Johnson-V measurements mapped to the declared model V response; exact instrument response unverified.",
+      "One clear interval does not validate a region or determine AOD, spectrum and source power independently.",
+      "Common hypothetical ground surface; observer height is not a geographic DEM."
+    ],
+    "case_result_sha256": {
+      "2017-03": "785edab80fe1f3eebc3f0bfb8962c9d582a80f48632ec6ab917c04442caf7428",
+      "2017-11": "b32d6b906e0da647fd4e430391c02e1302e6522fdb299b7786874d75ec5d4398"
+    },
+    "dataset_sha256": "080f6a58499e23729ff114c6dd2aab2dc9a0c4cb76fa71407e423a809ae1b272",
+    "field_accuracy_certified": false,
+    "id": "1f75213293910acbb2bb196dd87283b43c57505cbcc6eef2a3c6e4dfa5eb9d76",
+    "independent_night_split": true,
+    "independent_validation_sites": [],
+    "kind": "shared_regional_ground_fit",
+    "measurement_rights": "CC BY 4.0, authors of Zenodo 4633001.",
+    "measurement_source": "AstMon, doi:10.5281/zenodo.4633001; Robles et al. 2021 Figure 5/6 clear interval transcription.",
+    "schema_version": 1,
+    "scope": {
+      "band": "effective_V_550nm",
+      "height_datum": "height above common hypothetical spherical ground z=0; geographic terrain not reconstructed",
+      "reference_v_mag_arcsec2": 22.0,
+      "solver_version": "single-scattering-sphere-1",
+      "source_basis_id": "94c2474a9b3b4592f7c5bc8c70f3ab335a8d67e37d5e8efe024928ac4ad75f83",
+      "spectral_library": null,
+      "transfer_code": "1ab9e208867fef8ebeff5c495ea7d24c3b7565a2b4fe2388cb334b76d5471d6d",
+      "transport": {
+        "angstrom_exponent": null,
+        "mode": "grey_550nm",
+        "wavelength_nm": [
+          550.0
+        ]
+      }
+    },
+    "source_coefficient": 22617549254041.668,
+    "training": {
+      "bias_mag": 0.0,
+      "mae_mag": 0.0,
+      "night_direction_groups": 1,
+      "nights": 1,
+      "records": [
+        {
+          "background_relative": 1.4454397707459257,
+          "case_id": "2017-03",
+          "direction": [
+            0.0,
+            90.0
+          ],
+          "night_id": "2017-03-19",
+          "observed_relative": 52.1472347373113,
+          "observed_v_mag_arcsec2": 17.7069217909684,
+          "predicted_relative": 52.1472347373113,
+          "predicted_v_mag_arcsec2": 17.7069217909684,
+          "raw_response": 2.2417015387953742e-12,
+          "residual_mag_model_minus_observed": 0.0,
+          "role": "training",
+          "samples": 9,
+          "site_id": "UCM-AstMon"
+        }
+      ],
+      "rmse_mag": 0.0,
+      "samples": 9,
+      "sites": [
+        "UCM-AstMon"
+      ]
+    },
+    "uncertainty_interval": null,
+    "validation": {
+      "bias_mag": -0.13694489279249922,
+      "mae_mag": 0.13694489279249922,
+      "night_direction_groups": 1,
+      "nights": 1,
+      "records": [
+        {
+          "background_relative": 1.4454397707459257,
+          "case_id": "2017-11",
+          "direction": [
+            0.0,
+            90.0
+          ],
+          "night_id": "2017-11-19",
+          "observed_relative": 44.38540663577192,
+          "observed_v_mag_arcsec2": 17.881899492469074,
+          "predicted_relative": 50.35216632284939,
+          "predicted_v_mag_arcsec2": 17.744954599676575,
+          "raw_response": 2.1623353619253874e-12,
+          "residual_mag_model_minus_observed": -0.13694489279249922,
+          "role": "validation",
+          "samples": 9,
+          "site_id": "UCM-AstMon"
+        }
+      ],
+      "rmse_mag": 0.13694489279249922,
+      "samples": 9,
+      "sites": [
+        "UCM-AstMon"
+      ]
+    },
+    "weighting": "Each night has total weight one; linear-light average within each night/site/case/direction."
+  },
+  "profile": "standard",
+  "reference_atmosphere": {
+    "reference_wavelength_nm": 550.0,
+    "rayleigh_scale_height_m": 8000.0,
+    "aerosol_scale_height_m": 1200.0,
+    "aerosol_optical_depth": 0.1,
+    "aerosol_single_scattering_albedo": 0.9,
+    "aerosol_g": 0.8,
+    "rayleigh_multiplier": 1.0,
+    "top_m": 80000.0
+  },
+  "region": "madrid-2017",
+  "schema_version": 2,
+  "atmosphere_origin": {
+    "kind": "baseline_scenario",
+    "user_parameters": [],
+    "default_parameters": [
+      "aerosol_g",
+      "aerosol_optical_depth",
+      "aerosol_scale_height_m",
+      "aerosol_single_scattering_albedo",
+      "rayleigh_multiplier",
+      "rayleigh_scale_height_m",
+      "reference_wavelength_nm",
+      "top_m"
+    ],
+    "measured_weather": false,
+    "regional_probability_estimated": false
+  },
+  "reference_v_mag_arcsec2": 22.0,
+  "height_datum": "height above common hypothetical spherical ground z=0; geographic terrain not reconstructed",
+  "scale_origin": "provided_calibration",
+  "anchor_observer": {
+    "latitude_deg": 40.451111,
+    "longitude_deg": -3.726111,
+    "height_m": 20
+  }
+}

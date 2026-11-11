@@ -1,0 +1,17 @@
+{
+  "declared_at": "2026-11-11T09:49:16+01:00",
+  "spectral_quadrature_relative_tolerance": 0.01,
+  "directions": [
+    [
+      0,
+      90
+    ],
+    [
+      180,
+      45
+    ]
+  ],
+  "lamp_templates": 14,
+  "responses": 4,
+  "scope": "5 nm vs 1 nm integration at these rays only; not physical or full-sky accuracy."
+}

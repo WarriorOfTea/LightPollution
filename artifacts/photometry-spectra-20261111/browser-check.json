@@ -1,0 +1,79 @@
+{
+  "browser": "Chromium / Playwright",
+  "completed_jobs": 3,
+  "total_jobs": 3,
+  "job_ids": [
+    "ee8b22215de8458ea052aaf52e414f53",
+    "8ffc70d320e84c05af8ec13167460aec",
+    "64350aaffa954d8cb68f401d1ec09958"
+  ],
+  "cross_observer_spectral_comparison": {
+    "directions": [
+      {
+        "azimuth_deg": 0.0,
+        "altitude_deg": 90.0,
+        "supported": true,
+        "right_over_left": 0.3886419128040902,
+        "right_minus_left_mag": 1.0261259125959654,
+        "reason": null
+      },
+      {
+        "azimuth_deg": 0.0,
+        "altitude_deg": 45.0,
+        "supported": true,
+        "right_over_left": 0.3625440883149273,
+        "right_minus_left_mag": 1.1015979303351742,
+        "reason": null
+      },
+      {
+        "azimuth_deg": 90.0,
+        "altitude_deg": 45.0,
+        "supported": true,
+        "right_over_left": 0.3244020302703713,
+        "right_minus_left_mag": 1.2222910910500175,
+        "reason": null
+      },
+      {
+        "azimuth_deg": 180.0,
+        "altitude_deg": 45.0,
+        "supported": true,
+        "right_over_left": 0.24939230815894803,
+        "right_minus_left_mag": 1.5077923632667734,
+        "reason": null
+      },
+      {
+        "azimuth_deg": 270.0,
+        "altitude_deg": 45.0,
+        "supported": true,
+        "right_over_left": 0.420799938695263,
+        "right_minus_left_mag": 0.9398108303125454,
+        "reason": null
+      }
+    ],
+    "comparison_basis_id": "3d938db558e0229cd6e09649473565c95fa5674a2a86e875fd2bd1cc0c2df1fc",
+    "left_observer": {
+      "height_m": 20.0,
+      "latitude_deg": 60.3,
+      "longitude_deg": 30.315
+    },
+    "right_observer": {
+      "height_m": 20.0,
+      "latitude_deg": 60.65,
+      "longitude_deg": 30.315
+    },
+    "scale_origin": "scenario",
+    "physical_accuracy_claimed": false
+  },
+  "spectral_scene_roundtrip": true,
+  "ground_calibration_import_applied": true,
+  "mobile_horizontal_overflow": false,
+  "javascript_errors": [],
+  "desktop_viewport": [
+    1440,
+    1080
+  ],
+  "mobile_viewport": [
+    390,
+    844
+  ]
+}

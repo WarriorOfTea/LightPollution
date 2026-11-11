@@ -18,7 +18,10 @@ def run_command(args):
         from .web import create_app
         uvicorn.run(create_app(args.workspace, args.raw_directory), host=args.host, port=args.port)
     elif args.command == 'example':
-        write_json(args.output, offline_example())
+        value = offline_example()
+        if args.spectral:
+            value['spectrum'] = {}
+        write_json(args.output, value)
         print(f'Сценарий сохранён: {args.output}')
     elif args.command == 'datasets':
         repository = LocalSourceRepository(args.workspace, args.raw_directory)
@@ -30,8 +33,26 @@ def run_command(args):
         if args.output:
             write_json(args.output, value)
         print(json.dumps(value, ensure_ascii=False, indent=2))
+    elif args.command == 'fit-photometry':
+        from ..application.photometry import fit_dataset
+        dataset = read_json(args.dataset)
+        results = {name: read_json(args.dataset.parent / path) for name, path in dataset['cases'].items()}
+        value = fit_dataset(dataset, results)
+        write_json(args.output, value)
+        print(json.dumps({k: value[k] for k in ['id', 'source_coefficient', 'training', 'validation',
+                                              'independent_validation_sites']}, ensure_ascii=False, indent=2))
+    elif args.command == 'spectral-library':
+        from ..adapters.spectral_library import load_spectral_library
+        library = load_spectral_library()
+        value = {**library.catalogue(), 'provenance': library.provenance}
+        if args.output:
+            write_json(args.output, value)
+        print(json.dumps(library.catalogue(), ensure_ascii=False, indent=2))
     else:
-        spec = SceneSpec.from_mapping(read_json(args.scene) if args.scene else offline_example())
+        data = read_json(args.scene) if args.scene else offline_example()
+        if args.calibration:
+            data['photometric_calibration'] = read_json(args.calibration)
+        spec = SceneSpec.from_mapping(data)
         planner = Planner(args.workspace, raw_directory=args.raw_directory)
         result = planner.run(spec)
         export_result(result, args.output)

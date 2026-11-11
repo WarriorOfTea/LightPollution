@@ -1,0 +1,1129 @@
+{
+  "relative_tolerance": 0.01,
+  "total": 112,
+  "passed": 112,
+  "maximum_relative_difference": 0.0069688850979698165,
+  "records": [
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-B1",
+      "response": "photopic",
+      "fine": 8.02184210691666e-14,
+      "coarse": 8.019685844248531e-14,
+      "relative_difference": 0.00026879894161345344,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-B1",
+      "response": "scotopic",
+      "fine": 4.9541966313280573e-14,
+      "coarse": 4.951235512349189e-14,
+      "relative_difference": 0.0005976991224255303,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-B1",
+      "response": "johnson_b",
+      "fine": 2.6410672199732844e-14,
+      "coarse": 2.6382746727967433e-14,
+      "relative_difference": 0.0010573555854323804,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-B1",
+      "response": "johnson_v",
+      "fine": 6.277548220707127e-14,
+      "coarse": 6.276623851685635e-14,
+      "relative_difference": 0.0001472500073265271,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-B2",
+      "response": "photopic",
+      "fine": 8.157738610813556e-14,
+      "coarse": 8.156249268696198e-14,
+      "relative_difference": 0.000182568011603616,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-B2",
+      "response": "scotopic",
+      "fine": 5.5243921318797215e-14,
+      "coarse": 5.521921690769178e-14,
+      "relative_difference": 0.00044718786276722614,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-B2",
+      "response": "johnson_b",
+      "fine": 3.158591994858081e-14,
+      "coarse": 3.155719330195567e-14,
+      "relative_difference": 0.0009094763322361784,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-B2",
+      "response": "johnson_v",
+      "fine": 6.457976420666168e-14,
+      "coarse": 6.457961069354006e-14,
+      "relative_difference": 2.3771087353540345e-06,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-B3",
+      "response": "photopic",
+      "fine": 8.487828623122852e-14,
+      "coarse": 8.488041048627782e-14,
+      "relative_difference": 2.502707280772585e-05,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-B3",
+      "response": "scotopic",
+      "fine": 7.41560473616754e-14,
+      "coarse": 7.415260847719508e-14,
+      "relative_difference": 4.637362160840603e-05,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-B3",
+      "response": "johnson_b",
+      "fine": 5.3177828780898194e-14,
+      "coarse": 5.315849179334405e-14,
+      "relative_difference": 0.0003636287527611435,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-B3",
+      "response": "johnson_v",
+      "fine": 6.978794624706529e-14,
+      "coarse": 6.98154793687217e-14,
+      "relative_difference": 0.0003945254608716477,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-B4",
+      "response": "photopic",
+      "fine": 8.657552756870915e-14,
+      "coarse": 8.658175810430073e-14,
+      "relative_difference": 7.196647559138681e-05,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-B4",
+      "response": "scotopic",
+      "fine": 8.109599754593802e-14,
+      "coarse": 8.108083431926401e-14,
+      "relative_difference": 0.0001869787305522619,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-B4",
+      "response": "johnson_b",
+      "fine": 6.586514164750532e-14,
+      "coarse": 6.584415681066816e-14,
+      "relative_difference": 0.0003186030776259162,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-B4",
+      "response": "johnson_v",
+      "fine": 7.123300238799652e-14,
+      "coarse": 7.127530425385093e-14,
+      "relative_difference": 0.0005938520690732636,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-B5",
+      "response": "photopic",
+      "fine": 8.412206548326336e-14,
+      "coarse": 8.413313606392802e-14,
+      "relative_difference": 0.0001316013890179995,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-B5",
+      "response": "scotopic",
+      "fine": 9.296669742533602e-14,
+      "coarse": 9.296989375925947e-14,
+      "relative_difference": 3.438149371733524e-05,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-B5",
+      "response": "johnson_b",
+      "fine": 8.046542477288335e-14,
+      "coarse": 8.045700010584166e-14,
+      "relative_difference": 0.00010469921789979003,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-B5",
+      "response": "johnson_v",
+      "fine": 6.982865431863005e-14,
+      "coarse": 6.986930521315047e-14,
+      "relative_difference": 0.0005821520537246527,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-BH1",
+      "response": "photopic",
+      "fine": 8.967561678404918e-14,
+      "coarse": 8.968099768501457e-14,
+      "relative_difference": 6.000405860989957e-05,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-BH1",
+      "response": "scotopic",
+      "fine": 5.703359745444203e-14,
+      "coarse": 5.701514280652812e-14,
+      "relative_difference": 0.0003235750283620819,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-BH1",
+      "response": "johnson_b",
+      "fine": 3.3371860955949635e-14,
+      "coarse": 3.3347740331804926e-14,
+      "relative_difference": 0.0007227833106624757,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-BH1",
+      "response": "johnson_v",
+      "fine": 7.250447836681678e-14,
+      "coarse": 7.254876419431397e-14,
+      "relative_difference": 0.00061080127041446,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-RGB1",
+      "response": "photopic",
+      "fine": 7.694152487125585e-14,
+      "coarse": 7.693345392482541e-14,
+      "relative_difference": 0.00010489714681307839,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-RGB1",
+      "response": "scotopic",
+      "fine": 6.379185161169764e-14,
+      "coarse": 6.381754057671426e-14,
+      "relative_difference": 0.00040269978637693445,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-RGB1",
+      "response": "johnson_b",
+      "fine": 2.547526361348649e-14,
+      "coarse": 2.5432844090470126e-14,
+      "relative_difference": 0.0016651259692522472,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-RGB1",
+      "response": "johnson_v",
+      "fine": 6.707226358107963e-14,
+      "coarse": 6.714324793324436e-14,
+      "relative_difference": 0.00105832647319143,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-V1",
+      "response": "photopic",
+      "fine": 6.097314522660346e-14,
+      "coarse": 6.093346444295524e-14,
+      "relative_difference": 0.0006507911556924661,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-V1",
+      "response": "scotopic",
+      "fine": 4.3928921801262235e-14,
+      "coarse": 4.3889986190932434e-14,
+      "relative_difference": 0.000886332027586475,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-V1",
+      "response": "johnson_b",
+      "fine": 4.0240519658750544e-14,
+      "coarse": 4.024833442282873e-14,
+      "relative_difference": 0.00019420137076894505,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-V1",
+      "response": "johnson_v",
+      "fine": 4.905771048236575e-14,
+      "coarse": 4.9029521293193596e-14,
+      "relative_difference": 0.0005746128161095069,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-V2",
+      "response": "photopic",
+      "fine": 6.644634784943915e-14,
+      "coarse": 6.641748005916955e-14,
+      "relative_difference": 0.00043445262537253386,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-V2",
+      "response": "scotopic",
+      "fine": 6.609043587634355e-14,
+      "coarse": 6.605941947087944e-14,
+      "relative_difference": 0.000469302480046349,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-V2",
+      "response": "johnson_b",
+      "fine": 6.511861983788664e-14,
+      "coarse": 6.515315365890892e-14,
+      "relative_difference": 0.0005303217590952603,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "LED-V2",
+      "response": "johnson_v",
+      "fine": 5.5437163964471025e-14,
+      "coarse": 5.541148142136875e-14,
+      "relative_difference": 0.00046327303320806276,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "HP1",
+      "response": "photopic",
+      "fine": 9.58743500283594e-14,
+      "coarse": 9.574187333398671e-14,
+      "relative_difference": 0.001381774106771035,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "HP1",
+      "response": "scotopic",
+      "fine": 2.7025487218761928e-14,
+      "coarse": 2.6935860657533674e-14,
+      "relative_difference": 0.003316371708778379,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "HP1",
+      "response": "johnson_b",
+      "fine": 1.523459680448588e-14,
+      "coarse": 1.5227720394703587e-14,
+      "relative_difference": 0.00045136801915683216,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "HP1",
+      "response": "johnson_v",
+      "fine": 6.628526803443607e-14,
+      "coarse": 6.614662419193408e-14,
+      "relative_difference": 0.002091623774229382,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "HP2",
+      "response": "photopic",
+      "fine": 5.176042222832429e-14,
+      "coarse": 5.147320230810428e-14,
+      "relative_difference": 0.0055490258358603176,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "HP2",
+      "response": "scotopic",
+      "fine": 2.759555816972455e-14,
+      "coarse": 2.7428723126282752e-14,
+      "relative_difference": 0.006045720924204149,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "HP2",
+      "response": "johnson_b",
+      "fine": 1.5458996973383567e-14,
+      "coarse": 1.5374390908285608e-14,
+      "relative_difference": 0.005472933673745371,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "HP2",
+      "response": "johnson_v",
+      "fine": 3.872071822945869e-14,
+      "coarse": 3.845087799320673e-14,
+      "relative_difference": 0.0069688850979698165,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "HP3",
+      "response": "photopic",
+      "fine": 7.891204048037663e-14,
+      "coarse": 7.876128477458937e-14,
+      "relative_difference": 0.0019104271651010387,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "HP3",
+      "response": "scotopic",
+      "fine": 5.381617597525008e-14,
+      "coarse": 5.3683996905874036e-14,
+      "relative_difference": 0.0024561215467415157,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "HP3",
+      "response": "johnson_b",
+      "fine": 4.3306589815521876e-14,
+      "coarse": 4.324922347660463e-14,
+      "relative_difference": 0.001324656112652068,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "HP3",
+      "response": "johnson_v",
+      "fine": 6.469275146599671e-14,
+      "coarse": 6.4637799956392e-14,
+      "relative_difference": 0.0008494229779914623,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "HP4",
+      "response": "photopic",
+      "fine": 7.457597222433291e-14,
+      "coarse": 7.440561439306141e-14,
+      "relative_difference": 0.00228435280413166,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "HP4",
+      "response": "scotopic",
+      "fine": 5.979151474239009e-14,
+      "coarse": 5.961429304730394e-14,
+      "relative_difference": 0.0029639940692204503,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "HP4",
+      "response": "johnson_b",
+      "fine": 6.827620555859664e-14,
+      "coarse": 6.820837839818069e-14,
+      "relative_difference": 0.000993423109281303,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "HP4",
+      "response": "johnson_v",
+      "fine": 6.190468860390775e-14,
+      "coarse": 6.179902294330966e-14,
+      "relative_difference": 0.0017069088461810827,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "HP5",
+      "response": "photopic",
+      "fine": 6.910333714915473e-14,
+      "coarse": 6.899758437112832e-14,
+      "relative_difference": 0.0015303570332377116,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "HP5",
+      "response": "scotopic",
+      "fine": 6.285707357773607e-14,
+      "coarse": 6.274721775441671e-14,
+      "relative_difference": 0.0017477082063563287,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "HP5",
+      "response": "johnson_b",
+      "fine": 5.968732214691282e-14,
+      "coarse": 5.964077580612328e-14,
+      "relative_difference": 0.0007798363055218321,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 0,
+      "altitude_deg": 90,
+      "lamp": "HP5",
+      "response": "johnson_v",
+      "fine": 5.710783856992669e-14,
+      "coarse": 5.70321023806102e-14,
+      "relative_difference": 0.001326196039161139,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-B1",
+      "response": "photopic",
+      "fine": 2.2217982607739428e-13,
+      "coarse": 2.2212070102696532e-13,
+      "relative_difference": 0.00026611349676890965,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-B1",
+      "response": "scotopic",
+      "fine": 1.3543809438726407e-13,
+      "coarse": 1.3535660246708806e-13,
+      "relative_difference": 0.0006016912785482039,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-B1",
+      "response": "johnson_b",
+      "fine": 7.106590007248354e-14,
+      "coarse": 7.09913734918782e-14,
+      "relative_difference": 0.0010486967804437233,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-B1",
+      "response": "johnson_v",
+      "fine": 1.736657459023257e-13,
+      "coarse": 1.7364037514307955e-13,
+      "relative_difference": 0.00014608959938718189,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-B2",
+      "response": "photopic",
+      "fine": 2.2583931384523098e-13,
+      "coarse": 2.257985974604228e-13,
+      "relative_difference": 0.00018028918045724136,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-B2",
+      "response": "scotopic",
+      "fine": 1.5090991098800993e-13,
+      "coarse": 1.5084172240252154e-13,
+      "relative_difference": 0.0004518496170460805,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-B2",
+      "response": "johnson_b",
+      "fine": 8.497518224055107e-14,
+      "coarse": 8.489894207951427e-14,
+      "relative_difference": 0.0008972050312404498,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-B2",
+      "response": "johnson_v",
+      "fine": 1.7858951519760064e-13,
+      "coarse": 1.7858930553585758e-13,
+      "relative_difference": 1.173986853739578e-06,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-B3",
+      "response": "photopic",
+      "fine": 2.346482858307922e-13,
+      "coarse": 2.346544274251296e-13,
+      "relative_difference": 2.617361689071146e-05,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-B3",
+      "response": "scotopic",
+      "fine": 2.0214864782398947e-13,
+      "coarse": 2.0213782846463117e-13,
+      "relative_difference": 5.3521799303476954e-05,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-B3",
+      "response": "johnson_b",
+      "fine": 1.4272367387853469e-13,
+      "coarse": 1.426740097287043e-13,
+      "relative_difference": 0.00034797415509809027,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-B3",
+      "response": "johnson_v",
+      "fine": 1.9276199963143833e-13,
+      "coarse": 1.9283822203216346e-13,
+      "relative_difference": 0.00039542233879534235,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-B4",
+      "response": "photopic",
+      "fine": 2.3922159192810216e-13,
+      "coarse": 2.392390911778801e-13,
+      "relative_difference": 7.315079561545248e-05,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-B4",
+      "response": "scotopic",
+      "fine": 2.2078212349336015e-13,
+      "coarse": 2.207387702935485e-13,
+      "relative_difference": 0.00019636191157905937,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-B4",
+      "response": "johnson_b",
+      "fine": 1.766452226533692e-13,
+      "coarse": 1.7659224465726346e-13,
+      "relative_difference": 0.0002999118533180109,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-B4",
+      "response": "johnson_v",
+      "fine": 1.967438443227516e-13,
+      "coarse": 1.9686119132535815e-13,
+      "relative_difference": 0.0005964456118589,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-B5",
+      "response": "photopic",
+      "fine": 2.322418248206706e-13,
+      "coarse": 2.3227258620643145e-13,
+      "relative_difference": 0.00013245411667168623,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-B5",
+      "response": "scotopic",
+      "fine": 2.528048824473109e-13,
+      "coarse": 2.5281105636345815e-13,
+      "relative_difference": 2.4421664991140894e-05,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-B5",
+      "response": "johnson_b",
+      "fine": 2.158389345766879e-13,
+      "coarse": 2.1582097721489823e-13,
+      "relative_difference": 8.319797271468229e-05,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-B5",
+      "response": "johnson_v",
+      "fine": 1.9274930908566568e-13,
+      "coarse": 1.9286246068220937e-13,
+      "relative_difference": 0.0005870402186157851,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-BH1",
+      "response": "photopic",
+      "fine": 2.482676745686468e-13,
+      "coarse": 2.4828279819761265e-13,
+      "relative_difference": 6.091662554188383e-05,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-BH1",
+      "response": "scotopic",
+      "fine": 1.5596264289117747e-13,
+      "coarse": 1.559120055554145e-13,
+      "relative_difference": 0.000324676055908482,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-BH1",
+      "response": "johnson_b",
+      "fine": 8.943443532859825e-14,
+      "coarse": 8.936962447696054e-14,
+      "relative_difference": 0.0007246744657086352,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-BH1",
+      "response": "johnson_v",
+      "fine": 2.0045937482024715e-13,
+      "coarse": 2.005809210072719e-13,
+      "relative_difference": 0.0006063382524950019,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-RGB1",
+      "response": "photopic",
+      "fine": 2.1275900331949142e-13,
+      "coarse": 2.1273553552414522e-13,
+      "relative_difference": 0.00011030224328958939,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-RGB1",
+      "response": "scotopic",
+      "fine": 1.745646218286444e-13,
+      "coarse": 1.746358966199341e-13,
+      "relative_difference": 0.00040830032192695195,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-RGB1",
+      "response": "johnson_b",
+      "fine": 6.883579828822382e-14,
+      "coarse": 6.872159319347588e-14,
+      "relative_difference": 0.001659094505881266,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-RGB1",
+      "response": "johnson_v",
+      "fine": 1.8507736355817996e-13,
+      "coarse": 1.852704124717173e-13,
+      "relative_difference": 0.001043071447668679,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-V1",
+      "response": "photopic",
+      "fine": 1.6878849807457248e-13,
+      "coarse": 1.686788582906798e-13,
+      "relative_difference": 0.000649569047318847,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-V1",
+      "response": "scotopic",
+      "fine": 1.2002089658917337e-13,
+      "coarse": 1.1991560610046118e-13,
+      "relative_difference": 0.0008772679733646615,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-V1",
+      "response": "johnson_b",
+      "fine": 1.066090270871567e-13,
+      "coarse": 1.0662709786305529e-13,
+      "relative_difference": 0.00016950511971009928,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-V1",
+      "response": "johnson_v",
+      "fine": 1.3559780902241186e-13,
+      "coarse": 1.3551974969619971e-13,
+      "relative_difference": 0.0005756680493211048,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-V2",
+      "response": "photopic",
+      "fine": 1.8359269513087935e-13,
+      "coarse": 1.8351302905532674e-13,
+      "relative_difference": 0.00043392835153827704,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-V2",
+      "response": "scotopic",
+      "fine": 1.8016789860510033e-13,
+      "coarse": 1.8008431718074896e-13,
+      "relative_difference": 0.0004639085264271573,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-V2",
+      "response": "johnson_b",
+      "fine": 1.7292716289103275e-13,
+      "coarse": 1.7301535592683393e-13,
+      "relative_difference": 0.000510001056668874,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "LED-V2",
+      "response": "johnson_v",
+      "fine": 1.530098143341404e-13,
+      "coarse": 1.5293961206576845e-13,
+      "relative_difference": 0.0004588089246264467,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "HP1",
+      "response": "photopic",
+      "fine": 2.663318787065121e-13,
+      "coarse": 2.6596701938339823e-13,
+      "relative_difference": 0.001369942362461065,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "HP1",
+      "response": "scotopic",
+      "fine": 7.409178067417867e-14,
+      "coarse": 7.384466412212212e-14,
+      "relative_difference": 0.0033352761913396853,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "HP1",
+      "response": "johnson_b",
+      "fine": 4.069153941991004e-14,
+      "coarse": 4.06715849328786e-14,
+      "relative_difference": 0.0004903841760696279,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "HP1",
+      "response": "johnson_v",
+      "fine": 1.8404664733001405e-13,
+      "coarse": 1.8366505952618908e-13,
+      "relative_difference": 0.0020733211354877095,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "HP2",
+      "response": "photopic",
+      "fine": 1.434483456185774e-13,
+      "coarse": 1.4265275561644138e-13,
+      "relative_difference": 0.005546177606338181,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "HP2",
+      "response": "scotopic",
+      "fine": 7.554167456709186e-14,
+      "coarse": 7.508489418964351e-14,
+      "relative_difference": 0.00604673354232656,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "HP2",
+      "response": "johnson_b",
+      "fine": 4.1358533445027163e-14,
+      "coarse": 4.113040456822345e-14,
+      "relative_difference": 0.00551588409455898,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "HP2",
+      "response": "johnson_v",
+      "fine": 1.0719175136632576e-13,
+      "coarse": 1.0644505756055773e-13,
+      "relative_difference": 0.006965963297084475,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "HP3",
+      "response": "photopic",
+      "fine": 2.1838922557605723e-13,
+      "coarse": 2.1797255246869319e-13,
+      "relative_difference": 0.0019079380233386635,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "HP3",
+      "response": "scotopic",
+      "fine": 1.4705908593794505e-13,
+      "coarse": 1.466983250299469e-13,
+      "relative_difference": 0.0024531697970052255,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "HP3",
+      "response": "johnson_b",
+      "fine": 1.1508232015554182e-13,
+      "coarse": 1.1492360755496162e-13,
+      "relative_difference": 0.0013791223566373507,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "HP3",
+      "response": "johnson_v",
+      "fine": 1.7883930608390416e-13,
+      "coarse": 1.7868760556292957e-13,
+      "relative_difference": 0.0008482504450303898,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "HP4",
+      "response": "photopic",
+      "fine": 2.0621819883950803e-13,
+      "coarse": 2.0574770910323073e-13,
+      "relative_difference": 0.0022815141385434832,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "HP4",
+      "response": "scotopic",
+      "fine": 1.6301433374816623e-13,
+      "coarse": 1.6253130376852648e-13,
+      "relative_difference": 0.002963113540591855,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "HP4",
+      "response": "johnson_b",
+      "fine": 1.8073121785075633e-13,
+      "coarse": 1.8054344160916497e-13,
+      "relative_difference": 0.0010389806687764417,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "HP4",
+      "response": "johnson_v",
+      "fine": 1.710448525672295e-13,
+      "coarse": 1.7075392737018244e-13,
+      "relative_difference": 0.0017008708106705558,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "HP5",
+      "response": "photopic",
+      "fine": 1.9101574982447888e-13,
+      "coarse": 1.907237395292398e-13,
+      "relative_difference": 0.0015287236550253136,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "HP5",
+      "response": "scotopic",
+      "fine": 1.713141290245308e-13,
+      "coarse": 1.7101463255056657e-13,
+      "relative_difference": 0.0017482298492808798,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "HP5",
+      "response": "johnson_b",
+      "fine": 1.5879618619891728e-13,
+      "coarse": 1.5866908437701817e-13,
+      "relative_difference": 0.0008004085295845696,
+      "passed_1percent": true
+    },
+    {
+      "azimuth_deg": 180,
+      "altitude_deg": 45,
+      "lamp": "HP5",
+      "response": "johnson_v",
+      "fine": 1.5771944217015515e-13,
+      "coarse": 1.5751120347363117e-13,
+      "relative_difference": 0.001320310886588836,
+      "passed_1percent": true
+    }
+  ],
+  "scope": "5 nm vs 1 nm integration at these rays only; not physical or full-sky accuracy."
+}

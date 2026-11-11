@@ -1,0 +1,57 @@
+{
+  "directions": [
+    {
+      "azimuth_deg": 0.0,
+      "altitude_deg": 90.0,
+      "supported": true,
+      "right_over_left": 0.39457620395050946,
+      "right_minus_left_mag": 1.0096727741705678,
+      "reason": null
+    },
+    {
+      "azimuth_deg": 0.0,
+      "altitude_deg": 45.0,
+      "supported": true,
+      "right_over_left": 0.3657283244130996,
+      "right_minus_left_mag": 1.0921035093274405,
+      "reason": null
+    },
+    {
+      "azimuth_deg": 90.0,
+      "altitude_deg": 45.0,
+      "supported": true,
+      "right_over_left": 0.327039586280146,
+      "right_minus_left_mag": 1.2134991882079866,
+      "reason": null
+    },
+    {
+      "azimuth_deg": 180.0,
+      "altitude_deg": 45.0,
+      "supported": true,
+      "right_over_left": 0.2547816940679827,
+      "right_minus_left_mag": 1.4845794476201881,
+      "reason": null
+    },
+    {
+      "azimuth_deg": 270.0,
+      "altitude_deg": 45.0,
+      "supported": true,
+      "right_over_left": 0.429920366393226,
+      "right_minus_left_mag": 0.9165299519743719,
+      "reason": null
+    }
+  ],
+  "comparison_basis_id": "5e13fd714e89d99e8019c2e70f64b0e01c157b85ae007935ff751a234cbe72a7",
+  "left_observer": {
+    "height_m": 20.0,
+    "latitude_deg": 60.3,
+    "longitude_deg": 30.315
+  },
+  "right_observer": {
+    "height_m": 20.0,
+    "latitude_deg": 60.65,
+    "longitude_deg": 30.315
+  },
+  "scale_origin": "scenario",
+  "physical_accuracy_claimed": false
+}

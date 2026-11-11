@@ -1,0 +1,781 @@
+{
+  "schema_version": 1,
+  "application": "lightpollution-mvp",
+  "model_version": "shared-regional-photometry-2",
+  "request": {
+    "anchor_v_mag_arcsec2": 20.5,
+    "atmosphere": {},
+    "directions": [
+      [
+        0.0,
+        90.0
+      ]
+    ],
+    "download_missing": false,
+    "mode": "undated",
+    "moon": {
+      "mode": "none"
+    },
+    "natural_v_mag_arcsec2": 21.6,
+    "observer": {
+      "height_m": 20.0,
+      "latitude_deg": 40.451111,
+      "longitude_deg": -3.726111
+    },
+    "period": "2017-11",
+    "photometric_calibration": {
+      "assumptions": [
+        "One positive coefficient; natural background and atmospheric scenarios fixed by model cases.",
+        "Johnson-V measurements mapped to the declared model V response; exact instrument response unverified.",
+        "One clear interval does not validate a region or determine AOD, spectrum and source power independently.",
+        "Common hypothetical ground surface; observer height is not a geographic DEM."
+      ],
+      "case_result_sha256": {
+        "2017-03": "785edab80fe1f3eebc3f0bfb8962c9d582a80f48632ec6ab917c04442caf7428",
+        "2017-11": "b32d6b906e0da647fd4e430391c02e1302e6522fdb299b7786874d75ec5d4398"
+      },
+      "dataset_sha256": "080f6a58499e23729ff114c6dd2aab2dc9a0c4cb76fa71407e423a809ae1b272",
+      "field_accuracy_certified": false,
+      "id": "1f75213293910acbb2bb196dd87283b43c57505cbcc6eef2a3c6e4dfa5eb9d76",
+      "independent_night_split": true,
+      "independent_validation_sites": [],
+      "kind": "shared_regional_ground_fit",
+      "measurement_rights": "CC BY 4.0, authors of Zenodo 4633001.",
+      "measurement_source": "AstMon, doi:10.5281/zenodo.4633001; Robles et al. 2021 Figure 5/6 clear interval transcription.",
+      "schema_version": 1,
+      "scope": {
+        "band": "effective_V_550nm",
+        "height_datum": "height above common hypothetical spherical ground z=0; geographic terrain not reconstructed",
+        "reference_v_mag_arcsec2": 22.0,
+        "solver_version": "single-scattering-sphere-1",
+        "source_basis_id": "94c2474a9b3b4592f7c5bc8c70f3ab335a8d67e37d5e8efe024928ac4ad75f83",
+        "spectral_library": null,
+        "transfer_code": "1ab9e208867fef8ebeff5c495ea7d24c3b7565a2b4fe2388cb334b76d5471d6d",
+        "transport": {
+          "angstrom_exponent": null,
+          "mode": "grey_550nm",
+          "wavelength_nm": [
+            550.0
+          ]
+        }
+      },
+      "source_coefficient": 22617549254041.668,
+      "training": {
+        "bias_mag": 0.0,
+        "mae_mag": 0.0,
+        "night_direction_groups": 1,
+        "nights": 1,
+        "records": [
+          {
+            "background_relative": 1.4454397707459257,
+            "case_id": "2017-03",
+            "direction": [
+              0.0,
+              90.0
+            ],
+            "night_id": "2017-03-19",
+            "observed_relative": 52.1472347373113,
+            "observed_v_mag_arcsec2": 17.7069217909684,
+            "predicted_relative": 52.1472347373113,
+            "predicted_v_mag_arcsec2": 17.7069217909684,
+            "raw_response": 2.2417015387953742e-12,
+            "residual_mag_model_minus_observed": 0.0,
+            "role": "training",
+            "samples": 9,
+            "site_id": "UCM-AstMon"
+          }
+        ],
+        "rmse_mag": 0.0,
+        "samples": 9,
+        "sites": [
+          "UCM-AstMon"
+        ]
+      },
+      "uncertainty_interval": null,
+      "validation": {
+        "bias_mag": -0.13694489279249922,
+        "mae_mag": 0.13694489279249922,
+        "night_direction_groups": 1,
+        "nights": 1,
+        "records": [
+          {
+            "background_relative": 1.4454397707459257,
+            "case_id": "2017-11",
+            "direction": [
+              0.0,
+              90.0
+            ],
+            "night_id": "2017-11-19",
+            "observed_relative": 44.38540663577192,
+            "observed_v_mag_arcsec2": 17.881899492469074,
+            "predicted_relative": 50.35216632284939,
+            "predicted_v_mag_arcsec2": 17.744954599676575,
+            "raw_response": 2.1623353619253874e-12,
+            "residual_mag_model_minus_observed": -0.13694489279249922,
+            "role": "validation",
+            "samples": 9,
+            "site_id": "UCM-AstMon"
+          }
+        ],
+        "rmse_mag": 0.13694489279249922,
+        "samples": 9,
+        "sites": [
+          "UCM-AstMon"
+        ]
+      },
+      "weighting": "Each night has total weight one; linear-light average within each night/site/case/direction."
+    },
+    "profile": "standard",
+    "reference_atmosphere": {},
+    "region": "madrid-2017",
+    "schema_version": 2
+  },
+  "resolved_scene": {
+    "anchor_v_mag_arcsec2": 20.5,
+    "atmosphere": {
+      "reference_wavelength_nm": 550.0,
+      "rayleigh_scale_height_m": 8000.0,
+      "aerosol_scale_height_m": 1200.0,
+      "aerosol_optical_depth": 0.1,
+      "aerosol_single_scattering_albedo": 0.9,
+      "aerosol_g": 0.8,
+      "rayleigh_multiplier": 1.0,
+      "top_m": 80000.0
+    },
+    "directions": [
+      [
+        0.0,
+        90.0
+      ]
+    ],
+    "download_missing": false,
+    "mode": "undated",
+    "moon": {
+      "mode": "none"
+    },
+    "natural_v_mag_arcsec2": 21.6,
+    "observer": {
+      "height_m": 20.0,
+      "latitude_deg": 40.451111,
+      "longitude_deg": -3.726111
+    },
+    "period": "2017-11",
+    "photometric_calibration": {
+      "assumptions": [
+        "One positive coefficient; natural background and atmospheric scenarios fixed by model cases.",
+        "Johnson-V measurements mapped to the declared model V response; exact instrument response unverified.",
+        "One clear interval does not validate a region or determine AOD, spectrum and source power independently.",
+        "Common hypothetical ground surface; observer height is not a geographic DEM."
+      ],
+      "case_result_sha256": {
+        "2017-03": "785edab80fe1f3eebc3f0bfb8962c9d582a80f48632ec6ab917c04442caf7428",
+        "2017-11": "b32d6b906e0da647fd4e430391c02e1302e6522fdb299b7786874d75ec5d4398"
+      },
+      "dataset_sha256": "080f6a58499e23729ff114c6dd2aab2dc9a0c4cb76fa71407e423a809ae1b272",
+      "field_accuracy_certified": false,
+      "id": "1f75213293910acbb2bb196dd87283b43c57505cbcc6eef2a3c6e4dfa5eb9d76",
+      "independent_night_split": true,
+      "independent_validation_sites": [],
+      "kind": "shared_regional_ground_fit",
+      "measurement_rights": "CC BY 4.0, authors of Zenodo 4633001.",
+      "measurement_source": "AstMon, doi:10.5281/zenodo.4633001; Robles et al. 2021 Figure 5/6 clear interval transcription.",
+      "schema_version": 1,
+      "scope": {
+        "band": "effective_V_550nm",
+        "height_datum": "height above common hypothetical spherical ground z=0; geographic terrain not reconstructed",
+        "reference_v_mag_arcsec2": 22.0,
+        "solver_version": "single-scattering-sphere-1",
+        "source_basis_id": "94c2474a9b3b4592f7c5bc8c70f3ab335a8d67e37d5e8efe024928ac4ad75f83",
+        "spectral_library": null,
+        "transfer_code": "1ab9e208867fef8ebeff5c495ea7d24c3b7565a2b4fe2388cb334b76d5471d6d",
+        "transport": {
+          "angstrom_exponent": null,
+          "mode": "grey_550nm",
+          "wavelength_nm": [
+            550.0
+          ]
+        }
+      },
+      "source_coefficient": 22617549254041.668,
+      "training": {
+        "bias_mag": 0.0,
+        "mae_mag": 0.0,
+        "night_direction_groups": 1,
+        "nights": 1,
+        "records": [
+          {
+            "background_relative": 1.4454397707459257,
+            "case_id": "2017-03",
+            "direction": [
+              0.0,
+              90.0
+            ],
+            "night_id": "2017-03-19",
+            "observed_relative": 52.1472347373113,
+            "observed_v_mag_arcsec2": 17.7069217909684,
+            "predicted_relative": 52.1472347373113,
+            "predicted_v_mag_arcsec2": 17.7069217909684,
+            "raw_response": 2.2417015387953742e-12,
+            "residual_mag_model_minus_observed": 0.0,
+            "role": "training",
+            "samples": 9,
+            "site_id": "UCM-AstMon"
+          }
+        ],
+        "rmse_mag": 0.0,
+        "samples": 9,
+        "sites": [
+          "UCM-AstMon"
+        ]
+      },
+      "uncertainty_interval": null,
+      "validation": {
+        "bias_mag": -0.13694489279249922,
+        "mae_mag": 0.13694489279249922,
+        "night_direction_groups": 1,
+        "nights": 1,
+        "records": [
+          {
+            "background_relative": 1.4454397707459257,
+            "case_id": "2017-11",
+            "direction": [
+              0.0,
+              90.0
+            ],
+            "night_id": "2017-11-19",
+            "observed_relative": 44.38540663577192,
+            "observed_v_mag_arcsec2": 17.881899492469074,
+            "predicted_relative": 50.35216632284939,
+            "predicted_v_mag_arcsec2": 17.744954599676575,
+            "raw_response": 2.1623353619253874e-12,
+            "residual_mag_model_minus_observed": -0.13694489279249922,
+            "role": "validation",
+            "samples": 9,
+            "site_id": "UCM-AstMon"
+          }
+        ],
+        "rmse_mag": 0.13694489279249922,
+        "samples": 9,
+        "sites": [
+          "UCM-AstMon"
+        ]
+      },
+      "weighting": "Each night has total weight one; linear-light average within each night/site/case/direction."
+    },
+    "profile": "standard",
+    "reference_atmosphere": {
+      "reference_wavelength_nm": 550.0,
+      "rayleigh_scale_height_m": 8000.0,
+      "aerosol_scale_height_m": 1200.0,
+      "aerosol_optical_depth": 0.1,
+      "aerosol_single_scattering_albedo": 0.9,
+      "aerosol_g": 0.8,
+      "rayleigh_multiplier": 1.0,
+      "top_m": 80000.0
+    },
+    "region": "madrid-2017",
+    "schema_version": 2,
+    "atmosphere_origin": {
+      "kind": "baseline_scenario",
+      "user_parameters": [],
+      "default_parameters": [
+        "aerosol_g",
+        "aerosol_optical_depth",
+        "aerosol_scale_height_m",
+        "aerosol_single_scattering_albedo",
+        "rayleigh_multiplier",
+        "rayleigh_scale_height_m",
+        "reference_wavelength_nm",
+        "top_m"
+      ],
+      "measured_weather": false,
+      "regional_probability_estimated": false
+    },
+    "reference_v_mag_arcsec2": 22.0,
+    "height_datum": "height above common hypothetical spherical ground z=0; geographic terrain not reconstructed",
+    "scale_origin": "provided_calibration",
+    "anchor_observer": {
+      "latitude_deg": 40.451111,
+      "longitude_deg": -3.726111,
+      "height_m": 20
+    }
+  },
+  "sky": {
+    "directions": [
+      {
+        "azimuth_deg": 0.0,
+        "altitude_deg": 90.0,
+        "artificial_relative": 48.906726552103464,
+        "natural_relative": 1.4454397707459257,
+        "moon_relative": 0.0,
+        "total_relative": 50.35216632284939,
+        "total_v_mag_arcsec2": 17.744954599676575,
+        "moon_separation_deg": null,
+        "supported": true,
+        "status": "ok",
+        "low_altitude_caution": false,
+        "raw_transfer_response": 2.1623353619253874e-12
+      }
+    ],
+    "photometry": {
+      "band": {
+        "name": "V",
+        "zero_point_system": "KS1991 empirical V convention",
+        "response_reference": "doi:10.1086/132921; no numerical spectral response imported"
+      },
+      "reference_v_mag_arcsec2": 22.0,
+      "diffuse_units": "B/Bref, common reference; linear addition",
+      "extinction_v_mag_airmass": 0.2242409030127214,
+      "band_bridge": "effective 550 nm grey transfer shape anchored in V; not a spectral inversion"
+    },
+    "capabilities": [
+      "relative_background"
+    ],
+    "spectral_axis": null
+  },
+  "stars": {
+    "rows": [],
+    "metadata": {
+      "available": false,
+      "reason": "No date: no unique horizontal stellar positions."
+    },
+    "flux_unit": "F_star/F_Vmag0",
+    "detected_by_eye": null
+  },
+  "observation": {
+    "schema_version": 1,
+    "mode": "undated",
+    "utc": null,
+    "input_scene": {
+      "schema_version": 1,
+      "mode": "undated",
+      "observer": {
+        "latitude_deg": 40.451111,
+        "longitude_deg": -3.726111,
+        "height_m": 20.0
+      },
+      "directions": [
+        [
+          0.0,
+          90.0
+        ]
+      ],
+      "atmosphere": {
+        "reference_wavelength_nm": 550.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.1,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 1.0,
+        "top_m": 80000.0
+      },
+      "natural": {
+        "mode": "uniform",
+        "v_mag_arcsec2": 21.6,
+        "source": "Uniform natural-background scenario; not measured separately."
+      },
+      "artificial": {
+        "mode": "grid",
+        "sky_grid": "current-transfer-field",
+        "anchor_v_mag_arcsec2": 17.737441663290156,
+        "scale_origin": "provided_calibration",
+        "source": "Fixed source coefficient of the reference scene; no independent absolute inversion.",
+        "band_bridge": "effective_550nm_shape_anchored_in_V"
+      },
+      "moon": {
+        "mode": "none"
+      }
+    },
+    "observer": {
+      "latitude_deg": 40.451111,
+      "longitude_deg": -3.726111,
+      "height_m": 20.0
+    },
+    "atmosphere": {
+      "reference_wavelength_nm": 550.0,
+      "rayleigh_scale_height_m": 8000.0,
+      "aerosol_scale_height_m": 1200.0,
+      "aerosol_optical_depth": 0.1,
+      "aerosol_single_scattering_albedo": 0.9,
+      "aerosol_g": 0.8,
+      "rayleigh_multiplier": 1.0,
+      "top_m": 80000.0
+    },
+    "atmosphere_origin": {
+      "kind": "baseline_scenario",
+      "user_parameters": [],
+      "default_parameters": [
+        "aerosol_g",
+        "aerosol_optical_depth",
+        "aerosol_scale_height_m",
+        "aerosol_single_scattering_albedo",
+        "rayleigh_multiplier",
+        "rayleigh_scale_height_m",
+        "reference_wavelength_nm",
+        "top_m"
+      ],
+      "measured_weather": false,
+      "regional_probability_estimated": false
+    },
+    "cloud_free": true,
+    "geometry": null,
+    "moon": {
+      "mode": "none"
+    },
+    "photometry": {
+      "band": {
+        "name": "V",
+        "zero_point_system": "KS1991 empirical V convention",
+        "response_reference": "doi:10.1086/132921; no numerical spectral response imported"
+      },
+      "reference_v_mag_arcsec2": 22.0,
+      "diffuse_units": "B/Bref, common reference; linear addition",
+      "extinction_v_mag_airmass": 0.2242409030127214,
+      "band_bridge": "effective 550 nm grey transfer shape anchored in V; not a spectral inversion"
+    },
+    "artificial_provenance": {
+      "path": "current-transfer-field",
+      "sha256": "3544e603b2d2691d4dc24156441030796a60567d05734e7cf8312024441ae4ae",
+      "input_metadata": {
+        "observer": {
+          "latitude_deg": 40.451111,
+          "longitude_deg": -3.726111,
+          "height_m": 20.0
+        },
+        "atmosphere": {
+          "reference_wavelength_nm": 550.0,
+          "rayleigh_scale_height_m": 8000.0,
+          "aerosol_scale_height_m": 1200.0,
+          "aerosol_optical_depth": 0.1,
+          "aerosol_single_scattering_albedo": 0.9,
+          "aerosol_g": 0.8,
+          "rayleigh_multiplier": 1.0,
+          "top_m": 80000.0
+        },
+        "source_basis_id": "94c2474a9b3b4592f7c5bc8c70f3ab335a8d67e37d5e8efe024928ac4ad75f83",
+        "provenance": {
+          "composite": "NearNadir",
+          "observer": {
+            "latitude_deg": 40.451111,
+            "longitude_deg": -3.726111,
+            "height_m": 20.0
+          },
+          "block_pixels": 12,
+          "effective_sources": 2743,
+          "retained_positive_pixels": 70161,
+          "normalisation": "Fixed regional radiance-area reference before observer exclusions; removed power is not restored.",
+          "normalisation_radiance_area": 113682506105.37863,
+          "retained_radiance_area": 109101287591.55452,
+          "unknown_pixels_are_not_dark_measurements": true,
+          "excluded_local_radius_m": 3000,
+          "include_water": false,
+          "weight_denominator_radiance_times_area": 110728341627.77371,
+          "weight_removed_water_fraction": 0.0,
+          "weight_removed_unknown_surface_fraction": 0.0,
+          "weight_removed_local_fraction": 0.014694106425694726,
+          "retained_weight_fraction": 0.9853058935743052,
+          "largest_patch_radius_m": 5887.631094818335,
+          "ray_refinement_azimuth_altitude_deg": null,
+          "nearest_retained_pixel_m": 3001.987158924819,
+          "nearest_effective_source_chord_m": 3046.686676786805,
+          "unmodelled_sources_outside_bounds": {
+            "west": -5,
+            "south": 39,
+            "east": -2,
+            "north": 42
+          },
+          "input_kind": "blackmarble",
+          "source_basis_id": "94c2474a9b3b4592f7c5bc8c70f3ab335a8d67e37d5e8efe024928ac4ad75f83",
+          "source_power_multiplier": 0.974013904348075,
+          "region_metadata": {
+            "bounds": {
+              "west": -5,
+              "south": 39,
+              "east": -2,
+              "north": 42
+            },
+            "product": "VNP46A3.002",
+            "collection": "002",
+            "year": 2017,
+            "month": 11,
+            "period_start": "2017-11-01",
+            "period_end": "2017-11-30",
+            "temporal_resolution": "monthly",
+            "inputs": [
+              {
+                "filename": "VNP46A3.A2017305.h17v04.002.2025101174416.h5",
+                "sha256": "ff9161590b874ef8d7206590e7dc14facf52605f69d93038c4505691fbfa3c50"
+              },
+              {
+                "filename": "VNP46A3.A2017305.h17v05.002.2025101174426.h5",
+                "sha256": "fff8dcc596fc108c3f18c60cdee99cdd7d5331140bc3b04e999e03318885a17e"
+              }
+            ],
+            "source_power_multiplier": 0.974013904348075,
+            "seasonal_selection": {
+              "observer": {
+                "latitude_deg": 40.451111,
+                "longitude_deg": -3.726111,
+                "height_m": 20
+              },
+              "exclude_radius_m": 0,
+              "include_water": false
+            },
+            "source_composite": "NearNadir",
+            "normalisation_reference_period": "2017-03",
+            "common_mask_sha256": "9ace86ef475a88dc7a8f2f1cf291885457e188ec0f7ca62b000c16c7d0da405f",
+            "radiance_area_sum": 110728341627.77371,
+            "reference_radiance_area_sum": 113682506105.37863
+          }
+        },
+        "solver": {
+          "ray_segments": 192,
+          "path_quadrature": 24,
+          "horizontal_fraction": 0.0,
+          "near_ray_scale_m": 500.0
+        },
+        "solver_version": "single-scattering-sphere-1"
+      },
+      "anchor_raw": 2.2417015387953742e-12,
+      "reference_sky_grid": {
+        "reference_period": "2017-03",
+        "reference_atmosphere": {
+          "reference_wavelength_nm": 550.0,
+          "rayleigh_scale_height_m": 8000.0,
+          "aerosol_scale_height_m": 1200.0,
+          "aerosol_optical_depth": 0.1,
+          "aerosol_single_scattering_albedo": 0.9,
+          "aerosol_g": 0.8,
+          "rayleigh_multiplier": 1.0,
+          "top_m": 80000.0
+        },
+        "reference_raw_zenith": 2.2417015387953742e-12,
+        "anchor_v_mag_arcsec2": 17.737441663290156,
+        "source_coefficient": 22617549254041.668,
+        "reference_numerical_profile": "standard",
+        "field_accuracy_certified": false,
+        "scope": {
+          "source_basis_id": "94c2474a9b3b4592f7c5bc8c70f3ab335a8d67e37d5e8efe024928ac4ad75f83",
+          "transfer_code": "1ab9e208867fef8ebeff5c495ea7d24c3b7565a2b4fe2388cb334b76d5471d6d",
+          "solver_version": "single-scattering-sphere-1",
+          "transport": {
+            "mode": "grey_550nm",
+            "wavelength_nm": [
+              550.0
+            ],
+            "angstrom_exponent": null
+          },
+          "band": "effective_V_550nm",
+          "spectral_library": null,
+          "reference_v_mag_arcsec2": 22.0,
+          "height_datum": "height above common hypothetical spherical ground z=0; geographic terrain not reconstructed"
+        },
+        "origin": "provided_calibration",
+        "anchor_observer": {
+          "latitude_deg": 40.451111,
+          "longitude_deg": -3.726111,
+          "height_m": 20
+        },
+        "provided_calibration_id": "1f75213293910acbb2bb196dd87283b43c57505cbcc6eef2a3c6e4dfa5eb9d76",
+        "reference_mix": null
+      },
+      "anchor_relative": 50.70179496656537,
+      "scale_origin": "provided_calibration",
+      "source": "Fixed source coefficient of the reference scene; no independent absolute inversion.",
+      "calibration_independently_verified": false
+    },
+    "directions": [
+      {
+        "azimuth_deg": 0.0,
+        "altitude_deg": 90.0,
+        "artificial_relative": 48.906726552103464,
+        "natural_relative": 1.4454397707459257,
+        "moon_relative": 0.0,
+        "total_relative": 50.35216632284939,
+        "total_v_mag_arcsec2": 17.744954599676575,
+        "moon_separation_deg": null,
+        "supported": true,
+        "status": "ok",
+        "low_altitude_caution": false,
+        "raw_transfer_response": 2.1623353619253874e-12
+      }
+    ],
+    "stars_metadata": {
+      "available": false,
+      "reason": "No date: no unique horizontal stellar positions."
+    },
+    "assumptions_and_limitations": [
+      "effective_550nm_shape_anchored_in_V_not_spectral_integration",
+      "ground_validation_limited_to_supplied_nights_and_sites_not_global_accuracy",
+      "no_clouds_refraction_terrain_or_eye_camera_model",
+      "uniform_natural_background_is_a_scenario",
+      "fixed_source_coefficient_from_reference_atmosphere; provided_ground_fit_with_declared_scope"
+    ],
+    "model": {
+      "moonlight": "Krisciunas-Schaefer 1991 eqs 1,3,8,9,15,21; rho>=10 deg",
+      "distance_correction_reference_km": 384400.0,
+      "lunar_opposition_surge": false,
+      "lunar_eclipse_model": false,
+      "physical_error_bound": null,
+      "document": "docs/OBSERVATION_MODEL.md"
+    }
+  },
+  "calibration": {
+    "reference_period": "2017-03",
+    "reference_atmosphere": {
+      "reference_wavelength_nm": 550.0,
+      "rayleigh_scale_height_m": 8000.0,
+      "aerosol_scale_height_m": 1200.0,
+      "aerosol_optical_depth": 0.1,
+      "aerosol_single_scattering_albedo": 0.9,
+      "aerosol_g": 0.8,
+      "rayleigh_multiplier": 1.0,
+      "top_m": 80000.0
+    },
+    "reference_raw_zenith": 2.2417015387953742e-12,
+    "anchor_v_mag_arcsec2": 17.737441663290156,
+    "source_coefficient": 22617549254041.668,
+    "reference_numerical_profile": "standard",
+    "field_accuracy_certified": false,
+    "scope": {
+      "source_basis_id": "94c2474a9b3b4592f7c5bc8c70f3ab335a8d67e37d5e8efe024928ac4ad75f83",
+      "transfer_code": "1ab9e208867fef8ebeff5c495ea7d24c3b7565a2b4fe2388cb334b76d5471d6d",
+      "solver_version": "single-scattering-sphere-1",
+      "transport": {
+        "mode": "grey_550nm",
+        "wavelength_nm": [
+          550.0
+        ],
+        "angstrom_exponent": null
+      },
+      "band": "effective_V_550nm",
+      "spectral_library": null,
+      "reference_v_mag_arcsec2": 22.0,
+      "height_datum": "height above common hypothetical spherical ground z=0; geographic terrain not reconstructed"
+    },
+    "origin": "provided_calibration",
+    "anchor_observer": {
+      "latitude_deg": 40.451111,
+      "longitude_deg": -3.726111,
+      "height_m": 20
+    },
+    "provided_calibration_id": "1f75213293910acbb2bb196dd87283b43c57505cbcc6eef2a3c6e4dfa5eb9d76",
+    "reference_mix": null
+  },
+  "comparison_basis_id": "7c28b4f080d0b9d512e8ccbb4d06333059d2f90532bdf6e7a66949fe81c3042b",
+  "data_provenance": {
+    "region": {
+      "id": "madrid-2017",
+      "title": "Мадрид · NASA 2017",
+      "kind": "blackmarble",
+      "periods": [
+        "2017-03",
+        "2017-11"
+      ],
+      "reference_period": "2017-03",
+      "observer": {
+        "latitude_deg": 40.451111,
+        "longitude_deg": -3.726111,
+        "height_m": 20
+      },
+      "default_time": "2017-11-19T22:30:00Z",
+      "bounds": {
+        "west": -5,
+        "south": 39,
+        "east": -2,
+        "north": 42
+      },
+      "folders": {
+        "2017-03": "madrid-2017-03",
+        "2017-11": "madrid-2017-11"
+      },
+      "manifests": {
+        "2017-03": "madrid-2017-03.json",
+        "2017-11": "madrid-2017-11.json"
+      },
+      "description": "Месячные VNP46A3.002 на общей маске. Плоский сценарий; историческая калибровка станции на 650 м не переносится.",
+      "local_files_present": 4,
+      "required_files": 4,
+      "locally_available": true,
+      "presence_is_not_QA": true
+    },
+    "QA": {
+      "reference_period": "2017-03",
+      "bounds": {
+        "west": -5,
+        "south": 39,
+        "east": -2,
+        "north": 42
+      },
+      "selection": {
+        "observer": {
+          "latitude_deg": 40.451111,
+          "longitude_deg": -3.726111,
+          "height_m": 20
+        },
+        "exclude_radius_m": 0,
+        "include_water": false
+      },
+      "composite": "NearNadir",
+      "roi_pixels": 518400,
+      "reference_land_domain_pixels": 518343,
+      "common_pixels": 477983,
+      "common_fraction_of_reference_land": 0.922136500348225,
+      "minimum_common_fraction": 0.8,
+      "common_mask_sha256": "9ace86ef475a88dc7a8f2f1cf291885457e188ec0f7ca62b000c16c7d0da405f",
+      "radiance_units": "nW/(cm2 sr); sum uses spherical cell area in m2",
+      "periods": [
+        {
+          "period": "2017-03",
+          "input": "data/photometry-spectra-20261111/source-cache/4146f7bf2b0f58cedf2ada9b437e8dfc19be4c6376e6859cacfa750dff361bf1/source-grid.npz",
+          "input_sha256": "7a0822d264cc0f0b6ec3c65a02d7c7bcac42f1e91b47a49ad0bf904c4a661300",
+          "accepted_on_reference_domain": 502561,
+          "radiance_area_sum": 113682506105.37863,
+          "source_power_multiplier": 1.0,
+          "prepared_region": "data/photometry-spectra-20261111/matched-sources/59e26f07906ce380d1743eed675b2e268ab2d53c6f4c77d3c6eb36c9807082df/2017-03/source-grid.npz"
+        },
+        {
+          "period": "2017-11",
+          "input": "data/photometry-spectra-20261111/source-cache/03912c055a58f50e42f65d2cfae01f2bfe2f0a0d906817b136e43ac0b601df76/source-grid.npz",
+          "input_sha256": "5502bfe1f7030bcc673096f8193bfe0e97a3ae68d7f0bacf6baa0339bc56c864",
+          "accepted_on_reference_domain": 492735,
+          "radiance_area_sum": 110728341627.77371,
+          "source_power_multiplier": 0.974013904348075,
+          "prepared_region": "data/photometry-spectra-20261111/matched-sources/59e26f07906ce380d1743eed675b2e268ab2d53c6f4c77d3c6eb36c9807082df/2017-11/source-grid.npz"
+        }
+      ],
+      "conversion_to_upward_power": "relative proxy, not physical inversion",
+      "assumption": "Same DNB-to-V and angular-emission mapping across compared months; unvalidated.",
+      "not_modelled": [
+        "monthly snow reflection",
+        "hourly light switching",
+        "measured atmosphere"
+      ],
+      "normalisation_before_local_exclusions": true,
+      "observer_independent_source_basis": true,
+      "local_exclusion_radius_m": 3000
+    },
+    "source_basis_id": "94c2474a9b3b4592f7c5bc8c70f3ab335a8d67e37d5e8efe024928ac4ad75f83",
+    "source_period": "2017-11",
+    "geographic_terrain_reconstructed": false
+  },
+  "capabilities": [
+    "relative_background"
+  ],
+  "unavailable_capabilities": [
+    "eye_detection",
+    "camera_electrons",
+    "spectral_radiance",
+    "validated_display"
+  ],
+  "cache": {
+    "scene_hit": false,
+    "transfer_hits": 6,
+    "transfer_misses": 0
+  },
+  "runtime": {
+    "elapsed_seconds": 5.08731394005008
+  },
+  "physical_error_bound": null
+}

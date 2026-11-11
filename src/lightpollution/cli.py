@@ -32,11 +32,13 @@ def make_parser() -> argparse.ArgumentParser:
     serve.add_argument('--port',type=int,default=8765)
     plan=commands.add_parser('plan',help='Calculate a complete schema-2 scenario in one command')
     plan.add_argument('--scene',type=Path)
+    plan.add_argument('--calibration',type=Path,help='Attach an exported shared photometric calibration')
     plan.add_argument('--workspace',type=Path,default=Path(os.environ.get('LIGHTPOLLUTION_WORKSPACE','data/mvp')))
     plan.add_argument('--raw-directory',type=Path)
     plan.add_argument('--output',type=Path,default=Path('data/mvp/manual-result'))
     example=commands.add_parser('example',help='Save a small offline schema-2 example')
     example.add_argument('--output',type=Path,required=True)
+    example.add_argument('--spectral',action='store_true',help='Include a finite-band LED spectral scenario')
     datasets=commands.add_parser('datasets',help='Inspect prepared region definitions or download pinned files')
     datasets.add_argument('--workspace',type=Path,default=Path('data/mvp'))
     datasets.add_argument('--raw-directory',type=Path)
@@ -45,6 +47,11 @@ def make_parser() -> argparse.ArgumentParser:
     compare.add_argument('--left',type=Path,required=True)
     compare.add_argument('--right',type=Path,required=True)
     compare.add_argument('--output',type=Path)
+    shared=commands.add_parser('fit-photometry',help='Fit one regional source coefficient on clear training nights and validate independent nights')
+    shared.add_argument('--dataset',type=Path,required=True)
+    shared.add_argument('--output',type=Path,required=True)
+    spectral=commands.add_parser('spectral-library',help='Inspect verified offline lamp, band and stellar spectra')
+    spectral.add_argument('--output',type=Path)
     cat=commands.add_parser('catalogue',help='Inspect public NASA file metadata; no authentication needed')
     cat.add_argument('--year',type=int,default=2025)
     cat.add_argument('--month',type=int,choices=range(1,13),help='Monthly VNP46A3; omit for annual VNP46A4')
@@ -146,7 +153,7 @@ def main():
     parser=make_parser()
     args=parser.parse_args()
     try:
-        if args.command in ('plan','example','datasets','serve','compare'):
+        if args.command in ('plan','example','datasets','serve','compare','fit-photometry','spectral-library'):
             from .interfaces.commands import run_command
             run_command(args)
         elif args.command=='catalogue':

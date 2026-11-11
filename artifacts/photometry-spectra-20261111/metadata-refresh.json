@@ -1,0 +1,10 @@
+{
+  "cases": [
+    "madrid-calibrated-validation",
+    "madrid-LED-B3-calibrated-validation",
+    "madrid-HP1-calibrated-validation"
+  ],
+  "numerical_sky_and_stars_unchanged": true,
+  "new_transfer_calculations": 0,
+  "change": "Provided-calibration warning now names limited held-out validation instead of incorrectly denying any independent check."
+}

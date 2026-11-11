@@ -1,0 +1,31 @@
+{
+  "tested_at": "2026-11-11T10:23:45+01:00",
+  "package_version": "0.3.0",
+  "wheel": "lightpollution-0.3.0-py3-none-any.whl",
+  "wheel_sha256": "12ac4ee338a74c660d64808dab6d4511aa1cb6d7e11c900726f53ca7700c56a4",
+  "wheel_bytes": 357645,
+  "isolated_environment": true,
+  "editable_source_imported": false,
+  "packaged_files_equal_final_source": true,
+  "verified_packaged_files": 58,
+  "documented_console_entry_used": true,
+  "offline_spectral_example_completed": true,
+  "directions": 5,
+  "catalogue_stars": 3830,
+  "stellar_spectral_coverage": {
+    "measured": 4,
+    "catalogue_continuum": 3594,
+    "unavailable": 232,
+    "available": 3598,
+    "total_catalogue_rows": 3830,
+    "flux_unit": "W/(m2 nm) point-source irradiance; not per sr",
+    "extinction_applied_once": true,
+    "zero_point_V_W_m2": 3.2120673012662866e-09,
+    "model": "Measured SED shapes where available; otherwise B-V Planck continuum scenario."
+  },
+  "lamp_templates": 14,
+  "wavelength_samples": 95,
+  "runtime": {
+    "elapsed_seconds": 3.7328632618300617
+  }
+}

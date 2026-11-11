@@ -1,0 +1,116 @@
+{
+  "sodium_vs_reference_LED": {
+    "directions": [
+      {
+        "azimuth_deg": 0.0,
+        "altitude_deg": 90.0,
+        "supported": true,
+        "right_over_left": 0.9614470052873024,
+        "right_minus_left_mag": 0.042686622416020725,
+        "reason": null
+      },
+      {
+        "azimuth_deg": 0.0,
+        "altitude_deg": 45.0,
+        "supported": true,
+        "right_over_left": 0.9698518626597603,
+        "right_minus_left_mag": 0.03323648944400759,
+        "reason": null
+      },
+      {
+        "azimuth_deg": 90.0,
+        "altitude_deg": 45.0,
+        "supported": true,
+        "right_over_left": 0.967488519486737,
+        "right_minus_left_mag": 0.03588544937247917,
+        "reason": null
+      },
+      {
+        "azimuth_deg": 180.0,
+        "altitude_deg": 45.0,
+        "supported": true,
+        "right_over_left": 0.957957277384621,
+        "right_minus_left_mag": 0.046634647475457314,
+        "reason": null
+      },
+      {
+        "azimuth_deg": 270.0,
+        "altitude_deg": 45.0,
+        "supported": true,
+        "right_over_left": 0.9675742008835172,
+        "right_minus_left_mag": 0.035789300143161284,
+        "reason": null
+      }
+    ],
+    "comparison_basis_id": "3d938db558e0229cd6e09649473565c95fa5674a2a86e875fd2bd1cc0c2df1fc",
+    "left_observer": {
+      "height_m": 20.0,
+      "latitude_deg": 60.3,
+      "longitude_deg": 30.315
+    },
+    "right_observer": {
+      "height_m": 20.0,
+      "latitude_deg": 60.3,
+      "longitude_deg": 30.315
+    },
+    "scale_origin": "scenario",
+    "physical_accuracy_claimed": false
+  },
+  "cool_LED_vs_reference_LED": {
+    "directions": [
+      {
+        "azimuth_deg": 0.0,
+        "altitude_deg": 90.0,
+        "supported": true,
+        "right_over_left": 1.00056561172237,
+        "right_minus_left_mag": -0.0006139315177442484,
+        "reason": null
+      },
+      {
+        "azimuth_deg": 0.0,
+        "altitude_deg": 45.0,
+        "supported": true,
+        "right_over_left": 0.9993292718937324,
+        "right_minus_left_mag": 0.0007284781212177904,
+        "reason": null
+      },
+      {
+        "azimuth_deg": 90.0,
+        "altitude_deg": 45.0,
+        "supported": true,
+        "right_over_left": 0.9995234906440932,
+        "right_minus_left_mag": 0.0005174867630515223,
+        "reason": null
+      },
+      {
+        "azimuth_deg": 180.0,
+        "altitude_deg": 45.0,
+        "supported": true,
+        "right_over_left": 1.000111091331892,
+        "right_minus_left_mag": -0.00012060918187728475,
+        "reason": null
+      },
+      {
+        "azimuth_deg": 270.0,
+        "altitude_deg": 45.0,
+        "supported": true,
+        "right_over_left": 0.9994936081881717,
+        "right_minus_left_mag": 0.0005499471800263223,
+        "reason": null
+      }
+    ],
+    "comparison_basis_id": "3d938db558e0229cd6e09649473565c95fa5674a2a86e875fd2bd1cc0c2df1fc",
+    "left_observer": {
+      "height_m": 20.0,
+      "latitude_deg": 60.3,
+      "longitude_deg": 30.315
+    },
+    "right_observer": {
+      "height_m": 20.0,
+      "latitude_deg": 60.3,
+      "longitude_deg": 30.315
+    },
+    "scale_origin": "scenario",
+    "physical_accuracy_claimed": false
+  }
+}

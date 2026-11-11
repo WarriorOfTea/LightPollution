@@ -1,0 +1,2 @@
+azimuth_deg,altitude_deg,artificial_relative,natural_relative,moon_relative,total_relative,total_v_mag_arcsec2,moon_separation_deg,supported,status,low_altitude_caution,raw_transfer_response
+0.0,90.0,48.898805669725185,1.4454397707459257,0.0,50.34424544047111,17.74512540990981,,True,ok,False,7.263170374453808e-13

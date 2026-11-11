@@ -210,7 +210,9 @@ def calculate_scene(config: dict, resources: ObservationResources) -> dict:
             anchor_raw, anchor_q = fixed.anchor_raw, fixed.anchor_relative
             grid = (az, alt, raw, fixed.coefficient)
             reference_provenance = fixed.provenance
-            warnings.append('fixed_source_coefficient_from_reference_atmosphere; scenario_not_new_calibration')
+            warnings.append('fixed_source_coefficient_from_reference_atmosphere; '
+                            + ('provided_ground_fit_with_declared_scope' if artificial['scale_origin'] == 'provided_calibration'
+                               else 'scenario_not_new_calibration'))
         if utc:
             warnings.append('source_composite_is_not_an_hourly_lighting_forecast')
         grid_provenance = {'path':artificial['sky_grid'], 'sha256':resource.sha256,

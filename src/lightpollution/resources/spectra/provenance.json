@@ -1,0 +1,317 @@
+{
+  "schema_version": 1,
+  "grid_nm": [
+    360,
+    830,
+    5
+  ],
+  "lamp_power_normalisation": "Unit integrated radiant power on this finite wavelength interval, not unit lumens.",
+  "cie_tables": [
+    {
+      "file": "CIE_illum_LEDs.csv",
+      "DOI": "10.25039/CIE.DS.vgssnyfg",
+      "rights": [
+        {
+          "rights": "Creative Commons Attribution-ShareAlike 4.0 International",
+          "rightsURI": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "rightsIdentifier": "CC BY-SA 4.0"
+        }
+      ],
+      "publisher_sha256_verified": true
+    },
+    {
+      "file": "CIE_illum_HPs.csv",
+      "DOI": "10.25039/CIE.DS.f6rvvnev",
+      "rights": [
+        {
+          "rights": "Creative Commons Attribution-ShareAlike 4.0 International",
+          "rightsURI": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "rightsIdentifier": "CC BY-SA 4.0"
+        }
+      ],
+      "publisher_sha256_verified": true
+    },
+    {
+      "file": "CIE_sle_photopic.csv",
+      "DOI": "10.25039/CIE.DS.dktna2s3",
+      "rights": [
+        {
+          "rights": "Creative Commons Attribution-ShareAlike 4.0 International",
+          "rightsURI": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "rightsIdentifier": "CC BY-SA 4.0"
+        }
+      ],
+      "publisher_sha256_verified": true
+    },
+    {
+      "file": "CIE_sle_scotopic.csv",
+      "DOI": "10.25039/CIE.DS.gr6w4b5g",
+      "rights": [
+        {
+          "rights": "Creative Commons Attribution-ShareAlike 4.0 International",
+          "rightsURI": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "rightsIdentifier": "CC BY-SA 4.0"
+        }
+      ],
+      "publisher_sha256_verified": true
+    }
+  ],
+  "filters": {
+    "B": {
+      "identifier": "Generic/Johnson.B",
+      "detector": "energy",
+      "url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=Generic/Johnson.B",
+      "acknowledgement": "SVO Filter Profile Service Carlos Rodrigo; Rodrigo et al. 2024, A&A 689 A93."
+    },
+    "V": {
+      "identifier": "Generic/Johnson.V",
+      "detector": "energy",
+      "url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=Generic/Johnson.V",
+      "acknowledgement": "SVO Filter Profile Service Carlos Rodrigo; Rodrigo et al. 2024, A&A 689 A93."
+    }
+  },
+  "stars": [
+    {
+      "hr": 7001,
+      "name": "Vega",
+      "source": "CALSPEC",
+      "url": "https://ssb.stsci.edu/trds/calspec/alpha_lyr_stis_011.fits",
+      "raw_absolute_flux": true,
+      "wavelength_medium": "vacuum"
+    },
+    {
+      "hr": 2491,
+      "name": "Sirius",
+      "source": "CALSPEC",
+      "url": "https://ssb.stsci.edu/trds/calspec/sirius_stis_005.fits",
+      "raw_absolute_flux": true,
+      "wavelength_medium": "vacuum"
+    },
+    {
+      "hr": 6689,
+      "name": "HR 6689",
+      "source": "Gaia DR3 XP_SAMPLED",
+      "source_id": "4371553920172973312",
+      "matching_epoch": "J2016, BSC tangent proper motion",
+      "match_separation_arcsec": 1.0754830548721932,
+      "catalogue_v_mag": 5.97,
+      "catalogue_b_v": 0.1,
+      "url": "https://gea.esac.esa.int/data-server/data?RETRIEVAL_TYPE=XP_SAMPLED&ID=4371553920172973312&RELEASE=Gaia+DR3&FORMAT=votable",
+      "raw_absolute_flux": true,
+      "sample_errors_correlated": true,
+      "wavelength_medium": "vacuum"
+    },
+    {
+      "hr": 1691,
+      "name": "HR 1691",
+      "source": "Gaia DR3 XP_SAMPLED",
+      "source_id": "3233898035000478464",
+      "matching_epoch": "J2016, BSC tangent proper motion",
+      "match_separation_arcsec": 0.8979272014172419,
+      "catalogue_v_mag": 5.89,
+      "catalogue_b_v": 0.66,
+      "url": "https://gea.esac.esa.int/data-server/data?RETRIEVAL_TYPE=XP_SAMPLED&ID=3233898035000478464&RELEASE=Gaia+DR3&FORMAT=votable",
+      "raw_absolute_flux": true,
+      "sample_errors_correlated": true,
+      "wavelength_medium": "vacuum"
+    },
+    {
+      "hr": 1988,
+      "name": "HR 1988",
+      "source": "Gaia DR3 XP_SAMPLED",
+      "source_id": "3219847066672970368",
+      "matching_epoch": "J2016, BSC tangent proper motion",
+      "match_separation_arcsec": 1.3372635585076502,
+      "catalogue_v_mag": 5.95,
+      "catalogue_b_v": 0.78,
+      "url": "https://gea.esac.esa.int/data-server/data?RETRIEVAL_TYPE=XP_SAMPLED&ID=3219847066672970368&RELEASE=Gaia+DR3&FORMAT=votable",
+      "raw_absolute_flux": true,
+      "sample_errors_correlated": true,
+      "wavelength_medium": "vacuum"
+    },
+    {
+      "hr": 6136,
+      "name": "HR 6136",
+      "source": "Gaia DR3 XP_SAMPLED",
+      "source_id": "4431639310048958208",
+      "matching_epoch": "J2016, BSC tangent proper motion",
+      "match_separation_arcsec": 0.3998919536598227,
+      "catalogue_v_mag": 5.39,
+      "catalogue_b_v": 1.46,
+      "url": "https://gea.esac.esa.int/data-server/data?RETRIEVAL_TYPE=XP_SAMPLED&ID=4431639310048958208&RELEASE=Gaia+DR3&FORMAT=votable",
+      "raw_absolute_flux": true,
+      "sample_errors_correlated": true,
+      "wavelength_medium": "vacuum"
+    },
+    {
+      "hr": 8287,
+      "name": "HR 8287",
+      "source": "Gaia DR3 XP_SAMPLED",
+      "source_id": "2693541327543209472",
+      "matching_epoch": "J2016, BSC tangent proper motion",
+      "match_separation_arcsec": 0.19304001440066199,
+      "catalogue_v_mag": 5.67,
+      "catalogue_b_v": 1.44,
+      "url": "https://gea.esac.esa.int/data-server/data?RETRIEVAL_TYPE=XP_SAMPLED&ID=2693541327543209472&RELEASE=Gaia+DR3&FORMAT=votable",
+      "raw_absolute_flux": true,
+      "sample_errors_correlated": true,
+      "wavelength_medium": "vacuum"
+    }
+  ],
+  "gaia_rejections": [
+    {
+      "hr": 2801,
+      "reason": "no_unique_XP_match_within_2arcsec"
+    },
+    {
+      "hr": 7596,
+      "reason": "no_unique_XP_match_within_2arcsec"
+    },
+    {
+      "hr": 672,
+      "reason": "no_unique_XP_match_within_2arcsec"
+    },
+    {
+      "hr": 4371,
+      "reason": "no_unique_XP_match_within_2arcsec"
+    }
+  ],
+  "gaia_targets": 9,
+  "inputs": [
+    {
+      "file": "CIE_illum_HPs.csv",
+      "url": "https://files.cie.co.at/Publications-datasets/CIE_illum_HPs.csv",
+      "bytes": 2814,
+      "sha256": "035e09d62b27f4b1e362ff1ba99a50235f0d7886c2781c50d49851b6e4bb4552"
+    },
+    {
+      "file": "CIE_illum_HPs.csv_metadata_v2.json",
+      "url": "https://files.cie.co.at/Publications-datasets/CIE_illum_HPs.csv_metadata_v2.json",
+      "bytes": 5127,
+      "sha256": "d72f68dcbae8c0bc9361a399e172e8f9beb61dc59119620047538df4840c39b3"
+    },
+    {
+      "file": "CIE_illum_LEDs.csv",
+      "url": "https://files.cie.co.at/Publications-datasets/CIE_illum_LEDs.csv",
+      "bytes": 4333,
+      "sha256": "6147313bd1ec570ef308df222e1fe1e58115fde1ad0a7d4ba91fb9dcb776b267"
+    },
+    {
+      "file": "CIE_illum_LEDs.csv_metadata_v2.json",
+      "url": "https://files.cie.co.at/Publications-datasets/CIE_illum_LEDs.csv_metadata_v2.json",
+      "bytes": 6626,
+      "sha256": "cd36ae5bc2a311663cc5a61cb2521edbf5f5466ca60f8b794fba205dd34b9192"
+    },
+    {
+      "file": "CIE_sle_photopic.csv",
+      "url": "https://files.cie.co.at/Publications-datasets/CIE_sle_photopic.csv",
+      "bytes": 9891,
+      "sha256": "ee5d5d17922ae645d4af52cacf6a50bdb9385749f9d2181ca312eb2b08febac2"
+    },
+    {
+      "file": "CIE_sle_photopic.csv_metadata.json",
+      "url": "https://files.cie.co.at/Publications-datasets/CIE_sle_photopic.csv_metadata.json",
+      "bytes": 3331,
+      "sha256": "e6786484f9c1d45b75e05156947382bf37519d1195d52571eaee8fc8d3d21840"
+    },
+    {
+      "file": "CIE_sle_scotopic.csv",
+      "url": "https://files.cie.co.at/Publications-datasets/CIE_sle_scotopic.csv",
+      "bytes": 7218,
+      "sha256": "6a75d3fdbcbf5e9e9a07478511933eefeda953f3e2cc14b74459e5a099ec3759"
+    },
+    {
+      "file": "CIE_sle_scotopic.csv_metadata.json",
+      "url": "https://files.cie.co.at/Publications-datasets/CIE_sle_scotopic.csv_metadata.json",
+      "bytes": 2820,
+      "sha256": "7addeeca8c7e4fb9594fc87c92e37caa9e5ca4f71de7fe23cb1251abdddbfeee"
+    },
+    {
+      "file": "bsc5.tdat.gz",
+      "url": "https://heasarc.gsfc.nasa.gov/FTP/heasarc/dbase/tdat_files/heasarc_bsc5p.tdat.gz",
+      "bytes": 913895,
+      "sha256": "122628cde2d8bedf7e16ddf5f888167ac58c04b5592d6155408ce297f3073931"
+    },
+    {
+      "file": "gaia-2693541327543209472.xml",
+      "url": "https://gea.esac.esa.int/data-server/data?RETRIEVAL_TYPE=XP_SAMPLED&ID=2693541327543209472&RELEASE=Gaia+DR3&FORMAT=votable",
+      "bytes": 14254,
+      "sha256": "a07e3a16a770898cd3b3edd46cda6d60249e44bb1439dbd5a47fa4a2bea742f4"
+    },
+    {
+      "file": "gaia-3219847066672970368.xml",
+      "url": "https://gea.esac.esa.int/data-server/data?RETRIEVAL_TYPE=XP_SAMPLED&ID=3219847066672970368&RELEASE=Gaia+DR3&FORMAT=votable",
+      "bytes": 14252,
+      "sha256": "77a95c1af107f80c6884a5c68730219cd1eaf44e0a412aebdd9c5bbba380c5c4"
+    },
+    {
+      "file": "gaia-3233898035000478464.xml",
+      "url": "https://gea.esac.esa.int/data-server/data?RETRIEVAL_TYPE=XP_SAMPLED&ID=3233898035000478464&RELEASE=Gaia+DR3&FORMAT=votable",
+      "bytes": 14253,
+      "sha256": "8135fb1a6359a503e95ff57b21a24119cb201d6906f5f360bd246454ee067c89"
+    },
+    {
+      "file": "gaia-4371553920172973312.xml",
+      "url": "https://gea.esac.esa.int/data-server/data?RETRIEVAL_TYPE=XP_SAMPLED&ID=4371553920172973312&RELEASE=Gaia+DR3&FORMAT=votable",
+      "bytes": 14255,
+      "sha256": "e3c2de07cb5a35c26c1a486828435c11a4d1e4b7a0c0a66d16d193950fe7eaa9"
+    },
+    {
+      "file": "gaia-4431639310048958208.xml",
+      "url": "https://gea.esac.esa.int/data-server/data?RETRIEVAL_TYPE=XP_SAMPLED&ID=4431639310048958208&RELEASE=Gaia+DR3&FORMAT=votable",
+      "bytes": 14253,
+      "sha256": "7ae2ae8bec2fc52e5deacd91d8c2474fed25d19af7ebde7a6f825050f2ceaea7"
+    },
+    {
+      "file": "gaia-matches.csv",
+      "url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+TOP+50+source_id%2Cra%2Cdec%2Cphot_g_mean_mag%2Cphot_bp_mean_mag%2Cphot_rp_mean_mag%2Chas_xp_sampled+FROM+gaiadr3.gaia_source+WHERE+has_xp_sampled%3D%27true%27+AND+%281%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C269.268024444528%2C0.0663288888888889%2C0.0014%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C110.5146044444657%2C0.17721777777777778%2C0.0014%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C298.6868866687949%2C0.27354666666666666%2C0.0014%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C77.9387466579318%2C1.0368333333333333%2C0.0014%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C86.64547548811822%2C1.167442222222222%2C0.0014%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C34.50743632557078%2C1.7594400000000001%2C0.0014%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C247.14171777897525%2C0.6647022222222223%2C0.0014%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C325.542104445563%2C1.285268888888889%2C0.0014%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C169.3227490422109%2C2.009977777777778%2C0.0014%29%29%29",
+      "bytes": 533,
+      "sha256": "8f345bfcbf46421a1369d5e516988d4cf45c7e2ae926cbe7be1acc3fc91a6c13"
+    },
+    {
+      "file": "johnson-b.xml",
+      "url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=Generic/Johnson.B",
+      "bytes": 7261,
+      "sha256": "887af6b6164fd2e41c5b17d450286819a4758b83e7a6b89bfe9bad73a28ee197"
+    },
+    {
+      "file": "johnson-v.xml",
+      "url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=Generic/Johnson.V",
+      "bytes": 7616,
+      "sha256": "bbbbef8da2f3d074f2ab12307f6c85320d12e1a3306a27086c4564c227abacc6"
+    },
+    {
+      "file": "sirius.fits",
+      "url": "https://ssb.stsci.edu/trds/calspec/sirius_stis_005.fits",
+      "bytes": 282240,
+      "sha256": "1349da7b8b59ad035aefea8d7948f552b41b3897d07e5ad82ca162a53af97271"
+    },
+    {
+      "file": "vega.fits",
+      "url": "https://ssb.stsci.edu/trds/calspec/alpha_lyr_stis_011.fits",
+      "bytes": 288000,
+      "sha256": "60aebf5c193223f69061cd176d6309730c3210051fffad0dd6ad44475199ceaa"
+    }
+  ],
+  "vega_reference_magnitudes": {
+    "V": 0.03,
+    "B": 0.03
+  },
+  "zero_point_convention": "CALSPEC Vega anchored at B=V=0.03; not the SVO tabulated scalar zero point.",
+  "limitations": [
+    "5 nm quadrature; air/vacuum wavelength distinction not corrected at this resolution.",
+    "Lamp shapes zero outside their tabulated support; no full VIIRS near-IR band inversion.",
+    "BSC B-V continuum is approximate, includes reddening; not a measured effective temperature.",
+    "Gaia sampled errors are correlated; no independent-bin uncertainty estimate."
+  ],
+  "attribution": [
+    "CIE 2018/2019, CC BY-SA 4.0 for CIE-derived arrays.",
+    "NASA HEASARC BSC5, Hoffleit & Warren 1991.",
+    "STScI CALSPEC, Bohlin et al. 2022.",
+    "ESA Gaia DR3, processed by DPAC; Gaia Collaboration et al. 2023; Montegriffo et al. 2023."
+  ],
+  "sha256": {
+    "library.npz": "c72c88868fc1d08a8e3d5eb45c58307827a3abc2ae280c0dd79d384a0bf99a2e",
+    "bsc-colours.csv": "f95ea0e04480b9665004c81864ea374de8a6e98dff8363894e0437d59e868bea"
+  }
+}
