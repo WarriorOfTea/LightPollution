@@ -1,0 +1,14 @@
+{
+  "jobs_completed": 1,
+  "jobs_requested": 1,
+  "camera_scene_round_trip": true,
+  "camera_exports_checked": 6,
+  "camera_exports_requested": 6,
+  "linear_FITS_checksum_and_exposure_checked": true,
+  "bundle_includes_camera": true,
+  "javascript_errors": [],
+  "mobile_width_px": 390,
+  "mobile_horizontal_overflow": false,
+  "job_id": "1b497d8ad78f4b02b0991f432c2096a8",
+  "ground_camera_validation": false
+}

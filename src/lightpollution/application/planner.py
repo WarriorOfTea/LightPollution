@@ -133,7 +133,8 @@ class Planner:
                                      'skyview.py', 'observation.py', 'catalogues/bsc5.csv',
                                      'application/planner.py', 'domain/scene.py', 'domain/calibration.py',
                                      'adapters/spectral_library.py', 'models/background.py', 'models/surface.py',
-                                     'models/eye.py', 'models/eye_field.py', 'application/eye.py'])
+                                     'models/eye.py', 'models/eye_field.py', 'application/eye.py',
+                                     'models/camera.py','models/camera_field.py','application/camera.py'])
         request_key = content_key({'scene': resolved, 'source_basis': group.identity,
             'transfer_code': transfer_code, 'scene_code': scene_code, 'solver': solver.version,
             'application_model': MODEL_VERSION, 'spectral_library': library.identity if library else None})
@@ -539,6 +540,30 @@ class Planner:
             result['stars']['detected_by_eye'] = result['eye']['summary']['above_threshold']
             result['stars']['metadata']['detected_by_eye_not_modelled'] = False
             observation['stars_metadata']['detected_by_eye_not_modelled'] = False
+        if 'camera' in data:
+            from .camera import build_camera_result,camera_response
+            assert library is not None
+            config=data['camera']
+            weights,exact_v,residual_factor,_=camera_response(config,library)
+            def camera_ray(az,alt):
+                values=response(data['period'],az,alt,atmosphere,settings,block)[0]
+                spectral_radiance=values*mix*coefficient*reference_radiance
+                city=float(band_integral(library.wavelengths,spectral_radiance,weights))
+                # Reuse the same Moon/natural/twilight models and support rules.
+                local=calculate_scene({**legacy,'directions':[[az,alt]]},resources,background=background)['directions'][0]
+                residual=local['natural_relative']+(local.get('moon_relative') or 0.)+(local.get('twilight_relative') or 0.)
+                v_city=float(band_integral(library.wavelengths,spectral_radiance,library.responses['johnson_v'])/reference_radiance)
+                supported=local['supported']
+                if terrain:
+                    endpoint=observer.position+1000000*observer.direction(az,alt)
+                    supported=bool(supported and terrain.visible(observer.position,endpoint,data['terrain']['visibility_step_m']))
+                progress({'phase':'Камера: физический фон по полю','completed':stats['transfer_hits']+stats['transfer_misses'],'total':None})
+                return [city,float(residual*reference_radiance*(residual_factor or 0.)),v_city+residual,supported]
+            result['camera']=build_camera_result(result,config,camera_ray,check)
+            if result['camera']['available']:
+                result['capabilities'].append('scenario_linear_camera_electrons')
+                result['unavailable_capabilities'].remove('camera_electrons')
+            result['unavailable_capabilities']+=['validated_camera_prediction','camera_CFA_colour','camera_temporal_background_integration']
         result['runtime']['elapsed_seconds']=time.perf_counter()-started
         _write_checked(scene_path, result)
         progress({'phase': 'Готово', 'completed': total, 'total': total})
@@ -555,6 +580,9 @@ def export_result(result: RunResult, output: Path):
         from ..interfaces.eye_view import render_eye_view
         value['eye']['display']=render_eye_view(value,output)
         export_eye(value['eye'],output)
+    if 'camera' in value:
+        from ..interfaces.camera_view import export_camera
+        value['camera']['exports']=export_camera(value,output)
     write_json(output / 'result.json', value)
 
 

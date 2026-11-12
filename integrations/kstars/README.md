@@ -1,6 +1,16 @@
 # LightPollution native dock
 > Дата создания: 2026-11-11
 
+0.9: монохромная камера в этой же панели, живое поле через
+StarComponent/DeepStarComponent, штатный FITS Viewer, переносимый JSON-профиль
+и частичный XML-импорт Ekos. Проверка: `scripts/check_kstars_native.py --camera
+--job-timeout 900` с прежними обязательными аргументами. Требуется пересборка.
+Для FITS Viewer нужен HAVE_CFITSIO. Exposure Calculator условно включается
+при наличии соответствующего заголовка и HAVE_INDI; в проверенной 3.6.2
+его нет. Qt6-ветвь не проверена, оборудование/Capture не перенастраиваются.
+[Теория камеры](../../docs/CAMERA_MODEL.md),
+[реальный запуск и FITS](../../artifacts/camera-model-20261112/README.md).
+
 0.8: экспериментальный цвет звёзд, открытие/сохранение переносимого
 eye_view_profile через общее ядро. Новые проверки:
 `scripts/check_kstars_native.py --eye --colour`. Нужна пересборка native dock;

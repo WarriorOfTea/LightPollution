@@ -89,7 +89,7 @@ ShowHorizon=true
     try:
         await wait_until(snapshot)
         await call('stop',path='/KStars/SimClock',interface='org.kde.kstars.SimClock')
-        latitude,longitude=(60.3,30.315) if args.eye else (59.95,30.3)
+        latitude,longitude=(60.3,30.315) if args.eye or args.camera else (59.95,30.3)
         assert await official('setGPSLocation',[longitude,latitude,120.,0.],'dddd')
         # KStars 3.6.2 chooses the nearest city's timezone, overriding tz0
         # when a nearby location exists. Read the actual zone, never assume 0.
@@ -115,6 +115,10 @@ ShowHorizon=true
             if not args.eye:raise ValueError('--colour requires --eye')
             base['eye'].update(appearance={'mode':'experimental_stellar_colour'},
                 observer_profile={'profile_id':'native-control-1','origin':'user_supplied'})
+        if args.camera:
+            base.update(background={},surface={},camera={'exposure_s':30.,'seed':20261112,
+                'profile':{'sensor':{'width_px':960,'height_px':640}},
+                'sampling':{'validation':'heldout_8','max_grid_size':5}})
         assert await call('setSceneJSON',[json.dumps(base)],'s')
         async with httpx2.AsyncClient(base_url=args.url,timeout=30) as client:
             async def calculate(name):
@@ -124,7 +128,7 @@ ShowHorizon=true
                     if value['busy']:return None
                     if not value.get('sky'):raise RuntimeError('Native calculation failed: '+value['message'])
                     return value
-                result=await wait_until(completed,300)
+                result=await wait_until(completed,args.job_timeout)
                 assert not result['stale'],result
                 response=await client.get('/api/jobs/'+result['job_id']+'/result')
                 response.raise_for_status()
@@ -148,6 +152,15 @@ ShowHorizon=true
                     return (await status()).get('eye_preview_ready',False)
                 await wait_until(preview_ready,30)
                 assert await call('saveEyeScreenshot',[str(out/'kstars-native-eye-window.png')],'s')
+            if args.camera:
+                assert first_value['camera']['exports']['available'],first_value['camera']
+                assert first_value['camera']['catalogue']['provider']=='KStars live StarComponent'
+                await call('showCameraFITS')
+                async def camera_ready():return (await status()).get('camera_FITS_ready',False)
+                await wait_until(camera_ready,45)
+                assert await call('saveCameraScreenshot',[str(out/'kstars-native-camera-FITS.png')],'s')
+                response=await client.get('/api/jobs/'+first['job_id']+'/export/camera.fits');response.raise_for_status()
+                (out/'camera.fits').write_bytes(response.content)
             await official('setAltAz',[45.,180.,False],'ddb')
             await asyncio.sleep(2)
             assert (await status())['stale']
@@ -172,6 +185,11 @@ ShowHorizon=true
                 'native_star_B_V_spectral_type_HD_checked':True,
                 'native_eye_preview_opened':bool(args.eye),
                 'native_experimental_colour_checked':bool(args.colour),
+                'native_camera_FITS_Viewer_opened':bool(args.camera),
+                'native_live_camera_catalogue_rows':first_value['camera']['catalogue']['rows_received'] if args.camera else None,
+                'native_camera_stars_in_frame':first_value['camera']['exports']['stars_in_frame'] if args.camera else None,
+                'native_camera_catalogue_stars_fainter_than_6_5':sum(r['v_mag']>6.5 for r in first_value['camera']['config']['catalogue']['rows']) if args.camera else None,
+                'Ekos_exposure_calculator_compiled':first.get('Ekos_exposure_calculator_compiled',False),
                 'screenshots_from_native_Qt_widget':True,'platform':'Qt offscreen / private session D-Bus',
                 'build_excludes_INDI_Ekos_device_control':True,
                 'original_user_settings_modified':False,'job_ids':[first['job_id'],second['job_id']],
@@ -194,6 +212,8 @@ def main():
     parser.add_argument('--url',default='http://127.0.0.1:8766')
     parser.add_argument('--eye',action='store_true',help='Verify the bounded eye model and native PNG viewer.')
     parser.add_argument('--colour',action='store_true',help='Check experimental stellar colour and observer-profile round trip.')
+    parser.add_argument('--camera',action='store_true',help='Check live KStars star catalogue and linear FITS in the existing FITS Viewer.')
+    parser.add_argument('--job-timeout',type=float,default=900.,help='Per-job timeout; real spectral camera rays may take several minutes.')
     parser.add_argument('--output',type=Path,default=Path('artifacts/kstars-terrain-near-20261111'))
     asyncio.run(verify(parser.parse_args()))
 

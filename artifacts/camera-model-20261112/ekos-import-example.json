@@ -1,0 +1,54 @@
+{
+  "purpose": "Actual existing XML import check, not the detector used for the rendered case",
+  "schema_version": 1,
+  "kind": "camera_profile",
+  "profile": {
+    "profile_id": "Ekos-Atik-16200CCD Mono-mode0-gain0-partial",
+    "origin": "ekos_partial",
+    "sensor": {
+      "width_px": 960,
+      "height_px": 640,
+      "pixel_pitch_um": 6.0,
+      "gain_e_per_adu": 0.8,
+      "read_noise_e": 9.0,
+      "dark_current_e_per_s": 0.02,
+      "full_well_e": 20000.0,
+      "bit_depth": 16,
+      "bias_adu": 500.0,
+      "temperature_c": null
+    },
+    "optics": {
+      "focal_length_mm": 16.0,
+      "aperture_diameter_mm": 8.0,
+      "throughput": 0.8,
+      "psf_fwhm_arcsec": 100.0
+    },
+    "response": {
+      "kind": "johnson_v_energy_matched",
+      "qe_scale": 0.65
+    },
+    "provenance": {
+      "ekos_camera_id": "Atik-16200CCD Mono",
+      "ekos_read_mode": 0,
+      "ekos_read_mode_name": "Standard",
+      "ekos_gain_control_value": 0,
+      "ekos_XML_sha256": "80582f85f92d6e011590ae63dc6b4b15d273aa86eb6c4ac4828f57f79854770f",
+      "ekos_scalar_QE_hint": 0.6,
+      "ekos_sensor_type": "MONOCHROME",
+      "imported": [
+        "pixel_pitch_um",
+        "read_noise_e"
+      ],
+      "not_provided": [
+        "gain_e_per_adu",
+        "full_well_e",
+        "dark_current_e_per_s",
+        "dimensions",
+        "QE_wavelength_curve",
+        "CFA"
+      ],
+      "response_preserved_from_explicit_base_profile": true,
+      "hardware_mode_or_capture_queue_changed": false
+    }
+  }
+}

@@ -1,6 +1,23 @@
 # Литература для модели неба, глаза и камеры
 > Дата создания: 2026-11-10
 
+Применение в 0.9: [EMVA 1288 Linear 4.0, §§2.1–2.4](https://www.emva.org/wp-content/uploads/EMVA1288Linear_4.0Release.pdf)
+— фотонно-электронная модель, пуассоновская дисперсия, независимый шум
+считывания и линейный gain. Полный текст скачан/прочитан; наша g=e⁻/ADU
+обратна K=DN/e⁻ стандарта. Реализованы основания, не сертификация EMVA.
+FITS, время и WCS: [официальный FITS Standard 4.0 NASA/IAU](https://fits.gsfc.nasa.gov/fits_standard.html).
+PNG/stretch отделён от линейного научного файла.
+
+Повторно прочитаны закреплённые первичные исходники Exposure Calculator
+KStars и CCD Simulator/sky_renderer INDI: штатные фон/QE/шумы существуют.
+Критерий Ekos `sqrt(1+RN²/(bt))≤1+ε` переиспользован с нашей физической b,
+добавлена отдельная граница насыщения. Нативные каталог/FITS Viewer изучены
+и запущены в KStars3.6.2; современный диалог Qt6 отдельно не проверен.
+Прочитана схема [camera-data](https://github.com/indilib/camera-data/tree/44984a2e9303350ba34521681d2c162a8131dba7).
+Наши точные уравнения/допущения и источники не смешиваются:
+[CAMERA_MODEL](CAMERA_MODEL.md),
+[аудит файлов и фактического доступа](../artifacts/camera-model-20261112/source-audit.json).
+
 Применение в 0.8: стандартные [XYZ CIE](https://doi.org/10.25039/CIE.DS.xvudnb9b),
 [LMS CIE](https://doi.org/10.25039/CIE.DS.tijidesg) и
 [D65](https://doi.org/10.25039/CIE.DS.hjfjmt59) добавлены как открытые таблицы.

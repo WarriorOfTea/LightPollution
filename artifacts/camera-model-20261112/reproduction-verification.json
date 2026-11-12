@@ -1,0 +1,70 @@
+{
+  "frozen_input_only": true,
+  "NASA_DSM_or_running_KStars_required_for_sensor_replay": false,
+  "independent_output_directory": "scratch/camera-replay",
+  "primary_ADU_values_matching_native_and_replay": 614400,
+  "primary_ADU_values_checked": 614400,
+  "numerical_replay": {
+    "FITS_HDU_checksums_passed": 10,
+    "FITS_HDU_checksums_checked": 10,
+    "primary_uint16_ADU_values_matching": 614400,
+    "primary_ADU_values_checked": 614400,
+    "scientific_maps_relative_float32_rounding_errors": {
+      "MEAN_E": 5.846607343863871e-08,
+      "SKY_E": 5.678926327914295e-08,
+      "CITY_E": 3.892042477104243e-08,
+      "OTHER_E": 5.2190733089465855e-08,
+      "STAR_E": 5.892607327652889e-08,
+      "DARK_E": 3.973642988726785e-08,
+      "VAR_E2": 5.8211375561930394e-08,
+      "OMEGA_SR": 3.298429740570551e-08
+    },
+    "expected_maps_before_clipping": true,
+    "WCS_test_pixels": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        959.0,
+        0.0
+      ],
+      [
+        0.0,
+        639.0
+      ],
+      [
+        959.0,
+        639.0
+      ],
+      [
+        479.5,
+        319.5
+      ]
+    ],
+    "WCS_error_arcsec": [
+      0.18577527719350767,
+      0.1889331225143571,
+      0.1867671059413177,
+      0.18995874262697207,
+      0.0
+    ],
+    "WCS_max_error_arcsec": 0.18995874262697207,
+    "WCS_declared_test_tolerance_arcsec": 1.0,
+    "WCS_is_local_TAN_approximation": true,
+    "exposure_doubling_stellar_sky_total_expectations": true,
+    "eye_threshold_used": false,
+    "Monte_Carlo": {
+      "synthetic_pixels": 200000,
+      "seed": 846,
+      "expected_e": 121.0,
+      "expected_variance_e2_before_quantization": 146.0,
+      "measured_bias_subtracted_mean_ADU": 121.016735,
+      "measured_variance_ADU2": 145.960894939775,
+      "gain_e_per_ADU": 1.0,
+      "relative_variance_difference_including_quantization": 0.0002678428782535056
+    },
+    "new_measured_RAW_frames": 0,
+    "ground_camera_validation": false
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "checked_at": "2026-11-12T15:29:32+01:00",
+  "primary_source_files": [
+    {
+      "repo": "indilib/indi",
+      "revision": "76b457edca2d3ab7f30527f9b93b53ed58c2cb2c",
+      "path": "drivers/ccd/ccd_simulator.cpp",
+      "url": "https://raw.githubusercontent.com/indilib/indi/76b457edca2d3ab7f30527f9b93b53ed58c2cb2c/drivers/ccd/ccd_simulator.cpp",
+      "sha256": "902f25a3833682e1c6ce9684c773193c5660785e3559ac126c6557510fbddb20",
+      "reviewed_again_20261112": true,
+      "redistributed_full_file": false
+    },
+    {
+      "repo": "indilib/indi",
+      "revision": "76b457edca2d3ab7f30527f9b93b53ed58c2cb2c",
+      "path": "drivers/ccd/sky_renderer.cpp",
+      "url": "https://raw.githubusercontent.com/indilib/indi/76b457edca2d3ab7f30527f9b93b53ed58c2cb2c/drivers/ccd/sky_renderer.cpp",
+      "sha256": "649c24a8f7cafa49140f9a6aa51ac3b91c513c5b953763ead86e6b77a184d562",
+      "reviewed_again_20261112": true,
+      "redistributed_full_file": false
+    },
+    {
+      "repo": "KDE/kstars",
+      "revision": "7aea013b99165e80d1426d183de4a31ae22b0ca5",
+      "path": "kstars/ekos/capture/exposurecalculator/exposurecalculatordialog.cpp",
+      "url": "https://raw.githubusercontent.com/KDE/kstars/7aea013b99165e80d1426d183de4a31ae22b0ca5/kstars/ekos/capture/exposurecalculator/exposurecalculatordialog.cpp",
+      "sha256": "2a1aef1434a83e82ec72ea133f2f45d277765c3e52948bd813899ec31ec2db08",
+      "reviewed_again_20261112": true,
+      "redistributed_full_file": false
+    },
+    {
+      "repo": "KDE/kstars",
+      "revision": "7aea013b99165e80d1426d183de4a31ae22b0ca5",
+      "path": "kstars/ekos/capture/exposurecalculator/optimalsubexposurecalculator.cpp",
+      "url": "https://raw.githubusercontent.com/KDE/kstars/7aea013b99165e80d1426d183de4a31ae22b0ca5/kstars/ekos/capture/exposurecalculator/optimalsubexposurecalculator.cpp",
+      "sha256": "050909ed9c776ae38281c911762d7ff9fa2e6403e560a3b57a22c6dbc6f7fcbb",
+      "reviewed_again_20261112": true,
+      "redistributed_full_file": false
+    },
+    {
+      "repo": "indilib/camera-data",
+      "revision": "44984a2e9303350ba34521681d2c162a8131dba7",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/indilib/camera-data/44984a2e9303350ba34521681d2c162a8131dba7/README.md",
+      "sha256": "789015f000ea1ee37bc38db17a490d794b34b2fccb0119702fd8a52735591082",
+      "redistributed_full_file": false
+    },
+    {
+      "repo": "indilib/camera-data",
+      "revision": "44984a2e9303350ba34521681d2c162a8131dba7",
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/indilib/camera-data/44984a2e9303350ba34521681d2c162a8131dba7/LICENSE",
+      "sha256": "b58671fb4d9e9efeb9a6af1bdba02e61ac69af654855b45a372efe8f52413f83",
+      "redistributed_full_file": false
+    },
+    {
+      "repo": "indilib/camera-data",
+      "revision": "44984a2e9303350ba34521681d2c162a8131dba7",
+      "path": "Atik-16200CCD_Mono.xml",
+      "url": "https://raw.githubusercontent.com/indilib/camera-data/44984a2e9303350ba34521681d2c162a8131dba7/Atik-16200CCD_Mono.xml",
+      "sha256": "80582f85f92d6e011590ae63dc6b4b15d273aa86eb6c4ac4828f57f79854770f",
+      "redistributed_full_file": false
+    },
+    {
+      "repo": "KDE/kstars",
+      "source_release": "3.6.2",
+      "path": "kstars/skycomponents/starcomponent.cpp",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kstars/kstars_3.6.2.orig.tar.xz",
+      "sha256": "4ea237cfa2ea6061d0ade05d7fc3f24bed624c759583df83502888383bffed24",
+      "redistributed_full_file": false,
+      "source_archive_sha256": "0d7f9e2c8f1da450d85141f052b5b41dc11ed994f49a5d1209cacbbbf804d5de",
+      "archive_path": "kstars/skycomponents/starcomponent.cpp",
+      "hash_is_extracted_file": true
+    },
+    {
+      "repo": "KDE/kstars",
+      "source_release": "3.6.2",
+      "path": "kstars/skycomponents/deepstarcomponent.cpp",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kstars/kstars_3.6.2.orig.tar.xz",
+      "sha256": "8a9436e83fb302bddfb2fb948b1693f4562d4f141fee0d5d0539941332bb43bb",
+      "redistributed_full_file": false,
+      "source_archive_sha256": "0d7f9e2c8f1da450d85141f052b5b41dc11ed994f49a5d1209cacbbbf804d5de",
+      "archive_path": "kstars/skycomponents/deepstarcomponent.cpp",
+      "hash_is_extracted_file": true
+    },
+    {
+      "repo": "KDE/kstars",
+      "source_release": "3.6.2",
+      "path": "kstars/skyobjects/starobject.cpp",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kstars/kstars_3.6.2.orig.tar.xz",
+      "sha256": "dbae6654259f1a8fa81a79f9cb8f7cab24eab99aa717095871cc866b497a87b6",
+      "redistributed_full_file": false,
+      "source_archive_sha256": "0d7f9e2c8f1da450d85141f052b5b41dc11ed994f49a5d1209cacbbbf804d5de",
+      "archive_path": "kstars/skyobjects/starobject.cpp",
+      "hash_is_extracted_file": true
+    },
+    {
+      "repo": "KDE/kstars",
+      "source_release": "3.6.2",
+      "path": "kstars/skyobjects/skypoint.cpp",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kstars/kstars_3.6.2.orig.tar.xz",
+      "sha256": "9513499a1108d4f2cde1dc550a32d36e4f371c3e7966b34ef3a2462122c4ee74",
+      "redistributed_full_file": false,
+      "source_archive_sha256": "0d7f9e2c8f1da450d85141f052b5b41dc11ed994f49a5d1209cacbbbf804d5de",
+      "archive_path": "kstars/skyobjects/skypoint.cpp",
+      "hash_is_extracted_file": true
+    },
+    {
+      "repo": "KDE/kstars",
+      "source_release": "3.6.2",
+      "path": "kstars/fitsviewer/fitsviewer.cpp",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kstars/kstars_3.6.2.orig.tar.xz",
+      "sha256": "4970ed1e322faf2d3a0a0ab1c32e5536f914c1e88ee6e506531109237f75a91f",
+      "redistributed_full_file": false,
+      "source_archive_sha256": "0d7f9e2c8f1da450d85141f052b5b41dc11ed994f49a5d1209cacbbbf804d5de",
+      "archive_path": "kstars/fitsviewer/fitsviewer.cpp",
+      "hash_is_extracted_file": true
+    },
+    {
+      "repo": "KDE/kstars",
+      "source_release": "3.6.2",
+      "path": "kstars/fitsviewer/fitsviewer.h",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kstars/kstars_3.6.2.orig.tar.xz",
+      "sha256": "4bf8f86471a1292ee9673bdffe9ba6d23a6bc39d1f7c7537146a5790f38f9c7f",
+      "redistributed_full_file": false,
+      "source_archive_sha256": "0d7f9e2c8f1da450d85141f052b5b41dc11ed994f49a5d1209cacbbbf804d5de",
+      "archive_path": "kstars/fitsviewer/fitsviewer.h",
+      "hash_is_extracted_file": true
+    }
+  ],
+  "EMVA": {
+    "title": "EMVA1288 Release4.0 Linear",
+    "url": "https://www.emva.org/wp-content/uploads/EMVA1288Linear_4.0Release.pdf",
+    "sha256": "7d9839c3d09421696d2ed2ac35135fe2be3d7c0fd7c2ad51d737f6264683297a",
+    "bytes": 3170905,
+    "full_text_downloaded": true,
+    "sections_applied": "2.1–2.4, equations13–15; Poisson, independent RN, linear gain. Not full EMVA certification.",
+    "rights": "CC BY-ND4.0 attribution as stated in the standard; full PDF not redistributed",
+    "redistributed": false
+  },
+  "additional_primary_sources": [
+    {
+      "url": "https://fits.gsfc.nasa.gov/fits_standard.html",
+      "scope": "Official FITS4.0 definition; time, WCS and data units; webpage read"
+    },
+    {
+      "url": "https://kstars-docs.kde.org/en/user_manual/ekos-capture.html",
+      "scope": "Exposure Calculator, existing QE/pitch/read-noise handling; handbook3.7.6"
+    }
+  ],
+  "rights": {
+    "KStars_module_source": "GPL-2.0-or-later; integrations/kstars/COPYING",
+    "camera_data_source": "GPL2 license file in pinned repository; partial scalar metadata only in imported example",
+    "synthetic_FITS_PNG_report": "Computed by this project, not third-party photographs; inherited NASA/DSM/spectral source attribution stays in camera-input data_provenance"
+  },
+  "new_NASA_HDF_or_DSM_downloads": 0,
+  "new_measured_RAW_frames": 0,
+  "INDI_driver_executed": false,
+  "KStars_362_native_FITS_Viewer_executed": true,
+  "modern_Qt6_ExposureCalculator_branch_executed": false
+}

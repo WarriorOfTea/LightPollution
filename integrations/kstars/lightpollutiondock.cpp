@@ -8,7 +8,15 @@
 #include "skyobjects/starobject.h"
 #include "skycomponents/skymapcomposite.h"
 #include "skycomponents/artificialhorizoncomponent.h"
+#include "skycomponents/starcomponent.h"
 #include "version.h"
+#ifdef HAVE_CFITSIO
+#include "fitsviewer/fitsviewer.h"
+#endif
+#if __has_include("ekos/capture/exposurecalculator/exposurecalculatordialog.h") && defined(HAVE_INDI)
+#include "ekos/capture/exposurecalculator/exposurecalculatordialog.h"
+#define LP_HAVE_EKOS_EXPOSURE 1
+#endif
 
 #include <QCheckBox>
 #include <QComboBox>
@@ -21,6 +29,8 @@
 #include <QFile>
 #include <QFileDialog>
 #include <QFormLayout>
+#include <QGroupBox>
+#include <QInputDialog>
 #include <QHeaderView>
 #include <QJsonArray>
 #include <QJsonDocument>
@@ -29,6 +39,7 @@
 #include <QPushButton>
 #include <QTableWidget>
 #include <QUrl>
+#include <QSet>
 #include <QVBoxLayout>
 #include <cmath>
 #include <algorithm>
@@ -69,6 +80,22 @@ LightPollutionDock::LightPollutionDock(KStars *parent) : QDockWidget("LightPollu
     auto *loadProfile=new QPushButton(tr("Открыть профиль глаза"),body);
     auto *saveProfile=new QPushButton(tr("Сохранить профиль глаза"),body);
     profiles->addWidget(loadProfile);profiles->addWidget(saveProfile);layout->addLayout(profiles);
+    m_Camera=new QCheckBox(tr("Линейная камера / FITS"),body);layout->addWidget(m_Camera);
+    auto *cameraGroup=new QGroupBox(tr("Камера: сценарный профиль"),body);auto *cameraForm=new QFormLayout(cameraGroup);
+    m_Exposure=new QDoubleSpinBox(cameraGroup);m_Exposure->setDecimals(3);m_Exposure->setRange(.001,120);m_Exposure->setValue(30);
+    m_Focal=new QDoubleSpinBox(cameraGroup);m_Focal->setRange(8,5000);m_Focal->setValue(16);
+    m_Aperture=new QDoubleSpinBox(cameraGroup);m_Aperture->setRange(1,2000);m_Aperture->setValue(8);
+    cameraForm->addRow(tr("Выдержка, с"),m_Exposure);cameraForm->addRow(tr("Фокусное расстояние, мм"),m_Focal);cameraForm->addRow(tr("Апертура, мм"),m_Aperture);
+    auto *cameraLoad=new QPushButton(tr("Открыть JSON-профиль"),cameraGroup);
+    auto *cameraSave=new QPushButton(tr("Сохранить JSON-профиль"),cameraGroup);
+    auto *cameraXML=new QPushButton(tr("Импорт XML камеры Ekos"),cameraGroup);
+    cameraForm->addRow(cameraLoad,cameraSave);cameraForm->addRow(cameraXML);
+    layout->addWidget(cameraGroup);cameraGroup->setVisible(false);
+    m_OpenCamera=new QPushButton(tr("Открыть кадр в FITS Viewer KStars"),body);m_OpenCamera->setEnabled(false);layout->addWidget(m_OpenCamera);
+    m_EkosExposure=new QPushButton(tr("Калькулятор Ekos: V-приближение"),body);m_EkosExposure->setEnabled(false);layout->addWidget(m_EkosExposure);
+#ifndef LP_HAVE_EKOS_EXPOSURE
+    m_EkosExposure->setToolTip(tr("В этой версии/сборке KStars калькулятора нет. Скорости электронов и границы экспозиции сохраняются в camera-ekos.json."));
+#endif
     m_Status=new QLabel(tr("Подключение к локальному расчётному ядру…"),body);m_Status->setWordWrap(true);layout->addWidget(m_Status);
     m_Values=new QTableWidget(0,2,body);m_Values->setHorizontalHeaderLabels({tr("Компонент"),tr("Значение")});
     m_Values->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
@@ -82,6 +109,38 @@ LightPollutionDock::LightPollutionDock(KStars *parent) : QDockWidget("LightPollu
     connect(run,&QPushButton::clicked,this,&LightPollutionDock::calculate);
     connect(m_Eye,&QCheckBox::toggled,this,[this](bool enabled){if(enabled)m_Spectral->setChecked(true);});
     connect(m_Colour,&QCheckBox::toggled,this,[this](bool enabled){if(enabled){m_Eye->setChecked(true);m_Spectral->setChecked(true);}});
+    connect(m_Camera,&QCheckBox::toggled,this,[this,cameraGroup](bool enabled){cameraGroup->setVisible(enabled);if(enabled)m_Spectral->setChecked(true);});
+    connect(m_OpenCamera,&QPushButton::clicked,this,&LightPollutionDock::showCameraFITS);
+#ifdef LP_HAVE_EKOS_EXPOSURE
+    connect(m_EkosExposure,&QPushButton::clicked,this,[this](){
+        const auto rows=m_LastResult.value("sky").toObject().value("directions").toArray();if(rows.isEmpty())return;
+        const auto sky=rows.first().toObject().value("total_v_mag_arcsec2");if(!sky.isDouble())return;
+        const auto camera=m_LastResult.value("camera").toObject();const auto profile=camera.value("config").toObject().value("profile").toObject();
+        const auto optics=profile.value("optics").toObject();const auto provenance=profile.value("provenance").toObject();
+        auto *dialog=new ExposureCalculatorDialog(m_KStars,sky.toDouble(),optics.value("focal_length_mm").toDouble()/optics.value("aperture_diameter_mm").toDouble(),provenance.value("ekos_camera_id").toString());
+        dialog->setAttribute(Qt::WA_DeleteOnClose);dialog->setWindowTitle(dialog->windowTitle()+tr(" · V-прокси LightPollution, не SQM"));dialog->show();});
+#endif
+    auto applyCameraProfile=[this](const QJsonObject &document){
+        request("/api/camera-profile/merge",{{"camera",scene().value("camera").toObject()},{"profile",document}},
+            [this](const QJsonObject &camera,const QString &error){
+                if(!error.isEmpty()){setStatus(error);return;}
+                m_Base.insert("camera",camera);m_Camera->setChecked(true);
+                const auto optics=camera.value("profile").toObject().value("optics").toObject();
+                m_Focal->setValue(optics.value("focal_length_mm").toDouble());m_Aperture->setValue(optics.value("aperture_diameter_mm").toDouble());
+                setStatus(tr("Профиль камеры загружен. Реальная QE-кривая, gain e-/ADU и шумы требуют измерений; конфигурация INDI не менялась."));});};
+    connect(cameraLoad,&QPushButton::clicked,this,[this,applyCameraProfile](){
+        QFile file(QFileDialog::getOpenFileName(this,tr("Профиль камеры"),{},"JSON (*.json)"));
+        if(file.open(QIODevice::ReadOnly))applyCameraProfile(QJsonDocument::fromJson(file.readAll()).object());});
+    connect(cameraSave,&QPushButton::clicked,this,[this](){
+        const QString path=QFileDialog::getSaveFileName(this,tr("Профиль камеры"),"camera-profile.json","JSON (*.json)");if(path.isEmpty())return;
+        request("/api/camera-profile/export",{{"camera",scene().value("camera").toObject()}},[this,path](const QJsonObject &document,const QString &error){
+            if(!error.isEmpty()){setStatus(error);return;}QFile file(path);if(file.open(QIODevice::WriteOnly))file.write(QJsonDocument(document).toJson());});});
+    connect(cameraXML,&QPushButton::clicked,this,[this,applyCameraProfile](){
+        QFile file(QFileDialog::getOpenFileName(this,tr("Штатный профиль Ekos"),{},"XML (*.xml)"));if(!file.open(QIODevice::ReadOnly))return;
+        bool ok=false;const int gain=QInputDialog::getInt(this,tr("Индекс gain/ISO в таблице Ekos"),tr("Это индекс режима, не e-/ADU"),0,-100,100000,1,&ok);if(!ok)return;
+        const auto base=scene().value("camera").toObject().value("profile").toObject();
+        request("/api/camera-profile/ekos",{{"xml",QString::fromUtf8(file.readAll())},{"base_profile",base},{"gain",gain},{"read_mode",0}},
+            [this,applyCameraProfile](const QJsonObject &document,const QString &error){if(!error.isEmpty()){setStatus(error);return;}applyCameraProfile(document);});});
     connect(loadProfile,&QPushButton::clicked,this,[this](){
         const QString path=QFileDialog::getOpenFileName(this,tr("Профиль глаза и экрана"),{},"JSON (*.json)");
         QFile file(path);if(!file.open(QIODevice::ReadOnly))return;
@@ -147,6 +206,12 @@ QJsonObject LightPollutionDock::scene() const
         eye.insert("appearance",QJsonObject{{"mode",m_Colour->isChecked()?"experimental_stellar_colour":"monochrome"}});
         value.insert("eye",eye);
     }else value.remove("eye");
+    if(m_Camera->isChecked()){
+        auto camera=value.value("camera").toObject();camera.remove("catalogue");camera.insert("exposure_s",m_Exposure->value());
+        auto profile=camera.value("profile").toObject();auto optics=profile.value("optics").toObject();
+        optics.insert("focal_length_mm",m_Focal->value());optics.insert("aperture_diameter_mm",m_Aperture->value());
+        profile.insert("optics",optics);camera.insert("profile",profile);value.insert("camera",camera);
+    }else value.remove("camera");
     if(!m_Terrain->currentData().toString().isEmpty()){auto t=value.value("terrain").toObject();t.insert("dataset",m_Terrain->currentData().toString());value.insert("terrain",t);}else value.remove("terrain");
     if(!value.contains("background"))value.insert("background",QJsonObject{{"twilight","patat2006"}});
     return value;
@@ -171,6 +236,13 @@ QString LightPollutionDock::statusJSON() const
         {"request",m_LastResult.value("request")},
         {"eye_display",m_LastResult.value("eye").toObject().value("display")},
         {"eye_preview_ready",m_EyePreviewReady}};
+    summary.insert("camera_FITS_ready",m_CameraFITSReady);
+    summary.insert("camera",m_LastResult.value("camera").toObject().value("exports"));
+#ifdef LP_HAVE_EKOS_EXPOSURE
+    summary.insert("Ekos_exposure_calculator_compiled",true);
+#else
+    summary.insert("Ekos_exposure_calculator_compiled",false);
+#endif
     return QString::fromUtf8(QJsonDocument(summary).toJson(QJsonDocument::Compact));
 }
 bool LightPollutionDock::setSceneJSON(const QString &json)
@@ -184,6 +256,9 @@ bool LightPollutionDock::setSceneJSON(const QString &json)
     m_Near->setChecked(m_Base.contains("near_field"));m_Spectral->setChecked(m_Base.contains("spectrum"));
     m_Eye->setChecked(m_Base.contains("eye"));
     m_Colour->setChecked(m_Base.value("eye").toObject().value("appearance").toObject().value("mode").toString()=="experimental_stellar_colour");
+    m_Camera->setChecked(m_Base.contains("camera"));const auto camera=m_Base.value("camera").toObject();
+    m_Exposure->setValue(camera.value("exposure_s").toDouble(30));const auto optics=camera.value("profile").toObject().value("optics").toObject();
+    m_Focal->setValue(optics.value("focal_length_mm").toDouble(16));m_Aperture->setValue(optics.value("aperture_diameter_mm").toDouble(8));
     m_Terrain->setCurrentIndex(std::max(0,m_Terrain->findData(m_Base.value("terrain").toObject().value("dataset").toString())));
     return true;
 }
@@ -212,6 +287,60 @@ void LightPollutionDock::showEyeView()
         m_EyeDialog=dialog;m_EyePreviewReady=true;reply->deleteLater();});
 }
 void LightPollutionDock::setStatus(const QString &text){m_Status->setText(text);}
+
+QJsonObject LightPollutionDock::cameraCatalogue() const
+{
+    const auto camera=scene().value("camera").toObject();const auto sensor=camera.value("profile").toObject().value("sensor").toObject();
+    const double width=sensor.value("width_px").toDouble(960),height=sensor.value("height_px").toDouble(640),pitch=sensor.value("pixel_pitch_um").toDouble(3.76);
+    const double radius=std::atan(std::hypot(width,height)*pitch*.001/(2*m_Focal->value()))*180/M_PI+.3;
+    auto *data=m_KStars->data();SkyPoint center=*m_KStars->map()->focus();SkyPoint catalogueCenter=center;
+    catalogueCenter.catalogueCoord(data->ut().djd());center.setRA0(catalogueCenter.ra0());center.setDec0(catalogueCenter.dec0());
+    QList<StarObject *> stars;auto *component=StarComponent::Instance();if(component)component->starsInAperture(stars,center,radius,12.);
+    std::sort(stars.begin(),stars.end(),[](const StarObject *a,const StarObject *b){return a->mag()<b->mag();});
+    QJsonArray rows;QSet<QString> seen;bool truncated=false;
+    for(auto *star:stars){
+        if(!star || !std::isfinite(star->mag()) || star->mag()>12 || star->mag()<-5)continue;
+        star->JITupdate();star->EquatorialToHorizontal(data->lst(),data->geo()->lat());
+        const QString id=star->getHDIndex()>0?QString("HD%1").arg(star->getHDIndex()):QString("J%1:%2").arg(star->ra0().Degrees(),0,'f',7).arg(star->dec0().Degrees(),0,'f',7);
+        if(seen.contains(id))continue;seen.insert(id);
+        if(rows.size()>=20000){truncated=true;break;}
+        const double bv=star->getBVIndex();
+        rows.append(QJsonObject{{"id",id},{"name",star->name().left(160)},{"azimuth_deg",star->az().Degrees()},{"altitude_deg",star->alt().Degrees()},
+            {"v_mag",star->mag()},{"b_v",std::isfinite(bv)&&bv>=-1&&bv<=4?QJsonValue(bv):QJsonValue()}});
+    }
+    return {{"provider","KStars"},{"utc",data->ut().toUTC().toString(Qt::ISODate)},{"magnitude_limit",12.},{"truncated",truncated},{"rows",rows}};
+}
+
+void LightPollutionDock::showCameraFITS()
+{
+#ifdef HAVE_CFITSIO
+    if(m_Busy || !m_OpenCamera->isEnabled() || !m_CameraFiles.isValid())return;
+    const QString requestedJob=m_Job;m_CameraFITSReady=false;
+    auto *reply=m_Network.get(QNetworkRequest(QUrl(m_URL+"/api/jobs/"+requestedJob+"/export/camera.fits")));
+    QTimer::singleShot(15000,reply,&QNetworkReply::abort);
+    connect(reply,&QNetworkReply::finished,this,[this,reply,requestedJob](){
+        const auto bytes=reply->readAll();
+        if(m_Job!=requestedJob || reply->error()!=QNetworkReply::NoError || !bytes.startsWith("SIMPLE")){
+            setStatus(tr("Не удалось открыть синтетический FITS."));reply->deleteLater();return;}
+        const QString path=m_CameraFiles.path()+"/"+requestedJob+".fits";QFile file(path);
+        if(!file.open(QIODevice::WriteOnly) || file.write(bytes)!=bytes.size()){setStatus(tr("Не удалось сохранить временный FITS."));reply->deleteLater();return;}
+        file.close();if(!m_FITSViewer)m_FITSViewer=m_KStars->createFITSViewer();
+        disconnect(m_FITSViewer,&FITSViewer::loaded,this,nullptr);
+        connect(m_FITSViewer,&FITSViewer::loaded,this,[this,requestedJob](int){if(m_Job==requestedJob)m_CameraFITSReady=true;});
+        connect(m_FITSViewer,&FITSViewer::failed,this,[this](const QString &error){setStatus(tr("FITS Viewer: ")+error);});
+        m_FITSViewer->loadFile(QUrl::fromLocalFile(path),FITS_NORMAL,FITS_NONE,tr("SIMULATED LightPollution; not a measured RAW"));
+        m_FITSViewer->show();m_FITSViewer->raise();reply->deleteLater();});
+#endif
+}
+
+bool LightPollutionDock::saveCameraScreenshot(const QString &path)
+{
+#ifdef HAVE_CFITSIO
+    return m_FITSViewer && m_FITSViewer->isVisible() && m_CameraFITSReady && m_FITSViewer->grab().save(path);
+#else
+    Q_UNUSED(path);return false;
+#endif
+}
 
 void LightPollutionDock::request(const QString &path,const QJsonObject &payload,
     std::function<void(const QJsonObject &,const QString &)> callback,bool post)
@@ -243,8 +372,9 @@ void LightPollutionDock::calculate()
     if(m_Region->count()==0){fetchCatalogue();return;}
     const auto frame=snapshot();const double alt=frame.value("focus").toObject().value("altitude_deg").toDouble();
     if(alt<10 || alt>90){setStatus(tr("Количественный режим поддерживает высоты 10–90°. Переместите центр карты."));return;}
-    m_SubmittedKey=contextKey();m_Busy=true;m_CancelSent=false;m_Job.clear();m_OpenEye->setEnabled(false);m_EyePreviewReady=false;setStatus(tr("Расчёт снимка состояния KStars…"));
-    request("/api/kstars/jobs",{{"scene",scene()},{"snapshot",frame}},[this](const QJsonObject &data,const QString &error){if(!error.isEmpty() || data.value("id").toString().isEmpty()){m_Busy=false;setStatus(error.isEmpty()?tr("Ядро не вернуло идентификатор задания."):error);return;}m_Job=data.value("id").toString();poll();});
+    auto requestScene=scene();if(m_Camera->isChecked()){auto camera=requestScene.value("camera").toObject();camera.insert("catalogue",cameraCatalogue());requestScene.insert("camera",camera);}
+    m_SubmittedKey=contextKey();m_Busy=true;m_CancelSent=false;m_Job.clear();m_OpenEye->setEnabled(false);m_EyePreviewReady=false;m_OpenCamera->setEnabled(false);m_CameraFITSReady=false;setStatus(tr("Расчёт снимка состояния KStars…"));
+    request("/api/kstars/jobs",{{"scene",requestScene},{"snapshot",frame}},[this](const QJsonObject &data,const QString &error){if(!error.isEmpty() || data.value("id").toString().isEmpty()){m_Busy=false;setStatus(error.isEmpty()?tr("Ядро не вернуло идентификатор задания."):error);return;}m_Job=data.value("id").toString();poll();});
 }
 void LightPollutionDock::tick()
 {
@@ -268,6 +398,13 @@ void LightPollutionDock::poll()
 void LightPollutionDock::showResult(const QJsonObject &value)
 {
     m_OpenEye->setEnabled(value.value("eye").toObject().value("display").toObject().value("available").toBool());
+    const bool cameraAvailable=value.value("camera").toObject().value("exports").toObject().value("available").toBool();
+#ifdef HAVE_CFITSIO
+    m_OpenCamera->setEnabled(cameraAvailable);
+#endif
+#ifdef LP_HAVE_EKOS_EXPOSURE
+    m_EkosExposure->setEnabled(cameraAvailable);
+#endif
     m_LastResult=value;const auto rows=value.value("sky").toObject().value("directions").toArray();if(rows.isEmpty())return;const auto d=rows.first().toObject();
     const QList<QPair<QString,QString>> fields={{tr("Город, B/Bref"),"artificial_relative"},{tr("Прямой городской"),"artificial_direct_relative"},{tr("Отражённый городской"),"artificial_reflected_relative"},{tr("Луна, B/Bref"),"moon_relative"},{tr("Ночной естественный"),"natural_relative"},{tr("Сумерки, B/Bref"),"twilight_relative"},{tr("Сумма, V mag/arcsec²"),"total_v_mag_arcsec2"}};
     m_Values->setRowCount(fields.size());for(int i=0;i<fields.size();++i){m_Values->setItem(i,0,new QTableWidgetItem(fields[i].first));const auto v=d.value(fields[i].second);m_Values->setItem(i,1,new QTableWidgetItem(v.isDouble()?QString::number(v.toDouble(),'g',7):QString::fromUtf8("—")));}

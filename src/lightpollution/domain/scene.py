@@ -47,7 +47,7 @@ class SceneSpec:
                    'directions', 'atmosphere', 'reference_atmosphere', 'profile',
                    'anchor_v_mag_arcsec2', 'natural_v_mag_arcsec2', 'moon', 'download_missing',
                    'anchor_observer', 'photometric_calibration', 'spectrum', 'background', 'surface',
-                   'near_field', 'terrain', 'integration', 'eye'}
+                   'near_field', 'terrain', 'integration', 'eye', 'camera'}
         if set(data) - allowed:
             raise DomainError('invalid_input', 'В сценарии есть неизвестные поля.',
                               {'fields': sorted(set(data) - allowed)})
@@ -108,6 +108,9 @@ class SceneSpec:
                 data['eye']=eye_config(data['eye'])
             except ValueError as exc:
                 raise DomainError('invalid_eye',str(exc)) from exc
+            data.setdefault('spectrum',{})
+        if 'camera' in data:
+            if data['mode']!='dated':raise DomainError('invalid_camera','Для звёздного кадра камеры нужна дата.')
             data.setdefault('spectrum',{})
         if 'spectrum' in data:
             spectrum = data['spectrum']
@@ -186,6 +189,17 @@ class SceneSpec:
         if len({tuple(v) for v in checked}) != len(checked):
             raise DomainError('invalid_direction', 'Направления должны быть различны; зенит один.')
         data['directions'] = checked
+        if 'camera' in data:
+            from ..models.camera import camera_config,camera_view
+            try:
+                camera=deepcopy(data['camera'])
+                if not isinstance(camera,dict):raise ValueError('camera must be an object.')
+                camera['view']={'azimuth_deg':checked[0][0],'altitude_deg':checked[0][1],**camera.get('view',{})}
+                data['camera']=camera_config(camera)
+                camera_view(data['camera'])
+                if 'catalogue' in data['camera'] and data['camera']['catalogue']['utc']!=data['time']:
+                    raise ValueError('KStars catalogue UTC must match the scene exposure midpoint.')
+            except (TypeError,ValueError) as exc:raise DomainError('invalid_camera',str(exc)) from exc
         for key in ['atmosphere', 'reference_atmosphere']:
             data.setdefault(key, {})
             try:

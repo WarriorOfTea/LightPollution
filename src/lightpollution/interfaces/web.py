@@ -67,7 +67,8 @@ def create_app(workspace: Path = Path('data/mvp'), raw_directory: Path | None = 
         return {'schema_version': 1, 'backend_version': __version__, 'snapshot_schema': 1,
                 'terrain_datasets': [{'id': key, 'prepared': (workspace.parent/'terrain'/key/'manifest.json').exists()}
                                      for key in DEFINITIONS],
-                'native_photometric_display_available': False}
+                'native_photometric_display_available': False,'camera_linear_FITS_available':True,
+                'camera_catalogue_provider':'optional KStars StarComponent snapshot','camera_hardware_control':False}
 
     @app.post('/api/kstars/jobs', status_code=202)
     def create_kstars(payload: dict):
@@ -114,6 +115,34 @@ def create_app(workspace: Path = Path('data/mvp'), raw_directory: Path | None = 
             return SceneSpec.from_mapping(scene).to_dict()
         except (ValueError,TypeError,KeyError) as exc:
             raise DomainError('invalid_eye_profile',str(exc)) from exc
+
+    @app.post('/api/camera-profile/export')
+    def export_camera_profile(payload: dict):
+        from ..models.camera import camera_config
+        try:
+            if set(payload)!={'camera'}:raise ValueError('Specify camera.')
+            return {'schema_version':1,'kind':'camera_profile','profile':camera_config(payload['camera'])['profile']}
+        except (ValueError,TypeError,KeyError) as exc:raise DomainError('invalid_camera_profile',str(exc)) from exc
+
+    @app.post('/api/camera-profile/merge')
+    def merge_camera_profile(payload: dict):
+        from ..models.camera import camera_config
+        try:
+            if set(payload)!={'camera','profile'}:raise ValueError('Specify camera and profile.')
+            document=payload['profile']
+            if (not isinstance(document,dict) or set(document)!={'schema_version','kind','profile'}
+                    or type(document['schema_version']) is not int or document['schema_version']!=1
+                    or document['kind']!='camera_profile'):raise ValueError('Expected camera_profile schema1.')
+            return camera_config({**payload['camera'],'profile':document['profile']})
+        except (ValueError,TypeError,KeyError) as exc:raise DomainError('invalid_camera_profile',str(exc)) from exc
+
+    @app.post('/api/camera-profile/ekos')
+    def ekos_camera_profile(payload: dict):
+        from ..adapters.ekos_camera import import_ekos_camera
+        try:
+            if set(payload)-{'xml','base_profile','read_mode','gain'} or 'xml' not in payload:raise ValueError('Specify XML and optional base_profile/read_mode/gain.')
+            return {'schema_version':1,'kind':'camera_profile','profile':import_ekos_camera(**payload)}
+        except (ValueError,TypeError,KeyError) as exc:raise DomainError('invalid_camera_profile',str(exc)) from exc
 
     @app.get('/api/jobs')
     def jobs():

@@ -1,0 +1,81 @@
+{
+  "anchor_v_mag_arcsec2": 20.5,
+  "atmosphere": {},
+  "camera": {
+    "exposure_s": 15.0,
+    "preview": {
+      "asinh_scale": 10.0,
+      "black_adu": 500.0,
+      "white_adu": 6000.0
+    },
+    "profile": {
+      "optics": {
+        "aperture_diameter_mm": 8.0,
+        "focal_length_mm": 16.0,
+        "psf_fwhm_arcsec": 100.0,
+        "throughput": 0.8
+      },
+      "origin": "synthetic",
+      "profile_id": "ideal-V-detector-1",
+      "provenance": {},
+      "response": {
+        "kind": "johnson_v_energy_matched",
+        "qe_scale": 0.65
+      },
+      "sensor": {
+        "bias_adu": 500.0,
+        "bit_depth": 16,
+        "dark_current_e_per_s": 0.02,
+        "full_well_e": 20000.0,
+        "gain_e_per_adu": 0.8,
+        "height_px": 240,
+        "pixel_pitch_um": 3.76,
+        "read_noise_e": 3.0,
+        "temperature_c": null,
+        "width_px": 320
+      }
+    },
+    "sampling": {
+      "max_grid_size": 3,
+      "target_relative_error": 0.01,
+      "validation": "none"
+    },
+    "seed": 20261112,
+    "unresolved_spectrum": "unavailable",
+    "view": {
+      "altitude_deg": 50.0,
+      "azimuth_deg": 180.0,
+      "rotation_deg": 37.0
+    }
+  },
+  "directions": [
+    [
+      180.0,
+      50.0
+    ]
+  ],
+  "download_missing": false,
+  "mode": "dated",
+  "natural_v_mag_arcsec2": 21.6,
+  "observer": {
+    "height_m": 20.0,
+    "latitude_deg": 60.3,
+    "longitude_deg": 30.315
+  },
+  "period": "synthetic",
+  "profile": "quick",
+  "reference_atmosphere": {},
+  "region": "demo",
+  "schema_version": 2,
+  "spectrum": {
+    "angstrom_exponent": 1.3,
+    "mix": {
+      "LED-B3": 1.0
+    },
+    "reference_mix": {
+      "LED-B3": 1.0
+    },
+    "stars": "catalogue_continuum"
+  },
+  "time": "2026-11-09T21:00:00Z"
+}

@@ -20,7 +20,8 @@ TERMINAL = {'completed', 'cancelled', 'error'}
 EXPORTS = ('scene.json', 'resolved-scene.json', 'observation.json', 'result.json',
            'directions.csv', 'stars.csv', 'bundle.zip')
 OPTIONAL_EXPORTS = ('eye.json', 'eye-directions.csv', 'eye-stars.csv', 'eye-display.json', 'eye-view.png',
-                    'eye-preview.png', 'eye-mobile.png', 'eye-view-16bit.png', 'eye-linear.npz','eye-colour.csv')
+                    'eye-preview.png', 'eye-mobile.png', 'eye-view-16bit.png', 'eye-linear.npz','eye-colour.csv',
+                    'camera.json','camera.fits','camera-preview.png','camera-stars.csv','camera-profile.json','camera-ekos.json')
 
 
 def timestamp():
@@ -160,7 +161,7 @@ class JobManager:
             raise DomainError('result_unavailable', 'Экспорт доступен после успешного завершения.')
         path=self._path(job_id) / 'output' / name
         if not path.is_file():
-            raise DomainError('unknown_export','Для этого сценария файл недоступен; проверьте область модели глаза.')
+            raise DomainError('unknown_export','Для этого сценария файл недоступен; проверьте область выбранной модели.')
         return path
 
     def close(self):

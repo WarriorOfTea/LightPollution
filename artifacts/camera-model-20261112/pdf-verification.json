@@ -1,0 +1,21 @@
+{
+  "completed_at": "2026-11-12T15:33:24+01:00",
+  "pages_checked": 7,
+  "replacement_characters": 0,
+  "text_spans_outside_page": [],
+  "images_per_page": [
+    0,
+    1,
+    0,
+    0,
+    2,
+    0,
+    0
+  ],
+  "rendered_review_pages": [
+    2,
+    5
+  ],
+  "tool": "PyMuPDF",
+  "source": "README.md"
+}

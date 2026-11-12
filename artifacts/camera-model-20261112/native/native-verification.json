@@ -1,0 +1,36 @@
+{
+  "completed_at": "2026-11-12T15:20:05+01:00",
+  "kstars_version": "3.6.2",
+  "compiled_binary_sha256": "18c7ffc911180375c6537141d9e195be3757ca8e976bd9982ac7a9ff01ed4b41",
+  "jobs_completed": 2,
+  "jobs_requested": 2,
+  "geometry_round_trip_checked": true,
+  "stale_after_map_change_checked": true,
+  "AGL_vs_MSL_checked": true,
+  "native_star_B_V_spectral_type_HD_checked": true,
+  "native_eye_preview_opened": false,
+  "native_experimental_colour_checked": false,
+  "native_camera_FITS_Viewer_opened": true,
+  "native_live_camera_catalogue_rows": 311,
+  "native_camera_stars_in_frame": 188,
+  "native_camera_catalogue_stars_fainter_than_6_5": 267,
+  "Ekos_exposure_calculator_compiled": false,
+  "screenshots_from_native_Qt_widget": true,
+  "platform": "Qt offscreen / private session D-Bus",
+  "build_excludes_INDI_Ekos_device_control": true,
+  "original_user_settings_modified": false,
+  "job_ids": [
+    "0ec16237471f469bb1ded267cd980594",
+    "bb4854e83afa4a469b6bc47bb0b29df1"
+  ],
+  "nearest_city_timezone_read_from_actual_KStars_location_API": {
+    "country": "",
+    "latitude": 60.3,
+    "longitude": 30.315,
+    "name": "GPS Location",
+    "province": "",
+    "tz": 3,
+    "tz0": 3
+  },
+  "field_accuracy_validated": false
+}

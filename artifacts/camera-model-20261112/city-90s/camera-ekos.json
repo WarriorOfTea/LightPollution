@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "kind": "lightpollution_camera_exposure_bridge",
+  "profile_id": "37170de673dc531bed0e5ea89b0445bd89e1c12961ef90166ad4c7be72c97b4e",
+  "pixel_pitch_um": 3.76,
+  "focal_ratio": 2.0,
+  "sky_rate_e_pixel_s_min_median_max": [
+    4.462815215701268,
+    4.635162402427138,
+    4.696915960221425
+  ],
+  "read_noise_e": 3.0,
+  "noise_increase_percent": 5.0,
+  "read_noise_lower_bound_s_max_over_field": 19.674773389644624,
+  "read_noise_lower_bound_s_median": 18.943215021506617,
+  "exposure_upper_bound_s_at_90_percent_capacity": 12.155729398256128,
+  "bounds_compatible": false,
+  "same_noise_criterion_as_Ekos": true,
+  "criterion": "sqrt((b*t+RN²)/(b*t)) <=1.05; sky only",
+  "is_unique_optimal_exposure": false,
+  "V_band_is_not_SQM": true,
+  "automatic_hardware_or_capture_sequence_changes": false,
+  "Ekos_scalar_formula_reference": "OptimalSubExposureCalculator::calculateCFactor; same noise criterion, direct spatial electron rates",
+  "profile_is_measured_camera": false
+}

@@ -1,0 +1,31 @@
+{
+  "received_rows": 311,
+  "received_rows_with_missing_B_V": 311,
+  "cross_match_established": false,
+  "candidate_pairs_within_10_arcsec": [
+    {
+      "id1": "HD10780",
+      "id2": "J26.9368200:63.8525000",
+      "separation_arcsec": 5.532555673137345,
+      "v1": 5.619999885559082,
+      "v2": 5.710000038146973
+    },
+    {
+      "id1": "HD18757",
+      "id2": "J46.0401600:61.7058300",
+      "separation_arcsec": 8.768410454903917,
+      "v1": 6.639999866485596,
+      "v2": 6.710000038146973
+    },
+    {
+      "id1": "HD13579",
+      "id2": "J33.9273150:67.6723100",
+      "separation_arcsec": 5.341749464867758,
+      "v1": 7.190000057220459,
+      "v2": 7.300000190734863
+    }
+  ],
+  "candidate_pairs_count": 3,
+  "candidate_pairs_are_proven_duplicates": false,
+  "note": "ID/exact-coordinate deduplication only. Close pairs may be catalogue overlaps or real multiple systems; no unsupported positional merge. Counts describe catalogue entries, not independently verified unique physical stars. All case pixels currently use the preserved entries."
+}

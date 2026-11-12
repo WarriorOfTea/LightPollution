@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "version": "0.9.0",
+  "completed_at": "2026-11-12T15:36:22+01:00",
+  "self_excluded_from_hashes": true,
+  "files": {
+    "README.md": {
+      "sha256": "39a73c413423296a4a267f50da115246b90b4fd34fd328d6a01eb4e3c0a29b82",
+      "bytes": 19891
+    },
+    "browser/camera-controls.png": {
+      "sha256": "ac5b944b4169dc4ddd689beadc46443b9495ca34b6183056db7ca42db33c8543",
+      "bytes": 516511
+    },
+    "browser/import-scene.json": {
+      "sha256": "46af4d0711cf3dbf094fe9102c8279f9474ddb45881174bd573ea7696ccd5240",
+      "bytes": 1745
+    },
+    "browser/verification.json": {
+      "sha256": "fdfb544c80c3dea2e3152575ede6f4c7e48a8d600a71b96eb37e54daa85934d9",
+      "bytes": 412
+    },
+    "camera-controls.png": {
+      "sha256": "5327e72b230a62dddc209771711150966b1c1f1a0d9bc9e341f13dba2b3533db",
+      "bytes": 229232
+    },
+    "camera-input.json": {
+      "sha256": "f50d1c2b5e6351e6a44395ad3edc55b115ebaa0c4500506e98c8730f209d88f3",
+      "bytes": 231411
+    },
+    "case-summary.json": {
+      "sha256": "4a3b7fc544f76c45b2f4bbba43b258bfd230d866892ab1179dfd9a72cb532a54",
+      "bytes": 36391
+    },
+    "catalogue-audit.json": {
+      "sha256": "6b38ad8dc6f083f49e602538d95381c6d5119e809391c4f671e4f010987980ef",
+      "bytes": 1065
+    },
+    "city-30s/camera-ekos.json": {
+      "sha256": "fb5010770666ca98b52538184cd9fd38edc5d21a7917d60083f8fcfb6e0f9575",
+      "bytes": 1004
+    },
+    "city-30s/camera-preview.png": {
+      "sha256": "bcfe6c2edcad49da71e3097c2f9c86b1bd7ac3dcc02a7858e582739bac70dd46",
+      "bytes": 601133
+    },
+    "city-30s/camera-profile.json": {
+      "sha256": "2b882b08b96e1bdb2439296278bb05d1f0abc23e8af451765c54deb27531b091",
+      "bytes": 695
+    },
+    "city-30s/camera-stars.csv": {
+      "sha256": "bdb81720d2380e9c70915d2399377445b29b0c0b639bf95c8cab9cd441e69214",
+      "bytes": 55586
+    },
+    "city-30s/camera.fits.gz": {
+      "sha256": "0fed1d0323f9a450fe215d9508cec9c8a4e1010b7ab49e1fd1f2c706df6419b7",
+      "bytes": 10565314
+    },
+    "city-30s/camera.json": {
+      "sha256": "999f4b2cd6a39fba62f44259661c2cf69d26471402b895140aab012f695dbf77",
+      "bytes": 75566
+    },
+    "city-90s/camera-ekos.json": {
+      "sha256": "9a3a4237eb73503a04318f1145daa88c8f05441098c71a4ee8120ca933c474d3",
+      "bytes": 1004
+    },
+    "city-90s/camera-preview.png": {
+      "sha256": "5c95a403d76e0f28f3cb4169332384ea64bef75c40e993a9d076b9c9f5032466",
+      "bytes": 547478
+    },
+    "city-90s/camera-profile.json": {
+      "sha256": "2b882b08b96e1bdb2439296278bb05d1f0abc23e8af451765c54deb27531b091",
+      "bytes": 695
+    },
+    "city-90s/camera-stars.csv": {
+      "sha256": "25060411138f57f689a098a6c18a09d5d7b6fafdd7afe59e4718968a96d8ad63",
+      "bytes": 55602
+    },
+    "city-90s/camera.json": {
+      "sha256": "2eaba7c51aeea14df85b71f794c63b164467d20befbe4874e244f314d11ae595",
+      "bytes": 75566
+    },
+    "city-off-30s/camera-ekos.json": {
+      "sha256": "b54abb223925a809340f6aece04cf6ddb60784a88c24aba59911b60c9efa9d60",
+      "bytes": 1004
+    },
+    "city-off-30s/camera-preview.png": {
+      "sha256": "85a2a73341200e51bb95a076aa793cad89e0a0f65c44afa13ef6325df9c10ee1",
+      "bytes": 637174
+    },
+    "city-off-30s/camera-profile.json": {
+      "sha256": "2b882b08b96e1bdb2439296278bb05d1f0abc23e8af451765c54deb27531b091",
+      "bytes": 695
+    },
+    "city-off-30s/camera-stars.csv": {
+      "sha256": "cb68ed840e6ee49b24ec4fecf2b3a096e71f5017f8410e06baff0aec933f8986",
+      "bytes": 55588
+    },
+    "city-off-30s/camera.json": {
+      "sha256": "a66c79d9eace15c14c9970bde36a73209f313adf1710d1ee3a6acab8286ece13",
+      "bytes": 75564
+    },
+    "ekos-import-example.json": {
+      "sha256": "8368add6bcf9d7ebc2f8d821489088f33614f4834d5edcb0c744baec5ec3c060",
+      "bytes": 1512
+    },
+    "job-evidence.json": {
+      "sha256": "d2f8157f449cfa218e994dc6e633cb4d3fed0819f593f1b0f900348cf45b3822",
+      "bytes": 17340
+    },
+    "native/kstars-native-camera-FITS.png": {
+      "sha256": "eb9919a048eaaad3a698698bb054b09c63d15c149859283b92c30a020a16f402",
+      "bytes": 385244
+    },
+    "native/kstars-native-panel.png": {
+      "sha256": "d57e4c3e06cba0bce9c729d7619711644c02f576ccc09c95783dd7dc99941e25",
+      "bytes": 178549
+    },
+    "native/kstars-native-south45.png": {
+      "sha256": "ed876f5d1a23ee79e54b0af5458aaf1255dbbcbd3fa739d3c9688b57f371a438",
+      "bytes": 179839
+    },
+    "native/kstars-native-window.png": {
+      "sha256": "e96029ab7a02a3288742e800a21145c21723f30a7106fee3600cf8f4cb389a34",
+      "bytes": 314426
+    },
+    "native/native-initial-snapshot.json": {
+      "sha256": "5dfebdff781f581d4657b6df122ff73ac0b3ddceef94f46cfe07d63cccf6e5e3",
+      "bytes": 501
+    },
+    "native/native-location-API.json": {
+      "sha256": "a92a743a2c17da9525f234c83c1c79ddda8f06e1927f9374b63994196f362d28",
+      "bytes": 130
+    },
+    "native/native-star-catalogue-snapshot.json": {
+      "sha256": "4d9b2da800bb6774cc1345b1ed4f8bccb2e700d3cd71d77d6ca08f17355a9eb2",
+      "bytes": 664
+    },
+    "native/native-verification.json": {
+      "sha256": "13d88bf5a571331cd9d889e37aef2749d5acd834cf217e60ef05f4734b8dcb4f",
+      "bytes": 1240
+    },
+    "numerical-verification.json": {
+      "sha256": "c2ab05afd0e115974c72003bcd2b52b743a05bb21731682878071b9ba4defd52",
+      "bytes": 1563
+    },
+    "pdf-verification.json": {
+      "sha256": "fa3098477bf4bdb9642e194f5e0b5d8771c5e03904ad04a287f46944eb98954a",
+      "bytes": 305
+    },
+    "qa.json": {
+      "sha256": "c7d221e7cddd023b9d4cecd11d1886ae0bd7772c39f803e34014ebd3671f037e",
+      "bytes": 6029
+    },
+    "report.pdf": {
+      "sha256": "7f88d6456502e1b8809d7867ab3fd7c932e96d8bee8779c0a5279b6d9c5e87ca",
+      "bytes": 1436932
+    },
+    "reproduction-verification.json": {
+      "sha256": "72c4522359a0306fa9c6f6a392998161386ba07f1cb916e23166436b962d8cd4",
+      "bytes": 1966
+    },
+    "source-audit.json": {
+      "sha256": "74d023163dd1fa05a4f4b628fbc3bccddcd513b02b1ced3fcdbf407ba303fb68",
+      "bytes": 7963
+    },
+    "source-code.json": {
+      "sha256": "c86d7d0428af7235d069553de1328622d06a2dca36ee086b0ccae6e61ec8cde2",
+      "bytes": 12363
+    },
+    "test-results.txt": {
+      "sha256": "cdc83dcced123b2f7d03046305f7f608b73f2e9749b8e0546caacc6bcea98dc2",
+      "bytes": 431
+    },
+    "wheel-verification.json": {
+      "sha256": "2c41f24e813a308cf0d454dab671172797b290cd9d6c1c1fde370364caa93d22",
+      "bytes": 524
+    }
+  }
+}

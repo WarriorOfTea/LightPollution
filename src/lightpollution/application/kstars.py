@@ -49,6 +49,12 @@ def scene_from_kstars(payload):
         observer={'latitude_deg': latitude, 'longitude_deg': longitude, 'height_m': agl},
         directions=[[azimuth, altitude]])
     scene.pop('moon', None)
+    if 'camera' in scene:
+        camera=scene['camera']
+        if not isinstance(camera,dict):raise DomainError('invalid_camera','camera must be an object.')
+        camera['view']={**camera.get('view',{}),'azimuth_deg':azimuth,'altitude_deg':altitude}
+        if 'catalogue' in camera and camera['catalogue'].get('utc')!=snapshot['utc']:
+            raise DomainError('invalid_camera','Каталог камеры не соответствует UTC снимка KStars.')
     # KStars site elevation is NOT the eye's height above ground. Retain it
     # as independent provenance; terrain supplies model MSL where enabled.
     origin = {'provider': 'KStars', 'version': snapshot['kstars_version'],

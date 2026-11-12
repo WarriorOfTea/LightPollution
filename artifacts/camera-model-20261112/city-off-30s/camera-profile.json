@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "kind": "camera_profile",
+  "profile": {
+    "profile_id": "ideal-V-detector-1",
+    "origin": "synthetic",
+    "sensor": {
+      "width_px": 960,
+      "height_px": 640,
+      "pixel_pitch_um": 3.76,
+      "gain_e_per_adu": 0.8,
+      "read_noise_e": 3.0,
+      "dark_current_e_per_s": 0.02,
+      "full_well_e": 20000.0,
+      "bit_depth": 16,
+      "bias_adu": 500.0,
+      "temperature_c": null
+    },
+    "optics": {
+      "focal_length_mm": 16.0,
+      "aperture_diameter_mm": 8.0,
+      "throughput": 0.8,
+      "psf_fwhm_arcsec": 100.0
+    },
+    "response": {
+      "kind": "johnson_v_energy_matched",
+      "qe_scale": 0.65
+    },
+    "provenance": {}
+  }
+}

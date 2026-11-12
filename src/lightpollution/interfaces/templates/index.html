@@ -97,6 +97,12 @@
         <p id="eye-profile-note" class="hint">Номинальные наблюдатель и экран. Калибровка восприятия не подтверждена.</p>
         <p class="hint">Спектральный расчёт включается автоматически. Без Луны и прямых фонарей, тёмный фон. Цвет слабых звёзд подавляется; спектр всего фона неизвестен, поэтому фон остаётся серым. Цвет и субъективная яркость пока не проверены наблюдениями.</p>
       </details>
+      <details><summary>Линейная камера</summary>
+        <label class="check"><input id="camera-enabled" type="checkbox">Сценарий фотоэлектронов и FITS</label>
+        <label>Выдержка, с<input id="camera-exposure" type="number" min="0.001" max="120" step="any" value="30"></label>
+        <div class="pair"><label>Азимут, °<input id="camera-azimuth" type="number" min="0" max="360" step="any" value="180"></label><label>Высота, °<input id="camera-altitude" type="number" min="10" max="90" step="any" value="50"></label></div>
+        <p class="hint">Исходный профиль — идеальный монохромный V-отклик, не модель конкретного устройства. Размер пикселя, оптика, шумы и QE задаются в JSON camera.profile; импорт сцены сохраняет их. Для произвольного QE нужен спектр фонового остатка либо явно заданное приближение. Слабые звёзды не отсекаются порогом глаза.</p>
+      </details>
       <label class="check"><input id="download-missing" type="checkbox">Загрузить недостающие NASA-файлы, если доступ Earthdata настроен</label>
       <div class="actions"><button id="calculate" type="submit">Рассчитать сценарий</button><button id="cancel" class="secondary" type="button" disabled>Отменить</button></div>
     </form>

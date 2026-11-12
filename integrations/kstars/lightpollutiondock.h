@@ -6,6 +6,7 @@
 #include <QJsonObject>
 #include <QNetworkAccessManager>
 #include <QTimer>
+#include <QTemporaryDir>
 #include <functional>
 
 class QCheckBox;
@@ -16,6 +17,7 @@ class QPushButton;
 class QTableWidget;
 class KStars;
 class QDialog;
+class FITSViewer;
 
 /** Native KStars dock; physical calculations stay in the versioned local backend. */
 class LightPollutionDock : public QDockWidget
@@ -33,9 +35,12 @@ public slots:
     Q_SCRIPTABLE bool saveWindowScreenshot(const QString &path);
     Q_SCRIPTABLE bool saveEyeScreenshot(const QString &path);
     Q_SCRIPTABLE void showEyeView();
+    Q_SCRIPTABLE void showCameraFITS();
+    Q_SCRIPTABLE bool saveCameraScreenshot(const QString &path);
 private:
     QJsonObject snapshot() const;
     QJsonObject scene() const;
+    QJsonObject cameraCatalogue() const;
     QString contextKey() const;
     void tick();
     void poll();
@@ -49,8 +54,10 @@ private:
     QTimer m_Timer;
     QComboBox *m_Region, *m_Period, *m_Terrain;
     QDoubleSpinBox *m_Height, *m_AOD;
-    QCheckBox *m_Near, *m_Follow, *m_Spectral, *m_Eye, *m_Colour;
+    QDoubleSpinBox *m_Exposure, *m_Focal, *m_Aperture;
+    QCheckBox *m_Near, *m_Follow, *m_Spectral, *m_Eye, *m_Colour, *m_Camera;
     QPushButton *m_OpenEye;
+    QPushButton *m_OpenCamera, *m_EkosExposure;
     QLabel *m_Position, *m_Status, *m_Scale;
     QTableWidget *m_Values;
     QJsonObject m_Base, m_LastResult, m_Regions;
@@ -59,4 +66,7 @@ private:
     int m_StableTicks=0;
     bool m_EyePreviewReady=false;
     QPointer<QDialog> m_EyeDialog;
+    QPointer<FITSViewer> m_FITSViewer;
+    QTemporaryDir m_CameraFiles;
+    bool m_CameraFITSReady=false;
 };

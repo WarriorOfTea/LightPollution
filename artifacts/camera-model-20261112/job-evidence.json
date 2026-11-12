@@ -1,0 +1,602 @@
+{
+  "zenith": {
+    "source_result_sha256": "143aa8f5316fff238d64b870ce65d71d46ef6a35afca86475444963b0e025bd6",
+    "source_result_bytes": 4014721,
+    "job_id": "0ec16237471f469bb1ded267cd980594",
+    "request": {
+      "observer": {
+        "height_m": 2.0,
+        "latitude_deg": 60.3,
+        "longitude_deg": 30.315
+      },
+      "time": "2026-11-11T21:00:00Z",
+      "directions": [
+        [
+          0.0,
+          90.0
+        ]
+      ]
+    },
+    "runtime": {
+      "elapsed_seconds": 20.821539069060236
+    },
+    "cache": {
+      "scene_hit": false,
+      "transfer_hits": 27,
+      "transfer_misses": 0
+    },
+    "camera_view": {
+      "azimuth_deg": 0.0,
+      "altitude_deg": 90.0,
+      "rotation_deg": 0.0,
+      "width": 960,
+      "height": 640,
+      "horizontal_fov_deg": 12.871520143768814
+    },
+    "catalogue": {
+      "provider": "KStars live StarComponent",
+      "magnitude_limit_requested": 12,
+      "truncated": false,
+      "rows_received": 311,
+      "utc": "2026-11-11T21:00:00Z",
+      "completeness_established": false,
+      "catalogue_snapshot_sha256": "3d32fcde720b5f1c8c44a258eb629a61af86ce51d1d094be1537854cffd1ab3d",
+      "brightest_received_v_mag": 2.680000066757202,
+      "faintest_received_v_mag": 8
+    },
+    "camera_exports": {
+      "schema_version": 1,
+      "available": true,
+      "reasons": [],
+      "image_is_photograph": false,
+      "supported_pixels": 614400,
+      "field_pixels": 614400,
+      "stars_in_frame": 188,
+      "star_rows": 192,
+      "stars_with_available_response": 192,
+      "deposited_stellar_e": 2045076.4835795218,
+      "sky_e_min_median_max": [
+        133.88445647103808,
+        139.0548720728141,
+        140.90747880664273
+      ],
+      "fullwell_clipped_pixels": 7,
+      "adc_clipped_pixels": 0,
+      "expected_e_above_capacity": 7,
+      "exposure_bridge": {
+        "schema_version": 1,
+        "kind": "lightpollution_camera_exposure_bridge",
+        "profile_id": "37170de673dc531bed0e5ea89b0445bd89e1c12961ef90166ad4c7be72c97b4e",
+        "pixel_pitch_um": 3.76,
+        "focal_ratio": 2.0,
+        "sky_rate_e_pixel_s_min_median_max": [
+          4.462815215701269,
+          4.635162402427136,
+          4.696915960221424
+        ],
+        "read_noise_e": 3.0,
+        "noise_increase_percent": 5.0,
+        "read_noise_lower_bound_s_max_over_field": 19.674773389644624,
+        "read_noise_lower_bound_s_median": 18.943215021506624,
+        "exposure_upper_bound_s_at_90_percent_capacity": 12.155729398256128,
+        "bounds_compatible": false,
+        "same_noise_criterion_as_Ekos": true,
+        "criterion": "sqrt((b*t+RN²)/(b*t)) <=1.05; sky only",
+        "is_unique_optimal_exposure": false,
+        "V_band_is_not_SQM": true,
+        "automatic_hardware_or_capture_sequence_changes": false,
+        "Ekos_scalar_formula_reference": "OptimalSubExposureCalculator::calculateCFactor; same noise criterion, direct spatial electron rates",
+        "profile_is_measured_camera": false
+      },
+      "preview": {
+        "operator": "fixed ADU asinh then one sRGB; no automatic per-frame scaling",
+        "black_adu": 500.0,
+        "white_adu": 6000.0,
+        "asinh_scale": 10.0
+      },
+      "FITS_extensions": [
+        "PRIMARY",
+        "MEAN_E",
+        "SKY_E",
+        "CITY_E",
+        "OTHER_E",
+        "STAR_E",
+        "DARK_E",
+        "VAR_E2",
+        "OMEGA_SR",
+        "MASK"
+      ],
+      "linear_FITS": true,
+      "variance_includes_quantization": false,
+      "variance_valid_before_clipping": true,
+      "projected_entrance_pupil_cosine_applied": true,
+      "stellar_flux_ledger_precedes_model_domain_mask": true
+    },
+    "source_coefficient": 44897606336985.7,
+    "field_validation": {
+      "rows": [
+        {
+          "x": -0.83,
+          "y": -0.31,
+          "azimuth_deg": 283.9820886830011,
+          "altitude_deg": 84.48900925273074,
+          "supported": true,
+          "direct": [
+            1545880500172.3428,
+            565465263352.7253,
+            5.40654908325585
+          ],
+          "interpolated": [
+            1545928970949.8318,
+            565463634130.1509,
+            5.406665756776987
+          ],
+          "relative_error": [
+            3.135480231726185e-05,
+            2.881207175844886e-06,
+            2.1580035497727526e-05
+          ]
+        },
+        {
+          "x": -0.27,
+          "y": 0.79,
+          "azimuth_deg": 207.14231909444246,
+          "altitude_deg": 86.1806094570997,
+          "supported": true,
+          "direct": [
+            1567753267555.3933,
+            564946332406.4568,
+            5.461230115044091
+          ],
+          "interpolated": [
+            1567022119785.1033,
+            564945528666.5702,
+            5.458443023249696
+          ],
+          "relative_error": [
+            0.00046636660590739637,
+            1.4226836081456676e-06,
+            0.0005103413948292024
+          ]
+        },
+        {
+          "x": 0.41,
+          "y": -0.71,
+          "azimuth_deg": 40.899018302315355,
+          "altitude_deg": 85.95951027904445,
+          "supported": true,
+          "direct": [
+            1522829291511.2542,
+            565003406233.5774,
+            5.346338886311877
+          ],
+          "interpolated": [
+            1523711905833.3787,
+            565002072620.4116,
+            5.350042594296216
+          ],
+          "relative_error": [
+            0.0005795884850944824,
+            2.3603630545550322e-06,
+            0.0006927559331904524
+          ]
+        },
+        {
+          "x": 0.89,
+          "y": 0.29,
+          "azimuth_deg": 102.25586441689077,
+          "altitude_deg": 84.13438999629295,
+          "supported": true,
+          "direct": [
+            1546092803282.414,
+            565598113536.6335,
+            5.407432921543917
+          ],
+          "interpolated": [
+            1546374596538.7935,
+            565596848302.3646,
+            5.408709581233235
+          ],
+          "relative_error": [
+            0.00018226154069221246,
+            2.236984598497869e-06,
+            0.00023609348610349607
+          ]
+        },
+        {
+          "x": -0.63,
+          "y": 0.57,
+          "azimuth_deg": 238.90268711422058,
+          "altitude_deg": 85.25586921027435,
+          "supported": true,
+          "direct": [
+            1565410744894.163,
+            565206538012.8812,
+            5.455897900132539
+          ],
+          "interpolated": [
+            1564906001428.281,
+            565204547626.3141,
+            5.453997860461869
+          ],
+          "relative_error": [
+            0.00032243516120505846,
+            3.521520777407055e-06,
+            0.0003482542572184424
+          ]
+        },
+        {
+          "x": 0.19,
+          "y": 0.91,
+          "azimuth_deg": 162.61013190297004,
+          "altitude_deg": 85.89836252416004,
+          "supported": true,
+          "direct": [
+            1568181787067.7668,
+            565019760402.7753,
+            5.462515458207605
+          ],
+          "interpolated": [
+            1569033551747.174,
+            565019316777.3854,
+            5.465670841403251
+          ],
+          "relative_error": [
+            0.0005431542990942917,
+            7.851502212530391e-07,
+            0.0005776428862833293
+          ]
+        },
+        {
+          "x": 0.73,
+          "y": -0.43,
+          "azimuth_deg": 68.56035858376376,
+          "altitude_deg": 84.94445916304103,
+          "supported": true,
+          "direct": [
+            1527437338806.4397,
+            565306898393.6077,
+            5.358915925846431
+          ],
+          "interpolated": [
+            1528249786320.0325,
+            565304936161.459,
+            5.362376109825069
+          ],
+          "relative_error": [
+            0.0005319023523594303,
+            3.4710918162463185e-06,
+            0.0006456873043947952
+          ]
+        },
+        {
+          "x": -0.11,
+          "y": -0.89,
+          "azimuth_deg": 349.4969969810822,
+          "altitude_deg": 86.10597103090058,
+          "supported": true,
+          "direct": [
+            1524192378581.7234,
+            564965238586.0115,
+            5.349731623785308
+          ],
+          "interpolated": [
+            1523805233990.673,
+            564964924056.631,
+            5.348325766810333
+          ],
+          "relative_error": [
+            0.0002539998208169332,
+            5.567234212150195e-07,
+            0.00026279018721705257
+          ]
+        }
+      ],
+      "supported": 8,
+      "requested": 8,
+      "used_for_refinement": false,
+      "max_relative_error": 0.0006927559331904524,
+      "physical_accuracy_validated": false
+    }
+  },
+  "south45": {
+    "source_result_sha256": "fc3565f2bedfe810715d5c8f0df3ffa327fd3a5b20291c395fb868b8f6f81746",
+    "source_result_bytes": 3814655,
+    "job_id": "bb4854e83afa4a469b6bc47bb0b29df1",
+    "request": {
+      "observer": {
+        "height_m": 2.0,
+        "latitude_deg": 60.3,
+        "longitude_deg": 30.315
+      },
+      "time": "2026-11-11T21:00:00Z",
+      "directions": [
+        [
+          180.0,
+          45.0
+        ]
+      ]
+    },
+    "runtime": {
+      "elapsed_seconds": 15.857702329289168
+    },
+    "cache": {
+      "scene_hit": false,
+      "transfer_hits": 31,
+      "transfer_misses": 0
+    },
+    "camera_view": {
+      "azimuth_deg": 180.0,
+      "altitude_deg": 45.0,
+      "rotation_deg": 0.0,
+      "width": 960,
+      "height": 640,
+      "horizontal_fov_deg": 12.871520143768814
+    },
+    "catalogue": {
+      "provider": "KStars live StarComponent",
+      "magnitude_limit_requested": 12,
+      "truncated": false,
+      "rows_received": 128,
+      "utc": "2026-11-11T21:00:00Z",
+      "completeness_established": false,
+      "catalogue_snapshot_sha256": "8530b9ee305aa13d9c619850fff627ddf40ab68a016b6995ca4e38f01633f41d",
+      "brightest_received_v_mag": 4.260000228881836,
+      "faintest_received_v_mag": 8
+    },
+    "camera_exports": {
+      "schema_version": 1,
+      "available": true,
+      "reasons": [],
+      "image_is_photograph": false,
+      "supported_pixels": 614400,
+      "field_pixels": 614400,
+      "stars_in_frame": 60,
+      "star_rows": 62,
+      "stars_with_available_response": 62,
+      "deposited_stellar_e": 608774.1971290696,
+      "sky_e_min_median_max": [
+        237.05740609508837,
+        281.7464803768412,
+        333.0441173450618
+      ],
+      "fullwell_clipped_pixels": 0,
+      "adc_clipped_pixels": 0,
+      "expected_e_above_capacity": 0,
+      "exposure_bridge": {
+        "schema_version": 1,
+        "kind": "lightpollution_camera_exposure_bridge",
+        "profile_id": "37170de673dc531bed0e5ea89b0445bd89e1c12961ef90166ad4c7be72c97b4e",
+        "pixel_pitch_um": 3.76,
+        "focal_ratio": 2.0,
+        "sky_rate_e_pixel_s_min_median_max": [
+          7.901913536502946,
+          9.391549345894706,
+          11.101470578168726
+        ],
+        "read_noise_e": 3.0,
+        "noise_increase_percent": 5.0,
+        "read_noise_lower_bound_s_max_over_field": 11.111850014957161,
+        "read_noise_lower_bound_s_median": 9.349349592376637,
+        "exposure_upper_bound_s_at_90_percent_capacity": 71.01717104002104,
+        "bounds_compatible": true,
+        "same_noise_criterion_as_Ekos": true,
+        "criterion": "sqrt((b*t+RN²)/(b*t)) <=1.05; sky only",
+        "is_unique_optimal_exposure": false,
+        "V_band_is_not_SQM": true,
+        "automatic_hardware_or_capture_sequence_changes": false,
+        "Ekos_scalar_formula_reference": "OptimalSubExposureCalculator::calculateCFactor; same noise criterion, direct spatial electron rates",
+        "profile_is_measured_camera": false
+      },
+      "preview": {
+        "operator": "fixed ADU asinh then one sRGB; no automatic per-frame scaling",
+        "black_adu": 500.0,
+        "white_adu": 6000.0,
+        "asinh_scale": 10.0
+      },
+      "FITS_extensions": [
+        "PRIMARY",
+        "MEAN_E",
+        "SKY_E",
+        "CITY_E",
+        "OTHER_E",
+        "STAR_E",
+        "DARK_E",
+        "VAR_E2",
+        "OMEGA_SR",
+        "MASK"
+      ],
+      "linear_FITS": true,
+      "variance_includes_quantization": false,
+      "variance_valid_before_clipping": true,
+      "projected_entrance_pupil_cosine_applied": true,
+      "stellar_flux_ledger_precedes_model_domain_mask": true
+    },
+    "source_coefficient": 44897606336985.7,
+    "field_validation": {
+      "rows": [
+        {
+          "x": -0.83,
+          "y": -0.31,
+          "azimuth_deg": 172.62757076662922,
+          "altitude_deg": 43.42705388782787,
+          "supported": true,
+          "direct": [
+            3844174429995.088,
+            648608408482.9924,
+            11.504724311988744
+          ],
+          "interpolated": [
+            3844166427068.444,
+            648590787304.4563,
+            11.505804784057645
+          ],
+          "relative_error": [
+            2.0818323387196543e-06,
+            2.7167668975100666e-05,
+            9.391551154123211e-05
+          ]
+        },
+        {
+          "x": -0.27,
+          "y": 0.79,
+          "azimuth_deg": 177.37816151086776,
+          "altitude_deg": 48.37003682206448,
+          "supported": true,
+          "direct": [
+            3175492901161.9893,
+            629529982130.3877,
+            9.743568929745164
+          ],
+          "interpolated": [
+            3172305942422.7383,
+            629532535898.2097,
+            9.735799891699815
+          ],
+          "relative_error": [
+            0.0010036107270417112,
+            4.05662620448878e-06,
+            0.0007973503447625189
+          ]
+        },
+        {
+          "x": 0.41,
+          "y": -0.71,
+          "azimuth_deg": 183.55290354849612,
+          "altitude_deg": 41.88897055643866,
+          "supported": true,
+          "direct": [
+            4132730736266.2974,
+            655210262108.8706,
+            12.260539444865316
+          ],
+          "interpolated": [
+            4138920348098.6973,
+            655199034445.6919,
+            12.275587348995737
+          ],
+          "relative_error": [
+            0.0014977050834896366,
+            1.7135969669604067e-05,
+            0.0012273443756769817
+          ]
+        },
+        {
+          "x": 0.89,
+          "y": 0.29,
+          "azimuth_deg": 188.25829728894357,
+          "altitude_deg": 45.95091739995805,
+          "supported": true,
+          "direct": [
+            3429207292733.7417,
+            638467596624.756,
+            10.416145154418672
+          ],
+          "interpolated": [
+            3428746961467.5596,
+            638479989861.7275,
+            10.414910533840427
+          ],
+          "relative_error": [
+            0.00013423839006686464,
+            1.9410909867742976e-05,
+            0.00011852950971225938
+          ]
+        },
+        {
+          "x": -0.63,
+          "y": 0.57,
+          "azimuth_deg": 174.00588380568166,
+          "altitude_deg": 47.297905466290366,
+          "supported": true,
+          "direct": [
+            3292639971325.018,
+            633398676551.1875,
+            10.053455487585806
+          ],
+          "interpolated": [
+            3289435677022.2197,
+            633406568713.431,
+            10.046045705219788
+          ],
+          "relative_error": [
+            0.0009731687432285145,
+            1.24600232613408e-05,
+            0.0007370383621002678
+          ]
+        },
+        {
+          "x": 0.19,
+          "y": 0.91,
+          "azimuth_deg": 181.8635137142342,
+          "altitude_deg": 48.899747160588866,
+          "supported": true,
+          "direct": [
+            3112348162581.2236,
+            627671810866.3075,
+            9.577115178444926
+          ],
+          "interpolated": [
+            3110791055084.1997,
+            627672066829.3705,
+            9.572931550127436
+          ],
+          "relative_error": [
+            0.0005002999072354874,
+            4.07797607853383e-07,
+            0.00043683596151228234
+          ]
+        },
+        {
+          "x": 0.73,
+          "y": -0.43,
+          "azimuth_deg": 186.43600673153117,
+          "altitude_deg": 42.967225743985836,
+          "supported": true,
+          "direct": [
+            3903548640367.869,
+            650548250979.8381,
+            11.661731961829817
+          ],
+          "interpolated": [
+            3906569554473.611,
+            650529888204.5265,
+            11.669193861615144
+          ],
+          "relative_error": [
+            0.0007738891926442114,
+            2.8226615449335223e-05,
+            0.0006398620556320502
+          ]
+        },
+        {
+          "x": -0.11,
+          "y": -0.89,
+          "azimuth_deg": 179.05775216469056,
+          "altitude_deg": 41.16717889950082,
+          "supported": true,
+          "direct": [
+            4300977178403.828,
+            658420272420.2572,
+            12.699590092949745
+          ],
+          "interpolated": [
+            4301649395400.4653,
+            658416482779.7279,
+            12.701889617149755
+          ],
+          "relative_error": [
+            0.0001562940161627826,
+            5.755655905561211e-06,
+            0.00018107074190425515
+          ]
+        }
+      ],
+      "supported": 8,
+      "requested": 8,
+      "used_for_refinement": false,
+      "max_relative_error": 0.0014977050834896366,
+      "physical_accuracy_validated": false
+    }
+  }
+}

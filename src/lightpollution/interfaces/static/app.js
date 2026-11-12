@@ -7,6 +7,7 @@ let photometricCalibration = null, anchorObserver = null, referenceMix = {'LED-B
 let integrationOrigin = null, integrationGeometry = null;
 let eyeDimensions = {};
 let eyeModelOptions = {};
+let cameraModelOptions = {};
 const geometryKey = data => JSON.stringify([data.observer,data.time,data.mode,data.directions]);
 function calibrationNote(){
   $('calibration-note').textContent=photometricCalibration?`Калибровка ${photometricCalibration.id.slice(0,12)} · контрольных ночей ${photometricCalibration.validation?.nights??'—'}. Область применения проверяется при расчёте.`:'Калибровка по измерениям не подключена.';
@@ -41,7 +42,7 @@ function readForm(){
   if(data.mode==='dated')data.time=$('time').value+$('offset').value;else data.moon={mode:'none'};
   if(photometricCalibration)data.photometric_calibration=photometricCalibration;
   if(anchorObserver)data.anchor_observer=anchorObserver;
-  if($('spectrum-mode').value==='on'||$('eye-enabled').checked)data.spectrum={mix:JSON.parse($('spectral-mix').value),reference_mix:referenceMix,angstrom_exponent:Number($('angstrom').value),stars:$('spectral-stars').value};
+  if($('spectrum-mode').value==='on'||$('eye-enabled').checked||$('camera-enabled').checked)data.spectrum={mix:JSON.parse($('spectral-mix').value),reference_mix:referenceMix,angstrom_exponent:Number($('angstrom').value),stars:$('spectral-stars').value};
   if($('background-mode').value!=='legacy')data.background={mode:$('background-mode').value,airglow_fraction:Number($('airglow-fraction').value),airglow_height_m:Number($('airglow-height').value),twilight:$('twilight-mode').value};
   if($('surface-enabled').checked)data.surface={snow_fraction:Number($('snow-fraction').value),bare_albedo:Number($('bare-albedo').value),snow_albedo:Number($('snow-albedo').value),direct_upward_fraction:Number($('direct-upward').value),direct_horizontal_fraction:Number($('direct-horizontal').value)};
   if($('near-enabled').checked)data.near_field={radius_m:Number($('near-radius').value),minimum_patch_m:Number($('near-patch').value),quadrature_order:Number($('near-order').value)};
@@ -51,6 +52,8 @@ function readForm(){
     observer_profile:{...(eyeModelOptions.observer_profile||{}),colour_integration_diameter_arcmin:Number($('eye-colour-pool').value)},
     view:{...eyeDimensions,azimuth_deg:Number($('eye-azimuth').value),altitude_deg:Number($('eye-altitude').value),horizontal_fov_deg:Number($('eye-fov').value)}};
   if(integrationOrigin&&geometryKey(data)===integrationGeometry)data.integration=integrationOrigin;
+  if($('camera-enabled').checked)data.camera={...cameraModelOptions,exposure_s:Number($('camera-exposure').value),
+    view:{...(cameraModelOptions.view||{}),azimuth_deg:Number($('camera-azimuth').value),altitude_deg:Number($('camera-altitude').value)}};
   return data;
 }
 function fill(data){
@@ -79,6 +82,10 @@ function fill(data){
   $('eye-colour').value=data.eye?.appearance?.mode||'monochrome';
   $('eye-colour-pool').value=data.eye?.observer_profile?.colour_integration_diameter_arcmin??5;
   $('eye-profile-note').textContent=`Наблюдатель: ${data.eye?.observer_profile?.profile_id||'номинальный'}. Экран: ${data.eye?.display?.profile_id||'номинальный'}. Калибровка восприятия не подтверждена.`;
+  $('camera-enabled').checked=!!data.camera;cameraModelOptions=structuredClone(data.camera||{});
+  $('camera-exposure').value=data.camera?.exposure_s??30;
+  $('camera-azimuth').value=data.camera?.view?.azimuth_deg??data.directions?.[0]?.[0]??180;
+  $('camera-altitude').value=data.camera?.view?.altitude_deg??data.directions?.[0]?.[1]??50;
   integrationOrigin=data.integration||null;integrationGeometry=geometryKey(readForm());
 }
 function labelJob(job){return `${job.request.time||'Без даты'} · ${job.request.period} · AOD ${num(job.request.atmosphere?.aerosol_optical_depth??.1,2)}`;}
@@ -93,6 +100,8 @@ async function refreshJobs(){
 }
 function resultHTML(value,id){
   const rows=value.sky.directions,first=rows[0],ob=value.observation,qa=value.data_provenance.QA;
+  const cameraText=value.camera?`<h3>Линейная модель камеры</h3><p class="hint">${esc(value.camera.config.profile.profile_id)} · ${num(value.camera.config.exposure_s,3)} с. Монохромный сценарий, точность конкретной камеры не проверена.</p>${value.camera.exports?.available?`<img src="/api/jobs/${id}/export/camera-preview.png" alt="Синтетический кадр с фиксированным stretch" style="max-width:100%;height:auto"><div class="exports">${[['camera.fits','Линейный FITS и карты электронов'],['camera.json','Параметры и QA'],['camera-stars.csv','Электроны звёзд'],['camera-profile.json','Профиль камеры'],['camera-ekos.json','Экспозиционные границы']].map(([f,l])=>`<a href="/api/jobs/${id}/export/${f}">${l}</a>`).join('')}</div>`:`<p>Кадр недоступен: ${esc((value.camera.reasons||[]).join(', '))}</p>`}`:'';
+
   const metric=(title,v,unit)=>`<div class="metric"><label>${title}</label><strong>${num(v)}</strong><small>${unit}</small></div>`;
   const directions=rows.map(r=>`<tr><td>${num(r.azimuth_deg,1)}° / ${num(r.altitude_deg,1)}°</td><td>${num(r.artificial_relative)}</td><td>${num(r.moon_relative)}</td><td>${num(r.natural_relative)}</td><td>${num(r.twilight_relative??(r.background_supported===false?null:0))}</td><td>${num(r.total_v_mag_arcsec2)}</td><td>${esc(supportLabel(r.status))}</td></tr>`).join('');
   const stars=[...value.stars.rows].sort((a,b)=>a.observed_v_mag-b.observed_v_mag).slice(0,40);
@@ -112,7 +121,7 @@ function resultHTML(value,id){
     <div class="metrics">${metric('Суммарный фон · первое направление',first.total_v_mag_arcsec2,'V mag/arcsec² · меньше число — ярче')}${metric('Город · первое направление',first.artificial_relative,'B/Bref · опора V=22')}${metric('Луна · первое направление',first.moon_relative,'B/Bref · та же опора')}</div>
     <h3>Фон по направлениям</h3><div class="table-wrap"><table><thead><tr><th>Азимут / высота</th><th>Город, B/Bref</th><th>Луна, B/Bref</th><th>Ночной естеств., B/Bref</th><th>Сумерки, B/Bref</th><th>Сумма, V mag/arcsec²</th><th>Статус</th></tr></thead><tbody>${directions}</tbody></table></div>
     <p class="hint">${esc(qaText)} ${esc(spatialText)} ${esc(surfaceText)}</p>
-    ${spectral}${eyeText}<details><summary>Каталожные звёзды (${num(value.stars.rows.length,0)})</summary><p class="hint">Показаны до 40 ярчайших звёзд над нижней границей поля 10°. Это геометрия и экстинкция; результат порога глаза приведён отдельно, если включён.</p><div class="table-wrap"><table><thead><tr><th>Звезда</th><th>Азимут</th><th>Высота</th><th>V после ослабления</th></tr></thead><tbody>${stellar}</tbody></table></div></details>
+    ${spectral}${eyeText}${cameraText}<details><summary>Каталожные звёзды (${num(value.stars.rows.length,0)})</summary><p class="hint">Показаны до 40 ярчайших звёзд над нижней границей поля 10°. Это геометрия и экстинкция; результат порога глаза приведён отдельно, если включён.</p><div class="table-wrap"><table><thead><tr><th>Звезда</th><th>Азимут</th><th>Высота</th><th>V после ослабления</th></tr></thead><tbody>${stellar}</tbody></table></div></details>
     <div class="exports">${[['scene.json','Сохранить сценарий'],['bundle.zip','Все результаты ZIP'],['directions.csv','Фон CSV'],['stars.csv','Звёзды CSV'],['result.json','Полный JSON']].map(([f,l])=>`<a href="/api/jobs/${id}/export/${f}">${l}</a>`).join('')}</div></section>`;
 }
 async function openJob(id){
