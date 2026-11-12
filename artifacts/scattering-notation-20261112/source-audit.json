@@ -1,0 +1,71 @@
+{
+  "checked_at": "2026-11-12T21:22:52+01:00",
+  "implementation_reviewed_at_commit": "6cbbace0f6477ab75681960e1d568d889b735a92",
+  "primary_sources": [
+    {
+      "url": "https://landweb.modaps.eosdis.nasa.gov/data/userguide/BlackMarbleUserGuide_Collection2.0_20241203.pdf",
+      "method": "web open; sections 2.2 and 2.3 read",
+      "role": "surface correction versus TOA; composite inputs"
+    },
+    {
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/VNP46A4",
+      "method": "web search official product description",
+      "role": "Collection 2 yearly corrected product and angular categories"
+    },
+    {
+      "url": "https://aeronet.gsfc.nasa.gov/print_web_data_help_v3_inv.html",
+      "method": "web open, product table read",
+      "role": "potential AOD/SIZ/RIN/SSA/ASY/PFN inputs, not imported measurements"
+    },
+    {
+      "url": "https://gml.noaa.gov/grad/about/aero_term.html",
+      "method": "web open, definitions read",
+      "role": "SSA, asymmetry and size-related properties"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1209.2031",
+      "method": "web open, sections 2.4 and abstract read",
+      "role": "Garstang versus more general multiple scattering"
+    },
+    {
+      "url": "https://ebruneton.github.io/precomputed_atmospheric_scattering/atmosphere/functions.glsl",
+      "method": "web search primary implementation",
+      "role": "successive scattering orders; not an implemented city solver"
+    },
+    {
+      "url": "https://gmd.copernicus.org/articles/9/1647/2016/gmd-9-1647-2016.pdf",
+      "method": "web search primary paper excerpt",
+      "role": "3D MYSTIC not in public release of described version; full paper not reread"
+    }
+  ],
+  "new_terrestrial_atmosphere_measurements": 0,
+  "new_satellite_downloads": 0,
+  "new_Mie_or_multiple_scattering_solver": false,
+  "implementation_sha256": {
+    "src/lightpollution/physics.py": "00f5d96018280672658424163ba7ec79aaf89d53532bc3215c6481bc52fd1a6a",
+    "src/lightpollution/data.py": "a7546632eeed17b736f05c67dacadab873a3376a4a022f3bc5dad10007801b45",
+    "src/lightpollution/sources.py": "2546fca0e8d46e446bad2e4683ae23476ed021d7c84a0fad053334e5567de79d",
+    "src/lightpollution/adapters/sources.py": "84a843ceaa6c03a870a588eefad02674fd5dfc978259d5ed74e99e56a8a57fec",
+    "src/lightpollution/models/spectra.py": "72335f42f714c401fa39d5bed57059401862496715705afe06bf5f0bd3dde19a",
+    "src/lightpollution/models/topographic_transfer.py": "ee840cdd4e11232aac4ce584277ab2851a1163e6e97102314a66f07f17b57c10",
+    "src/lightpollution/application/planner.py": "59cffcb870212ebd99e4f04cda13d5accff265172dc1a8a9e11bafa5fc888960"
+  },
+  "previous_native_zenith_source_count_evidence": {
+    "local_result": "data/kstars-catalogue-integration-20261112/native-complete/zenith-result.json",
+    "sha256": "f876be6c68200119ccc74648b9a5be31e9b2b44ece89135580f8781a8666b481",
+    "new_physical_run": false,
+    "counts": {
+      "block_pixels": 24,
+      "effective_sources": 21719,
+      "retained_positive_pixels": 88667,
+      "finite_emitting_pixels": 201,
+      "finite_cell_settings": {
+        "minimum_patch_m": 2.0,
+        "quadrature_order": 3,
+        "radius_m": 3000.0,
+        "observer_agl_m": 2.0
+      }
+    },
+    "public_run_report": "artifacts/kstars-catalogue-integration-20261112/case-verification.json"
+  }
+}

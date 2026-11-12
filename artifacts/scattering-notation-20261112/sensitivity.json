@@ -1,0 +1,246 @@
+{
+  "completed_at": "2026-11-12T21:20:09+01:00",
+  "kind": "controlled_single_source_sensitivity_not_field_validation",
+  "observer": {
+    "latitude_deg": 60.0,
+    "longitude_deg": 30.0,
+    "height_m": 20.0
+  },
+  "source": {
+    "latitude_deg": 59.64027135763251,
+    "longitude_deg": 30.0,
+    "surface_arc_distance_m": 40000.0,
+    "upward_power_arbitrary_units": 1.0,
+    "emission": "Lambertian"
+  },
+  "wavelength_nm": 550.0,
+  "azimuth_deg": 180.0,
+  "altitudes_deg": [
+    10.0,
+    45.0,
+    90.0
+  ],
+  "atmosphere": {
+    "reference_wavelength_nm": 550.0,
+    "rayleigh_scale_height_m": 8000.0,
+    "aerosol_scale_height_m": 1200.0,
+    "aerosol_optical_depth": 0.1,
+    "aerosol_single_scattering_albedo": 0.9,
+    "aerosol_g": 0.8,
+    "rayleigh_multiplier": 1.0,
+    "top_m": 80000.0
+  },
+  "settings": {
+    "ray_segments": 192,
+    "path_quadrature": 24,
+    "horizontal_fraction": 0.0,
+    "near_ray_scale_m": 500.0
+  },
+  "refined_settings": {
+    "ray_segments": 384,
+    "path_quadrature": 48,
+    "horizontal_fraction": 0.0,
+    "near_ray_scale_m": 500.0
+  },
+  "source_scale_refitted": false,
+  "terrain_or_ground_reflection": false,
+  "satellite_data_used": false,
+  "surface_coefficients_m-1": {
+    "Rayleigh": 1.355776244792022e-05,
+    "aerosol_scattering": 7.500000000000001e-05,
+    "total_extinction": 9.689109578125357e-05
+  },
+  "local_aerosol_to_Rayleigh_scattering_ratio": {
+    "0": 165.9565882381388,
+    "90": 1.2642958387974907,
+    "180": 0.2276496409302318
+  },
+  "vertical_Rayleigh_optical_depth_to_infinity": 0.10846209958336175,
+  "vertical_total_scattering_optical_depth_to_infinity": 0.19846209958336175,
+  "baseline_response_by_altitude": {
+    "10": 1.3277786657508501e-11,
+    "45": 4.0740794778880784e-13,
+    "90": 9.31168564001032e-14
+  },
+  "scenarios": [
+    {
+      "parameter": "aerosol_optical_depth",
+      "value": 0.02,
+      "response_by_altitude": {
+        "10": 2.172130905735706e-11,
+        "45": 5.581037301681349e-13,
+        "90": 1.3757198662099792e-13
+      },
+      "refined_response_by_altitude": {
+        "10": 2.172294731906336e-11,
+        "45": 5.581314233984634e-13,
+        "90": 1.3757795484104642e-13
+      },
+      "ratio_to_baseline_by_altitude": {
+        "10": 1.6359133956316283,
+        "45": 1.3698891570408067,
+        "90": 1.4774122746356528
+      },
+      "refined_ratio_to_baseline_by_altitude": {
+        "10": 1.6359134021561303,
+        "45": 1.36988913546803,
+        "90": 1.477412281495501
+      },
+      "relative_change_on_refinement": {
+        "10": 7.541618005313389e-05,
+        "45": 4.961775877054819e-05,
+        "90": 4.3380642308576967e-05
+      }
+    },
+    {
+      "parameter": "aerosol_optical_depth",
+      "value": 0.1,
+      "response_by_altitude": {
+        "10": 1.3277786657508501e-11,
+        "45": 4.0740794778880784e-13,
+        "90": 9.31168564001032e-14
+      },
+      "refined_response_by_altitude": {
+        "10": 1.327878804002251e-11,
+        "45": 4.074281698772469e-13,
+        "90": 9.312089561201158e-14
+      },
+      "ratio_to_baseline_by_altitude": {
+        "10": 1.0,
+        "45": 1.0,
+        "90": 1.0
+      },
+      "refined_ratio_to_baseline_by_altitude": {
+        "10": 1.0,
+        "45": 1.0,
+        "90": 1.0
+      },
+      "relative_change_on_refinement": {
+        "10": 7.541219206086414e-05,
+        "45": 4.9633505815660506e-05,
+        "90": 4.337599935899661e-05
+      }
+    },
+    {
+      "parameter": "aerosol_optical_depth",
+      "value": 0.3,
+      "response_by_altitude": {
+        "10": 3.4231386293244553e-12,
+        "45": 1.987346833113143e-13,
+        "90": 4.01727581500228e-14
+      },
+      "refined_response_by_altitude": {
+        "10": 3.423396775737473e-12,
+        "45": 1.9874454301836005e-13,
+        "90": 4.0174493615459925e-14
+      },
+      "ratio_to_baseline_by_altitude": {
+        "10": 0.2578094314679091,
+        "45": 0.4878026665653916,
+        "90": 0.4314230495218723
+      },
+      "refined_ratio_to_baseline_by_altitude": {
+        "10": 0.25780943000364887,
+        "45": 0.48780265507473214,
+        "90": 0.4314229728078115
+      },
+      "relative_change_on_refinement": {
+        "10": 7.540651286674915e-05,
+        "45": 4.960995102565313e-05,
+        "90": 4.3198190716187135e-05
+      }
+    },
+    {
+      "parameter": "aerosol_g",
+      "value": 0.6,
+      "response_by_altitude": {
+        "10": 1.3229427639373209e-11,
+        "45": 4.1397629570912896e-13,
+        "90": 9.416804061823334e-14
+      },
+      "refined_response_by_altitude": {
+        "10": 1.3230425329018695e-11,
+        "45": 4.139968414169699e-13,
+        "90": 9.417212470595045e-14
+      },
+      "ratio_to_baseline_by_altitude": {
+        "10": 0.9963579006514655,
+        "45": 1.0161222871472455,
+        "90": 1.0112888714113524
+      },
+      "refined_ratio_to_baseline_by_altitude": {
+        "10": 0.9963578972073318,
+        "45": 1.016122281239665,
+        "90": 1.011288863654392
+      },
+      "relative_change_on_refinement": {
+        "10": 7.540873559808148e-05,
+        "45": 4.962769225635988e-05,
+        "90": 4.3368329321058496e-05
+      }
+    },
+    {
+      "parameter": "aerosol_g",
+      "value": 0.8,
+      "response_by_altitude": {
+        "10": 1.3277786657508501e-11,
+        "45": 4.0740794778880784e-13,
+        "90": 9.31168564001032e-14
+      },
+      "refined_response_by_altitude": {
+        "10": 1.327878804002251e-11,
+        "45": 4.074281698772469e-13,
+        "90": 9.312089561201158e-14
+      },
+      "ratio_to_baseline_by_altitude": {
+        "10": 1.0,
+        "45": 1.0,
+        "90": 1.0
+      },
+      "refined_ratio_to_baseline_by_altitude": {
+        "10": 1.0,
+        "45": 1.0,
+        "90": 1.0
+      },
+      "relative_change_on_refinement": {
+        "10": 7.541219206086414e-05,
+        "45": 4.9633505815660506e-05,
+        "90": 4.337599935899661e-05
+      }
+    },
+    {
+      "parameter": "aerosol_g",
+      "value": 0.9,
+      "response_by_altitude": {
+        "10": 1.2802259463683103e-11,
+        "45": 4.0357669726259566e-13,
+        "90": 9.27011906254681e-14
+      },
+      "refined_response_by_altitude": {
+        "10": 1.2803224996978696e-11,
+        "45": 4.035967308761337e-13,
+        "90": 9.270521209953056e-14
+      },
+      "ratio_to_baseline_by_altitude": {
+        "10": 0.9641862603993195,
+        "45": 0.9905960339089942,
+        "90": 0.9955360845425335
+      },
+      "refined_ratio_to_baseline_by_altitude": {
+        "10": 0.9641862614562068,
+        "45": 0.9905960380641634,
+        "90": 0.9955360876874192
+      },
+      "relative_change_on_refinement": {
+        "10": 7.541328812243897e-05,
+        "45": 4.9637700222593395e-05,
+        "90": 4.3379158209067015e-05
+      }
+    }
+  ],
+  "code_sha256": {
+    "scripts/audit_scattering.py": "cdd7d7bae68888f3d0fd119b48d51431516b92c7bb62a7d4dbda25a641fe3db3",
+    "src/lightpollution/physics.py": "00f5d96018280672658424163ba7ec79aaf89d53532bc3215c6481bc52fd1a6a"
+  },
+  "limitation": "A sensitivity example, not a measured error, regional probability or multiple-scattering benchmark."
+}

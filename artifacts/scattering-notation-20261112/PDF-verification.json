@@ -1,0 +1,50 @@
+{
+  "checked_at": "2026-11-12T21:29:56+01:00",
+  "pdf_path": "scratch/scattering-notation/bundle/documentation.pdf",
+  "sha256": "869ccd4f2b096c354a1419687e6e871c70eea0f2a6b597c3cec274ac7b45412f",
+  "bytes": 12860182,
+  "pages": 46,
+  "unique_typeset_expressions": 410,
+  "image_placements_including_formulas": 518,
+  "replacement_characters": 0,
+  "out_of_page_elements": [],
+  "unexpected_untypeset_TeX_pages": [],
+  "source_export_check": {
+    "source_documents": [
+      {
+        "path": "THEORY.md",
+        "sha256": "83b4a1581c1d1c8b506741dcd9e7e7958291aeb62d174407836480fb5d1e265d",
+        "fenced_blocks": 0,
+        "LaTeX_expressions": 245
+      },
+      {
+        "path": "MODELS.md",
+        "sha256": "0b99c8da48cd69cfd5fff89d08b1a8f57cbb80ea396c0b64220b4ca4013df0e0",
+        "fenced_blocks": 1,
+        "LaTeX_expressions": 205
+      },
+      {
+        "path": "LIMITS.md",
+        "sha256": "21f3874be53e9eac561c361ef9bf4df475f1f4d5f8baf87a1db189391ca17fbc",
+        "fenced_blocks": 0,
+        "LaTeX_expressions": 2
+      },
+      {
+        "path": "VISUALIZATION.md",
+        "sha256": "9e298de381960300d81e934024f4ada72475e534c5165ebea35e2628d7690f8c",
+        "fenced_blocks": 0,
+        "LaTeX_expressions": 0
+      }
+    ],
+    "fenced_code_and_formula_blocks": 1,
+    "all_blocks_preserved_byte_for_byte": true,
+    "LaTeX_expressions": 452,
+    "all_LaTeX_preserved_byte_for_byte": true,
+    "generated_reading_copy_not_a_second_source_of_truth": true
+  },
+  "visually_reviewed_examples": [
+    "microphysics and single-scattering integral",
+    "aerosol parameter provenance and sensitivity table"
+  ],
+  "delivery_copy_not_tracked_duplicate": true
+}

@@ -12,7 +12,8 @@ from lightpollution.adapters.storage import file_hash,write_json
 
 ROOT=Path(__file__).resolve().parents[1]
 DOCUMENTS=['THEORY.md','MODELS.md','LIMITS.md','VISUALIZATION.md']
-TOKEN=re.compile(r'(```[^\n]*\n[\s\S]*?\n```|`[^`\n]*`)|(!?\[[^\]\n]*\]\()([^\s)]+)(\))')
+PROTECTED=r'```[^\n]*\n[\s\S]*?\n```|`[^`\n]*`|\$\$[\s\S]*?\$\$|\$[^$\n]+\$'
+TOKEN=re.compile('('+PROTECTED+r')|(!?\[[^\]\n]*\]\()([^\s)]+)(\))')
 
 
 def main():
@@ -23,7 +24,7 @@ def main():
         '> Дата создания: '+date.today().isoformat()+'\n\n'
         'Я экспортирую канонические документы для последовательного чтения. '
         'Редактируемые оригиналы остаются в корне репозитория.\n']
-    records=[];blocks=[]
+    records=[];blocks=[];formulas=[]
     for name in DOCUMENTS:
         source=ROOT/name;raw=source.read_text()
         def rewrite(match):
@@ -40,16 +41,22 @@ def main():
         changed=TOKEN.sub(rewrite,raw)
         original=re.findall(r'```[^\n]*\n[\s\S]*?\n```',raw)
         assert original==re.findall(r'```[^\n]*\n[\s\S]*?\n```',changed)
+        original_math=[part for part in re.findall(PROTECTED,raw) if part.startswith('$')]
+        assert original_math==[part for part in re.findall(PROTECTED,changed) if part.startswith('$')]
+        formulas.extend(original_math)
         blocks.extend(original);chunks.append(changed)
-        records.append({'path':name,'sha256':file_hash(source),'fenced_blocks':len(original)})
+        records.append({'path':name,'sha256':file_hash(source),'fenced_blocks':len(original),
+                        'LaTeX_expressions':len(original_math)})
     text='\n\n'.join(chunks)
     assert blocks==re.findall(r'```[^\n]*\n[\s\S]*?\n```',text)
     source=output/'documentation.md';source.write_text(text)
     write_json(output/'source-check.json',{'source_documents':records,
         'fenced_code_and_formula_blocks':len(blocks),'all_blocks_preserved_byte_for_byte':True,
+        'LaTeX_expressions':len(formulas),'all_LaTeX_preserved_byte_for_byte':True,
         'generated_reading_copy_not_a_second_source_of_truth':True})
     subprocess.run([sys.executable,str(ROOT/'scripts/build_report.py'),'--source',str(source),
-        '--output',str(output/'documentation.pdf'),'--date',date.today().isoformat()],check=True)
+        '--output',str(output/'documentation.pdf'),'--date',date.today().isoformat(),
+        '--math-audit',str(output/'math-audit.json')],check=True)
 
 
 if __name__=='__main__':main()

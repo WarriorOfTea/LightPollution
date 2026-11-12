@@ -23,6 +23,21 @@
 - **NASA**, [Black Marble User Guide Collection2](https://viirsland.gsfc.nasa.gov/PDF/BlackMarbleUserGuide_Collection2.0.pdf).
   Смысл композитов, QA и временная поддержка. DNB не инвертируется
   автоматически в мощность/спектр всех фонарей.
+- **NASA**, [редакция руководства October2024](https://landweb.modaps.eosdis.nasa.gov/data/userguide/BlackMarbleUserGuide_Collection2.0_20241203.pdf),
+  §§2.2–2.3, и [карточка VNP46A4.002](https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/VNP46A4).
+  Повторно проверено различие TOA и скорректированных композитов; оно
+  не заменяет мою неопределённую DNB→мощность/спектр/углы инверсию.
+- **AERONET V3**, [официальные продукты инверсии](https://aeronet.gsfc.nasa.gov/print_web_data_help_v3_inv.html).
+  AOD/SIZ/RIN/SSA/ASY/PFN доступны как кандидаты; конкретные ночные профили
+  не подключены. **NOAA GML**, [определения аэрозольных оптических параметров](https://gml.noaa.gov/grad/about/aero_term.html):
+  различие AOD/SSA/асимметрии и связь с составом/размерами.
+- **Bruneton**, [рекурсия повышенных порядков](https://ebruneton.github.io/precomputed_atmospheric_scattering/atmosphere/functions.glsl).
+  Иллюстрирует отдельные источники рассеяния и интегралы по порядкам;
+  алгоритм для солнечной атмосферы не перенесён автоматически на наши города.
+- **Emde et al.2016**, [libRadtran2.0.1](https://gmd.copernicus.org/articles/9/1647/2016/).
+  Изучено различие дискретных и Monte Carlo решателей. Полная 3D-версия
+  MYSTIC не входит в публичную поставку описанной версии; не объявляю её
+  готовым открытым модулем проекта.
 - **Copernicus**, [DSM GLO-30/GLO-90 и права](https://registry.opendata.aws/copernicus-dem/).
   Поверхность, геопривязка/датум. Полученные тайлы закреплены манифестами.
 

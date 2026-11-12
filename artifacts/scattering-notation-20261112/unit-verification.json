@@ -1,0 +1,11 @@
+{
+  "completed_at": "2026-11-12T21:29:56+01:00",
+  "command": "uv run --all-extras pytest -q -p no:cacheprovider",
+  "tests": 321,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "reported_seconds": 102.79,
+  "tests_include_documentation_export_regressions": 4,
+  "new_native_build_or_field_validation": false
+}
