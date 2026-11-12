@@ -5,8 +5,8 @@
   "self_excluded_from_hashes": true,
   "files": {
     "README.md": {
-      "sha256": "39a73c413423296a4a267f50da115246b90b4fd34fd328d6a01eb4e3c0a29b82",
-      "bytes": 19891
+      "sha256": "cf2dc0f8629636d92395c9b7539671ca7acebfdc6a8907c156076ee513c95f44",
+      "bytes": 20368
     },
     "browser/camera-controls.png": {
       "sha256": "ac5b944b4169dc4ddd689beadc46443b9495ca34b6183056db7ca42db33c8543",
@@ -153,8 +153,8 @@
       "bytes": 6029
     },
     "report.pdf": {
-      "sha256": "7f88d6456502e1b8809d7867ab3fd7c932e96d8bee8779c0a5279b6d9c5e87ca",
-      "bytes": 1436932
+      "sha256": "d5125c7ed300f531be1f314903905ba6c1ac3f9961cb2cb1d88cad96e38ae4d6",
+      "bytes": 1437930
     },
     "reproduction-verification.json": {
       "sha256": "72c4522359a0306fa9c6f6a392998161386ba07f1cb916e23166436b962d8cd4",
@@ -176,5 +176,34 @@
       "sha256": "2c41f24e813a308cf0d454dab671172797b290cd9d6c1c1fde370364caa93d22",
       "bytes": 524
     }
+  },
+  "documentation_cleanup": {
+    "completed_at": "2026-11-12T16:11:27+01:00",
+    "original_experiment_recomputed": false,
+    "base_commit_before_cleanup": "52a3604b6603be48e07c4bd0d60a9cf32f0b9f38",
+    "navigation_updated": {
+      "README.md": {
+        "record_before_cleanup": {
+          "sha256": "39a73c413423296a4a267f50da115246b90b4fd34fd328d6a01eb4e3c0a29b82",
+          "bytes": 19891
+        },
+        "sha256_before_cleanup": "39a73c413423296a4a267f50da115246b90b4fd34fd328d6a01eb4e3c0a29b82",
+        "bytes_before_cleanup": 19891,
+        "operation": "navigation and archive status only"
+      },
+      "report.pdf": {
+        "record_before_cleanup": {
+          "sha256": "7f88d6456502e1b8809d7867ab3fd7c932e96d8bee8779c0a5279b6d9c5e87ca",
+          "bytes": 1436932
+        },
+        "sha256_before_cleanup": "7f88d6456502e1b8809d7867ab3fd7c932e96d8bee8779c0a5279b6d9c5e87ca",
+        "bytes_before_cleanup": 1436932,
+        "operation": "PDF URI annotations only; page text and page count unchanged",
+        "PDF_annotations_relinked": 2,
+        "PDF_pages": 7
+      }
+    },
+    "retired_document_copies": [],
+    "historical_root_source_records_preserved": false
   }
 }

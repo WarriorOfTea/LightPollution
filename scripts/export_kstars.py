@@ -107,7 +107,7 @@ StarColorIntensity=0
               'size':size,'zoom_pixels_per_radian':zoom,'refraction':False,
               'is_patched_kstars':False,'purpose':'Actual KStars catalogue raster, before skyglow compositing',
               'source':'https://invent.kde.org/education/kstars',
-              'documentation':'docs/OBSERVER_VIEW.md'}
+              'documentation':'VISUALIZATION.md'}
     (output/'kstars-summary.json').write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps(metadata,ensure_ascii=False,indent=2))
 

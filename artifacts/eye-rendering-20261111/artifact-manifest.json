@@ -1,8 +1,8 @@
 {
   "files": {
     "README.md": {
-      "sha256": "c8aa65d9df9ef019aad57fe3bca5868e40fe17089262e77ce8c8dd2e05e815b7",
-      "bytes": 21528
+      "sha256": "59149985afad69af2697bc32327bed278789fedb8fa3a4fb2782418e0378ff2c",
+      "bytes": 21918
     },
     "browser/eye-controls.png": {
       "sha256": "a51895f36eaa7187846fba01bd085701ff4077ca3d66c6aac8506fd5e5c04321",
@@ -201,8 +201,8 @@
       "bytes": 6289
     },
     "report.pdf": {
-      "sha256": "ffed604df86070632a9a47e712e9ef5f944a206ff838e3911dddbb46a744fd74",
-      "bytes": 784216
+      "sha256": "050e6a83c87a5aacf81ad51f9fff5ab65af343576b1137203edf7a75607857cd",
+      "bytes": 784875
     },
     "source-provenance.json": {
       "sha256": "7a2f5eb66e0d8ae6639c93b706a822c003da57abb4e126a6010a36e5ccea2e55",
@@ -218,5 +218,34 @@
     }
   },
   "jwt_pattern_matches": 0,
-  "files_over_100MB": 0
+  "files_over_100MB": 0,
+  "documentation_cleanup": {
+    "completed_at": "2026-11-12T16:11:27+01:00",
+    "original_experiment_recomputed": false,
+    "base_commit_before_cleanup": "52a3604b6603be48e07c4bd0d60a9cf32f0b9f38",
+    "navigation_updated": {
+      "README.md": {
+        "record_before_cleanup": {
+          "sha256": "c8aa65d9df9ef019aad57fe3bca5868e40fe17089262e77ce8c8dd2e05e815b7",
+          "bytes": 21528
+        },
+        "sha256_before_cleanup": "c8aa65d9df9ef019aad57fe3bca5868e40fe17089262e77ce8c8dd2e05e815b7",
+        "bytes_before_cleanup": 21528,
+        "operation": "navigation and archive status only"
+      },
+      "report.pdf": {
+        "record_before_cleanup": {
+          "sha256": "ffed604df86070632a9a47e712e9ef5f944a206ff838e3911dddbb46a744fd74",
+          "bytes": 784216
+        },
+        "sha256_before_cleanup": "ffed604df86070632a9a47e712e9ef5f944a206ff838e3911dddbb46a744fd74",
+        "bytes_before_cleanup": 784216,
+        "operation": "PDF URI annotations only; page text and page count unchanged",
+        "PDF_annotations_relinked": 1,
+        "PDF_pages": 8
+      }
+    },
+    "retired_document_copies": [],
+    "historical_root_source_records_preserved": false
+  }
 }

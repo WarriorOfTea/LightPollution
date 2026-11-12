@@ -1,320 +1,170 @@
-# Воспроизводимый запуск прототипа
+# Запуск и устройство приложения
 > Дата создания: 2026-11-09
 
-Версия 0.3: [общая калибровка и спектры](PHOTOMETRY_AND_SPECTRA.md).
-Офлайн-спектральный пример без NASA:
+Я использую одно вычислительное ядро для CLI, локального Web и панели
+KStars. Здесь собраны действующие команды 0.9; физическое содержание
+сцены описано в [MODELS](../MODELS.md), ограничения — в [LIMITS](../LIMITS.md).
 
-```bash
-uv sync --locked
-uv run lightpollution example --spectral --output data/spectral-scene.json
-uv run lightpollution plan --scene data/spectral-scene.json --output data/spectral-result
-```
+## 1. Подготовка и первый запуск
 
-Реальный пример калибровки после подготовки результатов:
-
-```bash
-uv run lightpollution fit-photometry \
-  --dataset artifacts/photometry-spectra-20261111/ground-dataset.json \
-  --output data/shared-calibration.json
-uv run lightpollution plan \
-  --scene artifacts/photometry-spectra-20261111/madrid-2017-11/scene.json \
-  --calibration data/shared-calibration.json --output data/calibrated-result
-```
-
-Python ≥3.12, `uv`. Команды выполняются из корня LightPollution. Код не зависит
-от KStars. Физические определения и ограничения — [MODEL.md](MODEL.md), состояние
-исследования и дальнейшие этапы — [OBSERVATION_PLAN.md](OBSERVATION_PLAN.md).
-
-## MVP 0.2: одна форма или одна команда
-
-Linux, Python ≥3.12. Подробная схема запросов и границы — [MVP.md](MVP.md).
+Требуются Python≥3.12 и uv. Из корня проекта:
 
 ```bash
 uv sync --locked
 uv run lightpollution serve
 ```
 
-Адрес `http://127.0.0.1:8765`. Выберите регион, время и направления,
-измените атмосферу, запустите расчёт. Сохраните `scene.json` и откройте
-его снова в форме. Обычный маршрут не требует ручной подготовки NPZ.
+Интерфейс находится по `http://127.0.0.1:8765`. Рабочий каталог по
+умолчанию `data/mvp`, исходные HDF5 — `data/blackmarble`; они не входят
+в Git. Для другого расположения задаю `--workspace` и `--raw-directory`.
+Для разных экземпляров нужны разные workspace и порты.
+
+Учебный пример работает без сети/NASA и помечен как синтетический:
 
 ```bash
-uv run lightpollution example --output data/example.json
-uv run lightpollution plan --scene data/example.json \
-  --output data/example-result
+uv run lightpollution example --spectral --output data/example.json
+uv run lightpollution plan --scene data/example.json --output data/example-result
 uv run lightpollution datasets
+```
+
+В форме выбираю источник/период, точку, UTC или условный режим, атмосферу
+и направления. Сохраняю `scene.json`, затем могу открыть его повторно.
+Экспорт содержит запрос, разрешённую сцену, результат, CSV и происхождение данных.
+
+## 2. Реальные источники и высоты
+
+Для NASA использую заранее проверенные HDF5 либо явную загрузку:
+
+```bash
+uv run lightpollution datasets --download petersburg-2025
+```
+
+Доступ Earthdata задаётся локальным `BLACKMARBLE_TOKEN_FILE` или
+`BLACKMARBLE_TOKEN`; содержимое секрета не включаю в сцену/документы/Git.
+Скрытого скачивания нет: `download_missing=false` по умолчанию.
+Нет нужного месяца — нет автоматической подмены годом или соседним периодом.
+
+Для подготовки DSM нужен optional `rasterio`:
+
+```bash
+uv sync --locked --extra terrain
+uv run lightpollution prepare-terrain \
+  --dataset petersburg-copdem90 --directory data/terrain
+```
+
+Приготовленный NPZ читается без rasterio. Для нестандартного workspace
+подготовленные высоты ищутся в `workspace.parent/terrain`. Входная высота
+наблюдателя с DSM — AGL; фактическая MSL сохраняется отдельно.
+Данные, манифесты и права — [DATA_SOURCES](DATA_SOURCES.md).
+
+## 3. Глаз и камера
+
+Глаз включаю в dated-сцене полем `"eye": {}`; подробный профиль может
+задавать `observer_factor`, `unresolved_background_sp_ratio`, `view`,
+`sampling`, `optics`, `display`, `appearance` и `observer_profile`.
+Исходное `appearance.mode` — `monochrome`; экспериментальное —
+`experimental_stellar_colour`. Экспорт профиля не переносит место/UTC.
+
+Камеру включаю полем `"camera": {}`. Нужны дата и спектральный режим,
+который включается валидатором. Пример переопределений внутри сцены:
+
+```json
+{
+  "camera": {
+    "exposure_s": 30,
+    "profile": {
+      "sensor": {"width_px": 960, "height_px": 640},
+      "optics": {"focal_length_mm": 16, "aperture_diameter_mm": 8}
+    },
+    "view": {"azimuth_deg": 0, "altitude_deg": 85, "rotation_deg": 0}
+  }
+}
+```
+
+Это фрагмент, а не полный вход plan. Физический смысл и остальные поля
+профиля находятся в [MODELS](../MODELS.md); готовый отдельный профиль —
+[camera-profile.json](../artifacts/camera-model-20261112/city-30s/camera-profile.json).
+
+Камера выдаёт `camera.json`, `camera.fits`, `camera-preview.png`,
+`camera-stars.csv`, `camera-profile.json`, `camera-ekos.json`.
+Глаз выдаёт JSON/CSV, PNG,16-bit PNG и линейный NPZ; цветовой CSV
+появляется при соответствующем режиме. Неизвестная область возвращает
+причины/маску, а не правдоподобный выдуманный кадр.
+
+Повтор уже сохранённого сенсорного опыта не требует NASA/DSM/KStars:
+
+```bash
+uv run python scripts/run_camera_case.py --render-saved \
+  --output scratch/camera-replay --workspace scratch/camera-replay-exports
+uv run python scripts/validate_camera.py --output scratch/camera-replay
+```
+
+Это повтор сенсора из замороженного света. Новый город/направление
+требует нового атмосферного расчёта. Полная нативная интеграция и сборка —
+[KSTARS_INTEGRATION](KSTARS_INTEGRATION.md).
+
+## 4. Сравнение и фотометрическая калибровка
+
+```bash
 uv run lightpollution compare \
   --left data/first/result.json --right data/second/result.json
+uv run lightpollution fit-photometry \
+  --dataset artifacts/photometry-spectra-20261111/ground-dataset.json \
+  --output data/shared-calibration.json
 ```
 
-Учебный пример — искусственные источники. Для NASA нужны локальные HDF5
-либо настроенный Earthdata-доступ и явная загрузка
-`uv run lightpollution datasets --download petersburg-2025`.
-Карта источников и QA готовятся автоматически; плохое покрытие отклоняется.
-Прежние команды ниже сохранены для исследований и сцен схемы 1.
+Fit требует готовых результатов, на которые ссылается набор. Калибровка
+проверяет область применимости и не меняет молча полосу/решатель.
+Подготовка независимого набора, QA и разделение ночей — [VALIDATION](VALIDATION.md).
 
-## Численная сцена: общая V-шкала и Луна
+## 5. Архитектура и задания
 
-Дополнение этапов 4–5 — [методика](SEASONAL_CALIBRATION.md).
+`domain/` содержит SceneSpec/SkyField/StarFluxTable/RunResult и ошибки.
+`adapters/` читает файлы/каталоги, `models/` вычисляет по массивам без HTTP.
+`application/Planner` подготавливает источники, масштаб и общую сцену.
+Существующие публичные старые импорты сохранены для повторения опытов.
 
-```bash
-uv run lightpollution atmosphere --output scratch/atmosphere.json
-uv run lightpollution demo --atmosphere-file scratch/atmosphere.json \
-  --aod 0.15 --no-plots --output scratch/atmosphere-demo
-uv run lightpollution observe \
-  --scene artifacts/seasonal-ground-20261110/scene-2017-11.json \
-  --output scratch/seasonal-observation
-```
+Кэш разделён на данные, перенос и сцену. Физические ключи учитывают
+источники, место, атмосферу, настройки/код и библиотеку спектров.
+Результат дополнительно зависит от времени/каталога/профилей.
+Смена AOD пересчитывает лучи, сохраняя одну опору C. Публикация файлов атомарна.
 
-Все восемь полей атмосферного файла можно менять в физических пределах.
-Значения — сценарные; изменение атмосферы требует пересчёта городского поля.
-При межмесячном сравнении `reference_sky_grid` задаёт один V-якорь.
+Один сервер использует одного численного работника и допускает 8 активных/
+ожидающих заданий. Отмена проверяется между вычислительными шагами;
+отдельная NumPy-квадратура не прерывается мгновенно. Новый непокрытый
+ракурс может считаться минуты, даже когда повтор из кэша значительно быстрее.
 
-Сопоставление источников и строгая наземная проверка:
+## 6. Локальный API
 
-```bash
-uv run lightpollution prepare-seasonal \
-  --regions data/seasonal-ground-20261110/madrid-2017-03/source-grid.npz \
-            data/seasonal-ground-20261110/madrid-2017-11/source-grid.npz \
-  --reference 2017-03 --latitude 40.451111 --longitude -3.726111 \
-  --height 650 --output data/seasonal-ground-20261110/repeated-matching
-uv run lightpollution fit-ground \
-  --selection artifacts/seasonal-ground-20261110/astmon-publication-qa.json \
-  --model-grids artifacts/seasonal-ground-20261110/madrid-model-2017-03/sky-grid.npz \
-                artifacts/seasonal-ground-20261110/madrid-model-2017-11/sky-grid.npz \
-  --training-periods 2017-03 --output scratch/ground-check.json
-```
+| Маршрут | Назначение |
+|---|---|
+| GET `/api/catalogue` | Наборы и периоды |
+| POST `/api/jobs` | Создать сцену-задание |
+| GET `/api/jobs/{id}` | Состояние/прогресс |
+| POST `/api/jobs/{id}/cancel` | Отмена |
+| GET `/api/jobs/{id}/result` | Завершённый результат |
+| GET `/api/jobs/{id}/export/{name}` | Разрешённый экспорт, включая ZIP |
+| POST `/api/compare` | Сравнить результаты |
+| GET `/api/spectral-library` | Состав спектральной библиотеки |
+| POST `/api/photometry/fit` | Калибровка по завершённым cases |
+| POST `/api/eye-profile/export`, `/merge`, `/apply` | Переносимый профиль глаза |
+| POST `/api/camera-profile/export`, `/merge`, `/ekos` | Профиль камеры и частичный XML-импорт |
+| GET `/api/kstars/capabilities`, POST `/api/kstars/jobs` | Контракт нативного клиента |
 
-Исходные региональные NPZ в `data/` восстанавливает
-`uv run python scripts/run_seasonal_ground.py` из заранее скачанных HDF5.
-Их точные имена, URL и SHA-256 — в `download-manifest.json` каждого случая
-в [отчёте](../artifacts/seasonal-ground-20261110/README.md).
-`select-ground` создаёт только геометрических кандидатов; отсутствие облачных
-флагов не исправляется отбором тёмных значений. Для непроверенных кандидатов
-`fit-ground` требует явный `--allow-unverified-clouds`, а результат помечается предварительным.
+В последней группе eye/camera окончания перечислены относительно своих
+префиксов. Форматы валидирует [web.py](../src/lightpollution/interfaces/web.py).
+JSON профиля камеры имеет `kind=camera_profile`, `schema_version=1`;
+глаза — `kind=eye_view_profile`, `schema_version=1`.
 
-```bash
-uv run lightpollution observe \
-  --scene artifacts/observation-core-20261110/dated-2025.scene.json \
-  --output scratch/dated-observation
-uv run lightpollution observe \
-  --scene artifacts/observation-core-20261110/undated-phase-60.scene.json \
-  --output scratch/manual-observation
-```
-
-Результаты: `observation.json`, `directions.csv`, `stars.csv`. Городской,
-естественный и лунный фоны разделены и приведены к одной опоре. В условном
-режиме CSV звёзд пуст, кроме заголовка. `null` у лунного/суммарного фона
-означает неподдерживаемое направление, а не отсутствие света.
-Изображения, порог глаза и кадры камеры этой командой не создаются.
-
-JSON допускает только явные режимы `dated/undated`; время с часовым поясом
-обязательно для первого. Пути NPZ считаются относительно JSON. Входные точка
-и атмосфера должны совпадать с сохранённым полем; спектральное приближение
-и происхождение масштаба обязательны. В примерах масштаб **сценарный**.
-Полный контракт, физические формулы и ограничения:
-[OBSERVATION_MODEL.md](OBSERVATION_MODEL.md).
-
-Воспроизвести семь численных случаев и проверку опубликованной таблицы:
+## 7. Проверки и экспорт документации
 
 ```bash
-uv run python scripts/run_observation_cases.py
-```
-
-Сохранённое годовое поле NASA 2025 используется повторно. Выбор даты 2027
-определяет эфемериды, но не заменяет карту освещения прогнозом будущего.
-Рабочая ветка — `main`. Объяснение с основ — [PHYSICS_AND_MATH_GUIDE.md](PHYSICS_AND_MATH_GUIDE.md).
-
-## Технические входы: месяц, измерения и Луна
-
-Для месячного A3 указывается `--month`; без него сохраняется годовой A4.
-Периоды используют разные каталоги и манифесты. Последние две команды ниже
-требуют NASA-доступа и реальных месячных файлов; в текущем этапе проверен
-реальный каталог, а чтение HDF5 — регрессионным тестом.
-
-```bash
-uv run lightpollution catalogue --year 2025 --month 1
-uv run lightpollution download --year 2025 --month 1
-uv run lightpollution audit --year 2025 --month 1 --no-plots
-```
-
-Аудит скачанного численного эталона и отдельная геометрия без рендера:
-
-```bash
-uv run lightpollution audit-ground --kind astmon \
-  --file data/references/AstMon_evol.csv --output artifacts/astmon-audit.json
-uv run lightpollution context --utc 2025-06-21T00:00:00Z \
-  --output artifacts/observation-context.json
-```
-
-`audit-ground` не придумывает маски облаков/Луны. `context` возвращает
-фазу, расстояние, положение и угловое разделение; рассеянный лунный свет
-ещё не вычисляет. Месячная нормировка источников пока не переносит изменение
-общего излучения между месяцами. [Проверенные базы и ограничения](DATA_SOURCES.md).
-
-Отчёт из выбранного документа:
-
-```bash
-uv run python scripts/build_report.py --source docs/PHYSICS_AND_MATH_GUIDE.md \
-  --output artifacts/physics-and-math-guide.pdf --date 2026-11-10
-```
-
-## Окружение и проверки
-
-```bash
-uv sync --locked
 uv run pytest -q -p no:cacheprovider
-uv run python scripts/run_experiments.py
+uv lock --check
+uv run python scripts/check_documentation.py
+uv run python scripts/build_theory_bundle.py --output scratch/documentation-export
 ```
 
-Тесты не обращаются в сеть и не используют рабочий NASA-токен. Тестовые HDF5
-файлы генерируются в каталоге pytest и не являются измерениями NASA.
-
-## Демонстрация без доступа к NASA
-
-```bash
-uv run lightpollution demo --azimuth-step 5 --ray-segments 384 --path-quadrature 24
-```
-
-Результат в `artifacts/synthetic-demo/`: `sky.png`, `sky-grid.npz`, `sky-grid.csv`,
-`summary.json`. Два заданных тестовых города расположены приблизительно в 40 км
-к югу и 25 км к востоку от наблюдателя. Это самостоятельная проверочная задача,
-а не восстановление Петербурга по спутнику. На картинке максимум нормирован
-на 1; в NPZ/CSV хранятся исходные значения. Единицы и все параметры — в JSON.
-Азимут: север 0°, восток 90°, юг 180°. Строки массива — высоты, столбцы — азимуты.
-Сетка примера содержит 936 значений (72 × 13), включая общий для азимутов зенит.
-Она охватывает 1–90°; полоса 0–1° не рассчитана.
-
-Обычные настройки CLI (`96` сегментов, `12` узлов) быстрее; нижние градусы
-следует пересчитывать с меньшим шагом. Численное отличие от более мелкого
-расчёта не является оценкой физической точности. `run_experiments.py` создаёт
-отдельные JSON и график сходимости на десяти контрольных направлениях.
-
-## Реальные Black Marble: сначала доступ и аудит
-
-Открытый каталог доступен без токена:
-
-```bash
-uv run lightpollution catalogue --year 2025
-```
-
-Он фиксирует имена, размеры и URL четырёх тайлов в
-`artifacts/nasa-2025-catalogue.json`. `download_verified: false` означает,
-что файл **не** скачан и его научное содержимое не проверено.
-
-Для загрузки требуется `BLACKMARBLE_TOKEN`. Альтернатива —
-`BLACKMARBLE_TOKEN_FILE`, содержащая путь к локальному файлу с токеном.
-В текущем окружении он хранится отдельно в исключённом из Git каталоге
-`.secrets/`. Сам токен не должен попадать в команды, отчёты или Git.
-
-```bash
-BLACKMARBLE_TOKEN_FILE=.secrets/earthdata-token uv run lightpollution download \
-  --manifest artifacts/nasa-2025-catalogue.json
-uv run lightpollution audit
-uv run lightpollution simulate --azimuth-step 5 --ray-segments 384 --path-quadrature 24
-```
-
-В момент исследования 2026-11-09 LAADS отвечал HTTP 303 на страницу
-`/profiles/licenses/`, затем требовал браузерный вход. В таком состоянии
-загрузчик завершает работу с ошибкой; страницу авторизации он не принимает
-за данные и расчёт на выдуманной карте не продолжает. Необходимо завершить
-вход и предложенные настройки доступа в [LAADS](https://ladsweb.modaps.eosdis.nasa.gov/).
-Один этот ответ сервера не доказывает, что токен недействителен.
-
-Обновление: после настройки профиля LAADS прежний токен успешно загрузил все
-четыре файла. Текущий аудит — [DATA_AUDIT.md](DATA_AUDIT.md). Новые инструкции
-по регистрации для этого аккаунта сейчас не требуются.
-
-Загрузчик сохраняет HDF5 в `data/blackmarble/2025/` (вне Git), проверяет размер,
-сигнатуру и SHA-256. Манифест сохраняется до загрузки и после каждого успешного
-файла: имена выбранной обработки не меняются при возобновлении. SHA-256 —
-локальная проверка воспроизводимости, а не подпись NASA. HTML, обрезанные файлы,
-изменённый кэш и неполный набор тайлов не принимаются.
-
-`audit` проверяет внутренние метаданные продукта, коллекцию, период, границы,
-размеры, порядок координат и атрибуты слоёв. Он извлекает три snow-free
-композита и соответствующие Quality/Num/Std. В `artifacts/petersburg-2025/`
-появляются карта, числовая сетка NPZ и отчёт JSON. Политика принятия:
-`Quality == 0`, `Num > 3`, конечная неотрицательная яркость; исторически
-восстановленные значения исключены. Std анализируется отдельно, без
-интерпретации как ошибки среднего или полной ошибки измерения.
-
-`simulate` нормирует веса по яркости и площади, исключает воду и ближайшие
-3 км, отдельно исключает неизвестные классы поверхности и сохраняет удалённые
-доли веса. Ближняя и внешняя засветка этим не
-оцениваются. Параметры `--block`, `--aod`, `--horizontal-fraction`,
-`--exclude-radius-m`, `--include-water` позволяют сравнивать сценарии.
-Укрупнение источников требует отдельной проверки сходимости на реальной карте.
-
-При отсутствии данных команда `simulate` завершается ошибкой. Для синтетических
-источников всегда используется отдельная команда `demo` и явная маркировка.
-
-## Звёзды и вид неба из точки
-
-Репозиторий содержит реальную региональную карту и готовое рассчитанное небо.
-Для повторного рендера токен NASA не нужен:
-
-```bash
-uv run lightpollution render --utc 2026-11-09T21:00:00Z --artificial-zenith-mag 20.5
-```
-
-Результат: `artifacts/petersburg-2025/observer-view/observer-view.png` и
-`observer-sky.png` (сравнение с естественным фоном), таблица звёзд `stars.csv`
-и `render-summary.json`. `observer-perspective.png` — обычный взгляд на юг
-через перспективную камеру, без выдуманного ландшафта. Направление меняют
-`--look-azimuth`, `--look-altitude`, поле — `--horizontal-fov`.
-Время соответствует 10 ноября 00:00 МСК.
-20,5 — заданная искусственная составляющая яркости зенита, не измерение.
-Модель контраста и астрометрия разобраны в [OBSERVER_VIEW.md](OBSERVER_VIEW.md).
-
-Для нового расчёта с другой точкой:
-
-```bash
-uv run lightpollution simulate --output artifacts/petersburg-2025/observer-sky \
-  --latitude 60.30 --longitude 30.315 --height 20 --azimuth-step 5 \
-  --altitudes 0 0.5 1 2 3 5 7.5 10 15 20 30 45 60 75 90 \
-  --block 8 --ray-segments 192 --path-quadrature 24
-uv run lightpollution render --utc 2026-11-09T21:00:00Z --artificial-zenith-mag 20.5
-```
-
-Низкие лучи до 5° автоматически измельчают близкие к лучу блоки источников:
-крупный блок не должен изображать город точкой непосредственно под лучом.
-`--refine-below-altitude` меняет границу этого режима.
-`scripts/refine_observer_sky.py` повторяет только низкие лучи существующего
-примера в четырёх процессах; высокие значения остаются прежними. Это ускоритель
-обновления исходного расчёта, не отдельная физическая модель.
-`scripts/validate_observer.py` сравнивает квадратуры и укрупнение на восьми
-контрольных направлениях реальной карты. Это не оценка физической точности.
-
-## Дата и фотометрия
-
-Нынешняя модель использует годовой snow-free композит и фиксированный сценарий
-атмосферы. Дата/время задают положение звёзд; годовая карта источников и погода
-от этого не меняются. Естественный фон однородный и задан сценарием. Облака,
-спектры LED, выключение света ночью и лунная засветка не моделируются.
-Рендер отказывается работать при Солнце выше −18° или Луне над горизонтом.
-Физически калиброванные SQM/Bortle/цвет требуют наземных измерений и спектров.
-
-## Запуск KStars и внешний слой
-
-Если KStars установлен:
-
-```bash
-uv run python scripts/export_kstars.py
-uv run lightpollution render --utc 2026-11-09T21:00:00Z --artificial-zenith-mag 20.5 \
-  --kstars-directory artifacts/petersburg-2025/kstars
-```
-
-Проверенный локальный запуск использовал KStars 3.6.2 и отдельно распакованные
-Ubuntu-пакеты: `scripts/export_kstars.py --runtime scratch/kstars-runtime`.
-В runtime входят бинарник, данные, Qt/KDE-библиотеки и плагины. Этот рабочий
-каталог не включён в Git; системные пакеты не устанавливались. Обычный рендер
-не зависит от его наличия. Выход: `kstars-baseline.png`, `kstars-with-skyglow.png`,
-настройки, сценарий и JSON. Для снимков купола совпадают проекция, точка и UTC.
-
-CSV содержит `azimuth_deg,altitude_deg,radiance`; JSON задаёт единицы,
-наблюдателя, атмосферу, нормировку и происхождение. Это простой переносимый
-исследовательский интерфейс. Внешнее совмещение со звёздным растром KStars
-реализовано; встроенный патч C++/Qt, интерактивное обновление и производственный
-формат ещё не реализованы. Глифы KStars не используются для количественного
-прогноза видимости звёзд. Ограничения — в [OBSERVER_VIEW.md](OBSERVER_VIEW.md).
+Последняя команда собирает PDF из канонических документов, не создаёт
+вторую редактируемую версию теории. Даты в техническом журнале служат
+аудиту правок; [HISTORY](../HISTORY.md) организована по этапам.

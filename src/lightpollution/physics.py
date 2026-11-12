@@ -1,4 +1,4 @@
-"""Spherical, scalar single-scattering model. See docs/MODEL.md for its derivation.
+"""Spherical, scalar single-scattering model. See MODELS.md for its derivation.
 
 Distances are metres; scattering/extinction coefficients are m^-1; phase and
 emission functions are sr^-1. Source powers can be physical watts or explicitly

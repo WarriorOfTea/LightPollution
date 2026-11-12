@@ -9,29 +9,13 @@
       "bytes": 415,
       "sha256": "1b5a2d26a37bc75ffaeba023e94e205e74c0cc0fcc2e96f99c969047eaa23abd"
     },
-    "theory-from-zero.pdf": {
-      "bytes": 290212,
-      "sha256": "e13d3c02e227a205fe6bae086133804ac52e0df342c5d2c6b168135b77bebe51"
-    },
-    "theory-source-check.json": {
-      "bytes": 1347,
-      "sha256": "a500a7e694d2c1732d6de170357c3abe2226b7080c00bc538c1afb0a8d6ac0a9"
-    },
-    "theory-from-zero.md": {
-      "bytes": 234919,
-      "sha256": "9d5af30ac7b65b584fd79d3e42716bda9c94f1743c4a8457fa2f90d19dcc2eb4"
-    },
-    "theory-from-zero-first-page.png": {
-      "bytes": 88835,
-      "sha256": "4a157a76c4b6367e24285fb11d380fdf3d60ad76441c854811c11e6b91911119"
-    },
     "verification-summary.json": {
       "bytes": 495,
       "sha256": "194b39987380c7f25a10e9c79a8079396c78f38d8b3977b2a48bbdd427cdb9e7"
     },
     "README.md": {
-      "bytes": 17556,
-      "sha256": "bf83a96fb18c5d34190359c60f9a0e39ba7df9b6c7964dc7b5963dd7c4b3c580"
+      "bytes": 18190,
+      "sha256": "6889302bcdeb6a03ab28c21fb262badc039e2fcd600d9c9106ecf2bfe21c68b8"
     },
     "numerical-validation.json": {
       "bytes": 1475,
@@ -50,8 +34,8 @@
       "sha256": "07037354de804e461e123571fd295b4d80199da14adb315644b3cb07253e0704"
     },
     "eye-model-report.pdf": {
-      "bytes": 241407,
-      "sha256": "282a11eaf924a61424434ba85464edee77cb0b48a9c339fd5c44fbc5829efdf3"
+      "bytes": 242286,
+      "sha256": "87251aa968a3954d703a57460ae7db044bef99b6e86fc39135e92162d5b63b3e"
     },
     "pdf-verification.json": {
       "bytes": 260,
@@ -64,10 +48,6 @@
     "sensitivity.json": {
       "bytes": 1745,
       "sha256": "2ca3650a86b9904a94e6a668bb21642795c4d93d1a597e7e6de264c7289cf4f9"
-    },
-    "eye-model-report-first-page.png": {
-      "bytes": 51917,
-      "sha256": "06b28b5d030543c83b93f5f7cdcb27347bb981fa03fde3232af2ac7f0fade236"
     },
     "city/observation.json": {
       "bytes": 59205,
@@ -197,5 +177,80 @@
       "bytes": 385,
       "sha256": "11e4470b1f65bc3edcdbb7de3947b3712c71fa209c1a3b23565ec8e9ce89dc19"
     }
+  },
+  "documentation_cleanup": {
+    "completed_at": "2026-11-12T16:11:27+01:00",
+    "original_experiment_recomputed": false,
+    "base_commit_before_cleanup": "52a3604b6603be48e07c4bd0d60a9cf32f0b9f38",
+    "navigation_updated": {
+      "README.md": {
+        "record_before_cleanup": {
+          "bytes": 17556,
+          "sha256": "bf83a96fb18c5d34190359c60f9a0e39ba7df9b6c7964dc7b5963dd7c4b3c580"
+        },
+        "sha256_before_cleanup": "bf83a96fb18c5d34190359c60f9a0e39ba7df9b6c7964dc7b5963dd7c4b3c580",
+        "bytes_before_cleanup": 17556,
+        "operation": "navigation and archive status only"
+      },
+      "eye-model-report.pdf": {
+        "record_before_cleanup": {
+          "bytes": 241407,
+          "sha256": "282a11eaf924a61424434ba85464edee77cb0b48a9c339fd5c44fbc5829efdf3"
+        },
+        "sha256_before_cleanup": "282a11eaf924a61424434ba85464edee77cb0b48a9c339fd5c44fbc5829efdf3",
+        "bytes_before_cleanup": 241407,
+        "operation": "PDF URI annotations only; page text and page count unchanged",
+        "PDF_annotations_relinked": 3,
+        "PDF_pages": 7
+      }
+    },
+    "retired_document_copies": [
+      {
+        "path": "theory-from-zero.pdf",
+        "record_before_cleanup": {
+          "bytes": 290212,
+          "sha256": "e13d3c02e227a205fe6bae086133804ac52e0df342c5d2c6b168135b77bebe51"
+        },
+        "file_at_cleanup_sha256": "e13d3c02e227a205fe6bae086133804ac52e0df342c5d2c6b168135b77bebe51",
+        "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/eye-model-20261111/theory-from-zero.pdf"
+      },
+      {
+        "path": "theory-source-check.json",
+        "record_before_cleanup": {
+          "bytes": 1347,
+          "sha256": "a500a7e694d2c1732d6de170357c3abe2226b7080c00bc538c1afb0a8d6ac0a9"
+        },
+        "file_at_cleanup_sha256": "a500a7e694d2c1732d6de170357c3abe2226b7080c00bc538c1afb0a8d6ac0a9",
+        "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/eye-model-20261111/theory-source-check.json"
+      },
+      {
+        "path": "theory-from-zero.md",
+        "record_before_cleanup": {
+          "bytes": 234919,
+          "sha256": "9d5af30ac7b65b584fd79d3e42716bda9c94f1743c4a8457fa2f90d19dcc2eb4"
+        },
+        "file_at_cleanup_sha256": "9d5af30ac7b65b584fd79d3e42716bda9c94f1743c4a8457fa2f90d19dcc2eb4",
+        "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/eye-model-20261111/theory-from-zero.md"
+      },
+      {
+        "path": "theory-from-zero-first-page.png",
+        "record_before_cleanup": {
+          "bytes": 88835,
+          "sha256": "4a157a76c4b6367e24285fb11d380fdf3d60ad76441c854811c11e6b91911119"
+        },
+        "file_at_cleanup_sha256": "4a157a76c4b6367e24285fb11d380fdf3d60ad76441c854811c11e6b91911119",
+        "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/eye-model-20261111/theory-from-zero-first-page.png"
+      },
+      {
+        "path": "eye-model-report-first-page.png",
+        "record_before_cleanup": {
+          "bytes": 51917,
+          "sha256": "06b28b5d030543c83b93f5f7cdcb27347bb981fa03fde3232af2ac7f0fade236"
+        },
+        "file_at_cleanup_sha256": "06b28b5d030543c83b93f5f7cdcb27347bb981fa03fde3232af2ac7f0fade236",
+        "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/eye-model-20261111/eye-model-report-first-page.png"
+      }
+    ],
+    "historical_root_source_records_preserved": false
   }
 }

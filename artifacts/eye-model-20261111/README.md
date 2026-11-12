@@ -1,6 +1,8 @@
 # Первый режим невооружённого глаза, LightPollution 0.6
 > Дата создания: 2026-11-11
 
+> Я сохраняю этот отчёт как архив конкретного опыта. Его статусы относятся к описанной версии; текущее устройство — в [MODELS](../../MODELS.md), ход развития — в [HISTORY](../../HISTORY.md).
+
 ## Результат и смысл опыта
 
 Реализован ограниченный скотопический порог обнаружения точечной звезды
@@ -13,7 +15,7 @@
 определяет субъективную яркость или цвет ярких звёзд. Экранная передача
 явно условна; предсказательная точность на реальных наблюдателях не оценена.
 Формальная теория с определениями, единицами и источниками:
-[docs/EYE_MODEL.md](../../docs/EYE_MODEL.md).
+[docs/EYE_MODEL.md](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/EYE_MODEL.md).
 
 ![Результат сценария с городской засветкой](city/eye-view.png)
 
@@ -188,8 +190,8 @@ uv run python scripts/build_theory_bundle.py --output artifacts/eye-model-202611
 - [Браузер](browser/verification.json), [native KStars](native/native-verification.json),
   [изображение настоящего eye-окна](native/kstars-native-eye-window.png),
   [wheel](wheel-verification.json).
-- [Полная формальная теория с основ, PDF](theory-from-zero.pdf),
-  [проверка сохранения формул](theory-source-check.json).
+- [Полная формальная теория с основ, PDF](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/eye-model-20261111/theory-from-zero.pdf),
+  [проверка сохранения формул](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/eye-model-20261111/theory-source-check.json).
 
 Основной первоисточник: [Crumey 2014](https://arxiv.org/abs/1405.4209),
 [DOI](https://doi.org/10.1093/mnras/stu992). Первичные таблицы CIE и данные

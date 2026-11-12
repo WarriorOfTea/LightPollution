@@ -1,54 +1,55 @@
-"""Assemble current formal theory, preserving code/formula blocks verbatim."""
+"""Export canonical theory/models/limits/visualization as one reading copy."""
 
 import argparse
 from datetime import date
+import os
 from pathlib import Path
 import re
 import subprocess
 import sys
 
-from lightpollution.adapters.storage import file_hash, write_json
+from lightpollution.adapters.storage import file_hash,write_json
 
 ROOT=Path(__file__).resolve().parents[1]
-DOCUMENTS=['PHYSICS_AND_MATH_GUIDE.md','PHOTOMETRY_AND_SPECTRA.md',
-    'OBSERVATION_MODEL.md','NATURAL_TWILIGHT_SNOW.md',
-    'TOPOGRAPHY_AND_NEAR_FIELD.md','KSTARS_INTEGRATION.md','EYE_MODEL.md']
+DOCUMENTS=['THEORY.md','MODELS.md','LIMITS.md','VISUALIZATION.md']
+TOKEN=re.compile(r'(```[^\n]*\n[\s\S]*?\n```|`[^`\n]*`)|(!?\[[^\]\n]*\]\()([^\s)]+)(\))')
 
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--output',type=Path,default=Path('artifacts/kstars-terrain-near-20261111'))
-    args=parser.parse_args()
-    output=args.output.resolve();output.mkdir(parents=True,exist_ok=True)
-    chunks=['# LightPollution 0.6: теория с основ, глаз и интеграция\n> Дата создания: '+date.today().isoformat()+'\n\n'
-        'Основы оптики → геометрия → перенос → фотометрия → фон/снег → рельеф и ближний свет → KStars → порог зрения.\n'
-        'Это объяснение реализованных приближений; формализм не доказывает точность полевого прогноза.\n']
-    records=[];original_blocks=[]
-    token=re.compile(r'(```[^\n]*\n[\s\S]*?\n```|`[^`\n]*`)|(\[[^\]\n]+\]\()([^\s)]+)(\))')
+    parser.add_argument('--output',type=Path,default=ROOT/'scratch/documentation-export')
+    args=parser.parse_args();output=args.output.resolve();output.mkdir(parents=True,exist_ok=True)
+    chunks=['# LightPollution: теория, модели, ограничения и изображения\n'
+        '> Дата создания: '+date.today().isoformat()+'\n\n'
+        'Я экспортирую канонические документы для последовательного чтения. '
+        'Редактируемые оригиналы остаются в корне репозитория.\n']
+    records=[];blocks=[]
     for name in DOCUMENTS:
-        source=ROOT/'docs'/name
-        raw=source.read_text()
+        source=ROOT/name;raw=source.read_text()
         def rewrite(match):
             if match.group(1):return match.group(0)
             target=match.group(3)
             if target.startswith(('https://','http://','#')):return match.group(0)
-            relative,separator,fragment=target.partition('#')
-            resolved=(source.parent/relative).resolve().relative_to(ROOT).as_posix()
-            return match.group(2)+'https://github.com/WarriorOfTea/LightPollution/blob/main/'+resolved+(separator+fragment if separator else '')+match.group(4)
-        changed=token.sub(rewrite,raw)
-        originals=re.findall(r'```[^\n]*\n[\s\S]*?\n```',raw)
-        assert originals==re.findall(r'```[^\n]*\n[\s\S]*?\n```',changed)
-        original_blocks.extend(originals)
-        chunks.append(changed)
-        records.append({'path':str(source.relative_to(ROOT)),'sha256':file_hash(source),'fenced_blocks':len(originals)})
+            path,separator,fragment=target.partition('#');resolved=(source.parent/path).resolve()
+            if match.group(2).startswith('!'):
+                target=os.path.relpath(resolved,output)
+            else:
+                target='https://github.com/WarriorOfTea/LightPollution/blob/main/'+resolved.relative_to(ROOT).as_posix()
+                target+=separator+fragment if separator else ''
+            return match.group(2)+target+match.group(4)
+        changed=TOKEN.sub(rewrite,raw)
+        original=re.findall(r'```[^\n]*\n[\s\S]*?\n```',raw)
+        assert original==re.findall(r'```[^\n]*\n[\s\S]*?\n```',changed)
+        blocks.extend(original);chunks.append(changed)
+        records.append({'path':name,'sha256':file_hash(source),'fenced_blocks':len(original)})
     text='\n\n'.join(chunks)
-    assert original_blocks==re.findall(r'```[^\n]*\n[\s\S]*?\n```',text)
-    source=output/'theory-from-zero.md';source.write_text(text)
-    write_json(output/'theory-source-check.json',{'source_documents':records,
-        'fenced_code_and_formula_blocks':len(original_blocks),'all_blocks_preserved_byte_for_byte':True,
-        'link_rewriting_excludes_fenced_and_inline_code':True})
+    assert blocks==re.findall(r'```[^\n]*\n[\s\S]*?\n```',text)
+    source=output/'documentation.md';source.write_text(text)
+    write_json(output/'source-check.json',{'source_documents':records,
+        'fenced_code_and_formula_blocks':len(blocks),'all_blocks_preserved_byte_for_byte':True,
+        'generated_reading_copy_not_a_second_source_of_truth':True})
     subprocess.run([sys.executable,str(ROOT/'scripts/build_report.py'),'--source',str(source),
-        '--output',str(output/'theory-from-zero.pdf'),'--date',date.today().isoformat()],check=True)
+        '--output',str(output/'documentation.pdf'),'--date',date.today().isoformat()],check=True)
 
 
 if __name__=='__main__':main()

@@ -1,10 +1,12 @@
 # Технический MVP LightPollution 0.2: результат и проверки
 > Дата создания: 2026-11-11
 
+> Я сохраняю этот отчёт как архив конкретного опыта. Его статусы относятся к описанной версии; текущее устройство — в [MODELS](../../MODELS.md), ход развития — в [HISTORY](../../HISTORY.md).
+
 Выполнены все шесть технических поставок согласованного плана. Получен
 локальный численный планировщик с веб-формой и CLI: точка/время, источники,
 атмосфера, раздельные компоненты фона, звёздный каталог, сравнение и экспорт.
-Следующий [план моделей и извлечения данных](../../docs/MODEL_ROADMAP.md)
+Следующий [план моделей и извлечения данных](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/MODEL_ROADMAP.md)
 подготовлен отдельно. Новые модели глаза/сенсора и реалистичный рендер
 этим выпуском не объявляются реализованными.
 
@@ -28,7 +30,7 @@
 ![Реальный интерфейс работающего MVP](mvp-interface.png)
 
 Полное руководство, архитектура, API и семантика высот —
-[MVP.md](../../docs/MVP.md). Это снимок реального браузера с выполненным
+[MVP.md](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/MVP.md). Это снимок реального браузера с выполненным
 расчётом NASA; фотография неба не синтезировалась.
 
 ## 2. Физический смысл результата
@@ -181,11 +183,11 @@ uv run --with playwright python scripts/check_mvp_browser.py \
 
 Следующая работа — общая фотометрия/пространственная проверка и спектральный
 опыт, затем выбранные модели естественного неба/сумерек, снега, ближних
-источников/высот, глаза и камеры. В [плане](../../docs/MODEL_ROADMAP.md)
+источников/высот, глаза и камеры. В [плане](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/MODEL_ROADMAP.md)
 для каждой указаны физическое основание, способы извлечения входов,
 открытые источники, недостающие данные и критерий перехода к реализации.
 
 Источники текущего поля: [NASA Black Marble](https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/VNP46A3),
 [BSC5/HEASARC](https://heasarc.gsfc.nasa.gov/W3Browse/catalog/bsc5p.html),
-первичные физические ссылки в [MODEL.md](../../docs/MODEL.md) и
-[OBSERVATION_MODEL.md](../../docs/OBSERVATION_MODEL.md).
+первичные физические ссылки в [MODEL.md](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/MODEL.md) и
+[OBSERVATION_MODEL.md](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/OBSERVATION_MODEL.md).

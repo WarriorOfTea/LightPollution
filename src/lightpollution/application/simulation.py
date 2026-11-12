@@ -80,7 +80,7 @@ def run_simulation(args) -> dict:
              "azimuth_convention":"North=0, East=90, clockwise", "raw_units":"W/(m2 sr)" if args.command=='demo' else "m^-2 sr^-1 per unit reference assumed source power",
              "absolute_visible_photometry_calibrated":False,
              "maximum":{"azimuth_deg":float(azimuths[location[1]]),"altitude_deg":float(altitudes[location[0]]),"value":float(radiance[location])},
-             "physical_error_bound":None,"model_document":"docs/MODEL.md"}
+             "physical_error_bound":None,"model_document":"MODELS.md"}
     for target in (5,15,45):
         if target in altitudes:
             row=int(np.flatnonzero(altitudes==target)[0])

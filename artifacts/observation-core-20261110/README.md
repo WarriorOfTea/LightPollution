@@ -1,6 +1,8 @@
 # Отчёт: единая сцена, относительная шкала и лунный фон
 > Дата создания: 2026-11-10
 
+> Я сохраняю этот отчёт как архив конкретного опыта. Его статусы относятся к описанной версии; текущее устройство — в [MODELS](../../MODELS.md), ход развития — в [HISTORY](../../HISTORY.md).
+
 Реализованы первые три пункта последнего согласованного плана: единое описание
 наблюдения, общая относительная фотометрия и однополосная лунная засветка.
 Это исследовательское численное ядро; полевая точность пока не установлена.
@@ -27,9 +29,9 @@
 под горизонтом и оппозиционное усиление пока отсутствуют.
 
 Формальные определения, физические законы, вывод формул, единицы, коэффициенты,
-контракт и ограничения — [OBSERVATION_MODEL.md](../../docs/OBSERVATION_MODEL.md).
-Пользовательское пояснение — [путеводитель](../../docs/PHYSICS_AND_MATH_GUIDE.md).
-В этом каталоге также сохранён [PDF формальной модели](observation-model.pdf).
+контракт и ограничения — [OBSERVATION_MODEL.md](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/OBSERVATION_MODEL.md).
+Пользовательское пояснение — [путеводитель](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/PHYSICS_AND_MATH_GUIDE.md).
+В этом каталоге также сохранён [PDF формальной модели](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/observation-core-20261110/observation-model.pdf).
 
 ## 2. Входы и происхождение масштаба
 
@@ -133,4 +135,4 @@ uv lock --check
 - [Оригинал статьи: формулы и таблица 2](https://articles.adsabs.harvard.edu/pdf/1991PASP..103.1033K).
 - [Specsim: независимый опубликованный пример](https://specsim.readthedocs.io/en/stable/_modules/specsim/atmosphere.html).
 - [Astropy: эфемериды](https://docs.astropy.org/en/stable/coordinates/solarsystem.html).
-- [Модель городского переноса и её основания](../../docs/MODEL.md).
+- [Модель городского переноса и её основания](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/MODEL.md).

@@ -108,7 +108,7 @@ def main():
                        'scope':'Current invocation only; interrupted earlier passes are not timed here.'},
              'raw_units':'m^-2 sr^-1 per unit total assumed source power',
              'absolute_visible_photometry_calibrated':False,'physical_error_bound':None,
-             'azimuth_convention':'North=0, East=90, clockwise','model_document':'docs/MODEL.md',
+             'azimuth_convention':'North=0, East=90, clockwise','model_document':'MODELS.md',
              'photo_case':str(args.case)}
     np.savez_compressed(directory/'sky-grid.npz',azimuth_deg=az,altitude_deg=alt,radiance=field,
                         metadata_json=json.dumps(summary,ensure_ascii=False))

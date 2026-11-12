@@ -1,6 +1,8 @@
 # Исследование: глаз, камера и функции KStars
 > Дата создания: 2026-11-10
 
+> Я сохраняю этот отчёт как архив конкретного опыта. Его статусы относятся к описанной версии; текущее устройство — в [MODELS](../../MODELS.md), ход развития — в [HISTORY](../../HISTORY.md).
+
 Документальный этап по поручению пользователя. Принято позиционирование
 LightPollution как дополнения KStars с приближённым видом невооружённым
 глазом и более обоснованным прогнозом съёмки. Обновлены описание, теория,
@@ -8,10 +10,10 @@ LightPollution как дополнения KStars с приближённым в
 
 ## Материалы
 
-- [Полный отчёт в PDF](observation-research-20261110.pdf): постановка,
+- [Полный отчёт в PDF](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/research-20261110/observation-research-20261110.pdf): постановка,
   теория, этапы, аудит существующей камеры и аннотированная литература.
-- [Действующая теория и план](../../docs/OBSERVATION_PLAN.md).
-- [Аудит KStars/INDI](../../docs/KSTARS_CAMERA_AUDIT.md).
+- [Действующая теория и план](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/OBSERVATION_PLAN.md).
+- [Аудит KStars/INDI](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/KSTARS_CAMERA_AUDIT.md).
 - [Литература и пределы применимости](../../docs/LITERATURE.md).
 - [Манифест источников](source-audit.json): закреплённые ревизии, SHA-256
   17 скачанных файлов исходников и семи полученных PDF, области чтения.

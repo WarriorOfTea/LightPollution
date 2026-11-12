@@ -1,6 +1,8 @@
 # Спектральный цвет и подготовка независимой проверки — 0.8
 > Дата создания: 2026-11-11
 
+> Я сохраняю этот отчёт как архив конкретного опыта. Его статусы относятся к описанной версии; текущее устройство — в [MODELS](../../MODELS.md), ход развития — в [HISTORY](../../HISTORY.md).
+
 ## Результат и статус этапов
 
 По поручению «Переходи к следующим этапам» продолжены этапы 4–5
@@ -173,7 +175,7 @@ seen/not_seen и разрезы наблюдателей/ночей. При не
 
 [Пустой шаблон](observation-template.json) и [его реальный статус](observation-status.json):
 0 записей, 0 наблюдателей, 0 ночей; `prepared_not_observed`.
-Полный [протокол](../../docs/EYE_OBSERVATION_PROTOCOL.md) описывает темновую
+Полный [протокол](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/EYE_OBSERVATION_PROTOCOL.md) описывает темновую
 адаптацию, независимость ночей, измерение экрана, категории и знаменатели.
 Человеческие ответы и подтверждённая точность цвета не созданы автоматически.
 
@@ -255,8 +257,8 @@ Qt/Chromium требуют дополнительных системных би�
 
 ## Теория и первоисточники
 
-Полный вывод с единицами: [EYE_MODEL §§14–17](../../docs/EYE_MODEL.md#14-теория-08-спектр-xyz-lms-и-нормировки).
-Пояснение с основ: [главы 30–31](../../docs/PHYSICS_AND_MATH_GUIDE.md).
+Полный вывод с единицами: [EYE_MODEL §§14–17](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/EYE_MODEL.md#14-теория-08-спектр-xyz-lms-и-нормировки).
+Пояснение с основ: [главы 30–31](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/PHYSICS_AND_MATH_GUIDE.md).
 
 - CIE: [XYZ 1931](https://doi.org/10.25039/CIE.DS.xvudnb9b),
   [LMS 2006](https://doi.org/10.25039/CIE.DS.tijidesg),

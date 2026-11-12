@@ -5,17 +5,13 @@
       "bytes": 7284,
       "sha256": "e7d8a4a827aabc002141b141e723cdae98c3398539a766647968fb0e262b6b6c"
     },
-    "report-first-page.png": {
-      "bytes": 103094,
-      "sha256": "7b52de10299c6429f5a42f8017704f49d758c215ccee3d34611829eb9479cf38"
-    },
     "verification-summary.json": {
       "bytes": 680,
       "sha256": "5836182a2fe1bedde5085999b793839feb466fa866ac22fc071a3800af3c4431"
     },
     "README.md": {
-      "bytes": 5666,
-      "sha256": "503802dda35ee10bdc09ab06a833da90e548871e466b89dea8543a81418cb61e"
+      "bytes": 6195,
+      "sha256": "a1ebf3c4fe8701a908121fc4fe82a9645d354c5f7a0bbafaea61f8725e76f990"
     },
     "visualization-diagnostics.png": {
       "bytes": 322030,
@@ -25,13 +21,46 @@
       "bytes": 7125,
       "sha256": "a11088a623b103019af57270ee97b690358d9f058aa41e77f35ebff6065913f3"
     },
-    "visualization-research-plan.pdf": {
-      "bytes": 111405,
-      "sha256": "7642b636ee37db78484045f7901e1e3492e21dcd6fc54ebecf89705af534f74f"
-    },
     "pdf-verification.json": {
       "bytes": 138,
       "sha256": "f5e24582a2d37bbd5121f895bc3c59f9dee365206b1b2044ec53a74534e5b520"
     }
+  },
+  "documentation_cleanup": {
+    "completed_at": "2026-11-12T16:11:27+01:00",
+    "original_experiment_recomputed": false,
+    "base_commit_before_cleanup": "52a3604b6603be48e07c4bd0d60a9cf32f0b9f38",
+    "navigation_updated": {
+      "README.md": {
+        "record_before_cleanup": {
+          "bytes": 5666,
+          "sha256": "503802dda35ee10bdc09ab06a833da90e548871e466b89dea8543a81418cb61e"
+        },
+        "sha256_before_cleanup": "503802dda35ee10bdc09ab06a833da90e548871e466b89dea8543a81418cb61e",
+        "bytes_before_cleanup": 5666,
+        "operation": "navigation and archive status only"
+      }
+    },
+    "retired_document_copies": [
+      {
+        "path": "report-first-page.png",
+        "record_before_cleanup": {
+          "bytes": 103094,
+          "sha256": "7b52de10299c6429f5a42f8017704f49d758c215ccee3d34611829eb9479cf38"
+        },
+        "file_at_cleanup_sha256": "7b52de10299c6429f5a42f8017704f49d758c215ccee3d34611829eb9479cf38",
+        "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/eye-visualization-research-20261111/report-first-page.png"
+      },
+      {
+        "path": "visualization-research-plan.pdf",
+        "record_before_cleanup": {
+          "bytes": 111405,
+          "sha256": "7642b636ee37db78484045f7901e1e3492e21dcd6fc54ebecf89705af534f74f"
+        },
+        "file_at_cleanup_sha256": "7642b636ee37db78484045f7901e1e3492e21dcd6fc54ebecf89705af534f74f",
+        "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/eye-visualization-research-20261111/visualization-research-plan.pdf"
+      }
+    ],
+    "historical_root_source_records_preserved": false
   }
 }

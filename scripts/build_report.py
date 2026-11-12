@@ -1,7 +1,7 @@
 """Create a readable Unicode PDF from the project's research report.
 
 Run: uv run python scripts/build_report.py
-This renderer handles the Markdown subset used by REVIEW_AND_PLAN.md.
+The default source is the canonical THEORY.md; explicit report sources remain supported.
 """
 
 import argparse
@@ -21,8 +21,8 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import Image,LongTable,Paragraph,SimpleDocTemplate,Spacer,TableStyle,XPreformatted
 
 ROOT=Path(__file__).resolve().parents[1]
-SOURCE=ROOT/'docs/REVIEW_AND_PLAN.md'
-OUTPUT=ROOT/'artifacts/review-2026-11-09.pdf'
+SOURCE=ROOT/'THEORY.md'
+OUTPUT=ROOT/'scratch/documentation-export/theory.pdf'
 WIDTH=A4[0]-36*mm
 
 
@@ -46,7 +46,7 @@ def main():
     parser=argparse.ArgumentParser(description='Export a repository Markdown report as a readable Unicode PDF')
     parser.add_argument('--source',type=Path,default=SOURCE)
     parser.add_argument('--output',type=Path,default=OUTPUT)
-    parser.add_argument('--date',type=date.fromisoformat,default=date(2026,11,9))
+    parser.add_argument('--date',type=date.fromisoformat,default=date.today())
     args=parser.parse_args()
     SOURCE,OUTPUT=args.source.resolve(),args.output.resolve()
     report_date=args.date.isoformat()

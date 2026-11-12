@@ -1,0 +1,536 @@
+{
+  "base_commit": "52a3604b6603be48e07c4bd0d60a9cf32f0b9f38",
+  "removed": {
+    "docs/PHOTO_COMPARISON.md": {
+      "sha256": "0f71383c17f811e756f9bbc86209c1be6211c3edec881f7dde37297b568fe617",
+      "bytes": 13803,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/PHOTO_COMPARISON.md"
+    },
+    "docs/MODEL.md": {
+      "sha256": "c1858da68766952be03708d6e29334cb4eef8725fe676931b14a186d9e1418a8",
+      "bytes": 19335,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/MODEL.md"
+    },
+    "docs/EYE_MODEL.md": {
+      "sha256": "d1a1b9687eefa1b13c22fbedc1618af4108da49c40a6636b62d0bd4b3cdbf4e1",
+      "bytes": 62308,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/EYE_MODEL.md"
+    },
+    "docs/DATA_AUDIT.md": {
+      "sha256": "de3b0faeb4d31f5611643bafea836c8aa8f76ac1fd5b06f54b31422795333052",
+      "bytes": 11347,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/DATA_AUDIT.md"
+    },
+    "docs/OBSERVATION_MODEL.md": {
+      "sha256": "8bb9b5760c5e23b0366cae5ab466b53a1db137149ca8d15d27076834e37c696d",
+      "bytes": 22372,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/OBSERVATION_MODEL.md"
+    },
+    "docs/SEASONAL_CALIBRATION.md": {
+      "sha256": "48dae53c2267fabb00fa1557dd54495487fba6648fe3bd2caa946d75a1f589b2",
+      "bytes": 17081,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/SEASONAL_CALIBRATION.md"
+    },
+    "docs/NATURAL_TWILIGHT_SNOW.md": {
+      "sha256": "02079b6ef8de7215127280e88c2a0e6b9c436445e2d9653c4dfdef1c371b1f69",
+      "bytes": 42239,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/NATURAL_TWILIGHT_SNOW.md"
+    },
+    "docs/EYE_OBSERVATION_PROTOCOL.md": {
+      "sha256": "675049c89adfd0954ed3cca8e96a09b77529233bc41d95a8ec672bb9e4cb5419",
+      "bytes": 9075,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/EYE_OBSERVATION_PROTOCOL.md"
+    },
+    "docs/EYE_VISUALIZATION_RESEARCH.md": {
+      "sha256": "12f515263675892989a114f5e1992553419fd735488bcf78442b4726c943ee13",
+      "bytes": 42659,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/EYE_VISUALIZATION_RESEARCH.md"
+    },
+    "docs/REVIEW_AND_PLAN.md": {
+      "sha256": "244c5f74d7a234b76349d4894a224cb541cbad381786faec91a778c9cedbb167",
+      "bytes": 38642,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/REVIEW_AND_PLAN.md"
+    },
+    "docs/MVP.md": {
+      "sha256": "521002af995a17e3932c37462e8ea6c642ce0be902dc37895108402b5e9a396c",
+      "bytes": 22793,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/MVP.md"
+    },
+    "docs/PHYSICS_AND_MATH_GUIDE.md": {
+      "sha256": "cae50992c6a03a9f0d6f71edef3fe3095164f836b895e9cb32e6ca03e05440b0",
+      "bytes": 107582,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/PHYSICS_AND_MATH_GUIDE.md"
+    },
+    "docs/MODEL_ROADMAP.md": {
+      "sha256": "3f5c9769d945f17a4d220c1fbb6c7a303adda68b62a11384d978e5d7fc723dd2",
+      "bytes": 27698,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/MODEL_ROADMAP.md"
+    },
+    "docs/OBSERVATION_PLAN.md": {
+      "sha256": "02a77bf20eb28c320a624feb9e3d0ab9a0e6e07c73693c076a5176bb096bb8ee",
+      "bytes": 80581,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/OBSERVATION_PLAN.md"
+    },
+    "docs/TOPOGRAPHY_AND_NEAR_FIELD.md": {
+      "sha256": "6ecf3fae4c78fd5b0a3a18afba753938fca6e4f09a33cb77e248a45886842595",
+      "bytes": 20366,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/TOPOGRAPHY_AND_NEAR_FIELD.md"
+    },
+    "docs/OBSERVER_VIEW.md": {
+      "sha256": "b325fe0a30588dbec648d323cb941a34a7b5f2b0b268970a1fdbc72bf3c44a40",
+      "bytes": 23731,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/OBSERVER_VIEW.md"
+    },
+    "docs/LIGHT_FACTORS.md": {
+      "sha256": "f6094cec2fc9f70939eafee2f47b4ffbdd1106fdaffe2b28634f8c4fd4d79303",
+      "bytes": 9926,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/LIGHT_FACTORS.md"
+    },
+    "docs/PHOTOMETRY_AND_SPECTRA.md": {
+      "sha256": "164edf2c5f12d708c11d2674c3da47830df9af1bd278d6507b8af4d49cd23c1b",
+      "bytes": 17571,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/PHOTOMETRY_AND_SPECTRA.md"
+    },
+    "docs/CAMERA_MODEL.md": {
+      "sha256": "4a0cc38fd0413ee42dbe95104ff4792ea1501b195662db6f6e451c3552398caf",
+      "bytes": 27883,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/CAMERA_MODEL.md"
+    },
+    "docs/KSTARS_CAMERA_AUDIT.md": {
+      "sha256": "da40c86d460a29d2a49e8a6e1f7187428bb0876ce95398594da5f3ee7b56dac8",
+      "bytes": 15157,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/KSTARS_CAMERA_AUDIT.md"
+    },
+    "artifacts/clear-sky-scope-20261110/physics-and-math-guide.pdf": {
+      "sha256": "5c58e5cdd298ecc031178f6509870825502deedb5098bce103d4cadde60105fc",
+      "bytes": 137487,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/clear-sky-scope-20261110/physics-and-math-guide.pdf"
+    },
+    "artifacts/data-audit-20261110/physics-and-math-guide.pdf": {
+      "sha256": "b5548e79f75cd0c99ab5a14754bed85e4a670f69ecee72be5176f680f011589e",
+      "bytes": 126034,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/data-audit-20261110/physics-and-math-guide.pdf"
+    },
+    "artifacts/eye-model-20261111/theory-from-zero.md": {
+      "sha256": "9d5af30ac7b65b584fd79d3e42716bda9c94f1743c4a8457fa2f90d19dcc2eb4",
+      "bytes": 234919,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/eye-model-20261111/theory-from-zero.md"
+    },
+    "artifacts/eye-model-20261111/theory-from-zero.pdf": {
+      "sha256": "e13d3c02e227a205fe6bae086133804ac52e0df342c5d2c6b168135b77bebe51",
+      "bytes": 290212,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/eye-model-20261111/theory-from-zero.pdf"
+    },
+    "artifacts/eye-model-20261111/theory-from-zero-first-page.png": {
+      "sha256": "4a157a76c4b6367e24285fb11d380fdf3d60ad76441c854811c11e6b91911119",
+      "bytes": 88835,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/eye-model-20261111/theory-from-zero-first-page.png"
+    },
+    "artifacts/eye-model-20261111/theory-source-check.json": {
+      "sha256": "a500a7e694d2c1732d6de170357c3abe2226b7080c00bc538c1afb0a8d6ac0a9",
+      "bytes": 1347,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/eye-model-20261111/theory-source-check.json"
+    },
+    "artifacts/kstars-terrain-near-20261111/theory-from-zero.md": {
+      "sha256": "d92f75ac55abb085ef6877e8f15d89a17630e452442c6b5c6e722ccb2a66da53",
+      "bytes": 211543,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/kstars-terrain-near-20261111/theory-from-zero.md"
+    },
+    "artifacts/kstars-terrain-near-20261111/theory-from-zero.pdf": {
+      "sha256": "e12bcaf0ce8bd6b458eaddee82bc6f6bcb42b5dc03de3b53efc410b1cdb15bc3",
+      "bytes": 269581,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/kstars-terrain-near-20261111/theory-from-zero.pdf"
+    },
+    "artifacts/kstars-terrain-near-20261111/theory-sample.png": {
+      "sha256": "c6ade9c2da2cd2882893bdc1f032e189fa6eb4e580caf71fe9da48df841ae17d",
+      "bytes": 97287,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/kstars-terrain-near-20261111/theory-sample.png"
+    },
+    "artifacts/kstars-terrain-near-20261111/theory-source-check.json": {
+      "sha256": "08aba272397df5e9faa40958a4f64802edbc26e8eb18ecabb4726cb5e0ecca19",
+      "bytes": 1190,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/kstars-terrain-near-20261111/theory-source-check.json"
+    },
+    "artifacts/natural-twilight-snow-20261111/theory-from-zero.md": {
+      "sha256": "95bcfa776690ffdcee688736a440d5e3b4e473e5c4528b62d1045709050f5095",
+      "bytes": 168771,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/natural-twilight-snow-20261111/theory-from-zero.md"
+    },
+    "artifacts/natural-twilight-snow-20261111/theory-from-zero.pdf": {
+      "sha256": "ed35940b8657ec8f90a512086e643ba1a331522c61ce02e18d708243e2f2e160",
+      "bytes": 231859,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/natural-twilight-snow-20261111/theory-from-zero.pdf"
+    },
+    "artifacts/natural-twilight-snow-20261111/theory-source-check.json": {
+      "sha256": "a5a5349d5742ed94367639fe3c057b24ee2b25c6a253586509af036ca19a2a61",
+      "bytes": 383,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/natural-twilight-snow-20261111/theory-source-check.json"
+    },
+    "artifacts/observation-core-20261110/observation-model.pdf": {
+      "sha256": "ba72fe821dbda147dafb13ca0504083ccf1b511c293507a251e7f7b29b87f7eb",
+      "bytes": 92752,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/observation-core-20261110/observation-model.pdf"
+    },
+    "artifacts/photometry-spectra-20261111/photometry-spectra-theory.pdf": {
+      "sha256": "e70d46508e6da5b84b09d9316b7174d88138c65dd6ef70413b5f874c5423730a",
+      "bytes": 88601,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/photometry-spectra-20261111/photometry-spectra-theory.pdf"
+    },
+    "artifacts/eye-model-20261111/eye-model-report-first-page.png": {
+      "sha256": "06b28b5d030543c83b93f5f7cdcb27347bb981fa03fde3232af2ac7f0fade236",
+      "bytes": 51917,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/eye-model-20261111/eye-model-report-first-page.png"
+    },
+    "artifacts/kstars-terrain-near-20261111/report-sample.png": {
+      "sha256": "1785a0728708cb7c023feb29caf26336e74d256cb632a3bc51393fc83fded0e1",
+      "bytes": 98417,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/kstars-terrain-near-20261111/report-sample.png"
+    },
+    "artifacts/eye-visualization-research-20261111/report-first-page.png": {
+      "sha256": "7b52de10299c6429f5a42f8017704f49d758c215ccee3d34611829eb9479cf38",
+      "bytes": 103094,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/eye-visualization-research-20261111/report-first-page.png"
+    },
+    "artifacts/eye-visualization-research-20261111/visualization-research-plan.pdf": {
+      "sha256": "7642b636ee37db78484045f7901e1e3492e21dcd6fc54ebecf89705af534f74f",
+      "bytes": 111405,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/eye-visualization-research-20261111/visualization-research-plan.pdf"
+    },
+    "artifacts/factors-shortlist-20261110/light-factors-shortlist.pdf": {
+      "sha256": "67668d2600ed6e0a5e63e55c475c0a69e69a9bf8e277e6f2b07721807fd46817",
+      "bytes": 60196,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/factors-shortlist-20261110/light-factors-shortlist.pdf"
+    },
+    "artifacts/model-research-20261111/model-roadmap.pdf": {
+      "sha256": "f22736eb355d4075a83274aeecf5c295915176ccbc718008352b57065ad57073",
+      "bytes": 89330,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/model-research-20261111/model-roadmap.pdf"
+    },
+    "artifacts/mvp-plan-20261110/mvp-plan.pdf": {
+      "sha256": "139680d4004ee664eb781c8acaa82508e0994be5c6d84161a8d1ed73b03dfca1",
+      "bytes": 92122,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/mvp-plan-20261110/mvp-plan.pdf"
+    },
+    "artifacts/review-2026-11-09.pdf": {
+      "sha256": "779303165ac6e1a4638cb384369da36800dcd2f9cccf8c449d8ce89dacb7e206",
+      "bytes": 493409,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/review-2026-11-09.pdf"
+    },
+    "artifacts/seasonal-ground-20261110/light-factors.pdf": {
+      "sha256": "da9be4a8cac7cf5c805d60e0d348e57ea0d9baa57b8f696a03420af0895a6b69",
+      "bytes": 104857,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/seasonal-ground-20261110/light-factors.pdf"
+    },
+    "artifacts/research-20261110/observation-research-20261110.pdf": {
+      "sha256": "89326831c98f424b1d875c3154832d2b880e75d7966743df5a072116b42a6ebd",
+      "bytes": 132996,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/research-20261110/observation-research-20261110.pdf"
+    },
+    "docs/LIGHT_FACTORS.csv": {
+      "sha256": "3771278b084ee6f4dd40f43f4ff93b5bce3521720954e4d7645385443a741af3",
+      "bytes": 9727,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/LIGHT_FACTORS.csv"
+    },
+    "artifacts/clear-sky-scope-20261110/README.md": {
+      "sha256": "c8a49006ca5324aae79a009ffc88af238ffd174c8474e6c835d7cf836ac3ec13",
+      "bytes": 2823,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/clear-sky-scope-20261110/README.md"
+    },
+    "artifacts/clear-sky-scope-20261110/verification.json": {
+      "sha256": "52657b954c6e185ba027c68936e9547dba82f94b7c02b6c1776a8cb9d9fbdaf6",
+      "bytes": 1327,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/clear-sky-scope-20261110/verification.json"
+    },
+    "artifacts/factors-shortlist-20261110/verification.json": {
+      "sha256": "cbf3971ca9223d4718a6489f68712dee625ec4c198bca9e8a77d7adfc15cb865",
+      "bytes": 803,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/factors-shortlist-20261110/verification.json"
+    },
+    "artifacts/mvp-plan-20261110/README.md": {
+      "sha256": "f4630da1051f13fa9d6cdec4b5455523b28cb3c0094eb2c8bac1cc95663170a4",
+      "bytes": 26267,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/mvp-plan-20261110/README.md"
+    },
+    "artifacts/mvp-plan-20261110/verification.json": {
+      "sha256": "2a286813a37554d5550346536f50c3d0435a4bc7cc718045359c2c14d1707be7",
+      "bytes": 1568,
+      "archive_url": "https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/mvp-plan-20261110/verification.json"
+    }
+  },
+  "changed_archive_navigation": {
+    "artifacts/camera-model-20261112/README.md": {
+      "sha256_before_cleanup": "39a73c413423296a4a267f50da115246b90b4fd34fd328d6a01eb4e3c0a29b82",
+      "bytes_before_cleanup": 19891,
+      "operation": "navigation and archive status only"
+    },
+    "artifacts/data-audit-20261110/README.md": {
+      "sha256_before_cleanup": "a6d04ea2ad64f30d714675df9c6fffb387d3e1219fa4852839963daf251a3ec4",
+      "bytes_before_cleanup": 3952,
+      "operation": "navigation and archive status only"
+    },
+    "artifacts/eye-colour-20261111/README.md": {
+      "sha256_before_cleanup": "e0618ffd5263e2815a909cd916ff29ae8cdf2dfb3f1c74de18090439a8dcb0a3",
+      "bytes_before_cleanup": 22824,
+      "operation": "navigation and archive status only"
+    },
+    "artifacts/eye-model-20261111/README.md": {
+      "sha256_before_cleanup": "bf83a96fb18c5d34190359c60f9a0e39ba7df9b6c7964dc7b5963dd7c4b3c580",
+      "bytes_before_cleanup": 17556,
+      "operation": "navigation and archive status only"
+    },
+    "artifacts/eye-rendering-20261111/README.md": {
+      "sha256_before_cleanup": "c8aa65d9df9ef019aad57fe3bca5868e40fe17089262e77ce8c8dd2e05e815b7",
+      "bytes_before_cleanup": 21528,
+      "operation": "navigation and archive status only"
+    },
+    "artifacts/eye-visualization-research-20261111/README.md": {
+      "sha256_before_cleanup": "503802dda35ee10bdc09ab06a833da90e548871e466b89dea8543a81418cb61e",
+      "bytes_before_cleanup": 5666,
+      "operation": "navigation and archive status only"
+    },
+    "artifacts/kstars-terrain-near-20261111/README.md": {
+      "sha256_before_cleanup": "d298f11dc16ad3bd99b0dd9db034bd77926984c98c7b740f07742561bd111373",
+      "bytes_before_cleanup": 17278,
+      "operation": "navigation and archive status only"
+    },
+    "artifacts/mvp-release-20261111/README.md": {
+      "sha256_before_cleanup": "8666782b71f261ef883597e688b89fc7167be803abe520f7b36ef304209b8e73",
+      "bytes_before_cleanup": 15415,
+      "operation": "navigation and archive status only"
+    },
+    "artifacts/natural-twilight-snow-20261111/README.md": {
+      "sha256_before_cleanup": "8dc89f8eff1bf3fa17a284c0e16ace97ee0ae8e99b96ea7c110c3512bc3b280f",
+      "bytes_before_cleanup": 15051,
+      "operation": "navigation and archive status only"
+    },
+    "artifacts/observation-core-20261110/README.md": {
+      "sha256_before_cleanup": "0b72813fe38c8aecc02ce07ca247050b29d11068035cb2b6947b9f8fcb018bb2",
+      "bytes_before_cleanup": 11312,
+      "operation": "navigation and archive status only"
+    },
+    "artifacts/photometry-spectra-20261111/README.md": {
+      "sha256_before_cleanup": "85f82fdae4ce0de0dbfc80742576148c2aa47c379b8f5e6775e9c24ac4d185e5",
+      "bytes_before_cleanup": 19290,
+      "operation": "navigation and archive status only"
+    },
+    "artifacts/research-20261110/README.md": {
+      "sha256_before_cleanup": "26403492ee62fdb9628a767214b84eedad9f2fd3a43553d4ce56adf75f7f8120",
+      "bytes_before_cleanup": 3413,
+      "operation": "navigation and archive status only"
+    },
+    "artifacts/seasonal-ground-20261110/README.md": {
+      "sha256_before_cleanup": "87fc6b5584d90279c7742ce7f948233b125d7d0ae5c10e847eb7bf40a33b1006",
+      "bytes_before_cleanup": 25337,
+      "operation": "navigation and archive status only"
+    },
+    "artifacts/visual-reference-search-20261110/README.md": {
+      "sha256_before_cleanup": "0e1aff37bc1dc076ef8cd43afc31dc73fddae224ef4f9ee310daf9a2d8d54589",
+      "bytes_before_cleanup": 8978,
+      "operation": "navigation and archive status only"
+    },
+    "artifacts/camera-model-20261112/report.pdf": {
+      "sha256_before_cleanup": "7f88d6456502e1b8809d7867ab3fd7c932e96d8bee8779c0a5279b6d9c5e87ca",
+      "bytes_before_cleanup": 1436932,
+      "operation": "PDF URI annotations only; page text and page count unchanged",
+      "PDF_annotations_relinked": 2,
+      "PDF_pages": 7
+    },
+    "artifacts/eye-colour-20261111/report.pdf": {
+      "sha256_before_cleanup": "7117cf7b68413d10ce423d1fb73a72eea5400c03b1fcd704f22927e359cd5264",
+      "bytes_before_cleanup": 427078,
+      "operation": "PDF URI annotations only; page text and page count unchanged",
+      "PDF_annotations_relinked": 3,
+      "PDF_pages": 6
+    },
+    "artifacts/eye-model-20261111/eye-model-report.pdf": {
+      "sha256_before_cleanup": "282a11eaf924a61424434ba85464edee77cb0b48a9c339fd5c44fbc5829efdf3",
+      "bytes_before_cleanup": 241407,
+      "operation": "PDF URI annotations only; page text and page count unchanged",
+      "PDF_annotations_relinked": 3,
+      "PDF_pages": 7
+    },
+    "artifacts/eye-rendering-20261111/report.pdf": {
+      "sha256_before_cleanup": "ffed604df86070632a9a47e712e9ef5f944a206ff838e3911dddbb46a744fd74",
+      "bytes_before_cleanup": 784216,
+      "operation": "PDF URI annotations only; page text and page count unchanged",
+      "PDF_annotations_relinked": 1,
+      "PDF_pages": 8
+    },
+    "artifacts/kstars-terrain-near-20261111/implementation-report.pdf": {
+      "sha256_before_cleanup": "79926d087fae66fb20b84998522683e5fd13121d04c752658e3e12beaa5f7c71",
+      "bytes_before_cleanup": 551059,
+      "operation": "PDF URI annotations only; page text and page count unchanged",
+      "PDF_annotations_relinked": 4,
+      "PDF_pages": 5
+    },
+    "artifacts/mvp-release-20261111/mvp-report.pdf": {
+      "sha256_before_cleanup": "7f9e5df4f2df5d8a2a38f4602a6f59e45f45e44f8eb3a071ffaf7d87de684f85",
+      "bytes_before_cleanup": 283866,
+      "operation": "PDF URI annotations only; page text and page count unchanged",
+      "PDF_annotations_relinked": 6,
+      "PDF_pages": 5
+    },
+    "artifacts/natural-twilight-snow-20261111/implementation-report.pdf": {
+      "sha256_before_cleanup": "b6a37f6c179723470d24979c2620c3f63730b05145df30caacb7f6c61db49dc9",
+      "bytes_before_cleanup": 286445,
+      "operation": "PDF URI annotations only; page text and page count unchanged",
+      "PDF_annotations_relinked": 6,
+      "PDF_pages": 4
+    },
+    "artifacts/observation-core-20261110/implementation-report.pdf": {
+      "sha256_before_cleanup": "9473ceccd136fe3a845f0b8e54f979c9f2685d38628d34718d196dd838066677",
+      "bytes_before_cleanup": 83917,
+      "operation": "PDF URI annotations only; page text and page count unchanged",
+      "PDF_annotations_relinked": 4,
+      "PDF_pages": 3
+    },
+    "artifacts/photometry-spectra-20261111/implementation-report.pdf": {
+      "sha256_before_cleanup": "150ece958bae0f3e0f714c10eda49c387d7ec9ba6408a2d62be2932581f50436",
+      "bytes_before_cleanup": 499007,
+      "operation": "PDF URI annotations only; page text and page count unchanged",
+      "PDF_annotations_relinked": 2,
+      "PDF_pages": 6
+    },
+    "artifacts/seasonal-ground-20261110/implementation-report.pdf": {
+      "sha256_before_cleanup": "a8b9ebc14e5178af4f4ffc0f3712573e1223d38983c2912e95800a36cf0cf3da",
+      "bytes_before_cleanup": 102710,
+      "operation": "PDF URI annotations only; page text and page count unchanged",
+      "PDF_annotations_relinked": 7,
+      "PDF_pages": 6
+    }
+  },
+  "removed_directories": [
+    "artifacts/clear-sky-scope-20261110",
+    "artifacts/factors-shortlist-20261110",
+    "artifacts/mvp-plan-20261110"
+  ],
+  "navigation_completed_at": "2026-11-12T16:11:27+01:00",
+  "adjusted_artifact_manifests": [
+    "artifacts/camera-model-20261112/manifest.json",
+    "artifacts/eye-colour-20261111/manifest.json",
+    "artifacts/eye-model-20261111/file-manifest.json",
+    "artifacts/eye-rendering-20261111/artifact-manifest.json",
+    "artifacts/eye-visualization-research-20261111/file-manifest.json",
+    "artifacts/kstars-terrain-near-20261111/file-manifest.json",
+    "artifacts/natural-twilight-snow-20261111/file-manifest.json"
+  ],
+  "scientific_AST_equivalence_after_documentation_path_substitution": {
+    "files_checked": [
+      "src/lightpollution/application/simulation.py",
+      "src/lightpollution/models/background.py",
+      "src/lightpollution/models/observation.py",
+      "src/lightpollution/models/surface.py",
+      "src/lightpollution/physics.py",
+      "src/lightpollution/skyview.py",
+      "scripts/run_photo_case.py",
+      "scripts/export_kstars.py"
+    ],
+    "passed": true
+  },
+  "scientific_and_image_assets_unchanged": {
+    "files_checked": 192,
+    "images_checked": 78,
+    "comparison_revision": "52a3604b6603be48e07c4bd0d60a9cf32f0b9f38",
+    "all_byte_identical": true
+  },
+  "artifact_manifest_entries_rechecked": 269,
+  "removed_files_Git_objects_and_SHA256_checked": 51,
+  "all_removed_copies_recoverable_from_base_commit": true,
+  "verified_at": "2026-11-12T16:19:30+01:00",
+  "schema_version": 1,
+  "scope": "Documentation cleanup and navigation only; physical model unchanged",
+  "full_pytest": {
+    "passed": 292,
+    "failed": 0,
+    "elapsed_seconds": 96.37,
+    "command": "uv run pytest -q -p no:cacheprovider"
+  },
+  "lock_check_passed": true,
+  "PDF_export_check": {
+    "checked_at": "2026-11-12T16:24:11+01:00",
+    "pages": 31,
+    "replacement_characters": 0,
+    "spans_outside_page": [],
+    "PDF_bytes": 6215920,
+    "reviewed_pages": [
+      1,
+      16,
+      31
+    ]
+  },
+  "generated_PDF_and_ZIP_committed": false,
+  "generated_exports_directory": "scratch/documentation-export",
+  "formula_and_code_blocks_preserved_in_export": {
+    "source_documents": [
+      {
+        "path": "THEORY.md",
+        "sha256": "850868c1714fc79fb04205b395796bf175bf6e0c596ab6722ce83ddc9c839547",
+        "fenced_blocks": 24
+      },
+      {
+        "path": "MODELS.md",
+        "sha256": "9f69997f99392c0feb857469674860028f6c9b4c85db8151b6a5cb1fe7704a6f",
+        "fenced_blocks": 23
+      },
+      {
+        "path": "LIMITS.md",
+        "sha256": "225c240a7ba396ce6508079cd48d952e4a6d0129dc72f99dd15bf5f17333fbc3",
+        "fenced_blocks": 0
+      },
+      {
+        "path": "VISUALIZATION.md",
+        "sha256": "e9ae7fb1860aa71ce9387bcae93e52435e8ed243ae9213a28d271e8fe1ce172c",
+        "fenced_blocks": 0
+      }
+    ],
+    "fenced_code_and_formula_blocks": 47,
+    "all_blocks_preserved_byte_for_byte": true,
+    "generated_reading_copy_not_a_second_source_of_truth": true
+  },
+  "current_documents_and_tools_sha256": {
+    "README.md": "7d90141155a6c549201e1ed69dffc5bedc7bd67e06c40939de2b0f581832092a",
+    "HISTORY.md": "6042b6c6138eacbe1056701b061a581fff001bfeb124584a6984c3d83922e1d6",
+    "THEORY.md": "850868c1714fc79fb04205b395796bf175bf6e0c596ab6722ce83ddc9c839547",
+    "MODELS.md": "9f69997f99392c0feb857469674860028f6c9b4c85db8151b6a5cb1fe7704a6f",
+    "LIMITS.md": "225c240a7ba396ce6508079cd48d952e4a6d0129dc72f99dd15bf5f17333fbc3",
+    "VISUALIZATION.md": "e9ae7fb1860aa71ce9387bcae93e52435e8ed243ae9213a28d271e8fe1ce172c",
+    "AGENTS.md": "5e2104604486ed3962bbdabb90fa89fdc6d5abe9232ac176e66f7a9d373c0fea",
+    "docs/QUICKSTART.md": "78500dcd1ce6f6cb130e9bfb18d4ef35c27a6448ff9fb930739a73a57d7f8dcc",
+    "docs/DATA_SOURCES.md": "96fc2ffba62a19dac0a7549bdf9f385bc27cba56c9c4162bf4ea7c50c575f261",
+    "docs/LITERATURE.md": "8eb5ca1e8ea209abf81c83fd519c9ed3b59091748fbfd27f97d2e9747f9a0995",
+    "docs/KSTARS_INTEGRATION.md": "d7affdb574c488392e81fdbab4be597dc7579c3bbfeb63e49e30c6a8e2df2c31",
+    "docs/VALIDATION.md": "9a7b58197ca244a6190c338bc1934966e5b50e2358e004b2a8a727dee48c58fd",
+    "docs/CODE_CHANGELOG.md": "1675e8abfc70988d693c164299430868768d8dcebd524fdd158f524eb45a7621",
+    "integrations/kstars/README.md": "6f75fe066b8f7da3aecde2a617792bd204da6a80c27007377a14291e1a50ee1a",
+    "artifacts/README.md": "636e55edabb4defbf7f60c0060a92489117fc004798ff3c7402bdc0f42a80367",
+    "scripts/check_documentation.py": "8278866a498277a208ab0da27a58b533a7ee2a35d69717078587bba69863fe75",
+    "scripts/build_theory_bundle.py": "aef1368994b3735d57e10d0b03e7bad791da922d4e61efe9b768261abe815797",
+    "scripts/build_report.py": "915ae66eb6b5b516346bf497f26e1c1b68e776f674da5af79cbafeea0d2c6dd4"
+  },
+  "documentation_links": {
+    "checked_at": "2026-11-12T16:24:43+01:00",
+    "canonical_documents": [
+      "README.md",
+      "HISTORY.md",
+      "THEORY.md",
+      "MODELS.md",
+      "LIMITS.md",
+      "VISUALIZATION.md"
+    ],
+    "markdown_files_checked": 32,
+    "local_links_checked": 331,
+    "local_image_links_checked": 43,
+    "pinned_archive_Git_objects_checked": 28,
+    "HISTORY_calendar_dates_in_narrative": false,
+    "errors": [],
+    "external_websites_rechecked": false,
+    "physical_simulations_run": false
+  },
+  "completed_at": "2026-11-12T16:24:44+01:00",
+  "reading_ZIP": {
+    "files": 36,
+    "bytes": 8042384,
+    "sha256": "0aeff27abc4b323fd718b2bded9134277f5e0d57bef34e94d90757ecb50096f4",
+    "derived_copy_only_links_outside_package_made_absolute": true
+  }
+}

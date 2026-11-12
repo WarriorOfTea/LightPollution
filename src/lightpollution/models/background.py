@@ -2,7 +2,7 @@
 
 Thin-shell airglow follows van Rhijn geometry and direct Beer transmission.
 Twilight reproduces Patat et al. (2006), Table 1, within its measured domain.
-See docs/NATURAL_TWILIGHT_SNOW.md for the derivation and the explicit gaps.
+See MODELS.md for the derivation and the explicit gaps.
 """
 
 from dataclasses import dataclass
@@ -135,4 +135,4 @@ class BackgroundModel:
                 'scatter_is_global_accuracy_bound': False, 'local_field_validation_nights': 0,
                 'night_solar_cutoff_deg': -18., 'deep_transition_15_to_18_deg_supported': False,
                 'atmosphere_or_snow_adjusts_empirical_twilight': False},
-            'physical_error_bound': None, 'document': 'docs/NATURAL_TWILIGHT_SNOW.md'}
+            'physical_error_bound': None, 'document': 'MODELS.md'}

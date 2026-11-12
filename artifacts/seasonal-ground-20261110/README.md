@@ -1,6 +1,8 @@
 # Атмосфера, месячные источники и наземный контроль: отчёт этапов 4–6
 > Дата создания: 2026-11-10
 
+> Я сохраняю этот отчёт как архив конкретного опыта. Его статусы относятся к описанной версии; текущее устройство — в [MODELS](../../MODELS.md), ход развития — в [HISTORY](../../HISTORY.md).
+
 Выполнены ручные параметры атмосферы, сезонное сопоставление источников
 на общей области и первый ограниченный наземный контроль. Подготовлен
 каталог 65 факторов для выбора дальнейших приоритетов. Новые изображения
@@ -99,9 +101,9 @@ a = Σtrain[xn (bn−bN)] / Σtrain[xn²]
 коэффициенту `a`. Контрольные ночи не используются при его подборе.
 Сотни коррелированных измерений не объявляются сотнями независимых ночей.
 Формальный вывод, физические границы и ссылки:
-[SEASONAL_CALIBRATION.md](../../docs/SEASONAL_CALIBRATION.md),
-[основной перенос](../../docs/MODEL.md),
-[модель наблюдения и Луны](../../docs/OBSERVATION_MODEL.md).
+[SEASONAL_CALIBRATION.md](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/SEASONAL_CALIBRATION.md),
+[основной перенос](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/MODEL.md),
+[модель наблюдения и Луны](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/OBSERVATION_MODEL.md).
 
 ## 3. Реально полученные спутниковые данные
 
@@ -220,8 +222,8 @@ NearNadir: в январе прошло **423/345 600** ячеек, в июле 
 
 ## 5. Факторы и дальнейшие работы: этап 6
 
-[LIGHT_FACTORS.md](../../docs/LIGHT_FACTORS.md) и
-[редактируемый CSV](../../docs/LIGHT_FACTORS.csv) содержат **65 факторов**:
+[LIGHT_FACTORS.md](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/LIGHT_FACTORS.md) и
+[редактируемый CSV](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/LIGHT_FACTORS.csv) содержат **65 факторов**:
 влияние, условную силу, опубликованную модель/доступность кода, нужные данные,
 сложность интеграции и текущую реализацию. ID F01–F65 устойчивы;
 колонка `приоритет_пользователя` намеренно пустая.
@@ -291,7 +293,7 @@ uv run lightpollution observe \
 получить отдельно. Небольшие выходные NPZ/CSV, параметры, отчёты и provenance
 отслеживаются Git; большие карты не являются приложением к отчёту.
 См. также [команды](../../docs/QUICKSTART.md),
-[PDF отчёта](implementation-report.pdf), [PDF факторов](light-factors.pdf).
+[PDF отчёта](implementation-report.pdf), [PDF факторов](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/seasonal-ground-20261110/light-factors.pdf).
 
 ## Источники и права
 

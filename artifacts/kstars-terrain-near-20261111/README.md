@@ -1,6 +1,8 @@
 # KStars, рельеф и ближнее освещение: отчёт 0.5
 > Дата создания: 2026-11-11
 
+> Я сохраняю этот отчёт как архив конкретного опыта. Его статусы относятся к описанной версии; текущее устройство — в [MODELS](../../MODELS.md), ход развития — в [HISTORY](../../HISTORY.md).
+
 ## Выполненные изменения
 
 Интеграция и модели разрабатываются совместно. Добавлена нативная
@@ -28,14 +30,14 @@ KStars над морем — отдельная справочная велич�
 
 ## Формальные модели и документация
 
-- [Рельеф и ближний свет](../../docs/TOPOGRAPHY_AND_NEAR_FIELD.md): определения,
+- [Рельеф и ближний свет](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/TOPOGRAPHY_AND_NEAR_FIELD.md): определения,
   геометрия сферической Земли, датум EGM2008, закон обратных квадратов,
   сохранение мощности, интеграл по площади источника, Бера, Рэлея/
   Хеньи–Гринстейна, двухпутевая видимость и численные ограничения.
 - [Интеграция KStars](../../docs/KSTARS_INTEGRATION.md): аудит исходников,
   что переиспользуется, snapshot/JSON/D-Bus, фоновые задачи, сборка.
-- [Объяснение с основ](../../docs/PHYSICS_AND_MATH_GUIDE.md): главы 27–28.
-- [Единый сборник PDF](theory-from-zero.pdf) и [его исходный текст](theory-from-zero.md).
+- [Объяснение с основ](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/PHYSICS_AND_MATH_GUIDE.md): главы 27–28.
+- [Единый сборник PDF](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/kstars-terrain-near-20261111/theory-from-zero.pdf) и [его исходный текст](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/kstars-terrain-near-20261111/theory-from-zero.md).
   Копии формул/кода проверяются побайтно, ссылки внутри формул не переписываются.
 
 ## Реальные данные

@@ -329,7 +329,7 @@ def calculate_scene(config: dict, resources: ObservationResources, *,
             'model':{'moonlight':'Krisciunas-Schaefer 1991 eqs 1,3,8,9,15,21; rho>=10 deg',
                      'distance_correction_reference_km':REFERENCE_DISTANCE_KM,
                      'lunar_opposition_surge':False, 'lunar_eclipse_model':False,
-                     'physical_error_bound':None, 'document':'docs/OBSERVATION_MODEL.md'}}
+                     'physical_error_bound':None, 'document':'MODELS.md'}}
     if sample_directions is not None:
         samples=np.asarray([_direction(v) for v in sample_directions])
         output['sampled_directions']=fields(samples[:,0],samples[:,1])

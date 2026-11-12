@@ -303,7 +303,7 @@ def render_observer(sky_path: Path, output: Path, timestamp: str, scenario: Disp
                 "visibility_rule":"m_catalogue+extinction <= m_dark-1.25*log10(B_total/B_natural)",
                 "tone_mapping":"Fixed monochrome exposure 0.002 per natural background unit; exponential compression then sRGB",
                 "projection":"azimuthal equidistant, zenith centre, north top, east left",
-                "transfer_summary":transfer,"documentation":"docs/OBSERVER_VIEW.md"}
+                "transfer_summary":transfer,"documentation":"VISUALIZATION.md"}
     (output/"render-summary.json").write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+"\n")
     return metadata
 

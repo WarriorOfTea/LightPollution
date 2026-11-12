@@ -54,4 +54,4 @@ def surface_metadata(config):
         'atmosphere_ground_repeated_bounces': False, 'moon_sun_ground_feedback': False,
         'snow_forecast': False, 'snow_observations_loaded': False,
         'clear_sky_field_validation_nights': 0, 'physical_error_bound': None,
-        'document': 'docs/NATURAL_TWILIGHT_SNOW.md'}
+        'document': 'MODELS.md'}

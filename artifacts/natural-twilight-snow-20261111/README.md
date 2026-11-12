@@ -1,16 +1,18 @@
 # Этапы 3–4: естественный фон, сумерки и снег, версия 0.4
 > Дата создания: 2026-11-11
 
+> Я сохраняю этот отчёт как архив конкретного опыта. Его статусы относятся к описанной версии; текущее устройство — в [MODELS](../../MODELS.md), ход развития — в [HISTORY](../../HISTORY.md).
+
 Реализованы первые ограниченные физические/эмпирические модели этапов 3–4
-[согласованного плана](../../docs/MODEL_ROADMAP.md). Входы, формулы,
+[согласованного плана](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/MODEL_ROADMAP.md). Входы, формулы,
 предположения, размерности и выводы с нуля —
-[NATURAL_TWILIGHT_SNOW.md](../../docs/NATURAL_TWILIGHT_SNOW.md).
+[NATURAL_TWILIGHT_SNOW.md](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/NATURAL_TWILIGHT_SNOW.md).
 Учебные основы всей системы —
-[PHYSICS_AND_MATH_GUIDE.md](../../docs/PHYSICS_AND_MATH_GUIDE.md).
+[PHYSICS_AND_MATH_GUIDE.md](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/docs/PHYSICS_AND_MATH_GUIDE.md).
 Это численный результат; фотографии/видимость глазом не синтезировались.
 
-Для чтения отдельно: [единый сборник теории с основ, PDF](theory-from-zero.pdf)
-(38 страниц; [тот же исходный текст](theory-from-zero.md)). Он включает
+Для чтения отдельно: [единый сборник теории с основ, PDF](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/natural-twilight-snow-20261111/theory-from-zero.pdf)
+(38 страниц; [тот же исходный текст](https://github.com/WarriorOfTea/LightPollution/blob/52a3604b6603be48e07c4bd0d60a9cf32f0b9f38/artifacts/natural-twilight-snow-20261111/theory-from-zero.md)). Он включает
 учебный гид и формальные модели общей фотометрии/спектров, Луны и этапов 3–4.
 
 ## Что изменилось
