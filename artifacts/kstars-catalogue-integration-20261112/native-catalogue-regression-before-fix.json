@@ -1,0 +1,47 @@
+{
+  "status": "failed_before_LRU_chain_fix",
+  "rows_before_pan": 17071,
+  "rows_after_pan": 9606,
+  "missing_rows": 7465,
+  "unexpected_rows": 0,
+  "aperture_parameters_identical": true,
+  "missing_examples": [
+    {
+      "altitude_deg": 86.41928804225836,
+      "astrometry": {
+        "dec_j2000_deg": 56.78079,
+        "hd": 0,
+        "multiple": false,
+        "pm_dec_mas_yr": 0,
+        "pm_ra_cosdec_mas_yr": 0,
+        "ra_j2000_deg": 33.640635
+      },
+      "azimuth_deg": 199.71272259768216,
+      "b_v": 0.31999969482421875,
+      "id": "HD0:00035e2cb9fa3da05b1957f9b3c3ce4c46baa6b9694bc808877fc2d6b658b1d5",
+      "name": "star",
+      "photometry": "Tycho_VT_BTminusVT_inferred",
+      "v_mag": 11.630000114440918
+    },
+    {
+      "altitude_deg": 85.34642251251498,
+      "astrometry": {
+        "dec_j2000_deg": 60.96143,
+        "hd": 0,
+        "multiple": false,
+        "pm_dec_mas_yr": -0.8,
+        "pm_ra_cosdec_mas_yr": -8.7,
+        "ra_j2000_deg": 26.4819
+      },
+      "azimuth_deg": 283.9531836466527,
+      "b_v": 0.09000015258789062,
+      "id": "HD0:0005562f9486c627a4e26a9c51adfe367b93641d480cf9ce74d3d3d3607a192a",
+      "name": "star",
+      "photometry": "Tycho_VT_BTminusVT_inferred",
+      "v_mag": 11.829999923706055
+    }
+  ],
+  "cause": "markFirst on every existing block reversed the per-trixel chain, violating releaseBlock last-block-only invariant",
+  "fix": "markFirst only for first block, markNext(previous,block) for the rest; preserve bright-to-faint order",
+  "is_final_successful_verification": false
+}

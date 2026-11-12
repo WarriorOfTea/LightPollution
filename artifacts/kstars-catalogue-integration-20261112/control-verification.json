@@ -1,0 +1,26 @@
+{
+  "source_coefficient": 44897606336985.7,
+  "scene_cache": {
+    "scene_hit": true,
+    "transfer_hits": 0,
+    "transfer_misses": 0
+  },
+  "adu_equal": 614400,
+  "pixels": 614400,
+  "max_adu_difference": 0,
+  "SKY_E_equal": true,
+  "STAR_E_equal": true,
+  "new_HDR_checksums": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "previous_record_system_policy": "legacy Johnson assumption retained only to reproduce the historical input"
+}

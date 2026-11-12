@@ -1,0 +1,59 @@
+[
+  {
+    "expected": {
+      "hd": 26628,
+      "v_mag": 9.86,
+      "byte_offset": 5344826
+    },
+    "actual": {
+      "altitude_deg": 2.3085871749706928,
+      "azimuth_deg": 155.70892072629465,
+      "catalogue_magnitude": 9.859999656677246,
+      "dec_jnow_deg": -24.597306291560983,
+      "fov_deg": 108.23444366455078,
+      "object_name": "HD 26628",
+      "ra_jnow_deg": 63.20956173894484,
+      "star_b_v": 0,
+      "star_hd": 26628,
+      "star_spectral_type": "G0"
+    }
+  },
+  {
+    "expected": {
+      "hd": 278097,
+      "v_mag": 10.22,
+      "byte_offset": 68951994
+    },
+    "actual": {
+      "altitude_deg": 55.109394907987216,
+      "azimuth_deg": 107.00955874275499,
+      "catalogue_magnitude": 10.220000267028809,
+      "dec_jnow_deg": 39.019552076648566,
+      "fov_deg": 108.23444366455078,
+      "object_name": "HD 278097",
+      "ra_jnow_deg": 81.08550419009606,
+      "star_b_v": 0,
+      "star_hd": 278097,
+      "star_spectral_type": "G0"
+    }
+  },
+  {
+    "expected": {
+      "hd": 155141,
+      "v_mag": 9.68,
+      "byte_offset": 28159898
+    },
+    "actual": {
+      "altitude_deg": -31.96731203740894,
+      "azimuth_deg": 309.8044652974137,
+      "catalogue_magnitude": 9.680000305175781,
+      "dec_jnow_deg": -10.999857757815366,
+      "fov_deg": 108.23444366455078,
+      "object_name": "HD 155141",
+      "ra_jnow_deg": 257.93382728190295,
+      "star_b_v": 0,
+      "star_hd": 155141,
+      "star_spectral_type": "K5"
+    }
+  }
+]

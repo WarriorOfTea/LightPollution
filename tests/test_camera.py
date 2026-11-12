@@ -110,6 +110,31 @@ def test_Ekos_noise_tolerance_criterion_direct_rate():
     assert np.isinf(read_noise_lower_bound(0,3))
 
 
+def test_camera_horizon_keeps_open_pixels_when_the_centre_is_blocked():
+    result=camera_fixture();baseline,_=render_camera_arrays(result)
+    result['integration']={'artificial_horizon_visible':False,'artificial_horizon':{
+        'kind':'KStars_piecewise_linear_v1','regions':[{'name':'wall','ceiling':False,
+        'points':[[170.,50.2],[190.,50.2]]}]}}
+    # All fixture stars are behind the wall; no PSF wings leak into open sky.
+    c=result['camera'];result['camera']=build_camera_result(result,c['config'],lambda a,h:[1e12,2e12,1.5,True])
+    assert result['camera']['available']
+    arrays,stars=render_camera_arrays(result);valid=arrays['supported']
+    assert 0 < valid.sum() < valid.size
+    assert np.array_equal(arrays['sky_e'][valid],baseline['sky_e'][valid])
+    assert arrays['star_e'].sum()==0
+    assert all(not s['KStars_horizon_visible'] and s['ideal_isolated_aperture_snr'] is None for s in stars)
+    assert not arrays['adu'][~valid].any()
+
+
+def test_native_camera_stars_behind_DSM_do_not_leak_PSF_wings_above_the_ridge():
+    result=camera_fixture();result['terrain']={'horizon_azimuth_deg':[0.,180.],
+        'horizon_altitude_deg':[50.2,50.2]}
+    arrays,stars=render_camera_arrays(result)
+    assert 0<arrays['supported'].sum()<arrays['supported'].size
+    assert arrays['star_e'].sum()==0
+    assert all(not r['terrain_horizon_visible'] and r['ideal_isolated_aperture_snr'] is None for r in stars)
+
+
 def test_camera_has_no_eye_threshold_and_FITS_retains_linear_maps(tmp_path):
     result=camera_fixture();result['eye']={'stars':[{'above_threshold':False}]}
     arrays,stars=render_camera_arrays(result)

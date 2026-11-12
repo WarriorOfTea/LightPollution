@@ -64,7 +64,8 @@ def create_app(workspace: Path = Path('data/mvp'), raw_directory: Path | None = 
     @app.get('/api/kstars/capabilities')
     def kstars_capabilities():
         from ..adapters.terrain import DEFINITIONS
-        return {'schema_version': 1, 'backend_version': __version__, 'snapshot_schema': 1,
+        return {'schema_version': 1, 'backend_version': __version__, 'snapshot_schema': 2,
+                'snapshot_schemas_supported':[1,2], 'full_field_artificial_horizon':True,
                 'terrain_datasets': [{'id': key, 'prepared': (workspace.parent/'terrain'/key/'manifest.json').exists()}
                                      for key in DEFINITIONS],
                 'native_photometric_display_available': False,'camera_linear_FITS_available':True,

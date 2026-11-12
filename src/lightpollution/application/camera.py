@@ -1,14 +1,17 @@
 """Connect frozen at-observer light to the camera, without an eye transfer."""
 
 from copy import deepcopy
+from collections import Counter
 from dataclasses import replace
 
 import numpy as np
 
 from ..adapters.spectral_library import load_spectral_library
 from ..adapters.storage import content_key
+from ..adapters.catalogue_identity import cross_id,load_cross_identifications
 from ..models.camera import MODEL,camera_config,camera_view,response_weights
 from ..models.camera_field import build_camera_patch
+from ..models.catalogue_photometry import johnson_photometry
 from ..models.spectra import ARCSEC2_PER_SR,band_integral,stellar_spectral_observation
 from ..physics import Atmosphere,Observer
 from ..skyview import stellar_extinction
@@ -30,22 +33,46 @@ def camera_response(config,library):
 def camera_star_table(result,config,weights,exact_v_factor,library):
     observer=Observer(**result['observation']['observer']);atmosphere=Atmosphere(**result['observation']['atmosphere'])
     if 'catalogue' in config:
-        catalogue=config['catalogue'];native=catalogue['rows'];rows=[];colours={};names={}
+        catalogue=config['catalogue'];native=catalogue['rows'];rows=[];colours={};names={};identities={};used_hr=set();photometry={};excluded=[]
+        cross_index=load_cross_identifications()
+        hd_counts=Counter(s.get('astrometry',{}).get('hd') for s in native)
         for index,star in enumerate(native):
             if star['altitude_deg']<10:continue
-            hr=1_000_000+index;names[hr]=star['id']
+            hd=star.get('astrometry',{}).get('hd')
+            identity=cross_id(star,cross_index) if hd_counts[hd]==1 else None
+            hr=identity['hr'] if identity and identity['hr'] not in used_hr else 1_000_000+index
+            used_hr.add(hr);names[hr]=star['id'];identities[hr]=identity
+            magnitude,colour,policy=johnson_photometry(star)
+            photometry[hr]={'input_magnitude':star['v_mag'],'input_colour_index':star['b_v'],
+                'input_system':star.get('photometry','Johnson_V_BV'),'policy':policy}
+            if magnitude is None:
+                excluded.append({'id':star['id'],'name':star['name'],'azimuth_deg':star['azimuth_deg'],
+                    'altitude_deg':star['altitude_deg'],'observed_v_mag':None,'available':False,
+                    'flux_origin':policy,'BSC_cross_id':identity,'spectrum_recipe':None,
+                    'input_photometry':photometry[hr],'status':'catalogue_photometry_unavailable','response_per_m2_s':None})
+                continue
             dm=float(stellar_extinction(np.array([star['altitude_deg']]),observer,atmosphere)[0])
             rows.append({'hr':hr,'name':star['name'],'azimuth_deg':star['azimuth_deg'],'altitude_deg':star['altitude_deg'],
-                'catalogue_v_mag':star['v_mag'],'observed_v_mag':star['v_mag']+dm})
-            if star['b_v'] is not None:colours[hr]={'b_v':str(star['b_v'])}
+                'catalogue_v_mag':magnitude,'observed_v_mag':magnitude+dm})
+            if colour is not None:colours[hr]={'b_v':str(colour)}
+            elif identity and hr in library.colours:colours[hr]=library.colours[hr]
         if rows:
             rows,_,_=stellar_spectral_observation(rows,observer,atmosphere,library.wavelengths,library.responses,
-                colours,{},library.zero_b,library.zero_v,result['request']['spectrum']['angstrom_exponent'])
+                colours,library.measured,library.zero_b,library.zero_v,result['request']['spectrum']['angstrom_exponent'])
         origin={'provider':'KStars live StarComponent','magnitude_limit_requested':catalogue['magnitude_limit'],
             'truncated':catalogue['truncated'],'rows_received':len(native),'utc':catalogue['utc'],
             'completeness_established':False,'catalogue_snapshot_sha256':content_key(catalogue),
             'brightest_received_v_mag':min((r['v_mag'] for r in native),default=None),
-            'faintest_received_v_mag':max((r['v_mag'] for r in native),default=None)}
+            'faintest_received_v_mag':max((r['v_mag'] for r in native),default=None),
+            'native_colour_rows':sum(r['b_v'] is not None for r in native),
+            'BSC_cross_identified_rows':sum(i is not None for i in identities.values()),
+            'spectral_rows':sum(r.get('spectral_available',False) for r in rows),
+            'provenance':catalogue.get('provenance',{}),
+            'native_magnitude_systems':dict(Counter(s.get('photometry','Johnson_V_BV') for s in native)),
+            'Tycho_to_Johnson_converted_rows':sum('linear_unreddened' in p['policy'] for p in photometry.values()),
+            'photometry_unavailable_rows':len(excluded),
+            'native_magnitude_limit_is_not_uniform_Johnson_V':any(s.get('photometry')=='Tycho_VT_BTminusVT_inferred' for s in native),
+            'close_pairs_merged_by_distance_only':False}
     else:
         rows=result['stars']['rows'];names={r['hr']:'HR'+str(r['hr']) for r in rows}
         origin={'provider':'BSC5P','completeness_established':False,'rows_received':len(rows),
@@ -60,6 +87,9 @@ def camera_star_table(result,config,weights,exact_v_factor,library):
     for index,row in enumerate(selected):
         record={'id':names[row['hr']],'name':row['name'],'azimuth_deg':row['azimuth_deg'],'altitude_deg':row['altitude_deg'],
             'observed_v_mag':row['observed_v_mag'],'available':True,'flux_origin':'saved_spectral_observed_V'}
+        record['BSC_cross_id']=identities.get(row['hr']) if 'catalogue' in config else None
+        record['spectrum_recipe']=row.get('spectrum_recipe')
+        record['input_photometry']=photometry.get(row['hr']) if 'catalogue' in config else None
         v=row.get('johnson_v_flux_W_m2')
         if v is None:
             v=library.zero_v*10**(-.4*row['observed_v_mag']);record['flux_origin']='effective_550nm_observed_V_proxy_missing_SED'
@@ -76,6 +106,7 @@ def camera_star_table(result,config,weights,exact_v_factor,library):
             shape=shape*transmission[index];shape*=v/float(band_integral(axis,shape,library.responses['johnson_v']))
             rate=float(band_integral(axis,shape,weights))
         record.update(status='ok',response_per_m2_s=float(rate));output.append(record)
+    if 'catalogue' in config:output.extend(excluded)
     return output,origin
 
 
@@ -84,7 +115,9 @@ def build_camera_result(result,config,evaluate,check=lambda:None):
     weights,exact_v,unresolved,status=camera_response(config,library)
     reasons=[]
     if unresolved is None:reasons.append('missing_unresolved_sky_spectrum_for_this_response')
-    if result.get('integration',{}).get('artificial_horizon_visible') is False:reasons.append('KStars_focused_direction_obstructed')
+    origin=result.get('integration',{})
+    if origin.get('artificial_horizon_visible') is False and 'artificial_horizon' not in origin:
+        reasons.append('KStars_focused_direction_obstructed')
     patch=build_camera_patch(view,evaluate,config['sampling'],check) if not reasons else None
     stars,origin=camera_star_table(result,config,weights,exact_v,library)
     return {'schema_version':1,'model':MODEL,'config':config,'view':view,'available':not reasons,

@@ -1,0 +1,7 @@
+{
+  "job": "76c3c36e978448969b7268b410514338",
+  "state": "error",
+  "reason": "export failed: local name horizon shadowed by the DSM pixel array; regression test added and fixed",
+  "numerical_scene_cached_before_export": true,
+  "reported_as_success": false
+}

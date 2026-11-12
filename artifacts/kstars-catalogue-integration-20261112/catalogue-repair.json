@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "tool_sha256": "3e3f2ec0eca38771ef2172b4f75d5383f9f51ee448e44a1a5bf8d728cfab4936",
+  "matching_engine": "KStars fix-star-catalogs.py dedupe",
+  "input_sha256": "136301c017094044d24b74711eeb3d693e908ec6d31c0f217a05565fb4704a00",
+  "output_sha256": "cf43c6c7e943daffc471432d66731ddae7134ba378cc50d71a339b5252c0ac51",
+  "fixed_catalogues": {
+    "namedstars.dat": "df429f38c728766e717aea588851dd1ed652e69c5c671cdb6b2c8dfbd6b2672f",
+    "unnamedstars.dat": "c4ecdd3ba4cc697f62a50830522fd4235ea39716c62179c81f9d0a3ffe0ed62f"
+  },
+  "max_proper_motion_mas_yr": 10308.296499907246,
+  "declination_halo_deg": 1.0,
+  "slices": [
+    {
+      "declination_band_deg": [
+        -90.0,
+        -80.0
+      ],
+      "upstream_output": "0 pairs of the same star, 0 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars-bounded.dat: 2412252 records, 0 removed (0 stars), 0 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        -80.0,
+        -70.0
+      ],
+      "upstream_output": "0 pairs of the same star, 3 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars-bounded.dat: 2412252 records, 3 removed (3 stars), 0 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        -70.0,
+        -60.0
+      ],
+      "upstream_output": "0 pairs of the same star, 3 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars-bounded.dat: 2412249 records, 3 removed (3 stars), 0 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        -60.0,
+        -50.0
+      ],
+      "upstream_output": "0 pairs of the same star, 2 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars-bounded.dat: 2412246 records, 2 removed (2 stars), 1 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        -50.0,
+        -40.0
+      ],
+      "upstream_output": "1 pairs of the same star, 11 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars-bounded.dat: 2412244 records, 12 removed (12 stars), 1 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        -40.0,
+        -30.0
+      ],
+      "upstream_output": "0 pairs of the same star, 5 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars-bounded.dat: 2412232 records, 5 removed (5 stars), 0 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        -30.0,
+        -20.0
+      ],
+      "upstream_output": "2 pairs of the same star, 14 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars-bounded.dat: 2412227 records, 16 removed (16 stars), 1 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        -20.0,
+        -10.0
+      ],
+      "upstream_output": "0 pairs of the same star, 21 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars-bounded.dat: 2412211 records, 21 removed (21 stars), 1 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        -10.0,
+        0.0
+      ],
+      "upstream_output": "1 pairs of the same star, 14 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars-bounded.dat: 2412190 records, 18 removed (15 stars), 0 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        0.0,
+        10.0
+      ],
+      "upstream_output": "1 pairs of the same star, 18 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars-bounded.dat: 2412172 records, 19 removed (19 stars), 0 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        10.0,
+        20.0
+      ],
+      "upstream_output": "0 pairs of the same star, 15 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars-bounded.dat: 2412153 records, 15 removed (15 stars), 1 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        20.0,
+        30.0
+      ],
+      "upstream_output": "1 pairs of the same star, 11 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars-bounded.dat: 2412138 records, 12 removed (12 stars), 0 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        30.0,
+        40.0
+      ],
+      "upstream_output": "0 pairs of the same star, 12 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars-bounded.dat: 2412126 records, 12 removed (12 stars), 1 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        40.0,
+        50.0
+      ],
+      "upstream_output": "2 pairs of the same star, 6 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars-bounded.dat: 2412114 records, 8 removed (8 stars), 0 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        50.0,
+        60.0
+      ],
+      "upstream_output": "0 pairs of the same star, 4 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars-bounded.dat: 2412106 records, 4 removed (4 stars), 0 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        60.0,
+        70.0
+      ],
+      "upstream_output": "1 pairs of the same star, 3 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars-bounded.dat: 2412102 records, 6 removed (4 stars), 0 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        70.0,
+        80.0
+      ],
+      "upstream_output": "0 pairs of the same star, 4 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars-bounded.dat: 2412096 records, 4 removed (4 stars), 0 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        80.0,
+        90.0
+      ],
+      "upstream_output": "0 pairs of the same star, 0 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars-bounded.dat: 2412092 records, 0 removed (0 stars), 0 HD numbers carried over\n"
+    }
+  ],
+  "proximity_only_merging": false,
+  "native_catalogues_modified": false
+}

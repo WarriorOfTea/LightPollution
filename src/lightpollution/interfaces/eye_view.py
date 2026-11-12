@@ -65,7 +65,9 @@ def render_linear_field(result, view):
     minimum = eye['field']['altitude_deg'][0]
     p, s, physical = sample_eye_field(eye['field'], az, np.clip(alt, minimum, 90))
     domain = evaluate_detection(p, s, np.zeros_like(s), config['observer_factor'])['supported']
+    from ..models.kstars_horizon import horizon_visible
     supported = (alt >= minimum) & physical & domain
+    supported &= horizon_visible(result.get('integration',{}).get('artificial_horizon'),az,alt)
     if result.get('terrain'):
         terrain = result['terrain']
         horizon = np.interp(az, np.r_[terrain['horizon_azimuth_deg'], 360.],
@@ -84,6 +86,9 @@ def render_linear_field(result, view):
     displayed, ledgers = [], []
     within = unavailable = 0
     for row in eye['stars']:
+        if not bool(horizon_visible(result.get('integration',{}).get('artificial_horizon'),
+                                    row['azimuth_deg'],row['altitude_deg'])):
+            continue
         a, h = np.deg2rad([row['azimuth_deg'], row['altitude_deg']])
         ray = np.array([np.cos(h)*np.sin(a), np.cos(h)*np.cos(a), np.sin(h)])
         depth = float(ray@forward)

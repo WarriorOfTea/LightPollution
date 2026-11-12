@@ -1,0 +1,32 @@
+{
+  "command": [
+    "/home/myuser/pignity/projects/LightPollution/.venv/bin/python",
+    "integrations/kstars/launch.py",
+    "--installation",
+    "/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6",
+    "--offscreen",
+    "--workspace",
+    "/home/myuser/pignity/projects/LightPollution/data/kstars-catalogue-integration-20261112/launcher-workspace",
+    "--port",
+    "8767"
+  ],
+  "original_backend_8766_alive_before": true,
+  "capabilities_schema": 2,
+  "native_process_started": true,
+  "private_bus_address_present": true,
+  "session_file_owner_correct": true,
+  "own_processes": [
+    "1468752 /usr/bin/dbus-daemon --session --nofork --print-address=1",
+    "1468753 /home/myuser/pignity/projects/LightPollution/.venv/bin/python -c from lightpollution.cli import main; main() serve --host 127.0.0.1 --port 8767 --workspace /home/myuser/pignity/projects/LightPollution/data/kstars-catalogue-integration-20261112/launcher-workspace --raw-directory /home/myuser/pignity/projects/LightPollution/data/blackmarble",
+    "1468783 /home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/installed/bin/kstars"
+  ],
+  "no_model_jobs_submitted": true,
+  "exit_code": 130,
+  "children_after_shutdown": [],
+  "session_file_removed": true,
+  "backend_port_closed": true,
+  "original_backend_8766_alive_after": true,
+  "completed_at": "2026-11-12T20:38:43+01:00",
+  "status": "passed",
+  "tested_binary_sha256": "74a821a0afb50464d62c3285eace93107840c32a256b624beb223f24cf46e1d9"
+}

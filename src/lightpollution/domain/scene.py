@@ -168,13 +168,20 @@ class SceneSpec:
         if 'integration' in data:
             origin = data['integration']
             if (not isinstance(origin, dict) or set(origin)-{'provider', 'version', 'snapshot_id',
-                    'site_elevation_m', 'focused_object', 'altitude_convention', 'artificial_horizon_visible'}
+                    'site_elevation_m', 'focused_object', 'altitude_convention', 'artificial_horizon_visible',
+                    'artificial_horizon'}
                     or origin.get('provider') != 'KStars'
                     or not isinstance(origin.get('snapshot_id'), str)
                     or len(origin['snapshot_id']) != 64):
                 raise DomainError('invalid_kstars_snapshot', 'Некорректное происхождение сценария KStars.')
             if type(origin.get('artificial_horizon_visible')) not in [bool, type(None)]:
                 raise DomainError('invalid_kstars_snapshot', 'Некорректная маска горизонта KStars.')
+            if 'artificial_horizon' in origin:
+                from ..models.kstars_horizon import validate_horizon
+                try:
+                    origin['artificial_horizon'] = validate_horizon(origin['artificial_horizon'])
+                except ValueError as exc:
+                    raise DomainError('invalid_kstars_snapshot', str(exc)) from exc
         directions = data.get('directions', [[0, 90], [0, 45], [90, 45], [180, 45], [270, 45]])
         if not isinstance(directions, list) or not 1 <= len(directions) <= 16:
             raise DomainError('invalid_direction', 'Задайте от 1 до 16 направлений.')

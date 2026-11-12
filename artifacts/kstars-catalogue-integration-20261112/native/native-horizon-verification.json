@@ -1,0 +1,63 @@
+{
+  "native_rays": 2054,
+  "matches": 2054,
+  "regions": [
+    {
+      "name": "wall",
+      "ceiling": false,
+      "points": [
+        [
+          160.0,
+          45.2
+        ],
+        [
+          200.0,
+          45.2
+        ]
+      ]
+    },
+    {
+      "name": "north",
+      "ceiling": false,
+      "points": [
+        [
+          350.0,
+          20.0
+        ],
+        [
+          10.0,
+          30.0
+        ]
+      ]
+    },
+    {
+      "name": "canopy",
+      "ceiling": true,
+      "points": [
+        [
+          165.0,
+          60.0
+        ],
+        [
+          195.0,
+          60.0
+        ]
+      ]
+    },
+    {
+      "name": "upper-window",
+      "ceiling": false,
+      "points": [
+        [
+          165.0,
+          70.0
+        ],
+        [
+          195.0,
+          70.0
+        ]
+      ]
+    }
+  ],
+  "mask_resampled_to_azimuth_grid": false
+}

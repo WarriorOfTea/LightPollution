@@ -1,0 +1,189 @@
+{
+  "status": "failed_before_great_circle_support",
+  "native_rays": 2054,
+  "old_linear_matches": 2042,
+  "old_linear_mismatches": [
+    {
+      "point": [
+        183.79100360703006,
+        70.01104675686169
+      ],
+      "native_visible": false,
+      "linear_visible": true
+    },
+    {
+      "point": [
+        181.4878907401549,
+        60.57989353686459
+      ],
+      "native_visible": true,
+      "linear_visible": false
+    },
+    {
+      "point": [
+        177.10166874020229,
+        45.932288637308346
+      ],
+      "native_visible": false,
+      "linear_visible": true
+    },
+    {
+      "point": [
+        178.04795352162284,
+        60.710595666848434
+      ],
+      "native_visible": true,
+      "linear_visible": false
+    },
+    {
+      "point": [
+        184.0207272158159,
+        45.76395196066545
+      ],
+      "native_visible": false,
+      "linear_visible": true
+    },
+    {
+      "point": [
+        185.9703474491549,
+        46.4381925784393
+      ],
+      "native_visible": false,
+      "linear_visible": true
+    },
+    {
+      "point": [
+        183.64100217862998,
+        60.24124774893792
+      ],
+      "native_visible": true,
+      "linear_visible": false
+    },
+    {
+      "point": [
+        0.0,
+        25.0
+      ],
+      "native_visible": false,
+      "linear_visible": true
+    },
+    {
+      "point": [
+        180.0,
+        45.2
+      ],
+      "native_visible": false,
+      "linear_visible": true
+    },
+    {
+      "point": [
+        180.0,
+        60.0
+      ],
+      "native_visible": true,
+      "linear_visible": false
+    },
+    {
+      "point": [
+        350.0,
+        20.0
+      ],
+      "native_visible": false,
+      "linear_visible": true
+    },
+    {
+      "point": [
+        10.0,
+        30.0
+      ],
+      "native_visible": false,
+      "linear_visible": true
+    }
+  ],
+  "great_circle_model_matches_after_fix": 2054,
+  "native_snapshot": {
+    "altitude_convention": "geometric_unrefracted",
+    "artificial_horizon": {
+      "kind": "KStars_great_circle_v1",
+      "regions": [
+        {
+          "ceiling": false,
+          "name": "wall",
+          "points": [
+            [
+              160,
+              45.2
+            ],
+            [
+              200,
+              45.2
+            ]
+          ]
+        },
+        {
+          "ceiling": false,
+          "name": "north",
+          "points": [
+            [
+              350,
+              20
+            ],
+            [
+              10,
+              30
+            ]
+          ]
+        },
+        {
+          "ceiling": true,
+          "name": "canopy",
+          "points": [
+            [
+              165,
+              60
+            ],
+            [
+              195,
+              60
+            ]
+          ]
+        },
+        {
+          "ceiling": false,
+          "name": "upper-window",
+          "points": [
+            [
+              165,
+              70
+            ],
+            [
+              195,
+              70
+            ]
+          ]
+        }
+      ]
+    },
+    "artificial_horizon_visible": true,
+    "focus": {
+      "altitude_deg": 90,
+      "azimuth_deg": 0,
+      "dec_jnow_deg": 60.300000000000004,
+      "fov_deg": 108.23444366455078,
+      "object_name": "",
+      "ra_jnow_deg": 36.33360174944988
+    },
+    "kstars_version": "3.8.6",
+    "location": {
+      "elevation_m": 120,
+      "latitude_deg": 60.3,
+      "longitude_deg": 30.315,
+      "name": "GPS Location"
+    },
+    "schema_version": 2,
+    "utc": "2026-11-11T21:00:00Z"
+  },
+  "original_snapshot_kind": "KStars_piecewise_linear_v1",
+  "native_snapshot_geometry_kind_corrected_for_replay": true,
+  "note": "The first module mislabeled the modern native GreatCircle as linear. Vertices and native visibility labels are unchanged; only the replay kind is corrected here."
+}

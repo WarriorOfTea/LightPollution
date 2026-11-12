@@ -13,6 +13,7 @@ import numpy as np
 
 from ..adapters.storage import content_key,write_json
 from ..models.camera import read_noise_lower_bound,sample_detector
+from ..models.kstars_horizon import horizon_visible
 from ..models.camera_field import directions,pixels,project_star,deposit_electrons,sample_camera_patch
 from .eye_view import _font
 
@@ -25,6 +26,8 @@ def render_camera_arrays(result):
     city,residual,supported,omega=sample_camera_patch(camera['field'])
     x,y=pixels(view);az,alt=directions(view,x,y)
     supported&=alt>=10
+    artificial_horizon=result.get('integration',{}).get('artificial_horizon')
+    supported&=horizon_visible(artificial_horizon,az,alt)
     if result.get('terrain'):
         terrain=result['terrain'];horizon=np.interp(az,np.r_[terrain['horizon_azimuth_deg'],360.],
             np.r_[terrain['horizon_altitude_deg'],terrain['horizon_altitude_deg'][0]])
@@ -45,7 +48,12 @@ def render_camera_arrays(result):
         record={**star,'x_px':float(px),'y_px':float(py),'centre_in_frame':inside,'input_e':None,
             'deposited_e':None,'outside_frame_or_truncated_e':None,'gaussian_tail_upper_bound_e':None,
             'ideal_isolated_aperture_snr':None,'expected_saturation_in_aperture':None}
-        if star['available']:
+        record['KStars_horizon_visible']=bool(horizon_visible(artificial_horizon,star['azimuth_deg'],star['altitude_deg']))
+        terrain=result.get('terrain')
+        record['terrain_horizon_visible']=not terrain or star['altitude_deg']>float(np.interp(
+            star['azimuth_deg'],np.r_[terrain['horizon_azimuth_deg'],360.],
+            np.r_[terrain['horizon_altitude_deg'],terrain['horizon_altitude_deg'][0]]))
+        if star['available'] and record['KStars_horizon_visible'] and record['terrain_horizon_visible']:
             tx=(2*(px+.5)/view['width']-1)*edge
             ty=(1-2*(py+.5)/view['height'])*edge*view['height']/view['width']
             electrons=t*collect*star['response_per_m2_s']/np.sqrt(1+tx*tx+ty*ty)
@@ -57,7 +65,7 @@ def render_camera_arrays(result):
     # A simple isolated-aperture diagnostic; saturated/edge apertures are excluded.
     capacity=min(sensor['full_well_e'],(2**sensor['bit_depth']-1-sensor['bias_adu'])*sensor['gain_e_per_adu'])
     for row in rows:
-        if not row['available'] or not row['centre_in_frame']:continue
+        if not row['available'] or not row['KStars_horizon_visible'] or not row['terrain_horizon_visible'] or not row['centre_in_frame']:continue
         px,py=row['x_px'],row['y_px'];position=project_star(view,row['azimuth_deg'],row['altitude_deg'])
         scales=position[2];radius=1.5*np.deg2rad(optics['psf_fwhm_arcsec']/3600)/np.sqrt(np.prod(scales))
         x0,x1=int(np.floor(px-radius)),int(np.ceil(px+radius))+1
@@ -166,6 +174,11 @@ def export_camera(result,output):
             image.save(output/'camera-preview.png')
             record.update(available=True,reasons=[],supported_pixels=int(valid.sum()),field_pixels=int(valid.size),
                 stars_in_frame=sum(r['centre_in_frame'] for r in rows),star_rows=len(rows),
+                stars_in_frame_with_modelled_flux=sum(r['centre_in_frame'] and r['available'] and
+                    r['KStars_horizon_visible'] and r['terrain_horizon_visible'] for r in rows),
+                stars_in_frame_unknown_flux=sum(r['centre_in_frame'] and not r['available'] for r in rows),
+                stars_in_frame_obstructed=sum(r['centre_in_frame'] and not (r['KStars_horizon_visible'] and
+                    r['terrain_horizon_visible']) for r in rows),
                 stars_with_available_response=sum(r['available'] for r in rows),
                 deposited_stellar_e=float(arrays['star_e'][valid].sum()),sky_e_min_median_max=[float(f(arrays['sky_e'][valid])) for f in [np.min,np.median,np.max]],
                 fullwell_clipped_pixels=int(np.count_nonzero(arrays['fullwell_mask']&valid)),

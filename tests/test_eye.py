@@ -79,6 +79,19 @@ def test_threshold_classification_missing_spectrum_and_no_probability():
     assert eye['summary']['not_a_detection_probability']
 
 
+def test_full_horizon_masks_eye_stars_without_disabling_open_field(tmp_path):
+    from lightpollution.interfaces.eye_view import render_linear_field
+    result=physical_fixture();old=result['eye']
+    result['integration']={'artificial_horizon_visible':False,'artificial_horizon':{
+        'kind':'KStars_piecewise_linear_v1','regions':[{'name':'wall','ceiling':False,
+        'points':[[140.,51.],[220.,51.]]}]}}
+    result['eye']=build_eye_result(result,old['config'],old['field'],PHOTOPIC_V0_LUX*REFERENCE_SP)
+    assert result['eye']['available'] and not any(r['supported'] for r in result['eye']['stars'])
+    field=render_linear_field(result,result['eye']['config']['view'])
+    assert 0<field['supported'].sum()<field['supported'].size
+    assert field['stellar_physical_pixel_illuminance_lux'].sum()==0
+
+
 @pytest.mark.parametrize('restriction',['sun','moon','horizon'])
 def test_no_supported_image_when_global_eye_assumptions_fail(restriction,tmp_path):
     result=physical_fixture()

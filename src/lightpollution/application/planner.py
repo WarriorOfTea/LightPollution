@@ -134,7 +134,10 @@ class Planner:
                                      'application/planner.py', 'domain/scene.py', 'domain/calibration.py',
                                      'adapters/spectral_library.py', 'models/background.py', 'models/surface.py',
                                      'models/eye.py', 'models/eye_field.py', 'application/eye.py',
-                                     'models/camera.py','models/camera_field.py','application/camera.py'])
+                                     'models/camera.py','models/camera_field.py','application/camera.py',
+                                     'models/kstars_horizon.py','adapters/catalogue_identity.py',
+                                     'models/catalogue_photometry.py',
+                                     'catalogues/bsc5-cross-identifications.csv'])
         request_key = content_key({'scene': resolved, 'source_basis': group.identity,
             'transfer_code': transfer_code, 'scene_code': scene_code, 'solver': solver.version,
             'application_model': MODEL_VERSION, 'spectral_library': library.identity if library else None})
@@ -441,11 +444,17 @@ class Planner:
                 'blocked_stars': len(blocked), 'physical_error_bound': None}
             observation['terrain_model'] = terrain_output
             observation['assumptions_and_limitations'].append('DSM_sampled_occlusion_and_spherical_EGM2008_approximation_not_city_mesh')
-        if data.get('integration', {}).get('artificial_horizon_visible') is False:
-            for direction in observation['directions']:
-                direction.setdefault('support_reasons', []).append('kstars_artificial_horizon_obstructed')
-                direction.update(supported=False, status='kstars_artificial_horizon_obstructed',
-                                 total_relative=None, total_v_mag_arcsec2=None)
+        origin = data.get('integration', {})
+        if 'artificial_horizon' in origin:
+            from ..models.kstars_horizon import horizon_visible
+            hidden_directions=[r for r in observation['directions'] if not bool(horizon_visible(
+                origin['artificial_horizon'],r['azimuth_deg'],r['altitude_deg']))]
+        else:
+            hidden_directions=observation['directions'] if origin.get('artificial_horizon_visible') is False else []
+        for direction in hidden_directions:
+            direction.setdefault('support_reasons', []).append('kstars_artificial_horizon_obstructed')
+            direction.update(supported=False, status='kstars_artificial_horizon_obstructed',
+                             total_relative=None, total_v_mag_arcsec2=None)
         resolved['scale_origin'] = scale_origin
         result = {'schema_version': 1, 'application': 'lightpollution-mvp', 'model_version': MODEL_VERSION,
             'request': data, 'resolved_scene': resolved,
@@ -502,7 +511,7 @@ class Planner:
             geometry=observation.get('geometry') or {}
             moon=observation.get('moon') or {}
             if (geometry.get('sun',{}).get('altitude_deg',90)<=-18 and moon.get('altitude_deg',-90)<=0
-                    and data.get('integration',{}).get('artificial_horizon_visible') is not False):
+                    and (origin.get('artificial_horizon_visible') is not False or 'artificial_horizon' in origin)):
                 from ..models.eye import eye_config
                 from ..models.eye_field import build_view_patch
                 config=eye_config(data['eye'])

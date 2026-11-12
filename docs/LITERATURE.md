@@ -82,6 +82,14 @@
 
 ## 4. Камера, KStars и независимая проверка
 
+- **Hy Murveit, KStars GreatCircle**,
+  [закреплённая реализация сферической навигации](https://github.com/KDE/kstars/blob/c46dbb4f0cfe4b8ca190a0c391e975e52a005aa8/kstars/tools/greatcircle.cpp)
+  и [правила ArtificialHorizon](https://github.com/KDE/kstars/blob/c46dbb4f0cfe4b8ca190a0c391e975e52a005aa8/kstars/skycomponents/artificialhorizoncomponent.cpp).
+  Использую геометрию большого круга, ограничение вершины89,999° и
+  ближайшие floor/ceiling; тип сегмента явно входит в обмен.
+  Реализация KStars имеет GPL-2.0-or-later. Независимые контрольные числа —
+  [его greatCircleTest](https://github.com/KDE/kstars/blob/c46dbb4f0cfe4b8ca190a0c391e975e52a005aa8/Tests/tools/testartificialhorizon.cpp).
+
 - **EMVA1288 Linear4.0**, [официальный стандарт](https://www.emva.org/wp-content/uploads/EMVA1288Linear_4.0Release.pdf), §§2.1–2.4.
   Прочитан полный текст; использую фотонно-электронную линейную модель,
   Poisson и RN. Моя g=e⁻/ADU обратна K=DN/e⁻. Сертификацию EMVA не заявляю.
@@ -110,3 +118,16 @@
 [камера](../artifacts/camera-model-20261112/source-audit.json).
 Это журнал прежнего исследования; редакция документации не означает
 повторную сетевую проверку всех ссылок или новые измерения.
+
+## 6. Каталоги и нативная поставка
+
+- **Høg et al., Tycho-2 Guide**, [руководство ESO](https://archive.eso.org/ASTROM/TYC-2/docs/guide.pdf):
+  собственные движения, эпохи, различие Bₜ/Vₜ и Johnson; приближения5/6
+  относятся к незапылённой главной последовательности.
+- **CDS I/259**, [каталог](https://cdsarc.cds.unistra.fr/viz-bin/cat/I/259):
+  точечная проверка исходных BTmag/VTmag/PM. Сохранённые ответы и отказ БД —
+  [source-audit](../artifacts/kstars-catalogue-integration-20261112/source-audit.json).
+- **KStars**, [закреплённый repair-инструмент](https://github.com/KDE/kstars/blob/c46dbb4f0cfe4b8ca190a0c391e975e52a005aa8/kstars/data/tools/fix-star-catalogs.py):
+  критерии duplicate/ghost, разделение эпох и сохранение кратных компонент.
+- **CMake3.30**, [предкомпилированные заголовки](https://cmake.org/cmake/help/v3.30/command/target_precompile_headers.html):
+  приватное ускорение сборки, условие CXX и экранирование ANGLE-R.

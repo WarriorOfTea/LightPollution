@@ -1,0 +1,133 @@
+{
+  "completed_at": "2026-11-12T20:48:20+01:00",
+  "kstars_version": "3.8.6",
+  "compiled_binary_sha256": "74a821a0afb50464d62c3285eace93107840c32a256b624beb223f24cf46e1d9",
+  "jobs_completed": 3,
+  "jobs_requested": 3,
+  "geometry_round_trip_checked": true,
+  "stale_after_map_change_checked": true,
+  "AGL_vs_MSL_checked": true,
+  "native_star_B_V_spectral_type_HD_checked": true,
+  "native_eye_preview_opened": false,
+  "native_experimental_colour_checked": false,
+  "native_camera_FITS_Viewer_opened": true,
+  "native_live_camera_catalogue_rows": 17071,
+  "native_camera_stars_in_frame": 10569,
+  "native_camera_catalogue_stars_fainter_than_6_5": 17028,
+  "Ekos_exposure_calculator_compiled": true,
+  "Qt_version": "6.11.1",
+  "full_horizon": {
+    "native_rays": 2054,
+    "matches": 2054,
+    "regions": [
+      {
+        "name": "wall",
+        "ceiling": false,
+        "points": [
+          [
+            160.0,
+            45.2
+          ],
+          [
+            200.0,
+            45.2
+          ]
+        ]
+      },
+      {
+        "name": "north",
+        "ceiling": false,
+        "points": [
+          [
+            350.0,
+            20.0
+          ],
+          [
+            10.0,
+            30.0
+          ]
+        ]
+      },
+      {
+        "name": "canopy",
+        "ceiling": true,
+        "points": [
+          [
+            165.0,
+            60.0
+          ],
+          [
+            195.0,
+            60.0
+          ]
+        ]
+      },
+      {
+        "name": "upper-window",
+        "ceiling": false,
+        "points": [
+          [
+            165.0,
+            70.0
+          ],
+          [
+            195.0,
+            70.0
+          ]
+        ]
+      }
+    ],
+    "mask_resampled_to_azimuth_grid": false
+  },
+  "deep_HD_index_lookups": 3,
+  "expected_invalid_submission": {
+    "invalid_sampling_rejected": true,
+    "old_result_remains_stale": true,
+    "message": "Camera sampling supports grids 3/5/9 and none/heldout_8 validation."
+  },
+  "screenshots_from_native_Qt_widget": true,
+  "platform": "Qt offscreen / private session D-Bus",
+  "build_excludes_INDI_Ekos_device_control": false,
+  "original_user_settings_modified": false,
+  "job_ids": [
+    "bb43e8d9c58e43729824fd9041890b16",
+    "6f01678985c942a1ae206e12ae98a594",
+    "897067fabc68499683fa444d45dd2cbf"
+  ],
+  "nearest_city_timezone_read_from_actual_KStars_location_API": {
+    "country": "",
+    "elevation": 120,
+    "latitude": 60.3,
+    "longitude": 30.315,
+    "name": "GPS Location",
+    "province": "",
+    "tz": 3,
+    "tz0": 3
+  },
+  "field_accuracy_validated": false,
+  "single_full_driver_exit_zero": true,
+  "independent_full_run_compared_with_frozen_science_cases": {
+    "zenith": {
+      "native_session_stellar_array_difference_max_e": 0.00048828125,
+      "ADU_equal_pixels": 614400,
+      "pixels": 614400,
+      "HDU_arrays_equal": 7,
+      "HDU_arrays_checked": 10,
+      "new_FITS_checksum_passed": 10,
+      "new_FITS_checksums_checked": 10
+    },
+    "horizon": {
+      "native_session_stellar_array_difference_max_e": 0.00048828125,
+      "ADU_equal_pixels": 614400,
+      "pixels": 614400,
+      "HDU_arrays_equal": 7,
+      "HDU_arrays_checked": 10,
+      "new_FITS_checksum_passed": 10,
+      "new_FITS_checksums_checked": 10
+    }
+  },
+  "frozen_science_cases_source": "native-accepted run; ADU, background and MASK match native-complete; stellar float arrays differ slightly with native apparent-coordinate rounding",
+  "full_driver_command": "dbus-run-session -- uv run --all-extras python scripts/check_kstars_native.py --installation scratch/kstars-qt6 --camera --job-timeout 1800 --output data/kstars-catalogue-integration-20261112/native-complete --url http://127.0.0.1:8766",
+  "new_ground_RAW_frames": 0,
+  "new_human_observers": 0
+}

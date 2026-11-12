@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "tool_sha256": "3e3f2ec0eca38771ef2172b4f75d5383f9f51ee448e44a1a5bf8d728cfab4936",
+  "matching_engine": "KStars fix-star-catalogs.py dedupe",
+  "input_sha256": "cf43c6c7e943daffc471432d66731ddae7134ba378cc50d71a339b5252c0ac51",
+  "output_sha256": "cf43c6c7e943daffc471432d66731ddae7134ba378cc50d71a339b5252c0ac51",
+  "fixed_catalogues": {
+    "namedstars.dat": "df429f38c728766e717aea588851dd1ed652e69c5c671cdb6b2c8dfbd6b2672f",
+    "unnamedstars.dat": "c4ecdd3ba4cc697f62a50830522fd4235ea39716c62179c81f9d0a3ffe0ed62f"
+  },
+  "max_proper_motion_mas_yr": 10308.296499907246,
+  "declination_halo_deg": 1.0,
+  "slices": [
+    {
+      "declination_band_deg": [
+        -90.0,
+        -80.0
+      ],
+      "upstream_output": "0 pairs of the same star, 0 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars.dat: 2412092 records, 0 removed (0 stars), 0 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        -80.0,
+        -70.0
+      ],
+      "upstream_output": "0 pairs of the same star, 0 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars.dat: 2412092 records, 0 removed (0 stars), 0 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        -70.0,
+        -60.0
+      ],
+      "upstream_output": "0 pairs of the same star, 0 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars.dat: 2412092 records, 0 removed (0 stars), 0 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        -60.0,
+        -50.0
+      ],
+      "upstream_output": "0 pairs of the same star, 0 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars.dat: 2412092 records, 0 removed (0 stars), 0 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        -50.0,
+        -40.0
+      ],
+      "upstream_output": "0 pairs of the same star, 0 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars.dat: 2412092 records, 0 removed (0 stars), 0 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        -40.0,
+        -30.0
+      ],
+      "upstream_output": "0 pairs of the same star, 0 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars.dat: 2412092 records, 0 removed (0 stars), 0 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        -30.0,
+        -20.0
+      ],
+      "upstream_output": "0 pairs of the same star, 0 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars.dat: 2412092 records, 0 removed (0 stars), 0 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        -20.0,
+        -10.0
+      ],
+      "upstream_output": "0 pairs of the same star, 0 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars.dat: 2412092 records, 0 removed (0 stars), 0 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        -10.0,
+        0.0
+      ],
+      "upstream_output": "0 pairs of the same star, 0 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars.dat: 2412092 records, 0 removed (0 stars), 0 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        0.0,
+        10.0
+      ],
+      "upstream_output": "0 pairs of the same star, 0 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars.dat: 2412092 records, 0 removed (0 stars), 0 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        10.0,
+        20.0
+      ],
+      "upstream_output": "0 pairs of the same star, 0 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars.dat: 2412092 records, 0 removed (0 stars), 0 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        20.0,
+        30.0
+      ],
+      "upstream_output": "0 pairs of the same star, 0 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars.dat: 2412092 records, 0 removed (0 stars), 0 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        30.0,
+        40.0
+      ],
+      "upstream_output": "0 pairs of the same star, 0 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars.dat: 2412092 records, 0 removed (0 stars), 0 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        40.0,
+        50.0
+      ],
+      "upstream_output": "0 pairs of the same star, 0 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars.dat: 2412092 records, 0 removed (0 stars), 0 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        50.0,
+        60.0
+      ],
+      "upstream_output": "0 pairs of the same star, 0 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars.dat: 2412092 records, 0 removed (0 stars), 0 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        60.0,
+        70.0
+      ],
+      "upstream_output": "0 pairs of the same star, 0 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars.dat: 2412092 records, 0 removed (0 stars), 0 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        70.0,
+        80.0
+      ],
+      "upstream_output": "0 pairs of the same star, 0 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars.dat: 2412092 records, 0 removed (0 stars), 0 HD numbers carried over\n"
+    },
+    {
+      "declination_band_deg": [
+        80.0,
+        90.0
+      ],
+      "upstream_output": "0 pairs of the same star, 0 ghosts\n/home/myuser/pignity/projects/LightPollution/scratch/kstars-qt6/deepstars.dat: 2412092 records, 0 removed (0 stars), 0 HD numbers carried over\n"
+    }
+  ],
+  "proximity_only_merging": false,
+  "native_catalogues_modified": false
+}

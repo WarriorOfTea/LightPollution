@@ -10,6 +10,7 @@ from ..models.eye import (MODEL, REFERENCE_SP, SCOTOPIC_MAXIMUM, V22_LUMINANCE,
                           evaluate_detection)
 from ..skyview import sample_sky
 from ..models.eye_field import interpolate_patch, patch_support, tangent_coordinates
+from ..models.kstars_horizon import horizon_visible
 
 
 def sample_eye_field(field, azimuth, altitude):
@@ -53,14 +54,18 @@ def build_eye_result(result, config, angular_field, reference_star_scotopic_lux_
     if result['request']['mode']!='dated':reasons.append('date_required')
     if geometry.get('sun',{}).get('altitude_deg',90)>-18:reasons.append('astronomical_darkness_required')
     if moon.get('altitude_deg',-90)>0:reasons.append('direct_moon_glare_and_nonlocal_adaptation_not_modelled')
-    if result.get('integration',{}).get('artificial_horizon_visible') is False:
+    origin=result.get('integration',{})
+    horizon=origin.get('artificial_horizon')
+    field['artificial_horizon']=horizon
+    if origin.get('artificial_horizon_visible') is False and horizon is None:
         reasons.append('focused_direction_blocked_by_KStars_horizon')
     available=not reasons
 
     def threshold_row(az,alt,irradiance):
         bp,bs,physical=sample_eye_field(field,az,alt)
         values=evaluate_detection(bp,bs,irradiance,config['observer_factor'])
-        ok=available and bool(physical) and bool(values['supported'])
+        physical=bool(physical) and bool(horizon_visible(horizon,az,alt))
+        ok=available and physical and bool(values['supported'])
         row={'azimuth_deg':float(az),'altitude_deg':float(alt),
             'photopic_background_cd_m2':float(bp),'scotopic_background_cd_m2':float(bs),
             'background_equivalent_cd_m2':float(values['background_equivalent_cd_m2']),

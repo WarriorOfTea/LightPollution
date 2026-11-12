@@ -42,7 +42,7 @@ def main():
         base={'artifact_type':'frozen_camera_input','request':{k:full['request'][k] for k in ['time','observer','spectrum']},
             'observation':{k:full['observation'][k] for k in ['observer','atmosphere']},
             'calibration':full['calibration'],'camera':{k:v for k,v in full['camera'].items() if k!='exports'},
-            'terrain':full.get('terrain'),
+            'terrain':full.get('terrain'),'integration':full.get('integration'),
             'source_result':{'path':str(path),'sha256':file_hash(path),'runtime':full['runtime'],'cache':full['cache']},
             'data_provenance':full['data_provenance'],'new_ground_RAW_frames':0}
         original_in_frame=0

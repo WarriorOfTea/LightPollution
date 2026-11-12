@@ -1,0 +1,82 @@
+{
+  "altitude_convention": "geometric_unrefracted",
+  "artificial_horizon": {
+    "kind": "KStars_great_circle_v1",
+    "regions": [
+      {
+        "ceiling": false,
+        "name": "wall",
+        "points": [
+          [
+            160,
+            45.2
+          ],
+          [
+            200,
+            45.2
+          ]
+        ]
+      },
+      {
+        "ceiling": false,
+        "name": "north",
+        "points": [
+          [
+            350,
+            20
+          ],
+          [
+            10,
+            30
+          ]
+        ]
+      },
+      {
+        "ceiling": true,
+        "name": "canopy",
+        "points": [
+          [
+            165,
+            60
+          ],
+          [
+            195,
+            60
+          ]
+        ]
+      },
+      {
+        "ceiling": false,
+        "name": "upper-window",
+        "points": [
+          [
+            165,
+            70
+          ],
+          [
+            195,
+            70
+          ]
+        ]
+      }
+    ]
+  },
+  "artificial_horizon_visible": false,
+  "focus": {
+    "altitude_deg": 45,
+    "azimuth_deg": 180,
+    "dec_jnow_deg": 15.299999999999995,
+    "fov_deg": 108.23444366455078,
+    "object_name": "",
+    "ra_jnow_deg": 36.33360174944988
+  },
+  "kstars_version": "3.8.6",
+  "location": {
+    "elevation_m": 120,
+    "latitude_deg": 60.3,
+    "longitude_deg": 30.315,
+    "name": "GPS Location"
+  },
+  "schema_version": 2,
+  "utc": "2026-11-11T21:00:00Z"
+}

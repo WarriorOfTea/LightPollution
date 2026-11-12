@@ -1,0 +1,15 @@
+{
+  "completed_at": "2026-11-12T20:54:12+01:00",
+  "source": "artifacts/kstars-catalogue-integration-20261112/README.md",
+  "source_sha256": "669ffd130f99e30ed0439fc2e77e7d43b2ce9d54c3255cb1761cfca1bd01c95d",
+  "export": "scratch/kstars-qt6/LightPollution-0.10-report.pdf",
+  "export_sha256": "6abd901117c7f0572473e5ec21c1d8f5cadf77503fad637699027173928b994e",
+  "generated_export_ignored_by_git": true,
+  "pages": 6,
+  "replacement_characters": 0,
+  "text_spans_outside_page": [],
+  "previewed_pages": [
+    1,
+    6
+  ]
+}

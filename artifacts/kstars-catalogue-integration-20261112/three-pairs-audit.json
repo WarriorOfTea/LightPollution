@@ -1,0 +1,110 @@
+{
+  "10780": {
+    "old": [
+      {
+        "file": "unnamedstars.dat",
+        "HD": 10780,
+        "ra_j2000_deg": 26.933595,
+        "dec_j2000_deg": 63.8531,
+        "pm_ra_cosdec_mas_yr": 585.6,
+        "pm_dec_mas_yr": -241.2,
+        "v_mag": 5.62,
+        "b_v_encoded": 0.8
+      },
+      {
+        "file": "unnamedstars.dat",
+        "HD": 0,
+        "ra_j2000_deg": 26.93682,
+        "dec_j2000_deg": 63.8525,
+        "pm_ra_cosdec_mas_yr": 582.6,
+        "pm_dec_mas_yr": -246.1,
+        "v_mag": 5.71,
+        "b_v_encoded": 0.9
+      }
+    ],
+    "updated": [
+      {
+        "file": "unnamedstars.dat",
+        "HD": 10780,
+        "ra_j2000_deg": 26.93682,
+        "dec_j2000_deg": 63.85251,
+        "pm_ra_cosdec_mas_yr": 585.6,
+        "pm_dec_mas_yr": -241.2,
+        "v_mag": 5.62,
+        "b_v_encoded": 0.8
+      }
+    ]
+  },
+  "18757": {
+    "old": [
+      {
+        "file": "unnamedstars.dat",
+        "HD": 18757,
+        "ra_j2000_deg": 46.036455,
+        "dec_j2000_deg": 61.70752,
+        "pm_ra_cosdec_mas_yr": 726.1,
+        "pm_dec_mas_yr": -689.8,
+        "v_mag": 6.64,
+        "b_v_encoded": 0.65
+      },
+      {
+        "file": "unnamedstars.dat",
+        "HD": 0,
+        "ra_j2000_deg": 46.04016,
+        "dec_j2000_deg": 61.70583,
+        "pm_ra_cosdec_mas_yr": 722.0,
+        "pm_dec_mas_yr": -693.7,
+        "v_mag": 6.71,
+        "b_v_encoded": 0.75
+      }
+    ],
+    "updated": [
+      {
+        "file": "unnamedstars.dat",
+        "HD": 18757,
+        "ra_j2000_deg": 46.040175,
+        "dec_j2000_deg": 61.70584,
+        "pm_ra_cosdec_mas_yr": 726.1,
+        "pm_dec_mas_yr": -689.8,
+        "v_mag": 6.64,
+        "b_v_encoded": 0.65
+      }
+    ]
+  },
+  "13579": {
+    "old": [
+      {
+        "file": "unnamedstars.dat",
+        "HD": 13579,
+        "ra_j2000_deg": 33.924,
+        "dec_j2000_deg": 67.67306,
+        "pm_ra_cosdec_mas_yr": 514.4,
+        "pm_dec_mas_yr": -303.9,
+        "v_mag": 7.19,
+        "b_v_encoded": 0.92
+      },
+      {
+        "file": "unnamedstars.dat",
+        "HD": 0,
+        "ra_j2000_deg": 33.927315,
+        "dec_j2000_deg": 67.67231,
+        "pm_ra_cosdec_mas_yr": 516.8,
+        "pm_dec_mas_yr": -304.6,
+        "v_mag": 7.3,
+        "b_v_encoded": 1.09
+      }
+    ],
+    "updated": [
+      {
+        "file": "unnamedstars.dat",
+        "HD": 13579,
+        "ra_j2000_deg": 33.927285,
+        "dec_j2000_deg": 67.67232,
+        "pm_ra_cosdec_mas_yr": 514.4,
+        "pm_dec_mas_yr": -303.9,
+        "v_mag": 7.19,
+        "b_v_encoded": 0.92
+      }
+    ]
+  }
+}

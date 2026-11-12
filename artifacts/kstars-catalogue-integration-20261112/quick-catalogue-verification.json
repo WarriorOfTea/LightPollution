@@ -1,0 +1,9 @@
+{
+  "rows_before_pan": 17071,
+  "rows_after_pan": 17071,
+  "missing_rows": 0,
+  "unexpected_rows": 0,
+  "identical_astrometry_V_BV": true,
+  "current_binary_sha256": "60bcec88d5efb5b293837118cc50221a7c87db3b2c14736d844751dfe6f4e209",
+  "no_physical_jobs_submitted": true
+}

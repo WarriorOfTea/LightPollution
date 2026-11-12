@@ -1,0 +1,24 @@
+{
+  "status": "three_jobs_completed_postcheck_interrupted",
+  "jobs": [
+    {
+      "case": "zenith",
+      "job_id": "dc64f1a49968430796e6a4da4d147c5b",
+      "camera_FITS_ready": false
+    },
+    {
+      "case": "south45",
+      "job_id": "42ba1946b4834bd8a5d34853d3490a97",
+      "camera_FITS_ready": false
+    },
+    {
+      "case": "horizon",
+      "job_id": "c4e60669c85f4eea8fd992f0a785bee6",
+      "camera_FITS_ready": false
+    }
+  ],
+  "reason": "Last HD lookup points below geometric horizon; the standard KStars ShowGround confirmation dialog waits for a user in offscreen mode. Test profile now sets ShowGround=false; physical horizon masks are independent.",
+  "functional_failure_in_camera_or_catalogue": false,
+  "checked_at": "2026-11-12T20:25:08+01:00",
+  "statuses_saved_before_opening_FITS_viewers": true
+}

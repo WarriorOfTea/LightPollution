@@ -4,3 +4,7 @@
 *.csv text eol=lf
 # Preserve publisher bytes in CIE CSV/metadata, checked by cryptographic hashes.
 src/lightpollution/resources/colour/CIE_* -text -eol -whitespace
+
+# Preserve byte-for-byte third-party catalogue responses, including empty TSV fields.
+artifacts/kstars-catalogue-integration-20261112/photometry/*.tsv -text -eol -whitespace
+artifacts/kstars-catalogue-integration-20261112/catalogue-LICENSES.txt -text -eol -whitespace

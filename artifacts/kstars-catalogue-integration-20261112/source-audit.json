@@ -1,0 +1,93 @@
+{
+  "checked_at": "2026-11-12T18:32:11+01:00",
+  "KStars": {
+    "revision": "c46dbb4f0cfe4b8ca190a0c391e975e52a005aa8",
+    "version": "3.8.6 Beta",
+    "url": "https://api.github.com/repos/KDE/kstars/tarball/c46dbb4f0cfe4b8ca190a0c391e975e52a005aa8",
+    "archive_bytes": 89350252,
+    "archive_sha256": "ac55ea6d680cbd8dae046c699f7ee821f2ebc5d49cc038df4d87d5a378748a5e",
+    "reuse": "GPL-2.0-or-later; local module and narrowly scoped source patches; no full checkout in Git"
+  },
+  "Tycho2": {
+    "authors": "Erik Høg et al.; KStars binary catalogue distributed by Siril",
+    "url": "https://free-astro.org/download/kstars-siril-catalogues/deepstars.dat.xz",
+    "download_bytes": 29098324,
+    "download_sha256": "75346d0c1cd58eb237269ff92ecd116accc730dd3c2dcf3c3d412d68eccab213",
+    "original_uncompressed_sha256": "136301c017094044d24b74711eeb3d693e908ec6d31c0f217a05565fb4704a00",
+    "original_uncompressed_sha1": "d32b78fd1a3f977fa853d829fc44ee0014c2ab53",
+    "prepared_sha256": "cf43c6c7e943daffc471432d66731ddae7134ba378cc50d71a339b5252c0ac51",
+    "full_and_bounded_repair_identical": true,
+    "native_default_files": {
+      "namedstars.dat": "df429f38c728766e717aea588851dd1ed652e69c5c671cdb6b2c8dfbd6b2672f",
+      "unnamedstars.dat": "c4ecdd3ba4cc697f62a50830522fd4235ea39716c62179c81f9d0a3ffe0ed62f"
+    },
+    "original_records": 2412252,
+    "removed_records": 160,
+    "removed_stars": 155,
+    "same_star_pairs": 9,
+    "ghost_pairs": 146,
+    "HD_carried_over": 6,
+    "license_url": "https://free-astro.org/download/kstars-siril-catalogues/LICENSES.txt"
+  },
+  "catalogue_fixes": {
+    "tool_url": "https://github.com/KDE/kstars/blob/c46dbb4f0cfe4b8ca190a0c391e975e52a005aa8/kstars/data/tools/fix-star-catalogs.py",
+    "tool_sha256": "3e3f2ec0eca38771ef2172b4f75d5383f9f51ee448e44a1a5bf8d728cfab4936",
+    "upstream_bug": "https://bugs.kde.org/show_bug.cgi?id=309164",
+    "three_old_pairs_checked": 3,
+    "three_pairs_with_single_updated_record": 3
+  },
+  "B_V": {
+    "raw_format_source": "https://github.com/KDE/kstars/blob/c46dbb4f0cfe4b8ca190a0c391e975e52a005aa8/kstars/data/tools/mysql2bin.c",
+    "scale": 100,
+    "encoded_zero_policy": "unavailable; cannot distinguish missing from true zero in the old conversion",
+    "StarObject_init_source": "https://github.com/KDE/kstars/blob/c46dbb4f0cfe4b8ca190a0c391e975e52a005aa8/kstars/skyobjects/starobject.cpp"
+  },
+  "Ekos": {
+    "source": "https://github.com/KDE/kstars/blob/c46dbb4f0cfe4b8ca190a0c391e975e52a005aa8/kstars/ekos/capture/exposurecalculator/optimalsubexposurecalculator.cpp",
+    "extension": "positive direct sky electron-rate override; original C-factor/noise/stack algorithm",
+    "original_behavior_when_not_selected": "external rate unset, stock scalar SQM calculation remains"
+  },
+  "native_dependencies": {
+    "origin": "KDE Neon User noble + Ubuntu noble/noble-updates HTTPS package indexes",
+    "unique_packages_in_compact_manifest": 1138,
+    "manifest": "native-dependencies.json.gz",
+    "package_payloads_committed": false,
+    "package_installation_on_host": false,
+    "dependency_config_relocation": "Only paths in unpacked SDK cmake files / qt shell wrappers; no system files edited",
+    "note": "cURL development package added separately; final build audit records it separately"
+  },
+  "CMake_PCH_documentation": "https://cmake.org/cmake/help/v3.30/command/target_precompile_headers.html",
+  "new_independent_RAW_frames": 0,
+  "new_human_observers": 0,
+  "photometric_system_audit": {
+    "primary_guide": "https://archive.eso.org/ASTROM/TYC-2/docs/guide.pdf",
+    "guide_sha256": "50b14f00ca3116ecbc2d56512ef9461f940799c04bca072062e36709d0583960",
+    "formula": "V=VT-0.090(BT-VT); B-V=0.850(BT-VT)",
+    "assumptions": "approximation for unreddened main-sequence stars; system inferred from KStars guessed spectral flag with no parallax",
+    "our_operational_colour_domain": [
+      -0.2,
+      1.8
+    ],
+    "outside_domain_or_missing_colour": "unknown flux; do not silently use VT as Johnson V",
+    "VizieR_primary_catalogue": "I/259/tyc2; ASU endpoint vizier.cfa.harvard.edu",
+    "checked_HD10780_duplicate": {
+      "TYC": "4040-2023-1",
+      "BT": 6.612,
+      "VT": 5.71,
+      "raw_KStars_mag": 5.71,
+      "raw_KStars_colour": 0.9,
+      "conclusion": "the discarded Tycho duplicate stores VT and BT-VT, not Johnson V/B-V"
+    },
+    "additional_red_sample": {
+      "TYC": "4666-803-1",
+      "BT": 12.489,
+      "VT": 10.512,
+      "KStars_mag": 10.51,
+      "KStars_colour": 1.98,
+      "outside_declared_domain": true
+    },
+    "ambiguous_first_sample": "nearest Tycho star has incompatible magnitude/motion; not accepted as the same object",
+    "sample_2_query_status": "HTTP200 but database QUERY_STATUS=ERROR; not a successful data match",
+    "all_catalogue_rows_independently_verified": false
+  }
+}

@@ -60,7 +60,8 @@ def test_kstars_horizon_does_not_turn_obstructed_ground_into_dark_sky(tmp_path):
 def test_native_http_job_saves_exact_source_frame(tmp_path):
     with TestClient(create_app(tmp_path)) as client:
         capabilities=client.get('/api/kstars/capabilities').json()
-        assert capabilities['snapshot_schema']==1
+        assert capabilities['snapshot_schema']==2
+        assert capabilities['snapshot_schemas_supported']==[1,2]
         data=payload();response=client.post('/api/kstars/jobs',json=data)
         assert response.status_code==202
         job=response.json()
@@ -68,3 +69,27 @@ def test_native_http_job_saves_exact_source_frame(tmp_path):
         assert (tmp_path/'kstars-frames'/(job['id']+'.json')).exists()
         data['snapshot']['altitude_convention']='unknown'
         assert client.post('/api/kstars/jobs',json=data).status_code==422
+
+
+def test_full_horizon_snapshot_retains_contours_and_legacy_compatibility():
+    data=payload();data['snapshot'].update(schema_version=2,artificial_horizon={
+        'kind':'KStars_piecewise_linear_v1','regions':[{'name':'roof','ceiling':True,
+        'points':[[350.,60.],[10.,80.]]}]})
+    spec,frame=scene_from_kstars(data)
+    assert spec.to_dict()['integration']['artificial_horizon']==frame['artificial_horizon']
+    data['snapshot']['artificial_horizon']['regions'][0]['points'][0][0]=False
+    with pytest.raises(DomainError):scene_from_kstars(data)
+    data['snapshot'].pop('artificial_horizon')
+    with pytest.raises(DomainError):scene_from_kstars(data)
+
+
+def test_multiple_directions_use_their_own_horizon(tmp_path):
+    from lightpollution.domain.scene import SceneSpec
+    data=payload();data['snapshot'].update(schema_version=2,artificial_horizon={
+        'kind':'KStars_piecewise_linear_v1','regions':[{'name':'wall','ceiling':False,
+        'points':[[170.,50.],[190.,50.]]}]})
+    spec,_=scene_from_kstars(data)
+    scene=spec.to_dict();scene['directions']=[[180.,45.],[0.,45.]]
+    value=Planner(tmp_path).run(SceneSpec.from_mapping(scene)).value
+    assert not value['sky']['directions'][0]['supported']
+    assert value['sky']['directions'][1]['supported']

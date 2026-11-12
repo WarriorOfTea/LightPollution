@@ -1,0 +1,45 @@
+#
+#   VizieR Astronomical Server vizier.cfa.harvard.edu
+#    Date: 2026-11-12T17:39:43 [V7.6.1]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-11-12T17:39:43	  Query execution date
+#INFO	request=https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=I%2F259%2Ftyc2&-c=5.99892+-3.47437&-c.rs=5&-out=TYC1%2CTYC2%2CTYC3%2CRAmdeg%2CDEmdeg%2CpmRA%2CpmDE%2CBTmag%2CVTmag&-out.max=10	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.1	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	-c=005.998920-03.474370,rs=5.	
+#Constraint -out.max=10
+
+#RESOURCE=yCat_1259
+#Name: I/259
+#Title: The Tycho-2 Catalogue (Hog+ 2000)
+#INFO	ivoid=ivo://cds.vizier/i/259	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/i/259	    IVOID of underlying data collection
+#INFO	creator=Hog E.	    First author or institution
+#INFO	cites=bibcode:2000A&A...355L..27H	    Article or Data origin sources
+#INFO	journal=A&A	    Journal name
+#INFO	original_date=2000	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/I/259	    Dataset landing page
+#INFO	publication_date=2000-02-07	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Table	I_259_tyc2:
+#Name: I/259/tyc2
+#Title: *The Tycho-2 main catalogue
+#Column	TYC1	(I4)	[1,9537]+= TYC1 from TYC or GSC (1)	[ucd=meta.id.part;meta.main]
+#Column	TYC2	(I5)	[1,12121] TYC2 from TYC or GSC (1)	[ucd=meta.id.part;meta.main]
+#Column	TYC3	(I1)	[1,3] TYC3 from TYC (1)	[ucd=meta.id.part;meta.main]
+#Column	RAmdeg	(F12.8)	[]? Mean Right Asc, ICRS, epoch=J2000 (3)	[ucd=pos.eq.ra]
+#Column	DEmdeg	(F12.8)	[]? Mean Decl, ICRS, at epoch=J2000 (3)	[ucd=pos.eq.dec]
+#Column	pmRA	(F7.1)	[-4418.0,6544.2]? prop. mot. in RA*cos(dec)	[ucd=pos.pm;pos.eq.ra]
+#Column	pmDE	(F7.1)	[-5774.3,10277.3]? prop. mot. in Dec	[ucd=pos.pm;pos.eq.dec]
+#Column	BTmag	(F6.3)	[2.183,16.581]? Tycho-2 BT magnitude (7)	[ucd=phot.mag;em.opt.B]
+#Column	VTmag	(F6.3)	[1.905,15.193]? Tycho-2 VT magnitude (7)	[ucd=phot.mag;em.opt.V]
+TYC1	TYC2	TYC3	RAmdeg	DEmdeg	pmRA	pmDE	BTmag	VTmag
+ 	 	 	deg	deg	mas/yr	mas/yr	mag	mag
+----	-----	-	------------	------------	-------	-------	------	------
+4668	  492	1	  5.99928251	 -3.47530779	   19.9	  -12.2	 7.529	 7.414
+

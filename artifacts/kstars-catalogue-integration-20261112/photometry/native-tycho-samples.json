@@ -1,0 +1,32 @@
+[
+  {
+    "ra_deg": 5.99892,
+    "dec_deg": -3.47437,
+    "raw_mag": 10.22,
+    "raw_colour": 0.58,
+    "HD": 0,
+    "sptype": "F?",
+    "pmRA": 0.0,
+    "pmDE": 0.0
+  },
+  {
+    "ra_deg": 0.73353,
+    "dec_deg": -3.52213,
+    "raw_mag": 10.51,
+    "raw_colour": 1.98,
+    "HD": 0,
+    "sptype": "M?",
+    "pmRA": 4.2,
+    "pmDE": -3.4
+  },
+  {
+    "ra_deg": 7.36107,
+    "dec_deg": -2.3492,
+    "raw_mag": 10.62,
+    "raw_colour": 0.64,
+    "HD": 0,
+    "sptype": "G?",
+    "pmRA": 220.8,
+    "pmDE": -266.8
+  }
+]

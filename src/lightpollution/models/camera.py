@@ -102,19 +102,34 @@ def camera_config(value):
 
 
 def validate_catalogue(catalogue):
-    if (not isinstance(catalogue,dict) or set(catalogue)!={'provider','utc','magnitude_limit','truncated','rows'}
+    required={'provider','utc','magnitude_limit','truncated','rows'}
+    if (not isinstance(catalogue,dict) or not required <= set(catalogue) or set(catalogue)-required-{'provenance'}
             or catalogue['provider']!='KStars' or not isinstance(catalogue['utc'],str)
             or type(catalogue['truncated']) is not bool or not isinstance(catalogue['rows'],list)
             or len(catalogue['rows'])>20000):raise ValueError('Invalid KStars camera catalogue.')
     _number(catalogue['magnitude_limit'],'magnitude_limit',0,16)
+    provenance=catalogue.get('provenance',{})
+    if (not isinstance(provenance,dict) or set(provenance)-{'files','qt_version','colour_policy','deduplication','aperture'}
+            or len(str(provenance))>12000):raise ValueError('Invalid catalogue provenance.')
     ids=set()
     for row in catalogue['rows']:
-        if (not isinstance(row,dict) or set(row)!={'id','name','azimuth_deg','altitude_deg','v_mag','b_v'}
+        required_row={'id','name','azimuth_deg','altitude_deg','v_mag','b_v'}
+        if (not isinstance(row,dict) or not required_row <= set(row) or set(row)-required_row-{'astrometry','photometry'}
                 or not isinstance(row['id'],str) or not 1<=len(row['id'])<=160 or row['id'] in ids
                 or not isinstance(row['name'],str) or len(row['name'])>160):raise ValueError('Invalid or duplicate camera star.')
         ids.add(row['id'])
         for key,lo,hi in [('azimuth_deg',0,360),('altitude_deg',-90,90),('v_mag',-5,25)]:_number(row[key],key,lo,hi)
         if row['b_v'] is not None:_number(row['b_v'],'b_v',-1,4)
+        if row.get('photometry','Johnson_V_BV') not in ('Johnson_V_BV','Tycho_VT_BTminusVT_inferred'):
+            raise ValueError('Unsupported catalogue photometric system.')
+        if 'astrometry' in row:
+            a=row['astrometry']
+            if not isinstance(a,dict) or set(a)!={'ra_j2000_deg','dec_j2000_deg','pm_ra_cosdec_mas_yr',
+                    'pm_dec_mas_yr','hd','multiple'}:raise ValueError('Invalid catalogue astrometry.')
+            for key,lo,hi in [('ra_j2000_deg',0,360),('dec_j2000_deg',-90,90),
+                    ('pm_ra_cosdec_mas_yr',-1e6,1e6),('pm_dec_mas_yr',-1e6,1e6)]:_number(a[key],key,lo,hi)
+            _number(a['hd'],'hd',0,1000000,True)
+            if type(a['multiple']) is not bool:raise ValueError('multiple must be boolean.')
 
 
 def camera_view(config):

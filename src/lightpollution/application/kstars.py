@@ -5,6 +5,7 @@ from datetime import datetime
 
 from ..adapters.storage import content_key
 from ..domain.scene import DomainError, SceneSpec, number
+from ..models.kstars_horizon import validate_horizon
 
 
 def scene_from_kstars(payload):
@@ -12,10 +13,15 @@ def scene_from_kstars(payload):
         raise DomainError('invalid_kstars_snapshot', 'Нужны scene и единый snapshot KStars.')
     snapshot = deepcopy(payload['snapshot'])
     if (not isinstance(snapshot, dict) or type(snapshot.get('schema_version')) is not int
-            or snapshot['schema_version'] != 1
+            or snapshot['schema_version'] not in (1, 2)
             or set(snapshot)-{'schema_version','kstars_version','utc','altitude_convention',
-                              'location','focus','artificial_horizon_visible'}):
-        raise DomainError('invalid_kstars_snapshot', 'Нужен snapshot KStars версии 1.')
+                              'location','focus','artificial_horizon_visible','artificial_horizon'}):
+        raise DomainError('invalid_kstars_snapshot', 'Нужен snapshot KStars версии1/2.')
+    if snapshot['schema_version'] == 2 or 'artificial_horizon' in snapshot:
+        try:
+            snapshot['artificial_horizon'] = validate_horizon(snapshot.get('artificial_horizon'))
+        except ValueError as exc:
+            raise DomainError('invalid_kstars_snapshot', str(exc)) from exc
     if not isinstance(snapshot.get('kstars_version'), str) or not snapshot['kstars_version']:
         raise DomainError('invalid_kstars_snapshot', 'Не указана версия KStars.')
     try:
@@ -62,5 +68,7 @@ def scene_from_kstars(payload):
         'focused_object': str(focus.get('object_name', ''))[:256],
         'altitude_convention': 'geometric_unrefracted',
         'artificial_horizon_visible': snapshot.get('artificial_horizon_visible')}
+    if 'artificial_horizon' in snapshot:
+        origin['artificial_horizon'] = snapshot['artificial_horizon']
     scene['integration'] = origin
     return SceneSpec.from_mapping(scene), snapshot

@@ -1,0 +1,5 @@
+{
+  "invalid_sampling_rejected": true,
+  "old_result_remains_stale": true,
+  "message": "Camera sampling supports grids 3/5/9 and none/heldout_8 validation."
+}

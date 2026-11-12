@@ -1,0 +1,14 @@
+{
+  "version": "0.10.0",
+  "python": "3.12.3",
+  "working_directory": "/tmp",
+  "installed_path": "/home/myuser/.cache/uv/archive-v0/MUhAaq2KjDxViTkT/lib/python3.12/site-packages/lightpollution",
+  "package_files_matching_checkout": 94,
+  "package_files_checked": 94,
+  "distributions_in_isolated_environment": 127,
+  "offline_camera_scene_completed": true,
+  "camera_exports_checked": 6,
+  "FITS_HDU_checksums_passed": 10,
+  "FITS_HDU_checksums_checked": 10,
+  "camera_profile_adapter_importable": true
+}

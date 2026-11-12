@@ -1,0 +1,17 @@
+{
+  "command": "uv run --all-extras pytest -q -p no:cacheprovider",
+  "exit_code": 0,
+  "passed": 317,
+  "failed": 0,
+  "skipped": 0,
+  "duration_s": 85.97,
+  "completed_at_log_mtime": "2026-11-12T20:12:54+01:00",
+  "time_source": "log file modification time after process completion",
+  "additional_installer_check_after_LRU_fix": {
+    "passed": 3,
+    "failed": 0,
+    "duration_s": 0.31
+  },
+  "includes_native_navigation_golden_examples": 4,
+  "includes_spherical_vs_linear_wall_regression": true
+}

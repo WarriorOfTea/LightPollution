@@ -37,6 +37,12 @@ public slots:
     Q_SCRIPTABLE void showEyeView();
     Q_SCRIPTABLE void showCameraFITS();
     Q_SCRIPTABLE bool saveCameraScreenshot(const QString &path);
+    Q_SCRIPTABLE QString catalogueJSON() const;
+    Q_SCRIPTABLE void showEkosExposure();
+    Q_SCRIPTABLE QString ekosExposureJSON() const;
+    Q_SCRIPTABLE bool saveEkosScreenshot(const QString &path);
+    Q_SCRIPTABLE bool setVerificationHorizonJSON(const QString &json);
+    Q_SCRIPTABLE QString horizonVisibilityJSON(const QString &json) const;
 private:
     QJsonObject snapshot() const;
     QJsonObject scene() const;
@@ -61,12 +67,14 @@ private:
     QLabel *m_Position, *m_Status, *m_Scale;
     QTableWidget *m_Values;
     QJsonObject m_Base, m_LastResult, m_Regions;
-    QString m_URL, m_Job, m_SubmittedKey, m_CurrentKey;
+    QString m_URL, m_Job, m_SubmittedKey, m_CurrentKey, m_ResultKey;
     bool m_Busy=false, m_PollPending=false, m_CancelSent=false;
     int m_StableTicks=0;
     bool m_EyePreviewReady=false;
     QPointer<QDialog> m_EyeDialog;
     QPointer<FITSViewer> m_FITSViewer;
+    QPointer<QDialog> m_EkosDialog;
+    QJsonObject m_EkosVerification;
     QTemporaryDir m_CameraFiles;
     bool m_CameraFITSReady=false;
 };

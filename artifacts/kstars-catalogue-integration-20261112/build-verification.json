@@ -1,0 +1,61 @@
+{
+  "binary_sha256": "74a821a0afb50464d62c3285eace93107840c32a256b624beb223f24cf46e1d9",
+  "source_native_sha256": {
+    "CMakeLists.txt": "50dc1dbed00235022354185320710a8d821c48d1ba867f9937c1da5e65cec2f9",
+    "kstarsinit.cpp": "9f8ea3e096e010e81ade39dae850093c4132fd9152131d2d44427d3f599f2ddc",
+    "lightpollutiondock.cpp": "4733499600d5ef78f4b51f03f08660eeb9de6b9089bf5472a2cd30cc6daf3953",
+    "lightpollutiondock.h": "2eba8a56f51b12c9d982a95833daa6660e8201b896a4a3eaddd21dfb85abcbba",
+    "starobject.cpp": "5f44a256b90988c15bcb14f467009412551bdc6c8ec50f61c011883155f6d917",
+    "deepstarcomponent.cpp": "962e9f707827002dbbd00987d6b6bd4cb5ce580b3ef3c06e11906417f666c515",
+    "optimalsubexposurecalculator.h": "4d016f3ea43cdb0a3b919f349c9976242461bc4bf089849d4d36e91886f8f1c1",
+    "optimalsubexposurecalculator.cpp": "634579afae6d0e801b3bf82be6cb00f9fe1fab6c2b90e56ec43ab4bf785aac82"
+  },
+  "KStars_source_revision": "c46dbb4f0cfe4b8ca190a0c391e975e52a005aa8",
+  "KStars_version": "3.8.6 Beta",
+  "Qt_version": "6.11.1",
+  "KDE_Frameworks_version": "6.31.0",
+  "INDI_version": "2.1.9",
+  "compiler": "GCC13.3",
+  "cmake": "3.30.5",
+  "CFITSIO_enabled": true,
+  "INDI_Ekos_enabled": true,
+  "StellarSolver_version": "2.7",
+  "OpenCV_version": "4.10.0",
+  "build_flags": "-O0 -g0 -DNDEBUG; Qt PCH; Ninja; BUILD_TESTING=OFF",
+  "runtime_libraries_missing": [],
+  "system_packages_or_KStars_replaced": false,
+  "SDK_repairs": [
+    "relocated cmake absolute prefixes / Qt executable wrappers",
+    "private BLAS/LAPACK alternatives symlinks",
+    "private libproxy backend symlink"
+  ],
+  "installer_builds_all_targets_including_city_database": true,
+  "generated_city_records": 4217,
+  "HD_index": {
+    "indexed_HD": 272875,
+    "ambiguous_HD_omitted": 4731,
+    "sha256": "fe752c6ebd6115c5179db49c54f96ea71bd4bce9196dbc3ab8e4e196b2d089bb",
+    "byte_offsets_rebuilt": true,
+    "lookup_samples": [
+      {
+        "hd": 26628,
+        "v_mag": 9.86,
+        "byte_offset": 5344826
+      },
+      {
+        "hd": 278097,
+        "v_mag": 10.22,
+        "byte_offset": 68951994
+      },
+      {
+        "hd": 155141,
+        "v_mag": 9.68,
+        "byte_offset": 28159898
+      }
+    ]
+  },
+  "repeat_install_before_final_Qt6_fix_performed": true,
+  "independent_camera_RAW_frames": 0,
+  "repeat_install_after_final_fix_passed": true,
+  "native_artificial_horizon_uses_great_circles": true
+}

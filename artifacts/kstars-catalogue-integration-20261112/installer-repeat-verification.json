@@ -1,0 +1,18 @@
+{
+  "completed_at": "2026-11-12T20:35:40+01:00",
+  "status": "passed",
+  "duration_s": 6.994659561198205,
+  "binary_and_catalogue_files_identical": true,
+  "checked_files": 7,
+  "hashes": {
+    "installed/bin/kstars": "74a821a0afb50464d62c3285eace93107840c32a256b624beb223f24cf46e1d9",
+    "catalogues/share/kstars/Henry-Draper.idx": "fe752c6ebd6115c5179db49c54f96ea71bd4bce9196dbc3ab8e4e196b2d089bb",
+    "catalogues/share/kstars/catalogue-provenance.json": "08c3bbf9670f0e4a5ea41dedcdb7393dab3c6bd224a3f1c3d4eceb771d4b36be",
+    "catalogues/share/kstars/deepstars.dat": "cf43c6c7e943daffc471432d66731ddae7134ba378cc50d71a339b5252c0ac51",
+    "catalogues/share/kstars/namedstars.dat": "df429f38c728766e717aea588851dd1ed652e69c5c671cdb6b2c8dfbd6b2672f",
+    "catalogues/share/kstars/starnames.dat": "6c56d225bbc46b7b02e334b4679b40d065d6e8252e03554d23d212d109a04647",
+    "catalogues/share/kstars/unnamedstars.dat": "c4ecdd3ba4cc697f62a50830522fd4235ea39716c62179c81f9d0a3ffe0ed62f"
+  },
+  "CXX_objects_recompiled": false,
+  "system_KStars_replaced": false
+}

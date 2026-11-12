@@ -1,0 +1,30 @@
+{
+  "QE_or_focal_ratio_applied_twice": false,
+  "SQM_used": false,
+  "bounds_compatible": false,
+  "engine": "OptimalExposure::OptimalSubExposureCalculator::calculateSubExposureDetail",
+  "hardware_or_capture_queue_changed": false,
+  "noise_increase_percent": 5,
+  "profile_id": "37170de673dc531bed0e5ea89b0445bd89e1c12961ef90166ad4c7be72c97b4e",
+  "rows": [
+    {
+      "exposure_s": 19.67477338964462,
+      "sky_e": 87.80487804878045,
+      "sky_rate_e_pixel_s": 4.462815215701269,
+      "total_noise_e": 9.83894699898218
+    },
+    {
+      "exposure_s": 18.94321502150662,
+      "sky_e": 87.80487804878044,
+      "sky_rate_e_pixel_s": 4.635162402427136,
+      "total_noise_e": 9.838946998982179
+    },
+    {
+      "exposure_s": 18.694155652859738,
+      "sky_e": 87.80487804878045,
+      "sky_rate_e_pixel_s": 4.696915960221424,
+      "total_noise_e": 9.83894699898218
+    }
+  ],
+  "sky_input_kind": "direct_electrons_per_pixel_per_second"
+}

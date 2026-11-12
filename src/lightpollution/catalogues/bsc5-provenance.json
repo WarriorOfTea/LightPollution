@@ -27,5 +27,11 @@
   "selection": "Require Vmag, spectral type and coordinates; excludes non-stellar/empty records.",
   "frame": "FK5 J2000; proper motions in arcsec/year, RA tangent component includes cos(dec)",
   "precision": "HEASARC coordinates as supplied; not a catalogue complete to arbitrary faint magnitudes.",
-  "reuse": "Astronomical catalogue data from NASA HEASARC. Cite original authors and provider; no external software source copied."
+  "reuse": "Astronomical catalogue data from NASA HEASARC. Cite original authors and provider; no external software source copied.",
+  "cross_identifications": {
+    "file": "bsc5-cross-identifications.csv",
+    "sha256": "4f59e1106027d17713b84cd4ffef9e4d93295e3eba28340aa894967fe40304e9",
+    "rows": 9096,
+    "selection": "HR/HD/coordinates from the same downloaded HEASARC table; unique HD and J2000 <=3 arcsec required at use; no proximity-only object merging"
+  }
 }
