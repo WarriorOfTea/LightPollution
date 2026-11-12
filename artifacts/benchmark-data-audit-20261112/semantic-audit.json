@@ -1,0 +1,1100 @@
+{
+  "checked_at_utc": "2026-11-12T22:56:27+00:00",
+  "lightpollution_physical_model_runs": 0,
+  "skycalc_or_external_radiative_transfer_runs": 0,
+  "scope": "Table/header/metadata inspection only; JPL public ephemeris endpoint queried as an access check. No forecasts, fitting, image rendering, camera simulation or model accuracy scores.",
+  "sources": {
+    "globe-2015": {
+      "rows": 22981,
+      "fields": [
+        "ID",
+        "ObsType",
+        "Latitude",
+        "Longitude",
+        "Elevation(m)",
+        "LocalDate",
+        "LocalTime",
+        "UTDate",
+        "UTTime",
+        "LimitingMag",
+        "SQMReading",
+        "SQMSerial",
+        "CloudCover",
+        "Constellation",
+        "SkyComment",
+        "LocationComment",
+        "Country"
+      ],
+      "observation_types": {
+        "GAN": 12657,
+        "VDN": 2562,
+        "DSM": 7762
+      },
+      "utc_year_counts": {
+        "2015": 22977,
+        "2016": 4
+      },
+      "human_GAN_rows": 12657,
+      "human_GAN_clear_self_reports": 6309,
+      "GAN_clear_with_nonempty_magnitude_utc": 6309,
+      "utc_date_min": "2015-01-01",
+      "utc_date_max": "2016-01-01",
+      "scientifically_eligible_rows": null,
+      "reason": "No Sun/Moon/timezone/duplicate/adaptation/per-star QA performed; clear is a self report. VDN and DSM are not treated as equivalent naked-eye chart responses."
+    },
+    "globe-2017": {
+      "rows": 14260,
+      "fields": [
+        "ID",
+        "ObsType",
+        "Latitude",
+        "Longitude",
+        "Elevation(m)",
+        "LocalDate",
+        "LocalTime",
+        "UTDate",
+        "UTTime",
+        "LimitingMag",
+        "SQMReading",
+        "SQMSerial",
+        "CloudCover",
+        "Constellation",
+        "SkyComment",
+        "LocationComment",
+        "Country"
+      ],
+      "observation_types": {
+        "GAN": 9940,
+        "VDN": 1257,
+        "DSM": 3050,
+        "SE17": 13
+      },
+      "utc_year_counts": {
+        "2017": 14260
+      },
+      "human_GAN_rows": 9940,
+      "human_GAN_clear_self_reports": 5040,
+      "GAN_clear_with_nonempty_magnitude_utc": 5040,
+      "utc_date_min": "2017-01-01",
+      "utc_date_max": "2017-12-31",
+      "scientifically_eligible_rows": null,
+      "reason": "No Sun/Moon/timezone/duplicate/adaptation/per-star QA performed; clear is a self report. VDN and DSM are not treated as equivalent naked-eye chart responses."
+    },
+    "noaa-hourly-s3": {
+      "rows": 26302,
+      "fields": [
+        "STATION",
+        "DATE",
+        "SOURCE",
+        "LATITUDE",
+        "LONGITUDE",
+        "ELEVATION",
+        "NAME",
+        "REPORT_TYPE",
+        "CALL_SIGN",
+        "QUALITY_CONTROL",
+        "WND",
+        "CIG",
+        "VIS",
+        "TMP",
+        "DEW",
+        "SLP",
+        "AA1",
+        "AA2",
+        "AA3",
+        "AW1",
+        "AY1",
+        "AY2",
+        "AZ1",
+        "AZ2",
+        "ED1",
+        "GA1",
+        "GA2",
+        "GA3",
+        "GE1",
+        "GF1",
+        "KA1",
+        "MA1",
+        "MD1",
+        "MW1",
+        "MW2",
+        "OC1",
+        "OD1",
+        "OD2",
+        "REM",
+        "EQD"
+      ],
+      "station": "BARAJAS, SP",
+      "latitude_deg": 40.493556,
+      "longitude_deg": -3.566764,
+      "elevation_m": 609.6,
+      "date_min": "2017-01-01T00:00:00",
+      "date_max": "2017-12-31T23:30:00",
+      "days": {
+        "2017-03-19": {
+          "rows": 72,
+          "rows_22utc_hour": 3,
+          "report_types": {
+            "FM-12": 24,
+            "FM-15": 48
+          },
+          "representative_22utc_reports": [
+            {
+              "DATE": "2017-03-19T22:00:00",
+              "TMP": "+0135,1",
+              "DEW": "+0039,1",
+              "SLP": "10149,1",
+              "MA1": "99999,9,09475,1",
+              "VIS": "030000,1,9,9",
+              "GF1": "01,99,1,00,1,99,9,99999,9,99,9,99,9",
+              "REPORT_TYPE": "FM-12"
+            },
+            {
+              "DATE": "2017-03-19T22:00:00",
+              "TMP": "+0130,1",
+              "DEW": "+0040,1",
+              "SLP": "99999,9",
+              "MA1": "10150,1,99999,9",
+              "VIS": "999999,9,9,9",
+              "GF1": "",
+              "REPORT_TYPE": "FM-15"
+            },
+            {
+              "DATE": "2017-03-19T22:30:00",
+              "TMP": "+0120,1",
+              "DEW": "+0040,1",
+              "SLP": "99999,9",
+              "MA1": "10150,1,99999,9",
+              "VIS": "999999,9,9,9",
+              "GF1": "",
+              "REPORT_TYPE": "FM-15"
+            }
+          ]
+        },
+        "2017-11-19": {
+          "rows": 72,
+          "rows_22utc_hour": 3,
+          "report_types": {
+            "FM-12": 24,
+            "FM-15": 48
+          },
+          "representative_22utc_reports": [
+            {
+              "DATE": "2017-11-19T22:00:00",
+              "TMP": "+0051,1",
+              "DEW": "-0004,1",
+              "SLP": "10253,1",
+              "MA1": "99999,9,09553,1",
+              "VIS": "030000,1,9,9",
+              "GF1": "00,99,5,00,1,99,9,99999,9,99,9,99,9",
+              "REPORT_TYPE": "FM-12"
+            },
+            {
+              "DATE": "2017-11-19T22:00:00",
+              "TMP": "+0060,1",
+              "DEW": "+0000,1",
+              "SLP": "99999,9",
+              "MA1": "10230,1,99999,9",
+              "VIS": "009900,1,9,9",
+              "GF1": "",
+              "REPORT_TYPE": "FM-15"
+            },
+            {
+              "DATE": "2017-11-19T22:30:00",
+              "TMP": "+0050,1",
+              "DEW": "+0000,1",
+              "SLP": "99999,9",
+              "MA1": "10230,1,99999,9",
+              "VIS": "009900,1,9,9",
+              "GF1": "",
+              "REPORT_TYPE": "FM-15"
+            }
+          ]
+        }
+      },
+      "horizontal_distance_to_AstMon_m": 14281.288403832032
+    },
+    "dcc-lighting-csv": {
+      "rows": 45017,
+      "fields": [
+        "ID",
+        "site_name",
+        "unit_no",
+        "unit_type",
+        "latitude",
+        "longitude"
+      ],
+      "lamp_technology_field_present": false,
+      "photometric_distribution_field_present": false,
+      "historical_2017_inventory_confirmed": false
+    },
+    "aeronet-madrid-aod": {
+      "rows": 60,
+      "date_values": [
+        "19:03:2017"
+      ],
+      "utc_first": "07:10:17",
+      "utc_last": "17:12:45"
+    },
+    "aeronet-madrid-inversion": {
+      "rows": 4,
+      "date_values": [
+        "19:03:2017"
+      ],
+      "utc_first": "07:44:58",
+      "utc_last": "15:24:59",
+      "radius_grid_nodes": 22,
+      "valid_size_bins_per_row": [
+        22,
+        22,
+        22,
+        22
+      ],
+      "parameter_fields": {
+        "ssa": [
+          "Single_Scattering_Albedo[440nm]",
+          "Single_Scattering_Albedo[675nm]",
+          "Single_Scattering_Albedo[870nm]",
+          "Single_Scattering_Albedo[1020nm]"
+        ],
+        "refractive_index": [
+          "Refractive_Index-Real_Part[440nm]",
+          "Refractive_Index-Real_Part[675nm]",
+          "Refractive_Index-Real_Part[870nm]",
+          "Refractive_Index-Real_Part[1020nm]",
+          "Refractive_Index-Imaginary_Part[440nm]",
+          "Refractive_Index-Imaginary_Part[675nm]",
+          "Refractive_Index-Imaginary_Part[870nm]",
+          "Refractive_Index-Imaginary_Part[1020nm]"
+        ],
+        "g": [
+          "Asymmetry_Factor-Total[440nm]",
+          "Asymmetry_Factor-Total[675nm]",
+          "Asymmetry_Factor-Total[870nm]",
+          "Asymmetry_Factor-Total[1020nm]"
+        ]
+      },
+      "valid_values_by_parameter": {
+        "ssa": 0,
+        "refractive_index": 0,
+        "g": 16
+      },
+      "total_values_by_parameter": {
+        "ssa": 16,
+        "refractive_index": 32,
+        "g": 16
+      }
+    },
+    "aeronet-madrid-lunar2017": {
+      "table_rows": 0,
+      "returned_text": "AERONET Data Download (Version 3 Direct Moon)",
+      "interpretation": "No direct-moon AOD records returned for this site/interval; this does not prove absence network-wide."
+    },
+    "actris-barcelona-netcdf": {
+      "datasets": [
+        "time",
+        "time_bounds",
+        "altitude",
+        "wavelength",
+        "backscatter_calibration_value",
+        "error_retrieval_method",
+        "backscatter_evaluation_method",
+        "backscatter_calibration_range_search_algorithm",
+        "elastic_backscatter_algorithm",
+        "longitude",
+        "latitude",
+        "station_altitude",
+        "zenith_angle",
+        "shots",
+        "atmospheric_molecular_calculation_source",
+        "cirrus_contamination",
+        "cirrus_contamination_source",
+        "quality_control_level",
+        "basic_quality_control",
+        "advanced_quality_control",
+        "backscatter",
+        "error_backscatter",
+        "vertical_resolution",
+        "earlinet_product_type",
+        "user_defined_category",
+        "backscatter_calibration_range",
+        "backscatter_calibration_search_range",
+        "cloud_mask",
+        "nv"
+      ],
+      "global_attributes": {
+        "title": "Profiles of aerosol optical properties",
+        "measurement_start_datetime": "2017-03-19T00:45:26Z",
+        "measurement_stop_datetime": "2017-03-19T02:45:26Z",
+        "processing_history_version_dates": [
+          "2025-02-25T17:56Z",
+          "2025-02-25T17:56:00Z",
+          "2021-06-17T09:25Z",
+          "2021-06-17T09:25:00Z",
+          "2019-07-16T10:31Z",
+          "2019-07-16T10:31:00Z",
+          "2019-07-01T12:40:45Z",
+          "2019-07-01T12:41:36Z"
+        ]
+      },
+      "variables": {
+        "latitude": {
+          "shape": [],
+          "units": "degrees_north",
+          "finite_nonfill_values": 1,
+          "total_values": 1,
+          "min": 41.393001556396484,
+          "max": 41.393001556396484
+        },
+        "longitude": {
+          "shape": [],
+          "units": "degrees_east",
+          "finite_nonfill_values": 1,
+          "total_values": 1,
+          "min": 2.119999885559082,
+          "max": 2.119999885559082
+        },
+        "station_altitude": {
+          "shape": [],
+          "units": "m",
+          "finite_nonfill_values": 1,
+          "total_values": 1,
+          "min": 115.0,
+          "max": 115.0
+        },
+        "altitude": {
+          "shape": [
+            272
+          ],
+          "units": "m",
+          "finite_nonfill_values": 272,
+          "total_values": 272,
+          "min": 130.0,
+          "max": 8260.0
+        },
+        "wavelength": {
+          "shape": [
+            1
+          ],
+          "units": "nm",
+          "finite_nonfill_values": 1,
+          "total_values": 1,
+          "min": 355.0,
+          "max": 355.0
+        },
+        "backscatter": {
+          "shape": [
+            1,
+            1,
+            272
+          ],
+          "units": "m-1*sr-1",
+          "finite_nonfill_values": 272,
+          "total_values": 272,
+          "min": -1.06652614295234e-07,
+          "max": 9.96920996838687e+36
+        },
+        "error_backscatter": {
+          "shape": [
+            1,
+            1,
+            272
+          ],
+          "units": "m-1*sr-1",
+          "finite_nonfill_values": 272,
+          "total_values": 272,
+          "min": 3.94599528622805e-08,
+          "max": 9.96920996838687e+36
+        },
+        "cloud_mask": {
+          "shape": [
+            1,
+            272
+          ],
+          "units": "",
+          "finite_nonfill_values": 263,
+          "total_values": 272,
+          "min": 0.0,
+          "max": 0.0
+        }
+      }
+    },
+    "actris-granada-night-netcdf": {
+      "datasets": [
+        "time",
+        "time_bounds",
+        "altitude",
+        "wavelength",
+        "backscatter_calibration_value",
+        "error_retrieval_method",
+        "backscatter_evaluation_method",
+        "backscatter_calibration_range_search_algorithm",
+        "elastic_backscatter_algorithm",
+        "longitude",
+        "latitude",
+        "station_altitude",
+        "zenith_angle",
+        "shots",
+        "atmospheric_molecular_calculation_source",
+        "cirrus_contamination",
+        "cirrus_contamination_source",
+        "quality_control_level",
+        "basic_quality_control",
+        "advanced_quality_control",
+        "backscatter",
+        "error_backscatter",
+        "vertical_resolution",
+        "earlinet_product_type",
+        "user_defined_category",
+        "backscatter_calibration_range",
+        "backscatter_calibration_search_range",
+        "cloud_mask_type",
+        "cloud_mask",
+        "nv"
+      ],
+      "global_attributes": {
+        "title": "Profiles of aerosol optical properties",
+        "measurement_start_datetime": "2017-03-20T19:07:17Z",
+        "measurement_stop_datetime": "2017-03-20T19:29:56Z",
+        "processing_history_version_dates": [
+          "2025-02-28T19:07Z",
+          "2025-02-28T19:07:00Z",
+          "2021-06-17T13:06Z",
+          "2021-06-17T13:06:00Z",
+          "2019-11-12T11:37Z",
+          "2019-11-12T11:37:00Z",
+          "2019-10-22T17:01:23Z",
+          "2019-10-22T17:01:53Z"
+        ]
+      },
+      "variables": {
+        "latitude": {
+          "shape": [],
+          "units": "degrees_north",
+          "finite_nonfill_values": 1,
+          "total_values": 1,
+          "min": 37.16400146484375,
+          "max": 37.16400146484375
+        },
+        "longitude": {
+          "shape": [],
+          "units": "degrees_east",
+          "finite_nonfill_values": 1,
+          "total_values": 1,
+          "min": -3.6050000190734863,
+          "max": -3.6050000190734863
+        },
+        "station_altitude": {
+          "shape": [],
+          "units": "m",
+          "finite_nonfill_values": 1,
+          "total_values": 1,
+          "min": 680.0,
+          "max": 680.0
+        },
+        "altitude": {
+          "shape": [
+            452
+          ],
+          "units": "m",
+          "finite_nonfill_values": 452,
+          "total_values": 452,
+          "min": 875.0,
+          "max": 14405.0
+        },
+        "wavelength": {
+          "shape": [
+            1
+          ],
+          "units": "nm",
+          "finite_nonfill_values": 1,
+          "total_values": 1,
+          "min": 355.0,
+          "max": 355.0
+        },
+        "backscatter": {
+          "shape": [
+            1,
+            1,
+            452
+          ],
+          "units": "m-1*sr-1",
+          "finite_nonfill_values": 436,
+          "total_values": 452,
+          "min": -1.2012141860009271e-06,
+          "max": 4.814211724432601e-06
+        },
+        "error_backscatter": {
+          "shape": [
+            1,
+            1,
+            452
+          ],
+          "units": "m-1*sr-1",
+          "finite_nonfill_values": 436,
+          "total_values": 452,
+          "min": 5.840320823699038e-09,
+          "max": 1.703388536738042e-06
+        },
+        "cloud_mask": {
+          "shape": [
+            1,
+            452
+          ],
+          "units": "",
+          "finite_nonfill_values": 436,
+          "total_values": 452,
+          "min": 0.0,
+          "max": 0.0
+        }
+      }
+    },
+    "actris-products2017": {
+      "records": 109,
+      "station_counts": {
+        "BRC": 70,
+        "GRA": 18,
+        "HPB": 7,
+        "PAY": 4,
+        "PUY": 3,
+        "SOF": 2,
+        "THE": 5
+      },
+      "Madrid_returned": false,
+      "query_interval": "2017-03-18..2017-03-21",
+      "interpretation": "The zero Madrid count applies only to this query; Granada and Barcelona profiles cannot replace local Madrid profiles."
+    },
+    "spitschan-quality-city-correct": {
+      "N total spectra": 5383,
+      "N saturated spectra": 323,
+      "N NaN or Zero spectra": 1861,
+      "N final spectra": 3199
+    },
+    "spitschan-quality-rural-correct": {
+      "N total spectra": 3755,
+      "N saturated spectra": 4,
+      "N NaN or Zero spectra": 559,
+      "N final spectra": 3192
+    },
+    "spitschan-calibrated-city": {
+      "spectrum_timestamp_columns_in_header": 3199,
+      "first_timestamp_label": "05-Jul-2014 19:30:28",
+      "last_timestamp_label": "18-Jul-2014 06:33:32",
+      "only_file_prefix_read": true,
+      "timezone_and_full_array_QA_confirmed": false
+    },
+    "spitschan-calibrated-rural": {
+      "spectrum_timestamp_columns_in_header": 3192,
+      "first_timestamp_label": "30-Jun-2014 18:52:55",
+      "last_timestamp_label": "19-Jul-2014 18:48:58",
+      "only_file_prefix_read": true,
+      "timezone_and_full_array_QA_confirmed": false
+    },
+    "lspdd": {
+      "catalogue_lamps": 311,
+      "example_capture_id": 2469,
+      "example_date": "2014-10-16T22:56:36.979Z",
+      "example_spectral_samples": 784,
+      "wavelength_min": 381.5,
+      "wavelength_max": 780,
+      "location_fields_present_but_null": true,
+      "license": "CC BY-NC-ND4.0 according to API terms; metadata and source links only are redistributed."
+    },
+    "camspec-data": {
+      "camera_names": [
+        "Canon 1DMarkIII",
+        "Canon 20D",
+        "Canon 300D",
+        "Canon 40D",
+        "Canon 500D",
+        "Canon 50D",
+        "Canon 5DMarkII",
+        "Canon 600D",
+        "Canon 60D",
+        "Hasselblad H2",
+        "Nikon D3X",
+        "Nikon D200",
+        "Nikon D3",
+        "Nikon D300s",
+        "Nikon D40",
+        "Nikon D50",
+        "Nikon D5100",
+        "Nikon D700",
+        "Nikon D80",
+        "Nikon D90",
+        "Nokia N900",
+        "Olympus E-PL2",
+        "Pentax K-5",
+        "Pentax Q",
+        "Point Grey Grasshopper 50S5C",
+        "Point Grey Grasshopper2 14S5C",
+        "Phase One",
+        "SONY NEX-5N"
+      ],
+      "camera_count": 28,
+      "relative_RGB_curves_independently_normalised": true,
+      "absolute_QE_available": false,
+      "license": "CC BY-NC-SA4.0"
+    },
+    "calspec-vega": {
+      "hdu_count": 2,
+      "columns": [
+        "WAVELENGTH",
+        "FLUX",
+        "STATERROR",
+        "SYSERROR",
+        "FWHM",
+        "DATAQUAL",
+        "TOTEXP"
+      ],
+      "spectral_rows": 9192
+    },
+    "eso-raw-fits-prefix": {
+      "unix_compress_stream_decoded": true,
+      "header_read": true,
+      "full_fits_downloaded": false,
+      "pixel_accuracy_or_checksum_tested": false,
+      "header": {
+        "DATE-OBS": "2017-03-19T00:18:41.806",
+        "EXPTIME": 150.0007,
+        "ESO TEL GEOLAT": -24.6276,
+        "ESO TEL GEOLON": -70.4051,
+        "ESO TEL GEOELEV": 2648.0,
+        "ESO INS FILT1 NAME": "R_SPECIAL",
+        "ESO DET OUT1 RON": 3.6,
+        "ESO DET OUT1 GAIN": 0.8
+      },
+      "gain_unit_requires_instrument_manual": true,
+      "original_header_gain_comment": "Conversion from electrons to ADU"
+    },
+    "svo-v": {
+      "votable": true,
+      "query_status_error": false,
+      "table_row_tags": 15,
+      "parsed_table_rows": 15,
+      "columns": [
+        "Wavelength",
+        "Transmission"
+      ]
+    },
+    "gaia-xp": {
+      "votable": true,
+      "query_status_error": false,
+      "table_row_tags": 0,
+      "parsed_table_rows": 343,
+      "columns": [
+        "wavelength",
+        "flux",
+        "flux_error"
+      ]
+    },
+    "nasa-madrid-month-v2": {
+      "returned_not_total_granules": 4,
+      "entries": [
+        {
+          "producer_granule_id": "VNP46A3.A2017032.h17v04.002.2025101150503.h5",
+          "time_start": "2017-02-01T00:00:00.000Z",
+          "time_end": "2017-03-01T00:00:00.000Z",
+          "boxes": null
+        },
+        {
+          "producer_granule_id": "VNP46A3.A2017032.h17v05.002.2025101150509.h5",
+          "time_start": "2017-02-01T00:00:00.000Z",
+          "time_end": "2017-03-01T00:00:00.000Z",
+          "boxes": null
+        },
+        {
+          "producer_granule_id": "VNP46A3.A2017060.h17v05.002.2025101152248.h5",
+          "time_start": "2017-03-01T00:00:00.000Z",
+          "time_end": "2017-04-01T00:00:00.000Z",
+          "boxes": null
+        },
+        {
+          "producer_granule_id": "VNP46A3.A2017060.h17v04.002.2025101152242.h5",
+          "time_start": "2017-03-01T00:00:00.000Z",
+          "time_end": "2017-04-01T00:00:00.000Z",
+          "boxes": null
+        }
+      ],
+      "pixel_QA_confirmed_by_this_probe": false
+    },
+    "nasa-november-madrid": {
+      "returned_not_total_granules": 4,
+      "entries": [
+        {
+          "producer_granule_id": "VNP46A3.A2017274.h17v05.002.2025101170730.h5",
+          "time_start": "2017-10-01T00:00:00.000Z",
+          "time_end": "2017-11-01T00:00:00.000Z",
+          "boxes": null
+        },
+        {
+          "producer_granule_id": "VNP46A3.A2017274.h17v04.002.2025101170720.h5",
+          "time_start": "2017-10-01T00:00:00.000Z",
+          "time_end": "2017-11-01T00:00:00.000Z",
+          "boxes": null
+        },
+        {
+          "producer_granule_id": "VNP46A3.A2017305.h17v05.002.2025101174426.h5",
+          "time_start": "2017-11-01T00:00:00.000Z",
+          "time_end": "2017-12-01T00:00:00.000Z",
+          "boxes": null
+        },
+        {
+          "producer_granule_id": "VNP46A3.A2017305.h17v04.002.2025101174416.h5",
+          "time_start": "2017-11-01T00:00:00.000Z",
+          "time_end": "2017-12-01T00:00:00.000Z",
+          "boxes": null
+        }
+      ],
+      "pixel_QA_confirmed_by_this_probe": false
+    },
+    "nasa-madrid-daily-v2": {
+      "returned_not_total_granules": 4,
+      "entries": [
+        {
+          "producer_granule_id": "VNP46A2.A2017077.h17v04.002.2024312025525.h5",
+          "time_start": "2017-03-18T00:00:00.000Z",
+          "time_end": "2017-03-19T00:00:00.000Z",
+          "boxes": null
+        },
+        {
+          "producer_granule_id": "VNP46A2.A2017077.h17v05.002.2024312025520.h5",
+          "time_start": "2017-03-18T00:00:00.000Z",
+          "time_end": "2017-03-19T00:00:00.000Z",
+          "boxes": null
+        },
+        {
+          "producer_granule_id": "VNP46A2.A2017078.h17v04.002.2024312032418.h5",
+          "time_start": "2017-03-19T00:00:00.000Z",
+          "time_end": "2017-03-20T00:00:00.000Z",
+          "boxes": null
+        },
+        {
+          "producer_granule_id": "VNP46A2.A2017078.h17v05.002.2024312032810.h5",
+          "time_start": "2017-03-19T00:00:00.000Z",
+          "time_end": "2017-03-20T00:00:00.000Z",
+          "boxes": null
+        }
+      ],
+      "pixel_QA_confirmed_by_this_probe": false
+    },
+    "nasa-daily-next-utc": {
+      "returned_not_total_granules": 4,
+      "entries": [
+        {
+          "producer_granule_id": "VNP46A2.A2017078.h17v04.002.2024312032418.h5",
+          "time_start": "2017-03-19T00:00:00.000Z",
+          "time_end": "2017-03-20T00:00:00.000Z",
+          "boxes": null
+        },
+        {
+          "producer_granule_id": "VNP46A2.A2017078.h17v05.002.2024312032810.h5",
+          "time_start": "2017-03-19T00:00:00.000Z",
+          "time_end": "2017-03-20T00:00:00.000Z",
+          "boxes": null
+        },
+        {
+          "producer_granule_id": "VNP46A2.A2017079.h17v05.002.2024312035543.h5",
+          "time_start": "2017-03-20T00:00:00.000Z",
+          "time_end": "2017-03-21T00:00:00.000Z",
+          "boxes": null
+        },
+        {
+          "producer_granule_id": "VNP46A2.A2017079.h17v04.002.2024312035552.h5",
+          "time_start": "2017-03-20T00:00:00.000Z",
+          "time_end": "2017-03-21T00:00:00.000Z",
+          "boxes": null
+        }
+      ],
+      "pixel_QA_confirmed_by_this_probe": false
+    },
+    "modis-snow2017": {
+      "returned_not_total_granules": 2,
+      "entries": [
+        {
+          "producer_granule_id": "MOD10A1.A2017078.h17v05.061.2021268095531.hdf",
+          "time_start": "2017-03-19T00:00:00.000Z",
+          "time_end": "2017-03-19T23:59:59.000Z",
+          "boxes": null
+        },
+        {
+          "producer_granule_id": "MOD10A1.A2017078.h17v04.061.2021268095530.hdf",
+          "time_start": "2017-03-19T00:00:00.000Z",
+          "time_end": "2017-03-19T23:59:59.000Z",
+          "boxes": null
+        }
+      ],
+      "pixel_QA_confirmed_by_this_probe": false
+    },
+    "albedo-exact-madrid-tile": {
+      "returned_not_total_granules": 1,
+      "entries": [
+        {
+          "producer_granule_id": "MCD43A3.A2017078.h17v04.061.2021268230144",
+          "time_start": "2017-03-11T00:00:00.000Z",
+          "time_end": "2017-03-26T23:59:59.999Z",
+          "boxes": null
+        }
+      ],
+      "pixel_QA_confirmed_by_this_probe": false
+    },
+    "modis-lai2017-correct": {
+      "returned_not_total_granules": 2,
+      "entries": [
+        {
+          "producer_granule_id": "MCD15A3H.A2017077.h17v04.061.2021269004702",
+          "time_start": "2017-03-18T00:00:00.000Z",
+          "time_end": "2017-03-21T23:59:59.000Z",
+          "boxes": null
+        },
+        {
+          "producer_granule_id": "MCD15A3H.A2017077.h17v05.061.2021269004707",
+          "time_start": "2017-03-18T00:00:00.000Z",
+          "time_end": "2017-03-21T23:59:59.000Z",
+          "boxes": null
+        }
+      ],
+      "pixel_QA_confirmed_by_this_probe": false
+    },
+    "saao-nasa2012": {
+      "returned_not_total_granules": 5,
+      "entries": [
+        {
+          "producer_granule_id": "VNP46A3.A2012245.h19v12.002.2025086114631.h5",
+          "time_start": "2012-09-01T00:00:00.000Z",
+          "time_end": "2012-10-01T00:00:00.000Z",
+          "boxes": null
+        },
+        {
+          "producer_granule_id": "VNP46A3.A2012245.h20v12.002.2025086114739.h5",
+          "time_start": "2012-09-01T00:00:00.000Z",
+          "time_end": "2012-10-01T00:00:00.000Z",
+          "boxes": null
+        },
+        {
+          "producer_granule_id": "VNP46A3.A2012275.h20v12.002.2025086115500.h5",
+          "time_start": "2012-10-01T00:00:00.000Z",
+          "time_end": "2012-11-01T00:00:00.000Z",
+          "boxes": null
+        },
+        {
+          "producer_granule_id": "VNP46A3.A2012275.h19v12.002.2025086115444.h5",
+          "time_start": "2012-10-01T00:00:00.000Z",
+          "time_end": "2012-11-01T00:00:00.000Z",
+          "boxes": null
+        },
+        {
+          "producer_granule_id": "VNP46A3.A2012306.h20v12.002.2025086130942.h5",
+          "time_start": "2012-11-01T00:00:00.000Z",
+          "time_end": "2012-12-01T00:00:00.000Z",
+          "boxes": null
+        }
+      ],
+      "pixel_QA_confirmed_by_this_probe": false
+    },
+    "nasa-saao-march2013": {
+      "returned_not_total_granules": 4,
+      "entries": [
+        {
+          "producer_granule_id": "VNP46A3.A2013032.h20v12.002.2025087054134.h5",
+          "time_start": "2013-02-01T00:00:00.000Z",
+          "time_end": "2013-03-01T00:00:00.000Z",
+          "boxes": null
+        },
+        {
+          "producer_granule_id": "VNP46A3.A2013032.h19v12.002.2025087054003.h5",
+          "time_start": "2013-02-01T00:00:00.000Z",
+          "time_end": "2013-03-01T00:00:00.000Z",
+          "boxes": null
+        },
+        {
+          "producer_granule_id": "VNP46A3.A2013060.h20v12.002.2025087054926.h5",
+          "time_start": "2013-03-01T00:00:00.000Z",
+          "time_end": "2013-04-01T00:00:00.000Z",
+          "boxes": null
+        },
+        {
+          "producer_granule_id": "VNP46A3.A2013060.h19v12.002.2025087055110.h5",
+          "time_start": "2013-03-01T00:00:00.000Z",
+          "time_end": "2013-04-01T00:00:00.000Z",
+          "boxes": null
+        }
+      ],
+      "pixel_QA_confirmed_by_this_probe": false
+    },
+    "nasa-cssp-july2014": {
+      "returned_not_total_granules": 4,
+      "entries": [
+        {
+          "producer_granule_id": "VNP46A3.A2014152.h10v04.002.2025091120136.h5",
+          "time_start": "2014-06-01T00:00:00.000Z",
+          "time_end": "2014-07-01T00:00:00.000Z",
+          "boxes": null
+        },
+        {
+          "producer_granule_id": "VNP46A3.A2014152.h10v05.002.2025091120108.h5",
+          "time_start": "2014-06-01T00:00:00.000Z",
+          "time_end": "2014-07-01T00:00:00.000Z",
+          "boxes": null
+        },
+        {
+          "producer_granule_id": "VNP46A3.A2014182.h10v04.002.2025090185825.h5",
+          "time_start": "2014-07-01T00:00:00.000Z",
+          "time_end": "2014-08-01T00:00:00.000Z",
+          "boxes": null
+        },
+        {
+          "producer_granule_id": "VNP46A3.A2014182.h10v05.002.2025090185818.h5",
+          "time_start": "2014-07-01T00:00:00.000Z",
+          "time_end": "2014-08-01T00:00:00.000Z",
+          "boxes": null
+        }
+      ],
+      "pixel_QA_confirmed_by_this_probe": false
+    },
+    "nasa-galicia2015": {
+      "returned_not_total_granules": 4,
+      "entries": [
+        {
+          "producer_granule_id": "VNP46A3.A2014335.h17v04.002.2025090193850.h5",
+          "time_start": "2014-12-01T00:00:00.000Z",
+          "time_end": "2015-01-01T00:00:00.000Z",
+          "boxes": null
+        },
+        {
+          "producer_granule_id": "VNP46A3.A2014335.h16v04.002.2025106125133.h5",
+          "time_start": "2014-12-01T00:00:00.000Z",
+          "time_end": "2015-01-01T00:00:00.000Z",
+          "boxes": null
+        },
+        {
+          "producer_granule_id": "VNP46A3.A2015001.h17v04.002.2025093111457.h5",
+          "time_start": "2015-01-01T00:00:00.000Z",
+          "time_end": "2015-02-01T00:00:00.000Z",
+          "boxes": null
+        },
+        {
+          "producer_granule_id": "VNP46A3.A2015001.h16v04.002.2025106135842.h5",
+          "time_start": "2015-01-01T00:00:00.000Z",
+          "time_end": "2015-02-01T00:00:00.000Z",
+          "boxes": null
+        }
+      ],
+      "pixel_QA_confirmed_by_this_probe": false
+    },
+    "nasa-berlin-march2017": {
+      "returned_not_total_granules": 2,
+      "entries": [
+        {
+          "producer_granule_id": "VNP46A3.A2017032.h19v03.002.2025101150600.h5",
+          "time_start": "2017-02-01T00:00:00.000Z",
+          "time_end": "2017-03-01T00:00:00.000Z",
+          "boxes": null
+        },
+        {
+          "producer_granule_id": "VNP46A3.A2017060.h19v03.002.2025101152327.h5",
+          "time_start": "2017-03-01T00:00:00.000Z",
+          "time_end": "2017-04-01T00:00:00.000Z",
+          "boxes": null
+        }
+      ],
+      "pixel_QA_confirmed_by_this_probe": false
+    },
+    "merra-madrid-date": {
+      "returned_not_total_granules": 1,
+      "entries": [
+        {
+          "producer_granule_id": "MERRA2_400.tavg1_2d_aer_Nx.20170319.nc4",
+          "time_start": "2017-03-19T00:00:00.000Z",
+          "time_end": "2017-03-19T23:59:59.000Z",
+          "boxes": [
+            "-90 -180 90 180"
+          ]
+        }
+      ],
+      "pixel_QA_confirmed_by_this_probe": false
+    },
+    "f107-data": {
+      "all_rows": 29054,
+      "selected_JD_range": [
+        2457830.5,
+        2457833.5
+      ],
+      "selected_rows": [
+        {
+          "time (Julian Date)": "2457831.322",
+          "observed_flux": "70.2",
+          "adjusted_flux": "69.6",
+          "case_number": "0",
+          "flag": "0"
+        },
+        {
+          "time (Julian Date)": "2457832.322",
+          "observed_flux": "71.2",
+          "adjusted_flux": "70.5",
+          "case_number": "0",
+          "flag": "0"
+        },
+        {
+          "time (Julian Date)": "2457833.322",
+          "observed_flux": "72.7",
+          "adjusted_flux": "72.1",
+          "case_number": "0",
+          "flag": "0"
+        }
+      ],
+      "not_a_direct_optical_skyglow_measurement": true
+    },
+    "jpl-horizons": {
+      "api_version": {
+        "source": "NASA/JPL Horizons API",
+        "version": "1.2"
+      },
+      "error": null,
+      "ephemeris_delimiters_present": true,
+      "interpretation": "Ephemeris access only, not a measured lunar sky background."
+    },
+    "nasa-cssp-june2014": {
+      "returned_not_total_granules": 4,
+      "entries": [
+        {
+          "producer_granule_id": "VNP46A3.A2014121.h10v04.002.2025090184452.h5",
+          "time_start": "2014-05-01T00:00:00.000Z",
+          "time_end": "2014-06-01T00:00:00.000Z"
+        },
+        {
+          "producer_granule_id": "VNP46A3.A2014121.h10v05.002.2025090184406.h5",
+          "time_start": "2014-05-01T00:00:00.000Z",
+          "time_end": "2014-06-01T00:00:00.000Z"
+        },
+        {
+          "producer_granule_id": "VNP46A3.A2014152.h10v04.002.2025091120136.h5",
+          "time_start": "2014-06-01T00:00:00.000Z",
+          "time_end": "2014-07-01T00:00:00.000Z"
+        },
+        {
+          "producer_granule_id": "VNP46A3.A2014152.h10v05.002.2025091120108.h5",
+          "time_start": "2014-06-01T00:00:00.000Z",
+          "time_end": "2014-07-01T00:00:00.000Z"
+        }
+      ],
+      "pixel_QA_confirmed_by_this_probe": false
+    }
+  },
+  "http_check_count": 129,
+  "http_status_counts": {
+    "200": 110,
+    "404": 14,
+    "403": 4,
+    "request_failed": 1
+  },
+  "access_assessment_counts": {
+    "response_received_requires_semantic_check": 82,
+    "html_page_only": 22,
+    "empty_catalogue_query": 5,
+    "http_error": 18,
+    "request_failed": 1,
+    "login_page_instead_of_data": 1
+  },
+  "sum_bytes_read": 30462094
+}

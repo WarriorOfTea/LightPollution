@@ -1,0 +1,37 @@
+{
+  "checked_at_utc": "2026-11-12T23:20:23+00:00",
+  "source": {
+    "path": "BENCHMARK.md",
+    "bytes": 84679,
+    "sha256": "f5e92739fb58fdd3cf37055529c0a71c8a5c53ea459c388bf2e87f0cba1e0555"
+  },
+  "pdf": {
+    "path": "scratch/benchmark-research/LightPollution-BENCHMARK.pdf",
+    "bytes": 225275,
+    "sha256": "4d22c677737222d4f581764fa0dde1bf9812c34603624698aa38747c4a559325"
+  },
+  "pdf_pages": 18,
+  "pdf_replacement_characters": 0,
+  "pdf_out_of_page_words": [],
+  "pdf_empty_pages": [],
+  "source_families": 42,
+  "candidate_case_groups": 12,
+  "http_address_checks": 129,
+  "unique_check_ids": true,
+  "registry_evidence_links_resolve": true,
+  "case_scores_are_null": true,
+  "credentials_in_requests": false,
+  "lightpollution_model_runs": 0,
+  "external_radiative_transfer_runs": 0,
+  "unit_suite_run": false,
+  "reason_no_unit_suite": "Documentation/data audit only; user explicitly requested no model execution. Documentation and data/header integrity checks performed instead.",
+  "uv_lock_check": "passed",
+  "full_raw_datasets_redistributed": false,
+  "rendered_preview_pages": [
+    1,
+    2,
+    17
+  ],
+  "visually_reviewed_first_second_last_pages": true,
+  "ordered_lists_exported_as_separate_paragraphs": true
+}

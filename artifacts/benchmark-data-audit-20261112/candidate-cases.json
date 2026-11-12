@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "catalogue_version": "benchmark-catalogue0.1",
+  "physics_source_commit": "40385fb",
+  "case_count": 12,
+  "fully_qualified_new_cases": 0,
+  "model_runs": 0,
+  "model_scores": null,
+  "cases": [
+    {
+      "id": "B01",
+      "site": "Madrid/UCM",
+      "periods": [
+        "2017-03-19",
+        "2017-11-19"
+      ],
+      "coordinates": {
+        "latitude_deg": 40.4511111111,
+        "longitude_deg": -3.7261111111,
+        "AGL_m": null
+      },
+      "source_ids": [
+        "D01",
+        "D10",
+        "D11",
+        "D16",
+        "D28"
+      ],
+      "status": "candidate_not_run",
+      "eligible": false,
+      "missing": "Local daytime atmosphere; missing night SSA/RI/profile; original clear-sky QA and new heldout nights needed; older nights already explored.",
+      "metrics": null
+    },
+    {
+      "id": "B02",
+      "site": "Galicia",
+      "periods": [
+        "2015"
+      ],
+      "coordinates": null,
+      "source_ids": [
+        "D01",
+        "D29"
+      ],
+      "status": "candidate_not_run",
+      "eligible": false,
+      "missing": "Station coordinates/timezones/QA/bandpasses and matched atmosphere must be extracted and verified per station/night.",
+      "metrics": null
+    },
+    {
+      "id": "B03",
+      "site": "Cherry Springs / Philadelphia",
+      "periods": [
+        "2014-06",
+        "2014-07"
+      ],
+      "coordinates": {
+        "Cherry_Springs": {
+          "latitude_deg": 41.6646,
+          "longitude_deg": -77.8125
+        },
+        "Philadelphia": {
+          "latitude_deg": 39.952237,
+          "longitude_deg": -75.188734
+        }
+      },
+      "source_ids": [
+        "D01",
+        "D24"
+      ],
+      "status": "candidate_not_run",
+      "eligible": false,
+      "missing": "Full arrays, UTC/units/receiver geometry and cloud/Moon QA not completed; current sky domain omits horizon for hemispheric irradiance.",
+      "metrics": null
+    },
+    {
+      "id": "B04",
+      "site": "SAAO/Sutherland",
+      "periods": [
+        "2012-10",
+        "2012-11",
+        "2013-03"
+      ],
+      "coordinates": null,
+      "source_ids": [
+        "D01",
+        "D25",
+        "D26"
+      ],
+      "status": "candidate_not_run",
+      "eligible": false,
+      "missing": "Exact telescope coordinates, HJD-to-UTC, digital table import, response and independent splits not prepared.",
+      "metrics": null
+    },
+    {
+      "id": "B05",
+      "site": "ESO Paranal FORS2",
+      "periods": [
+        "2017-03-19"
+      ],
+      "coordinates": {
+        "latitude_deg": -24.6276,
+        "longitude_deg": -70.4051,
+        "elevation_m": 2648.0
+      },
+      "source_ids": [
+        "D35",
+        "D39"
+      ],
+      "status": "candidate_not_run",
+      "eligible": false,
+      "missing": "Header only; full RAW/calibrations/throughput/weather QA and reduction missing.",
+      "metrics": null
+    },
+    {
+      "id": "B06",
+      "site": "Berlin urban-to-rural",
+      "periods": [
+        "2017-03-28",
+        "2017-03-29"
+      ],
+      "coordinates": null,
+      "source_ids": [
+        "D01",
+        "D42"
+      ],
+      "status": "candidate_not_run",
+      "eligible": false,
+      "missing": "Published appendices/metrics; complete raw images and calibration not obtained.",
+      "metrics": null
+    },
+    {
+      "id": "B07",
+      "site": "Granada / Barcelona",
+      "periods": [
+        "2017-03-18",
+        "2017-03-19",
+        "2017-03-20"
+      ],
+      "coordinates": null,
+      "source_ids": [
+        "D12"
+      ],
+      "status": "candidate_not_run",
+      "eligible": false,
+      "missing": "Actual lidar profiles; co-located independent ground photometry and required optical fields not matched.",
+      "metrics": null
+    },
+    {
+      "id": "B08",
+      "site": "SG network",
+      "periods": [
+        "2023-06"
+      ],
+      "coordinates": null,
+      "source_ids": [
+        "D30"
+      ],
+      "status": "candidate_not_run",
+      "eligible": false,
+      "missing": "Photometer IDs lack verified coordinate mapping; published site API returned404.",
+      "metrics": null
+    },
+    {
+      "id": "B09",
+      "site": "Globe at Night global",
+      "periods": [
+        "2015",
+        "2017"
+      ],
+      "coordinates": null,
+      "source_ids": [
+        "D01",
+        "D32",
+        "D34",
+        "D36"
+      ],
+      "status": "candidate_not_run",
+      "eligible": false,
+      "missing": "Coordinates/times exist per row; clear/Moon/Sun/timezone/duplicate QA and aggregate evaluator not performed.",
+      "metrics": null
+    },
+    {
+      "id": "B10",
+      "site": "Clear-sky snow pair",
+      "periods": [],
+      "coordinates": null,
+      "source_ids": [
+        "D01",
+        "D20",
+        "D21",
+        "D42"
+      ],
+      "status": "candidate_not_run",
+      "eligible": false,
+      "missing": "No matched clear-sky snow/no-snow observational pair frozen.",
+      "metrics": null
+    },
+    {
+      "id": "B11",
+      "site": "Camera laboratory",
+      "periods": [],
+      "coordinates": null,
+      "source_ids": [
+        "D35",
+        "D37",
+        "D38",
+        "D39"
+      ],
+      "status": "candidate_not_run",
+      "eligible": false,
+      "missing": "Camera/ISO/gain/temperature/absolute channel scales and complete laboratory frames not matched.",
+      "metrics": null
+    },
+    {
+      "id": "B12",
+      "site": "Radiative transfer reference",
+      "periods": [],
+      "coordinates": null,
+      "source_ids": [
+        "D40"
+      ],
+      "status": "candidate_not_run",
+      "eligible": false,
+      "missing": "Benchmark output retrieval and boundary/geometry/physics agreement not done; not a field observation.",
+      "metrics": null
+    }
+  ]
+}

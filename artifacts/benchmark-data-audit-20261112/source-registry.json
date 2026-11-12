@@ -1,0 +1,763 @@
+{
+  "schema_version": 1,
+  "catalogue_version": "benchmark-catalogue0.1",
+  "created_at_utc": "2026-11-12T23:12:34+00:00",
+  "dataset_families": 42,
+  "physical_model_runs": 0,
+  "benchmark_frozen": false,
+  "sources": [
+    {
+      "id": "D01",
+      "title": "NASA Black Marble VNP46A3/A4 Collection 2",
+      "benchmark_document_anchor": "d01-nasa-black-marble-vnp46a3a4-collection-2",
+      "role": "source_map",
+      "access_status": "authenticated_data_existing_local_files",
+      "access_check_ids": [
+        "nasa-madrid-month-v2",
+        "nasa-november-madrid",
+        "nasa-cssp-july2014",
+        "nasa-cssp-june2014",
+        "nasa-galicia2015",
+        "saao-nasa2012",
+        "nasa-saao-march2013",
+        "nasa-download-anonymous"
+      ],
+      "source_urls": [
+        "https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/VNP46A3",
+        "https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/VNP46A4"
+      ],
+      "rights_status": "NASA citation; Earthdata login for new binaries",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D02",
+      "title": "NASA VNP46A1/A2: отдельные проходы и геометрия",
+      "benchmark_document_anchor": "d02-nasa-vnp46a1a2-отдельные-проходы-и-геометрия",
+      "role": "source_angle_and_time",
+      "access_status": "catalogue_confirmed_data_not_downloaded",
+      "access_check_ids": [
+        "nasa-madrid-daily-v2",
+        "nasa-daily-next-utc",
+        "nasa-madrid-angles-v2"
+      ],
+      "source_urls": [
+        "https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/VNP46A1",
+        "https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/VNP46A2"
+      ],
+      "rights_status": "NASA citation; Earthdata login",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D03",
+      "title": "NOAA: спектральные отклики VIIRS DNB",
+      "benchmark_document_anchor": "d03-noaa-спектральные-отклики-viirs-dnb",
+      "role": "instrument_response",
+      "access_status": "documentation_only",
+      "access_check_ids": [
+        "noaa-dnb-rsr"
+      ],
+      "source_urls": [
+        "https://ncc.nesdis.noaa.gov/VIIRS/VIIRSSpectralResponseFunctions.php"
+      ],
+      "rights_status": "NOAA/source terms; exact RSR revision required",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D04",
+      "title": "CIE: стандартные спектры ламп",
+      "benchmark_document_anchor": "d04-cie-стандартные-спектры-ламп",
+      "role": "library_spectrum",
+      "access_status": "public_numeric_table",
+      "access_check_ids": [
+        "cie-led"
+      ],
+      "source_urls": [
+        "https://files.cie.co.at/Publications-datasets/CIE_illum_LEDs.csv"
+      ],
+      "rights_status": "CC BY-SA4.0 per project provenance",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D05",
+      "title": "LICA–UCM: измеренные спектры реальных ламп",
+      "benchmark_document_anchor": "d05-licaucm-измеренные-спектры-реальных-ламп",
+      "role": "measured_library_spectrum",
+      "access_status": "public_portal_permission_unresolved",
+      "access_check_ids": [
+        "lica-lamps"
+      ],
+      "source_urls": [
+        "https://guaix.fis.ucm.es/lamps_spectra"
+      ],
+      "rights_status": "Use-contact request on source; redistribution not established",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D06",
+      "title": "LSPDD: спектральная база Roby/Aubé",
+      "benchmark_document_anchor": "d06-lspdd-спектральная-база-robyaubé",
+      "role": "measured_library_spectrum",
+      "access_status": "public_numeric_data_restricted_license",
+      "access_check_ids": [
+        "lspdd-lamps",
+        "lspdd-content",
+        "lspdd-capture-one"
+      ],
+      "source_urls": [
+        "https://lspdd.org/",
+        "https://api.lspdd.sbcloud.ca/lamp",
+        "https://api.lspdd.sbcloud.ca/capture/2469",
+        "https://api.lspdd.sbcloud.ca/content"
+      ],
+      "rights_status": "CC BY-NC-ND4.0",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D07",
+      "title": "Муниципальные реестры: Dublin City Council",
+      "benchmark_document_anchor": "d07-муниципальные-реестры-dublin-city-council",
+      "role": "local_light_positions",
+      "access_status": "public_numeric_inventory_missing_lamp_optics",
+      "access_check_ids": [
+        "dcc-lighting",
+        "dcc-lighting-csv",
+        "sdcc-lighting-correct",
+        "sdcc-datagovie"
+      ],
+      "source_urls": [
+        "https://data.smartdublin.ie/dataset/street-lighting-dublin-city"
+      ],
+      "rights_status": "DCC metadata CC BY; SDCC access denied",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D08",
+      "title": "Семейства диаграмм поселений: Espey 2021/2023",
+      "benchmark_document_anchor": "d08-семейства-диаграмм-поселений-espey-20212023",
+      "role": "emission_diagram_prior",
+      "access_status": "literature_not_complete_input_inventory",
+      "access_check_ids": [],
+      "source_urls": [
+        "https://www.mdpi.com/2072-4292/13/19/3827",
+        "https://www.mdpi.com/2072-4292/15/12/2973"
+      ],
+      "rights_status": "Article/data terms must be checked separately",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D09",
+      "title": "NASA Gateway / ISS: цвет и иной ракурс",
+      "benchmark_document_anchor": "d09-nasa-gateway--iss-цвет-и-иной-ракурс",
+      "role": "independent_angle_and_colour",
+      "access_status": "public_image_metadata_raw_not_obtained",
+      "access_check_ids": [
+        "iss-dublin2015"
+      ],
+      "source_urls": [
+        "https://eol.jsc.nasa.gov/SearchPhotos/photo.pl?mission=ISS045&roll=E&frame=170140",
+        "https://eol.jsc.nasa.gov/SearchPhotos/",
+        "https://esrs.jsc.nasa.gov/FAQ/"
+      ],
+      "rights_status": "NASA image policy; RAW availability per image",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D10",
+      "title": "AERONET V3: AOD и инверсии микрофизики",
+      "benchmark_document_anchor": "d10-aeronet-v3-aod-и-инверсии-микрофизики",
+      "role": "aerosol_inputs",
+      "access_status": "public_numeric_daytime_partial_inversion",
+      "access_check_ids": [
+        "aeronet-stations",
+        "aeronet-madrid-aod",
+        "aeronet-madrid-inversion"
+      ],
+      "source_urls": [
+        "https://aeronet.gsfc.nasa.gov/print_web_data_help_v3_inv.html",
+        "https://aeronet.gsfc.nasa.gov/new_web/data_usage.html"
+      ],
+      "rights_status": "AERONET public-domain usage/citation guidelines",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D11",
+      "title": "AERONET Lunar AOD",
+      "benchmark_document_anchor": "d11-aeronet-lunar-aod",
+      "role": "nighttime_aerosol_inputs",
+      "access_status": "empty_numeric_query_for_selected_case",
+      "access_check_ids": [
+        "aeronet-lunar-help",
+        "aeronet-madrid-lunar2017"
+      ],
+      "source_urls": [
+        "https://aeronet.gsfc.nasa.gov/print_web_data_help_v3.html"
+      ],
+      "rights_status": "AERONET usage guidelines; provisional lunar product",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D12",
+      "title": "ACTRIS/EARLINET: высотные оптические профили",
+      "benchmark_document_anchor": "d12-actrisearlinet-высотные-оптические-профили",
+      "role": "vertical_aerosol_profile",
+      "access_status": "public_numeric_netcdf_wrong_site_for_Madrid",
+      "access_check_ids": [
+        "actris-schema-correct",
+        "actris-products2017",
+        "actris-stations2017",
+        "actris-barcelona-netcdf",
+        "actris-granada-night-netcdf"
+      ],
+      "source_urls": [
+        "https://earlinet.eu/our-knowledge/access-to-data/",
+        "https://api.actris-ares.eu/api/swagger-ui/",
+        "https://api.actris-ares.eu/api/services/restapi/opticalproducts/id/75096/downloads"
+      ],
+      "rights_status": "Open credential-free access; selected product license still to pin",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D13",
+      "title": "MERRA-2",
+      "benchmark_document_anchor": "d13-merra-2",
+      "role": "atmospheric_reanalysis",
+      "access_status": "historical_catalogue_authenticated_binary_not_tested",
+      "access_check_ids": [
+        "merra-madrid-date"
+      ],
+      "source_urls": [
+        "https://gmao.gsfc.nasa.gov/gmao-products/reanalysis-products/"
+      ],
+      "rights_status": "NASA citation; Earthdata/GES DISC access",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D14",
+      "title": "CAMS EAC4",
+      "benchmark_document_anchor": "d14-cams-eac4",
+      "role": "atmospheric_reanalysis",
+      "access_status": "catalogue_free_registration_retrieval_not_tested",
+      "access_check_ids": [
+        "cams-catalogue"
+      ],
+      "source_urls": [
+        "https://ads.atmosphere.copernicus.eu/api/catalogue/v1/collections/cams-global-reanalysis-eac4",
+        "https://ads.atmosphere.copernicus.eu/datasets/cams-global-reanalysis-eac4"
+      ],
+      "rights_status": "Copernicus/ADS licence and free account",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D15",
+      "title": "ERA5",
+      "benchmark_document_anchor": "d15-era5",
+      "role": "meteorological_reanalysis",
+      "access_status": "catalogue_free_registration_retrieval_not_tested",
+      "access_check_ids": [
+        "era5-catalogue",
+        "era5-public-madrid-date"
+      ],
+      "source_urls": [
+        "https://cds.climate.copernicus.eu/api/catalogue/v1/collections/reanalysis-era5-single-levels",
+        "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels"
+      ],
+      "rights_status": "Copernicus/CDS licence and free account; mirror403",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D16",
+      "title": "NOAA ISD / Global Hourly: реально совпадающая погода",
+      "benchmark_document_anchor": "d16-noaa-isd--global-hourly-реально-совпадающая-погода",
+      "role": "local_weather_context",
+      "access_status": "public_numeric_historical_table",
+      "access_check_ids": [
+        "noaa-hourly-s3",
+        "noaa-isd-stations"
+      ],
+      "source_urls": [
+        "https://noaa-global-hourly-pds.s3.amazonaws.com/2017/08221099999.csv"
+      ],
+      "rights_status": "NOAA Open Data; original codes/QA",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D17",
+      "title": "NOAA IGRA: радиозонды",
+      "benchmark_document_anchor": "d17-noaa-igra-радиозонды",
+      "role": "molecular_vertical_profile",
+      "access_status": "station_catalogue_only",
+      "access_check_ids": [
+        "igra-stations"
+      ],
+      "source_urls": [
+        "https://www.ncei.noaa.gov/pub/data/igra/igra2-station-list.txt",
+        "https://www.ncei.noaa.gov/products/weather-balloon/integrated-global-radiosonde-archive"
+      ],
+      "rights_status": "NOAA; selected sounding not fetched",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D18",
+      "title": "Copernicus DEM GLO-30/GLO-90",
+      "benchmark_document_anchor": "d18-copernicus-dem-glo-30glo-90",
+      "role": "terrain_DSM",
+      "access_status": "public_geotiff_prefix_existing_complete_local_files",
+      "access_check_ids": [
+        "copdem-madrid"
+      ],
+      "source_urls": [
+        "https://registry.opendata.aws/copernicus-dem/"
+      ],
+      "rights_status": "Copernicus DEM attribution/terms",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D19",
+      "title": "IGN/CNIG PNOA-LiDAR",
+      "benchmark_document_anchor": "d19-igncnig-pnoa-lidar",
+      "role": "local_geometry",
+      "access_status": "official_portal_and_historical_coverage_only",
+      "access_check_ids": [
+        "pnoa-coverages",
+        "pnoa-download"
+      ],
+      "source_urls": [
+        "https://pnoa.ign.es/pnoa-lidar/primera-cobertura",
+        "https://centrodedescargas.cnig.es/CentroDescargas/index.jsp"
+      ],
+      "rights_status": "Selected IGN/CNIG product licence to pin",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D20",
+      "title": "MOD10A1.061: снег",
+      "benchmark_document_anchor": "d20-mod10a1061-снег",
+      "role": "snow_state",
+      "access_status": "historical_catalogue_only",
+      "access_check_ids": [
+        "modis-snow2017"
+      ],
+      "source_urls": [
+        "https://nsidc.org/data/mod10a1/versions/61"
+      ],
+      "rights_status": "NASA/NSIDC citation and Earthdata access",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D21",
+      "title": "MCD43A3.061 и QA MCD43A2: альбедо",
+      "benchmark_document_anchor": "d21-mcd43a3061-и-qa-mcd43a2-альбедо",
+      "role": "surface_albedo",
+      "access_status": "exact_historical_granule_metadata_only",
+      "access_check_ids": [
+        "albedo-exact-madrid-tile",
+        "albedo-collections"
+      ],
+      "source_urls": [
+        "https://www.earthdata.nasa.gov/data/catalog/lpcloud-mcd43a3-061"
+      ],
+      "rights_status": "NASA/LP DAAC citation; A2 QA needed",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D22",
+      "title": "MCD15A3H.061: сезонная растительность",
+      "benchmark_document_anchor": "d22-mcd15a3h061-сезонная-растительность",
+      "role": "foliage_proxy",
+      "access_status": "historical_granule_metadata_only",
+      "access_check_ids": [
+        "modis-lai2017-correct",
+        "lai-collections"
+      ],
+      "source_urls": [
+        "https://www.earthdata.nasa.gov/data/catalog/lpcloud-mcd15a3h-061"
+      ],
+      "rights_status": "NASA/LP DAAC citation; proxy not optical transmission",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D23",
+      "title": "USGS Spectral Library v7: материалы",
+      "benchmark_document_anchor": "d23-usgs-spectral-library-v7-материалы",
+      "role": "spectral_reflectance_prior",
+      "access_status": "official_portal_numeric_download_not_confirmed",
+      "access_check_ids": [
+        "usgs-library-page",
+        "usgs-spectra-metadata"
+      ],
+      "source_urls": [
+        "https://www.usgs.gov/data/usgs-spectral-library-version-7-data"
+      ],
+      "rights_status": "Selected spectrum provenance/rights to pin",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D24",
+      "title": "Spitschan et al.: измеренные спектры через день/сумерки/ночь",
+      "benchmark_document_anchor": "d24-spitschan-et-al-измеренные-спектры-через-деньсумеркиночь",
+      "role": "independent_spectral_irradiance",
+      "access_status": "public_archive_prefix_calibrated_csv_prefix_quality_counts",
+      "access_check_ids": [
+        "figshare-spectra",
+        "figshare-calibration-prefix",
+        "figshare-spectra-prefix",
+        "spitschan-tree",
+        "spitschan-calibrated-city",
+        "spitschan-calibrated-rural",
+        "spitschan-quality-city-correct",
+        "spitschan-quality-rural-correct"
+      ],
+      "source_urls": [
+        "https://api.figshare.com/v2/articles/2009070",
+        "https://github.com/spitschan/IlluminationSpectraDataset",
+        "https://www.nature.com/articles/srep26756"
+      ],
+      "rights_status": "MIT per Figshare metadata",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D25",
+      "title": "Winkler / SAAO: многополосный лунный фон",
+      "benchmark_document_anchor": "d25-winkler--saao-многополосный-лунный-фон",
+      "role": "independent_lunar_photometry",
+      "access_status": "public_article_numeric_tables_not_imported",
+      "access_check_ids": [
+        "winkler-photometry"
+      ],
+      "source_urls": [
+        "https://arxiv.org/html/2205.07773#A1"
+      ],
+      "rights_status": "Read access; table republication terms not pinned",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D26",
+      "title": "NASA/JPL Horizons: геометрия Солнца и Луны",
+      "benchmark_document_anchor": "d26-nasajpl-horizons-геометрия-солнца-и-луны",
+      "role": "ephemeris_reference",
+      "access_status": "public_ephemeris_api_response",
+      "access_check_ids": [
+        "jpl-horizons"
+      ],
+      "source_urls": [
+        "https://ssd-api.jpl.nasa.gov/doc/horizons.html"
+      ],
+      "rights_status": "NASA/JPL documentation and citation",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D27",
+      "title": "LISIRD / F10.7: солнечная активность",
+      "benchmark_document_anchor": "d27-lisird--f107-солнечная-активность",
+      "role": "solar_activity_proxy",
+      "access_status": "public_historical_numeric_archive",
+      "access_check_ids": [
+        "zenodo-f107",
+        "f107-data",
+        "lasp-f107"
+      ],
+      "source_urls": [
+        "https://zenodo.org/records/17298608"
+      ],
+      "rights_status": "CC BY4.0; live endpoint timeout recorded",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D28",
+      "title": "Madrid AstMon / SQM / TESS",
+      "benchmark_document_anchor": "d28-madrid-astmon--sqm--tess",
+      "role": "independent_ground_photometry",
+      "access_status": "public_prefix_and_previously_verified_complete_file",
+      "access_check_ids": [
+        "madrid-ground",
+        "madrid-csv-current-prefix"
+      ],
+      "source_urls": [
+        "https://zenodo.org/records/4633001"
+      ],
+      "rights_status": "CC BY4.0",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D29",
+      "title": "Galicia: 14 площадок, 2015",
+      "benchmark_document_anchor": "d29-galicia-14-площадок-2015",
+      "role": "independent_ground_photometry",
+      "access_status": "public_prefix_and_previously_verified_complete_archive",
+      "access_check_ids": [
+        "galicia-ground",
+        "galicia-zip-current-prefix"
+      ],
+      "source_urls": [
+        "https://zenodo.org/records/4977265"
+      ],
+      "rights_status": "CC0",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D30",
+      "title": "TESS / EELabs / SG: распределённые фотометры",
+      "benchmark_document_anchor": "d30-tess--eelabs--sg-распределённые-фотометры",
+      "role": "independent_ground_photometry",
+      "access_status": "public_numeric_file_site_mapping_missing",
+      "access_check_ids": [
+        "zenodo-sg2023",
+        "sg-june-data",
+        "eelabs-sg-location"
+      ],
+      "source_urls": [
+        "https://guaix.fis.ucm.es/tess/models",
+        "https://zenodo.org/records/8104891"
+      ],
+      "rights_status": "CC0 for selected archive; coordinates not obtained",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D31",
+      "title": "NPS Night Skies",
+      "benchmark_document_anchor": "d31-nps-night-skies",
+      "role": "independent_allsky_photometry",
+      "access_status": "public_reports_portal_no_raw_archive",
+      "access_check_ids": [
+        "nps-sites",
+        "nps-map-config"
+      ],
+      "source_urls": [
+        "https://www.nps.gov/subjects/nightskies/datacollectionsites.htm",
+        "https://www.nps.gov/subjects/nightskies/methods.htm",
+        "https://www.nps.gov/subjects/nightskies/NSQmetrics.html"
+      ],
+      "rights_status": "NPS/source-specific terms; LMT/UTC and original numbers needed",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D32",
+      "title": "Globe at Night: реальные наблюдения людей",
+      "benchmark_document_anchor": "d32-globe-at-night-реальные-наблюдения-людей",
+      "role": "independent_human_observations",
+      "access_status": "public_numeric_aggregate_visual_reports",
+      "access_check_ids": [
+        "globe-portal",
+        "globe-2015",
+        "globe-2017"
+      ],
+      "source_urls": [
+        "https://globeatnight.org/maps-data/",
+        "https://globeatnight.org/documents/667/GaN2017.csv",
+        "https://globeatnight.org/documents/669/GaN2015.csv"
+      ],
+      "rights_status": "CC BY4.0; no per-star/colour/adaptation labels",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D33",
+      "title": "Blackwell / Crumey: психофизика порога",
+      "benchmark_document_anchor": "d33-blackwell--crumey-психофизика-порога",
+      "role": "psychophysics_training_reference",
+      "access_status": "article_access_not_independent_field_holdout",
+      "access_check_ids": [
+        "blackwell-original"
+      ],
+      "source_urls": [
+        "https://opg.optica.org/josa/abstract.cfm?uri=josa-36-11-624",
+        "https://arxiv.org/abs/1405.4209"
+      ],
+      "rights_status": "Original/publisher terms; current formula is based on these data",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D34",
+      "title": "CIE: V, V′, XYZ, LMS и D65",
+      "benchmark_document_anchor": "d34-cie-v-v-xyz-lms-и-d65",
+      "role": "human_standard_response",
+      "access_status": "public_numeric_standard_existing_project_tables",
+      "access_check_ids": [
+        "cie-scotopic"
+      ],
+      "source_urls": [
+        "https://files.cie.co.at/Publications-datasets/CIE_sle_scotopic.csv"
+      ],
+      "rights_status": "CC BY-SA4.0 per project provenance; not individual observations",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D35",
+      "title": "SVO и CALSPEC: полосы и абсолютные звёздные стандарты",
+      "benchmark_document_anchor": "d35-svo-и-calspec-полосы-и-абсолютные-звёздные-стандарты",
+      "role": "spectrophotometric_reference",
+      "access_status": "public_votable_and_complete_FITS",
+      "access_check_ids": [
+        "svo-v",
+        "calspec-vega"
+      ],
+      "source_urls": [
+        "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=Generic/Johnson.V",
+        "https://ssb.stsci.edu/trds/calspec/alpha_lyr_stis_011.fits"
+      ],
+      "rights_status": "SVO/CALSPEC provenance/citations as in project manifest",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D36",
+      "title": "Gaia XP, BSC и каталоги KStars",
+      "benchmark_document_anchor": "d36-gaia-xp-bsc-и-каталоги-kstars",
+      "role": "stellar_spectrum_and_catalogue",
+      "access_status": "public_numeric_XP_existing_project_catalogues",
+      "access_check_ids": [
+        "gaia-xp"
+      ],
+      "source_urls": [
+        "https://gea.esac.esa.int/data-server/data?RETRIEVAL_TYPE=XP_SAMPLED&ID=4371553920172973312&RELEASE=Gaia+DR3&FORMAT=votable"
+      ],
+      "rights_status": "Gaia/ESA and catalogue-specific acknowledgements",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D37",
+      "title": "Jiang et al.: 28 измеренных камер",
+      "benchmark_document_anchor": "d37-jiang-et-al-28-измеренных-камер",
+      "role": "camera_spectral_response",
+      "access_status": "public_relative_RGB_numeric_table",
+      "access_check_ids": [
+        "camspec-portal",
+        "camspec-data"
+      ],
+      "source_urls": [
+        "https://www.gujinwei.org/research/camspec/db.html",
+        "https://www.gujinwei.org/research/camspec/camspec_database.txt"
+      ],
+      "rights_status": "CC BY-NC-SA4.0; independent channel normalisations",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D38",
+      "title": "SPECTACLE: полная методика калибровки бытовых камер",
+      "benchmark_document_anchor": "d38-spectacle-полная-методика-калибровки-бытовых-камер",
+      "role": "camera_calibration_method",
+      "access_status": "public_code_readme_data_folder_not_verified",
+      "access_check_ids": [
+        "spectacle-readme"
+      ],
+      "source_urls": [
+        "https://github.com/monocle-h2020/camera_calibration",
+        "https://arxiv.org/abs/1906.04155"
+      ],
+      "rights_status": "Code and data licences require separate checks",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D39",
+      "title": "EMVA1288, FLIR и Ekos camera-data",
+      "benchmark_document_anchor": "d39-emva1288-flir-и-ekos-camera-data",
+      "role": "camera_detector_and_science_raw",
+      "access_status": "public_datasheet_and_compressed_RAW_header_prefix",
+      "access_check_ids": [
+        "flir-camera-emva",
+        "eso-raw-schema",
+        "eso-march2017",
+        "eso-raw-fits-prefix",
+        "eso-datalink"
+      ],
+      "source_urls": [
+        "https://softwareservices.flir.com/BFS-PGE-63S4/latest/EMVA/EMVA.html",
+        "https://www.emva.org/standards-technology/emva-1288/",
+        "https://github.com/indilib/camera-data/tree/44984a2e9303350ba34521681d2c162a8131dba7",
+        "https://eso.org/cms/eso-data/programmatic-access.html"
+      ],
+      "rights_status": "Instrument/source-specific terms; ESO science/calibration association incomplete",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D40",
+      "title": "IPRT, libRadtran и OPAC",
+      "benchmark_document_anchor": "d40-iprt-libradtran-и-opac",
+      "role": "radiative_transfer_reference",
+      "access_status": "public_benchmark_documentation_input_prefix_OPAC403",
+      "access_check_ids": [
+        "iprt-intercomparisons",
+        "iprt-benchmarks",
+        "iprt-optics",
+        "iprt-model-reference",
+        "opac-optical-properties"
+      ],
+      "source_urls": [
+        "https://www.meteo.physik.uni-muenchen.de/~iprt/doku.php?id=intercomparisons:intercomparisons",
+        "https://gmd.copernicus.org/articles/9/1647/2016/"
+      ],
+      "rights_status": "Reference outputs/product licences not yet pinned",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D41",
+      "title": "Лабораторные сечения поглощения O3",
+      "benchmark_document_anchor": "d41-лабораторные-сечения-поглощения-o3",
+      "role": "gas_absorption_cross_sections",
+      "access_status": "public_laboratory_table_prefix",
+      "access_check_ids": [
+        "ozone-crosssections",
+        "uvvis-ozone-table-prefix"
+      ],
+      "source_urls": [
+        "https://zenodo.org/records/5793206"
+      ],
+      "rights_status": "CC BY4.0",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    },
+    {
+      "id": "D42",
+      "title": "Berlin all-sky и Snowglow: полезные полевые исследования",
+      "benchmark_document_anchor": "d42-berlin-all-sky-и-snowglow-полезные-полевые-исследования",
+      "role": "independent_spatial_snow_field_studies",
+      "access_status": "literature_no_complete_RAW_package",
+      "access_check_ids": [],
+      "source_urls": [
+        "https://arxiv.org/html/2202.08258",
+        "https://www.mdpi.com/2313-433X/5/8/69"
+      ],
+      "rights_status": "Publication licence is not automatically the raw-data licence",
+      "new_model_integration_in_this_task": false,
+      "case_specific_scientific_eligibility": "not_yet_established_see_BENCHMARK"
+    }
+  ]
+}
