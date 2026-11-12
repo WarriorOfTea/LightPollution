@@ -1,0 +1,292 @@
+{
+  "checked_at": "2026-11-12T22:54:51+01:00",
+  "kind": "input_availability_and_geometric_screen_not_skyglow_validation",
+  "sites": {
+    "AstMon": {
+      "lat": 40.451111,
+      "lon": -3.726111,
+      "source": "https://www.mdpi.com/2072-4292/13/8/1511"
+    },
+    "AERONET_Madrid": {
+      "lat": 40.4519,
+      "lon": -3.72395,
+      "elevation_m": 680,
+      "source": "https://aeronet.gsfc.nasa.gov/aeronet_locations.txt"
+    }
+  },
+  "AERONET_public_queries": [
+    {
+      "id": "madrid-2017-03-AOD20",
+      "url": "https://aeronet.gsfc.nasa.gov/cgi-bin/print_web_data_v3?site=Madrid&year=2017&month=3&day=18&year2=2017&month2=3&day2=20&AVG=10&if_no_html=1&AOD20=1",
+      "HTTP": 200,
+      "bytes": 169733,
+      "sha256": "049bdef461101accc2d975faea0b487d376865552f6574237e6819cc2b7c32ac",
+      "lines": 160,
+      "contains_no_data": false,
+      "data_rows": 154,
+      "rows_by_date": {
+        "18:03:2017": 40,
+        "19:03:2017": 60,
+        "20:03:2017": 54
+      },
+      "target_day_19_rows": 60,
+      "selected_target_day_fields_nonmissing_counts": {
+        "AOD_500nm": 60,
+        "AOD_440nm": 60,
+        "Site_Latitude(Degrees)": 60,
+        "Site_Longitude(Degrees)": 60
+      },
+      "valid_number_policy": "finite numeric value, excluding -999 in any decimal spelling",
+      "first_target_day_UTC": "07:10:17",
+      "last_target_day_UTC": "17:12:45"
+    },
+    {
+      "id": "madrid-2017-03-ALM20",
+      "url": "https://aeronet.gsfc.nasa.gov/cgi-bin/print_web_data_inv_v3?site=Madrid&year=2017&month=3&day=18&year2=2017&month2=3&day2=20&AVG=10&if_no_html=1&product=ALL&ALM20=1",
+      "HTTP": 200,
+      "bytes": 20482,
+      "sha256": "b6042ea6a009f78b460c90f5e107223f3f36d5c9809050d39e5b106eedcdaa90",
+      "lines": 20,
+      "contains_no_data": false,
+      "data_rows": 13,
+      "rows_by_date": {
+        "18:03:2017": 3,
+        "19:03:2017": 4,
+        "20:03:2017": 6
+      },
+      "target_day_19_rows": 4,
+      "selected_target_day_fields_nonmissing_counts": {
+        "Single_Scattering_Albedo[440nm]": 0,
+        "Single_Scattering_Albedo[675nm]": 0,
+        "Single_Scattering_Albedo[870nm]": 0,
+        "Single_Scattering_Albedo[1020nm]": 0,
+        "Refractive_Index-Real_Part[440nm]": 0,
+        "Refractive_Index-Real_Part[675nm]": 0,
+        "Refractive_Index-Real_Part[870nm]": 0,
+        "Refractive_Index-Real_Part[1020nm]": 0,
+        "Refractive_Index-Imaginary_Part[440nm]": 0,
+        "Refractive_Index-Imaginary_Part[675nm]": 0,
+        "Refractive_Index-Imaginary_Part[870nm]": 0,
+        "Refractive_Index-Imaginary_Part[1020nm]": 0,
+        "Asymmetry_Factor-Total[440nm]": 4,
+        "Asymmetry_Factor-Total[675nm]": 4,
+        "Asymmetry_Factor-Total[870nm]": 4,
+        "Asymmetry_Factor-Total[1020nm]": 4,
+        "Asymmetry_Factor-Fine[440nm]": 4,
+        "Asymmetry_Factor-Fine[675nm]": 4,
+        "Asymmetry_Factor-Fine[870nm]": 4,
+        "Asymmetry_Factor-Fine[1020nm]": 4,
+        "Asymmetry_Factor-Coarse[440nm]": 4,
+        "Asymmetry_Factor-Coarse[675nm]": 4,
+        "Asymmetry_Factor-Coarse[870nm]": 4,
+        "Asymmetry_Factor-Coarse[1020nm]": 4,
+        "If_Retrieval_is_L2(without_L2_0.4_AOD_440_threshold)": 4,
+        "If_AOD_is_L2": 4,
+        "Latitude(Degrees)": 4,
+        "Longitude(Degrees)": 4
+      },
+      "valid_number_policy": "finite numeric value, excluding -999 in any decimal spelling",
+      "first_target_day_UTC": "07:44:58",
+      "last_target_day_UTC": "15:24:59",
+      "size_radius_columns": [
+        "0.050000",
+        "0.065604",
+        "0.086077",
+        "0.112939",
+        "0.148184",
+        "0.194429",
+        "0.255105",
+        "0.334716",
+        "0.439173",
+        "0.576227",
+        "0.756052",
+        "0.991996",
+        "1.301571",
+        "1.707757",
+        "2.240702",
+        "2.939966",
+        "3.857452",
+        "5.061260",
+        "6.640745",
+        "8.713145",
+        "11.432287",
+        "15.000000"
+      ],
+      "valid_size_values_by_row": [
+        22,
+        22,
+        22,
+        22
+      ]
+    },
+    {
+      "id": "madrid-2017-11-AOD20",
+      "url": "https://aeronet.gsfc.nasa.gov/cgi-bin/print_web_data_v3?site=Madrid&year=2017&month=11&day=18&year2=2017&month2=11&day2=20&AVG=10&if_no_html=1&AOD20=1",
+      "HTTP": 200,
+      "bytes": 95178,
+      "sha256": "6fc9234eb58eead5765602f593f3030fda25aa6e7c6f24992a02e2f08893b48a",
+      "lines": 91,
+      "contains_no_data": false,
+      "data_rows": 85,
+      "rows_by_date": {
+        "19:11:2017": 43,
+        "20:11:2017": 42
+      },
+      "target_day_19_rows": 43,
+      "selected_target_day_fields_nonmissing_counts": {
+        "AOD_500nm": 43,
+        "AOD_440nm": 43,
+        "Site_Latitude(Degrees)": 43,
+        "Site_Longitude(Degrees)": 43
+      },
+      "valid_number_policy": "finite numeric value, excluding -999 in any decimal spelling",
+      "first_target_day_UTC": "08:00:23",
+      "last_target_day_UTC": "16:02:16"
+    },
+    {
+      "id": "madrid-2017-11-ALM20",
+      "url": "https://aeronet.gsfc.nasa.gov/cgi-bin/print_web_data_inv_v3?site=Madrid&year=2017&month=11&day=18&year2=2017&month2=11&day2=20&AVG=10&if_no_html=1&product=ALL&ALM20=1",
+      "HTTP": 200,
+      "bytes": 15502,
+      "sha256": "df86ca4c02f2e24add17ddffbcc27f385f5afc2309de9ef66bb7193ef682b1c6",
+      "lines": 16,
+      "contains_no_data": false,
+      "data_rows": 9,
+      "rows_by_date": {
+        "19:11:2017": 4,
+        "20:11:2017": 5
+      },
+      "target_day_19_rows": 4,
+      "selected_target_day_fields_nonmissing_counts": {
+        "Single_Scattering_Albedo[440nm]": 0,
+        "Single_Scattering_Albedo[675nm]": 0,
+        "Single_Scattering_Albedo[870nm]": 0,
+        "Single_Scattering_Albedo[1020nm]": 0,
+        "Refractive_Index-Real_Part[440nm]": 0,
+        "Refractive_Index-Real_Part[675nm]": 0,
+        "Refractive_Index-Real_Part[870nm]": 0,
+        "Refractive_Index-Real_Part[1020nm]": 0,
+        "Refractive_Index-Imaginary_Part[440nm]": 0,
+        "Refractive_Index-Imaginary_Part[675nm]": 0,
+        "Refractive_Index-Imaginary_Part[870nm]": 0,
+        "Refractive_Index-Imaginary_Part[1020nm]": 0,
+        "Asymmetry_Factor-Total[440nm]": 4,
+        "Asymmetry_Factor-Total[675nm]": 4,
+        "Asymmetry_Factor-Total[870nm]": 4,
+        "Asymmetry_Factor-Total[1020nm]": 4,
+        "Asymmetry_Factor-Fine[440nm]": 4,
+        "Asymmetry_Factor-Fine[675nm]": 4,
+        "Asymmetry_Factor-Fine[870nm]": 4,
+        "Asymmetry_Factor-Fine[1020nm]": 4,
+        "Asymmetry_Factor-Coarse[440nm]": 4,
+        "Asymmetry_Factor-Coarse[675nm]": 4,
+        "Asymmetry_Factor-Coarse[870nm]": 4,
+        "Asymmetry_Factor-Coarse[1020nm]": 4,
+        "If_Retrieval_is_L2(without_L2_0.4_AOD_440_threshold)": 4,
+        "If_AOD_is_L2": 4,
+        "Latitude(Degrees)": 4,
+        "Longitude(Degrees)": 4
+      },
+      "valid_number_policy": "finite numeric value, excluding -999 in any decimal spelling",
+      "first_target_day_UTC": "10:02:16",
+      "last_target_day_UTC": "15:21:35",
+      "size_radius_columns": [
+        "0.050000",
+        "0.065604",
+        "0.086077",
+        "0.112939",
+        "0.148184",
+        "0.194429",
+        "0.255105",
+        "0.334716",
+        "0.439173",
+        "0.576227",
+        "0.756052",
+        "0.991996",
+        "1.301571",
+        "1.707757",
+        "2.240702",
+        "2.939966",
+        "3.857452",
+        "5.061260",
+        "6.640745",
+        "8.713145",
+        "11.432287",
+        "15.000000"
+      ],
+      "valid_size_values_by_row": [
+        22,
+        22,
+        22,
+        22
+      ]
+    }
+  ],
+  "NASA_angular_availability": [
+    {
+      "period": "2017-03",
+      "total_cells": 518400,
+      "NearNadir_good": 502579,
+      "OffNadir_good": 505987,
+      "joint_good": 491212,
+      "policy": "finite nonnegative radiance, quality=0, Num>3; before land-only restriction"
+    },
+    {
+      "period": "2017-11",
+      "total_cells": 518400,
+      "NearNadir_good": 492749,
+      "OffNadir_good": 518066,
+      "joint_good": 492504,
+      "policy": "finite nonnegative radiance, quality=0, Num>3; before land-only restriction"
+    }
+  ],
+  "night_geometric_screen": [
+    {
+      "date": "2017-03-19",
+      "samples": 9,
+      "UTC_range": [
+        "2017-03-19T22:04:48Z",
+        "2017-03-19T22:56:06Z"
+      ],
+      "sun_altitude_range_deg": [
+        -45.21465179659186,
+        -39.05713225376412
+      ],
+      "moon_altitude_range_deg": [
+        -31.904329393429467,
+        -22.559331483461307
+      ],
+      "passes_sun_minus18_moon_minus5": 9,
+      "cloud_QA": "previous manual transcription of published Figure 5/6 clear/moonless intervals, not a newly acquired cloud camera record",
+      "flux_values_source": "previous figure transcription, not a new calibrated RAW extraction"
+    },
+    {
+      "date": "2017-11-19",
+      "samples": 9,
+      "UTC_range": [
+        "2017-11-19T22:06:11Z",
+        "2017-11-19T22:57:44Z"
+      ],
+      "sun_altitude_range_deg": [
+        -65.26761003097114,
+        -57.95862982547458
+      ],
+      "moon_altitude_range_deg": [
+        -54.12684846664093,
+        -45.38859991278905
+      ],
+      "passes_sun_minus18_moon_minus5": 9,
+      "cloud_QA": "previous manual transcription of published Figure 5/6 clear/moonless intervals, not a newly acquired cloud camera record",
+      "flux_values_source": "previous figure transcription, not a new calibrated RAW extraction"
+    }
+  ],
+  "existing_ground_dataset_sha256": "e81c0f0c671d9018a4a923d14623d5a619adf7ddb089b9bd3043bd52314a6cae",
+  "ready_for_full_microphysical_night_validation": false,
+  "blocking_gaps": [
+    "SSA and refractive-index fields missing in queried Level2 outputs",
+    "Atmospheric measurements are daytime, not concurrent nighttime profiles",
+    "Ground clear-sky intervals are prior figure transcriptions; no newly verified raw cloud flags",
+    "No independent skyglow predictions with measured atmospheric inputs have been run"
+  ],
+  "new_skyglow_or_eye_camera_runs": 0
+}
