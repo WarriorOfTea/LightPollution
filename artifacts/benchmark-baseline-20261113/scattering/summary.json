@@ -1,0 +1,24 @@
+{
+  "protocol_sha256": "ac3e700bde24f1934d3bea9f7f547f2ebf2d5ac62a8267cd38addeeeecb0cc38",
+  "cases": 9,
+  "total_paths_including_tail_repeat_and_timing": 28311552,
+  "all_first_orders_within_four_standard_errors": true,
+  "max_first_order_abs_z": 2.1963167961578094,
+  "max_deterministic_relative_refinement": 0.0019607935605113758,
+  "min_luminous_paths_per_exact_order_main_cases": 255,
+  "independent_seed_exact_order_z": [
+    -0.5353996873021264,
+    1.6297814941822961,
+    -0.31856471180968393
+  ],
+  "second_order_relative_increment_range": [
+    0.23857312551151044,
+    1.4231789710079537
+  ],
+  "third_order_relative_increment_range": [
+    0.03216019424462657,
+    0.46461924394350596
+  ],
+  "field_validation": false,
+  "production_model_replaced": false
+}

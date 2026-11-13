@@ -1,0 +1,113 @@
+{
+  "protocol_sha256": "16e2302c6b8c1f3f3f3787df7643d91119e317dacc6628ec6b037c75ef4cb2cb",
+  "variants": [
+    {
+      "variant": "default",
+      "coefficient_fixed_from_default_training": 21654163968672.67,
+      "coefficient_branch_training_only": 21654163968672.67,
+      "periods": {
+        "2017-03": {
+          "observed_V_mag_arcsec2": 17.7069217909684,
+          "samples": 9,
+          "independent_nights": 1,
+          "fixed_C_model_over_observed_flux": 1.0,
+          "fixed_C_residual_mag": 0.0,
+          "training_only_branch_C_model_over_observed_flux": 1.0,
+          "training_only_branch_C_residual_mag": 0.0,
+          "raw_response_ratio_to_same_period_default": 1.0
+        },
+        "2017-11": {
+          "observed_V_mag_arcsec2": 17.881899492469074,
+          "samples": 9,
+          "independent_nights": 1,
+          "fixed_C_model_over_observed_flux": 1.1332920482082822,
+          "fixed_C_residual_mag": -0.13585460383167458,
+          "training_only_branch_C_model_over_observed_flux": 1.1332920482082822,
+          "training_only_branch_C_residual_mag": -0.13585460383167458,
+          "raw_response_ratio_to_same_period_default": 1.0
+        }
+      }
+    },
+    {
+      "variant": "daytime_AOD_only",
+      "coefficient_fixed_from_default_training": 21654163968672.67,
+      "coefficient_branch_training_only": 22917333608260.555,
+      "periods": {
+        "2017-03": {
+          "observed_V_mag_arcsec2": 17.7069217909684,
+          "samples": 9,
+          "independent_nights": 1,
+          "fixed_C_model_over_observed_flux": 0.9464092736876396,
+          "fixed_C_residual_mag": 0.05980253197198593,
+          "training_only_branch_C_model_over_observed_flux": 1.0,
+          "training_only_branch_C_residual_mag": 0.0,
+          "raw_response_ratio_to_same_period_default": 0.9448814743817939
+        },
+        "2017-11": {
+          "observed_V_mag_arcsec2": 17.881899492469074,
+          "samples": 9,
+          "independent_nights": 1,
+          "fixed_C_model_over_observed_flux": 1.1870666262489622,
+          "fixed_C_residual_mag": -0.1861877379935386,
+          "training_only_branch_C_model_over_observed_flux": 1.2544130534684048,
+          "training_only_branch_C_residual_mag": -0.24610141162060017,
+          "raw_response_ratio_to_same_period_default": 1.0488537190502256
+        }
+      }
+    },
+    {
+      "variant": "daytime_g_only",
+      "coefficient_fixed_from_default_training": 21654163968672.67,
+      "coefficient_branch_training_only": 20430091028257.562,
+      "periods": {
+        "2017-03": {
+          "observed_V_mag_arcsec2": 17.7069217909684,
+          "samples": 9,
+          "independent_nights": 1,
+          "fixed_C_model_over_observed_flux": 1.0582544420252882,
+          "fixed_C_residual_mag": -0.06147525025473044,
+          "training_only_branch_C_model_over_observed_flux": 1.0,
+          "training_only_branch_C_residual_mag": 0.0,
+          "raw_response_ratio_to_same_period_default": 1.0599151975741101
+        },
+        "2017-11": {
+          "observed_V_mag_arcsec2": 17.881899492469074,
+          "samples": 9,
+          "independent_nights": 1,
+          "fixed_C_model_over_observed_flux": 1.1888068062357358,
+          "fixed_C_residual_mag": -0.18777820718812066,
+          "training_only_branch_C_model_over_observed_flux": 1.1234464667755408,
+          "training_only_branch_C_residual_mag": -0.1263809568235743,
+          "raw_response_ratio_to_same_period_default": 1.0504346568700698
+        }
+      }
+    },
+    {
+      "variant": "daytime_AOD_and_g",
+      "coefficient_fixed_from_default_training": 21654163968672.67,
+      "coefficient_branch_training_only": 21323057407523.62,
+      "periods": {
+        "2017-03": {
+          "observed_V_mag_arcsec2": 17.7069217909684,
+          "samples": 9,
+          "independent_nights": 1,
+          "fixed_C_model_over_observed_flux": 1.0150976850592124,
+          "fixed_C_residual_mag": -0.016269593408384964,
+          "training_only_branch_C_model_over_observed_flux": 0.9999999999999999,
+          "training_only_branch_C_residual_mag": 0.0,
+          "raw_response_ratio_to_same_period_default": 1.01552809969138
+        },
+        "2017-11": {
+          "observed_V_mag_arcsec2": 17.881899492469074,
+          "samples": 9,
+          "independent_nights": 1,
+          "fixed_C_model_over_observed_flux": 1.2320819671561012,
+          "fixed_C_residual_mag": -0.22659900313320946,
+          "training_only_branch_C_model_over_observed_flux": 1.2137405653708397,
+          "training_only_branch_C_residual_mag": -0.21031466769528606,
+          "raw_response_ratio_to_same_period_default": 1.0897497501815874
+        }
+      }
+    }
+  ]
+}

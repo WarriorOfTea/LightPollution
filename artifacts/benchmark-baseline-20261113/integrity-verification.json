@@ -1,0 +1,512 @@
+{
+  "checked_at": "2026-11-13T11:17:04+01:00",
+  "checks": 84,
+  "passed": 84,
+  "failed": 0,
+  "records": [
+    {
+      "check": "pinned_file_hash",
+      "passed": true,
+      "protocol": "aggregation/protocol.json",
+      "path": "scripts/run_aggregation_benchmark.py",
+      "expected_sha256": "1202c5c6d1a1820b1b29907962073a8f3323d7d3c8f5fa0c1f69f808adee9e70",
+      "actual_sha256": "1202c5c6d1a1820b1b29907962073a8f3323d7d3c8f5fa0c1f69f808adee9e70"
+    },
+    {
+      "check": "pinned_file_hash",
+      "passed": true,
+      "protocol": "aggregation/protocol.json",
+      "path": "src/lightpollution/sources.py",
+      "expected_sha256": "2546fca0e8d46e446bad2e4683ae23476ed021d7c84a0fad053334e5567de79d",
+      "actual_sha256": "2546fca0e8d46e446bad2e4683ae23476ed021d7c84a0fad053334e5567de79d"
+    },
+    {
+      "check": "pinned_file_hash",
+      "passed": true,
+      "protocol": "aggregation/protocol.json",
+      "path": "src/lightpollution/physics.py",
+      "expected_sha256": "00f5d96018280672658424163ba7ec79aaf89d53532bc3215c6481bc52fd1a6a",
+      "actual_sha256": "00f5d96018280672658424163ba7ec79aaf89d53532bc3215c6481bc52fd1a6a"
+    },
+    {
+      "check": "pinned_file_hash",
+      "passed": true,
+      "protocol": "city/protocol.json",
+      "path": "scripts/run_city_benchmark.py",
+      "expected_sha256": "c4b08b89ac64e222b4eda6a7609302df4ba764bb8875c604debb44e11892bb60",
+      "actual_sha256": "c4b08b89ac64e222b4eda6a7609302df4ba764bb8875c604debb44e11892bb60"
+    },
+    {
+      "check": "pinned_file_hash",
+      "passed": true,
+      "protocol": "city/protocol.json",
+      "path": "src/lightpollution/physics.py",
+      "expected_sha256": "00f5d96018280672658424163ba7ec79aaf89d53532bc3215c6481bc52fd1a6a",
+      "actual_sha256": "00f5d96018280672658424163ba7ec79aaf89d53532bc3215c6481bc52fd1a6a"
+    },
+    {
+      "check": "pinned_file_hash",
+      "passed": true,
+      "protocol": "city/protocol.json",
+      "path": "src/lightpollution/sources.py",
+      "expected_sha256": "2546fca0e8d46e446bad2e4683ae23476ed021d7c84a0fad053334e5567de79d",
+      "actual_sha256": "2546fca0e8d46e446bad2e4683ae23476ed021d7c84a0fad053334e5567de79d"
+    },
+    {
+      "check": "pinned_file_hash",
+      "passed": true,
+      "protocol": "city/protocol.json",
+      "path": "src/lightpollution/calibration.py",
+      "expected_sha256": "61832ff9161978d00f1b5eceef93edb89ccbbf5ecd5ef97f074644909568d381",
+      "actual_sha256": "61832ff9161978d00f1b5eceef93edb89ccbbf5ecd5ef97f074644909568d381"
+    },
+    {
+      "check": "pinned_file_hash",
+      "passed": true,
+      "protocol": "city/protocol.json",
+      "path": "artifacts/seasonal-ground-20261110/astmon-publication-qa.json",
+      "expected_sha256": "039a2d41060073500eec97363f83198cadeb41caeb0b594b695b5b81c1fa28b8",
+      "actual_sha256": "039a2d41060073500eec97363f83198cadeb41caeb0b594b695b5b81c1fa28b8"
+    },
+    {
+      "check": "pinned_file_hash",
+      "passed": true,
+      "protocol": "city/protocol.json",
+      "path": "scratch/data-search-20261110/AstMon_evol.csv",
+      "expected_sha256": "f477416f47487ad918484392fd5c368744d5807c22edf5c0e69ed7450fad88a9",
+      "actual_sha256": "f477416f47487ad918484392fd5c368744d5807c22edf5c0e69ed7450fad88a9"
+    },
+    {
+      "check": "pinned_file_hash",
+      "passed": true,
+      "protocol": "moon/protocol.json",
+      "path": "scripts/run_moon_benchmark.py",
+      "expected_sha256": "890ebecc435720767f4ddcc7cc7498265d137f474050c14cea136b87beb18512",
+      "actual_sha256": "890ebecc435720767f4ddcc7cc7498265d137f474050c14cea136b87beb18512"
+    },
+    {
+      "check": "pinned_file_hash",
+      "passed": true,
+      "protocol": "moon/protocol.json",
+      "path": "src/lightpollution/adapters/winkler.py",
+      "expected_sha256": "21819364d9fbe4e551db4f38723d0d16c7008b58ee99a6395b689e150f7dce71",
+      "actual_sha256": "21819364d9fbe4e551db4f38723d0d16c7008b58ee99a6395b689e150f7dce71"
+    },
+    {
+      "check": "pinned_file_hash",
+      "passed": true,
+      "protocol": "moon/protocol.json",
+      "path": "src/lightpollution/moonlight.py",
+      "expected_sha256": "8b4aeca4e38b7f968bcf992cd5d3a1e6973920c3e7d944f43f19f943e318e71f",
+      "actual_sha256": "8b4aeca4e38b7f968bcf992cd5d3a1e6973920c3e7d944f43f19f943e318e71f"
+    },
+    {
+      "check": "pinned_file_hash",
+      "passed": true,
+      "protocol": "moon/protocol.json",
+      "path": "src/lightpollution/models/observation.py",
+      "expected_sha256": "107af797b98e3150c10950b98bbdfe781a03791a71012f1493ade147ce327216",
+      "actual_sha256": "107af797b98e3150c10950b98bbdfe781a03791a71012f1493ade147ce327216"
+    },
+    {
+      "check": "moon_source_hash",
+      "passed": true
+    },
+    {
+      "check": "pinned_file_hash",
+      "passed": true,
+      "protocol": "scattering/protocol.json",
+      "path": "src/lightpollution/physics.py",
+      "expected_sha256": "00f5d96018280672658424163ba7ec79aaf89d53532bc3215c6481bc52fd1a6a",
+      "actual_sha256": "00f5d96018280672658424163ba7ec79aaf89d53532bc3215c6481bc52fd1a6a"
+    },
+    {
+      "check": "pinned_file_hash",
+      "passed": true,
+      "protocol": "scattering/protocol.json",
+      "path": "src/lightpollution/models/scattering_orders.py",
+      "expected_sha256": "87fb2a78a50b72806fd7bbe7c20a6032731b187f368ae791a215b2f48739680e",
+      "actual_sha256": "87fb2a78a50b72806fd7bbe7c20a6032731b187f368ae791a215b2f48739680e"
+    },
+    {
+      "check": "pinned_file_hash",
+      "passed": true,
+      "protocol": "scattering/protocol.json",
+      "path": "scripts/run_scattering_benchmark.py",
+      "expected_sha256": "5406aa8a3847942cfac5a9139ab1583df5c23e0549d5a3f97d995dcfa382270c",
+      "actual_sha256": "5406aa8a3847942cfac5a9139ab1583df5c23e0549d5a3f97d995dcfa382270c"
+    },
+    {
+      "check": "pinned_file_hash",
+      "passed": true,
+      "protocol": "spectra/protocol.json",
+      "path": "scripts/run_spectral_benchmark.py",
+      "expected_sha256": "7e05a4974bc4381f71c49658338ff98c1fbecfb5323e2d4f4098680d7a806c35",
+      "actual_sha256": "7e05a4974bc4381f71c49658338ff98c1fbecfb5323e2d4f4098680d7a806c35"
+    },
+    {
+      "check": "pinned_file_hash",
+      "passed": true,
+      "protocol": "spectra/protocol.json",
+      "path": "src/lightpollution/models/spectra.py",
+      "expected_sha256": "72335f42f714c401fa39d5bed57059401862496715705afe06bf5f0bd3dde19a",
+      "actual_sha256": "72335f42f714c401fa39d5bed57059401862496715705afe06bf5f0bd3dde19a"
+    },
+    {
+      "check": "pinned_file_hash",
+      "passed": true,
+      "protocol": "spectra/protocol.json",
+      "path": "src/lightpollution/adapters/spectral_library.py",
+      "expected_sha256": "dab96b98950f91fba2fffaffbcd856855f2a9191dc6b4f5e49c36514c11e889d",
+      "actual_sha256": "dab96b98950f91fba2fffaffbcd856855f2a9191dc6b4f5e49c36514c11e889d"
+    },
+    {
+      "check": "laboratory_source_hash",
+      "passed": true
+    },
+    {
+      "check": "city_cache_hash",
+      "passed": true,
+      "period": "2017-03"
+    },
+    {
+      "check": "raw_NASA_hash",
+      "passed": true,
+      "filename": "VNP46A3.A2017060.h17v04.002.2025101152242.h5"
+    },
+    {
+      "check": "raw_NASA_hash",
+      "passed": true,
+      "filename": "VNP46A3.A2017060.h17v05.002.2025101152248.h5"
+    },
+    {
+      "check": "city_cache_hash",
+      "passed": true,
+      "period": "2017-11"
+    },
+    {
+      "check": "raw_NASA_hash",
+      "passed": true,
+      "filename": "VNP46A3.A2017305.h17v04.002.2025101174416.h5"
+    },
+    {
+      "check": "raw_NASA_hash",
+      "passed": true,
+      "filename": "VNP46A3.A2017305.h17v05.002.2025101174426.h5"
+    },
+    {
+      "check": "order_moments_and_outcomes",
+      "passed": true,
+      "case_id": "aod-0.02-alt-10"
+    },
+    {
+      "check": "independent_first_order_and_refinement",
+      "passed": true,
+      "case_id": "aod-0.02-alt-10"
+    },
+    {
+      "check": "order_moments_and_outcomes",
+      "passed": true,
+      "case_id": "aod-0.02-alt-45"
+    },
+    {
+      "check": "independent_first_order_and_refinement",
+      "passed": true,
+      "case_id": "aod-0.02-alt-45"
+    },
+    {
+      "check": "order_moments_and_outcomes",
+      "passed": true,
+      "case_id": "aod-0.02-alt-90"
+    },
+    {
+      "check": "independent_first_order_and_refinement",
+      "passed": true,
+      "case_id": "aod-0.02-alt-90"
+    },
+    {
+      "check": "order_moments_and_outcomes",
+      "passed": true,
+      "case_id": "aod-0.10-alt-10"
+    },
+    {
+      "check": "independent_first_order_and_refinement",
+      "passed": true,
+      "case_id": "aod-0.10-alt-10"
+    },
+    {
+      "check": "order_moments_and_outcomes",
+      "passed": true,
+      "case_id": "aod-0.10-alt-45"
+    },
+    {
+      "check": "independent_first_order_and_refinement",
+      "passed": true,
+      "case_id": "aod-0.10-alt-45"
+    },
+    {
+      "check": "order_moments_and_outcomes",
+      "passed": true,
+      "case_id": "aod-0.10-alt-90"
+    },
+    {
+      "check": "independent_first_order_and_refinement",
+      "passed": true,
+      "case_id": "aod-0.10-alt-90"
+    },
+    {
+      "check": "order_moments_and_outcomes",
+      "passed": true,
+      "case_id": "aod-0.30-alt-10"
+    },
+    {
+      "check": "independent_first_order_and_refinement",
+      "passed": true,
+      "case_id": "aod-0.30-alt-10"
+    },
+    {
+      "check": "order_moments_and_outcomes",
+      "passed": true,
+      "case_id": "aod-0.30-alt-45"
+    },
+    {
+      "check": "independent_first_order_and_refinement",
+      "passed": true,
+      "case_id": "aod-0.30-alt-45"
+    },
+    {
+      "check": "order_moments_and_outcomes",
+      "passed": true,
+      "case_id": "aod-0.30-alt-90"
+    },
+    {
+      "check": "independent_first_order_and_refinement",
+      "passed": true,
+      "case_id": "aod-0.30-alt-90"
+    },
+    {
+      "check": "common_random_prefix_orders_3_5",
+      "passed": true,
+      "AOD": 0.1
+    },
+    {
+      "check": "common_random_prefix_orders_3_5",
+      "passed": true,
+      "AOD": 0.3
+    },
+    {
+      "check": "all_independent_slab_orders",
+      "passed": true,
+      "order_count": 5,
+      "max_abs_z": 1.6005072876337716
+    },
+    {
+      "check": "recomputed_moon_prediction",
+      "passed": true,
+      "row_id": "A1.T13-row-3",
+      "variant": "default_atmosphere"
+    },
+    {
+      "check": "recomputed_moon_prediction",
+      "passed": true,
+      "row_id": "A1.T13-row-3",
+      "variant": "site_extinction"
+    },
+    {
+      "check": "recomputed_moon_prediction",
+      "passed": true,
+      "row_id": "A1.T13-row-6",
+      "variant": "default_atmosphere"
+    },
+    {
+      "check": "recomputed_moon_prediction",
+      "passed": true,
+      "row_id": "A1.T13-row-6",
+      "variant": "site_extinction"
+    },
+    {
+      "check": "recomputed_moon_prediction",
+      "passed": true,
+      "row_id": "A1.T13-row-11",
+      "variant": "default_atmosphere"
+    },
+    {
+      "check": "recomputed_moon_prediction",
+      "passed": true,
+      "row_id": "A1.T13-row-11",
+      "variant": "site_extinction"
+    },
+    {
+      "check": "recomputed_moon_prediction",
+      "passed": true,
+      "row_id": "A1.T13-row-14",
+      "variant": "default_atmosphere"
+    },
+    {
+      "check": "recomputed_moon_prediction",
+      "passed": true,
+      "row_id": "A1.T13-row-14",
+      "variant": "site_extinction"
+    },
+    {
+      "check": "recomputed_moon_prediction",
+      "passed": true,
+      "row_id": "A1.T13-row-32",
+      "variant": "default_atmosphere"
+    },
+    {
+      "check": "recomputed_moon_prediction",
+      "passed": true,
+      "row_id": "A1.T13-row-32",
+      "variant": "site_extinction"
+    },
+    {
+      "check": "recomputed_moon_prediction",
+      "passed": true,
+      "row_id": "A1.T13-row-37",
+      "variant": "default_atmosphere"
+    },
+    {
+      "check": "recomputed_moon_prediction",
+      "passed": true,
+      "row_id": "A1.T13-row-37",
+      "variant": "site_extinction"
+    },
+    {
+      "check": "recomputed_moon_prediction",
+      "passed": true,
+      "row_id": "A1.T13-row-39",
+      "variant": "default_atmosphere"
+    },
+    {
+      "check": "recomputed_moon_prediction",
+      "passed": true,
+      "row_id": "A1.T13-row-39",
+      "variant": "site_extinction"
+    },
+    {
+      "check": "recomputed_moon_prediction",
+      "passed": true,
+      "row_id": "A1.T13-row-85",
+      "variant": "default_atmosphere"
+    },
+    {
+      "check": "recomputed_moon_prediction",
+      "passed": true,
+      "row_id": "A1.T13-row-85",
+      "variant": "site_extinction"
+    },
+    {
+      "check": "recomputed_moon_prediction",
+      "passed": true,
+      "row_id": "A1.T13-row-86",
+      "variant": "default_atmosphere"
+    },
+    {
+      "check": "recomputed_moon_prediction",
+      "passed": true,
+      "row_id": "A1.T13-row-86",
+      "variant": "site_extinction"
+    },
+    {
+      "check": "recomputed_moon_prediction",
+      "passed": true,
+      "row_id": "A1.T13-row-92",
+      "variant": "default_atmosphere"
+    },
+    {
+      "check": "recomputed_moon_prediction",
+      "passed": true,
+      "row_id": "A1.T13-row-92",
+      "variant": "site_extinction"
+    },
+    {
+      "check": "recomputed_moon_prediction",
+      "passed": true,
+      "row_id": "A1.T13-row-97",
+      "variant": "default_atmosphere"
+    },
+    {
+      "check": "recomputed_moon_prediction",
+      "passed": true,
+      "row_id": "A1.T13-row-97",
+      "variant": "site_extinction"
+    },
+    {
+      "check": "recomputed_moon_prediction",
+      "passed": true,
+      "row_id": "A1.T13-row-107",
+      "variant": "default_atmosphere"
+    },
+    {
+      "check": "recomputed_moon_prediction",
+      "passed": true,
+      "row_id": "A1.T13-row-107",
+      "variant": "site_extinction"
+    },
+    {
+      "check": "moon_selection_unique",
+      "passed": true
+    },
+    {
+      "check": "recomputed_city_prediction",
+      "passed": true,
+      "variant": "default",
+      "period": "2017-03"
+    },
+    {
+      "check": "recomputed_city_prediction",
+      "passed": true,
+      "variant": "default",
+      "period": "2017-11"
+    },
+    {
+      "check": "recomputed_city_prediction",
+      "passed": true,
+      "variant": "daytime_AOD_only",
+      "period": "2017-03"
+    },
+    {
+      "check": "recomputed_city_prediction",
+      "passed": true,
+      "variant": "daytime_AOD_only",
+      "period": "2017-11"
+    },
+    {
+      "check": "recomputed_city_prediction",
+      "passed": true,
+      "variant": "daytime_g_only",
+      "period": "2017-03"
+    },
+    {
+      "check": "recomputed_city_prediction",
+      "passed": true,
+      "variant": "daytime_g_only",
+      "period": "2017-11"
+    },
+    {
+      "check": "recomputed_city_prediction",
+      "passed": true,
+      "variant": "daytime_AOD_and_g",
+      "period": "2017-03"
+    },
+    {
+      "check": "recomputed_city_prediction",
+      "passed": true,
+      "variant": "daytime_AOD_and_g",
+      "period": "2017-11"
+    },
+    {
+      "check": "stellar_BV_and_V_constraints",
+      "passed": true
+    },
+    {
+      "check": "summarizer_identity",
+      "passed": true
+    },
+    {
+      "check": "benchmark_accounting",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "benchmark_version": "LP-core-diagnostics-1",
+  "production_version": "0.10.0",
+  "git_base_commit": "e69261f",
+  "identity_policy": "Exact scientific/evaluator file hashes are in each protocol; final Git commit contains this artifact.",
+  "groups_evaluated": 5,
+  "measured_photometry_rows": 30,
+  "distinct_observed_nights": 5,
+  "training_photometry_rows": 9,
+  "check_photometry_rows": 21,
+  "all_field_checks_conditional": true,
+  "measured_stellar_spectra": 7,
+  "measured_laboratory_lamps": 1,
+  "global_accuracy_score": null,
+  "global_score_unavailable_reason": "Different quantities, incomplete QA and missing eye/camera truth; no common valid aggregate.",
+  "group_summaries": {
+    "scattering": {
+      "protocol_sha256": "ac3e700bde24f1934d3bea9f7f547f2ebf2d5ac62a8267cd38addeeeecb0cc38",
+      "cases": 9,
+      "total_paths_including_tail_repeat_and_timing": 28311552,
+      "all_first_orders_within_four_standard_errors": true,
+      "max_first_order_abs_z": 2.1963167961578094,
+      "max_deterministic_relative_refinement": 0.0019607935605113758,
+      "min_luminous_paths_per_exact_order_main_cases": 255,
+      "independent_seed_exact_order_z": [
+        -0.5353996873021264,
+        1.6297814941822961,
+        -0.31856471180968393
+      ],
+      "second_order_relative_increment_range": [
+        0.23857312551151044,
+        1.4231789710079537
+      ],
+      "third_order_relative_increment_range": [
+        0.03216019424462657,
+        0.46461924394350596
+      ],
+      "field_validation": false,
+      "production_model_replaced": false
+    },
+    "city": {
+      "variants": 4,
+      "measured_records": 18,
+      "training_nights": 1,
+      "check_nights": 1,
+      "max_refinement_relative": 4.509813316877498e-05,
+      "check_residual_mag_fixed_C": {
+        "default": -0.13585460383167458,
+        "daytime_AOD_only": -0.1861877379935386,
+        "daytime_g_only": -0.18777820718812066,
+        "daytime_AOD_and_g": -0.22659900313320946
+      },
+      "check_residual_mag_separate_training_only_C": {
+        "default": -0.13585460383167458,
+        "daytime_AOD_only": -0.24610141162060017,
+        "daytime_g_only": -0.1263809568235743,
+        "daytime_AOD_and_g": -0.21031466769528606
+      },
+      "minimum_aod_time_gap_hours": 5.2875,
+      "maximum_aod_time_gap_hours": 6.4622222222222225,
+      "nighttime_atmosphere_measured": false,
+      "absolute_field_accuracy_certified": false
+    },
+    "moon": {
+      "protocol_sha256": "17005d0e8f63067eb735837f0d7b82a0bede3596b5342eb9adb09a759229b622",
+      "source_table_records": 108,
+      "primary_records": 12,
+      "excluded_records": 96,
+      "rejection_reason_counts_not_mutually_exclusive": {
+        "phase_outside_0.90_0.98": 70,
+        "moon_altitude_below_25": 25,
+        "separation_outside_20_90": 24,
+        "published_moon_geometry_missing": 6,
+        "twilight_in_time_bracket": 8,
+        "galactic_plane_or_missing_coordinates": 28,
+        "target_altitude_below_30": 1
+      },
+      "missing_moon_geometry_rows": 6,
+      "missing_coordinate_rows": 1,
+      "default_atmosphere": {
+        "records": 12,
+        "nights": 3,
+        "mae_mag": 0.06374059013048476,
+        "bias_mag": 0.03244057510218923,
+        "rmse_mag": 0.08816296536502147,
+        "median_model_over_observed_flux": 0.9818868141160884,
+        "equal_night_mae_mag": 0.05287757621711774,
+        "per_night": [
+          {
+            "night_id": "HJD-day-227",
+            "records": 8,
+            "mae_mag": 0.07107087691046532,
+            "bias_mag": 0.06490518482097452
+          },
+          {
+            "night_id": "HJD-day-232",
+            "records": 1,
+            "mae_mag": 0.033182744470284575,
+            "bias_mag": 0.033182744470284575
+          },
+          {
+            "night_id": "HJD-day-233",
+            "records": 3,
+            "mae_mag": 0.05437910727060332,
+            "bias_mag": -0.05437910727060332
+          }
+        ]
+      },
+      "site_extinction": {
+        "records": 12,
+        "nights": 3,
+        "mae_mag": 0.14587323697355478,
+        "bias_mag": -0.13779346406810333,
+        "rmse_mag": 0.16044277894830467,
+        "median_model_over_observed_flux": 1.1537281122855814,
+        "equal_night_mae_mag": 0.15359718461172014,
+        "per_night": [
+          {
+            "night_id": "HJD-day-227",
+            "records": 8,
+            "mae_mag": 0.12321199669532179,
+            "bias_mag": -0.11109233733714463
+          },
+          {
+            "night_id": "HJD-day-232",
+            "records": 1,
+            "mae_mag": 0.12397790064971659,
+            "bias_mag": -0.12397790064971659
+          },
+          {
+            "night_id": "HJD-day-233",
+            "records": 3,
+            "mae_mag": 0.2136016564901221,
+            "bias_mag": -0.2136016564901221
+          }
+        ]
+      },
+      "max_relative_distance_flux_span_due_time_bracket": 0.0012934359111627103,
+      "max_natural_background_fraction_site_case": 0.1746083174790474,
+      "largest_prediction_span_for_natural_21_22_mag": 0.191620624397828,
+      "moonless_control_records": 0,
+      "per_record_cloud_mask_available": false,
+      "field_accuracy_certified": false,
+      "production_lunar_model_changed": false,
+      "all_108_rows_scored": false
+    },
+    "spectra": {
+      "measured_stellar_SEDs": 7,
+      "scored_continua": 7,
+      "max_absolute_stellar_photopic_relative_difference": 0.035886432734793194,
+      "max_absolute_stellar_scotopic_relative_difference": 0.05859678455558204,
+      "lamp_source_scotopic_relative_difference": 0.08884265579884776,
+      "lamp_sky_johnson_V_relative_difference_by_altitude": {
+        "10": -0.00011169297270707812,
+        "45": 0.0008615674341028168,
+        "90": 0.0006194326051633947
+      },
+      "full_sky_or_eye_or_sensor_validation": false
+    },
+    "aggregation": {
+      "geometries": 4,
+      "comparisons": 8,
+      "max_abs_block_12_vs_3_relative": 0.0144926402074399,
+      "max_abs_block_6_vs_3_relative": 0.006411581091061769,
+      "max_ray_path_refinement_relative": 7.728177996113583e-05,
+      "max_power_relative_span": 2.28029628212926e-16,
+      "does_not_test_missing_nearby_sources_or_outside_ROI": true
+    }
+  },
+  "execution": {
+    "official_final_MC_paths": 28835840,
+    "official_final_MC_solver_calls": 19,
+    "earlier_full_MC_pass_paths": 28311552,
+    "earlier_pass_status": "Physical values reproduced; timing RSS method rejected because ru_maxrss inherited parent peak.",
+    "pilot_MC_paths": 131072,
+    "benchmark_MC_paths_all_passes_excluding_unit_tests": 57278464,
+    "unit_test_random_paths_not_counted_as_benchmark": true
+  },
+  "summarizer_sha256": "6e06ffd22a13c31997149978dfbca674033582027f6d9146de6d3e39d162845a"
+}

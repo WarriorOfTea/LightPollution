@@ -1,0 +1,94 @@
+{
+  "id": "LP-clean-orders-v1",
+  "created_at": "2026-11-13T10:54:13+01:00",
+  "purpose": "Paired physical sensitivity; not agreement with measurements.",
+  "observer": {
+    "latitude_deg": 0.0,
+    "longitude_deg": 0.0,
+    "height_m": 20.0
+  },
+  "cap": {
+    "latitude_deg": -0.5395929635512383,
+    "longitude_deg": 0.0,
+    "radius_m": 40000.0,
+    "radiance": 1.0
+  },
+  "azimuth_deg": 180.0,
+  "samples_per_case": 2097152,
+  "seed": 3011,
+  "batch_size": 8192,
+  "aod_values": [
+    0.02,
+    0.1,
+    0.3
+  ],
+  "altitudes_deg": [
+    10.0,
+    45.0,
+    90.0
+  ],
+  "base_atmosphere": {
+    "reference_wavelength_nm": 550.0,
+    "rayleigh_scale_height_m": 8000.0,
+    "aerosol_scale_height_m": 1200.0,
+    "aerosol_optical_depth": 0.1,
+    "aerosol_single_scattering_albedo": 0.9,
+    "aerosol_g": 0.8,
+    "rayleigh_multiplier": 1.0,
+    "top_m": 80000.0
+  },
+  "changed_parameters": [
+    "aerosol_optical_depth",
+    "altitude_deg",
+    "max_order"
+  ],
+  "fixed_parameters": [
+    "source power and footprint",
+    "wavelength 550 nm",
+    "g",
+    "SSA",
+    "all scale heights",
+    "observer"
+  ],
+  "absent_processes": [
+    "cloud",
+    "Moon",
+    "Sun",
+    "airglow",
+    "snow",
+    "ground reflection",
+    "DSM",
+    "lamp spectra",
+    "camera",
+    "eye"
+  ],
+  "reference_checks": [
+    "Independent production first order with area/ray/path refinement.",
+    "Independent seed for AOD=.10, altitude=45.",
+    "Orders 4/5 at AOD=.10/.30, altitude=45."
+  ],
+  "acceptance_before_results": {
+    "first_order_difference_max_standard_errors": 4.0,
+    "deterministic_refinement_relative_max": 0.005,
+    "normal_interval_min_luminous_paths": 100
+  },
+  "timing": {
+    "fresh_processes": true,
+    "samples": 524288,
+    "repeats_per_order": 2,
+    "includes_imports": false,
+    "memory_includes_imports": true,
+    "memory_method": "/proc/self/status VmHWM, excluding pre-exec parent high-water",
+    "same_sample_count_not_same_error": true
+  },
+  "hardware": {
+    "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "logical_cpus": 6
+  },
+  "source_sha256": {
+    "src/lightpollution/physics.py": "00f5d96018280672658424163ba7ec79aaf89d53532bc3215c6481bc52fd1a6a",
+    "src/lightpollution/models/scattering_orders.py": "87fb2a78a50b72806fd7bbe7c20a6032731b187f368ae791a215b2f48739680e",
+    "scripts/run_scattering_benchmark.py": "5406aa8a3847942cfac5a9139ab1583df5c23e0549d5a3f97d995dcfa382270c"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "catalogue_source": "benchmark-catalogue0.1",
+  "cases": [
+    {
+      "id": "B01",
+      "site": "Madrid/UCM",
+      "full_scene_validated": false,
+      "status": "conditional_two_night_development_diagnostic",
+      "metrics": "city/summary.json",
+      "reason": "Daytime atmosphere 5.29–6.46h from night; one prior-inspected check night, monthly source and effective-V bridge."
+    },
+    {
+      "id": "B02",
+      "site": "Galicia",
+      "full_scene_validated": false,
+      "status": "not_run",
+      "metrics": null,
+      "reason": "Station coordinates/timezones/QA/bandpasses and matched atmosphere must be extracted and verified per station/night."
+    },
+    {
+      "id": "B03",
+      "site": "Cherry Springs / Philadelphia",
+      "full_scene_validated": false,
+      "status": "not_run",
+      "metrics": null,
+      "reason": "Full arrays, UTC/units/receiver geometry and cloud/Moon QA not completed; current sky domain omits horizon for hemispheric irradiance."
+    },
+    {
+      "id": "B04",
+      "site": "SAAO/Sutherland",
+      "full_scene_validated": false,
+      "status": "conditional_isolated_moon_component_12_records_3_nights",
+      "metrics": "moon/summary.json",
+      "reason": "Published angles isolate lunar block; natural background and no per-row cloud QA remain.",
+      "NASA_required_for_this_isolated_component": false
+    },
+    {
+      "id": "B05",
+      "site": "ESO Paranal FORS2",
+      "full_scene_validated": false,
+      "status": "not_run",
+      "metrics": null,
+      "reason": "Header only; full RAW/calibrations/throughput/weather QA and reduction missing."
+    },
+    {
+      "id": "B06",
+      "site": "Berlin urban-to-rural",
+      "full_scene_validated": false,
+      "status": "not_run",
+      "metrics": null,
+      "reason": "Published appendices/metrics; complete raw images and calibration not obtained."
+    },
+    {
+      "id": "B07",
+      "site": "Granada / Barcelona",
+      "full_scene_validated": false,
+      "status": "not_run",
+      "metrics": null,
+      "reason": "Actual lidar profiles; co-located independent ground photometry and required optical fields not matched."
+    },
+    {
+      "id": "B08",
+      "site": "SG network",
+      "full_scene_validated": false,
+      "status": "not_run",
+      "metrics": null,
+      "reason": "Photometer IDs lack verified coordinate mapping; published site API returned404."
+    },
+    {
+      "id": "B09",
+      "site": "Globe at Night global",
+      "full_scene_validated": false,
+      "status": "not_run",
+      "metrics": null,
+      "reason": "Coordinates/times exist per row; clear/Moon/Sun/timezone/duplicate QA and aggregate evaluator not performed."
+    },
+    {
+      "id": "B10",
+      "site": "Clear-sky snow pair",
+      "full_scene_validated": false,
+      "status": "not_run",
+      "metrics": null,
+      "reason": "No matched clear-sky snow/no-snow observational pair frozen."
+    },
+    {
+      "id": "B11",
+      "site": "Camera laboratory",
+      "full_scene_validated": false,
+      "status": "not_run",
+      "metrics": null,
+      "reason": "Camera/ISO/gain/temperature/absolute channel scales and complete laboratory frames not matched."
+    },
+    {
+      "id": "B12",
+      "site": "Radiative transfer reference",
+      "full_scene_validated": false,
+      "status": "controlled_internal_plus_independent_slab_reference",
+      "metrics": "scattering/summary.json",
+      "reason": "A new independently discretised slab is used; libRadtran/IPRT comparison remains not run."
+    }
+  ],
+  "additional_component_tests": [
+    "spectra/summary.json",
+    "aggregation/summary.json"
+  ],
+  "full_scene_or_eye_or_real_camera_scores_available": false
+}

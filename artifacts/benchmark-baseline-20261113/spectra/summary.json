@@ -1,0 +1,13 @@
+{
+  "measured_stellar_SEDs": 7,
+  "scored_continua": 7,
+  "max_absolute_stellar_photopic_relative_difference": 0.035886432734793194,
+  "max_absolute_stellar_scotopic_relative_difference": 0.05859678455558204,
+  "lamp_source_scotopic_relative_difference": 0.08884265579884776,
+  "lamp_sky_johnson_V_relative_difference_by_altitude": {
+    "10": -0.00011169297270707812,
+    "45": 0.0008615674341028168,
+    "90": 0.0006194326051633947
+  },
+  "full_sky_or_eye_or_sensor_validation": false
+}

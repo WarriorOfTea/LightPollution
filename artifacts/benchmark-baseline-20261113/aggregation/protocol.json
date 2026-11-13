@@ -1,0 +1,55 @@
+{
+  "id": "LP-source-aggregation-v1",
+  "created_at": "2026-11-13T10:57:07+01:00",
+  "observer": {
+    "latitude_deg": 40.451111,
+    "longitude_deg": -3.726111,
+    "height_m": 650.0
+  },
+  "atmosphere": {
+    "reference_wavelength_nm": 550.0,
+    "rayleigh_scale_height_m": 8000.0,
+    "aerosol_scale_height_m": 1200.0,
+    "aerosol_optical_depth": 0.1,
+    "aerosol_single_scattering_albedo": 0.9,
+    "aerosol_g": 0.8,
+    "rayleigh_multiplier": 1.0,
+    "top_m": 80000.0
+  },
+  "periods": [
+    "2017-03",
+    "2017-11"
+  ],
+  "blocks_pixels": [
+    12,
+    6,
+    3
+  ],
+  "directions_az_alt_deg": [
+    [
+      150,
+      10
+    ],
+    [
+      0,
+      90
+    ]
+  ],
+  "chunk_sources": 512,
+  "settings": {
+    "ray_segments": 192,
+    "path_quadrature": 24,
+    "horizontal_fraction": 0.0,
+    "near_ray_scale_m": 500.0
+  },
+  "fixed_C_power_mask_and_all_other_inputs": true,
+  "DSM_and_finite_local_cells": false,
+  "reference": "block=3 plus numerical refinement; not an exact spatial solution or a larger region.",
+  "no_residual_based_case_selection": true,
+  "physical_order": 1,
+  "code_sha256": {
+    "scripts/run_aggregation_benchmark.py": "1202c5c6d1a1820b1b29907962073a8f3323d7d3c8f5fa0c1f69f808adee9e70",
+    "src/lightpollution/sources.py": "2546fca0e8d46e446bad2e4683ae23476ed021d7c84a0fad053334e5567de79d",
+    "src/lightpollution/physics.py": "00f5d96018280672658424163ba7ec79aaf89d53532bc3215c6481bc52fd1a6a"
+  }
+}

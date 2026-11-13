@@ -1,0 +1,606 @@
+{
+  "attribution": "Winkler (2022), Tables 10/13; measured numerical inputs and our derived residuals.",
+  "source": "https://arxiv.org/html/2205.07773",
+  "records": [
+    {
+      "hjd_minus_2456000": 232.4279,
+      "illuminated_fraction": 0.9594,
+      "moon_zenith_deg": 58.0,
+      "moon_azimuth_deg": 27.4,
+      "target_zenith_deg": 32.3,
+      "target_azimuth_deg": 289.8,
+      "separation_deg": 67.19,
+      "v_mag_arcsec2": 19.47,
+      "b_minus_v": 0.05,
+      "u_minus_b": -0.38,
+      "v_minus_r": 0.02,
+      "v_minus_i": 0.47,
+      "row_id": "A1.T13-row-3",
+      "patch": "SP 955",
+      "ra_deg": 3.504166666666667,
+      "dec_deg": -17.523611111111112,
+      "coordinate_status": "published",
+      "night_id": "HJD-day-232",
+      "sun_altitude_max_in_bracket_deg": -43.03921818827727,
+      "moon_distance_km": 402409.92177202355,
+      "relative_distance_flux_span_in_time_bracket": 0.0008373163997463795,
+      "galactic_latitude_deg": -77.08285855890894,
+      "exclusion_reasons": [],
+      "phase_angle_deg": 23.24872414880133,
+      "predictions": {
+        "default_atmosphere": {
+          "v_mag_arcsec2": 19.503182744470283,
+          "residual_mag_model_minus_observed": 0.033182744470284575,
+          "model_over_observed_flux": 0.9698996805302498,
+          "lunar_nL": 460.44095673830617,
+          "natural_fraction_of_predicted_total": 0.14496650474095665,
+          "natural_21_22_mag_result_span": [
+            19.392856278661025,
+            19.552803913639206
+          ]
+        },
+        "site_extinction": {
+          "v_mag_arcsec2": 19.346022099350282,
+          "residual_mag_model_minus_observed": -0.12397790064971659,
+          "model_over_observed_flux": 1.1209635249622678,
+          "lunar_nL": 544.3144122741512,
+          "natural_fraction_of_predicted_total": 0.12543045648213536,
+          "natural_21_22_mag_result_span": [
+            19.249925902806865,
+            19.388822500753196
+          ]
+        }
+      }
+    },
+    {
+      "hjd_minus_2456000": 227.3853,
+      "illuminated_fraction": 0.9185,
+      "moon_zenith_deg": 40.3,
+      "moon_azimuth_deg": 334.4,
+      "target_zenith_deg": 7.1,
+      "target_azimuth_deg": 354.3,
+      "separation_deg": 33.68,
+      "v_mag_arcsec2": 19.12,
+      "b_minus_v": 0.15,
+      "u_minus_b": -0.33,
+      "v_minus_r": 0.07,
+      "v_minus_i": 0.37,
+      "row_id": "A1.T13-row-6",
+      "patch": "SP 5524",
+      "ra_deg": 14.229166666666668,
+      "dec_deg": -25.338333333333335,
+      "coordinate_status": "published",
+      "night_id": "HJD-day-227",
+      "sun_altitude_max_in_bracket_deg": -41.3183397620282,
+      "moon_distance_km": 390866.1369576646,
+      "relative_distance_flux_span_in_time_bracket": 0.0009005578899106137,
+      "galactic_latitude_deg": -87.82903840229388,
+      "exclusion_reasons": [],
+      "phase_angle_deg": 33.175330175557484,
+      "predictions": {
+        "default_atmosphere": {
+          "v_mag_arcsec2": 19.11547041481634,
+          "residual_mag_model_minus_observed": -0.004529585183661311,
+          "model_over_observed_flux": 1.004180643748621,
+          "lunar_nL": 691.5553452935405,
+          "natural_fraction_of_predicted_total": 0.10143357490823797,
+          "natural_21_22_mag_result_span": [
+            19.037112981332964,
+            19.14995082568854
+          ]
+        },
+        "site_extinction": {
+          "v_mag_arcsec2": 18.934075224593244,
+          "residual_mag_model_minus_observed": -0.18592477540675745,
+          "model_over_observed_flux": 1.1867804722046669,
+          "lunar_nL": 831.5028871949589,
+          "natural_fraction_of_predicted_total": 0.08582685250951151,
+          "natural_21_22_mag_result_span": [
+            18.867411966061372,
+            18.96317862440249
+          ]
+        }
+      }
+    },
+    {
+      "hjd_minus_2456000": 227.4005,
+      "illuminated_fraction": 0.919,
+      "moon_zenith_deg": 42.6,
+      "moon_azimuth_deg": 327.1,
+      "target_zenith_deg": 12.4,
+      "target_azimuth_deg": 172.2,
+      "separation_deg": 53.98,
+      "v_mag_arcsec2": 19.5,
+      "b_minus_v": 0.1,
+      "u_minus_b": -0.41,
+      "v_minus_r": 0.06,
+      "v_minus_i": 0.47,
+      "row_id": "A1.T13-row-11",
+      "patch": "SP 9404",
+      "ra_deg": 22.845833333333335,
+      "dec_deg": -44.655833333333334,
+      "coordinate_status": "published",
+      "night_id": "HJD-day-227",
+      "sun_altitude_max_in_bracket_deg": -43.01090177049298,
+      "moon_distance_km": 391080.8623362067,
+      "relative_distance_flux_span_in_time_bracket": 0.0011061040985880233,
+      "galactic_latitude_deg": -70.73110770804696,
+      "exclusion_reasons": [],
+      "phase_angle_deg": 33.070476716166894,
+      "predictions": {
+        "default_atmosphere": {
+          "v_mag_arcsec2": 19.53373569712204,
+          "residual_mag_model_minus_observed": 0.033735697122040165,
+          "model_over_observed_flux": 0.9694058446209352,
+          "lunar_nL": 445.4983558197862,
+          "natural_fraction_of_predicted_total": 0.14910387421832227,
+          "natural_21_22_mag_result_span": [
+            19.420419310985565,
+            19.584806891995328
+          ]
+        },
+        "site_extinction": {
+          "v_mag_arcsec2": 19.362636402308404,
+          "residual_mag_model_minus_observed": -0.13736359769159634,
+          "model_over_observed_flux": 1.1348691614327815,
+          "lunar_nL": 534.8629836959342,
+          "natural_fraction_of_predicted_total": 0.12736460909765207,
+          "natural_21_22_mag_result_span": [
+            19.265123000213457,
+            19.40611018106104
+          ]
+        }
+      }
+    },
+    {
+      "hjd_minus_2456000": 227.4149,
+      "illuminated_fraction": 0.9195,
+      "moon_zenith_deg": 45.2,
+      "moon_azimuth_deg": 320.8,
+      "target_zenith_deg": 43.3,
+      "target_azimuth_deg": 1.6,
+      "separation_deg": 28.23,
+      "v_mag_arcsec2": 18.7,
+      "b_minus_v": 0.17,
+      "u_minus_b": -0.25,
+      "v_minus_r": 0.09,
+      "v_minus_i": 0.4,
+      "row_id": "A1.T13-row-14",
+      "patch": "SP 10894",
+      "ra_deg": 26.816666666666663,
+      "dec_deg": 10.877500000000001,
+      "coordinate_status": "published",
+      "night_id": "HJD-day-227",
+      "sun_altitude_max_in_bracket_deg": -44.11885501187464,
+      "moon_distance_km": 391324.22714727663,
+      "relative_distance_flux_span_in_time_bracket": 0.0012934359111627103,
+      "galactic_latitude_deg": -49.653682942580964,
+      "exclusion_reasons": [],
+      "phase_angle_deg": 32.96532774059744,
+      "predictions": {
+        "default_atmosphere": {
+          "v_mag_arcsec2": 18.70667194303938,
+          "residual_mag_model_minus_observed": 0.006671943039382455,
+          "model_over_observed_flux": 0.9938737162557226,
+          "lunar_nL": 1043.4292593609123,
+          "natural_fraction_of_predicted_total": 0.06960834122867758,
+          "natural_21_22_mag_result_span": [
+            18.652296226770524,
+            18.73021562411803
+          ]
+        },
+        "site_extinction": {
+          "v_mag_arcsec2": 18.527136393279694,
+          "residual_mag_model_minus_observed": -0.17286360672030554,
+          "model_over_observed_flux": 1.1725892013250254,
+          "lunar_nL": 1245.0931684613945,
+          "natural_fraction_of_predicted_total": 0.058999264790402906,
+          "natural_21_22_mag_result_span": [
+            18.480874269223257,
+            18.54705861648045
+          ]
+        }
+      }
+    },
+    {
+      "hjd_minus_2456000": 233.4986,
+      "illuminated_fraction": 0.9117,
+      "moon_zenith_deg": 55.0,
+      "moon_azimuth_deg": 13.0,
+      "target_zenith_deg": 13.4,
+      "target_azimuth_deg": 172.2,
+      "separation_deg": 67.65,
+      "v_mag_arcsec2": 19.89,
+      "b_minus_v": 0.12,
+      "u_minus_b": -0.38,
+      "v_minus_r": 0.1,
+      "v_minus_i": 0.82,
+      "row_id": "A1.T13-row-32",
+      "patch": "SP 27471",
+      "ra_deg": 64.45416666666667,
+      "dec_deg": -45.63444444444444,
+      "coordinate_status": "published",
+      "night_id": "HJD-day-233",
+      "sun_altitude_max_in_bracket_deg": -36.243423353855135,
+      "moon_distance_km": 402278.68267899146,
+      "relative_distance_flux_span_in_time_bracket": 0.0004368640478669139,
+      "galactic_latitude_deg": -45.44450011361196,
+      "exclusion_reasons": [],
+      "phase_angle_deg": 34.57339046665404,
+      "predictions": {
+        "default_atmosphere": {
+          "v_mag_arcsec2": 19.857679544144364,
+          "residual_mag_model_minus_observed": -0.032320455855636254,
+          "model_over_observed_flux": 1.030215941965535,
+          "lunar_nL": 310.4347600723407,
+          "natural_fraction_of_predicted_total": 0.20094042002264723,
+          "natural_21_22_mag_result_span": [
+            19.70758440916559,
+            19.9270839695042
+          ]
+        },
+        "site_extinction": {
+          "v_mag_arcsec2": 19.705174585930887,
+          "residual_mag_model_minus_observed": -0.18482541406911324,
+          "model_over_observed_flux": 1.1855793989734924,
+          "lunar_nL": 369.0231808185574,
+          "natural_fraction_of_predicted_total": 0.1746083174790474,
+          "natural_21_22_mag_result_span": [
+            19.573606728691786,
+            19.765227353089614
+          ]
+        }
+      }
+    },
+    {
+      "hjd_minus_2456000": 233.5629,
+      "illuminated_fraction": 0.9097,
+      "moon_zenith_deg": 55.0,
+      "moon_azimuth_deg": 347.2,
+      "target_zenith_deg": 4.8,
+      "target_azimuth_deg": 256.4,
+      "separation_deg": 55.23,
+      "v_mag_arcsec2": 19.76,
+      "b_minus_v": 0.11,
+      "u_minus_b": -0.36,
+      "v_minus_r": 0.09,
+      "v_minus_i": 0.65,
+      "row_id": "A1.T13-row-37",
+      "patch": "SP 34677",
+      "ra_deg": 79.4375,
+      "dec_deg": -33.39944444444444,
+      "coordinate_status": "published",
+      "night_id": "HJD-day-233",
+      "sun_altitude_max_in_bracket_deg": -22.77307419029586,
+      "moon_distance_km": 402255.9513685396,
+      "relative_distance_flux_span_in_time_bracket": 0.00038806761879439655,
+      "galactic_latitude_deg": -33.11715597311476,
+      "exclusion_reasons": [],
+      "phase_angle_deg": 34.97522352116283,
+      "predictions": {
+        "default_atmosphere": {
+          "v_mag_arcsec2": 19.69975753047225,
+          "residual_mag_model_minus_observed": -0.060242469527750586,
+          "model_over_observed_flux": 1.057053926604326,
+          "lunar_nL": 371.2594248880513,
+          "natural_fraction_of_predicted_total": 0.1737393095614829,
+          "natural_21_22_mag_result_span": [
+            19.568806529416854,
+            19.759503044464658
+          ]
+        },
+        "site_extinction": {
+          "v_mag_arcsec2": 19.542119219623338,
+          "residual_mag_model_minus_observed": -0.2178807803766638,
+          "model_over_observed_flux": 1.2222298226298163,
+          "lunar_nL": 441.47119522428386,
+          "natural_fraction_of_predicted_total": 0.150259645098771,
+          "natural_21_22_mag_result_span": [
+            19.427969070824062,
+            19.59359582431489
+          ]
+        }
+      }
+    },
+    {
+      "hjd_minus_2456000": 233.5107,
+      "illuminated_fraction": 0.9113,
+      "moon_zenith_deg": 54.4,
+      "moon_azimuth_deg": 8.2,
+      "target_zenith_deg": 22.0,
+      "target_azimuth_deg": 39.2,
+      "separation_deg": 36.78,
+      "v_mag_arcsec2": 19.33,
+      "b_minus_v": 0.14,
+      "u_minus_b": -0.29,
+      "v_minus_r": 0.11,
+      "v_minus_i": 0.61,
+      "row_id": "A1.T13-row-39",
+      "patch": "SP 35042",
+      "ra_deg": 80.3625,
+      "dec_deg": -14.571944444444446,
+      "coordinate_status": "published",
+      "night_id": "HJD-day-233",
+      "sun_altitude_max_in_bracket_deg": -34.12465839745111,
+      "moon_distance_km": 402215.6053796038,
+      "relative_distance_flux_span_in_time_bracket": 0.0002827100521058945,
+      "galactic_latitude_deg": -26.379165886289375,
+      "exclusion_reasons": [],
+      "phase_angle_deg": 34.65408291888505,
+      "predictions": {
+        "default_atmosphere": {
+          "v_mag_arcsec2": 19.259425603571575,
+          "residual_mag_model_minus_observed": -0.07057439642842311,
+          "model_over_observed_flux": 1.0671609901851669,
+          "lunar_nL": 595.9880235906685,
+          "natural_fraction_of_predicted_total": 0.11581483165917603,
+          "natural_21_22_mag_result_span": [
+            19.170402623893033,
+            19.298884499873473
+          ]
+        },
+        "site_extinction": {
+          "v_mag_arcsec2": 19.09190122497541,
+          "residual_mag_model_minus_observed": -0.23809877502458932,
+          "model_over_observed_flux": 1.2452029089939758,
+          "lunar_nL": 708.445059364901,
+          "natural_fraction_of_predicted_total": 0.09925536596391987,
+          "natural_21_22_mag_result_span": [
+            19.015168388123534,
+            19.125629572900404
+          ]
+        }
+      }
+    },
+    {
+      "hjd_minus_2456000": 227.3052,
+      "illuminated_fraction": 0.9158,
+      "moon_zenith_deg": 38.6,
+      "moon_azimuth_deg": 19.5,
+      "target_zenith_deg": 37.1,
+      "target_azimuth_deg": 237.6,
+      "separation_deg": 70.89,
+      "v_mag_arcsec2": 19.45,
+      "b_minus_v": 0.08,
+      "u_minus_b": -0.41,
+      "v_minus_r": 0.04,
+      "v_minus_i": 0.38,
+      "row_id": "A1.T13-row-85",
+      "patch": "SP 189502",
+      "ra_deg": 300.55833333333334,
+      "dec_deg": -44.44444444444444,
+      "coordinate_status": "published",
+      "night_id": "HJD-day-227",
+      "sun_altitude_max_in_bracket_deg": -25.781980458390947,
+      "moon_distance_km": 390490.4286367371,
+      "relative_distance_flux_span_in_time_bracket": 0.00023759768021935912,
+      "galactic_latitude_deg": -30.827490231755935,
+      "exclusion_reasons": [],
+      "phase_angle_deg": 33.736550796188126,
+      "predictions": {
+        "default_atmosphere": {
+          "v_mag_arcsec2": 19.6293993541065,
+          "residual_mag_model_minus_observed": 0.17939935410650065,
+          "model_over_observed_flux": 0.847695336189125,
+          "lunar_nL": 401.3410417957281,
+          "natural_fraction_of_predicted_total": 0.16283757963809325,
+          "natural_21_22_mag_result_span": [
+            19.50621675610375,
+            19.685297737367303
+          ]
+        },
+        "site_extinction": {
+          "v_mag_arcsec2": 19.461693136055807,
+          "residual_mag_model_minus_observed": 0.011693136055807685,
+          "model_over_observed_flux": 0.9892879411199778,
+          "lunar_nL": 481.41745771962013,
+          "natural_fraction_of_predicted_total": 0.13953132458004583,
+          "natural_21_22_mag_result_span": [
+            19.355307024029884,
+            19.509412373511616
+          ]
+        }
+      }
+    },
+    {
+      "hjd_minus_2456000": 227.348,
+      "illuminated_fraction": 0.9172,
+      "moon_zenith_deg": 37.2,
+      "moon_azimuth_deg": 354.9,
+      "target_zenith_deg": 50.9,
+      "target_azimuth_deg": 197.0,
+      "separation_deg": 86.1,
+      "v_mag_arcsec2": 19.36,
+      "b_minus_v": 0.1,
+      "u_minus_b": -0.4,
+      "v_minus_r": 0.1,
+      "v_minus_i": 0.72,
+      "row_id": "A1.T13-row-86",
+      "patch": "SP 189723",
+      "ra_deg": 302.125,
+      "dec_deg": -74.73583333333333,
+      "coordinate_status": "published",
+      "night_id": "HJD-day-227",
+      "sun_altitude_max_in_bracket_deg": -35.238321864738595,
+      "moon_distance_km": 390530.8345302924,
+      "relative_distance_flux_span_in_time_bracket": 0.0003740981687327949,
+      "galactic_latitude_deg": -31.145052592903365,
+      "exclusion_reasons": [],
+      "phase_angle_deg": 33.446586309592234,
+      "predictions": {
+        "default_atmosphere": {
+          "v_mag_arcsec2": 19.563022543071643,
+          "residual_mag_model_minus_observed": 0.20302254307164347,
+          "model_over_observed_flux": 0.8294504689488889,
+          "lunar_nL": 431.5643363449962,
+          "natural_fraction_of_predicted_total": 0.15318059151664856,
+          "natural_21_22_mag_result_span": [
+            19.44676809932566,
+            19.615524403541638
+          ]
+        },
+        "site_extinction": {
+          "v_mag_arcsec2": 19.3967855013769,
+          "residual_mag_model_minus_observed": 0.03678550137690095,
+          "model_over_observed_flux": 0.9666866125770247,
+          "lunar_nL": 515.8847626938799,
+          "natural_fraction_of_predicted_total": 0.13143423299164458,
+          "natural_21_22_mag_result_span": [
+            19.296296203971277,
+            19.441677489450136
+          ]
+        }
+      }
+    },
+    {
+      "hjd_minus_2456000": 227.288,
+      "illuminated_fraction": 0.9153,
+      "moon_zenith_deg": 40.6,
+      "moon_azimuth_deg": 28.5,
+      "target_zenith_deg": 40.8,
+      "target_azimuth_deg": 335.4,
+      "separation_deg": 33.94,
+      "v_mag_arcsec2": 18.83,
+      "b_minus_v": 0.14,
+      "u_minus_b": -0.29,
+      "v_minus_r": 0.06,
+      "v_minus_i": 0.29,
+      "row_id": "A1.T13-row-92",
+      "patch": "SP 205556",
+      "ra_deg": 323.9791666666667,
+      "dec_deg": 5.508055555555555,
+      "coordinate_status": "published",
+      "night_id": "HJD-day-227",
+      "sun_altitude_max_in_bracket_deg": -21.46789450587583,
+      "moon_distance_km": 390576.90476573847,
+      "relative_distance_flux_span_in_time_bracket": 0.00047620325115893536,
+      "galactic_latitude_deg": -32.60308816499029,
+      "exclusion_reasons": [],
+      "phase_angle_deg": 33.83957807442822,
+      "predictions": {
+        "default_atmosphere": {
+          "v_mag_arcsec2": 18.89993406670256,
+          "residual_mag_model_minus_observed": 0.06993406670256164,
+          "model_over_observed_flux": 0.9376185528157268,
+          "lunar_nL": 860.55904648033,
+          "natural_fraction_of_predicted_total": 0.08316998718327649,
+          "natural_21_22_mag_result_span": [
+            18.8352742142807,
+            18.92812473879141
+          ]
+        },
+        "site_extinction": {
+          "v_mag_arcsec2": 18.719413812471682,
+          "residual_mag_model_minus_observed": -0.11058618752831606,
+          "model_over_observed_flux": 1.1072221401023654,
+          "lunar_nL": 1030.3445841588382,
+          "natural_fraction_of_predicted_total": 0.07043006113775566,
+          "natural_21_22_mag_result_span": [
+            18.66441218532418,
+            18.74323849616851
+          ]
+        }
+      }
+    },
+    {
+      "hjd_minus_2456000": 227.3342,
+      "illuminated_fraction": 0.9168,
+      "moon_zenith_deg": 37.0,
+      "moon_azimuth_deg": 3.0,
+      "target_zenith_deg": 19.3,
+      "target_azimuth_deg": 217.4,
+      "separation_deg": 53.89,
+      "v_mag_arcsec2": 19.45,
+      "b_minus_v": 0.1,
+      "u_minus_b": -0.42,
+      "v_minus_r": 0.05,
+      "v_minus_i": 0.4,
+      "row_id": "A1.T13-row-97",
+      "patch": "SP 214308",
+      "ra_deg": 339.5541666666667,
+      "dec_deg": -46.69583333333334,
+      "coordinate_status": "published",
+      "night_id": "HJD-day-227",
+      "sun_altitude_max_in_bracket_deg": -32.426811153315896,
+      "moon_distance_km": 390477.4942617567,
+      "relative_distance_flux_span_in_time_bracket": 0.00017579872633999294,
+      "galactic_latitude_deg": -57.35086121216475,
+      "exclusion_reasons": [],
+      "phase_angle_deg": 33.52965917839927,
+      "predictions": {
+        "default_atmosphere": {
+          "v_mag_arcsec2": 19.50114064288363,
+          "residual_mag_model_minus_observed": 0.05114064288363096,
+          "model_over_observed_flux": 0.9539895344983493,
+          "lunar_nL": 461.4547634004885,
+          "natural_fraction_of_predicted_total": 0.14469409969798336,
+          "natural_21_22_mag_result_span": [
+            19.391011323091192,
+            19.550666410051814
+          ]
+        },
+        "site_extinction": {
+          "v_mag_arcsec2": 19.326965596661676,
+          "residual_mag_model_minus_observed": -0.12303440333832327,
+          "model_over_observed_flux": 1.1199898321751227,
+          "lunar_nL": 555.3347290014233,
+          "natural_fraction_of_predicted_total": 0.12324813391158834,
+          "natural_21_22_mag_result_span": [
+            19.232470670757348,
+            19.36900672118704
+          ]
+        }
+      }
+    },
+    {
+      "hjd_minus_2456000": 227.3194,
+      "illuminated_fraction": 0.9163,
+      "moon_zenith_deg": 37.5,
+      "moon_azimuth_deg": 11.6,
+      "target_zenith_deg": 16.4,
+      "target_azimuth_deg": 353.6,
+      "separation_deg": 22.46,
+      "v_mag_arcsec2": 18.8,
+      "b_minus_v": 0.19,
+      "u_minus_b": -0.29,
+      "v_minus_r": 0.11,
+      "v_minus_i": 0.36,
+      "row_id": "A1.T13-row-107",
+      "patch": "SP 219639",
+      "ra_deg": 349.34166666666675,
+      "dec_deg": -16.147222222222226,
+      "coordinate_status": "published",
+      "night_id": "HJD-day-227",
+      "sun_altitude_max_in_bracket_deg": -29.146965562325455,
+      "moon_distance_km": 390463.02094295784,
+      "relative_distance_flux_span_in_time_bracket": 4.292925637994216e-05,
+      "galactic_latitude_deg": -65.59959724235776,
+      "exclusion_reasons": [],
+      "phase_angle_deg": 33.63324536540662,
+      "predictions": {
+        "default_atmosphere": {
+          "v_mag_arcsec2": 18.7798668168257,
+          "residual_mag_model_minus_observed": -0.020133183174301905,
+          "model_over_observed_flux": 1.0187164647872289,
+          "lunar_nL": 970.3154302211937,
+          "natural_fraction_of_predicted_total": 0.07446281043454692,
+          "natural_21_22_mag_result_span": [
+            18.721798631012096,
+            18.80507163047624
+          ]
+        },
+        "site_extinction": {
+          "v_mag_arcsec2": 18.592555234555434,
+          "residual_mag_model_minus_observed": -0.20744476544456703,
+          "model_over_observed_flux": 1.2105380458491575,
+          "lunar_nL": 1167.7227283664088,
+          "natural_fraction_of_predicted_total": 0.06266345057399007,
+          "natural_21_22_mag_result_span": [
+            18.54348396089854,
+            18.613726879650773
+          ]
+        }
+      }
+    }
+  ]
+}

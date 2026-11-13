@@ -1,0 +1,40 @@
+{
+  "source_check": {
+    "source_documents": [
+      {
+        "path": "THEORY.md",
+        "sha256": "78582ad16af32b7a896746a6eafe995ce2dedc6a1bd849a14db7f19e19395f6f",
+        "fenced_blocks": 0,
+        "LaTeX_expressions": 264
+      },
+      {
+        "path": "MODELS.md",
+        "sha256": "46d2935817adb20a5d4068beb133099f0e2bbcc204f3cd8c07504918921bce43",
+        "fenced_blocks": 1,
+        "LaTeX_expressions": 211
+      },
+      {
+        "path": "LIMITS.md",
+        "sha256": "706e5c5f910ee29dab0078ebd290791189ad3f25e7aa3f21795b9c4845c648e5",
+        "fenced_blocks": 0,
+        "LaTeX_expressions": 2
+      },
+      {
+        "path": "VISUALIZATION.md",
+        "sha256": "9e298de381960300d81e934024f4ada72475e534c5165ebea35e2628d7690f8c",
+        "fenced_blocks": 0,
+        "LaTeX_expressions": 0
+      }
+    ],
+    "fenced_code_and_formula_blocks": 1,
+    "all_blocks_preserved_byte_for_byte": true,
+    "LaTeX_expressions": 477,
+    "all_LaTeX_preserved_byte_for_byte": true,
+    "generated_reading_copy_not_a_second_source_of_truth": true
+  },
+  "renderer": "Matplotlib MathText, 600 dpi",
+  "unique_rendered_formulas": 432,
+  "PDF_pages": 49,
+  "command": "uv run python scripts/build_theory_bundle.py --output scratch/benchmark-theory-export",
+  "reading_copy_derived_from_tracked_canonical_files": true
+}

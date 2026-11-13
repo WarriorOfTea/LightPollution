@@ -1,0 +1,109 @@
+{
+  "stars": [
+    {
+      "hr": 7001,
+      "name": "Vega",
+      "status": "scored_conditional_component",
+      "source": "CALSPEC",
+      "derived_BV": -0.0,
+      "fitted_continuum_temperature_K": 13146.82470912976,
+      "continuum_over_measured_response_minus_one": {
+        "photopic": 0.003083558342609427,
+        "scotopic": -0.017018097900313833,
+        "johnson_b": -1.5863976798868862e-12,
+        "johnson_v": 0.0
+      },
+      "B_and_V_are_constraints_not_independent_validation": true
+    },
+    {
+      "hr": 2491,
+      "name": "Sirius",
+      "status": "scored_conditional_component",
+      "source": "CALSPEC",
+      "derived_BV": -0.013319756288189483,
+      "fitted_continuum_temperature_K": 13541.75268824747,
+      "continuum_over_measured_response_minus_one": {
+        "photopic": 0.0018936760737529035,
+        "scotopic": -0.017776456954183506,
+        "johnson_b": 1.1117773368596318e-12,
+        "johnson_v": -1.1102230246251565e-16
+      },
+      "B_and_V_are_constraints_not_independent_validation": true
+    },
+    {
+      "hr": 6689,
+      "name": "HR 6689",
+      "status": "scored_conditional_component",
+      "source": "Gaia DR3 XP_SAMPLED",
+      "derived_BV": -0.07973792895328602,
+      "fitted_continuum_temperature_K": 15994.918479461376,
+      "continuum_over_measured_response_minus_one": {
+        "photopic": 0.035886432734793194,
+        "scotopic": -0.056124134553213856,
+        "johnson_b": 1.1368683772161603e-12,
+        "johnson_v": 2.220446049250313e-16
+      },
+      "B_and_V_are_constraints_not_independent_validation": true
+    },
+    {
+      "hr": 1691,
+      "name": "HR 1691",
+      "status": "scored_conditional_component",
+      "source": "Gaia DR3 XP_SAMPLED",
+      "derived_BV": 0.9007696735957625,
+      "fitted_continuum_temperature_K": 4705.436347941031,
+      "continuum_over_measured_response_minus_one": {
+        "photopic": -0.0003274745848368399,
+        "scotopic": -0.03866564926155547,
+        "johnson_b": 6.87849777136762e-12,
+        "johnson_v": 2.220446049250313e-16
+      },
+      "B_and_V_are_constraints_not_independent_validation": true
+    },
+    {
+      "hr": 1988,
+      "name": "HR 1988",
+      "status": "scored_conditional_component",
+      "source": "Gaia DR3 XP_SAMPLED",
+      "derived_BV": 0.7276895775520458,
+      "fitted_continuum_temperature_K": 5353.197109353459,
+      "continuum_over_measured_response_minus_one": {
+        "photopic": -0.0015381930913637154,
+        "scotopic": -0.03908024431075474,
+        "johnson_b": -1.0773382186357594e-11,
+        "johnson_v": 0.0
+      },
+      "B_and_V_are_constraints_not_independent_validation": true
+    },
+    {
+      "hr": 6136,
+      "name": "HR 6136",
+      "status": "scored_conditional_component",
+      "source": "Gaia DR3 XP_SAMPLED",
+      "derived_BV": 1.424483937989822,
+      "fitted_continuum_temperature_K": 3424.7004291255507,
+      "continuum_over_measured_response_minus_one": {
+        "photopic": -0.0030664621834506356,
+        "scotopic": -0.057029116963479454,
+        "johnson_b": -4.390132701814764e-11,
+        "johnson_v": 0.0
+      },
+      "B_and_V_are_constraints_not_independent_validation": true
+    },
+    {
+      "hr": 8287,
+      "name": "HR 8287",
+      "status": "scored_conditional_component",
+      "source": "Gaia DR3 XP_SAMPLED",
+      "derived_BV": 1.4106616912129655,
+      "fitted_continuum_temperature_K": 3449.9724850456914,
+      "continuum_over_measured_response_minus_one": {
+        "photopic": -0.00042354331675131807,
+        "scotopic": -0.05859678455558204,
+        "johnson_b": -1.865174681370263e-14,
+        "johnson_v": 0.0
+      },
+      "B_and_V_are_constraints_not_independent_validation": true
+    }
+  ]
+}

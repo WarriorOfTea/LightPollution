@@ -1,0 +1,133 @@
+{
+  "solver": "research-spherical-cap-backward-mc-1",
+  "settings": {
+    "samples": 2097152,
+    "max_order": 3,
+    "seed": 3011,
+    "batch_size": 8192,
+    "max_null_events": 100000
+  },
+  "observer": {
+    "latitude_deg": 0.0,
+    "longitude_deg": 0.0,
+    "height_m": 20.0
+  },
+  "cap": {
+    "latitude_deg": -0.5395929635512383,
+    "longitude_deg": 0.0,
+    "radius_m": 40000.0,
+    "radiance": 1.0
+  },
+  "atmosphere": {
+    "reference_wavelength_nm": 550.0,
+    "rayleigh_scale_height_m": 8000.0,
+    "aerosol_scale_height_m": 1200.0,
+    "aerosol_optical_depth": 0.1,
+    "aerosol_single_scattering_albedo": 0.9,
+    "aerosol_g": 0.8,
+    "rayleigh_multiplier": 1.0,
+    "top_m": 80000.0
+  },
+  "azimuth_deg": 180.0,
+  "altitude_deg": 90.0,
+  "exact_order_radiance": [
+    0.0007772885444754667,
+    0.0005998082012408769,
+    0.000272530595419814
+  ],
+  "exact_order_standard_error": [
+    1.9205351370578402e-05,
+    1.636250514538738e-05,
+    1.0689493873372301e-05
+  ],
+  "mean_covariance": [
+    [
+      3.6884552126737767e-10,
+      -2.2231305409432558e-13,
+      -1.0101080458150105e-13
+    ],
+    [
+      -2.2231305409432558e-13,
+      2.677315746328285e-10,
+      -7.794674118452308e-14
+    ],
+    [
+      -1.0101080458150105e-13,
+      -7.794674118452308e-14,
+      1.1426527926886396e-10
+    ]
+  ],
+  "cumulative_radiance": [
+    0.0007772885444754667,
+    0.0013770967457163437,
+    0.0016496273411361576
+  ],
+  "cumulative_standard_error": [
+    1.9205351370578402e-05,
+    2.5221666673557035e-05,
+    2.7386855131054195e-05
+  ],
+  "luminous_paths_by_order": [
+    1637,
+    1345,
+    652
+  ],
+  "path_outcomes": {
+    "space": 1976231,
+    "dark_ground": 111402,
+    "luminous_ground": 3634,
+    "order_cutoff": 5885,
+    "absorbed": 0
+  },
+  "runtime_seconds": 12.850112030748278,
+  "units": "same radiance units as cap, monochromatic at atmosphere.reference_wavelength_nm",
+  "production_solver_changed": false,
+  "limitations": [
+    "Finite uniform Lambertian cap; no NASA reconstruction or point-source lookup.",
+    "Absorbing spherical ground, no DSM, reflection, Moon, natural light or polarization.",
+    "Monte Carlo standard errors are not errors against real observations.",
+    "Normal confidence intervals require sufficient luminous hits; rare-event zeros are not certified zeros."
+  ],
+  "case_id": "aod-0.10-alt-90",
+  "deterministic_first_order": [
+    {
+      "surface_radial_order": 12,
+      "surface_azimuth_count": 32,
+      "ray_segments": 256,
+      "path_quadrature": 24,
+      "radiance": 0.0008062758424278549
+    },
+    {
+      "surface_radial_order": 24,
+      "surface_azimuth_count": 64,
+      "ray_segments": 512,
+      "path_quadrature": 48,
+      "radiance": 0.0008062966058173064
+    },
+    {
+      "surface_radial_order": 32,
+      "surface_azimuth_count": 96,
+      "ray_segments": 1024,
+      "path_quadrature": 64,
+      "radiance": 0.0008063015214168284
+    }
+  ],
+  "first_order_z": -1.5106714988723444,
+  "reference_refinement_relative": 6.096478043726705e-06,
+  "cumulative_two_over_one": {
+    "relative_increment": 0.7716673627882196,
+    "standard_error": 0.028411826056952975,
+    "approximate_95_interval": [
+      0.7159801837165918,
+      0.8273545418598474
+    ]
+  },
+  "cumulative_three_over_two": {
+    "relative_increment": 0.19790228701618773,
+    "standard_error": 0.00856907287652028,
+    "approximate_95_interval": [
+      0.181106904178208,
+      0.21469766985416747
+    ]
+  }
+}

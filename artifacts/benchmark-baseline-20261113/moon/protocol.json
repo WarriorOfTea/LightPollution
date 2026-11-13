@@ -1,0 +1,58 @@
+{
+  "id": "LP-SAAO-KS-V-v1",
+  "created_at": "2026-11-13T10:48:25+01:00",
+  "source": "https://arxiv.org/html/2205.07773",
+  "source_sha256": "cd0184ecabad91b2d49ae5b341426237be0ca8995042125c7b30939a98a1fc6f",
+  "source_tables": [
+    10,
+    13,
+    4
+  ],
+  "site_for_auxiliary_ephemeris": {
+    "latitude_deg": -32.379444444444445,
+    "longitude_deg": 20.810694444444444,
+    "height_m": 1798.0
+  },
+  "site_source": "https://www.saao.ac.za/astronomers/sutherland/",
+  "auxiliary_site_is_not_exact_0_5m_telescope_position": true,
+  "phase_angle": "acos(2*published illuminated fraction-1)",
+  "time_policy": "HJD is not UTC; use HJD approximately as JD for auxiliary calculations only, bracket +/-10 min.",
+  "primary_selection": {
+    "illuminated_fraction": [
+      0.9,
+      0.98
+    ],
+    "moon_altitude_min_deg": 25,
+    "target_altitude_min_deg": 30,
+    "separation_deg": [
+      20,
+      90
+    ],
+    "abs_galactic_latitude_min_deg": 20,
+    "sun_altitude_max_in_full_time_bracket_deg": -18,
+    "published_coordinates_required": true
+  },
+  "default_k_V_mag_airmass": 0.11831887567741882,
+  "site_k_V_mag_airmass": 0.14983159625662187,
+  "site_k_origin": "Table 4 tauV=.138; standard-star extinction consistent on the observing nights, not a fit to sky brightness.",
+  "natural_V_mag_arcsec2": 21.6,
+  "natural_variation_diagnostic_mag": [
+    21.0,
+    22.0
+  ],
+  "fitted_lunar_parameters": [],
+  "residual_based_selection": false,
+  "reference_is_measured_total_sky_not_author_model_subtraction": true,
+  "limitations": [
+    "No per-record cloud flag or photometric error bars supplied; conditional published-photometry test.",
+    "Uniform natural background omits angular airglow/starlight/zodiacal variation.",
+    "Site altitude/total extinction do not identify aerosol microphysics.",
+    "This is V photometry, not eye RGB, camera noise or a full NASA scene validation."
+  ],
+  "source_code_sha256": {
+    "scripts/run_moon_benchmark.py": "890ebecc435720767f4ddcc7cc7498265d137f474050c14cea136b87beb18512",
+    "src/lightpollution/adapters/winkler.py": "21819364d9fbe4e551db4f38723d0d16c7008b58ee99a6395b689e150f7dce71",
+    "src/lightpollution/moonlight.py": "8b4aeca4e38b7f968bcf992cd5d3a1e6973920c3e7d944f43f19f943e318e71f",
+    "src/lightpollution/models/observation.py": "107af797b98e3150c10950b98bbdfe781a03791a71012f1493ade147ce327216"
+  }
+}

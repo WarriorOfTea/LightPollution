@@ -1,0 +1,9 @@
+{
+  "official_final_MC_paths": 28835840,
+  "official_final_MC_solver_calls": 19,
+  "earlier_full_MC_pass_paths": 28311552,
+  "earlier_pass_status": "Physical values reproduced; timing RSS method rejected because ru_maxrss inherited parent peak.",
+  "pilot_MC_paths": 131072,
+  "benchmark_MC_paths_all_passes_excluding_unit_tests": 57278464,
+  "unit_test_random_paths_not_counted_as_benchmark": true
+}

@@ -1,0 +1,40 @@
+{
+  "scope": "Research integrator and benchmark import/evaluation; production GUI not rebuilt.",
+  "targeted_runs": [
+    {
+      "tests": 18,
+      "passed": 18,
+      "seconds": 3.21
+    },
+    {
+      "tests": 25,
+      "passed": 25,
+      "seconds": 2.74
+    }
+  ],
+  "full_suite": {
+    "command": "uv run pytest -q -p no:cacheprovider",
+    "tests": 346,
+    "passed": 346,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 108.41
+  },
+  "lock_check": {
+    "command": "uv lock --check",
+    "exit_code": 0,
+    "resolved_packages": 52
+  },
+  "scientific_checks": {
+    "independent_first_orders": {
+      "passed": 9,
+      "total": 9
+    },
+    "independent_slab_orders": {
+      "passed": 5,
+      "total": 5
+    }
+  },
+  "distinct_checks_not_summed_as_one_population": true
+}

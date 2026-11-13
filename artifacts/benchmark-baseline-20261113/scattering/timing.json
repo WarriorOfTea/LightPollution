@@ -1,0 +1,505 @@
+{
+  "runs": [
+    {
+      "solver": "research-spherical-cap-backward-mc-1",
+      "settings": {
+        "samples": 524288,
+        "max_order": 1,
+        "seed": 701,
+        "batch_size": 8192,
+        "max_null_events": 100000
+      },
+      "observer": {
+        "latitude_deg": 0.0,
+        "longitude_deg": 0.0,
+        "height_m": 20.0
+      },
+      "cap": {
+        "latitude_deg": -0.5395929635512383,
+        "longitude_deg": 0.0,
+        "radius_m": 40000.0,
+        "radiance": 1.0
+      },
+      "atmosphere": {
+        "reference_wavelength_nm": 550.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.1,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 1.0,
+        "top_m": 80000.0
+      },
+      "azimuth_deg": 180.0,
+      "altitude_deg": 45.0,
+      "exact_order_radiance": [
+        0.0031695758429342883
+      ],
+      "exact_order_standard_error": [
+        7.748899241407606e-05
+      ],
+      "mean_covariance": [
+        [
+          6.004543945348737e-09
+        ]
+      ],
+      "cumulative_radiance": [
+        0.0031695758429342883
+      ],
+      "cumulative_standard_error": [
+        7.748899241407606e-05
+      ],
+      "luminous_paths_by_order": [
+        1668
+      ],
+      "path_outcomes": {
+        "space": 465214,
+        "dark_ground": 25310,
+        "luminous_ground": 1668,
+        "order_cutoff": 32096,
+        "absorbed": 0
+      },
+      "runtime_seconds": 3.1084750308655202,
+      "units": "same radiance units as cap, monochromatic at atmosphere.reference_wavelength_nm",
+      "production_solver_changed": false,
+      "limitations": [
+        "Finite uniform Lambertian cap; no NASA reconstruction or point-source lookup.",
+        "Absorbing spherical ground, no DSM, reflection, Moon, natural light or polarization.",
+        "Monte Carlo standard errors are not errors against real observations.",
+        "Normal confidence intervals require sufficient luminous hits; rare-event zeros are not certified zeros."
+      ],
+      "rusage_maxrss_kib_including_possible_pre_exec_history": 387836,
+      "peak_rss_kib": 40304,
+      "peak_rss_method": "/proc/self/status VmHWM; whole worker including Python/imports"
+    },
+    {
+      "solver": "research-spherical-cap-backward-mc-1",
+      "settings": {
+        "samples": 524288,
+        "max_order": 2,
+        "seed": 701,
+        "batch_size": 8192,
+        "max_null_events": 100000
+      },
+      "observer": {
+        "latitude_deg": 0.0,
+        "longitude_deg": 0.0,
+        "height_m": 20.0
+      },
+      "cap": {
+        "latitude_deg": -0.5395929635512383,
+        "longitude_deg": 0.0,
+        "radius_m": 40000.0,
+        "radiance": 1.0
+      },
+      "atmosphere": {
+        "reference_wavelength_nm": 550.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.1,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 1.0,
+        "top_m": 80000.0
+      },
+      "azimuth_deg": 180.0,
+      "altitude_deg": 45.0,
+      "exact_order_radiance": [
+        0.0031695758429342883,
+        0.001861188189375834
+      ],
+      "exact_order_standard_error": [
+        7.748899241407606e-05,
+        5.75070398373647e-05
+      ],
+      "mean_covariance": [
+        [
+          6.004543945348738e-09,
+          -1.1251808883684415e-11
+        ],
+        [
+          -1.1251808883684415e-11,
+          3.3070596308562504e-09
+        ]
+      ],
+      "cumulative_radiance": [
+        0.0031695758429342883,
+        0.0050307640323101225
+      ],
+      "cumulative_standard_error": [
+        7.748899241407606e-05,
+        9.637997695806748e-05
+      ],
+      "luminous_paths_by_order": [
+        1668,
+        1047
+      ],
+      "path_outcomes": {
+        "space": 477627,
+        "dark_ground": 35124,
+        "luminous_ground": 2715,
+        "order_cutoff": 8822,
+        "absorbed": 0
+      },
+      "runtime_seconds": 3.6745264721103013,
+      "units": "same radiance units as cap, monochromatic at atmosphere.reference_wavelength_nm",
+      "production_solver_changed": false,
+      "limitations": [
+        "Finite uniform Lambertian cap; no NASA reconstruction or point-source lookup.",
+        "Absorbing spherical ground, no DSM, reflection, Moon, natural light or polarization.",
+        "Monte Carlo standard errors are not errors against real observations.",
+        "Normal confidence intervals require sufficient luminous hits; rare-event zeros are not certified zeros."
+      ],
+      "rusage_maxrss_kib_including_possible_pre_exec_history": 387836,
+      "peak_rss_kib": 40540,
+      "peak_rss_method": "/proc/self/status VmHWM; whole worker including Python/imports"
+    },
+    {
+      "solver": "research-spherical-cap-backward-mc-1",
+      "settings": {
+        "samples": 524288,
+        "max_order": 3,
+        "seed": 701,
+        "batch_size": 8192,
+        "max_null_events": 100000
+      },
+      "observer": {
+        "latitude_deg": 0.0,
+        "longitude_deg": 0.0,
+        "height_m": 20.0
+      },
+      "cap": {
+        "latitude_deg": -0.5395929635512383,
+        "longitude_deg": 0.0,
+        "radius_m": 40000.0,
+        "radiance": 1.0
+      },
+      "atmosphere": {
+        "reference_wavelength_nm": 550.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.1,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 1.0,
+        "top_m": 80000.0
+      },
+      "azimuth_deg": 180.0,
+      "altitude_deg": 45.0,
+      "exact_order_radiance": [
+        0.0031695758429342883,
+        0.001861188189375834,
+        0.0007433995746003997
+      ],
+      "exact_order_standard_error": [
+        7.748899241407606e-05,
+        5.75070398373647e-05,
+        3.5213656323186774e-05
+      ],
+      "mean_covariance": [
+        [
+          6.004543945348738e-09,
+          -1.1251808883684415e-11,
+          -4.494220404665866e-12
+        ],
+        [
+          -1.1251808883684415e-11,
+          3.3070596308562504e-09,
+          -2.6390250153699846e-12
+        ],
+        [
+          -4.494220404665866e-12,
+          -2.6390250153699846e-12,
+          1.240001591647512e-09
+        ]
+      ],
+      "cumulative_radiance": [
+        0.0031695758429342883,
+        0.0050307640323101225,
+        0.005774163606910522
+      ],
+      "cumulative_standard_error": [
+        7.748899241407606e-05,
+        9.637997695806748e-05,
+        0.00010254186978617592
+      ],
+      "luminous_paths_by_order": [
+        1668,
+        1047,
+        447
+      ],
+      "path_outcomes": {
+        "space": 480327,
+        "dark_ground": 38165,
+        "luminous_ground": 3162,
+        "order_cutoff": 2634,
+        "absorbed": 0
+      },
+      "runtime_seconds": 3.776932396925986,
+      "units": "same radiance units as cap, monochromatic at atmosphere.reference_wavelength_nm",
+      "production_solver_changed": false,
+      "limitations": [
+        "Finite uniform Lambertian cap; no NASA reconstruction or point-source lookup.",
+        "Absorbing spherical ground, no DSM, reflection, Moon, natural light or polarization.",
+        "Monte Carlo standard errors are not errors against real observations.",
+        "Normal confidence intervals require sufficient luminous hits; rare-event zeros are not certified zeros."
+      ],
+      "rusage_maxrss_kib_including_possible_pre_exec_history": 387836,
+      "peak_rss_kib": 40688,
+      "peak_rss_method": "/proc/self/status VmHWM; whole worker including Python/imports"
+    },
+    {
+      "solver": "research-spherical-cap-backward-mc-1",
+      "settings": {
+        "samples": 524288,
+        "max_order": 1,
+        "seed": 702,
+        "batch_size": 8192,
+        "max_null_events": 100000
+      },
+      "observer": {
+        "latitude_deg": 0.0,
+        "longitude_deg": 0.0,
+        "height_m": 20.0
+      },
+      "cap": {
+        "latitude_deg": -0.5395929635512383,
+        "longitude_deg": 0.0,
+        "radius_m": 40000.0,
+        "radiance": 1.0
+      },
+      "atmosphere": {
+        "reference_wavelength_nm": 550.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.1,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 1.0,
+        "top_m": 80000.0
+      },
+      "azimuth_deg": 180.0,
+      "altitude_deg": 45.0,
+      "exact_order_radiance": [
+        0.0031569923452884436
+      ],
+      "exact_order_standard_error": [
+        7.734407575492288e-05
+      ],
+      "mean_covariance": [
+        [
+          5.982106054383248e-09
+        ]
+      ],
+      "cumulative_radiance": [
+        0.0031569923452884436
+      ],
+      "cumulative_standard_error": [
+        7.734407575492288e-05
+      ],
+      "luminous_paths_by_order": [
+        1661
+      ],
+      "path_outcomes": {
+        "space": 465314,
+        "dark_ground": 25194,
+        "luminous_ground": 1661,
+        "order_cutoff": 32119,
+        "absorbed": 0
+      },
+      "runtime_seconds": 2.714043263811618,
+      "units": "same radiance units as cap, monochromatic at atmosphere.reference_wavelength_nm",
+      "production_solver_changed": false,
+      "limitations": [
+        "Finite uniform Lambertian cap; no NASA reconstruction or point-source lookup.",
+        "Absorbing spherical ground, no DSM, reflection, Moon, natural light or polarization.",
+        "Monte Carlo standard errors are not errors against real observations.",
+        "Normal confidence intervals require sufficient luminous hits; rare-event zeros are not certified zeros."
+      ],
+      "rusage_maxrss_kib_including_possible_pre_exec_history": 387836,
+      "peak_rss_kib": 40264,
+      "peak_rss_method": "/proc/self/status VmHWM; whole worker including Python/imports"
+    },
+    {
+      "solver": "research-spherical-cap-backward-mc-1",
+      "settings": {
+        "samples": 524288,
+        "max_order": 2,
+        "seed": 702,
+        "batch_size": 8192,
+        "max_null_events": 100000
+      },
+      "observer": {
+        "latitude_deg": 0.0,
+        "longitude_deg": 0.0,
+        "height_m": 20.0
+      },
+      "cap": {
+        "latitude_deg": -0.5395929635512383,
+        "longitude_deg": 0.0,
+        "radius_m": 40000.0,
+        "radiance": 1.0
+      },
+      "atmosphere": {
+        "reference_wavelength_nm": 550.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.1,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 1.0,
+        "top_m": 80000.0
+      },
+      "azimuth_deg": 180.0,
+      "altitude_deg": 45.0,
+      "exact_order_radiance": [
+        0.003156992345288443,
+        0.002057884261115916
+      ],
+      "exact_order_standard_error": [
+        7.734407575492288e-05,
+        6.0454897026914995e-05
+      ],
+      "mean_covariance": [
+        [
+          5.982106054383248e-09,
+          -1.2391542914152956e-11
+        ],
+        [
+          -1.2391542914152956e-11,
+          3.6547945745348955e-09
+        ]
+      ],
+      "cumulative_radiance": [
+        0.003156992345288443,
+        0.005214876606404359
+      ],
+      "cumulative_standard_error": [
+        7.734407575492288e-05,
+        9.804140728839952e-05
+      ],
+      "luminous_paths_by_order": [
+        1661,
+        1158
+      ],
+      "path_outcomes": {
+        "space": 477754,
+        "dark_ground": 34975,
+        "luminous_ground": 2819,
+        "order_cutoff": 8740,
+        "absorbed": 0
+      },
+      "runtime_seconds": 3.7695395592600107,
+      "units": "same radiance units as cap, monochromatic at atmosphere.reference_wavelength_nm",
+      "production_solver_changed": false,
+      "limitations": [
+        "Finite uniform Lambertian cap; no NASA reconstruction or point-source lookup.",
+        "Absorbing spherical ground, no DSM, reflection, Moon, natural light or polarization.",
+        "Monte Carlo standard errors are not errors against real observations.",
+        "Normal confidence intervals require sufficient luminous hits; rare-event zeros are not certified zeros."
+      ],
+      "rusage_maxrss_kib_including_possible_pre_exec_history": 387836,
+      "peak_rss_kib": 40648,
+      "peak_rss_method": "/proc/self/status VmHWM; whole worker including Python/imports"
+    },
+    {
+      "solver": "research-spherical-cap-backward-mc-1",
+      "settings": {
+        "samples": 524288,
+        "max_order": 3,
+        "seed": 702,
+        "batch_size": 8192,
+        "max_null_events": 100000
+      },
+      "observer": {
+        "latitude_deg": 0.0,
+        "longitude_deg": 0.0,
+        "height_m": 20.0
+      },
+      "cap": {
+        "latitude_deg": -0.5395929635512383,
+        "longitude_deg": 0.0,
+        "radius_m": 40000.0,
+        "radiance": 1.0
+      },
+      "atmosphere": {
+        "reference_wavelength_nm": 550.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.1,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 1.0,
+        "top_m": 80000.0
+      },
+      "azimuth_deg": 180.0,
+      "altitude_deg": 45.0,
+      "exact_order_radiance": [
+        0.003156992345288443,
+        0.002057884261115916,
+        0.0006935384314457208
+      ],
+      "exact_order_standard_error": [
+        7.734407575492288e-05,
+        6.0454897026914995e-05,
+        3.400776139919524e-05
+      ],
+      "mean_covariance": [
+        [
+          5.982106054383248e-09,
+          -1.2391542914152956e-11,
+          -4.1761392505202194e-12
+        ],
+        [
+          -1.2391542914152956e-11,
+          3.6547945745348955e-09,
+          -2.7222147841757828e-12
+        ],
+        [
+          -4.1761392505202194e-12,
+          -2.7222147841757828e-12,
+          1.1565278353845938e-09
+        ]
+      ],
+      "cumulative_radiance": [
+        0.003156992345288443,
+        0.005214876606404359,
+        0.00590841503785008
+      ],
+      "cumulative_standard_error": [
+        7.734407575492288e-05,
+        9.804140728839952e-05,
+        0.00010370558649564179
+      ],
+      "luminous_paths_by_order": [
+        1661,
+        1158,
+        417
+      ],
+      "path_outcomes": {
+        "space": 480665,
+        "dark_ground": 37848,
+        "luminous_ground": 3236,
+        "order_cutoff": 2539,
+        "absorbed": 0
+      },
+      "runtime_seconds": 5.106894344091415,
+      "units": "same radiance units as cap, monochromatic at atmosphere.reference_wavelength_nm",
+      "production_solver_changed": false,
+      "limitations": [
+        "Finite uniform Lambertian cap; no NASA reconstruction or point-source lookup.",
+        "Absorbing spherical ground, no DSM, reflection, Moon, natural light or polarization.",
+        "Monte Carlo standard errors are not errors against real observations.",
+        "Normal confidence intervals require sufficient luminous hits; rare-event zeros are not certified zeros."
+      ],
+      "rusage_maxrss_kib_including_possible_pre_exec_history": 387836,
+      "peak_rss_kib": 40492,
+      "peak_rss_method": "/proc/self/status VmHWM; whole worker including Python/imports"
+    }
+  ],
+  "hardware": {
+    "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "logical_cpus": 6
+  }
+}

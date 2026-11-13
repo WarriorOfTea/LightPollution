@@ -1,0 +1,23 @@
+{
+  "variants": 4,
+  "measured_records": 18,
+  "training_nights": 1,
+  "check_nights": 1,
+  "max_refinement_relative": 4.509813316877498e-05,
+  "check_residual_mag_fixed_C": {
+    "default": -0.13585460383167458,
+    "daytime_AOD_only": -0.1861877379935386,
+    "daytime_g_only": -0.18777820718812066,
+    "daytime_AOD_and_g": -0.22659900313320946
+  },
+  "check_residual_mag_separate_training_only_C": {
+    "default": -0.13585460383167458,
+    "daytime_AOD_only": -0.24610141162060017,
+    "daytime_g_only": -0.1263809568235743,
+    "daytime_AOD_and_g": -0.21031466769528606
+  },
+  "minimum_aod_time_gap_hours": 5.2875,
+  "maximum_aod_time_gap_hours": 6.4622222222222225,
+  "nighttime_atmosphere_measured": false,
+  "absolute_field_accuracy_certified": false
+}

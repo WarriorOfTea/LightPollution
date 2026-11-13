@@ -1,0 +1,83 @@
+{
+  "protocol_sha256": "17005d0e8f63067eb735837f0d7b82a0bede3596b5342eb9adb09a759229b622",
+  "source_table_records": 108,
+  "primary_records": 12,
+  "excluded_records": 96,
+  "rejection_reason_counts_not_mutually_exclusive": {
+    "phase_outside_0.90_0.98": 70,
+    "moon_altitude_below_25": 25,
+    "separation_outside_20_90": 24,
+    "published_moon_geometry_missing": 6,
+    "twilight_in_time_bracket": 8,
+    "galactic_plane_or_missing_coordinates": 28,
+    "target_altitude_below_30": 1
+  },
+  "missing_moon_geometry_rows": 6,
+  "missing_coordinate_rows": 1,
+  "default_atmosphere": {
+    "records": 12,
+    "nights": 3,
+    "mae_mag": 0.06374059013048476,
+    "bias_mag": 0.03244057510218923,
+    "rmse_mag": 0.08816296536502147,
+    "median_model_over_observed_flux": 0.9818868141160884,
+    "equal_night_mae_mag": 0.05287757621711774,
+    "per_night": [
+      {
+        "night_id": "HJD-day-227",
+        "records": 8,
+        "mae_mag": 0.07107087691046532,
+        "bias_mag": 0.06490518482097452
+      },
+      {
+        "night_id": "HJD-day-232",
+        "records": 1,
+        "mae_mag": 0.033182744470284575,
+        "bias_mag": 0.033182744470284575
+      },
+      {
+        "night_id": "HJD-day-233",
+        "records": 3,
+        "mae_mag": 0.05437910727060332,
+        "bias_mag": -0.05437910727060332
+      }
+    ]
+  },
+  "site_extinction": {
+    "records": 12,
+    "nights": 3,
+    "mae_mag": 0.14587323697355478,
+    "bias_mag": -0.13779346406810333,
+    "rmse_mag": 0.16044277894830467,
+    "median_model_over_observed_flux": 1.1537281122855814,
+    "equal_night_mae_mag": 0.15359718461172014,
+    "per_night": [
+      {
+        "night_id": "HJD-day-227",
+        "records": 8,
+        "mae_mag": 0.12321199669532179,
+        "bias_mag": -0.11109233733714463
+      },
+      {
+        "night_id": "HJD-day-232",
+        "records": 1,
+        "mae_mag": 0.12397790064971659,
+        "bias_mag": -0.12397790064971659
+      },
+      {
+        "night_id": "HJD-day-233",
+        "records": 3,
+        "mae_mag": 0.2136016564901221,
+        "bias_mag": -0.2136016564901221
+      }
+    ]
+  },
+  "max_relative_distance_flux_span_due_time_bracket": 0.0012934359111627103,
+  "max_natural_background_fraction_site_case": 0.1746083174790474,
+  "largest_prediction_span_for_natural_21_22_mag": 0.191620624397828,
+  "moonless_control_records": 0,
+  "per_record_cloud_mask_available": false,
+  "field_accuracy_certified": false,
+  "production_lunar_model_changed": false,
+  "all_108_rows_scored": false
+}

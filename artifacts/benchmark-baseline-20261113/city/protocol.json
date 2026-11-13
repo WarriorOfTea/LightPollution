@@ -1,0 +1,183 @@
+{
+  "id": "LP-Madrid-atmosphere-proxy-v1",
+  "created_at": "2026-11-13T10:52:12+01:00",
+  "observer": {
+    "latitude_deg": 40.451111,
+    "longitude_deg": -3.726111,
+    "height_m": 650.0
+  },
+  "training_night": "2017-03-19",
+  "check_night": "2017-11-19",
+  "independent_blind_test": false,
+  "reason": "These two windows have already been inspected in previous development.",
+  "QA": {
+    "source": "https://www.mdpi.com/2072-4292/13/8/1511",
+    "figures": [
+      5,
+      6
+    ],
+    "intervals_utc": [
+      {
+        "start": "2017-03-19T22:00:00Z",
+        "end": "2017-03-19T23:00:00Z",
+        "figure": 5
+      },
+      {
+        "start": "2017-11-19T22:00:00Z",
+        "end": "2017-11-19T23:00:00Z",
+        "figure": 6
+      }
+    ],
+    "raw_cloud_flags_available": false,
+    "native_band": "AstMon Johnson-V",
+    "sun_below_deg": -18,
+    "moon_below_deg": -5
+  },
+  "source_composite": "VNP46A3.002 NearNadir Snow_Free, common QA/land support, reference March.",
+  "source_exclude_radius_m": 3000,
+  "source_block_pixels": 12,
+  "wavelength_nm": 550,
+  "band_bridge": "Effective monochromatic 550nm anchored to V, not integrated local lamp spectra.",
+  "natural_V_mag_arcsec2": 21.6,
+  "all_other_processes_fixed": true,
+  "primary_scale_rule": "Fit one C only to March DEFAULT atmosphere; retain C for both nights and every atmosphere change.",
+  "secondary_scale_rule": "Also report separate common C per variant fitted to March only; never fit November.",
+  "cases": [
+    "default",
+    "daytime_AOD_only",
+    "daytime_g_only",
+    "daytime_AOD_and_g"
+  ],
+  "proxies": {
+    "2017-03": {
+      "selection": "Last valid daytime record on the observation day, selected without sky residuals.",
+      "aod_input": {
+        "path": "scratch/validation-candidates/madrid-2017-03-AOD20.txt",
+        "sha256": "049bdef461101accc2d975faea0b487d376865552f6574237e6819cc2b7c32ac",
+        "day_records": 60
+      },
+      "inversion_input": {
+        "path": "scratch/validation-candidates/madrid-2017-03-ALM20.txt",
+        "sha256": "b6042ea6a009f78b460c90f5e107223f3f36d5c9809050d39e5b106eedcdaa90",
+        "day_records": 4
+      },
+      "aod_utc": "2017-03-19T17:12:45+00:00",
+      "g_utc": "2017-03-19T15:24:59+00:00",
+      "aod_gap_hours_to_22_30_utc": 5.2875,
+      "g_gap_hours_to_22_30_utc": 7.083611111111111,
+      "site_height_m": 680.0,
+      "site_latitude_deg": 40.4519,
+      "site_longitude_deg": -3.72395,
+      "aod_500_measured": 0.08619,
+      "exact_wavelength_nm": 498.09999999999997,
+      "angstrom_500_870": 1.59949,
+      "aod_550_above_instrument": 0.07355378023318661,
+      "aod_550_sea_level_scenario": 0.12962990544293881,
+      "aerosol_scale_height_m_scenario": 1200.0,
+      "g_550_column_proxy": 0.6119706788620851,
+      "day_aod_550_range_above_instrument": [
+        0.050206539407394946,
+        0.08215078159564736
+      ],
+      "ssa_available_last_record": false,
+      "simultaneous_night_measurement": false,
+      "vertical_profile_or_local_phase_function_measured": false
+    },
+    "2017-11": {
+      "selection": "Last valid daytime record on the observation day, selected without sky residuals.",
+      "aod_input": {
+        "path": "scratch/validation-candidates/madrid-2017-11-AOD20.txt",
+        "sha256": "6fc9234eb58eead5765602f593f3030fda25aa6e7c6f24992a02e2f08893b48a",
+        "day_records": 43
+      },
+      "inversion_input": {
+        "path": "scratch/validation-candidates/madrid-2017-11-ALM20.txt",
+        "sha256": "df86ca4c02f2e24add17ddffbcc27f385f5afc2309de9ef66bb7193ef682b1c6",
+        "day_records": 4
+      },
+      "aod_utc": "2017-11-19T16:02:16+00:00",
+      "g_utc": "2017-11-19T15:21:35+00:00",
+      "aod_gap_hours_to_22_30_utc": 6.4622222222222225,
+      "g_gap_hours_to_22_30_utc": 7.1402777777777775,
+      "site_height_m": 680.0,
+      "site_latitude_deg": 40.4519,
+      "site_longitude_deg": -3.72395,
+      "aod_500_measured": 0.049359,
+      "exact_wavelength_nm": 498.09999999999997,
+      "angstrom_500_870": 1.525341,
+      "aod_550_above_instrument": 0.04243325022616911,
+      "aod_550_sea_level_scenario": 0.07478362358829586,
+      "aerosol_scale_height_m_scenario": 1200.0,
+      "g_550_column_proxy": 0.6404411688855722,
+      "day_aod_550_range_above_instrument": [
+        0.023968706660480118,
+        0.06285048258046257
+      ],
+      "ssa_available_last_record": false,
+      "simultaneous_night_measurement": false,
+      "vertical_profile_or_local_phase_function_measured": false
+    }
+  },
+  "nightly_truth": [
+    {
+      "period": "2017-03",
+      "night_id": "2017-03-19",
+      "samples": 9,
+      "brightness_relative": 52.1472347373113,
+      "mag_arcsec2": 17.7069217909684,
+      "cloud_free_confirmed": true,
+      "within_night_relative_std": 0.6424095702355611,
+      "weight": 1.0
+    },
+    {
+      "period": "2017-11",
+      "night_id": "2017-11-19",
+      "samples": 9,
+      "brightness_relative": 44.38540663577192,
+      "mag_arcsec2": 17.881899492469074,
+      "cloud_free_confirmed": true,
+      "within_night_relative_std": 1.0740419432039439,
+      "weight": 1.0
+    }
+  ],
+  "atmosphere": {
+    "reference_wavelength_nm": 550.0,
+    "rayleigh_scale_height_m": 8000.0,
+    "aerosol_scale_height_m": 1200.0,
+    "aerosol_optical_depth": 0.1,
+    "aerosol_single_scattering_albedo": 0.9,
+    "aerosol_g": 0.8,
+    "rayleigh_multiplier": 1.0,
+    "top_m": 80000.0
+  },
+  "numerics": [
+    {
+      "ray_segments": 192,
+      "path_quadrature": 24,
+      "horizontal_fraction": 0.0,
+      "near_ray_scale_m": 500.0
+    },
+    {
+      "ray_segments": 384,
+      "path_quadrature": 48,
+      "horizontal_fraction": 0.0,
+      "near_ray_scale_m": 500.0
+    }
+  ],
+  "source_code_sha256": {
+    "scripts/run_city_benchmark.py": "c4b08b89ac64e222b4eda6a7609302df4ba764bb8875c604debb44e11892bb60",
+    "src/lightpollution/physics.py": "00f5d96018280672658424163ba7ec79aaf89d53532bc3215c6481bc52fd1a6a",
+    "src/lightpollution/sources.py": "2546fca0e8d46e446bad2e4683ae23476ed021d7c84a0fad053334e5567de79d",
+    "src/lightpollution/calibration.py": "61832ff9161978d00f1b5eceef93edb89ccbbf5ecd5ef97f074644909568d381"
+  },
+  "input_sha256": {
+    "artifacts/seasonal-ground-20261110/astmon-publication-qa.json": "039a2d41060073500eec97363f83198cadeb41caeb0b594b695b5b81c1fa28b8",
+    "scratch/data-search-20261110/AstMon_evol.csv": "f477416f47487ad918484392fd5c368744d5807c22edf5c0e69ed7450fad88a9"
+  },
+  "limitations": [
+    "Only one training and one previously inspected check night.",
+    "AERONET is daytime, column g is a proxy for local HG and SSA is missing.",
+    "Source heights remain spherical-ground; monthly emission is not the instantaneous city.",
+    "This does not certify the camera, naked eye, spectrum, terrain or physical absolute scale."
+  ]
+}

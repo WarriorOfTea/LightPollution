@@ -1,0 +1,9 @@
+{
+  "geometries": 4,
+  "comparisons": 8,
+  "max_abs_block_12_vs_3_relative": 0.0144926402074399,
+  "max_abs_block_6_vs_3_relative": 0.006411581091061769,
+  "max_ray_path_refinement_relative": 7.728177996113583e-05,
+  "max_power_relative_span": 2.28029628212926e-16,
+  "does_not_test_missing_nearby_sources_or_outside_ROI": true
+}

@@ -1,0 +1,49 @@
+{
+  "common_wavelength_min_max_nm": [
+    381.5,
+    780.0
+  ],
+  "samples": 784,
+  "candidate": "LED-B1",
+  "measured_cct_K": 2691.0,
+  "source_candidate_over_measured_response_minus_one": {
+    "photopic": 0.0027555467310653725,
+    "scotopic": 0.08884265579884776,
+    "johnson_b": 0.2524668184032226,
+    "johnson_v": 2.220446049250313e-16
+  },
+  "sky_responses": [
+    {
+      "altitude_deg": 10.0,
+      "candidate_over_measured_response_minus_one": {
+        "photopic": 0.002525860213443476,
+        "scotopic": 0.09050547770423223,
+        "johnson_b": 0.2552387750749925,
+        "johnson_v": -0.00011169297270707812
+      },
+      "max_absolute_change_of_ratio_on_refinement": 2.2077539796327983e-10
+    },
+    {
+      "altitude_deg": 45.0,
+      "candidate_over_measured_response_minus_one": {
+        "photopic": 0.004087335405249082,
+        "scotopic": 0.10471912049572696,
+        "johnson_b": 0.2580313351711232,
+        "johnson_v": 0.0008615674341028168
+      },
+      "max_absolute_change_of_ratio_on_refinement": 1.427611362458947e-10
+    },
+    {
+      "altitude_deg": 90.0,
+      "candidate_over_measured_response_minus_one": {
+        "photopic": 0.003687835028323816,
+        "scotopic": 0.10157450993961636,
+        "johnson_b": 0.2576762790297129,
+        "johnson_v": 0.0006194326051633947
+      },
+      "max_absolute_change_of_ratio_on_refinement": 3.6811524939395213e-09
+    }
+  ],
+  "DNB_response_or_full_lamp_power_tested": false,
+  "not_a_field_accuracy_score": true
+}

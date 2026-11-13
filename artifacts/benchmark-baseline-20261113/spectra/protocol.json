@@ -1,0 +1,129 @@
+{
+  "id": "LP-measured-SED-component-v1",
+  "created_at": "2026-11-13T10:56:25+01:00",
+  "library_id": "2850d66ef40df0e878145c5abd89528e2015ddbff21c6eb6ba197bd516791011",
+  "lamp_source": "https://api.lspdd.sbcloud.ca/capture/2469",
+  "lamp_sha256": "0e484e9e8311769eade7fab9e51ccfce57ff39bc55124a9bc7c06ea7ab051434",
+  "lamp_rights": "CC BY-NC-ND 4.0; original array not redistributed, derived diagnostics only.",
+  "lamp_cct_K": 2691.0,
+  "library_lamp_candidate": "LED-B1",
+  "lamp_candidate_policy": "Warm white nominal ~2700K, selected by lamp class before computing spectral differences.",
+  "lamp_is_a_regional_street_inventory": false,
+  "lamp_normalisation": "Equal emitted Johnson-V in the COMMON measured/library wavelength interval; NOT DNB.",
+  "stellar_test": "Infer continuum from measured B-V, normalise to measured V, test other spectral responses.",
+  "stellar_truth": [
+    {
+      "hr": 7001,
+      "name": "Vega",
+      "source": "CALSPEC",
+      "url": "https://ssb.stsci.edu/trds/calspec/alpha_lyr_stis_011.fits",
+      "raw_absolute_flux": true,
+      "wavelength_medium": "vacuum"
+    },
+    {
+      "hr": 2491,
+      "name": "Sirius",
+      "source": "CALSPEC",
+      "url": "https://ssb.stsci.edu/trds/calspec/sirius_stis_005.fits",
+      "raw_absolute_flux": true,
+      "wavelength_medium": "vacuum"
+    },
+    {
+      "hr": 6689,
+      "name": "HR 6689",
+      "source": "Gaia DR3 XP_SAMPLED",
+      "source_id": "4371553920172973312",
+      "matching_epoch": "J2016, BSC tangent proper motion",
+      "match_separation_arcsec": 1.0754830548721932,
+      "catalogue_v_mag": 5.97,
+      "catalogue_b_v": 0.1,
+      "url": "https://gea.esac.esa.int/data-server/data?RETRIEVAL_TYPE=XP_SAMPLED&ID=4371553920172973312&RELEASE=Gaia+DR3&FORMAT=votable",
+      "raw_absolute_flux": true,
+      "sample_errors_correlated": true,
+      "wavelength_medium": "vacuum"
+    },
+    {
+      "hr": 1691,
+      "name": "HR 1691",
+      "source": "Gaia DR3 XP_SAMPLED",
+      "source_id": "3233898035000478464",
+      "matching_epoch": "J2016, BSC tangent proper motion",
+      "match_separation_arcsec": 0.8979272014172419,
+      "catalogue_v_mag": 5.89,
+      "catalogue_b_v": 0.66,
+      "url": "https://gea.esac.esa.int/data-server/data?RETRIEVAL_TYPE=XP_SAMPLED&ID=3233898035000478464&RELEASE=Gaia+DR3&FORMAT=votable",
+      "raw_absolute_flux": true,
+      "sample_errors_correlated": true,
+      "wavelength_medium": "vacuum"
+    },
+    {
+      "hr": 1988,
+      "name": "HR 1988",
+      "source": "Gaia DR3 XP_SAMPLED",
+      "source_id": "3219847066672970368",
+      "matching_epoch": "J2016, BSC tangent proper motion",
+      "match_separation_arcsec": 1.3372635585076502,
+      "catalogue_v_mag": 5.95,
+      "catalogue_b_v": 0.78,
+      "url": "https://gea.esac.esa.int/data-server/data?RETRIEVAL_TYPE=XP_SAMPLED&ID=3219847066672970368&RELEASE=Gaia+DR3&FORMAT=votable",
+      "raw_absolute_flux": true,
+      "sample_errors_correlated": true,
+      "wavelength_medium": "vacuum"
+    },
+    {
+      "hr": 6136,
+      "name": "HR 6136",
+      "source": "Gaia DR3 XP_SAMPLED",
+      "source_id": "4431639310048958208",
+      "matching_epoch": "J2016, BSC tangent proper motion",
+      "match_separation_arcsec": 0.3998919536598227,
+      "catalogue_v_mag": 5.39,
+      "catalogue_b_v": 1.46,
+      "url": "https://gea.esac.esa.int/data-server/data?RETRIEVAL_TYPE=XP_SAMPLED&ID=4431639310048958208&RELEASE=Gaia+DR3&FORMAT=votable",
+      "raw_absolute_flux": true,
+      "sample_errors_correlated": true,
+      "wavelength_medium": "vacuum"
+    },
+    {
+      "hr": 8287,
+      "name": "HR 8287",
+      "source": "Gaia DR3 XP_SAMPLED",
+      "source_id": "2693541327543209472",
+      "matching_epoch": "J2016, BSC tangent proper motion",
+      "match_separation_arcsec": 0.19304001440066199,
+      "catalogue_v_mag": 5.67,
+      "catalogue_b_v": 1.44,
+      "url": "https://gea.esac.esa.int/data-server/data?RETRIEVAL_TYPE=XP_SAMPLED&ID=2693541327543209472&RELEASE=Gaia+DR3&FORMAT=votable",
+      "raw_absolute_flux": true,
+      "sample_errors_correlated": true,
+      "wavelength_medium": "vacuum"
+    }
+  ],
+  "star_test_is_conditional_on_perfect_BV_and_V_inputs": true,
+  "independent_band_truth": [
+    "CIE photopic",
+    "CIE scotopic"
+  ],
+  "not_independent_scores": [
+    "Johnson B/V used to construct continuum",
+    "Vega used to define library zero points"
+  ],
+  "unchanged_source_geometry": {
+    "surface_arc_distance_m": 40000.0,
+    "observer_height_m": 20,
+    "azimuth_deg": 180,
+    "altitudes_deg": [
+      10,
+      45,
+      90
+    ],
+    "atmosphere": "default",
+    "order": 1
+  },
+  "source_code_sha256": {
+    "scripts/run_spectral_benchmark.py": "7e05a4974bc4381f71c49658338ff98c1fbecfb5323e2d4f4098680d7a806c35",
+    "src/lightpollution/models/spectra.py": "72335f42f714c401fa39d5bed57059401862496715705afe06bf5f0bd3dde19a",
+    "src/lightpollution/adapters/spectral_library.py": "dab96b98950f91fba2fffaffbcd856855f2a9191dc6b4f5e49c36514c11e889d"
+  },
+  "eye_colour_or_camera_accuracy_certified": false
+}

@@ -1,0 +1,1234 @@
+{
+  "rows": [
+    {
+      "row_id": "A1.T13-row-1",
+      "patch": "SP 385",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98"
+      ],
+      "sun_altitude_max_in_bracket_deg": -41.76343506530268,
+      "galactic_latitude_deg": -31.038938079652368
+    },
+    {
+      "row_id": "A1.T13-row-2",
+      "patch": "SP 955",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "moon_altitude_below_25"
+      ],
+      "sun_altitude_max_in_bracket_deg": -38.72463491999054,
+      "galactic_latitude_deg": -77.08285855890894
+    },
+    {
+      "row_id": "A1.T13-row-3",
+      "patch": "SP 955",
+      "night_id": "HJD-day-232",
+      "coordinate_status": "published",
+      "exclusion_reasons": [],
+      "sun_altitude_max_in_bracket_deg": -43.03921818827727,
+      "galactic_latitude_deg": -77.08285855890894
+    },
+    {
+      "row_id": "A1.T13-row-4",
+      "patch": "SP 1160",
+      "night_id": "HJD-day-226",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "separation_outside_20_90"
+      ],
+      "sun_altitude_max_in_bracket_deg": -34.35130376790548,
+      "galactic_latitude_deg": -57.494022363696146
+    },
+    {
+      "row_id": "A1.T13-row-5",
+      "patch": "SP 4670",
+      "night_id": "HJD-day-227",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "separation_outside_20_90"
+      ],
+      "sun_altitude_max_in_bracket_deg": -38.88735415275346,
+      "galactic_latitude_deg": -44.5713422120261
+    },
+    {
+      "row_id": "A1.T13-row-6",
+      "patch": "SP 5524",
+      "night_id": "HJD-day-227",
+      "coordinate_status": "published",
+      "exclusion_reasons": [],
+      "sun_altitude_max_in_bracket_deg": -41.3183397620282,
+      "galactic_latitude_deg": -87.82903840229388
+    },
+    {
+      "row_id": "A1.T13-row-7",
+      "patch": "SP 6815",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "moon_altitude_below_25"
+      ],
+      "sun_altitude_max_in_bracket_deg": -40.01758992868949,
+      "galactic_latitude_deg": -52.87476136191336
+    },
+    {
+      "row_id": "A1.T13-row-8",
+      "patch": "SP 6815",
+      "night_id": "HJD-day-232",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "moon_altitude_below_25"
+      ],
+      "sun_altitude_max_in_bracket_deg": -29.540630921361647,
+      "galactic_latitude_deg": -52.87476136191336
+    },
+    {
+      "row_id": "A1.T13-row-9",
+      "patch": "SP 7795",
+      "night_id": "HJD-day-229",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98"
+      ],
+      "sun_altitude_max_in_bracket_deg": -40.20179507699723,
+      "galactic_latitude_deg": -73.76865939923482
+    },
+    {
+      "row_id": "A1.T13-row-10",
+      "patch": "SP 9403",
+      "night_id": "HJD-day-232",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "moon_altitude_below_25"
+      ],
+      "sun_altitude_max_in_bracket_deg": -32.202471041505405,
+      "galactic_latitude_deg": -71.44140021607495
+    },
+    {
+      "row_id": "A1.T13-row-11",
+      "patch": "SP 9404",
+      "night_id": "HJD-day-227",
+      "coordinate_status": "published",
+      "exclusion_reasons": [],
+      "sun_altitude_max_in_bracket_deg": -43.01090177049298,
+      "galactic_latitude_deg": -70.73110770804696
+    },
+    {
+      "row_id": "A1.T13-row-12",
+      "patch": "SP 9478",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98"
+      ],
+      "sun_altitude_max_in_bracket_deg": -42.92596092920667,
+      "galactic_latitude_deg": -50.18258514074996
+    },
+    {
+      "row_id": "A1.T13-row-13",
+      "patch": "SP 10101",
+      "night_id": "HJD-day-232",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "moon_altitude_below_25"
+      ],
+      "sun_altitude_max_in_bracket_deg": -34.3905048171501,
+      "galactic_latitude_deg": -68.00250957815575
+    },
+    {
+      "row_id": "A1.T13-row-14",
+      "patch": "SP 10894",
+      "night_id": "HJD-day-227",
+      "coordinate_status": "published",
+      "exclusion_reasons": [],
+      "sun_altitude_max_in_bracket_deg": -44.11885501187464,
+      "galactic_latitude_deg": -49.653682942580964
+    },
+    {
+      "row_id": "A1.T13-row-15",
+      "patch": "SP 11079",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98"
+      ],
+      "sun_altitude_max_in_bracket_deg": -44.95919788807891,
+      "galactic_latitude_deg": -34.63299322857123
+    },
+    {
+      "row_id": "A1.T13-row-16",
+      "patch": "SP 14788",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98"
+      ],
+      "sun_altitude_max_in_bracket_deg": -45.29270829643602,
+      "galactic_latitude_deg": -65.4682140138408
+    },
+    {
+      "row_id": "A1.T13-row-17",
+      "patch": "SP 14788",
+      "night_id": "HJD-day-229",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98"
+      ],
+      "sun_altitude_max_in_bracket_deg": -44.06741341320721,
+      "galactic_latitude_deg": -65.4682140138408
+    },
+    {
+      "row_id": "A1.T13-row-18",
+      "patch": "SP 16581",
+      "night_id": "HJD-day-229",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98"
+      ],
+      "sun_altitude_max_in_bracket_deg": -43.62088625434916,
+      "galactic_latitude_deg": -51.42440794431008
+    },
+    {
+      "row_id": "A1.T13-row-19",
+      "patch": "SP 18100",
+      "night_id": "HJD-day-232",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "moon_altitude_below_25"
+      ],
+      "sun_altitude_max_in_bracket_deg": -36.68511382271741,
+      "galactic_latitude_deg": -62.71789490708791
+    },
+    {
+      "row_id": "A1.T13-row-20",
+      "patch": "SP 20086",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "moon_altitude_below_25"
+      ],
+      "sun_altitude_max_in_bracket_deg": -41.319786268882126,
+      "galactic_latitude_deg": -34.98844905533813
+    },
+    {
+      "row_id": "A1.T13-row-21",
+      "patch": "SP 20086",
+      "night_id": "HJD-day-232",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "moon_altitude_below_25",
+        "separation_outside_20_90"
+      ],
+      "sun_altitude_max_in_bracket_deg": -39.12611938414766,
+      "galactic_latitude_deg": -34.98844905533813
+    },
+    {
+      "row_id": "A1.T13-row-22",
+      "patch": "SP 21166",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "published_moon_geometry_missing"
+      ],
+      "sun_altitude_max_in_bracket_deg": -12.533624789068442,
+      "galactic_latitude_deg": -39.37659229255035
+    },
+    {
+      "row_id": "A1.T13-row-23",
+      "patch": "SP 21166",
+      "night_id": "HJD-day-232",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "separation_outside_20_90"
+      ],
+      "sun_altitude_max_in_bracket_deg": -42.463027466164604,
+      "galactic_latitude_deg": -39.37659229255035
+    },
+    {
+      "row_id": "A1.T13-row-24",
+      "patch": "SP 23521",
+      "night_id": "HJD-day-229",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "separation_outside_20_90"
+      ],
+      "sun_altitude_max_in_bracket_deg": -43.50073241634416,
+      "galactic_latitude_deg": -37.216861120234775
+    },
+    {
+      "row_id": "A1.T13-row-25",
+      "patch": "SP 24249",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "moon_altitude_below_25"
+      ],
+      "sun_altitude_max_in_bracket_deg": -35.50745370535732,
+      "galactic_latitude_deg": -50.81205843215449
+    },
+    {
+      "row_id": "A1.T13-row-26",
+      "patch": "SP 24579",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98"
+      ],
+      "sun_altitude_max_in_bracket_deg": -43.885694812307854,
+      "galactic_latitude_deg": -36.26210623461475
+    },
+    {
+      "row_id": "A1.T13-row-27",
+      "patch": "SP 25117",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "moon_altitude_below_25"
+      ],
+      "sun_altitude_max_in_bracket_deg": -27.627668300684732,
+      "galactic_latitude_deg": -47.84840978286661
+    },
+    {
+      "row_id": "A1.T13-row-28",
+      "patch": "SP 25169",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98"
+      ],
+      "sun_altitude_max_in_bracket_deg": -44.68846509262845,
+      "galactic_latitude_deg": -48.77034038299776
+    },
+    {
+      "row_id": "A1.T13-row-29",
+      "patch": "SP 25169",
+      "night_id": "HJD-day-229",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "moon_altitude_below_25",
+        "twilight_in_time_bracket"
+      ],
+      "sun_altitude_max_in_bracket_deg": -16.355855987432243,
+      "galactic_latitude_deg": -48.77034038299776
+    },
+    {
+      "row_id": "A1.T13-row-30",
+      "patch": "SP 25795",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "moon_altitude_below_25"
+      ],
+      "sun_altitude_max_in_bracket_deg": -36.95266885511565,
+      "galactic_latitude_deg": -48.1592188893399
+    },
+    {
+      "row_id": "A1.T13-row-31",
+      "patch": "SP 27471",
+      "night_id": "HJD-day-229",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98"
+      ],
+      "sun_altitude_max_in_bracket_deg": -38.393423813116925,
+      "galactic_latitude_deg": -45.44450011361196
+    },
+    {
+      "row_id": "A1.T13-row-32",
+      "patch": "SP 27471",
+      "night_id": "HJD-day-233",
+      "coordinate_status": "published",
+      "exclusion_reasons": [],
+      "sun_altitude_max_in_bracket_deg": -36.243423353855135,
+      "galactic_latitude_deg": -45.44450011361196
+    },
+    {
+      "row_id": "A1.T13-row-33",
+      "patch": "SP 28482",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "published_moon_geometry_missing"
+      ],
+      "sun_altitude_max_in_bracket_deg": -25.279212531771154,
+      "galactic_latitude_deg": -16.783751868348208
+    },
+    {
+      "row_id": "A1.T13-row-34",
+      "patch": "SP 28482",
+      "night_id": "HJD-day-229",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "galactic_plane_or_missing_coordinates"
+      ],
+      "sun_altitude_max_in_bracket_deg": -33.20579389576745,
+      "galactic_latitude_deg": -16.783751868348208
+    },
+    {
+      "row_id": "A1.T13-row-35",
+      "patch": "SP 29138",
+      "night_id": "HJD-day-232",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "separation_outside_20_90"
+      ],
+      "sun_altitude_max_in_bracket_deg": -41.42603858951171,
+      "galactic_latitude_deg": -30.529096181049407
+    },
+    {
+      "row_id": "A1.T13-row-36",
+      "patch": "SP 34179",
+      "night_id": "HJD-day-229",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98"
+      ],
+      "sun_altitude_max_in_bracket_deg": -42.25714325381536,
+      "galactic_latitude_deg": -21.192080934199204
+    },
+    {
+      "row_id": "A1.T13-row-37",
+      "patch": "SP 34677",
+      "night_id": "HJD-day-233",
+      "coordinate_status": "published",
+      "exclusion_reasons": [],
+      "sun_altitude_max_in_bracket_deg": -22.77307419029586,
+      "galactic_latitude_deg": -33.11715597311476
+    },
+    {
+      "row_id": "A1.T13-row-38",
+      "patch": "SP 35042",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "separation_outside_20_90"
+      ],
+      "sun_altitude_max_in_bracket_deg": -44.307747215703884,
+      "galactic_latitude_deg": -26.379165886289375
+    },
+    {
+      "row_id": "A1.T13-row-39",
+      "patch": "SP 35042",
+      "night_id": "HJD-day-233",
+      "coordinate_status": "published",
+      "exclusion_reasons": [],
+      "sun_altitude_max_in_bracket_deg": -34.12465839745111,
+      "galactic_latitude_deg": -26.379165886289375
+    },
+    {
+      "row_id": "A1.T13-row-40",
+      "patch": "SP 36340",
+      "night_id": "HJD-day-233",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "galactic_plane_or_missing_coordinates"
+      ],
+      "sun_altitude_max_in_bracket_deg": -30.426400670011734,
+      "galactic_latitude_deg": -16.199131017885193
+    },
+    {
+      "row_id": "A1.T13-row-41",
+      "patch": "SP 48150",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "moon_altitude_below_25",
+        "separation_outside_20_90"
+      ],
+      "sun_altitude_max_in_bracket_deg": -43.560170345199595,
+      "galactic_latitude_deg": -20.27621578619396
+    },
+    {
+      "row_id": "A1.T13-row-42",
+      "patch": "SP 48150",
+      "night_id": "HJD-day-229",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "target_altitude_below_30"
+      ],
+      "sun_altitude_max_in_bracket_deg": -42.05847105637089,
+      "galactic_latitude_deg": -20.27621578619396
+    },
+    {
+      "row_id": "A1.T13-row-43",
+      "patch": "SP 48150",
+      "night_id": "HJD-day-233",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "twilight_in_time_bracket"
+      ],
+      "sun_altitude_max_in_bracket_deg": -16.179616278357038,
+      "galactic_latitude_deg": -20.27621578619396
+    },
+    {
+      "row_id": "A1.T13-row-44",
+      "patch": "SP 48467",
+      "night_id": "HJD-day-229",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "separation_outside_20_90"
+      ],
+      "sun_altitude_max_in_bracket_deg": -36.33896071764864,
+      "galactic_latitude_deg": -26.65672655340945
+    },
+    {
+      "row_id": "A1.T13-row-45",
+      "patch": "SP 48467",
+      "night_id": "HJD-day-379",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "moon_altitude_below_25"
+      ],
+      "sun_altitude_max_in_bracket_deg": -19.006266530292947,
+      "galactic_latitude_deg": -26.65672655340945
+    },
+    {
+      "row_id": "A1.T13-row-46",
+      "patch": "SP 49260",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "published_moon_geometry_missing"
+      ],
+      "sun_altitude_max_in_bracket_deg": -14.697099866582802,
+      "galactic_latitude_deg": -20.584658644583474
+    },
+    {
+      "row_id": "A1.T13-row-47",
+      "patch": "SP 49260",
+      "night_id": "HJD-day-229",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "separation_outside_20_90"
+      ],
+      "sun_altitude_max_in_bracket_deg": -30.285198997309248,
+      "galactic_latitude_deg": -20.584658644583474
+    },
+    {
+      "row_id": "A1.T13-row-48",
+      "patch": "SP 49559",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "moon_altitude_below_25",
+        "separation_outside_20_90",
+        "galactic_plane_or_missing_coordinates"
+      ],
+      "sun_altitude_max_in_bracket_deg": -42.725066126305315,
+      "galactic_latitude_deg": -19.591021541807365
+    },
+    {
+      "row_id": "A1.T13-row-49",
+      "patch": "SP 49559",
+      "night_id": "HJD-day-233",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "galactic_plane_or_missing_coordinates"
+      ],
+      "sun_altitude_max_in_bracket_deg": -28.794797125699212,
+      "galactic_latitude_deg": -19.591021541807365
+    },
+    {
+      "row_id": "A1.T13-row-50",
+      "patch": "SP 49850",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "published_moon_geometry_missing"
+      ],
+      "sun_altitude_max_in_bracket_deg": -16.91087822933695,
+      "galactic_latitude_deg": -18.940385559977084
+    },
+    {
+      "row_id": "A1.T13-row-51",
+      "patch": "SP 49850",
+      "night_id": "HJD-day-229",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "separation_outside_20_90",
+        "galactic_plane_or_missing_coordinates"
+      ],
+      "sun_altitude_max_in_bracket_deg": -40.33855533962006,
+      "galactic_latitude_deg": -18.940385559977084
+    },
+    {
+      "row_id": "A1.T13-row-52",
+      "patch": "SP 49850",
+      "night_id": "HJD-day-379",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "moon_altitude_below_25",
+        "galactic_plane_or_missing_coordinates",
+        "twilight_in_time_bracket"
+      ],
+      "sun_altitude_max_in_bracket_deg": -16.143486148852535,
+      "galactic_latitude_deg": -18.940385559977084
+    },
+    {
+      "row_id": "A1.T13-row-53",
+      "patch": "SP 51102",
+      "night_id": "HJD-day-229",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "moon_altitude_below_25",
+        "galactic_plane_or_missing_coordinates"
+      ],
+      "sun_altitude_max_in_bracket_deg": -20.249772302863857,
+      "galactic_latitude_deg": 10.546265029047193
+    },
+    {
+      "row_id": "A1.T13-row-54",
+      "patch": "SP 54197",
+      "night_id": "HJD-day-229",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "moon_altitude_below_25",
+        "galactic_plane_or_missing_coordinates"
+      ],
+      "sun_altitude_max_in_bracket_deg": -23.790812763581677,
+      "galactic_latitude_deg": -2.9128882865981893
+    },
+    {
+      "row_id": "A1.T13-row-55",
+      "patch": "SP 65079",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "published_moon_geometry_missing"
+      ],
+      "sun_altitude_max_in_bracket_deg": -22.18402079158154,
+      "galactic_latitude_deg": 15.911295613480606
+    },
+    {
+      "row_id": "A1.T13-row-56",
+      "patch": "SP 66446",
+      "night_id": "HJD-day-233",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "galactic_plane_or_missing_coordinates"
+      ],
+      "sun_altitude_max_in_bracket_deg": -18.138246001553473,
+      "galactic_latitude_deg": 18.99739298504029
+    },
+    {
+      "row_id": "A1.T13-row-57",
+      "patch": "SP 66665",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "published_moon_geometry_missing"
+      ],
+      "sun_altitude_max_in_bracket_deg": -19.326983081988743,
+      "galactic_latitude_deg": 19.14331212665615
+    },
+    {
+      "row_id": "A1.T13-row-58",
+      "patch": "SP 79601",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "moon_altitude_below_25",
+        "separation_outside_20_90",
+        "galactic_plane_or_missing_coordinates"
+      ],
+      "sun_altitude_max_in_bracket_deg": -29.935091768793473,
+      "galactic_latitude_deg": 4.3379752844599
+    },
+    {
+      "row_id": "A1.T13-row-59",
+      "patch": "SP 79601",
+      "night_id": "HJD-day-233",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "galactic_plane_or_missing_coordinates"
+      ],
+      "sun_altitude_max_in_bracket_deg": -24.559476527751755,
+      "galactic_latitude_deg": 4.3379752844599
+    },
+    {
+      "row_id": "A1.T13-row-60",
+      "patch": "SP 81035",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "moon_altitude_below_25",
+        "separation_outside_20_90",
+        "galactic_plane_or_missing_coordinates"
+      ],
+      "sun_altitude_max_in_bracket_deg": -33.60376364344488,
+      "galactic_latitude_deg": 1.876114337615925
+    },
+    {
+      "row_id": "A1.T13-row-61",
+      "patch": "SP 81035",
+      "night_id": "HJD-day-379",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "galactic_plane_or_missing_coordinates"
+      ],
+      "sun_altitude_max_in_bracket_deg": -54.72697104561161,
+      "galactic_latitude_deg": 1.876114337615925
+    },
+    {
+      "row_id": "A1.T13-row-62",
+      "patch": "SP 81077",
+      "night_id": "HJD-day-379",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "galactic_plane_or_missing_coordinates"
+      ],
+      "sun_altitude_max_in_bracket_deg": -33.68164071799265,
+      "galactic_latitude_deg": 2.3401813790615513
+    },
+    {
+      "row_id": "A1.T13-row-63",
+      "patch": "SP 82121",
+      "night_id": "HJD-day-229",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "moon_altitude_below_25",
+        "separation_outside_20_90",
+        "galactic_plane_or_missing_coordinates"
+      ],
+      "sun_altitude_max_in_bracket_deg": -27.144282957652013,
+      "galactic_latitude_deg": 3.984228591184059
+    },
+    {
+      "row_id": "A1.T13-row-64",
+      "patch": "SP 91427",
+      "night_id": "HJD-day-379",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98"
+      ],
+      "sun_altitude_max_in_bracket_deg": -36.113430763733156,
+      "galactic_latitude_deg": 58.776676234415106
+    },
+    {
+      "row_id": "A1.T13-row-65",
+      "patch": "SP 92136",
+      "night_id": "HJD-day-379",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "galactic_plane_or_missing_coordinates"
+      ],
+      "sun_altitude_max_in_bracket_deg": -25.45079980939842,
+      "galactic_latitude_deg": 19.653630601714596
+    },
+    {
+      "row_id": "A1.T13-row-66",
+      "patch": "SP 93431",
+      "night_id": "HJD-day-379",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98"
+      ],
+      "sun_altitude_max_in_bracket_deg": -57.42016202397888,
+      "galactic_latitude_deg": 53.973845920449996
+    },
+    {
+      "row_id": "A1.T13-row-67",
+      "patch": "SP 97991",
+      "night_id": "HJD-day-379",
+      "coordinate_status": "absent_from_published_table_10",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "galactic_plane_or_missing_coordinates"
+      ],
+      "sun_altitude_max_in_bracket_deg": -28.275795710556867,
+      "galactic_latitude_deg": null
+    },
+    {
+      "row_id": "A1.T13-row-68",
+      "patch": "SP 105283",
+      "night_id": "HJD-day-379",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "galactic_plane_or_missing_coordinates"
+      ],
+      "sun_altitude_max_in_bracket_deg": -42.75645607124839,
+      "galactic_latitude_deg": 18.891369718411248
+    },
+    {
+      "row_id": "A1.T13-row-69",
+      "patch": "SP 106295",
+      "night_id": "HJD-day-379",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "separation_outside_20_90"
+      ],
+      "sun_altitude_max_in_bracket_deg": -40.81527671955213,
+      "galactic_latitude_deg": 69.75653574659121
+    },
+    {
+      "row_id": "A1.T13-row-70",
+      "patch": "SP 108927",
+      "night_id": "HJD-day-379",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "galactic_plane_or_missing_coordinates"
+      ],
+      "sun_altitude_max_in_bracket_deg": -53.10938808753688,
+      "galactic_latitude_deg": -15.377921845888608
+    },
+    {
+      "row_id": "A1.T13-row-71",
+      "patch": "SP 119608",
+      "night_id": "HJD-day-379",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "separation_outside_20_90"
+      ],
+      "sun_altitude_max_in_bracket_deg": -49.092961881427605,
+      "galactic_latitude_deg": 43.10408258381053
+    },
+    {
+      "row_id": "A1.T13-row-72",
+      "patch": "SP 125310",
+      "night_id": "HJD-day-379",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98"
+      ],
+      "sun_altitude_max_in_bracket_deg": -42.32829118727398,
+      "galactic_latitude_deg": 49.86724647656611
+    },
+    {
+      "row_id": "A1.T13-row-73",
+      "patch": "SP 127294",
+      "night_id": "HJD-day-379",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "galactic_plane_or_missing_coordinates"
+      ],
+      "sun_altitude_max_in_bracket_deg": -47.32465236606109,
+      "galactic_latitude_deg": 16.11722759884156
+    },
+    {
+      "row_id": "A1.T13-row-74",
+      "patch": "SP 128726",
+      "night_id": "HJD-day-379",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "galactic_plane_or_missing_coordinates"
+      ],
+      "sun_altitude_max_in_bracket_deg": -51.501642453077885,
+      "galactic_latitude_deg": 13.057182708796569
+    },
+    {
+      "row_id": "A1.T13-row-75",
+      "patch": "SP 134305",
+      "night_id": "HJD-day-379",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98"
+      ],
+      "sun_altitude_max_in_bracket_deg": -37.78048792890184,
+      "galactic_latitude_deg": 54.72314568838142
+    },
+    {
+      "row_id": "A1.T13-row-76",
+      "patch": "SP 147559",
+      "night_id": "HJD-day-379",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "galactic_plane_or_missing_coordinates"
+      ],
+      "sun_altitude_max_in_bracket_deg": -47.680976021901884,
+      "galactic_latitude_deg": -1.0301933646419816
+    },
+    {
+      "row_id": "A1.T13-row-77",
+      "patch": "SP 156623",
+      "night_id": "HJD-day-379",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "galactic_plane_or_missing_coordinates",
+        "twilight_in_time_bracket"
+      ],
+      "sun_altitude_max_in_bracket_deg": -16.335450577898772,
+      "galactic_latitude_deg": -4.858781906324563
+    },
+    {
+      "row_id": "A1.T13-row-78",
+      "patch": "SP 159384",
+      "night_id": "HJD-day-379",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "galactic_plane_or_missing_coordinates"
+      ],
+      "sun_altitude_max_in_bracket_deg": -34.04883819608876,
+      "galactic_latitude_deg": -6.845194646899759
+    },
+    {
+      "row_id": "A1.T13-row-79",
+      "patch": "SP 161572",
+      "night_id": "HJD-day-379",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "galactic_plane_or_missing_coordinates"
+      ],
+      "sun_altitude_max_in_bracket_deg": -26.42713560792298,
+      "galactic_latitude_deg": 17.11777291363963
+    },
+    {
+      "row_id": "A1.T13-row-80",
+      "patch": "SP 165016",
+      "night_id": "HJD-day-379",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "galactic_plane_or_missing_coordinates"
+      ],
+      "sun_altitude_max_in_bracket_deg": -18.503669243650982,
+      "galactic_latitude_deg": -1.5926261466820801
+    },
+    {
+      "row_id": "A1.T13-row-81",
+      "patch": "SP 171141",
+      "night_id": "HJD-day-379",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "galactic_plane_or_missing_coordinates"
+      ],
+      "sun_altitude_max_in_bracket_deg": -29.123342807860716,
+      "galactic_latitude_deg": -16.495380362936597
+    },
+    {
+      "row_id": "A1.T13-row-82",
+      "patch": "SP 183570",
+      "night_id": "HJD-day-227",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "galactic_plane_or_missing_coordinates",
+        "twilight_in_time_bracket"
+      ],
+      "sun_altitude_max_in_bracket_deg": -17.982623674332697,
+      "galactic_latitude_deg": -15.84816625978914
+    },
+    {
+      "row_id": "A1.T13-row-83",
+      "patch": "SP 189247",
+      "night_id": "HJD-day-226",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98"
+      ],
+      "sun_altitude_max_in_bracket_deg": -24.376293967603594,
+      "galactic_latitude_deg": -30.511243164630308
+    },
+    {
+      "row_id": "A1.T13-row-84",
+      "patch": "SP 189502",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98"
+      ],
+      "sun_altitude_max_in_bracket_deg": -35.52057611231423,
+      "galactic_latitude_deg": -30.827490231755935
+    },
+    {
+      "row_id": "A1.T13-row-85",
+      "patch": "SP 189502",
+      "night_id": "HJD-day-227",
+      "coordinate_status": "published",
+      "exclusion_reasons": [],
+      "sun_altitude_max_in_bracket_deg": -25.781980458390947,
+      "galactic_latitude_deg": -30.827490231755935
+    },
+    {
+      "row_id": "A1.T13-row-86",
+      "patch": "SP 189723",
+      "night_id": "HJD-day-227",
+      "coordinate_status": "published",
+      "exclusion_reasons": [],
+      "sun_altitude_max_in_bracket_deg": -35.238321864738595,
+      "galactic_latitude_deg": -31.145052592903365
+    },
+    {
+      "row_id": "A1.T13-row-87",
+      "patch": "SP 191849",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98"
+      ],
+      "sun_altitude_max_in_bracket_deg": -36.96493601410043,
+      "galactic_latitude_deg": -32.97293418853626
+    },
+    {
+      "row_id": "A1.T13-row-88",
+      "patch": "SP 192758",
+      "night_id": "HJD-day-227",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "twilight_in_time_bracket"
+      ],
+      "sun_altitude_max_in_bracket_deg": -14.196574123607268,
+      "galactic_latitude_deg": -33.45114235907506
+    },
+    {
+      "row_id": "A1.T13-row-89",
+      "patch": "SP 196227",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98"
+      ],
+      "sun_altitude_max_in_bracket_deg": -38.9559860109462,
+      "galactic_latitude_deg": -32.74145297404483
+    },
+    {
+      "row_id": "A1.T13-row-90",
+      "patch": "SP 196227",
+      "night_id": "HJD-day-232",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "moon_altitude_below_25",
+        "separation_outside_20_90",
+        "twilight_in_time_bracket"
+      ],
+      "sun_altitude_max_in_bracket_deg": -16.46283936500292,
+      "galactic_latitude_deg": -32.74145297404483
+    },
+    {
+      "row_id": "A1.T13-row-91",
+      "patch": "SP 204220",
+      "night_id": "HJD-day-232",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "moon_altitude_below_25",
+        "separation_outside_20_90"
+      ],
+      "sun_altitude_max_in_bracket_deg": -23.45984544477625,
+      "galactic_latitude_deg": -40.664176968058555
+    },
+    {
+      "row_id": "A1.T13-row-92",
+      "patch": "SP 205556",
+      "night_id": "HJD-day-227",
+      "coordinate_status": "published",
+      "exclusion_reasons": [],
+      "sun_altitude_max_in_bracket_deg": -21.46789450587583,
+      "galactic_latitude_deg": -32.60308816499029
+    },
+    {
+      "row_id": "A1.T13-row-93",
+      "patch": "SP 208793",
+      "night_id": "HJD-day-226",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98"
+      ],
+      "sun_altitude_max_in_bracket_deg": -28.361560026970952,
+      "galactic_latitude_deg": -51.1827393550072
+    },
+    {
+      "row_id": "A1.T13-row-94",
+      "patch": "SP 210121",
+      "night_id": "HJD-day-226",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "separation_outside_20_90"
+      ],
+      "sun_altitude_max_in_bracket_deg": -31.288031586642333,
+      "galactic_latitude_deg": -44.4313403512374
+    },
+    {
+      "row_id": "A1.T13-row-95",
+      "patch": "SP 214174",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "twilight_in_time_bracket"
+      ],
+      "sun_altitude_max_in_bracket_deg": -16.089043967510612,
+      "galactic_latitude_deg": -58.02539050413694
+    },
+    {
+      "row_id": "A1.T13-row-96",
+      "patch": "SP 214308",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98"
+      ],
+      "sun_altitude_max_in_bracket_deg": -19.982639083543344,
+      "galactic_latitude_deg": -57.35086121216475
+    },
+    {
+      "row_id": "A1.T13-row-97",
+      "patch": "SP 214308",
+      "night_id": "HJD-day-227",
+      "coordinate_status": "published",
+      "exclusion_reasons": [],
+      "sun_altitude_max_in_bracket_deg": -32.426811153315896,
+      "galactic_latitude_deg": -57.35086121216475
+    },
+    {
+      "row_id": "A1.T13-row-98",
+      "patch": "SP 214930",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98"
+      ],
+      "sun_altitude_max_in_bracket_deg": -32.829117585448074,
+      "galactic_latitude_deg": -30.15295723793635
+    },
+    {
+      "row_id": "A1.T13-row-99",
+      "patch": "SP 215512",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "separation_outside_20_90"
+      ],
+      "sun_altitude_max_in_bracket_deg": -30.614403612046335,
+      "galactic_latitude_deg": -46.763159596986426
+    },
+    {
+      "row_id": "A1.T13-row-100",
+      "patch": "SP 215512",
+      "night_id": "HJD-day-232",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "moon_altitude_below_25"
+      ],
+      "sun_altitude_max_in_bracket_deg": -26.34333565243443,
+      "galactic_latitude_deg": -46.763159596986426
+    },
+    {
+      "row_id": "A1.T13-row-101",
+      "patch": "SP 215657",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98"
+      ],
+      "sun_altitude_max_in_bracket_deg": -40.50317229612071,
+      "galactic_latitude_deg": -59.56879696308573
+    },
+    {
+      "row_id": "A1.T13-row-102",
+      "patch": "SP 215657",
+      "night_id": "HJD-day-229",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98"
+      ],
+      "sun_altitude_max_in_bracket_deg": -37.89127033131957,
+      "galactic_latitude_deg": -59.56879696308573
+    },
+    {
+      "row_id": "A1.T13-row-103",
+      "patch": "SP 216009",
+      "night_id": "HJD-day-226",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98"
+      ],
+      "sun_altitude_max_in_bracket_deg": -19.64462454338548,
+      "galactic_latitude_deg": -60.18765083770002
+    },
+    {
+      "row_id": "A1.T13-row-104",
+      "patch": "SP 216009",
+      "night_id": "HJD-day-232",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "moon_altitude_below_25",
+        "separation_outside_20_90"
+      ],
+      "sun_altitude_max_in_bracket_deg": -20.42474002878546,
+      "galactic_latitude_deg": -60.18765083770002
+    },
+    {
+      "row_id": "A1.T13-row-105",
+      "patch": "SP 217505",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98"
+      ],
+      "sun_altitude_max_in_bracket_deg": -22.897562051925206,
+      "galactic_latitude_deg": -52.62558619750946
+    },
+    {
+      "row_id": "A1.T13-row-106",
+      "patch": "SP 217505",
+      "night_id": "HJD-day-232",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "separation_outside_20_90"
+      ],
+      "sun_altitude_max_in_bracket_deg": -42.70422428515772,
+      "galactic_latitude_deg": -52.62558619750946
+    },
+    {
+      "row_id": "A1.T13-row-107",
+      "patch": "SP 219639",
+      "night_id": "HJD-day-227",
+      "coordinate_status": "published",
+      "exclusion_reasons": [],
+      "sun_altitude_max_in_bracket_deg": -29.146965562325455,
+      "galactic_latitude_deg": -65.59959724235776
+    },
+    {
+      "row_id": "A1.T13-row-108",
+      "patch": "SP 220172",
+      "night_id": "HJD-day-225",
+      "coordinate_status": "published",
+      "exclusion_reasons": [
+        "phase_outside_0.90_0.98",
+        "separation_outside_20_90"
+      ],
+      "sun_altitude_max_in_bracket_deg": -28.455531244755157,
+      "galactic_latitude_deg": -62.67535282776367
+    }
+  ]
+}

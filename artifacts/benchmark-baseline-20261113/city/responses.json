@@ -1,0 +1,126 @@
+{
+  "2017-03": {
+    "default": {
+      "raw_radiance_response": 2.3414339634592334e-12,
+      "atmosphere": {
+        "reference_wavelength_nm": 550.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.1,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 1.0,
+        "top_m": 80000.0
+      },
+      "coarse_response": 2.3413298021694653e-12,
+      "refinement_relative": 4.448611038943007e-05
+    },
+    "daytime_AOD_only": {
+      "raw_radiance_response": 2.212377575560968e-12,
+      "atmosphere": {
+        "reference_wavelength_nm": 550.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.12962990544293881,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 1.0,
+        "top_m": 80000.0
+      },
+      "coarse_response": 2.212279002757704e-12,
+      "refinement_relative": 4.455514481471745e-05
+    },
+    "daytime_g_only": {
+      "raw_radiance_response": 2.4817214419866253e-12,
+      "atmosphere": {
+        "reference_wavelength_nm": 550.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.1,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.6119706788620851,
+        "rayleigh_multiplier": 1.0,
+        "top_m": 80000.0
+      },
+      "coarse_response": 2.4816099140847406e-12,
+      "refinement_relative": 4.493973416908048e-05
+    },
+    "daytime_AOD_and_g": {
+      "raw_radiance_response": 2.3777919834646115e-12,
+      "atmosphere": {
+        "reference_wavelength_nm": 550.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.12962990544293881,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.6119706788620851,
+        "rayleigh_multiplier": 1.0,
+        "top_m": 80000.0
+      },
+      "coarse_response": 2.3776847494850937e-12,
+      "refinement_relative": 4.509813316877498e-05
+    }
+  },
+  "2017-11": {
+    "default": {
+      "raw_radiance_response": 2.2562029500075053e-12,
+      "atmosphere": {
+        "reference_wavelength_nm": 550.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.1,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 1.0,
+        "top_m": 80000.0
+      },
+      "coarse_response": 2.2561024722791294e-12,
+      "refinement_relative": 4.453399388371082e-05
+    },
+    "daytime_AOD_only": {
+      "raw_radiance_response": 2.366426855047462e-12,
+      "atmosphere": {
+        "reference_wavelength_nm": 550.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.07478362358829586,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 1.0,
+        "top_m": 80000.0
+      },
+      "coarse_response": 2.3663216367876962e-12,
+      "refinement_relative": 4.446292499649118e-05
+    },
+    "daytime_g_only": {
+      "raw_radiance_response": 2.369993771620373e-12,
+      "atmosphere": {
+        "reference_wavelength_nm": 550.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.1,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.6404411688855722,
+        "rayleigh_multiplier": 1.0,
+        "top_m": 80000.0
+      },
+      "coarse_response": 2.3698872785609097e-12,
+      "refinement_relative": 4.4933898450838505e-05
+    },
+    "daytime_AOD_and_g": {
+      "raw_radiance_response": 2.4586966011296396e-12,
+      "atmosphere": {
+        "reference_wavelength_nm": 550.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.07478362358829586,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.6404411688855722,
+        "rayleigh_multiplier": 1.0,
+        "top_m": 80000.0
+      },
+      "coarse_response": 2.4585864937928443e-12,
+      "refinement_relative": 4.47828075837986e-05
+    }
+  }
+}
