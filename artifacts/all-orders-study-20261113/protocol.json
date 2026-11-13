@@ -1,0 +1,137 @@
+{
+  "study_version": "LP-all-orders-1",
+  "created_at": "2026-11-13T11:42:23+01:00",
+  "git_base_commit": "c549dbd",
+  "observer": {
+    "latitude_deg": 0.0,
+    "longitude_deg": 0.0,
+    "height_m": 20.0
+  },
+  "cap": {
+    "latitude_deg": -0.5395929635512383,
+    "longitude_deg": 0.0,
+    "radius_m": 40000.0,
+    "radiance": 1.0
+  },
+  "base_atmosphere": {
+    "reference_wavelength_nm": 550.0,
+    "rayleigh_scale_height_m": 8000.0,
+    "aerosol_scale_height_m": 1200.0,
+    "aerosol_optical_depth": 0.1,
+    "aerosol_single_scattering_albedo": 0.9,
+    "aerosol_g": 0.8,
+    "rayleigh_multiplier": 1.0,
+    "top_m": 80000.0
+  },
+  "samples_per_main_case": 2097152,
+  "seed": 3011,
+  "old_protocol_sha256": "ac3e700bde24f1934d3bea9f7f547f2ebf2d5ac62a8267cd38addeeeecb0cc38",
+  "aod_values": [
+    0.02,
+    0.1,
+    0.3
+  ],
+  "altitudes_deg": [
+    10.0,
+    45.0,
+    90.0
+  ],
+  "azimuth_deg": 180.0,
+  "same_geometry_power_and_other_models_as_previous_study": true,
+  "new_field_fit_or_C_refit": false,
+  "natural_Moon_cloud_snow_DSM_and_spectrum_disabled": true,
+  "no_finite_order_cutoff": true,
+  "precision_checks": {
+    "cases": [
+      [
+        0.02,
+        45
+      ],
+      [
+        0.02,
+        90
+      ]
+    ],
+    "samples": 8388608,
+    "seed": 9031,
+    "declared_before_main_results": true,
+    "reason": "Rare high-order tails in independent pilot, not selection by residual."
+  },
+  "independent_checks": {
+    "implicit_repeat": {
+      "aod": 0.1,
+      "altitude": 45,
+      "seed": 3012
+    },
+    "analog_absorption": {
+      "aod_values": [
+        0.1,
+        0.3
+      ],
+      "altitude": 45,
+      "seed": 6041
+    },
+    "slabs_depth_albedo": [
+      [
+        0.2,
+        0.9
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        5.0,
+        0.99
+      ]
+    ],
+    "slab_MC_samples": 524288,
+    "slab_grids": [
+      [
+        256,
+        64
+      ],
+      [
+        512,
+        128
+      ],
+      [
+        1024,
+        192
+      ]
+    ]
+  },
+  "predeclared_checks": {
+    "old_order_prefix_rtol": 2e-13,
+    "MC_reference_max_abs_z": 4,
+    "slab_grid_refinement_relative_max": 0.005,
+    "minimum_tail_hits_for_normal_interval": 100
+  },
+  "timing": {
+    "samples": 524288,
+    "orders": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "all"
+    ],
+    "seeds": [
+      701,
+      702
+    ],
+    "same_samples_not_same_error": true,
+    "memory": "/proc/self/status VmHWM",
+    "hardware": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+    "logical_CPUs": 6,
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "source_sha256": {
+    "src/lightpollution/physics.py": "00f5d96018280672658424163ba7ec79aaf89d53532bc3215c6481bc52fd1a6a",
+    "src/lightpollution/models/scattering_orders.py": "87fb2a78a50b72806fd7bbe7c20a6032731b187f368ae791a215b2f48739680e",
+    "src/lightpollution/models/all_orders.py": "34fa0f2fc865bad1f9e8b55e8a92638338b511c6923002b57edf6670d5fccddd",
+    "src/lightpollution/models/slab_resolvent.py": "41071e85ee6e039b126819f7fb9f6f1b05e3fc81f1694320b798c91fc8dd7921",
+    "scripts/run_all_orders_study.py": "631f3daa31cf5ab49c74ed42c34bd403b0838ff1a6a0f9b6402d3526eab2ec42"
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "solver": "research-spherical-cap-all-orders-mc-1",
+  "settings": {
+    "samples": 2097152,
+    "seed": 3011,
+    "batch_size": 8192,
+    "recorded_orders": 5,
+    "absorption": "implicit",
+    "safety_scattering_events": 100000,
+    "max_null_events": 100000
+  },
+  "observer": {
+    "latitude_deg": 0.0,
+    "longitude_deg": 0.0,
+    "height_m": 20.0
+  },
+  "cap": {
+    "latitude_deg": -0.5395929635512383,
+    "longitude_deg": 0.0,
+    "radius_m": 40000.0,
+    "radiance": 1.0
+  },
+  "atmosphere": {
+    "reference_wavelength_nm": 550.0,
+    "rayleigh_scale_height_m": 8000.0,
+    "aerosol_scale_height_m": 1200.0,
+    "aerosol_optical_depth": 0.02,
+    "aerosol_single_scattering_albedo": 0.9,
+    "aerosol_g": 0.8,
+    "rayleigh_multiplier": 1.0,
+    "top_m": 80000.0
+  },
+  "azimuth_deg": 180.0,
+  "altitude_deg": 10.0,
+  "category_labels": [
+    "exact_1",
+    "exact_2",
+    "exact_3",
+    "exact_4",
+    "exact_5",
+    "above_5"
+  ],
+  "category_mean_radiance": [
+    0.06441496250565525,
+    0.015367678934680933,
+    0.002565825246070609,
+    0.0003898531641425883,
+    6.503832758815026e-05,
+    1.4717618700942433e-05
+  ],
+  "mean_covariance": [
+    [
+      2.8628282839789377e-08,
+      -4.720253631600301e-10,
+      -7.881050864801911e-11,
+      -1.197452017091563e-11,
+      -1.997682299949418e-12,
+      -4.520584625493049e-13
+    ],
+    [
+      -4.720253631600301e-10,
+      6.991514596445665e-09,
+      -1.880206937130985e-11,
+      -2.8567987036759694e-12,
+      -4.765933100779555e-13,
+      -1.078490003243158e-13
+    ],
+    [
+      -7.881050864801911e-11,
+      -1.880206937130985e-11,
+      1.1538504875239895e-09,
+      -4.76978095910863e-13,
+      -7.957318423322236e-14,
+      -1.800673276503171e-14
+    ],
+    [
+      -1.197452017091563e-11,
+      -2.8567987036759694e-12,
+      -4.76978095910863e-13,
+      1.710977901143413e-10,
+      -1.2090401597587667e-14,
+      -2.735954740124358e-15
+    ],
+    [
+      -1.997682299949418e-12,
+      -4.765933100779555e-13,
+      -7.957318423322236e-14,
+      -1.2090401597587667e-14,
+      2.8279193072194906e-11,
+      -4.564331831085985e-16
+    ],
+    [
+      -4.520584625493049e-13,
+      -1.078490003243158e-13,
+      -1.800673276503171e-14,
+      -2.735954740124358e-15,
+      -4.564331831085985e-16,
+      6.21207961903098e-12
+    ]
+  ],
+  "luminous_paths_by_category": [
+    135573,
+    33265,
+    5698,
+    890,
+    150,
+    35
+  ],
+  "cumulative_labels": [
+    "up_to_1",
+    "up_to_2",
+    "up_to_3",
+    "up_to_4",
+    "up_to_5",
+    "all_orders"
+  ],
+  "cumulative_radiance": [
+    0.06441496250565525,
+    0.07978264144033617,
+    0.0823484666864068,
+    0.08273831985054939,
+    0.08280335817813754,
+    0.08281807579683848
+  ],
+  "cumulative_standard_error": [
+    0.00016919894455873352,
+    0.0001862142494813836,
+    0.00018877068639330715,
+    0.00018914241522612966,
+    0.00018920359550561963,
+    0.00018921694009444833
+  ],
+  "all_order_radiance": 0.08281807579683848,
+  "all_order_standard_error": 0.00018921694009444833,
+  "all_order_normal_95_interval": [
+    0.08244721059425336,
+    0.08318894099942359
+  ],
+  "all_order_hoeffding_marginal_95_interval": [
+    0.08188026057094011,
+    0.08375589102273684
+  ],
+  "luminous_order_histogram": {
+    "1": {
+      "luminous_paths": 135573,
+      "mean_radiance": 0.06441496250565523,
+      "standard_error": 0.00016919894455873352
+    },
+    "2": {
+      "luminous_paths": 33265,
+      "mean_radiance": 0.01536767893468093,
+      "standard_error": 8.361527729096918e-05
+    },
+    "3": {
+      "luminous_paths": 5698,
+      "mean_radiance": 0.002565825246070609,
+      "standard_error": 3.3968374814288504e-05
+    },
+    "4": {
+      "luminous_paths": 890,
+      "mean_radiance": 0.0003898531641425883,
+      "standard_error": 1.3080435394677858e-05
+    },
+    "5": {
+      "luminous_paths": 150,
+      "mean_radiance": 6.503832758815026e-05,
+      "standard_error": 5.317818450473362e-06
+    },
+    "6": {
+      "luminous_paths": 31,
+      "mean_radiance": 1.3204376553533047e-05,
+      "standard_error": 2.3745126431606844e-06
+    },
+    "7": {
+      "luminous_paths": 4,
+      "mean_radiance": 1.5132421474093842e-06,
+      "standard_error": 7.574882060311945e-07
+    }
+  },
+  "path_outcomes": {
+    "space": 1585314,
+    "dark_ground": 336227,
+    "luminous_ground": 175611,
+    "absorbed": 0
+  },
+  "max_scattering_order_seen": 9,
+  "max_luminous_order_seen": 7,
+  "mean_scattering_vertices_per_path": 0.6549749374389648,
+  "runtime_seconds": 11.624691633041948,
+  "finite_scattering_order_truncation": false,
+  "safety_limit_hit": false,
+  "bounded_score": [
+    0.0,
+    1.0
+  ],
+  "production_solver_changed": false,
+  "limitations": [
+    "Finite Lambertian cap, scalar monochromatic atmospheric model, absorbing ground and dark outer boundary.",
+    "All orders refers to the specified RTE, not exact atmospheric microphysics or every physical process.",
+    "Finite samples still give statistical error; observed maximum order is not a physical cutoff.",
+    "Implicit absorbed outcome counts only zero-scattering terminations; other absorption is in weights.",
+    "Normal intervals are approximate; rare-event zero is not evidence of a zero mean."
+  ],
+  "comparisons_to_partial_sums": {
+    "1": {
+      "up_to_order": 1,
+      "increment_relative_to_partial": 0.2856962509225638,
+      "increment_standard_error": 0.001625613066795557,
+      "missing_fraction_of_full": 0.2222113121334527,
+      "missing_fraction_standard_error": 0.0009834231478036586,
+      "normal_intervals_eligible": true,
+      "increment_normal_95_interval": [
+        0.2825100493116445,
+        0.2888824525334831
+      ],
+      "missing_fraction_normal_95_interval": [
+        0.22028380276375753,
+        0.22413882150314784
+      ],
+      "tail_luminous_paths": 40038,
+      "interval_scope": "Marginal numerical sampling error; neither atmospheric uncertainty nor field accuracy."
+    },
+    "2": {
+      "up_to_order": 2,
+      "increment_relative_to_partial": 0.038046300569933855,
+      "increment_standard_error": 0.000471860265145817,
+      "missing_fraction_of_full": 0.036651833881633955,
+      "missing_fraction_standard_error": 0.00043790505379458683,
+      "normal_intervals_eligible": true,
+      "increment_normal_95_interval": [
+        0.03712145445024805,
+        0.03897114668961966
+      ],
+      "missing_fraction_normal_95_interval": [
+        0.03579353997619657,
+        0.03751012778707134
+      ],
+      "tail_luminous_paths": 6773,
+      "interval_scope": "Marginal numerical sampling error; neither atmospheric uncertainty nor field accuracy."
+    },
+    "3": {
+      "up_to_order": 3,
+      "increment_relative_to_partial": 0.005702706186625495,
+      "increment_standard_error": 0.00017468425860361387,
+      "missing_fraction_of_full": 0.005670369734062541,
+      "missing_fraction_standard_error": 0.00017270882657680645,
+      "normal_intervals_eligible": true,
+      "increment_normal_95_interval": [
+        0.005360325039762411,
+        0.006045087333488578
+      ],
+      "missing_fraction_normal_95_interval": [
+        0.005331860433972001,
+        0.006008879034153082
+      ],
+      "tail_luminous_paths": 1075,
+      "interval_scope": "Marginal numerical sampling error; neither atmospheric uncertainty nor field accuracy."
+    },
+    "5": {
+      "up_to_order": 5,
+      "increment_relative_to_partial": 0.00017774180932716988,
+      "increment_standard_error": 3.010352167702442e-05,
+      "missing_fraction_of_full": 0.0001777102227906724,
+      "missing_fraction_standard_error": 3.0092823220633418e-05,
+      "normal_intervals_eligible": false,
+      "increment_normal_95_interval": null,
+      "missing_fraction_normal_95_interval": null,
+      "tail_luminous_paths": 35,
+      "interval_scope": "Marginal numerical sampling error; neither atmospheric uncertainty nor field accuracy."
+    }
+  },
+  "old_case_sha256": "b470a6935cf5331cc7c0ebdf584dfd13b4f2b213d5476141b4f14dd21dae8b28",
+  "old_first_three_exact_orders_reproduced": true,
+  "case_id": "aod-0.02-alt-10"
+}

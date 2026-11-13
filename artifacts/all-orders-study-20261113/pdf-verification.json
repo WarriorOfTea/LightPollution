@@ -1,0 +1,42 @@
+{
+  "checked_at": "2026-11-13T12:14:07+01:00",
+  "documents": [
+    {
+      "path": "artifacts/all-orders-study-20261113/LightPollution-all-orders-study.pdf",
+      "sha256": "aac80da0a5eec5076deb69a6060fb8955d7cd46157b47fa3af98f5de2e4d32a2",
+      "pages": 7,
+      "replacement_characters": 0,
+      "out_of_page_words": [],
+      "out_of_page_images": [],
+      "empty_pages": [],
+      "unexpected_raw_LaTeX_on_pages": [],
+      "intentional_literal_syntax_examples": []
+    },
+    {
+      "path": "scratch/all-orders-theory-export/documentation.pdf",
+      "sha256": "7813892a735497fdcad671b42b2228c0558cb80dc0825ca9e7a24f4ba7466b0a",
+      "pages": 52,
+      "replacement_characters": 0,
+      "out_of_page_words": [],
+      "out_of_page_images": [],
+      "empty_pages": [],
+      "unexpected_raw_LaTeX_on_pages": [],
+      "intentional_literal_syntax_examples": [
+        {
+          "page": 1,
+          "reason": "Intentional explanation of Markdown math delimiters in THEORY."
+        }
+      ]
+    }
+  ],
+  "report_pages_visually_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "inspection_scope": "Report contact sheet plus page 4; no physical image validation claimed."
+}

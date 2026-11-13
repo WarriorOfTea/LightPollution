@@ -1,0 +1,24 @@
+{
+  "version": "LP-all-orders-1",
+  "main_cases": 9,
+  "all_nine_old_order_prefixes_reproduced": true,
+  "slab_full_checks_passed": 3,
+  "slab_full_checks_total": 3,
+  "max_abs_slab_full_z": 0.941428250642781,
+  "max_slab_grid_refinement_relative": 5.517147927736055e-06,
+  "max_abs_independent_absorption_seed_z": 2.3821747807137434,
+  "angular_characteristic_checks_passed": true,
+  "main_all_order_paths": 18874368,
+  "precision_and_independent_paths": 23068672,
+  "slab_all_order_paths": 1572864,
+  "timing_paths": 5242880,
+  "all_MC_paths_excluding_pilots_and_unit_tests": 48758784,
+  "full_over_S3_minus_one_range": [
+    0.005702706186625495,
+    0.3554925198449055
+  ],
+  "max_scattering_order_seen_in_main": 22,
+  "finite_order_cutoff_used": false,
+  "new_field_accuracy_measured": false,
+  "production_KStars_changed": false
+}

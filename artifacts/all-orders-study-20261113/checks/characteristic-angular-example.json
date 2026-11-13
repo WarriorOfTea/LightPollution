@@ -1,0 +1,39 @@
+{
+  "kind": "Angular convolution / geometric random sum special case.",
+  "q": 0.8,
+  "HG_g": 0.8,
+  "samples": 262144,
+  "moments": [
+    {
+      "degree": 1,
+      "analytic_moment": 0.5555555555555556,
+      "sample_mean": 0.5543029820841299,
+      "standard_error": 0.0010688320332835537,
+      "z": -1.1719086183988012
+    },
+    {
+      "degree": 2,
+      "analytic_moment": 0.4098360655737705,
+      "sample_mean": 0.41008669187349717,
+      "standard_error": 0.0010734179722288253,
+      "z": 0.23348435205185553
+    },
+    {
+      "degree": 3,
+      "analytic_moment": 0.33875338753387535,
+      "sample_mean": 0.3391951701024979,
+      "standard_error": 0.0010429479246811936,
+      "z": 0.4235902466152209
+    },
+    {
+      "degree": 4,
+      "analytic_moment": 0.2974773917182294,
+      "sample_mean": 0.2976001125102616,
+      "standard_error": 0.0010133480902650748,
+      "z": 0.12110428115582769
+    }
+  ],
+  "all_four_moments_within_four_standard_errors": true,
+  "constant_q_is_not_an_atmospheric_retrieval": true,
+  "predicts_city_brightness": false
+}

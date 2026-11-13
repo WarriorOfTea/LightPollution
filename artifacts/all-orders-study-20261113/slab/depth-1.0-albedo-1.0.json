@@ -1,0 +1,513 @@
+{
+  "depth": 1.0,
+  "albedo": 1.0,
+  "references": [
+    {
+      "solver": "isotropic-slab-discrete-resolvent-1",
+      "settings": {
+        "layers": 256,
+        "angular_order": 64,
+        "optical_depth": 1.0,
+        "single_scattering_albedo": 1.0,
+        "view_cosine": 1.0,
+        "recorded_orders": 5,
+        "series_absolute_tolerance": 1e-10,
+        "series_safety_iterations": 100000
+      },
+      "all_order_radiance": 0.3413279384591226,
+      "exact_order_radiance": [
+        0.14201286842176192,
+        0.07888183978881075,
+        0.046686939820518955,
+        0.02832634459572845,
+        0.01737164544628971
+      ],
+      "cumulative_radiance": [
+        0.14201286842176192,
+        0.22089470821057267,
+        0.26758164803109163,
+        0.2959079926268201,
+        0.3132796380731098
+      ],
+      "contraction_q_inf": 0.6733538239350353,
+      "absolute_algebraic_residual_inf": 8.881784197001252e-16,
+      "radiance_algebraic_error_bound": 1.7187889531229282e-15,
+      "verification_series_radiance": 0.3413279384090725,
+      "verification_series_iterations": 47,
+      "verification_series_tail_bound": 6.808976455015488e-11,
+      "linear_vs_series_difference": 5.0050130706580376e-11,
+      "assembly_seconds": 0.07423497084528208,
+      "linear_solve_seconds": 0.001150202937424183,
+      "total_runtime_seconds": 0.07688113488256931,
+      "finite_scattering_order_truncation": false,
+      "explicit_inverse_formed": false,
+      "limitations": [
+        "Isotropic, horizontally uniform plane-parallel slab, unit ground radiance.",
+        "Linear-system and certified series errors do not bound spatial/angular quadrature error.",
+        "This is an independent numerical reference, not a spherical city or field prediction."
+      ]
+    },
+    {
+      "solver": "isotropic-slab-discrete-resolvent-1",
+      "settings": {
+        "layers": 512,
+        "angular_order": 128,
+        "optical_depth": 1.0,
+        "single_scattering_albedo": 1.0,
+        "view_cosine": 1.0,
+        "recorded_orders": 5,
+        "series_absolute_tolerance": 1e-10,
+        "series_safety_iterations": 100000
+      },
+      "all_order_radiance": 0.34132854367795107,
+      "exact_order_radiance": [
+        0.1420146745209086,
+        0.07888161040980014,
+        0.046686697907119636,
+        0.028326146438957523,
+        0.017371492924877947
+      ],
+      "cumulative_radiance": [
+        0.1420146745209086,
+        0.22089628493070873,
+        0.2675829828378284,
+        0.2959091292767859,
+        0.31328062220166386
+      ],
+      "contraction_q_inf": 0.6733555592421374,
+      "absolute_algebraic_residual_inf": 1.2212453270876722e-15,
+      "radiance_algebraic_error_bound": 2.3633473658217833e-15,
+      "verification_series_radiance": 0.34132854362790555,
+      "verification_series_iterations": 47,
+      "verification_series_tail_bound": 6.808500835847296e-11,
+      "linear_vs_series_difference": 5.004552328102818e-11,
+      "assembly_seconds": 0.710376342292875,
+      "linear_solve_seconds": 0.008581838570535183,
+      "total_runtime_seconds": 0.7221642229706049,
+      "finite_scattering_order_truncation": false,
+      "explicit_inverse_formed": false,
+      "limitations": [
+        "Isotropic, horizontally uniform plane-parallel slab, unit ground radiance.",
+        "Linear-system and certified series errors do not bound spatial/angular quadrature error.",
+        "This is an independent numerical reference, not a spherical city or field prediction."
+      ]
+    },
+    {
+      "solver": "isotropic-slab-discrete-resolvent-1",
+      "settings": {
+        "layers": 1024,
+        "angular_order": 192,
+        "optical_depth": 1.0,
+        "single_scattering_albedo": 1.0,
+        "view_cosine": 1.0,
+        "recorded_orders": 5,
+        "series_absolute_tolerance": 1e-10,
+        "series_safety_iterations": 100000
+      },
+      "all_order_radiance": 0.341328703117325,
+      "exact_order_radiance": [
+        0.1420151686699661,
+        0.07888154429995707,
+        0.04668663097058065,
+        0.02832609180107118,
+        0.017371450843408787
+      ],
+      "cumulative_radiance": [
+        0.1420151686699661,
+        0.2208967129699232,
+        0.26758334394050387,
+        0.295909435741575,
+        0.3132808865849838
+      ],
+      "contraction_q_inf": 0.6733559930672318,
+      "absolute_algebraic_residual_inf": 1.9984014443252818e-15,
+      "radiance_algebraic_error_bound": 3.86730082579075e-15,
+      "verification_series_radiance": 0.34132870306728064,
+      "verification_series_iterations": 47,
+      "verification_series_tail_bound": 6.80836544110967e-11,
+      "linear_vs_series_difference": 5.0044357546852325e-11,
+      "assembly_seconds": 4.810604374855757,
+      "linear_solve_seconds": 0.05056273890659213,
+      "total_runtime_seconds": 4.8803637768141925,
+      "finite_scattering_order_truncation": false,
+      "explicit_inverse_formed": false,
+      "limitations": [
+        "Isotropic, horizontally uniform plane-parallel slab, unit ground radiance.",
+        "Linear-system and certified series errors do not bound spatial/angular quadrature error.",
+        "This is an independent numerical reference, not a spherical city or field prediction."
+      ]
+    }
+  ],
+  "spherical_MC": {
+    "solver": "research-spherical-cap-all-orders-mc-1",
+    "settings": {
+      "samples": 524288,
+      "seed": 9901,
+      "batch_size": 8192,
+      "recorded_orders": 5,
+      "absorption": "implicit",
+      "safety_scattering_events": 100000,
+      "max_null_events": 100000
+    },
+    "observer": {
+      "latitude_deg": 0.0,
+      "longitude_deg": 0.0,
+      "height_m": 0.0
+    },
+    "cap": {
+      "latitude_deg": 0.0,
+      "longitude_deg": 0.0,
+      "radius_m": 20015086.79602057,
+      "radiance": 1.0
+    },
+    "atmosphere": {
+      "reference_wavelength_nm": 550.0,
+      "rayleigh_scale_height_m": 8000.0,
+      "aerosol_scale_height_m": 1000000.0,
+      "aerosol_optical_depth": 1000000.0,
+      "aerosol_single_scattering_albedo": 1.0,
+      "aerosol_g": 0,
+      "rayleigh_multiplier": 0,
+      "top_m": 1.0
+    },
+    "azimuth_deg": 0.0,
+    "altitude_deg": 90.0,
+    "category_labels": [
+      "exact_1",
+      "exact_2",
+      "exact_3",
+      "exact_4",
+      "exact_5",
+      "above_5"
+    ],
+    "category_mean_radiance": [
+      0.14180755615234375,
+      0.07926559448242188,
+      0.04656982421875,
+      0.02796173095703125,
+      0.017354965209960938,
+      0.028148651123046875
+    ],
+    "mean_covariance": [
+      [
+        2.3212128694864384e-07,
+        -2.1439517364563586e-08,
+        -1.2596064680041978e-08,
+        -7.563004104251941e-09,
+        -4.694118304542184e-09,
+        -7.613561703311742e-09
+      ],
+      [
+        -2.1439517364563586e-08,
+        1.3920345157093372e-07,
+        -7.040771183800298e-09,
+        -4.227461728150081e-09,
+        -2.6238522690612267e-09,
+        -4.255721704231848e-09
+      ],
+      [
+        -1.2596064680041978e-08,
+        -7.040771183800298e-09,
+        8.468849254508452e-08,
+        -2.4837024292437645e-09,
+        -1.5415558256268084e-09,
+        -2.50030562420051e-09
+      ],
+      [
+        -7.563004104251941e-09,
+        -4.227461728150081e-09,
+        -2.4837024292437645e-09,
+        5.1841591645258894e-08,
+        -9.25590121383069e-10,
+        -1.5012483801924752e-09
+      ],
+      [
+        -4.694118304542184e-09,
+        -2.6238522690612267e-09,
+        -1.5415558256268084e-09,
+        -9.25590121383069e-10,
+        3.25275476838487e-08,
+        -9.31777558756571e-10
+      ],
+      [
+        -7.613561703311742e-09,
+        -4.255721704231848e-09,
+        -2.50030562420051e-09,
+        -1.5012483801924752e-09,
+        -9.31777558756571e-10,
+        5.2178109628886213e-08
+      ]
+    ],
+    "luminous_paths_by_category": [
+      74348,
+      41558,
+      24416,
+      14660,
+      9099,
+      14758
+    ],
+    "cumulative_labels": [
+      "up_to_1",
+      "up_to_2",
+      "up_to_3",
+      "up_to_4",
+      "up_to_5",
+      "all_orders"
+    ],
+    "cumulative_radiance": [
+      0.14180755615234375,
+      0.22107315063476562,
+      0.2676429748535156,
+      0.2956047058105469,
+      0.3129596710205078,
+      0.3411083221435547
+    ],
+    "cumulative_standard_error": [
+      0.0004817896708613042,
+      0.0005731018267205666,
+      0.000611441350096516,
+      0.0006302013802982486,
+      0.0006403991679979291,
+      0.0006547396231021457
+    ],
+    "all_order_radiance": 0.3411083221435547,
+    "all_order_standard_error": 0.0006547396231021457,
+    "all_order_normal_95_interval": [
+      0.33982503248227447,
+      0.3423916118048349
+    ],
+    "all_order_hoeffding_marginal_95_interval": [
+      0.33923269169175796,
+      0.3429839525953514
+    ],
+    "luminous_order_histogram": {
+      "1": {
+        "luminous_paths": 74348,
+        "mean_radiance": 0.14180755615234375,
+        "standard_error": 0.0004817896708613042
+      },
+      "2": {
+        "luminous_paths": 41558,
+        "mean_radiance": 0.07926559448242188,
+        "standard_error": 0.0003730997876854578
+      },
+      "3": {
+        "luminous_paths": 24416,
+        "mean_radiance": 0.04656982421875,
+        "standard_error": 0.00029101287350405056
+      },
+      "4": {
+        "luminous_paths": 14660,
+        "mean_radiance": 0.02796173095703125,
+        "standard_error": 0.00022768748679990935
+      },
+      "5": {
+        "luminous_paths": 9099,
+        "mean_radiance": 0.017354965209960938,
+        "standard_error": 0.00018035395111793003
+      },
+      "6": {
+        "luminous_paths": 5706,
+        "mean_radiance": 0.010883331298828125,
+        "standard_error": 0.00014329140484579025
+      },
+      "7": {
+        "luminous_paths": 3424,
+        "mean_radiance": 0.00653076171875,
+        "standard_error": 0.00011124348520843688
+      },
+      "8": {
+        "luminous_paths": 2160,
+        "mean_radiance": 0.004119873046875,
+        "standard_error": 8.846284556925937e-05
+      },
+      "9": {
+        "luminous_paths": 1305,
+        "mean_radiance": 0.0024890899658203125,
+        "standard_error": 6.881681673979412e-05
+      },
+      "10": {
+        "luminous_paths": 814,
+        "mean_radiance": 0.001552581787109375,
+        "standard_error": 5.437575475456419e-05
+      },
+      "11": {
+        "luminous_paths": 476,
+        "mean_radiance": 0.00090789794921875,
+        "standard_error": 4.159457927749201e-05
+      },
+      "12": {
+        "luminous_paths": 306,
+        "mean_radiance": 0.000583648681640625,
+        "standard_error": 3.3355268051190926e-05
+      },
+      "13": {
+        "luminous_paths": 223,
+        "mean_radiance": 0.0004253387451171875,
+        "standard_error": 2.8476758180042853e-05
+      },
+      "14": {
+        "luminous_paths": 140,
+        "mean_radiance": 0.00026702880859375,
+        "standard_error": 2.2565061530160255e-05
+      },
+      "15": {
+        "luminous_paths": 80,
+        "mean_radiance": 0.000152587890625,
+        "standard_error": 1.705855945483732e-05
+      },
+      "16": {
+        "luminous_paths": 47,
+        "mean_radiance": 8.96453857421875e-05,
+        "standard_error": 1.3075549778731156e-05
+      },
+      "17": {
+        "luminous_paths": 31,
+        "mean_radiance": 5.91278076171875e-05,
+        "standard_error": 1.0619363909208687e-05
+      },
+      "18": {
+        "luminous_paths": 19,
+        "mean_radiance": 3.62396240234375e-05,
+        "standard_error": 8.313797220795145e-06
+      },
+      "19": {
+        "luminous_paths": 8,
+        "mean_radiance": 1.52587890625e-05,
+        "standard_error": 5.394760595052753e-06
+      },
+      "20": {
+        "luminous_paths": 6,
+        "mean_radiance": 1.1444091796875e-05,
+        "standard_error": 4.672008633910699e-06
+      },
+      "21": {
+        "luminous_paths": 5,
+        "mean_radiance": 9.5367431640625e-06,
+        "standard_error": 4.2649449301621456e-06
+      },
+      "22": {
+        "luminous_paths": 4,
+        "mean_radiance": 7.62939453125e-06,
+        "standard_error": 3.8146863516521495e-06
+      },
+      "23": {
+        "luminous_paths": 1,
+        "mean_radiance": 1.9073486328125e-06,
+        "standard_error": 1.9073486328125e-06
+      },
+      "24": {
+        "luminous_paths": 1,
+        "mean_radiance": 1.9073486328125e-06,
+        "standard_error": 1.9073486328125e-06
+      },
+      "25": {
+        "luminous_paths": 2,
+        "mean_radiance": 3.814697265625e-06,
+        "standard_error": 2.6973957322516005e-06
+      }
+    },
+    "path_outcomes": {
+      "space": 345449,
+      "dark_ground": 0,
+      "luminous_ground": 178839,
+      "absorbed": 0
+    },
+    "max_scattering_order_seen": 30,
+    "max_luminous_order_seen": 25,
+    "mean_scattering_vertices_per_path": 1.6376514434814453,
+    "runtime_seconds": 1.9271943429484963,
+    "finite_scattering_order_truncation": false,
+    "safety_limit_hit": false,
+    "bounded_score": [
+      0.0,
+      1.0
+    ],
+    "production_solver_changed": false,
+    "limitations": [
+      "Finite Lambertian cap, scalar monochromatic atmospheric model, absorbing ground and dark outer boundary.",
+      "All orders refers to the specified RTE, not exact atmospheric microphysics or every physical process.",
+      "Finite samples still give statistical error; observed maximum order is not a physical cutoff.",
+      "Implicit absorbed outcome counts only zero-scattering terminations; other absorption is in weights.",
+      "Normal intervals are approximate; rare-event zero is not evidence of a zero mean."
+    ],
+    "comparisons_to_partial_sums": {
+      "1": {
+        "up_to_order": 1,
+        "increment_relative_to_partial": 1.405431215365578,
+        "increment_standard_error": 0.006743215481548348,
+        "missing_fraction_of_full": 0.5842741236531181,
+        "missing_fraction_standard_error": 0.0011654164740006908,
+        "normal_intervals_eligible": true,
+        "increment_normal_95_interval": [
+          1.3922145130217431,
+          1.4186479177094127
+        ],
+        "missing_fraction_normal_95_interval": [
+          0.5819899073640767,
+          0.5865583399421596
+        ],
+        "tail_luminous_paths": 104491,
+        "interval_scope": "Marginal numerical sampling error; neither atmospheric uncertainty nor field accuracy."
+      },
+      "2": {
+        "up_to_order": 2,
+        "increment_relative_to_partial": 0.5429658516383966,
+        "increment_standard_error": 0.002688511327562386,
+        "missing_fraction_of_full": 0.35189751676088554,
+        "missing_fraction_standard_error": 0.0011292737721703121,
+        "normal_intervals_eligible": true,
+        "increment_normal_95_interval": [
+          0.5376963694363743,
+          0.5482353338404189
+        ],
+        "missing_fraction_normal_95_interval": [
+          0.3496841401674317,
+          0.3541108933543394
+        ],
+        "tail_luminous_paths": 62933,
+        "interval_scope": "Marginal numerical sampling error; neither atmospheric uncertainty nor field accuracy."
+      },
+      "3": {
+        "up_to_order": 3,
+        "increment_relative_to_partial": 0.2744901013383503,
+        "increment_standard_error": 0.0015789526566437114,
+        "missing_fraction_of_full": 0.2153724858671766,
+        "missing_fraction_standard_error": 0.0009720669439604172,
+        "normal_intervals_eligible": true,
+        "increment_normal_95_interval": [
+          0.2713953541313286,
+          0.27758484854537196
+        ],
+        "missing_fraction_normal_95_interval": [
+          0.2134672346570142,
+          0.21727773707733902
+        ],
+        "tail_luminous_paths": 38517,
+        "interval_scope": "Marginal numerical sampling error; neither atmospheric uncertainty nor field accuracy."
+      },
+      "5": {
+        "up_to_order": 5,
+        "increment_relative_to_partial": 0.08994338162249127,
+        "increment_standard_error": 0.0007729614632456089,
+        "missing_fraction_of_full": 0.08252115030837792,
+        "missing_fraction_standard_error": 0.0006506537918500447,
+        "normal_intervals_eligible": true,
+        "increment_normal_95_interval": [
+          0.08842837715452988,
+          0.09145838609045266
+        ],
+        "missing_fraction_normal_95_interval": [
+          0.08124586887635184,
+          0.083796431740404
+        ],
+        "tail_luminous_paths": 14758,
+        "interval_scope": "Marginal numerical sampling error; neither atmospheric uncertainty nor field accuracy."
+      }
+    }
+  },
+  "full_solution_z": -0.3365933051770185,
+  "reference_refinement_relative": 4.6711387724496234e-07,
+  "plane_and_spherical_geometry_identical": false,
+  "old_five_orders_reproduced": true
+}

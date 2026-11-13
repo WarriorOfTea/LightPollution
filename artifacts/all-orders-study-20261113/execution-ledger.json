@@ -1,0 +1,15 @@
+{
+  "study_MC_paths": 48758784,
+  "main_all_order_calls": 9,
+  "precision_all_order_calls": 2,
+  "independent_all_order_calls": 3,
+  "slab_all_order_calls": 3,
+  "timing_all_order_calls": 2,
+  "timing_finite_order_calls": 8,
+  "pilot_all_order_calls": 9,
+  "pilot_paths": 1179648,
+  "all_study_MC_paths_including_pilot_excluding_unit_tests": 49938432,
+  "angular_random_rotation_histories": 262144,
+  "angular_histories_not_counted_as_radiative_paths": true,
+  "previous_benchmark_paths_not_added_to_this_study": true
+}

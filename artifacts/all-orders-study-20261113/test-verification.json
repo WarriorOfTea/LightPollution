@@ -1,0 +1,57 @@
+{
+  "scope": "All-order research solver and independent slab; production KStars not rebuilt.",
+  "environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "targeted_runs": [
+    {
+      "command": "uv run pytest tests/test_all_orders.py tests/test_slab_resolvent.py -q -p no:cacheprovider",
+      "tests": 25,
+      "passed": 25,
+      "seconds": 4.61
+    }
+  ],
+  "full_suite": {
+    "command": "uv run pytest -q -p no:cacheprovider",
+    "tests": 371,
+    "passed": 371,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 107.5
+  },
+  "lock_check": {
+    "command": "uv lock --check",
+    "exit_code": 0,
+    "resolved_packages": 52
+  },
+  "scientific_checks": {
+    "old_three_order_prefixes": {
+      "passed": 9,
+      "total": 9
+    },
+    "old_five_order_prefixes": {
+      "passed": 2,
+      "total": 2
+    },
+    "independent_full_slab": {
+      "passed": 3,
+      "total": 3
+    },
+    "independent_seed_and_absorption": {
+      "passed": 3,
+      "total": 3
+    },
+    "angular_characteristic_moments": {
+      "passed": 4,
+      "total": 4
+    }
+  },
+  "integrity_checks": {
+    "passed": 31,
+    "total": 31
+  },
+  "post_full_suite_changes": "Rare-event plot markers and documentation/export layout; postprocessor rerun with 31/31 integrity checks; transport code unchanged.",
+  "distinct_checks_not_summed_as_one_population": true
+}

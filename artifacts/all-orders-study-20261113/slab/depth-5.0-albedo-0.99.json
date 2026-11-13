@@ -1,0 +1,1092 @@
+{
+  "depth": 5.0,
+  "albedo": 0.99,
+  "references": [
+    {
+      "solver": "isotropic-slab-discrete-resolvent-1",
+      "settings": {
+        "layers": 256,
+        "angular_order": 64,
+        "optical_depth": 5.0,
+        "single_scattering_albedo": 0.99,
+        "view_cosine": 1.0,
+        "recorded_orders": 5,
+        "series_absolute_tolerance": 1e-10,
+        "series_safety_iterations": 100000
+      },
+      "all_order_radiance": 0.6800590335031866,
+      "exact_order_radiance": [
+        0.1518407694074292,
+        0.09533567648816868,
+        0.06717829824984266,
+        0.05060499616187805,
+        0.03983230614978577
+      ],
+      "cumulative_radiance": [
+        0.1518407694074292,
+        0.24717644589559787,
+        0.3143547441454405,
+        0.3649597403073186,
+        0.40479204645710437
+      ],
+      "contraction_q_inf": 0.970398723074515,
+      "absolute_algebraic_residual_inf": 8.881784197001252e-16,
+      "radiance_algebraic_error_bound": 2.9802563004399883e-14,
+      "verification_series_radiance": 0.6800590334819188,
+      "verification_series_iterations": 277,
+      "verification_series_tail_bound": 9.314598050741455e-11,
+      "linear_vs_series_difference": 2.126787634892935e-11,
+      "assembly_seconds": 0.08990972116589546,
+      "linear_solve_seconds": 0.01060150982812047,
+      "total_runtime_seconds": 0.11184164602309465,
+      "finite_scattering_order_truncation": false,
+      "explicit_inverse_formed": false,
+      "limitations": [
+        "Isotropic, horizontally uniform plane-parallel slab, unit ground radiance.",
+        "Linear-system and certified series errors do not bound spatial/angular quadrature error.",
+        "This is an independent numerical reference, not a spherical city or field prediction."
+      ]
+    },
+    {
+      "solver": "isotropic-slab-discrete-resolvent-1",
+      "settings": {
+        "layers": 512,
+        "angular_order": 128,
+        "optical_depth": 5.0,
+        "single_scattering_albedo": 0.99,
+        "view_cosine": 1.0,
+        "recorded_orders": 5,
+        "series_absolute_tolerance": 1e-10,
+        "series_safety_iterations": 100000
+      },
+      "all_order_radiance": 0.6800729945878469,
+      "exact_order_radiance": [
+        0.1518767638681354,
+        0.09533382480694032,
+        0.06717556650921536,
+        0.05060270337398057,
+        0.039830438050727154
+      ],
+      "cumulative_radiance": [
+        0.1518767638681354,
+        0.24721058867507573,
+        0.3143861551842911,
+        0.3649888585582717,
+        0.40481929660899885
+      ],
+      "contraction_q_inf": 0.9703998855919687,
+      "absolute_algebraic_residual_inf": 1.2212453270876722e-15,
+      "radiance_algebraic_error_bound": 4.098013352515114e-14,
+      "verification_series_radiance": 0.6800729945665793,
+      "verification_series_iterations": 277,
+      "verification_series_tail_bound": 9.315391221024978e-11,
+      "linear_vs_series_difference": 2.126754328202196e-11,
+      "assembly_seconds": 0.7131642140448093,
+      "linear_solve_seconds": 0.008050281088799238,
+      "total_runtime_seconds": 0.7367581520229578,
+      "finite_scattering_order_truncation": false,
+      "explicit_inverse_formed": false,
+      "limitations": [
+        "Isotropic, horizontally uniform plane-parallel slab, unit ground radiance.",
+        "Linear-system and certified series errors do not bound spatial/angular quadrature error.",
+        "This is an independent numerical reference, not a spherical city or field prediction."
+      ]
+    },
+    {
+      "solver": "isotropic-slab-discrete-resolvent-1",
+      "settings": {
+        "layers": 1024,
+        "angular_order": 192,
+        "optical_depth": 5.0,
+        "single_scattering_albedo": 0.99,
+        "view_cosine": 1.0,
+        "recorded_orders": 5,
+        "series_absolute_tolerance": 1e-10,
+        "series_safety_iterations": 100000
+      },
+      "all_order_radiance": 0.6800767466718605,
+      "exact_order_radiance": [
+        0.151886794528867,
+        0.09533317119426063,
+        0.06717478296306198,
+        0.05060206196212214,
+        0.03982992030301942
+      ],
+      "cumulative_radiance": [
+        0.151886794528867,
+        0.24721996572312763,
+        0.3143947486861896,
+        0.36499681064831174,
+        0.40482673095133115
+      ],
+      "contraction_q_inf": 0.9704001762167412,
+      "absolute_algebraic_residual_inf": 2.0261570199409107e-15,
+      "radiance_algebraic_error_bound": 6.799043453991669e-14,
+      "verification_series_radiance": 0.6800767466505934,
+      "verification_series_iterations": 277,
+      "verification_series_tail_bound": 9.315485322430998e-11,
+      "linear_vs_series_difference": 2.126709919281211e-11,
+      "assembly_seconds": 4.734115455299616,
+      "linear_solve_seconds": 0.05325085576623678,
+      "total_runtime_seconds": 4.905223720241338,
+      "finite_scattering_order_truncation": false,
+      "explicit_inverse_formed": false,
+      "limitations": [
+        "Isotropic, horizontally uniform plane-parallel slab, unit ground radiance.",
+        "Linear-system and certified series errors do not bound spatial/angular quadrature error.",
+        "This is an independent numerical reference, not a spherical city or field prediction."
+      ]
+    }
+  ],
+  "spherical_MC": {
+    "solver": "research-spherical-cap-all-orders-mc-1",
+    "settings": {
+      "samples": 524288,
+      "seed": 9901,
+      "batch_size": 8192,
+      "recorded_orders": 5,
+      "absorption": "implicit",
+      "safety_scattering_events": 100000,
+      "max_null_events": 100000
+    },
+    "observer": {
+      "latitude_deg": 0.0,
+      "longitude_deg": 0.0,
+      "height_m": 0.0
+    },
+    "cap": {
+      "latitude_deg": 0.0,
+      "longitude_deg": 0.0,
+      "radius_m": 20015086.79602057,
+      "radiance": 1.0
+    },
+    "atmosphere": {
+      "reference_wavelength_nm": 550.0,
+      "rayleigh_scale_height_m": 8000.0,
+      "aerosol_scale_height_m": 1000000.0,
+      "aerosol_optical_depth": 5000000.0,
+      "aerosol_single_scattering_albedo": 0.99,
+      "aerosol_g": 0,
+      "rayleigh_multiplier": 0,
+      "top_m": 1.0
+    },
+    "azimuth_deg": 0.0,
+    "altitude_deg": 90.0,
+    "category_labels": [
+      "exact_1",
+      "exact_2",
+      "exact_3",
+      "exact_4",
+      "exact_5",
+      "above_5"
+    ],
+    "category_mean_radiance": [
+      0.151688919067384,
+      0.09579514389038024,
+      0.06689719763374359,
+      0.05063994049146674,
+      0.04022618548704591,
+      0.2742934065823376
+    ],
+    "mean_covariance": [
+      [
+        2.4254368639481363e-07,
+        -2.7715853775959145e-08,
+        -1.9354978471142185e-08,
+        -1.4651360485358666e-08,
+        -1.1638409105574014e-08,
+        -7.935972158719414e-08
+      ],
+      [
+        -2.7715853775959145e-08,
+        1.615758371540466e-07,
+        -1.2223127167348555e-08,
+        -9.252681042979035e-09,
+        -7.349930909774014e-09,
+        -5.011754316192772e-08
+      ],
+      [
+        -1.9354978471142185e-08,
+        -1.2223127167348555e-08,
+        1.1527092778492565e-07,
+        -6.461480271718858e-09,
+        -5.132721354102884e-09,
+        -3.499888463717663e-08
+      ],
+      [
+        -1.4651360485358666e-08,
+        -9.252681042979035e-09,
+        -6.461480271718858e-09,
+        8.789102382809583e-08,
+        -3.885375069881015e-09,
+        -2.649350791938626e-08
+      ],
+      [
+        -1.1638409105574014e-08,
+        -7.349930909774014e-09,
+        -5.132721354102884e-09,
+        -3.885375069881015e-09,
+        6.987881855696245e-08,
+        -2.1045300476751876e-08
+      ],
+      [
+        -7.935972158719414e-08,
+        -5.011754316192772e-08,
+        -3.499888463717663e-08,
+        -2.649350791938626e-08,
+        -2.1045300476751876e-08,
+        3.063020319028946e-07
+      ]
+    ],
+    "luminous_paths_by_category": [
+      80332,
+      51244,
+      36147,
+      27639,
+      22177,
+      169402
+    ],
+    "cumulative_labels": [
+      "up_to_1",
+      "up_to_2",
+      "up_to_3",
+      "up_to_4",
+      "up_to_5",
+      "all_orders"
+    ],
+    "cumulative_radiance": [
+      0.151688919067384,
+      0.24748406295776423,
+      0.31438126059150784,
+      0.3650212010829746,
+      0.4052473865700205,
+      0.679540793152358
+    ],
+    "cumulative_standard_error": [
+      0.0004924872449057068,
+      0.0005904979390285303,
+      0.0006330896717724007,
+      0.0006541884382445694,
+      0.0006647017815616019,
+      0.0005692983178871941
+    ],
+    "all_order_radiance": 0.679540793152358,
+    "all_order_standard_error": 0.0005692983178871941,
+    "all_order_normal_95_interval": [
+      0.6784249684492991,
+      0.680656617855417
+    ],
+    "all_order_hoeffding_marginal_95_interval": [
+      0.6776651627005613,
+      0.6814164236041548
+    ],
+    "luminous_order_histogram": {
+      "1": {
+        "luminous_paths": 80332,
+        "mean_radiance": 0.15168891906738274,
+        "standard_error": 0.0004924872449057073
+      },
+      "2": {
+        "luminous_paths": 51244,
+        "mean_radiance": 0.09579514389038088,
+        "standard_error": 0.00040196497005839525
+      },
+      "3": {
+        "luminous_paths": 36147,
+        "mean_radiance": 0.0668971976337433,
+        "standard_error": 0.00033951572538680084
+      },
+      "4": {
+        "luminous_paths": 27639,
+        "mean_radiance": 0.05063994049146651,
+        "standard_error": 0.00029646420328278397
+      },
+      "5": {
+        "luminous_paths": 22177,
+        "mean_radiance": 0.04022618548704586,
+        "standard_error": 0.0002643460205052508
+      },
+      "6": {
+        "luminous_paths": 17990,
+        "mean_radiance": 0.03230519845528411,
+        "standard_error": 0.00023668753839825552
+      },
+      "7": {
+        "luminous_paths": 15123,
+        "mean_radiance": 0.026885269654078302,
+        "standard_error": 0.0002154468492900095
+      },
+      "8": {
+        "luminous_paths": 12851,
+        "mean_radiance": 0.022617706428705597,
+        "standard_error": 0.00019705689178307035
+      },
+      "9": {
+        "luminous_paths": 11148,
+        "mean_radiance": 0.019424229192633872,
+        "standard_error": 0.00018200306598435866
+      },
+      "10": {
+        "luminous_paths": 9755,
+        "mean_radiance": 0.016827101024076238,
+        "standard_error": 0.00016877873888314338
+      },
+      "11": {
+        "luminous_paths": 8771,
+        "mean_radiance": 0.014978431373793026,
+        "standard_error": 0.00015859107009775575
+      },
+      "12": {
+        "luminous_paths": 7735,
+        "mean_radiance": 0.013077138867805978,
+        "standard_error": 0.00014758950494867047
+      },
+      "13": {
+        "luminous_paths": 6974,
+        "mean_radiance": 0.011672652462758637,
+        "standard_error": 0.0001388420939759818
+      },
+      "14": {
+        "luminous_paths": 6349,
+        "mean_radiance": 0.010520300226726991,
+        "standard_error": 0.00013122912486335873
+      },
+      "15": {
+        "luminous_paths": 5568,
+        "mean_radiance": 0.009133920514378911,
+        "standard_error": 0.00012175577421439819
+      },
+      "16": {
+        "luminous_paths": 5099,
+        "mean_radiance": 0.00828091273272089,
+        "standard_error": 0.00011540214961414111
+      },
+      "17": {
+        "luminous_paths": 4782,
+        "mean_radiance": 0.007688435269855381,
+        "standard_error": 0.00011067356910028436
+      },
+      "18": {
+        "luminous_paths": 4336,
+        "mean_radiance": 0.006901648845000421,
+        "standard_error": 0.0001043771186262013
+      },
+      "19": {
+        "luminous_paths": 3952,
+        "mean_radiance": 0.006227528384014586,
+        "standard_error": 9.868806644327033e-05
+      },
+      "20": {
+        "luminous_paths": 3687,
+        "mean_radiance": 0.005751844175188044,
+        "standard_error": 9.439271928215861e-05
+      },
+      "21": {
+        "luminous_paths": 3336,
+        "mean_radiance": 0.005152229630253063,
+        "standard_error": 8.891939520265976e-05
+      },
+      "22": {
+        "luminous_paths": 3079,
+        "mean_radiance": 0.004707757158643192,
+        "standard_error": 8.459225778070495e-05
+      },
+      "23": {
+        "luminous_paths": 2844,
+        "mean_radiance": 0.004304960294118035,
+        "standard_error": 8.05051469031257e-05
+      },
+      "24": {
+        "luminous_paths": 2567,
+        "mean_radiance": 0.0038468089818041434,
+        "standard_error": 7.573947692384077e-05
+      },
+      "25": {
+        "luminous_paths": 2428,
+        "mean_radiance": 0.0036021237575933986,
+        "standard_error": 7.293344852309893e-05
+      },
+      "26": {
+        "luminous_paths": 2295,
+        "mean_radiance": 0.003370760001416838,
+        "standard_error": 7.020762498434939e-05
+      },
+      "27": {
+        "luminous_paths": 2066,
+        "mean_radiance": 0.003004074187929375,
+        "standard_error": 6.596119762620711e-05
+      },
+      "28": {
+        "luminous_paths": 1850,
+        "mean_radiance": 0.0026630986811193857,
+        "standard_error": 6.180651122650367e-05
+      },
+      "29": {
+        "luminous_paths": 1819,
+        "mean_radiance": 0.002592289046457622,
+        "standard_error": 6.06754204206335e-05
+      },
+      "30": {
+        "luminous_paths": 1662,
+        "mean_radiance": 0.0023448601161409795,
+        "standard_error": 5.7426505717365976e-05
+      },
+      "31": {
+        "luminous_paths": 1499,
+        "mean_radiance": 0.002093739988540538,
+        "standard_error": 5.400085140794613e-05
+      },
+      "32": {
+        "luminous_paths": 1426,
+        "mean_radiance": 0.001971858900214956,
+        "standard_error": 5.2146488355888604e-05
+      },
+      "33": {
+        "luminous_paths": 1337,
+        "mean_radiance": 0.0018303026620557663,
+        "standard_error": 4.9992305084327056e-05
+      },
+      "34": {
+        "luminous_paths": 1248,
+        "mean_radiance": 0.0016913803627697384,
+        "standard_error": 4.782080673381694e-05
+      },
+      "35": {
+        "luminous_paths": 1161,
+        "mean_radiance": 0.0015577369192018495,
+        "standard_error": 4.566642628690438e-05
+      },
+      "36": {
+        "luminous_paths": 1055,
+        "mean_radiance": 0.001401359453281975,
+        "standard_error": 4.310089976782245e-05
+      },
+      "37": {
+        "luminous_paths": 1019,
+        "mean_radiance": 0.0013400051469814112,
+        "standard_error": 4.193699744761159e-05
+      },
+      "38": {
+        "luminous_paths": 961,
+        "mean_radiance": 0.0012510966602420457,
+        "standard_error": 4.032099096916356e-05
+      },
+      "39": {
+        "luminous_paths": 813,
+        "mean_radiance": 0.0010478357637138558,
+        "standard_error": 3.672073560981505e-05
+      },
+      "40": {
+        "luminous_paths": 799,
+        "mean_radiance": 0.0010194939329093455,
+        "standard_error": 3.603964392698317e-05
+      },
+      "41": {
+        "luminous_paths": 727,
+        "mean_radiance": 0.000918348395910942,
+        "standard_error": 3.4036066690858786e-05
+      },
+      "42": {
+        "luminous_paths": 688,
+        "mean_radiance": 0.0008603926539516654,
+        "standard_error": 3.278066419488986e-05
+      },
+      "43": {
+        "luminous_paths": 613,
+        "mean_radiance": 0.0007589338516041384,
+        "standard_error": 3.0635153687234096e-05
+      },
+      "44": {
+        "luminous_paths": 534,
+        "mean_radiance": 0.0006545154485955039,
+        "standard_error": 2.8309252687967284e-05
+      },
+      "45": {
+        "luminous_paths": 521,
+        "mean_radiance": 0.0006321957363877806,
+        "standard_error": 2.7683259411230292e-05
+      },
+      "46": {
+        "luminous_paths": 514,
+        "mean_radiance": 0.0006174647263306833,
+        "standard_error": 2.7221873840382936e-05
+      },
+      "47": {
+        "luminous_paths": 458,
+        "mean_radiance": 0.0005446903817370789,
+        "standard_error": 2.5440615038356822e-05
+      },
+      "48": {
+        "luminous_paths": 424,
+        "mean_radiance": 0.0004992123027029611,
+        "standard_error": 2.4234110515420937e-05
+      },
+      "49": {
+        "luminous_paths": 396,
+        "mean_radiance": 0.0004615829979992191,
+        "standard_error": 2.3186678984905665e-05
+      },
+      "50": {
+        "luminous_paths": 344,
+        "mean_radiance": 0.00039696137827932885,
+        "standard_error": 2.13957209274856e-05
+      },
+      "51": {
+        "luminous_paths": 371,
+        "mean_radiance": 0.000423837048337833,
+        "standard_error": 2.199675726307748e-05
+      },
+      "52": {
+        "luminous_paths": 293,
+        "mean_radiance": 0.0003313811660683428,
+        "standard_error": 1.935410257618591e-05
+      },
+      "53": {
+        "luminous_paths": 318,
+        "mean_radiance": 0.0003560594494936374,
+        "standard_error": 1.9960785258416392e-05
+      },
+      "54": {
+        "luminous_paths": 292,
+        "mean_radiance": 0.0003236781938981782,
+        "standard_error": 1.8936576105462377e-05
+      },
+      "55": {
+        "luminous_paths": 259,
+        "mean_radiance": 0.0002842271427994242,
+        "standard_error": 1.765666932119731e-05
+      },
+      "56": {
+        "luminous_paths": 234,
+        "mean_radiance": 0.0002542241695016007,
+        "standard_error": 1.6615460565403868e-05
+      },
+      "57": {
+        "luminous_paths": 245,
+        "mean_radiance": 0.00026351312954108234,
+        "standard_error": 1.683131833886129e-05
+      },
+      "58": {
+        "luminous_paths": 212,
+        "mean_radiance": 0.00022573932909421385,
+        "standard_error": 1.5500720690274508e-05
+      },
+      "59": {
+        "luminous_paths": 186,
+        "mean_radiance": 0.00019607377386513444,
+        "standard_error": 1.437428990579241e-05
+      },
+      "60": {
+        "luminous_paths": 180,
+        "mean_radiance": 0.00018785132528369318,
+        "standard_error": 1.3999220708455516e-05
+      },
+      "61": {
+        "luminous_paths": 147,
+        "mean_radiance": 0.00015187779649186606,
+        "standard_error": 1.2524925233161673e-05
+      },
+      "62": {
+        "luminous_paths": 168,
+        "mean_radiance": 0.0001718388783165114,
+        "standard_error": 1.3255545654417574e-05
+      },
+      "63": {
+        "luminous_paths": 137,
+        "mean_radiance": 0.00013872920872659778,
+        "standard_error": 1.1850898822318772e-05
+      },
+      "64": {
+        "luminous_paths": 137,
+        "mean_radiance": 0.00013734191663933174,
+        "standard_error": 1.1732389834095588e-05
+      },
+      "65": {
+        "luminous_paths": 106,
+        "mean_radiance": 0.00010520190315424441,
+        "standard_error": 1.0217088870628393e-05
+      },
+      "66": {
+        "luminous_paths": 106,
+        "mean_radiance": 0.00010414988412270195,
+        "standard_error": 1.011491798192211e-05
+      },
+      "67": {
+        "luminous_paths": 102,
+        "mean_radiance": 9.921750281802301e-05,
+        "standard_error": 9.823050357949394e-06
+      },
+      "68": {
+        "luminous_paths": 86,
+        "mean_radiance": 8.281743323457338e-05,
+        "standard_error": 8.929709542920008e-06
+      },
+      "69": {
+        "luminous_paths": 86,
+        "mean_radiance": 8.198925890222764e-05,
+        "standard_error": 8.840412447490807e-06
+      },
+      "70": {
+        "luminous_paths": 77,
+        "mean_radiance": 7.267489774554433e-05,
+        "standard_error": 8.281472939886212e-06
+      },
+      "71": {
+        "luminous_paths": 70,
+        "mean_radiance": 6.540740797098988e-05,
+        "standard_error": 7.817166078067158e-06
+      },
+      "72": {
+        "luminous_paths": 72,
+        "mean_radiance": 6.660342914531657e-05,
+        "standard_error": 7.848757898548382e-06
+      },
+      "73": {
+        "luminous_paths": 71,
+        "mean_radiance": 6.502159770311527e-05,
+        "standard_error": 7.716128794312858e-06
+      },
+      "74": {
+        "luminous_paths": 61,
+        "mean_radiance": 5.530498993367792e-05,
+        "standard_error": 7.080673160908817e-06
+      },
+      "75": {
+        "luminous_paths": 55,
+        "mean_radiance": 4.936650330965188e-05,
+        "standard_error": 6.656235135649524e-06
+      },
+      "76": {
+        "luminous_paths": 57,
+        "mean_radiance": 5.065003239570279e-05,
+        "standard_error": 6.708402382724622e-06
+      },
+      "77": {
+        "luminous_paths": 43,
+        "mean_radiance": 3.782757682605383e-05,
+        "standard_error": 5.768420320635614e-06
+      },
+      "78": {
+        "luminous_paths": 43,
+        "mean_radiance": 3.7449301057793305e-05,
+        "standard_error": 5.710736117429256e-06
+      },
+      "79": {
+        "luminous_paths": 42,
+        "mean_radiance": 3.621260320890801e-05,
+        "standard_error": 5.5875074975930135e-06
+      },
+      "80": {
+        "luminous_paths": 40,
+        "mean_radiance": 3.414331159697043e-05,
+        "standard_error": 5.3983307820507615e-06
+      },
+      "81": {
+        "luminous_paths": 36,
+        "mean_radiance": 3.042169063290064e-05,
+        "standard_error": 5.070112530090119e-06
+      },
+      "82": {
+        "luminous_paths": 23,
+        "mean_radiance": 1.924171932530965e-05,
+        "standard_error": 4.012091650725048e-06
+      },
+      "83": {
+        "luminous_paths": 35,
+        "mean_radiance": 2.8988068461825206e-05,
+        "standard_error": 4.899718998314321e-06
+      },
+      "84": {
+        "luminous_paths": 24,
+        "mean_radiance": 1.9678757332941903e-05,
+        "standard_error": 4.016821409739849e-06
+      },
+      "85": {
+        "luminous_paths": 23,
+        "mean_radiance": 1.8670221019628637e-05,
+        "standard_error": 3.892928516606864e-06
+      },
+      "86": {
+        "luminous_paths": 28,
+        "mean_radiance": 2.2501675072352423e-05,
+        "standard_error": 4.252307382294105e-06
+      },
+      "87": {
+        "luminous_paths": 15,
+        "mean_radiance": 1.1933924100872622e-05,
+        "standard_error": 3.0812848126791773e-06
+      },
+      "88": {
+        "luminous_paths": 24,
+        "mean_radiance": 1.890333577578224e-05,
+        "standard_error": 3.858542619078676e-06
+      },
+      "89": {
+        "luminous_paths": 17,
+        "mean_radiance": 1.3255964212767302e-05,
+        "standard_error": 3.214994507663323e-06
+      },
+      "90": {
+        "luminous_paths": 23,
+        "mean_radiance": 1.775519441910066e-05,
+        "standard_error": 3.7021362842650938e-06
+      },
+      "91": {
+        "luminous_paths": 27,
+        "mean_radiance": 2.063462377489394e-05,
+        "standard_error": 3.971036729201194e-06
+      },
+      "92": {
+        "luminous_paths": 18,
+        "mean_radiance": 1.3618851691430007e-05,
+        "standard_error": 3.209942085227971e-06
+      },
+      "93": {
+        "luminous_paths": 13,
+        "mean_radiance": 9.73747895937245e-06,
+        "standard_error": 2.7006598375628675e-06
+      },
+      "94": {
+        "luminous_paths": 10,
+        "mean_radiance": 7.415464745983635e-06,
+        "standard_error": 2.344955723385085e-06
+      },
+      "95": {
+        "luminous_paths": 9,
+        "mean_radiance": 6.607179088671421e-06,
+        "standard_error": 2.2023762265356567e-06
+      },
+      "96": {
+        "luminous_paths": 7,
+        "mean_radiance": 5.087527898276997e-06,
+        "standard_error": 1.9228937979900105e-06
+      },
+      "97": {
+        "luminous_paths": 8,
+        "mean_radiance": 5.756174422050544e-06,
+        "standard_error": 2.03510139783275e-06
+      },
+      "98": {
+        "luminous_paths": 10,
+        "mean_radiance": 7.123265847287544e-06,
+        "standard_error": 2.252555111510377e-06
+      },
+      "99": {
+        "luminous_paths": 11,
+        "mean_radiance": 7.757236507696134e-06,
+        "standard_error": 2.3388725040551833e-06
+      },
+      "100": {
+        "luminous_paths": 7,
+        "mean_radiance": 4.887058999848567e-06,
+        "standard_error": 1.8471241100029494e-06
+      },
+      "101": {
+        "luminous_paths": 13,
+        "mean_radiance": 8.985207046864435e-06,
+        "standard_error": 2.4920195365657042e-06
+      },
+      "102": {
+        "luminous_paths": 12,
+        "mean_radiance": 8.21109690128842e-06,
+        "standard_error": 2.370314637121671e-06
+      },
+      "103": {
+        "luminous_paths": 10,
+        "mean_radiance": 6.7741549435629474e-06,
+        "standard_error": 2.142157497897753e-06
+      },
+      "104": {
+        "luminous_paths": 8,
+        "mean_radiance": 5.365130715301856e-06,
+        "standard_error": 1.8968474923969833e-06
+      },
+      "105": {
+        "luminous_paths": 4,
+        "mean_radiance": 2.6557397040744193e-06,
+        "standard_error": 1.3278660529584086e-06
+      },
+      "106": {
+        "luminous_paths": 4,
+        "mean_radiance": 2.629182307033673e-06,
+        "standard_error": 1.3145873924288234e-06
+      },
+      "107": {
+        "luminous_paths": 7,
+        "mean_radiance": 4.555058346935839e-06,
+        "standard_error": 1.721640376217288e-06
+      },
+      "108": {
+        "luminous_paths": 6,
+        "mean_radiance": 3.865292368685556e-06,
+        "standard_error": 1.5779914771410063e-06
+      },
+      "109": {
+        "luminous_paths": 3,
+        "mean_radiance": 1.9133197224993498e-06,
+        "standard_error": 1.1046535498613348e-06
+      },
+      "110": {
+        "luminous_paths": 4,
+        "mean_radiance": 2.5255820336991435e-06,
+        "standard_error": 1.2627874039634332e-06
+      },
+      "111": {
+        "luminous_paths": 6,
+        "mean_radiance": 3.7504893200432234e-06,
+        "standard_error": 1.53112355227844e-06
+      },
+      "112": {
+        "luminous_paths": 4,
+        "mean_radiance": 2.4753229512285267e-06,
+        "standard_error": 1.237657934624559e-06
+      },
+      "113": {
+        "luminous_paths": 3,
+        "mean_radiance": 1.8379272912871823e-06,
+        "standard_error": 1.061125792429134e-06
+      },
+      "114": {
+        "luminous_paths": 5,
+        "mean_radiance": 3.0325800306238535e-06,
+        "standard_error": 1.3562058455824643e-06
+      },
+      "115": {
+        "luminous_paths": 4,
+        "mean_radiance": 2.4018033842540875e-06,
+        "standard_error": 1.2008982563082745e-06
+      },
+      "116": {
+        "luminous_paths": 2,
+        "mean_radiance": 1.1888926752057754e-06,
+        "standard_error": 8.406732710098363e-07
+      },
+      "118": {
+        "luminous_paths": 2,
+        "mean_radiance": 1.16523371096918e-06,
+        "standard_error": 8.239438729167401e-07
+      },
+      "119": {
+        "luminous_paths": 5,
+        "mean_radiance": 2.8839534346487177e-06,
+        "standard_error": 1.2897382647651372e-06
+      },
+      "120": {
+        "luminous_paths": 1,
+        "mean_radiance": 5.710227800604462e-07,
+        "standard_error": 5.710227800604462e-07
+      },
+      "121": {
+        "luminous_paths": 3,
+        "mean_radiance": 1.6959376567795252e-06,
+        "standard_error": 9.791481950846056e-07
+      },
+      "122": {
+        "luminous_paths": 3,
+        "mean_radiance": 1.6789782802117325e-06,
+        "standard_error": 9.693567131337609e-07
+      },
+      "123": {
+        "luminous_paths": 3,
+        "mean_radiance": 1.6621884974096125e-06,
+        "standard_error": 9.596631460024215e-07
+      },
+      "125": {
+        "luminous_paths": 2,
+        "mean_radiance": 1.0860739642074418e-06,
+        "standard_error": 7.679695325659742e-07
+      },
+      "128": {
+        "luminous_paths": 2,
+        "mean_radiance": 1.053816481396516e-06,
+        "standard_error": 7.451600694792316e-07
+      },
+      "129": {
+        "luminous_paths": 2,
+        "mean_radiance": 1.043278316582551e-06,
+        "standard_error": 7.377084687844397e-07
+      },
+      "130": {
+        "luminous_paths": 2,
+        "mean_radiance": 1.0328455334167256e-06,
+        "standard_error": 7.303313840965953e-07
+      },
+      "131": {
+        "luminous_paths": 1,
+        "mean_radiance": 5.112585390412785e-07,
+        "standard_error": 5.112585390412785e-07
+      },
+      "133": {
+        "luminous_paths": 1,
+        "mean_radiance": 5.010844941143582e-07,
+        "standard_error": 5.010844941143582e-07
+      },
+      "134": {
+        "luminous_paths": 1,
+        "mean_radiance": 4.960736491732152e-07,
+        "standard_error": 4.960736491732152e-07
+      },
+      "135": {
+        "luminous_paths": 1,
+        "mean_radiance": 4.911129126814822e-07,
+        "standard_error": 4.911129126814822e-07
+      },
+      "137": {
+        "luminous_paths": 1,
+        "mean_radiance": 4.813397657191196e-07,
+        "standard_error": 4.813397657191196e-07
+      },
+      "138": {
+        "luminous_paths": 1,
+        "mean_radiance": 4.765263680619295e-07,
+        "standard_error": 4.765263680619295e-07
+      },
+      "139": {
+        "luminous_paths": 1,
+        "mean_radiance": 4.7176110438130895e-07,
+        "standard_error": 4.7176110438130895e-07
+      },
+      "141": {
+        "luminous_paths": 1,
+        "mean_radiance": 4.6237305840412096e-07,
+        "standard_error": 4.6237305840412096e-07
+      },
+      "145": {
+        "luminous_paths": 1,
+        "mean_radiance": 4.4415371503449663e-07,
+        "standard_error": 4.4415371503449663e-07
+      },
+      "146": {
+        "luminous_paths": 1,
+        "mean_radiance": 4.397121778841517e-07,
+        "standard_error": 4.397121778841517e-07
+      },
+      "151": {
+        "luminous_paths": 1,
+        "mean_radiance": 4.181619059876867e-07,
+        "standard_error": 4.181619059876867e-07
+      },
+      "153": {
+        "luminous_paths": 1,
+        "mean_radiance": 4.098404840585322e-07,
+        "standard_error": 4.098404840585322e-07
+      },
+      "157": {
+        "luminous_paths": 1,
+        "mean_radiance": 3.9369113372309393e-07,
+        "standard_error": 3.9369113372309393e-07
+      },
+      "176": {
+        "luminous_paths": 1,
+        "mean_radiance": 3.2525526216428046e-07,
+        "standard_error": 3.2525526216428046e-07
+      },
+      "194": {
+        "luminous_paths": 1,
+        "mean_radiance": 2.714299922601476e-07,
+        "standard_error": 2.714299922601476e-07
+      }
+    },
+    "path_outcomes": {
+      "space": 137347,
+      "dark_ground": 0,
+      "luminous_ground": 386941,
+      "absorbed": 0
+    },
+    "max_scattering_order_seen": 194,
+    "max_luminous_order_seen": 194,
+    "mean_scattering_vertices_per_path": 11.152416229248047,
+    "runtime_seconds": 12.285650350153446,
+    "finite_scattering_order_truncation": false,
+    "safety_limit_hit": false,
+    "bounded_score": [
+      0.0,
+      1.0
+    ],
+    "production_solver_changed": false,
+    "limitations": [
+      "Finite Lambertian cap, scalar monochromatic atmospheric model, absorbing ground and dark outer boundary.",
+      "All orders refers to the specified RTE, not exact atmospheric microphysics or every physical process.",
+      "Finite samples still give statistical error; observed maximum order is not a physical cutoff.",
+      "Implicit absorbed outcome counts only zero-scattering terminations; other absorption is in weights.",
+      "Normal intervals are approximate; rare-event zero is not evidence of a zero mean."
+    ],
+    "comparisons_to_partial_sums": {
+      "1": {
+        "up_to_order": 1,
+        "increment_relative_to_partial": 3.479831469103482,
+        "increment_standard_error": 0.01380781045535975,
+        "missing_fraction_of_full": 0.7767773169823902,
+        "missing_fraction_standard_error": 0.0006880206359773688,
+        "normal_intervals_eligible": true,
+        "increment_normal_95_interval": [
+          3.4527681606109772,
+          3.506894777595987
+        ],
+        "missing_fraction_normal_95_interval": [
+          0.7754287965358745,
+          0.7781258374289058
+        ],
+        "tail_luminous_paths": 306609,
+        "interval_scope": "Marginal numerical sampling error; neither atmospheric uncertainty nor field accuracy."
+      },
+      "2": {
+        "up_to_order": 2,
+        "increment_relative_to_partial": 1.745796173826065,
+        "increment_standard_error": 0.005935985900891051,
+        "missing_fraction_of_full": 0.6358069074710038,
+        "missing_fraction_standard_error": 0.0007873290388636749,
+        "normal_intervals_eligible": true,
+        "increment_normal_95_interval": [
+          1.7341616414603185,
+          1.7574307061918115
+        ],
+        "missing_fraction_normal_95_interval": [
+          0.634263742554831,
+          0.6373500723871766
+        ],
+        "tail_luminous_paths": 255365,
+        "interval_scope": "Marginal numerical sampling error; neither atmospheric uncertainty nor field accuracy."
+      },
+      "3": {
+        "up_to_order": 3,
+        "increment_relative_to_partial": 1.1615181257108107,
+        "increment_standard_error": 0.0037778742235420634,
+        "missing_fraction_of_full": 0.5373621955304437,
+        "missing_fraction_standard_error": 0.000808592542228566,
+        "normal_intervals_eligible": true,
+        "increment_normal_95_interval": [
+          1.1541134922326683,
+          1.168922759188953
+        ],
+        "missing_fraction_normal_95_interval": [
+          0.5357773541476757,
+          0.5389470369132118
+        ],
+        "tail_luminous_paths": 219218,
+        "interval_scope": "Marginal numerical sampling error; neither atmospheric uncertainty nor field accuracy."
+      },
+      "5": {
+        "up_to_order": 5,
+        "increment_relative_to_partial": 0.6768542270042348,
+        "increment_standard_error": 0.0022012077090833825,
+        "missing_fraction_of_full": 0.4036452400596927,
+        "missing_fraction_standard_error": 0.0007828353077979624,
+        "normal_intervals_eligible": true,
+        "increment_normal_95_interval": [
+          0.6725398598944314,
+          0.6811685941140382
+        ],
+        "missing_fraction_normal_95_interval": [
+          0.4021108828564087,
+          0.4051795972629767
+        ],
+        "tail_luminous_paths": 169402,
+        "interval_scope": "Marginal numerical sampling error; neither atmospheric uncertainty nor field accuracy."
+      }
+    }
+  },
+  "full_solution_z": -0.941428250642781,
+  "reference_refinement_relative": 5.517147927736055e-06,
+  "plane_and_spherical_geometry_identical": false
+}

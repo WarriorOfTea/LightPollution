@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-11-13T12:14:33+01:00",
+  "canonical_documents": [
+    "README.md",
+    "HISTORY.md",
+    "THEORY.md",
+    "MODELS.md",
+    "LIMITS.md",
+    "VISUALIZATION.md"
+  ],
+  "markdown_files_checked": 39,
+  "local_links_checked": 494,
+  "local_image_links_checked": 63,
+  "pinned_archive_Git_objects_checked": 28,
+  "HISTORY_calendar_dates_in_narrative": false,
+  "errors": [],
+  "external_websites_rechecked": false,
+  "physical_simulations_run": false
+}

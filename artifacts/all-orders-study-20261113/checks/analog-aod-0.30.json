@@ -1,0 +1,309 @@
+{
+  "solver": "research-spherical-cap-all-orders-mc-1",
+  "settings": {
+    "samples": 2097152,
+    "seed": 6041,
+    "batch_size": 8192,
+    "recorded_orders": 5,
+    "absorption": "analog",
+    "safety_scattering_events": 100000,
+    "max_null_events": 100000
+  },
+  "observer": {
+    "latitude_deg": 0.0,
+    "longitude_deg": 0.0,
+    "height_m": 20.0
+  },
+  "cap": {
+    "latitude_deg": -0.5395929635512383,
+    "longitude_deg": 0.0,
+    "radius_m": 40000.0,
+    "radiance": 1.0
+  },
+  "atmosphere": {
+    "reference_wavelength_nm": 550.0,
+    "rayleigh_scale_height_m": 8000.0,
+    "aerosol_scale_height_m": 1200.0,
+    "aerosol_optical_depth": 0.3,
+    "aerosol_single_scattering_albedo": 0.9,
+    "aerosol_g": 0.8,
+    "rayleigh_multiplier": 1.0,
+    "top_m": 80000.0
+  },
+  "azimuth_deg": 180.0,
+  "altitude_deg": 45.0,
+  "category_labels": [
+    "exact_1",
+    "exact_2",
+    "exact_3",
+    "exact_4",
+    "exact_5",
+    "above_5"
+  ],
+  "category_mean_radiance": [
+    0.0014691352844238281,
+    0.0018353462219238281,
+    0.0013613700866699219,
+    0.0006995201110839844,
+    0.000377655029296875,
+    0.00025653839111328125
+  ],
+  "mean_covariance": [
+    [
+      6.995094420668274e-10,
+      -1.2857309243646556e-12,
+      -9.5369233282959e-13,
+      -4.900408589355545e-13,
+      -2.645619361124466e-13,
+      -1.797150525612327e-13
+    ],
+    [
+      -1.2857309243646556e-12,
+      8.735554693817937e-10,
+      -1.1914189513343366e-12,
+      -6.121932054667153e-13,
+      -3.305092152212941e-13,
+      -2.2451257296598008e-13
+    ],
+    [
+      -9.5369233282959e-13,
+      -1.1914189513343366e-12,
+      6.482684166075987e-10,
+      -4.5409498612820783e-13,
+      -2.451555753330202e-13,
+      -1.6653244890046068e-13
+    ],
+    [
+      -4.900408589355545e-13,
+      -6.121932054667153e-13,
+      -4.5409498612820783e-13,
+      3.333240108595773e-10,
+      -1.2596960736025942e-13,
+      -8.557026358563075e-14
+    ],
+    [
+      -2.645619361124466e-13,
+      -3.305092152212941e-13,
+      -2.451555753330202e-13,
+      -1.2596960736025942e-13,
+      1.800120286883118e-10,
+      -4.6197442917395744e-14
+    ],
+    [
+      -1.797150525612327e-13,
+      -2.2451257296598008e-13,
+      -1.6653244890046068e-13,
+      -8.557026358563075e-14,
+      -4.6197442917395744e-14,
+      1.2229571412223835e-10
+    ]
+  ],
+  "luminous_paths_by_category": [
+    3081,
+    3849,
+    2855,
+    1467,
+    792,
+    538
+  ],
+  "cumulative_labels": [
+    "up_to_1",
+    "up_to_2",
+    "up_to_3",
+    "up_to_4",
+    "up_to_5",
+    "all_orders"
+  ],
+  "cumulative_radiance": [
+    0.0014691352844238281,
+    0.0033044815063476562,
+    0.004665851593017578,
+    0.0053653717041015625,
+    0.0057430267333984375,
+    0.005999565124511719
+  ],
+  "cumulative_standard_error": [
+    2.644824081232677e-05,
+    3.962945179534902e-05,
+    4.705817297387524e-05,
+    5.044485103950332e-05,
+    5.218009804914069e-05,
+    5.332591575377129e-05
+  ],
+  "all_order_radiance": 0.005999565124511719,
+  "all_order_standard_error": 5.332591575377129e-05,
+  "all_order_normal_95_interval": [
+    0.005895046329634327,
+    0.006104083919389111
+  ],
+  "all_order_hoeffding_marginal_95_interval": [
+    0.005061749898613359,
+    0.0069373803504100785
+  ],
+  "luminous_order_histogram": {
+    "1": {
+      "luminous_paths": 3081,
+      "mean_radiance": 0.0014691352844238281,
+      "standard_error": 2.644824081232677e-05
+    },
+    "2": {
+      "luminous_paths": 3849,
+      "mean_radiance": 0.0018353462219238281,
+      "standard_error": 2.9555971805741623e-05
+    },
+    "3": {
+      "luminous_paths": 2855,
+      "mean_radiance": 0.0013613700866699219,
+      "standard_error": 2.5461115776956804e-05
+    },
+    "4": {
+      "luminous_paths": 1467,
+      "mean_radiance": 0.0006995201110839844,
+      "standard_error": 1.825716327526205e-05
+    },
+    "5": {
+      "luminous_paths": 792,
+      "mean_radiance": 0.000377655029296875,
+      "standard_error": 1.3416856140255503e-05
+    },
+    "6": {
+      "luminous_paths": 311,
+      "mean_radiance": 0.00014829635620117188,
+      "standard_error": 8.408493340944973e-06
+    },
+    "7": {
+      "luminous_paths": 119,
+      "mean_radiance": 5.6743621826171875e-05,
+      "standard_error": 5.20153294138642e-06
+    },
+    "8": {
+      "luminous_paths": 70,
+      "mean_radiance": 3.337860107421875e-05,
+      "standard_error": 3.9894402628849114e-06
+    },
+    "9": {
+      "luminous_paths": 18,
+      "mean_radiance": 8.58306884765625e-06,
+      "standard_error": 2.0230405288515303e-06
+    },
+    "10": {
+      "luminous_paths": 11,
+      "mean_radiance": 5.245208740234375e-06,
+      "standard_error": 1.581486169286968e-06
+    },
+    "11": {
+      "luminous_paths": 5,
+      "mean_radiance": 2.384185791015625e-06,
+      "standard_error": 1.0662392830930501e-06
+    },
+    "12": {
+      "luminous_paths": 3,
+      "mean_radiance": 1.430511474609375e-06,
+      "standard_error": 8.259057911215313e-07
+    },
+    "13": {
+      "luminous_paths": 1,
+      "mean_radiance": 4.76837158203125e-07,
+      "standard_error": 4.76837158203125e-07
+    }
+  },
+  "path_outcomes": {
+    "space": 1809298,
+    "dark_ground": 171740,
+    "luminous_ground": 12582,
+    "absorbed": 103532
+  },
+  "max_scattering_order_seen": 17,
+  "max_luminous_order_seen": 13,
+  "mean_scattering_vertices_per_path": 0.6143083572387695,
+  "runtime_seconds": 51.52710625808686,
+  "finite_scattering_order_truncation": false,
+  "safety_limit_hit": false,
+  "bounded_score": [
+    0.0,
+    1.0
+  ],
+  "production_solver_changed": false,
+  "limitations": [
+    "Finite Lambertian cap, scalar monochromatic atmospheric model, absorbing ground and dark outer boundary.",
+    "All orders refers to the specified RTE, not exact atmospheric microphysics or every physical process.",
+    "Finite samples still give statistical error; observed maximum order is not a physical cutoff.",
+    "Implicit absorbed outcome counts only zero-scattering terminations; other absorption is in weights.",
+    "Normal intervals are approximate; rare-event zero is not evidence of a zero mean."
+  ],
+  "comparisons_to_partial_sums": {
+    "1": {
+      "up_to_order": 1,
+      "increment_relative_to_partial": 3.0837390457643625,
+      "increment_standard_error": 0.06393255420766719,
+      "missing_fraction_of_full": 0.7551263710061993,
+      "missing_fraction_standard_error": 0.0038335937689045196,
+      "normal_intervals_eligible": true,
+      "increment_normal_95_interval": [
+        2.958431239517335,
+        3.20904685201139
+      ],
+      "missing_fraction_normal_95_interval": [
+        0.7476125272191464,
+        0.7626402147932522
+      ],
+      "tail_luminous_paths": 9501,
+      "interval_scope": "Marginal numerical sampling error; neither atmospheric uncertainty nor field accuracy."
+    },
+    "2": {
+      "up_to_order": 2,
+      "increment_relative_to_partial": 0.8155844155844156,
+      "increment_standard_error": 0.014617603200270345,
+      "missing_fraction_of_full": 0.44921316165951364,
+      "missing_fraction_standard_error": 0.004434485877761348,
+      "normal_intervals_eligible": true,
+      "increment_normal_95_interval": [
+        0.7869339133118858,
+        0.8442349178569455
+      ],
+      "missing_fraction_normal_95_interval": [
+        0.4405215693391014,
+        0.45790475397992586
+      ],
+      "tail_luminous_paths": 5652,
+      "interval_scope": "Marginal numerical sampling error; neither atmospheric uncertainty nor field accuracy."
+    },
+    "3": {
+      "up_to_order": 3,
+      "increment_relative_to_partial": 0.28584568216658157,
+      "increment_standard_error": 0.006128863262419116,
+      "missing_fraction_of_full": 0.22230170084247336,
+      "missing_fraction_standard_error": 0.0037068262553257994,
+      "normal_intervals_eligible": true,
+      "increment_normal_95_interval": [
+        0.2738331101722401,
+        0.29785825416092304
+      ],
+      "missing_fraction_normal_95_interval": [
+        0.2150363213820348,
+        0.22956708030291192
+      ],
+      "tail_luminous_paths": 2797,
+      "interval_scope": "Marginal numerical sampling error; neither atmospheric uncertainty nor field accuracy."
+    },
+    "5": {
+      "up_to_order": 5,
+      "increment_relative_to_partial": 0.04466954500166054,
+      "increment_standard_error": 0.0019683846133421463,
+      "missing_fraction_of_full": 0.04275949769512,
+      "missing_fraction_standard_error": 0.0018036492831824999,
+      "normal_intervals_eligible": true,
+      "increment_normal_95_interval": [
+        0.04081151115950993,
+        0.04852757884381115
+      ],
+      "missing_fraction_normal_95_interval": [
+        0.0392243451000823,
+        0.046294650290157696
+      ],
+      "tail_luminous_paths": 538,
+      "interval_scope": "Marginal numerical sampling error; neither atmospheric uncertainty nor field accuracy."
+    }
+  },
+  "independent_comparison_z": 1.4569729000097338
+}

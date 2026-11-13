@@ -1,0 +1,159 @@
+{
+  "checks": [
+    {
+      "kind": "code_hash",
+      "path": "src/lightpollution/physics.py",
+      "passed": true
+    },
+    {
+      "kind": "code_hash",
+      "path": "src/lightpollution/models/scattering_orders.py",
+      "passed": true
+    },
+    {
+      "kind": "code_hash",
+      "path": "src/lightpollution/models/all_orders.py",
+      "passed": true
+    },
+    {
+      "kind": "code_hash",
+      "path": "src/lightpollution/models/slab_resolvent.py",
+      "passed": true
+    },
+    {
+      "kind": "code_hash",
+      "path": "scripts/run_all_orders_study.py",
+      "passed": true
+    },
+    {
+      "kind": "old_protocol_hash",
+      "passed": true
+    },
+    {
+      "kind": "old_three_order_prefix",
+      "case": "aod-0.02-alt-10",
+      "passed": true
+    },
+    {
+      "kind": "bounded_moments_accounting",
+      "case": "aod-0.02-alt-10",
+      "passed": true
+    },
+    {
+      "kind": "old_three_order_prefix",
+      "case": "aod-0.02-alt-45",
+      "passed": true
+    },
+    {
+      "kind": "bounded_moments_accounting",
+      "case": "aod-0.02-alt-45",
+      "passed": true
+    },
+    {
+      "kind": "old_three_order_prefix",
+      "case": "aod-0.02-alt-90",
+      "passed": true
+    },
+    {
+      "kind": "bounded_moments_accounting",
+      "case": "aod-0.02-alt-90",
+      "passed": true
+    },
+    {
+      "kind": "old_three_order_prefix",
+      "case": "aod-0.10-alt-10",
+      "passed": true
+    },
+    {
+      "kind": "bounded_moments_accounting",
+      "case": "aod-0.10-alt-10",
+      "passed": true
+    },
+    {
+      "kind": "old_three_order_prefix",
+      "case": "aod-0.10-alt-45",
+      "passed": true
+    },
+    {
+      "kind": "bounded_moments_accounting",
+      "case": "aod-0.10-alt-45",
+      "passed": true
+    },
+    {
+      "kind": "old_five_order_prefix",
+      "case": "aod-0.10-alt-45",
+      "passed": true
+    },
+    {
+      "kind": "old_three_order_prefix",
+      "case": "aod-0.10-alt-90",
+      "passed": true
+    },
+    {
+      "kind": "bounded_moments_accounting",
+      "case": "aod-0.10-alt-90",
+      "passed": true
+    },
+    {
+      "kind": "old_three_order_prefix",
+      "case": "aod-0.30-alt-10",
+      "passed": true
+    },
+    {
+      "kind": "bounded_moments_accounting",
+      "case": "aod-0.30-alt-10",
+      "passed": true
+    },
+    {
+      "kind": "old_three_order_prefix",
+      "case": "aod-0.30-alt-45",
+      "passed": true
+    },
+    {
+      "kind": "bounded_moments_accounting",
+      "case": "aod-0.30-alt-45",
+      "passed": true
+    },
+    {
+      "kind": "old_five_order_prefix",
+      "case": "aod-0.30-alt-45",
+      "passed": true
+    },
+    {
+      "kind": "old_three_order_prefix",
+      "case": "aod-0.30-alt-90",
+      "passed": true
+    },
+    {
+      "kind": "bounded_moments_accounting",
+      "case": "aod-0.30-alt-90",
+      "passed": true
+    },
+    {
+      "kind": "full_slab_reference",
+      "case": "depth-0.2-albedo-0.9",
+      "passed": true
+    },
+    {
+      "kind": "full_slab_reference",
+      "case": "depth-1.0-albedo-1.0",
+      "passed": true
+    },
+    {
+      "kind": "full_slab_reference",
+      "case": "depth-5.0-albedo-0.99",
+      "passed": true
+    },
+    {
+      "kind": "four_angular_characteristic_moments",
+      "passed": true
+    },
+    {
+      "kind": "independent_seed_and_absorption",
+      "passed": true
+    }
+  ],
+  "total": 31,
+  "passed": 31,
+  "failed": 0
+}

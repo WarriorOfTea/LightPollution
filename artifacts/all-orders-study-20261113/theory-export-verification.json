@@ -1,0 +1,40 @@
+{
+  "source_check": {
+    "source_documents": [
+      {
+        "path": "THEORY.md",
+        "sha256": "f53f2c9b31e9e6fa8e39db9b98737eba3e0227a8951dbfdf4c3863404c1f807b",
+        "fenced_blocks": 0,
+        "LaTeX_expressions": 306
+      },
+      {
+        "path": "MODELS.md",
+        "sha256": "d7df5348221d7b837dff1b87962d8ad58347396be1b2c5970da0765e2daac024",
+        "fenced_blocks": 1,
+        "LaTeX_expressions": 211
+      },
+      {
+        "path": "LIMITS.md",
+        "sha256": "a89c3c77184aa984588e17e8350a15774a93013295c829bc42e185507f63e7b5",
+        "fenced_blocks": 0,
+        "LaTeX_expressions": 2
+      },
+      {
+        "path": "VISUALIZATION.md",
+        "sha256": "9e298de381960300d81e934024f4ada72475e534c5165ebea35e2628d7690f8c",
+        "fenced_blocks": 0,
+        "LaTeX_expressions": 0
+      }
+    ],
+    "fenced_code_and_formula_blocks": 1,
+    "all_blocks_preserved_byte_for_byte": true,
+    "LaTeX_expressions": 519,
+    "all_LaTeX_preserved_byte_for_byte": true,
+    "generated_reading_copy_not_a_second_source_of_truth": true
+  },
+  "renderer": "Matplotlib MathText, 600 dpi",
+  "unique_rendered_formulas": 472,
+  "PDF_pages": 52,
+  "command": "uv run python scripts/build_theory_bundle.py --output scratch/all-orders-theory-export",
+  "reading_copy_derived_from_tracked_canonical_files": true
+}
