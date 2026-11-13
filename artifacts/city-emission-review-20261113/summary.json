@@ -1,0 +1,1319 @@
+{
+  "cases_completed": 24,
+  "samples_per_case": 524288,
+  "paths": 12582912,
+  "angular_estimates": 72,
+  "all_order_runtime_s": 182.3792194724083,
+  "peak_rss_mib_process": 183.3359375,
+  "minimum_effective_score_samples": 681.5371769735441,
+  "eligible_normal_intervals": 72,
+  "maximum_order_observed": 13,
+  "hybrid_profile_change_pct_range": [
+    -15.58362287859234,
+    34.165565092922876
+  ],
+  "angular_comparisons": [
+    {
+      "location": "ucm",
+      "altitude_deg": 10,
+      "profile": "exponential_1200m",
+      "fitted_over_empirical": {
+        "ratio": 1.0142408653230335,
+        "relative_change": 0.01424086532303348,
+        "ratio_standard_error": 0.0006448729811085578,
+        "normal_95_interval": [
+          1.0129769142800606,
+          1.0155048163660063
+        ],
+        "delta_mag_artificial_only": -0.015352762391081206,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "fitted_over_near": {
+        "ratio": 1.0386653393165675,
+        "relative_change": 0.03866533931656746,
+        "ratio_standard_error": 0.0007853534704386074,
+        "normal_95_interval": [
+          1.0371260465145078,
+          1.0402046321186271
+        ],
+        "delta_mag_artificial_only": -0.04118909819929201,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "empirical_over_near": {
+        "ratio": 1.0240815321375902,
+        "relative_change": 0.024081532137590234,
+        "ratio_standard_error": 0.00095951785955596,
+        "normal_95_interval": [
+          1.0222008771328606,
+          1.02596218714232
+        ],
+        "delta_mag_artificial_only": -0.025836335808210778,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      }
+    },
+    {
+      "location": "ucm",
+      "altitude_deg": 10,
+      "profile": "mixed_0_1000m",
+      "fitted_over_empirical": {
+        "ratio": 1.0168971981052948,
+        "relative_change": 0.016897198105294775,
+        "ratio_standard_error": 0.0006809570690726437,
+        "normal_95_interval": [
+          1.0155625222499125,
+          1.018231873960677
+        ],
+        "delta_mag_artificial_only": -0.0181926267703494,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "fitted_over_near": {
+        "ratio": 1.0353341042365205,
+        "relative_change": 0.0353341042365205,
+        "ratio_standard_error": 0.0008581799846282849,
+        "normal_95_interval": [
+          1.033652071466649,
+          1.037016137006392
+        ],
+        "delta_mag_artificial_only": -0.03770130011476474,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "empirical_over_near": {
+        "ratio": 1.0181305506255478,
+        "relative_change": 0.018130550625547803,
+        "ratio_standard_error": 0.0010253761776037676,
+        "normal_95_interval": [
+          1.0161208133174444,
+          1.0201402879336512
+        ],
+        "delta_mag_artificial_only": -0.019508673344415372,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      }
+    },
+    {
+      "location": "ucm",
+      "altitude_deg": 10,
+      "profile": "elevated_2000_3000m",
+      "fitted_over_empirical": {
+        "ratio": 1.0115593405756862,
+        "relative_change": 0.011559340575686194,
+        "ratio_standard_error": 0.0006986684465876262,
+        "normal_95_interval": [
+          1.0101899504203744,
+          1.012928730730998
+        ],
+        "delta_mag_artificial_only": -0.012478411609508093,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "fitted_over_near": {
+        "ratio": 1.0529626476688294,
+        "relative_change": 0.05296264766882941,
+        "ratio_standard_error": 0.0006304574698614705,
+        "normal_95_interval": [
+          1.051726951027901,
+          1.0541983443097578
+        ],
+        "delta_mag_artificial_only": -0.056032413720993934,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "empirical_over_near": {
+        "ratio": 1.0409301811889555,
+        "relative_change": 0.04093018118895553,
+        "ratio_standard_error": 0.0008940769535509541,
+        "normal_95_interval": [
+          1.0391777903599957,
+          1.0426825720179154
+        ],
+        "delta_mag_artificial_only": -0.04355400211148583,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      }
+    },
+    {
+      "location": "ucm",
+      "altitude_deg": 10,
+      "profile": "half_low_half_elevated",
+      "fitted_over_empirical": {
+        "ratio": 1.0137343009686146,
+        "relative_change": 0.01373430096861461,
+        "ratio_standard_error": 0.0006977715170872377,
+        "normal_95_interval": [
+          1.0123666687951236,
+          1.0151019331421056
+        ],
+        "delta_mag_artificial_only": -0.014810354101065456,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "fitted_over_near": {
+        "ratio": 1.0418053068919262,
+        "relative_change": 0.041805306891926186,
+        "ratio_standard_error": 0.0008151863146058695,
+        "normal_95_interval": [
+          1.0402075417152987,
+          1.0434030720685536
+        ],
+        "delta_mag_artificial_only": -0.04446641342899064,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "empirical_over_near": {
+        "ratio": 1.0276906936033334,
+        "relative_change": 0.027690693603333427,
+        "ratio_standard_error": 0.0010146045944975659,
+        "normal_95_interval": [
+          1.0257020685981182,
+          1.0296793186085487
+        ],
+        "delta_mag_artificial_only": -0.029656059327924894,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      }
+    },
+    {
+      "location": "ucm",
+      "altitude_deg": 45,
+      "profile": "exponential_1200m",
+      "fitted_over_empirical": {
+        "ratio": 1.0247160576312984,
+        "relative_change": 0.02471605763129836,
+        "ratio_standard_error": 0.0009864786728880505,
+        "normal_95_interval": [
+          1.0227825594324378,
+          1.026649555830159
+        ],
+        "delta_mag_artificial_only": -0.026508854486315524,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "fitted_over_near": {
+        "ratio": 1.0340149610861242,
+        "relative_change": 0.03401496108612423,
+        "ratio_standard_error": 0.0008932070351300834,
+        "normal_95_interval": [
+          1.0322642752972693,
+          1.0357656468749792
+        ],
+        "delta_mag_artificial_only": -0.03631705644543971,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "empirical_over_near": {
+        "ratio": 1.0090746147535943,
+        "relative_change": 0.009074614753594279,
+        "ratio_standard_error": 0.001180598376198758,
+        "normal_95_interval": [
+          1.0067606419362447,
+          1.0113885875709439
+        ],
+        "delta_mag_artificial_only": -0.009808201959124263,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      }
+    },
+    {
+      "location": "ucm",
+      "altitude_deg": 45,
+      "profile": "mixed_0_1000m",
+      "fitted_over_empirical": {
+        "ratio": 1.0253955322734156,
+        "relative_change": 0.025395532273415622,
+        "ratio_standard_error": 0.000957798186121895,
+        "normal_95_interval": [
+          1.0235182478286167,
+          1.0272728167182146
+        ],
+        "delta_mag_artificial_only": -0.02722855213575788,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "fitted_over_near": {
+        "ratio": 1.031318487876975,
+        "relative_change": 0.031318487876975,
+        "ratio_standard_error": 0.0009254169129031708,
+        "normal_95_interval": [
+          1.0295046707276847,
+          1.0331323050262653
+        ],
+        "delta_mag_artificial_only": -0.03348200794200302,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "empirical_over_near": {
+        "ratio": 1.0057762642971806,
+        "relative_change": 0.005776264297180589,
+        "ratio_standard_error": 0.0011787837161859715,
+        "normal_95_interval": [
+          1.0034658482134562,
+          1.008086680380905
+        ],
+        "delta_mag_artificial_only": -0.006253455806245182,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      }
+    },
+    {
+      "location": "ucm",
+      "altitude_deg": 45,
+      "profile": "elevated_2000_3000m",
+      "fitted_over_empirical": {
+        "ratio": 1.0254163037585067,
+        "relative_change": 0.025416303758506675,
+        "ratio_standard_error": 0.0011773002134359142,
+        "normal_95_interval": [
+          1.0231087953401723,
+          1.027723812176841
+        ],
+        "delta_mag_artificial_only": -0.027250545721902143,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "fitted_over_near": {
+        "ratio": 1.036573158125673,
+        "relative_change": 0.03657315812567297,
+        "ratio_standard_error": 0.0008879697810442965,
+        "normal_95_interval": [
+          1.034832737354826,
+          1.0383135788965199
+        ],
+        "delta_mag_artificial_only": -0.038999896680268466,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "empirical_over_near": {
+        "ratio": 1.0108803169271567,
+        "relative_change": 0.010880316927156741,
+        "ratio_standard_error": 0.001299618114794476,
+        "normal_95_interval": [
+          1.0083330654221596,
+          1.0134275684321539
+        ],
+        "delta_mag_artificial_only": -0.011749350958366203,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      }
+    },
+    {
+      "location": "ucm",
+      "altitude_deg": 45,
+      "profile": "half_low_half_elevated",
+      "fitted_over_empirical": {
+        "ratio": 1.0242874409497402,
+        "relative_change": 0.024287440949740224,
+        "ratio_standard_error": 0.0010674264192819234,
+        "normal_95_interval": [
+          1.0221952851679477,
+          1.0263795967315328
+        ],
+        "delta_mag_artificial_only": -0.02605461938496898,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "fitted_over_near": {
+        "ratio": 1.0325550388213405,
+        "relative_change": 0.032555038821340476,
+        "ratio_standard_error": 0.0009057673931617449,
+        "normal_95_interval": [
+          1.0307797347307435,
+          1.0343303429119375
+        ],
+        "delta_mag_artificial_only": -0.03478302592843011,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "empirical_over_near": {
+        "ratio": 1.0080715603267911,
+        "relative_change": 0.008071560326791127,
+        "ratio_standard_error": 0.0012412274955188895,
+        "normal_95_interval": [
+          1.005638754435574,
+          1.0105043662180082
+        ],
+        "delta_mag_artificial_only": -0.008728406543461211,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      }
+    },
+    {
+      "location": "ucm",
+      "altitude_deg": 90,
+      "profile": "exponential_1200m",
+      "fitted_over_empirical": {
+        "ratio": 1.0266891251078327,
+        "relative_change": 0.026689125107832723,
+        "ratio_standard_error": 0.0011424760704433186,
+        "normal_95_interval": [
+          1.024449872009764,
+          1.0289283782059016
+        ],
+        "delta_mag_artificial_only": -0.028597404785700976,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "fitted_over_near": {
+        "ratio": 1.0322219583149037,
+        "relative_change": 0.03222195831490371,
+        "ratio_standard_error": 0.000947612558996235,
+        "normal_95_interval": [
+          1.030364637699271,
+          1.0340792789305364
+        ],
+        "delta_mag_artificial_only": -0.03443273379656688,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "empirical_over_near": {
+        "ratio": 1.0053890053685821,
+        "relative_change": 0.0053890053685821115,
+        "ratio_standard_error": 0.0013026255515667187,
+        "normal_95_interval": [
+          1.0028358592875113,
+          1.007942151449653
+        ],
+        "delta_mag_artificial_only": -0.005835329010865906,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      }
+    },
+    {
+      "location": "ucm",
+      "altitude_deg": 90,
+      "profile": "mixed_0_1000m",
+      "fitted_over_empirical": {
+        "ratio": 1.0295848460932628,
+        "relative_change": 0.02958484609326284,
+        "ratio_standard_error": 0.0012972489367279226,
+        "normal_95_interval": [
+          1.0270422381772761,
+          1.0321274540092495
+        ],
+        "delta_mag_artificial_only": -0.03165535448998071,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "fitted_over_near": {
+        "ratio": 1.0298075602748324,
+        "relative_change": 0.029807560274832445,
+        "ratio_standard_error": 0.0010407182594637464,
+        "normal_95_interval": [
+          1.0277677524862836,
+          1.0318473680633813
+        ],
+        "delta_mag_artificial_only": -0.03189018962915881,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "empirical_over_near": {
+        "ratio": 1.0002163145489318,
+        "relative_change": 0.00021631454893178415,
+        "ratio_standard_error": 0.0014100411037718296,
+        "normal_95_interval": [
+          0.997452633985539,
+          1.0029799951123246
+        ],
+        "delta_mag_artificial_only": -0.00023483513917816083,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      }
+    },
+    {
+      "location": "ucm",
+      "altitude_deg": 90,
+      "profile": "elevated_2000_3000m",
+      "fitted_over_empirical": {
+        "ratio": 1.026307365093404,
+        "relative_change": 0.026307365093404034,
+        "ratio_standard_error": 0.0012303609666490874,
+        "normal_95_interval": [
+          1.0238958575987718,
+          1.0287188725880363
+        ],
+        "delta_mag_artificial_only": -0.02819361386257957,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "fitted_over_near": {
+        "ratio": 1.0346430259236683,
+        "relative_change": 0.0346430259236683,
+        "ratio_standard_error": 0.0010115950880029826,
+        "normal_95_interval": [
+          1.0326602995511824,
+          1.0366257522961542
+        ],
+        "delta_mag_artificial_only": -0.03697633676948736,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "empirical_over_near": {
+        "ratio": 1.0081219926055052,
+        "relative_change": 0.008121992605505168,
+        "ratio_standard_error": 0.001424502074086224,
+        "normal_95_interval": [
+          1.005329968540296,
+          1.0109140166707142
+        ],
+        "delta_mag_artificial_only": -0.008782722906907639,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      }
+    },
+    {
+      "location": "ucm",
+      "altitude_deg": 90,
+      "profile": "half_low_half_elevated",
+      "fitted_over_empirical": {
+        "ratio": 1.0268409631269564,
+        "relative_change": 0.026840963126956385,
+        "ratio_standard_error": 0.0012453572548045127,
+        "normal_95_interval": [
+          1.0244000629075396,
+          1.0292818633463732
+        ],
+        "delta_mag_artificial_only": -0.028757963460605475,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "fitted_over_near": {
+        "ratio": 1.0314384761535116,
+        "relative_change": 0.031438476153511585,
+        "ratio_standard_error": 0.0010233121291444804,
+        "normal_95_interval": [
+          1.0294327843803883,
+          1.0334441679266348
+        ],
+        "delta_mag_artificial_only": -0.033608320075134486,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "empirical_over_near": {
+        "ratio": 1.0044773369895128,
+        "relative_change": 0.0044773369895128035,
+        "ratio_standard_error": 0.001419569723160982,
+        "normal_95_interval": [
+          1.0016949803321173,
+          1.0072596936469083
+        ],
+        "delta_mag_artificial_only": -0.0048503566145290875,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      }
+    },
+    {
+      "location": "north",
+      "altitude_deg": 10,
+      "profile": "exponential_1200m",
+      "fitted_over_empirical": {
+        "ratio": 1.002845460647205,
+        "relative_change": 0.0028454606472050337,
+        "ratio_standard_error": 0.001280359023768362,
+        "normal_95_interval": [
+          1.000335956960619,
+          1.0053549643337911
+        ],
+        "delta_mag_artificial_only": -0.0030850325531010525,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "fitted_over_near": {
+        "ratio": 1.0668067162679,
+        "relative_change": 0.06680671626790002,
+        "ratio_standard_error": 0.0015460688199514037,
+        "normal_95_interval": [
+          1.0637764213807952,
+          1.0698370111550048
+        ],
+        "delta_mag_artificial_only": -0.07021435300791233,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "empirical_over_near": {
+        "ratio": 1.0637797727871414,
+        "relative_change": 0.06377977278714142,
+        "ratio_standard_error": 0.0019818062268558705,
+        "normal_95_interval": [
+          1.0598954325825038,
+          1.067664112991779
+        ],
+        "delta_mag_artificial_only": -0.0671293204548112,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      }
+    },
+    {
+      "location": "north",
+      "altitude_deg": 10,
+      "profile": "mixed_0_1000m",
+      "fitted_over_empirical": {
+        "ratio": 1.0012048867238938,
+        "relative_change": 0.0012048867238938499,
+        "ratio_standard_error": 0.001467423964355736,
+        "normal_95_interval": [
+          0.9983287357537566,
+          1.004081037694031
+        ],
+        "delta_mag_artificial_only": -0.0013074016613850332,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "fitted_over_near": {
+        "ratio": 1.0704888071326657,
+        "relative_change": 0.0704888071326657,
+        "ratio_standard_error": 0.0016536074364967906,
+        "normal_95_interval": [
+          1.067247736557132,
+          1.0737298777081994
+        ],
+        "delta_mag_artificial_only": -0.07395532684369815,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "empirical_over_near": {
+        "ratio": 1.0692005415949177,
+        "relative_change": 0.06920054159491773,
+        "ratio_standard_error": 0.002186361898143653,
+        "normal_95_interval": [
+          1.064915272274556,
+          1.0734858109152794
+        ],
+        "delta_mag_artificial_only": -0.07264792518231297,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      }
+    },
+    {
+      "location": "north",
+      "altitude_deg": 10,
+      "profile": "elevated_2000_3000m",
+      "fitted_over_empirical": {
+        "ratio": 1.0028489213298095,
+        "relative_change": 0.0028489213298095173,
+        "ratio_standard_error": 0.0009739390847006905,
+        "normal_95_interval": [
+          1.000940000723796,
+          1.004757841935823
+        ],
+        "delta_mag_artificial_only": -0.0030887792738683154,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "fitted_over_near": {
+        "ratio": 1.0567395361846068,
+        "relative_change": 0.05673953618460681,
+        "ratio_standard_error": 0.0013015860862210025,
+        "normal_95_interval": [
+          1.0541884274556137,
+          1.0592906449136
+        ],
+        "delta_mag_artificial_only": -0.05991989036599814,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "empirical_over_near": {
+        "ratio": 1.0537375208853361,
+        "relative_change": 0.05373752088533612,
+        "ratio_standard_error": 0.001581248006312776,
+        "normal_95_interval": [
+          1.050638274792963,
+          1.0568367669777092
+        ],
+        "delta_mag_artificial_only": -0.05683111109212998,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      }
+    },
+    {
+      "location": "north",
+      "altitude_deg": 10,
+      "profile": "half_low_half_elevated",
+      "fitted_over_empirical": {
+        "ratio": 1.0057809894275314,
+        "relative_change": 0.005780989427531358,
+        "ratio_standard_error": 0.0012394582761545534,
+        "normal_95_interval": [
+          1.0033516512062683,
+          1.0082103276487944
+        ],
+        "delta_mag_artificial_only": -0.006258556575894707,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "fitted_over_near": {
+        "ratio": 1.0656585951368727,
+        "relative_change": 0.06565859513687267,
+        "ratio_standard_error": 0.001521234423936849,
+        "normal_95_interval": [
+          1.0626769756659564,
+          1.068640214607789
+        ],
+        "delta_mag_artificial_only": -0.06904523030923468,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "empirical_over_near": {
+        "ratio": 1.0595334435018726,
+        "relative_change": 0.05953344350187262,
+        "ratio_standard_error": 0.0018773497262214865,
+        "normal_95_interval": [
+          1.0558538380384785,
+          1.0632130489652667
+        ],
+        "delta_mag_artificial_only": -0.06278667373334015,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      }
+    },
+    {
+      "location": "north",
+      "altitude_deg": 45,
+      "profile": "exponential_1200m",
+      "fitted_over_empirical": {
+        "ratio": 0.9665880501406986,
+        "relative_change": -0.033411949859301404,
+        "ratio_standard_error": 0.0046540894054138155,
+        "normal_95_interval": [
+          0.9574660349060875,
+          0.9757100653753097
+        ],
+        "delta_mag_artificial_only": 0.03689644578933425,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "fitted_over_near": {
+        "ratio": 1.0861979783243458,
+        "relative_change": 0.08619797832434584,
+        "ratio_standard_error": 0.004912883477231455,
+        "normal_95_interval": [
+          1.076568726708972,
+          1.0958272299397196
+        ],
+        "delta_mag_artificial_only": -0.08977247532721992,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "empirical_over_near": {
+        "ratio": 1.1237444722870684,
+        "relative_change": 0.12374447228706842,
+        "ratio_standard_error": 0.007166353783072545,
+        "normal_95_interval": [
+          1.1096984188722463,
+          1.1377905257018905
+        ],
+        "delta_mag_artificial_only": -0.12666892111655412,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      }
+    },
+    {
+      "location": "north",
+      "altitude_deg": 45,
+      "profile": "mixed_0_1000m",
+      "fitted_over_empirical": {
+        "ratio": 0.9616744070715201,
+        "relative_change": -0.038325592928479923,
+        "ratio_standard_error": 0.0041516928866857815,
+        "normal_95_interval": [
+          0.9535370890136159,
+          0.9698117251294243
+        ],
+        "delta_mag_artificial_only": 0.04242985407085449,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "fitted_over_near": {
+        "ratio": 1.0798413889393699,
+        "relative_change": 0.07984138893936987,
+        "ratio_standard_error": 0.0049064265586196976,
+        "normal_95_interval": [
+          1.0702247928844753,
+          1.0894579849942645
+        ],
+        "delta_mag_artificial_only": -0.08339992351572317,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "empirical_over_near": {
+        "ratio": 1.1228762884807244,
+        "relative_change": 0.1228762884807244,
+        "ratio_standard_error": 0.006861001279783204,
+        "normal_95_interval": [
+          1.1094287259723494,
+          1.1363238509890994
+        ],
+        "delta_mag_artificial_only": -0.12582977758657754,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      }
+    },
+    {
+      "location": "north",
+      "altitude_deg": 45,
+      "profile": "elevated_2000_3000m",
+      "fitted_over_empirical": {
+        "ratio": 0.9603983714540375,
+        "relative_change": -0.0396016285459625,
+        "ratio_standard_error": 0.004130065258234653,
+        "normal_95_interval": [
+          0.9523034435478975,
+          0.9684932993601775
+        ],
+        "delta_mag_artificial_only": 0.043871462617088124,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "fitted_over_near": {
+        "ratio": 1.0997075858406764,
+        "relative_change": 0.0997075858406764,
+        "ratio_standard_error": 0.00586907645086844,
+        "normal_95_interval": [
+          1.0882041959969742,
+          1.1112109756843787
+        ],
+        "delta_mag_artificial_only": -0.10319305212676291,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "empirical_over_near": {
+        "ratio": 1.145053572066897,
+        "relative_change": 0.14505357206689706,
+        "ratio_standard_error": 0.007645984133454403,
+        "normal_95_interval": [
+          1.1300674431653264,
+          1.1600397009684678
+        ],
+        "delta_mag_artificial_only": -0.14706451474385093,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      }
+    },
+    {
+      "location": "north",
+      "altitude_deg": 45,
+      "profile": "half_low_half_elevated",
+      "fitted_over_empirical": {
+        "ratio": 0.9573019660326793,
+        "relative_change": -0.04269803396732075,
+        "ratio_standard_error": 0.004610666997305766,
+        "normal_95_interval": [
+          0.94826505871796,
+          0.9663388733473985
+        ],
+        "delta_mag_artificial_only": 0.047377622913800654,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "fitted_over_near": {
+        "ratio": 1.0941283513213496,
+        "relative_change": 0.09412835132134956,
+        "ratio_standard_error": 0.005586709943201512,
+        "normal_95_interval": [
+          1.0831783998326745,
+          1.1050783028100246
+        ],
+        "delta_mag_artificial_only": -0.09767067931011737,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "empirical_over_near": {
+        "ratio": 1.1429291802833292,
+        "relative_change": 0.14292918028332924,
+        "ratio_standard_error": 0.007698157693060342,
+        "normal_95_interval": [
+          1.1278407912049309,
+          1.1580175693617276
+        ],
+        "delta_mag_artificial_only": -0.14504830222391807,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      }
+    },
+    {
+      "location": "north",
+      "altitude_deg": 90,
+      "profile": "exponential_1200m",
+      "fitted_over_empirical": {
+        "ratio": 0.9464533131209091,
+        "relative_change": -0.05354668687909092,
+        "ratio_standard_error": 0.006824372042308337,
+        "normal_95_interval": [
+          0.9330775439179847,
+          0.9598290823238335
+        ],
+        "delta_mag_artificial_only": 0.059752010388982965,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "fitted_over_near": {
+        "ratio": 1.1026725040751815,
+        "relative_change": 0.10267250407518147,
+        "ratio_standard_error": 0.00819882786619255,
+        "normal_95_interval": [
+          1.086602801457444,
+          1.118742206692919
+        ],
+        "delta_mag_artificial_only": -0.1061163631672228,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "empirical_over_near": {
+        "ratio": 1.1650574717089246,
+        "relative_change": 0.1650574717089246,
+        "ratio_standard_error": 0.011632358104997114,
+        "normal_95_interval": [
+          1.1422580498231303,
+          1.187856893594719
+        ],
+        "delta_mag_artificial_only": -0.1658683735562058,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      }
+    },
+    {
+      "location": "north",
+      "altitude_deg": 90,
+      "profile": "mixed_0_1000m",
+      "fitted_over_empirical": {
+        "ratio": 0.9378562199561014,
+        "relative_change": -0.062143780043898644,
+        "ratio_standard_error": 0.006324655266108977,
+        "normal_95_interval": [
+          0.9254598956345278,
+          0.9502525442776749
+        ],
+        "delta_mag_artificial_only": 0.06965934239428365,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "fitted_over_near": {
+        "ratio": 1.1071253642043277,
+        "relative_change": 0.10712536420432772,
+        "ratio_standard_error": 0.009198370641589475,
+        "normal_95_interval": [
+          1.0890965577468124,
+          1.125154170661843
+        ],
+        "delta_mag_artificial_only": -0.11049200138276123,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "empirical_over_near": {
+        "ratio": 1.1804851752821444,
+        "relative_change": 0.18048517528214436,
+        "ratio_standard_error": 0.012173910352320069,
+        "normal_95_interval": [
+          1.156624310991597,
+          1.2043460395726917
+        ],
+        "delta_mag_artificial_only": -0.1801513437770448,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      }
+    },
+    {
+      "location": "north",
+      "altitude_deg": 90,
+      "profile": "elevated_2000_3000m",
+      "fitted_over_empirical": {
+        "ratio": 0.9395857273863043,
+        "relative_change": -0.060414272613695696,
+        "ratio_standard_error": 0.006701402313358707,
+        "normal_95_interval": [
+          0.9264509788521212,
+          0.9527204759204874
+        ],
+        "delta_mag_artificial_only": 0.06765897229793791,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "fitted_over_near": {
+        "ratio": 1.1089960177749059,
+        "relative_change": 0.10899601777490586,
+        "ratio_standard_error": 0.009376868592398445,
+        "normal_95_interval": [
+          1.090617355333805,
+          1.1273746802160067
+        ],
+        "delta_mag_artificial_only": -0.11232496667702735,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "empirical_over_near": {
+        "ratio": 1.1803031755919273,
+        "relative_change": 0.18030317559192732,
+        "ratio_standard_error": 0.01244714711554238,
+        "normal_95_interval": [
+          1.1559067672454642,
+          1.2046995839383905
+        ],
+        "delta_mag_artificial_only": -0.17998393897496526,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      }
+    },
+    {
+      "location": "north",
+      "altitude_deg": 90,
+      "profile": "half_low_half_elevated",
+      "fitted_over_empirical": {
+        "ratio": 0.9470123155195892,
+        "relative_change": -0.0529876844804108,
+        "ratio_standard_error": 0.00621310917895601,
+        "normal_95_interval": [
+          0.9348346215288355,
+          0.959190009510343
+        ],
+        "delta_mag_artificial_only": 0.0591109328312535,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "fitted_over_near": {
+        "ratio": 1.0962300858003184,
+        "relative_change": 0.09623008580031844,
+        "ratio_standard_error": 0.00919837563987337,
+        "normal_95_interval": [
+          1.0782012695461667,
+          1.1142589020544702
+        ],
+        "delta_mag_artificial_only": -0.09975429254735507,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      },
+      "empirical_over_near": {
+        "ratio": 1.1575668740895508,
+        "relative_change": 0.15756687408955083,
+        "ratio_standard_error": 0.012105744057617124,
+        "normal_95_interval": [
+          1.1338396157366213,
+          1.1812941324424804
+        ],
+        "delta_mag_artificial_only": -0.15886522537860842,
+        "normal_intervals_eligible": true,
+        "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+      }
+    }
+  ],
+  "hybrid_rows": [
+    {
+      "location": "ucm",
+      "altitude_deg": 10,
+      "profile": "exponential_1200m",
+      "angular_model": "fitted_0_60_hold_off",
+      "radiance_proxy": 14.028929052351625,
+      "radiance_standard_error": 0.05246586253489279,
+      "effective_score_samples": 62918.096515736914,
+      "change_vs_exponential_pct": 0.0,
+      "change_normal_95_lo_pct": 0.0,
+      "change_normal_95_hi_pct": 0.0,
+      "normal_interval_scope": "Approximate marginal MC only; independent seeds across profiles; no field error."
+    },
+    {
+      "location": "ucm",
+      "altitude_deg": 10,
+      "profile": "mixed_0_1000m",
+      "angular_model": "fitted_0_60_hold_off",
+      "radiance_proxy": 15.125197588862726,
+      "radiance_standard_error": 0.056457695423828655,
+      "effective_score_samples": 63130.0881018549,
+      "change_vs_exponential_pct": 7.8143422952683395,
+      "change_normal_95_lo_pct": 6.697774242268522,
+      "change_normal_95_hi_pct": 8.930910348268158,
+      "normal_interval_scope": "Approximate marginal MC only; independent seeds across profiles; no field error."
+    },
+    {
+      "location": "ucm",
+      "altitude_deg": 10,
+      "profile": "elevated_2000_3000m",
+      "angular_model": "fitted_0_60_hold_off",
+      "radiance_proxy": 12.027019845076076,
+      "radiance_standard_error": 0.049038129067677155,
+      "effective_score_samples": 53960.89998920575,
+      "change_vs_exponential_pct": -14.269864790142162,
+      "change_normal_95_lo_pct": -15.199533412671078,
+      "change_normal_95_hi_pct": -13.340196167613245,
+      "normal_interval_scope": "Approximate marginal MC only; independent seeds across profiles; no field error."
+    },
+    {
+      "location": "ucm",
+      "altitude_deg": 10,
+      "profile": "half_low_half_elevated",
+      "angular_model": "fitted_0_60_hold_off",
+      "radiance_proxy": 13.618648454263365,
+      "radiance_standard_error": 0.05289364902443029,
+      "effective_score_samples": 58850.871157956484,
+      "change_vs_exponential_pct": -2.9245325609475903,
+      "change_normal_95_lo_pct": -3.9504126074531665,
+      "change_normal_95_hi_pct": -1.8986525144420139,
+      "normal_interval_scope": "Approximate marginal MC only; independent seeds across profiles; no field error."
+    },
+    {
+      "location": "ucm",
+      "altitude_deg": 45,
+      "profile": "exponential_1200m",
+      "angular_model": "fitted_0_60_hold_off",
+      "radiance_proxy": 3.6160072085886465,
+      "radiance_standard_error": 0.02468181009866479,
+      "effective_score_samples": 20619.597303842187,
+      "change_vs_exponential_pct": 0.0,
+      "change_normal_95_lo_pct": 0.0,
+      "change_normal_95_hi_pct": 0.0,
+      "normal_interval_scope": "Approximate marginal MC only; independent seeds across profiles; no field error."
+    },
+    {
+      "location": "ucm",
+      "altitude_deg": 45,
+      "profile": "mixed_0_1000m",
+      "angular_model": "fitted_0_60_hold_off",
+      "radiance_proxy": 3.69733713881944,
+      "radiance_standard_error": 0.024690315705796197,
+      "effective_score_samples": 21504.85131895561,
+      "change_vs_exponential_pct": 2.249163940758203,
+      "change_normal_95_lo_pct": 0.33545648884070534,
+      "change_normal_95_hi_pct": 4.162871392675701,
+      "normal_interval_scope": "Approximate marginal MC only; independent seeds across profiles; no field error."
+    },
+    {
+      "location": "ucm",
+      "altitude_deg": 45,
+      "profile": "elevated_2000_3000m",
+      "angular_model": "fitted_0_60_hold_off",
+      "radiance_proxy": 3.5745214178244145,
+      "radiance_standard_error": 0.025353334553438685,
+      "effective_score_samples": 19151.606192825173,
+      "change_vs_exponential_pct": -1.1472817494858956,
+      "change_normal_95_lo_pct": -3.0545072845906804,
+      "change_normal_95_hi_pct": 0.7599437856188894,
+      "normal_interval_scope": "Approximate marginal MC only; independent seeds across profiles; no field error."
+    },
+    {
+      "location": "ucm",
+      "altitude_deg": 45,
+      "profile": "half_low_half_elevated",
+      "angular_model": "fitted_0_60_hold_off",
+      "radiance_proxy": 3.6780004724864517,
+      "radiance_standard_error": 0.025091913106943163,
+      "effective_score_samples": 20640.198279818997,
+      "change_vs_exponential_pct": 1.7144120661751083,
+      "change_normal_95_lo_pct": -0.20951430803987126,
+      "change_normal_95_hi_pct": 3.6383384403900876,
+      "normal_interval_scope": "Approximate marginal MC only; independent seeds across profiles; no field error."
+    },
+    {
+      "location": "ucm",
+      "altitude_deg": 90,
+      "profile": "exponential_1200m",
+      "angular_model": "fitted_0_60_hold_off",
+      "radiance_proxy": 2.4483964118226638,
+      "radiance_standard_error": 0.019535177169074932,
+      "effective_score_samples": 15251.364840637752,
+      "change_vs_exponential_pct": 0.0,
+      "change_normal_95_lo_pct": 0.0,
+      "change_normal_95_hi_pct": 0.0,
+      "normal_interval_scope": "Approximate marginal MC only; independent seeds across profiles; no field error."
+    },
+    {
+      "location": "ucm",
+      "altitude_deg": 90,
+      "profile": "mixed_0_1000m",
+      "angular_model": "fitted_0_60_hold_off",
+      "radiance_proxy": 2.472194690447449,
+      "radiance_standard_error": 0.01999437862353835,
+      "effective_score_samples": 14854.828630466474,
+      "change_vs_exponential_pct": 0.971994506684859,
+      "change_normal_95_lo_pct": -1.276399415333719,
+      "change_normal_95_hi_pct": 3.220388428703437,
+      "normal_interval_scope": "Approximate marginal MC only; independent seeds across profiles; no field error."
+    },
+    {
+      "location": "ucm",
+      "altitude_deg": 90,
+      "profile": "elevated_2000_3000m",
+      "angular_model": "fitted_0_60_hold_off",
+      "radiance_proxy": 2.3882490726729078,
+      "radiance_standard_error": 0.01942527209026271,
+      "effective_score_samples": 14692.033396785855,
+      "change_vs_exponential_pct": -2.456601343610876,
+      "change_normal_95_lo_pct": -4.634916233271541,
+      "change_normal_95_hi_pct": -0.27828645395021023,
+      "normal_interval_scope": "Approximate marginal MC only; independent seeds across profiles; no field error."
+    },
+    {
+      "location": "ucm",
+      "altitude_deg": 90,
+      "profile": "half_low_half_elevated",
+      "angular_model": "fitted_0_60_hold_off",
+      "radiance_proxy": 2.4310230616353046,
+      "radiance_standard_error": 0.019598620467521817,
+      "effective_score_samples": 14947.423460854647,
+      "change_vs_exponential_pct": -0.7095807730916337,
+      "change_normal_95_lo_pct": -2.9169556550792697,
+      "change_normal_95_hi_pct": 1.497794108896002,
+      "normal_interval_scope": "Approximate marginal MC only; independent seeds across profiles; no field error."
+    },
+    {
+      "location": "north",
+      "altitude_deg": 10,
+      "profile": "exponential_1200m",
+      "angular_model": "fitted_0_60_hold_off",
+      "radiance_proxy": 1.9790383829388605,
+      "radiance_standard_error": 0.017386372155445574,
+      "effective_score_samples": 12644.136400901858,
+      "change_vs_exponential_pct": 0.0,
+      "change_normal_95_lo_pct": 0.0,
+      "change_normal_95_hi_pct": 0.0,
+      "normal_interval_scope": "Approximate marginal MC only; independent seeds across profiles; no field error."
+    },
+    {
+      "location": "north",
+      "altitude_deg": 10,
+      "profile": "mixed_0_1000m",
+      "angular_model": "fitted_0_60_hold_off",
+      "radiance_proxy": 1.6706325047190764,
+      "radiance_standard_error": 0.016019097220125417,
+      "effective_score_samples": 10655.388300926561,
+      "change_vs_exponential_pct": -15.58362287859234,
+      "change_normal_95_lo_pct": -17.735334118845252,
+      "change_normal_95_hi_pct": -13.431911638339427,
+      "normal_interval_scope": "Approximate marginal MC only; independent seeds across profiles; no field error."
+    },
+    {
+      "location": "north",
+      "altitude_deg": 10,
+      "profile": "elevated_2000_3000m",
+      "angular_model": "fitted_0_60_hold_off",
+      "radiance_proxy": 2.6551880298757653,
+      "radiance_standard_error": 0.019872918553572365,
+      "effective_score_samples": 17263.433295962637,
+      "change_vs_exponential_pct": 34.165565092922876,
+      "change_normal_95_lo_pct": 31.130636756880588,
+      "change_normal_95_hi_pct": 37.20049342896517,
+      "normal_interval_scope": "Approximate marginal MC only; independent seeds across profiles; no field error."
+    },
+    {
+      "location": "north",
+      "altitude_deg": 10,
+      "profile": "half_low_half_elevated",
+      "angular_model": "fitted_0_60_hold_off",
+      "radiance_proxy": 2.1883425446931093,
+      "radiance_standard_error": 0.018415088040252513,
+      "effective_score_samples": 13751.211489544832,
+      "change_vs_exponential_pct": 10.576053681355768,
+      "change_normal_95_lo_pct": 7.93947985982255,
+      "change_normal_95_hi_pct": 13.212627502888985,
+      "normal_interval_scope": "Approximate marginal MC only; independent seeds across profiles; no field error."
+    },
+    {
+      "location": "north",
+      "altitude_deg": 45,
+      "profile": "exponential_1200m",
+      "angular_model": "fitted_0_60_hold_off",
+      "radiance_proxy": 0.17583742687057263,
+      "radiance_standard_error": 0.004605881807820374,
+      "effective_score_samples": 1453.4238168035895,
+      "change_vs_exponential_pct": 0.0,
+      "change_normal_95_lo_pct": 0.0,
+      "change_normal_95_hi_pct": 0.0,
+      "normal_interval_scope": "Approximate marginal MC only; independent seeds across profiles; no field error."
+    },
+    {
+      "location": "north",
+      "altitude_deg": 45,
+      "profile": "mixed_0_1000m",
+      "angular_model": "fitted_0_60_hold_off",
+      "radiance_proxy": 0.17094848417592612,
+      "radiance_standard_error": 0.004565836761992645,
+      "effective_score_samples": 1398.0764840063512,
+      "change_vs_exponential_pct": -2.7803766135892527,
+      "change_normal_95_lo_pct": -9.908815603835604,
+      "change_normal_95_hi_pct": 4.348062376657098,
+      "normal_interval_scope": "Approximate marginal MC only; independent seeds across profiles; no field error."
+    },
+    {
+      "location": "north",
+      "altitude_deg": 45,
+      "profile": "elevated_2000_3000m",
+      "angular_model": "fitted_0_60_hold_off",
+      "radiance_proxy": 0.1922689555833177,
+      "radiance_standard_error": 0.004766946088857029,
+      "effective_score_samples": 1621.7846778253027,
+      "change_vs_exponential_pct": 9.344727686921672,
+      "change_normal_95_lo_pct": 1.6150208352212272,
+      "change_normal_95_hi_pct": 17.074434538622118,
+      "normal_interval_scope": "Approximate marginal MC only; independent seeds across profiles; no field error."
+    },
+    {
+      "location": "north",
+      "altitude_deg": 45,
+      "profile": "half_low_half_elevated",
+      "angular_model": "fitted_0_60_hold_off",
+      "radiance_proxy": 0.17235816748543864,
+      "radiance_standard_error": 0.004370371169459167,
+      "effective_score_samples": 1550.7487917968358,
+      "change_vs_exponential_pct": -1.9786796514572158,
+      "change_normal_95_lo_pct": -8.98274593260523,
+      "change_normal_95_hi_pct": 5.025386629690798,
+      "normal_interval_scope": "Approximate marginal MC only; independent seeds across profiles; no field error."
+    },
+    {
+      "location": "north",
+      "altitude_deg": 90,
+      "profile": "exponential_1200m",
+      "angular_model": "fitted_0_60_hold_off",
+      "radiance_proxy": 0.07055178729622788,
+      "radiance_standard_error": 0.002626112984365111,
+      "effective_score_samples": 720.7631907971182,
+      "change_vs_exponential_pct": 0.0,
+      "change_normal_95_lo_pct": 0.0,
+      "change_normal_95_hi_pct": 0.0,
+      "normal_interval_scope": "Approximate marginal MC only; independent seeds across profiles; no field error."
+    },
+    {
+      "location": "north",
+      "altitude_deg": 90,
+      "profile": "mixed_0_1000m",
+      "angular_model": "fitted_0_60_hold_off",
+      "radiance_proxy": 0.07231674466177086,
+      "radiance_standard_error": 0.002708712411837497,
+      "effective_score_samples": 711.8077985045522,
+      "change_vs_exponential_pct": 2.5016479853761986,
+      "change_normal_95_lo_pct": -8.107264816900607,
+      "change_normal_95_hi_pct": 13.110560787653004,
+      "normal_interval_scope": "Approximate marginal MC only; independent seeds across profiles; no field error."
+    },
+    {
+      "location": "north",
+      "altitude_deg": 90,
+      "profile": "elevated_2000_3000m",
+      "angular_model": "fitted_0_60_hold_off",
+      "radiance_proxy": 0.07185653868902689,
+      "radiance_standard_error": 0.002655631908933693,
+      "effective_score_samples": 731.1249556661567,
+      "change_vs_exponential_pct": 1.8493527135190924,
+      "change_normal_95_lo_pct": -8.621652448609254,
+      "change_normal_95_hi_pct": 12.320357875647439,
+      "normal_interval_scope": "Approximate marginal MC only; independent seeds across profiles; no field error."
+    },
+    {
+      "location": "north",
+      "altitude_deg": 90,
+      "profile": "half_low_half_elevated",
+      "angular_model": "fitted_0_60_hold_off",
+      "radiance_proxy": 0.07002575614609455,
+      "radiance_standard_error": 0.002571531509954654,
+      "effective_score_samples": 740.4895315289139,
+      "change_vs_exponential_pct": -0.7455957818965908,
+      "change_normal_95_lo_pct": -10.917690943774657,
+      "change_normal_95_hi_pct": 9.426499379981475,
+      "normal_interval_scope": "Approximate marginal MC only; independent seeds across profiles; no field error."
+    }
+  ],
+  "new_measured_profiles": 0,
+  "new_independent_field_nights": 0,
+  "production_solver_changed": false,
+  "mc_error_is_not_field_accuracy": true
+}

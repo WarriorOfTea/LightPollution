@@ -1,0 +1,1190 @@
+{
+  "checks": [
+    {
+      "name": "code:scripts/study_city_emission_atmosphere.py",
+      "passed": true
+    },
+    {
+      "name": "code:src/lightpollution/physics.py",
+      "passed": true
+    },
+    {
+      "name": "code:src/lightpollution/models/scattering_orders.py",
+      "passed": true
+    },
+    {
+      "name": "code:src/lightpollution/models/all_orders.py",
+      "passed": true
+    },
+    {
+      "name": "code:src/lightpollution/models/angular_sources.py",
+      "passed": true
+    },
+    {
+      "name": "code:src/lightpollution/models/boundary_orders.py",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-exponential_1200m:identity",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-exponential_1200m:sample_budget",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-exponential_1200m:seed",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-exponential_1200m:no_cutoff",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-exponential_1200m:outcomes",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-exponential_1200m:support",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-exponential_1200m:finite_positive",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-exponential_1200m:bounded",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-exponential_1200m:order_closure",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-exponential_1200m:angular_closure",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-exponential_1200m:covariance",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-exponential_1200m:interval_support",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-mixed_0_1000m:identity",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-mixed_0_1000m:sample_budget",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-mixed_0_1000m:seed",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-mixed_0_1000m:no_cutoff",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-mixed_0_1000m:outcomes",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-mixed_0_1000m:support",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-mixed_0_1000m:finite_positive",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-mixed_0_1000m:bounded",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-mixed_0_1000m:order_closure",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-mixed_0_1000m:angular_closure",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-mixed_0_1000m:covariance",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-mixed_0_1000m:interval_support",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-elevated_2000_3000m:identity",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-elevated_2000_3000m:sample_budget",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-elevated_2000_3000m:seed",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-elevated_2000_3000m:no_cutoff",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-elevated_2000_3000m:outcomes",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-elevated_2000_3000m:support",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-elevated_2000_3000m:finite_positive",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-elevated_2000_3000m:bounded",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-elevated_2000_3000m:order_closure",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-elevated_2000_3000m:angular_closure",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-elevated_2000_3000m:covariance",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-elevated_2000_3000m:interval_support",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-half_low_half_elevated:identity",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-half_low_half_elevated:sample_budget",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-half_low_half_elevated:seed",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-half_low_half_elevated:no_cutoff",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-half_low_half_elevated:outcomes",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-half_low_half_elevated:support",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-half_low_half_elevated:finite_positive",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-half_low_half_elevated:bounded",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-half_low_half_elevated:order_closure",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-half_low_half_elevated:angular_closure",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-half_low_half_elevated:covariance",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt10-half_low_half_elevated:interval_support",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-exponential_1200m:identity",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-exponential_1200m:sample_budget",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-exponential_1200m:seed",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-exponential_1200m:no_cutoff",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-exponential_1200m:outcomes",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-exponential_1200m:support",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-exponential_1200m:finite_positive",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-exponential_1200m:bounded",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-exponential_1200m:order_closure",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-exponential_1200m:angular_closure",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-exponential_1200m:covariance",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-exponential_1200m:interval_support",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-mixed_0_1000m:identity",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-mixed_0_1000m:sample_budget",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-mixed_0_1000m:seed",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-mixed_0_1000m:no_cutoff",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-mixed_0_1000m:outcomes",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-mixed_0_1000m:support",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-mixed_0_1000m:finite_positive",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-mixed_0_1000m:bounded",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-mixed_0_1000m:order_closure",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-mixed_0_1000m:angular_closure",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-mixed_0_1000m:covariance",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-mixed_0_1000m:interval_support",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-elevated_2000_3000m:identity",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-elevated_2000_3000m:sample_budget",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-elevated_2000_3000m:seed",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-elevated_2000_3000m:no_cutoff",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-elevated_2000_3000m:outcomes",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-elevated_2000_3000m:support",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-elevated_2000_3000m:finite_positive",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-elevated_2000_3000m:bounded",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-elevated_2000_3000m:order_closure",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-elevated_2000_3000m:angular_closure",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-elevated_2000_3000m:covariance",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-elevated_2000_3000m:interval_support",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-half_low_half_elevated:identity",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-half_low_half_elevated:sample_budget",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-half_low_half_elevated:seed",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-half_low_half_elevated:no_cutoff",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-half_low_half_elevated:outcomes",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-half_low_half_elevated:support",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-half_low_half_elevated:finite_positive",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-half_low_half_elevated:bounded",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-half_low_half_elevated:order_closure",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-half_low_half_elevated:angular_closure",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-half_low_half_elevated:covariance",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt45-half_low_half_elevated:interval_support",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-exponential_1200m:identity",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-exponential_1200m:sample_budget",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-exponential_1200m:seed",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-exponential_1200m:no_cutoff",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-exponential_1200m:outcomes",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-exponential_1200m:support",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-exponential_1200m:finite_positive",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-exponential_1200m:bounded",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-exponential_1200m:order_closure",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-exponential_1200m:angular_closure",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-exponential_1200m:covariance",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-exponential_1200m:interval_support",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-mixed_0_1000m:identity",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-mixed_0_1000m:sample_budget",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-mixed_0_1000m:seed",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-mixed_0_1000m:no_cutoff",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-mixed_0_1000m:outcomes",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-mixed_0_1000m:support",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-mixed_0_1000m:finite_positive",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-mixed_0_1000m:bounded",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-mixed_0_1000m:order_closure",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-mixed_0_1000m:angular_closure",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-mixed_0_1000m:covariance",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-mixed_0_1000m:interval_support",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-elevated_2000_3000m:identity",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-elevated_2000_3000m:sample_budget",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-elevated_2000_3000m:seed",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-elevated_2000_3000m:no_cutoff",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-elevated_2000_3000m:outcomes",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-elevated_2000_3000m:support",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-elevated_2000_3000m:finite_positive",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-elevated_2000_3000m:bounded",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-elevated_2000_3000m:order_closure",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-elevated_2000_3000m:angular_closure",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-elevated_2000_3000m:covariance",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-elevated_2000_3000m:interval_support",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-half_low_half_elevated:identity",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-half_low_half_elevated:sample_budget",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-half_low_half_elevated:seed",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-half_low_half_elevated:no_cutoff",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-half_low_half_elevated:outcomes",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-half_low_half_elevated:support",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-half_low_half_elevated:finite_positive",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-half_low_half_elevated:bounded",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-half_low_half_elevated:order_closure",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-half_low_half_elevated:angular_closure",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-half_low_half_elevated:covariance",
+      "passed": true
+    },
+    {
+      "name": "ucm-alt90-half_low_half_elevated:interval_support",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-exponential_1200m:identity",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-exponential_1200m:sample_budget",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-exponential_1200m:seed",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-exponential_1200m:no_cutoff",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-exponential_1200m:outcomes",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-exponential_1200m:support",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-exponential_1200m:finite_positive",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-exponential_1200m:bounded",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-exponential_1200m:order_closure",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-exponential_1200m:angular_closure",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-exponential_1200m:covariance",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-exponential_1200m:interval_support",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-mixed_0_1000m:identity",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-mixed_0_1000m:sample_budget",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-mixed_0_1000m:seed",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-mixed_0_1000m:no_cutoff",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-mixed_0_1000m:outcomes",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-mixed_0_1000m:support",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-mixed_0_1000m:finite_positive",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-mixed_0_1000m:bounded",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-mixed_0_1000m:order_closure",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-mixed_0_1000m:angular_closure",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-mixed_0_1000m:covariance",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-mixed_0_1000m:interval_support",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-elevated_2000_3000m:identity",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-elevated_2000_3000m:sample_budget",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-elevated_2000_3000m:seed",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-elevated_2000_3000m:no_cutoff",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-elevated_2000_3000m:outcomes",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-elevated_2000_3000m:support",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-elevated_2000_3000m:finite_positive",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-elevated_2000_3000m:bounded",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-elevated_2000_3000m:order_closure",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-elevated_2000_3000m:angular_closure",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-elevated_2000_3000m:covariance",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-elevated_2000_3000m:interval_support",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-half_low_half_elevated:identity",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-half_low_half_elevated:sample_budget",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-half_low_half_elevated:seed",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-half_low_half_elevated:no_cutoff",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-half_low_half_elevated:outcomes",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-half_low_half_elevated:support",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-half_low_half_elevated:finite_positive",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-half_low_half_elevated:bounded",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-half_low_half_elevated:order_closure",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-half_low_half_elevated:angular_closure",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-half_low_half_elevated:covariance",
+      "passed": true
+    },
+    {
+      "name": "north-alt10-half_low_half_elevated:interval_support",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-exponential_1200m:identity",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-exponential_1200m:sample_budget",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-exponential_1200m:seed",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-exponential_1200m:no_cutoff",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-exponential_1200m:outcomes",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-exponential_1200m:support",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-exponential_1200m:finite_positive",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-exponential_1200m:bounded",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-exponential_1200m:order_closure",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-exponential_1200m:angular_closure",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-exponential_1200m:covariance",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-exponential_1200m:interval_support",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-mixed_0_1000m:identity",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-mixed_0_1000m:sample_budget",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-mixed_0_1000m:seed",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-mixed_0_1000m:no_cutoff",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-mixed_0_1000m:outcomes",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-mixed_0_1000m:support",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-mixed_0_1000m:finite_positive",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-mixed_0_1000m:bounded",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-mixed_0_1000m:order_closure",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-mixed_0_1000m:angular_closure",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-mixed_0_1000m:covariance",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-mixed_0_1000m:interval_support",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-elevated_2000_3000m:identity",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-elevated_2000_3000m:sample_budget",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-elevated_2000_3000m:seed",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-elevated_2000_3000m:no_cutoff",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-elevated_2000_3000m:outcomes",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-elevated_2000_3000m:support",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-elevated_2000_3000m:finite_positive",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-elevated_2000_3000m:bounded",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-elevated_2000_3000m:order_closure",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-elevated_2000_3000m:angular_closure",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-elevated_2000_3000m:covariance",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-elevated_2000_3000m:interval_support",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-half_low_half_elevated:identity",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-half_low_half_elevated:sample_budget",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-half_low_half_elevated:seed",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-half_low_half_elevated:no_cutoff",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-half_low_half_elevated:outcomes",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-half_low_half_elevated:support",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-half_low_half_elevated:finite_positive",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-half_low_half_elevated:bounded",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-half_low_half_elevated:order_closure",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-half_low_half_elevated:angular_closure",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-half_low_half_elevated:covariance",
+      "passed": true
+    },
+    {
+      "name": "north-alt45-half_low_half_elevated:interval_support",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-exponential_1200m:identity",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-exponential_1200m:sample_budget",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-exponential_1200m:seed",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-exponential_1200m:no_cutoff",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-exponential_1200m:outcomes",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-exponential_1200m:support",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-exponential_1200m:finite_positive",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-exponential_1200m:bounded",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-exponential_1200m:order_closure",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-exponential_1200m:angular_closure",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-exponential_1200m:covariance",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-exponential_1200m:interval_support",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-mixed_0_1000m:identity",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-mixed_0_1000m:sample_budget",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-mixed_0_1000m:seed",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-mixed_0_1000m:no_cutoff",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-mixed_0_1000m:outcomes",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-mixed_0_1000m:support",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-mixed_0_1000m:finite_positive",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-mixed_0_1000m:bounded",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-mixed_0_1000m:order_closure",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-mixed_0_1000m:angular_closure",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-mixed_0_1000m:covariance",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-mixed_0_1000m:interval_support",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-elevated_2000_3000m:identity",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-elevated_2000_3000m:sample_budget",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-elevated_2000_3000m:seed",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-elevated_2000_3000m:no_cutoff",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-elevated_2000_3000m:outcomes",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-elevated_2000_3000m:support",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-elevated_2000_3000m:finite_positive",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-elevated_2000_3000m:bounded",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-elevated_2000_3000m:order_closure",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-elevated_2000_3000m:angular_closure",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-elevated_2000_3000m:covariance",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-elevated_2000_3000m:interval_support",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-half_low_half_elevated:identity",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-half_low_half_elevated:sample_budget",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-half_low_half_elevated:seed",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-half_low_half_elevated:no_cutoff",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-half_low_half_elevated:outcomes",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-half_low_half_elevated:support",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-half_low_half_elevated:finite_positive",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-half_low_half_elevated:bounded",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-half_low_half_elevated:order_closure",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-half_low_half_elevated:angular_closure",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-half_low_half_elevated:covariance",
+      "passed": true
+    },
+    {
+      "name": "north-alt90-half_low_half_elevated:interval_support",
+      "passed": true
+    },
+    {
+      "name": "all_expected_cases",
+      "passed": true
+    },
+    {
+      "name": "independent_profile_seeds",
+      "passed": true
+    }
+  ],
+  "passed": 296,
+  "total": 296
+}

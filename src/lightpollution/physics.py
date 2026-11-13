@@ -113,6 +113,11 @@ class Atmosphere:
     def aerosol_extinction_sea_level(self) -> float:
         return self.aerosol_optical_depth / self.aerosol_scale_height_m
 
+    @property
+    def extinction_majorant(self) -> float:
+        """A global bound for delta tracking; separate from a surface value."""
+        return self.rayleigh_sea_level + self.aerosol_extinction_sea_level
+
     def coefficients(self, height_m):
         height = np.maximum(height_m, 0)
         molecular = self.rayleigh_sea_level * np.exp(-height/self.rayleigh_scale_height_m)

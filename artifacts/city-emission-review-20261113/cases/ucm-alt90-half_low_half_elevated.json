@@ -1,0 +1,500 @@
+{
+  "solver": "research-spherical-boundary-all-orders-mc-1",
+  "settings": {
+    "samples": 524288,
+    "seed": 47017,
+    "batch_size": 8192,
+    "recorded_orders": 5,
+    "absorption": "implicit",
+    "safety_scattering_events": 100000,
+    "max_null_events": 100000
+  },
+  "observer": {
+    "latitude_deg": 40.451111,
+    "longitude_deg": -3.726111,
+    "height_m": 20.0
+  },
+  "atmosphere": {
+    "reference_wavelength_nm": 550.0,
+    "rayleigh_scale_height_m": 8000.0,
+    "aerosol_scale_height_m": 1200.0,
+    "aerosol_optical_depth": 0.1,
+    "aerosol_single_scattering_albedo": 0.9,
+    "aerosol_g": 0.8,
+    "rayleigh_multiplier": 1.0,
+    "top_m": 80000.0,
+    "aerosol_layers": [
+      [
+        0.0,
+        1000.0,
+        0.5
+      ],
+      [
+        2000.0,
+        3000.0,
+        0.5
+      ]
+    ]
+  },
+  "azimuth_deg": 180.0,
+  "altitude_deg": 90,
+  "labels": [
+    "near_lambertian",
+    "empirical_hold_off",
+    "fitted_0_60_hold_off"
+  ],
+  "all_order_radiance": [
+    2.3569249333234,
+    2.3674776805088737,
+    2.4310230616353046
+  ],
+  "all_order_standard_error": [
+    0.019063230397889458,
+    0.018862133535451218,
+    0.019598620467521817
+  ],
+  "mean_covariance": [
+    [
+      0.0003634067532030166,
+      0.00035404173690433213,
+      0.0003707950939824506
+    ],
+    [
+      0.00035404173690433213,
+      0.0003557800815091934,
+      0.0003654648138547768
+    ],
+    [
+      0.0003707950939824506,
+      0.0003654648138547768,
+      0.00038410592422996506
+    ]
+  ],
+  "positive_paths": [
+    22830,
+    22955,
+    22903
+  ],
+  "effective_score_samples": [
+    14853.13348439013,
+    15294.432293660868,
+    14947.423460854647
+  ],
+  "normal_95_intervals": [
+    [
+      2.3195610017435366,
+      2.3942888649032636
+    ],
+    [
+      2.3305078987793895,
+      2.404447462238358
+    ],
+    [
+      2.3926097655189618,
+      2.4694363577516474
+    ]
+  ],
+  "hoeffding_marginal_95_intervals": [
+    [
+      0.0,
+      5.512886329109886
+    ],
+    [
+      0.0,
+      5.523439076295359
+    ],
+    [
+      0.0,
+      6.485226717888485
+    ]
+  ],
+  "bounded_scores": [
+    1682.6136474609375,
+    1682.6136474609375,
+    2161.5151600729996
+  ],
+  "category_labels": [
+    "exact_1",
+    "exact_2",
+    "exact_3",
+    "exact_4",
+    "exact_5",
+    "above_5"
+  ],
+  "category_mean_radiance": [
+    [
+      1.8450842789657684,
+      1.8465214900018916,
+      1.8992809202450063
+    ],
+    [
+      0.4246515832320276,
+      0.43018498641286596,
+      0.44029189580754025
+    ],
+    [
+      0.0730440850058133,
+      0.07596487366491732,
+      0.07667233083016253
+    ],
+    [
+      0.011203687144093442,
+      0.011797122660682974,
+      0.011747618890353922
+    ],
+    [
+      0.00229083932103954,
+      0.0023495486587251854,
+      0.002397440531913227
+    ],
+    [
+      0.0006504596546565456,
+      0.0006596591097909487,
+      0.0006328553303285723
+    ]
+  ],
+  "category_mean_covariance_per_variant": [
+    [
+      [
+        0.0002902533772831819,
+        -1.4944447607118577e-06,
+        -2.5705862040383484e-07,
+        -3.942830361236822e-08,
+        -8.061980588659779e-09,
+        -2.2891143265201982e-09
+      ],
+      [
+        -1.4944447607118577e-06,
+        6.530991817378254e-05,
+        -5.916279889345612e-08,
+        -9.074540249473273e-09,
+        -1.8554885866131027e-09,
+        -5.268464069840755e-10
+      ],
+      [
+        -2.5705862040383484e-07,
+        -5.916279889345612e-08,
+        9.965117268330212e-06,
+        -1.560906671597234e-09,
+        -3.1916157009552357e-10,
+        -9.062256036786089e-11
+      ],
+      [
+        -3.942830361236822e-08,
+        -9.074540249473273e-09,
+        -1.560906671597234e-09,
+        1.3007021085600344e-06,
+        -4.895381165337771e-11,
+        -1.3899918309298153e-11
+      ],
+      [
+        -8.061980588659779e-09,
+        -1.8554885866131027e-09,
+        -3.1916157009552357e-10,
+        -4.895381165337771e-11,
+        2.625251786981831e-07,
+        -2.8421428599927415e-12
+      ],
+      [
+        -2.2891143265201982e-09,
+        -5.268464069840755e-10,
+        -9.062256036786089e-11,
+        -1.3899918309298153e-11,
+        -2.8421428599927415e-12,
+        6.299087137285867e-08
+      ]
+    ],
+    [
+      [
+        0.00028383229704301153,
+        -1.5150973075577472e-06,
+        -2.675457749430152e-07,
+        -4.154907619898912e-08,
+        -8.275032739970999e-09,
+        -2.3232975875894384e-09
+      ],
+      [
+        -1.5150973075577472e-06,
+        6.345990623749095e-05,
+        -6.233026595242212e-08,
+        -9.679707968148778e-09,
+        -1.927838298165053e-09,
+        -5.412597397657057e-10
+      ],
+      [
+        -2.675457749430152e-07,
+        -6.233026595242212e-08,
+        1.0640609070527716e-05,
+        -1.7093060337721806e-09,
+        -3.4043027393323626e-10,
+        -9.557917884132402e-11
+      ],
+      [
+        -4.154907619898912e-08,
+        -9.679707968148778e-09,
+        -1.7093060337721806e-09,
+        1.3392178407699309e-06,
+        -5.286782568368884e-11,
+        -1.4843166876998207e-11
+      ],
+      [
+        -8.275032739970999e-09,
+        -1.927838298165053e-09,
+        -3.4043027393323626e-10,
+        -5.286782568368884e-11,
+        2.679332868734324e-07,
+        -2.956207528748898e-12
+      ],
+      [
+        -2.3232975875894384e-09,
+        -5.412597397657057e-10,
+        -9.557917884132402e-11,
+        -1.4843166876998207e-11,
+        -2.956207528748898e-12,
+        6.308911786452676e-08
+      ]
+    ],
+    [
+      [
+        0.000306741461648002,
+        -1.5950004425930138e-06,
+        -2.777530151547543e-07,
+        -4.255689806682031e-08,
+        -8.684962739272252e-09,
+        -2.292580312249604e-09
+      ],
+      [
+        -1.5950004425930138e-06,
+        6.88007162754235e-05,
+        -6.438879067608996e-08,
+        -9.865553394340125e-09,
+        -2.0133507733014786e-09,
+        -5.31466683633724e-10
+      ],
+      [
+        -2.777530151547543e-07,
+        -6.438879067608996e-08,
+        1.0877580578666978e-05,
+        -1.7179852295171972e-09,
+        -3.506044468172809e-10,
+        -9.254948769392354e-11
+      ],
+      [
+        -4.255689806682031e-08,
+        -9.865553394340125e-09,
+        -1.7179852295171972e-09,
+        1.353664546258412e-06,
+        -5.371908454950052e-11,
+        -1.4180292918628743e-11
+      ],
+      [
+        -8.684962739272252e-09,
+        -2.0133507733014786e-09,
+        -3.506044468172809e-10,
+        -5.371908454950052e-11,
+        2.852282147772801e-07,
+        -2.893897845582769e-12
+      ],
+      [
+        -2.292580312249604e-09,
+        -5.31466683633724e-10,
+        -9.254948769392354e-11,
+        -1.4180292918628743e-11,
+        -2.893897845582769e-12,
+        5.791095250260896e-08
+      ]
+    ]
+  ],
+  "positive_paths_by_category": [
+    [
+      16346,
+      16383,
+      16371
+    ],
+    [
+      4930,
+      4978,
+      4949
+    ],
+    [
+      1203,
+      1228,
+      1219
+    ],
+    [
+      266,
+      279,
+      278
+    ],
+    [
+      68,
+      66,
+      66
+    ],
+    [
+      17,
+      21,
+      20
+    ]
+  ],
+  "emission_zenith_bin_edges_deg": [
+    0.0,
+    20.0,
+    40.0,
+    60.0,
+    75.0,
+    85.0,
+    90.0
+  ],
+  "emission_bin_radiance": [
+    [
+      0.305897849986468,
+      0.305897849986468,
+      0.30589772950436406
+    ],
+    [
+      0.6995380852492346,
+      0.6951911472047659,
+      0.7010149031968186
+    ],
+    [
+      0.7375175427334216,
+      0.7408170093434122,
+      0.7985387549598939
+    ],
+    [
+      0.4262415492636994,
+      0.4339345939025646,
+      0.4339345939025646
+    ],
+    [
+      0.16161680790774743,
+      0.1645137977147969,
+      0.1645137977147969
+    ],
+    [
+      0.02611309818282428,
+      0.027123282356868384,
+      0.027123282356868384
+    ]
+  ],
+  "path_outcomes": {
+    "space": 494754,
+    "ground": 29534,
+    "absorbed": 0
+  },
+  "ground_support_counts": {
+    "outside_region": 442,
+    "missing_common_support": 4254,
+    "known": 24838
+  },
+  "max_scattering_order_seen": 10,
+  "mean_scattering_vertices_per_path": 0.23989295959472656,
+  "finite_scattering_order_truncation": false,
+  "safety_limit_hit": false,
+  "runtime_seconds": 4.708840073086321,
+  "production_solver_changed": false,
+  "limitations": [
+    "Conditional on the common observed support; missing/outside light is not inferred.",
+    "Scalar monochromatic proxy, absorbing spherical ground; no DSM, ground re-reflection, clouds, Moon or natural sky.",
+    "Angular continuation and fixed spectrum are scenarios. MC intervals do not measure physical accuracy.",
+    "Bounds and Hoeffding intervals are marginal, not simultaneous over variants/directions.",
+    "Effective score samples is a weight-concentration diagnostic, not a proof of normal coverage."
+  ],
+  "identity": {
+    "case": {
+      "id": "ucm-alt90-half_low_half_elevated",
+      "location": "ucm",
+      "altitude_deg": 90,
+      "profile": "half_low_half_elevated",
+      "seed": 47017
+    },
+    "samples": 524288,
+    "code": {
+      "scripts/study_city_emission_atmosphere.py": "68474e4446342a1980782ca8c48f369e57b473abc6ff7467e4d494ef04ca1412",
+      "src/lightpollution/physics.py": "e098afbd5b1564d0e009e4088ca9ed4f713b1018d7a36722efb76b11f02b5959",
+      "src/lightpollution/models/scattering_orders.py": "eb04e0414b8ba908429433c1b5caaef8959669fb8e6a760f89271d5cdbd7107c",
+      "src/lightpollution/models/all_orders.py": "34fa0f2fc865bad1f9e8b55e8a92638338b511c6923002b57edf6670d5fccddd",
+      "src/lightpollution/models/angular_sources.py": "d86f7efc2465e8ceb75794c0b555b592c546068a239a77a5c97029a9d53b5e8b",
+      "src/lightpollution/models/boundary_orders.py": "b9db584032275e194d07436d11632faa1ea2582a389378afd44b36d3b18feee4"
+    },
+    "source": {
+      "common_cells_for_transport": 467904,
+      "common_support_sha256": "694f6f60c08d20751112e876ea6f8b835cc3babf8d302741070173724564081e",
+      "off_near_area_ratio_on_transport_support": 1.0914098883744412,
+      "regional_eta_uniform_solid_angle": 0.47665967542229376,
+      "regional_eta_uniform_zenith_angle": 0.4930847178279431,
+      "normalisation": "Raw spatial radiance proxy with one scale for all variants; no per-map sum or zenith renormalisation.",
+      "maps": "data/seasonal-ground-20261110/madrid-2017-03/source-grid.npz",
+      "maps_sha256": "7a0822d264cc0f0b6ec3c65a02d7c7bcac42f1e91b47a49ad0bf904c4a661300"
+    },
+    "atmosphere": {
+      "reference_wavelength_nm": 550.0,
+      "rayleigh_scale_height_m": 8000.0,
+      "aerosol_scale_height_m": 1200.0,
+      "aerosol_optical_depth": 0.1,
+      "aerosol_single_scattering_albedo": 0.9,
+      "aerosol_g": 0.8,
+      "rayleigh_multiplier": 1.0,
+      "top_m": 80000.0,
+      "aerosol_layers": [
+        [
+          0.0,
+          1000.0,
+          0.5
+        ],
+        [
+          2000.0,
+          3000.0,
+          0.5
+        ]
+      ]
+    }
+  },
+  "case": {
+    "id": "ucm-alt90-half_low_half_elevated",
+    "location": "ucm",
+    "altitude_deg": 90,
+    "profile": "half_low_half_elevated",
+    "seed": 47017
+  },
+  "ratios_to_near": {
+    "near_lambertian": {
+      "ratio": 1.0,
+      "relative_change": 0.0,
+      "ratio_standard_error": 0.0,
+      "normal_95_interval": [
+        1.0,
+        1.0
+      ],
+      "delta_mag_artificial_only": -0.0,
+      "normal_intervals_eligible": true,
+      "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+    },
+    "empirical_hold_off": {
+      "ratio": 1.0044773369895128,
+      "relative_change": 0.0044773369895128035,
+      "ratio_standard_error": 0.001419569723160982,
+      "normal_95_interval": [
+        1.0016949803321173,
+        1.0072596936469083
+      ],
+      "delta_mag_artificial_only": -0.0048503566145290875,
+      "normal_intervals_eligible": true,
+      "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+    },
+    "fitted_0_60_hold_off": {
+      "ratio": 1.0314384761535116,
+      "relative_change": 0.031438476153511585,
+      "ratio_standard_error": 0.0010233121291444804,
+      "normal_95_interval": [
+        1.0294327843803883,
+        1.0334441679266348
+      ],
+      "delta_mag_artificial_only": -0.033608320075134486,
+      "normal_intervals_eligible": true,
+      "scope": "Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy."
+    }
+  },
+  "peak_rss_kib_process": 187736
+}

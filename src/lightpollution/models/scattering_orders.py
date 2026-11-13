@@ -100,7 +100,7 @@ def boundary_distance(points, directions, top_m):
 def _collision(points, directions, atmosphere, rng, max_null_events):
     """Exact free-path distribution for the prescribed exponential medium."""
     distance, ground = boundary_distance(points, directions, atmosphere.top_m)
-    majorant = atmosphere.rayleigh_sea_level + atmosphere.aerosol_extinction_sea_level
+    majorant = atmosphere.extinction_majorant
     travelled = np.zeros(len(points))
     collision = np.zeros(len(points), dtype=bool)
     pending = np.arange(len(points))

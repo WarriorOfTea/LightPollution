@@ -1,0 +1,146 @@
+{
+  "reviewed_at": "2026-11-13T17:02:41+01:00",
+  "focus": "Urban source emission, near-horizon constraints, atmosphere and identifiability.",
+  "sources": [
+    {
+      "id": "drone-2026",
+      "title": "Drone photometry enables characterization of upward emission patterns of light-pollution sources",
+      "url": "https://doi.org/10.1093/mnras/stag547",
+      "access": "Publisher PDF text, all sections; PDF screenshots failed. DOI/HTML requests were blocked.",
+      "scope": "Numerical retrieval experiment; no imported field drone series.",
+      "rights_and_storage": "CC BY 4.0 stated in PDF; article/figures not redistributed."
+    },
+    {
+      "id": "halo-2025",
+      "title": "Satellite Imagery Reveals Near-Horizon Urban Light Emissions Impacting Ambient Environment",
+      "url": "https://doi.org/10.1029/2025JD045452",
+      "access": "Full publisher HTML, methods and table1.",
+      "scope": "Seven city/time cases, four cities; TOA/SDR retrieval, not A3/A4 substitution.",
+      "rights_and_storage": "Open access; no foreign text/figures/data files redistributed."
+    },
+    {
+      "id": "atlas-2016",
+      "title": "The new world atlas of artificial night sky brightness",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4928945/",
+      "access": "Full original article in PMC, methods and validation tables.",
+      "scope": "Global fit is not an independently measured local CEF.",
+      "rights_and_storage": "CC BY-NC stated in article; no foreign figures or atlas rasters redistributed."
+    },
+    {
+      "id": "cef-critical-2016",
+      "title": "Angular emission function of a city and skyglow modeling: A critical perspective",
+      "url": "https://doi.org/10.1088/1538-3873/128/970/124001",
+      "access": "Author-paper indexed abstract and institutional bibliographic record; publisher full text blocked.",
+      "scope": "Used only for the radiance/intensity distinction, independently derived in THEORY.",
+      "rights_and_storage": "No copying of code, article, or figures."
+    },
+    {
+      "id": "cef-inversion-2017",
+      "title": "Retrieval of angular emission function from whole-city light sources using night-sky brightness measurements",
+      "url": "https://doi.org/10.1364/OPTICA.4.000255",
+      "access": "Indexed original publisher abstract and bibliographic details.",
+      "scope": "No coefficient database or implementation imported.",
+      "rights_and_storage": "No foreign files redistributed."
+    },
+    {
+      "id": "cef-inversion-2019",
+      "title": "Night-sky radiometry can revolutionize the characterization of light-pollution sources globally",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6475415/",
+      "access": "Indexed original-paper sections and publisher PDF excerpts; direct PMC pages returned captcha.",
+      "scope": "Regularization, aerosol constraints, isolated-source geometry; no raw measurements imported.",
+      "rights_and_storage": "No foreign files redistributed."
+    },
+    {
+      "id": "espey-2021",
+      "title": "Empirical Modelling of Public Lighting Emission Functions",
+      "url": "https://www.mdpi.com/2072-4292/13/19/3827",
+      "access": "Full publisher HTML.",
+      "scope": "Public-light inventory / metre DSM method, not all urban lighting.",
+      "rights_and_storage": "Open-access article; no external code/data copied."
+    },
+    {
+      "id": "espey-2023",
+      "title": "Real-World Urban Light Emission Functions and Quantitative Comparison with Spacecraft Measurements",
+      "url": "https://www.mdpi.com/2072-4292/15/12/2973",
+      "access": "Full publisher HTML including data availability; supplement URL listed, download HTTP403.",
+      "scope": "Published supplement lists Python/R scripts and Lantern_photometry.csv; actual files not received or executed.",
+      "rights_and_storage": "No third-party inventory, DSM, code, table files or imagery redistributed."
+    },
+    {
+      "id": "profiles-2023",
+      "title": "On the influence of aerosol extinction vertical profile in modeling of night sky radiance",
+      "url": "https://doi.org/10.1016/j.jqsrt.2023.108676",
+      "access": "Publisher-indexed abstract, highlights and section excerpts; direct requests HTTP403.",
+      "scope": "Tens-of-percent finding is literature context; report numbers come from our own study.",
+      "rights_and_storage": "Full article not downloaded or redistributed."
+    },
+    {
+      "id": "differential-2021",
+      "title": "Night-time monitoring of the aerosol content of the lower atmosphere by differential photometry of the anthropogenic skyglow",
+      "url": "https://arxiv.org/abs/2011.03441",
+      "access": "Primary preprint abstract and original publisher indexed method excerpts.",
+      "scope": "Candidate height-differential atmospheric constraint; no new observed AOD imported.",
+      "rights_and_storage": "No foreign files redistributed."
+    },
+    {
+      "id": "clouds-2025",
+      "title": "Generalizing the world atlas of artificial night sky brightness to encompass a wide range of sky states",
+      "url": "https://doi.org/10.1093/mnrasl/slaf083",
+      "access": "Publisher HTML abstract/method context.",
+      "scope": "Separate potential cloud task; not implemented or numerically reproduced here.",
+      "rights_and_storage": "No foreign code/data redistributed."
+    },
+    {
+      "id": "nasa-guide",
+      "title": "Black Marble User Guide Collection2",
+      "url": "https://landweb.modaps.eosdis.nasa.gov/data/userguide/BlackMarbleUserGuide_Collection2.0_20241203.pdf",
+      "access": "Official NASA PDF, atmospheric correction, angular products and A1 sensor geometry metadata.",
+      "scope": "Current A3/A4 sources are already corrected; daily TOA is a different input contract.",
+      "rights_and_storage": "Existing pinned local source arrays; no new NASA files downloaded."
+    },
+    {
+      "id": "actris",
+      "title": "ACTRIS/EARLINET access to data",
+      "url": "https://earlinet.eu/our-knowledge/access-to-data/",
+      "access": "Official provider documentation.",
+      "scope": "Profiles, errors, Raman extinction and backscatter; no individual local/time profiles obtained.",
+      "rights_and_storage": "Provider metadata only; no observation files redistributed."
+    },
+    {
+      "id": "cams",
+      "title": "CAMS Reanalysis",
+      "url": "https://www.ecmwf.int/en/research/climate-reanalysis/cams-reanalysis",
+      "access": "Official ECMWF dataset documentation.",
+      "scope": "60 model levels, approximately80km horizontal grid; no matched local profile received.",
+      "rights_and_storage": "Provider metadata only; no reanalysis downloads."
+    },
+    {
+      "id": "lunar-aod-2026",
+      "title": "An assessment of lunar photometry in AERONET",
+      "url": "https://amt.copernicus.org/articles/19/6487/2026/",
+      "access": "Original publisher full HTML; lunar geometry, measurement windows, data availability.",
+      "scope": "Column AOD, not a vertical profile; usable Moon required.",
+      "rights_and_storage": "No new station arrays downloaded."
+    }
+  ],
+  "queries": [
+    "Drone photometry enables characterization of upward emission patterns of light-pollution sources",
+    "Satellite Imagery Reveals Near-Horizon Urban Light Emissions Impacting Ambient Environment",
+    "The new world atlas of artificial night sky brightness Falchi 2016 full text",
+    "skyglow aerosol vertical profile layering inversion city emission function retrieval Kocifaj 2019",
+    "On the influence of aerosol extinction vertical profile modeling night sky radiance",
+    "city emission function azimuth Espey 2023 VIIRS",
+    "CAMS reanalysis vertical aerosol profile model levels lidar validation",
+    "EARLINET aerosol extinction profiles ACTRIS access",
+    "AERONET nighttime lunar photometer aerosol optical depth"
+  ],
+  "new_measurements": {
+    "city_emission_functions": 0,
+    "drone_series": 0,
+    "satellite_overpasses": 0,
+    "measured_vertical_profiles": 0,
+    "independent_field_nights": 0
+  },
+  "foreign_materials_redistributed": false,
+  "numerical_study": "Our code and previously pinned NASA maps; fixed scalar550nm experiment."
+}
