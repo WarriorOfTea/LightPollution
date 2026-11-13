@@ -1,0 +1,103 @@
+{
+  "method": "Independent analytical integral of the capped k=4 mixture: Hcap=(1-mu_cap)^4*(1+1.5*mu_cap).",
+  "checks": [
+    {
+      "dataset": "madrid-2017-03",
+      "variant": "mixed_eta_0.1_cap85",
+      "analytical_ratio": 1.087236926464963,
+      "quadrature_ratio": 1.0872369264649628,
+      "absolute_difference": 2.220446049250313e-16,
+      "passed": true
+    },
+    {
+      "dataset": "madrid-2017-03",
+      "variant": "mixed_eta_regional_cap85",
+      "analytical_ratio": 1.715096513020515,
+      "quadrature_ratio": 1.715096513020515,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "dataset": "madrid-2017-03",
+      "variant": "mixed_eta_regional_cap88",
+      "analytical_ratio": 1.8315114005083872,
+      "quadrature_ratio": 1.8315114005083868,
+      "absolute_difference": 4.440892098500626e-16,
+      "passed": true
+    },
+    {
+      "dataset": "madrid-2017-11",
+      "variant": "mixed_eta_0.1_cap85",
+      "analytical_ratio": 1.087236926464963,
+      "quadrature_ratio": 1.0872369264649628,
+      "absolute_difference": 2.220446049250313e-16,
+      "passed": true
+    },
+    {
+      "dataset": "madrid-2017-11",
+      "variant": "mixed_eta_regional_cap85",
+      "analytical_ratio": 2.3571218661225957,
+      "quadrature_ratio": 2.3571218661225957,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "dataset": "madrid-2017-11",
+      "variant": "mixed_eta_regional_cap88",
+      "analytical_ratio": 2.5780559449152025,
+      "quadrature_ratio": 2.5780559449152016,
+      "absolute_difference": 8.881784197001252e-16,
+      "passed": true
+    },
+    {
+      "dataset": "petersburg-2025",
+      "variant": "mixed_eta_0.1_cap85",
+      "analytical_ratio": 1.087236926464963,
+      "quadrature_ratio": 1.0872369264649628,
+      "absolute_difference": 2.220446049250313e-16,
+      "passed": true
+    },
+    {
+      "dataset": "petersburg-2025",
+      "variant": "mixed_eta_regional_cap85",
+      "analytical_ratio": 1.603073035018772,
+      "quadrature_ratio": 1.603073035018772,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "dataset": "petersburg-2025",
+      "variant": "mixed_eta_regional_cap88",
+      "analytical_ratio": 1.70125094281213,
+      "quadrature_ratio": 1.7012509428121296,
+      "absolute_difference": 4.440892098500626e-16,
+      "passed": true
+    },
+    {
+      "dataset": "saarland-2014",
+      "variant": "mixed_eta_0.1_cap85",
+      "analytical_ratio": 1.087236926464963,
+      "quadrature_ratio": 1.0872369264649628,
+      "absolute_difference": 2.220446049250313e-16,
+      "passed": true
+    },
+    {
+      "dataset": "saarland-2014",
+      "variant": "mixed_eta_regional_cap85",
+      "analytical_ratio": 2.7780456936036066,
+      "quadrature_ratio": 2.7780456936036066,
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "dataset": "saarland-2014",
+      "variant": "mixed_eta_regional_cap88",
+      "analytical_ratio": 3.0675045087429007,
+      "quadrature_ratio": 3.0675045087429003,
+      "absolute_difference": 4.440892098500626e-16,
+      "passed": true
+    }
+  ],
+  "passed": 12,
+  "failed": 0
+}

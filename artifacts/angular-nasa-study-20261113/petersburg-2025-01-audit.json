@@ -1,0 +1,233 @@
+{
+  "dataset": "petersburg-2025-01",
+  "cache": "data/seasonal-ground-20261110/petersburg-2025-01/source-grid.npz",
+  "cache_sha256": "536a7d51d0c86dc1124b256bdc2e1f16bff74b29ac7be18dc61ab68827f4626b",
+  "raw_files": [
+    {
+      "filename": "VNP46A3.A2025001.h20v02.002.2026064124555.h5",
+      "sha256": "af4b03c63c003d62b0f9bf7facd43436f2c774bb7fd0a97fb6c65b5f4d581750"
+    },
+    {
+      "filename": "VNP46A3.A2025001.h21v02.002.2026064124542.h5",
+      "sha256": "bde9fb4a3629770e6386d6d427eef9ba03e1df02a5d8854e8807e78e054629f5"
+    },
+    {
+      "filename": "VNP46A3.A2025001.h20v03.002.2026064124605.h5",
+      "sha256": "5814afcb64c6453944393005800716439293d68033d534f49d4837b6a6c558db"
+    },
+    {
+      "filename": "VNP46A3.A2025001.h21v03.002.2026064124550.h5",
+      "sha256": "dd1439d7e86e0582208eea9ef0877f60571f7ccb6fdc4a660fb2ec8dfc55c24b"
+    }
+  ],
+  "bounds": {
+    "west": 29.0,
+    "south": 59.0,
+    "east": 32.0,
+    "north": 61.0
+  },
+  "total_grid_cells": 345600,
+  "known_land_coast_cells": 262023,
+  "land_water_missing_cells": 2219,
+  "accepted_land_coast_cells": {
+    "NearNadir": 305,
+    "OffNadir": 5810,
+    "AllAngle": 78767
+  },
+  "common_three_angle_cells": 47,
+  "radiance_area_sums": {
+    "NearNadir": 65925141.05665382,
+    "OffNadir": 95946438.26608102,
+    "AllAngle": 76098307.20546566
+  },
+  "area_sum_ratios_to_near": {
+    "NearNadir": 1.0,
+    "OffNadir": 1.4553846488341666,
+    "AllAngle": 1.1543139079531035
+  },
+  "comparisons": {
+    "1.0": {
+      "threshold_both_nW_cm2_sr": 1.0,
+      "denominator": 3,
+      "off_over_near": {
+        "p05": 1.3661569188546423,
+        "p25": 1.422163094522999,
+        "median": 1.4921708141084449,
+        "p75": 1.4962835904209961,
+        "p95": 1.4995738114710369,
+        "count": 3,
+        "mean": 1.4482408519265153
+      },
+      "off_less_than_near": 0,
+      "off_at_least_20pct_lower": 0,
+      "off_at_least_20pct_higher": 3,
+      "eta_outside_0_1": 0,
+      "eta_within_0_1": {
+        "p05": 0.7834581760794044,
+        "p25": 0.8044216810150085,
+        "median": 0.8306260621845137,
+        "p75": 0.8317856370551144,
+        "p95": 0.8327132969515951,
+        "count": 3,
+        "mean": 0.8139295246519107
+      }
+    },
+    "5.0": {
+      "threshold_both_nW_cm2_sr": 5.0,
+      "denominator": 3,
+      "off_over_near": {
+        "p05": 1.3661569188546423,
+        "p25": 1.422163094522999,
+        "median": 1.4921708141084449,
+        "p75": 1.4962835904209961,
+        "p95": 1.4995738114710369,
+        "count": 3,
+        "mean": 1.4482408519265153
+      },
+      "off_less_than_near": 0,
+      "off_at_least_20pct_lower": 0,
+      "off_at_least_20pct_higher": 3,
+      "eta_outside_0_1": 0,
+      "eta_within_0_1": {
+        "p05": 0.7834581760794044,
+        "p25": 0.8044216810150085,
+        "median": 0.8306260621845137,
+        "p75": 0.8317856370551144,
+        "p95": 0.8327132969515951,
+        "count": 3,
+        "mean": 0.8139295246519107
+      }
+    },
+    "20.0": {
+      "threshold_both_nW_cm2_sr": 20.0,
+      "denominator": 3,
+      "off_over_near": {
+        "p05": 1.3661569188546423,
+        "p25": 1.422163094522999,
+        "median": 1.4921708141084449,
+        "p75": 1.4962835904209961,
+        "p95": 1.4995738114710369,
+        "count": 3,
+        "mean": 1.4482408519265153
+      },
+      "off_less_than_near": 0,
+      "off_at_least_20pct_lower": 0,
+      "off_at_least_20pct_higher": 3,
+      "eta_outside_0_1": 0,
+      "eta_within_0_1": {
+        "p05": 0.7834581760794044,
+        "p25": 0.8044216810150085,
+        "median": 0.8306260621845137,
+        "p75": 0.8317856370551144,
+        "p95": 0.8327132969515951,
+        "count": 3,
+        "mean": 0.8139295246519107
+      }
+    }
+  },
+  "observations_on_common": {
+    "NearNadir": {
+      "p05": 4.0,
+      "p25": 4.0,
+      "median": 4.0,
+      "p75": 4.0,
+      "p95": 4.0,
+      "count": 47,
+      "mean": 4.0212765957446805
+    },
+    "OffNadir": {
+      "p05": 4.0,
+      "p25": 4.0,
+      "median": 4.0,
+      "p75": 4.0,
+      "p95": 5.0,
+      "count": 47,
+      "mean": 4.276595744680851
+    },
+    "AllAngle": {
+      "p05": 9.0,
+      "p25": 10.0,
+      "median": 10.0,
+      "p75": 11.0,
+      "p95": 11.699999999999996,
+      "count": 47,
+      "mean": 10.25531914893617
+    }
+  },
+  "std_on_common": {
+    "NearNadir": {
+      "p05": 0.04943670146167278,
+      "p25": 0.11932321637868881,
+      "median": 0.1632571965456009,
+      "p75": 0.3282270133495331,
+      "p95": 60.41694025397264,
+      "count": 47,
+      "mean": 5.806891637041848
+    },
+    "OffNadir": {
+      "p05": 0.08819743469357491,
+      "p25": 0.28508909046649933,
+      "median": 0.37777262926101685,
+      "p75": 0.5077731013298035,
+      "p95": 97.919597011804,
+      "count": 47,
+      "mean": 9.372225166516419
+    },
+    "AllAngle": {
+      "p05": 0.14416522085666655,
+      "p25": 0.2147974744439125,
+      "median": 0.36022987961769104,
+      "p75": 0.42516523599624634,
+      "p95": 93.3989620983595,
+      "count": 47,
+      "mean": 9.074271283726743
+    }
+  },
+  "negative_nonfill_land_radiance": {
+    "NearNadir": 0,
+    "OffNadir": 0,
+    "AllAngle": 0
+  },
+  "zero_near_positive_off": 14,
+  "zero_off_positive_near": 2,
+  "all_outside_near_off_envelope": 5,
+  "all_envelope_denominator": 47,
+  "raw_cache_fields_verified": 15,
+  "raw_hashes_verified": 4,
+  "period": {
+    "year": 2025,
+    "month": 1
+  },
+  "limitations": [
+    "The three composites overlap in observations and contain different time/angle samples.",
+    "Pixel ratios include temporal variability, noise, gridding and residual corrections; not a unique angular emission inversion.",
+    "Only known land/coast classes 0,1,5; strict QA=0 and Num>3 in every angle.",
+    "Pixel sampling is 15 arcsec, not an independent optical footprint; 0.5 nW/(cm2 sr) censoring matters."
+  ],
+  "blocks": {
+    "4": {
+      "denominator_blocks": 0,
+      "off_over_near": {
+        "count": 0
+      },
+      "off_less_than_near": 0,
+      "eta_outside_0_1": 0
+    },
+    "12": {
+      "denominator_blocks": 0,
+      "off_over_near": {
+        "count": 0
+      },
+      "off_less_than_near": 0,
+      "eta_outside_0_1": 0
+    },
+    "24": {
+      "denominator_blocks": 0,
+      "off_over_near": {
+        "count": 0
+      },
+      "off_less_than_near": 0,
+      "eta_outside_0_1": 0
+    }
+  }
+}

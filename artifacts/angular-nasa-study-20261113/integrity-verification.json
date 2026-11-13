@@ -1,0 +1,842 @@
+{
+  "checked_at": "2026-11-13T13:17:57+01:00",
+  "checks": [
+    {
+      "case": "madrid-2017-03-north-alt10-seed19073",
+      "check": "outcome_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt10-seed19073",
+      "check": "ground_support_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt10-seed19073",
+      "check": "category_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt10-seed19073",
+      "check": "angular_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt10-seed19073",
+      "check": "covariance_positive_semidefinite",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt10-seed19073",
+      "check": "same_source_code",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt10-seed19073",
+      "check": "all_order_safety",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt10",
+      "check": "outcome_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt10",
+      "check": "ground_support_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt10",
+      "check": "category_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt10",
+      "check": "angular_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt10",
+      "check": "covariance_positive_semidefinite",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt10",
+      "check": "same_source_code",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt10",
+      "check": "all_order_safety",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt45-aod0.02",
+      "check": "outcome_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt45-aod0.02",
+      "check": "ground_support_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt45-aod0.02",
+      "check": "category_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt45-aod0.02",
+      "check": "angular_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt45-aod0.02",
+      "check": "covariance_positive_semidefinite",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt45-aod0.02",
+      "check": "same_source_code",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt45-aod0.02",
+      "check": "all_order_safety",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt45-aod0.3",
+      "check": "outcome_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt45-aod0.3",
+      "check": "ground_support_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt45-aod0.3",
+      "check": "category_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt45-aod0.3",
+      "check": "angular_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt45-aod0.3",
+      "check": "covariance_positive_semidefinite",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt45-aod0.3",
+      "check": "same_source_code",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt45-aod0.3",
+      "check": "all_order_safety",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt45-seed19073",
+      "check": "outcome_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt45-seed19073",
+      "check": "ground_support_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt45-seed19073",
+      "check": "category_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt45-seed19073",
+      "check": "angular_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt45-seed19073",
+      "check": "covariance_positive_semidefinite",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt45-seed19073",
+      "check": "same_source_code",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt45-seed19073",
+      "check": "all_order_safety",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt45",
+      "check": "outcome_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt45",
+      "check": "ground_support_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt45",
+      "check": "category_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt45",
+      "check": "angular_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt45",
+      "check": "covariance_positive_semidefinite",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt45",
+      "check": "same_source_code",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt45",
+      "check": "all_order_safety",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt90",
+      "check": "outcome_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt90",
+      "check": "ground_support_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt90",
+      "check": "category_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt90",
+      "check": "angular_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt90",
+      "check": "covariance_positive_semidefinite",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt90",
+      "check": "same_source_code",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt90",
+      "check": "all_order_safety",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-ucm-alt10",
+      "check": "outcome_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-ucm-alt10",
+      "check": "ground_support_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-ucm-alt10",
+      "check": "category_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-ucm-alt10",
+      "check": "angular_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-ucm-alt10",
+      "check": "covariance_positive_semidefinite",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-ucm-alt10",
+      "check": "same_source_code",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-ucm-alt10",
+      "check": "all_order_safety",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-ucm-alt45",
+      "check": "outcome_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-ucm-alt45",
+      "check": "ground_support_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-ucm-alt45",
+      "check": "category_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-ucm-alt45",
+      "check": "angular_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-ucm-alt45",
+      "check": "covariance_positive_semidefinite",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-ucm-alt45",
+      "check": "same_source_code",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-ucm-alt45",
+      "check": "all_order_safety",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-ucm-alt90",
+      "check": "outcome_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-ucm-alt90",
+      "check": "ground_support_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-ucm-alt90",
+      "check": "category_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-ucm-alt90",
+      "check": "angular_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-ucm-alt90",
+      "check": "covariance_positive_semidefinite",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-ucm-alt90",
+      "check": "same_source_code",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-ucm-alt90",
+      "check": "all_order_safety",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-north-alt10",
+      "check": "outcome_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-north-alt10",
+      "check": "ground_support_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-north-alt10",
+      "check": "category_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-north-alt10",
+      "check": "angular_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-north-alt10",
+      "check": "covariance_positive_semidefinite",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-north-alt10",
+      "check": "same_source_code",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-north-alt10",
+      "check": "all_order_safety",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-north-alt45",
+      "check": "outcome_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-north-alt45",
+      "check": "ground_support_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-north-alt45",
+      "check": "category_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-north-alt45",
+      "check": "angular_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-north-alt45",
+      "check": "covariance_positive_semidefinite",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-north-alt45",
+      "check": "same_source_code",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-north-alt45",
+      "check": "all_order_safety",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-north-alt90",
+      "check": "outcome_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-north-alt90",
+      "check": "ground_support_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-north-alt90",
+      "check": "category_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-north-alt90",
+      "check": "angular_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-north-alt90",
+      "check": "covariance_positive_semidefinite",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-north-alt90",
+      "check": "same_source_code",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-north-alt90",
+      "check": "all_order_safety",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-ucm-alt10",
+      "check": "outcome_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-ucm-alt10",
+      "check": "ground_support_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-ucm-alt10",
+      "check": "category_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-ucm-alt10",
+      "check": "angular_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-ucm-alt10",
+      "check": "covariance_positive_semidefinite",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-ucm-alt10",
+      "check": "same_source_code",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-ucm-alt10",
+      "check": "all_order_safety",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-ucm-alt45",
+      "check": "outcome_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-ucm-alt45",
+      "check": "ground_support_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-ucm-alt45",
+      "check": "category_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-ucm-alt45",
+      "check": "angular_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-ucm-alt45",
+      "check": "covariance_positive_semidefinite",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-ucm-alt45",
+      "check": "same_source_code",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-ucm-alt45",
+      "check": "all_order_safety",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-ucm-alt90",
+      "check": "outcome_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-ucm-alt90",
+      "check": "ground_support_conservation",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-ucm-alt90",
+      "check": "category_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-ucm-alt90",
+      "check": "angular_closure",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-ucm-alt90",
+      "check": "covariance_positive_semidefinite",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-ucm-alt90",
+      "check": "same_source_code",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11-ucm-alt90",
+      "check": "all_order_safety",
+      "passed": true
+    },
+    {
+      "case": "petersburg-2025-north-alt10",
+      "check": "outcome_conservation",
+      "passed": true
+    },
+    {
+      "case": "petersburg-2025-north-alt10",
+      "check": "ground_support_conservation",
+      "passed": true
+    },
+    {
+      "case": "petersburg-2025-north-alt10",
+      "check": "category_closure",
+      "passed": true
+    },
+    {
+      "case": "petersburg-2025-north-alt10",
+      "check": "angular_closure",
+      "passed": true
+    },
+    {
+      "case": "petersburg-2025-north-alt10",
+      "check": "covariance_positive_semidefinite",
+      "passed": true
+    },
+    {
+      "case": "petersburg-2025-north-alt10",
+      "check": "same_source_code",
+      "passed": true
+    },
+    {
+      "case": "petersburg-2025-north-alt10",
+      "check": "all_order_safety",
+      "passed": true
+    },
+    {
+      "case": "petersburg-2025-north-alt45",
+      "check": "outcome_conservation",
+      "passed": true
+    },
+    {
+      "case": "petersburg-2025-north-alt45",
+      "check": "ground_support_conservation",
+      "passed": true
+    },
+    {
+      "case": "petersburg-2025-north-alt45",
+      "check": "category_closure",
+      "passed": true
+    },
+    {
+      "case": "petersburg-2025-north-alt45",
+      "check": "angular_closure",
+      "passed": true
+    },
+    {
+      "case": "petersburg-2025-north-alt45",
+      "check": "covariance_positive_semidefinite",
+      "passed": true
+    },
+    {
+      "case": "petersburg-2025-north-alt45",
+      "check": "same_source_code",
+      "passed": true
+    },
+    {
+      "case": "petersburg-2025-north-alt45",
+      "check": "all_order_safety",
+      "passed": true
+    },
+    {
+      "case": "petersburg-2025-north-alt90",
+      "check": "outcome_conservation",
+      "passed": true
+    },
+    {
+      "case": "petersburg-2025-north-alt90",
+      "check": "ground_support_conservation",
+      "passed": true
+    },
+    {
+      "case": "petersburg-2025-north-alt90",
+      "check": "category_closure",
+      "passed": true
+    },
+    {
+      "case": "petersburg-2025-north-alt90",
+      "check": "angular_closure",
+      "passed": true
+    },
+    {
+      "case": "petersburg-2025-north-alt90",
+      "check": "covariance_positive_semidefinite",
+      "passed": true
+    },
+    {
+      "case": "petersburg-2025-north-alt90",
+      "check": "same_source_code",
+      "passed": true
+    },
+    {
+      "case": "petersburg-2025-north-alt90",
+      "check": "all_order_safety",
+      "passed": true
+    },
+    {
+      "case": "saarland-2014-saar-alt10",
+      "check": "outcome_conservation",
+      "passed": true
+    },
+    {
+      "case": "saarland-2014-saar-alt10",
+      "check": "ground_support_conservation",
+      "passed": true
+    },
+    {
+      "case": "saarland-2014-saar-alt10",
+      "check": "category_closure",
+      "passed": true
+    },
+    {
+      "case": "saarland-2014-saar-alt10",
+      "check": "angular_closure",
+      "passed": true
+    },
+    {
+      "case": "saarland-2014-saar-alt10",
+      "check": "covariance_positive_semidefinite",
+      "passed": true
+    },
+    {
+      "case": "saarland-2014-saar-alt10",
+      "check": "same_source_code",
+      "passed": true
+    },
+    {
+      "case": "saarland-2014-saar-alt10",
+      "check": "all_order_safety",
+      "passed": true
+    },
+    {
+      "case": "saarland-2014-saar-alt45",
+      "check": "outcome_conservation",
+      "passed": true
+    },
+    {
+      "case": "saarland-2014-saar-alt45",
+      "check": "ground_support_conservation",
+      "passed": true
+    },
+    {
+      "case": "saarland-2014-saar-alt45",
+      "check": "category_closure",
+      "passed": true
+    },
+    {
+      "case": "saarland-2014-saar-alt45",
+      "check": "angular_closure",
+      "passed": true
+    },
+    {
+      "case": "saarland-2014-saar-alt45",
+      "check": "covariance_positive_semidefinite",
+      "passed": true
+    },
+    {
+      "case": "saarland-2014-saar-alt45",
+      "check": "same_source_code",
+      "passed": true
+    },
+    {
+      "case": "saarland-2014-saar-alt45",
+      "check": "all_order_safety",
+      "passed": true
+    },
+    {
+      "case": "saarland-2014-saar-alt90",
+      "check": "outcome_conservation",
+      "passed": true
+    },
+    {
+      "case": "saarland-2014-saar-alt90",
+      "check": "ground_support_conservation",
+      "passed": true
+    },
+    {
+      "case": "saarland-2014-saar-alt90",
+      "check": "category_closure",
+      "passed": true
+    },
+    {
+      "case": "saarland-2014-saar-alt90",
+      "check": "angular_closure",
+      "passed": true
+    },
+    {
+      "case": "saarland-2014-saar-alt90",
+      "check": "covariance_positive_semidefinite",
+      "passed": true
+    },
+    {
+      "case": "saarland-2014-saar-alt90",
+      "check": "same_source_code",
+      "passed": true
+    },
+    {
+      "case": "saarland-2014-saar-alt90",
+      "check": "all_order_safety",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt10-seed19073",
+      "check": "independent_seed_4se",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt45-seed19073",
+      "check": "independent_seed_4se",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-03",
+      "check": "input_cache_sha256",
+      "passed": true
+    },
+    {
+      "case": "madrid-2017-11",
+      "check": "input_cache_sha256",
+      "passed": true
+    },
+    {
+      "case": "petersburg-2025",
+      "check": "input_cache_sha256",
+      "passed": true
+    },
+    {
+      "case": "saarland-2014",
+      "check": "input_cache_sha256",
+      "passed": true
+    }
+  ],
+  "passed": 160,
+  "failed": 0,
+  "completed_cases": 22,
+  "expected_cases": 22,
+  "missing_cases": [],
+  "independent_seed": [
+    {
+      "case": "madrid-2017-03-north-alt10-seed19073",
+      "z_per_variant": {
+        "near_lambertian": 0.7755014960409112,
+        "off_lambertian": 0.5036409405649848,
+        "all_lambertian": 0.6544652343533828,
+        "angular_horizon_zero": 0.04984245331763864,
+        "angular_horizon_hold": 0.4108453816178344,
+        "angular_horizon_double": 0.651818586499296,
+        "mixed_eta_0.1_cap85": 1.4293766140451576,
+        "mixed_eta_regional_cap85": 1.9716229220866957,
+        "mixed_eta_regional_cap88": 2.256593229322988
+      },
+      "passed_4_combined_se": true
+    },
+    {
+      "case": "madrid-2017-03-north-alt45-seed19073",
+      "z_per_variant": {
+        "near_lambertian": 0.05228322227675124,
+        "off_lambertian": 0.11065186423470706,
+        "all_lambertian": 0.19781688590696164,
+        "angular_horizon_zero": 0.23685300230179201,
+        "angular_horizon_hold": 0.12668927885512857,
+        "angular_horizon_double": 0.37243275231230927,
+        "mixed_eta_0.1_cap85": 0.25616521177300505,
+        "mixed_eta_regional_cap85": 0.49667058276384657,
+        "mixed_eta_regional_cap88": 0.03782031740762312
+      },
+      "passed_4_combined_se": true
+    }
+  ]
+}

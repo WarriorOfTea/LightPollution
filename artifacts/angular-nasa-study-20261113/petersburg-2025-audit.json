@@ -1,0 +1,251 @@
+{
+  "dataset": "petersburg-2025",
+  "cache": "artifacts/petersburg-2025/source-grid.npz",
+  "cache_sha256": "554b061cd72c1532cb995b40c89eed8248cbc47adec293f0c068c429ab244e6c",
+  "raw_files": [
+    {
+      "filename": "VNP46A4.A2025001.h20v02.002.2026076194841.h5",
+      "sha256": "5175fffbfdc3657b12c481d9f0e796745f7ea238b90e8859d4f6b044d784b371"
+    },
+    {
+      "filename": "VNP46A4.A2025001.h21v02.002.2026076221750.h5",
+      "sha256": "033bce269125713b33530798dfddd4dc41ce939fcadb274b1afc47a024171d20"
+    },
+    {
+      "filename": "VNP46A4.A2025001.h20v03.002.2026076194940.h5",
+      "sha256": "1e6629232c61146b3c4be53cbad206afbd0a19acaaf3cf9c1573da0440139651"
+    },
+    {
+      "filename": "VNP46A4.A2025001.h21v03.002.2026076222151.h5",
+      "sha256": "ec4e6252fb1495e817500245ed288ae0b8ffd7b81a0670dd43857a8594e7f301"
+    }
+  ],
+  "bounds": {
+    "west": 29.0,
+    "south": 59.0,
+    "east": 32.0,
+    "north": 61.0
+  },
+  "total_grid_cells": 345600,
+  "known_land_coast_cells": 263602,
+  "land_water_missing_cells": 0,
+  "accepted_land_coast_cells": {
+    "NearNadir": 250349,
+    "OffNadir": 237439,
+    "AllAngle": 242817
+  },
+  "common_three_angle_cells": 235533,
+  "radiance_area_sums": {
+    "NearNadir": 101495565854.96754,
+    "OffNadir": 109319865928.05461,
+    "AllAngle": 102249547616.89154
+  },
+  "area_sum_ratios_to_near": {
+    "NearNadir": 1.0,
+    "OffNadir": 1.077090067996346,
+    "AllAngle": 1.007428716275166
+  },
+  "comparisons": {
+    "1.0": {
+      "threshold_both_nW_cm2_sr": 1.0,
+      "denominator": 49244,
+      "off_over_near": {
+        "p05": 0.7314240180016671,
+        "p25": 0.9949796408335594,
+        "median": 1.1715035321753087,
+        "p75": 1.3971607908020938,
+        "p95": 1.919837054245382,
+        "count": 49244,
+        "mean": 1.2340635606129948
+      },
+      "off_less_than_near": 12632,
+      "off_at_least_20pct_lower": 3858,
+      "off_at_least_20pct_higher": 22724,
+      "eta_outside_0_1": 12632,
+      "eta_within_0_1": {
+        "p05": 0.2171103239973092,
+        "p25": 0.5664296908744793,
+        "median": 0.7300186946718253,
+        "p75": 0.8301170050187496,
+        "p95": 0.9104635650817312,
+        "count": 36612,
+        "mean": 0.6719036084261081
+      }
+    },
+    "5.0": {
+      "threshold_both_nW_cm2_sr": 5.0,
+      "denominator": 24498,
+      "off_over_near": {
+        "p05": 0.7218700940174665,
+        "p25": 0.9588483597921356,
+        "median": 1.1023119153226437,
+        "p75": 1.2665660202438511,
+        "p95": 1.6406387636810604,
+        "count": 24498,
+        "mean": 1.1351431362254567
+      },
+      "off_less_than_near": 7788,
+      "off_at_least_20pct_lower": 2107,
+      "off_at_least_20pct_higher": 8276,
+      "eta_outside_0_1": 7788,
+      "eta_within_0_1": {
+        "p05": 0.16802471212953904,
+        "p25": 0.4880002939198045,
+        "median": 0.6635922792875945,
+        "p75": 0.7773094856167495,
+        "p95": 0.8823905625230475,
+        "count": 16710,
+        "mean": 0.6122950957734598
+      }
+    },
+    "20.0": {
+      "threshold_both_nW_cm2_sr": 20.0,
+      "denominator": 9095,
+      "off_over_near": {
+        "p05": 0.6913469106581824,
+        "p25": 0.9600600029967312,
+        "median": 1.0997539180941966,
+        "p75": 1.2610452360258764,
+        "p95": 1.615129446452492,
+        "count": 9095,
+        "mean": 1.1248877243226556
+      },
+      "off_less_than_near": 2887,
+      "off_at_least_20pct_lower": 839,
+      "off_at_least_20pct_higher": 3045,
+      "eta_outside_0_1": 2887,
+      "eta_within_0_1": {
+        "p05": 0.17587686950141154,
+        "p25": 0.48209383316121535,
+        "median": 0.6606488406146742,
+        "p75": 0.7726931592487711,
+        "p95": 0.8780935768385174,
+        "count": 6208,
+        "mean": 0.6098589327173382
+      }
+    }
+  },
+  "observations_on_common": {
+    "NearNadir": {
+      "p05": 11.0,
+      "p25": 14.0,
+      "median": 16.0,
+      "p75": 19.0,
+      "p95": 23.0,
+      "count": 235533,
+      "mean": 16.62902862868473
+    },
+    "OffNadir": {
+      "p05": 14.0,
+      "p25": 17.0,
+      "median": 19.0,
+      "p75": 22.0,
+      "p95": 26.0,
+      "count": 235533,
+      "mean": 19.55950121639006
+    },
+    "AllAngle": {
+      "p05": 44.0,
+      "p25": 53.0,
+      "median": 60.0,
+      "p75": 67.0,
+      "p95": 76.0,
+      "count": 235533,
+      "mean": 59.90886202782625
+    }
+  },
+  "std_on_common": {
+    "NearNadir": {
+      "p05": 0.17611466646194457,
+      "p25": 0.21607528626918793,
+      "median": 0.2695138454437256,
+      "p75": 0.43515336513519287,
+      "p95": 6.1834131240844705,
+      "count": 235533,
+      "mean": 2.1324548913424137
+    },
+    "OffNadir": {
+      "p05": 0.22610400319099427,
+      "p25": 0.2878062427043915,
+      "median": 0.3571016490459442,
+      "p75": 0.5319984555244446,
+      "p95": 7.24670419692993,
+      "count": 235533,
+      "mean": 2.1661350085361284
+    },
+    "AllAngle": {
+      "p05": 0.231961253285408,
+      "p25": 0.27648356556892395,
+      "median": 0.34037402272224426,
+      "p75": 0.5044639706611633,
+      "p95": 7.296063137054439,
+      "count": 235533,
+      "mean": 2.1915424561584618
+    }
+  },
+  "negative_nonfill_land_radiance": {
+    "NearNadir": 0,
+    "OffNadir": 0,
+    "AllAngle": 0
+  },
+  "zero_near_positive_off": 39517,
+  "zero_off_positive_near": 1750,
+  "all_outside_near_off_envelope": 29560,
+  "all_envelope_denominator": 235533,
+  "raw_cache_fields_verified": 15,
+  "raw_hashes_verified": 4,
+  "period": {
+    "year": 2025,
+    "month": null
+  },
+  "limitations": [
+    "The three composites overlap in observations and contain different time/angle samples.",
+    "Pixel ratios include temporal variability, noise, gridding and residual corrections; not a unique angular emission inversion.",
+    "Only known land/coast classes 0,1,5; strict QA=0 and Num>3 in every angle.",
+    "Pixel sampling is 15 arcsec, not an independent optical footprint; 0.5 nW/(cm2 sr) censoring matters."
+  ],
+  "blocks": {
+    "4": {
+      "denominator_blocks": 1625,
+      "off_over_near": {
+        "p05": 0.8552909592010997,
+        "p25": 1.0270524990979917,
+        "median": 1.1162936136301551,
+        "p75": 1.2143349068152294,
+        "p95": 1.3963670054836763,
+        "count": 1625,
+        "mean": 1.1193962372033477
+      },
+      "off_less_than_near": 319,
+      "eta_outside_0_1": 319
+    },
+    "12": {
+      "denominator_blocks": 198,
+      "off_over_near": {
+        "p05": 0.8805894275666486,
+        "p25": 1.0659862426307654,
+        "median": 1.1310699375117061,
+        "p75": 1.1824385502829642,
+        "p95": 1.3366343675661587,
+        "count": 198,
+        "mean": 1.1198607854191602
+      },
+      "off_less_than_near": 29,
+      "eta_outside_0_1": 29
+    },
+    "24": {
+      "denominator_blocks": 56,
+      "off_over_near": {
+        "p05": 0.8464410799894844,
+        "p25": 1.0589279667997795,
+        "median": 1.1250638092028495,
+        "p75": 1.1714261778884616,
+        "p95": 1.2517399309078323,
+        "count": 56,
+        "mean": 1.0968016083688676
+      },
+      "off_less_than_near": 8,
+      "eta_outside_0_1": 8
+    }
+  }
+}

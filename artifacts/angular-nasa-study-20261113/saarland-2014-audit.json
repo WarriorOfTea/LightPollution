@@ -1,0 +1,239 @@
+{
+  "dataset": "saarland-2014",
+  "cache": "artifacts/photo-comparison/saarland-2014/source-grid.npz",
+  "cache_sha256": "13b4e6fd8582ab18f64bdfea19fc2d8ad7e046a6e7d55ca0f16fc5a7c2ec1e8d",
+  "raw_files": [
+    {
+      "filename": "VNP46A4.A2014001.h18v04.002.2025090174541.h5",
+      "sha256": "ce9f0e0dd66574b0f17eba1f8206d06e28627c72fcd02349813331b1bcd3de69"
+    }
+  ],
+  "bounds": {
+    "west": 4.5,
+    "south": 48.0,
+    "east": 9.0,
+    "north": 50.0
+  },
+  "total_grid_cells": 518400,
+  "known_land_coast_cells": 518288,
+  "land_water_missing_cells": 0,
+  "accepted_land_coast_cells": {
+    "NearNadir": 518153,
+    "OffNadir": 517285,
+    "AllAngle": 517804
+  },
+  "common_three_angle_cells": 517260,
+  "radiance_area_sums": {
+    "NearNadir": 111619627022.51288,
+    "OffNadir": 136989132569.42017,
+    "AllAngle": 123932053878.98242
+  },
+  "area_sum_ratios_to_near": {
+    "NearNadir": 1.0,
+    "OffNadir": 1.2272853459883937,
+    "AllAngle": 1.110307005899475
+  },
+  "comparisons": {
+    "1.0": {
+      "threshold_both_nW_cm2_sr": 1.0,
+      "denominator": 111253,
+      "off_over_near": {
+        "p05": 0.8201778159790363,
+        "p25": 1.0453613362844598,
+        "median": 1.1939240769929902,
+        "p75": 1.3778760952439035,
+        "p95": 1.7844342426010373,
+        "count": 111253,
+        "mean": 1.2363461992513678
+      },
+      "off_less_than_near": 20963,
+      "off_at_least_20pct_lower": 4722,
+      "off_at_least_20pct_higher": 54536,
+      "eta_outside_0_1": 20963,
+      "eta_within_0_1": {
+        "p05": 0.23428894790814764,
+        "p25": 0.5670080526336969,
+        "median": 0.7162914085597036,
+        "p75": 0.8107404691343741,
+        "p95": 0.8931056358638129,
+        "count": 90290,
+        "mean": 0.6634433863064855
+      }
+    },
+    "5.0": {
+      "threshold_both_nW_cm2_sr": 5.0,
+      "denominator": 35484,
+      "off_over_near": {
+        "p05": 0.8156713450904528,
+        "p25": 1.0181889125440549,
+        "median": 1.140197922371311,
+        "p75": 1.2728851881053995,
+        "p95": 1.5483132149212198,
+        "count": 35484,
+        "mean": 1.1583346161221661
+      },
+      "off_less_than_near": 7758,
+      "off_at_least_20pct_lower": 1550,
+      "off_at_least_20pct_higher": 13249,
+      "eta_outside_0_1": 7758,
+      "eta_within_0_1": {
+        "p05": 0.18604786643812757,
+        "p25": 0.5014548499011956,
+        "median": 0.6553566771726017,
+        "p75": 0.7593894764031615,
+        "p95": 0.8560351829759829,
+        "count": 27726,
+        "mean": 0.6086204671027274
+      }
+    },
+    "20.0": {
+      "threshold_both_nW_cm2_sr": 20.0,
+      "denominator": 7065,
+      "off_over_near": {
+        "p05": 0.8130117549762138,
+        "p25": 1.016453418454432,
+        "median": 1.124201207977914,
+        "p75": 1.234584053386875,
+        "p95": 1.4413730633169293,
+        "count": 7065,
+        "mean": 1.1275239199738623
+      },
+      "off_less_than_near": 1553,
+      "off_at_least_20pct_lower": 322,
+      "off_at_least_20pct_higher": 2224,
+      "eta_outside_0_1": 1553,
+      "eta_within_0_1": {
+        "p05": 0.16834152412087627,
+        "p25": 0.4772002257823478,
+        "median": 0.6237911886897054,
+        "p75": 0.7273532121313977,
+        "p95": 0.8240764018465466,
+        "count": 5512,
+        "mean": 0.5810078570007964
+      }
+    }
+  },
+  "observations_on_common": {
+    "NearNadir": {
+      "p05": 23.0,
+      "p25": 28.0,
+      "median": 31.0,
+      "p75": 34.0,
+      "p95": 40.0,
+      "count": 517260,
+      "mean": 30.944339403781463
+    },
+    "OffNadir": {
+      "p05": 27.0,
+      "p25": 31.0,
+      "median": 35.0,
+      "p75": 39.0,
+      "p95": 44.0,
+      "count": 517260,
+      "mean": 35.18464021961876
+    },
+    "AllAngle": {
+      "p05": 87.0,
+      "p25": 98.0,
+      "median": 105.0,
+      "p75": 112.0,
+      "p95": 125.0,
+      "count": 517260,
+      "mean": 105.11338011831575
+    }
+  },
+  "std_on_common": {
+    "NearNadir": {
+      "p05": 0.13886210769414903,
+      "p25": 0.17445103079080582,
+      "median": 0.212953619658947,
+      "p75": 0.4043784365057945,
+      "p95": 3.3465967178344678,
+      "count": 517260,
+      "mean": 0.7931453775381624
+    },
+    "OffNadir": {
+      "p05": 0.23314252272248268,
+      "p25": 0.28217291831970215,
+      "median": 0.3482014536857605,
+      "p75": 0.559148833155632,
+      "p95": 3.8190281510353086,
+      "count": 517260,
+      "mean": 0.9514160869137009
+    },
+    "AllAngle": {
+      "p05": 0.21355562582612037,
+      "p25": 0.24793417751789093,
+      "median": 0.3095474988222122,
+      "p75": 0.5209514796733856,
+      "p95": 3.7234487652778614,
+      "count": 517260,
+      "mean": 0.9138933322674685
+    }
+  },
+  "negative_nonfill_land_radiance": {
+    "NearNadir": 0,
+    "OffNadir": 0,
+    "AllAngle": 0
+  },
+  "zero_near_positive_off": 87561,
+  "zero_off_positive_near": 553,
+  "all_outside_near_off_envelope": 41190,
+  "all_envelope_denominator": 517260,
+  "raw_cache_fields_verified": 15,
+  "raw_hashes_verified": 1,
+  "period": {
+    "year": 2014,
+    "month": null
+  },
+  "limitations": [
+    "The three composites overlap in observations and contain different time/angle samples.",
+    "Pixel ratios include temporal variability, noise, gridding and residual corrections; not a unique angular emission inversion.",
+    "Only known land/coast classes 0,1,5; strict QA=0 and Num>3 in every angle.",
+    "Pixel sampling is 15 arcsec, not an independent optical footprint; 0.5 nW/(cm2 sr) censoring matters."
+  ],
+  "blocks": {
+    "4": {
+      "denominator_blocks": 2256,
+      "off_over_near": {
+        "p05": 0.9344818402061207,
+        "p25": 1.07244769258766,
+        "median": 1.1535081708633326,
+        "p75": 1.2273464638510938,
+        "p95": 1.3770609113658923,
+        "count": 2256,
+        "mean": 1.1525909908730627
+      },
+      "off_less_than_near": 246,
+      "eta_outside_0_1": 246
+    },
+    "12": {
+      "denominator_blocks": 249,
+      "off_over_near": {
+        "p05": 0.9911671792527756,
+        "p25": 1.1076982503188804,
+        "median": 1.1621442248523741,
+        "p75": 1.2130722879281186,
+        "p95": 1.2990356882489296,
+        "count": 249,
+        "mean": 1.1512507508676946
+      },
+      "off_less_than_near": 14,
+      "eta_outside_0_1": 14
+    },
+    "24": {
+      "denominator_blocks": 65,
+      "off_over_near": {
+        "p05": 0.9820940786788565,
+        "p25": 1.1034905732782645,
+        "median": 1.1497964708083244,
+        "p75": 1.2043378378358895,
+        "p95": 1.2570392761727185,
+        "count": 65,
+        "mean": 1.1369150582483698
+      },
+      "off_less_than_near": 5,
+      "eta_outside_0_1": 5
+    }
+  }
+}

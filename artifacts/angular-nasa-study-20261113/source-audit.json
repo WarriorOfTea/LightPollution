@@ -1,0 +1,49 @@
+{
+  "checked_at": "2026-11-13T13:05:54+01:00",
+  "base_git_revision": "3e284c81b9abaed7c57365ce7291fcf884bdce7f",
+  "sources": [
+    {
+      "url": "https://landweb.modaps.eosdis.nasa.gov/data/userguide/BlackMarbleUserGuide_Collection2.0_20241203.pdf",
+      "access": "PDF text read through web tool, 63 pages",
+      "sections_used": [
+        "2.2 atmospheric correction",
+        "2.3 monthly/yearly composites",
+        "SDS/QA tables and VNP46A1 Sensor_Zenith/Sensor_Azimuth appendix"
+      ],
+      "role": "NASA definitions, angle bins, QA/count/std, overlapping composites, weak-radiance threshold",
+      "not_implemented": "NASA atmospheric/lunar correction is not rerun; daily angle data not downloaded."
+    },
+    {
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/VNP46A3/",
+      "access": "official product page read",
+      "role": "monthly product and SDS definitions"
+    },
+    {
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/VNP46A4/",
+      "access": "official product page read",
+      "role": "annual product and SDS definitions"
+    },
+    {
+      "url": "https://arxiv.org/abs/2107.02026",
+      "access": "abstract read",
+      "role": "Published example of divergent ground V/satellite DNB changes after LED retrofit. No author data or figures imported."
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0034425719303761",
+      "access": "publisher full text unavailable: HTTP403; search metadata only",
+      "role": "Not used as an imported model or numerical reference."
+    },
+    {
+      "url": "https://doi.org/10.1109/LGRS.2022.3176616",
+      "access": "DOI link inaccessible through web tool",
+      "role": "Not claimed to have read full paper."
+    }
+  ],
+  "rights_and_redistribution": {
+    "NASA": "Previously pinned public Black Marble science data; file attribution/DOIs and original metadata preserved. No new download or source imagery copied. Regional raw HDF5 remain outside Git.",
+    "papers_and_guide": "Links and paraphrased facts only; no full copyrighted texts/third-party figures added.",
+    "new_figures": "Generated from this project’s numerical ratios/scenarios using matplotlib."
+  },
+  "data_downloaded_this_task": false,
+  "spectral_response_or_daily_angles_downloaded": false
+}

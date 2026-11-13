@@ -1,0 +1,15 @@
+{
+  "generator": "scripts/summarize_angular_nasa_study.py",
+  "source_code_sha256": "3884667a1bba331191e560673ff550619ecd191b336c811755ea841d9dea980c",
+  "inputs": {
+    "protocol.json": "c76cf694f9ab83c580e63c25b78f16020545f8ef9beb0123805ba042094da35b",
+    "input-summary.json": "c1f9ac08653cff27e9083c251e9da6529adec46c116b5dfc6d7f7810551f6c8e",
+    "sky-comparisons.csv": "06c36b37cff22ecd56b87c1f1fff55c68dec2965f79bb8643c6dbf0424bb883f"
+  },
+  "plots": {
+    "sky-angle-comparison.png": "7fcc3a3a01aef25e41e7b6e391eaf1b351ebc24d820f25a32bf82ac95f43a007",
+    "spatial-angle-ratios.png": "3d6cd2276a8a29af2951112b5557eb8957c53ae7f0e35deb0bc4ba5037b2f790",
+    "angular-continuations.png": "ab794b12e0577dcb22a3194079ee3b522e8cc28235b745edb7b2e1a99164cb23"
+  },
+  "interpretation": "Scientific plots of numerical inputs/scenarios; not calibrated visual appearance of the sky."
+}

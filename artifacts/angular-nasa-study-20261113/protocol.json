@@ -1,0 +1,404 @@
+{
+  "id": "LP-NASA-angular-all-orders-1",
+  "created_at": "2026-11-13T12:58:35+01:00",
+  "source_code_sha256": {
+    "scripts/run_angular_nasa_study.py": "26007a8ee8865b47e317fb7307f592cc47d32de6e6730f4c6bfa489fb7a2b2f0",
+    "src/lightpollution/models/angular_sources.py": "d86f7efc2465e8ceb75794c0b555b592c546068a239a77a5c97029a9d53b5e8b",
+    "src/lightpollution/models/boundary_orders.py": "b9db584032275e194d07436d11632faa1ea2582a389378afd44b36d3b18feee4",
+    "src/lightpollution/models/all_orders.py": "34fa0f2fc865bad1f9e8b55e8a92638338b511c6923002b57edf6670d5fccddd",
+    "src/lightpollution/models/scattering_orders.py": "87fb2a78a50b72806fd7bbe7c20a6032731b187f368ae791a215b2f48739680e",
+    "src/lightpollution/physics.py": "00f5d96018280672658424163ba7ec79aaf89d53532bc3215c6481bc52fd1a6a",
+    "src/lightpollution/data.py": "a7546632eeed17b736f05c67dacadab873a3376a4a022f3bc5dad10007801b45"
+  },
+  "inputs": {
+    "madrid-2017-03": {
+      "common_cells_for_transport": 467904,
+      "common_support_sha256": "694f6f60c08d20751112e876ea6f8b835cc3babf8d302741070173724564081e",
+      "off_near_area_ratio_on_transport_support": 1.0914098883744412,
+      "regional_eta_uniform_solid_angle": 0.47665967542229376,
+      "regional_eta_uniform_zenith_angle": 0.4930847178279431,
+      "normalisation": "Raw spatial radiance proxy with one scale for all variants; no per-map sum or zenith renormalisation.",
+      "maps": "data/seasonal-ground-20261110/madrid-2017-03/source-grid.npz",
+      "maps_sha256": "7a0822d264cc0f0b6ec3c65a02d7c7bcac42f1e91b47a49ad0bf904c4a661300"
+    },
+    "madrid-2017-11": {
+      "common_cells_for_transport": 467904,
+      "common_support_sha256": "694f6f60c08d20751112e876ea6f8b835cc3babf8d302741070173724564081e",
+      "off_near_area_ratio_on_transport_support": 1.1734791822278412,
+      "regional_eta_uniform_solid_angle": 0.6335044020672363,
+      "regional_eta_uniform_zenith_angle": 0.6486349697468224,
+      "normalisation": "Raw spatial radiance proxy with one scale for all variants; no per-map sum or zenith renormalisation.",
+      "maps": "data/seasonal-ground-20261110/madrid-2017-11/source-grid.npz",
+      "maps_sha256": "5502bfe1f7030bcc673096f8193bfe0e97a3ae68d7f0bacf6baa0339bc56c864"
+    },
+    "petersburg-2025": {
+      "common_cells_for_transport": 235533,
+      "common_support_sha256": "3233734fe7a87e28becc7bd00280b93b23a21f156205401867a7f0c3c522ff9c",
+      "off_near_area_ratio_on_transport_support": 1.077090067996346,
+      "regional_eta_uniform_solid_angle": 0.43442750425956317,
+      "regional_eta_uniform_zenith_angle": 0.4506505154602945,
+      "normalisation": "Raw spatial radiance proxy with one scale for all variants; no per-map sum or zenith renormalisation.",
+      "maps": "artifacts/petersburg-2025/source-grid.npz",
+      "maps_sha256": "554b061cd72c1532cb995b40c89eed8248cbc47adec293f0c068c429ab244e6c"
+    },
+    "saarland-2014": {
+      "common_cells_for_transport": 517260,
+      "common_support_sha256": "8b266ecc1b6d6924e23444e6bd7ff5c3ea4b2d67322d94adaf33c0c90457ab9c",
+      "off_near_area_ratio_on_transport_support": 1.2272853459883937,
+      "regional_eta_uniform_solid_angle": 0.6936911287532618,
+      "regional_eta_uniform_zenith_angle": 0.7074839354382322,
+      "normalisation": "Raw spatial radiance proxy with one scale for all variants; no per-map sum or zenith renormalisation.",
+      "maps": "artifacts/photo-comparison/saarland-2014/source-grid.npz",
+      "maps_sha256": "13b4e6fd8582ab18f64bdfea19fc2d8ad7e046a6e7d55ca0f16fc5a7c2ec1e8d"
+    }
+  },
+  "cases": [
+    {
+      "id": "madrid-2017-03-ucm-alt10",
+      "dataset": "madrid-2017-03",
+      "observer": {
+        "latitude_deg": 40.451111,
+        "longitude_deg": -3.726111,
+        "height_m": 20.0
+      },
+      "azimuth_deg": 180.0,
+      "altitude_deg": 10.0,
+      "aod": 0.1,
+      "seed": 9071,
+      "role": "primary"
+    },
+    {
+      "id": "madrid-2017-03-ucm-alt45",
+      "dataset": "madrid-2017-03",
+      "observer": {
+        "latitude_deg": 40.451111,
+        "longitude_deg": -3.726111,
+        "height_m": 20.0
+      },
+      "azimuth_deg": 180.0,
+      "altitude_deg": 45.0,
+      "aod": 0.1,
+      "seed": 9071,
+      "role": "primary"
+    },
+    {
+      "id": "madrid-2017-03-ucm-alt90",
+      "dataset": "madrid-2017-03",
+      "observer": {
+        "latitude_deg": 40.451111,
+        "longitude_deg": -3.726111,
+        "height_m": 20.0
+      },
+      "azimuth_deg": 180.0,
+      "altitude_deg": 90.0,
+      "aod": 0.1,
+      "seed": 9071,
+      "role": "primary"
+    },
+    {
+      "id": "madrid-2017-03-north-alt10",
+      "dataset": "madrid-2017-03",
+      "observer": {
+        "latitude_deg": 40.85,
+        "longitude_deg": -3.726111,
+        "height_m": 20.0
+      },
+      "azimuth_deg": 180.0,
+      "altitude_deg": 10.0,
+      "aod": 0.1,
+      "seed": 9071,
+      "role": "primary"
+    },
+    {
+      "id": "madrid-2017-03-north-alt45",
+      "dataset": "madrid-2017-03",
+      "observer": {
+        "latitude_deg": 40.85,
+        "longitude_deg": -3.726111,
+        "height_m": 20.0
+      },
+      "azimuth_deg": 180.0,
+      "altitude_deg": 45.0,
+      "aod": 0.1,
+      "seed": 9071,
+      "role": "primary"
+    },
+    {
+      "id": "madrid-2017-03-north-alt90",
+      "dataset": "madrid-2017-03",
+      "observer": {
+        "latitude_deg": 40.85,
+        "longitude_deg": -3.726111,
+        "height_m": 20.0
+      },
+      "azimuth_deg": 180.0,
+      "altitude_deg": 90.0,
+      "aod": 0.1,
+      "seed": 9071,
+      "role": "primary"
+    },
+    {
+      "id": "madrid-2017-11-ucm-alt10",
+      "dataset": "madrid-2017-11",
+      "observer": {
+        "latitude_deg": 40.451111,
+        "longitude_deg": -3.726111,
+        "height_m": 20.0
+      },
+      "azimuth_deg": 180.0,
+      "altitude_deg": 10.0,
+      "aod": 0.1,
+      "seed": 9071,
+      "role": "primary"
+    },
+    {
+      "id": "madrid-2017-11-ucm-alt45",
+      "dataset": "madrid-2017-11",
+      "observer": {
+        "latitude_deg": 40.451111,
+        "longitude_deg": -3.726111,
+        "height_m": 20.0
+      },
+      "azimuth_deg": 180.0,
+      "altitude_deg": 45.0,
+      "aod": 0.1,
+      "seed": 9071,
+      "role": "primary"
+    },
+    {
+      "id": "madrid-2017-11-ucm-alt90",
+      "dataset": "madrid-2017-11",
+      "observer": {
+        "latitude_deg": 40.451111,
+        "longitude_deg": -3.726111,
+        "height_m": 20.0
+      },
+      "azimuth_deg": 180.0,
+      "altitude_deg": 90.0,
+      "aod": 0.1,
+      "seed": 9071,
+      "role": "primary"
+    },
+    {
+      "id": "madrid-2017-11-north-alt10",
+      "dataset": "madrid-2017-11",
+      "observer": {
+        "latitude_deg": 40.85,
+        "longitude_deg": -3.726111,
+        "height_m": 20.0
+      },
+      "azimuth_deg": 180.0,
+      "altitude_deg": 10.0,
+      "aod": 0.1,
+      "seed": 9071,
+      "role": "primary"
+    },
+    {
+      "id": "madrid-2017-11-north-alt45",
+      "dataset": "madrid-2017-11",
+      "observer": {
+        "latitude_deg": 40.85,
+        "longitude_deg": -3.726111,
+        "height_m": 20.0
+      },
+      "azimuth_deg": 180.0,
+      "altitude_deg": 45.0,
+      "aod": 0.1,
+      "seed": 9071,
+      "role": "primary"
+    },
+    {
+      "id": "madrid-2017-11-north-alt90",
+      "dataset": "madrid-2017-11",
+      "observer": {
+        "latitude_deg": 40.85,
+        "longitude_deg": -3.726111,
+        "height_m": 20.0
+      },
+      "azimuth_deg": 180.0,
+      "altitude_deg": 90.0,
+      "aod": 0.1,
+      "seed": 9071,
+      "role": "primary"
+    },
+    {
+      "id": "petersburg-2025-north-alt10",
+      "dataset": "petersburg-2025",
+      "observer": {
+        "latitude_deg": 60.3,
+        "longitude_deg": 30.315,
+        "height_m": 20.0
+      },
+      "azimuth_deg": 180.0,
+      "altitude_deg": 10.0,
+      "aod": 0.1,
+      "seed": 9071,
+      "role": "primary"
+    },
+    {
+      "id": "petersburg-2025-north-alt45",
+      "dataset": "petersburg-2025",
+      "observer": {
+        "latitude_deg": 60.3,
+        "longitude_deg": 30.315,
+        "height_m": 20.0
+      },
+      "azimuth_deg": 180.0,
+      "altitude_deg": 45.0,
+      "aod": 0.1,
+      "seed": 9071,
+      "role": "primary"
+    },
+    {
+      "id": "petersburg-2025-north-alt90",
+      "dataset": "petersburg-2025",
+      "observer": {
+        "latitude_deg": 60.3,
+        "longitude_deg": 30.315,
+        "height_m": 20.0
+      },
+      "azimuth_deg": 180.0,
+      "altitude_deg": 90.0,
+      "aod": 0.1,
+      "seed": 9071,
+      "role": "primary"
+    },
+    {
+      "id": "saarland-2014-saar-alt10",
+      "dataset": "saarland-2014",
+      "observer": {
+        "latitude_deg": 49.532563,
+        "longitude_deg": 6.549911,
+        "height_m": 20.0
+      },
+      "azimuth_deg": 180.0,
+      "altitude_deg": 10.0,
+      "aod": 0.1,
+      "seed": 9071,
+      "role": "primary"
+    },
+    {
+      "id": "saarland-2014-saar-alt45",
+      "dataset": "saarland-2014",
+      "observer": {
+        "latitude_deg": 49.532563,
+        "longitude_deg": 6.549911,
+        "height_m": 20.0
+      },
+      "azimuth_deg": 180.0,
+      "altitude_deg": 45.0,
+      "aod": 0.1,
+      "seed": 9071,
+      "role": "primary"
+    },
+    {
+      "id": "saarland-2014-saar-alt90",
+      "dataset": "saarland-2014",
+      "observer": {
+        "latitude_deg": 49.532563,
+        "longitude_deg": 6.549911,
+        "height_m": 20.0
+      },
+      "azimuth_deg": 180.0,
+      "altitude_deg": 90.0,
+      "aod": 0.1,
+      "seed": 9071,
+      "role": "primary"
+    },
+    {
+      "id": "madrid-2017-03-north-alt45-aod0.02",
+      "dataset": "madrid-2017-03",
+      "observer": {
+        "latitude_deg": 40.85,
+        "longitude_deg": -3.726111,
+        "height_m": 20.0
+      },
+      "azimuth_deg": 180.0,
+      "altitude_deg": 45.0,
+      "aod": 0.02,
+      "seed": 9071,
+      "role": "atmosphere_sensitivity"
+    },
+    {
+      "id": "madrid-2017-03-north-alt45-aod0.3",
+      "dataset": "madrid-2017-03",
+      "observer": {
+        "latitude_deg": 40.85,
+        "longitude_deg": -3.726111,
+        "height_m": 20.0
+      },
+      "azimuth_deg": 180.0,
+      "altitude_deg": 45.0,
+      "aod": 0.3,
+      "seed": 9071,
+      "role": "atmosphere_sensitivity"
+    },
+    {
+      "id": "madrid-2017-03-north-alt10-seed19073",
+      "dataset": "madrid-2017-03",
+      "observer": {
+        "latitude_deg": 40.85,
+        "longitude_deg": -3.726111,
+        "height_m": 20.0
+      },
+      "azimuth_deg": 180.0,
+      "altitude_deg": 10.0,
+      "aod": 0.1,
+      "seed": 19073,
+      "role": "independent_seed"
+    },
+    {
+      "id": "madrid-2017-03-north-alt45-seed19073",
+      "dataset": "madrid-2017-03",
+      "observer": {
+        "latitude_deg": 40.85,
+        "longitude_deg": -3.726111,
+        "height_m": 20.0
+      },
+      "azimuth_deg": 180.0,
+      "altitude_deg": 45.0,
+      "aod": 0.1,
+      "seed": 19073,
+      "role": "independent_seed"
+    }
+  ],
+  "samples_per_case": 2097152,
+  "bin_assumptions": {
+    "near_deg": [
+      0,
+      20
+    ],
+    "off_deg": [
+      40,
+      60
+    ],
+    "all_angle": "Overlapping composite, not a third independent angle.",
+    "empirical": "Near plateau 0-20; linear in mu 20-40; off plateau 40-60; linear in mu to 0/off/2off at 90.",
+    "mixture": "Existing k=4 intensity mixture converted to radiance. Uniform-solid-angle bin weights are a scenario.",
+    "radiance_cap": "Mixture radiance frozen above 85 or 88 deg. This explicitly changes the unbounded grazing law.",
+    "near_bin_horizontal_factor": 6.964336119412952e-06,
+    "off_bin_horizontal_factor": 0.10036952186741895
+  },
+  "shared_atmosphere": {
+    "reference_wavelength_nm": 550.0,
+    "rayleigh_scale_height_m": 8000.0,
+    "aerosol_scale_height_m": 1200.0,
+    "aerosol_optical_depth": 0.1,
+    "aerosol_single_scattering_albedo": 0.9,
+    "aerosol_g": 0.8,
+    "rayleigh_multiplier": 1.0,
+    "top_m": 80000.0
+  },
+  "fixed_spectrum": "550 nm transfer of the DNB spatial proxy; no DNB-to-V spectral inversion.",
+  "observer_height": "All observers 20 m above the same spherical emitting surface; actual terrain/station MSL heights not represented.",
+  "not_field_validation": true,
+  "absolute_calibration": null,
+  "moon_cloud_natural_ground_reflection_DSM": "Disabled.",
+  "support_policy": "Intersection of all three angles, land/coast QA0 Num>3. Both Madrid 2017 months additionally share a temporal intersection.",
+  "predeclared_checks": [
+    "Replay cap exactly in unit tests for implicit/analog absorption.",
+    "Independent seed compatibility in two directions using 4 combined standard errors.",
+    "Per-variant positivity/bounds, outcome conservation, category/angular sum closure.",
+    "MC marginal intervals withheld if positive paths or effective score samples <100."
+  ]
+}

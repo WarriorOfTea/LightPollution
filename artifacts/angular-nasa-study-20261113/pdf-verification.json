@@ -1,0 +1,24 @@
+{
+  "pdf": "LightPollution-angular-nasa-study.pdf",
+  "sha256": "a0f27f0faf29a98b7579f656172ddaa8f0357ddc494fda58f5ceecaad560cce2",
+  "pages": 8,
+  "characters": 17006,
+  "page_characters": [
+    2310,
+    1912,
+    2127,
+    2023,
+    1875,
+    885,
+    2600,
+    3267
+  ],
+  "errors": [],
+  "text_outside_page": [],
+  "visual_preview_pages_reviewed": [
+    1,
+    5,
+    6
+  ],
+  "figure_plots_reviewed": 3
+}

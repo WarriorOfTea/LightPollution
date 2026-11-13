@@ -1,0 +1,41 @@
+{
+  "canonical_source_check": {
+    "source_documents": [
+      {
+        "path": "THEORY.md",
+        "sha256": "86bb51f8c32b6206ced45ef656b92b9fdd75e9c9dde150d0b2ce14d6575e3a33",
+        "fenced_blocks": 0,
+        "LaTeX_expressions": 335
+      },
+      {
+        "path": "MODELS.md",
+        "sha256": "3f6a7413f0274cc39a795cb0408ab8c7afa7c00582daac13be8e9907b064b4fb",
+        "fenced_blocks": 1,
+        "LaTeX_expressions": 217
+      },
+      {
+        "path": "LIMITS.md",
+        "sha256": "17477dedcd4fd9c3087547811442638fd638126102e45c29783263f34fe93624",
+        "fenced_blocks": 0,
+        "LaTeX_expressions": 2
+      },
+      {
+        "path": "VISUALIZATION.md",
+        "sha256": "9e298de381960300d81e934024f4ada72475e534c5165ebea35e2628d7690f8c",
+        "fenced_blocks": 0,
+        "LaTeX_expressions": 0
+      }
+    ],
+    "fenced_code_and_formula_blocks": 1,
+    "all_blocks_preserved_byte_for_byte": true,
+    "LaTeX_expressions": 554,
+    "all_LaTeX_preserved_byte_for_byte": true,
+    "generated_reading_copy_not_a_second_source_of_truth": true
+  },
+  "current_sources_match": true,
+  "PDF_pages": 54,
+  "PDF_sha256": "fcc349fbcc9c88bf354f705b51bc4213484815fc0c1e6612b311feb08727542c",
+  "unique_rendered_formulas": 495,
+  "errors": [],
+  "reading_copy_location": "scratch/angular-theory-export/documentation.pdf; canonical Markdown remains in repository"
+}

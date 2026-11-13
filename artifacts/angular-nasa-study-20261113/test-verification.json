@@ -1,0 +1,35 @@
+{
+  "checked_at": "2026-11-13T13:04:18+01:00",
+  "runs": [
+    {
+      "scope": "new angular tests, initial",
+      "passed": 6,
+      "failed": 1,
+      "skipped": 0,
+      "seconds": 3.79,
+      "failure": "The test assumed every incompatible eta is negative. The unconstrained solution for ratio=0.8 is eta=2.0073, also outside [0,1]. Assertion corrected; model fit was unchanged."
+    },
+    {
+      "scope": "new angular tests, corrected",
+      "passed": 7,
+      "failed": 0,
+      "skipped": 0,
+      "seconds": 2.62
+    },
+    {
+      "scope": "full suite",
+      "command": "uv run pytest -q -p no:cacheprovider",
+      "passed": 378,
+      "failed": 0,
+      "skipped": 0,
+      "seconds": 144.06
+    }
+  ],
+  "lock_check": {
+    "command": "uv lock --check",
+    "passed": true,
+    "packages": 52
+  },
+  "test_source_sha256": "12fd86114642376e9cf50f91d7b0f01123486f7ee82028b3517372f0436d18ac",
+  "network_and_real_tokens_used_by_tests": false
+}

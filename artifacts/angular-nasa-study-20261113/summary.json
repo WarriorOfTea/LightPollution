@@ -1,0 +1,64 @@
+{
+  "completed_cases": 22,
+  "expected_cases": 22,
+  "samples_total": 46137344,
+  "primary_cases": 18,
+  "variants_per_case": 9,
+  "sum_case_runtime_seconds": 688.6282852846198,
+  "maximum_observed_order": 19,
+  "minimum_effective_score_samples": 89.3322187990071,
+  "normal_interval_eligible_variant_cases": 197,
+  "variant_case_denominator": 198,
+  "peak_rss_kib": 370260,
+  "raw_cache_fields_verified": 120,
+  "raw_hdf5_references_verified": 21,
+  "source_code_sha256": {
+    "scripts/summarize_angular_nasa_study.py": "3884667a1bba331191e560673ff550619ecd191b336c811755ea841d9dea980c"
+  },
+  "upward_flux_ratios": {
+    "madrid-2017-03": {
+      "near_lambertian": 0.9999999999999999,
+      "off_lambertian": 1.0914098883744412,
+      "all_lambertian": 1.0241361728227143,
+      "angular_horizon_zero": 0.9757690286489225,
+      "angular_horizon_hold": 1.0667198526801258,
+      "angular_horizon_double": 1.1576706767113292,
+      "mixed_eta_0.1_cap85": 1.0872369264649628,
+      "mixed_eta_regional_cap85": 1.715096513020515,
+      "mixed_eta_regional_cap88": 1.8315114005083868
+    },
+    "madrid-2017-11": {
+      "near_lambertian": 0.9999999999999999,
+      "off_lambertian": 1.1734791822278412,
+      "all_lambertian": 1.069297073839164,
+      "angular_horizon_zero": 1.0288320965424391,
+      "angular_horizon_hold": 1.1266220283947592,
+      "angular_horizon_double": 1.2244119602470793,
+      "mixed_eta_0.1_cap85": 1.0872369264649628,
+      "mixed_eta_regional_cap85": 2.3571218661225957,
+      "mixed_eta_regional_cap88": 2.5780559449152016
+    },
+    "petersburg-2025": {
+      "near_lambertian": 0.9999999999999999,
+      "off_lambertian": 1.0770900679963458,
+      "all_lambertian": 1.007428716275166,
+      "angular_horizon_zero": 0.9665103453427988,
+      "angular_horizon_hold": 1.0562678510091608,
+      "angular_horizon_double": 1.146025356675523,
+      "mixed_eta_0.1_cap85": 1.0872369264649628,
+      "mixed_eta_regional_cap85": 1.603073035018772,
+      "mixed_eta_regional_cap88": 1.7012509428121296
+    },
+    "saarland-2014": {
+      "near_lambertian": 0.9999999999999999,
+      "off_lambertian": 1.2272853459883937,
+      "all_lambertian": 1.110307005899475,
+      "angular_horizon_zero": 1.063621236142153,
+      "angular_horizon_hold": 1.165895014974519,
+      "angular_horizon_double": 1.268168793806885,
+      "mixed_eta_0.1_cap85": 1.0872369264649628,
+      "mixed_eta_regional_cap85": 2.7780456936036066,
+      "mixed_eta_regional_cap88": 3.0675045087429003
+    }
+  }
+}

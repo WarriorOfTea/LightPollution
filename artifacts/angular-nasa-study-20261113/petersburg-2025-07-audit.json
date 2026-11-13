@@ -1,0 +1,161 @@
+{
+  "dataset": "petersburg-2025-07",
+  "cache": "data/seasonal-ground-20261110/petersburg-2025-07/source-grid.npz",
+  "cache_sha256": "f8668b72f2bc4670df9ee04c738740f2f0f6700481bb62b85b34647366dc1aa7",
+  "raw_files": [
+    {
+      "filename": "VNP46A3.A2025182.h20v02.002.2026071165643.h5",
+      "sha256": "83b5676b9add62aae89d9cbd6a05b868bf320e9718877efda224a00469eff154"
+    },
+    {
+      "filename": "VNP46A3.A2025182.h21v02.002.2026071165701.h5",
+      "sha256": "49c1025dc78a8e45e8e3110dd9d511e721139d6c8a583d9eb62a92214ed2b394"
+    },
+    {
+      "filename": "VNP46A3.A2025182.h20v03.002.2026071165649.h5",
+      "sha256": "d6214168870a77ef882c83853d410998566bd9b7a0f9c02c799fa0810970fab7"
+    },
+    {
+      "filename": "VNP46A3.A2025182.h21v03.002.2026071165701.h5",
+      "sha256": "3e0c565ac447d3305b941ede88ed4ea142f5eb8faa1e72f968e9fd9154e352ea"
+    }
+  ],
+  "bounds": {
+    "west": 29.0,
+    "south": 59.0,
+    "east": 32.0,
+    "north": 61.0
+  },
+  "total_grid_cells": 345600,
+  "known_land_coast_cells": 44693,
+  "land_water_missing_cells": 300841,
+  "accepted_land_coast_cells": {
+    "NearNadir": 0,
+    "OffNadir": 0,
+    "AllAngle": 0
+  },
+  "common_three_angle_cells": 0,
+  "radiance_area_sums": {
+    "NearNadir": 0.0,
+    "OffNadir": 0.0,
+    "AllAngle": 0.0
+  },
+  "area_sum_ratios_to_near": {
+    "NearNadir": null,
+    "OffNadir": null,
+    "AllAngle": null
+  },
+  "comparisons": {
+    "1.0": {
+      "threshold_both_nW_cm2_sr": 1.0,
+      "denominator": 0,
+      "off_over_near": {
+        "count": 0
+      },
+      "off_less_than_near": 0,
+      "off_at_least_20pct_lower": 0,
+      "off_at_least_20pct_higher": 0,
+      "eta_outside_0_1": 0,
+      "eta_within_0_1": {
+        "count": 0
+      }
+    },
+    "5.0": {
+      "threshold_both_nW_cm2_sr": 5.0,
+      "denominator": 0,
+      "off_over_near": {
+        "count": 0
+      },
+      "off_less_than_near": 0,
+      "off_at_least_20pct_lower": 0,
+      "off_at_least_20pct_higher": 0,
+      "eta_outside_0_1": 0,
+      "eta_within_0_1": {
+        "count": 0
+      }
+    },
+    "20.0": {
+      "threshold_both_nW_cm2_sr": 20.0,
+      "denominator": 0,
+      "off_over_near": {
+        "count": 0
+      },
+      "off_less_than_near": 0,
+      "off_at_least_20pct_lower": 0,
+      "off_at_least_20pct_higher": 0,
+      "eta_outside_0_1": 0,
+      "eta_within_0_1": {
+        "count": 0
+      }
+    }
+  },
+  "observations_on_common": {
+    "NearNadir": {
+      "count": 0
+    },
+    "OffNadir": {
+      "count": 0
+    },
+    "AllAngle": {
+      "count": 0
+    }
+  },
+  "std_on_common": {
+    "NearNadir": {
+      "count": 0
+    },
+    "OffNadir": {
+      "count": 0
+    },
+    "AllAngle": {
+      "count": 0
+    }
+  },
+  "negative_nonfill_land_radiance": {
+    "NearNadir": 0,
+    "OffNadir": 0,
+    "AllAngle": 0
+  },
+  "zero_near_positive_off": 0,
+  "zero_off_positive_near": 0,
+  "all_outside_near_off_envelope": 0,
+  "all_envelope_denominator": 0,
+  "raw_cache_fields_verified": 15,
+  "raw_hashes_verified": 4,
+  "period": {
+    "year": 2025,
+    "month": 7
+  },
+  "limitations": [
+    "The three composites overlap in observations and contain different time/angle samples.",
+    "Pixel ratios include temporal variability, noise, gridding and residual corrections; not a unique angular emission inversion.",
+    "Only known land/coast classes 0,1,5; strict QA=0 and Num>3 in every angle.",
+    "Pixel sampling is 15 arcsec, not an independent optical footprint; 0.5 nW/(cm2 sr) censoring matters."
+  ],
+  "blocks": {
+    "4": {
+      "denominator_blocks": 0,
+      "off_over_near": {
+        "count": 0
+      },
+      "off_less_than_near": 0,
+      "eta_outside_0_1": 0
+    },
+    "12": {
+      "denominator_blocks": 0,
+      "off_over_near": {
+        "count": 0
+      },
+      "off_less_than_near": 0,
+      "eta_outside_0_1": 0
+    },
+    "24": {
+      "denominator_blocks": 0,
+      "off_over_near": {
+        "count": 0
+      },
+      "off_less_than_near": 0,
+      "eta_outside_0_1": 0
+    }
+  }
+}
