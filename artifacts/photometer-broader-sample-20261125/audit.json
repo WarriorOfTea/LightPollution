@@ -1,0 +1,2131 @@
+{
+  "coastal_netherlands_germany": {
+    "sites": {
+      "Vlieland-Oost": [
+        53.3006,
+        5.0774
+      ],
+      "Schiermonnikoog-dorp": [
+        53.481,
+        6.168
+      ],
+      "Moddergat": [
+        53.40656,
+        6.06985
+      ],
+      "Borkum-Ostland": [
+        53.607,
+        6.727
+      ],
+      "Spiekeroog": [
+        53.765,
+        7.726
+      ],
+      "Texel": [
+        53.007,
+        4.7792
+      ]
+    },
+    "months": {
+      "2023-09": {
+        "stages": {
+          "Vlieland-Oost": {
+            "listed_nights": 30,
+            "ephemeris": 13,
+            "clear_reanalysis": 1,
+            "numeric_cams": 1,
+            "read_photometer": 1,
+            "above_natural_twice": 0
+          },
+          "Schiermonnikoog-dorp": {
+            "listed_nights": 30,
+            "ephemeris": 13,
+            "clear_reanalysis": 2,
+            "numeric_cams": 2,
+            "read_photometer": 2,
+            "above_natural_twice": 0
+          },
+          "Moddergat": {
+            "listed_nights": 30,
+            "ephemeris": 13,
+            "clear_reanalysis": 2,
+            "numeric_cams": 2,
+            "read_photometer": 2,
+            "above_natural_twice": 0
+          },
+          "Borkum-Ostland": {
+            "listed_nights": 30,
+            "ephemeris": 13,
+            "clear_reanalysis": 2,
+            "numeric_cams": 2,
+            "read_photometer": 2,
+            "above_natural_twice": 0
+          },
+          "Spiekeroog": {
+            "listed_nights": 0,
+            "ephemeris": 0,
+            "clear_reanalysis": 0,
+            "numeric_cams": 0,
+            "read_photometer": 0,
+            "above_natural_twice": 0
+          },
+          "Texel": {
+            "listed_nights": 30,
+            "ephemeris": 13,
+            "clear_reanalysis": 2,
+            "numeric_cams": 2,
+            "read_photometer": 2,
+            "above_natural_twice": 1
+          }
+        },
+        "windows": [
+          {
+            "site": "Vlieland-Oost",
+            "day": "2023-09-10",
+            "n": 86,
+            "total_over_natural_21_6": 1.3116317736433891,
+            "aod_endpoints": [
+              0.31,
+              0.3
+            ],
+            "weather_endpoints": [
+              [
+                4,
+                0.0,
+                84,
+                null
+              ],
+              [
+                9,
+                0.0,
+                84,
+                null
+              ]
+            ],
+            "url": "https://washetdonker.nl/data/Vlieland-Oost/2023/09/20230910_120000_SQM-Vlieland-Oost.dat",
+            "sha256": "7e7490cb18008c9542fa49485b826f7c836f4491c92fca3ee6be7faa88617348"
+          },
+          {
+            "site": "Schiermonnikoog-dorp",
+            "day": "2023-09-10",
+            "n": 85,
+            "total_over_natural_21_6": 1.530365662251807,
+            "aod_endpoints": [
+              0.3,
+              0.29
+            ],
+            "weather_endpoints": [
+              [
+                6,
+                0.0,
+                87,
+                null
+              ],
+              [
+                0,
+                0.0,
+                86,
+                null
+              ]
+            ],
+            "url": "https://washetdonker.nl/data/Schiermonnikoog-dorp/2023/09/20230910_120000_SQM-Schiermonnikoog-dorp.dat",
+            "sha256": "7a9742893e6d963ee132f1fe118d41f7ca82ea5c2898ec5a59d81b2785e40a90"
+          },
+          {
+            "site": "Schiermonnikoog-dorp",
+            "day": "2023-09-14",
+            "n": 86,
+            "total_over_natural_21_6": 1.3639560759650224,
+            "aod_endpoints": [
+              0.24,
+              0.22
+            ],
+            "weather_endpoints": [
+              [
+                5,
+                0.0,
+                80,
+                null
+              ],
+              [
+                4,
+                0.0,
+                80,
+                null
+              ]
+            ],
+            "url": "https://washetdonker.nl/data/Schiermonnikoog-dorp/2023/09/20230914_120000_SQM-Schiermonnikoog-dorp.dat",
+            "sha256": "709095a06f47a1a255e2ebb418d0976d844ffca3c4f57a1afc47b61fd1aeaf35"
+          },
+          {
+            "site": "Moddergat",
+            "day": "2023-09-10",
+            "n": 86,
+            "total_over_natural_21_6": 1.5557966966545813,
+            "aod_endpoints": [
+              0.3,
+              0.29
+            ],
+            "weather_endpoints": [
+              [
+                5,
+                0.0,
+                86,
+                null
+              ],
+              [
+                1,
+                0.0,
+                85,
+                null
+              ]
+            ],
+            "url": "https://washetdonker.nl/data/Moddergat/2023/09/20230910_120000_SQM-Moddergat.dat",
+            "sha256": "b3916cd87d308070e6e63cc1ff4f9cc0d59b34d1fa4aa76ec1794558141fe6f4"
+          },
+          {
+            "site": "Moddergat",
+            "day": "2023-09-14",
+            "n": 85,
+            "total_over_natural_21_6": 1.4415922958014828,
+            "aod_endpoints": [
+              0.24,
+              0.22
+            ],
+            "weather_endpoints": [
+              [
+                10,
+                0.0,
+                81,
+                null
+              ],
+              [
+                9,
+                0.0,
+                80,
+                null
+              ]
+            ],
+            "url": "https://washetdonker.nl/data/Moddergat/2023/09/20230914_120000_SQM-Moddergat.dat",
+            "sha256": "bd91f41eb34f8bf3b6d49d566d275c6b6aeae80f0542ac07cfaa33f724c2c136"
+          },
+          {
+            "site": "Borkum-Ostland",
+            "day": "2023-09-10",
+            "n": 85,
+            "total_over_natural_21_6": 1.285237318673141,
+            "aod_endpoints": [
+              0.3,
+              0.29
+            ],
+            "weather_endpoints": [
+              [
+                8,
+                0.0,
+                95,
+                null
+              ],
+              [
+                4,
+                0.0,
+                94,
+                null
+              ]
+            ],
+            "url": "https://washetdonker.nl/data/Borkum-Ostland/2023/09/20230910_120000_SQM-Borkum-Ostland.dat",
+            "sha256": "7bd8a45148cfa599bf6b598f1b708a644af68d0add3938f7dd02e03df394da65"
+          },
+          {
+            "site": "Borkum-Ostland",
+            "day": "2023-09-14",
+            "n": 86,
+            "total_over_natural_21_6": 1.2365137482343511,
+            "aod_endpoints": [
+              0.18,
+              0.18
+            ],
+            "weather_endpoints": [
+              [
+                2,
+                0.0,
+                77,
+                null
+              ],
+              [
+                7,
+                0.0,
+                76,
+                null
+              ]
+            ],
+            "url": "https://washetdonker.nl/data/Borkum-Ostland/2023/09/20230914_120000_SQM-Borkum-Ostland.dat",
+            "sha256": "32d603935de507fbdf7299b177b7054114bd234cecf4bf47a630ffb5bd0fef0a"
+          },
+          {
+            "site": "Texel",
+            "day": "2023-09-14",
+            "n": 85,
+            "total_over_natural_21_6": 1.8661167897113735,
+            "aod_endpoints": [
+              0.2,
+              0.2
+            ],
+            "weather_endpoints": [
+              [
+                12,
+                0.0,
+                84,
+                null
+              ],
+              [
+                1,
+                0.0,
+                85,
+                null
+              ]
+            ],
+            "url": "https://washetdonker.nl/data/Texel/2023/09/20230914_120000_SQM-Texel.dat",
+            "sha256": "c0cb25776078a9ef61d6be7976e5314e9dacd1deaf5fcd9ed2f519fe2ac8aa2e"
+          },
+          {
+            "site": "Texel",
+            "day": "2023-09-15",
+            "n": 85,
+            "total_over_natural_21_6": 2.051324329856277,
+            "aod_endpoints": [
+              0.23,
+              0.23
+            ],
+            "weather_endpoints": [
+              [
+                15,
+                0.0,
+                87,
+                null
+              ],
+              [
+                15,
+                0.0,
+                88,
+                null
+              ]
+            ],
+            "url": "https://washetdonker.nl/data/Texel/2023/09/20230915_120000_SQM-Texel.dat",
+            "sha256": "9a28721a7ae97e48ae155d5b5c6425ecb682fdb88f8c6ac6bc39d1f3002d5304"
+          }
+        ]
+      },
+      "2023-11": {
+        "stages": {
+          "Vlieland-Oost": {
+            "listed_nights": 30,
+            "ephemeris": 12,
+            "clear_reanalysis": 0,
+            "numeric_cams": 0,
+            "read_photometer": 0,
+            "above_natural_twice": 0
+          },
+          "Schiermonnikoog-dorp": {
+            "listed_nights": 28,
+            "ephemeris": 11,
+            "clear_reanalysis": 0,
+            "numeric_cams": 0,
+            "read_photometer": 0,
+            "above_natural_twice": 0
+          },
+          "Moddergat": {
+            "listed_nights": 30,
+            "ephemeris": 12,
+            "clear_reanalysis": 0,
+            "numeric_cams": 0,
+            "read_photometer": 0,
+            "above_natural_twice": 0
+          },
+          "Borkum-Ostland": {
+            "listed_nights": 30,
+            "ephemeris": 12,
+            "clear_reanalysis": 0,
+            "numeric_cams": 0,
+            "read_photometer": 0,
+            "above_natural_twice": 0
+          },
+          "Spiekeroog": {
+            "listed_nights": 3,
+            "ephemeris": 0,
+            "clear_reanalysis": 0,
+            "numeric_cams": 0,
+            "read_photometer": 0,
+            "above_natural_twice": 0
+          },
+          "Texel": {
+            "listed_nights": 30,
+            "ephemeris": 12,
+            "clear_reanalysis": 0,
+            "numeric_cams": 0,
+            "read_photometer": 0,
+            "above_natural_twice": 0
+          }
+        },
+        "windows": []
+      },
+      "2024-04": {
+        "stages": {
+          "Vlieland-Oost": {
+            "listed_nights": 25,
+            "ephemeris": 8,
+            "clear_reanalysis": 0,
+            "numeric_cams": 0,
+            "read_photometer": 0,
+            "above_natural_twice": 0
+          },
+          "Schiermonnikoog-dorp": {
+            "listed_nights": 0,
+            "ephemeris": 0,
+            "clear_reanalysis": 0,
+            "numeric_cams": 0,
+            "read_photometer": 0,
+            "above_natural_twice": 0
+          },
+          "Moddergat": {
+            "listed_nights": 25,
+            "ephemeris": 7,
+            "clear_reanalysis": 0,
+            "numeric_cams": 0,
+            "read_photometer": 0,
+            "above_natural_twice": 0
+          },
+          "Borkum-Ostland": {
+            "listed_nights": 25,
+            "ephemeris": 7,
+            "clear_reanalysis": 1,
+            "numeric_cams": 1,
+            "read_photometer": 1,
+            "above_natural_twice": 0
+          },
+          "Spiekeroog": {
+            "listed_nights": 25,
+            "ephemeris": 7,
+            "clear_reanalysis": 0,
+            "numeric_cams": 0,
+            "read_photometer": 0,
+            "above_natural_twice": 0
+          },
+          "Texel": {
+            "listed_nights": 25,
+            "ephemeris": 8,
+            "clear_reanalysis": 0,
+            "numeric_cams": 0,
+            "read_photometer": 0,
+            "above_natural_twice": 0
+          }
+        },
+        "windows": [
+          {
+            "site": "Borkum-Ostland",
+            "day": "2024-04-28",
+            "n": 86,
+            "total_over_natural_21_6": 0.8211575813620848,
+            "aod_endpoints": [
+              0.05,
+              0.06
+            ],
+            "weather_endpoints": [
+              [
+                3,
+                0.0,
+                80,
+                null
+              ],
+              [
+                2,
+                0.0,
+                82,
+                null
+              ]
+            ],
+            "url": "https://washetdonker.nl/data/Borkum-Ostland/2024/04/20240428_120000_SQM-Borkum-Ostland.dat",
+            "sha256": "e38f6d6722e9fce18889510b449baefe57052052c1d05f7503d6d7ae00ca1e0b"
+          }
+        ]
+      },
+      "2024-10": {
+        "stages": {
+          "Vlieland-Oost": {
+            "listed_nights": 31,
+            "ephemeris": 16,
+            "clear_reanalysis": 1,
+            "numeric_cams": 1,
+            "read_photometer": 1,
+            "above_natural_twice": 0
+          },
+          "Schiermonnikoog-dorp": {
+            "listed_nights": 0,
+            "ephemeris": 0,
+            "clear_reanalysis": 0,
+            "numeric_cams": 0,
+            "read_photometer": 0,
+            "above_natural_twice": 0
+          },
+          "Moddergat": {
+            "listed_nights": 30,
+            "ephemeris": 16,
+            "clear_reanalysis": 2,
+            "numeric_cams": 2,
+            "read_photometer": 2,
+            "above_natural_twice": 0
+          },
+          "Borkum-Ostland": {
+            "listed_nights": 31,
+            "ephemeris": 16,
+            "clear_reanalysis": 2,
+            "numeric_cams": 2,
+            "read_photometer": 2,
+            "above_natural_twice": 0
+          },
+          "Spiekeroog": {
+            "listed_nights": 31,
+            "ephemeris": 16,
+            "clear_reanalysis": 1,
+            "numeric_cams": 1,
+            "read_photometer": 1,
+            "above_natural_twice": 0
+          },
+          "Texel": {
+            "listed_nights": 31,
+            "ephemeris": 16,
+            "clear_reanalysis": 2,
+            "numeric_cams": 2,
+            "read_photometer": 2,
+            "above_natural_twice": 0
+          }
+        },
+        "windows": [
+          {
+            "site": "Vlieland-Oost",
+            "day": "2024-10-05",
+            "n": 85,
+            "total_over_natural_21_6": 1.0285417665398817,
+            "aod_endpoints": [
+              0.11,
+              0.11
+            ],
+            "weather_endpoints": [
+              [
+                5,
+                0.0,
+                77,
+                null
+              ],
+              [
+                1,
+                0.0,
+                78,
+                null
+              ]
+            ],
+            "url": "https://washetdonker.nl/data/Vlieland-Oost/2024/10/20241005_120000_SQM-Vlieland-Oost.dat",
+            "sha256": "b857d579aed856147346aaa93162dc308a884afde8006b0ea59cf73cebb1b43b"
+          },
+          {
+            "site": "Moddergat",
+            "day": "2024-10-03",
+            "n": 86,
+            "total_over_natural_21_6": 1.517284026120623,
+            "aod_endpoints": [
+              0.06,
+              0.06
+            ],
+            "weather_endpoints": [
+              [
+                13,
+                0.0,
+                92,
+                null
+              ],
+              [
+                10,
+                0.0,
+                95,
+                null
+              ]
+            ],
+            "url": "https://washetdonker.nl/data/Moddergat/2024/10/20241003_120000_SQM-Moddergat.dat",
+            "sha256": "b7a767a1f6af2c27bdd513bb5ab0396c0f93ddcd8f5ad4a564c893447e859f91"
+          },
+          {
+            "site": "Moddergat",
+            "day": "2024-10-05",
+            "n": 86,
+            "total_over_natural_21_6": 1.3822001059649036,
+            "aod_endpoints": [
+              0.09,
+              0.1
+            ],
+            "weather_endpoints": [
+              [
+                6,
+                0.0,
+                87,
+                null
+              ],
+              [
+                5,
+                0.0,
+                89,
+                null
+              ]
+            ],
+            "url": "https://washetdonker.nl/data/Moddergat/2024/10/20241005_120000_SQM-Moddergat.dat",
+            "sha256": "06b80bba40fc544aca14413cae55595bcbbaa54a15dafaa5f770e4257bc314f8"
+          },
+          {
+            "site": "Borkum-Ostland",
+            "day": "2024-10-03",
+            "n": 85,
+            "total_over_natural_21_6": 1.2615714803228526,
+            "aod_endpoints": [
+              0.04,
+              0.04
+            ],
+            "weather_endpoints": [
+              [
+                1,
+                0.0,
+                84,
+                null
+              ],
+              [
+                0,
+                0.0,
+                87,
+                null
+              ]
+            ],
+            "url": "https://washetdonker.nl/data/Borkum-Ostland/2024/10/20241003_120000_SQM-Borkum-Ostland.dat",
+            "sha256": "a80ba53b9f9a98ec4aebd479af63c9d5117f829905d84634dd05a1784348799a"
+          },
+          {
+            "site": "Borkum-Ostland",
+            "day": "2024-10-04",
+            "n": 86,
+            "total_over_natural_21_6": 1.2400348452922982,
+            "aod_endpoints": [
+              0.07,
+              0.08
+            ],
+            "weather_endpoints": [
+              [
+                1,
+                0.0,
+                92,
+                null
+              ],
+              [
+                2,
+                0.0,
+                93,
+                null
+              ]
+            ],
+            "url": "https://washetdonker.nl/data/Borkum-Ostland/2024/10/20241004_120000_SQM-Borkum-Ostland.dat",
+            "sha256": "c17f90fcf73d89bebfac94e8f3dcbc8022abd0ded33d1c4915eab87affe2f1c8"
+          },
+          {
+            "site": "Spiekeroog",
+            "day": "2024-10-03",
+            "n": 85,
+            "total_over_natural_21_6": 1.3270652307510002,
+            "aod_endpoints": [
+              0.04,
+              0.04
+            ],
+            "weather_endpoints": [
+              [
+                0,
+                0.0,
+                93,
+                null
+              ],
+              [
+                1,
+                0.0,
+                95,
+                null
+              ]
+            ],
+            "url": "https://washetdonker.nl/data/Spiekeroog/2024/10/20241003_120000_SQM-Spiekeroog.dat",
+            "sha256": "ee10b73a3bdd747c58bb3fe476d485f3f8a933addbbb9325620a89a09592597e"
+          },
+          {
+            "site": "Texel",
+            "day": "2024-10-03",
+            "n": 85,
+            "total_over_natural_21_6": 1.7624111577714663,
+            "aod_endpoints": [
+              0.05,
+              0.06
+            ],
+            "weather_endpoints": [
+              [
+                9,
+                0.0,
+                81,
+                null
+              ],
+              [
+                12,
+                0.0,
+                82,
+                null
+              ]
+            ],
+            "url": "https://washetdonker.nl/data/Texel/2024/10/20241003_120000_SQM-Texel.dat",
+            "sha256": "1afa12b71a35f5d60af23f7ed0fcf62ab3a2d4b8df0dbe6cbd31d989227ba7d4"
+          },
+          {
+            "site": "Texel",
+            "day": "2024-10-05",
+            "n": 85,
+            "total_over_natural_21_6": 1.8085069425626346,
+            "aod_endpoints": [
+              0.11,
+              0.11
+            ],
+            "weather_endpoints": [
+              [
+                0,
+                0.0,
+                83,
+                null
+              ],
+              [
+                0,
+                0.0,
+                85,
+                null
+              ]
+            ],
+            "url": "https://washetdonker.nl/data/Texel/2024/10/20241005_120000_SQM-Texel.dat",
+            "sha256": "5d6d89051224dadf708463eb5fdd8a37e384486e7e6c636592c19becd8c59e57"
+          }
+        ]
+      },
+      "2025-02": {
+        "stages": {
+          "Vlieland-Oost": {
+            "listed_nights": 28,
+            "ephemeris": 12,
+            "clear_reanalysis": 3,
+            "numeric_cams": 3,
+            "read_photometer": 3,
+            "above_natural_twice": 0
+          },
+          "Schiermonnikoog-dorp": {
+            "listed_nights": 28,
+            "ephemeris": 12,
+            "clear_reanalysis": 1,
+            "numeric_cams": 1,
+            "read_photometer": 1,
+            "above_natural_twice": 0
+          },
+          "Moddergat": {
+            "listed_nights": 28,
+            "ephemeris": 12,
+            "clear_reanalysis": 1,
+            "numeric_cams": 1,
+            "read_photometer": 1,
+            "above_natural_twice": 0
+          },
+          "Borkum-Ostland": {
+            "listed_nights": 28,
+            "ephemeris": 12,
+            "clear_reanalysis": 1,
+            "numeric_cams": 1,
+            "read_photometer": 1,
+            "above_natural_twice": 0
+          },
+          "Spiekeroog": {
+            "listed_nights": 28,
+            "ephemeris": 12,
+            "clear_reanalysis": 1,
+            "numeric_cams": 1,
+            "read_photometer": 1,
+            "above_natural_twice": 0
+          },
+          "Texel": {
+            "listed_nights": 28,
+            "ephemeris": 12,
+            "clear_reanalysis": 1,
+            "numeric_cams": 1,
+            "read_photometer": 1,
+            "above_natural_twice": 0
+          }
+        },
+        "windows": [
+          {
+            "site": "Vlieland-Oost",
+            "day": "2025-02-01",
+            "n": 85,
+            "total_over_natural_21_6": 0.8912666894100206,
+            "aod_endpoints": [
+              0.04,
+              0.04
+            ],
+            "weather_endpoints": [
+              [
+                12,
+                0.0,
+                87,
+                null
+              ],
+              [
+                1,
+                0.0,
+                88,
+                null
+              ]
+            ],
+            "url": "https://washetdonker.nl/data/Vlieland-Oost/2025/02/20250201_120000_SQM-Vlieland-Oost.dat",
+            "sha256": "2b9789b9a1dba93b0a14503d6b638ed8b6b247f0608c8e92afe8f37bfe3ac2e3"
+          },
+          {
+            "site": "Vlieland-Oost",
+            "day": "2025-02-18",
+            "n": 85,
+            "total_over_natural_21_6": 0.9010936627110236,
+            "aod_endpoints": [
+              0.07,
+              0.07
+            ],
+            "weather_endpoints": [
+              [
+                6,
+                0.0,
+                66,
+                null
+              ],
+              [
+                3,
+                0.0,
+                67,
+                null
+              ]
+            ],
+            "url": "https://washetdonker.nl/data/Vlieland-Oost/2025/02/20250218_120000_SQM-Vlieland-Oost.dat",
+            "sha256": "2444f18aee613e89e19270ec0ecc3d162887459cc4e80a90734c57074c8bb0d6"
+          },
+          {
+            "site": "Vlieland-Oost",
+            "day": "2025-02-22",
+            "n": 84,
+            "total_over_natural_21_6": 0.8156773438124434,
+            "aod_endpoints": [
+              0.08,
+              0.08
+            ],
+            "weather_endpoints": [
+              [
+                13,
+                0.0,
+                94,
+                null
+              ],
+              [
+                4,
+                0.0,
+                92,
+                null
+              ]
+            ],
+            "url": "https://washetdonker.nl/data/Vlieland-Oost/2025/02/20250222_120000_SQM-Vlieland-Oost.dat",
+            "sha256": "02357ebfae656833cb793b33d37acb5b75d942d5a45df723e6f4fde9dca917e4"
+          },
+          {
+            "site": "Schiermonnikoog-dorp",
+            "day": "2025-02-18",
+            "n": 86,
+            "total_over_natural_21_6": 1.3739324041089074,
+            "aod_endpoints": [
+              0.05,
+              0.05
+            ],
+            "weather_endpoints": [
+              [
+                0,
+                0.0,
+                65,
+                null
+              ],
+              [
+                0,
+                0.0,
+                67,
+                null
+              ]
+            ],
+            "url": "https://washetdonker.nl/data/Schiermonnikoog-dorp/2025/02/20250218_120000_SQM-Schiermonnikoog-dorp.dat",
+            "sha256": "fa13cd9957537c2b5687d68c91b4762e0afec0131b3fe69eb3342f84a568ba81"
+          },
+          {
+            "site": "Moddergat",
+            "day": "2025-02-18",
+            "n": 85,
+            "total_over_natural_21_6": 1.3147280738693687,
+            "aod_endpoints": [
+              0.05,
+              0.05
+            ],
+            "weather_endpoints": [
+              [
+                0,
+                0.0,
+                65,
+                null
+              ],
+              [
+                0,
+                0.0,
+                67,
+                null
+              ]
+            ],
+            "url": "https://washetdonker.nl/data/Moddergat/2025/02/20250218_120000_SQM-Moddergat.dat",
+            "sha256": "a812f94e3f15ec5d90616b14cad2c9c72f1ee769f1fcc2542439e6a2efa49851"
+          },
+          {
+            "site": "Borkum-Ostland",
+            "day": "2025-02-18",
+            "n": 85,
+            "total_over_natural_21_6": 1.524534412812129,
+            "aod_endpoints": [
+              0.04,
+              0.04
+            ],
+            "weather_endpoints": [
+              [
+                8,
+                0.0,
+                63,
+                null
+              ],
+              [
+                0,
+                0.0,
+                64,
+                null
+              ]
+            ],
+            "url": "https://washetdonker.nl/data/Borkum-Ostland/2025/02/20250218_120000_SQM-Borkum-Ostland.dat",
+            "sha256": "7d30ca47b2f5d96137a44f73d5769d433640989d17ed562d9326d37b21ecd596"
+          },
+          {
+            "site": "Spiekeroog",
+            "day": "2025-02-18",
+            "n": 86,
+            "total_over_natural_21_6": 1.0139447532120942,
+            "aod_endpoints": [
+              0.03,
+              0.03
+            ],
+            "weather_endpoints": [
+              [
+                0,
+                0.0,
+                63,
+                null
+              ],
+              [
+                0,
+                0.0,
+                64,
+                null
+              ]
+            ],
+            "url": "https://washetdonker.nl/data/Spiekeroog/2025/02/20250218_120000_SQM-Spiekeroog.dat",
+            "sha256": "7bfd5f3c01f536a23cfc3dcd9ce7d61b30930b8cac7378c6682ac6cefe32633d"
+          },
+          {
+            "site": "Texel",
+            "day": "2025-02-01",
+            "n": 86,
+            "total_over_natural_21_6": 1.5560068376182774,
+            "aod_endpoints": [
+              0.04,
+              0.04
+            ],
+            "weather_endpoints": [
+              [
+                7,
+                0.0,
+                88,
+                null
+              ],
+              [
+                3,
+                0.0,
+                87,
+                null
+              ]
+            ],
+            "url": "https://washetdonker.nl/data/Texel/2025/02/20250201_120000_SQM-Texel.dat",
+            "sha256": "43afdae3ca337ba8f8eae4d0f3e090a7bf10085c5ee0d94e90e218271c109a47"
+          }
+        ]
+      },
+      "2025-10": {
+        "stages": {
+          "Vlieland-Oost": {
+            "listed_nights": 31,
+            "ephemeris": 14,
+            "clear_reanalysis": 0,
+            "numeric_cams": 0,
+            "read_photometer": 0,
+            "above_natural_twice": 0
+          },
+          "Schiermonnikoog-dorp": {
+            "listed_nights": 31,
+            "ephemeris": 14,
+            "clear_reanalysis": 0,
+            "numeric_cams": 0,
+            "read_photometer": 0,
+            "above_natural_twice": 0
+          },
+          "Moddergat": {
+            "listed_nights": 31,
+            "ephemeris": 14,
+            "clear_reanalysis": 0,
+            "numeric_cams": 0,
+            "read_photometer": 0,
+            "above_natural_twice": 0
+          },
+          "Borkum-Ostland": {
+            "listed_nights": 0,
+            "ephemeris": 0,
+            "clear_reanalysis": 0,
+            "numeric_cams": 0,
+            "read_photometer": 0,
+            "above_natural_twice": 0
+          },
+          "Spiekeroog": {
+            "listed_nights": 0,
+            "ephemeris": 0,
+            "clear_reanalysis": 0,
+            "numeric_cams": 0,
+            "read_photometer": 0,
+            "above_natural_twice": 0
+          },
+          "Texel": {
+            "listed_nights": 31,
+            "ephemeris": 14,
+            "clear_reanalysis": 0,
+            "numeric_cams": 0,
+            "read_photometer": 0,
+            "above_natural_twice": 0
+          }
+        },
+        "windows": []
+      },
+      "2026-01": {
+        "stages": {
+          "Vlieland-Oost": {
+            "listed_nights": 31,
+            "ephemeris": 14,
+            "clear_reanalysis": 0,
+            "numeric_cams": 0,
+            "read_photometer": 0,
+            "above_natural_twice": 0
+          },
+          "Schiermonnikoog-dorp": {
+            "listed_nights": 31,
+            "ephemeris": 14,
+            "clear_reanalysis": 0,
+            "numeric_cams": 0,
+            "read_photometer": 0,
+            "above_natural_twice": 0
+          },
+          "Moddergat": {
+            "listed_nights": 31,
+            "ephemeris": 14,
+            "clear_reanalysis": 0,
+            "numeric_cams": 0,
+            "read_photometer": 0,
+            "above_natural_twice": 0
+          },
+          "Borkum-Ostland": {
+            "listed_nights": 0,
+            "ephemeris": 0,
+            "clear_reanalysis": 0,
+            "numeric_cams": 0,
+            "read_photometer": 0,
+            "above_natural_twice": 0
+          },
+          "Spiekeroog": {
+            "listed_nights": 0,
+            "ephemeris": 0,
+            "clear_reanalysis": 0,
+            "numeric_cams": 0,
+            "read_photometer": 0,
+            "above_natural_twice": 0
+          },
+          "Texel": {
+            "listed_nights": 31,
+            "ephemeris": 14,
+            "clear_reanalysis": 0,
+            "numeric_cams": 0,
+            "read_photometer": 0,
+            "above_natural_twice": 0
+          }
+        },
+        "windows": []
+      }
+    }
+  },
+  "central_europe_sqm": [
+    {
+      "site": "SQM_AT_StockenboiMunicipality",
+      "coord": [
+        46.72915,
+        13.58023,
+        796.0
+      ],
+      "sha256": "0f37d23a918dc7f9225bc7f5d90d9a8d9e6fff0566136569e936776372d6c580",
+      "file": "SQM_AT_StockenboiMunicipality-202611.dat",
+      "ready_nights": 24,
+      "windows": [
+        {
+          "day": "2026-11-13",
+          "n": 12,
+          "total_over_natural_21_6": 1.3636549365414508,
+          "aod_endpoints": [
+            0.03,
+            0.02
+          ],
+          "weather_endpoints": [
+            [
+              10,
+              0.0,
+              76,
+              null
+            ],
+            [
+              1,
+              0.0,
+              76,
+              null
+            ]
+          ]
+        }
+      ],
+      "astro": 13,
+      "weather": 1,
+      "with_cams": 1,
+      "signal": 0
+    },
+    {
+      "site": "SQM_AT_WeissenseeNeusach",
+      "coord": [
+        46.71543,
+        13.32114,
+        936.0
+      ],
+      "sha256": "bec960efe3d5ace27099503995ee0c1b4c79b5cd65e4394a82e8b4dea2e75fe6",
+      "file": "SQM_AT_WeissenseeNeusach-202510.dat",
+      "ready_nights": 31,
+      "windows": [],
+      "astro": 14,
+      "weather": 0,
+      "with_cams": 0,
+      "signal": 0
+    },
+    {
+      "site": "SQM_HU_Zselic",
+      "coord": [
+        46.23648,
+        17.7652,
+        265.0
+      ],
+      "sha256": "92b4eb227176bff7e25670e330863491c64b783b27e54ecdfe58f6639180c754",
+      "file": "SQM_HU_Zselic-202510.dat",
+      "ready_nights": 31,
+      "windows": [
+        {
+          "day": "2025-10-18",
+          "n": 60,
+          "total_over_natural_21_6": 1.4958804453869954,
+          "aod_endpoints": [
+            0.03,
+            0.03
+          ],
+          "weather_endpoints": [
+            [
+              12,
+              0.0,
+              76,
+              null
+            ],
+            [
+              14,
+              0.0,
+              80,
+              null
+            ]
+          ]
+        },
+        {
+          "day": "2025-10-24",
+          "n": 60,
+          "total_over_natural_21_6": 1.496004787279522,
+          "aod_endpoints": [
+            0.06,
+            0.05
+          ],
+          "weather_endpoints": [
+            [
+              2,
+              0.0,
+              94,
+              null
+            ],
+            [
+              2,
+              0.0,
+              94,
+              null
+            ]
+          ]
+        }
+      ],
+      "astro": 13,
+      "weather": 2,
+      "with_cams": 2,
+      "signal": 0
+    },
+    {
+      "site": "SQM_IT_Arcugnano",
+      "coord": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "sha256": "e9c686ebdd0258c1a800331de14810ecf4d205e21bad4079388665d27d49afda",
+      "file": "SQM_IT_Arcugnano-202502.dat",
+      "ready_nights": 10,
+      "windows": [
+        {
+          "day": "2025-02-02",
+          "n": 12,
+          "total_over_natural_21_6": 6.391622075218979,
+          "aod_endpoints": [
+            0.07,
+            0.07
+          ],
+          "weather_endpoints": [
+            [
+              1,
+              0.0,
+              86,
+              null
+            ],
+            [
+              0,
+              0.0,
+              84,
+              null
+            ]
+          ]
+        }
+      ],
+      "astro": 5,
+      "weather": 1,
+      "with_cams": 1,
+      "signal": 1
+    },
+    {
+      "site": "SQM_IT_Arcugnano",
+      "coord": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "sha256": "7ddf6ad3925a1f9f24471b4fb65aaaf96f02fca656836535e60f6309acab9d8f",
+      "file": "SQM_IT_Arcugnano-202504.dat",
+      "ready_nights": 30,
+      "windows": [
+        {
+          "day": "2025-04-29",
+          "n": 12,
+          "total_over_natural_21_6": 8.435309322795502,
+          "aod_endpoints": [
+            0.15,
+            0.15
+          ],
+          "weather_endpoints": [
+            [
+              15,
+              0.0,
+              66,
+              null
+            ],
+            [
+              15,
+              0.0,
+              71,
+              null
+            ]
+          ]
+        }
+      ],
+      "astro": 12,
+      "weather": 1,
+      "with_cams": 1,
+      "signal": 1
+    },
+    {
+      "site": "SQM_IT_Arcugnano",
+      "coord": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "sha256": "9535cf6e2dfb974f609f35d0a13f007bd6d2647dea23311f65b6ef4f6aef2f9f",
+      "file": "SQM_IT_Arcugnano-202509.dat",
+      "ready_nights": 30,
+      "windows": [
+        {
+          "day": "2025-09-17",
+          "n": 12,
+          "total_over_natural_21_6": 6.822341872722402,
+          "aod_endpoints": [
+            0.08,
+            0.08
+          ],
+          "weather_endpoints": [
+            [
+              4,
+              0.0,
+              80,
+              null
+            ],
+            [
+              3,
+              0.0,
+              81,
+              null
+            ]
+          ]
+        },
+        {
+          "day": "2025-09-18",
+          "n": 12,
+          "total_over_natural_21_6": 7.295164915693657,
+          "aod_endpoints": [
+            0.08,
+            0.08
+          ],
+          "weather_endpoints": [
+            [
+              0,
+              0.0,
+              86,
+              null
+            ],
+            [
+              0,
+              0.0,
+              88,
+              null
+            ]
+          ]
+        },
+        {
+          "day": "2025-09-20",
+          "n": 12,
+          "total_over_natural_21_6": 7.7827756842394855,
+          "aod_endpoints": [
+            0.17,
+            0.18
+          ],
+          "weather_endpoints": [
+            [
+              11,
+              0.0,
+              88,
+              null
+            ],
+            [
+              15,
+              0.0,
+              91,
+              null
+            ]
+          ]
+        }
+      ],
+      "astro": 13,
+      "weather": 3,
+      "with_cams": 3,
+      "signal": 3
+    },
+    {
+      "site": "SQM_IT_Arcugnano",
+      "coord": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "sha256": "e5171243c1dd9bee5671325fdf8e68f2c6af3558281b0179536817cf95abf84f",
+      "file": "SQM_IT_Arcugnano-202510.dat",
+      "ready_nights": 15,
+      "windows": [
+        {
+          "day": "2025-10-28",
+          "n": 12,
+          "total_over_natural_21_6": 7.903886731568339,
+          "aod_endpoints": [
+            0.12,
+            0.13
+          ],
+          "weather_endpoints": [
+            [
+              6,
+              0.0,
+              91,
+              null
+            ],
+            [
+              7,
+              0.0,
+              90,
+              null
+            ]
+          ]
+        }
+      ],
+      "astro": 1,
+      "weather": 1,
+      "with_cams": 1,
+      "signal": 1
+    },
+    {
+      "site": "SQM_IT_Arcugnano",
+      "coord": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "sha256": "43cfe6d36d882534a8d24aa159b39cf3c5fc0a5e5c433fc8507eaaa313a22051",
+      "file": "SQM_IT_Arcugnano-202511.dat",
+      "ready_nights": 30,
+      "windows": [],
+      "astro": 14,
+      "weather": 0,
+      "with_cams": 0,
+      "signal": 0
+    },
+    {
+      "site": "SQM_IT_Arcugnano",
+      "coord": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "sha256": "7775ba6ceacd48b72d75d793f809b6d57605e4c5fc3fa13df205173b4306c7eb",
+      "file": "SQM_IT_Arcugnano-202602.dat",
+      "ready_nights": 28,
+      "windows": [
+        {
+          "day": "2026-02-17",
+          "n": 12,
+          "total_over_natural_21_6": 6.740573034269141,
+          "aod_endpoints": [
+            0.04,
+            0.04
+          ],
+          "weather_endpoints": [
+            [
+              0,
+              0.0,
+              53,
+              null
+            ],
+            [
+              0,
+              0.0,
+              56,
+              null
+            ]
+          ]
+        }
+      ],
+      "astro": 13,
+      "weather": 1,
+      "with_cams": 1,
+      "signal": 1
+    },
+    {
+      "site": "SQM_IT_Cattignano",
+      "coord": [
+        45.54787,
+        11.21501,
+        505.0
+      ],
+      "sha256": "5c6f2ecd78a7b795d4cf9c1feb7ca17a9fb4b40d80a6cc3ab6ec82574665282a",
+      "file": "SQM_IT_Cattignano-202504.dat",
+      "ready_nights": 3,
+      "windows": [],
+      "astro": 0,
+      "weather": 0,
+      "with_cams": 0,
+      "signal": 0
+    },
+    {
+      "site": "SQM_IT_Galzignano",
+      "coord": [
+        45.31151,
+        11.69832,
+        337.0
+      ],
+      "sha256": "b3ba42a61fdaee564e8cfd3233e3a0804add317777c6d19cdeb45f56fcc9e44d",
+      "file": "SQM_IT_Galzignano-202210.dat",
+      "ready_nights": 31,
+      "windows": [
+        {
+          "day": "2022-10-01",
+          "n": 30,
+          "total_over_natural_21_6": 3.0356231816328676,
+          "aod_endpoints": [
+            0.1,
+            0.11
+          ],
+          "weather_endpoints": [
+            [
+              0,
+              0.0,
+              71,
+              null
+            ],
+            [
+              0,
+              0.0,
+              74,
+              null
+            ]
+          ]
+        },
+        {
+          "day": "2022-10-27",
+          "n": 30,
+          "total_over_natural_21_6": 2.5784308356451633,
+          "aod_endpoints": [
+            0.15,
+            0.15
+          ],
+          "weather_endpoints": [
+            [
+              0,
+              0.0,
+              90,
+              null
+            ],
+            [
+              0,
+              0.0,
+              93,
+              null
+            ]
+          ]
+        },
+        {
+          "day": "2022-10-28",
+          "n": 30,
+          "total_over_natural_21_6": 2.7199569200922915,
+          "aod_endpoints": [
+            0.22,
+            0.23
+          ],
+          "weather_endpoints": [
+            [
+              0,
+              0.0,
+              91,
+              null
+            ],
+            [
+              0,
+              0.0,
+              94,
+              null
+            ]
+          ]
+        },
+        {
+          "day": "2022-10-30",
+          "n": 30,
+          "total_over_natural_21_6": 2.8755347115486303,
+          "aod_endpoints": [
+            0.27,
+            0.28
+          ],
+          "weather_endpoints": [
+            [
+              2,
+              0.0,
+              88,
+              null
+            ],
+            [
+              13,
+              0.0,
+              90,
+              null
+            ]
+          ]
+        },
+        {
+          "day": "2022-10-31",
+          "n": 29,
+          "total_over_natural_21_6": 2.6299804192835987,
+          "aod_endpoints": [
+            0.34,
+            0.36
+          ],
+          "weather_endpoints": [
+            [
+              2,
+              0.0,
+              89,
+              null
+            ],
+            [
+              0,
+              0.0,
+              92,
+              null
+            ]
+          ]
+        }
+      ],
+      "astro": 15,
+      "weather": 5,
+      "with_cams": 5,
+      "signal": 5
+    },
+    {
+      "site": "SQM_IT_Galzignano",
+      "coord": [
+        45.31151,
+        11.69832,
+        337.0
+      ],
+      "sha256": "d690b48556408bb833eddede7fccc2e0a68a5c5e17ad80c7c67b08e5800e208a",
+      "file": "SQM_IT_Galzignano-202302.dat",
+      "ready_nights": 27,
+      "windows": [
+        {
+          "day": "2023-02-12",
+          "n": 30,
+          "total_over_natural_21_6": 2.329984711886714,
+          "aod_endpoints": [
+            0.15,
+            0.16
+          ],
+          "weather_endpoints": [
+            [
+              0,
+              0.0,
+              70,
+              null
+            ],
+            [
+              0,
+              0.0,
+              71,
+              null
+            ]
+          ]
+        },
+        {
+          "day": "2023-02-13",
+          "n": 30,
+          "total_over_natural_21_6": 2.279004754736181,
+          "aod_endpoints": [
+            0.15,
+            0.15
+          ],
+          "weather_endpoints": [
+            [
+              0,
+              0.0,
+              87,
+              null
+            ],
+            [
+              0,
+              0.0,
+              89,
+              null
+            ]
+          ]
+        },
+        {
+          "day": "2023-02-14",
+          "n": 30,
+          "total_over_natural_21_6": 2.086257057438651,
+          "aod_endpoints": [
+            0.26,
+            0.28
+          ],
+          "weather_endpoints": [
+            [
+              0,
+              0.0,
+              92,
+              null
+            ],
+            [
+              0,
+              0.0,
+              94,
+              null
+            ]
+          ]
+        },
+        {
+          "day": "2023-02-15",
+          "n": 30,
+          "total_over_natural_21_6": 2.0451546941696153,
+          "aod_endpoints": [
+            0.3,
+            0.33
+          ],
+          "weather_endpoints": [
+            [
+              0,
+              0.0,
+              91,
+              null
+            ],
+            [
+              0,
+              0.0,
+              95,
+              null
+            ]
+          ]
+        }
+      ],
+      "astro": 12,
+      "weather": 4,
+      "with_cams": 4,
+      "signal": 4
+    },
+    {
+      "site": "SQM_IT_Galzignano",
+      "coord": [
+        45.31151,
+        11.69832,
+        337.0
+      ],
+      "sha256": "d9ce14283702983bc0b7b15f95229adae91d835d8eaab7c9f9b2febf66d492fb",
+      "file": "SQM_IT_Galzignano-202304.dat",
+      "ready_nights": 12,
+      "windows": [],
+      "astro": 2,
+      "weather": 0,
+      "with_cams": 0,
+      "signal": 0
+    },
+    {
+      "site": "SQM_IT_Galzignano",
+      "coord": [
+        45.31151,
+        11.69832,
+        337.0
+      ],
+      "sha256": "9df86fbc5355d6ab7810059a1da5b994b98e74fdbce86a196edd0c48bae011a9",
+      "file": "SQM_IT_Galzignano-202305.dat",
+      "ready_nights": 26,
+      "windows": [],
+      "astro": 11,
+      "weather": 0,
+      "with_cams": 0,
+      "signal": 0
+    },
+    {
+      "site": "SQM_IT_Galzignano",
+      "coord": [
+        45.31151,
+        11.69832,
+        337.0
+      ],
+      "sha256": "35f7da3a744b3eb65ac9e3467dd926ade72f4cd23cccbc66284093c3919097a9",
+      "file": "SQM_IT_Galzignano-202306.dat",
+      "ready_nights": 13,
+      "windows": [],
+      "astro": 0,
+      "weather": 0,
+      "with_cams": 0,
+      "signal": 0
+    },
+    {
+      "site": "SQM_IT_Galzignano",
+      "coord": [
+        45.31151,
+        11.69832,
+        337.0
+      ],
+      "sha256": "a894d0ab2ce103b31009f506dcbe53b97e56636ce3fc007f1f2d4583621876fe",
+      "file": "SQM_IT_Galzignano-202307.dat",
+      "ready_nights": 24,
+      "windows": [
+        {
+          "day": "2023-07-14",
+          "n": 29,
+          "total_over_natural_21_6": 2.7632513249516197,
+          "aod_endpoints": [
+            0.17,
+            0.17
+          ],
+          "weather_endpoints": [
+            [
+              0,
+              0.0,
+              69,
+              null
+            ],
+            [
+              1,
+              0.0,
+              71,
+              null
+            ]
+          ]
+        },
+        {
+          "day": "2023-07-16",
+          "n": 30,
+          "total_over_natural_21_6": 2.676165959122138,
+          "aod_endpoints": [
+            0.15,
+            0.15
+          ],
+          "weather_endpoints": [
+            [
+              10,
+              0.0,
+              77,
+              null
+            ],
+            [
+              5,
+              0.0,
+              83,
+              null
+            ]
+          ]
+        },
+        {
+          "day": "2023-07-17",
+          "n": 30,
+          "total_over_natural_21_6": 2.314328639051221,
+          "aod_endpoints": [
+            0.18,
+            0.19
+          ],
+          "weather_endpoints": [
+            [
+              0,
+              0.0,
+              54,
+              null
+            ],
+            [
+              0,
+              0.0,
+              61,
+              null
+            ]
+          ]
+        }
+      ],
+      "astro": 11,
+      "weather": 3,
+      "with_cams": 3,
+      "signal": 3
+    },
+    {
+      "site": "SQM_IT_Loiano",
+      "coord": [
+        44.25656,
+        11.33178,
+        786.0
+      ],
+      "sha256": "1a84310831788846027b677e68e81d24ccac291f0fcad456bfb3426aee923786",
+      "file": "SQM_IT_Loiano-202611.dat",
+      "ready_nights": 22,
+      "windows": [],
+      "astro": 13,
+      "weather": 0,
+      "with_cams": 0,
+      "signal": 0
+    }
+  ],
+  "nasa_catalogue_coastal": {
+    "2023-09": [
+      {
+        "concept": "G3988112516-LAADS",
+        "granule": "VNP46A3.A2023244.h18v03.002.2025160233729.h5"
+      }
+    ],
+    "2023-11": [
+      {
+        "concept": "G3988115798-LAADS",
+        "granule": "VNP46A3.A2023305.h18v03.002.2025161122632.h5"
+      }
+    ],
+    "2024-04": [
+      {
+        "concept": "G3988056981-LAADS",
+        "granule": "VNP46A3.A2024092.h18v03.002.2025134112424.h5"
+      }
+    ],
+    "2024-10": [
+      {
+        "concept": "G3988016162-LAADS",
+        "granule": "VNP46A3.A2024275.h18v03.002.2025119203830.h5"
+      }
+    ],
+    "2025-02": [
+      {
+        "concept": "G3988121349-LAADS",
+        "granule": "VNP46A3.A2025032.h18v03.002.2026064130244.h5"
+      }
+    ],
+    "2025-10": [
+      {
+        "concept": "G4065840624-LAADS",
+        "granule": "VNP46A3.A2025274.h18v03.002.2026064141156.h5"
+      }
+    ],
+    "2026-01": [
+      {
+        "concept": "G4025137289-LAADS",
+        "granule": "VNP46A3.A2026001.h18v03.002.2026041165151.h5"
+      }
+    ]
+  },
+  "nasa_catalogue_central_europe": {
+    "2022-10": [
+      {
+        "concept": "G3988101855-LAADS",
+        "granule": "VNP46A3.A2022274.h19v04.002.2025155195819.h5"
+      },
+      {
+        "concept": "G3988101883-LAADS",
+        "granule": "VNP46A3.A2022274.h18v04.002.2025155195741.h5"
+      }
+    ],
+    "2023-02": [
+      {
+        "concept": "G3988107464-LAADS",
+        "granule": "VNP46A3.A2023032.h19v04.002.2025160185633.h5"
+      },
+      {
+        "concept": "G3988107943-LAADS",
+        "granule": "VNP46A3.A2023032.h18v04.002.2025160190256.h5"
+      }
+    ],
+    "2023-04": [
+      {
+        "concept": "G3988109186-LAADS",
+        "granule": "VNP46A3.A2023091.h18v04.002.2025160204503.h5"
+      },
+      {
+        "concept": "G3988109306-LAADS",
+        "granule": "VNP46A3.A2023091.h19v04.002.2025160203749.h5"
+      }
+    ],
+    "2023-05": [
+      {
+        "concept": "G3988110164-LAADS",
+        "granule": "VNP46A3.A2023121.h19v04.002.2025160212516.h5"
+      },
+      {
+        "concept": "G3988110189-LAADS",
+        "granule": "VNP46A3.A2023121.h18v04.002.2025160212139.h5"
+      }
+    ],
+    "2023-06": [
+      {
+        "concept": "G3988111002-LAADS",
+        "granule": "VNP46A3.A2023152.h19v04.002.2025160221302.h5"
+      },
+      {
+        "concept": "G3988111086-LAADS",
+        "granule": "VNP46A3.A2023152.h18v04.002.2025160220726.h5"
+      }
+    ],
+    "2023-07": [
+      {
+        "concept": "G3988114598-LAADS",
+        "granule": "VNP46A3.A2023182.h18v04.002.2025161113757.h5"
+      },
+      {
+        "concept": "G3988114896-LAADS",
+        "granule": "VNP46A3.A2023182.h19v04.002.2025161114505.h5"
+      }
+    ],
+    "2024-10": [
+      {
+        "concept": "G3988016101-LAADS",
+        "granule": "VNP46A3.A2024275.h19v04.002.2025119203911.h5"
+      },
+      {
+        "concept": "G3988016158-LAADS",
+        "granule": "VNP46A3.A2024275.h18v04.002.2025119203837.h5"
+      }
+    ],
+    "2025-02": [
+      {
+        "concept": "G3988121346-LAADS",
+        "granule": "VNP46A3.A2025032.h19v04.002.2026064130337.h5"
+      },
+      {
+        "concept": "G3988121395-LAADS",
+        "granule": "VNP46A3.A2025032.h18v04.002.2026064130219.h5"
+      }
+    ],
+    "2025-04": [
+      {
+        "concept": "G4065799287-LAADS",
+        "granule": "VNP46A3.A2025091.h18v04.002.2026064132613.h5"
+      },
+      {
+        "concept": "G4065805276-LAADS",
+        "granule": "VNP46A3.A2025091.h19v04.002.2026064132611.h5"
+      }
+    ],
+    "2025-09": [
+      {
+        "concept": "G4065832200-LAADS",
+        "granule": "VNP46A3.A2025244.h19v04.002.2026064140231.h5"
+      },
+      {
+        "concept": "G4065837896-LAADS",
+        "granule": "VNP46A3.A2025244.h18v04.002.2026064140114.h5"
+      }
+    ],
+    "2025-10": [
+      {
+        "concept": "G4065840617-LAADS",
+        "granule": "VNP46A3.A2025274.h19v04.002.2026064141200.h5"
+      },
+      {
+        "concept": "G4065840924-LAADS",
+        "granule": "VNP46A3.A2025274.h18v04.002.2026064141200.h5"
+      }
+    ],
+    "2025-11": [
+      {
+        "concept": "G3905553155-LAADS",
+        "granule": "VNP46A3.A2025305.h19v04.002.2026071170922.h5"
+      },
+      {
+        "concept": "G3905574592-LAADS",
+        "granule": "VNP46A3.A2025305.h18v04.002.2026071170919.h5"
+      }
+    ],
+    "2026-02": [
+      {
+        "concept": "G4081891336-LAADS",
+        "granule": "VNP46A3.A2026032.h19v04.002.2026072192101.h5"
+      },
+      {
+        "concept": "G4082094142-LAADS",
+        "granule": "VNP46A3.A2026032.h18v04.002.2026072191347.h5"
+      }
+    ],
+    "2026-11": [
+      {
+        "concept": "G4410659311-LAADS",
+        "granule": "VNP46A3.A2026305.h19v04.002.2026317182648.h5"
+      },
+      {
+        "concept": "G4410661568-LAADS",
+        "granule": "VNP46A3.A2026305.h18v04.002.2026317182646.h5"
+      }
+    ]
+  },
+  "error_conversion": {
+    "reference": "../photometer-all-orders-20261125/refined-controls.json",
+    "formula": "100*(modeled_total / observed_total - 1); ratio=10**(-0.4*(model_mag-observed_mag))",
+    "values": [
+      {
+        "site": "Schiermonnikoog-dorp",
+        "variant": "current",
+        "date": "2024-01-10",
+        "signed_percent": -22.05665564413798,
+        "one_mc_standard_error_endpoints_percent": [
+          -22.05665564413798,
+          -22.05665564413798
+        ]
+      },
+      {
+        "site": "Schiermonnikoog-dorp",
+        "variant": "cams_region",
+        "date": "2024-01-10",
+        "signed_percent": -14.361121702251777,
+        "one_mc_standard_error_endpoints_percent": [
+          -20.55326186030937,
+          -7.686361355689886
+        ]
+      },
+      {
+        "site": "Schiermonnikoog-dorp",
+        "variant": "cams_spatial",
+        "date": "2024-01-10",
+        "signed_percent": -19.548530282232733,
+        "one_mc_standard_error_endpoints_percent": [
+          -24.648983789937272,
+          -14.102830919956943
+        ]
+      },
+      {
+        "site": "Vlieland-Oost",
+        "variant": "current",
+        "date": "2024-01-10",
+        "signed_percent": 5.68690193216661,
+        "one_mc_standard_error_endpoints_percent": [
+          5.68690193216661,
+          5.68690193216661
+        ]
+      },
+      {
+        "site": "Vlieland-Oost",
+        "variant": "cams_region",
+        "date": "2024-01-10",
+        "signed_percent": -2.9733494182962783,
+        "one_mc_standard_error_endpoints_percent": [
+          -10.253036520877256,
+          4.896818322928387
+        ]
+      },
+      {
+        "site": "Vlieland-Oost",
+        "variant": "cams_spatial",
+        "date": "2024-01-10",
+        "signed_percent": 1.795686098487037,
+        "one_mc_standard_error_endpoints_percent": [
+          -5.965229184949594,
+          10.197128343542428
+        ]
+      }
+    ],
+    "mean_absolute_percent": {
+      "current": 13.871778788152294,
+      "cams_region": 8.667235560274028,
+      "cams_spatial": 10.672108190359886
+    }
+  },
+  "scope": "Preflight. Weather is local ERA5, snow missing is flagged. CAMS Global at the station for 22 and 23 UTC. No new skyglow predictions or full cloud/terrain/near-source audit."
+}

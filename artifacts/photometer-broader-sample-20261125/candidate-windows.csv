@@ -1,0 +1,49 @@
+﻿date_utc,window_start_utc,window_end_utc,network,site,latitude,longitude,n_sqm,total_to_nominal_natural_21_6,above_twice_nominal_natural,cams_aod_22utc,cams_aod_23utc,era5_cloud_22_pct,era5_cloud_23_pct,snow_depth_22_m,snow_depth_23_m,nasa_catalogue_month_found,source
+2022-10-01,22:00,23:00,DARKERSKY4CE,SQM_IT_Galzignano,45.31151,11.69832,30,3.035623,True,0.1,0.11,0,0,,,True,https://darkersky4ce.inaf.it/photometer-network-webtool/
+2022-10-27,22:00,23:00,DARKERSKY4CE,SQM_IT_Galzignano,45.31151,11.69832,30,2.578431,True,0.15,0.15,0,0,,,True,https://darkersky4ce.inaf.it/photometer-network-webtool/
+2022-10-28,22:00,23:00,DARKERSKY4CE,SQM_IT_Galzignano,45.31151,11.69832,30,2.719957,True,0.22,0.23,0,0,,,True,https://darkersky4ce.inaf.it/photometer-network-webtool/
+2022-10-30,22:00,23:00,DARKERSKY4CE,SQM_IT_Galzignano,45.31151,11.69832,30,2.875535,True,0.27,0.28,2,13,,,True,https://darkersky4ce.inaf.it/photometer-network-webtool/
+2022-10-31,22:00,23:00,DARKERSKY4CE,SQM_IT_Galzignano,45.31151,11.69832,29,2.62998,True,0.34,0.36,2,0,,,True,https://darkersky4ce.inaf.it/photometer-network-webtool/
+2023-02-12,22:00,23:00,DARKERSKY4CE,SQM_IT_Galzignano,45.31151,11.69832,30,2.329985,True,0.15,0.16,0,0,,,True,https://darkersky4ce.inaf.it/photometer-network-webtool/
+2023-02-13,22:00,23:00,DARKERSKY4CE,SQM_IT_Galzignano,45.31151,11.69832,30,2.279005,True,0.15,0.15,0,0,,,True,https://darkersky4ce.inaf.it/photometer-network-webtool/
+2023-02-14,22:00,23:00,DARKERSKY4CE,SQM_IT_Galzignano,45.31151,11.69832,30,2.086257,True,0.26,0.28,0,0,,,True,https://darkersky4ce.inaf.it/photometer-network-webtool/
+2023-02-15,22:00,23:00,DARKERSKY4CE,SQM_IT_Galzignano,45.31151,11.69832,30,2.045155,True,0.3,0.33,0,0,,,True,https://darkersky4ce.inaf.it/photometer-network-webtool/
+2023-07-14,22:00,23:00,DARKERSKY4CE,SQM_IT_Galzignano,45.31151,11.69832,29,2.763251,True,0.17,0.17,0,1,,,True,https://darkersky4ce.inaf.it/photometer-network-webtool/
+2023-07-16,22:00,23:00,DARKERSKY4CE,SQM_IT_Galzignano,45.31151,11.69832,30,2.676166,True,0.15,0.15,10,5,,,True,https://darkersky4ce.inaf.it/photometer-network-webtool/
+2023-07-17,22:00,23:00,DARKERSKY4CE,SQM_IT_Galzignano,45.31151,11.69832,30,2.314329,True,0.18,0.19,0,0,,,True,https://darkersky4ce.inaf.it/photometer-network-webtool/
+2023-09-10,22:00,23:00,Was het donker,Borkum-Ostland,53.607,6.727,85,1.285237,False,0.3,0.29,8,4,,,True,https://washetdonker.nl/data/Borkum-Ostland/2023/09/20230910_120000_SQM-Borkum-Ostland.dat
+2023-09-10,22:00,23:00,Was het donker,Moddergat,53.40656,6.06985,86,1.555797,False,0.3,0.29,5,1,,,True,https://washetdonker.nl/data/Moddergat/2023/09/20230910_120000_SQM-Moddergat.dat
+2023-09-10,22:00,23:00,Was het donker,Schiermonnikoog-dorp,53.481,6.168,85,1.530366,False,0.3,0.29,6,0,,,True,https://washetdonker.nl/data/Schiermonnikoog-dorp/2023/09/20230910_120000_SQM-Schiermonnikoog-dorp.dat
+2023-09-10,22:00,23:00,Was het donker,Vlieland-Oost,53.3006,5.0774,86,1.311632,False,0.31,0.3,4,9,,,True,https://washetdonker.nl/data/Vlieland-Oost/2023/09/20230910_120000_SQM-Vlieland-Oost.dat
+2023-09-14,22:00,23:00,Was het donker,Borkum-Ostland,53.607,6.727,86,1.236514,False,0.18,0.18,2,7,,,True,https://washetdonker.nl/data/Borkum-Ostland/2023/09/20230914_120000_SQM-Borkum-Ostland.dat
+2023-09-14,22:00,23:00,Was het donker,Moddergat,53.40656,6.06985,85,1.441592,False,0.24,0.22,10,9,,,True,https://washetdonker.nl/data/Moddergat/2023/09/20230914_120000_SQM-Moddergat.dat
+2023-09-14,22:00,23:00,Was het donker,Schiermonnikoog-dorp,53.481,6.168,86,1.363956,False,0.24,0.22,5,4,,,True,https://washetdonker.nl/data/Schiermonnikoog-dorp/2023/09/20230914_120000_SQM-Schiermonnikoog-dorp.dat
+2023-09-14,22:00,23:00,Was het donker,Texel,53.007,4.7792,85,1.866117,False,0.2,0.2,12,1,,,True,https://washetdonker.nl/data/Texel/2023/09/20230914_120000_SQM-Texel.dat
+2023-09-15,22:00,23:00,Was het donker,Texel,53.007,4.7792,85,2.051324,True,0.23,0.23,15,15,,,True,https://washetdonker.nl/data/Texel/2023/09/20230915_120000_SQM-Texel.dat
+2024-04-28,22:00,23:00,Was het donker,Borkum-Ostland,53.607,6.727,86,0.821158,False,0.05,0.06,3,2,,,True,https://washetdonker.nl/data/Borkum-Ostland/2024/04/20240428_120000_SQM-Borkum-Ostland.dat
+2024-10-03,22:00,23:00,Was het donker,Borkum-Ostland,53.607,6.727,85,1.261571,False,0.04,0.04,1,0,,,True,https://washetdonker.nl/data/Borkum-Ostland/2024/10/20241003_120000_SQM-Borkum-Ostland.dat
+2024-10-03,22:00,23:00,Was het donker,Moddergat,53.40656,6.06985,86,1.517284,False,0.06,0.06,13,10,,,True,https://washetdonker.nl/data/Moddergat/2024/10/20241003_120000_SQM-Moddergat.dat
+2024-10-03,22:00,23:00,Was het donker,Spiekeroog,53.765,7.726,85,1.327065,False,0.04,0.04,0,1,,,True,https://washetdonker.nl/data/Spiekeroog/2024/10/20241003_120000_SQM-Spiekeroog.dat
+2024-10-03,22:00,23:00,Was het donker,Texel,53.007,4.7792,85,1.762411,False,0.05,0.06,9,12,,,True,https://washetdonker.nl/data/Texel/2024/10/20241003_120000_SQM-Texel.dat
+2024-10-04,22:00,23:00,Was het donker,Borkum-Ostland,53.607,6.727,86,1.240035,False,0.07,0.08,1,2,,,True,https://washetdonker.nl/data/Borkum-Ostland/2024/10/20241004_120000_SQM-Borkum-Ostland.dat
+2024-10-05,22:00,23:00,Was het donker,Moddergat,53.40656,6.06985,86,1.3822,False,0.09,0.1,6,5,,,True,https://washetdonker.nl/data/Moddergat/2024/10/20241005_120000_SQM-Moddergat.dat
+2024-10-05,22:00,23:00,Was het donker,Texel,53.007,4.7792,85,1.808507,False,0.11,0.11,0,0,,,True,https://washetdonker.nl/data/Texel/2024/10/20241005_120000_SQM-Texel.dat
+2024-10-05,22:00,23:00,Was het donker,Vlieland-Oost,53.3006,5.0774,85,1.028542,False,0.11,0.11,5,1,,,True,https://washetdonker.nl/data/Vlieland-Oost/2024/10/20241005_120000_SQM-Vlieland-Oost.dat
+2025-02-01,22:00,23:00,Was het donker,Texel,53.007,4.7792,86,1.556007,False,0.04,0.04,7,3,,,True,https://washetdonker.nl/data/Texel/2025/02/20250201_120000_SQM-Texel.dat
+2025-02-01,22:00,23:00,Was het donker,Vlieland-Oost,53.3006,5.0774,85,0.891267,False,0.04,0.04,12,1,,,True,https://washetdonker.nl/data/Vlieland-Oost/2025/02/20250201_120000_SQM-Vlieland-Oost.dat
+2025-02-02,22:00,23:00,DARKERSKY4CE,SQM_IT_Arcugnano,45.49744,11.53481,12,6.391622,True,0.07,0.07,1,0,,,True,https://darkersky4ce.inaf.it/photometer-network-webtool/
+2025-02-18,22:00,23:00,Was het donker,Borkum-Ostland,53.607,6.727,85,1.524534,False,0.04,0.04,8,0,,,True,https://washetdonker.nl/data/Borkum-Ostland/2025/02/20250218_120000_SQM-Borkum-Ostland.dat
+2025-02-18,22:00,23:00,Was het donker,Moddergat,53.40656,6.06985,85,1.314728,False,0.05,0.05,0,0,,,True,https://washetdonker.nl/data/Moddergat/2025/02/20250218_120000_SQM-Moddergat.dat
+2025-02-18,22:00,23:00,Was het donker,Schiermonnikoog-dorp,53.481,6.168,86,1.373932,False,0.05,0.05,0,0,,,True,https://washetdonker.nl/data/Schiermonnikoog-dorp/2025/02/20250218_120000_SQM-Schiermonnikoog-dorp.dat
+2025-02-18,22:00,23:00,Was het donker,Spiekeroog,53.765,7.726,86,1.013945,False,0.03,0.03,0,0,,,True,https://washetdonker.nl/data/Spiekeroog/2025/02/20250218_120000_SQM-Spiekeroog.dat
+2025-02-18,22:00,23:00,Was het donker,Vlieland-Oost,53.3006,5.0774,85,0.901094,False,0.07,0.07,6,3,,,True,https://washetdonker.nl/data/Vlieland-Oost/2025/02/20250218_120000_SQM-Vlieland-Oost.dat
+2025-02-22,22:00,23:00,Was het donker,Vlieland-Oost,53.3006,5.0774,84,0.815677,False,0.08,0.08,13,4,,,True,https://washetdonker.nl/data/Vlieland-Oost/2025/02/20250222_120000_SQM-Vlieland-Oost.dat
+2025-04-29,22:00,23:00,DARKERSKY4CE,SQM_IT_Arcugnano,45.49744,11.53481,12,8.435309,True,0.15,0.15,15,15,,,True,https://darkersky4ce.inaf.it/photometer-network-webtool/
+2025-09-17,22:00,23:00,DARKERSKY4CE,SQM_IT_Arcugnano,45.49744,11.53481,12,6.822342,True,0.08,0.08,4,3,,,True,https://darkersky4ce.inaf.it/photometer-network-webtool/
+2025-09-18,22:00,23:00,DARKERSKY4CE,SQM_IT_Arcugnano,45.49744,11.53481,12,7.295165,True,0.08,0.08,0,0,,,True,https://darkersky4ce.inaf.it/photometer-network-webtool/
+2025-09-20,22:00,23:00,DARKERSKY4CE,SQM_IT_Arcugnano,45.49744,11.53481,12,7.782776,True,0.17,0.18,11,15,,,True,https://darkersky4ce.inaf.it/photometer-network-webtool/
+2025-10-18,22:00,23:00,DARKERSKY4CE,SQM_HU_Zselic,46.23648,17.7652,60,1.49588,False,0.03,0.03,12,14,,,True,https://darkersky4ce.inaf.it/photometer-network-webtool/
+2025-10-24,22:00,23:00,DARKERSKY4CE,SQM_HU_Zselic,46.23648,17.7652,60,1.496005,False,0.06,0.05,2,2,,,True,https://darkersky4ce.inaf.it/photometer-network-webtool/
+2025-10-28,22:00,23:00,DARKERSKY4CE,SQM_IT_Arcugnano,45.49744,11.53481,12,7.903887,True,0.12,0.13,6,7,,,True,https://darkersky4ce.inaf.it/photometer-network-webtool/
+2026-02-17,22:00,23:00,DARKERSKY4CE,SQM_IT_Arcugnano,45.49744,11.53481,12,6.740573,True,0.04,0.04,0,0,,,True,https://darkersky4ce.inaf.it/photometer-network-webtool/
+2026-11-13,22:00,23:00,DARKERSKY4CE,SQM_AT_StockenboiMunicipality,46.72915,13.58023,12,1.363655,False,0.03,0.02,10,1,,,True,https://darkersky4ce.inaf.it/photometer-network-webtool/
