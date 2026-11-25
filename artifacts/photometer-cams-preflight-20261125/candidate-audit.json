@@ -1,0 +1,1322 @@
+{
+  "astropy_version": "8.0.2",
+  "offline_apparent_pressure_zero": true,
+  "thresholds": {
+    "max_sun_alt_deg": -18,
+    "max_moon_alt_deg": -5
+  },
+  "source_sha256": {
+    "AstMon_evol.csv": "f477416f47487ad918484392fd5c368744d5807c22edf5c0e69ed7450fad88a9",
+    "NightSkyBrightnessData_2015.zip": "7fc9be329a61eb060465ee047b62b392a0cc73627d14971c6b72b60a6de3901c",
+    "NOAA_Barajas_2017": "ab3171338ad1db3b42f00c979d4baba3485f2ae46e2ddaf963bf882713a3a056"
+  },
+  "madrid": {
+    "screen": "UTC 22–23, March and November 2017, Johnson-V Pos0, finite error positive, at least 6 astro rows for new dates; Barajas FM-12 total cover GF1 00 with quality 0/1/4/5 at both 22:00 and 23:00. Remote cloud QA remains pending.",
+    "site_lat_lon_m": [
+      40.451111,
+      -3.726111,
+      650
+    ],
+    "days_with_valid_flux": 40,
+    "rows_before_astro": 362,
+    "days": [
+      {
+        "date_utc": "2017-03-01",
+        "v_pos0_finite_unique": 10,
+        "sun_moon_pass": 10,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [],
+          [
+            [
+              "04",
+              "1"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [],
+        "max_sun_alt_deg_after_astro": -43.456,
+        "max_moon_alt_deg_after_astro": -6.674
+      },
+      {
+        "date_utc": "2017-03-02",
+        "v_pos0_finite_unique": 9,
+        "sun_moon_pass": 0,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "01",
+              "1"
+            ]
+          ],
+          [
+            [
+              "01",
+              "1"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [],
+        "max_sun_alt_deg_after_astro": null,
+        "max_moon_alt_deg_after_astro": null
+      },
+      {
+        "date_utc": "2017-03-09",
+        "v_pos0_finite_unique": 10,
+        "sun_moon_pass": 0,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "00",
+              "5"
+            ]
+          ],
+          [
+            [
+              "00",
+              "5"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [],
+        "max_sun_alt_deg_after_astro": null,
+        "max_moon_alt_deg_after_astro": null
+      },
+      {
+        "date_utc": "2017-03-15",
+        "v_pos0_finite_unique": 9,
+        "sun_moon_pass": 0,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "00",
+              "5"
+            ]
+          ],
+          [
+            [
+              "00",
+              "5"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [],
+        "max_sun_alt_deg_after_astro": null,
+        "max_moon_alt_deg_after_astro": null
+      },
+      {
+        "date_utc": "2017-03-16",
+        "v_pos0_finite_unique": 6,
+        "sun_moon_pass": 0,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "00",
+              "5"
+            ]
+          ],
+          [
+            [
+              "00",
+              "5"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [],
+        "max_sun_alt_deg_after_astro": null,
+        "max_moon_alt_deg_after_astro": null
+      },
+      {
+        "date_utc": "2017-03-17",
+        "v_pos0_finite_unique": 9,
+        "sun_moon_pass": 8,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "00",
+              "5"
+            ]
+          ],
+          [
+            [
+              "00",
+              "5"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": true,
+        "eligible_obs_utc": [
+          "2017-03-17T22:02:13Z",
+          "2017-03-17T22:08:38Z",
+          "2017-03-17T22:15:02Z",
+          "2017-03-17T22:21:29Z",
+          "2017-03-17T22:27:54Z",
+          "2017-03-17T22:34:19Z",
+          "2017-03-17T22:41:02Z",
+          "2017-03-17T22:47:39Z"
+        ],
+        "max_sun_alt_deg_after_astro": -39.269,
+        "max_moon_alt_deg_after_astro": -5.123
+      },
+      {
+        "date_utc": "2017-03-18",
+        "v_pos0_finite_unique": 9,
+        "sun_moon_pass": 9,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "07",
+              "1"
+            ]
+          ],
+          [
+            [
+              "00",
+              "5"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [],
+        "max_sun_alt_deg_after_astro": -39.199,
+        "max_moon_alt_deg_after_astro": -13.383
+      },
+      {
+        "date_utc": "2017-03-19",
+        "v_pos0_finite_unique": 9,
+        "sun_moon_pass": 9,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "01",
+              "1"
+            ]
+          ],
+          []
+        ],
+        "known_benchmark_night": true,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [
+          "2017-03-19T22:04:48Z",
+          "2017-03-19T22:11:13Z",
+          "2017-03-19T22:17:38Z",
+          "2017-03-19T22:24:03Z",
+          "2017-03-19T22:30:28Z",
+          "2017-03-19T22:36:52Z",
+          "2017-03-19T22:43:17Z",
+          "2017-03-19T22:49:41Z",
+          "2017-03-19T22:56:06Z"
+        ],
+        "max_sun_alt_deg_after_astro": -39.057,
+        "max_moon_alt_deg_after_astro": -22.559
+      },
+      {
+        "date_utc": "2017-03-20",
+        "v_pos0_finite_unique": 10,
+        "sun_moon_pass": 10,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "00",
+              "5"
+            ]
+          ],
+          [
+            [
+              "00",
+              "5"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": true,
+        "eligible_obs_utc": [
+          "2017-03-20T22:01:21Z",
+          "2017-03-20T22:07:46Z",
+          "2017-03-20T22:14:12Z",
+          "2017-03-20T22:20:37Z",
+          "2017-03-20T22:27:02Z",
+          "2017-03-20T22:33:27Z",
+          "2017-03-20T22:39:52Z",
+          "2017-03-20T22:46:17Z",
+          "2017-03-20T22:52:42Z",
+          "2017-03-20T22:59:06Z"
+        ],
+        "max_sun_alt_deg_after_astro": -38.291,
+        "max_moon_alt_deg_after_astro": -31.134
+      },
+      {
+        "date_utc": "2017-03-21",
+        "v_pos0_finite_unique": 10,
+        "sun_moon_pass": 10,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "05",
+              "1"
+            ]
+          ],
+          [
+            [
+              "05",
+              "1"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [],
+        "max_sun_alt_deg_after_astro": -37.94,
+        "max_moon_alt_deg_after_astro": -39.958
+      },
+      {
+        "date_utc": "2017-03-22",
+        "v_pos0_finite_unique": 9,
+        "sun_moon_pass": 9,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "08",
+              "1"
+            ]
+          ],
+          [
+            [
+              "07",
+              "1"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [],
+        "max_sun_alt_deg_after_astro": -37.798,
+        "max_moon_alt_deg_after_astro": -48.791
+      },
+      {
+        "date_utc": "2017-03-23",
+        "v_pos0_finite_unique": 9,
+        "sun_moon_pass": 9,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "06",
+              "1"
+            ]
+          ],
+          [
+            [
+              "06",
+              "1"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [],
+        "max_sun_alt_deg_after_astro": -37.56,
+        "max_moon_alt_deg_after_astro": -55.383
+      },
+      {
+        "date_utc": "2017-03-24",
+        "v_pos0_finite_unique": 9,
+        "sun_moon_pass": 9,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "04",
+              "1"
+            ]
+          ],
+          [
+            [
+              "06",
+              "1"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [],
+        "max_sun_alt_deg_after_astro": -37.379,
+        "max_moon_alt_deg_after_astro": -59.202
+      },
+      {
+        "date_utc": "2017-03-25",
+        "v_pos0_finite_unique": 7,
+        "sun_moon_pass": 7,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "08",
+              "1"
+            ]
+          ],
+          [
+            [
+              "03",
+              "2"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [],
+        "max_sun_alt_deg_after_astro": -37.31,
+        "max_moon_alt_deg_after_astro": -58.674
+      },
+      {
+        "date_utc": "2017-03-26",
+        "v_pos0_finite_unique": 9,
+        "sun_moon_pass": 9,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "04",
+              "1"
+            ]
+          ],
+          [
+            [
+              "07",
+              "1"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [],
+        "max_sun_alt_deg_after_astro": -37.113,
+        "max_moon_alt_deg_after_astro": -51.141
+      },
+      {
+        "date_utc": "2017-03-27",
+        "v_pos0_finite_unique": 9,
+        "sun_moon_pass": 9,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "04",
+              "1"
+            ]
+          ],
+          [
+            [
+              "04",
+              "1"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [],
+        "max_sun_alt_deg_after_astro": -36.917,
+        "max_moon_alt_deg_after_astro": -41.434
+      },
+      {
+        "date_utc": "2017-03-28",
+        "v_pos0_finite_unique": 9,
+        "sun_moon_pass": 9,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "00",
+              "5"
+            ]
+          ],
+          [
+            [
+              "00",
+              "5"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": true,
+        "eligible_obs_utc": [
+          "2017-03-28T22:06:11Z",
+          "2017-03-28T22:12:36Z",
+          "2017-03-28T22:19:01Z",
+          "2017-03-28T22:25:25Z",
+          "2017-03-28T22:31:49Z",
+          "2017-03-28T22:38:14Z",
+          "2017-03-28T22:44:38Z",
+          "2017-03-28T22:51:02Z",
+          "2017-03-28T22:57:27Z"
+        ],
+        "max_sun_alt_deg_after_astro": -36.621,
+        "max_moon_alt_deg_after_astro": -30.386
+      },
+      {
+        "date_utc": "2017-03-29",
+        "v_pos0_finite_unique": 9,
+        "sun_moon_pass": 9,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "04",
+              "1"
+            ]
+          ],
+          [
+            [
+              "03",
+              "1"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [],
+        "max_sun_alt_deg_after_astro": -36.166,
+        "max_moon_alt_deg_after_astro": -18.45
+      },
+      {
+        "date_utc": "2017-11-02",
+        "v_pos0_finite_unique": 4,
+        "sun_moon_pass": 0,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "08",
+              "1"
+            ]
+          ],
+          [
+            [
+              "08",
+              "1"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [],
+        "max_sun_alt_deg_after_astro": null,
+        "max_moon_alt_deg_after_astro": null
+      },
+      {
+        "date_utc": "2017-11-07",
+        "v_pos0_finite_unique": 9,
+        "sun_moon_pass": 0,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "00",
+              "5"
+            ]
+          ],
+          [
+            [
+              "00",
+              "5"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [],
+        "max_sun_alt_deg_after_astro": null,
+        "max_moon_alt_deg_after_astro": null
+      },
+      {
+        "date_utc": "2017-11-08",
+        "v_pos0_finite_unique": 9,
+        "sun_moon_pass": 0,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "02",
+              "1"
+            ]
+          ],
+          [
+            [
+              "00",
+              "5"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [],
+        "max_sun_alt_deg_after_astro": null,
+        "max_moon_alt_deg_after_astro": null
+      },
+      {
+        "date_utc": "2017-11-09",
+        "v_pos0_finite_unique": 9,
+        "sun_moon_pass": 0,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "01",
+              "1"
+            ]
+          ],
+          [
+            [
+              "01",
+              "1"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [],
+        "max_sun_alt_deg_after_astro": null,
+        "max_moon_alt_deg_after_astro": null
+      },
+      {
+        "date_utc": "2017-11-13",
+        "v_pos0_finite_unique": 9,
+        "sun_moon_pass": 9,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "00",
+              "5"
+            ]
+          ],
+          [
+            [
+              "00",
+              "5"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": true,
+        "eligible_obs_utc": [
+          "2017-11-13T22:02:56Z",
+          "2017-11-13T22:09:34Z",
+          "2017-11-13T22:16:11Z",
+          "2017-11-13T22:22:48Z",
+          "2017-11-13T22:29:24Z",
+          "2017-11-13T22:35:59Z",
+          "2017-11-13T22:42:31Z",
+          "2017-11-13T22:49:05Z",
+          "2017-11-13T22:55:39Z"
+        ],
+        "max_sun_alt_deg_after_astro": -56.546,
+        "max_moon_alt_deg_after_astro": -38.098
+      },
+      {
+        "date_utc": "2017-11-14",
+        "v_pos0_finite_unique": 10,
+        "sun_moon_pass": 10,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "00",
+              "5"
+            ]
+          ],
+          [
+            [
+              "00",
+              "5"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": true,
+        "eligible_obs_utc": [
+          "2017-11-14T22:00:52Z",
+          "2017-11-14T22:07:19Z",
+          "2017-11-14T22:13:47Z",
+          "2017-11-14T22:20:15Z",
+          "2017-11-14T22:26:42Z",
+          "2017-11-14T22:33:10Z",
+          "2017-11-14T22:39:37Z",
+          "2017-11-14T22:46:05Z",
+          "2017-11-14T22:52:32Z",
+          "2017-11-14T22:59:00Z"
+        ],
+        "max_sun_alt_deg_after_astro": -56.379,
+        "max_moon_alt_deg_after_astro": -46.604
+      },
+      {
+        "date_utc": "2017-11-15",
+        "v_pos0_finite_unique": 10,
+        "sun_moon_pass": 10,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "00",
+              "5"
+            ]
+          ],
+          [
+            [
+              "00",
+              "5"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": true,
+        "eligible_obs_utc": [
+          "2017-11-15T22:00:07Z",
+          "2017-11-15T22:06:35Z",
+          "2017-11-15T22:13:02Z",
+          "2017-11-15T22:19:28Z",
+          "2017-11-15T22:25:56Z",
+          "2017-11-15T22:32:23Z",
+          "2017-11-15T22:38:50Z",
+          "2017-11-15T22:45:18Z",
+          "2017-11-15T22:51:45Z",
+          "2017-11-15T22:58:12Z"
+        ],
+        "max_sun_alt_deg_after_astro": -56.415,
+        "max_moon_alt_deg_after_astro": -54.178
+      },
+      {
+        "date_utc": "2017-11-16",
+        "v_pos0_finite_unique": 9,
+        "sun_moon_pass": 9,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [],
+          [
+            [
+              "02",
+              "1"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [],
+        "max_sun_alt_deg_after_astro": -56.862,
+        "max_moon_alt_deg_after_astro": -57.094
+      },
+      {
+        "date_utc": "2017-11-17",
+        "v_pos0_finite_unique": 9,
+        "sun_moon_pass": 9,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "06",
+              "1"
+            ]
+          ],
+          [
+            [
+              "07",
+              "1"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [],
+        "max_sun_alt_deg_after_astro": -57.609,
+        "max_moon_alt_deg_after_astro": -55.987
+      },
+      {
+        "date_utc": "2017-11-18",
+        "v_pos0_finite_unique": 9,
+        "sun_moon_pass": 9,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "00",
+              "5"
+            ]
+          ],
+          [
+            [
+              "00",
+              "5"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": true,
+        "eligible_obs_utc": [
+          "2017-11-18T22:05:20Z",
+          "2017-11-18T22:11:46Z",
+          "2017-11-18T22:18:11Z",
+          "2017-11-18T22:24:44Z",
+          "2017-11-18T22:31:15Z",
+          "2017-11-18T22:38:32Z",
+          "2017-11-18T22:45:04Z",
+          "2017-11-18T22:51:34Z",
+          "2017-11-18T22:58:02Z"
+        ],
+        "max_sun_alt_deg_after_astro": -57.691,
+        "max_moon_alt_deg_after_astro": -51.601
+      },
+      {
+        "date_utc": "2017-11-19",
+        "v_pos0_finite_unique": 9,
+        "sun_moon_pass": 9,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "00",
+              "5"
+            ]
+          ],
+          [
+            [
+              "00",
+              "5"
+            ]
+          ]
+        ],
+        "known_benchmark_night": true,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [
+          "2017-11-19T22:06:11Z",
+          "2017-11-19T22:12:39Z",
+          "2017-11-19T22:19:05Z",
+          "2017-11-19T22:25:33Z",
+          "2017-11-19T22:31:59Z",
+          "2017-11-19T22:38:25Z",
+          "2017-11-19T22:44:52Z",
+          "2017-11-19T22:51:18Z",
+          "2017-11-19T22:57:44Z"
+        ],
+        "max_sun_alt_deg_after_astro": -57.959,
+        "max_moon_alt_deg_after_astro": -45.389
+      },
+      {
+        "date_utc": "2017-11-20",
+        "v_pos0_finite_unique": 9,
+        "sun_moon_pass": 9,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "00",
+              "5"
+            ]
+          ],
+          [
+            [
+              "00",
+              "5"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": true,
+        "eligible_obs_utc": [
+          "2017-11-20T22:05:28Z",
+          "2017-11-20T22:11:55Z",
+          "2017-11-20T22:18:21Z",
+          "2017-11-20T22:24:46Z",
+          "2017-11-20T22:31:13Z",
+          "2017-11-20T22:37:40Z",
+          "2017-11-20T22:44:06Z",
+          "2017-11-20T22:50:35Z",
+          "2017-11-20T22:57:01Z"
+        ],
+        "max_sun_alt_deg_after_astro": -57.966,
+        "max_moon_alt_deg_after_astro": -37.655
+      },
+      {
+        "date_utc": "2017-11-21",
+        "v_pos0_finite_unique": 9,
+        "sun_moon_pass": 9,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "00",
+              "5"
+            ]
+          ],
+          [
+            [
+              "00",
+              "5"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": true,
+        "eligible_obs_utc": [
+          "2017-11-21T22:04:06Z",
+          "2017-11-21T22:10:33Z",
+          "2017-11-21T22:16:59Z",
+          "2017-11-21T22:23:29Z",
+          "2017-11-21T22:29:55Z",
+          "2017-11-21T22:36:22Z",
+          "2017-11-21T22:43:01Z",
+          "2017-11-21T22:49:28Z",
+          "2017-11-21T22:55:56Z"
+        ],
+        "max_sun_alt_deg_after_astro": -57.858,
+        "max_moon_alt_deg_after_astro": -29.039
+      },
+      {
+        "date_utc": "2017-11-22",
+        "v_pos0_finite_unique": 10,
+        "sun_moon_pass": 10,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "05",
+              "1"
+            ]
+          ],
+          [
+            [
+              "06",
+              "1"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [],
+        "max_sun_alt_deg_after_astro": -57.486,
+        "max_moon_alt_deg_after_astro": -19.665
+      },
+      {
+        "date_utc": "2017-11-23",
+        "v_pos0_finite_unique": 9,
+        "sun_moon_pass": 9,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "08",
+              "1"
+            ]
+          ],
+          [
+            [
+              "07",
+              "1"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [],
+        "max_sun_alt_deg_after_astro": -58.236,
+        "max_moon_alt_deg_after_astro": -11.173
+      },
+      {
+        "date_utc": "2017-11-24",
+        "v_pos0_finite_unique": 10,
+        "sun_moon_pass": 6,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "04",
+              "1"
+            ]
+          ],
+          [
+            [
+              "08",
+              "1"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [],
+        "max_sun_alt_deg_after_astro": -61.709,
+        "max_moon_alt_deg_after_astro": -5.359
+      },
+      {
+        "date_utc": "2017-11-25",
+        "v_pos0_finite_unique": 10,
+        "sun_moon_pass": 0,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "06",
+              "1"
+            ]
+          ],
+          [
+            [
+              "04",
+              "1"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [],
+        "max_sun_alt_deg_after_astro": null,
+        "max_moon_alt_deg_after_astro": null
+      },
+      {
+        "date_utc": "2017-11-26",
+        "v_pos0_finite_unique": 10,
+        "sun_moon_pass": 0,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "00",
+              "5"
+            ]
+          ],
+          [
+            [
+              "00",
+              "5"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [],
+        "max_sun_alt_deg_after_astro": null,
+        "max_moon_alt_deg_after_astro": null
+      },
+      {
+        "date_utc": "2017-11-27",
+        "v_pos0_finite_unique": 9,
+        "sun_moon_pass": 0,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [],
+          [
+            [
+              "00",
+              "5"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [],
+        "max_sun_alt_deg_after_astro": null,
+        "max_moon_alt_deg_after_astro": null
+      },
+      {
+        "date_utc": "2017-11-28",
+        "v_pos0_finite_unique": 9,
+        "sun_moon_pass": 0,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "08",
+              "1"
+            ]
+          ],
+          [
+            [
+              "08",
+              "1"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [],
+        "max_sun_alt_deg_after_astro": null,
+        "max_moon_alt_deg_after_astro": null
+      },
+      {
+        "date_utc": "2017-11-29",
+        "v_pos0_finite_unique": 10,
+        "sun_moon_pass": 0,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "00",
+              "5"
+            ]
+          ],
+          [
+            [
+              "00",
+              "5"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [],
+        "max_sun_alt_deg_after_astro": null,
+        "max_moon_alt_deg_after_astro": null
+      },
+      {
+        "date_utc": "2017-11-30",
+        "v_pos0_finite_unique": 10,
+        "sun_moon_pass": 0,
+        "barajas_gf1_total_coverage_and_quality_22_23_utc": [
+          [
+            [
+              "00",
+              "5"
+            ]
+          ],
+          [
+            [
+              "00",
+              "5"
+            ]
+          ]
+        ],
+        "known_benchmark_night": false,
+        "new_prior_weather_candidate": false,
+        "eligible_obs_utc": [],
+        "max_sun_alt_deg_after_astro": null,
+        "max_moon_alt_deg_after_astro": null
+      }
+    ],
+    "source": {
+      "astmon": "https://zenodo.org/records/4633001",
+      "meteo": "https://noaa-global-hourly-pds.s3.amazonaws.com/2017/08221099999.csv"
+    },
+    "new_candidate_days": 9,
+    "new_candidate_rows": 83,
+    "rows_pass_ephemerides": 234,
+    "dates_with_gte_six_astro_rows": 26
+  },
+  "galicia": {
+    "screen": "January 2015 22–23 UTC, strictly positive/finite rows and ephemerides; at least 45 samples in every shortlisted site per candidate date. Cloud/snow/instrument quality and processed source support pending.",
+    "coordinate_source": "Bará et al. 2016 Table 1; UTM zone 29N WGS84 provisional interpretation",
+    "stations": {
+      "04_Areeiro": {
+        "utm_xy": [
+          527029,
+          4694945
+        ],
+        "latitude_deg_wgs84_provisional": 42.406335,
+        "longitude_deg_wgs84_provisional": -8.671534,
+        "published_height_m": 100,
+        "subtract_offset_mag": -0.0587,
+        "january_rows_positive_hour22_utc": 1860,
+        "rows_passing_astro": 801,
+        "counts_by_day_after_astro": {
+          "10": 21,
+          "11": 60,
+          "12": 60,
+          "13": 60,
+          "14": 60,
+          "15": 60,
+          "16": 60,
+          "17": 60,
+          "18": 60,
+          "19": 60,
+          "20": 60,
+          "21": 60,
+          "22": 60,
+          "23": 60
+        }
+      },
+      "10_Labrada": {
+        "utm_xy": [
+          621411,
+          4807150
+        ],
+        "latitude_deg_wgs84_provisional": 43.407406,
+        "longitude_deg_wgs84_provisional": -7.500512,
+        "published_height_m": 662,
+        "subtract_offset_mag": 0.0315,
+        "january_rows_positive_hour22_utc": 1860,
+        "rows_passing_astro": 796,
+        "counts_by_day_after_astro": {
+          "10": 16,
+          "11": 60,
+          "12": 60,
+          "13": 60,
+          "14": 60,
+          "15": 60,
+          "16": 60,
+          "17": 60,
+          "18": 60,
+          "19": 60,
+          "20": 60,
+          "21": 60,
+          "22": 60,
+          "23": 60
+        }
+      },
+      "11_Cies": {
+        "utm_xy": [
+          507678,
+          4673514
+        ],
+        "latitude_deg_wgs84_provisional": 42.213757,
+        "longitude_deg_wgs84_provisional": -8.906978,
+        "published_height_m": 25,
+        "subtract_offset_mag": 0.0585,
+        "january_rows_positive_hour22_utc": 1858,
+        "rows_passing_astro": 799,
+        "counts_by_day_after_astro": {
+          "10": 22,
+          "11": 60,
+          "12": 60,
+          "13": 60,
+          "14": 60,
+          "15": 60,
+          "16": 58,
+          "17": 60,
+          "18": 60,
+          "19": 60,
+          "20": 60,
+          "21": 60,
+          "22": 60,
+          "23": 59
+        }
+      },
+      "12_Paramos": {
+        "utm_xy": [
+          524636,
+          4761290
+        ],
+        "latitude_deg_wgs84_provisional": 43.00388,
+        "longitude_deg_wgs84_provisional": -8.69773,
+        "published_height_m": 369,
+        "subtract_offset_mag": -0.008,
+        "january_rows_positive_hour22_utc": 1860,
+        "rows_passing_astro": 801,
+        "counts_by_day_after_astro": {
+          "10": 21,
+          "11": 60,
+          "12": 60,
+          "13": 60,
+          "14": 60,
+          "15": 60,
+          "16": 60,
+          "17": 60,
+          "18": 60,
+          "19": 60,
+          "20": 60,
+          "21": 60,
+          "22": 60,
+          "23": 60
+        }
+      },
+      "13_Ons": {
+        "utm_xy": [
+          505372,
+          4692421
+        ],
+        "latitude_deg_wgs84_provisional": 42.384056,
+        "longitude_deg_wgs84_provisional": -8.934741,
+        "published_height_m": 121,
+        "subtract_offset_mag": 0.0227,
+        "january_rows_positive_hour22_utc": 1860,
+        "rows_passing_astro": 801,
+        "counts_by_day_after_astro": {
+          "10": 22,
+          "11": 60,
+          "12": 60,
+          "13": 60,
+          "14": 60,
+          "15": 60,
+          "16": 60,
+          "17": 60,
+          "18": 60,
+          "19": 60,
+          "20": 60,
+          "21": 60,
+          "22": 60,
+          "23": 59
+        }
+      }
+    },
+    "simultaneous_station_hours_dates_utc": [
+      "2015-01-11",
+      "2015-01-12",
+      "2015-01-13",
+      "2015-01-14",
+      "2015-01-15",
+      "2015-01-16",
+      "2015-01-17",
+      "2015-01-18",
+      "2015-01-19",
+      "2015-01-20",
+      "2015-01-21",
+      "2015-01-22",
+      "2015-01-23"
+    ],
+    "catalogue_granules_metadata_only": {
+      "VNP46A3": [
+        {
+          "concept": "G3987835921-LAADS",
+          "granule": "VNP46A3.A2015001.h17v04.002.2025093111457.h5",
+          "start_utc": "2015-01-01T00:00:00.000Z",
+          "end_utc": "2015-02-01T00:00:00.000Z"
+        },
+        {
+          "concept": "G3987925800-LAADS",
+          "granule": "VNP46A3.A2015001.h16v04.002.2025106135842.h5",
+          "start_utc": "2015-01-01T00:00:00.000Z",
+          "end_utc": "2015-02-01T00:00:00.000Z"
+        }
+      ],
+      "VNP46A4": [
+        {
+          "concept": "G3987933695-LAADS",
+          "granule": "VNP46A4.A2015001.h17v04.002.2025093111824.h5",
+          "start_utc": "2015-01-01T00:00:00.000Z",
+          "end_utc": "2016-01-01T00:00:00.000Z"
+        },
+        {
+          "concept": "G3987954166-LAADS",
+          "granule": "VNP46A4.A2015001.h16v04.002.2025106194534.h5",
+          "start_utc": "2015-01-01T00:00:00.000Z",
+          "end_utc": "2016-01-01T00:00:00.000Z"
+        }
+      ]
+    },
+    "source": {
+      "photometer": "https://zenodo.org/records/4977265",
+      "metadata": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5098997/"
+    },
+    "raw_candidate_site_rows_positive_hour22_utc": 9298,
+    "candidate_site_rows_pass_ephemerides": 3998,
+    "per_station_rows_in_candidate_hours": {
+      "04_Areeiro": 780,
+      "10_Labrada": 780,
+      "11_Cies": 777,
+      "12_Paramos": 780,
+      "13_Ons": 779
+    },
+    "candidate_hours_station_rows_after_astro": 3896,
+    "local_h17v04_monthly_check": {
+      "region_deg": {
+        "lat": [
+          41,
+          44.2
+        ],
+        "lon": [
+          -10,
+          -6
+        ]
+      },
+      "lat_rows": 768,
+      "lon_columns": 961,
+      "land_and_coast_classes": [
+        0,
+        1,
+        5
+      ],
+      "land_and_coast_total": 431150,
+      "num_bounds_exclusive": [
+        3,
+        65535
+      ],
+      "quality": 0,
+      "nonnegative_finite_radiance": true,
+      "near_valid": 328569,
+      "off_valid": 376759,
+      "all_valid": 430082,
+      "joint_valid": 295856,
+      "sha256": "1dbd1549a9f2a302583e25a68f7a57534cc24bb77ea901efdbd87abf8691db14"
+    }
+  },
+  "scope": "Data preflight; no fitted or evaluated atmospheric models, no downloaded CAMS columns, no collocated cloud mask."
+}
