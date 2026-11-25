@@ -1,0 +1,4065 @@
+{
+  "model_order": [
+    "base",
+    "spatial",
+    "regional"
+  ],
+  "error_convention": "100 * (predicted total / measured total - 1)",
+  "mc_interval_scope": "Numerical draws only, sharing the calibration and boundary-mask covariance.",
+  "weather_limits": {
+    "cloud_cover": 15,
+    "precipitation": 0,
+    "relative_humidity_2m": 95,
+    "era5_land_snow_depth": 0.01
+  },
+  "weather_input_sha256": "51f767699f6288d4df8991adccee5875280eebeb5880a0c2461604ae6bd54750",
+  "local_distance_check": {
+    "max_artificial_from_lt3km_pct": 20,
+    "require_artificial_from_lt10km_pct_strictly_below": 50
+  },
+  "sites": {
+    "Galzignano": {
+      "site": "Galzignano",
+      "calibration_date": "2022-10-01",
+      "calibration_passes_distance_check": true,
+      "n_windows": 12,
+      "n_readings": 358,
+      "clear_windows": 9,
+      "clear_readings": 268,
+      "n_transport_runs": 27,
+      "trajectories": 28311552,
+      "max_scattering_order_seen": 19,
+      "minimum_effective_samples_main_mask": 10678.529626801308,
+      "background_mag": 21.6,
+      "reference_map_month": "2022-10",
+      "summaries": {
+        "monthly": {
+          "n": 8,
+          "mape_pct": {
+            "base": 24.76094935385264,
+            "spatial": 24.677145686840063,
+            "regional": 24.63936798738097
+          },
+          "signed_mean_pct": {
+            "base": 24.76094935385264,
+            "spatial": 24.677145686840063,
+            "regional": 24.63936798738097
+          },
+          "median_abs_pct": {
+            "base": 24.86886268256746,
+            "spatial": 24.981511987556324,
+            "regional": 23.78674943369914
+          },
+          "mc_95_pct": {
+            "base": [
+              23.282243079507694,
+              26.29458411081109
+            ],
+            "spatial": [
+              23.161266230457933,
+              26.356144047879614
+            ],
+            "regional": [
+              23.112377632362833,
+              26.32977931794087
+            ]
+          },
+          "mape_differences_pp": {
+            "spatial_minus_base": {
+              "value": -0.08380366701257813,
+              "mc_95": [
+                -1.1529440540050853,
+                1.0392544897420415
+              ]
+            },
+            "regional_minus_base": {
+              "value": -0.12158136647166984,
+              "mc_95": [
+                -1.2306438497474654,
+                1.0014374047971326
+              ]
+            },
+            "spatial_minus_regional": {
+              "value": 0.03777769945909171,
+              "mc_95": [
+                -0.7211296305855575,
+                0.8071990739325207
+              ]
+            }
+          },
+          "common_scale": 15.431900663416824
+        },
+        "fixed_map": {
+          "n": 8,
+          "mape_pct": {
+            "base": 29.255758757104445,
+            "spatial": 28.902247769225816,
+            "regional": 28.8650927558024
+          },
+          "signed_mean_pct": {
+            "base": 29.255758757104445,
+            "spatial": 28.902247769225816,
+            "regional": 28.8650927558024
+          },
+          "median_abs_pct": {
+            "base": 32.46409922676624,
+            "spatial": 31.604301824650605,
+            "regional": 31.05447258212406
+          },
+          "mc_95_pct": {
+            "base": [
+              27.685535162809092,
+              30.896443122113133
+            ],
+            "spatial": [
+              27.215903002429176,
+              30.668157783329974
+            ],
+            "regional": [
+              27.17782613815767,
+              30.64786848712783
+            ]
+          },
+          "mape_differences_pp": {
+            "spatial_minus_base": {
+              "value": -0.35351098787862867,
+              "mc_95": [
+                -1.512712381687486,
+                0.82005901547481
+              ]
+            },
+            "regional_minus_base": {
+              "value": -0.3906660013020442,
+              "mc_95": [
+                -1.5752965901091838,
+                0.8014183744187897
+              ]
+            },
+            "spatial_minus_regional": {
+              "value": 0.03715501342341554,
+              "mc_95": [
+                -0.7652148224762606,
+                0.8425122569231821
+              ]
+            }
+          },
+          "common_scale": 15.431900663416824
+        },
+        "exclude_10km": {
+          "n": 8,
+          "mape_pct": {
+            "base": 23.42829198358454,
+            "spatial": 21.573271620484817,
+            "regional": 23.110523810250278
+          },
+          "signed_mean_pct": {
+            "base": 21.311313951666985,
+            "spatial": 19.15426016680948,
+            "regional": 20.81194065725522
+          },
+          "median_abs_pct": {
+            "base": 21.12740050620252,
+            "spatial": 20.292188369994122,
+            "regional": 21.16484189053369
+          },
+          "mc_95_pct": {
+            "base": [
+              21.775411607563502,
+              25.174104175508848
+            ],
+            "spatial": [
+              19.817991506343272,
+              23.410303112878207
+            ],
+            "regional": [
+              21.300839122198045,
+              25.017735871621337
+            ]
+          },
+          "mape_differences_pp": {
+            "spatial_minus_base": {
+              "value": -1.8550203630997224,
+              "mc_95": [
+                -3.283824086163614,
+                -0.3855821660148626
+              ]
+            },
+            "regional_minus_base": {
+              "value": -0.31776817333426166,
+              "mc_95": [
+                -1.7954432432842906,
+                1.1660643163697255
+              ]
+            },
+            "spatial_minus_regional": {
+              "value": -1.5372521897654607,
+              "mc_95": [
+                -2.5819323897522555,
+                -0.49504125497909107
+              ]
+            }
+          },
+          "common_scale": 24.86145588732197
+        },
+        "all_distances": {
+          "n": 8,
+          "mape_pct": {
+            "base": 25.549449139711,
+            "spatial": 26.52115889561323,
+            "regional": 25.739049549796796
+          },
+          "signed_mean_pct": {
+            "base": 25.549449139711,
+            "spatial": 26.52115889561323,
+            "regional": 25.739049549796796
+          },
+          "median_abs_pct": {
+            "base": 26.288541584372016,
+            "spatial": 27.02621398564972,
+            "regional": 25.74595327991852
+          },
+          "mc_95_pct": {
+            "base": [
+              24.19087497496264,
+              26.941790860694265
+            ],
+            "spatial": [
+              25.050984981891073,
+              28.071868864071266
+            ],
+            "regional": [
+              24.278857315174676,
+              27.27385499353
+            ]
+          },
+          "mape_differences_pp": {
+            "spatial_minus_base": {
+              "value": 0.9717097559022285,
+              "mc_95": [
+                -0.02717315040367183,
+                1.9859000849063428
+              ]
+            },
+            "regional_minus_base": {
+              "value": 0.1896004100857951,
+              "mc_95": [
+                -0.8382117192685491,
+                1.2053394076106638
+              ]
+            },
+            "spatial_minus_regional": {
+              "value": 0.7821093458164334,
+              "mc_95": [
+                0.09045198968874042,
+                1.4805657295205663
+              ]
+            }
+          },
+          "common_scale": 13.853846082307225
+        },
+        "brighter_background": {
+          "n": 8,
+          "mape_pct": {
+            "base": 25.296141028125938,
+            "spatial": 25.22543953265617,
+            "regional": 25.1935681367808
+          },
+          "signed_mean_pct": {
+            "base": 25.296141028125938,
+            "spatial": 25.22543953265617,
+            "regional": 25.1935681367808
+          },
+          "median_abs_pct": {
+            "base": 25.78455214952381,
+            "spatial": 25.8795894505186,
+            "regional": 24.871620440328336
+          },
+          "mc_95_pct": {
+            "base": [
+              24.046025861343917,
+              26.590001722850683
+            ],
+            "spatial": [
+              23.877699814836276,
+              26.64193715440067
+            ],
+            "regional": [
+              23.843604833028735,
+              26.619694382684663
+            ]
+          },
+          "mape_differences_pp": {
+            "spatial_minus_base": {
+              "value": -0.07070149546976623,
+              "mc_95": [
+                -0.9978803352714709,
+                0.8762721940415891
+              ]
+            },
+            "regional_minus_base": {
+              "value": -0.1025728913451367,
+              "mc_95": [
+                -1.063188493050776,
+                0.8424521183342341
+              ]
+            },
+            "spatial_minus_regional": {
+              "value": 0.03187139587537047,
+              "mc_95": [
+                -0.6155351019488311,
+                0.6821714368937979
+              ]
+            }
+          },
+          "common_scale": 13.019220921212346
+        },
+        "darker_background": {
+          "n": 8,
+          "mape_pct": {
+            "base": 24.354964951406625,
+            "spatial": 24.284093531891095,
+            "regional": 24.21896418196845
+          },
+          "signed_mean_pct": {
+            "base": 24.354964951406625,
+            "spatial": 24.261222270877475,
+            "regional": 24.21896418196845
+          },
+          "median_abs_pct": {
+            "base": 24.174241187244007,
+            "spatial": 24.300250563514048,
+            "regional": 22.963790616270906
+          },
+          "mc_95_pct": {
+            "base": [
+              22.787151991120496,
+              26.070486935049182
+            ],
+            "spatial": [
+              22.80154422335508,
+              26.140184586667957
+            ],
+            "regional": [
+              22.726585550805098,
+              26.10985625116312
+            ]
+          },
+          "mape_differences_pp": {
+            "spatial_minus_base": {
+              "value": -0.07087141951553022,
+              "mc_95": [
+                -1.1780596562792205,
+                1.1943923838352482
+              ]
+            },
+            "regional_minus_base": {
+              "value": -0.1360007694381764,
+              "mc_95": [
+                -1.2899935495984116,
+                1.165747478837036
+              ]
+            },
+            "spatial_minus_regional": {
+              "value": 0.06512934992264618,
+              "mc_95": [
+                -0.791723993811534,
+                0.9123546111296685
+              ]
+            }
+          },
+          "common_scale": 17.262105411580315
+        }
+      },
+      "monthly_groups": {
+        "2022-10": {
+          "n": 2,
+          "mape_pct": {
+            "base": 13.514678310696393,
+            "spatial": 15.250280366525725,
+            "regional": 14.548776316469358
+          },
+          "signed_mean_pct": {
+            "base": 13.514678310696393,
+            "spatial": 15.250280366525725,
+            "regional": 14.548776316469358
+          },
+          "median_abs_pct": {
+            "base": 13.514678310696393,
+            "spatial": 15.250280366525725,
+            "regional": 14.548776316469358
+          },
+          "mc_95_pct": {
+            "base": [
+              13.514678310696393,
+              13.514678310696393
+            ],
+            "spatial": [
+              13.520334632714622,
+              17.077473475679
+            ],
+            "regional": [
+              12.824252223715838,
+              16.33213728037916
+            ]
+          },
+          "mape_differences_pp": {
+            "spatial_minus_base": {
+              "value": 1.7356020558293324,
+              "mc_95": [
+                0.005656322018229214,
+                3.562795164982608
+              ]
+            },
+            "regional_minus_base": {
+              "value": 1.0340980057729645,
+              "mc_95": [
+                -0.6904260869805543,
+                2.8174589696827663
+              ]
+            },
+            "spatial_minus_regional": {
+              "value": 0.7015040500563678,
+              "mc_95": [
+                -0.7251931999330368,
+                2.1361461491864464
+              ]
+            }
+          }
+        },
+        "2023-02": {
+          "n": 4,
+          "mape_pct": {
+            "base": 36.786841382854135,
+            "spatial": 35.897837731694636,
+            "regional": 36.3308156034009
+          },
+          "signed_mean_pct": {
+            "base": 36.786841382854135,
+            "spatial": 35.897837731694636,
+            "regional": 36.3308156034009
+          },
+          "median_abs_pct": {
+            "base": 36.78442070973311,
+            "spatial": 36.23334266192035,
+            "regional": 36.933170431239745
+          },
+          "mc_95_pct": {
+            "base": [
+              34.37728242587472,
+              39.21609801967635
+            ],
+            "spatial": [
+              34.04735184514449,
+              37.81255362260228
+            ],
+            "regional": [
+              34.470143349102294,
+              38.29929038325428
+            ]
+          },
+          "mape_differences_pp": {
+            "spatial_minus_base": {
+              "value": -0.8890036511594985,
+              "mc_95": [
+                -2.7438520415627896,
+                0.9980948665613298
+              ]
+            },
+            "regional_minus_base": {
+              "value": -0.45602577945323475,
+              "mc_95": [
+                -2.367981159527141,
+                1.4545304488557769
+              ]
+            },
+            "spatial_minus_regional": {
+              "value": -0.4329778717062638,
+              "mc_95": [
+                -1.61583855246457,
+                0.7415205832533717
+              ]
+            }
+          }
+        },
+        "2023-07": {
+          "n": 2,
+          "mape_pct": {
+            "base": 11.955436339005908,
+            "spatial": 11.662626917445252,
+            "regional": 11.347064426252729
+          },
+          "signed_mean_pct": {
+            "base": 11.955436339005908,
+            "spatial": 11.662626917445252,
+            "regional": 11.347064426252729
+          },
+          "median_abs_pct": {
+            "base": 11.955436339005908,
+            "spatial": 11.662626917445252,
+            "regional": 11.347064426252729
+          },
+          "mc_95_pct": {
+            "base": [
+              10.0694679252331,
+              13.949622913721559
+            ],
+            "spatial": [
+              10.400456848834528,
+              13.336871056381932
+            ],
+            "regional": [
+              10.041516476241076,
+              13.002903166942579
+            ]
+          },
+          "mape_differences_pp": {
+            "spatial_minus_base": {
+              "value": -0.2928094215606567,
+              "mc_95": [
+                -1.89037241045287,
+                1.3558846868778947
+              ]
+            },
+            "regional_minus_base": {
+              "value": -0.6083719127531797,
+              "mc_95": [
+                -2.1961983036308674,
+                1.0410246203120372
+              ]
+            },
+            "spatial_minus_regional": {
+              "value": 0.315562491192523,
+              "mc_95": [
+                -0.9571641518613548,
+                1.6038126283243495
+              ]
+            }
+          }
+        }
+      },
+      "held_out_months": {
+        "n": 6,
+        "mape_pct": {
+          "base": 28.50970636823806,
+          "spatial": 27.81943412694484,
+          "regional": 28.00289854435151
+        },
+        "signed_mean_pct": {
+          "base": 28.50970636823806,
+          "spatial": 27.81943412694484,
+          "regional": 28.00289854435151
+        },
+        "median_abs_pct": {
+          "base": 29.314364010071436,
+          "spatial": 28.955719676495338,
+          "regional": 28.42619091141243
+        },
+        "mc_95_pct": {
+          "base": [
+            26.538098002444794,
+            30.55455271084932
+          ],
+          "spatial": [
+            26.287942024500616,
+            29.552148145726534
+          ],
+          "regional": [
+            26.437150917750067,
+            29.758797679234647
+          ]
+        },
+        "mape_differences_pp": {
+          "spatial_minus_base": {
+            "value": -0.6902722412932185,
+            "mc_95": [
+              -2.024688979125091,
+              0.7066954672550078
+            ]
+          },
+          "regional_minus_base": {
+            "value": -0.5068078238865503,
+            "mc_95": [
+              -1.8907113141490548,
+              0.8972635532943612
+            ]
+          },
+          "spatial_minus_regional": {
+            "value": -0.1834644174066682,
+            "mc_95": [
+              -1.0694325770464657,
+              0.7304705878540023
+            ]
+          }
+        }
+      },
+      "leave_one_month_out_common_median_fit": {
+        "n": 9,
+        "mape_pct": {
+          "base": 18.006146196595058,
+          "spatial": 17.534450738879784,
+          "regional": 17.719965898039828
+        },
+        "signed_mean_pct": {
+          "base": 2.1662558109290186,
+          "spatial": 1.970266817867162,
+          "regional": 2.1099388411127085
+        },
+        "median_abs_pct": {
+          "base": 17.274329429777204,
+          "spatial": 16.90735063867963,
+          "regional": 17.424120163631642
+        },
+        "mc_95_pct": {
+          "base": [
+            16.50050332115467,
+            19.480716782942658
+          ],
+          "spatial": [
+            16.621643315896844,
+            18.43090274227073
+          ],
+          "regional": [
+            16.811071935120182,
+            18.62452718682352
+          ]
+        },
+        "mape_differences_pp": {
+          "spatial_minus_base": {
+            "value": -0.4716954577152741,
+            "mc_95": [
+              -1.289450122559631,
+              0.3520996885257197
+            ]
+          },
+          "regional_minus_base": {
+            "value": -0.2861802985552302,
+            "mc_95": [
+              -1.1189600674941211,
+              0.5621019651854471
+            ]
+          },
+          "spatial_minus_regional": {
+            "value": -0.1855151591600439,
+            "mc_95": [
+              -0.7361504401908497,
+              0.357898809797502
+            ]
+          }
+        }
+      },
+      "clear_and_distance": {
+        "n": 6,
+        "mape_pct": {
+          "base": 29.029453692134883,
+          "spatial": 29.01531860997167,
+          "regional": 29.070135841090387
+        },
+        "signed_mean_pct": {
+          "base": 29.029453692134883,
+          "spatial": 29.01531860997167,
+          "regional": 29.070135841090387
+        },
+        "median_abs_pct": {
+          "base": 29.314364010071436,
+          "spatial": 28.955719676495338,
+          "regional": 28.42619091141243
+        },
+        "mc_95_pct": {
+          "base": [
+            27.423081054148614,
+            30.64895811668303
+          ],
+          "spatial": [
+            27.305037127488276,
+            30.804445866318815
+          ],
+          "regional": [
+            27.368021939258657,
+            30.86028028591585
+          ]
+        },
+        "mape_differences_pp": {
+          "spatial_minus_base": {
+            "value": -0.014135082163214463,
+            "mc_95": [
+              -1.3727604089356114,
+              1.3868149733867936
+            ]
+          },
+          "regional_minus_base": {
+            "value": 0.04068214895550426,
+            "mc_95": [
+              -1.35332353527885,
+              1.4357074094256905
+            ]
+          },
+          "spatial_minus_regional": {
+            "value": -0.05481723111871872,
+            "mc_95": [
+              -0.9638168939150219,
+              0.8692104504680762
+            ]
+          }
+        }
+      },
+      "all_except_calibration": {
+        "n": 11,
+        "mape_pct": {
+          "base": 20.614949490547687,
+          "spatial": 20.70999551376149,
+          "regional": 20.445534582913222
+        },
+        "signed_mean_pct": {
+          "base": 20.614949490547687,
+          "spatial": 20.70999551376149,
+          "regional": 20.445534582913222
+        },
+        "median_abs_pct": {
+          "base": 17.731403322408077,
+          "spatial": 18.46383645408787,
+          "regional": 17.22251655602145
+        },
+        "mc_95_pct": {
+          "base": [
+            19.41689588807989,
+            21.86370001638756
+          ],
+          "spatial": [
+            19.2458414357309,
+            22.321001471472325
+          ],
+          "regional": [
+            18.976366073052485,
+            22.06376906963625
+          ]
+        },
+        "mape_differences_pp": {
+          "spatial_minus_base": {
+            "value": 0.09504602321380418,
+            "mc_95": [
+              -0.8396623741154104,
+              1.085610801258232
+            ]
+          },
+          "regional_minus_base": {
+            "value": -0.1694149076344651,
+            "mc_95": [
+              -1.131401010755516,
+              0.820626428996639
+            ]
+          },
+          "spatial_minus_regional": {
+            "value": 0.26446093084826927,
+            "mc_95": [
+              -0.3522982536770185,
+              0.9045971368478739
+            ]
+          }
+        }
+      },
+      "rows": [
+        {
+          "date": "2022-10-01",
+          "readings": 30,
+          "observed_relative": 4.3878102131910595,
+          "aod_regional": 0.06920178269907169,
+          "aod_at_station": 0.0929391973750004,
+          "aod_grid_min": 0.02,
+          "aod_grid_max": 0.14500000000000002,
+          "runs": {
+            "base": "2022-10/base",
+            "regional": "2022-10-01/regional",
+            "spatial": "2022-10-01/spatial"
+          },
+          "sun_altitude_deg": [
+            -45.94338837482379,
+            -47.53924351780769,
+            -48.1533744166695
+          ],
+          "moon_altitude_deg": [
+            -18.64724451319909,
+            -23.447721765772446,
+            -28.348557697543413
+          ],
+          "natural_relative": 1.4454397707459257,
+          "weather": {
+            "passes": true,
+            "maxima": {
+              "cloud_cover": 0.0,
+              "precipitation": 0.0,
+              "relative_humidity_2m": 75.0,
+              "era5_land_snow_depth": 0.0
+            },
+            "missing": {
+              "cloud_cover": 0,
+              "precipitation": 0,
+              "relative_humidity_2m": 0,
+              "era5_land_snow_depth": 0
+            },
+            "era5_cells": 4,
+            "era5_land_cells": 7
+          },
+          "artificial_from_lt3km_pct": 10.225924955897147,
+          "artificial_from_3_to_10km_pct_of_outside_3km": 37.928411218724,
+          "artificial_from_lt10km_pct": 44.27580530643036,
+          "passes_distance_check": true,
+          "signed_error_pct": {
+            "base": 0.0,
+            "spatial": -0.9913096340224747,
+            "regional": 0.7420874295860358
+          },
+          "mc_se_pp": {
+            "base": 0.0,
+            "spatial": 0.8843886799540651,
+            "regional": 0.9175446596563649
+          },
+          "natural_fraction_pct": 32.9421670609295,
+          "beyond_first_order_pct": {
+            "base": 35.816418393622584,
+            "regional": 31.077825753230382,
+            "spatial": 35.1633105313504
+          }
+        },
+        {
+          "date": "2022-10-27",
+          "readings": 30,
+          "observed_relative": 3.726966713524188,
+          "aod_regional": 0.12533815506803014,
+          "aod_at_station": 0.13745512500000046,
+          "aod_grid_min": 0.03,
+          "aod_grid_max": 0.31,
+          "runs": {
+            "base": "2022-10/base",
+            "regional": "2022-10-27/regional",
+            "spatial": "2022-10-27/spatial"
+          },
+          "sun_altitude_deg": [
+            -55.499614727601205,
+            -57.19687870321435,
+            -57.704995625393536
+          ],
+          "moon_altitude_deg": [
+            -47.388210634756405,
+            -52.20205692025279,
+            -56.778267844465354
+          ],
+          "natural_relative": 1.4454397707459257,
+          "weather": {
+            "passes": false,
+            "maxima": {
+              "cloud_cover": 32.0,
+              "precipitation": 0.0,
+              "relative_humidity_2m": 93.0,
+              "era5_land_snow_depth": 0.0
+            },
+            "missing": {
+              "cloud_cover": 0,
+              "precipitation": 0,
+              "relative_humidity_2m": 0,
+              "era5_land_snow_depth": 0
+            },
+            "era5_cells": 4,
+            "era5_land_cells": 7
+          },
+          "artificial_from_lt3km_pct": 10.225924955897147,
+          "artificial_from_3_to_10km_pct_of_outside_3km": 37.928411218724,
+          "artificial_from_lt10km_pct": 44.27580530643036,
+          "passes_distance_check": true,
+          "signed_error_pct": {
+            "base": 17.731403322408077,
+            "spatial": 18.46383645408787,
+            "regional": 17.05278946446107
+          },
+          "mc_se_pp": {
+            "base": 3.3467584219501827e-12,
+            "spatial": 1.0785759239334747,
+            "regional": 1.053206760095771
+          },
+          "natural_fraction_pct": 38.783275565644374,
+          "beyond_first_order_pct": {
+            "base": 35.816418393622584,
+            "regional": 40.15412735003542,
+            "spatial": 41.70668986952427
+          }
+        },
+        {
+          "date": "2022-10-28",
+          "readings": 30,
+          "observed_relative": 3.931534022518776,
+          "aod_regional": 0.13977389381756522,
+          "aod_at_station": 0.2524366447499999,
+          "aod_grid_min": 0.06,
+          "aod_grid_max": 0.37,
+          "runs": {
+            "base": "2022-10/base",
+            "regional": "2022-10-28/regional",
+            "spatial": "2022-10-28/spatial"
+          },
+          "sun_altitude_deg": [
+            -55.82357044151957,
+            -57.530038610797675,
+            -58.038778031168654
+          ],
+          "moon_altitude_deg": [
+            -39.24933929981352,
+            -44.26821341212155,
+            -49.23718766946385
+          ],
+          "natural_relative": 1.4454397707459257,
+          "weather": {
+            "passes": true,
+            "maxima": {
+              "cloud_cover": 0.0,
+              "precipitation": 0.0,
+              "relative_humidity_2m": 94.0,
+              "era5_land_snow_depth": 0.0
+            },
+            "missing": {
+              "cloud_cover": 0,
+              "precipitation": 0,
+              "relative_humidity_2m": 0,
+              "era5_land_snow_depth": 0
+            },
+            "era5_cells": 4,
+            "era5_land_cells": 7
+          },
+          "artificial_from_lt3km_pct": 10.225924955897147,
+          "artificial_from_3_to_10km_pct_of_outside_3km": 37.928411218724,
+          "artificial_from_lt10km_pct": 44.27580530643036,
+          "passes_distance_check": true,
+          "signed_error_pct": {
+            "base": 11.60555111716841,
+            "spatial": 12.394153900601545,
+            "regional": 11.875036076917267
+          },
+          "mc_se_pp": {
+            "base": 2.261371269183961e-12,
+            "spatial": 1.0055833728471004,
+            "regional": 1.0083262198301748
+          },
+          "natural_fraction_pct": 36.76528709828868,
+          "beyond_first_order_pct": {
+            "base": 35.816418393622584,
+            "regional": 42.51471568237552,
+            "spatial": 57.0401345305687
+          }
+        },
+        {
+          "date": "2022-10-30",
+          "readings": 30,
+          "observed_relative": 4.156412651171886,
+          "aod_regional": 0.1492435750851958,
+          "aod_at_station": 0.2607792895000007,
+          "aod_grid_min": 0.04,
+          "aod_grid_max": 0.3,
+          "runs": {
+            "base": "2022-10/base",
+            "regional": "2022-10-30/regional",
+            "spatial": "2022-10-30/spatial"
+          },
+          "sun_altitude_deg": [
+            -56.45790037533806,
+            -58.1842917382881,
+            -58.69579765414482
+          ],
+          "moon_altitude_deg": [
+            -19.001257091359637,
+            -23.760026752607782,
+            -28.620412302402613
+          ],
+          "natural_relative": 1.4454397707459257,
+          "weather": {
+            "passes": false,
+            "maxima": {
+              "cloud_cover": 26.0,
+              "precipitation": 0.0,
+              "relative_humidity_2m": 90.0,
+              "era5_land_snow_depth": 0.0
+            },
+            "missing": {
+              "cloud_cover": 0,
+              "precipitation": 0,
+              "relative_humidity_2m": 0,
+              "era5_land_snow_depth": 0
+            },
+            "era5_cells": 4,
+            "era5_land_cells": 7
+          },
+          "artificial_from_lt3km_pct": 10.225924955897147,
+          "artificial_from_3_to_10km_pct_of_outside_3km": 37.928411218724,
+          "artificial_from_lt10km_pct": 44.27580530643036,
+          "passes_distance_check": true,
+          "signed_error_pct": {
+            "base": 5.5672422696993795,
+            "spatial": 7.53001273828191,
+            "regional": 5.922678928170466
+          },
+          "mc_se_pp": {
+            "base": 1.2612518469132854e-13,
+            "spatial": 0.9656858563907591,
+            "regional": 0.9551138317840543
+          },
+          "natural_fraction_pct": 34.77613731010055,
+          "beyond_first_order_pct": {
+            "base": 35.816418393622584,
+            "regional": 44.29998804586768,
+            "spatial": 58.149909529952424
+          }
+        },
+        {
+          "date": "2022-10-31",
+          "readings": 29,
+          "observed_relative": 3.80147768826637,
+          "aod_regional": 0.12886614938255264,
+          "aod_at_station": 0.3205261118750008,
+          "aod_grid_min": 0.04,
+          "aod_grid_max": 0.385,
+          "runs": {
+            "base": "2022-10/base",
+            "regional": "2022-10-31/regional",
+            "spatial": "2022-10-31/spatial"
+          },
+          "sun_altitude_deg": [
+            -56.767997055258704,
+            -58.505124133500075,
+            -59.01880639030638
+          ],
+          "moon_altitude_deg": [
+            -8.001803412019184,
+            -12.515681481008407,
+            -17.189218417098385
+          ],
+          "natural_relative": 1.4454397707459257,
+          "weather": {
+            "passes": true,
+            "maxima": {
+              "cloud_cover": 5.0,
+              "precipitation": 0.0,
+              "relative_humidity_2m": 92.0,
+              "era5_land_snow_depth": 0.0
+            },
+            "missing": {
+              "cloud_cover": 0,
+              "precipitation": 0,
+              "relative_humidity_2m": 0,
+              "era5_land_snow_depth": 0
+            },
+            "era5_cells": 4,
+            "era5_land_cells": 7
+          },
+          "artificial_from_lt3km_pct": 10.225924955897147,
+          "artificial_from_3_to_10km_pct_of_outside_3km": 37.928411218724,
+          "artificial_from_lt10km_pct": 44.27580530643036,
+          "passes_distance_check": true,
+          "signed_error_pct": {
+            "base": 15.423805504224376,
+            "spatial": 18.106406832449906,
+            "regional": 17.22251655602145
+          },
+          "mc_se_pp": {
+            "base": 1.620086879415375e-12,
+            "spatial": 1.0640014972929686,
+            "regional": 1.0727382588203533
+          },
+          "natural_fraction_pct": 38.02310283728393,
+          "beyond_first_order_pct": {
+            "base": 35.816418393622584,
+            "regional": 41.447595113820476,
+            "spatial": 62.43536162825749
+          }
+        },
+        {
+          "date": "2023-02-12",
+          "readings": 30,
+          "observed_relative": 3.3678529842414457,
+          "aod_regional": 0.09974180641345821,
+          "aod_at_station": 0.15079495790000016,
+          "aod_grid_min": 0.03,
+          "aod_grid_max": 0.18,
+          "runs": {
+            "base": "2023-02/base",
+            "regional": "2023-02-12/regional",
+            "spatial": "2023-02-12/spatial"
+          },
+          "sun_altitude_deg": [
+            -53.24281188754894,
+            -55.98420851333038,
+            -57.69938871681214
+          ],
+          "moon_altitude_deg": [
+            -18.171726040085392,
+            -13.232346423292865,
+            -8.378971857962808
+          ],
+          "natural_relative": 1.4454397707459257,
+          "weather": {
+            "passes": true,
+            "maxima": {
+              "cloud_cover": 1.0,
+              "precipitation": 0.0,
+              "relative_humidity_2m": 71.0,
+              "era5_land_snow_depth": 0.0
+            },
+            "missing": {
+              "cloud_cover": 0,
+              "precipitation": 0,
+              "relative_humidity_2m": 0,
+              "era5_land_snow_depth": 0
+            },
+            "era5_cells": 4,
+            "era5_land_cells": 7
+          },
+          "artificial_from_lt3km_pct": 10.695527098207968,
+          "artificial_from_3_to_10km_pct_of_outside_3km": 38.69769991499342,
+          "artificial_from_lt10km_pct": 45.25430403241006,
+          "passes_distance_check": true,
+          "signed_error_pct": {
+            "base": 27.884018906863695,
+            "spatial": 27.601061137327186,
+            "regional": 25.93039068271534
+          },
+          "mc_se_pp": {
+            "base": 1.1578047034140584,
+            "spatial": 1.1550010423213946,
+            "regional": 1.1199097349359195
+          },
+          "natural_fraction_pct": 42.91873123646718,
+          "beyond_first_order_pct": {
+            "base": 35.85673945960382,
+            "regional": 37.0421295437136,
+            "spatial": 43.66285989385044
+          }
+        },
+        {
+          "date": "2023-02-13",
+          "readings": 30,
+          "observed_relative": 3.2941644647288184,
+          "aod_regional": 0.09562841121850915,
+          "aod_at_station": 0.15779606184999967,
+          "aod_grid_min": 0.04,
+          "aod_grid_max": 0.2,
+          "runs": {
+            "base": "2023-02/base",
+            "regional": "2023-02-13/regional",
+            "spatial": "2023-02-13/spatial"
+          },
+          "sun_altitude_deg": [
+            -52.94254863226324,
+            -55.6662133997951,
+            -57.36804159895049
+          ],
+          "moon_altitude_deg": [
+            -29.76811073407491,
+            -24.795200901096138,
+            -19.870182779469534
+          ],
+          "natural_relative": 1.4454397707459257,
+          "weather": {
+            "passes": true,
+            "maxima": {
+              "cloud_cover": 0.0,
+              "precipitation": 0.0,
+              "relative_humidity_2m": 89.0,
+              "era5_land_snow_depth": 0.0
+            },
+            "missing": {
+              "cloud_cover": 0,
+              "precipitation": 0,
+              "relative_humidity_2m": 0,
+              "era5_land_snow_depth": 0
+            },
+            "era5_cells": 4,
+            "era5_land_cells": 7
+          },
+          "artificial_from_lt3km_pct": 10.695527098207968,
+          "artificial_from_3_to_10km_pct_of_outside_3km": 38.69769991499342,
+          "artificial_from_lt10km_pct": 45.25430403241006,
+          "passes_distance_check": true,
+          "signed_error_pct": {
+            "base": 30.74470911327918,
+            "spatial": 30.31037821566349,
+            "regional": 30.92199114010952
+          },
+          "mc_se_pp": {
+            "base": 1.1837041129283183,
+            "spatial": 1.1615649618347252,
+            "regional": 1.1751147203111583
+          },
+          "natural_fraction_pct": 43.87879798420802,
+          "beyond_first_order_pct": {
+            "base": 35.85673945960382,
+            "regional": 35.5610991033914,
+            "spatial": 46.598380741095035
+          }
+        },
+        {
+          "date": "2023-02-14",
+          "readings": 30,
+          "observed_relative": 3.0155588397970825,
+          "aod_regional": 0.11756929709680052,
+          "aod_at_station": 0.28393050922499985,
+          "aod_grid_min": 0.02,
+          "aod_grid_max": 0.365,
+          "runs": {
+            "base": "2023-02/base",
+            "regional": "2023-02-14/regional",
+            "spatial": "2023-02-14/spatial"
+          },
+          "sun_altitude_deg": [
+            -52.63975749613886,
+            -55.34536682538141,
+            -57.033478651297905
+          ],
+          "moon_altitude_deg": [
+            -41.39242006369638,
+            -36.419283511934765,
+            -31.44762132629403
+          ],
+          "natural_relative": 1.4454397707459257,
+          "weather": {
+            "passes": true,
+            "maxima": {
+              "cloud_cover": 0.0,
+              "precipitation": 0.0,
+              "relative_humidity_2m": 94.0,
+              "era5_land_snow_depth": 0.0
+            },
+            "missing": {
+              "cloud_cover": 0,
+              "precipitation": 0,
+              "relative_humidity_2m": 0,
+              "era5_land_snow_depth": 0
+            },
+            "era5_cells": 4,
+            "era5_land_cells": 7
+          },
+          "artificial_from_lt3km_pct": 10.695527098207968,
+          "artificial_from_3_to_10km_pct_of_outside_3km": 38.69769991499342,
+          "artificial_from_lt10km_pct": 45.25430403241006,
+          "passes_distance_check": true,
+          "signed_error_pct": {
+            "base": 42.824132306187046,
+            "spatial": 42.156307108177195,
+            "regional": 42.94434972236998
+          },
+          "mc_se_pp": {
+            "base": 1.2930658072731234,
+            "spatial": 1.2452123570893705,
+            "regional": 1.2934482691521327
+          },
+          "natural_fraction_pct": 47.93273311964921,
+          "beyond_first_order_pct": {
+            "base": 35.85673945960382,
+            "regional": 39.50396574529735,
+            "spatial": 61.20079788556313
+          }
+        },
+        {
+          "date": "2023-02-15",
+          "readings": 30,
+          "observed_relative": 2.9561483743398833,
+          "aod_regional": 0.13464281575606446,
+          "aod_at_station": 0.30437855002500014,
+          "aod_grid_min": 0.03,
+          "aod_grid_max": 0.345,
+          "runs": {
+            "base": "2023-02/base",
+            "regional": "2023-02-15/regional",
+            "spatial": "2023-02-15/spatial"
+          },
+          "sun_altitude_deg": [
+            -52.33449803817427,
+            -55.02174496503847,
+            -56.69579552637971
+          ],
+          "moon_altitude_deg": [
+            -52.7182706235244,
+            -47.83828474321819,
+            -42.882426449915236
+          ],
+          "natural_relative": 1.4454397707459257,
+          "weather": {
+            "passes": true,
+            "maxima": {
+              "cloud_cover": 1.0,
+              "precipitation": 0.0,
+              "relative_humidity_2m": 95.0,
+              "era5_land_snow_depth": 0.0
+            },
+            "missing": {
+              "cloud_cover": 0,
+              "precipitation": 0,
+              "relative_humidity_2m": 0,
+              "era5_land_snow_depth": 0
+            },
+            "era5_cells": 4,
+            "era5_land_cells": 7
+          },
+          "artificial_from_lt3km_pct": 10.695527098207968,
+          "artificial_from_3_to_10km_pct_of_outside_3km": 38.69769991499342,
+          "artificial_from_lt10km_pct": 45.25430403241006,
+          "passes_distance_check": true,
+          "signed_error_pct": {
+            "base": 45.6945052050866,
+            "spatial": 43.523604465610674,
+            "regional": 45.52653086840876
+          },
+          "mc_se_pp": {
+            "base": 1.31905287955397,
+            "spatial": 1.2558248728714463,
+            "regional": 1.3052820894478225
+          },
+          "natural_fraction_pct": 48.8960494436852,
+          "beyond_first_order_pct": {
+            "base": 35.85673945960382,
+            "regional": 42.158092520768065,
+            "spatial": 62.32004438209336
+          }
+        },
+        {
+          "date": "2023-07-14",
+          "readings": 29,
+          "observed_relative": 3.9941128919534497,
+          "aod_regional": 0.13952252506635543,
+          "aod_at_station": 0.1584209579000001,
+          "aod_grid_min": 0.07,
+          "aod_grid_max": 0.23,
+          "runs": {
+            "base": "2023-07/base",
+            "regional": "2023-07-14/regional",
+            "spatial": "2023-07-14/spatial"
+          },
+          "sun_altitude_deg": [
+            -20.699869004976893,
+            -22.156927736514085,
+            -22.94753492127758
+          ],
+          "moon_altitude_deg": [
+            -17.360794286360093,
+            -15.81085364025685,
+            -13.732578776772774
+          ],
+          "natural_relative": 1.4454397707459257,
+          "weather": {
+            "passes": true,
+            "maxima": {
+              "cloud_cover": 3.0,
+              "precipitation": 0.0,
+              "relative_humidity_2m": 71.0,
+              "era5_land_snow_depth": 0.0
+            },
+            "missing": {
+              "cloud_cover": 0,
+              "precipitation": 0,
+              "relative_humidity_2m": 0,
+              "era5_land_snow_depth": 0
+            },
+            "era5_cells": 4,
+            "era5_land_cells": 7
+          },
+          "artificial_from_lt3km_pct": 12.876448406094864,
+          "artificial_from_3_to_10km_pct_of_outside_3km": 47.84687288960797,
+          "artificial_from_lt10km_pct": 54.56234339414267,
+          "passes_distance_check": false,
+          "signed_error_pct": {
+            "base": 2.0571662197405916,
+            "spatial": 0.9632909971050374,
+            "regional": 1.051020667822522
+          },
+          "mc_se_pp": {
+            "base": 0.8956123254935263,
+            "spatial": 0.8716130758395354,
+            "regional": 0.8809678198375057
+          },
+          "natural_fraction_pct": 36.18925678485233,
+          "beyond_first_order_pct": {
+            "base": 34.4191468779944,
+            "regional": 40.88476525570095,
+            "spatial": 43.24362720910424
+          }
+        },
+        {
+          "date": "2023-07-16",
+          "readings": 30,
+          "observed_relative": 3.868236769518041,
+          "aod_regional": 0.14978340187844577,
+          "aod_at_station": 0.1630160828999994,
+          "aod_grid_min": 0.07,
+          "aod_grid_max": 0.365,
+          "runs": {
+            "base": "2023-07/base",
+            "regional": "2023-07-16/regional",
+            "spatial": "2023-07-16/spatial"
+          },
+          "sun_altitude_deg": [
+            -20.99819044327669,
+            -22.466198581742223,
+            -23.265191629884704
+          ],
+          "moon_altitude_deg": [
+            -17.533808394364097,
+            -18.10082845472834,
+            -18.076096829877
+          ],
+          "natural_relative": 1.4454397707459257,
+          "weather": {
+            "passes": false,
+            "maxima": {
+              "cloud_cover": 24.0,
+              "precipitation": 0.0,
+              "relative_humidity_2m": 84.0,
+              "era5_land_snow_depth": 0.0
+            },
+            "missing": {
+              "cloud_cover": 0,
+              "precipitation": 0,
+              "relative_humidity_2m": 0,
+              "era5_land_snow_depth": 0
+            },
+            "era5_cells": 4,
+            "era5_land_cells": 7
+          },
+          "artificial_from_lt3km_pct": 12.876448406094864,
+          "artificial_from_3_to_10km_pct_of_outside_3km": 47.84687288960797,
+          "artificial_from_lt10km_pct": 54.56234339414267,
+          "passes_distance_check": false,
+          "signed_error_pct": {
+            "base": 5.378203973095985,
+            "spatial": 4.39893596428611,
+            "regional": 4.810468120366096
+          },
+          "mc_se_pp": {
+            "base": 0.9247564067521665,
+            "spatial": 0.8929477724237842,
+            "regional": 0.9023436268704619
+          },
+          "natural_fraction_pct": 37.366889796821276,
+          "beyond_first_order_pct": {
+            "base": 34.4191468779944,
+            "regional": 41.63369280427429,
+            "spatial": 43.58461246715382
+          }
+        },
+        {
+          "date": "2023-07-17",
+          "readings": 30,
+          "observed_relative": 3.345223179190647,
+          "aod_regional": 0.20052693396278246,
+          "aod_at_station": 0.20310982237499947,
+          "aod_grid_min": 0.09,
+          "aod_grid_max": 0.36,
+          "runs": {
+            "base": "2023-07/base",
+            "regional": "2023-07-17/regional",
+            "spatial": "2023-07-17/spatial"
+          },
+          "sun_altitude_deg": [
+            -21.156823096146326,
+            -22.630226390923244,
+            -23.43323757329327
+          ],
+          "moon_altitude_deg": [
+            -16.92126283248867,
+            -18.519856675072155,
+            -19.544733313112804
+          ],
+          "natural_relative": 1.4454397707459257,
+          "weather": {
+            "passes": true,
+            "maxima": {
+              "cloud_cover": 7.0,
+              "precipitation": 0.0,
+              "relative_humidity_2m": 62.0,
+              "era5_land_snow_depth": 0.0
+            },
+            "missing": {
+              "cloud_cover": 0,
+              "precipitation": 0,
+              "relative_humidity_2m": 0,
+              "era5_land_snow_depth": 0
+            },
+            "era5_cells": 4,
+            "era5_land_cells": 7
+          },
+          "artificial_from_lt3km_pct": 12.876448406094864,
+          "artificial_from_3_to_10km_pct_of_outside_3km": 47.84687288960797,
+          "artificial_from_lt10km_pct": 54.56234339414267,
+          "passes_distance_check": false,
+          "signed_error_pct": {
+            "base": 21.853706458271226,
+            "spatial": 22.361962837785466,
+            "regional": 21.643108184682937
+          },
+          "mc_se_pp": {
+            "base": 1.0693387388017481,
+            "spatial": 1.0438742606295826,
+            "regional": 1.0572524750018837
+          },
+          "natural_fraction_pct": 43.20906837359771,
+          "beyond_first_order_pct": {
+            "base": 34.4191468779944,
+            "regional": 49.29428568751298,
+            "spatial": 49.66760874912184
+          }
+        }
+      ],
+      "transport_sha256": "bcb8849297516de28d4d19a65fd64e6e762f0aba514698e7c834bc3f121f5527"
+    },
+    "Arcugnano": {
+      "site": "Arcugnano",
+      "calibration_date": "2025-02-02",
+      "calibration_passes_distance_check": false,
+      "n_windows": 7,
+      "n_readings": 84,
+      "clear_windows": 4,
+      "clear_readings": 48,
+      "n_transport_runs": 19,
+      "trajectories": 19922944,
+      "max_scattering_order_seen": 14,
+      "minimum_effective_samples_main_mask": 5691.098455433495,
+      "background_mag": 21.6,
+      "reference_map_month": "2025-02",
+      "summaries": {
+        "monthly": {
+          "n": 3,
+          "mape_pct": {
+            "base": 51.22994768894171,
+            "spatial": 49.81976627990664,
+            "regional": 49.77557439715679
+          },
+          "signed_mean_pct": {
+            "base": 51.22994768894171,
+            "spatial": 49.81976627990664,
+            "regional": 49.77557439715679
+          },
+          "median_abs_pct": {
+            "base": 48.85804547329282,
+            "spatial": 47.97476790082935,
+            "regional": 49.67568659754464
+          },
+          "mc_95_pct": {
+            "base": [
+              47.33752259645215,
+              55.34144099245702
+            ],
+            "spatial": [
+              46.16604956778921,
+              53.799546058171366
+            ],
+            "regional": [
+              46.12739920523394,
+              53.667222844559845
+            ]
+          },
+          "mape_differences_pp": {
+            "spatial_minus_base": {
+              "value": -1.4101814090350686,
+              "mc_95": [
+                -3.8723808821673136,
+                1.0091666492054234
+              ]
+            },
+            "regional_minus_base": {
+              "value": -1.4543732917849184,
+              "mc_95": [
+                -3.882333772127832,
+                0.9933246010080484
+              ]
+            },
+            "spatial_minus_regional": {
+              "value": 0.044191882749849754,
+              "mc_95": [
+                -2.0938804086960636,
+                2.177540716471937
+              ]
+            }
+          },
+          "common_scale": 47.57038458552662
+        },
+        "fixed_map": {
+          "n": 3,
+          "mape_pct": {
+            "base": 7.592549431367171,
+            "spatial": 8.087351996277265,
+            "regional": 8.268711532776814
+          },
+          "signed_mean_pct": {
+            "base": -7.592549431367171,
+            "spatial": -8.087351996277265,
+            "regional": -8.268711532776814
+          },
+          "median_abs_pct": {
+            "base": 5.593077931310397,
+            "spatial": 7.025499051901463,
+            "regional": 6.490695173875116
+          },
+          "mc_95_pct": {
+            "base": [
+              5.02474495593854,
+              10.016018897970458
+            ],
+            "spatial": [
+              5.686392456359164,
+              10.325790328606816
+            ],
+            "regional": [
+              5.9032452829419535,
+              10.51999365681312
+            ]
+          },
+          "mape_differences_pp": {
+            "spatial_minus_base": {
+              "value": 0.4948025649100938,
+              "mc_95": [
+                -1.3956863108936646,
+                2.4036961181522547
+              ]
+            },
+            "regional_minus_base": {
+              "value": 0.6761621014096431,
+              "mc_95": [
+                -1.2465630134443693,
+                2.612817914274823
+              ]
+            },
+            "spatial_minus_regional": {
+              "value": -0.18135953649954928,
+              "mc_95": [
+                -1.8585413491072178,
+                1.4649499947901747
+              ]
+            }
+          },
+          "common_scale": 47.57038458552662
+        },
+        "exclude_10km": {
+          "n": 3,
+          "mape_pct": {
+            "base": 73.7423475456424,
+            "spatial": 73.8016518239112,
+            "regional": 76.44585443792003
+          },
+          "signed_mean_pct": {
+            "base": 73.7423475456424,
+            "spatial": 73.8016518239112,
+            "regional": 76.44585443792003
+          },
+          "median_abs_pct": {
+            "base": 80.72309994422314,
+            "spatial": 79.20000629766568,
+            "regional": 83.29352533007284
+          },
+          "mc_95_pct": {
+            "base": [
+              67.38213103353773,
+              80.52898893653537
+            ],
+            "spatial": [
+              67.69700918960879,
+              80.22662007437643
+            ],
+            "regional": [
+              70.21365476922625,
+              83.0277247022507
+            ]
+          },
+          "mape_differences_pp": {
+            "spatial_minus_base": {
+              "value": 0.05930427826879736,
+              "mc_95": [
+                -3.7745139562123544,
+                3.94788542130213
+              ]
+            },
+            "regional_minus_base": {
+              "value": 2.7035068922776304,
+              "mc_95": [
+                -1.1520914778131952,
+                6.549661987039159
+              ]
+            },
+            "spatial_minus_regional": {
+              "value": -2.644202614008833,
+              "mc_95": [
+                -5.999399701231788,
+                0.655720998401792
+              ]
+            }
+          },
+          "common_scale": 165.6245157213619
+        },
+        "all_distances": {
+          "n": 3,
+          "mape_pct": {
+            "base": 86.66146801769003,
+            "spatial": 84.26911356145233,
+            "regional": 83.14625334850865
+          },
+          "signed_mean_pct": {
+            "base": 86.66146801769003,
+            "spatial": 84.26911356145233,
+            "regional": 83.14625334850865
+          },
+          "median_abs_pct": {
+            "base": 87.13896980193098,
+            "spatial": 83.77104311393842,
+            "regional": 84.87604715935744
+          },
+          "mc_95_pct": {
+            "base": [
+              82.10778115304268,
+              91.48825469448259
+            ],
+            "spatial": [
+              79.89943919479975,
+              88.9607759478332
+            ],
+            "regional": [
+              78.80363125302861,
+              87.73926368488681
+            ]
+          },
+          "mape_differences_pp": {
+            "spatial_minus_base": {
+              "value": -2.3923544562376975,
+              "mc_95": [
+                -4.850027978076893,
+                0.07452664926619283
+              ]
+            },
+            "regional_minus_base": {
+              "value": -3.5152146691813755,
+              "mc_95": [
+                -5.983067164126245,
+                -1.0296098160460672
+              ]
+            },
+            "spatial_minus_regional": {
+              "value": 1.122860212943678,
+              "mc_95": [
+                -0.9916830869655954,
+                3.2428731908265402
+              ]
+            }
+          },
+          "common_scale": 45.86792444579154
+        },
+        "brighter_background": {
+          "n": 3,
+          "mape_pct": {
+            "base": 47.736166184576916,
+            "spatial": 46.40922498340736,
+            "regional": 46.36764165972837
+          },
+          "signed_mean_pct": {
+            "base": 47.736166184576916,
+            "spatial": 46.40922498340736,
+            "regional": 46.36764165972837
+          },
+          "median_abs_pct": {
+            "base": 45.668471468246416,
+            "spatial": 44.837332016640104,
+            "regional": 46.43784886082081
+          },
+          "mc_95_pct": {
+            "base": [
+              44.07350321469365,
+              51.604966204072426
+            ],
+            "spatial": [
+              42.97117991229285,
+              50.15408626545642
+            ],
+            "regional": [
+              42.93481100387717,
+              50.02957382834209
+            ]
+          },
+          "mape_differences_pp": {
+            "spatial_minus_base": {
+              "value": -1.3269412011695536,
+              "mc_95": [
+                -3.6438019294872595,
+                0.9495975461718675
+              ]
+            },
+            "regional_minus_base": {
+              "value": -1.3685245248485458,
+              "mc_95": [
+                -3.653167320120469,
+                0.9346906226162652
+              ]
+            },
+            "spatial_minus_regional": {
+              "value": 0.0415833236789922,
+              "mc_95": [
+                -1.970282806750154,
+                2.0490048127127243
+              ]
+            }
+          },
+          "common_scale": 44.7623992612469
+        },
+        "darker_background": {
+          "n": 3,
+          "mape_pct": {
+            "base": 53.88025199020458,
+            "spatial": 52.40692642614192,
+            "regional": 52.3607557489778
+          },
+          "signed_mean_pct": {
+            "base": 53.88025199020458,
+            "spatial": 52.40692642614192,
+            "regional": 52.3607557489778
+          },
+          "median_abs_pct": {
+            "base": 51.27758478741706,
+            "spatial": 50.35475640566715,
+            "regional": 52.13183769620655
+          },
+          "mc_95_pct": {
+            "base": [
+              49.813534503914745,
+              58.175846976587465
+            ],
+            "spatial": [
+              48.58960604358992,
+              56.56491010759544
+            ],
+            "regional": [
+              48.54922502108593,
+              56.426661814089584
+            ]
+          },
+          "mape_differences_pp": {
+            "spatial_minus_base": {
+              "value": -1.4733255640626552,
+              "mc_95": [
+                -4.045775749794082,
+                1.054354434931297
+              ]
+            },
+            "regional_minus_base": {
+              "value": -1.5194962412267756,
+              "mc_95": [
+                -4.056174303569591,
+                1.0378030221507852
+              ]
+            },
+            "spatial_minus_regional": {
+              "value": 0.04617067716412038,
+              "mc_95": [
+                -2.187638777859613,
+                2.275045170649798
+              ]
+            }
+          },
+          "common_scale": 49.700459283536254
+        }
+      },
+      "monthly_groups": {
+        "2025-09": {
+          "n": 2,
+          "mape_pct": {
+            "base": 52.41589879676614,
+            "spatial": 50.74226546944527,
+            "regional": 49.82551829696287
+          },
+          "signed_mean_pct": {
+            "base": 52.41589879676614,
+            "spatial": 50.74226546944527,
+            "regional": 49.82551829696287
+          },
+          "median_abs_pct": {
+            "base": 52.41589879676614,
+            "spatial": 50.74226546944527,
+            "regional": 49.82551829696287
+          },
+          "mc_95_pct": {
+            "base": [
+              48.108229561697364,
+              56.850887467713875
+            ],
+            "spatial": [
+              46.942701071367104,
+              54.860915756403934
+            ],
+            "regional": [
+              45.999083364644704,
+              53.86422802176197
+            ]
+          },
+          "mape_differences_pp": {
+            "spatial_minus_base": {
+              "value": -1.6736333273208714,
+              "mc_95": [
+                -4.802970824189261,
+                1.4331000437065005
+              ]
+            },
+            "regional_minus_base": {
+              "value": -2.590380499803274,
+              "mc_95": [
+                -5.6784540751103565,
+                0.5654658797066171
+              ]
+            },
+            "spatial_minus_regional": {
+              "value": 0.9167471724824026,
+              "mc_95": [
+                -1.6428774023565025,
+                3.5168586025094366
+              ]
+            }
+          }
+        },
+        "2026-02": {
+          "n": 1,
+          "mape_pct": {
+            "base": 48.85804547329282,
+            "spatial": 47.97476790082935,
+            "regional": 49.67568659754464
+          },
+          "signed_mean_pct": {
+            "base": 48.85804547329282,
+            "spatial": 47.97476790082935,
+            "regional": 49.67568659754464
+          },
+          "median_abs_pct": {
+            "base": 48.85804547329282,
+            "spatial": 47.97476790082935,
+            "regional": 49.67568659754464
+          },
+          "mc_95_pct": {
+            "base": [
+              44.54544383466249,
+              53.35625270338848
+            ],
+            "spatial": [
+              43.738668260869964,
+              52.4736101985616
+            ],
+            "regional": [
+              45.45504857766789,
+              54.23355939208569
+            ]
+          },
+          "mape_differences_pp": {
+            "spatial_minus_base": {
+              "value": -0.88327757246347,
+              "mc_95": [
+                -4.659784056775469,
+                2.834067497718755
+              ]
+            },
+            "regional_minus_base": {
+              "value": 0.8176411242518213,
+              "mc_95": [
+                -3.0046201357828424,
+                4.642198690279643
+              ]
+            },
+            "spatial_minus_regional": {
+              "value": -1.7009186967152914,
+              "mc_95": [
+                -5.520581456495707,
+                2.085163195851433
+              ]
+            }
+          }
+        }
+      },
+      "held_out_months": {
+        "n": 3,
+        "mape_pct": {
+          "base": 51.22994768894171,
+          "spatial": 49.81976627990664,
+          "regional": 49.77557439715679
+        },
+        "signed_mean_pct": {
+          "base": 51.22994768894171,
+          "spatial": 49.81976627990664,
+          "regional": 49.77557439715679
+        },
+        "median_abs_pct": {
+          "base": 48.85804547329282,
+          "spatial": 47.97476790082935,
+          "regional": 49.67568659754464
+        },
+        "mc_95_pct": {
+          "base": [
+            47.33752259645215,
+            55.34144099245702
+          ],
+          "spatial": [
+            46.16604956778921,
+            53.799546058171366
+          ],
+          "regional": [
+            46.12739920523394,
+            53.667222844559845
+          ]
+        },
+        "mape_differences_pp": {
+          "spatial_minus_base": {
+            "value": -1.4101814090350686,
+            "mc_95": [
+              -3.8723808821673136,
+              1.0091666492054234
+            ]
+          },
+          "regional_minus_base": {
+            "value": -1.4543732917849184,
+            "mc_95": [
+              -3.882333772127832,
+              0.9933246010080484
+            ]
+          },
+          "spatial_minus_regional": {
+            "value": 0.044191882749849754,
+            "mc_95": [
+              -2.0938804086960636,
+              2.177540716471937
+            ]
+          }
+        }
+      },
+      "leave_one_month_out_common_median_fit": {
+        "n": 4,
+        "mape_pct": {
+          "base": 21.647185969641736,
+          "spatial": 20.709610278357495,
+          "regional": 20.699536331638104
+        },
+        "signed_mean_pct": {
+          "base": 6.2714222844357685,
+          "spatial": 5.555179805287657,
+          "regional": 5.36490484504699
+        },
+        "median_abs_pct": {
+          "base": 26.855037396786663,
+          "spatial": 25.5635840099117,
+          "regional": 25.10115623200602
+        },
+        "mc_95_pct": {
+          "base": [
+            20.27649326814572,
+            23.232685525771974
+          ],
+          "spatial": [
+            19.542835125703217,
+            22.142274443391102
+          ],
+          "regional": [
+            19.4184321749927,
+            22.072922077367117
+          ]
+        },
+        "mape_differences_pp": {
+          "spatial_minus_base": {
+            "value": -0.9375756912842412,
+            "mc_95": [
+              -2.2453125534026204,
+              0.5562448326105943
+            ]
+          },
+          "regional_minus_base": {
+            "value": -0.9476496380036323,
+            "mc_95": [
+              -2.4455869305351117,
+              0.5575409836839202
+            ]
+          },
+          "spatial_minus_regional": {
+            "value": 0.010073946719391103,
+            "mc_95": [
+              -1.2222860590122249,
+              1.3707203280221982
+            ]
+          }
+        }
+      },
+      "clear_and_distance": null,
+      "all_except_calibration": {
+        "n": 6,
+        "mape_pct": {
+          "base": 38.88879822440972,
+          "spatial": 37.887127733421714,
+          "regional": 37.536325672544045
+        },
+        "signed_mean_pct": {
+          "base": 31.560797306348018,
+          "spatial": 30.621473163903612,
+          "regional": 30.689987854916193
+        },
+        "median_abs_pct": {
+          "base": 42.696478252196854,
+          "spatial": 40.2138980818003,
+          "regional": 39.95880687314856
+        },
+        "mc_95_pct": {
+          "base": [
+            36.11606756987852,
+            41.8003479419067
+          ],
+          "spatial": [
+            35.31877382006024,
+            40.60338570419259
+          ],
+          "regional": [
+            34.98155505095846,
+            40.21838606399816
+          ]
+        },
+        "mape_differences_pp": {
+          "spatial_minus_base": {
+            "value": -1.0016704909880048,
+            "mc_95": [
+              -2.6990047519842584,
+              0.6908921389337566
+            ]
+          },
+          "regional_minus_base": {
+            "value": -1.3524725518656737,
+            "mc_95": [
+              -3.0514677558860277,
+              0.3519822337653967
+            ]
+          },
+          "spatial_minus_regional": {
+            "value": 0.35080206087766896,
+            "mc_95": [
+              -1.0280607956249412,
+              1.7146712691372712
+            ]
+          }
+        }
+      },
+      "rows": [
+        {
+          "date": "2025-02-02",
+          "readings": 12,
+          "observed_relative": 9.238704638374616,
+          "aod_regional": 0.09787749011945024,
+          "aod_at_station": 0.0773636910500002,
+          "aod_grid_min": 0.03,
+          "aod_grid_max": 0.255,
+          "runs": {
+            "base": "2025-02/base",
+            "regional": "2025-02-02/regional",
+            "spatial": "2025-02-02/spatial"
+          },
+          "sun_altitude_deg": [
+            -55.73545241198483,
+            -58.624654240304494,
+            -60.455211896696476
+          ],
+          "moon_altitude_deg": [
+            -6.275966559364426,
+            -11.021528294517887,
+            -15.590882800052754
+          ],
+          "natural_relative": 1.4454397707459257,
+          "weather": {
+            "passes": true,
+            "maxima": {
+              "cloud_cover": 1.0,
+              "precipitation": 0.0,
+              "relative_humidity_2m": 86.0,
+              "era5_land_snow_depth": 0.0
+            },
+            "missing": {
+              "cloud_cover": 0,
+              "precipitation": 0,
+              "relative_humidity_2m": 0,
+              "era5_land_snow_depth": 0
+            },
+            "era5_cells": 5,
+            "era5_land_cells": 5
+          },
+          "artificial_from_lt3km_pct": 3.578823578090351,
+          "artificial_from_3_to_10km_pct_of_outside_3km": 71.27817438237429,
+          "artificial_from_lt10km_pct": 72.30607784963587,
+          "passes_distance_check": false,
+          "signed_error_pct": {
+            "base": -2.220446049250313e-14,
+            "spatial": 0.6966199486162061,
+            "regional": 0.12945870079328348
+          },
+          "mc_se_pp": {
+            "base": 7.127597466278978e-15,
+            "spatial": 1.574032866775775,
+            "regional": 1.5782278380508181
+          },
+          "natural_fraction_pct": 15.645480912356831,
+          "beyond_first_order_pct": {
+            "base": 30.931130750009437,
+            "regional": 30.604166833955293,
+            "spatial": 26.764886031151736
+          }
+        },
+        {
+          "date": "2025-04-29",
+          "readings": 12,
+          "observed_relative": 12.192731107131044,
+          "aod_regional": 0.14280796921296735,
+          "aod_at_station": 0.1458958089499998,
+          "aod_grid_min": 0.065,
+          "aod_grid_max": 0.215,
+          "runs": {
+            "base": "2025-04/base",
+            "regional": "2025-04-29/regional",
+            "spatial": "2025-04-29/spatial"
+          },
+          "sun_altitude_deg": [
+            -27.63179034712611,
+            -29.024323221064094,
+            -29.68032420020128
+          ],
+          "moon_altitude_deg": [
+            -6.824743531860938,
+            -9.908541347507839,
+            -12.57765458338625
+          ],
+          "natural_relative": 1.4454397707459257,
+          "weather": {
+            "passes": false,
+            "maxima": {
+              "cloud_cover": 24.0,
+              "precipitation": 0.0,
+              "relative_humidity_2m": 71.0,
+              "era5_land_snow_depth": 0.0
+            },
+            "missing": {
+              "cloud_cover": 0,
+              "precipitation": 0,
+              "relative_humidity_2m": 0,
+              "era5_land_snow_depth": 0
+            },
+            "era5_cells": 5,
+            "era5_land_cells": 5
+          },
+          "artificial_from_lt3km_pct": 34.86466718914053,
+          "artificial_from_3_to_10km_pct_of_outside_3km": 63.176016585855365,
+          "artificial_from_lt10km_pct": 76.0145758489812,
+          "passes_distance_check": false,
+          "signed_error_pct": {
+            "base": -21.984002754185084,
+            "spatial": -21.79696370855431,
+            "regional": -20.539013452883538
+          },
+          "mc_se_pp": {
+            "base": 1.1935792527995666,
+            "spatial": 1.1861200704891897,
+            "regional": 1.2170616023671392
+          },
+          "natural_fraction_pct": 11.854930269892899,
+          "beyond_first_order_pct": {
+            "base": 32.73027954610571,
+            "regional": 40.540044479080564,
+            "spatial": 39.7656141980758
+          }
+        },
+        {
+          "date": "2025-09-17",
+          "readings": 12,
+          "observed_relative": 9.8612844564303,
+          "aod_regional": 0.06708608769070565,
+          "aod_at_station": 0.08027763209999986,
+          "aod_grid_min": 0.03,
+          "aod_grid_max": 0.17,
+          "runs": {
+            "base": "2025-09/base",
+            "regional": "2025-09-17/regional",
+            "spatial": "2025-09-17/spatial"
+          },
+          "sun_altitude_deg": [
+            -40.27348862608808,
+            -41.881539740821765,
+            -42.60358443568044
+          ],
+          "moon_altitude_deg": [
+            -20.149155082521588,
+            -17.785672218818956,
+            -14.933096747461319
+          ],
+          "natural_relative": 1.4454397707459257,
+          "weather": {
+            "passes": true,
+            "maxima": {
+              "cloud_cover": 4.0,
+              "precipitation": 0.0,
+              "relative_humidity_2m": 81.0,
+              "era5_land_snow_depth": 0.0
+            },
+            "missing": {
+              "cloud_cover": 0,
+              "precipitation": 0,
+              "relative_humidity_2m": 0,
+              "era5_land_snow_depth": 0
+            },
+            "era5_cells": 5,
+            "era5_land_cells": 5
+          },
+          "artificial_from_lt3km_pct": 22.616082116478097,
+          "artificial_from_3_to_10km_pct_of_outside_3km": 64.09534505145673,
+          "artificial_from_lt10km_pct": 72.21557129825739,
+          "passes_distance_check": false,
+          "signed_error_pct": {
+            "base": 57.52060620132302,
+            "spatial": 56.79065185333063,
+            "regional": 54.519901274818295
+          },
+          "mc_se_pp": {
+            "base": 2.3069889822658136,
+            "spatial": 2.304573985132481,
+            "regional": 2.279656012112357
+          },
+          "natural_fraction_pct": 14.657723110333666,
+          "beyond_first_order_pct": {
+            "base": 32.335460504892744,
+            "regional": 27.08884617617415,
+            "spatial": 29.19120720251177
+          }
+        },
+        {
+          "date": "2025-09-18",
+          "readings": 12,
+          "observed_relative": 10.5447216251537,
+          "aod_regional": 0.05437039822609575,
+          "aod_at_station": 0.0778538678999999,
+          "aod_grid_min": 0.03,
+          "aod_grid_max": 0.13,
+          "runs": {
+            "base": "2025-09/base",
+            "regional": "2025-09-18/regional",
+            "spatial": "2025-09-18/spatial"
+          },
+          "sun_altitude_deg": [
+            -40.67064441578363,
+            -42.27818182335643,
+            -42.993839855837024
+          ],
+          "moon_altitude_deg": [
+            -27.72539837109501,
+            -26.178922548180495,
+            -24.025501540576975
+          ],
+          "natural_relative": 1.4454397707459257,
+          "weather": {
+            "passes": true,
+            "maxima": {
+              "cloud_cover": 0.0,
+              "precipitation": 0.0,
+              "relative_humidity_2m": 88.0,
+              "era5_land_snow_depth": 0.0
+            },
+            "missing": {
+              "cloud_cover": 0,
+              "precipitation": 0,
+              "relative_humidity_2m": 0,
+              "era5_land_snow_depth": 0
+            },
+            "era5_cells": 5,
+            "era5_land_cells": 5
+          },
+          "artificial_from_lt3km_pct": 22.616082116478097,
+          "artificial_from_3_to_10km_pct_of_outside_3km": 64.09534505145673,
+          "artificial_from_lt10km_pct": 72.21557129825739,
+          "passes_distance_check": false,
+          "signed_error_pct": {
+            "base": 47.311191392209274,
+            "spatial": 44.69387908555991,
+            "regional": 45.13113531910744
+          },
+          "mc_se_pp": {
+            "base": 2.1574656402218952,
+            "spatial": 2.128691471877986,
+            "regional": 2.1374076814288494
+          },
+          "natural_fraction_pct": 13.707709147085776,
+          "beyond_first_order_pct": {
+            "base": 32.335460504892744,
+            "regional": 25.059559855820467,
+            "spatial": 28.82249661979128
+          }
+        },
+        {
+          "date": "2025-09-20",
+          "readings": 12,
+          "observed_relative": 11.249533957206893,
+          "aod_regional": 0.0910166021808316,
+          "aod_at_station": 0.16166361789999933,
+          "aod_grid_min": 0.04,
+          "aod_grid_max": 0.215,
+          "runs": {
+            "base": "2025-09/base",
+            "regional": "2025-09-20/regional",
+            "spatial": "2025-09-20/spatial"
+          },
+          "sun_altitude_deg": [
+            -41.46636374118589,
+            -43.072958780091525,
+            -43.77568357704618
+          ],
+          "moon_altitude_deg": [
+            -39.906400310715895,
+            -40.429463777860796,
+            -40.12273884923322
+          ],
+          "natural_relative": 1.4454397707459257,
+          "weather": {
+            "passes": false,
+            "maxima": {
+              "cloud_cover": 31.0,
+              "precipitation": 0.0,
+              "relative_humidity_2m": 91.0,
+              "era5_land_snow_depth": 0.0
+            },
+            "missing": {
+              "cloud_cover": 0,
+              "precipitation": 0,
+              "relative_humidity_2m": 0,
+              "era5_land_snow_depth": 0
+            },
+            "era5_cells": 5,
+            "era5_land_cells": 5
+          },
+          "artificial_from_lt3km_pct": 22.616082116478097,
+          "artificial_from_3_to_10km_pct_of_outside_3km": 64.09534505145673,
+          "artificial_from_lt10km_pct": 72.21557129825739,
+          "passes_distance_check": false,
+          "signed_error_pct": {
+            "base": 38.08176511218444,
+            "spatial": 35.7339170780407,
+            "regional": 34.78647842718967
+          },
+          "mc_se_pp": {
+            "base": 2.02229485048128,
+            "spatial": 1.9819689369410738,
+            "regional": 1.9865678850401032
+          },
+          "natural_fraction_pct": 12.848885796019312,
+          "beyond_first_order_pct": {
+            "base": 32.335460504892744,
+            "regional": 31.21587690936528,
+            "spatial": 42.69459519093351
+          }
+        },
+        {
+          "date": "2025-10-28",
+          "readings": 12,
+          "observed_relative": 11.424592613281702,
+          "aod_regional": 0.07698031635924235,
+          "aod_at_station": 0.12052861790000005,
+          "aod_grid_min": 0.035,
+          "aod_grid_max": 0.19,
+          "runs": {
+            "base": "2025-10/base",
+            "regional": "2025-10-28/regional",
+            "spatial": "2025-10-28/spatial"
+          },
+          "sun_altitude_deg": [
+            -55.6959084040751,
+            -57.41629174517573,
+            -57.94855232000531
+          ],
+          "moon_altitude_deg": [
+            -11.173350219015369,
+            -15.8027343327633,
+            -20.571344466046387
+          ],
+          "natural_relative": 1.4454397707459257,
+          "weather": {
+            "passes": false,
+            "maxima": {
+              "cloud_cover": 19.0,
+              "precipitation": 0.0,
+              "relative_humidity_2m": 91.0,
+              "era5_land_snow_depth": 0.0
+            },
+            "missing": {
+              "cloud_cover": 0,
+              "precipitation": 0,
+              "relative_humidity_2m": 0,
+              "era5_land_snow_depth": 0
+            },
+            "era5_cells": 5,
+            "era5_land_cells": 5
+          },
+          "artificial_from_lt3km_pct": 25.74780974232681,
+          "artificial_from_3_to_10km_pct_of_outside_3km": 71.255211400415,
+          "artificial_from_lt10km_pct": 78.6563648798702,
+          "passes_distance_check": false,
+          "signed_error_pct": {
+            "base": 19.57717841326363,
+            "spatial": 20.33258677421541,
+            "regional": 20.56573896372067
+          },
+          "mc_se_pp": {
+            "base": 1.8160000512278933,
+            "spatial": 1.7937429664301094,
+            "regional": 1.810935264304623
+          },
+          "natural_fraction_pct": 12.652002742448115,
+          "beyond_first_order_pct": {
+            "base": 32.65780668290203,
+            "regional": 28.099829265777878,
+            "spatial": 35.36416461105893
+          }
+        },
+        {
+          "date": "2026-02-17",
+          "readings": 12,
+          "observed_relative": 9.743092291816177,
+          "aod_regional": 0.04169861773818104,
+          "aod_at_station": 0.04,
+          "aod_grid_min": 0.03,
+          "aod_grid_max": 0.07500000000000001,
+          "runs": {
+            "base": "2026-02/base",
+            "regional": "2026-02-17/regional",
+            "spatial": "2026-02-17/spatial"
+          },
+          "sun_altitude_deg": [
+            -51.411060650028055,
+            -54.05668790064327,
+            -55.70874329990642
+          ],
+          "moon_altitude_deg": [
+            -48.579786271243705,
+            -51.47630249882147,
+            -53.57556866009523
+          ],
+          "natural_relative": 1.4454397707459257,
+          "weather": {
+            "passes": true,
+            "maxima": {
+              "cloud_cover": 0.0,
+              "precipitation": 0.0,
+              "relative_humidity_2m": 56.0,
+              "era5_land_snow_depth": 0.0
+            },
+            "missing": {
+              "cloud_cover": 0,
+              "precipitation": 0,
+              "relative_humidity_2m": 0,
+              "era5_land_snow_depth": 0
+            },
+            "era5_cells": 5,
+            "era5_land_cells": 5
+          },
+          "artificial_from_lt3km_pct": 25.000867435530093,
+          "artificial_from_3_to_10km_pct_of_outside_3km": 71.62154243816799,
+          "artificial_from_lt10km_pct": 78.71640299344979,
+          "passes_distance_check": false,
+          "signed_error_pct": {
+            "base": 48.85804547329282,
+            "spatial": 47.97476790082935,
+            "regional": 49.67568659754464
+          },
+          "mc_se_pp": {
+            "base": 2.240948989094203,
+            "spatial": 2.221152243745487,
+            "regional": 2.2394782194705622
+          },
+          "natural_fraction_pct": 14.835534011722741,
+          "beyond_first_order_pct": {
+            "base": 30.678250072382806,
+            "regional": 19.72334044424453,
+            "spatial": 19.992225815395447
+          }
+        }
+      ],
+      "transport_sha256": "bcdab359425a72e3e18753fcf8187139f7f2335ee5ae6a9d44e0d200854d12f8"
+    }
+  },
+  "annual_source_control": {
+    "site": "Galzignano",
+    "calibration_date": "2022-10-01",
+    "calibration_passes_distance_check": true,
+    "n_windows": 12,
+    "n_readings": 358,
+    "clear_windows": 9,
+    "clear_readings": 268,
+    "n_transport_runs": 25,
+    "trajectories": 13107200,
+    "max_scattering_order_seen": 17,
+    "minimum_effective_samples_main_mask": 5735.983331982692,
+    "background_mag": 21.6,
+    "reference_map_month": "2022-10",
+    "summaries": {
+      "monthly": {
+        "n": 8,
+        "mape_pct": {
+          "base": 28.184124261321635,
+          "spatial": 29.920557403611664,
+          "regional": 29.664335508989275
+        },
+        "signed_mean_pct": {
+          "base": 28.184124261321635,
+          "spatial": 29.920557403611664,
+          "regional": 29.664335508989275
+        },
+        "median_abs_pct": {
+          "base": 30.725764717852023,
+          "spatial": 31.923151105562987,
+          "regional": 32.98835974199079
+        },
+        "mc_95_pct": {
+          "base": [
+            28.184124261321635,
+            28.184124261321635
+          ],
+          "spatial": [
+            27.681238938316334,
+            32.30610368536801
+          ],
+          "regional": [
+            27.40187003379637,
+            32.04928531998193
+          ]
+        },
+        "mape_differences_pp": {
+          "spatial_minus_base": {
+            "value": 1.7364331422900285,
+            "mc_95": [
+              -0.5028853230053031,
+              4.1219794240463745
+            ]
+          },
+          "regional_minus_base": {
+            "value": 1.48021124766764,
+            "mc_95": [
+              -0.7822542275252645,
+              3.865161058660292
+            ]
+          },
+          "spatial_minus_regional": {
+            "value": 0.25622189462238865,
+            "mc_95": [
+              -0.8375291395159912,
+              1.3421485498854466
+            ]
+          }
+        },
+        "common_scale": 15.236501918451191
+      },
+      "fixed_map": {
+        "n": 8,
+        "mape_pct": {
+          "base": 28.184124261321635,
+          "spatial": 29.920557403611664,
+          "regional": 29.664335508989275
+        },
+        "signed_mean_pct": {
+          "base": 28.184124261321635,
+          "spatial": 29.920557403611664,
+          "regional": 29.664335508989275
+        },
+        "median_abs_pct": {
+          "base": 30.725764717852023,
+          "spatial": 31.923151105562987,
+          "regional": 32.98835974199079
+        },
+        "mc_95_pct": {
+          "base": [
+            28.184124261321635,
+            28.184124261321635
+          ],
+          "spatial": [
+            27.681238938392752,
+            32.30610368457547
+          ],
+          "regional": [
+            27.40187003243457,
+            32.049285319224666
+          ]
+        },
+        "mape_differences_pp": {
+          "spatial_minus_base": {
+            "value": 1.7364331422900285,
+            "mc_95": [
+              -0.5028853229288827,
+              4.121979423253836
+            ]
+          },
+          "regional_minus_base": {
+            "value": 1.48021124766764,
+            "mc_95": [
+              -0.782254228887065,
+              3.865161057903032
+            ]
+          },
+          "spatial_minus_regional": {
+            "value": 0.25622189462238865,
+            "mc_95": [
+              -0.8375291393042418,
+              1.3421485484629565
+            ]
+          }
+        },
+        "common_scale": 15.236501918451191
+      },
+      "exclude_10km": {
+        "n": 8,
+        "mape_pct": {
+          "base": 28.184124261321635,
+          "spatial": 28.870735738939878,
+          "regional": 29.651697740603055
+        },
+        "signed_mean_pct": {
+          "base": 28.184124261321635,
+          "spatial": 28.870735738939878,
+          "regional": 29.651697740603055
+        },
+        "median_abs_pct": {
+          "base": 30.725764717852023,
+          "spatial": 30.57482634549448,
+          "regional": 33.70334495314378
+        },
+        "mc_95_pct": {
+          "base": [
+            28.184124261321635,
+            28.184124261321635
+          ],
+          "spatial": [
+            25.836081835231575,
+            32.10884682692684
+          ],
+          "regional": [
+            26.596178036914143,
+            32.91704067394624
+          ]
+        },
+        "mape_differences_pp": {
+          "spatial_minus_base": {
+            "value": 0.6866114776182428,
+            "mc_95": [
+              -2.3480424260900588,
+              3.9247225656052063
+            ]
+          },
+          "regional_minus_base": {
+            "value": 1.4675734792814197,
+            "mc_95": [
+              -1.5879462244074936,
+              4.7329164126246015
+            ]
+          },
+          "spatial_minus_regional": {
+            "value": -0.7809620016631769,
+            "mc_95": [
+              -2.2902690297828876,
+              0.7312228323285059
+            ]
+          }
+        },
+        "common_scale": 24.58423214698352
+      },
+      "all_distances": {
+        "n": 8,
+        "mape_pct": {
+          "base": 28.184124261321635,
+          "spatial": 30.582906819902398,
+          "regional": 29.602160034373533
+        },
+        "signed_mean_pct": {
+          "base": 28.184124261321635,
+          "spatial": 30.582906819902398,
+          "regional": 29.602160034373533
+        },
+        "median_abs_pct": {
+          "base": 30.725764717852023,
+          "spatial": 32.19468086187813,
+          "regional": 32.934098417553614
+        },
+        "mc_95_pct": {
+          "base": [
+            28.184124261321635,
+            28.184124261321635
+          ],
+          "spatial": [
+            28.533887298205485,
+            32.74166341811545
+          ],
+          "regional": [
+            27.583126086047344,
+            31.74775671000432
+          ]
+        },
+        "mape_differences_pp": {
+          "spatial_minus_base": {
+            "value": 2.3987825585807627,
+            "mc_95": [
+              0.3497630368838517,
+              4.557539156793817
+            ]
+          },
+          "regional_minus_base": {
+            "value": 1.4180357730518978,
+            "mc_95": [
+              -0.6009981752742926,
+              3.563632448682684
+            ]
+          },
+          "spatial_minus_regional": {
+            "value": 0.980746785528865,
+            "mc_95": [
+              0.0030796390238841836,
+              1.9604092250398395
+            ]
+          }
+        },
+        "common_scale": 13.620822413816612
+      },
+      "brighter_background": {
+        "n": 8,
+        "mape_pct": {
+          "base": 28.184124261321635,
+          "spatial": 29.64907710073314,
+          "regional": 29.43291387342256
+        },
+        "signed_mean_pct": {
+          "base": 28.184124261321635,
+          "spatial": 29.64907710073314,
+          "regional": 29.43291387342256
+        },
+        "median_abs_pct": {
+          "base": 30.725764717852023,
+          "spatial": 31.73594734212312,
+          "regional": 32.63461736776121
+        },
+        "mc_95_pct": {
+          "base": [
+            28.184124261321635,
+            28.184124261321635
+          ],
+          "spatial": [
+            27.759861867398765,
+            31.66165835934565
+          ],
+          "regional": [
+            27.52417051830365,
+            31.444991915690252
+          ]
+        },
+        "mape_differences_pp": {
+          "spatial_minus_base": {
+            "value": 1.464952839411506,
+            "mc_95": [
+              -0.4242623939228717,
+              3.4775340980240164
+            ]
+          },
+          "regional_minus_base": {
+            "value": 1.248789612100925,
+            "mc_95": [
+              -0.6599537430179874,
+              3.260867654368616
+            ]
+          },
+          "spatial_minus_regional": {
+            "value": 0.2161632273105809,
+            "mc_95": [
+              -0.7065867732780865,
+              1.1323121410097525
+            ]
+          }
+        },
+        "common_scale": 12.854371530076365
+      },
+      "darker_background": {
+        "n": 8,
+        "mape_pct": {
+          "base": 28.184124261321635,
+          "spatial": 30.12649627343743,
+          "regional": 29.839886772106755
+        },
+        "signed_mean_pct": {
+          "base": 28.184124261321635,
+          "spatial": 30.12649627343743,
+          "regional": 29.839886772106755
+        },
+        "median_abs_pct": {
+          "base": 30.725764717852023,
+          "spatial": 32.06515968246951,
+          "regional": 33.25670077441896
+        },
+        "mc_95_pct": {
+          "base": [
+            28.184124261321635,
+            28.184124261321635
+          ],
+          "spatial": [
+            27.621597347431297,
+            32.79496545802094
+          ],
+          "regional": [
+            27.309095628833948,
+            32.50768874521565
+          ]
+        },
+        "mape_differences_pp": {
+          "spatial_minus_base": {
+            "value": 1.9423720121157935,
+            "mc_95": [
+              -0.562526913890337,
+              4.610841196699305
+            ]
+          },
+          "regional_minus_base": {
+            "value": 1.6557625107851202,
+            "mc_95": [
+              -0.8750286324876878,
+              4.323564483894019
+            ]
+          },
+          "spatial_minus_regional": {
+            "value": 0.2866095013306733,
+            "mc_95": [
+              -0.9368590821653289,
+              1.5013257440831798
+            ]
+          }
+        },
+        "common_scale": 17.043532611867874
+      }
+    },
+    "monthly_groups": {
+      "2022-10": {
+        "n": 2,
+        "mape_pct": {
+          "base": 13.514678310696393,
+          "spatial": 15.90848734077589,
+          "regional": 14.421310178256718
+        },
+        "signed_mean_pct": {
+          "base": 13.514678310696393,
+          "spatial": 15.90848734077589,
+          "regional": 14.421310178256718
+        },
+        "median_abs_pct": {
+          "base": 13.514678310696393,
+          "spatial": 15.90848734077589,
+          "regional": 14.421310178256718
+        },
+        "mc_95_pct": {
+          "base": [
+            13.514678310696393,
+            13.514678310696393
+          ],
+          "spatial": [
+            13.585632686901032,
+            18.38006928287769
+          ],
+          "regional": [
+            12.131306682235175,
+            16.812339687772003
+          ]
+        },
+        "mape_differences_pp": {
+          "spatial_minus_base": {
+            "value": 2.393809030079497,
+            "mc_95": [
+              0.07095437620463951,
+              4.865390972181299
+            ]
+          },
+          "regional_minus_base": {
+            "value": 0.9066318675603249,
+            "mc_95": [
+              -1.383371628461217,
+              3.2976613770756087
+            ]
+          },
+          "spatial_minus_regional": {
+            "value": 1.4871771625191723,
+            "mc_95": [
+              -0.43873319490477847,
+              3.4304180872742185
+            ]
+          }
+        }
+      },
+      "2023-02": {
+        "n": 4,
+        "mape_pct": {
+          "base": 39.35506386417767,
+          "spatial": 40.86138846275543,
+          "regional": 41.24078110094949
+        },
+        "signed_mean_pct": {
+          "base": 39.35506386417767,
+          "spatial": 40.86138846275543,
+          "regional": 41.24078110094949
+        },
+        "median_abs_pct": {
+          "base": 39.35259774204222,
+          "spatial": 40.362055077080605,
+          "regional": 40.72150984436451
+        },
+        "mc_95_pct": {
+          "base": [
+            39.35506386417767,
+            39.35506386417767
+          ],
+          "spatial": [
+            38.281644779565326,
+            43.626193349856194
+          ],
+          "regional": [
+            38.638410358060874,
+            43.98093043743482
+          ]
+        },
+        "mape_differences_pp": {
+          "spatial_minus_base": {
+            "value": 1.5063245985777556,
+            "mc_95": [
+              -1.073419084612347,
+              4.27112948567852
+            ]
+          },
+          "regional_minus_base": {
+            "value": 1.8857172367718178,
+            "mc_95": [
+              -0.7166535061167987,
+              4.625866573257145
+            ]
+          },
+          "spatial_minus_regional": {
+            "value": -0.3793926381940622,
+            "mc_95": [
+              -2.084625823247906,
+              1.3172139594288148
+            ]
+          }
+        }
+      },
+      "2023-07": {
+        "n": 2,
+        "mape_pct": {
+          "base": 20.511691006234813,
+          "spatial": 22.050965348159913,
+          "regional": 21.75446965580138
+        },
+        "signed_mean_pct": {
+          "base": 20.511691006234813,
+          "spatial": 22.050965348159913,
+          "regional": 21.75446965580138
+        },
+        "median_abs_pct": {
+          "base": 20.511691006234813,
+          "spatial": 22.050965348159913,
+          "regional": 21.75446965580138
+        },
+        "mc_95_pct": {
+          "base": [
+            20.511691006234813,
+            20.511691006234813
+          ],
+          "spatial": [
+            19.625503853712758,
+            24.624437123268965
+          ],
+          "regional": [
+            19.342680897063204,
+            24.377349960441197
+          ]
+        },
+        "mape_differences_pp": {
+          "spatial_minus_base": {
+            "value": 1.5392743419251005,
+            "mc_95": [
+              -0.8861871525220558,
+              4.1127461170341535
+            ]
+          },
+          "regional_minus_base": {
+            "value": 1.2427786495665671,
+            "mc_95": [
+              -1.1690101091716074,
+              3.865658954206386
+            ]
+          },
+          "spatial_minus_regional": {
+            "value": 0.29649569235853335,
+            "mc_95": [
+              -1.7401616776057487,
+              2.297086691341417
+            ]
+          }
+        }
+      }
+    },
+    "held_out_months": {
+      "n": 6,
+      "mape_pct": {
+        "base": 33.07393957819672,
+        "spatial": 34.591247424556926,
+        "regional": 34.74534395256679
+      },
+      "signed_mean_pct": {
+        "base": 33.07393957819672,
+        "spatial": 34.591247424556926,
+        "regional": 34.74534395256679
+      },
+      "median_abs_pct": {
+        "base": 32.182965068340664,
+        "spatial": 32.4180553721108,
+        "regional": 33.60912351779505
+      },
+      "mc_95_pct": {
+        "base": [
+          33.07393957819672,
+          33.07393957819672
+        ],
+        "spatial": [
+          32.227904574625676,
+          37.11634793434165
+        ],
+        "regional": [
+          32.34948573230526,
+          37.27638273450337
+        ]
+      },
+      "mape_differences_pp": {
+        "spatial_minus_base": {
+          "value": 1.5173078463602039,
+          "mc_95": [
+            -0.8460350035710476,
+            4.042408356144924
+          ]
+        },
+        "regional_minus_base": {
+          "value": 1.67140437437007,
+          "mc_95": [
+            -0.7244538458914597,
+            4.2024431563066535
+          ]
+        },
+        "spatial_minus_regional": {
+          "value": -0.15409652800986606,
+          "mc_95": [
+            -1.4549963130691732,
+            1.1506425038178827
+          ]
+        }
+      }
+    },
+    "leave_one_month_out_common_median_fit": {
+      "n": 9,
+      "mape_pct": {
+        "base": 18.710056964468535,
+        "spatial": 18.76023210005396,
+        "regional": 19.325131516821227
+      },
+      "signed_mean_pct": {
+        "base": 3.5415326567662464,
+        "spatial": 4.737961465644873,
+        "regional": 4.614062642241517
+      },
+      "median_abs_pct": {
+        "base": 16.737103457747573,
+        "spatial": 18.089637640454548,
+        "regional": 18.98151149496725
+      },
+      "mc_95_pct": {
+        "base": [
+          18.710056964468535,
+          18.710056964468542
+        ],
+        "spatial": [
+          18.08118476746469,
+          19.524224735791414
+        ],
+        "regional": [
+          18.592499238849904,
+          20.103858033762226
+        ]
+      },
+      "mape_differences_pp": {
+        "spatial_minus_base": {
+          "value": 0.05017513558542319,
+          "mc_95": [
+            -0.6288721970038428,
+            0.8141677713228797
+          ]
+        },
+        "regional_minus_base": {
+          "value": 0.6150745523526915,
+          "mc_95": [
+            -0.11755772561863798,
+            1.3938010692936893
+          ]
+        },
+        "spatial_minus_regional": {
+          "value": -0.5648994167672683,
+          "mc_95": [
+            -1.3349962140110305,
+            0.2096837158186942
+          ]
+        }
+      }
+    },
+    "clear_and_distance": {
+      "n": 6,
+      "mape_pct": {
+        "base": 30.741602013017243,
+        "spatial": 32.543754755428914,
+        "regional": 32.300957460051904
+      },
+      "signed_mean_pct": {
+        "base": 30.741602013017243,
+        "spatial": 32.543754755428914,
+        "regional": 32.300957460051904
+      },
+      "median_abs_pct": {
+        "base": 31.742288022726875,
+        "spatial": 32.38075852225559,
+        "regional": 33.56217868293804
+      },
+      "mc_95_pct": {
+        "base": [
+          30.741602013017243,
+          30.741602013017243
+        ],
+        "spatial": [
+          30.20062548023403,
+          35.05279875911238
+        ],
+        "regional": [
+          29.94513997335336,
+          34.76470245398657
+        ]
+      },
+      "mape_differences_pp": {
+        "spatial_minus_base": {
+          "value": 1.8021527424116712,
+          "mc_95": [
+            -0.5409765327832132,
+            4.311196746095137
+          ]
+        },
+        "regional_minus_base": {
+          "value": 1.5593554470346618,
+          "mc_95": [
+            -0.7964620396638821,
+            4.023100440969333
+          ]
+        },
+        "spatial_minus_regional": {
+          "value": 0.24279729537700945,
+          "mc_95": [
+            -1.0455847697269132,
+            1.5427704698225744
+          ]
+        }
+      }
+    },
+    "all_except_calibration": {
+      "n": 11,
+      "mape_pct": {
+        "base": 23.836675435306958,
+        "spatial": 25.493920426129623,
+        "regional": 25.214188821946912
+      },
+      "signed_mean_pct": {
+        "base": 23.836675435306958,
+        "spatial": 25.493920426129623,
+        "regional": 25.214188821946912
+      },
+      "median_abs_pct": {
+        "base": 17.731403322408077,
+        "spatial": 18.755146314047757,
+        "regional": 18.200309826780227
+      },
+      "mc_95_pct": {
+        "base": [
+          23.836675435306958,
+          23.836675435306958
+        ],
+        "spatial": [
+          23.36411003740625,
+          27.774967184255484
+        ],
+        "regional": [
+          23.08190932259874,
+          27.49588369809476
+        ]
+      },
+      "mape_differences_pp": {
+        "spatial_minus_base": {
+          "value": 1.6572449908226652,
+          "mc_95": [
+            -0.47256539790070823,
+            3.9382917489485263
+          ]
+        },
+        "regional_minus_base": {
+          "value": 1.3775133866399543,
+          "mc_95": [
+            -0.7547661127082185,
+            3.659208262787803
+          ]
+        },
+        "spatial_minus_regional": {
+          "value": 0.2797316041827109,
+          "mc_95": [
+            -0.6204446325441031,
+            1.1711792450947138
+          ]
+        }
+      }
+    },
+    "rows": [
+      {
+        "date": "2022-10-01",
+        "readings": 30,
+        "observed_relative": 4.3878102131910595,
+        "aod_regional": 0.06920178269907169,
+        "aod_at_station": 0.0929391973750004,
+        "aod_grid_min": 0.02,
+        "aod_grid_max": 0.14500000000000002,
+        "runs": {
+          "base": "2023/base",
+          "regional": "2022-10-01/regional",
+          "spatial": "2022-10-01/spatial"
+        },
+        "sun_altitude_deg": [
+          -45.94338837482379,
+          -47.53924351780769,
+          -48.1533744166695
+        ],
+        "moon_altitude_deg": [
+          -18.64724451319909,
+          -23.447721765772446,
+          -28.348557697543413
+        ],
+        "natural_relative": 1.4454397707459257,
+        "weather": {
+          "passes": true,
+          "maxima": {
+            "cloud_cover": 0.0,
+            "precipitation": 0.0,
+            "relative_humidity_2m": 75.0,
+            "era5_land_snow_depth": 0.0
+          },
+          "missing": {
+            "cloud_cover": 0,
+            "precipitation": 0,
+            "relative_humidity_2m": 0,
+            "era5_land_snow_depth": 0
+          },
+          "era5_cells": 4,
+          "era5_land_cells": 7
+        },
+        "artificial_from_lt3km_pct": 10.60400552096551,
+        "artificial_from_3_to_10km_pct_of_outside_3km": 38.02327513279399,
+        "artificial_from_lt10km_pct": 44.59529045942612,
+        "passes_distance_check": true,
+        "signed_error_pct": {
+          "base": 0.0,
+          "spatial": 0.9668464933993315,
+          "regional": 0.7858894703631991
+        },
+        "mc_se_pp": {
+          "base": 0.0,
+          "spatial": 1.221084011404691,
+          "regional": 1.2367311673805976
+        },
+        "natural_fraction_pct": 32.9421670609295,
+        "beyond_first_order_pct": {
+          "base": 36.513850335562935,
+          "regional": 30.672912697930176,
+          "spatial": 35.845595357786074
+        }
+      },
+      {
+        "date": "2022-10-27",
+        "readings": 30,
+        "observed_relative": 3.726966713524188,
+        "aod_regional": 0.12533815506803014,
+        "aod_at_station": 0.13745512500000046,
+        "aod_grid_min": 0.03,
+        "aod_grid_max": 0.31,
+        "runs": {
+          "base": "2023/base",
+          "regional": "2022-10-27/regional",
+          "spatial": "2022-10-27/spatial"
+        },
+        "sun_altitude_deg": [
+          -55.499614727601205,
+          -57.19687870321435,
+          -57.704995625393536
+        ],
+        "moon_altitude_deg": [
+          -47.388210634756405,
+          -52.20205692025279,
+          -56.778267844465354
+        ],
+        "natural_relative": 1.4454397707459257,
+        "weather": {
+          "passes": false,
+          "maxima": {
+            "cloud_cover": 32.0,
+            "precipitation": 0.0,
+            "relative_humidity_2m": 93.0,
+            "era5_land_snow_depth": 0.0
+          },
+          "missing": {
+            "cloud_cover": 0,
+            "precipitation": 0,
+            "relative_humidity_2m": 0,
+            "era5_land_snow_depth": 0
+          },
+          "era5_cells": 4,
+          "era5_land_cells": 7
+        },
+        "artificial_from_lt3km_pct": 10.60400552096551,
+        "artificial_from_3_to_10km_pct_of_outside_3km": 38.02327513279399,
+        "artificial_from_lt10km_pct": 44.59529045942612,
+        "passes_distance_check": true,
+        "signed_error_pct": {
+          "base": 17.731403322408077,
+          "spatial": 18.755146314047757,
+          "regional": 18.200309826780227
+        },
+        "mc_se_pp": {
+          "base": 3.3467584219501827e-12,
+          "spatial": 1.439246603869023,
+          "regional": 1.4411248500682636
+        },
+        "natural_fraction_pct": 38.783275565644374,
+        "beyond_first_order_pct": {
+          "base": 36.513850335562935,
+          "regional": 40.35957549892706,
+          "spatial": 42.60728084385109
+        }
+      },
+      {
+        "date": "2022-10-28",
+        "readings": 30,
+        "observed_relative": 3.931534022518776,
+        "aod_regional": 0.13977389381756522,
+        "aod_at_station": 0.2524366447499999,
+        "aod_grid_min": 0.06,
+        "aod_grid_max": 0.37,
+        "runs": {
+          "base": "2023/base",
+          "regional": "2022-10-28/regional",
+          "spatial": "2022-10-28/spatial"
+        },
+        "sun_altitude_deg": [
+          -55.82357044151957,
+          -57.530038610797675,
+          -58.038778031168654
+        ],
+        "moon_altitude_deg": [
+          -39.24933929981352,
+          -44.26821341212155,
+          -49.23718766946385
+        ],
+        "natural_relative": 1.4454397707459257,
+        "weather": {
+          "passes": true,
+          "maxima": {
+            "cloud_cover": 0.0,
+            "precipitation": 0.0,
+            "relative_humidity_2m": 94.0,
+            "era5_land_snow_depth": 0.0
+          },
+          "missing": {
+            "cloud_cover": 0,
+            "precipitation": 0,
+            "relative_humidity_2m": 0,
+            "era5_land_snow_depth": 0
+          },
+          "era5_cells": 4,
+          "era5_land_cells": 7
+        },
+        "artificial_from_lt3km_pct": 10.60400552096551,
+        "artificial_from_3_to_10km_pct_of_outside_3km": 38.02327513279399,
+        "artificial_from_lt10km_pct": 44.59529045942612,
+        "passes_distance_check": true,
+        "signed_error_pct": {
+          "base": 11.60555111716841,
+          "spatial": 13.774218344265954,
+          "regional": 12.584075206757506
+        },
+        "mc_se_pp": {
+          "base": 2.261371269183961e-12,
+          "spatial": 1.3652475928860297,
+          "regional": 1.3723596972134038
+        },
+        "natural_fraction_pct": 36.76528709828868,
+        "beyond_first_order_pct": {
+          "base": 36.513850335562935,
+          "regional": 42.3951858327097,
+          "spatial": 58.783866003344265
+        }
+      },
+      {
+        "date": "2022-10-30",
+        "readings": 30,
+        "observed_relative": 4.156412651171886,
+        "aod_regional": 0.1492435750851958,
+        "aod_at_station": 0.2607792895000007,
+        "aod_grid_min": 0.04,
+        "aod_grid_max": 0.3,
+        "runs": {
+          "base": "2023/base",
+          "regional": "2022-10-30/regional",
+          "spatial": "2022-10-30/spatial"
+        },
+        "sun_altitude_deg": [
+          -56.45790037533806,
+          -58.1842917382881,
+          -58.69579765414482
+        ],
+        "moon_altitude_deg": [
+          -19.001257091359637,
+          -23.760026752607782,
+          -28.620412302402613
+        ],
+        "natural_relative": 1.4454397707459257,
+        "weather": {
+          "passes": false,
+          "maxima": {
+            "cloud_cover": 26.0,
+            "precipitation": 0.0,
+            "relative_humidity_2m": 90.0,
+            "era5_land_snow_depth": 0.0
+          },
+          "missing": {
+            "cloud_cover": 0,
+            "precipitation": 0,
+            "relative_humidity_2m": 0,
+            "era5_land_snow_depth": 0
+          },
+          "era5_cells": 4,
+          "era5_land_cells": 7
+        },
+        "artificial_from_lt3km_pct": 10.60400552096551,
+        "artificial_from_3_to_10km_pct_of_outside_3km": 38.02327513279399,
+        "artificial_from_lt10km_pct": 44.59529045942612,
+        "passes_distance_check": true,
+        "signed_error_pct": {
+          "base": 5.5672422696993795,
+          "spatial": 7.269357497373341,
+          "regional": 5.937590143486404
+        },
+        "mc_se_pp": {
+          "base": 1.2612518469132854e-13,
+          "spatial": 1.2836334537012504,
+          "regional": 1.286196373900356
+        },
+        "natural_fraction_pct": 34.77613731010055,
+        "beyond_first_order_pct": {
+          "base": 36.513850335562935,
+          "regional": 43.90651222020047,
+          "spatial": 59.579020781412886
+        }
+      },
+      {
+        "date": "2022-10-31",
+        "readings": 29,
+        "observed_relative": 3.80147768826637,
+        "aod_regional": 0.12886614938255264,
+        "aod_at_station": 0.3205261118750008,
+        "aod_grid_min": 0.04,
+        "aod_grid_max": 0.385,
+        "runs": {
+          "base": "2023/base",
+          "regional": "2022-10-31/regional",
+          "spatial": "2022-10-31/spatial"
+        },
+        "sun_altitude_deg": [
+          -56.767997055258704,
+          -58.505124133500075,
+          -59.01880639030638
+        ],
+        "moon_altitude_deg": [
+          -8.001803412019184,
+          -12.515681481008407,
+          -17.189218417098385
+        ],
+        "natural_relative": 1.4454397707459257,
+        "weather": {
+          "passes": true,
+          "maxima": {
+            "cloud_cover": 5.0,
+            "precipitation": 0.0,
+            "relative_humidity_2m": 92.0,
+            "era5_land_snow_depth": 0.0
+          },
+          "missing": {
+            "cloud_cover": 0,
+            "precipitation": 0,
+            "relative_humidity_2m": 0,
+            "era5_land_snow_depth": 0
+          },
+          "era5_cells": 4,
+          "era5_land_cells": 7
+        },
+        "artificial_from_lt3km_pct": 10.60400552096551,
+        "artificial_from_3_to_10km_pct_of_outside_3km": 38.02327513279399,
+        "artificial_from_lt10km_pct": 44.59529045942612,
+        "passes_distance_check": true,
+        "signed_error_pct": {
+          "base": 15.423805504224376,
+          "spatial": 18.042756337285827,
+          "regional": 16.258545149755932
+        },
+        "mc_se_pp": {
+          "base": 1.620086879415375e-12,
+          "spatial": 1.4252279378490542,
+          "regional": 1.4131396625323318
+        },
+        "natural_fraction_pct": 38.02310283728393,
+        "beyond_first_order_pct": {
+          "base": 36.513850335562935,
+          "regional": 41.2441270484868,
+          "spatial": 64.29081777347506
+        }
+      },
+      {
+        "date": "2023-02-12",
+        "readings": 30,
+        "observed_relative": 3.3678529842414457,
+        "aod_regional": 0.09974180641345821,
+        "aod_at_station": 0.15079495790000016,
+        "aod_grid_min": 0.03,
+        "aod_grid_max": 0.18,
+        "runs": {
+          "base": "2023/base",
+          "regional": "2023-02-12/regional",
+          "spatial": "2023-02-12/spatial"
+        },
+        "sun_altitude_deg": [
+          -53.24281188754894,
+          -55.98420851333038,
+          -57.69938871681214
+        ],
+        "moon_altitude_deg": [
+          -18.171726040085392,
+          -13.232346423292865,
+          -8.378971857962808
+        ],
+        "natural_relative": 1.4454397707459257,
+        "weather": {
+          "passes": true,
+          "maxima": {
+            "cloud_cover": 1.0,
+            "precipitation": 0.0,
+            "relative_humidity_2m": 71.0,
+            "era5_land_snow_depth": 0.0
+          },
+          "missing": {
+            "cloud_cover": 0,
+            "precipitation": 0,
+            "relative_humidity_2m": 0,
+            "era5_land_snow_depth": 0
+          },
+          "era5_cells": 4,
+          "era5_land_cells": 7
+        },
+        "artificial_from_lt3km_pct": 10.60400552096551,
+        "artificial_from_3_to_10km_pct_of_outside_3km": 38.02327513279399,
+        "artificial_from_lt10km_pct": 44.59529045942612,
+        "passes_distance_check": true,
+        "signed_error_pct": {
+          "base": 30.28508767223823,
+          "spatial": 31.88585425570778,
+          "regional": 32.94141490713378
+        },
+        "mc_se_pp": {
+          "base": 1.3323082889929071e-12,
+          "spatial": 1.602891760865794,
+          "regional": 1.6590586499130069
+        },
+        "natural_fraction_pct": 42.91873123646718,
+        "beyond_first_order_pct": {
+          "base": 36.513850335562935,
+          "regional": 35.75335624424712,
+          "spatial": 45.44098743347173
+        }
+      },
+      {
+        "date": "2023-02-13",
+        "readings": 30,
+        "observed_relative": 3.2941644647288184,
+        "aod_regional": 0.09562841121850915,
+        "aod_at_station": 0.15779606184999967,
+        "aod_grid_min": 0.04,
+        "aod_grid_max": 0.2,
+        "runs": {
+          "base": "2023/base",
+          "regional": "2023-02-13/regional",
+          "spatial": "2023-02-13/spatial"
+        },
+        "sun_altitude_deg": [
+          -52.94254863226324,
+          -55.6662133997951,
+          -57.36804159895049
+        ],
+        "moon_altitude_deg": [
+          -29.76811073407491,
+          -24.795200901096138,
+          -19.870182779469534
+        ],
+        "natural_relative": 1.4454397707459257,
+        "weather": {
+          "passes": true,
+          "maxima": {
+            "cloud_cover": 0.0,
+            "precipitation": 0.0,
+            "relative_humidity_2m": 89.0,
+            "era5_land_snow_depth": 0.0
+          },
+          "missing": {
+            "cloud_cover": 0,
+            "precipitation": 0,
+            "relative_humidity_2m": 0,
+            "era5_land_snow_depth": 0
+          },
+          "era5_cells": 4,
+          "era5_land_cells": 7
+        },
+        "artificial_from_lt3km_pct": 10.60400552096551,
+        "artificial_from_3_to_10km_pct_of_outside_3km": 38.02327513279399,
+        "artificial_from_lt10km_pct": 44.59529045942612,
+        "passes_distance_check": true,
+        "signed_error_pct": {
+          "base": 33.199488373215516,
+          "spatial": 32.8756627888034,
+          "regional": 34.182942458742296
+        },
+        "mc_se_pp": {
+          "base": 1.1582200058978338e-11,
+          "spatial": 1.598262611980683,
+          "regional": 1.64659070834697
+        },
+        "natural_fraction_pct": 43.87879798420802,
+        "beyond_first_order_pct": {
+          "base": 36.513850335562935,
+          "regional": 36.20868418813259,
+          "spatial": 45.12561263292536
+        }
+      },
+      {
+        "date": "2023-02-14",
+        "readings": 30,
+        "observed_relative": 3.0155588397970825,
+        "aod_regional": 0.11756929709680052,
+        "aod_at_station": 0.28393050922499985,
+        "aod_grid_min": 0.02,
+        "aod_grid_max": 0.365,
+        "runs": {
+          "base": "2023/base",
+          "regional": "2023-02-14/regional",
+          "spatial": "2023-02-14/spatial"
+        },
+        "sun_altitude_deg": [
+          -52.63975749613886,
+          -55.34536682538141,
+          -57.033478651297905
+        ],
+        "moon_altitude_deg": [
+          -41.39242006369638,
+          -36.419283511934765,
+          -31.44762132629403
+        ],
+        "natural_relative": 1.4454397707459257,
+        "weather": {
+          "passes": true,
+          "maxima": {
+            "cloud_cover": 0.0,
+            "precipitation": 0.0,
+            "relative_humidity_2m": 94.0,
+            "era5_land_snow_depth": 0.0
+          },
+          "missing": {
+            "cloud_cover": 0,
+            "precipitation": 0,
+            "relative_humidity_2m": 0,
+            "era5_land_snow_depth": 0
+          },
+          "era5_cells": 4,
+          "era5_land_cells": 7
+        },
+        "artificial_from_lt3km_pct": 10.60400552096551,
+        "artificial_from_3_to_10km_pct_of_outside_3km": 38.02327513279399,
+        "artificial_from_lt10km_pct": 44.59529045942612,
+        "passes_distance_check": true,
+        "signed_error_pct": {
+          "base": 45.50570711086892,
+          "spatial": 47.848447365357806,
+          "regional": 47.26007722998673
+        },
+        "mc_se_pp": {
+          "base": 6.579826536572971e-12,
+          "spatial": 1.7825003392235634,
+          "regional": 1.7842848406940508
+        },
+        "natural_fraction_pct": 47.93273311964921,
+        "beyond_first_order_pct": {
+          "base": 36.513850335562935,
+          "regional": 39.33955865606854,
+          "spatial": 60.40473318291626
+        }
+      },
+      {
+        "date": "2023-02-15",
+        "readings": 30,
+        "observed_relative": 2.9561483743398833,
+        "aod_regional": 0.13464281575606446,
+        "aod_at_station": 0.30437855002500014,
+        "aod_grid_min": 0.03,
+        "aod_grid_max": 0.345,
+        "runs": {
+          "base": "2023/base",
+          "regional": "2023-02-15/regional",
+          "spatial": "2023-02-15/spatial"
+        },
+        "sun_altitude_deg": [
+          -52.33449803817427,
+          -55.02174496503847,
+          -56.69579552637971
+        ],
+        "moon_altitude_deg": [
+          -52.7182706235244,
+          -47.83828474321819,
+          -42.882426449915236
+        ],
+        "natural_relative": 1.4454397707459257,
+        "weather": {
+          "passes": true,
+          "maxima": {
+            "cloud_cover": 1.0,
+            "precipitation": 0.0,
+            "relative_humidity_2m": 95.0,
+            "era5_land_snow_depth": 0.0
+          },
+          "missing": {
+            "cloud_cover": 0,
+            "precipitation": 0,
+            "relative_humidity_2m": 0,
+            "era5_land_snow_depth": 0
+          },
+          "era5_cells": 4,
+          "era5_land_cells": 7
+        },
+        "artificial_from_lt3km_pct": 10.60400552096551,
+        "artificial_from_3_to_10km_pct_of_outside_3km": 38.02327513279399,
+        "artificial_from_lt10km_pct": 44.59529045942612,
+        "passes_distance_check": true,
+        "signed_error_pct": {
+          "base": 48.429972300388016,
+          "spatial": 50.83558944115272,
+          "regional": 50.57868980793516
+        },
+        "mc_se_pp": {
+          "base": 5.030796099237217e-12,
+          "spatial": 1.8137907523907342,
+          "regional": 1.8294172970157423
+        },
+        "natural_fraction_pct": 48.8960494436852,
+        "beyond_first_order_pct": {
+          "base": 36.513850335562935,
+          "regional": 42.06435210444002,
+          "spatial": 63.04798660021426
+        }
+      },
+      {
+        "date": "2023-07-14",
+        "readings": 29,
+        "observed_relative": 3.9941128919534497,
+        "aod_regional": 0.13952252506635543,
+        "aod_at_station": 0.1584209579000001,
+        "aod_grid_min": 0.07,
+        "aod_grid_max": 0.23,
+        "runs": {
+          "base": "2023/base",
+          "regional": "2023-07-14/regional",
+          "spatial": "2023-07-14/spatial"
+        },
+        "sun_altitude_deg": [
+          -20.699869004976893,
+          -22.156927736514085,
+          -22.94753492127758
+        ],
+        "moon_altitude_deg": [
+          -17.360794286360093,
+          -15.81085364025685,
+          -13.732578776772774
+        ],
+        "natural_relative": 1.4454397707459257,
+        "weather": {
+          "passes": true,
+          "maxima": {
+            "cloud_cover": 3.0,
+            "precipitation": 0.0,
+            "relative_humidity_2m": 71.0,
+            "era5_land_snow_depth": 0.0
+          },
+          "missing": {
+            "cloud_cover": 0,
+            "precipitation": 0,
+            "relative_humidity_2m": 0,
+            "era5_land_snow_depth": 0
+          },
+          "era5_cells": 4,
+          "era5_land_cells": 7
+        },
+        "artificial_from_lt3km_pct": 10.60400552096551,
+        "artificial_from_3_to_10km_pct_of_outside_3km": 38.02327513279399,
+        "artificial_from_lt10km_pct": 44.59529045942612,
+        "passes_distance_check": true,
+        "signed_error_pct": {
+          "base": 9.85694024900381,
+          "spatial": 12.141482740901633,
+          "regional": 10.473634734754956
+        },
+        "mc_se_pp": {
+          "base": 3.5066354166293315e-12,
+          "spatial": 1.3603467577064174,
+          "regional": 1.3423741450555198
+        },
+        "natural_fraction_pct": 36.18925678485233,
+        "beyond_first_order_pct": {
+          "base": 36.513850335562935,
+          "regional": 42.72053018082573,
+          "spatial": 46.490324802494385
+        }
+      },
+      {
+        "date": "2023-07-16",
+        "readings": 30,
+        "observed_relative": 3.868236769518041,
+        "aod_regional": 0.14978340187844577,
+        "aod_at_station": 0.1630160828999994,
+        "aod_grid_min": 0.07,
+        "aod_grid_max": 0.365,
+        "runs": {
+          "base": "2023/base",
+          "regional": "2023-07-16/regional",
+          "spatial": "2023-07-16/spatial"
+        },
+        "sun_altitude_deg": [
+          -20.99819044327669,
+          -22.466198581742223,
+          -23.265191629884704
+        ],
+        "moon_altitude_deg": [
+          -17.533808394364097,
+          -18.10082845472834,
+          -18.076096829877
+        ],
+        "natural_relative": 1.4454397707459257,
+        "weather": {
+          "passes": false,
+          "maxima": {
+            "cloud_cover": 24.0,
+            "precipitation": 0.0,
+            "relative_humidity_2m": 84.0,
+            "era5_land_snow_depth": 0.0
+          },
+          "missing": {
+            "cloud_cover": 0,
+            "precipitation": 0,
+            "relative_humidity_2m": 0,
+            "era5_land_snow_depth": 0
+          },
+          "era5_cells": 4,
+          "era5_land_cells": 7
+        },
+        "artificial_from_lt3km_pct": 10.60400552096551,
+        "artificial_from_3_to_10km_pct_of_outside_3km": 38.02327513279399,
+        "artificial_from_lt10km_pct": 44.59529045942612,
+        "passes_distance_check": true,
+        "signed_error_pct": {
+          "base": 13.431790105695995,
+          "spatial": 15.04416164711142,
+          "regional": 15.903492999235214
+        },
+        "mc_se_pp": {
+          "base": 3.3307707224822678e-12,
+          "spatial": 1.3913930258965603,
+          "regional": 1.4185018142874732
+        },
+        "natural_fraction_pct": 37.366889796821276,
+        "beyond_first_order_pct": {
+          "base": 36.513850335562935,
+          "regional": 44.3287769924685,
+          "spatial": 46.557264385591445
+        }
+      },
+      {
+        "date": "2023-07-17",
+        "readings": 30,
+        "observed_relative": 3.345223179190647,
+        "aod_regional": 0.20052693396278246,
+        "aod_at_station": 0.20310982237499947,
+        "aod_grid_min": 0.09,
+        "aod_grid_max": 0.36,
+        "runs": {
+          "base": "2023/base",
+          "regional": "2023-07-17/regional",
+          "spatial": "2023-07-17/spatial"
+        },
+        "sun_altitude_deg": [
+          -21.156823096146326,
+          -22.630226390923244,
+          -23.43323757329327
+        ],
+        "moon_altitude_deg": [
+          -16.92126283248867,
+          -18.519856675072155,
+          -19.544733313112804
+        ],
+        "natural_relative": 1.4454397707459257,
+        "weather": {
+          "passes": true,
+          "maxima": {
+            "cloud_cover": 7.0,
+            "precipitation": 0.0,
+            "relative_humidity_2m": 62.0,
+            "era5_land_snow_depth": 0.0
+          },
+          "missing": {
+            "cloud_cover": 0,
+            "precipitation": 0,
+            "relative_humidity_2m": 0,
+            "era5_land_snow_depth": 0
+          },
+          "era5_cells": 4,
+          "era5_land_cells": 7
+        },
+        "artificial_from_lt3km_pct": 10.60400552096551,
+        "artificial_from_3_to_10km_pct_of_outside_3km": 38.02327513279399,
+        "artificial_from_lt10km_pct": 44.59529045942612,
+        "passes_distance_check": true,
+        "signed_error_pct": {
+          "base": 31.166441763465812,
+          "spatial": 31.960447955418193,
+          "regional": 33.0353045768478
+        },
+        "mc_se_pp": {
+          "base": 4.764334441438636e-12,
+          "spatial": 1.569703268622959,
+          "regional": 1.6003367111770361
+        },
+        "natural_fraction_pct": 43.20906837359771,
+        "beyond_first_order_pct": {
+          "base": 36.513850335562935,
+          "regional": 51.60863224230228,
+          "spatial": 51.77710522701267
+        }
+      }
+    ],
+    "map_year": 2023,
+    "transport_sha256": "140bea718a20592b2e8ad57104bc8af86915dfc3b456c584d74e9cb7b120ad47"
+  }
+}

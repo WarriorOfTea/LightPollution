@@ -54,25 +54,26 @@ class GridAtmosphere(Atmosphere):
 
 
 class NearBoundary:
-    labels = ('outside_3km', 'outside_10km')
-
-    def __init__(self, arrays, observer):
+    def __init__(self, arrays, observer, bounds=BOUNDS, radii_km=(3, 10)):
+        self.bounds = bounds
+        self.labels = tuple(f'outside_{radius}km' for radius in radii_km)
         key = 'NearNadir_Composite_Snow_Free'
         self.known = good_mask(arrays[key], arrays[key+'_Quality'], arrays[key+'_Num']) & np.isin(
             arrays['Land_Water_Mask'], [0, 1, 5])
-        self.radiance = np.where(self.known, arrays[key], 0)
-        normals = unit_position(BOUNDS.latitude[:,None], BOUNDS.longitude[None,:])
+        radiance = np.where(self.known, arrays[key], 0)
+        normals = unit_position(bounds.latitude[:,None], bounds.longitude[None,:])
         chord = np.linalg.norm(normals-unit_position(observer.latitude_deg, observer.longitude_deg), axis=-1)
         distance = 2*EARTH_RADIUS_M*np.arcsin(np.minimum(1, chord/2))
-        self.radiance = np.stack([np.where(distance >= r, self.radiance, 0) for r in (3000, 10000)], axis=-1)
+        self.radiance = np.stack([np.where(distance >= radius * 1000, radiance, 0)
+                                  for radius in radii_km], axis=-1)
         self.upper_bounds = self.radiance.max(axis=(0, 1))
 
     def sample(self, points, outgoing):
         x, y, z = points.T
         lat = np.rad2deg(np.arctan2(z,np.hypot(x,y)))
         lon = np.rad2deg(np.arctan2(y,x))
-        row = np.floor((BOUNDS.north-lat)*PIXELS_PER_DEGREE).astype(int)
-        col = np.floor((lon-BOUNDS.west)*PIXELS_PER_DEGREE).astype(int)
+        row = np.floor((self.bounds.north-lat)*PIXELS_PER_DEGREE).astype(int)
+        col = np.floor((lon-self.bounds.west)*PIXELS_PER_DEGREE).astype(int)
         n, m = self.known.shape
         inside = (row >= 0) & (row < n) & (col >= 0) & (col < m)
         row, col = row.clip(0,n-1), col.clip(0,m-1)
