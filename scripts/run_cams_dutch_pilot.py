@@ -8,7 +8,7 @@ import numpy as np
 
 from lightpollution.adapters.storage import file_hash, write_json
 from lightpollution.data import Bounds, read_region
-from lightpollution.physics import Atmosphere, Observer, SolverSettings, integrate_direction
+from lightpollution.physics import Atmosphere, Observer, SolverSettings, integrate_direction, quadrature
 from lightpollution.sources import regional_sources
 from run_photometer_aod_pilot import spatial_responses
 
@@ -18,6 +18,19 @@ SITES = {'Texel': (53.007, 4.7792), 'Borkum': (53.582, 6.664),
          'Moddergat': (53.40656, 6.06985), 'Lauwersoog': (53.4, 6.6),
          'Spiekeroog': (53.765, 7.726)}
 BOUNDS = Bounds(3.6, 50.8, 8.4, 54.4)
+
+def area_mean_aod(grid, latitudes, longitudes):
+    """Average the bilinear field over the rectangle spanned by its nodes."""
+    # Longitude interpolation is linear; latitude is weighted by spherical area.
+    longitude_mean = np.trapezoid(grid, x=longitudes, axis=-1) / (longitudes[-1] - longitudes[0])
+    latitude = np.deg2rad(latitudes)
+    span = np.diff(latitude)
+    integral = np.zeros(longitude_mean.shape[:-1])
+    nodes, weights = quadrature(8)
+    for t, weight in zip(nodes, weights, strict=True):
+        values = (1 - t) * longitude_mean[..., :-1] + t * longitude_mean[..., 1:]
+        integral += weight * np.sum(values * np.cos(latitude[:-1] + t * span) * span, axis=-1)
+    return integral / (np.sin(latitude[-1]) - np.sin(latitude[0]))
 
 
 def load_aod(path, days):
@@ -74,8 +87,7 @@ def main():
     selection = json.loads(args.selection.read_text())
     days = sorted({r['day'] for rows in selection.values() for r in rows})
     lat, lon, grid = load_aod(args.cams, days)
-    weights = np.broadcast_to(np.cos(np.deg2rad(lat))[:, None], grid.shape)
-    regional = np.average(grid, weights=weights, axis=(1, 2))
+    regional = area_mean_aod(grid, lat, lon)
     arrays, tiles = read_region(args.satellite, BOUNDS, 2024, 1)
     variants = ('current', 'cams_region', 'cams_spatial')
     output = []

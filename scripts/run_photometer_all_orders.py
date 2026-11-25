@@ -13,7 +13,7 @@ from lightpollution.models.background import BackgroundModel, background_config
 from lightpollution.models.boundary_orders import integrate_boundary_variants
 from lightpollution.observation import observation_context
 from lightpollution.physics import EARTH_RADIUS_M, Atmosphere, Observer, unit_position
-from run_cams_dutch_pilot import BOUNDS, SITES
+from run_cams_dutch_pilot import BOUNDS, SITES, area_mean_aod
 
 
 @dataclass(frozen=True)
@@ -123,6 +123,8 @@ def main():
                         help='Refine only the two calibration/check pairs.')
     args = parser.parse_args()
     pilot = read_json(args.pilot)
+    regional_aod = area_mean_aod(np.asarray(pilot['aod_grid']), np.asarray(pilot['grid_latitudes']),
+                                 np.asarray(pilot['grid_longitudes']))
     arrays, tiles = read_region(args.satellite, BOUNDS, 2024, 1)
     rows, distances, current = [], {}, {}
     for (a, p), (b, q) in combinations(SITES.items(),2):
@@ -147,7 +149,7 @@ def main():
         grid = GridAtmosphere(latitudes=tuple(pilot['grid_latitudes']),
                               longitudes=tuple(pilot['grid_longitudes']),
                               grid=tuple(map(tuple,pilot['aod_grid'][j])))
-        regional = replace(atmosphere,aerosol_optical_depth=row['aod_area_mean'])
+        regional = replace(atmosphere,aerosol_optical_depth=float(regional_aod[j]))
         context = observation_context(observer,day+'T22:30:00Z',0,90)
         natural = BackgroundModel(background_config({}),observer,regional,21.6).evaluate(
             np.array([0]),np.array([90]),context)[0]['natural_relative']
@@ -167,6 +169,7 @@ def main():
         raise RuntimeError('Zenith normalization must agree across windows.')
     write_json(args.output,{'samples_per_run':args.samples,'runs':runs,
                            'pilot_sha256':file_hash(args.pilot),'tiles':{k:v['sha256'] for k,v in tiles.items()},
+                           'regional_aod':dict(zip(pilot['days'],regional_aod.tolist(),strict=True)),
                            'distances_km':distances,'background_v_mag':21.6,'background_relative':natural,
                            'rows':rows,'checks':score(rows,natural),
                            'background_sensitivity':score(rows,10**(-.4*(22-22)))})

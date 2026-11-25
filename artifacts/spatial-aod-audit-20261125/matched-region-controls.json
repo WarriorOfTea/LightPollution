@@ -1,0 +1,407 @@
+{
+  "samples_per_run": 2097152,
+  "runs": 6,
+  "pilot_sha256": "1297087b503447ca747387d20f586a4fb59ca33237cc30af7b3a15f063d4c5cb",
+  "tiles": {
+    "h18v03": "465ad4a1b06ae2fb8030529a879433b1518c5554bb8d065fc813595fc9f482c4"
+  },
+  "regional_aod": {
+    "2024-01-08": 0.03251780529781447,
+    "2024-01-09": 0.03819376989577656,
+    "2024-01-10": 0.06584713760678718
+  },
+  "distances_km": {
+    "Texel / Borkum": 140.63392579219953,
+    "Texel / Lochem": 144.94223172709147,
+    "Texel / Gorredijk": 86.36123042883055,
+    "Texel / Vlieland-Oost": 38.22543465924991,
+    "Texel / Schiermonnikoog-dorp": 106.38199816331675,
+    "Texel / Moddergat": 96.7560205236186,
+    "Texel / Lauwersoog": 128.89943455235357,
+    "Texel / Spiekeroog": 212.80859563082785,
+    "Borkum / Lochem": 159.03528435845593,
+    "Borkum / Gorredijk": 74.85802452470021,
+    "Borkum / Vlieland-Oost": 109.64185264599827,
+    "Borkum / Schiermonnikoog-dorp": 34.652007665847734,
+    "Borkum / Moddergat": 43.87805455129609,
+    "Borkum / Lauwersoog": 20.675628456320094,
+    "Borkum / Spiekeroog": 72.85292719312139,
+    "Lochem / Gorredijk": 97.26663303635597,
+    "Lochem / Vlieland-Oost": 155.3561721701389,
+    "Lochem / Schiermonnikoog-dorp": 147.78564608249692,
+    "Lochem / Moddergat": 140.48578666951175,
+    "Lochem / Lauwersoog": 138.47250838610768,
+    "Lochem / Spiekeroog": 199.03846841715307,
+    "Gorredijk / Vlieland-Oost": 73.65047566554085,
+    "Gorredijk / Schiermonnikoog-dorp": 52.77716498736731,
+    "Gorredijk / Moddergat": 44.0954612416229,
+    "Gorredijk / Lauwersoog": 55.91553734059184,
+    "Gorredijk / Spiekeroog": 138.22741786726536,
+    "Vlieland-Oost / Schiermonnikoog-dorp": 75.04893847671873,
+    "Vlieland-Oost / Moddergat": 66.91328833667035,
+    "Vlieland-Oost / Lauwersoog": 101.66257271804083,
+    "Vlieland-Oost / Spiekeroog": 182.49148451053074,
+    "Schiermonnikoog-dorp / Moddergat": 10.524700163013984,
+    "Schiermonnikoog-dorp / Lauwersoog": 29.99715408218019,
+    "Schiermonnikoog-dorp / Spiekeroog": 107.48968206169401,
+    "Moddergat / Lauwersoog": 35.152229424975395,
+    "Moddergat / Spiekeroog": 116.35384187372243,
+    "Lauwersoog / Spiekeroog": 84.6874200155598
+  },
+  "background_v_mag": 21.6,
+  "background_relative": 1.4454397707459257,
+  "rows": [
+    {
+      "site": "Vlieland-Oost",
+      "day": "2024-01-09",
+      "n": 85,
+      "observed_relative": 2.149499376239798,
+      "natural_relative": 1.4454397707459257,
+      "variants": {
+        "current": {
+          "all": 0.006745521552022319,
+          "all_se": 0.001428611779483452,
+          "first": 0.0030224854177898965,
+          "first_se": 0.0011539935448192198,
+          "all_first_cov": 1.3316957357180025e-06,
+          "far": 0.006720579415462866,
+          "positive": 2269,
+          "effective": 22.294524036149095,
+          "highest_order": 11,
+          "seconds": 17.51216851407662
+        }
+      }
+    },
+    {
+      "site": "Vlieland-Oost",
+      "day": "2024-01-10",
+      "n": 85,
+      "observed_relative": 2.033837057329411,
+      "natural_relative": 1.4454397707459257,
+      "variants": {
+        "current": {
+          "all": 0.006745521552022319,
+          "all_se": 0.001428611779483452,
+          "first": 0.0030224854177898965,
+          "first_se": 0.0011539935448192198,
+          "all_first_cov": 1.3316957357180025e-06,
+          "far": 0.006720579415462866,
+          "positive": 2269,
+          "effective": 22.294524036149095,
+          "highest_order": 11,
+          "seconds": 17.51216851407662
+        },
+        "cams_region": {
+          "all": 0.00494610323687142,
+          "all_se": 0.0008768924212446776,
+          "first": 0.002194893252574338,
+          "first_se": 0.0006072796023988878,
+          "all_first_cov": 3.6878563605368247e-07,
+          "far": 0.00492650948029559,
+          "positive": 2184,
+          "effective": 31.814663869656528,
+          "highest_order": 10,
+          "seconds": 18.069499095901847
+        },
+        "cams_spatial": {
+          "all": 0.005987279995667905,
+          "all_se": 0.0009309070868608348,
+          "first": 0.002522153574902842,
+          "first_se": 0.0007898923150476894,
+          "all_first_cov": 6.239257020124481e-07,
+          "far": 0.0059641003110146844,
+          "positive": 2235,
+          "effective": 41.36548346035364,
+          "highest_order": 10,
+          "seconds": 32.46261421497911
+        }
+      }
+    },
+    {
+      "site": "Schiermonnikoog-dorp",
+      "day": "2024-01-08",
+      "n": 86,
+      "observed_relative": 2.7173060469922294,
+      "natural_relative": 1.4454397707459257,
+      "variants": {
+        "current": {
+          "all": 0.004873011672132408,
+          "all_se": 0.0005625055192227751,
+          "first": 0.0016708439099731192,
+          "first_se": 8.881375437394728e-05,
+          "all_first_cov": 7.885331732200984e-09,
+          "far": 0.004728606192709152,
+          "positive": 4242,
+          "effective": 75.04573111035526,
+          "highest_order": 11,
+          "seconds": 22.852840277832
+        }
+      }
+    },
+    {
+      "site": "Schiermonnikoog-dorp",
+      "day": "2024-01-10",
+      "n": 85,
+      "observed_relative": 3.4862579601228827,
+      "natural_relative": 1.4454397707459257,
+      "variants": {
+        "current": {
+          "all": 0.004873011672132408,
+          "all_se": 0.0005625055192227751,
+          "first": 0.0016708439099731192,
+          "first_se": 8.881375437394728e-05,
+          "all_first_cov": 7.885331732200984e-09,
+          "far": 0.004728606192709152,
+          "positive": 4242,
+          "effective": 75.04573111035526,
+          "highest_order": 11,
+          "seconds": 22.852840277832
+        },
+        "cams_region": {
+          "all": 0.0065980352230499755,
+          "all_se": 0.0008989742004342225,
+          "first": 0.002947459693293701,
+          "first_se": 0.0006138157807289072,
+          "all_first_cov": 3.767646819376985e-07,
+          "far": 0.006453468210291791,
+          "positive": 4271,
+          "effective": 53.86713216803581,
+          "highest_order": 11,
+          "seconds": 15.092250072862953
+        },
+        "cams_spatial": {
+          "all": 0.005208027062124411,
+          "all_se": 0.00036601312172527585,
+          "first": 0.0022073051750435106,
+          "first_se": 0.00012107330199065894,
+          "all_first_cov": 1.465558611823013e-08,
+          "far": 0.005046766319561121,
+          "positive": 4236,
+          "effective": 202.44704157195915,
+          "highest_order": 8,
+          "seconds": 28.441423955373466
+        }
+      }
+    }
+  ],
+  "checks": [
+    {
+      "site": "Schiermonnikoog-dorp",
+      "train": "2024-01-08",
+      "check": "2024-01-10",
+      "variant": "current",
+      "order": "first",
+      "residual_mag": 0.27055240910736694,
+      "mc_se_mag": 0.0
+    },
+    {
+      "site": "Schiermonnikoog-dorp",
+      "train": "2024-01-08",
+      "check": "2024-01-10",
+      "variant": "cams_region",
+      "order": "first",
+      "residual_mag": -0.06139673318518709,
+      "mc_se_mag": 0.141923701561085
+    },
+    {
+      "site": "Schiermonnikoog-dorp",
+      "train": "2024-01-08",
+      "check": "2024-01-10",
+      "variant": "cams_spatial",
+      "order": "first",
+      "residual_mag": 0.11854211551069652,
+      "mc_se_mag": 0.04457967346563954
+    },
+    {
+      "site": "Schiermonnikoog-dorp",
+      "train": "2024-01-08",
+      "check": "2024-01-10",
+      "variant": "current",
+      "order": "all",
+      "residual_mag": 0.27055240910736694,
+      "mc_se_mag": 0.0
+    },
+    {
+      "site": "Schiermonnikoog-dorp",
+      "train": "2024-01-08",
+      "check": "2024-01-10",
+      "variant": "cams_region",
+      "order": "all",
+      "residual_mag": 0.10409324808930649,
+      "mc_se_mag": 0.1054089636237588
+    },
+    {
+      "site": "Schiermonnikoog-dorp",
+      "train": "2024-01-08",
+      "check": "2024-01-10",
+      "variant": "cams_spatial",
+      "order": "all",
+      "residual_mag": 0.236165044093051,
+      "mc_se_mag": 0.07111217156477208
+    },
+    {
+      "site": "Vlieland-Oost",
+      "train": "2024-01-09",
+      "check": "2024-01-10",
+      "variant": "current",
+      "order": "first",
+      "residual_mag": -0.060052918338108274,
+      "mc_se_mag": 0.0
+    },
+    {
+      "site": "Vlieland-Oost",
+      "train": "2024-01-09",
+      "check": "2024-01-10",
+      "variant": "cams_region",
+      "order": "first",
+      "residual_mag": 0.04196892977569042,
+      "mc_se_mag": 0.13376666001324564
+    },
+    {
+      "site": "Vlieland-Oost",
+      "train": "2024-01-09",
+      "check": "2024-01-10",
+      "variant": "cams_spatial",
+      "order": "first",
+      "residual_mag": 0.00047270139197973357,
+      "mc_se_mag": 0.15494618003920282
+    },
+    {
+      "site": "Vlieland-Oost",
+      "train": "2024-01-09",
+      "check": "2024-01-10",
+      "variant": "current",
+      "order": "all",
+      "residual_mag": -0.060052918338108274,
+      "mc_se_mag": 0.0
+    },
+    {
+      "site": "Vlieland-Oost",
+      "train": "2024-01-09",
+      "check": "2024-01-10",
+      "variant": "cams_region",
+      "order": "all",
+      "residual_mag": 0.03921654140996329,
+      "mc_se_mag": 0.0789172559357008
+    },
+    {
+      "site": "Vlieland-Oost",
+      "train": "2024-01-09",
+      "check": "2024-01-10",
+      "variant": "cams_spatial",
+      "order": "all",
+      "residual_mag": -0.019323434605983018,
+      "mc_se_mag": 0.08610225856176422
+    }
+  ],
+  "background_sensitivity": [
+    {
+      "site": "Schiermonnikoog-dorp",
+      "train": "2024-01-08",
+      "check": "2024-01-10",
+      "variant": "current",
+      "order": "first",
+      "residual_mag": 0.27055240910736694,
+      "mc_se_mag": 0.0
+    },
+    {
+      "site": "Schiermonnikoog-dorp",
+      "train": "2024-01-08",
+      "check": "2024-01-10",
+      "variant": "cams_region",
+      "order": "first",
+      "residual_mag": -0.15720793359836352,
+      "mc_se_mag": 0.17544326321078477
+    },
+    {
+      "site": "Schiermonnikoog-dorp",
+      "train": "2024-01-08",
+      "check": "2024-01-10",
+      "variant": "cams_spatial",
+      "order": "first",
+      "residual_mag": 0.06996612034386619,
+      "mc_se_mag": 0.05755893266660231
+    },
+    {
+      "site": "Schiermonnikoog-dorp",
+      "train": "2024-01-08",
+      "check": "2024-01-10",
+      "variant": "current",
+      "order": "all",
+      "residual_mag": 0.27055240910736694,
+      "mc_se_mag": 0.0
+    },
+    {
+      "site": "Schiermonnikoog-dorp",
+      "train": "2024-01-08",
+      "check": "2024-01-10",
+      "variant": "cams_region",
+      "order": "all",
+      "residual_mag": 0.05134639092529657,
+      "mc_se_mag": 0.13557669651445856
+    },
+    {
+      "site": "Schiermonnikoog-dorp",
+      "train": "2024-01-08",
+      "check": "2024-01-10",
+      "variant": "cams_spatial",
+      "order": "all",
+      "residual_mag": 0.2243746883151218,
+      "mc_se_mag": 0.09498041126434684
+    },
+    {
+      "site": "Vlieland-Oost",
+      "train": "2024-01-09",
+      "check": "2024-01-10",
+      "variant": "current",
+      "order": "first",
+      "residual_mag": -0.060052918338108274,
+      "mc_se_mag": 0.0
+    },
+    {
+      "site": "Vlieland-Oost",
+      "train": "2024-01-09",
+      "check": "2024-01-10",
+      "variant": "cams_region",
+      "order": "first",
+      "residual_mag": 0.11184644159836395,
+      "mc_se_mag": 0.23291539773690725
+    },
+    {
+      "site": "Vlieland-Oost",
+      "train": "2024-01-09",
+      "check": "2024-01-10",
+      "variant": "cams_spatial",
+      "order": "first",
+      "residual_mag": 0.04058503532225623,
+      "mc_se_mag": 0.26249746846136335
+    },
+    {
+      "site": "Vlieland-Oost",
+      "train": "2024-01-09",
+      "check": "2024-01-10",
+      "variant": "current",
+      "order": "all",
+      "residual_mag": -0.060052918338108274,
+      "mc_se_mag": 0.0
+    },
+    {
+      "site": "Vlieland-Oost",
+      "train": "2024-01-09",
+      "check": "2024-01-10",
+      "variant": "cams_region",
+      "order": "all",
+      "residual_mag": 0.10705845776396312,
+      "mc_se_mag": 0.13715386619968845
+    },
+    {
+      "site": "Vlieland-Oost",
+      "train": "2024-01-09",
+      "check": "2024-01-10",
+      "variant": "cams_spatial",
+      "order": "all",
+      "residual_mag": 0.007257185416661905,
+      "mc_se_mag": 0.1440608933680006
+    }
+  ]
+}
