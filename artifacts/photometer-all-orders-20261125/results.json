@@ -1,0 +1,1080 @@
+{
+  "samples_per_run": 524288,
+  "runs": 45,
+  "pilot_sha256": "1297087b503447ca747387d20f586a4fb59ca33237cc30af7b3a15f063d4c5cb",
+  "tiles": {
+    "h18v03": "465ad4a1b06ae2fb8030529a879433b1518c5554bb8d065fc813595fc9f482c4"
+  },
+  "distances_km": {
+    "Texel / Borkum": 140.63392579219953,
+    "Texel / Lochem": 144.94223172709147,
+    "Texel / Gorredijk": 86.36123042883055,
+    "Texel / Vlieland-Oost": 38.22543465924991,
+    "Texel / Schiermonnikoog-dorp": 106.38199816331675,
+    "Texel / Moddergat": 96.7560205236186,
+    "Texel / Lauwersoog": 128.89943455235357,
+    "Texel / Spiekeroog": 212.80859563082785,
+    "Borkum / Lochem": 159.03528435845593,
+    "Borkum / Gorredijk": 74.85802452470021,
+    "Borkum / Vlieland-Oost": 109.64185264599827,
+    "Borkum / Schiermonnikoog-dorp": 34.652007665847734,
+    "Borkum / Moddergat": 43.87805455129609,
+    "Borkum / Lauwersoog": 20.675628456320094,
+    "Borkum / Spiekeroog": 72.85292719312139,
+    "Lochem / Gorredijk": 97.26663303635597,
+    "Lochem / Vlieland-Oost": 155.3561721701389,
+    "Lochem / Schiermonnikoog-dorp": 147.78564608249692,
+    "Lochem / Moddergat": 140.48578666951175,
+    "Lochem / Lauwersoog": 138.47250838610768,
+    "Lochem / Spiekeroog": 199.03846841715307,
+    "Gorredijk / Vlieland-Oost": 73.65047566554085,
+    "Gorredijk / Schiermonnikoog-dorp": 52.77716498736731,
+    "Gorredijk / Moddergat": 44.0954612416229,
+    "Gorredijk / Lauwersoog": 55.91553734059184,
+    "Gorredijk / Spiekeroog": 138.22741786726536,
+    "Vlieland-Oost / Schiermonnikoog-dorp": 75.04893847671873,
+    "Vlieland-Oost / Moddergat": 66.91328833667035,
+    "Vlieland-Oost / Lauwersoog": 101.66257271804083,
+    "Vlieland-Oost / Spiekeroog": 182.49148451053074,
+    "Schiermonnikoog-dorp / Moddergat": 10.524700163013984,
+    "Schiermonnikoog-dorp / Lauwersoog": 29.99715408218019,
+    "Schiermonnikoog-dorp / Spiekeroog": 107.48968206169401,
+    "Moddergat / Lauwersoog": 35.152229424975395,
+    "Moddergat / Spiekeroog": 116.35384187372243,
+    "Lauwersoog / Spiekeroog": 84.6874200155598
+  },
+  "background_v_mag": 21.6,
+  "background_relative": 1.4454397707459257,
+  "rows": [
+    {
+      "site": "Texel",
+      "day": "2024-01-09",
+      "n": 86,
+      "observed_relative": 3.298729680915833,
+      "natural_relative": 1.4454397707459257,
+      "variants": {
+        "current": {
+          "all": 0.03577809596225544,
+          "all_se": 0.004337393073268083,
+          "first": 0.016628249239678927,
+          "first_se": 0.0011487637200275759,
+          "all_first_cov": 1.3190507292736013e-06,
+          "far": 0.02031292935820285,
+          "positive": 2633,
+          "effective": 68.03327149899629,
+          "highest_order": 13,
+          "seconds": 4.357352550141513
+        },
+        "cams_region": {
+          "all": 0.037049345223176454,
+          "all_se": 0.005686667295669779,
+          "first": 0.020107418627076455,
+          "first_se": 0.0013432044442554096,
+          "all_first_cov": 1.8035484234748085e-06,
+          "far": 0.022486600205637863,
+          "positive": 2688,
+          "effective": 42.4434914861443,
+          "highest_order": 9,
+          "seconds": 2.6131779751740396
+        },
+        "cams_spatial": {
+          "all": 0.039215230505981524,
+          "all_se": 0.005876627806492632,
+          "first": 0.026093124361273715,
+          "first_se": 0.004835229011528998,
+          "all_first_cov": 2.33787865227178e-05,
+          "far": 0.025650514702749937,
+          "positive": 2610,
+          "effective": 44.5263520845284,
+          "highest_order": 8,
+          "seconds": 5.16272677667439
+        }
+      }
+    },
+    {
+      "site": "Texel",
+      "day": "2024-01-10",
+      "n": 86,
+      "observed_relative": 3.2824105900745497,
+      "natural_relative": 1.4454397707459257,
+      "variants": {
+        "current": {
+          "all": 0.03577809596225544,
+          "all_se": 0.004337393073268083,
+          "first": 0.016628249239678927,
+          "first_se": 0.0011487637200275759,
+          "all_first_cov": 1.3190507292736013e-06,
+          "far": 0.02031292935820285,
+          "positive": 2633,
+          "effective": 68.03327149899629,
+          "highest_order": 13,
+          "seconds": 4.357352550141513
+        },
+        "cams_region": {
+          "all": 0.04346076707607497,
+          "all_se": 0.006228540663689331,
+          "first": 0.028283284972050352,
+          "first_se": 0.0053950743612428565,
+          "all_first_cov": 2.9106008596039837e-05,
+          "far": 0.028629445484883293,
+          "positive": 2649,
+          "effective": 48.68359778227077,
+          "highest_order": 9,
+          "seconds": 3.3661675001494586
+        },
+        "cams_spatial": {
+          "all": 0.03165102924190126,
+          "all_se": 0.0031440707632932425,
+          "first": 0.021274886885148774,
+          "first_se": 0.0028456726058641735,
+          "all_first_cov": 8.097431529358395e-06,
+          "far": 0.016717694045954943,
+          "positive": 2539,
+          "effective": 101.32297651731902,
+          "highest_order": 10,
+          "seconds": 7.9296941054053605
+        }
+      }
+    },
+    {
+      "site": "Borkum",
+      "day": "2024-01-08",
+      "n": 86,
+      "observed_relative": 3.2935672103096962,
+      "natural_relative": 1.4454397707459257,
+      "variants": {
+        "current": {
+          "all": 0.0035748749536086617,
+          "all_se": 0.00040863125105897635,
+          "first": 0.0013790796637157187,
+          "first_se": 0.00022109369421243787,
+          "all_first_cov": 4.8876645820931426e-08,
+          "far": 0.0034207672012927107,
+          "positive": 612,
+          "effective": 76.52370536547701,
+          "highest_order": 10,
+          "seconds": 4.47991117509082
+        },
+        "cams_region": {
+          "all": 0.007007997341527508,
+          "all_se": 0.0029709067021726466,
+          "first": 0.0017967627590771418,
+          "first_se": 0.00027458749207302904,
+          "all_first_cov": 7.538043159182418e-08,
+          "far": 0.006740574368994092,
+          "positive": 628,
+          "effective": 5.56424249860619,
+          "highest_order": 8,
+          "seconds": 2.3619259148836136
+        },
+        "cams_spatial": {
+          "all": 0.005017157796773495,
+          "all_se": 0.0010416986949331195,
+          "first": 0.0019676217851022863,
+          "first_se": 0.00023816019346027784,
+          "all_first_cov": 5.6708832999327335e-08,
+          "far": 0.00489520962246001,
+          "positive": 681,
+          "effective": 23.195989005117863,
+          "highest_order": 8,
+          "seconds": 5.720927337184548
+        }
+      }
+    },
+    {
+      "site": "Lochem",
+      "day": "2024-01-08",
+      "n": 86,
+      "observed_relative": 4.50885432848174,
+      "natural_relative": 1.4454397707459257,
+      "variants": {
+        "current": {
+          "all": 0.042906256472351856,
+          "all_se": 0.0017968662710416503,
+          "first": 0.023554220177201202,
+          "first_se": 0.0014508848854608498,
+          "all_first_cov": 2.1041975374958844e-06,
+          "far": 0.035145445727611156,
+          "positive": 11861,
+          "effective": 569.5587300138715,
+          "highest_order": 9,
+          "seconds": 4.854922824073583
+        },
+        "cams_region": {
+          "all": 0.04219717187685883,
+          "all_se": 0.0014048772151341261,
+          "first": 0.02851516707624142,
+          "first_se": 0.0012556972544304414,
+          "all_first_cov": 1.5760314514946383e-06,
+          "far": 0.034564565136089034,
+          "positive": 11497,
+          "effective": 900.6252209284105,
+          "highest_order": 9,
+          "seconds": 3.1657254500314593
+        },
+        "cams_spatial": {
+          "all": 0.03886708816801705,
+          "all_se": 0.0009333343125655562,
+          "first": 0.027703691463055596,
+          "first_se": 0.0007898860562128981,
+          "all_first_cov": 6.233301001164532e-07,
+          "far": 0.03136474454124145,
+          "positive": 11282,
+          "effective": 1728.4477204696088,
+          "highest_order": 8,
+          "seconds": 6.2019266579300165
+        }
+      }
+    },
+    {
+      "site": "Lochem",
+      "day": "2024-01-09",
+      "n": 85,
+      "observed_relative": 4.340887497999868,
+      "natural_relative": 1.4454397707459257,
+      "variants": {
+        "current": {
+          "all": 0.042906256472351856,
+          "all_se": 0.0017968662710416503,
+          "first": 0.023554220177201202,
+          "first_se": 0.0014508848854608498,
+          "all_first_cov": 2.1041975374958844e-06,
+          "far": 0.035145445727611156,
+          "positive": 11861,
+          "effective": 569.5587300138715,
+          "highest_order": 9,
+          "seconds": 4.854922824073583
+        },
+        "cams_region": {
+          "all": 0.03931703519275351,
+          "all_se": 0.0009868308304644582,
+          "first": 0.026182657018914767,
+          "first_se": 0.0007503001726144299,
+          "all_first_cov": 5.622944240855017e-07,
+          "far": 0.03150651428384191,
+          "positive": 11396,
+          "effective": 1582.5739880502426,
+          "highest_order": 8,
+          "seconds": 3.170693445019424
+        },
+        "cams_spatial": {
+          "all": 0.040462003043275456,
+          "all_se": 0.0013415030399780642,
+          "first": 0.027417528896893178,
+          "first_se": 0.0011164880108933068,
+          "all_first_cov": 1.2458633191800627e-06,
+          "far": 0.032792194454403054,
+          "positive": 11315,
+          "effective": 908.1536663316189,
+          "highest_order": 8,
+          "seconds": 6.190194210968912
+        }
+      }
+    },
+    {
+      "site": "Lochem",
+      "day": "2024-01-10",
+      "n": 86,
+      "observed_relative": 4.697654291883583,
+      "natural_relative": 1.4454397707459257,
+      "variants": {
+        "current": {
+          "all": 0.042906256472351856,
+          "all_se": 0.0017968662710416503,
+          "first": 0.023554220177201202,
+          "first_se": 0.0014508848854608498,
+          "all_first_cov": 2.1041975374958844e-06,
+          "far": 0.035145445727611156,
+          "positive": 11861,
+          "effective": 569.5587300138715,
+          "highest_order": 9,
+          "seconds": 4.854922824073583
+        },
+        "cams_region": {
+          "all": 0.04022374922235221,
+          "all_se": 0.0014246200362912256,
+          "first": 0.023464669012448407,
+          "first_se": 0.0008239153859463904,
+          "all_first_cov": 6.780865040329723e-07,
+          "far": 0.03250491973911323,
+          "positive": 11409,
+          "effective": 795.9906533658911,
+          "highest_order": 9,
+          "seconds": 3.8415129617787898
+        },
+        "cams_spatial": {
+          "all": 0.04136288193790239,
+          "all_se": 0.000953731100531051,
+          "first": 0.02340144333299243,
+          "first_se": 0.0006847659622993075,
+          "all_first_cov": 4.681027179742425e-07,
+          "far": 0.03342037084355063,
+          "positive": 11911,
+          "effective": 1874.1970278281678,
+          "highest_order": 9,
+          "seconds": 7.9493187428452075
+        }
+      }
+    },
+    {
+      "site": "Gorredijk",
+      "day": "2024-01-08",
+      "n": 85,
+      "observed_relative": 3.5508704429060938,
+      "natural_relative": 1.4454397707459257,
+      "variants": {
+        "current": {
+          "all": 0.029959373084383737,
+          "all_se": 0.0024405620469977437,
+          "first": 0.01762679220209817,
+          "first_se": 0.002263296951086737,
+          "all_first_cov": 5.122098461236654e-06,
+          "far": 0.0226901658490809,
+          "positive": 7842,
+          "effective": 150.6474405026076,
+          "highest_order": 10,
+          "seconds": 5.023413490038365
+        },
+        "cams_region": {
+          "all": 0.027537283443487288,
+          "all_se": 0.0014112711661158565,
+          "first": 0.019112930149334836,
+          "first_se": 0.0011286275340870898,
+          "all_first_cov": 1.2734930001358927e-06,
+          "far": 0.020561106274808203,
+          "positive": 7615,
+          "effective": 380.4580816714381,
+          "highest_order": 8,
+          "seconds": 3.2433595308102667
+        },
+        "cams_spatial": {
+          "all": 0.03578902366529189,
+          "all_se": 0.004985669901231417,
+          "first": 0.02636610574154497,
+          "first_se": 0.004808133080312571,
+          "all_first_cov": 2.3117669844620647e-05,
+          "far": 0.02847206670487775,
+          "positive": 7517,
+          "effective": 51.524146516273476,
+          "highest_order": 8,
+          "seconds": 6.027815666981041
+        }
+      }
+    },
+    {
+      "site": "Gorredijk",
+      "day": "2024-01-09",
+      "n": 85,
+      "observed_relative": 3.5004144285925682,
+      "natural_relative": 1.4454397707459257,
+      "variants": {
+        "current": {
+          "all": 0.029959373084383737,
+          "all_se": 0.0024405620469977437,
+          "first": 0.01762679220209817,
+          "first_se": 0.002263296951086737,
+          "all_first_cov": 5.122098461236654e-06,
+          "far": 0.0226901658490809,
+          "positive": 7842,
+          "effective": 150.6474405026076,
+          "highest_order": 10,
+          "seconds": 5.023413490038365
+        },
+        "cams_region": {
+          "all": 0.033059263292090704,
+          "all_se": 0.004462515170741877,
+          "first": 0.021688389197779656,
+          "first_se": 0.0034565348237007316,
+          "all_first_cov": 1.1947162603977186e-05,
+          "far": 0.02623541129366331,
+          "positive": 7547,
+          "effective": 54.87598149174391,
+          "highest_order": 7,
+          "seconds": 2.796979329083115
+        },
+        "cams_spatial": {
+          "all": 0.03222934880662275,
+          "all_se": 0.003646142832238015,
+          "first": 0.02312865261480696,
+          "first_se": 0.003479815982812247,
+          "all_first_cov": 1.2108717801681844e-05,
+          "far": 0.024557236397427986,
+          "positive": 7629,
+          "effective": 78.12172380682662,
+          "highest_order": 7,
+          "seconds": 5.2029349389486015
+        }
+      }
+    },
+    {
+      "site": "Gorredijk",
+      "day": "2024-01-10",
+      "n": 85,
+      "observed_relative": 3.7526613960658244,
+      "natural_relative": 1.4454397707459257,
+      "variants": {
+        "current": {
+          "all": 0.029959373084383737,
+          "all_se": 0.0024405620469977437,
+          "first": 0.01762679220209817,
+          "first_se": 0.002263296951086737,
+          "all_first_cov": 5.122098461236654e-06,
+          "far": 0.0226901658490809,
+          "positive": 7842,
+          "effective": 150.6474405026076,
+          "highest_order": 10,
+          "seconds": 5.023413490038365
+        },
+        "cams_region": {
+          "all": 0.028871939721102222,
+          "all_se": 0.0010673262093401042,
+          "first": 0.019573603926439198,
+          "first_se": 0.0009221483117254714,
+          "all_first_cov": 8.500103670007361e-07,
+          "far": 0.021315152556777354,
+          "positive": 7851,
+          "effective": 730.722849068208,
+          "highest_order": 9,
+          "seconds": 4.386921474244446
+        },
+        "cams_spatial": {
+          "all": 0.033460920507917075,
+          "all_se": 0.003769948590781337,
+          "first": 0.020058762203850597,
+          "first_se": 0.0030252654493332495,
+          "all_first_cov": 9.15171828407112e-06,
+          "far": 0.026305907012825605,
+          "positive": 7679,
+          "effective": 78.76630808575385,
+          "highest_order": 8,
+          "seconds": 6.918666754849255
+        }
+      }
+    },
+    {
+      "site": "Vlieland-Oost",
+      "day": "2024-01-09",
+      "n": 85,
+      "observed_relative": 2.149499376239798,
+      "natural_relative": 1.4454397707459257,
+      "variants": {
+        "current": {
+          "all": 0.006249071949293501,
+          "all_se": 0.0019460030665927619,
+          "first": 0.002796987863076895,
+          "first_se": 0.0015389105682569624,
+          "all_first_cov": 2.3682273207727236e-06,
+          "far": 0.006219130913825396,
+          "positive": 603,
+          "effective": 10.311843086031544,
+          "highest_order": 10,
+          "seconds": 6.612644158303738
+        },
+        "cams_region": {
+          "all": 0.0040422950093059705,
+          "all_se": 0.0006558761239142495,
+          "first": 0.0016112461871946992,
+          "first_se": 0.0003595125649373117,
+          "all_first_cov": 1.2924181321435018e-07,
+          "far": 0.004024403724449011,
+          "positive": 535,
+          "effective": 37.982341352738175,
+          "highest_order": 7,
+          "seconds": 2.805210596881807
+        },
+        "cams_spatial": {
+          "all": 0.008168626718815472,
+          "all_se": 0.003844992545994073,
+          "first": 0.0018521661801528767,
+          "first_se": 0.00028550793500494424,
+          "all_first_cov": 8.14924665798647e-08,
+          "far": 0.008150210357767154,
+          "positive": 586,
+          "effective": 4.513403760568528,
+          "highest_order": 8,
+          "seconds": 5.3981871898286045
+        }
+      }
+    },
+    {
+      "site": "Vlieland-Oost",
+      "day": "2024-01-10",
+      "n": 85,
+      "observed_relative": 2.033837057329411,
+      "natural_relative": 1.4454397707459257,
+      "variants": {
+        "current": {
+          "all": 0.006249071949293501,
+          "all_se": 0.0019460030665927619,
+          "first": 0.002796987863076895,
+          "first_se": 0.0015389105682569624,
+          "all_first_cov": 2.3682273207727236e-06,
+          "far": 0.006219130913825396,
+          "positive": 603,
+          "effective": 10.311843086031544,
+          "highest_order": 10,
+          "seconds": 6.612644158303738
+        },
+        "cams_region": {
+          "all": 0.0037784149233618656,
+          "all_se": 0.00046893926381708675,
+          "first": 0.0014919491189661017,
+          "first_se": 0.0002810745050418325,
+          "all_first_cov": 7.899637085155798e-08,
+          "far": 0.0037616334908016458,
+          "positive": 558,
+          "effective": 64.91322037791402,
+          "highest_order": 7,
+          "seconds": 3.5944129060953856
+        },
+        "cams_spatial": {
+          "all": 0.007351160853487302,
+          "all_se": 0.0035615267139915683,
+          "first": 0.001096590716843532,
+          "first_se": 0.0002013106868180604,
+          "all_first_cov": 4.0512910663368965e-08,
+          "far": 0.007325523110390864,
+          "positive": 549,
+          "effective": 4.2602662194439604,
+          "highest_order": 8,
+          "seconds": 8.112197924870998
+        }
+      }
+    },
+    {
+      "site": "Schiermonnikoog-dorp",
+      "day": "2024-01-08",
+      "n": 86,
+      "observed_relative": 2.7173060469922294,
+      "natural_relative": 1.4454397707459257,
+      "variants": {
+        "current": {
+          "all": 0.005499478406827677,
+          "all_se": 0.0007256011985912411,
+          "first": 0.0020755116693348934,
+          "first_se": 0.00028597779841953115,
+          "all_first_cov": 8.176974662254889e-08,
+          "far": 0.005317972836042388,
+          "positive": 1088,
+          "effective": 57.438126564958516,
+          "highest_order": 11,
+          "seconds": 4.322431586217135
+        },
+        "cams_region": {
+          "all": 0.004229591953874323,
+          "all_se": 0.0002795599373895609,
+          "first": 0.0023569576201010376,
+          "first_se": 0.0002088870684309594,
+          "all_first_cov": 4.3625388839268355e-08,
+          "far": 0.0040692162108155235,
+          "positive": 1076,
+          "effective": 228.8012183105985,
+          "highest_order": 8,
+          "seconds": 2.65879442403093
+        },
+        "cams_spatial": {
+          "all": 0.004526308015439347,
+          "all_se": 0.00042696642593304657,
+          "first": 0.0021631112925413307,
+          "first_se": 0.0002068881832870744,
+          "all_first_cov": 4.279297027078151e-08,
+          "far": 0.004386854040151658,
+          "positive": 1023,
+          "effective": 112.35916476978528,
+          "highest_order": 8,
+          "seconds": 5.6530508869327605
+        }
+      }
+    },
+    {
+      "site": "Schiermonnikoog-dorp",
+      "day": "2024-01-10",
+      "n": 85,
+      "observed_relative": 3.4862579601228827,
+      "natural_relative": 1.4454397707459257,
+      "variants": {
+        "current": {
+          "all": 0.005499478406827677,
+          "all_se": 0.0007256011985912411,
+          "first": 0.0020755116693348934,
+          "first_se": 0.00028597779841953115,
+          "all_first_cov": 8.176974662254889e-08,
+          "far": 0.005317972836042388,
+          "positive": 1088,
+          "effective": 57.438126564958516,
+          "highest_order": 11,
+          "seconds": 4.322431586217135
+        },
+        "cams_region": {
+          "all": 0.00507425317680074,
+          "all_se": 0.0008677815315071172,
+          "first": 0.0018208622040969652,
+          "first_se": 0.0001686923973230556,
+          "all_first_cov": 2.8445825804270114e-08,
+          "far": 0.004922965007942702,
+          "positive": 1044,
+          "effective": 34.1897531168896,
+          "highest_order": 9,
+          "seconds": 3.137952907010913
+        },
+        "cams_spatial": {
+          "all": 0.006174637096188954,
+          "all_se": 0.0007869913279388479,
+          "first": 0.0020713297355208333,
+          "first_se": 0.00019866894774653331,
+          "all_first_cov": 3.945313963469558e-08,
+          "far": 0.006041865737831963,
+          "positive": 1073,
+          "effective": 61.55067524634096,
+          "highest_order": 8,
+          "seconds": 6.467186410911381
+        }
+      }
+    },
+    {
+      "site": "Moddergat",
+      "day": "2024-01-08",
+      "n": 85,
+      "observed_relative": 2.8884521692101583,
+      "natural_relative": 1.4454397707459257,
+      "variants": {
+        "current": {
+          "all": 0.00964804708255635,
+          "all_se": 0.0011036657798993846,
+          "first": 0.004404768386783218,
+          "first_se": 0.0003970755078152773,
+          "all_first_cov": 1.5762490778925748e-07,
+          "far": 0.00813343310896628,
+          "positive": 2417,
+          "effective": 76.40841746942166,
+          "highest_order": 9,
+          "seconds": 4.904048661701381
+        },
+        "cams_region": {
+          "all": 0.008017268940028178,
+          "all_se": 0.0004037756845178654,
+          "first": 0.005133466178966012,
+          "first_se": 0.00034425375956348057,
+          "all_first_cov": 1.1848241471379269e-07,
+          "far": 0.0067190313311796855,
+          "positive": 2314,
+          "effective": 393.95530483086196,
+          "highest_order": 10,
+          "seconds": 2.6304667717777193
+        },
+        "cams_spatial": {
+          "all": 0.008744697165493523,
+          "all_se": 0.0005570541350398236,
+          "first": 0.005317985946362625,
+          "first_se": 0.0003117586251803294,
+          "all_first_cov": 9.715868230841182e-08,
+          "far": 0.007229900346658147,
+          "positive": 2262,
+          "effective": 246.31535635320776,
+          "highest_order": 7,
+          "seconds": 6.076836748048663
+        }
+      }
+    },
+    {
+      "site": "Moddergat",
+      "day": "2024-01-09",
+      "n": 85,
+      "observed_relative": 2.727866480938952,
+      "natural_relative": 1.4454397707459257,
+      "variants": {
+        "current": {
+          "all": 0.00964804708255635,
+          "all_se": 0.0011036657798993846,
+          "first": 0.004404768386783218,
+          "first_se": 0.0003970755078152773,
+          "all_first_cov": 1.5762490778925748e-07,
+          "far": 0.00813343310896628,
+          "positive": 2417,
+          "effective": 76.40841746942166,
+          "highest_order": 9,
+          "seconds": 4.904048661701381
+        },
+        "cams_region": {
+          "all": 0.01287174299101575,
+          "all_se": 0.003974187598683125,
+          "first": 0.005115059940356856,
+          "first_se": 0.0003058378156239271,
+          "all_first_cov": 9.346109355005283e-08,
+          "far": 0.01139434334641204,
+          "positive": 2272,
+          "effective": 10.489870594014633,
+          "highest_order": 8,
+          "seconds": 3.0518062403425574
+        },
+        "cams_spatial": {
+          "all": 0.00825944623264533,
+          "all_se": 0.0005339167555547546,
+          "first": 0.005416285889865197,
+          "first_se": 0.00045694830981275384,
+          "all_first_cov": 2.0877238581882993e-07,
+          "far": 0.0068162901953011485,
+          "positive": 2257,
+          "effective": 239.19792258066593,
+          "highest_order": 7,
+          "seconds": 5.112440529279411
+        }
+      }
+    },
+    {
+      "site": "Moddergat",
+      "day": "2024-01-10",
+      "n": 86,
+      "observed_relative": 2.221365112809927,
+      "natural_relative": 1.4454397707459257,
+      "variants": {
+        "current": {
+          "all": 0.00964804708255635,
+          "all_se": 0.0011036657798993846,
+          "first": 0.004404768386783218,
+          "first_se": 0.0003970755078152773,
+          "all_first_cov": 1.5762490778925748e-07,
+          "far": 0.00813343310896628,
+          "positive": 2417,
+          "effective": 76.40841746942166,
+          "highest_order": 9,
+          "seconds": 4.904048661701381
+        },
+        "cams_region": {
+          "all": 0.00809192283638907,
+          "all_se": 0.000374651124454564,
+          "first": 0.004394695788360398,
+          "first_se": 0.00024049708350919297,
+          "all_first_cov": 5.780785615788907e-08,
+          "far": 0.006671295117224174,
+          "positive": 2398,
+          "effective": 466.083748769764,
+          "highest_order": 10,
+          "seconds": 3.1253948658704758
+        },
+        "cams_spatial": {
+          "all": 0.0086237154174899,
+          "all_se": 0.0004293317774170956,
+          "first": 0.005113532098969112,
+          "first_se": 0.00033889795432276464,
+          "all_first_cov": 1.1481758754840958e-07,
+          "far": 0.007230249155229558,
+          "positive": 2307,
+          "effective": 403.1526435709964,
+          "highest_order": 10,
+          "seconds": 7.962124859914184
+        }
+      }
+    },
+    {
+      "site": "Lauwersoog",
+      "day": "2024-01-08",
+      "n": 86,
+      "observed_relative": 2.4055138735538324,
+      "natural_relative": 1.4454397707459257,
+      "variants": {
+        "current": {
+          "all": 0.013210456148394422,
+          "all_se": 0.0007380228255585907,
+          "first": 0.006859657746586105,
+          "first_se": 0.00042347209518241874,
+          "all_first_cov": 1.7924552292506885e-07,
+          "far": 0.01039507975813492,
+          "positive": 2839,
+          "effective": 320.20753170350446,
+          "highest_order": 11,
+          "seconds": 4.923879649955779
+        },
+        "cams_region": {
+          "all": 0.012961136409913901,
+          "all_se": 0.0006530499978203863,
+          "first": 0.008610902732807908,
+          "first_se": 0.0005415186240668772,
+          "all_first_cov": 2.931709718651327e-07,
+          "far": 0.010319334697870969,
+          "positive": 2716,
+          "effective": 393.6116602599797,
+          "highest_order": 9,
+          "seconds": 2.518442824948579
+        },
+        "cams_spatial": {
+          "all": 0.013899969245115221,
+          "all_se": 0.001065035186882305,
+          "first": 0.008798925474355143,
+          "first_se": 0.00046111319529417496,
+          "all_first_cov": 2.1253976983969519e-07,
+          "far": 0.011279889495395323,
+          "positive": 2709,
+          "effective": 170.27838449588324,
+          "highest_order": 8,
+          "seconds": 5.958444012794644
+        }
+      }
+    },
+    {
+      "site": "Spiekeroog",
+      "day": "2024-01-08",
+      "n": 86,
+      "observed_relative": 2.6367955168935984,
+      "natural_relative": 1.4454397707459257,
+      "variants": {
+        "current": {
+          "all": 0.0008797298061037666,
+          "all_se": 0.00013185569847323078,
+          "first": 0.00041105377541271514,
+          "first_se": 0.00011421800436482095,
+          "all_first_cov": 1.3045385067661017e-08,
+          "far": 0.0008641532120132422,
+          "positive": 270,
+          "effective": 44.51073461625977,
+          "highest_order": 10,
+          "seconds": 4.661931056063622
+        },
+        "cams_region": {
+          "all": 0.0010968727778817835,
+          "all_se": 0.00017596257338115592,
+          "first": 0.0004589652747555813,
+          "first_se": 7.461157943073815e-05,
+          "all_first_cov": 5.566329355525038e-09,
+          "far": 0.0010778300291698307,
+          "positive": 262,
+          "effective": 38.85443063132669,
+          "highest_order": 9,
+          "seconds": 2.532370019238442
+        },
+        "cams_spatial": {
+          "all": 0.002130347344999098,
+          "all_se": 0.00046610913664310886,
+          "first": 0.0010081174997719352,
+          "first_se": 0.0002992601313496899,
+          "all_first_cov": 8.955446835238202e-08,
+          "far": 0.002106121976721403,
+          "positive": 313,
+          "effective": 20.88859027546616,
+          "highest_order": 8,
+          "seconds": 7.188414794858545
+        }
+      }
+    }
+  ],
+  "checks": [
+    {
+      "site": "Schiermonnikoog-dorp",
+      "train": "2024-01-08",
+      "check": "2024-01-10",
+      "variant": "current",
+      "order": "first",
+      "residual_mag": 0.27055240910736694,
+      "mc_se_mag": 0.0
+    },
+    {
+      "site": "Schiermonnikoog-dorp",
+      "train": "2024-01-08",
+      "check": "2024-01-10",
+      "variant": "cams_region",
+      "order": "first",
+      "residual_mag": 0.3347655845901516,
+      "mc_se_mag": 0.07853584733091573
+    },
+    {
+      "site": "Schiermonnikoog-dorp",
+      "train": "2024-01-08",
+      "check": "2024-01-10",
+      "variant": "cams_spatial",
+      "order": "first",
+      "residual_mag": 0.2715768432944056,
+      "mc_se_mag": 0.08522500050140608
+    },
+    {
+      "site": "Schiermonnikoog-dorp",
+      "train": "2024-01-08",
+      "check": "2024-01-10",
+      "variant": "current",
+      "order": "all",
+      "residual_mag": 0.27055240910736694,
+      "mc_se_mag": 0.0
+    },
+    {
+      "site": "Schiermonnikoog-dorp",
+      "train": "2024-01-08",
+      "check": "2024-01-10",
+      "variant": "cams_region",
+      "order": "all",
+      "residual_mag": 0.3105749503018406,
+      "mc_se_mag": 0.10508366888305347
+    },
+    {
+      "site": "Schiermonnikoog-dorp",
+      "train": "2024-01-08",
+      "check": "2024-01-10",
+      "variant": "cams_spatial",
+      "order": "all",
+      "residual_mag": 0.2098895986790966,
+      "mc_se_mag": 0.09898384775947366
+    },
+    {
+      "site": "Vlieland-Oost",
+      "train": "2024-01-09",
+      "check": "2024-01-10",
+      "variant": "current",
+      "order": "first",
+      "residual_mag": -0.060052918338108274,
+      "mc_se_mag": 0.0
+    },
+    {
+      "site": "Vlieland-Oost",
+      "train": "2024-01-09",
+      "check": "2024-01-10",
+      "variant": "cams_region",
+      "order": "first",
+      "residual_mag": 0.12001899932316715,
+      "mc_se_mag": 0.13022230171710614
+    },
+    {
+      "site": "Vlieland-Oost",
+      "train": "2024-01-09",
+      "check": "2024-01-10",
+      "variant": "cams_spatial",
+      "order": "first",
+      "residual_mag": 0.18103903166966834,
+      "mc_se_mag": 0.10097894801249858
+    },
+    {
+      "site": "Vlieland-Oost",
+      "train": "2024-01-09",
+      "check": "2024-01-10",
+      "variant": "current",
+      "order": "all",
+      "residual_mag": -0.060052918338108274,
+      "mc_se_mag": 0.0
+    },
+    {
+      "site": "Vlieland-Oost",
+      "train": "2024-01-09",
+      "check": "2024-01-10",
+      "variant": "cams_region",
+      "order": "all",
+      "residual_mag": 0.09052487242244489,
+      "mc_se_mag": 0.08280589636413901
+    },
+    {
+      "site": "Vlieland-Oost",
+      "train": "2024-01-09",
+      "check": "2024-01-10",
+      "variant": "cams_spatial",
+      "order": "all",
+      "residual_mag": -0.12102705128256909,
+      "mc_se_mag": 0.22778219936064978
+    }
+  ],
+  "background_sensitivity": [
+    {
+      "site": "Schiermonnikoog-dorp",
+      "train": "2024-01-08",
+      "check": "2024-01-10",
+      "variant": "current",
+      "order": "first",
+      "residual_mag": 0.27055240910736694,
+      "mc_se_mag": 0.0
+    },
+    {
+      "site": "Schiermonnikoog-dorp",
+      "train": "2024-01-08",
+      "check": "2024-01-10",
+      "variant": "cams_region",
+      "order": "first",
+      "residual_mag": 0.358183747790472,
+      "mc_se_mag": 0.10835312620613814
+    },
+    {
+      "site": "Schiermonnikoog-dorp",
+      "train": "2024-01-08",
+      "check": "2024-01-10",
+      "variant": "cams_spatial",
+      "order": "first",
+      "residual_mag": 0.27193585474820525,
+      "mc_se_mag": 0.11511100990092807
+    },
+    {
+      "site": "Schiermonnikoog-dorp",
+      "train": "2024-01-08",
+      "check": "2024-01-10",
+      "variant": "current",
+      "order": "all",
+      "residual_mag": 0.27055240910736694,
+      "mc_se_mag": 0.0
+    },
+    {
+      "site": "Schiermonnikoog-dorp",
+      "train": "2024-01-08",
+      "check": "2024-01-10",
+      "variant": "cams_region",
+      "order": "all",
+      "residual_mag": 0.324948126810085,
+      "mc_se_mag": 0.14377743946605806
+    },
+    {
+      "site": "Schiermonnikoog-dorp",
+      "train": "2024-01-08",
+      "check": "2024-01-10",
+      "variant": "cams_spatial",
+      "order": "all",
+      "residual_mag": 0.18942073252334227,
+      "mc_se_mag": 0.13115445061161
+    },
+    {
+      "site": "Vlieland-Oost",
+      "train": "2024-01-09",
+      "check": "2024-01-10",
+      "variant": "current",
+      "order": "first",
+      "residual_mag": -0.060052918338108274,
+      "mc_se_mag": 0.0
+    },
+    {
+      "site": "Vlieland-Oost",
+      "train": "2024-01-09",
+      "check": "2024-01-10",
+      "variant": "cams_region",
+      "order": "first",
+      "residual_mag": 0.2515983418006879,
+      "mc_se_mag": 0.2400028596233505
+    },
+    {
+      "site": "Vlieland-Oost",
+      "train": "2024-01-09",
+      "check": "2024-01-10",
+      "variant": "cams_spatial",
+      "order": "first",
+      "residual_mag": 0.36686565135944177,
+      "mc_se_mag": 0.1956414179597456
+    },
+    {
+      "site": "Vlieland-Oost",
+      "train": "2024-01-09",
+      "check": "2024-01-10",
+      "variant": "current",
+      "order": "all",
+      "residual_mag": -0.060052918338108274,
+      "mc_se_mag": 0.0
+    },
+    {
+      "site": "Vlieland-Oost",
+      "train": "2024-01-09",
+      "check": "2024-01-10",
+      "variant": "cams_region",
+      "order": "all",
+      "residual_mag": 0.19784762262314876,
+      "mc_se_mag": 0.14924152384203057
+    },
+    {
+      "site": "Vlieland-Oost",
+      "train": "2024-01-09",
+      "check": "2024-01-10",
+      "variant": "cams_spatial",
+      "order": "all",
+      "residual_mag": -0.157907021841838,
+      "mc_se_mag": 0.3594736867121104
+    }
+  ]
+}

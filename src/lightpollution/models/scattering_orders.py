@@ -114,8 +114,7 @@ def _collision(points, directions, atmosphere, rng, max_null_events):
         if not len(pending):
             break
         candidate = points[pending] + travelled[pending, None]*directions[pending]
-        height = np.maximum(0, np.linalg.norm(candidate, axis=1)-EARTH_RADIUS_M)
-        extinction = atmosphere.coefficients(height)[2]
+        extinction = atmosphere.coefficients_at(candidate)[2]
         if np.any(extinction > majorant*(1+1e-12)):
             raise RuntimeError('The extinction majorant was violated.')
         accepted = rng.random(len(pending)) < extinction/majorant
@@ -198,7 +197,7 @@ def integrate_orders(observer: Observer, cap: LambertianCap, azimuth_deg: float,
             original, weights = original[collision], weights[collision]
             if not len(points):
                 break
-            br, ba, extinction = atmosphere.coefficients(np.maximum(0, np.linalg.norm(points, axis=1)-EARTH_RADIUS_M))
+            br, ba, extinction = atmosphere.coefficients_at(points)
             scattering = br+ba
             positive = scattering > 0
             outcomes['absorbed'] += int(np.sum(~positive))

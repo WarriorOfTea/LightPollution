@@ -124,6 +124,10 @@ class Atmosphere:
         aerosol_extinction = self.aerosol_extinction_sea_level * np.exp(-height/self.aerosol_scale_height_m)
         return molecular, aerosol_extinction*self.aerosol_single_scattering_albedo, molecular+aerosol_extinction
 
+    def coefficients_at(self, positions_m):
+        """Return optical coefficients at Cartesian positions in metres."""
+        return self.coefficients(np.linalg.norm(positions_m, axis=-1) - EARTH_RADIUS_M)
+
     def optical_depth_radial(self, radius0_squared, radius1_squared, length_squared, order: int = 12):
         """Gauss-Legendre integral along a straight *unoccluded* spherical chord."""
         nodes, weights = quadrature(order)

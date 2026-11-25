@@ -96,7 +96,7 @@ def integrate_boundary_variants(observer: Observer, boundary: BoundedBoundary,
             original, weights = original[collision], weights[collision]
             if not len(points):
                 break
-            br, ba, extinction = atmosphere.coefficients(np.maximum(0, np.linalg.norm(points, axis=1)-EARTH_RADIUS_M))
+            br, ba, extinction = atmosphere.coefficients_at(points)
             scattering = br+ba
             survival = scattering/extinction
             if settings.absorption == 'implicit':
