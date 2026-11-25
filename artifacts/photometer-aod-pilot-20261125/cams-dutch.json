@@ -1,0 +1,935 @@
+{
+  "provider": "Open-Meteo proxy of operational CAMS Global, not EAC4",
+  "domain": {
+    "west": 3.6,
+    "south": 50.8,
+    "east": 8.4,
+    "north": 54.4
+  },
+  "grid_latitudes": [
+    50.8,
+    52.0,
+    53.2,
+    54.4
+  ],
+  "grid_longitudes": [
+    3.6,
+    5.2,
+    6.8,
+    8.4
+  ],
+  "days": [
+    "2024-01-08",
+    "2024-01-09",
+    "2024-01-10"
+  ],
+  "aod_grid": [
+    [
+      [
+        0.06,
+        0.05,
+        0.055,
+        0.04
+      ],
+      [
+        0.03,
+        0.025,
+        0.02,
+        0.02
+      ],
+      [
+        0.025,
+        0.02,
+        0.03,
+        0.025
+      ],
+      [
+        0.07,
+        0.05,
+        0.04,
+        0.03
+      ]
+    ],
+    [
+      [
+        0.05,
+        0.04,
+        0.035,
+        0.03
+      ],
+      [
+        0.04,
+        0.035,
+        0.04,
+        0.04
+      ],
+      [
+        0.03,
+        0.03,
+        0.04,
+        0.055
+      ],
+      [
+        0.045,
+        0.05,
+        0.03,
+        0.03
+      ]
+    ],
+    [
+      [
+        0.08499999999999999,
+        0.06,
+        0.06,
+        0.07
+      ],
+      [
+        0.09,
+        0.08499999999999999,
+        0.09,
+        0.08
+      ],
+      [
+        0.04,
+        0.05,
+        0.07,
+        0.08
+      ],
+      [
+        0.035,
+        0.03,
+        0.025,
+        0.06
+      ]
+    ]
+  ],
+  "station_windows": [
+    {
+      "day": "2024-01-09",
+      "n": 86,
+      "mean_mag": 20.70413317968518,
+      "weather": [
+        [
+          5,
+          0.0,
+          75
+        ],
+        [
+          5,
+          0.0,
+          75
+        ],
+        [
+          5,
+          0.0,
+          75
+        ],
+        [
+          5,
+          0.0,
+          75
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 29.57,
+      "zenith_galactic_latitude_deg": 14.59,
+      "solar_elongation_deg": 145.67,
+      "site": "Texel",
+      "aod_area_mean": 0.03874999999999999,
+      "near_fraction_3_10km": 0.5266449399901594,
+      "observed_relative": 3.298729680915833,
+      "responses": {
+        "current": 2.875344792738518e-14,
+        "cams_region": 3.5343617668826457e-14,
+        "cams_spatial": 3.617651078009892e-14
+      },
+      "refinement_relative": {
+        "current": 0.00017288606324750155,
+        "cams_region": 0.00017338535151556478,
+        "cams_spatial": 0.00017347970043268823
+      }
+    },
+    {
+      "day": "2024-01-10",
+      "n": 86,
+      "mean_mag": 20.70951773717549,
+      "weather": [
+        [
+          0,
+          0.0,
+          74
+        ],
+        [
+          0,
+          0.0,
+          74
+        ],
+        [
+          0,
+          0.0,
+          75
+        ],
+        [
+          0,
+          0.0,
+          75
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 29.58,
+      "zenith_galactic_latitude_deg": 15.12,
+      "solar_elongation_deg": 145.5,
+      "site": "Texel",
+      "aod_area_mean": 0.06353815512137213,
+      "near_fraction_3_10km": 0.5266449399901594,
+      "observed_relative": 3.2824105900745497,
+      "responses": {
+        "current": 2.875344792738518e-14,
+        "cams_region": 3.243671346237696e-14,
+        "cams_spatial": 3.282303096533605e-14
+      },
+      "refinement_relative": {
+        "current": 0.00017288606324750155,
+        "cams_region": 0.00017316203187456303,
+        "cams_spatial": 0.00017347518124677386
+      }
+    },
+    {
+      "day": "2024-01-08",
+      "n": 86,
+      "mean_mag": 20.705833674211245,
+      "weather": [
+        [
+          0,
+          0.0,
+          76
+        ],
+        [
+          1,
+          0.0,
+          83
+        ],
+        [
+          3,
+          0.0,
+          77
+        ],
+        [
+          0,
+          0.0,
+          83
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 30.15,
+      "zenith_galactic_latitude_deg": 15.32,
+      "solar_elongation_deg": 145.93,
+      "site": "Borkum",
+      "aod_area_mean": 0.0369065030102002,
+      "near_fraction_3_10km": 0.09890525605719136,
+      "observed_relative": 3.2935672103096962,
+      "responses": {
+        "current": 2.1451934224833395e-15,
+        "cams_region": 2.9660218951889204e-15,
+        "cams_spatial": 3.1042838405784616e-15
+      },
+      "refinement_relative": {
+        "current": 0.00017119762400374938,
+        "cams_region": 0.00017179974345626903,
+        "cams_spatial": 0.00017500871632969428
+      }
+    },
+    {
+      "day": "2024-01-08",
+      "n": 86,
+      "mean_mag": 20.364834489000433,
+      "weather": [
+        [
+          1,
+          0.0,
+          69
+        ],
+        [
+          1,
+          0.0,
+          69
+        ],
+        [
+          0,
+          0.0,
+          70
+        ],
+        [
+          0,
+          0.0,
+          70
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 28.73,
+      "zenith_galactic_latitude_deg": 14.57,
+      "solar_elongation_deg": 147.08,
+      "site": "Lochem",
+      "aod_area_mean": 0.0369065030102002,
+      "near_fraction_3_10km": 0.25677520346129157,
+      "observed_relative": 4.50885432848174,
+      "responses": {
+        "current": 3.225074044685276e-14,
+        "cams_region": 4.050297127594047e-14,
+        "cams_spatial": 4.269839479068836e-14
+      },
+      "refinement_relative": {
+        "current": 0.00017338162803848256,
+        "cams_region": 0.0001737507762318291,
+        "cams_spatial": 0.00017358040556958443
+      }
+    },
+    {
+      "day": "2024-01-09",
+      "n": 85,
+      "mean_mag": 20.40605367386846,
+      "weather": [
+        [
+          2,
+          0.0,
+          65
+        ],
+        [
+          2,
+          0.0,
+          66
+        ],
+        [
+          0,
+          0.0,
+          67
+        ],
+        [
+          0,
+          0.0,
+          68
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 28.74,
+      "zenith_galactic_latitude_deg": 15.12,
+      "solar_elongation_deg": 146.92,
+      "site": "Lochem",
+      "aod_area_mean": 0.03874999999999999,
+      "near_fraction_3_10km": 0.25677520346129157,
+      "observed_relative": 4.340887497999868,
+      "responses": {
+        "current": 3.225074044685276e-14,
+        "cams_region": 4.0221942065383854e-14,
+        "cams_spatial": 4.0323279317561576e-14
+      },
+      "refinement_relative": {
+        "current": 0.00017338162803848256,
+        "cams_region": 0.0001737397662222584,
+        "cams_spatial": 0.0001733101831506989
+      }
+    },
+    {
+      "day": "2024-01-10",
+      "n": 86,
+      "mean_mag": 20.320297367071674,
+      "weather": [
+        [
+          0,
+          0.0,
+          71
+        ],
+        [
+          0,
+          0.0,
+          72
+        ],
+        [
+          0,
+          0.0,
+          74
+        ],
+        [
+          0,
+          0.0,
+          73
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 28.76,
+      "zenith_galactic_latitude_deg": 15.67,
+      "solar_elongation_deg": 146.74,
+      "site": "Lochem",
+      "aod_area_mean": 0.06353815512137213,
+      "near_fraction_3_10km": 0.25677520346129157,
+      "observed_relative": 4.697654291883583,
+      "responses": {
+        "current": 3.225074044685276e-14,
+        "cams_region": 3.670029319283896e-14,
+        "cams_spatial": 3.408895781069625e-14
+      },
+      "refinement_relative": {
+        "current": 0.00017338162803848256,
+        "cams_region": 0.00017359213798440187,
+        "cams_spatial": 0.00017324152673725557
+      }
+    },
+    {
+      "day": "2024-01-08",
+      "n": 85,
+      "mean_mag": 20.624162932705143,
+      "weather": [
+        [
+          3,
+          0.0,
+          82
+        ],
+        [
+          0,
+          0.0,
+          78
+        ],
+        [
+          0,
+          0.0,
+          81
+        ],
+        [
+          0,
+          0.0,
+          78
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 29.58,
+      "zenith_galactic_latitude_deg": 14.75,
+      "solar_elongation_deg": 146.25,
+      "site": "Gorredijk",
+      "aod_area_mean": 0.0369065030102002,
+      "near_fraction_3_10km": 0.2874741166722141,
+      "observed_relative": 3.5508704429060938,
+      "responses": {
+        "current": 2.6798387007556306e-14,
+        "cams_region": 3.3395624542318996e-14,
+        "cams_spatial": 3.4933956990560424e-14
+      },
+      "refinement_relative": {
+        "current": 0.00017327077260409496,
+        "cams_region": 0.00017356368251753018,
+        "cams_spatial": 0.00017348385438942238
+      }
+    },
+    {
+      "day": "2024-01-09",
+      "n": 85,
+      "mean_mag": 20.639701336698636,
+      "weather": [
+        [
+          7,
+          0.0,
+          82
+        ],
+        [
+          11,
+          0.0,
+          82
+        ],
+        [
+          11,
+          0.0,
+          81
+        ],
+        [
+          14,
+          0.0,
+          81
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 29.59,
+      "zenith_galactic_latitude_deg": 15.29,
+      "solar_elongation_deg": 146.08,
+      "site": "Gorredijk",
+      "aod_area_mean": 0.03874999999999999,
+      "near_fraction_3_10km": 0.2874741166722141,
+      "observed_relative": 3.5004144285925682,
+      "responses": {
+        "current": 2.6798387007556306e-14,
+        "cams_region": 3.317244487173572e-14,
+        "cams_spatial": 3.354665900399019e-14
+      },
+      "refinement_relative": {
+        "current": 0.00017327077260409496,
+        "cams_region": 0.0001735540826224291,
+        "cams_spatial": 0.0001739624968382092
+      }
+    },
+    {
+      "day": "2024-01-10",
+      "n": 85,
+      "mean_mag": 20.56415155090063,
+      "weather": [
+        [
+          5,
+          0.0,
+          87
+        ],
+        [
+          14,
+          0.0,
+          88
+        ],
+        [
+          4,
+          0.0,
+          88
+        ],
+        [
+          10,
+          0.0,
+          89
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 29.6,
+      "zenith_galactic_latitude_deg": 15.83,
+      "solar_elongation_deg": 145.91,
+      "site": "Gorredijk",
+      "aod_area_mean": 0.06353815512137213,
+      "near_fraction_3_10km": 0.2874741166722141,
+      "observed_relative": 3.7526613960658244,
+      "responses": {
+        "current": 2.6798387007556306e-14,
+        "cams_region": 3.0366945552108363e-14,
+        "cams_spatial": 3.004400430627566e-14
+      },
+      "refinement_relative": {
+        "current": 0.00017327077260409496,
+        "cams_region": 0.00017343133751568374,
+        "cams_spatial": 0.00017399993596489693
+      }
+    },
+    {
+      "day": "2024-01-09",
+      "n": 85,
+      "mean_mag": 21.169156691435653,
+      "weather": [
+        [
+          5,
+          0.0,
+          76
+        ],
+        [
+          7,
+          0.0,
+          73
+        ],
+        [
+          5,
+          0.0,
+          76
+        ],
+        [
+          10,
+          0.0,
+          72
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 29.87,
+      "zenith_galactic_latitude_deg": 14.87,
+      "solar_elongation_deg": 145.52,
+      "site": "Vlieland-Oost",
+      "aod_area_mean": 0.03874999999999999,
+      "near_fraction_3_10km": 0.008624999886845841,
+      "observed_relative": 2.149499376239798,
+      "responses": {
+        "current": 2.6832978296082663e-15,
+        "cams_region": 3.945084708607115e-15,
+        "cams_spatial": 4.0985237052280245e-15
+      },
+      "refinement_relative": {
+        "current": 0.00016910846334416973,
+        "cams_region": 0.00017037502054351172,
+        "cams_spatial": 0.00016961735300613512
+      }
+    },
+    {
+      "day": "2024-01-10",
+      "n": 85,
+      "mean_mag": 21.22920960977376,
+      "weather": [
+        [
+          1,
+          0.0,
+          73
+        ],
+        [
+          3,
+          0.0,
+          75
+        ],
+        [
+          8,
+          0.0,
+          72
+        ],
+        [
+          2,
+          0.0,
+          77
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 29.88,
+      "zenith_galactic_latitude_deg": 15.41,
+      "solar_elongation_deg": 145.35,
+      "site": "Vlieland-Oost",
+      "aod_area_mean": 0.06353815512137213,
+      "near_fraction_3_10km": 0.008624999886845841,
+      "observed_relative": 2.033837057329411,
+      "responses": {
+        "current": 2.6832978296082663e-15,
+        "cams_region": 3.3505824411279548e-15,
+        "cams_spatial": 3.3807085982042263e-15
+      },
+      "refinement_relative": {
+        "current": 0.00016910846334416973,
+        "cams_region": 0.00016987568586790402,
+        "cams_spatial": 0.0001672324606551978
+      }
+    },
+    {
+      "day": "2024-01-08",
+      "n": 86,
+      "mean_mag": 20.91465361187334,
+      "weather": [
+        [
+          3,
+          0.0,
+          81
+        ],
+        [
+          1,
+          0.0,
+          80
+        ],
+        [
+          0,
+          0.0,
+          81
+        ],
+        [
+          0,
+          0.0,
+          80
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 30.05,
+      "zenith_galactic_latitude_deg": 15.01,
+      "solar_elongation_deg": 145.87,
+      "site": "Schiermonnikoog-dorp",
+      "aod_area_mean": 0.0369065030102002,
+      "near_fraction_3_10km": 0.05122926550314977,
+      "observed_relative": 2.7173060469922294,
+      "responses": {
+        "current": 2.84981455467011e-15,
+        "cams_region": 3.975401626668221e-15,
+        "cams_spatial": 4.21412185318419e-15
+      },
+      "refinement_relative": {
+        "current": 0.00017130464511527776,
+        "cams_region": 0.00017195183256157875,
+        "cams_spatial": 0.000174006055894127
+      }
+    },
+    {
+      "day": "2024-01-10",
+      "n": 85,
+      "mean_mag": 20.644101202765974,
+      "weather": [
+        [
+          11,
+          0.0,
+          93
+        ],
+        [
+          14,
+          0.0,
+          92
+        ],
+        [
+          13,
+          0.0,
+          94
+        ],
+        [
+          12,
+          0.0,
+          93
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 30.07,
+      "zenith_galactic_latitude_deg": 16.07,
+      "solar_elongation_deg": 145.54,
+      "site": "Schiermonnikoog-dorp",
+      "aod_area_mean": 0.06353815512137213,
+      "near_fraction_3_10km": 0.05122926550314977,
+      "observed_relative": 3.4862579601228827,
+      "responses": {
+        "current": 2.84981455467011e-15,
+        "cams_region": 3.4333114404120918e-15,
+        "cams_spatial": 3.4482212502227767e-15
+      },
+      "refinement_relative": {
+        "current": 0.00017130464511527776,
+        "cams_region": 0.0001716687641284409,
+        "cams_spatial": 0.00016872897586539537
+      }
+    },
+    {
+      "day": "2024-01-08",
+      "n": 85,
+      "mean_mag": 20.848337049205576,
+      "weather": [
+        [
+          1,
+          0.0,
+          80
+        ],
+        [
+          1,
+          0.0,
+          80
+        ],
+        [
+          0,
+          0.0,
+          80
+        ],
+        [
+          0,
+          0.0,
+          80
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 29.97,
+      "zenith_galactic_latitude_deg": 14.92,
+      "solar_elongation_deg": 145.91,
+      "site": "Moddergat",
+      "aod_area_mean": 0.0369065030102002,
+      "near_fraction_3_10km": 0.2379828486929072,
+      "observed_relative": 2.8884521692101583,
+      "responses": {
+        "current": 6.327043428556436e-15,
+        "cams_region": 8.192728927309808e-15,
+        "cams_spatial": 8.584294928353251e-15
+      },
+      "refinement_relative": {
+        "current": 0.00017241345028229382,
+        "cams_region": 0.00017285576722314566,
+        "cams_spatial": 0.0001737631933305117
+      }
+    },
+    {
+      "day": "2024-01-09",
+      "n": 85,
+      "mean_mag": 20.910442226544152,
+      "weather": [
+        [
+          14,
+          0.0,
+          84
+        ],
+        [
+          14,
+          0.0,
+          84
+        ],
+        [
+          14,
+          0.0,
+          83
+        ],
+        [
+          14,
+          0.0,
+          83
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 29.98,
+      "zenith_galactic_latitude_deg": 15.46,
+      "solar_elongation_deg": 145.74,
+      "site": "Moddergat",
+      "aod_area_mean": 0.03874999999999999,
+      "near_fraction_3_10km": 0.2379828486929072,
+      "observed_relative": 2.727866480938952,
+      "responses": {
+        "current": 6.327043428556436e-15,
+        "cams_region": 8.126773233695204e-15,
+        "cams_spatial": 8.230864313208983e-15
+      },
+      "refinement_relative": {
+        "current": 0.00017241345028229382,
+        "cams_region": 0.00017284248659321655,
+        "cams_spatial": 0.0001735561342144365
+      }
+    },
+    {
+      "day": "2024-01-10",
+      "n": 86,
+      "mean_mag": 21.133450132842473,
+      "weather": [
+        [
+          14,
+          0.0,
+          92
+        ],
+        [
+          14,
+          0.0,
+          92
+        ],
+        [
+          12,
+          0.0,
+          93
+        ],
+        [
+          12,
+          0.0,
+          93
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 30.0,
+      "zenith_galactic_latitude_deg": 15.99,
+      "solar_elongation_deg": 145.57,
+      "site": "Moddergat",
+      "aod_area_mean": 0.06353815512137213,
+      "near_fraction_3_10km": 0.2379828486929072,
+      "observed_relative": 2.221365112809927,
+      "responses": {
+        "current": 6.327043428556436e-15,
+        "cams_region": 7.31563341764527e-15,
+        "cams_spatial": 7.383709310549827e-15
+      },
+      "refinement_relative": {
+        "current": 0.00017241345028229382,
+        "cams_region": 0.00017266425497997062,
+        "cams_spatial": 0.00017221430380942593
+      }
+    },
+    {
+      "day": "2024-01-08",
+      "n": 86,
+      "mean_mag": 21.046980335013604,
+      "weather": [
+        [
+          2,
+          0.0,
+          81
+        ],
+        [
+          2,
+          0.0,
+          81
+        ],
+        [
+          0,
+          0.0,
+          81
+        ],
+        [
+          0,
+          0.0,
+          81
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 29.97,
+      "zenith_galactic_latitude_deg": 15.21,
+      "solar_elongation_deg": 146.07,
+      "site": "Lauwersoog",
+      "aod_area_mean": 0.0369065030102002,
+      "near_fraction_3_10km": 0.2814691185826763,
+      "observed_relative": 2.4055138735538324,
+      "responses": {
+        "current": 1.036475745166427e-14,
+        "cams_region": 1.2994213244248234e-14,
+        "cams_spatial": 1.339219269788778e-14
+      },
+      "refinement_relative": {
+        "current": 0.00017314529948264656,
+        "cams_region": 0.00017346224511749497,
+        "cams_spatial": 0.0001740389841857759
+      }
+    },
+    {
+      "day": "2024-01-08",
+      "n": 86,
+      "mean_mag": 20.94730887093555,
+      "weather": [
+        [
+          3,
+          0.0,
+          84
+        ],
+        [
+          3,
+          0.0,
+          84
+        ],
+        [
+          0,
+          0.0,
+          86
+        ],
+        [
+          0,
+          0.0,
+          86
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 30.35,
+      "zenith_galactic_latitude_deg": 15.97,
+      "solar_elongation_deg": 146.08,
+      "site": "Spiekeroog",
+      "aod_area_mean": 0.0369065030102002,
+      "near_fraction_3_10km": 0.030331165413607697,
+      "observed_relative": 2.6367955168935984,
+      "responses": {
+        "current": 6.003513996312184e-16,
+        "cams_region": 8.620636319078275e-16,
+        "cams_spatial": 9.129687880319427e-16
+      },
+      "refinement_relative": {
+        "current": 0.000169450143479688,
+        "cams_region": 0.00017029254445022346,
+        "cams_spatial": 0.0001737920170306051
+      }
+    }
+  ],
+  "scoring": "Effective SQM/V proxy, nominal natural 22; one fixed scale per site from first eligible night; coastal and source QA still preliminary.",
+  "station_check_residuals": [
+    {
+      "site": "Schiermonnikoog-dorp",
+      "train_day": "2024-01-08",
+      "check_day": "2024-01-10",
+      "residual_mag": {
+        "current": 0.27055240910736694,
+        "cams_region": 0.138433864371802,
+        "cams_spatial": 0.1352598667626839
+      }
+    },
+    {
+      "site": "Vlieland-Oost",
+      "train_day": "2024-01-09",
+      "check_day": "2024-01-10",
+      "residual_mag": {
+        "current": -0.060052918338108274,
+        "cams_region": -0.19561654329867917,
+        "cams_spatial": -0.20135502421367746
+      }
+    }
+  ],
+  "pilot_mae_mag": {
+    "current": 0.1653026637227376,
+    "cams_region": 0.16702520383524058,
+    "cams_spatial": 0.16830744548818066
+  },
+  "cores": {
+    "hdf5": {
+      "h18v03": "465ad4a1b06ae2fb8030529a879433b1518c5554bb8d065fc813595fc9f482c4"
+    },
+    "cams_sha256": "bd3335838782f4945b5ea1c5a1ec5b199a6998e9fbc8b5a4adaf6c2d1652d1c2",
+    "selection_sha256": "c79c05283e8b2d44d2e618a18f22e4233b9cdab563c31937d35d28fe3fb6e9ae"
+  }
+}

@@ -1,0 +1,560 @@
+{
+  "Texel": [
+    {
+      "day": "2024-01-09",
+      "n": 86,
+      "mean_mag": 20.70413317968518,
+      "weather": [
+        [
+          5,
+          0.0,
+          75
+        ],
+        [
+          5,
+          0.0,
+          75
+        ],
+        [
+          5,
+          0.0,
+          75
+        ],
+        [
+          5,
+          0.0,
+          75
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 29.57,
+      "zenith_galactic_latitude_deg": 14.59,
+      "solar_elongation_deg": 145.67
+    },
+    {
+      "day": "2024-01-10",
+      "n": 86,
+      "mean_mag": 20.70951773717549,
+      "weather": [
+        [
+          0,
+          0.0,
+          74
+        ],
+        [
+          0,
+          0.0,
+          74
+        ],
+        [
+          0,
+          0.0,
+          75
+        ],
+        [
+          0,
+          0.0,
+          75
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 29.58,
+      "zenith_galactic_latitude_deg": 15.12,
+      "solar_elongation_deg": 145.5
+    }
+  ],
+  "Borkum": [
+    {
+      "day": "2024-01-08",
+      "n": 86,
+      "mean_mag": 20.705833674211245,
+      "weather": [
+        [
+          0,
+          0.0,
+          76
+        ],
+        [
+          1,
+          0.0,
+          83
+        ],
+        [
+          3,
+          0.0,
+          77
+        ],
+        [
+          0,
+          0.0,
+          83
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 30.15,
+      "zenith_galactic_latitude_deg": 15.32,
+      "solar_elongation_deg": 145.93
+    }
+  ],
+  "Lochem": [
+    {
+      "day": "2024-01-08",
+      "n": 86,
+      "mean_mag": 20.364834489000433,
+      "weather": [
+        [
+          1,
+          0.0,
+          69
+        ],
+        [
+          1,
+          0.0,
+          69
+        ],
+        [
+          0,
+          0.0,
+          70
+        ],
+        [
+          0,
+          0.0,
+          70
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 28.73,
+      "zenith_galactic_latitude_deg": 14.57,
+      "solar_elongation_deg": 147.08
+    },
+    {
+      "day": "2024-01-09",
+      "n": 85,
+      "mean_mag": 20.40605367386846,
+      "weather": [
+        [
+          2,
+          0.0,
+          65
+        ],
+        [
+          2,
+          0.0,
+          66
+        ],
+        [
+          0,
+          0.0,
+          67
+        ],
+        [
+          0,
+          0.0,
+          68
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 28.74,
+      "zenith_galactic_latitude_deg": 15.12,
+      "solar_elongation_deg": 146.92
+    },
+    {
+      "day": "2024-01-10",
+      "n": 86,
+      "mean_mag": 20.320297367071674,
+      "weather": [
+        [
+          0,
+          0.0,
+          71
+        ],
+        [
+          0,
+          0.0,
+          72
+        ],
+        [
+          0,
+          0.0,
+          74
+        ],
+        [
+          0,
+          0.0,
+          73
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 28.76,
+      "zenith_galactic_latitude_deg": 15.67,
+      "solar_elongation_deg": 146.74
+    }
+  ],
+  "Gorredijk": [
+    {
+      "day": "2024-01-08",
+      "n": 85,
+      "mean_mag": 20.624162932705143,
+      "weather": [
+        [
+          3,
+          0.0,
+          82
+        ],
+        [
+          0,
+          0.0,
+          78
+        ],
+        [
+          0,
+          0.0,
+          81
+        ],
+        [
+          0,
+          0.0,
+          78
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 29.58,
+      "zenith_galactic_latitude_deg": 14.75,
+      "solar_elongation_deg": 146.25
+    },
+    {
+      "day": "2024-01-09",
+      "n": 85,
+      "mean_mag": 20.639701336698636,
+      "weather": [
+        [
+          7,
+          0.0,
+          82
+        ],
+        [
+          11,
+          0.0,
+          82
+        ],
+        [
+          11,
+          0.0,
+          81
+        ],
+        [
+          14,
+          0.0,
+          81
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 29.59,
+      "zenith_galactic_latitude_deg": 15.29,
+      "solar_elongation_deg": 146.08
+    },
+    {
+      "day": "2024-01-10",
+      "n": 85,
+      "mean_mag": 20.56415155090063,
+      "weather": [
+        [
+          5,
+          0.0,
+          87
+        ],
+        [
+          14,
+          0.0,
+          88
+        ],
+        [
+          4,
+          0.0,
+          88
+        ],
+        [
+          10,
+          0.0,
+          89
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 29.6,
+      "zenith_galactic_latitude_deg": 15.83,
+      "solar_elongation_deg": 145.91
+    }
+  ],
+  "Vlieland-Oost": [
+    {
+      "day": "2024-01-09",
+      "n": 85,
+      "mean_mag": 21.169156691435653,
+      "weather": [
+        [
+          5,
+          0.0,
+          76
+        ],
+        [
+          7,
+          0.0,
+          73
+        ],
+        [
+          5,
+          0.0,
+          76
+        ],
+        [
+          10,
+          0.0,
+          72
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 29.87,
+      "zenith_galactic_latitude_deg": 14.87,
+      "solar_elongation_deg": 145.52
+    },
+    {
+      "day": "2024-01-10",
+      "n": 85,
+      "mean_mag": 21.22920960977376,
+      "weather": [
+        [
+          1,
+          0.0,
+          73
+        ],
+        [
+          3,
+          0.0,
+          75
+        ],
+        [
+          8,
+          0.0,
+          72
+        ],
+        [
+          2,
+          0.0,
+          77
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 29.88,
+      "zenith_galactic_latitude_deg": 15.41,
+      "solar_elongation_deg": 145.35
+    }
+  ],
+  "Schiermonnikoog-dorp": [
+    {
+      "day": "2024-01-08",
+      "n": 86,
+      "mean_mag": 20.91465361187334,
+      "weather": [
+        [
+          3,
+          0.0,
+          81
+        ],
+        [
+          1,
+          0.0,
+          80
+        ],
+        [
+          0,
+          0.0,
+          81
+        ],
+        [
+          0,
+          0.0,
+          80
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 30.05,
+      "zenith_galactic_latitude_deg": 15.01,
+      "solar_elongation_deg": 145.87
+    },
+    {
+      "day": "2024-01-10",
+      "n": 85,
+      "mean_mag": 20.644101202765974,
+      "weather": [
+        [
+          11,
+          0.0,
+          93
+        ],
+        [
+          14,
+          0.0,
+          92
+        ],
+        [
+          13,
+          0.0,
+          94
+        ],
+        [
+          12,
+          0.0,
+          93
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 30.07,
+      "zenith_galactic_latitude_deg": 16.07,
+      "solar_elongation_deg": 145.54
+    }
+  ],
+  "Moddergat": [
+    {
+      "day": "2024-01-08",
+      "n": 85,
+      "mean_mag": 20.848337049205576,
+      "weather": [
+        [
+          1,
+          0.0,
+          80
+        ],
+        [
+          1,
+          0.0,
+          80
+        ],
+        [
+          0,
+          0.0,
+          80
+        ],
+        [
+          0,
+          0.0,
+          80
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 29.97,
+      "zenith_galactic_latitude_deg": 14.92,
+      "solar_elongation_deg": 145.91
+    },
+    {
+      "day": "2024-01-09",
+      "n": 85,
+      "mean_mag": 20.910442226544152,
+      "weather": [
+        [
+          14,
+          0.0,
+          84
+        ],
+        [
+          14,
+          0.0,
+          84
+        ],
+        [
+          14,
+          0.0,
+          83
+        ],
+        [
+          14,
+          0.0,
+          83
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 29.98,
+      "zenith_galactic_latitude_deg": 15.46,
+      "solar_elongation_deg": 145.74
+    },
+    {
+      "day": "2024-01-10",
+      "n": 86,
+      "mean_mag": 21.133450132842473,
+      "weather": [
+        [
+          14,
+          0.0,
+          92
+        ],
+        [
+          14,
+          0.0,
+          92
+        ],
+        [
+          12,
+          0.0,
+          93
+        ],
+        [
+          12,
+          0.0,
+          93
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 30.0,
+      "zenith_galactic_latitude_deg": 15.99,
+      "solar_elongation_deg": 145.57
+    }
+  ],
+  "Lauwersoog": [
+    {
+      "day": "2024-01-08",
+      "n": 86,
+      "mean_mag": 21.046980335013604,
+      "weather": [
+        [
+          2,
+          0.0,
+          81
+        ],
+        [
+          2,
+          0.0,
+          81
+        ],
+        [
+          0,
+          0.0,
+          81
+        ],
+        [
+          0,
+          0.0,
+          81
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 29.97,
+      "zenith_galactic_latitude_deg": 15.21,
+      "solar_elongation_deg": 146.07
+    }
+  ],
+  "Spiekeroog": [
+    {
+      "day": "2024-01-08",
+      "n": 86,
+      "mean_mag": 20.94730887093555,
+      "weather": [
+        [
+          3,
+          0.0,
+          84
+        ],
+        [
+          3,
+          0.0,
+          84
+        ],
+        [
+          0,
+          0.0,
+          86
+        ],
+        [
+          0,
+          0.0,
+          86
+        ]
+      ],
+      "zenith_ecliptic_latitude_deg": 30.35,
+      "zenith_galactic_latitude_deg": 15.97,
+      "solar_elongation_deg": 146.08
+    }
+  ]
+}
