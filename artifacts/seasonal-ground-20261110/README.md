@@ -256,12 +256,13 @@ NearNadir: в январе прошло **423/345 600** ячеек, в июле 
 
 ## 7. Воспроизведение и файлы
 
-Подготовка среды: `uv sync --locked`. Для точного повторения использовать
-имена и хеши в шести `download-manifest.json`. Скопировать выбранный
-манифест в соответствующий каталог `data/blackmarble/` как `manifest.json`
-до вызова `download_composite()`: иначе каталог NASA может вернуть другую
-переработку. Имена папок и API показаны ниже. Токен задаётся существующим
-локальным файлом через `BLACKMARBLE_TOKEN_FILE`, без включения его в Git.
+Подготовка среды — `uv sync --locked`. Имена файлов и SHA-256 беру из
+[закреплённых манифестов](../../src/lightpollution/resources/manifests/)
+для четырёх месяцев Мадрида и двух месяцев Петербурга. Перед вызовом
+`download_composite()` копирую манифест как `manifest.json` в папку
+набора внутри `data/blackmarble/`. Токен задаю локально через
+`BLACKMARBLE_TOKEN_FILE`. Полный снимок опыта с прежними путями доступен
+в [исходной версии архива](https://github.com/WarriorOfTea/LightPollution/tree/0b6c721f0a12eef33c2ed27bd23c3ce62f9702df/artifacts/seasonal-ground-20261110).
 
 ```python
 from pathlib import Path

@@ -85,6 +85,8 @@ Num/Std/QA, пересечение масок, нули, отношения и �
 
 | Набор | Проверенный объём | Что действительно позволяет |
 |---|---|---|
+| [DARKERSKY4CE / Veneto Stellato](https://darkersky4ce.inaf.it/photometer-network/), ODbL 1.0 | Зенитные SQM-LE, UTC, поле 20°, координаты и серийные номера | Основная выборка для трёх вариантов AOD. Сопоставил 550 нм CAMS Global и композиты Black Marble. [Часы, входы и QA](../artifacts/photometer-aod-selection-20261126/README.md) |
+| [STARS4ALL / TESS-W](https://guaix.fis.ucm.es/tess/), ODbL 1.0 | Месячные IDA-файлы с UTC, яркостью, частотой, нулём, температурой корпуса и ИК-температурой неба | Резерв с другой полосой. Проверил выборку станций и отдельные часы, сохранил сверку в аудите основной выборки |
 | [Madrid AstMon](https://zenodo.org/records/4633001), CC BY4.0 | CSV45 527 631 байт,452321 B/V/R записей; размер/MD5 проверены | Кандидаты ночей, ограниченный фотометрический fit и независимая ночь контроля; не all-sky RAW |
 | [Galicia](https://zenodo.org/records/4977265) | ZIP23 915 784 байта,14 рядов и поправки детектора | Временная/пространственная изменчивость; широкая полоса, нет готовых масок Луны/облаков |
 | [NPS Craters of the Moon](https://catalog.data.gov/dataset/annual-sky-quality-meter-sqm-data-for-craters-of-the-moon-national-monument-and-preserve) | XLSX13767 байт, прочитаны листы | SQM/направления/погодные записи; пояс и магнитные азимуты требуют проверки |
