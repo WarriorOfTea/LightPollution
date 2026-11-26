@@ -1,0 +1,2406 @@
+{
+  "cities": {
+    "Madrid": {
+      "bounds": [
+        -6.3,
+        38.2,
+        -1.0,
+        42.4
+      ],
+      "source_reference_m": 500,
+      "source": "https://zenodo.org/records/51713",
+      "license": {
+        "id": "cc-by-nc-4.0"
+      },
+      "raw_sqm_sha256": "b3d5f4c516e954aa7bc02b5c93b66fea7f3b93f5e380804b2213487318a146d1",
+      "weather": {
+        "2012-02-19": {
+          "cloud_pct": [
+            0,
+            4
+          ],
+          "window_candidates": 904
+        },
+        "2013-12-03": {
+          "cloud_pct": [
+            0,
+            12
+          ],
+          "window_candidates": 598
+        },
+        "2013-12-28": {
+          "cloud_pct": [
+            0,
+            3
+          ],
+          "window_candidates": 1385
+        }
+      }
+    },
+    "Balaguer": {
+      "bounds": [
+        -1.5,
+        40.15,
+        3.3,
+        43.7
+      ],
+      "source_reference_m": 250,
+      "source": "https://doi.org/10.1038/s41598-017-06998-z",
+      "license": "CC BY 4.0",
+      "other_clear_measurements": {
+        "PAM_late_27.2km_mcd_m2": 0.2,
+        "city_outskirts_off_mcd_m2": 0.99
+      }
+    },
+    "Tucson": {
+      "bounds": [
+        -114.0,
+        30.0,
+        -107.7,
+        35.0
+      ],
+      "source_reference_m": 700,
+      "source": "https://arxiv.org/html/2005.12357#S3.SS3",
+      "weather_exclusions": [
+        {
+          "date": "2019-04-01",
+          "site": 7,
+          "reason": "Fig. 4 documents clouds at stars227"
+        }
+      ]
+    }
+  },
+  "atmospheres": {
+    "madrid-dec3": {
+      "parameters": {
+        "aerosol_optical_depth": 0.08469879511584423
+      },
+      "angstrom": 1.881034,
+      "support": "AERONET V3 L2 preceding daylight, stationary exponential extension to source shell",
+      "aeronet": {
+        "aod_550": 0.07290092854979886,
+        "alpha": 1.881034,
+        "site_elevation_m": 680.0,
+        "site": "Madrid",
+        "ver": "AOD20",
+        "n": 13,
+        "utc_first": "14:05:29",
+        "utc_last": "15:53:06",
+        "date": "2013-12-03"
+      },
+      "downloaded_csv_sha256": "3b8ed2f97f061ef62a7f642b22f5c88ea61919c58dc26e1d3b21724eed0dc3ad"
+    },
+    "madrid-dec29": {
+      "parameters": {
+        "aerosol_optical_depth": 0.0208620902914399
+      },
+      "angstrom": 0.845507,
+      "support": "AERONET V3 L2 preceding daylight, stationary exponential extension to source shell",
+      "aeronet": {
+        "aod_550": 0.017956167518742083,
+        "alpha": 0.845507,
+        "site_elevation_m": 680.0,
+        "site": "Madrid",
+        "ver": "AOD20",
+        "n": 11,
+        "utc_first": "14:01:49",
+        "utc_last": "15:47:25",
+        "date": "2013-12-28"
+      },
+      "downloaded_csv_sha256": "e83d0324baa7d6d356b76e5e40e256ba48f6947a0554865d5e9c90d1a505fe45"
+    },
+    "balaguer": {
+      "parameters": {
+        "aerosol_optical_depth": 0.12041751252360612
+      },
+      "angstrom": 1.074197,
+      "support": "AERONET V3 L2 preceding daylight, stationary exponential extension to source shell",
+      "aeronet": {
+        "aod_550": 0.03995011863592524,
+        "alpha": 1.074197,
+        "site_elevation_m": 1574.0,
+        "site": "Montsec",
+        "ver": "AOD20",
+        "n": 3,
+        "utc_first": "16:08:51",
+        "utc_last": "16:37:52",
+        "date": "2016-05-03"
+      },
+      "downloaded_csv_sha256": "5827b406010c14b35965fc080df9ebadc58749e51f13efe0ddf768bf5c9f2c5d"
+    },
+    "madrid-feb": {
+      "parameters": {
+        "aerosol_optical_depth": 0.1
+      },
+      "angstrom": 1.0,
+      "support": "reference scenario; no AERONET on 19/20 February 2012"
+    },
+    "tucson": {
+      "parameters": {
+        "aerosol_optical_depth": 0.05551117669767044,
+        "aerosol_scale_height_m": 1538.4615384615386,
+        "aerosol_single_scattering_albedo": 0.935
+      },
+      "angstrom": 1.0,
+      "phase_nodes": [
+        [
+          300,
+          400,
+          680,
+          850,
+          1050
+        ],
+        [
+          0.71,
+          0.68,
+          0.64,
+          0.635,
+          0.635
+        ]
+      ],
+      "support": "Barentine et al. 2020 §4.1.1. AOD500=0.06 interpreted at representative elevation 727 m."
+    }
+  },
+  "rows": [
+    {
+      "city": "Madrid",
+      "period": "madrid-2012-02",
+      "night": "2012-02-19",
+      "site": "01",
+      "latitude": 40.4355995,
+      "longitude": -3.719596,
+      "distance_km": 2.4859113218532856,
+      "azimuth_deg": 326.7701990481322,
+      "band": "sqm",
+      "value": 17.61,
+      "atmosphere": "madrid-feb",
+      "reported_time": "2012-02-20T02:15:40",
+      "utc_interpretations": [
+        "2012-02-20T02:15:40+00:00",
+        "2012-02-20T01:15:40+00:00"
+      ],
+      "serial": "1716",
+      "n_readings": 1,
+      "n_radius_bin": 18,
+      "radius_bin_km": [
+        0,
+        5
+      ],
+      "elevation_m": 657.0,
+      "astro_checks": [
+        {
+          "utc": "2012-02-20T02:15:40+00:00",
+          "sun_alt_deg": -52.4228108140597,
+          "moon_alt_deg": -40.14083514694045
+        },
+        {
+          "utc": "2012-02-20T01:15:40+00:00",
+          "sun_alt_deg": -58.97132577067488,
+          "moon_alt_deg": -50.24850326283184
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2012-02",
+      "night": "2012-02-19",
+      "site": "02",
+      "latitude": 40.443699,
+      "longitude": -3.77164066667,
+      "distance_km": 6.491835135652341,
+      "azimuth_deg": 297.34628384826897,
+      "band": "sqm",
+      "value": 18.48,
+      "atmosphere": "madrid-feb",
+      "reported_time": "2012-02-20T01:45:25",
+      "utc_interpretations": [
+        "2012-02-20T01:45:25+00:00",
+        "2012-02-20T00:45:25+00:00"
+      ],
+      "serial": "1716",
+      "n_readings": 10,
+      "n_radius_bin": 20,
+      "radius_bin_km": [
+        5,
+        10
+      ],
+      "elevation_m": 645.0,
+      "astro_checks": [
+        {
+          "utc": "2012-02-20T01:45:25+00:00",
+          "sun_alt_deg": -56.2201710762081,
+          "moon_alt_deg": -45.39922679460583
+        },
+        {
+          "utc": "2012-02-20T00:45:25+00:00",
+          "sun_alt_deg": -60.52800363427786,
+          "moon_alt_deg": -54.847097247710145
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2012-02",
+      "night": "2012-02-19",
+      "site": "03",
+      "latitude": 40.4739631667,
+      "longitude": -3.84579133333,
+      "distance_km": 13.610506302201532,
+      "azimuth_deg": 297.83364990699533,
+      "band": "sqm",
+      "value": 18.615000000000002,
+      "atmosphere": "madrid-feb",
+      "reported_time": "2012-02-20T02:26:30",
+      "utc_interpretations": [
+        "2012-02-20T02:26:30+00:00",
+        "2012-02-20T01:26:30+00:00"
+      ],
+      "serial": "1716",
+      "n_readings": 16,
+      "n_radius_bin": 46,
+      "radius_bin_km": [
+        10,
+        15
+      ],
+      "elevation_m": 705.0,
+      "astro_checks": [
+        {
+          "utc": "2012-02-20T02:26:30+00:00",
+          "sun_alt_deg": -50.93393096617644,
+          "moon_alt_deg": -38.30568159479129
+        },
+        {
+          "utc": "2012-02-20T01:26:30+00:00",
+          "sun_alt_deg": -58.10123221368662,
+          "moon_alt_deg": -48.573421470635886
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2012-02",
+      "night": "2012-02-19",
+      "site": "04",
+      "latitude": 40.4670893333,
+      "longitude": -3.89973233333,
+      "distance_km": 17.51909105272113,
+      "azimuth_deg": 288.63920083603205,
+      "band": "sqm",
+      "value": 19.02,
+      "atmosphere": "madrid-feb",
+      "reported_time": "2012-02-20T02:36:25",
+      "utc_interpretations": [
+        "2012-02-20T02:36:25+00:00",
+        "2012-02-20T01:36:25+00:00"
+      ],
+      "serial": "1716",
+      "n_readings": 40,
+      "n_radius_bin": 345,
+      "radius_bin_km": [
+        15,
+        20
+      ],
+      "elevation_m": 717.0,
+      "astro_checks": [
+        {
+          "utc": "2012-02-20T02:36:25+00:00",
+          "sun_alt_deg": -49.49899102383353,
+          "moon_alt_deg": -36.57718564431341
+        },
+        {
+          "utc": "2012-02-20T01:36:25+00:00",
+          "sun_alt_deg": -57.19884552345644,
+          "moon_alt_deg": -46.984144375418076
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2012-02",
+      "night": "2012-02-19",
+      "site": "05",
+      "latitude": 40.4521865,
+      "longitude": -3.95357216667,
+      "distance_km": 21.525656124509215,
+      "azimuth_deg": 280.5836215143346,
+      "band": "sqm",
+      "value": 19.45,
+      "atmosphere": "madrid-feb",
+      "reported_time": "2012-02-20T01:31:45",
+      "utc_interpretations": [
+        "2012-02-20T01:31:45+00:00",
+        "2012-02-20T00:31:45+00:00"
+      ],
+      "serial": "1716",
+      "n_readings": 17,
+      "n_radius_bin": 72,
+      "radius_bin_km": [
+        20,
+        25
+      ],
+      "elevation_m": 622.0,
+      "astro_checks": [
+        {
+          "utc": "2012-02-20T01:31:45+00:00",
+          "sun_alt_deg": -57.68336000092672,
+          "moon_alt_deg": -47.79741390793557
+        },
+        {
+          "utc": "2012-02-20T00:31:45+00:00",
+          "sun_alt_deg": -60.74561368473749,
+          "moon_alt_deg": -56.82624892785538
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2012-02",
+      "night": "2012-02-19",
+      "site": "06",
+      "latitude": 40.4633173333,
+      "longitude": -4.01251683333,
+      "distance_km": 26.65615138782987,
+      "azimuth_deg": 281.26476397132444,
+      "band": "sqm",
+      "value": 19.68,
+      "atmosphere": "madrid-feb",
+      "reported_time": "2012-02-20T01:22:45",
+      "utc_interpretations": [
+        "2012-02-20T01:22:45+00:00",
+        "2012-02-20T00:22:45+00:00"
+      ],
+      "serial": "1716",
+      "n_readings": 11,
+      "n_radius_bin": 281,
+      "radius_bin_km": [
+        25,
+        30
+      ],
+      "elevation_m": 653.0,
+      "astro_checks": [
+        {
+          "utc": "2012-02-20T01:22:45+00:00",
+          "sun_alt_deg": -58.48496516939173,
+          "moon_alt_deg": -49.294853089314316
+        },
+        {
+          "utc": "2012-02-20T00:22:45+00:00",
+          "sun_alt_deg": -60.69834199651187,
+          "moon_alt_deg": -58.00954843271719
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2012-02",
+      "night": "2012-02-19",
+      "site": "07",
+      "latitude": 40.5503998333,
+      "longitude": -4.029847,
+      "distance_km": 31.339134641203657,
+      "azimuth_deg": 298.37882563928486,
+      "band": "sqm",
+      "value": 19.86,
+      "atmosphere": "madrid-feb",
+      "reported_time": "2012-02-20T00:42:58",
+      "utc_interpretations": [
+        "2012-02-20T00:42:58+00:00",
+        "2012-02-19T23:42:58+00:00"
+      ],
+      "serial": "1716",
+      "n_readings": 13,
+      "n_radius_bin": 122,
+      "radius_bin_km": [
+        30,
+        35
+      ],
+      "elevation_m": 839.0,
+      "astro_checks": [
+        {
+          "utc": "2012-02-20T00:42:58+00:00",
+          "sun_alt_deg": -60.50782896665587,
+          "moon_alt_deg": -55.274334830797635
+        },
+        {
+          "utc": "2012-02-19T23:42:58+00:00",
+          "sun_alt_deg": -58.88791765685495,
+          "moon_alt_deg": -62.1272242248978
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2013-12",
+      "night": "2013-12-03",
+      "site": "01",
+      "latitude": 40.43701,
+      "longitude": -3.65962833333,
+      "distance_km": 4.334810113894982,
+      "azimuth_deg": 58.931209569494456,
+      "band": "sqm",
+      "value": 17.41,
+      "atmosphere": "madrid-dec3",
+      "reported_time": "2013-12-03T23:02:46",
+      "utc_interpretations": [
+        "2013-12-03T23:02:46+00:00",
+        "2013-12-03T22:02:46+00:00"
+      ],
+      "serial": "1738",
+      "n_readings": 1,
+      "n_radius_bin": 2,
+      "radius_bin_km": [
+        0,
+        5
+      ],
+      "elevation_m": 663.0,
+      "astro_checks": [
+        {
+          "utc": "2013-12-03T23:02:46+00:00",
+          "sun_alt_deg": -67.56522975613109,
+          "moon_alt_deg": -57.54175523985639
+        },
+        {
+          "utc": "2013-12-03T22:02:46+00:00",
+          "sun_alt_deg": -58.484450748772815,
+          "moon_alt_deg": -47.615311731514474
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2013-12",
+      "night": "2013-12-03",
+      "site": "02",
+      "latitude": 40.4799683333,
+      "longitude": -3.64260166667,
+      "distance_km": 8.702585902059381,
+      "azimuth_deg": 36.28894374725727,
+      "band": "sqm",
+      "value": 17.96,
+      "atmosphere": "madrid-dec3",
+      "reported_time": "2013-12-03T22:56:46",
+      "utc_interpretations": [
+        "2013-12-03T22:56:46+00:00",
+        "2013-12-03T21:56:46+00:00"
+      ],
+      "serial": "1738",
+      "n_readings": 3,
+      "n_radius_bin": 10,
+      "radius_bin_km": [
+        5,
+        10
+      ],
+      "elevation_m": 710.0,
+      "astro_checks": [
+        {
+          "utc": "2013-12-03T22:56:46+00:00",
+          "sun_alt_deg": -66.78085471980124,
+          "moon_alt_deg": -56.59597380028157
+        },
+        {
+          "utc": "2013-12-03T21:56:46+00:00",
+          "sun_alt_deg": -57.44544480638851,
+          "moon_alt_deg": -46.57445404963366
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2013-12",
+      "night": "2013-12-03",
+      "site": "03",
+      "latitude": 40.4820083333,
+      "longitude": -3.58093666667,
+      "distance_km": 12.647915525729212,
+      "azimuth_deg": 55.04223166129818,
+      "band": "sqm",
+      "value": 17.8,
+      "atmosphere": "madrid-dec3",
+      "reported_time": "2013-12-03T22:49:13",
+      "utc_interpretations": [
+        "2013-12-03T22:49:13+00:00",
+        "2013-12-03T21:49:13+00:00"
+      ],
+      "serial": "1738",
+      "n_readings": 2,
+      "n_radius_bin": 2,
+      "radius_bin_km": [
+        10,
+        15
+      ],
+      "elevation_m": 616.0,
+      "astro_checks": [
+        {
+          "utc": "2013-12-03T22:49:13+00:00",
+          "sun_alt_deg": -65.79782585290933,
+          "moon_alt_deg": -55.437238274539126
+        },
+        {
+          "utc": "2013-12-03T21:49:13+00:00",
+          "sun_alt_deg": -56.16996615852537,
+          "moon_alt_deg": -45.29986434210777
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2013-12",
+      "night": "2013-12-03",
+      "site": "04",
+      "latitude": 40.5060316667,
+      "longitude": -3.53591666667,
+      "distance_km": 17.29853053775648,
+      "azimuth_deg": 54.990287706820254,
+      "band": "sqm",
+      "value": 18.67,
+      "atmosphere": "madrid-dec3",
+      "reported_time": "2013-12-03T22:43:18",
+      "utc_interpretations": [
+        "2013-12-03T22:43:18+00:00",
+        "2013-12-03T21:43:18+00:00"
+      ],
+      "serial": "1738",
+      "n_readings": 9,
+      "n_radius_bin": 15,
+      "radius_bin_km": [
+        15,
+        20
+      ],
+      "elevation_m": 644.0,
+      "astro_checks": [
+        {
+          "utc": "2013-12-03T22:43:18+00:00",
+          "sun_alt_deg": -64.97222605711137,
+          "moon_alt_deg": -54.50298488687036
+        },
+        {
+          "utc": "2013-12-03T21:43:18+00:00",
+          "sun_alt_deg": -55.14731123889231,
+          "moon_alt_deg": -44.288636727782
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2013-12",
+      "night": "2013-12-03",
+      "site": "05",
+      "latitude": 40.536335,
+      "longitude": -3.470315,
+      "distance_km": 23.77785506699455,
+      "azimuth_deg": 55.97041193671187,
+      "band": "sqm",
+      "value": 18.990000000000002,
+      "atmosphere": "madrid-dec3",
+      "reported_time": "2013-12-03T21:37:39",
+      "utc_interpretations": [
+        "2013-12-03T21:37:39+00:00",
+        "2013-12-03T20:37:39+00:00"
+      ],
+      "serial": "1738",
+      "n_readings": 6,
+      "n_radius_bin": 42,
+      "radius_bin_km": [
+        20,
+        25
+      ],
+      "elevation_m": 673.0,
+      "astro_checks": [
+        {
+          "utc": "2013-12-03T21:37:39+00:00",
+          "sun_alt_deg": -54.176106189863376,
+          "moon_alt_deg": -43.3350732561297
+        },
+        {
+          "utc": "2013-12-03T20:37:39+00:00",
+          "sun_alt_deg": -43.08518031088514,
+          "moon_alt_deg": -32.59898995447396
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2013-12",
+      "night": "2013-12-03",
+      "site": "06",
+      "latitude": 40.5039483333,
+      "longitude": -3.39860833333,
+      "distance_km": 27.551040561207007,
+      "azimuth_deg": 69.33283684004532,
+      "band": "sqm",
+      "value": 18.57,
+      "atmosphere": "madrid-dec3",
+      "reported_time": "2013-12-03T21:30:59",
+      "utc_interpretations": [
+        "2013-12-03T21:30:59+00:00",
+        "2013-12-03T20:30:59+00:00"
+      ],
+      "serial": "1738",
+      "n_readings": 5,
+      "n_radius_bin": 92,
+      "radius_bin_km": [
+        25,
+        30
+      ],
+      "elevation_m": 613.0,
+      "astro_checks": [
+        {
+          "utc": "2013-12-03T21:30:59+00:00",
+          "sun_alt_deg": -53.03846525378607,
+          "moon_alt_deg": -42.2139786494126
+        },
+        {
+          "utc": "2013-12-03T20:30:59+00:00",
+          "sun_alt_deg": -41.883464523103356,
+          "moon_alt_deg": -31.450653778972306
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2013-12",
+      "night": "2013-12-03",
+      "site": "07",
+      "latitude": 40.6051966667,
+      "longitude": -3.410371666670001,
+      "distance_km": 32.44185984318041,
+      "azimuth_deg": 49.71003903695166,
+      "band": "sqm",
+      "value": 19.86,
+      "atmosphere": "madrid-dec3",
+      "reported_time": "2013-12-03T21:49:33",
+      "utc_interpretations": [
+        "2013-12-03T21:49:33+00:00",
+        "2013-12-03T20:49:33+00:00"
+      ],
+      "serial": "1738",
+      "n_readings": 5,
+      "n_radius_bin": 63,
+      "radius_bin_km": [
+        30,
+        35
+      ],
+      "elevation_m": 679.0,
+      "astro_checks": [
+        {
+          "utc": "2013-12-03T21:49:33+00:00",
+          "sun_alt_deg": -56.300729726510895,
+          "moon_alt_deg": -45.45519451850917
+        },
+        {
+          "utc": "2013-12-03T20:49:33+00:00",
+          "sun_alt_deg": -45.35833962143718,
+          "moon_alt_deg": -34.78484422621682
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2013-12",
+      "night": "2013-12-03",
+      "site": "08",
+      "latitude": 40.61518,
+      "longitude": -3.34991,
+      "distance_km": 37.14179918360613,
+      "azimuth_deg": 53.47172540446304,
+      "band": "sqm",
+      "value": 19.85,
+      "atmosphere": "madrid-dec3",
+      "reported_time": "2013-12-03T21:11:34",
+      "utc_interpretations": [
+        "2013-12-03T21:11:34+00:00",
+        "2013-12-03T20:11:34+00:00"
+      ],
+      "serial": "1738",
+      "n_readings": 5,
+      "n_radius_bin": 62,
+      "radius_bin_km": [
+        35,
+        40
+      ],
+      "elevation_m": 700.0,
+      "astro_checks": [
+        {
+          "utc": "2013-12-03T21:11:34+00:00",
+          "sun_alt_deg": -49.49611971074555,
+          "moon_alt_deg": -38.77715974511057
+        },
+        {
+          "utc": "2013-12-03T20:11:34+00:00",
+          "sun_alt_deg": -38.23432378373057,
+          "moon_alt_deg": -27.990520572120527
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2013-12",
+      "night": "2013-12-03",
+      "site": "09",
+      "latitude": 40.658815,
+      "longitude": -3.293671666669999,
+      "distance_km": 43.852204478763355,
+      "azimuth_deg": 52.03000409554044,
+      "band": "sqm",
+      "value": 19.91,
+      "atmosphere": "madrid-dec3",
+      "reported_time": "2013-12-03T20:46:25",
+      "utc_interpretations": [
+        "2013-12-03T20:46:25+00:00",
+        "2013-12-03T19:46:25+00:00"
+      ],
+      "serial": "1738",
+      "n_readings": 15,
+      "n_radius_bin": 124,
+      "radius_bin_km": [
+        40,
+        45
+      ],
+      "elevation_m": 773.0,
+      "astro_checks": [
+        {
+          "utc": "2013-12-03T20:46:25+00:00",
+          "sun_alt_deg": -44.8502535069811,
+          "moon_alt_deg": -34.306878588207816
+        },
+        {
+          "utc": "2013-12-03T19:46:25+00:00",
+          "sun_alt_deg": -33.50661566335356,
+          "moon_alt_deg": -23.518744931587364
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2013-12",
+      "night": "2013-12-03",
+      "site": "10",
+      "latitude": 40.7098616667,
+      "longitude": -3.297905,
+      "distance_km": 47.276402859611274,
+      "azimuth_deg": 46.31336645523037,
+      "band": "sqm",
+      "value": 20.33,
+      "atmosphere": "madrid-dec3",
+      "reported_time": "2013-12-03T19:33:15",
+      "utc_interpretations": [
+        "2013-12-03T19:33:15+00:00",
+        "2013-12-03T18:33:15+00:00"
+      ],
+      "serial": "1738",
+      "n_readings": 12,
+      "n_radius_bin": 182,
+      "radius_bin_km": [
+        45,
+        50
+      ],
+      "elevation_m": 869.0,
+      "astro_checks": [
+        {
+          "utc": "2013-12-03T19:33:15+00:00",
+          "sun_alt_deg": -31.012556890864648,
+          "moon_alt_deg": -21.16942457890377
+        },
+        {
+          "utc": "2013-12-03T18:33:15+00:00",
+          "sun_alt_deg": -19.771358036697894,
+          "moon_alt_deg": -10.6231970345926
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2013-12",
+      "night": "2013-12-03",
+      "site": "11",
+      "latitude": 40.6925683333,
+      "longitude": -3.23527,
+      "distance_km": 50.04426742079426,
+      "azimuth_deg": 52.0764254281231,
+      "band": "sqm",
+      "value": 20.145,
+      "atmosphere": "madrid-dec3",
+      "reported_time": "2013-12-03T19:58:18",
+      "utc_interpretations": [
+        "2013-12-03T19:58:18+00:00",
+        "2013-12-03T18:58:18+00:00"
+      ],
+      "serial": "1738",
+      "n_readings": 2,
+      "n_radius_bin": 4,
+      "radius_bin_km": [
+        50,
+        55
+      ],
+      "elevation_m": 778.0,
+      "astro_checks": [
+        {
+          "utc": "2013-12-03T19:58:18+00:00",
+          "sun_alt_deg": -35.804103098657855,
+          "moon_alt_deg": -25.696997755156744
+        },
+        {
+          "utc": "2013-12-03T18:58:18+00:00",
+          "sun_alt_deg": -24.476752643264295,
+          "moon_alt_deg": -15.025490734620854
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2013-12",
+      "night": "2013-12-28",
+      "site": "01",
+      "latitude": 40.445935,
+      "longitude": -3.661756666670001,
+      "distance_km": 4.786083021685179,
+      "azimuth_deg": 47.565753594093124,
+      "band": "sqm",
+      "value": 17.54,
+      "atmosphere": "madrid-dec29",
+      "reported_time": "2013-12-29T00:41:52",
+      "utc_interpretations": [
+        "2013-12-29T00:41:52+00:00",
+        "2013-12-28T23:41:52+00:00"
+      ],
+      "serial": "1716",
+      "n_readings": 2,
+      "n_radius_bin": 2,
+      "radius_bin_km": [
+        0,
+        5
+      ],
+      "elevation_m": 678.0,
+      "astro_checks": [
+        {
+          "utc": "2013-12-29T00:41:52+00:00",
+          "sun_alt_deg": -71.9722051015338,
+          "moon_alt_deg": -36.65565353173271
+        },
+        {
+          "utc": "2013-12-28T23:41:52+00:00",
+          "sun_alt_deg": -71.30149248641794,
+          "moon_alt_deg": -47.07372044113739
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2013-12",
+      "night": "2013-12-28",
+      "site": "02",
+      "latitude": 40.47102,
+      "longitude": -3.67249,
+      "distance_km": 6.565143203983865,
+      "azimuth_deg": 23.55030780250936,
+      "band": "sqm",
+      "value": 17.71,
+      "atmosphere": "madrid-dec29",
+      "reported_time": "2013-12-29T00:39:27",
+      "utc_interpretations": [
+        "2013-12-29T00:39:27+00:00",
+        "2013-12-28T23:39:27+00:00"
+      ],
+      "serial": "1716",
+      "n_readings": 1,
+      "n_radius_bin": 3,
+      "radius_bin_km": [
+        5,
+        10
+      ],
+      "elevation_m": 710.0,
+      "astro_checks": [
+        {
+          "utc": "2013-12-29T00:39:27+00:00",
+          "sun_alt_deg": -72.09479488819106,
+          "moon_alt_deg": -37.089261707729406
+        },
+        {
+          "utc": "2013-12-28T23:39:27+00:00",
+          "sun_alt_deg": -71.07140624476686,
+          "moon_alt_deg": -47.476654947670895
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2013-12",
+      "night": "2013-12-28",
+      "site": "03",
+      "latitude": 40.4498616667,
+      "longitude": -3.58219333333,
+      "distance_km": 10.901645965501348,
+      "azimuth_deg": 70.31494083789379,
+      "band": "sqm",
+      "value": 17.695,
+      "atmosphere": "madrid-dec29",
+      "reported_time": "2013-12-29T00:47:01",
+      "utc_interpretations": [
+        "2013-12-29T00:47:01+00:00",
+        "2013-12-28T23:47:01+00:00"
+      ],
+      "serial": "1716",
+      "n_readings": 2,
+      "n_radius_bin": 2,
+      "radius_bin_km": [
+        10,
+        15
+      ],
+      "elevation_m": 609.0,
+      "astro_checks": [
+        {
+          "utc": "2013-12-29T00:47:01+00:00",
+          "sun_alt_deg": -71.594802027606,
+          "moon_alt_deg": -35.678257665933266
+        },
+        {
+          "utc": "2013-12-28T23:47:01+00:00",
+          "sun_alt_deg": -71.71578294678959,
+          "moon_alt_deg": -46.14905015441401
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2013-12",
+      "night": "2013-12-28",
+      "site": "04",
+      "latitude": 40.4545333333,
+      "longitude": -3.50838,
+      "distance_km": 17.035780185815618,
+      "azimuth_deg": 75.71719674960084,
+      "band": "sqm",
+      "value": 17.744999999999997,
+      "atmosphere": "madrid-dec29",
+      "reported_time": "2013-12-29T00:51:16",
+      "utc_interpretations": [
+        "2013-12-29T00:51:16+00:00",
+        "2013-12-28T23:51:16+00:00"
+      ],
+      "serial": "1716",
+      "n_readings": 2,
+      "n_radius_bin": 4,
+      "radius_bin_km": [
+        15,
+        20
+      ],
+      "elevation_m": 586.0,
+      "astro_checks": [
+        {
+          "utc": "2013-12-29T00:51:16+00:00",
+          "sun_alt_deg": -71.2319507084125,
+          "moon_alt_deg": -34.86355399335638
+        },
+        {
+          "utc": "2013-12-28T23:51:16+00:00",
+          "sun_alt_deg": -72.0100179041454,
+          "moon_alt_deg": -45.3743195192053
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2013-12",
+      "night": "2013-12-28",
+      "site": "05",
+      "latitude": 40.4695216667,
+      "longitude": -3.42972,
+      "distance_km": 23.896024362059563,
+      "azimuth_deg": 75.73747077459377,
+      "band": "sqm",
+      "value": 18.65,
+      "atmosphere": "madrid-dec29",
+      "reported_time": "2013-12-29T00:55:36",
+      "utc_interpretations": [
+        "2013-12-29T00:55:36+00:00",
+        "2013-12-28T23:55:36+00:00"
+      ],
+      "serial": "1716",
+      "n_readings": 4,
+      "n_radius_bin": 4,
+      "radius_bin_km": [
+        20,
+        25
+      ],
+      "elevation_m": 588.0,
+      "astro_checks": [
+        {
+          "utc": "2013-12-29T00:55:36+00:00",
+          "sun_alt_deg": -70.8098541731797,
+          "moon_alt_deg": -34.027696248000844
+        },
+        {
+          "utc": "2013-12-28T23:55:36+00:00",
+          "sun_alt_deg": -72.25268118543616,
+          "moon_alt_deg": -44.57420670030945
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2013-12",
+      "night": "2013-12-28",
+      "site": "06",
+      "latitude": 40.5088533333,
+      "longitude": -3.32439666667,
+      "distance_km": 33.66254312963145,
+      "azimuth_deg": 72.19454566980876,
+      "band": "sqm",
+      "value": 18.88,
+      "atmosphere": "madrid-dec29",
+      "reported_time": "2013-12-29T01:02:11",
+      "utc_interpretations": [
+        "2013-12-29T01:02:11+00:00",
+        "2013-12-29T00:02:11+00:00"
+      ],
+      "serial": "1716",
+      "n_readings": 5,
+      "n_radius_bin": 5,
+      "radius_bin_km": [
+        30,
+        35
+      ],
+      "elevation_m": 597.0,
+      "astro_checks": [
+        {
+          "utc": "2013-12-29T01:02:11+00:00",
+          "sun_alt_deg": -70.08633010701833,
+          "moon_alt_deg": -32.76497018429641
+        },
+        {
+          "utc": "2013-12-29T00:02:11+00:00",
+          "sun_alt_deg": -72.50439887251441,
+          "moon_alt_deg": -43.356541339549544
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2013-12",
+      "night": "2013-12-28",
+      "site": "07",
+      "latitude": 40.5182466667,
+      "longitude": -3.26656,
+      "distance_km": 38.642242686911274,
+      "azimuth_deg": 72.9027473937222,
+      "band": "sqm",
+      "value": 19.72,
+      "atmosphere": "madrid-dec29",
+      "reported_time": "2013-12-29T01:08:16",
+      "utc_interpretations": [
+        "2013-12-29T01:08:16+00:00",
+        "2013-12-29T00:08:16+00:00"
+      ],
+      "serial": "1716",
+      "n_readings": 11,
+      "n_radius_bin": 59,
+      "radius_bin_km": [
+        35,
+        40
+      ],
+      "elevation_m": 665.0,
+      "astro_checks": [
+        {
+          "utc": "2013-12-29T01:08:16+00:00",
+          "sun_alt_deg": -69.3873287491241,
+          "moon_alt_deg": -31.62865810424103
+        },
+        {
+          "utc": "2013-12-29T00:08:16+00:00",
+          "sun_alt_deg": -72.65260722765055,
+          "moon_alt_deg": -42.26022502890225
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2013-12",
+      "night": "2013-12-28",
+      "site": "08",
+      "latitude": 40.2775866667,
+      "longitude": -3.21555333333,
+      "distance_km": 44.15757642237428,
+      "azimuth_deg": 110.37877876624924,
+      "band": "sqm",
+      "value": 20.5,
+      "atmosphere": "madrid-dec29",
+      "reported_time": "2013-12-29T01:52:38",
+      "utc_interpretations": [
+        "2013-12-29T01:52:38+00:00",
+        "2013-12-29T00:52:38+00:00"
+      ],
+      "serial": "1716",
+      "n_readings": 14,
+      "n_radius_bin": 229,
+      "radius_bin_km": [
+        40,
+        45
+      ],
+      "elevation_m": 624.0,
+      "astro_checks": [
+        {
+          "utc": "2013-12-29T01:52:38+00:00",
+          "sun_alt_deg": -63.26180431584826,
+          "moon_alt_deg": -23.582066111206654
+        },
+        {
+          "utc": "2013-12-29T00:52:38+00:00",
+          "sun_alt_deg": -71.17025505983374,
+          "moon_alt_deg": -34.42045567972022
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2013-12",
+      "night": "2013-12-28",
+      "site": "09",
+      "latitude": 40.22352,
+      "longitude": -3.20103833333,
+      "distance_km": 47.71781750716552,
+      "azimuth_deg": 116.62104919225263,
+      "band": "sqm",
+      "value": 20.560000000000002,
+      "atmosphere": "madrid-dec29",
+      "reported_time": "2013-12-29T02:04:28",
+      "utc_interpretations": [
+        "2013-12-29T02:04:28+00:00",
+        "2013-12-29T01:04:28+00:00"
+      ],
+      "serial": "1716",
+      "n_readings": 20,
+      "n_radius_bin": 381,
+      "radius_bin_km": [
+        45,
+        50
+      ],
+      "elevation_m": 705.0,
+      "astro_checks": [
+        {
+          "utc": "2013-12-29T02:04:28+00:00",
+          "sun_alt_deg": -61.326751328643745,
+          "moon_alt_deg": -21.427010889388352
+        },
+        {
+          "utc": "2013-12-29T01:04:28+00:00",
+          "sun_alt_deg": -70.02318734493899,
+          "moon_alt_deg": -32.285632070381176
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2013-12",
+      "night": "2013-12-28",
+      "site": "10",
+      "latitude": 39.9419666667,
+      "longitude": -3.739590000000001,
+      "distance_km": 52.899105653042476,
+      "azimuth_deg": 183.33440990756284,
+      "band": "sqm",
+      "value": 20.6,
+      "atmosphere": "madrid-dec29",
+      "reported_time": "2013-12-29T03:28:38",
+      "utc_interpretations": [
+        "2013-12-29T03:28:38+00:00",
+        "2013-12-29T02:28:38+00:00"
+      ],
+      "serial": "1716",
+      "n_readings": 10,
+      "n_radius_bin": 247,
+      "radius_bin_km": [
+        50,
+        55
+      ],
+      "elevation_m": 524.0,
+      "astro_checks": [
+        {
+          "utc": "2013-12-29T03:28:38+00:00",
+          "sun_alt_deg": -46.48458348665542,
+          "moon_alt_deg": -6.754969709090256
+        },
+        {
+          "utc": "2013-12-29T02:28:38+00:00",
+          "sun_alt_deg": -57.61417003978093,
+          "moon_alt_deg": -17.435093303695716
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2013-12",
+      "night": "2013-12-28",
+      "site": "11",
+      "latitude": 39.9724166667,
+      "longitude": -3.37676166667,
+      "distance_km": 56.68270952739402,
+      "azimuth_deg": 150.57986097384972,
+      "band": "sqm",
+      "value": 20.43,
+      "atmosphere": "madrid-dec29",
+      "reported_time": "2013-12-29T03:03:38",
+      "utc_interpretations": [
+        "2013-12-29T03:03:38+00:00",
+        "2013-12-29T02:03:38+00:00"
+      ],
+      "serial": "1716",
+      "n_readings": 9,
+      "n_radius_bin": 112,
+      "radius_bin_km": [
+        55,
+        60
+      ],
+      "elevation_m": 750.0,
+      "astro_checks": [
+        {
+          "utc": "2013-12-29T03:03:38+00:00",
+          "sun_alt_deg": -50.91990285978602,
+          "moon_alt_deg": -10.899776501122357
+        },
+        {
+          "utc": "2013-12-29T02:03:38+00:00",
+          "sun_alt_deg": -61.70413136052783,
+          "moon_alt_deg": -21.690244602399446
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2013-12",
+      "night": "2013-12-28",
+      "site": "12",
+      "latitude": 39.94935,
+      "longitude": -3.27198833333,
+      "distance_km": 63.613070221435926,
+      "azimuth_deg": 144.67296789195498,
+      "band": "sqm",
+      "value": 21.06,
+      "atmosphere": "madrid-dec29",
+      "reported_time": "2013-12-29T02:57:38",
+      "utc_interpretations": [
+        "2013-12-29T02:57:38+00:00",
+        "2013-12-29T01:57:38+00:00"
+      ],
+      "serial": "1716",
+      "n_readings": 9,
+      "n_radius_bin": 88,
+      "radius_bin_km": [
+        60,
+        65
+      ],
+      "elevation_m": 775.0,
+      "astro_checks": [
+        {
+          "utc": "2013-12-29T02:57:38+00:00",
+          "sun_alt_deg": -51.96656532020242,
+          "moon_alt_deg": -11.88326733944895
+        },
+        {
+          "utc": "2013-12-29T01:57:38+00:00",
+          "sun_alt_deg": -62.64991255354209,
+          "moon_alt_deg": -22.698575006840446
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2013-12",
+      "night": "2013-12-28",
+      "site": "13",
+      "latitude": 40.047005,
+      "longitude": -3.06379,
+      "distance_km": 68.12278603563905,
+      "azimuth_deg": 126.9331978892967,
+      "band": "sqm",
+      "value": 20.884999999999998,
+      "atmosphere": "madrid-dec29",
+      "reported_time": "2013-12-29T02:34:23",
+      "utc_interpretations": [
+        "2013-12-29T02:34:23+00:00",
+        "2013-12-29T01:34:23+00:00"
+      ],
+      "serial": "1716",
+      "n_readings": 10,
+      "n_radius_bin": 158,
+      "radius_bin_km": [
+        65,
+        70
+      ],
+      "elevation_m": 765.0,
+      "astro_checks": [
+        {
+          "utc": "2013-12-29T02:34:23+00:00",
+          "sun_alt_deg": -56.05773172417679,
+          "moon_alt_deg": -15.90654171763872
+        },
+        {
+          "utc": "2013-12-29T01:34:23+00:00",
+          "sun_alt_deg": -66.14012338722496,
+          "moon_alt_deg": -26.76942571304052
+        }
+      ]
+    },
+    {
+      "city": "Madrid",
+      "period": "madrid-2013-12",
+      "night": "2013-12-28",
+      "site": "14",
+      "latitude": 39.9982016667,
+      "longitude": -3.062621666670001,
+      "distance_km": 71.62033199285094,
+      "azimuth_deg": 130.33824068693804,
+      "band": "sqm",
+      "value": 20.89,
+      "atmosphere": "madrid-dec29",
+      "reported_time": "2013-12-29T02:40:53",
+      "utc_interpretations": [
+        "2013-12-29T02:40:53+00:00",
+        "2013-12-29T01:40:53+00:00"
+      ],
+      "serial": "1716",
+      "n_readings": 24,
+      "n_radius_bin": 91,
+      "radius_bin_km": [
+        70,
+        75
+      ],
+      "elevation_m": 812.0,
+      "astro_checks": [
+        {
+          "utc": "2013-12-29T02:40:53+00:00",
+          "sun_alt_deg": -54.89029948331659,
+          "moon_alt_deg": -14.730386620470647
+        },
+        {
+          "utc": "2013-12-29T01:40:53+00:00",
+          "sun_alt_deg": -65.18073837849273,
+          "moon_alt_deg": -25.58648542403013
+        }
+      ]
+    },
+    {
+      "city": "Balaguer",
+      "period": "balaguer-2016-05",
+      "night": "2016-05-03",
+      "site": "1",
+      "site_name": "Balaguer outskirts",
+      "latitude": 41.7911,
+      "longitude": 0.7975,
+      "distance_km": 1.1,
+      "elevation_m": 274.5,
+      "value": 1.16,
+      "band": "photopic",
+      "atmosphere": "balaguer",
+      "published_uncertainty_mcd_m2": 0.12,
+      "reported_time": "night of 3/4 May, individual frame UTC unpublished"
+    },
+    {
+      "city": "Balaguer",
+      "period": "balaguer-2016-05",
+      "night": "2016-05-03",
+      "site": "2",
+      "site_name": "Cemetary",
+      "latitude": 41.8024,
+      "longitude": 0.7916,
+      "distance_km": 2.2,
+      "elevation_m": 288.5,
+      "value": 0.62,
+      "band": "photopic",
+      "atmosphere": "balaguer",
+      "published_uncertainty_mcd_m2": 0.06,
+      "reported_time": "night of 3/4 May, individual frame UTC unpublished"
+    },
+    {
+      "city": "Balaguer",
+      "period": "balaguer-2016-05",
+      "night": "2016-05-03",
+      "site": "3",
+      "site_name": "Hill-1",
+      "latitude": 41.812,
+      "longitude": 0.7725,
+      "distance_km": 4.8,
+      "elevation_m": 396.5,
+      "value": 0.4,
+      "band": "photopic",
+      "atmosphere": "balaguer",
+      "published_uncertainty_mcd_m2": 0.04,
+      "reported_time": "night of 3/4 May, individual frame UTC unpublished"
+    },
+    {
+      "city": "Balaguer",
+      "period": "balaguer-2016-05",
+      "night": "2016-05-03",
+      "site": "4",
+      "site_name": "Plain",
+      "latitude": 41.8426,
+      "longitude": 0.7418,
+      "distance_km": 8.4,
+      "elevation_m": 413.5,
+      "value": 0.31,
+      "band": "photopic",
+      "atmosphere": "balaguer",
+      "published_uncertainty_mcd_m2": 0.03,
+      "reported_time": "night of 3/4 May, individual frame UTC unpublished"
+    },
+    {
+      "city": "Balaguer",
+      "period": "balaguer-2016-05",
+      "night": "2016-05-03",
+      "site": "5",
+      "site_name": "Village",
+      "latitude": 41.9038,
+      "longitude": 0.764,
+      "distance_km": 13.5,
+      "elevation_m": 596.5,
+      "value": 0.28,
+      "band": "photopic",
+      "atmosphere": "balaguer",
+      "published_uncertainty_mcd_m2": 0.03,
+      "reported_time": "night of 3/4 May, individual frame UTC unpublished"
+    },
+    {
+      "city": "Balaguer",
+      "period": "balaguer-2016-05",
+      "night": "2016-05-03",
+      "site": "6",
+      "site_name": "Hill-2",
+      "latitude": 41.9417,
+      "longitude": 0.756,
+      "distance_km": 17.7,
+      "elevation_m": 663.5,
+      "value": 0.23,
+      "band": "photopic",
+      "atmosphere": "balaguer",
+      "published_uncertainty_mcd_m2": 0.02,
+      "reported_time": "night of 3/4 May, individual frame UTC unpublished"
+    },
+    {
+      "city": "Balaguer",
+      "period": "balaguer-2016-05",
+      "night": "2016-05-03",
+      "site": "7",
+      "site_name": "Port d’ Àger",
+      "latitude": 41.9791,
+      "longitude": 0.7506,
+      "distance_km": 22.2,
+      "elevation_m": 909.5,
+      "value": 0.22,
+      "band": "photopic",
+      "atmosphere": "balaguer",
+      "published_uncertainty_mcd_m2": 0.02,
+      "reported_time": "night of 3/4 May, individual frame UTC unpublished"
+    },
+    {
+      "city": "Balaguer",
+      "period": "balaguer-2016-05",
+      "night": "2016-05-03",
+      "site": "8*",
+      "site_name": "Parc Astronòmic Montsec",
+      "latitude": 42.0248,
+      "longitude": 0.7368,
+      "distance_km": 27.2,
+      "elevation_m": 814.5,
+      "value": 0.22,
+      "band": "photopic",
+      "atmosphere": "balaguer",
+      "published_uncertainty_mcd_m2": 0.02,
+      "reported_time": "night of 3/4 May, individual frame UTC unpublished"
+    },
+    {
+      "city": "Tucson",
+      "period": "tucson-2019-03",
+      "night": "2019-03-29",
+      "site": "3",
+      "instrument": "DSLR",
+      "latitude": 32.21239,
+      "longitude": -110.92515,
+      "elevation_m": 756.0,
+      "distance_km": 5.5,
+      "value": 4.41,
+      "published_mcd_m2": 4.41,
+      "band": "photopic",
+      "atmosphere": "tucson",
+      "utc_interpretations": [
+        "2019-03-29T06:57:30+00:00"
+      ],
+      "time_range_utc": [
+        "2019-03-29T06:55:00Z",
+        "2019-03-29T07:00:00Z"
+      ],
+      "nominal_pct_before_midnight": 90,
+      "test_command_pct_after_midnight": 30,
+      "paper_zenith_column": "before midnight",
+      "astro_checks": [
+        {
+          "utc": "2019-03-29T06:57:30+00:00",
+          "sun_alt_deg": -53.737729265989294,
+          "moon_alt_deg": -30.570508920035266
+        }
+      ]
+    },
+    {
+      "city": "Tucson",
+      "period": "tucson-2019-03",
+      "night": "2019-03-29",
+      "site": "6",
+      "instrument": "stars19",
+      "latitude": 32.22388,
+      "longitude": -110.76741,
+      "elevation_m": 835.0,
+      "distance_km": 20.0,
+      "value": 20.36,
+      "published_mcd_m2": 0.85,
+      "band": "tess",
+      "atmosphere": "tucson",
+      "utc_interpretations": [
+        "2019-03-29T06:57:30+00:00"
+      ],
+      "time_range_utc": [
+        "2019-03-29T06:55:00Z",
+        "2019-03-29T07:00:00Z"
+      ],
+      "nominal_pct_before_midnight": 90,
+      "test_command_pct_after_midnight": 30,
+      "paper_zenith_column": "before midnight",
+      "astro_checks": [
+        {
+          "utc": "2019-03-29T06:57:30+00:00",
+          "sun_alt_deg": -53.756727653921075,
+          "moon_alt_deg": -30.44105618356517
+        }
+      ]
+    },
+    {
+      "city": "Tucson",
+      "period": "tucson-2019-03",
+      "night": "2019-03-29",
+      "site": "2",
+      "instrument": "SQM-L 4387",
+      "latitude": 32.44266,
+      "longitude": -110.78889,
+      "elevation_m": 2787.0,
+      "distance_km": 29.0,
+      "value": 21.5,
+      "published_mcd_m2": 0.3,
+      "band": "sqm",
+      "atmosphere": "tucson",
+      "utc_interpretations": [
+        "2019-03-29T06:57:30+00:00"
+      ],
+      "time_range_utc": [
+        "2019-03-29T06:55:00Z",
+        "2019-03-29T07:00:00Z"
+      ],
+      "nominal_pct_before_midnight": 90,
+      "test_command_pct_after_midnight": 30,
+      "paper_zenith_column": "before midnight",
+      "astro_checks": [
+        {
+          "utc": "2019-03-29T06:57:30+00:00",
+          "sun_alt_deg": -53.53944026698905,
+          "moon_alt_deg": -30.48953101319443
+        }
+      ]
+    },
+    {
+      "city": "Tucson",
+      "period": "tucson-2019-03",
+      "night": "2019-03-29",
+      "site": "7",
+      "instrument": "stars227",
+      "latitude": 32.60985,
+      "longitude": -110.73369,
+      "elevation_m": 1316.0,
+      "distance_km": 49.0,
+      "value": 21.77,
+      "published_mcd_m2": 0.23,
+      "band": "tess",
+      "atmosphere": "tucson",
+      "utc_interpretations": [
+        "2019-03-29T06:57:30+00:00"
+      ],
+      "time_range_utc": [
+        "2019-03-29T06:55:00Z",
+        "2019-03-29T07:00:00Z"
+      ],
+      "nominal_pct_before_midnight": 90,
+      "test_command_pct_after_midnight": 30,
+      "paper_zenith_column": "before midnight",
+      "astro_checks": [
+        {
+          "utc": "2019-03-29T06:57:30+00:00",
+          "sun_alt_deg": -53.38678060360088,
+          "moon_alt_deg": -30.46657602711213
+        }
+      ]
+    },
+    {
+      "city": "Tucson",
+      "period": "tucson-2019-03",
+      "night": "2019-03-31",
+      "site": "4",
+      "instrument": "SQM-L 10473",
+      "latitude": 32.25204,
+      "longitude": -110.94811,
+      "elevation_m": 733.0,
+      "distance_km": 3.4,
+      "value": 18.91,
+      "published_mcd_m2": 3.2,
+      "band": "sqm",
+      "atmosphere": "tucson",
+      "utc_interpretations": [
+        "2019-03-31T06:57:30+00:00"
+      ],
+      "time_range_utc": [
+        "2019-03-31T06:55:00Z",
+        "2019-03-31T07:00:00Z"
+      ],
+      "nominal_pct_before_midnight": 90,
+      "test_command_pct_after_midnight": 30,
+      "paper_zenith_column": "before midnight",
+      "astro_checks": [
+        {
+          "utc": "2019-03-31T06:57:30+00:00",
+          "sun_alt_deg": -52.959944854159026,
+          "moon_alt_deg": -48.380337154599694
+        }
+      ]
+    },
+    {
+      "city": "Tucson",
+      "period": "tucson-2019-03",
+      "night": "2019-03-31",
+      "site": "6",
+      "instrument": "stars19",
+      "latitude": 32.22388,
+      "longitude": -110.76741,
+      "elevation_m": 835.0,
+      "distance_km": 20.0,
+      "value": 20.32,
+      "published_mcd_m2": 0.88,
+      "band": "tess",
+      "atmosphere": "tucson",
+      "utc_interpretations": [
+        "2019-03-31T06:57:30+00:00"
+      ],
+      "time_range_utc": [
+        "2019-03-31T06:55:00Z",
+        "2019-03-31T07:00:00Z"
+      ],
+      "nominal_pct_before_midnight": 90,
+      "test_command_pct_after_midnight": 30,
+      "paper_zenith_column": "before midnight",
+      "astro_checks": [
+        {
+          "utc": "2019-03-31T06:57:30+00:00",
+          "sun_alt_deg": -53.020758072789825,
+          "moon_alt_deg": -48.2348515812824
+        }
+      ]
+    },
+    {
+      "city": "Tucson",
+      "period": "tucson-2019-03",
+      "night": "2019-03-31",
+      "site": "2",
+      "instrument": "SQM-L 4387",
+      "latitude": 32.44266,
+      "longitude": -110.78889,
+      "elevation_m": 2787.0,
+      "distance_km": 29.0,
+      "value": 21.42,
+      "published_mcd_m2": 0.32,
+      "band": "sqm",
+      "atmosphere": "tucson",
+      "utc_interpretations": [
+        "2019-03-31T06:57:30+00:00"
+      ],
+      "time_range_utc": [
+        "2019-03-31T06:55:00Z",
+        "2019-03-31T07:00:00Z"
+      ],
+      "nominal_pct_before_midnight": 90,
+      "test_command_pct_after_midnight": 30,
+      "paper_zenith_column": "before midnight",
+      "astro_checks": [
+        {
+          "utc": "2019-03-31T06:57:30+00:00",
+          "sun_alt_deg": -52.80321256058035,
+          "moon_alt_deg": -48.22150635282364
+        }
+      ]
+    },
+    {
+      "city": "Tucson",
+      "period": "tucson-2019-03",
+      "night": "2019-03-31",
+      "site": "7",
+      "instrument": "stars227",
+      "latitude": 32.60985,
+      "longitude": -110.73369,
+      "elevation_m": 1316.0,
+      "distance_km": 49.0,
+      "value": 21.67,
+      "published_mcd_m2": 0.25,
+      "band": "tess",
+      "atmosphere": "tucson",
+      "utc_interpretations": [
+        "2019-03-31T06:57:30+00:00"
+      ],
+      "time_range_utc": [
+        "2019-03-31T06:55:00Z",
+        "2019-03-31T07:00:00Z"
+      ],
+      "nominal_pct_before_midnight": 90,
+      "test_command_pct_after_midnight": 30,
+      "paper_zenith_column": "before midnight",
+      "astro_checks": [
+        {
+          "utc": "2019-03-31T06:57:30+00:00",
+          "sun_alt_deg": -52.64986195304287,
+          "moon_alt_deg": -48.1514088427473
+        }
+      ]
+    },
+    {
+      "city": "Tucson",
+      "period": "tucson-2019-04",
+      "night": "2019-04-01",
+      "site": "3",
+      "instrument": "DSLR",
+      "latitude": 32.21239,
+      "longitude": -110.92515,
+      "elevation_m": 756.0,
+      "distance_km": 5.5,
+      "value": 4.51,
+      "published_mcd_m2": 4.51,
+      "band": "photopic",
+      "atmosphere": "tucson",
+      "utc_interpretations": [
+        "2019-04-01T06:57:30+00:00"
+      ],
+      "time_range_utc": [
+        "2019-04-01T06:55:00Z",
+        "2019-04-01T07:00:00Z"
+      ],
+      "nominal_pct_before_midnight": 90,
+      "test_command_pct_after_midnight": 30,
+      "paper_zenith_column": "before midnight",
+      "astro_checks": [
+        {
+          "utc": "2019-04-01T06:57:30+00:00",
+          "sun_alt_deg": -52.63635692784019,
+          "moon_alt_deg": -55.768030303730164
+        }
+      ]
+    },
+    {
+      "city": "Tucson",
+      "period": "tucson-2019-04",
+      "night": "2019-04-01",
+      "site": "3",
+      "instrument": "SQM-L 5442",
+      "latitude": 32.21239,
+      "longitude": -110.92515,
+      "elevation_m": 756.0,
+      "distance_km": 5.5,
+      "value": 18.96,
+      "published_mcd_m2": 3.13,
+      "band": "sqm",
+      "atmosphere": "tucson",
+      "utc_interpretations": [
+        "2019-04-01T06:57:30+00:00"
+      ],
+      "time_range_utc": [
+        "2019-04-01T06:55:00Z",
+        "2019-04-01T07:00:00Z"
+      ],
+      "nominal_pct_before_midnight": 90,
+      "test_command_pct_after_midnight": 30,
+      "paper_zenith_column": "before midnight",
+      "astro_checks": [
+        {
+          "utc": "2019-04-01T06:57:30+00:00",
+          "sun_alt_deg": -52.63635692784019,
+          "moon_alt_deg": -55.768030303730164
+        }
+      ]
+    },
+    {
+      "city": "Tucson",
+      "period": "tucson-2019-04",
+      "night": "2019-04-01",
+      "site": "5",
+      "instrument": "SQM-L 10473",
+      "latitude": 32.2135,
+      "longitude": -110.90542,
+      "elevation_m": 768.0,
+      "distance_km": 6.3,
+      "value": 18.86,
+      "published_mcd_m2": 3.39,
+      "band": "sqm",
+      "atmosphere": "tucson",
+      "utc_interpretations": [
+        "2019-04-01T06:57:30+00:00"
+      ],
+      "time_range_utc": [
+        "2019-04-01T06:55:00Z",
+        "2019-04-01T07:00:00Z"
+      ],
+      "nominal_pct_before_midnight": 90,
+      "test_command_pct_after_midnight": 30,
+      "paper_zenith_column": "before midnight",
+      "astro_checks": [
+        {
+          "utc": "2019-04-01T06:57:30+00:00",
+          "sun_alt_deg": -52.6388742930225,
+          "moon_alt_deg": -55.75225970664398
+        }
+      ]
+    },
+    {
+      "city": "Tucson",
+      "period": "tucson-2019-04",
+      "night": "2019-04-01",
+      "site": "6",
+      "instrument": "stars19",
+      "latitude": 32.22388,
+      "longitude": -110.76741,
+      "elevation_m": 835.0,
+      "distance_km": 20.0,
+      "value": 20.29,
+      "published_mcd_m2": 0.9,
+      "band": "tess",
+      "atmosphere": "tucson",
+      "utc_interpretations": [
+        "2019-04-01T06:57:30+00:00"
+      ],
+      "time_range_utc": [
+        "2019-04-01T06:55:00Z",
+        "2019-04-01T07:00:00Z"
+      ],
+      "nominal_pct_before_midnight": 90,
+      "test_command_pct_after_midnight": 30,
+      "paper_zenith_column": "before midnight",
+      "astro_checks": [
+        {
+          "utc": "2019-04-01T06:57:30+00:00",
+          "sun_alt_deg": -52.65366571157623,
+          "moon_alt_deg": -55.640983804078694
+        }
+      ]
+    },
+    {
+      "city": "Tucson",
+      "period": "tucson-2019-04",
+      "night": "2019-04-03",
+      "site": "3",
+      "instrument": "DSLR",
+      "latitude": 32.21239,
+      "longitude": -110.92515,
+      "elevation_m": 756.0,
+      "distance_km": 5.5,
+      "value": 4.25,
+      "published_mcd_m2": 4.25,
+      "band": "photopic",
+      "atmosphere": "tucson",
+      "utc_interpretations": [
+        "2019-04-03T06:57:30+00:00"
+      ],
+      "time_range_utc": [
+        "2019-04-03T06:55:00Z",
+        "2019-04-03T07:00:00Z"
+      ],
+      "nominal_pct_before_midnight": 90,
+      "test_command_pct_after_midnight": 30,
+      "paper_zenith_column": "before midnight",
+      "astro_checks": [
+        {
+          "utc": "2019-04-03T06:57:30+00:00",
+          "sun_alt_deg": -51.90554857263862,
+          "moon_alt_deg": -63.4550041728082
+        }
+      ]
+    },
+    {
+      "city": "Tucson",
+      "period": "tucson-2019-04",
+      "night": "2019-04-03",
+      "site": "3",
+      "instrument": "SQM-L 5442",
+      "latitude": 32.21239,
+      "longitude": -110.92515,
+      "elevation_m": 756.0,
+      "distance_km": 5.5,
+      "value": 19.1,
+      "published_mcd_m2": 2.71,
+      "band": "sqm",
+      "atmosphere": "tucson",
+      "utc_interpretations": [
+        "2019-04-03T06:57:30+00:00"
+      ],
+      "time_range_utc": [
+        "2019-04-03T06:55:00Z",
+        "2019-04-03T07:00:00Z"
+      ],
+      "nominal_pct_before_midnight": 90,
+      "test_command_pct_after_midnight": 30,
+      "paper_zenith_column": "before midnight",
+      "astro_checks": [
+        {
+          "utc": "2019-04-03T06:57:30+00:00",
+          "sun_alt_deg": -51.90554857263862,
+          "moon_alt_deg": -63.4550041728082
+        }
+      ]
+    },
+    {
+      "city": "Tucson",
+      "period": "tucson-2019-04",
+      "night": "2019-04-03",
+      "site": "6",
+      "instrument": "stars19",
+      "latitude": 32.22388,
+      "longitude": -110.76741,
+      "elevation_m": 835.0,
+      "distance_km": 20.0,
+      "value": 20.34,
+      "published_mcd_m2": 0.87,
+      "band": "tess",
+      "atmosphere": "tucson",
+      "utc_interpretations": [
+        "2019-04-03T06:57:30+00:00"
+      ],
+      "time_range_utc": [
+        "2019-04-03T06:55:00Z",
+        "2019-04-03T07:00:00Z"
+      ],
+      "nominal_pct_before_midnight": 90,
+      "test_command_pct_after_midnight": 30,
+      "paper_zenith_column": "before midnight",
+      "astro_checks": [
+        {
+          "utc": "2019-04-03T06:57:30+00:00",
+          "sun_alt_deg": -51.92179017447842,
+          "moon_alt_deg": -63.3831241440183
+        }
+      ]
+    },
+    {
+      "city": "Tucson",
+      "period": "tucson-2019-04",
+      "night": "2019-04-03",
+      "site": "2",
+      "instrument": "SQM-L 4387",
+      "latitude": 32.44266,
+      "longitude": -110.78889,
+      "elevation_m": 2787.0,
+      "distance_km": 29.0,
+      "value": 21.35,
+      "published_mcd_m2": 0.34,
+      "band": "sqm",
+      "atmosphere": "tucson",
+      "utc_interpretations": [
+        "2019-04-03T06:57:30+00:00"
+      ],
+      "time_range_utc": [
+        "2019-04-03T06:55:00Z",
+        "2019-04-03T07:00:00Z"
+      ],
+      "nominal_pct_before_midnight": 90,
+      "test_command_pct_after_midnight": 30,
+      "paper_zenith_column": "before midnight",
+      "astro_checks": [
+        {
+          "utc": "2019-04-03T06:57:30+00:00",
+          "sun_alt_deg": -51.70390515299581,
+          "moon_alt_deg": -63.2013313798403
+        }
+      ]
+    },
+    {
+      "city": "Tucson",
+      "period": "tucson-2019-04",
+      "night": "2019-04-03",
+      "site": "7",
+      "instrument": "stars227",
+      "latitude": 32.60985,
+      "longitude": -110.73369,
+      "elevation_m": 1316.0,
+      "distance_km": 49.0,
+      "value": 21.64,
+      "published_mcd_m2": 0.26,
+      "band": "tess",
+      "atmosphere": "tucson",
+      "utc_interpretations": [
+        "2019-04-03T06:57:30+00:00"
+      ],
+      "time_range_utc": [
+        "2019-04-03T06:55:00Z",
+        "2019-04-03T07:00:00Z"
+      ],
+      "nominal_pct_before_midnight": 90,
+      "test_command_pct_after_midnight": 30,
+      "paper_zenith_column": "before midnight",
+      "astro_checks": [
+        {
+          "utc": "2019-04-03T06:57:30+00:00",
+          "sun_alt_deg": -51.54959185598055,
+          "moon_alt_deg": -63.03408134669698
+        }
+      ]
+    },
+    {
+      "city": "Tucson",
+      "period": "tucson-2019-04",
+      "night": "2019-04-07",
+      "site": "1",
+      "instrument": "SQM-L 4246",
+      "latitude": 32.25086,
+      "longitude": -110.93854,
+      "elevation_m": 738.0,
+      "distance_km": 3.5,
+      "value": 18.85,
+      "published_mcd_m2": 3.44,
+      "band": "sqm",
+      "atmosphere": "tucson",
+      "utc_interpretations": [
+        "2019-04-07T06:57:30+00:00"
+      ],
+      "time_range_utc": [
+        "2019-04-07T06:55:00Z",
+        "2019-04-07T07:00:00Z"
+      ],
+      "nominal_pct_before_midnight": 90,
+      "test_command_pct_after_midnight": 100,
+      "paper_zenith_column": "before midnight",
+      "astro_checks": [
+        {
+          "utc": "2019-04-07T06:57:30+00:00",
+          "sun_alt_deg": -50.41607542112558,
+          "moon_alt_deg": -39.658842532970795
+        }
+      ]
+    },
+    {
+      "city": "Tucson",
+      "period": "tucson-2019-04",
+      "night": "2019-04-07",
+      "site": "3",
+      "instrument": "DSLR",
+      "latitude": 32.21239,
+      "longitude": -110.92515,
+      "elevation_m": 756.0,
+      "distance_km": 5.5,
+      "value": 4.72,
+      "published_mcd_m2": 4.72,
+      "band": "photopic",
+      "atmosphere": "tucson",
+      "utc_interpretations": [
+        "2019-04-07T06:57:30+00:00"
+      ],
+      "time_range_utc": [
+        "2019-04-07T06:55:00Z",
+        "2019-04-07T07:00:00Z"
+      ],
+      "nominal_pct_before_midnight": 90,
+      "test_command_pct_after_midnight": 100,
+      "paper_zenith_column": "before midnight",
+      "astro_checks": [
+        {
+          "utc": "2019-04-07T06:57:30+00:00",
+          "sun_alt_deg": -50.45600869127588,
+          "moon_alt_deg": -39.69546604478845
+        }
+      ]
+    },
+    {
+      "city": "Tucson",
+      "period": "tucson-2019-04",
+      "night": "2019-04-07",
+      "site": "3",
+      "instrument": "SQM-L 5442",
+      "latitude": 32.21239,
+      "longitude": -110.92515,
+      "elevation_m": 756.0,
+      "distance_km": 5.5,
+      "value": 19.0,
+      "published_mcd_m2": 3.0,
+      "band": "sqm",
+      "atmosphere": "tucson",
+      "utc_interpretations": [
+        "2019-04-07T06:57:30+00:00"
+      ],
+      "time_range_utc": [
+        "2019-04-07T06:55:00Z",
+        "2019-04-07T07:00:00Z"
+      ],
+      "nominal_pct_before_midnight": 90,
+      "test_command_pct_after_midnight": 100,
+      "paper_zenith_column": "before midnight",
+      "astro_checks": [
+        {
+          "utc": "2019-04-07T06:57:30+00:00",
+          "sun_alt_deg": -50.45600869127588,
+          "moon_alt_deg": -39.69546604478845
+        }
+      ]
+    },
+    {
+      "city": "Tucson",
+      "period": "tucson-2019-04",
+      "night": "2019-04-07",
+      "site": "6",
+      "instrument": "stars19",
+      "latitude": 32.22388,
+      "longitude": -110.76741,
+      "elevation_m": 835.0,
+      "distance_km": 20.0,
+      "value": 20.29,
+      "published_mcd_m2": 0.91,
+      "band": "tess",
+      "atmosphere": "tucson",
+      "utc_interpretations": [
+        "2019-04-07T06:57:30+00:00"
+      ],
+      "time_range_utc": [
+        "2019-04-07T06:55:00Z",
+        "2019-04-07T07:00:00Z"
+      ],
+      "nominal_pct_before_midnight": 90,
+      "test_command_pct_after_midnight": 100,
+      "paper_zenith_column": "before midnight",
+      "astro_checks": [
+        {
+          "utc": "2019-04-07T06:57:30+00:00",
+          "sun_alt_deg": -50.470257643448335,
+          "moon_alt_deg": -39.76976494231915
+        }
+      ]
+    },
+    {
+      "city": "Tucson",
+      "period": "tucson-2019-04",
+      "night": "2019-04-07",
+      "site": "2",
+      "instrument": "SQM-L 4387",
+      "latitude": 32.44266,
+      "longitude": -110.78889,
+      "elevation_m": 2787.0,
+      "distance_km": 29.0,
+      "value": 21.21,
+      "published_mcd_m2": 0.39,
+      "band": "sqm",
+      "atmosphere": "tucson",
+      "utc_interpretations": [
+        "2019-04-07T06:57:30+00:00"
+      ],
+      "time_range_utc": [
+        "2019-04-07T06:55:00Z",
+        "2019-04-07T07:00:00Z"
+      ],
+      "nominal_pct_before_midnight": 90,
+      "test_command_pct_after_midnight": 100,
+      "paper_zenith_column": "before midnight",
+      "astro_checks": [
+        {
+          "utc": "2019-04-07T06:57:30+00:00",
+          "sun_alt_deg": -50.251998868194015,
+          "moon_alt_deg": -39.59012669753561
+        }
+      ]
+    },
+    {
+      "city": "Tucson",
+      "period": "tucson-2019-04",
+      "night": "2019-04-07",
+      "site": "7",
+      "instrument": "stars227",
+      "latitude": 32.60985,
+      "longitude": -110.73369,
+      "elevation_m": 1316.0,
+      "distance_km": 49.0,
+      "value": 21.64,
+      "published_mcd_m2": 0.31,
+      "band": "tess",
+      "atmosphere": "tucson",
+      "utc_interpretations": [
+        "2019-04-07T06:57:30+00:00"
+      ],
+      "time_range_utc": [
+        "2019-04-07T06:55:00Z",
+        "2019-04-07T07:00:00Z"
+      ],
+      "nominal_pct_before_midnight": 90,
+      "test_command_pct_after_midnight": 100,
+      "paper_zenith_column": "before midnight",
+      "astro_checks": [
+        {
+          "utc": "2019-04-07T06:57:30+00:00",
+          "sun_alt_deg": -50.09653224763111,
+          "moon_alt_deg": -39.48975794992262
+        }
+      ]
+    },
+    {
+      "city": "Tucson",
+      "period": "tucson-2019-04",
+      "night": "2019-04-08",
+      "site": "3",
+      "instrument": "DSLR",
+      "latitude": 32.21239,
+      "longitude": -110.92515,
+      "elevation_m": 756.0,
+      "distance_km": 5.5,
+      "value": 4.06,
+      "published_mcd_m2": 4.06,
+      "band": "photopic",
+      "atmosphere": "tucson",
+      "utc_interpretations": [
+        "2019-04-08T06:57:30+00:00"
+      ],
+      "time_range_utc": [
+        "2019-04-08T06:55:00Z",
+        "2019-04-08T07:00:00Z"
+      ],
+      "nominal_pct_before_midnight": 90,
+      "test_command_pct_after_midnight": 100,
+      "paper_zenith_column": "before midnight",
+      "astro_checks": [
+        {
+          "utc": "2019-04-08T06:57:30+00:00",
+          "sun_alt_deg": -50.096768078760945,
+          "moon_alt_deg": -29.906059767295876
+        }
+      ]
+    },
+    {
+      "city": "Tucson",
+      "period": "tucson-2019-04",
+      "night": "2019-04-08",
+      "site": "3",
+      "instrument": "SQM-L 5442",
+      "latitude": 32.21239,
+      "longitude": -110.92515,
+      "elevation_m": 756.0,
+      "distance_km": 5.5,
+      "value": 19.15,
+      "published_mcd_m2": 2.59,
+      "band": "sqm",
+      "atmosphere": "tucson",
+      "utc_interpretations": [
+        "2019-04-08T06:57:30+00:00"
+      ],
+      "time_range_utc": [
+        "2019-04-08T06:55:00Z",
+        "2019-04-08T07:00:00Z"
+      ],
+      "nominal_pct_before_midnight": 90,
+      "test_command_pct_after_midnight": 100,
+      "paper_zenith_column": "before midnight",
+      "astro_checks": [
+        {
+          "utc": "2019-04-08T06:57:30+00:00",
+          "sun_alt_deg": -50.096768078760945,
+          "moon_alt_deg": -29.906059767295876
+        }
+      ]
+    },
+    {
+      "city": "Tucson",
+      "period": "tucson-2019-04",
+      "night": "2019-04-08",
+      "site": "6",
+      "instrument": "stars19",
+      "latitude": 32.22388,
+      "longitude": -110.76741,
+      "elevation_m": 835.0,
+      "distance_km": 20.0,
+      "value": 20.29,
+      "published_mcd_m2": 0.9,
+      "band": "tess",
+      "atmosphere": "tucson",
+      "utc_interpretations": [
+        "2019-04-08T06:57:30+00:00"
+      ],
+      "time_range_utc": [
+        "2019-04-08T06:55:00Z",
+        "2019-04-08T07:00:00Z"
+      ],
+      "nominal_pct_before_midnight": 90,
+      "test_command_pct_after_midnight": 100,
+      "paper_zenith_column": "before midnight",
+      "astro_checks": [
+        {
+          "utc": "2019-04-08T06:57:30+00:00",
+          "sun_alt_deg": -50.110548191749935,
+          "moon_alt_deg": -29.995144176883727
+        }
+      ]
+    },
+    {
+      "city": "Tucson",
+      "period": "tucson-2019-04",
+      "night": "2019-04-08",
+      "site": "2",
+      "instrument": "SQM-L 4387",
+      "latitude": 32.44266,
+      "longitude": -110.78889,
+      "elevation_m": 2787.0,
+      "distance_km": 29.0,
+      "value": 21.34,
+      "published_mcd_m2": 0.34,
+      "band": "sqm",
+      "atmosphere": "tucson",
+      "utc_interpretations": [
+        "2019-04-08T06:57:30+00:00"
+      ],
+      "time_range_utc": [
+        "2019-04-08T06:55:00Z",
+        "2019-04-08T07:00:00Z"
+      ],
+      "nominal_pct_before_midnight": 90,
+      "test_command_pct_after_midnight": 100,
+      "paper_zenith_column": "before midnight",
+      "astro_checks": [
+        {
+          "utc": "2019-04-08T06:57:30+00:00",
+          "sun_alt_deg": -49.89220854809433,
+          "moon_alt_deg": -29.834017101236935
+        }
+      ]
+    },
+    {
+      "city": "Tucson",
+      "period": "tucson-2019-04",
+      "night": "2019-04-08",
+      "site": "7",
+      "instrument": "stars227",
+      "latitude": 32.60985,
+      "longitude": -110.73369,
+      "elevation_m": 1316.0,
+      "distance_km": 49.0,
+      "value": 21.58,
+      "published_mcd_m2": 0.28,
+      "band": "tess",
+      "atmosphere": "tucson",
+      "utc_interpretations": [
+        "2019-04-08T06:57:30+00:00"
+      ],
+      "time_range_utc": [
+        "2019-04-08T06:55:00Z",
+        "2019-04-08T07:00:00Z"
+      ],
+      "nominal_pct_before_midnight": 90,
+      "test_command_pct_after_midnight": 100,
+      "paper_zenith_column": "before midnight",
+      "astro_checks": [
+        {
+          "utc": "2019-04-08T06:57:30+00:00",
+          "sun_alt_deg": -49.736475672333626,
+          "moon_alt_deg": -29.754024895019857
+        }
+      ]
+    }
+  ]
+}

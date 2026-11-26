@@ -63,10 +63,10 @@ def visible_bands():
     return bins
 
 
-def map_layers(source, period, month):
+def map_layers(source, period, month, *, bounds=BOUNDS, year=2017):
     target = source / period
     manifest = read_json(target / 'manifest.json')
-    layers, tiles = read_region(target, BOUNDS, 2017, month)
+    layers, tiles = read_region(target, bounds, year, month)
     hashes = {record['name']: record['sha256'] for record in manifest['files']}
     if hashes != {tile['filename']: tile['sha256'] for tile in tiles.values()}:
         raise ValueError(f'Unexpected Black Marble release in {period}.')
@@ -79,10 +79,11 @@ def map_layers(source, period, month):
 class BerlinBoundary:
     labels = TERMS
 
-    def __init__(self, monthly, annual, berlin):
+    def __init__(self, monthly, annual, berlin, *, bounds=BOUNDS):
         n, o, n_ok, o_ok = monthly
         y, q, y_ok, q_ok = annual
         self.monthly, self.berlin = n, berlin
+        self.bounds = bounds
         self.near = np.where(n_ok, n, y)
         self.off = np.where(n_ok, o, q)
         self.known = n_ok | y_ok
@@ -90,7 +91,7 @@ class BerlinBoundary:
         max_near, max_off = self.near.max(), self.off.max()
         self.upper_bounds = np.array([max_near, max_near, max_near/(MU_FLOOR*UNIFORM_NORM),
                                       max(max_near, max_off), max(max_near, 2*max_off), max_near, max_near, n.max()])
-        weights = np.cos(np.deg2rad(BOUNDS.latitude))[:, None]*berlin
+        weights = np.cos(np.deg2rad(bounds.latitude))[:, None]*berlin
         sum_paired = float((weights*self.near*self.paired).sum())
         self.map_diagnostics = {'berlin_grid_cells': int(berlin.sum()), 'near_month_cells_berlin': int((berlin & n_ok).sum()),
             'near_combined_cells_berlin': int((berlin & self.known).sum()),
@@ -107,9 +108,9 @@ class BerlinBoundary:
         x, y, z = points.T
         lat = np.rad2deg(np.arctan2(z, np.hypot(x, y)))
         lon = np.rad2deg(np.arctan2(y, x))
-        row = np.floor((BOUNDS.north-lat)*PIXELS_PER_DEGREE).astype(int)
-        col = np.floor((lon-BOUNDS.west)*PIXELS_PER_DEGREE).astype(int)
-        h, w = BOUNDS.shape
+        row = np.floor((self.bounds.north-lat)*PIXELS_PER_DEGREE).astype(int)
+        col = np.floor((lon-self.bounds.west)*PIXELS_PER_DEGREE).astype(int)
+        h, w = self.bounds.shape
         inside = (row >= 0) & (row < h) & (col >= 0) & (col < w)
         row, col = row.clip(0, h-1), col.clip(0, w-1)
         near = np.where(inside, self.near[row, col], 0.)
