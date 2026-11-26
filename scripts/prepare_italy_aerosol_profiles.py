@@ -73,18 +73,19 @@ class Collection:
         _, _, start_time = retrieve(cache, dataset, sub)
         self.time_origin = float(dap_arrays(start_time)['time'][0])
 
-    def get(self, when, fields, levels, count):
+    def get(self, when, fields, levels, count, *, latitude=LATITUDE, longitude=LONGITUDE,
+            spatial_slice=SPATIAL_SLICE):
         index, remainder = divmod((when - self.start).total_seconds(), 3600)
         index = int(index)
         if remainder or index < 0 or index + count > self.steps:
             raise ValueError(f'No requested UTC in {self.dataset}: {when}.')
         temporal = f'[{index}:{index + count - 1}]'
-        query = ','.join(name + temporal + (levels if is_cube else '') + SPATIAL_SLICE
+        query = ','.join(name + temporal + (levels if is_cube else '') + spatial_slice
                          for name, is_cube in fields)
         url, sha, reply = retrieve(self.cache, self.dataset, '.ascii?' + query)
         data = dap_arrays(reply)
         want_time = self.time_origin + (index + np.arange(count)) / 24
-        if (not np.array_equal(data['lat'], LATITUDE) or not np.array_equal(data['lon'], LONGITUDE)
+        if (not np.array_equal(data['lat'], latitude) or not np.array_equal(data['lon'], longitude)
                 or not np.allclose(data['time'], want_time, atol=1e-7, rtol=0)
                 or not np.array_equal(data['lev'], np.arange(37, 73))):
             raise ValueError('GEOS-CF coordinates or UTC did not match the request.')
@@ -110,9 +111,10 @@ def profile_areas(centres, concentrations, ground, bounds=HEIGHT_BINS):
     return np.diff(cumulative[np.searchsorted(knots, bounds)])
 
 
-def remap_xy(areas, latitudes, longitudes):
-    by_lon = np.apply_along_axis(lambda line: np.interp(longitudes, LONGITUDE, line), 2, areas)
-    return np.apply_along_axis(lambda line: np.interp(latitudes, LATITUDE, line), 1, by_lon)
+def remap_xy(areas, latitudes, longitudes, *, source_latitudes=LATITUDE,
+             source_longitudes=LONGITUDE):
+    by_lon = np.apply_along_axis(lambda line: np.interp(longitudes, source_longitudes, line), 2, areas)
+    return np.apply_along_axis(lambda line: np.interp(latitudes, source_latitudes, line), 1, by_lon)
 
 
 def build_day(day, aod_endpoints, lat, lon, pair, v2):
