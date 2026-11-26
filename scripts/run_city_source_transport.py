@@ -35,13 +35,13 @@ CITY_NAMES = tuple(CITY_CODES)
 BASIS_TERMS = ('lambert', 'off_hold', 'horizon_slope')
 
 
-def grid_city_indices(bounds, geometries):
+def grid_city_indices(bounds, geometries, city_names=CITY_NAMES):
     index = np.zeros(bounds.shape, dtype=np.uint8)
     for name, geometry in geometries.items():
         polygons = geometry['coordinates']
         if geometry['type'] == 'Polygon':
             polygons = [polygons]
-        code = CITY_NAMES.index(name) + 1
+        code = city_names.index(name) + 1
         for shell, *holes in polygons:
             shell = np.asarray(shell)
             row, = np.nonzero((bounds.latitude >= shell[:, 1].min()) & (bounds.latitude <= shell[:, 1].max()))

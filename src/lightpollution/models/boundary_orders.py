@@ -41,12 +41,26 @@ def paired_ratio(result, numerator, denominator):
             'scope': 'Paired marginal MC uncertainty only; no atmospheric/source uncertainty or field accuracy.'}
 
 
+def sample_circular_aperture(direction, radius_deg, count, rng):
+    """Sample directions uniformly in solid angle around a unit vector."""
+    axis = np.eye(3)[np.argmin(np.abs(direction))]
+    first = np.cross(direction, axis)
+    first /= np.linalg.norm(first)
+    second = np.cross(direction, first)
+    mu = rng.uniform(np.cos(np.deg2rad(radius_deg)), 1., count)
+    phi = rng.uniform(0., 2*np.pi, count)
+    transverse = np.cos(phi)[:, None]*first + np.sin(phi)[:, None]*second
+    return mu[:, None]*direction + np.sqrt(1 - mu**2)[:, None]*transverse
+
+
 def integrate_boundary_variants(observer: Observer, boundary: BoundedBoundary,
                                azimuth_deg: float, altitude_deg: float,
                                atmosphere: Atmosphere = Atmosphere(),
-                               settings: AllOrderSettings = AllOrderSettings()):
+                               settings: AllOrderSettings = AllOrderSettings(), *, aperture_radius_deg=0.):
     if observer.height_m >= atmosphere.top_m:
         raise ValueError('Observer must be inside the atmosphere.')
+    if not 0 <= aperture_radius_deg <= 90:
+        raise ValueError('The circular aperture radius must be finite and between 0 and 90 degrees.')
     direction = observer.direction(azimuth_deg, altitude_deg)
     bounds = np.asarray(boundary.upper_bounds, dtype=float)
     v, k = len(boundary.labels), settings.recorded_orders
@@ -65,7 +79,11 @@ def integrate_boundary_variants(observer: Observer, boundary: BoundedBoundary,
     for batch, offset in enumerate(range(0, settings.samples, settings.batch_size)):
         size = min(settings.batch_size, settings.samples-offset)
         points = np.broadcast_to(observer.position, (size, 3)).copy()
-        directions = np.broadcast_to(direction, (size, 3)).copy()
+        if aperture_radius_deg:
+            aperture_rng = np.random.default_rng(np.random.SeedSequence([settings.seed, batch, 0, 7]))
+            directions = sample_circular_aperture(direction, aperture_radius_deg, size, aperture_rng)
+        else:
+            directions = np.broadcast_to(direction, (size, 3)).copy()
         weights, original = np.ones(size), np.arange(size)
         scores = np.zeros((size, k+1, v))
         order = 0
@@ -131,7 +149,8 @@ def integrate_boundary_variants(observer: Observer, boundary: BoundedBoundary,
     hoeffding = bounds*np.sqrt(np.log(40)/(2*n))
     return {'solver': 'research-spherical-boundary-all-orders-mc-1',
         'settings': asdict(settings), 'observer': asdict(observer), 'atmosphere': asdict(atmosphere),
-        'azimuth_deg': azimuth_deg, 'altitude_deg': altitude_deg, 'labels': list(boundary.labels),
+        'azimuth_deg': azimuth_deg, 'altitude_deg': altitude_deg, 'aperture_radius_deg': aperture_radius_deg,
+        'labels': list(boundary.labels),
         'all_order_radiance': means.tolist(), 'all_order_standard_error': se.tolist(),
         'mean_covariance': covariance.tolist(), 'positive_paths': positive.tolist(),
         'effective_score_samples': effective.tolist(),

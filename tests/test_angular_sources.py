@@ -7,7 +7,7 @@ from lightpollution.data import Bounds
 from lightpollution.models.all_orders import AllOrderSettings, integrate_all_orders
 from lightpollution.models.angular_sources import (AngularGridBoundary, bin_horizontal_factor,
     empirical_radiance, eta_from_ratio, horizontal_radiance_factor)
-from lightpollution.models.boundary_orders import integrate_boundary_variants, paired_ratio
+from lightpollution.models.boundary_orders import integrate_boundary_variants, paired_ratio, sample_circular_aperture
 from lightpollution.models.scattering_orders import LambertianCap
 from lightpollution.physics import Atmosphere, EARTH_RADIUS_M, Observer, unit_position
 
@@ -55,6 +55,17 @@ def test_view_bin_constraints_hold_for_every_angle_inside_the_measured_intervals
         assert empirical_radiance(near, off, 0., tail) == tail*off
         value = empirical_radiance(near, off, np.linspace(0, 1, 1000), tail)
         assert np.all((value >= 0) & (value <= max(near, tail*off, off)))
+
+
+def test_circular_aperture_samples_uniform_solid_angle_about_arbitrary_axis():
+    direction = Observer(52., 13., 40).direction(71., 64.)
+    cosine_edge = np.cos(np.deg2rad(10.))
+    directions = sample_circular_aperture(direction, 10., 20000, np.random.default_rng(72))
+    cosine = directions @ direction
+    np.testing.assert_allclose(np.linalg.norm(directions, axis=1), 1., atol=1e-14)
+    assert cosine.min() >= cosine_edge and cosine.max() <= 1.
+    assert cosine.mean() == pytest.approx((1 + cosine_edge)/2, abs=.00012)
+    np.testing.assert_allclose(directions.mean(axis=0), cosine.mean()*direction, atol=.002)
 
 
 def test_mixture_fit_uses_radiance_and_retains_incompatible_eta():
