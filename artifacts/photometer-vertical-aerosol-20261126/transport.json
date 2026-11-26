@@ -1,0 +1,4403 @@
+{
+  "direction": {
+    "azimuth_deg": 0,
+    "altitude_deg": 90
+  },
+  "inputs": {
+    "profiles_sha256": "442e52efa2e3ba81d9acff3d16f8c8f714ba2ee4e13f1c5073001337a957c6ef",
+    "Galzignano": "bcb8849297516de28d4d19a65fd64e6e762f0aba514698e7c834bc3f121f5527",
+    "Arcugnano": "bcdab359425a72e3e18753fcf8187139f7f2335ee5ae6a9d44e0d200854d12f8"
+  },
+  "samples": 524288,
+  "rows": [
+    {
+      "site": "Arcugnano",
+      "date": "2025-02-02",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[44638:44638][0:35][534:549][760:776]",
+          "sha256": "2e8e06a9ef3cb7887b7476867a75ed4a1c97efe024bab9c3db6cf67abaf69b1b"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[44638:44638][0:35][534:549][760:776],phis[44638:44638][534:549][760:776]",
+          "sha256": "78f67eb8994791c76dd4d772b43939e653201a7e5fc1066dd1f648e7cb8b2ccd"
+        }
+      ],
+      "aod_regional": 0.09787749011945024,
+      "aod_at_station": 0.0773636910500002,
+      "region_z50_z90_m": [
+        1869.0531528720269,
+        11933.873818862223
+      ],
+      "station_z50_z90_m": [
+        956.3227400284665,
+        11171.505388619442
+      ],
+      "variants": {
+        "regional_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66500,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.1720722542043645,
+            0.16662573110873252,
+            0.050558405394555604
+          ],
+          "all_order_standard_error": [
+            0.0030713005566165427,
+            0.003051790095247781,
+            0.0012945948806762154
+          ],
+          "mean_covariance": [
+            [
+              9.432887109073085e-06,
+              9.311691804343239e-06,
+              1.6642579978406155e-06
+            ],
+            [
+              9.311691804343239e-06,
+              9.313422785452461e-06,
+              1.6647832207102647e-06
+            ],
+            [
+              1.6642579978406155e-06,
+              1.6647832207102647e-06,
+              1.6759759050730645e-06
+            ]
+          ],
+          "positive_paths": [
+            8928,
+            8563,
+            4242
+          ],
+          "effective_score_samples": [
+            3120.222231491392,
+            2964.2392118977796,
+            1520.7514772929474
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.12739285935146896,
+              0.1229852103443301,
+              0.031030415360753735
+            ],
+            [
+              0.03562617287435783,
+              0.03467669488759533,
+              0.014203292181935489
+            ],
+            [
+              0.007499795338869878,
+              0.007410399237139231,
+              0.004357308265620944
+            ],
+            [
+              0.000985825025074258,
+              0.000985825025074258,
+              0.0005741762295402767
+            ],
+            [
+              0.0004490972253036548,
+              0.0004490972253036548,
+              0.0003164047940537397
+            ],
+            [
+              0.00011850438928993163,
+              0.00011850438928993163,
+              7.680856265141876e-05
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 334,
+            "missing_common_support": 19770,
+            "known": 9060
+          },
+          "max_scattering_order_seen": 10,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 3.4342686948366463,
+          "extinction_majorant_per_m": 5.392652032590385e-05
+        },
+        "spatial_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66501,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.17212596676382919,
+            0.16643036436043956,
+            0.04720908952890101
+          ],
+          "all_order_standard_error": [
+            0.00312707743065052,
+            0.003107560186197283,
+            0.0012132617311793879
+          ],
+          "mean_covariance": [
+            [
+              9.778613257283858e-06,
+              9.655122291217087e-06,
+              1.4607559675665211e-06
+            ],
+            [
+              9.655122291217087e-06,
+              9.656930310838492e-06,
+              1.461268824463188e-06
+            ],
+            [
+              1.4607559675665211e-06,
+              1.461268824463188e-06,
+              1.4720040283444051e-06
+            ]
+          ],
+          "positive_paths": [
+            8564,
+            8168,
+            3974
+          ],
+          "effective_score_samples": [
+            3012.4081621336927,
+            2852.708282428112,
+            1509.7002038586347
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.12884445831665892,
+              0.12409566777848324,
+              0.02999665828103318
+            ],
+            [
+              0.03491937952123304,
+              0.03409479674784524,
+              0.012536955350432394
+            ],
+            [
+              0.00679907359551376,
+              0.006689093644112193,
+              0.003505011537124962
+            ],
+            [
+              0.0011898126516049498,
+              0.0011898126516049498,
+              0.0009166142557374611
+            ],
+            [
+              0.00027654831803878346,
+              0.00026429917761426895,
+              0.00018364483768216818
+            ],
+            [
+              9.669436077969389e-05,
+              9.669436077969389e-05,
+              7.020526689085048e-05
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 314,
+            "missing_common_support": 19196,
+            "known": 8711
+          },
+          "max_scattering_order_seen": 10,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 11.206111514940858,
+          "extinction_majorant_per_m": 0.00015106195543292022
+        }
+      }
+    },
+    {
+      "site": "Arcugnano",
+      "date": "2025-04-29",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[46702:46702][0:35][534:549][760:776]",
+          "sha256": "245c7a80669931dbf58af685a34567670b576a4f40da5266af58c022e99f76aa"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[46702:46702][0:35][534:549][760:776],phis[46702:46702][534:549][760:776]",
+          "sha256": "dfa16d84b85367ec56b204282ac6d8a186b708cc335dbfc248d801a79c098865"
+        }
+      ],
+      "aod_regional": 0.14280796921296735,
+      "aod_at_station": 0.1458958089499998,
+      "region_z50_z90_m": [
+        2781.858640245217,
+        11093.329643396712
+      ],
+      "station_z50_z90_m": [
+        1630.869315493298,
+        9784.827858458673
+      ],
+      "variants": {
+        "regional_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66600,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.26674500009604535,
+            0.17799830951800646,
+            0.06834555728101852
+          ],
+          "all_order_standard_error": [
+            0.0031741010513811688,
+            0.0029335382877831323,
+            0.00144818250073286
+          ],
+          "mean_covariance": [
+            [
+              1.007491748437904e-05,
+              8.575516898119136e-06,
+              2.071369391773408e-06
+            ],
+            [
+              8.575516898119136e-06,
+              8.605646885889591e-06,
+              2.0829383263920466e-06
+            ],
+            [
+              2.071369391773408e-06,
+              2.0829383263920466e-06,
+              2.09723255542888e-06
+            ]
+          ],
+          "positive_paths": [
+            20092,
+            11803,
+            6284
+          ],
+          "effective_score_samples": [
+            6968.524271519374,
+            3656.031894937082,
+            2217.858088605773
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.1971198944020695,
+              0.11862971049247907,
+              0.033758900160069376
+            ],
+            [
+              0.05386914376065412,
+              0.044695884552647946,
+              0.023581246940937592
+            ],
+            [
+              0.011671025514039613,
+              0.010726230443746753,
+              0.007620116132075972
+            ],
+            [
+              0.0030690541801029762,
+              0.002930601789953443,
+              0.0025412034455992057
+            ],
+            [
+              0.0008486927834220242,
+              0.0008486927834220242,
+              0.0007225773073022454
+            ],
+            [
+              0.0001671894557571672,
+              0.0001671894557571672,
+              0.00012151329503412987
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 325,
+            "missing_common_support": 10483,
+            "known": 20180
+          },
+          "max_scattering_order_seen": 11,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 3.334453472867608,
+          "extinction_majorant_per_m": 4.719548887702448e-05
+        },
+        "spatial_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66601,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.27551739256810687,
+            0.18393925955105855,
+            0.06943540071680006
+          ],
+          "all_order_standard_error": [
+            0.003337167858239317,
+            0.0031056113102478702,
+            0.0015836958637458541
+          ],
+          "mean_covariance": [
+            [
+              1.113668931406559e-05,
+              9.612692616146953e-06,
+              2.480799549566264e-06
+            ],
+            [
+              9.612692616146953e-06,
+              9.644821610339494e-06,
+              2.4929279532133794e-06
+            ],
+            [
+              2.480799549566264e-06,
+              2.4929279532133794e-06,
+              2.5080925888457272e-06
+            ]
+          ],
+          "positive_paths": [
+            20122,
+            11465,
+            6024
+          ],
+          "effective_score_samples": [
+            6728.72748836177,
+            3484.651469628052,
+            1915.2688093576126
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.18993656986706903,
+              0.11294563969770331,
+              0.03210669500390111
+            ],
+            [
+              0.06389415652936288,
+              0.050761109199394645,
+              0.023715887939491916
+            ],
+            [
+              0.016451295643312748,
+              0.015181828286121581,
+              0.009390919470455198
+            ],
+            [
+              0.003831552527025623,
+              0.0036586572430537877,
+              0.0031044024755135804
+            ],
+            [
+              0.0009809909766128695,
+              0.0009691981000615005,
+              0.0007380737980002209
+            ],
+            [
+              0.00042282702472373816,
+              0.00042282702472373816,
+              0.00037942202943804036
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 302,
+            "missing_common_support": 10080,
+            "known": 20234
+          },
+          "max_scattering_order_seen": 12,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 10.900463264901191,
+          "extinction_majorant_per_m": 0.00011306452641992023
+        }
+      }
+    },
+    {
+      "site": "Arcugnano",
+      "date": "2025-09-17",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[50086:50086][0:35][534:549][760:776]",
+          "sha256": "44f0cfab21610598e24680c10c8359285b539ec41854613aa21fa23c1910f7c2"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[50086:50086][0:35][534:549][760:776],phis[50086:50086][534:549][760:776]",
+          "sha256": "64b4c2d4408fcd599bf966ce1776ab1ff8a17e2801046b58ac499e4861907905"
+        }
+      ],
+      "aod_regional": 0.06708608769070565,
+      "aod_at_station": 0.08027763209999986,
+      "region_z50_z90_m": [
+        1895.921855890515,
+        15137.242647643166
+      ],
+      "station_z50_z90_m": [
+        1569.4430435875715,
+        12877.875393481034
+      ],
+      "variants": {
+        "regional_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66700,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.3801338797280789,
+            0.2962404506458308,
+            0.10977723632184178
+          ],
+          "all_order_standard_error": [
+            0.00407923720994229,
+            0.003917133548723771,
+            0.0019051836980901002
+          ],
+          "mean_covariance": [
+            [
+              1.6640176214977763e-05,
+              1.5296532523540442e-05,
+              3.573116605630165e-06
+            ],
+            [
+              1.5296532523540442e-05,
+              1.5343935238537285e-05,
+              3.5906825357222934e-06
+            ],
+            [
+              3.573116605630165e-06,
+              3.5906825357222934e-06,
+              3.62972492346827e-06
+            ]
+          ],
+          "positive_paths": [
+            26279,
+            17882,
+            9506
+          ],
+          "effective_score_samples": [
+            8542.43432644819,
+            5657.710877592095,
+            3299.2115261690333
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.30424772719120097,
+              0.22700003229154142,
+              0.07185004234718428
+            ],
+            [
+              0.0630367275119061,
+              0.05680039617088096,
+              0.028793265394281495
+            ],
+            [
+              0.010192427447367364,
+              0.009796143518523832,
+              0.006776353744135429
+            ],
+            [
+              0.0022834637249710163,
+              0.0022722172821906536,
+              0.001995112483790562
+            ],
+            [
+              0.0002681109153653305,
+              0.0002662384454260137,
+              0.000257039415181899
+            ],
+            [
+              0.00010542293726810453,
+              0.00010542293726810453,
+              0.00010542293726810453
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 327,
+            "missing_common_support": 1200,
+            "known": 26839
+          },
+          "max_scattering_order_seen": 8,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 2.7141573731787503,
+          "extinction_majorant_per_m": 4.0099533014435815e-05
+        },
+        "spatial_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66701,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.37445271954470016,
+            0.28986999141557124,
+            0.10650108727581337
+          ],
+          "all_order_standard_error": [
+            0.0040328879268487815,
+            0.0038649583443144345,
+            0.00187646581777786
+          ],
+          "mean_covariance": [
+            [
+              1.626418503052266e-05,
+              1.489113855046376e-05,
+              3.4666935861758326e-06
+            ],
+            [
+              1.489113855046376e-05,
+              1.4937903003285776e-05,
+              3.4838753063224445e-06
+            ],
+            [
+              3.4666935861758326e-06,
+              3.4838753063224445e-06,
+              3.5211239652887333e-06
+            ]
+          ],
+          "positive_paths": [
+            26169,
+            17522,
+            9233
+          ],
+          "effective_score_samples": [
+            8481.629244360935,
+            5565.229818672986,
+            3201.602534052954
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.28573913385162214,
+              0.20985670332108808,
+              0.06532156060567545
+            ],
+            [
+              0.07025987807997541,
+              0.062204549189638886,
+              0.02908390504907579
+            ],
+            [
+              0.01374232432530881,
+              0.013217513250789157,
+              0.008506184430215223
+            ],
+            [
+              0.003913167103052722,
+              0.0037947354040363665,
+              0.0029764241160229704
+            ],
+            [
+              0.0006511773257495636,
+              0.0006511773257495636,
+              0.0005211162034289982
+            ],
+            [
+              0.00014703885899169084,
+              0.0001453129242690687,
+              9.189687139491757e-05
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 376,
+            "missing_common_support": 1056,
+            "known": 26711
+          },
+          "max_scattering_order_seen": 9,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 10.420081589836627,
+          "extinction_majorant_per_m": 0.00013062664917192022
+        }
+      }
+    },
+    {
+      "site": "Arcugnano",
+      "date": "2025-09-18",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[50110:50110][0:35][534:549][760:776]",
+          "sha256": "295a4726b58e4c1ab49429875950d22dc8bd59a604573a707acd7181e598b655"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[50110:50110][0:35][534:549][760:776],phis[50110:50110][534:549][760:776]",
+          "sha256": "56a47895d7c872b016b55e46f7b4c07ace6cfb99e67b4e092fbadb822a5364f2"
+        }
+      ],
+      "aod_regional": 0.05437039822609575,
+      "aod_at_station": 0.0778538678999999,
+      "region_z50_z90_m": [
+        2123.4363475906694,
+        15180.459007589376
+      ],
+      "station_z50_z90_m": [
+        1416.9746953336603,
+        13770.044741100704
+      ],
+      "variants": {
+        "regional_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66702,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.37297916940514547,
+            0.291887784725192,
+            0.11154470334998594
+          ],
+          "all_order_standard_error": [
+            0.00402788668831455,
+            0.0038659449561306964,
+            0.001927172709694375
+          ],
+          "mean_covariance": [
+            [
+              1.622387117390155e-05,
+              1.490038416783085e-05,
+              3.658373151863354e-06
+            ],
+            [
+              1.490038416783085e-05,
+              1.4945530403832373e-05,
+              3.675625752916527e-06
+            ],
+            [
+              3.658373151863354e-06,
+              3.675625752916527e-06,
+              3.7139946529907605e-06
+            ]
+          ],
+          "positive_paths": [
+            25924,
+            17793,
+            9502
+          ],
+          "effective_score_samples": [
+            8436.65220778472,
+            5639.2937591431455,
+            3328.827048354208
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.3020921119168499,
+              0.22681113038575987,
+              0.07314142794501173
+            ],
+            [
+              0.05914922570407577,
+              0.053739081562086254,
+              0.029653091392826084
+            ],
+            [
+              0.009830489452641172,
+              0.00944085546815797,
+              0.0069759697225644166
+            ],
+            [
+              0.001524364945174778,
+              0.0015137399227839084,
+              0.0014380851330555787
+            ],
+            [
+              0.00037187998845965043,
+              0.00037187998845965043,
+              0.00032503175858372956
+            ],
+            [
+              1.1097397944422393e-05,
+              1.1097397944422393e-05,
+              1.1097397944422393e-05
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 335,
+            "missing_common_support": 1186,
+            "known": 26456
+          },
+          "max_scattering_order_seen": 9,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 2.8151323799975216,
+          "extinction_majorant_per_m": 3.146595297596283e-05
+        },
+        "spatial_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66703,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.3846075687878623,
+            0.29919748295922927,
+            0.1121167140694516
+          ],
+          "all_order_standard_error": [
+            0.004105103290958892,
+            0.003940133756471541,
+            0.001929686861708732
+          ],
+          "mean_covariance": [
+            [
+              1.6851873029441527e-05,
+              1.5475912618281032e-05,
+              3.6654202860836794e-06
+            ],
+            [
+              1.5475912618281032e-05,
+              1.5524654018886536e-05,
+              3.683684897206015e-06
+            ],
+            [
+              3.6654202860836794e-06,
+              3.683684897206015e-06,
+              3.723691384251295e-06
+            ]
+          ],
+          "positive_paths": [
+            26598,
+            17986,
+            9554
+          ],
+          "effective_score_samples": [
+            8633.310432820417,
+            5703.538162086178,
+            3354.1350404125083
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.29386843779748106,
+              0.21719495621477652,
+              0.06801211493310437
+            ],
+            [
+              0.072303920435987,
+              0.06425261306603074,
+              0.03169893840356713
+            ],
+            [
+              0.014523810208768794,
+              0.013857455929474443,
+              0.009209317953731238
+            ],
+            [
+              0.003011774643984014,
+              0.0029928320473058692,
+              0.002537672472765235
+            ],
+            [
+              0.000754048265980042,
+              0.000754048265980042,
+              0.0005145400293303786
+            ],
+            [
+              0.0001455774356616355,
+              0.0001455774356616355,
+              0.00014413027695325933
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 336,
+            "missing_common_support": 1111,
+            "known": 27180
+          },
+          "max_scattering_order_seen": 13,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 7.494315085932612,
+          "extinction_majorant_per_m": 9.709251236392022e-05
+        }
+      }
+    },
+    {
+      "site": "Arcugnano",
+      "date": "2025-09-20",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[50158:50158][0:35][534:549][760:776]",
+          "sha256": "00ff03c956477f6f7bf2f67219b0cee408ac94e6b0aa7178521796ef98a02660"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[50158:50158][0:35][534:549][760:776],phis[50158:50158][534:549][760:776]",
+          "sha256": "220d55040feec1faac3773f658509df169fe04d7e128bdbbafcc8ec0fd107c18"
+        }
+      ],
+      "aod_regional": 0.0910166021808316,
+      "aod_at_station": 0.16166361789999933,
+      "region_z50_z90_m": [
+        2213.949841601051,
+        14119.35589109698
+      ],
+      "station_z50_z90_m": [
+        1191.5070647907087,
+        4945.3142936484755
+      ],
+      "variants": {
+        "regional_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66704,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.3862577878053649,
+            0.3018733308586356,
+            0.10937228043263827
+          ],
+          "all_order_standard_error": [
+            0.004092761928797715,
+            0.003927095398240248,
+            0.0018606412085805306
+          ],
+          "mean_covariance": [
+            [
+              1.6750700205815994e-05,
+              1.5373491486945828e-05,
+              3.4042242150605804e-06
+            ],
+            [
+              1.5373491486945828e-05,
+              1.542207826687973e-05,
+              3.421827780453836e-06
+            ],
+            [
+              3.4042242150605804e-06,
+              3.421827780453836e-06,
+              3.4619857070680176e-06
+            ]
+          ],
+          "positive_paths": [
+            26958,
+            18409,
+            9771
+          ],
+          "effective_score_samples": [
+            8758.028647006942,
+            5843.057281286989,
+            3432.711091812651
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.2940637420928209,
+              0.21817818521831012,
+              0.0648263101368713
+            ],
+            [
+              0.07310624738042279,
+              0.06533991032574163,
+              0.03208359803987564
+            ],
+            [
+              0.014894400982253357,
+              0.014164120619330709,
+              0.008985413825764534
+            ],
+            [
+              0.003238236952306448,
+              0.003238236952306448,
+              0.002601378043077265
+            ],
+            [
+              0.0007322081787358025,
+              0.0007299255241210144,
+              0.0006555123791219601
+            ],
+            [
+              0.00022295221882569585,
+              0.00022295221882569585,
+              0.00022006800792756336
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 322,
+            "missing_common_support": 1139,
+            "known": 27516
+          },
+          "max_scattering_order_seen": 12,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 2.8462232467718422,
+          "extinction_majorant_per_m": 3.8377294985015346e-05
+        },
+        "spatial_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66705,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.3971045377942841,
+            0.30544054495901674,
+            0.11026285115904642
+          ],
+          "all_order_standard_error": [
+            0.004058299425374724,
+            0.0038909522256653974,
+            0.001847999877938856
+          ],
+          "mean_covariance": [
+            [
+              1.6469794225996813e-05,
+              1.5086107364411506e-05,
+              3.3547778451927183e-06
+            ],
+            [
+              1.5086107364411506e-05,
+              1.5139509222410509e-05,
+              3.374055708650402e-06
+            ],
+            [
+              3.3547778451927183e-06,
+              3.374055708650402e-06,
+              3.415103548862027e-06
+            ]
+          ],
+          "positive_paths": [
+            28981,
+            19309,
+            10038
+          ],
+          "effective_score_samples": [
+            9402.920074572798,
+            6090.705861116787,
+            3536.0336501411616
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.2539319222919594,
+              0.17882192660188279,
+              0.05028365780783441
+            ],
+            [
+              0.1035935050588605,
+              0.08926273741009653,
+              0.03732407348446142
+            ],
+            [
+              0.029777345147208794,
+              0.027720170114411122,
+              0.015917029325343363
+            ],
+            [
+              0.00740171885427487,
+              0.007264253227974449,
+              0.004811160664886107
+            ],
+            [
+              0.001636186532013108,
+              0.0016075976946843633,
+              0.0013650646363665623
+            ],
+            [
+              0.0007638599099674063,
+              0.0007638599099674063,
+              0.0005618652401545329
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 325,
+            "missing_common_support": 1126,
+            "known": 29505
+          },
+          "max_scattering_order_seen": 11,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 15.609571350738406,
+          "extinction_majorant_per_m": 0.00021511410441992022
+        }
+      }
+    },
+    {
+      "site": "Arcugnano",
+      "date": "2025-10-28",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[51070:51070][0:35][534:549][760:776]",
+          "sha256": "1b1d10e1420de2bf79356d98ee43b938bffadd30e85d0985e15128669abc04ae"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[51070:51070][0:35][534:549][760:776],phis[51070:51070][534:549][760:776]",
+          "sha256": "42f6efed50d7bf8a7b8d561d0d09adf17b343de2e8fb98f8bd00b46a275ce4ca"
+        }
+      ],
+      "aod_regional": 0.07698031635924235,
+      "aod_at_station": 0.12052861790000005,
+      "region_z50_z90_m": [
+        1894.2031811372644,
+        14160.728098908492
+      ],
+      "station_z50_z90_m": [
+        971.6307215447762,
+        11973.30918382946
+      ],
+      "variants": {
+        "regional_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66800,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.34683182223993153,
+            0.2597799047896704,
+            0.07846978698620327
+          ],
+          "all_order_standard_error": [
+            0.0039887054431759885,
+            0.0037830466635107004,
+            0.001607128774973944
+          ],
+          "mean_covariance": [
+            [
+              1.590977111242176e-05,
+              1.4268308547785188e-05,
+              2.542697280629838e-06
+            ],
+            [
+              1.4268308547785188e-05,
+              1.4311442058299443e-05,
+              2.5557262998865857e-06
+            ],
+            [
+              2.542697280629838e-06,
+              2.5557262998865857e-06,
+              2.5828628993492495e-06
+            ]
+          ],
+          "positive_paths": [
+            23497,
+            14918,
+            6769
+          ],
+          "effective_score_samples": [
+            7453.4339311921185,
+            4673.474780863591,
+            2373.1987855465027
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.2730422205761825,
+              0.19391236897811812,
+              0.047533946169476454
+            ],
+            [
+              0.059781096043648896,
+              0.052530168265772496,
+              0.022586177564160016
+            ],
+            [
+              0.011229415714579935,
+              0.01058411360082731,
+              0.006465717806046641
+            ],
+            [
+              0.0019747343289018386,
+              0.0019515171080775164,
+              0.0012832180564929865
+            ],
+            [
+              0.0006693493353249043,
+              0.0006667305955815821,
+              0.00046572114873383335
+            ],
+            [
+              0.00013500624129334583,
+              0.00013500624129334583,
+              0.00013500624129334583
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 353,
+            "missing_common_support": 4466,
+            "known": 24025
+          },
+          "max_scattering_order_seen": 9,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 2.6903480258770287,
+          "extinction_majorant_per_m": 3.795677952858357e-05
+        },
+        "spatial_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66801,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.35860142262401135,
+            0.2646154857940905,
+            0.07492197153993257
+          ],
+          "all_order_standard_error": [
+            0.0040748060606682806,
+            0.0038648411644301673,
+            0.0015810446745808573
+          ],
+          "mean_covariance": [
+            [
+              1.6604044432058953e-05,
+              1.4889561119080617e-05,
+              2.4591637340075916e-06
+            ],
+            [
+              1.4889561119080617e-05,
+              1.4936997226273933e-05,
+              2.4725945680437688e-06
+            ],
+            [
+              2.4591637340075916e-06,
+              2.4725945680437688e-06,
+              2.499702263020489e-06
+            ]
+          ],
+          "positive_paths": [
+            24322,
+            15029,
+            6681
+          ],
+          "effective_score_samples": [
+            7632.071967186713,
+            4646.245605938356,
+            2236.015309673548
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.2569249499554515,
+              0.17700735898240613,
+              0.037502860751496385
+            ],
+            [
+              0.07795930035694824,
+              0.0651663034249761,
+              0.023905691490685277
+            ],
+            [
+              0.017923372697813123,
+              0.016724179092905515,
+              0.009022262400403975
+            ],
+            [
+              0.004533837719074716,
+              0.00446170585787252,
+              0.0033129292483443967
+            ],
+            [
+              0.0009345042460430461,
+              0.0009304807872491715,
+              0.0008527700003215952
+            ],
+            [
+              0.0003254576486809487,
+              0.0003254576486809487,
+              0.0003254576486809487
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 378,
+            "missing_common_support": 4516,
+            "known": 24845
+          },
+          "max_scattering_order_seen": 11,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 11.170027600135654,
+          "extinction_majorant_per_m": 0.0001533020165329202
+        }
+      }
+    },
+    {
+      "site": "Arcugnano",
+      "date": "2026-02-17",
+      "geos_cf_version": 2,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/v2/ana/chm_inst_1hr_glo_L1440x721_v72.ascii?pm25_rh35[4740:4741][36:71][534:549][760:776]",
+          "sha256": "bd6f4472160621cfabc5f3844e623138827d857ef536d03716d42f1dd5c64c2e"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/v2/ana/met_inst_1hr_glo_L1440x721_v72.ascii?zl[4740:4741][36:71][534:549][760:776],phis[4740:4741][534:549][760:776]",
+          "sha256": "cc0504072078fcb937f08e22660fdffbf8f27cfceb97813ccb57692631cad73c"
+        }
+      ],
+      "aod_regional": 0.04169861773818104,
+      "aod_at_station": 0.04,
+      "region_z50_z90_m": [
+        4590.989646932968,
+        12709.02198716315
+      ],
+      "station_z50_z90_m": [
+        4501.960578462937,
+        13166.543693338073
+      ],
+      "variants": {
+        "regional_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66900,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.36519017140446514,
+            0.27987387241275213,
+            0.08031821048863051
+          ],
+          "all_order_standard_error": [
+            0.0042128672075763115,
+            0.004041735044725782,
+            0.001619613574334178
+          ],
+          "mean_covariance": [
+            [
+              1.7748250108671827e-05,
+              1.6290078790031355e-05,
+              2.579507135599391e-06
+            ],
+            [
+              1.6290078790031355e-05,
+              1.633562217176452e-05,
+              2.5925771763605148e-06
+            ],
+            [
+              2.579507135599391e-06,
+              2.5925771763605148e-06,
+              2.6231481301675323e-06
+            ]
+          ],
+          "positive_paths": [
+            22572,
+            14542,
+            6386
+          ],
+          "effective_score_samples": [
+            7408.038443908016,
+            4751.557191002425,
+            2447.7873418125946
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.31267501309072787,
+              0.2323686201242004,
+              0.05638230323040663
+            ],
+            [
+              0.04510709359128071,
+              0.04038601170336579,
+              0.018940517735724728
+            ],
+            [
+              0.006243696738785863,
+              0.0059864407706693035,
+              0.004160315008977996
+            ],
+            [
+              0.0010180469705364714,
+              0.0009864788013822419,
+              0.0007244886349626878
+            ],
+            [
+              0.00011343650494515703,
+              0.00011343650494515703,
+              7.770137036932891e-05
+            ],
+            [
+              3.2884508189124834e-05,
+              3.2884508189124834e-05,
+              3.2884508189124834e-05
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 328,
+            "missing_common_support": 4584,
+            "known": 22680
+          },
+          "max_scattering_order_seen": 9,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 2.3200000999495387,
+          "extinction_majorant_per_m": 2.964763484991768e-05
+        },
+        "spatial_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66901,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.36761898588412106,
+            0.28342835041929665,
+            0.08321312849390598
+          ],
+          "all_order_standard_error": [
+            0.0042012047829027115,
+            0.0040352092481812495,
+            0.0016706743271712719
+          ],
+          "mean_covariance": [
+            [
+              1.765012162788462e-05,
+              1.6237400412058586e-05,
+              2.746012734218975e-06
+            ],
+            [
+              1.6237400412058586e-05,
+              1.6282913676607484e-05,
+              2.759375198226127e-06
+            ],
+            [
+              2.746012734218975e-06,
+              2.759375198226127e-06,
+              2.791152707469182e-06
+            ]
+          ],
+          "positive_paths": [
+            22856,
+            14824,
+            6526
+          ],
+          "effective_score_samples": [
+            7546.617123913959,
+            4887.510720010291,
+            2469.168687313883
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.31495662454927703,
+              0.23515246004287926,
+              0.05989866569426089
+            ],
+            [
+              0.045367932848679175,
+              0.04129680769311515,
+              0.018976219329506473
+            ],
+            [
+              0.006310420540230233,
+              0.006039740581544515,
+              0.003729553637675661
+            ],
+            [
+              0.0008287424721984272,
+              0.000784076628021449,
+              0.00045342435872666384
+            ],
+            [
+              0.00015261891730751565,
+              0.00015261891730751565,
+              0.00015261891730751565
+            ],
+            [
+              2.6465564287656624e-06,
+              2.6465564287656624e-06,
+              2.6465564287656624e-06
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 339,
+            "missing_common_support": 4532,
+            "known": 22966
+          },
+          "max_scattering_order_seen": 8,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 8.015448617283255,
+          "extinction_majorant_per_m": 0.00011839280896292021
+        }
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date": "2022-10-01",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[24118:24118][0:35][534:549][760:776]",
+          "sha256": "aa6672e6b54262c8f9fc9926552879d8629b491e52641b86a6564dde6cc8fbad"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[24118:24118][0:35][534:549][760:776],phis[24118:24118][534:549][760:776]",
+          "sha256": "c04b62d9a75a13c0f3d805c6842f176bc971cce25dfeb325a4bd18716b626750"
+        }
+      ],
+      "aod_regional": 0.06920178269907169,
+      "aod_at_station": 0.0929391973750004,
+      "region_z50_z90_m": [
+        2405.7567375585877,
+        15244.94995826508
+      ],
+      "station_z50_z90_m": [
+        1170.872777489765,
+        14848.521615075333
+      ],
+      "variants": {
+        "regional_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66200,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.21378184087784932,
+            0.19292762807408426,
+            0.11859195853434756
+          ],
+          "all_order_standard_error": [
+            0.002576632182472005,
+            0.002564159690868832,
+            0.0021900946450985016
+          ],
+          "mean_covariance": [
+            [
+              6.639033403750449e-06,
+              6.567240967247798e-06,
+              4.774982922806925e-06
+            ],
+            [
+              6.567240967247798e-06,
+              6.574914920276545e-06,
+              4.779700075702363e-06
+            ],
+            [
+              4.774982922806925e-06,
+              4.779700075702363e-06,
+              4.7965145544891325e-06
+            ]
+          ],
+          "positive_paths": [
+            25007,
+            17308,
+            9031
+          ],
+          "effective_score_samples": [
+            6794.732842570512,
+            5600.609764712242,
+            2915.8384964862726
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.15988410675365572,
+              0.1409874193564139,
+              0.07933792738065533
+            ],
+            [
+              0.042472788412303474,
+              0.040611398012772644,
+              0.029469931295547994
+            ],
+            [
+              0.008959914199953069,
+              0.0088697353988433,
+              0.007412208114006286
+            ],
+            [
+              0.001907532281952759,
+              0.00190157607607004,
+              0.0018463895519770068
+            ],
+            [
+              0.0003848998938914233,
+              0.0003848998938914233,
+              0.0003529028560680701
+            ],
+            [
+              0.00017259933609291503,
+              0.00017259933609291503,
+              0.00017259933609291503
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 336,
+            "missing_common_support": 1857,
+            "known": 25412
+          },
+          "max_scattering_order_seen": 8,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 2.9110433468595147,
+          "extinction_majorant_per_m": 3.728569967870533e-05
+        },
+        "spatial_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66201,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.21993784882366113,
+            0.19898350525628505,
+            0.1239942563057658
+          ],
+          "all_order_standard_error": [
+            0.0027037719822150135,
+            0.0026922319323913957,
+            0.0023240017379296597
+          ],
+          "mean_covariance": [
+            [
+              7.310382931810903e-06,
+              7.240159941396043e-06,
+              5.378293348582816e-06
+            ],
+            [
+              7.240159941396043e-06,
+              7.248112777787908e-06,
+              5.383249066056284e-06
+            ],
+            [
+              5.378293348582816e-06,
+              5.383249066056284e-06,
+              5.400984077900079e-06
+            ]
+          ],
+          "positive_paths": [
+            25098,
+            17254,
+            9108
+          ],
+          "effective_score_samples": [
+            6534.5209664846225,
+            5406.402694817564,
+            2831.2579377504285
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.15530522180537468,
+              0.13682448185927626,
+              0.07807113888707831
+            ],
+            [
+              0.049452539616077894,
+              0.04717095622426746,
+              0.033197671842890644
+            ],
+            [
+              0.011843069712554406,
+              0.011671587594425267,
+              0.009674885771115355
+            ],
+            [
+              0.0028631760959622827,
+              0.0028459657810540892,
+              0.002615255251221103
+            ],
+            [
+              0.0003944958452301825,
+              0.00039116804880046856,
+              0.0003758832029859704
+            ],
+            [
+              7.934574846157644e-05,
+              7.934574846157644e-05,
+              5.9421350474437374e-05
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 363,
+            "missing_common_support": 1882,
+            "known": 25517
+          },
+          "max_scattering_order_seen": 9,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 10.94769136607647,
+          "extinction_majorant_per_m": 0.0001565998060679202
+        }
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date": "2022-10-27",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[24742:24742][0:35][534:549][760:776]",
+          "sha256": "09766d5ff9d57da02d439055191a63429156fde2b081ed0a8e9c641c11763437"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[24742:24742][0:35][534:549][760:776],phis[24742:24742][534:549][760:776]",
+          "sha256": "da3562be673fd077005ea3c8424926ca22010faab22fa45ddfd9ecd692b37118"
+        }
+      ],
+      "aod_regional": 0.12533815506803014,
+      "aod_at_station": 0.13745512500000046,
+      "region_z50_z90_m": [
+        1685.7544999474178,
+        7609.682796251205
+      ],
+      "station_z50_z90_m": [
+        1247.988693293652,
+        4434.250631182859
+      ],
+      "variants": {
+        "regional_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66202,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.2177006628829615,
+            0.1948842602687619,
+            0.11620913176171696
+          ],
+          "all_order_standard_error": [
+            0.002566009430986834,
+            0.002553158287921733,
+            0.002158152297974523
+          ],
+          "mean_covariance": [
+            [
+              6.5844043999133755e-06,
+              6.510136091170393e-06,
+              4.635125565632174e-06
+            ],
+            [
+              6.510136091170393e-06,
+              6.5186172431834365e-06,
+              4.6401828612311905e-06
+            ],
+            [
+              4.635125565632174e-06,
+              4.6401828612311905e-06,
+              4.657621341252715e-06
+            ]
+          ],
+          "positive_paths": [
+            26597,
+            17811,
+            9001
+          ],
+          "effective_score_samples": [
+            7100.387188036113,
+            5762.344366645081,
+            2883.5136342983546
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.13918853004837406,
+              0.11985215924667836,
+              0.06360642899276929
+            ],
+            [
+              0.05488833221178059,
+              0.051868336328319616,
+              0.034092972802936786
+            ],
+            [
+              0.017088902904094483,
+              0.01667488873202668,
+              0.012798226968434205
+            ],
+            [
+              0.00486885601176967,
+              0.004824135200021796,
+              0.004147069686298124
+            ],
+            [
+              0.0010754339651116917,
+              0.0010741330198843426,
+              0.0009845009451748639
+            ],
+            [
+              0.000590607741831042,
+              0.000590607741831042,
+              0.0005799323661036783
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 283,
+            "missing_common_support": 1794,
+            "known": 26993
+          },
+          "max_scattering_order_seen": 9,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 3.6378210396505892,
+          "extinction_majorant_per_m": 5.606537569619025e-05
+        },
+        "spatial_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66203,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.21197204147261747,
+            0.18983423594634624,
+            0.1142941861175024
+          ],
+          "all_order_standard_error": [
+            0.0024916815502007096,
+            0.002478989769471213,
+            0.002119914298474265
+          ],
+          "mean_covariance": [
+            [
+              6.208476947610611e-06,
+              6.137374603670948e-06,
+              4.4727429311826385e-06
+            ],
+            [
+              6.137374603670948e-06,
+              6.145390277142937e-06,
+              4.477568956746982e-06
+            ],
+            [
+              4.4727429311826385e-06,
+              4.477568956746982e-06,
+              4.494036632875635e-06
+            ]
+          ],
+          "positive_paths": [
+            26227,
+            17643,
+            8972
+          ],
+          "effective_score_samples": [
+            7138.6969611974755,
+            5799.223926605692,
+            2890.7551846049623
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.1294419947084136,
+              0.11116426265421998,
+              0.0590207227751065
+            ],
+            [
+              0.05679896407064575,
+              0.053404027800232706,
+              0.03512414117175955
+            ],
+            [
+              0.01845552839777732,
+              0.01804817549844669,
+              0.013832508189650965
+            ],
+            [
+              0.0049641473645607274,
+              0.004910150855679226,
+              0.004213603390844511
+            ],
+            [
+              0.0015974758504393582,
+              0.001593688056986979,
+              0.0013892795093602105
+            ],
+            [
+              0.0007139310807806635,
+              0.0007139310807806635,
+              0.0007139310807806635
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 303,
+            "missing_common_support": 1762,
+            "known": 26592
+          },
+          "max_scattering_order_seen": 10,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 16.880993014667183,
+          "extinction_majorant_per_m": 0.0001888089458829202
+        }
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date": "2022-10-28",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[24766:24766][0:35][534:549][760:776]",
+          "sha256": "2913cc99904a85c177765ba6c136b8f91f2e8ad57ea78c7b20913956997e23e8"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[24766:24766][0:35][534:549][760:776],phis[24766:24766][534:549][760:776]",
+          "sha256": "044f9523d7385a57dfa615bd6d8a7e45292a78cc35f8e028590e48ffca0891a4"
+        }
+      ],
+      "aod_regional": 0.13977389381756522,
+      "aod_at_station": 0.2524366447499999,
+      "region_z50_z90_m": [
+        1825.725575516046,
+        9949.871187873418
+      ],
+      "station_z50_z90_m": [
+        852.9920557129551,
+        5208.454031883302
+      ],
+      "variants": {
+        "regional_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66204,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.2244366390892354,
+            0.20226824610884786,
+            0.12283940954407607
+          ],
+          "all_order_standard_error": [
+            0.0026123880244694627,
+            0.002600566610575901,
+            0.0022177206642960464
+          ],
+          "mean_covariance": [
+            [
+              6.824571190391463e-06,
+              6.7543942010019275e-06,
+              4.894480914441278e-06
+            ],
+            [
+              6.7543942010019275e-06,
+              6.762946696042229e-06,
+              4.899674925172523e-06
+            ],
+            [
+              4.894480914441278e-06,
+              4.899674925172523e-06,
+              4.918284944845697e-06
+            ]
+          ],
+          "positive_paths": [
+            27008,
+            18386,
+            9460
+          ],
+          "effective_score_samples": [
+            7278.494915910539,
+            5980.504929639664,
+            3050.201754139842
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.14105951126306288,
+              0.1223373547047264,
+              0.06574183817265228
+            ],
+            [
+              0.06015210796789778,
+              0.057053480742527925,
+              0.03815597091520205
+            ],
+            [
+              0.016862609385190103,
+              0.016545415545440145,
+              0.013090243601419402
+            ],
+            [
+              0.004526946875680207,
+              0.004498732864443858,
+              0.00415662871212777
+            ],
+            [
+              0.0014988799512103276,
+              0.0014966786055155756,
+              0.0013951470555464188
+            ],
+            [
+              0.0003365836461940169,
+              0.0003365836461940169,
+              0.0002995810871281775
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 284,
+            "missing_common_support": 1898,
+            "known": 27406
+          },
+          "max_scattering_order_seen": 10,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 4.202488011214882,
+          "extinction_majorant_per_m": 6.699436114939806e-05
+        },
+        "spatial_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66205,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.21984648517923455,
+            0.19498405618983414,
+            0.1173283663328901
+          ],
+          "all_order_standard_error": [
+            0.002525119153874818,
+            0.0025119209302801216,
+            0.0021427736950592234
+          ],
+          "mean_covariance": [
+            [
+              6.376226741265477e-06,
+              6.3005003410311695e-06,
+              4.568536934573786e-06
+            ],
+            [
+              6.3005003410311695e-06,
+              6.309746759979351e-06,
+              4.574100811184104e-06
+            ],
+            [
+              4.568536934573786e-06,
+              4.574100811184104e-06,
+              4.591479108237757e-06
+            ]
+          ],
+          "positive_paths": [
+            28701,
+            18713,
+            9603
+          ],
+          "effective_score_samples": [
+            7472.089869144669,
+            5956.9561480388475,
+            2981.1086966399344
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.10127967097124624,
+              0.0835198285480164,
+              0.04126911538575363
+            ],
+            [
+              0.06820393444397468,
+              0.06248354923346065,
+              0.038202372303499536
+            ],
+            [
+              0.03283375218977501,
+              0.0316890815637714,
+              0.023371767859654415
+            ],
+            [
+              0.011508285025506122,
+              0.011307451521037336,
+              0.009173416029544792
+            ],
+            [
+              0.004023583861029614,
+              0.0039915799154813915,
+              0.003418303015609923
+            ],
+            [
+              0.0019972586877029007,
+              0.0019925654080669803,
+              0.0018933917388277292
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 302,
+            "missing_common_support": 1865,
+            "known": 29079
+          },
+          "max_scattering_order_seen": 12,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 22.57448411686346,
+          "extinction_majorant_per_m": 0.00026456484551792023
+        }
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date": "2022-10-30",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[24814:24814][0:35][534:549][760:776]",
+          "sha256": "ef839bc517a966aeef4d92511b750b7d4be36030260bdf0a34288b9bbf5874f8"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[24814:24814][0:35][534:549][760:776],phis[24814:24814][534:549][760:776]",
+          "sha256": "87a5e88a5aef6e7787e57ad8b0f88dd97d557a683e91c42be1ec0651a71711e8"
+        }
+      ],
+      "aod_regional": 0.1492435750851958,
+      "aod_at_station": 0.2607792895000007,
+      "region_z50_z90_m": [
+        1066.8287588015455,
+        8882.04793622426
+      ],
+      "station_z50_z90_m": [
+        471.0083297441379,
+        4340.960999930921
+      ],
+      "variants": {
+        "regional_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66206,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.21681251836277862,
+            0.19463541181075505,
+            0.11930986275600737
+          ],
+          "all_order_standard_error": [
+            0.00259497119748776,
+            0.0025831434910360673,
+            0.002221915383562184
+          ],
+          "mean_covariance": [
+            [
+              6.733875515791058e-06,
+              6.664397304064358e-06,
+              4.914719688463152e-06
+            ],
+            [
+              6.664397304064358e-06,
+              6.672630295282001e-06,
+              4.919766442510167e-06
+            ],
+            [
+              4.914719688463152e-06,
+              4.919766442510167e-06,
+              4.936907971710286e-06
+            ]
+          ],
+          "positive_paths": [
+            26442,
+            17754,
+            9125
+          ],
+          "effective_score_samples": [
+            6889.061603436739,
+            5616.553558291994,
+            2867.5869851746165
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.1317826358285088,
+              0.11375080719201165,
+              0.06132817866027372
+            ],
+            [
+              0.05949585714765128,
+              0.055862284156106105,
+              0.037725139308396945
+            ],
+            [
+              0.0189097376517181,
+              0.01844038791003205,
+              0.0144725779979224
+            ],
+            [
+              0.004536136453606658,
+              0.004497787094775536,
+              0.0039211254667085955
+            ],
+            [
+              0.0012631814659590651,
+              0.0012618500450035995,
+              0.0010870566510158286
+            ],
+            [
+              0.0008249698153347441,
+              0.0008222954128260299,
+              0.0007757846716898957
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 275,
+            "missing_common_support": 1787,
+            "known": 26812
+          },
+          "max_scattering_order_seen": 11,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 5.277322061359882,
+          "extinction_majorant_per_m": 0.00011564971586982516
+        },
+        "spatial_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66207,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.21055554088909892,
+            0.1867258975037373,
+            0.1143697550994215
+          ],
+          "all_order_standard_error": [
+            0.0024951316793821706,
+            0.0024819710561778028,
+            0.0021397633631729724
+          ],
+          "mean_covariance": [
+            [
+              6.225682097456492e-06,
+              6.151693347013488e-06,
+              4.557604954869677e-06
+            ],
+            [
+              6.151693347013488e-06,
+              6.160180323704357e-06,
+              4.562803234586875e-06
+            ],
+            [
+              4.557604954869677e-06,
+              4.562803234586875e-06,
+              4.578587250377311e-06
+            ]
+          ],
+          "positive_paths": [
+            27327,
+            17756,
+            9147
+          ],
+          "effective_score_samples": [
+            7025.676773004313,
+            5599.550600341895,
+            2841.3952002550154
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.10153436962006195,
+              0.0851768274243402,
+              0.045589424438987745
+            ],
+            [
+              0.06609836159248045,
+              0.06000253208062979,
+              0.03768208404375703
+            ],
+            [
+              0.027763221829830455,
+              0.02663899435719552,
+              0.019099695975741727
+            ],
+            [
+              0.010181075602105006,
+              0.009978851455810723,
+              0.007969879762473278
+            ],
+            [
+              0.0030967839356182713,
+              0.0030627565694413893,
+              0.0024534389651092105
+            ],
+            [
+              0.0018817283090027176,
+              0.0018659356163196771,
+              0.0015752319133525178
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 327,
+            "missing_common_support": 1693,
+            "known": 27763
+          },
+          "max_scattering_order_seen": 11,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 31.611145468894392,
+          "extinction_majorant_per_m": 0.0003801020223429202
+        }
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date": "2022-10-31",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[24838:24838][0:35][534:549][760:776]",
+          "sha256": "f80c74328589591f862b82e3f9aec70c71340bfcfc5174e45fee717240c47d52"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[24838:24838][0:35][534:549][760:776],phis[24838:24838][534:549][760:776]",
+          "sha256": "ac4427e5a49e3b6c9b810b9cfd3dca2cded7e1a707bbdde3e6cf8731131dfeeb"
+        }
+      ],
+      "aod_regional": 0.12886614938255264,
+      "aod_at_station": 0.3205261118750008,
+      "region_z50_z90_m": [
+        940.5515626801431,
+        12117.195439263875
+      ],
+      "station_z50_z90_m": [
+        537.0825403674822,
+        9123.842476709644
+      ],
+      "variants": {
+        "regional_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66208,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.21444921442443554,
+            0.19257878547612522,
+            0.12049550409225157
+          ],
+          "all_order_standard_error": [
+            0.002581239254368524,
+            0.0025687441331687464,
+            0.00223346590154182
+          ],
+          "mean_covariance": [
+            [
+              6.6627960882929745e-06,
+              6.590413072312066e-06,
+              4.966776798887756e-06
+            ],
+            [
+              6.590413072312066e-06,
+              6.598446421688854e-06,
+              4.971803222127014e-06
+            ],
+            [
+              4.966776798887756e-06,
+              4.971803222127014e-06,
+              4.988369933350015e-06
+            ]
+          ],
+          "positive_paths": [
+            25755,
+            17382,
+            9044
+          ],
+          "effective_score_samples": [
+            6812.601961246431,
+            5560.8994319998765,
+            2894.5397843560245
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.13635412997305293,
+              0.11822429511107181,
+              0.0661273809508254
+            ],
+            [
+              0.05690741966163116,
+              0.053612401705304846,
+              0.0369598220626758
+            ],
+            [
+              0.015011783853086002,
+              0.014618521228808821,
+              0.011762144210180878
+            ],
+            [
+              0.004888753752136356,
+              0.004841745603081985,
+              0.004410933409901042
+            ],
+            [
+              0.0009424930614094503,
+              0.0009371877047380888,
+              0.0008905893355487875
+            ],
+            [
+              0.00034463412311960134,
+              0.00034463412311960134,
+              0.00034463412311960134
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 294,
+            "missing_common_support": 1822,
+            "known": 26115
+          },
+          "max_scattering_order_seen": 9,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 6.593777638860047,
+          "extinction_majorant_per_m": 0.00011468518087248201
+        },
+        "spatial_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66209,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.21351008454029122,
+            0.18913585640544708,
+            0.11323538273402912
+          ],
+          "all_order_standard_error": [
+            0.0024390908443845047,
+            0.00242616745035545,
+            0.0020479185066217685
+          ],
+          "mean_covariance": [
+            [
+              5.9491641471603164e-06,
+              5.877495525924265e-06,
+              4.172312903293294e-06
+            ],
+            [
+              5.877495525924265e-06,
+              5.886288497164265e-06,
+              4.177577243343106e-06
+            ],
+            [
+              4.172312903293294e-06,
+              4.177577243343106e-06,
+              4.1939702097639354e-06
+            ]
+          ],
+          "positive_paths": [
+            28420,
+            18348,
+            9326
+          ],
+          "effective_score_samples": [
+            7552.316754997459,
+            6007.612089880116,
+            3039.58728829245
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.09271302918192682,
+              0.07710831263943164,
+              0.03838161414868529
+            ],
+            [
+              0.06914161702212376,
+              0.06250884748013585,
+              0.03776142899687779
+            ],
+            [
+              0.03056503950813326,
+              0.02886835851129417,
+              0.020750420621322985
+            ],
+            [
+              0.01369515762407868,
+              0.013347578740626627,
+              0.010211573110063403
+            ],
+            [
+              0.004045698981211707,
+              0.0039668759055536814,
+              0.0030614149131236237
+            ],
+            [
+              0.0033495422228169724,
+              0.003335883128405092,
+              0.0030689309439560363
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 326,
+            "missing_common_support": 1906,
+            "known": 28861
+          },
+          "max_scattering_order_seen": 16,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 37.83925337996334,
+          "extinction_majorant_per_m": 0.0004509361485629202
+        }
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date": "2023-02-12",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[27334:27334][0:35][534:549][760:776]",
+          "sha256": "1cfaa3c48328bb820ea04cf6caf50089877350d083b4fbca5984db9a661fe116"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[27334:27334][0:35][534:549][760:776],phis[27334:27334][534:549][760:776]",
+          "sha256": "e042cfcc0dc95261311231bc285b90b744e1c0793433172d7acd44319243434e"
+        }
+      ],
+      "aod_regional": 0.09974180641345821,
+      "aod_at_station": 0.15079495790000016,
+      "region_z50_z90_m": [
+        1224.8732033489362,
+        11878.97209561171
+      ],
+      "station_z50_z90_m": [
+        621.8518332192787,
+        4475.90961659485
+      ],
+      "variants": {
+        "regional_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66300,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.2099250732188972,
+            0.18838770774069333,
+            0.11816425073348491
+          ],
+          "all_order_standard_error": [
+            0.002559791006495899,
+            0.0025471880997341417,
+            0.0022256564862890194
+          ],
+          "mean_covariance": [
+            [
+              6.552529996937287e-06,
+              6.4804283721730326e-06,
+              4.932865662611732e-06
+            ],
+            [
+              6.4804283721730326e-06,
+              6.488167215427228e-06,
+              4.937719772392264e-06
+            ],
+            [
+              4.932865662611732e-06,
+              4.937719772392264e-06,
+              4.953546794960383e-06
+            ]
+          ],
+          "positive_paths": [
+            25852,
+            17656,
+            9324
+          ],
+          "effective_score_samples": [
+            6640.256336746548,
+            5413.4776327581385,
+            2803.677834024413
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.13851375245571865,
+              0.11983791489676396,
+              0.06685040379991322
+            ],
+            [
+              0.053713267266306215,
+              0.05113796175689786,
+              0.036919795789424455
+            ],
+            [
+              0.013539024315024841,
+              0.013278653853976832,
+              0.010840499210242922
+            ],
+            [
+              0.0033835923494465294,
+              0.003360051079041532,
+              0.0028404238587198534
+            ],
+            [
+              0.0005770120981441107,
+              0.0005747014197563378,
+              0.0005435871183680998
+            ],
+            [
+              0.0001984247342568561,
+              0.0001984247342568561,
+              0.00016954095681638378
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 302,
+            "missing_common_support": 1979,
+            "known": 25986
+          },
+          "max_scattering_order_seen": 9,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 3.7865398349240422,
+          "extinction_majorant_per_m": 6.298414157519042e-05
+        },
+        "spatial_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66301,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.20216173657979256,
+            0.1799299050938176,
+            0.11091226183562515
+          ],
+          "all_order_standard_error": [
+            0.002446092453929475,
+            0.0024324092582034356,
+            0.002070763137676255
+          ],
+          "mean_covariance": [
+            [
+              5.983368293170722e-06,
+              5.908985063525202e-06,
+              4.268756259630497e-06
+            ],
+            [
+              5.908985063525202e-06,
+              5.916614799393788e-06,
+              4.2734593758909765e-06
+            ],
+            [
+              4.268756259630497e-06,
+              4.2734593758909765e-06,
+              4.288059972358809e-06
+            ]
+          ],
+          "positive_paths": [
+            25877,
+            17310,
+            9136
+          ],
+          "effective_score_samples": [
+            6742.663613763498,
+            5415.332299481275,
+            2853.180272187073
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.12179436920717805,
+              0.10420390223850741,
+              0.057280352873148054
+            ],
+            [
+              0.056467131143215145,
+              0.0524156299191932,
+              0.035107045073239126
+            ],
+            [
+              0.016871112824474822,
+              0.01638186974123857,
+              0.012541941624582335
+            ],
+            [
+              0.004712563480557325,
+              0.004625920620713029,
+              0.0039020552104095953
+            ],
+            [
+              0.0016421589751241439,
+              0.0016320865678552759,
+              0.0014926839579962427
+            ],
+            [
+              0.0006744009492430904,
+              0.0006704960063100658,
+              0.0005881830962498289
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 319,
+            "missing_common_support": 1821,
+            "known": 26031
+          },
+          "max_scattering_order_seen": 10,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 19.782041059806943,
+          "extinction_majorant_per_m": 0.00025674997208292025
+        }
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date": "2023-02-13",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[27358:27358][0:35][534:549][760:776]",
+          "sha256": "75b99548a3aec270f0762282fa52f45844e7a01f8f6a719775c5abb049f075fe"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[27358:27358][0:35][534:549][760:776],phis[27358:27358][534:549][760:776]",
+          "sha256": "13c75b294ada18d6bfa72fe5f30c48748f3e5ef8ecef8d8276bc2ec632b2d243"
+        }
+      ],
+      "aod_regional": 0.09562841121850915,
+      "aod_at_station": 0.15779606184999967,
+      "region_z50_z90_m": [
+        1145.2089838627326,
+        12220.983191874413
+      ],
+      "station_z50_z90_m": [
+        922.5893287608949,
+        2834.7850790562284
+      ],
+      "variants": {
+        "regional_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66302,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.21230821713310316,
+            0.19006286885572476,
+            0.11832171709353886
+          ],
+          "all_order_standard_error": [
+            0.0025370993560981945,
+            0.002523495378747195,
+            0.002172195456753141
+          ],
+          "mean_covariance": [
+            [
+              6.436873142713872e-06,
+              6.359964613095987e-06,
+              4.697222116622589e-06
+            ],
+            [
+              6.359964613095987e-06,
+              6.368028926558448e-06,
+              4.70224247342244e-06
+            ],
+            [
+              4.697222116622589e-06,
+              4.70224247342244e-06,
+              4.718433102338987e-06
+            ]
+          ],
+          "positive_paths": [
+            25966,
+            17616,
+            9349
+          ],
+          "effective_score_samples": [
+            6910.305826225624,
+            5611.986378390441,
+            2950.4012480447445
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.1431001018049556,
+              0.12389236356955263,
+              0.06925372620040035
+            ],
+            [
+              0.051108633858032756,
+              0.048342741454245275,
+              0.0341202825120032
+            ],
+            [
+              0.01420370109495606,
+              0.013957107615736987,
+              0.011515856525465034
+            ],
+            [
+              0.0029516384782831574,
+              0.0029345476008000903,
+              0.002565846931077373
+            ],
+            [
+              0.0008330378744274423,
+              0.0008250045929415336,
+              0.0007549009021445594
+            ],
+            [
+              0.00011110402244828398,
+              0.00011110402244828398,
+              0.00011110402244828398
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 281,
+            "missing_common_support": 1865,
+            "known": 26124
+          },
+          "max_scattering_order_seen": 9,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 4.960339721757919,
+          "extinction_majorant_per_m": 6.27444470914028e-05
+        },
+        "spatial_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66303,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.20578755867756465,
+            0.18234331544687338,
+            0.1103353940637259
+          ],
+          "all_order_standard_error": [
+            0.0024247868272755328,
+            0.002410192144096251,
+            0.0020536679431209324
+          ],
+          "mean_covariance": [
+            [
+              5.879591157728945e-06,
+              5.8008724292594365e-06,
+              4.197464259134314e-06
+            ],
+            [
+              5.8008724292594365e-06,
+              5.809026171463282e-06,
+              4.202398064121628e-06
+            ],
+            [
+              4.197464259134314e-06,
+              4.202398064121628e-06,
+              4.2175520206025615e-06
+            ]
+          ],
+          "positive_paths": [
+            26805,
+            17800,
+            9174
+          ],
+          "effective_score_samples": [
+            7105.035043314482,
+            5661.892856935559,
+            2870.6854766361676
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.11773619400210106,
+              0.09936441937959453,
+              0.05255683185523069
+            ],
+            [
+              0.05991028037299258,
+              0.05562360694965735,
+              0.03701036530239039
+            ],
+            [
+              0.01948234774518607,
+              0.01880683817756865,
+              0.013602770862270772
+            ],
+            [
+              0.0060859221850309885,
+              0.005991776992036221,
+              0.005018884511369674
+            ],
+            [
+              0.0019452429208946791,
+              0.0019291024966573242,
+              0.0015560094592825782
+            ],
+            [
+              0.0006275714513592559,
+              0.0006275714513592559,
+              0.0005905320731818386
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 312,
+            "missing_common_support": 1864,
+            "known": 26950
+          },
+          "max_scattering_order_seen": 12,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 13.654512432869524,
+          "extinction_majorant_per_m": 0.0001670528044429202
+        }
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date": "2023-02-14",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[27382:27382][0:35][534:549][760:776]",
+          "sha256": "18c6892f4420db9cf5eded97173dce0e4011ee00e6cdf1b60c71c7cf311999a1"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[27382:27382][0:35][534:549][760:776],phis[27382:27382][534:549][760:776]",
+          "sha256": "a373d4879a6964636b3788dc91df754960eb3f828e829ab70718e4aea7c1d1f4"
+        }
+      ],
+      "aod_regional": 0.11756929709680052,
+      "aod_at_station": 0.28393050922499985,
+      "region_z50_z90_m": [
+        884.0137737526405,
+        9040.472296009812
+      ],
+      "station_z50_z90_m": [
+        641.1447721229245,
+        1395.5333634038104
+      ],
+      "variants": {
+        "regional_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66304,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.2084939946919516,
+            0.18561056684507418,
+            0.11379893305984037
+          ],
+          "all_order_standard_error": [
+            0.002465244504335374,
+            0.002451169929986763,
+            0.0020870443663338575
+          ],
+          "mean_covariance": [
+            [
+              6.077430466155763e-06,
+              6.000132726165474e-06,
+              4.335200183265958e-06
+            ],
+            [
+              6.000132726165474e-06,
+              6.008234025671312e-06,
+              4.3401671377655485e-06
+            ],
+            [
+              4.335200183265958e-06,
+              4.3401671377655485e-06,
+              4.355754187045892e-06
+            ]
+          ],
+          "positive_paths": [
+            26226,
+            17542,
+            9230
+          ],
+          "effective_score_samples": [
+            7056.39794183945,
+            5671.989063124868,
+            2956.364699849236
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.1324418578170276,
+              0.11344995435949429,
+              0.0610406909958412
+            ],
+            [
+              0.0548092652120539,
+              0.05133406345242213,
+              0.03567706977697481
+            ],
+            [
+              0.016128697011977635,
+              0.01577392221357768,
+              0.012603922129951765
+            ],
+            [
+              0.003909831442288607,
+              0.0038586393793126252,
+              0.003374437966528523
+            ],
+            [
+              0.0008449862932721937,
+              0.0008358416363584793,
+              0.0007604644009591367
+            ],
+            [
+              0.00035935691533168894,
+              0.0003581458039089082,
+              0.00034234778958497174
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 277,
+            "missing_common_support": 1886,
+            "known": 26392
+          },
+          "max_scattering_order_seen": 12,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 4.973163647111505,
+          "extinction_majorant_per_m": 8.665325660229877e-05
+        },
+        "spatial_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66305,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.2020317534261709,
+            0.17524502792376867,
+            0.10443189576339011
+          ],
+          "all_order_standard_error": [
+            0.002346512668212198,
+            0.0023301628669242717,
+            0.0019772819179235176
+          ],
+          "mean_covariance": [
+            [
+              5.506121702080329e-06,
+              5.420705416194252e-06,
+              3.890203022138889e-06
+            ],
+            [
+              5.420705416194252e-06,
+              5.429658986392741e-06,
+              3.895538627495324e-06
+            ],
+            [
+              3.890203022138889e-06,
+              3.895538627495324e-06,
+              3.9096437829473035e-06
+            ]
+          ],
+          "positive_paths": [
+            28591,
+            17777,
+            8932
+          ],
+          "effective_score_samples": [
+            7309.652389901798,
+            5595.76557769686,
+            2774.7597348850736
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.08479660839831582,
+              0.06808106942546684,
+              0.03469696780397941
+            ],
+            [
+              0.06782037195285957,
+              0.06022201883162013,
+              0.036681366530300595
+            ],
+            [
+              0.031095062360798797,
+              0.029139240464481412,
+              0.019503460742456985
+            ],
+            [
+              0.011448207659923748,
+              0.011022906487284675,
+              0.008144833551913644
+            ],
+            [
+              0.004179789162418639,
+              0.004110079689145967,
+              0.0032125518904102487
+            ],
+            [
+              0.002691713891854332,
+              0.0026697130257697112,
+              0.002192715244329217
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 336,
+            "missing_common_support": 1843,
+            "known": 28751
+          },
+          "max_scattering_order_seen": 15,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 27.07901362190023,
+          "extinction_majorant_per_m": 0.0003439630018279202
+        }
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date": "2023-02-15",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[27406:27406][0:35][534:549][760:776]",
+          "sha256": "dec0706f0acb3cdd62f8d4252ccfd41d2ced6aa08e16abb63b468f1c8b8c46f9"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[27406:27406][0:35][534:549][760:776],phis[27406:27406][534:549][760:776]",
+          "sha256": "be55503e5883d509a8621f427888ba91ead3173b3834ebd6860a10aa95ea0ce4"
+        }
+      ],
+      "aod_regional": 0.13464281575606446,
+      "aod_at_station": 0.30437855002500014,
+      "region_z50_z90_m": [
+        1021.2355647738054,
+        10285.80675387604
+      ],
+      "station_z50_z90_m": [
+        899.6275078780358,
+        4780.798626715334
+      ],
+      "variants": {
+        "regional_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66306,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.20963586570697806,
+            0.18671949988849418,
+            0.1144051548046195
+          ],
+          "all_order_standard_error": [
+            0.0024799610746789663,
+            0.0024664330238685877,
+            0.002119482341688246
+          ],
+          "mean_covariance": [
+            [
+              6.150206931922853e-06,
+              6.075130429866781e-06,
+              4.4714250145655855e-06
+            ],
+            [
+              6.075130429866781e-06,
+              6.083291861229545e-06,
+              4.476425616104481e-06
+            ],
+            [
+              4.4714250145655855e-06,
+              4.476425616104481e-06,
+              4.49220539672829e-06
+            ]
+          ],
+          "positive_paths": [
+            26680,
+            17805,
+            9199
+          ],
+          "effective_score_samples": [
+            7049.578204300162,
+            5669.175283532854,
+            2897.514337226114
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.1294737218282365,
+              0.11064643369446069,
+              0.06066293474192794
+            ],
+            [
+              0.058055030033895026,
+              0.054431638126926016,
+              0.03655796477744382
+            ],
+            [
+              0.01577177854866731,
+              0.015349966139597042,
+              0.011796313845146787
+            ],
+            [
+              0.004350129098497409,
+              0.004313131033360255,
+              0.003585306376013209
+            ],
+            [
+              0.0014100917451241304,
+              0.0014032164415926638,
+              0.0012548812921407042
+            ],
+            [
+              0.0005751144525575991,
+              0.0005751144525575991,
+              0.0005477537719470334
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 307,
+            "missing_common_support": 1916,
+            "known": 26823
+          },
+          "max_scattering_order_seen": 9,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 4.738881502300501,
+          "extinction_majorant_per_m": 9.849039476407691e-05
+        },
+        "spatial_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66307,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.21167734828582951,
+            0.1839639341236825,
+            0.11225566589921807
+          ],
+          "all_order_standard_error": [
+            0.0024135604319152227,
+            0.0023970175620679655,
+            0.0020865486895748782
+          ],
+          "mean_covariance": [
+            [
+              5.825273958506796e-06,
+              5.73596899848538e-06,
+              4.332398148260283e-06
+            ],
+            [
+              5.73596899848538e-06,
+              5.745693192862252e-06,
+              4.338331897830867e-06
+            ],
+            [
+              4.332398148260283e-06,
+              4.338331897830867e-06,
+              4.353685433966642e-06
+            ]
+          ],
+          "positive_paths": [
+            29993,
+            18942,
+            9441
+          ],
+          "effective_score_samples": [
+            7580.676190334269,
+            5824.677633838274,
+            2878.520504454759
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.08678256225784906,
+              0.06888303717514428,
+              0.03601272965512125
+            ],
+            [
+              0.06997146459915114,
+              0.0626668872082939,
+              0.03927037391633023
+            ],
+            [
+              0.03315390097459151,
+              0.031173571107761824,
+              0.020533209657109152
+            ],
+            [
+              0.013173831595345336,
+              0.012758447381118709,
+              0.009363786782101868
+            ],
+            [
+              0.00522784728179268,
+              0.005134663237605857,
+              0.004157696092134593
+            ],
+            [
+              0.0033677415770997747,
+              0.003347328013757924,
+              0.002917869796420927
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 347,
+            "missing_common_support": 1956,
+            "known": 30161
+          },
+          "max_scattering_order_seen": 15,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 32.63605676498264,
+          "extinction_majorant_per_m": 0.0003064938900179202
+        }
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date": "2023-07-14",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[30982:30982][0:35][534:549][760:776]",
+          "sha256": "ef47cb42533d60a8e1042e60e7fdc41cddb6ea6133a7e0b7383f0cf57265a621"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[30982:30982][0:35][534:549][760:776],phis[30982:30982][534:549][760:776]",
+          "sha256": "dc04bafc7d2f1d940a738440533594d682140a7559a16661485c90597a9d0911"
+        }
+      ],
+      "aod_regional": 0.13952252506635543,
+      "aod_at_station": 0.1584209579000001,
+      "region_z50_z90_m": [
+        2237.766323318474,
+        12787.77255381406
+      ],
+      "station_z50_z90_m": [
+        1795.9489728368326,
+        10944.004903923917
+      ],
+      "variants": {
+        "regional_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66400,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.20659266730929032,
+            0.18089714237199925,
+            0.09478991880668948
+          ],
+          "all_order_standard_error": [
+            0.0023672242726926955,
+            0.002351243725555126,
+            0.0018701803843181408
+          ],
+          "mean_covariance": [
+            [
+              5.60375075722546e-06,
+              5.519481212428905e-06,
+              3.4773609826275045e-06
+            ],
+            [
+              5.519481212428905e-06,
+              5.528347056962347e-06,
+              3.482006676155097e-06
+            ],
+            [
+              3.4773609826275045e-06,
+              3.482006676155097e-06,
+              3.4975746698883488e-06
+            ]
+          ],
+          "positive_paths": [
+            25776,
+            17256,
+            8194
+          ],
+          "effective_score_samples": [
+            7507.375321940808,
+            5853.197417709252,
+            2556.4383737605617
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.13403696505465865,
+              0.11192086592349111,
+              0.050663566654885646
+            ],
+            [
+              0.05261126558356311,
+              0.0494434654210467,
+              0.029437236213037163
+            ],
+            [
+              0.01523216588099407,
+              0.014880232210201618,
+              0.010734014713612619
+            ],
+            [
+              0.0036742130448736638,
+              0.003623226800260784,
+              0.0030631749967517125
+            ],
+            [
+              0.0007740232443229784,
+              0.0007653175161210958,
+              0.0006437789637223362
+            ],
+            [
+              0.00026403450087787353,
+              0.00026403450087787353,
+              0.00024814726468001293
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 279,
+            "missing_common_support": 3858,
+            "known": 25816
+          },
+          "max_scattering_order_seen": 11,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 3.4008124037645757,
+          "extinction_majorant_per_m": 5.023045394977019e-05
+        },
+        "spatial_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66401,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.20566031752575925,
+            0.17921827894441095,
+            0.09552592906493725
+          ],
+          "all_order_standard_error": [
+            0.0023230914067199284,
+            0.002306259461050182,
+            0.0018675008582193402
+          ],
+          "mean_covariance": [
+            [
+              5.396753683975975e-06,
+              5.309793956404019e-06,
+              3.467492793908262e-06
+            ],
+            [
+              5.309793956404019e-06,
+              5.3188327016834765e-06,
+              3.4723105755848133e-06
+            ],
+            [
+              3.467492793908262e-06,
+              3.4723105755848133e-06,
+              3.487559455449972e-06
+            ]
+          ],
+          "positive_paths": [
+            26147,
+            17329,
+            8151
+          ],
+          "effective_score_samples": [
+            7721.918338856016,
+            5970.015565262038,
+            2603.513018412967
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.12743225353499535,
+              0.10556681407383794,
+              0.04841709789279631
+            ],
+            [
+              0.05547620435902381,
+              0.05149394567570656,
+              0.030893710900600235
+            ],
+            [
+              0.016809311883976316,
+              0.016297119850887762,
+              0.01145714730667323
+            ],
+            [
+              0.004114702014113071,
+              0.00404906990899858,
+              0.0031212925468385995
+            ],
+            [
+              0.0012746488317905691,
+              0.0012614694553568808,
+              0.0010991538718491654
+            ],
+            [
+              0.0005531969018600362,
+              0.0005498599796232202,
+              0.0005375265461797118
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 293,
+            "missing_common_support": 3785,
+            "known": 26177
+          },
+          "max_scattering_order_seen": 13,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 9.907525248359889,
+          "extinction_majorant_per_m": 0.00011208985698792023
+        }
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date": "2023-07-16",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[31030:31030][0:35][534:549][760:776]",
+          "sha256": "6dfdabcd3616b6c6c87325d2fef734d0c1952e64f7002b42ab5a9cfbbc2a8fba"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[31030:31030][0:35][534:549][760:776],phis[31030:31030][534:549][760:776]",
+          "sha256": "2e9e8e6db10ec848fb8940b721c390d010d5b54f46ae07367e1f591767db8e90"
+        }
+      ],
+      "aod_regional": 0.14978340187844577,
+      "aod_at_station": 0.1630160828999994,
+      "region_z50_z90_m": [
+        2589.0262721626946,
+        14668.45073990207
+      ],
+      "station_z50_z90_m": [
+        2120.974570305765,
+        14572.65613733667
+      ],
+      "variants": {
+        "regional_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66402,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.20738722756104783,
+            0.18154438668809425,
+            0.09795175773178508
+          ],
+          "all_order_standard_error": [
+            0.002354530105666257,
+            0.0023382070885071757,
+            0.001900832473020264
+          ],
+          "mean_covariance": [
+            [
+              5.543812018488755e-06,
+              5.458263811541195e-06,
+              3.592718424988368e-06
+            ],
+            [
+              5.458263811541195e-06,
+              5.467212388745204e-06,
+              3.597546604379214e-06
+            ],
+            [
+              3.592718424988368e-06,
+              3.597546604379214e-06,
+              3.6131640904883327e-06
+            ]
+          ],
+          "positive_paths": [
+            25955,
+            17476,
+            8361
+          ],
+          "effective_score_samples": [
+            7644.991092038187,
+            5959.851109868661,
+            2642.0651358265427
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.1366168365412947,
+              0.11396237756529613,
+              0.052840941603681975
+            ],
+            [
+              0.05314106293507444,
+              0.0503349028012397,
+              0.03187220811106445
+            ],
+            [
+              0.013358475821913593,
+              0.013004455683474652,
+              0.009677467948257914
+            ],
+            [
+              0.003124073259780925,
+              0.0030958716350996357,
+              0.002512827168358143
+            ],
+            [
+              0.0008264635513269221,
+              0.0008264635513269221,
+              0.0007455609446028602
+            ],
+            [
+              0.0003203154516572819,
+              0.0003203154516572819,
+              0.0003027519558197265
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 348,
+            "missing_common_support": 3983,
+            "known": 25994
+          },
+          "max_scattering_order_seen": 13,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 3.6023487439379096,
+          "extinction_majorant_per_m": 5.463071245191375e-05
+        },
+        "spatial_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66403,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.20485132735491401,
+            0.17894270049023236,
+            0.09586224116228792
+          ],
+          "all_order_standard_error": [
+            0.002311773601769561,
+            0.002295021640348072,
+            0.0018653454016412127
+          ],
+          "mean_covariance": [
+            [
+              5.3442971858386084e-06,
+              5.2582815400160865e-06,
+              3.459585569031239e-06
+            ],
+            [
+              5.2582815400160865e-06,
+              5.267124329665954e-06,
+              3.46432278173475e-06
+            ],
+            [
+              3.459585569031239e-06,
+              3.46432278173475e-06,
+              3.4795134674240172e-06
+            ]
+          ],
+          "positive_paths": [
+            26005,
+            17445,
+            8331
+          ],
+          "effective_score_samples": [
+            7736.271351129507,
+            6009.639097861615,
+            2627.8177030227416
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.1290836224789004,
+              0.10727169865700872,
+              0.049399737661115994
+            ],
+            [
+              0.05484415136470612,
+              0.051147826201534886,
+              0.03094111186504784
+            ],
+            [
+              0.015652947945378907,
+              0.015281529406864449,
+              0.01105880149225612
+            ],
+            [
+              0.0037849860504544524,
+              0.0037665334162644707,
+              0.00310796688608077
+            ],
+            [
+              0.0011590502575654072,
+              0.001150403836572564,
+              0.0010334790793853704
+            ],
+            [
+              0.00032656925790877623,
+              0.00032470897198734494,
+              0.0003211441784018407
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 347,
+            "missing_common_support": 3920,
+            "known": 26056
+          },
+          "max_scattering_order_seen": 16,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 13.907624795101583,
+          "extinction_majorant_per_m": 0.00014968875487192022
+        }
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date": "2023-07-17",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[31054:31054][0:35][534:549][760:776]",
+          "sha256": "42a6bdc1f4c5dc90736758755ff359cca4c78b2957e72444aa7ff5ea5f587b81"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[31054:31054][0:35][534:549][760:776],phis[31054:31054][534:549][760:776]",
+          "sha256": "5a45bea137ba588a59e3ed82255230a431535d086c176df639951db51d8cc5a9"
+        }
+      ],
+      "aod_regional": 0.20052693396278246,
+      "aod_at_station": 0.20310982237499947,
+      "region_z50_z90_m": [
+        2816.375419639704,
+        13491.99235288563
+      ],
+      "station_z50_z90_m": [
+        2014.8305339531103,
+        13887.352280247482
+      ],
+      "variants": {
+        "regional_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66404,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.21467098775173415,
+            0.18793375546157282,
+            0.0985857244763327
+          ],
+          "all_order_standard_error": [
+            0.0023325182480855933,
+            0.0023160172000972565,
+            0.0018520086069212219
+          ],
+          "mean_covariance": [
+            [
+              5.440641377652286e-06,
+              5.35435155314429e-06,
+              3.408107473567625e-06
+            ],
+            [
+              5.35435155314429e-06,
+              5.363935671146335e-06,
+              3.413135081377503e-06
+            ],
+            [
+              3.408107473567625e-06,
+              3.413135081377503e-06,
+              3.4299358801102846e-06
+            ]
+          ],
+          "positive_paths": [
+            27467,
+            18550,
+            8745
+          ],
+          "effective_score_samples": [
+            8335.605491656372,
+            6502.891243068679,
+            2818.3957355457733
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.1274059521835735,
+              0.10501607558819769,
+              0.04652125951013087
+            ],
+            [
+              0.06010761799159763,
+              0.05636051858275965,
+              0.03243232781141385
+            ],
+            [
+              0.0187134207005726,
+              0.018177392456736278,
+              0.012798686767705507
+            ],
+            [
+              0.006044456053546669,
+              0.005986216660382659,
+              0.004749543225231126
+            ],
+            [
+              0.001725561761044558,
+              0.0017195731120973631,
+              0.001439118606710032
+            ],
+            [
+              0.0006739790613991363,
+              0.0006739790613991363,
+              0.0006447885551413293
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 305,
+            "missing_common_support": 4074,
+            "known": 27508
+          },
+          "max_scattering_order_seen": 16,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 3.86999842710793,
+          "extinction_majorant_per_m": 6.08209825495539e-05
+        },
+        "spatial_layered": {
+          "settings": {
+            "samples": 524288,
+            "seed": 66405,
+            "batch_size": 8192,
+            "recorded_orders": 5,
+            "absorption": "implicit",
+            "safety_scattering_events": 100000,
+            "max_null_events": 100000
+          },
+          "labels": [
+            "outside_0km",
+            "outside_3km",
+            "outside_10km"
+          ],
+          "all_order_radiance": [
+            0.21082123668955743,
+            0.1839337284466416,
+            0.0974972007366971
+          ],
+          "all_order_standard_error": [
+            0.0023150944801480365,
+            0.002298191339250952,
+            0.0018443429018704385
+          ],
+          "mean_covariance": [
+            [
+              5.359662452011908e-06,
+              5.272250583692913e-06,
+              3.3805268311496395e-06
+            ],
+            [
+              5.272250583692913e-06,
+              5.281683431808086e-06,
+              3.3855268727079257e-06
+            ],
+            [
+              3.3805268311496395e-06,
+              3.3855268727079257e-06,
+              3.4016007396798697e-06
+            ]
+          ],
+          "positive_paths": [
+            27087,
+            18072,
+            8524
+          ],
+          "effective_score_samples": [
+            8163.5048672479725,
+            6328.158976085119,
+            2779.669215699552
+          ],
+          "category_labels": [
+            "exact_1",
+            "exact_2",
+            "exact_3",
+            "exact_4",
+            "exact_5",
+            "above_5"
+          ],
+          "category_mean_radiance": [
+            [
+              0.1225032265798765,
+              0.10060775609022357,
+              0.045075416045462426
+            ],
+            [
+              0.05992457531807688,
+              0.05560313058440929,
+              0.031528445191017315
+            ],
+            [
+              0.021024609704878766,
+              0.020423593325845268,
+              0.014744305110133069
+            ],
+            [
+              0.005341552299884097,
+              0.005280572884840784,
+              0.00441991694946274
+            ],
+            [
+              0.0013061744400641587,
+              0.0013005466620131462,
+              0.0010823042902632235
+            ],
+            [
+              0.0007210983467769559,
+              0.0007181288993095858,
+              0.0006468131503583304
+            ]
+          ],
+          "ground_support_counts": {
+            "outside_region": 311,
+            "missing_common_support": 3981,
+            "known": 27140
+          },
+          "max_scattering_order_seen": 15,
+          "finite_scattering_order_truncation": false,
+          "runtime_seconds": 14.039289650972933,
+          "extinction_majorant_per_m": 0.0001582182559799202
+        }
+      }
+    }
+  ]
+}

@@ -82,3 +82,30 @@ def test_photometer_percent_error_uses_total_flux_and_one_shared_fit(monkeypatch
     errors, scale = signed_errors(rows, [0], values, 0, 1)
     np.testing.assert_allclose(scale, [1, .5])
     np.testing.assert_allclose(errors[1], 100 * np.array([[.5, 5/6, 2/6], [.5, .5, 1.5/6]]) - 100)
+
+
+def test_geos_proxy_is_integrated_above_model_ground(monkeypatch):
+    monkeypatch.syspath_prepend(str(SCRIPTS))
+    from prepare_italy_aerosol_profiles import profile_areas
+
+    areas = profile_areas(np.array([625., 875.]), np.array([2., 0.]), 500.,
+                          np.arange(0, 1501, 250.))
+    np.testing.assert_allclose(areas, [0., 0., 437.5, 62.5, 0., 0.])
+
+
+def test_layered_grid_places_aod_at_the_requested_altitudes(monkeypatch):
+    monkeypatch.syspath_prepend(str(SCRIPTS))
+    from run_photometer_vertical_italy import VerticalGridAtmosphere
+
+    columns = np.array([[.1, .3], [.2, .4]])
+    layers = np.stack((0 * columns, columns, 0 * columns), axis=-1)
+    atmosphere = VerticalGridAtmosphere(
+        edges_m=(0., 1_000., 3_000., 80_000.), tau_layers=layers,
+        latitudes=(45., 46.), longitudes=(11., 12.), rayleigh_multiplier=0.)
+    heights = np.array([500., 2_000., 4_000.])
+    middle = unit_position(45.5, 11.5)
+    _, scattering, extinction = atmosphere.coefficients_at((EARTH_RADIUS_M + heights[:, None]) * middle)
+    np.testing.assert_allclose(extinction, [0, .25 / 2_000, 0], atol=1e-14, rtol=0)
+    np.testing.assert_allclose(extinction @ np.diff(atmosphere.edges_m), .25)
+    np.testing.assert_allclose(scattering, extinction * atmosphere.aerosol_single_scattering_albedo)
+    assert atmosphere.extinction_majorant == .4 / 2_000

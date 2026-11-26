@@ -1,0 +1,2817 @@
+{
+  "contrast_order": {
+    "regional_vs_base": [
+      "regional_layered",
+      "base"
+    ],
+    "spatial_vs_base": [
+      "spatial_layered",
+      "base"
+    ],
+    "spatial_vs_regional": [
+      "spatial_layered",
+      "regional_layered"
+    ],
+    "vertical_regional_vs_exp": [
+      "regional_layered",
+      "regional_exponential"
+    ],
+    "vertical_spatial_vs_exp": [
+      "spatial_layered",
+      "spatial_exponential"
+    ]
+  },
+  "ratio_percent": "100 * (numerator/denominator - 1)",
+  "uncertainty_scope": "Independent Monte Carlo estimation only.",
+  "transport_sha256": "8693bc3ea11498be4cb3d3850918806e26f1caab147c6774f0e46b747419063d",
+  "selection_sha256": "ba7d72e8b7a712fcea3da4533bbb8b8b9ad5892cab263d217092bc358dbc48e6",
+  "summaries": {
+    "six_galzignano": {
+      "outside_0km": {
+        "n": 6,
+        "regional_vs_base": {
+          "min_pct": 0.41336557339108904,
+          "max_pct": 5.673663938410889,
+          "mean_signed_pct": 1.8957430483607354,
+          "mean_absolute_pct": 1.8957430483607354,
+          "median_mc_se_pp": 1.5005420592371392,
+          "n_beyond_two_mc_se": 1
+        },
+        "spatial_vs_base": {
+          "min_pct": -2.69893219615871,
+          "max_pct": 3.512437573235494,
+          "mean_signed_pct": -0.03956591621237145,
+          "mean_absolute_pct": 2.0355512035934242,
+          "median_mc_se_pp": 1.4440603976680713,
+          "n_beyond_two_mc_se": 1
+        },
+        "spatial_vs_regional": {
+          "min_pct": -3.6981464481898763,
+          "max_pct": 0.9738231442252276,
+          "mean_signed_pct": -1.896373597851164,
+          "mean_absolute_pct": 2.2209813125929068,
+          "median_mc_se_pp": 1.6394373965874243,
+          "n_beyond_two_mc_se": 1
+        },
+        "vertical_regional_vs_exp": {
+          "min_pct": -1.541981731933617,
+          "max_pct": 4.929794694646361,
+          "mean_signed_pct": 1.5972444004271757,
+          "mean_absolute_pct": 2.111238311071715,
+          "median_mc_se_pp": 1.4861295265423369,
+          "n_beyond_two_mc_se": 2
+        },
+        "vertical_spatial_vs_exp": {
+          "min_pct": -4.478298255859037,
+          "max_pct": 2.185254183836993,
+          "mean_signed_pct": -1.4250277659205597,
+          "mean_absolute_pct": 2.5063452805967095,
+          "median_mc_se_pp": 1.4217201237694068,
+          "n_beyond_two_mc_se": 2
+        }
+      },
+      "outside_3km": {
+        "n": 6,
+        "regional_vs_base": {
+          "min_pct": 0.09847448442035223,
+          "max_pct": 6.083973529906439,
+          "mean_signed_pct": 1.9961374233491276,
+          "mean_absolute_pct": 1.9961374233491276,
+          "median_mc_se_pp": 1.6681808526705262,
+          "n_beyond_two_mc_se": 1
+        },
+        "spatial_vs_base": {
+          "min_pct": -5.491587821125066,
+          "max_pct": 2.2636219649869282,
+          "mean_signed_pct": -1.5749499902142492,
+          "mean_absolute_pct": 2.329490645209892,
+          "median_mc_se_pp": 1.6031095391376617,
+          "n_beyond_two_mc_se": 1
+        },
+        "spatial_vs_regional": {
+          "min_pct": -5.584562935987069,
+          "max_pct": -1.4757782483657333,
+          "mean_signed_pct": -3.5000912945049536,
+          "mean_absolute_pct": 3.5000912945049536,
+          "median_mc_se_pp": 1.8074496801008317,
+          "n_beyond_two_mc_se": 4
+        },
+        "vertical_regional_vs_exp": {
+          "min_pct": -1.291750550600057,
+          "max_pct": 5.703356689543382,
+          "mean_signed_pct": 1.9221601943661646,
+          "mean_absolute_pct": 2.3621368082849297,
+          "median_mc_se_pp": 1.6580002863538437,
+          "n_beyond_two_mc_se": 2
+        },
+        "vertical_spatial_vs_exp": {
+          "min_pct": -4.821743785229781,
+          "max_pct": 1.4864965439698397,
+          "mean_signed_pct": -1.67910077535288,
+          "mean_absolute_pct": 2.573696736142052,
+          "median_mc_se_pp": 1.6037650037683389,
+          "n_beyond_two_mc_se": 2
+        }
+      },
+      "outside_10km": {
+        "n": 6,
+        "regional_vs_base": {
+          "min_pct": 0.11201030317657956,
+          "max_pct": 4.090826181376173,
+          "mean_signed_pct": 2.4009062253226707,
+          "mean_absolute_pct": 2.4009062253226707,
+          "median_mc_se_pp": 2.3340292725607523,
+          "n_beyond_two_mc_se": 0
+        },
+        "spatial_vs_base": {
+          "min_pct": -8.12842665979,
+          "max_pct": -0.863808246636455,
+          "mean_signed_pct": -3.320411782056849,
+          "mean_absolute_pct": 3.320411782056849,
+          "median_mc_se_pp": 2.2315605009724635,
+          "n_beyond_two_mc_se": 2
+        },
+        "spatial_vs_regional": {
+          "min_pct": -8.231217151679859,
+          "max_pct": -1.8788392088383787,
+          "mean_signed_pct": -5.584756182969024,
+          "mean_absolute_pct": 5.584756182969024,
+          "median_mc_se_pp": 2.4453466276292675,
+          "n_beyond_two_mc_se": 4
+        },
+        "vertical_regional_vs_exp": {
+          "min_pct": 0.012140887360123642,
+          "max_pct": 6.192059719593601,
+          "mean_signed_pct": 2.812895759956801,
+          "mean_absolute_pct": 2.812895759956801,
+          "median_mc_se_pp": 2.3308183663745767,
+          "n_beyond_two_mc_se": 2
+        },
+        "vertical_spatial_vs_exp": {
+          "min_pct": -3.3697081903556914,
+          "max_pct": 5.669930964524439,
+          "mean_signed_pct": -0.29094732171646154,
+          "mean_absolute_pct": 3.031937963427156,
+          "median_mc_se_pp": 2.2558596820495334,
+          "n_beyond_two_mc_se": 1
+        }
+      }
+    },
+    "galzignano_clear": {
+      "outside_0km": {
+        "n": 9,
+        "regional_vs_base": {
+          "min_pct": 0.41336557339108904,
+          "max_pct": 9.70694695743257,
+          "mean_signed_pct": 3.035212680945309,
+          "mean_absolute_pct": 3.035212680945309,
+          "median_mc_se_pp": 1.5029420256729218,
+          "n_beyond_two_mc_se": 3
+        },
+        "spatial_vs_base": {
+          "min_pct": -2.69893219615871,
+          "max_pct": 7.739543536966731,
+          "mean_signed_pct": 1.7955194372062253,
+          "mean_absolute_pct": 3.178930850410089,
+          "median_mc_se_pp": 1.4543771948102209,
+          "n_beyond_two_mc_se": 4
+        },
+        "spatial_vs_regional": {
+          "min_pct": -3.6981464481898763,
+          "max_pct": 2.879574766749826,
+          "mean_signed_pct": -1.1936990669641512,
+          "mean_absolute_pct": 2.050009713847496,
+          "median_mc_se_pp": 1.626677288291348,
+          "n_beyond_two_mc_se": 1
+        },
+        "vertical_regional_vs_exp": {
+          "min_pct": -1.541981731933617,
+          "max_pct": 8.781073786084171,
+          "mean_signed_pct": 2.736800284031465,
+          "mean_absolute_pct": 3.115939735417216,
+          "median_mc_se_pp": 1.4778225404952052,
+          "n_beyond_two_mc_se": 4
+        },
+        "vertical_spatial_vs_exp": {
+          "min_pct": -4.478298255859037,
+          "max_pct": 5.821031798455456,
+          "mean_signed_pct": 0.8699468800573201,
+          "mean_absolute_pct": 3.490862244402166,
+          "median_mc_se_pp": 1.439016119438473,
+          "n_beyond_two_mc_se": 5
+        }
+      },
+      "outside_3km": {
+        "n": 9,
+        "regional_vs_base": {
+          "min_pct": 0.09847448442035223,
+          "max_pct": 10.237662500411759,
+          "mean_signed_pct": 3.27885734274954,
+          "mean_absolute_pct": 3.27885734274954,
+          "median_mc_se_pp": 1.6763415875700378,
+          "n_beyond_two_mc_se": 3
+        },
+        "spatial_vs_base": {
+          "min_pct": -5.491587821125066,
+          "max_pct": 7.891337717077773,
+          "mean_signed_pct": 0.8809133370771394,
+          "mean_absolute_pct": 3.4838737606932337,
+          "median_mc_se_pp": 1.6060512133058837,
+          "n_beyond_two_mc_se": 4
+        },
+        "spatial_vs_regional": {
+          "min_pct": -5.584562935987069,
+          "max_pct": 3.138937249503404,
+          "mean_signed_pct": -2.324234522179315,
+          "mean_absolute_pct": 3.021776133180071,
+          "median_mc_se_pp": 1.8120590236773104,
+          "n_beyond_two_mc_se": 4
+        },
+        "vertical_regional_vs_exp": {
+          "min_pct": -1.291750550600057,
+          "max_pct": 10.533654667370307,
+          "mean_signed_pct": 3.3222605601737865,
+          "mean_absolute_pct": 3.6155783027862967,
+          "median_mc_se_pp": 1.6766941618931108,
+          "n_beyond_two_mc_se": 4
+        },
+        "vertical_spatial_vs_exp": {
+          "min_pct": -4.821743785229781,
+          "max_pct": 7.1985461134322914,
+          "mean_signed_pct": 1.1057494576095936,
+          "mean_absolute_pct": 3.9409477986062154,
+          "median_mc_se_pp": 1.6072285868680685,
+          "n_beyond_two_mc_se": 5
+        }
+      },
+      "outside_10km": {
+        "n": 9,
+        "regional_vs_base": {
+          "min_pct": 0.11201030317657956,
+          "max_pct": 10.881446240448089,
+          "mean_signed_pct": 3.5669962878162957,
+          "mean_absolute_pct": 3.5669962878162957,
+          "median_mc_se_pp": 2.336557166506687,
+          "n_beyond_two_mc_se": 2
+        },
+        "spatial_vs_base": {
+          "min_pct": -8.12842665979,
+          "max_pct": 9.657160603161596,
+          "mean_signed_pct": 0.21591463883376477,
+          "mean_absolute_pct": 4.643130348242898,
+          "median_mc_se_pp": 2.2483990632684367,
+          "n_beyond_two_mc_se": 4
+        },
+        "spatial_vs_regional": {
+          "min_pct": -8.231217151679859,
+          "max_pct": 4.555366011476725,
+          "mean_signed_pct": -3.2534272998304896,
+          "mean_absolute_pct": 4.4382785689432565,
+          "median_mc_se_pp": 2.4893061142356916,
+          "n_beyond_two_mc_se": 4
+        },
+        "vertical_regional_vs_exp": {
+          "min_pct": 0.012140887360123642,
+          "max_pct": 13.258763621963677,
+          "mean_signed_pct": 4.362038983044091,
+          "mean_absolute_pct": 4.362038983044091,
+          "median_mc_se_pp": 2.3517602376422446,
+          "n_beyond_two_mc_se": 4
+        },
+        "vertical_spatial_vs_exp": {
+          "min_pct": -3.3697081903556914,
+          "max_pct": 9.837788010739,
+          "mean_signed_pct": 2.8516848431292985,
+          "mean_absolute_pct": 5.066941699891711,
+          "median_mc_se_pp": 2.305831683321977,
+          "n_beyond_two_mc_se": 4
+        }
+      }
+    },
+    "arcugnano_clear": {
+      "outside_0km": {
+        "n": 4,
+        "regional_vs_base": {
+          "min_pct": -2.541649395842349,
+          "max_pct": 1.2745914468625275,
+          "mean_signed_pct": -0.540150170399778,
+          "mean_absolute_pct": 1.1774458938310417,
+          "median_mc_se_pp": 1.3501905513005503,
+          "n_beyond_two_mc_se": 0
+        },
+        "spatial_vs_base": {
+          "min_pct": -2.156615115342009,
+          "max_pct": 1.3062044314224197,
+          "mean_signed_pct": 0.02215447293006101,
+          "mean_absolute_pct": 1.1004620306010655,
+          "median_mc_se_pp": 1.3556811639270334,
+          "n_beyond_two_mc_se": 0
+        },
+        "spatial_vs_regional": {
+          "min_pct": -1.4945156131420445,
+          "max_pct": 3.1177074583716324,
+          "mean_signed_pct": 0.5798722674162926,
+          "mean_absolute_pct": 1.3271300739873149,
+          "median_mc_se_pp": 1.6001747219379716,
+          "n_beyond_two_mc_se": 0
+        },
+        "vertical_regional_vs_exp": {
+          "min_pct": -0.010471266082778818,
+          "max_pct": 1.6512112333280093,
+          "mean_signed_pct": 1.0155901713054138,
+          "mean_absolute_pct": 1.0208258043468033,
+          "median_mc_se_pp": 1.3842792808797593,
+          "n_beyond_two_mc_se": 0
+        },
+        "vertical_spatial_vs_exp": {
+          "min_pct": -1.565542479998805,
+          "max_pct": 2.444644511184091,
+          "mean_signed_pct": 0.9243537855309458,
+          "mean_absolute_pct": 1.7071250255303483,
+          "median_mc_se_pp": 1.3894311507724282,
+          "n_beyond_two_mc_se": 0
+        }
+      },
+      "outside_3km": {
+        "n": 4,
+        "regional_vs_base": {
+          "min_pct": -1.440228909056629,
+          "max_pct": 1.9587379149365036,
+          "mean_signed_pct": 0.5642485242306899,
+          "mean_absolute_pct": 1.2843629787590043,
+          "median_mc_se_pp": 1.7097812907443402,
+          "n_beyond_two_mc_se": 0
+        },
+        "spatial_vs_base": {
+          "min_pct": -2.121563507872737,
+          "max_pct": 3.2536429675925183,
+          "mean_signed_pct": 0.9374482542583717,
+          "mean_absolute_pct": 1.9982300081947402,
+          "median_mc_se_pp": 1.7184760001453503,
+          "n_beyond_two_mc_se": 0
+        },
+        "spatial_vs_regional": {
+          "min_pct": -2.1504353022591682,
+          "max_pct": 2.504283706465915,
+          "mean_signed_pct": 0.37665701995134027,
+          "mean_absolute_pct": 1.5104990945097014,
+          "median_mc_se_pp": 1.9840918188021393,
+          "n_beyond_two_mc_se": 0
+        },
+        "vertical_regional_vs_exp": {
+          "min_pct": 0.19468378336624514,
+          "max_pct": 2.175612112865699,
+          "mean_signed_pct": 1.3159759485416422,
+          "mean_absolute_pct": 1.3159759485416422,
+          "median_mc_se_pp": 1.7283634880749394,
+          "n_beyond_two_mc_se": 0
+        },
+        "vertical_spatial_vs_exp": {
+          "min_pct": -1.6188876612269976,
+          "max_pct": 3.938652370488671,
+          "mean_signed_pct": 1.5310243628235076,
+          "mean_absolute_pct": 2.3404681934370064,
+          "median_mc_se_pp": 1.7488961971885273,
+          "n_beyond_two_mc_se": 1
+        }
+      },
+      "outside_10km": {
+        "n": 4,
+        "regional_vs_base": {
+          "min_pct": 3.1068053698971587,
+          "max_pct": 7.448053560965251,
+          "mean_signed_pct": 4.6739454673046685,
+          "mean_absolute_pct": 4.6739454673046685,
+          "median_mc_se_pp": 2.384727211858211,
+          "n_beyond_two_mc_se": 2
+        },
+        "spatial_vs_base": {
+          "min_pct": 0.1583242601045809,
+          "max_pct": 6.82309518158315,
+          "mean_signed_pct": 3.187731600958743,
+          "mean_absolute_pct": 3.187731600958743,
+          "median_mc_se_pp": 2.4296164320496842,
+          "n_beyond_two_mc_se": 2
+        },
+        "spatial_vs_regional": {
+          "min_pct": -6.624646959326896,
+          "max_pct": 3.6043108874858065,
+          "mean_signed_pct": -1.3729721472791672,
+          "mean_absolute_pct": 3.4315318407473647,
+          "median_mc_se_pp": 2.6996639505794517,
+          "n_beyond_two_mc_se": 0
+        },
+        "vertical_regional_vs_exp": {
+          "min_pct": -0.556837468531779,
+          "max_pct": 5.113579989865569,
+          "mean_signed_pct": 2.681665690131649,
+          "mean_absolute_pct": 2.960084424397538,
+          "median_mc_se_pp": 2.3279896522494568,
+          "n_beyond_two_mc_se": 0
+        },
+        "vertical_spatial_vs_exp": {
+          "min_pct": -1.2370063035788692,
+          "max_pct": 6.4099107502926245,
+          "mean_signed_pct": 2.665418950452372,
+          "mean_absolute_pct": 3.283922102241807,
+          "median_mc_se_pp": 2.431356718535736,
+          "n_beyond_two_mc_se": 1
+        }
+      }
+    },
+    "all": {
+      "outside_0km": {
+        "n": 19,
+        "regional_vs_base": {
+          "min_pct": -2.541649395842349,
+          "max_pct": 9.70694695743257,
+          "mean_signed_pct": 2.073678942496101,
+          "mean_absolute_pct": 2.435278113913115,
+          "median_mc_se_pp": 1.4992070536856636,
+          "n_beyond_two_mc_se": 4
+        },
+        "spatial_vs_base": {
+          "min_pct": -2.69893219615871,
+          "max_pct": 7.739543536966731,
+          "mean_signed_pct": 1.7452399199587894,
+          "mean_absolute_pct": 2.7388437355982727,
+          "median_mc_se_pp": 1.4550686040960834,
+          "n_beyond_two_mc_se": 8
+        },
+        "spatial_vs_regional": {
+          "min_pct": -3.6981464481898763,
+          "max_pct": 3.393460354378286,
+          "mean_signed_pct": -0.29861037077133495,
+          "mean_absolute_pct": 2.1046848461282015,
+          "median_mc_se_pp": 1.626677288291348,
+          "n_beyond_two_mc_se": 2
+        },
+        "vertical_regional_vs_exp": {
+          "min_pct": -1.541981731933617,
+          "max_pct": 8.781073786084171,
+          "mean_signed_pct": 2.1618390404576417,
+          "mean_absolute_pct": 2.3895517172657943,
+          "median_mc_se_pp": 1.474061187721807,
+          "n_beyond_two_mc_se": 7
+        },
+        "vertical_spatial_vs_exp": {
+          "min_pct": -4.603806506595232,
+          "max_pct": 5.821031798455456,
+          "mean_signed_pct": 1.0860118207149114,
+          "mean_absolute_pct": 3.1307926465950557,
+          "median_mc_se_pp": 1.4327761535078583,
+          "n_beyond_two_mc_se": 9
+        }
+      },
+      "outside_3km": {
+        "n": 19,
+        "regional_vs_base": {
+          "min_pct": -1.440228909056629,
+          "max_pct": 10.237662500411759,
+          "mean_signed_pct": 2.663638994455269,
+          "mean_absolute_pct": 2.8152420375138614,
+          "median_mc_se_pp": 1.6763415875700378,
+          "n_beyond_two_mc_se": 5
+        },
+        "spatial_vs_base": {
+          "min_pct": -5.491587821125066,
+          "max_pct": 8.469490395898616,
+          "mean_signed_pct": 1.5151797994155558,
+          "mean_absolute_pct": 3.2351531848627673,
+          "median_mc_se_pp": 1.6312632840690469,
+          "n_beyond_two_mc_se": 6
+        },
+        "spatial_vs_regional": {
+          "min_pct": -5.584562935987069,
+          "max_pct": 3.337644076024837,
+          "mean_signed_pct": -1.1115194882754609,
+          "mean_absolute_pct": 2.51088796104018,
+          "median_mc_se_pp": 1.8261509195248937,
+          "n_beyond_two_mc_se": 5
+        },
+        "vertical_regional_vs_exp": {
+          "min_pct": -1.291750550600057,
+          "max_pct": 10.533654667370307,
+          "mean_signed_pct": 2.8875644837899532,
+          "mean_absolute_pct": 3.026504467132721,
+          "median_mc_se_pp": 1.682744540171541,
+          "n_beyond_two_mc_se": 6
+        },
+        "vertical_spatial_vs_exp": {
+          "min_pct": -4.821743785229781,
+          "max_pct": 8.16370879669044,
+          "mean_signed_pct": 1.6896981795666839,
+          "mean_absolute_pct": 3.841211621459535,
+          "median_mc_se_pp": 1.6584865381421936,
+          "n_beyond_two_mc_se": 10
+        }
+      },
+      "outside_10km": {
+        "n": 19,
+        "regional_vs_base": {
+          "min_pct": -1.8095015732613295,
+          "max_pct": 10.881446240448089,
+          "mean_signed_pct": 4.1359069085406,
+          "mean_absolute_pct": 4.326380758357582,
+          "median_mc_se_pp": 2.336557166506687,
+          "n_beyond_two_mc_se": 7
+        },
+        "spatial_vs_base": {
+          "min_pct": -8.12842665979,
+          "max_pct": 11.194510109502032,
+          "mean_signed_pct": 1.6900949764141866,
+          "mean_absolute_pct": 4.502060798335442,
+          "median_mc_se_pp": 2.2483990632684367,
+          "n_beyond_two_mc_se": 8
+        },
+        "spatial_vs_regional": {
+          "min_pct": -8.231217151679859,
+          "max_pct": 4.555366011476725,
+          "mean_signed_pct": -2.3582496985152495,
+          "mean_absolute_pct": 3.60644064746825,
+          "median_mc_se_pp": 2.5750228875895838,
+          "n_beyond_two_mc_se": 4
+        },
+        "vertical_regional_vs_exp": {
+          "min_pct": -0.556837468531779,
+          "max_pct": 13.258763621963677,
+          "mean_signed_pct": 4.766595083885697,
+          "mean_absolute_pct": 4.825209554257464,
+          "median_mc_se_pp": 2.3688600349899174,
+          "n_beyond_two_mc_se": 8
+        },
+        "vertical_spatial_vs_exp": {
+          "min_pct": -3.3697081903556914,
+          "max_pct": 11.089048016182602,
+          "mean_signed_pct": 3.212841000459197,
+          "mean_absolute_pct": 4.919820519834913,
+          "median_mc_se_pp": 2.305831683321977,
+          "n_beyond_two_mc_se": 8
+        }
+      }
+    }
+  },
+  "windows": [
+    {
+      "site": "Galzignano",
+      "date": "2022-10-01",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[24118:24118][0:35][534:549][760:776]",
+          "sha256": "aa6672e6b54262c8f9fc9926552879d8629b491e52641b86a6564dde6cc8fbad"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[24118:24118][0:35][534:549][760:776],phis[24118:24118][534:549][760:776]",
+          "sha256": "c04b62d9a75a13c0f3d805c6842f176bc971cce25dfeb325a4bd18716b626750"
+        }
+      ],
+      "aod_regional": 0.06920178269907169,
+      "aod_at_station": 0.0929391973750004,
+      "region_z50_z90_m": [
+        2405.7567375585877,
+        15244.94995826508
+      ],
+      "station_z50_z90_m": [
+        1170.872777489765,
+        14848.521615075333
+      ],
+      "readings": 30,
+      "weather_pass": true,
+      "same_prior_six": false,
+      "prior_calibration_window": true,
+      "changes": {
+        "outside_0km": {
+          "regional_vs_base": {
+            "pct": 0.6569626988511379,
+            "mc_se_pp": 1.4938610943279893
+          },
+          "spatial_vs_base": {
+            "pct": 3.5554551977040383,
+            "mc_se_pp": 1.5571901848941911
+          },
+          "spatial_vs_regional": {
+            "pct": 2.879574766749826,
+            "mc_se_pp": 1.7711790587427347
+          },
+          "vertical_regional_vs_exp": {
+            "pct": -0.16414579930226214,
+            "mc_se_pp": 1.4778225404952052
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 4.786723234439294,
+            "mc_se_pp": 1.5671815725715263
+          }
+        },
+        "outside_3km": {
+          "regional_vs_base": {
+            "pct": 1.1850835883800093,
+            "mc_se_pp": 1.659097590580454
+          },
+          "spatial_vs_base": {
+            "pct": 4.361219868076804,
+            "mc_se_pp": 1.7314668601678236
+          },
+          "spatial_vs_regional": {
+            "pct": 3.138937249503404,
+            "mc_se_pp": 1.9561186553047192
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 0.07758702814419927,
+            "mc_se_pp": 1.6350160337784592
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 5.927130672795289,
+            "mc_se_pp": 1.7492755874512187
+          }
+        },
+        "outside_10km": {
+          "regional_vs_base": {
+            "pct": 0.20385955354689234,
+            "mc_se_pp": 2.2891413264324267
+          },
+          "spatial_vs_base": {
+            "pct": 4.768512113837042,
+            "mc_se_pp": 2.4167990511830837
+          },
+          "spatial_vs_regional": {
+            "pct": 4.555366011476725,
+            "mc_se_pp": 2.751099920576476
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 1.0920032692051995,
+            "mc_se_pp": 2.301136025360855
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 7.7646606199242685,
+            "mc_se_pp": 2.4766610165794907
+          }
+        }
+      },
+      "artificial_radiance": {
+        "regional_layered": {
+          "mean": 0.19292762807408426,
+          "mc_se": 0.002564159690868832
+        },
+        "spatial_layered": {
+          "mean": 0.19898350525628505,
+          "mc_se": 0.0026922319323913957
+        },
+        "base": {
+          "mean": 0.1906680522782509,
+          "mc_se": 0.0018308655053063997
+        },
+        "regional_exponential": {
+          "mean": 0.19277805730850447,
+          "mc_se": 0.0018315785000996869
+        },
+        "spatial_exponential": {
+          "mean": 0.18784942440377925,
+          "mc_se": 0.0017786448852673974
+        }
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date": "2022-10-27",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[24742:24742][0:35][534:549][760:776]",
+          "sha256": "09766d5ff9d57da02d439055191a63429156fde2b081ed0a8e9c641c11763437"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[24742:24742][0:35][534:549][760:776],phis[24742:24742][534:549][760:776]",
+          "sha256": "da3562be673fd077005ea3c8424926ca22010faab22fa45ddfd9ecd692b37118"
+        }
+      ],
+      "aod_regional": 0.12533815506803014,
+      "aod_at_station": 0.13745512500000046,
+      "region_z50_z90_m": [
+        1685.7544999474178,
+        7609.682796251205
+      ],
+      "station_z50_z90_m": [
+        1247.988693293652,
+        4434.250631182859
+      ],
+      "readings": 30,
+      "weather_pass": false,
+      "same_prior_six": false,
+      "prior_calibration_window": false,
+      "changes": {
+        "outside_0km": {
+          "regional_vs_base": {
+            "pct": 2.5020993988265072,
+            "mc_se_pp": 1.4992070536856636
+          },
+          "spatial_vs_base": {
+            "pct": -0.19516258212122217,
+            "mc_se_pp": 1.4571756116080805
+          },
+          "spatial_vs_regional": {
+            "pct": -2.6314212067529597,
+            "mc_se_pp": 1.6208426723675573
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 3.0094799894242463,
+            "mc_se_pp": 1.4969317238648931
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": -1.4619497197155273,
+            "mc_se_pp": 1.4327761535078583
+          }
+        },
+        "outside_3km": {
+          "regional_vs_base": {
+            "pct": 2.211281827307965,
+            "mc_se_pp": 1.6602302796575068
+          },
+          "spatial_vs_base": {
+            "pct": -0.43731307995312774,
+            "mc_se_pp": 1.6138229669250843
+          },
+          "spatial_vs_regional": {
+            "pct": -2.5912940919144756,
+            "mc_se_pp": 1.8018327931795708
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 3.0974760660534395,
+            "mc_se_pp": 1.6657387660240521
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": -1.352505063621512,
+            "mc_se_pp": 1.5942949779314848
+          }
+        },
+        "outside_10km": {
+          "regional_vs_base": {
+            "pct": -1.8095015732613295,
+            "mc_se_pp": 2.251393594437956
+          },
+          "spatial_vs_base": {
+            "pct": -3.4275281811107727,
+            "mc_se_pp": 2.2124638413839586
+          },
+          "spatial_vs_regional": {
+            "pct": -1.6478443777904528,
+            "mc_se_pp": 2.5814698201865562
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 0.9049925477976783,
+            "mc_se_pp": 2.3054651425139254
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": -2.857777722209154,
+            "mc_se_pp": 2.226477425797876
+          }
+        }
+      },
+      "artificial_radiance": {
+        "regional_layered": {
+          "mean": 0.1948842602687619,
+          "mc_se": 0.002553158287921733
+        },
+        "spatial_layered": {
+          "mean": 0.18983423594634624,
+          "mc_se": 0.002478989769471213
+        },
+        "base": {
+          "mean": 0.1906680522782509,
+          "mc_se": 0.0018308655053063997
+        },
+        "regional_exponential": {
+          "mean": 0.18902912826294765,
+          "mc_se": 0.0017874295810546817
+        },
+        "spatial_exponential": {
+          "mean": 0.1924369555139515,
+          "mc_se": 0.001832353350200273
+        }
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date": "2022-10-28",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[24766:24766][0:35][534:549][760:776]",
+          "sha256": "2913cc99904a85c177765ba6c136b8f91f2e8ad57ea78c7b20913956997e23e8"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[24766:24766][0:35][534:549][760:776],phis[24766:24766][534:549][760:776]",
+          "sha256": "044f9523d7385a57dfa615bd6d8a7e45292a78cc35f8e028590e48ffca0891a4"
+        }
+      ],
+      "aod_regional": 0.13977389381756522,
+      "aod_at_station": 0.2524366447499999,
+      "region_z50_z90_m": [
+        1825.725575516046,
+        9949.871187873418
+      ],
+      "station_z50_z90_m": [
+        852.9920557129551,
+        5208.454031883302
+      ],
+      "readings": 30,
+      "weather_pass": true,
+      "same_prior_six": true,
+      "prior_calibration_window": false,
+      "changes": {
+        "outside_0km": {
+          "regional_vs_base": {
+            "pct": 5.673663938410889,
+            "mc_se_pp": 1.533094198634264
+          },
+          "spatial_vs_base": {
+            "pct": 3.512437573235494,
+            "mc_se_pp": 1.4889863072276353
+          },
+          "spatial_vs_regional": {
+            "pct": -2.04518920289829,
+            "mc_se_pp": 1.6018179197692055
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 4.929794694646361,
+            "mc_se_pp": 1.5121346983171564
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 1.0586983601914568,
+            "mc_se_pp": 1.4243090460724037
+          }
+        },
+        "outside_3km": {
+          "regional_vs_base": {
+            "pct": 6.083973529906439,
+            "mc_se_pp": 1.702336997363121
+          },
+          "spatial_vs_base": {
+            "pct": 2.2636219649869282,
+            "mc_se_pp": 1.643136410423716
+          },
+          "spatial_vs_regional": {
+            "pct": -3.6012523266226504,
+            "mc_se_pp": 1.7545283535002953
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 5.703356689543382,
+            "mc_se_pp": 1.6867749793317264
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 1.1972913383976769,
+            "mc_se_pp": 1.600410621141087
+          }
+        },
+        "outside_10km": {
+          "regional_vs_base": {
+            "pct": 3.792728391699507,
+            "mc_se_pp": 2.336557166506687
+          },
+          "spatial_vs_base": {
+            "pct": -0.863808246636455,
+            "mc_se_pp": 2.2483990632684367
+          },
+          "spatial_vs_regional": {
+            "pct": -4.486380414592073,
+            "mc_se_pp": 2.4528213560699665
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 6.192059719593601,
+            "mc_se_pp": 2.3843955100158625
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 2.5530409606076443,
+            "mc_se_pp": 2.305831683321977
+          }
+        }
+      },
+      "artificial_radiance": {
+        "regional_layered": {
+          "mean": 0.20226824610884786,
+          "mc_se": 0.002600566610575901
+        },
+        "spatial_layered": {
+          "mean": 0.19498405618983414,
+          "mc_se": 0.0025119209302801216
+        },
+        "base": {
+          "mean": 0.1906680522782509,
+          "mc_se": 0.0018308655053063997
+        },
+        "regional_exponential": {
+          "mean": 0.19135461015010233,
+          "mc_se": 0.001808711103566828
+        },
+        "spatial_exponential": {
+          "mean": 0.1926771493693632,
+          "mc_se": 0.0017674137191744208
+        }
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date": "2022-10-30",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[24814:24814][0:35][534:549][760:776]",
+          "sha256": "ef839bc517a966aeef4d92511b750b7d4be36030260bdf0a34288b9bbf5874f8"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[24814:24814][0:35][534:549][760:776],phis[24814:24814][534:549][760:776]",
+          "sha256": "87a5e88a5aef6e7787e57ad8b0f88dd97d557a683e91c42be1ec0651a71711e8"
+        }
+      ],
+      "aod_regional": 0.1492435750851958,
+      "aod_at_station": 0.2607792895000007,
+      "region_z50_z90_m": [
+        1066.8287588015455,
+        8882.04793622426
+      ],
+      "station_z50_z90_m": [
+        471.0083297441379,
+        4340.960999930921
+      ],
+      "readings": 30,
+      "weather_pass": false,
+      "same_prior_six": false,
+      "prior_calibration_window": false,
+      "changes": {
+        "outside_0km": {
+          "regional_vs_base": {
+            "pct": 2.0839257622250695,
+            "mc_se_pp": 1.5080922432405865
+          },
+          "spatial_vs_base": {
+            "pct": -0.8621071916944723,
+            "mc_se_pp": 1.4550686040960834
+          },
+          "spatial_vs_regional": {
+            "pct": -2.8858930844621766,
+            "mc_se_pp": 1.635669516406525
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 1.070808578889637,
+            "mc_se_pp": 1.4759562561996575
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": -4.603806506595232,
+            "mc_se_pp": 1.375863529208135
+          }
+        },
+        "outside_3km": {
+          "regional_vs_base": {
+            "pct": 2.0807678502502425,
+            "mc_se_pp": 1.6722053005884485
+          },
+          "spatial_vs_base": {
+            "pct": -2.067548667650221,
+            "mc_se_pp": 1.6058661360068374
+          },
+          "spatial_vs_regional": {
+            "pct": -4.063759124525712,
+            "mc_se_pp": 1.802010698813055
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 1.5707887817857147,
+            "mc_se_pp": 1.6471826450905602
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": -4.70959243864878,
+            "mc_se_pp": 1.5411257512965084
+          }
+        },
+        "outside_10km": {
+          "regional_vs_base": {
+            "pct": 0.8104502085048537,
+            "mc_se_pp": 2.3156964479033504
+          },
+          "spatial_vs_base": {
+            "pct": -3.363676434800056,
+            "mc_se_pp": 2.2265648022064566
+          },
+          "spatial_vs_regional": {
+            "pct": -4.140569390049964,
+            "mc_se_pp": 2.530492276814385
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 3.8791426129128226,
+            "mc_se_pp": 2.3688600349899174
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": -2.152865552850425,
+            "mc_se_pp": 2.241307815665549
+          }
+        }
+      },
+      "artificial_radiance": {
+        "regional_layered": {
+          "mean": 0.19463541181075505,
+          "mc_se": 0.0025831434910360673
+        },
+        "spatial_layered": {
+          "mean": 0.1867258975037373,
+          "mc_se": 0.0024819710561778028
+        },
+        "base": {
+          "mean": 0.1906680522782509,
+          "mc_se": 0.0018308655053063997
+        },
+        "regional_exponential": {
+          "mean": 0.19162538181022598,
+          "mc_se": 0.001785881727726342
+        },
+        "spatial_exponential": {
+          "mean": 0.19595455857770028,
+          "mc_se": 0.0018053907245514109
+        }
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date": "2022-10-31",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[24838:24838][0:35][534:549][760:776]",
+          "sha256": "f80c74328589591f862b82e3f9aec70c71340bfcfc5174e45fee717240c47d52"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[24838:24838][0:35][534:549][760:776],phis[24838:24838][534:549][760:776]",
+          "sha256": "ac4427e5a49e3b6c9b810b9cfd3dca2cded7e1a707bbdde3e6cf8731131dfeeb"
+        }
+      ],
+      "aod_regional": 0.12886614938255264,
+      "aod_at_station": 0.3205261118750008,
+      "region_z50_z90_m": [
+        940.5515626801431,
+        12117.195439263875
+      ],
+      "station_z50_z90_m": [
+        537.0825403674822,
+        9123.842476709644
+      ],
+      "readings": 29,
+      "weather_pass": true,
+      "same_prior_six": true,
+      "prior_calibration_window": false,
+      "changes": {
+        "outside_0km": {
+          "regional_vs_base": {
+            "pct": 0.9711886120956192,
+            "mc_se_pp": 1.4972108138929983
+          },
+          "spatial_vs_base": {
+            "pct": 0.5290090456295138,
+            "mc_se_pp": 1.4410945086347735
+          },
+          "spatial_vs_regional": {
+            "pct": -0.4379264744172051,
+            "mc_se_pp": 1.6521975048835003
+          },
+          "vertical_regional_vs_exp": {
+            "pct": -1.541981731933617,
+            "mc_se_pp": 1.4539243353207343
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": -4.478298255859037,
+            "mc_se_pp": 1.3392638308203815
+          }
+        },
+        "outside_3km": {
+          "regional_vs_base": {
+            "pct": 1.0021255134477824,
+            "mc_se_pp": 1.6600201177710148
+          },
+          "spatial_vs_base": {
+            "pct": -0.8035933941192286,
+            "mc_se_pp": 1.5894780862006157
+          },
+          "spatial_vs_regional": {
+            "pct": -1.7878028787885247,
+            "mc_se_pp": 1.8175054531206505
+          },
+          "vertical_regional_vs_exp": {
+            "pct": -1.291750550600057,
+            "mc_se_pp": 1.6167120831633217
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": -4.126438467197091,
+            "mc_se_pp": 1.5112470515375864
+          }
+        },
+        "outside_10km": {
+          "regional_vs_base": {
+            "pct": 1.8122536984394921,
+            "mc_se_pp": 2.3315013786148175
+          },
+          "spatial_vs_base": {
+            "pct": -4.322160387573981,
+            "mc_se_pp": 2.156308270779321
+          },
+          "spatial_vs_regional": {
+            "pct": -6.025221781440148,
+            "mc_se_pp": 2.433668585743683
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 0.10477683602465593,
+            "mc_se_pp": 2.287155734479199
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": -3.1700610968324217,
+            "mc_se_pp": 2.16999993590861
+          }
+        }
+      },
+      "artificial_radiance": {
+        "regional_layered": {
+          "mean": 0.19257878547612522,
+          "mc_se": 0.0025687441331687464
+        },
+        "spatial_layered": {
+          "mean": 0.18913585640544708,
+          "mc_se": 0.00242616745035545
+        },
+        "base": {
+          "mean": 0.1906680522782509,
+          "mc_se": 0.0018308655053063997
+        },
+        "regional_exponential": {
+          "mean": 0.19509897759340308,
+          "mc_se": 0.0018543802055767324
+        },
+        "spatial_exponential": {
+          "mean": 0.19727634332300747,
+          "mc_se": 0.0018072184086509353
+        }
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date": "2023-02-12",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[27334:27334][0:35][534:549][760:776]",
+          "sha256": "1cfaa3c48328bb820ea04cf6caf50089877350d083b4fbca5984db9a661fe116"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[27334:27334][0:35][534:549][760:776],phis[27334:27334][534:549][760:776]",
+          "sha256": "e042cfcc0dc95261311231bc285b90b744e1c0793433172d7acd44319243434e"
+        }
+      ],
+      "aod_regional": 0.09974180641345821,
+      "aod_at_station": 0.15079495790000016,
+      "region_z50_z90_m": [
+        1224.8732033489362,
+        11878.97209561171
+      ],
+      "station_z50_z90_m": [
+        621.8518332192787,
+        4475.90961659485
+      ],
+      "readings": 30,
+      "weather_pass": true,
+      "same_prior_six": true,
+      "prior_calibration_window": false,
+      "changes": {
+        "outside_0km": {
+          "regional_vs_base": {
+            "pct": 1.1025912343159083,
+            "mc_se_pp": 1.5070844632758624
+          },
+          "spatial_vs_base": {
+            "pct": -2.6363306524438634,
+            "mc_se_pp": 1.443861185566692
+          },
+          "spatial_vs_regional": {
+            "pct": -3.6981464481898763,
+            "mc_se_pp": 1.6542959978139518
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 3.248147388785916,
+            "mc_se_pp": 1.532612628228209
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": -2.6433500707342517,
+            "mc_se_pp": 1.4403806172000866
+          }
+        },
+        "outside_3km": {
+          "regional_vs_base": {
+            "pct": 1.5961670555108887,
+            "mc_se_pp": 1.681739571513331
+          },
+          "spatial_vs_base": {
+            "pct": -2.9650664821745165,
+            "mc_se_pp": 1.6060512133058837
+          },
+          "spatial_vs_regional": {
+            "pct": -4.4895724611276115,
+            "mc_se_pp": 1.8261509195248937
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 3.9871702079470994,
+            "mc_se_pp": 1.7151938398146451
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": -2.6408336890112682,
+            "mc_se_pp": 1.6094666435071414
+          }
+        },
+        "outside_10km": {
+          "regional_vs_base": {
+            "pct": 3.952298750263661,
+            "mc_se_pp": 2.400057498651911
+          },
+          "spatial_vs_base": {
+            "pct": -2.4274727268493224,
+            "mc_se_pp": 2.2396465873062152
+          },
+          "spatial_vs_regional": {
+            "pct": -6.1372105800563626,
+            "mc_se_pp": 2.4893061142356916
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 5.518284451289723,
+            "mc_se_pp": 2.4185331947101223
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": -1.5481086031265523,
+            "mc_se_pp": 2.2637407502997555
+          }
+        }
+      },
+      "artificial_radiance": {
+        "regional_layered": {
+          "mean": 0.18838770774069333,
+          "mc_se": 0.0025471880997341417
+        },
+        "spatial_layered": {
+          "mean": 0.1799299050938176,
+          "mc_se": 0.0024324092582034356
+        },
+        "base": {
+          "mean": 0.1854279676099991,
+          "mc_se": 0.0017707216125195375
+        },
+        "regional_exponential": {
+          "mean": 0.18116437572439684,
+          "mc_se": 0.0017114448121734308
+        },
+        "spatial_exponential": {
+          "mean": 0.1848104414935908,
+          "mc_se": 0.001758397757861055
+        }
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date": "2023-02-13",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[27358:27358][0:35][534:549][760:776]",
+          "sha256": "75b99548a3aec270f0762282fa52f45844e7a01f8f6a719775c5abb049f075fe"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[27358:27358][0:35][534:549][760:776],phis[27358:27358][534:549][760:776]",
+          "sha256": "13c75b294ada18d6bfa72fe5f30c48748f3e5ef8ecef8d8276bc2ec632b2d243"
+        }
+      ],
+      "aod_regional": 0.09562841121850915,
+      "aod_at_station": 0.15779606184999967,
+      "region_z50_z90_m": [
+        1145.2089838627326,
+        12220.983191874413
+      ],
+      "station_z50_z90_m": [
+        922.5893287608949,
+        2834.7850790562284
+      ],
+      "readings": 30,
+      "weather_pass": true,
+      "same_prior_six": true,
+      "prior_calibration_window": false,
+      "changes": {
+        "outside_0km": {
+          "regional_vs_base": {
+            "pct": 2.2503437219821842,
+            "mc_se_pp": 1.5038733045812802
+          },
+          "spatial_vs_base": {
+            "pct": -0.8900885108148127,
+            "mc_se_pp": 1.4442596097694504
+          },
+          "spatial_vs_regional": {
+            "pct": -3.071317042547861,
+            "mc_se_pp": 1.626677288291348
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 2.138825553549162,
+            "mc_se_pp": 1.5059781622108492
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": -0.8342542512951745,
+            "mc_se_pp": 1.439016119438473
+          }
+        },
+        "outside_3km": {
+          "regional_vs_base": {
+            "pct": 2.4995696741248796,
+            "mc_se_pp": 1.6763415875700378
+          },
+          "spatial_vs_base": {
+            "pct": -1.66353123689168,
+            "mc_se_pp": 1.6035267241165612
+          },
+          "spatial_vs_regional": {
+            "pct": -4.0615789161381315,
+            "mc_se_pp": 1.797393907081013
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 2.290807440086473,
+            "mc_se_pp": 1.6766941618931108
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": -1.169376593046656,
+            "mc_se_pp": 1.6072285868680685
+          }
+        },
+        "outside_10km": {
+          "regional_vs_base": {
+            "pct": 4.090826181376173,
+            "mc_se_pp": 2.3629335868481243
+          },
+          "spatial_vs_base": {
+            "pct": -2.9349589639441787,
+            "mc_se_pp": 2.2234744146387113
+          },
+          "spatial_vs_regional": {
+            "pct": -6.7496679612073285,
+            "mc_se_pp": 2.437871899188569
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 3.529607238922461,
+            "mc_se_pp": 2.3517602376422446
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": -1.8807779651161871,
+            "mc_se_pp": 2.2479786137993107
+          }
+        }
+      },
+      "artificial_radiance": {
+        "regional_layered": {
+          "mean": 0.19006286885572476,
+          "mc_se": 0.002523495378747195
+        },
+        "spatial_layered": {
+          "mean": 0.18234331544687338,
+          "mc_se": 0.002410192144096251
+        },
+        "base": {
+          "mean": 0.1854279676099991,
+          "mc_se": 0.0017707216125195375
+        },
+        "regional_exponential": {
+          "mean": 0.18580640197512172,
+          "mc_se": 0.0017860283249976486
+        },
+        "spatial_exponential": {
+          "mean": 0.18450082490731753,
+          "mc_se": 0.0017479453331808949
+        }
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date": "2023-02-14",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[27382:27382][0:35][534:549][760:776]",
+          "sha256": "18c6892f4420db9cf5eded97173dce0e4011ee00e6cdf1b60c71c7cf311999a1"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[27382:27382][0:35][534:549][760:776],phis[27382:27382][534:549][760:776]",
+          "sha256": "a373d4879a6964636b3788dc91df754960eb3f828e829ab70718e4aea7c1d1f4"
+        }
+      ],
+      "aod_regional": 0.11756929709680052,
+      "aod_at_station": 0.28393050922499985,
+      "region_z50_z90_m": [
+        884.0137737526405,
+        9040.472296009812
+      ],
+      "station_z50_z90_m": [
+        641.1447721229245,
+        1395.5333634038104
+      ],
+      "readings": 30,
+      "weather_pass": true,
+      "same_prior_six": true,
+      "prior_calibration_window": false,
+      "changes": {
+        "outside_0km": {
+          "regional_vs_base": {
+            "pct": 0.41336557339108904,
+            "mc_se_pp": 1.4665924833621626
+          },
+          "spatial_vs_base": {
+            "pct": -2.69893219615871,
+            "mc_se_pp": 1.404685556917985
+          },
+          "spatial_vs_regional": {
+            "pct": -3.099485563278981,
+            "mc_se_pp": 1.606055801943553
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 0.034798252955536846,
+            "mc_se_pp": 1.4604679951833481
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": -3.8382165616633435,
+            "mc_se_pp": 1.3576212085615356
+          }
+        },
+        "outside_3km": {
+          "regional_vs_base": {
+            "pct": 0.09847448442035223,
+            "mc_se_pp": 1.6312937059061616
+          },
+          "spatial_vs_base": {
+            "pct": -5.491587821125066,
+            "mc_se_pp": 1.5471409580365023
+          },
+          "spatial_vs_regional": {
+            "pct": -5.584562935987069,
+            "mc_se_pp": 1.7693702897321897
+          },
+          "vertical_regional_vs_exp": {
+            "pct": -0.028179291156238406,
+            "mc_se_pp": 1.6299142635728994
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": -4.821743785229781,
+            "mc_se_pp": 1.5335505698810465
+          }
+        },
+        "outside_10km": {
+          "regional_vs_base": {
+            "pct": 0.11201030317657956,
+            "mc_se_pp": 2.271103653443568
+          },
+          "spatial_vs_base": {
+            "pct": -8.12842665979,
+            "mc_se_pp": 2.1285197925908683
+          },
+          "spatial_vs_regional": {
+            "pct": -8.231217151679859,
+            "mc_se_pp": 2.418993526928524
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 0.012140887360123642,
+            "mc_se_pp": 2.2705344701768815
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": -3.3697081903556914,
+            "mc_se_pp": 2.2160165695112535
+          }
+        }
+      },
+      "artificial_radiance": {
+        "regional_layered": {
+          "mean": 0.18561056684507418,
+          "mc_se": 0.002451169929986763
+        },
+        "spatial_layered": {
+          "mean": 0.17524502792376867,
+          "mc_se": 0.0023301628669242717
+        },
+        "base": {
+          "mean": 0.1854279676099991,
+          "mc_se": 0.0017707216125195375
+        },
+        "regional_exponential": {
+          "mean": 0.18566288533010042,
+          "mc_se": 0.0017751338952340912
+        },
+        "spatial_exponential": {
+          "mean": 0.18412296557348914,
+          "mc_se": 0.0016755193438011697
+        }
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date": "2023-02-15",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[27406:27406][0:35][534:549][760:776]",
+          "sha256": "dec0706f0acb3cdd62f8d4252ccfd41d2ced6aa08e16abb63b468f1c8b8c46f9"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[27406:27406][0:35][534:549][760:776],phis[27406:27406][534:549][760:776]",
+          "sha256": "be55503e5883d509a8621f427888ba91ead3173b3834ebd6860a10aa95ea0ce4"
+        }
+      ],
+      "aod_regional": 0.13464281575606446,
+      "aod_at_station": 0.30437855002500014,
+      "region_z50_z90_m": [
+        1021.2355647738054,
+        10285.80675387604
+      ],
+      "station_z50_z90_m": [
+        899.6275078780358,
+        4780.798626715334
+      ],
+      "readings": 30,
+      "weather_pass": true,
+      "same_prior_six": true,
+      "prior_calibration_window": false,
+      "changes": {
+        "outside_0km": {
+          "regional_vs_base": {
+            "pct": 0.9633052099687234,
+            "mc_se_pp": 1.4750984251679813
+          },
+          "spatial_vs_base": {
+            "pct": 1.9465092432781494,
+            "mc_se_pp": 1.4543771948102209
+          },
+          "spatial_vs_regional": {
+            "pct": 0.9738231442252276,
+            "mc_se_pp": 1.6590236667260505
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 0.7738822445596982,
+            "mc_se_pp": 1.4662808908738243
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 2.185254183836993,
+            "mc_se_pp": 1.4191312014664101
+          }
+        },
+        "outside_3km": {
+          "regional_vs_base": {
+            "pct": 0.696514282684424,
+            "mc_se_pp": 1.6413102148737622
+          },
+          "spatial_vs_base": {
+            "pct": -0.7895429719619318,
+            "mc_se_pp": 1.6026923541587623
+          },
+          "spatial_vs_regional": {
+            "pct": -1.4757782483657333,
+            "mc_se_pp": 1.8280472552277536
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 0.8715566703763278,
+            "mc_se_pp": 1.6393064108145765
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 1.4864965439698397,
+            "mc_se_pp": 1.6071193863955908
+          }
+        },
+        "outside_10km": {
+          "regional_vs_base": {
+            "pct": 0.6453200269806114,
+            "mc_se_pp": 2.2983913914516654
+          },
+          "spatial_vs_base": {
+            "pct": -1.2456437075471616,
+            "mc_se_pp": 2.260126907593904
+          },
+          "spatial_vs_regional": {
+            "pct": -1.8788392088383787,
+            "mc_se_pp": 2.5750228875895838
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 1.520505426550245,
+            "mc_se_pp": 2.3098764951069093
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 5.669930964524439,
+            "mc_se_pp": 2.390047617555503
+          }
+        }
+      },
+      "artificial_radiance": {
+        "regional_layered": {
+          "mean": 0.18671949988849418,
+          "mc_se": 0.0024664330238685877
+        },
+        "spatial_layered": {
+          "mean": 0.1839639341236825,
+          "mc_se": 0.0023970175620679655
+        },
+        "base": {
+          "mean": 0.1854279676099991,
+          "mc_se": 0.0017707216125195375
+        },
+        "regional_exponential": {
+          "mean": 0.1851061945030233,
+          "mc_se": 0.0017523925284215682
+        },
+        "spatial_exponential": {
+          "mean": 0.18126937118573075,
+          "mc_se": 0.0016313852365968898
+        }
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date": "2023-07-14",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[30982:30982][0:35][534:549][760:776]",
+          "sha256": "ef47cb42533d60a8e1042e60e7fdc41cddb6ea6133a7e0b7383f0cf57265a621"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[30982:30982][0:35][534:549][760:776],phis[30982:30982][534:549][760:776]",
+          "sha256": "dc04bafc7d2f1d940a738440533594d682140a7559a16661485c90597a9d0911"
+        }
+      ],
+      "aod_regional": 0.13952252506635543,
+      "aod_at_station": 0.1584209579000001,
+      "region_z50_z90_m": [
+        2237.766323318474,
+        12787.77255381406
+      ],
+      "station_z50_z90_m": [
+        1795.9489728368326,
+        10944.004903923917
+      ],
+      "readings": 29,
+      "weather_pass": true,
+      "same_prior_six": false,
+      "prior_calibration_window": false,
+      "changes": {
+        "outside_0km": {
+          "regional_vs_base": {
+            "pct": 5.578546182059663,
+            "mc_se_pp": 1.5029420256729218
+          },
+          "spatial_vs_base": {
+            "pct": 5.102071697459487,
+            "mc_se_pp": 1.482434243048668
+          },
+          "spatial_vs_regional": {
+            "pct": -0.4512985846372053,
+            "mc_se_pp": 1.6017433723227144
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 6.430808166938218,
+            "mc_se_pp": 1.506899222043907
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 5.771933483144487,
+            "mc_se_pp": 1.4749732385641157
+          }
+        },
+        "outside_3km": {
+          "regional_vs_base": {
+            "pct": 6.110145455859328,
+            "mc_se_pp": 1.716336214209107
+          },
+          "spatial_vs_base": {
+            "pct": 5.125362389825172,
+            "mc_se_pp": 1.6895087589937792
+          },
+          "spatial_vs_regional": {
+            "pct": -0.9280762568022571,
+            "mc_se_pp": 1.8120590236773104
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 7.756142179852588,
+            "mc_se_pp": 1.737551430766809
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 6.900672984376044,
+            "mc_se_pp": 1.7041731435293368
+          }
+        },
+        "outside_10km": {
+          "regional_vs_base": {
+            "pct": 6.612223444415655,
+            "mc_se_pp": 2.6325117250955885
+          },
+          "spatial_vs_base": {
+            "pct": 7.440029724846342,
+            "mc_se_pp": 2.63751995138476
+          },
+          "spatial_vs_regional": {
+            "pct": 0.7764646995307212,
+            "mc_se_pp": 2.799069528795474
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 8.03020939648713,
+            "mc_se_pp": 2.662715489389559
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 9.837788010739,
+            "mc_se_pp": 2.6713079523597245
+          }
+        }
+      },
+      "artificial_radiance": {
+        "regional_layered": {
+          "mean": 0.18089714237199925,
+          "mc_se": 0.002351243725555126
+        },
+        "spatial_layered": {
+          "mean": 0.17921827894441095,
+          "mc_se": 0.002306259461050182
+        },
+        "base": {
+          "mean": 0.17048053378387884,
+          "mc_se": 0.00164133241001816
+        },
+        "regional_exponential": {
+          "mean": 0.16787640937448298,
+          "mc_se": 0.0016020631673723913
+        },
+        "spatial_exponential": {
+          "mean": 0.16764934582835078,
+          "mc_se": 0.0015775036938979658
+        }
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date": "2023-07-16",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[31030:31030][0:35][534:549][760:776]",
+          "sha256": "6dfdabcd3616b6c6c87325d2fef734d0c1952e64f7002b42ab5a9cfbbc2a8fba"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[31030:31030][0:35][534:549][760:776],phis[31030:31030][534:549][760:776]",
+          "sha256": "2e9e8e6db10ec848fb8940b721c390d010d5b54f46ae07367e1f591767db8e90"
+        }
+      ],
+      "aod_regional": 0.14978340187844577,
+      "aod_at_station": 0.1630160828999994,
+      "region_z50_z90_m": [
+        2589.0262721626946,
+        14668.45073990207
+      ],
+      "station_z50_z90_m": [
+        2120.974570305765,
+        14572.65613733667
+      ],
+      "readings": 30,
+      "weather_pass": false,
+      "same_prior_six": false,
+      "prior_calibration_window": false,
+      "changes": {
+        "outside_0km": {
+          "regional_vs_base": {
+            "pct": 5.984603750932704,
+            "mc_se_pp": 1.4997699534433533
+          },
+          "spatial_vs_base": {
+            "pct": 4.688639762890645,
+            "mc_se_pp": 1.4757109902936496
+          },
+          "spatial_vs_regional": {
+            "pct": -1.2227851425359981,
+            "mc_se_pp": 1.5812119681938603
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 5.75085594617446,
+            "mc_se_pp": 1.4784502822002983
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 5.135977446182705,
+            "mc_se_pp": 1.4650939698452778
+          }
+        },
+        "outside_3km": {
+          "regional_vs_base": {
+            "pct": 6.489804236676799,
+            "mc_se_pp": 1.712383402559918
+          },
+          "spatial_vs_base": {
+            "pct": 4.963714342354875,
+            "mc_se_pp": 1.6833004856610403
+          },
+          "spatial_vs_regional": {
+            "pct": -1.4330854538244453,
+            "mc_se_pp": 1.7915731896247133
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 7.386228793590366,
+            "mc_se_pp": 1.7115065924477681
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 6.497124306963942,
+            "mc_se_pp": 1.693826389114584
+          }
+        },
+        "outside_10km": {
+          "regional_vs_base": {
+            "pct": 10.168410454819043,
+            "mc_se_pp": 2.69189292949699
+          },
+          "spatial_vs_base": {
+            "pct": 7.818287042936589,
+            "mc_se_pp": 2.6389928404145455
+          },
+          "spatial_vs_regional": {
+            "pct": -2.1332098758439333,
+            "mc_se_pp": 2.689507685587578
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 13.00690412855885,
+            "mc_se_pp": 2.7390188410051666
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 10.63265939892819,
+            "mc_se_pp": 2.6870685901910796
+          }
+        }
+      },
+      "artificial_radiance": {
+        "regional_layered": {
+          "mean": 0.18154438668809425,
+          "mc_se": 0.0023382070885071757
+        },
+        "spatial_layered": {
+          "mean": 0.17894270049023236,
+          "mc_se": 0.002295021640348072
+        },
+        "base": {
+          "mean": 0.17048053378387884,
+          "mc_se": 0.00164133241001816
+        },
+        "regional_exponential": {
+          "mean": 0.16905741893315301,
+          "mc_se": 0.0015870967952937465
+        },
+        "spatial_exponential": {
+          "mean": 0.1680258520168616,
+          "mc_se": 0.0015804581500661833
+        }
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date": "2023-07-17",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[31054:31054][0:35][534:549][760:776]",
+          "sha256": "42a6bdc1f4c5dc90736758755ff359cca4c78b2957e72444aa7ff5ea5f587b81"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[31054:31054][0:35][534:549][760:776],phis[31054:31054][534:549][760:776]",
+          "sha256": "5a45bea137ba588a59e3ed82255230a431535d086c176df639951db51d8cc5a9"
+        }
+      ],
+      "aod_regional": 0.20052693396278246,
+      "aod_at_station": 0.20310982237499947,
+      "region_z50_z90_m": [
+        2816.375419639704,
+        13491.99235288563
+      ],
+      "station_z50_z90_m": [
+        2014.8305339531103,
+        13887.352280247482
+      ],
+      "readings": 30,
+      "weather_pass": true,
+      "same_prior_six": false,
+      "prior_calibration_window": false,
+      "changes": {
+        "outside_0km": {
+          "regional_vs_base": {
+            "pct": 9.70694695743257,
+            "mc_se_pp": 1.5098506697313445
+          },
+          "spatial_vs_base": {
+            "pct": 7.739543536966731,
+            "mc_se_pp": 1.4926408281300148
+          },
+          "spatial_vs_regional": {
+            "pct": -1.7933261976829984,
+            "mc_se_pp": 1.5171245062466625
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 8.781073786084171,
+            "mc_se_pp": 1.474061187721807
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 5.821031798455456,
+            "mc_se_pp": 1.441862766279701
+          }
+        },
+        "outside_3km": {
+          "regional_vs_base": {
+            "pct": 10.237662500411759,
+            "mc_se_pp": 1.7239526609039393
+          },
+          "spatial_vs_base": {
+            "pct": 7.891337717077773,
+            "mc_se_pp": 1.7018436990035988
+          },
+          "spatial_vs_regional": {
+            "pct": -2.128423925285261,
+            "mc_se_pp": 1.717604293919795
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 10.533654667370307,
+            "mc_se_pp": 1.7081046524657841
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 7.1985461134322914,
+            "mc_se_pp": 1.6692889424576598
+          }
+        },
+        "outside_10km": {
+          "regional_vs_base": {
+            "pct": 10.881446240448089,
+            "mc_se_pp": 2.655042592395292
+          },
+          "spatial_vs_base": {
+            "pct": 9.657160603161596,
+            "mc_se_pp": 2.637021944981073
+          },
+          "spatial_vs_regional": {
+            "pct": -1.1041393116677067,
+            "mc_se_pp": 2.636559699223718
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 13.258763621963677,
+            "mc_se_pp": 2.6902653479433614
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 9.808398887799186,
+            "mc_se_pp": 2.6140608209758787
+          }
+        }
+      },
+      "artificial_radiance": {
+        "regional_layered": {
+          "mean": 0.18793375546157282,
+          "mc_se": 0.0023160172000972565
+        },
+        "spatial_layered": {
+          "mean": 0.1839337284466416,
+          "mc_se": 0.002298191339250952
+        },
+        "base": {
+          "mean": 0.17048053378387884,
+          "mc_se": 0.00164133241001816
+        },
+        "regional_exponential": {
+          "mean": 0.17002401307287193,
+          "mc_se": 0.0015852618913340436
+        },
+        "spatial_exponential": {
+          "mean": 0.17158229762930913,
+          "mc_se": 0.0015945933349270235
+        }
+      }
+    },
+    {
+      "site": "Arcugnano",
+      "date": "2025-02-02",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[44638:44638][0:35][534:549][760:776]",
+          "sha256": "2e8e06a9ef3cb7887b7476867a75ed4a1c97efe024bab9c3db6cf67abaf69b1b"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[44638:44638][0:35][534:549][760:776],phis[44638:44638][534:549][760:776]",
+          "sha256": "78f67eb8994791c76dd4d772b43939e653201a7e5fc1066dd1f648e7cb8b2ccd"
+        }
+      ],
+      "aod_regional": 0.09787749011945024,
+      "aod_at_station": 0.0773636910500002,
+      "region_z50_z90_m": [
+        1869.0531528720269,
+        11933.873818862223
+      ],
+      "station_z50_z90_m": [
+        956.3227400284665,
+        11171.505388619442
+      ],
+      "readings": 12,
+      "weather_pass": true,
+      "same_prior_six": false,
+      "prior_calibration_window": true,
+      "changes": {
+        "outside_0km": {
+          "regional_vs_base": {
+            "pct": 1.2745914468625275,
+            "mc_se_pp": 2.2234576139763296
+          },
+          "spatial_vs_base": {
+            "pct": 1.3062044314224197,
+            "mc_se_pp": 2.250460021882155
+          },
+          "spatial_vs_regional": {
+            "pct": 0.031215119318939166,
+            "mc_se_pp": 2.5476300138934778
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 1.3151512168979584,
+            "mc_se_pp": 2.2281258282929906
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 0.6395578939661251,
+            "mc_se_pp": 2.2394241745041468
+          }
+        },
+        "outside_3km": {
+          "regional_vs_base": {
+            "pct": 1.7089787825829372,
+            "mc_se_pp": 2.294384583614609
+          },
+          "spatial_vs_base": {
+            "pct": 1.5897261778097471,
+            "mc_se_pp": 2.3212032270769827
+          },
+          "spatial_vs_regional": {
+            "pct": -0.11724884685755388,
+            "mc_se_pp": 2.6124359384537437
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 1.553125417283563,
+            "mc_se_pp": 2.2937408818070883
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 0.7576452600015715,
+            "mc_se_pp": 2.3051202124874695
+          }
+        },
+        "outside_10km": {
+          "regional_vs_base": {
+            "pct": 7.448053560965251,
+            "mc_se_pp": 3.4021426839382056
+          },
+          "spatial_vs_base": {
+            "pct": 0.3299993478828256,
+            "mc_se_pp": 3.184379860003593
+          },
+          "spatial_vs_regional": {
+            "pct": -6.624646959326896,
+            "mc_se_pp": 3.387531972686121
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 5.113579989865569,
+            "mc_se_pp": 3.3269631077175674
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": -1.2370063035788692,
+            "mc_se_pp": 3.1283788976699567
+          }
+        }
+      },
+      "artificial_radiance": {
+        "regional_layered": {
+          "mean": 0.16662573110873252,
+          "mc_se": 0.003051790095247781
+        },
+        "spatial_layered": {
+          "mean": 0.16643036436043956,
+          "mc_se": 0.003107560186197283
+        },
+        "base": {
+          "mean": 0.1638259798723554,
+          "mc_se": 0.002157471946443246
+        },
+        "regional_exponential": {
+          "mean": 0.16407740325476394,
+          "mc_se": 0.0021687221466715144
+        },
+        "spatial_exponential": {
+          "mean": 0.16517889429727325,
+          "mc_se": 0.002183609351798813
+        }
+      }
+    },
+    {
+      "site": "Arcugnano",
+      "date": "2025-04-29",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[46702:46702][0:35][534:549][760:776]",
+          "sha256": "245c7a80669931dbf58af685a34567670b576a4f40da5266af58c022e99f76aa"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[46702:46702][0:35][534:549][760:776],phis[46702:46702][534:549][760:776]",
+          "sha256": "dfa16d84b85367ec56b204282ac6d8a186b708cc335dbfc248d801a79c098865"
+        }
+      ],
+      "aod_regional": 0.14280796921296735,
+      "aod_at_station": 0.1458958089499998,
+      "region_z50_z90_m": [
+        2781.858640245217,
+        11093.329643396712
+      ],
+      "station_z50_z90_m": [
+        1630.869315493298,
+        9784.827858458673
+      ],
+      "readings": 12,
+      "weather_pass": false,
+      "same_prior_six": false,
+      "prior_calibration_window": false,
+      "changes": {
+        "outside_0km": {
+          "regional_vs_base": {
+            "pct": 2.4580509600075295,
+            "mc_se_pp": 1.5120630728124815
+          },
+          "spatial_vs_base": {
+            "pct": 5.827569543748701,
+            "mc_se_pp": 1.5800200674916363
+          },
+          "spatial_vs_regional": {
+            "pct": 3.2886811257578863,
+            "mc_se_pp": 1.7537942644840987
+          },
+          "vertical_regional_vs_exp": {
+            "pct": -0.44667163235878604,
+            "mc_se_pp": 1.4608769704233606
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 4.216843401166237,
+            "mc_se_pp": 1.5446939933749655
+          }
+        },
+        "outside_3km": {
+          "regional_vs_base": {
+            "pct": 4.966095720256902,
+            "mc_se_pp": 2.1633151299122235
+          },
+          "spatial_vs_base": {
+            "pct": 8.469490395898616,
+            "mc_se_pp": 2.2706426623504092
+          },
+          "spatial_vs_regional": {
+            "pct": 3.337644076024837,
+            "mc_se_pp": 2.4381546461031234
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 2.7225853948918077,
+            "mc_se_pp": 2.109777678606911
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 8.16370879669044,
+            "mc_se_pp": 2.2557363200941447
+          }
+        },
+        "outside_10km": {
+          "regional_vs_base": {
+            "pct": 9.44922448161245,
+            "mc_se_pp": 2.9162673070026996
+          },
+          "spatial_vs_base": {
+            "pct": 11.194510109502032,
+            "mc_se_pp": 3.1078558484669503
+          },
+          "spatial_vs_regional": {
+            "pct": 1.59460757822254,
+            "mc_se_pp": 3.162828841366075
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 10.660185174108427,
+            "mc_se_pp": 2.953005402405004
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 11.089048016182602,
+            "mc_se_pp": 3.1266902771839544
+          }
+        }
+      },
+      "artificial_radiance": {
+        "regional_layered": {
+          "mean": 0.17799830951800646,
+          "mc_se": 0.0029335382877831323
+        },
+        "spatial_layered": {
+          "mean": 0.18393925955105855,
+          "mc_se": 0.0031056113102478702
+        },
+        "base": {
+          "mean": 0.16957695558419766,
+          "mc_se": 0.0020985390689921054
+        },
+        "regional_exponential": {
+          "mean": 0.17328059728416645,
+          "mc_se": 0.0021238021399876037
+        },
+        "spatial_exponential": {
+          "mean": 0.1700563540187027,
+          "mc_se": 0.002081771860573319
+        }
+      }
+    },
+    {
+      "site": "Arcugnano",
+      "date": "2025-09-17",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[50086:50086][0:35][534:549][760:776]",
+          "sha256": "44f0cfab21610598e24680c10c8359285b539ec41854613aa21fa23c1910f7c2"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[50086:50086][0:35][534:549][760:776],phis[50086:50086][534:549][760:776]",
+          "sha256": "64b4c2d4408fcd599bf966ce1776ab1ff8a17e2801046b58ac499e4861907905"
+        }
+      ],
+      "aod_regional": 0.06708608769070565,
+      "aod_at_station": 0.08027763209999986,
+      "region_z50_z90_m": [
+        1895.921855890515,
+        15137.242647643166
+      ],
+      "station_z50_z90_m": [
+        1569.4430435875715,
+        12877.875393481034
+      ],
+      "readings": 12,
+      "weather_pass": true,
+      "same_prior_six": false,
+      "prior_calibration_window": false,
+      "changes": {
+        "outside_0km": {
+          "regional_vs_base": {
+            "pct": -0.6721448113484962,
+            "mc_se_pp": 1.3023726987464823
+          },
+          "spatial_vs_base": {
+            "pct": -2.156615115342009,
+            "mc_se_pp": 1.2860359682423523
+          },
+          "spatial_vs_regional": {
+            "pct": -1.4945156131420445,
+            "mc_se_pp": 1.4976406283467572
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 1.6512112333280093,
+            "mc_se_pp": 1.3420475372100438
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": -1.565542479998805,
+            "mc_se_pp": 1.3006724010977995
+          }
+        },
+        "outside_3km": {
+          "regional_vs_base": {
+            "pct": 0.02950630845994784,
+            "mc_se_pp": 1.6195342047831547
+          },
+          "spatial_vs_base": {
+            "pct": -2.121563507872737,
+            "mc_se_pp": 1.5935606355672218
+          },
+          "spatial_vs_regional": {
+            "pct": -2.1504353022591682,
+            "mc_se_pp": 1.8374444499407043
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 2.175612112865699,
+            "mc_se_pp": 1.6658156199384881
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": -1.6188876612269976,
+            "mc_se_pp": 1.6095987253573572
+          }
+        },
+        "outside_10km": {
+          "regional_vs_base": {
+            "pct": 3.2393594576773044,
+            "mc_se_pp": 2.1973199950859423
+          },
+          "spatial_vs_base": {
+            "pct": 0.1583242601045809,
+            "mc_se_pp": 2.1533773972071693
+          },
+          "spatial_vs_regional": {
+            "pct": -2.984361016726167,
+            "mc_se_pp": 2.399314191862898
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 2.858357902802422,
+            "mc_se_pp": 2.190197129680021
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 0.5111340182707202,
+            "mc_se_pp": 2.1638712108455724
+          }
+        }
+      },
+      "artificial_radiance": {
+        "regional_layered": {
+          "mean": 0.2962404506458308,
+          "mc_se": 0.003917133548723771
+        },
+        "spatial_layered": {
+          "mean": 0.28986999141557124,
+          "mc_se": 0.0038649583443144345
+        },
+        "base": {
+          "mean": 0.29615306680842474,
+          "mc_se": 0.002766955334164568
+        },
+        "regional_exponential": {
+          "mean": 0.28993264098931587,
+          "mc_se": 0.0027651697008364384
+        },
+        "spatial_exponential": {
+          "mean": 0.29463988007922787,
+          "mc_se": 0.002793604960486914
+        }
+      }
+    },
+    {
+      "site": "Arcugnano",
+      "date": "2025-09-18",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[50110:50110][0:35][534:549][760:776]",
+          "sha256": "295a4726b58e4c1ab49429875950d22dc8bd59a604573a707acd7181e598b655"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[50110:50110][0:35][534:549][760:776],phis[50110:50110][534:549][760:776]",
+          "sha256": "56a47895d7c872b016b55e46f7b4c07ace6cfb99e67b4e092fbadb822a5364f2"
+        }
+      ],
+      "aod_regional": 0.05437039822609575,
+      "aod_at_station": 0.0778538678999999,
+      "region_z50_z90_m": [
+        2123.4363475906694,
+        15180.459007589376
+      ],
+      "station_z50_z90_m": [
+        1416.9746953336603,
+        13770.044741100704
+      ],
+      "readings": 12,
+      "weather_pass": true,
+      "same_prior_six": false,
+      "prior_calibration_window": false,
+      "changes": {
+        "outside_0km": {
+          "regional_vs_base": {
+            "pct": -2.541649395842349,
+            "mc_se_pp": 1.283303319006581
+          },
+          "spatial_vs_base": {
+            "pct": 0.49681686974945016,
+            "mc_se_pp": 1.312969208862448
+          },
+          "spatial_vs_regional": {
+            "pct": 3.1177074583716324,
+            "mc_se_pp": 1.5657146106095736
+          },
+          "vertical_regional_vs_exp": {
+            "pct": -0.010471266082778818,
+            "mc_se_pp": 1.3293816548414696
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 2.1787552169723723,
+            "mc_se_pp": 1.3424594928692488
+          }
+        },
+        "outside_3km": {
+          "regional_vs_base": {
+            "pct": -1.440228909056629,
+            "mc_se_pp": 1.5974943668686483
+          },
+          "spatial_vs_base": {
+            "pct": 1.0279873795039585,
+            "mc_se_pp": 1.6312632840690469
+          },
+          "spatial_vs_regional": {
+            "pct": 2.504283706465915,
+            "mc_se_pp": 1.914507007236102
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 0.19468378336624514,
+            "mc_se_pp": 1.6357963316001727
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 3.0466874820307854,
+            "mc_se_pp": 1.675499532524857
+          }
+        },
+        "outside_10km": {
+          "regional_vs_base": {
+            "pct": 4.901563480678961,
+            "mc_se_pp": 2.2260425736003913
+          },
+          "spatial_vs_base": {
+            "pct": 5.439507614264416,
+            "mc_se_pp": 2.23181950541052
+          },
+          "spatial_vs_regional": {
+            "pct": 0.5128084994505899,
+            "mc_se_pp": 2.4512187198784545
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 3.3115623363903834,
+            "mc_se_pp": 2.208970241282264
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 6.4099107502926245,
+            "mc_se_pp": 2.274770886527513
+          }
+        }
+      },
+      "artificial_radiance": {
+        "regional_layered": {
+          "mean": 0.291887784725192,
+          "mc_se": 0.0038659449561306964
+        },
+        "spatial_layered": {
+          "mean": 0.29919748295922927,
+          "mc_se": 0.003940133756471541
+        },
+        "base": {
+          "mean": 0.29615306680842474,
+          "mc_se": 0.002766955334164568
+        },
+        "regional_exponential": {
+          "mean": 0.29132063069961955,
+          "mc_se": 0.0027809138707778785
+        },
+        "spatial_exponential": {
+          "mean": 0.29035138369819324,
+          "mc_se": 0.0027690504875086605
+        }
+      }
+    },
+    {
+      "site": "Arcugnano",
+      "date": "2025-09-20",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[50158:50158][0:35][534:549][760:776]",
+          "sha256": "00ff03c956477f6f7bf2f67219b0cee408ac94e6b0aa7178521796ef98a02660"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[50158:50158][0:35][534:549][760:776],phis[50158:50158][534:549][760:776]",
+          "sha256": "220d55040feec1faac3773f658509df169fe04d7e128bdbbafcc8ec0fd107c18"
+        }
+      ],
+      "aod_regional": 0.0910166021808316,
+      "aod_at_station": 0.16166361789999933,
+      "region_z50_z90_m": [
+        2213.949841601051,
+        14119.35589109698
+      ],
+      "station_z50_z90_m": [
+        1191.5070647907087,
+        4945.3142936484755
+      ],
+      "readings": 12,
+      "weather_pass": false,
+      "same_prior_six": false,
+      "prior_calibration_window": false,
+      "changes": {
+        "outside_0km": {
+          "regional_vs_base": {
+            "pct": 0.9280142040078765,
+            "mc_se_pp": 1.3122159645352767
+          },
+          "spatial_vs_base": {
+            "pct": 3.7622378015929048,
+            "mc_se_pp": 1.3174457333371092
+          },
+          "spatial_vs_regional": {
+            "pct": 2.8081634419717894,
+            "mc_se_pp": 1.5134695733393264
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 2.8483577677041794,
+            "mc_se_pp": 1.339546364331482
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 3.664446945287314,
+            "mc_se_pp": 1.3070906259607327
+          }
+        },
+        "outside_3km": {
+          "regional_vs_base": {
+            "pct": 1.9315228141504326,
+            "mc_se_pp": 1.6325845110708435
+          },
+          "spatial_vs_base": {
+            "pct": 3.1360398359811192,
+            "mc_se_pp": 1.629317741479518
+          },
+          "spatial_vs_regional": {
+            "pct": 1.181692364222675,
+            "mc_se_pp": 1.8422677294925527
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 4.686158055529188,
+            "mc_se_pp": 1.682744540171541
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 5.106562574609463,
+            "mc_se_pp": 1.6584865381421936
+          }
+        },
+        "outside_10km": {
+          "regional_vs_base": {
+            "pct": 2.8585210615692747,
+            "mc_se_pp": 2.16054293538321
+          },
+          "spatial_vs_base": {
+            "pct": 3.696053089398621,
+            "mc_se_pp": 2.157021709249971
+          },
+          "spatial_vs_regional": {
+            "pct": 0.8142563388871205,
+            "mc_se_pp": 2.407549267320999
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 6.32750229945882,
+            "mc_se_pp": 2.238437340204598
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 7.468541585067534,
+            "mc_se_pp": 2.223363116352994
+          }
+        }
+      },
+      "artificial_radiance": {
+        "regional_layered": {
+          "mean": 0.3018733308586356,
+          "mc_se": 0.003927095398240248
+        },
+        "spatial_layered": {
+          "mean": 0.30544054495901674,
+          "mc_se": 0.0038909522256653974
+        },
+        "base": {
+          "mean": 0.29615306680842474,
+          "mc_se": 0.002766955334164568
+        },
+        "regional_exponential": {
+          "mean": 0.28836031091953096,
+          "mc_se": 0.0027225722719176775
+        },
+        "spatial_exponential": {
+          "mean": 0.2906008316485481,
+          "mc_se": 0.002705903020765803
+        }
+      }
+    },
+    {
+      "site": "Arcugnano",
+      "date": "2025-10-28",
+      "geos_cf_version": 1,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/chm_tavg_1hr_g1440x721_v36.ascii?pm25_rh35_gcc[51070:51070][0:35][534:549][760:776]",
+          "sha256": "1b1d10e1420de2bf79356d98ee43b938bffadd30e85d0985e15128669abc04ae"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/assim/met_tavg_1hr_g1440x721_v36.ascii?zl[51070:51070][0:35][534:549][760:776],phis[51070:51070][534:549][760:776]",
+          "sha256": "42f6efed50d7bf8a7b8d561d0d09adf17b343de2e8fb98f8bd00b46a275ce4ca"
+        }
+      ],
+      "aod_regional": 0.07698031635924235,
+      "aod_at_station": 0.12052861790000005,
+      "region_z50_z90_m": [
+        1894.2031811372644,
+        14160.728098908492
+      ],
+      "station_z50_z90_m": [
+        971.6307215447762,
+        11973.30918382946
+      ],
+      "readings": 12,
+      "weather_pass": false,
+      "same_prior_six": false,
+      "prior_calibration_window": false,
+      "changes": {
+        "outside_0km": {
+          "regional_vs_base": {
+            "pct": 0.2868923845175564,
+            "mc_se_pp": 1.4186232307477695
+          },
+          "spatial_vs_base": {
+            "pct": 3.6900883182241717,
+            "mc_se_pp": 1.4552085315781398
+          },
+          "spatial_vs_regional": {
+            "pct": 3.393460354378286,
+            "mc_se_pp": 1.671582145165007
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 0.14854787735663066,
+            "mc_se_pp": 1.4222535957170466
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 2.1557759646181562,
+            "mc_se_pp": 1.4197796681210546
+          }
+        },
+        "outside_3km": {
+          "regional_vs_base": {
+            "pct": 1.1629582643391423,
+            "mc_se_pp": 1.8190656581439197
+          },
+          "spatial_vs_base": {
+            "pct": 3.046020311536557,
+            "mc_se_pp": 1.856515620420367
+          },
+          "spatial_vs_regional": {
+            "pct": 1.8614145725918352,
+            "mc_se_pp": 2.1008832271385556
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 0.23623926442795096,
+            "mc_se_pp": 1.8061542352029791
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 2.3231246659930704,
+            "mc_se_pp": 1.8287599373607182
+          }
+        },
+        "outside_10km": {
+          "regional_vs_base": {
+            "pct": 6.306378169461779,
+            "mc_se_pp": 2.736829637019883
+          },
+          "spatial_vs_base": {
+            "pct": 1.5000007726042819,
+            "mc_se_pp": 2.6635646477455563
+          },
+          "spatial_vs_regional": {
+            "pct": -4.521250257623977,
+            "mc_se_pp": 2.8077624823975427
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 5.801566223068244,
+            "mc_se_pp": 2.709089802478406
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 0.5375338936328244,
+            "mc_se_pp": 2.583834590500231
+          }
+        }
+      },
+      "artificial_radiance": {
+        "regional_layered": {
+          "mean": 0.2597799047896704,
+          "mc_se": 0.0037830466635107004
+        },
+        "spatial_layered": {
+          "mean": 0.2646154857940905,
+          "mc_se": 0.0038648411644301673
+        },
+        "base": {
+          "mean": 0.2567935035182192,
+          "mc_se": 0.002708765298754563
+        },
+        "regional_exponential": {
+          "mean": 0.2591676490419385,
+          "mc_se": 0.002750315036617849
+        },
+        "spatial_exponential": {
+          "mean": 0.25860770637904007,
+          "mc_se": 0.0026638116416343284
+        }
+      }
+    },
+    {
+      "site": "Arcugnano",
+      "date": "2026-02-17",
+      "geos_cf_version": 2,
+      "geos_cf_sources": [
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/v2/ana/chm_inst_1hr_glo_L1440x721_v72.ascii?pm25_rh35[4740:4741][36:71][534:549][760:776]",
+          "sha256": "bd6f4472160621cfabc5f3844e623138827d857ef536d03716d42f1dd5c64c2e"
+        },
+        {
+          "url": "https://opendap.nccs.nasa.gov/dods/gmao/geos-cf/v2/ana/met_inst_1hr_glo_L1440x721_v72.ascii?zl[4740:4741][36:71][534:549][760:776],phis[4740:4741][534:549][760:776]",
+          "sha256": "cc0504072078fcb937f08e22660fdffbf8f27cfceb97813ccb57692631cad73c"
+        }
+      ],
+      "aod_regional": 0.04169861773818104,
+      "aod_at_station": 0.04,
+      "region_z50_z90_m": [
+        4590.989646932968,
+        12709.02198716315
+      ],
+      "station_z50_z90_m": [
+        4501.960578462937,
+        13166.543693338073
+      ],
+      "readings": 12,
+      "weather_pass": true,
+      "same_prior_six": false,
+      "prior_calibration_window": false,
+      "changes": {
+        "outside_0km": {
+          "regional_vs_base": {
+            "pct": -0.22139792127079394,
+            "mc_se_pp": 1.3980084038546183
+          },
+          "spatial_vs_base": {
+            "pct": 0.44221170589038294,
+            "mc_se_pp": 1.3983931189916188
+          },
+          "spatial_vs_regional": {
+            "pct": 0.6650821051166433,
+            "mc_se_pp": 1.6346348332663698
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 1.1064695010784664,
+            "mc_se_pp": 1.426511024549475
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 2.444644511184091,
+            "mc_se_pp": 1.4364028086756075
+          }
+        },
+        "outside_3km": {
+          "regional_vs_base": {
+            "pct": 1.9587379149365036,
+            "mc_se_pp": 1.8000283767055254
+          },
+          "spatial_vs_base": {
+            "pct": 3.2536429675925183,
+            "mc_se_pp": 1.8056887162216535
+          },
+          "spatial_vs_regional": {
+            "pct": 1.270028522456168,
+            "mc_se_pp": 2.0536766303681766
+          },
+          "vertical_regional_vs_exp": {
+            "pct": 1.3404824806510618,
+            "mc_se_pp": 1.7909113562113907
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 3.938652370488671,
+            "mc_se_pp": 1.8222928618521976
+          }
+        },
+        "outside_10km": {
+          "regional_vs_base": {
+            "pct": 3.1068053698971587,
+            "mc_se_pp": 2.5434118501160303
+          },
+          "spatial_vs_base": {
+            "pct": 6.82309518158315,
+            "mc_se_pp": 2.627413358688848
+          },
+          "spatial_vs_regional": {
+            "pct": 3.6043108874858065,
+            "mc_se_pp": 2.9481091812804485
+          },
+          "vertical_regional_vs_exp": {
+            "pct": -0.556837468531779,
+            "mc_se_pp": 2.44700906321665
+          },
+          "vertical_spatial_vs_exp": {
+            "pct": 4.977637336825014,
+            "mc_se_pp": 2.5879425505439584
+          }
+        }
+      },
+      "artificial_radiance": {
+        "regional_layered": {
+          "mean": 0.27987387241275213,
+          "mc_se": 0.004041735044725782
+        },
+        "spatial_layered": {
+          "mean": 0.28342835041929665,
+          "mc_se": 0.0040352092481812495
+        },
+        "base": {
+          "mean": 0.27449719184073174,
+          "mc_se": 0.002787603126171853
+        },
+        "regional_exponential": {
+          "mean": 0.27617183731702527,
+          "mc_se": 0.0028131190342259504
+        },
+        "spatial_exponential": {
+          "mean": 0.27268811357012607,
+          "mc_se": 0.0027900736508484508
+        }
+      }
+    }
+  ]
+}
