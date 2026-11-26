@@ -1,0 +1,721 @@
+{
+  "inputs": {
+    "prior_sha256": "ba7d72e8b7a712fcea3da4533bbb8b8b9ad5892cab263d217092bc358dbc48e6",
+    "vertical_sha256": "bf1130f984a9d787e8aa5b53bb97975ac953148d0a99f77cde467348b9505f46"
+  },
+  "scale": "100 = original nominal natural brightness; calibrated source scale reused from prior.",
+  "model_order": [
+    "base",
+    "regional",
+    "vertical",
+    "regional_vertical"
+  ],
+  "groups": {
+    "the_same_six": {
+      "n": 6,
+      "readings": 179,
+      "mape_pct": {
+        "base": 29.029453692134883,
+        "regional": 29.070135841090387,
+        "vertical": 27.5515345194443,
+        "regional_vertical": 30.63345949708285
+      },
+      "bias_pct": {
+        "base": 29.029453692134883,
+        "regional": 29.070135841090387,
+        "vertical": 27.5515345194443,
+        "regional_vertical": 30.63345949708285
+      },
+      "vertical_minus_regional_mape_pp": -1.5186013216460879,
+      "vertical_minus_regional_mape_mc_95_pp": [
+        -2.617822858531934,
+        -0.4069677868952719
+      ]
+    },
+    "Galzignano": {
+      "n": 8,
+      "readings": 238,
+      "mape_pct": {
+        "base": 24.76094935385264,
+        "regional": 24.63936798738097,
+        "vertical": 24.85027035493158,
+        "regional_vertical": 27.47345341968668
+      },
+      "bias_pct": {
+        "base": 24.76094935385264,
+        "regional": 24.63936798738097,
+        "vertical": 24.85027035493158,
+        "regional_vertical": 27.47345341968668
+      },
+      "vertical_minus_regional_mape_pp": 0.21090236755060943,
+      "vertical_minus_regional_mape_mc_95_pp": [
+        -0.7425584243355149,
+        1.1348132664937476
+      ]
+    },
+    "Arcugnano": {
+      "n": 3,
+      "readings": 36,
+      "mape_pct": {
+        "base": 51.22994768894171,
+        "regional": 49.77557439715679,
+        "vertical": 52.13098574269659,
+        "regional_vertical": 51.47765013384401
+      },
+      "bias_pct": {
+        "base": 51.22994768894171,
+        "regional": 49.77557439715679,
+        "vertical": 52.13098574269659,
+        "regional_vertical": 51.47765013384401
+      },
+      "vertical_minus_regional_mape_pp": 2.3554113455397996,
+      "vertical_minus_regional_mape_mc_95_pp": [
+        -0.2646859231956627,
+        4.949840999820964
+      ]
+    }
+  },
+  "february_change_without_source_scale": {
+    "dates": [
+      "2023-02-12",
+      "2023-02-15"
+    ],
+    "measured_total_change_pct": -12.224542218082968,
+    "measured_minus_nominal_background_change_pct": -21.41603100786853,
+    "raw_artificial_change_pct": {
+      "base": 0.0,
+      "regional": 2.1758244483027323,
+      "vertical": 2.2420003099326458,
+      "regional_vertical": -0.885518419543252
+    }
+  },
+  "rows": [
+    {
+      "site": "Galzignano",
+      "date_utc": "2022-10-01",
+      "readings": 30,
+      "anchor": true,
+      "weather_pass": true,
+      "same_prior_six": false,
+      "measured_100_eq_natural": 303.56230000000005,
+      "model_100_eq_natural": {
+        "base": 303.56230000000005,
+        "regional": 305.81499766926225,
+        "vertical": 312.4400994715142,
+        "regional_vertical": 305.9746834094289
+      },
+      "error_pct": {
+        "base": 0.0,
+        "regional": 0.7420874295860358,
+        "vertical": 2.9245395332405,
+        "regional_vertical": 0.7946913728842153
+      },
+      "mc_se_pp": {
+        "base": 0.0,
+        "regional": 0.922135560347532,
+        "vertical": 1.1618923194442545,
+        "regional_vertical": 1.1101871267527614
+      },
+      "raw_artificial": {
+        "base": 0.1906680522782509,
+        "regional": 0.19277805730850447,
+        "vertical": 0.19898350525628505,
+        "regional_vertical": 0.19292762807408426
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date_utc": "2022-10-27",
+      "readings": 30,
+      "anchor": false,
+      "weather_pass": false,
+      "same_prior_six": false,
+      "measured_100_eq_natural": 257.84310000000005,
+      "model_100_eq_natural": {
+        "base": 303.56230000000005,
+        "regional": 301.8125409916399,
+        "vertical": 302.67209543624654,
+        "regional_vertical": 308.06363614715013
+      },
+      "error_pct": {
+        "base": 17.731403322408077,
+        "regional": 17.05278946446107,
+        "vertical": 17.386152833349634,
+        "regional_vertical": 19.47716892449327
+      },
+      "mc_se_pp": {
+        "base": 3.5528221039810856e-15,
+        "regional": 1.0531076494269094,
+        "vertical": 1.2710525447993803,
+        "regional_vertical": 1.3057196880146835
+      },
+      "raw_artificial": {
+        "base": 0.1906680522782509,
+        "regional": 0.18902912826294765,
+        "vertical": 0.18983423594634624,
+        "regional_vertical": 0.1948842602687619
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date_utc": "2022-10-28",
+      "readings": 30,
+      "anchor": false,
+      "weather_pass": true,
+      "same_prior_six": true,
+      "measured_100_eq_natural": 271.9957,
+      "model_100_eq_natural": {
+        "base": 303.56230000000005,
+        "regional": 304.2952875026637,
+        "vertical": 308.17018093523257,
+        "regional_vertical": 315.9469764488687
+      },
+      "error_pct": {
+        "base": 11.60555111716841,
+        "regional": 11.875036076917267,
+        "vertical": 13.299651772153954,
+        "regional_vertical": 16.15881296978914
+      },
+      "mc_se_pp": {
+        "base": 3.5528221039810856e-15,
+        "regional": 1.0172343394003038,
+        "vertical": 1.224293694884124,
+        "regional_vertical": 1.2691747796648052
+      },
+      "raw_artificial": {
+        "base": 0.1906680522782509,
+        "regional": 0.19135461015010233,
+        "vertical": 0.19498405618983414,
+        "regional_vertical": 0.20226824610884786
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date_utc": "2022-10-30",
+      "readings": 30,
+      "anchor": false,
+      "weather_pass": false,
+      "same_prior_six": false,
+      "measured_100_eq_natural": 287.55350000000004,
+      "model_100_eq_natural": {
+        "base": 303.56230000000005,
+        "regional": 304.58437055171675,
+        "vertical": 299.3535503785119,
+        "regional_vertical": 307.79795889363
+      },
+      "error_pct": {
+        "base": 5.5672422696993795,
+        "regional": 5.922678928170466,
+        "vertical": 4.103601722292338,
+        "regional_vertical": 7.040240822535604
+      },
+      "mc_se_pp": {
+        "base": 8.882055259952714e-16,
+        "regional": 0.9466450931402203,
+        "vertical": 1.140368228543844,
+        "regional_vertical": 1.173878898150641
+      },
+      "raw_artificial": {
+        "base": 0.1906680522782509,
+        "regional": 0.19162538181022598,
+        "vertical": 0.1867258975037373,
+        "regional_vertical": 0.19463541181075505
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date_utc": "2022-10-31",
+      "readings": 29,
+      "anchor": false,
+      "weather_pass": true,
+      "same_prior_six": true,
+      "measured_100_eq_natural": 262.99800000000005,
+      "model_100_eq_natural": {
+        "base": 303.56230000000005,
+        "regional": 308.2928740920053,
+        "vertical": 301.9264868042829,
+        "regional_vertical": 305.60224974406117
+      },
+      "error_pct": {
+        "base": 15.423805504224376,
+        "regional": 17.22251655602145,
+        "vertical": 14.801818570590974,
+        "regional_vertical": 16.19945769323765
+      },
+      "mc_se_pp": {
+        "base": 7.105644207962171e-15,
+        "regional": 1.068235026455241,
+        "vertical": 1.2292817330681365,
+        "regional_vertical": 1.2674583819735181
+      },
+      "raw_artificial": {
+        "base": 0.1906680522782509,
+        "regional": 0.19509897759340308,
+        "vertical": 0.18913585640544708,
+        "regional_vertical": 0.19257878547612522
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date_utc": "2023-02-12",
+      "readings": 30,
+      "anchor": false,
+      "weather_pass": true,
+      "same_prior_six": true,
+      "measured_100_eq_natural": 232.9985,
+      "model_100_eq_natural": {
+        "base": 297.9678457927089,
+        "regional": 293.41592133486654,
+        "vertical": 292.0979675516263,
+        "regional_vertical": 301.1277433277567
+      },
+      "error_pct": {
+        "base": 27.884018906863695,
+        "regional": 25.93039068271534,
+        "vertical": 25.36474164066562,
+        "regional_vertical": 29.240206837278638
+      },
+      "mc_se_pp": {
+        "base": 1.1492632827262261,
+        "regional": 1.110963584785673,
+        "vertical": 1.371865570126402,
+        "regional_vertical": 1.4391578385899697
+      },
+      "raw_artificial": {
+        "base": 0.1854279676099991,
+        "regional": 0.18116437572439684,
+        "vertical": 0.1799299050938176,
+        "regional_vertical": 0.18838770774069333
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date_utc": "2023-02-13",
+      "readings": 30,
+      "anchor": false,
+      "weather_pass": true,
+      "same_prior_six": true,
+      "measured_100_eq_natural": 227.9005,
+      "model_100_eq_natural": {
+        "base": 297.9678457927089,
+        "regional": 298.3718724182653,
+        "vertical": 294.6745888389456,
+        "regional_vertical": 302.9161900306617
+      },
+      "error_pct": {
+        "base": 30.74470911327918,
+        "regional": 30.92199114010952,
+        "vertical": 29.299667547436535,
+        "regional_vertical": 32.915983085013735
+      },
+      "mc_se_pp": {
+        "base": 1.1749716256887834,
+        "regional": 1.1824692260380316,
+        "vertical": 1.3942475566309083,
+        "regional_vertical": 1.4575661056268645
+      },
+      "raw_artificial": {
+        "base": 0.1854279676099991,
+        "regional": 0.18580640197512172,
+        "vertical": 0.18234331544687338,
+        "regional_vertical": 0.19006286885572476
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date_utc": "2023-02-14",
+      "readings": 30,
+      "anchor": false,
+      "weather_pass": true,
+      "same_prior_six": true,
+      "measured_100_eq_natural": 208.6257,
+      "model_100_eq_natural": {
+        "base": 297.9678457927089,
+        "regional": 298.21865021874237,
+        "vertical": 287.0962676834128,
+        "regional_vertical": 298.1627936081713
+      },
+      "error_pct": {
+        "base": 42.824132306187046,
+        "regional": 42.94434972236998,
+        "vertical": 37.61308778516395,
+        "regional_vertical": 42.91757612229525
+      },
+      "mc_se_pp": {
+        "base": 1.2835265309129538,
+        "regional": 1.2871808860196197,
+        "vertical": 1.4686045396399698,
+        "regional_vertical": 1.5549918175986683
+      },
+      "raw_artificial": {
+        "base": 0.1854279676099991,
+        "regional": 0.18566288533010042,
+        "vertical": 0.17524502792376867,
+        "regional_vertical": 0.18561056684507418
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date_utc": "2023-02-15",
+      "readings": 30,
+      "anchor": false,
+      "weather_pass": true,
+      "same_prior_six": true,
+      "measured_100_eq_natural": 204.51549999999997,
+      "model_100_eq_natural": {
+        "base": 297.9678457927089,
+        "regional": 297.6243122381805,
+        "vertical": 296.40480457950804,
+        "regional_vertical": 299.34672011377774
+      },
+      "error_pct": {
+        "base": 45.6945052050866,
+        "regional": 45.52653086840876,
+        "vertical": 44.93023980065476,
+        "regional_vertical": 46.368720274882705
+      },
+      "mc_se_pp": {
+        "base": 1.3093218899315044,
+        "regional": 1.3027662521195766,
+        "vertical": 1.5526009593736332,
+        "regional_vertical": 1.5937378582888624
+      },
+      "raw_artificial": {
+        "base": 0.1854279676099991,
+        "regional": 0.1851061945030233,
+        "vertical": 0.1839639341236825,
+        "regional_vertical": 0.18671949988849418
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date_utc": "2023-07-14",
+      "readings": 29,
+      "anchor": false,
+      "weather_pass": true,
+      "same_prior_six": false,
+      "measured_100_eq_natural": 276.3251,
+      "model_100_eq_natural": {
+        "base": 282.00956661386437,
+        "regional": 279.2293339113813,
+        "vertical": 291.33821648697517,
+        "regional_vertical": 293.13061587755067
+      },
+      "error_pct": {
+        "base": 2.0571662197405916,
+        "regional": 1.051020667822522,
+        "vertical": 5.433135276880452,
+        "regional_vertical": 6.0817912949459485
+      },
+      "mc_se_pp": {
+        "base": 0.8927738578757239,
+        "regional": 0.8740745378845605,
+        "vertical": 1.1121025797554391,
+        "regional_vertical": 1.1235696549265684
+      },
+      "raw_artificial": {
+        "base": 0.17048053378387884,
+        "regional": 0.16787640937448298,
+        "vertical": 0.17921827894441095,
+        "regional_vertical": 0.18089714237199925
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date_utc": "2023-07-16",
+      "readings": 30,
+      "anchor": false,
+      "weather_pass": false,
+      "same_prior_six": false,
+      "measured_100_eq_natural": 267.6166,
+      "model_100_eq_natural": {
+        "base": 282.00956661386437,
+        "regional": 280.49021122780766,
+        "vertical": 291.0440015763347,
+        "regional_vertical": 293.8216311791281
+      },
+      "error_pct": {
+        "base": 5.378203973095985,
+        "regional": 4.810468120366096,
+        "vertical": 8.75409132928775,
+        "regional_vertical": 9.792005121927438
+      },
+      "mc_se_pp": {
+        "base": 0.9218255726845616,
+        "regional": 0.904885485823655,
+        "vertical": 1.1351239528867747,
+        "regional_vertical": 1.1796073628434862
+      },
+      "raw_artificial": {
+        "base": 0.17048053378387884,
+        "regional": 0.16905741893315301,
+        "vertical": 0.17894270049023236,
+        "regional_vertical": 0.18154438668809425
+      }
+    },
+    {
+      "site": "Galzignano",
+      "date_utc": "2023-07-17",
+      "readings": 30,
+      "anchor": false,
+      "weather_pass": true,
+      "same_prior_six": false,
+      "measured_100_eq_natural": 231.43289999999996,
+      "model_100_eq_natural": {
+        "base": 282.00956661386437,
+        "regional": 281.52217292194905,
+        "vertical": 296.3725561927541,
+        "regional_vertical": 300.64309176225396
+      },
+      "error_pct": {
+        "base": 21.853706458271226,
+        "regional": 21.643108184682937,
+        "vertical": 28.059820445906404,
+        "regional_vertical": 29.9050790800504
+      },
+      "mc_se_pp": {
+        "base": 1.0659496793882601,
+        "regional": 1.0492763777693004,
+        "vertical": 1.342745775722288,
+        "regional_vertical": 1.3506779736934191
+      },
+      "raw_artificial": {
+        "base": 0.17048053378387884,
+        "regional": 0.17002401307287193,
+        "vertical": 0.1839337284466416,
+        "regional_vertical": 0.18793375546157282
+      }
+    },
+    {
+      "site": "Arcugnano",
+      "date_utc": "2025-02-02",
+      "readings": 12,
+      "anchor": true,
+      "weather_pass": true,
+      "same_prior_six": false,
+      "measured_100_eq_natural": 639.1622000000001,
+      "model_100_eq_natural": {
+        "base": 639.1621999999999,
+        "regional": 639.9896510800818,
+        "vertical": 647.733402634255,
+        "regional_vertical": 648.3763676017073
+      },
+      "error_pct": {
+        "base": -2.220446049250313e-14,
+        "regional": 0.12945870079328348,
+        "vertical": 1.3410058721017748,
+        "regional_vertical": 1.4416008333576702
+      },
+      "mc_se_pp": {
+        "base": 7.229928641085602e-15,
+        "regional": 1.587256583112851,
+        "vertical": 1.959468187486362,
+        "regional_vertical": 1.9428175687358336
+      },
+      "raw_artificial": {
+        "base": 0.1638259798723554,
+        "regional": 0.16407740325476394,
+        "vertical": 0.16643036436043956,
+        "regional_vertical": 0.16662573110873252
+      }
+    },
+    {
+      "site": "Arcugnano",
+      "date_utc": "2025-04-29",
+      "readings": 12,
+      "anchor": false,
+      "weather_pass": false,
+      "same_prior_six": false,
+      "measured_100_eq_natural": 843.5309000000001,
+      "model_100_eq_natural": {
+        "base": 658.0890437115978,
+        "regional": 670.2779749697705,
+        "vertical": 705.3563416693141,
+        "regional_vertical": 685.8042798265822
+      },
+      "error_pct": {
+        "base": -21.984002754185084,
+        "regional": -20.539013452883538,
+        "vertical": -16.380497540835304,
+        "regional_vertical": -18.698380838617513
+      },
+      "mc_se_pp": {
+        "base": 1.2021885252893225,
+        "regional": 1.2273645046394202,
+        "vertical": 1.544795531686905,
+        "regional_vertical": 1.4646662828111972
+      },
+      "raw_artificial": {
+        "base": 0.16957695558419766,
+        "regional": 0.17328059728416645,
+        "vertical": 0.18393925955105855,
+        "regional_vertical": 0.17799830951800646
+      }
+    },
+    {
+      "site": "Arcugnano",
+      "date_utc": "2025-09-17",
+      "readings": 12,
+      "anchor": false,
+      "weather_pass": true,
+      "same_prior_six": false,
+      "measured_100_eq_natural": 682.2342,
+      "model_100_eq_natural": {
+        "base": 1074.6594475527465,
+        "regional": 1054.1876123030463,
+        "vertical": 1053.9814283874334,
+        "regional_vertical": 1074.9470335757753
+      },
+      "error_pct": {
+        "base": 57.52060620132302,
+        "regional": 54.519901274818295,
+        "vertical": 54.48967940736971,
+        "regional_vertical": 57.562759764282625
+      },
+      "mc_se_pp": {
+        "base": 2.3404063386647853,
+        "regional": 2.2882624021324665,
+        "vertical": 2.6418582010788665,
+        "regional_vertical": 2.6756340512494474
+      },
+      "raw_artificial": {
+        "base": 0.29615306680842474,
+        "regional": 0.28993264098931587,
+        "vertical": 0.28986999141557124,
+        "regional_vertical": 0.2962404506458308
+      }
+    },
+    {
+      "site": "Arcugnano",
+      "date_utc": "2025-09-18",
+      "readings": 12,
+      "anchor": false,
+      "weather_pass": true,
+      "same_prior_six": false,
+      "measured_100_eq_natural": 729.5165,
+      "model_100_eq_natural": {
+        "base": 1074.6594475527465,
+        "regional": 1058.7555787902163,
+        "vertical": 1084.6788236667317,
+        "regional_vertical": 1060.6221204242402
+      },
+      "error_pct": {
+        "base": 47.311191392209274,
+        "regional": 45.13113531910744,
+        "vertical": 48.68461832826698,
+        "regional_vertical": 45.38699541740867
+      },
+      "mc_se_pp": {
+        "base": 2.188717110762949,
+        "regional": 2.1463272827165802,
+        "vertical": 2.5400266837081604,
+        "regional_vertical": 2.453714111395839
+      },
+      "raw_artificial": {
+        "base": 0.29615306680842474,
+        "regional": 0.29132063069961955,
+        "vertical": 0.29919748295922927,
+        "regional_vertical": 0.291887784725192
+      }
+    },
+    {
+      "site": "Arcugnano",
+      "date_utc": "2025-09-20",
+      "readings": 12,
+      "anchor": false,
+      "weather_pass": false,
+      "same_prior_six": false,
+      "measured_100_eq_natural": 778.2776,
+      "model_100_eq_natural": {
+        "base": 1074.6594475527465,
+        "regional": 1049.0129694276495,
+        "vertical": 1105.2251560931543,
+        "regional_vertical": 1093.4852171425002
+      },
+      "error_pct": {
+        "base": 38.08176511218444,
+        "regional": 34.78647842718967,
+        "vertical": 42.00911809528554,
+        "regional_vertical": 40.500666746993645
+      },
+      "mc_se_pp": {
+        "base": 2.051588335747937,
+        "regional": 1.999150844960932,
+        "vertical": 2.3701685140844617,
+        "regional_vertical": 2.3891810682225123
+      },
+      "raw_artificial": {
+        "base": 0.29615306680842474,
+        "regional": 0.28836031091953096,
+        "vertical": 0.30544054495901674,
+        "regional_vertical": 0.3018733308586356
+      }
+    },
+    {
+      "site": "Arcugnano",
+      "date_utc": "2025-10-28",
+      "readings": 12,
+      "anchor": false,
+      "weather_pass": false,
+      "same_prior_six": false,
+      "measured_100_eq_natural": 790.3887,
+      "model_100_eq_natural": {
+        "base": 945.124505957275,
+        "regional": 952.9379768407453,
+        "vertical": 970.8671700665064,
+        "regional_vertical": 954.9529512432605
+      },
+      "error_pct": {
+        "base": 19.57717841326363,
+        "regional": 20.56573896372067,
+        "vertical": 22.8341409823428,
+        "regional_vertical": 20.82067358038653
+      },
+      "mc_se_pp": {
+        "base": 1.8208011001564506,
+        "regional": 1.8392020868202397,
+        "vertical": 2.1719199703834944,
+        "regional_vertical": 2.1522911375869436
+      },
+      "raw_artificial": {
+        "base": 0.2567935035182192,
+        "regional": 0.2591676490419385,
+        "vertical": 0.2646154857940905,
+        "regional_vertical": 0.2597799047896704
+      }
+    },
+    {
+      "site": "Arcugnano",
+      "date_utc": "2026-02-17",
+      "readings": 12,
+      "anchor": false,
+      "weather_pass": true,
+      "same_prior_six": false,
+      "measured_100_eq_natural": 674.0573,
+      "model_100_eq_natural": {
+        "base": 1003.38852215005,
+        "regional": 1008.8998918358714,
+        "vertical": 1032.781559271023,
+        "regional_vertical": 1021.0835356525876
+      },
+      "error_pct": {
+        "base": 48.85804547329282,
+        "regional": 49.67568659754464,
+        "vertical": 53.21865949245308,
+        "regional_vertical": 51.483195219840724
+      },
+      "mc_se_pp": {
+        "base": 2.2455481507792423,
+        "regional": 2.2548720325974765,
+        "vertical": 2.6895870304042564,
+        "regional_vertical": 2.704851516616616
+      },
+      "raw_artificial": {
+        "base": 0.27449719184073174,
+        "regional": 0.27617183731702527,
+        "vertical": 0.28342835041929665,
+        "regional_vertical": 0.27987387241275213
+      }
+    }
+  ]
+}
