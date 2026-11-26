@@ -1,0 +1,2142 @@
+{
+  "madrid_three_band_preflight": {
+    "raw_sha256": "f477416f47487ad918484392fd5c368744d5807c22edf5c0e69ed7450fad88a9",
+    "preflight_audit_sha256": "f29e933fa7b74d4b59de11a215635c293cbfabf133826f9ae3021dd7e8d8b7ac",
+    "raw_rows_by_position": {
+      "Pos0": 429149,
+      "0": 14832,
+      "1": 8340
+    },
+    "same_V_test_nights": 9,
+    "same_V_test_exposures": 83,
+    "allowed_B_or_R_offset_from_V_s": 300,
+    "matching_triplets": 79,
+    "nights_with_triplets": 9,
+    "triplets_UTC_B_V_R": {
+      "2017-03-17": [
+        [
+          "2017-03-17T22:01:12Z",
+          "2017-03-17T22:02:13Z",
+          "2017-03-17T22:03:14Z"
+        ],
+        [
+          "2017-03-17T22:07:37Z",
+          "2017-03-17T22:08:38Z",
+          "2017-03-17T22:09:39Z"
+        ],
+        [
+          "2017-03-17T22:14:01Z",
+          "2017-03-17T22:15:02Z",
+          "2017-03-17T22:16:04Z"
+        ],
+        [
+          "2017-03-17T22:20:27Z",
+          "2017-03-17T22:21:29Z",
+          "2017-03-17T22:22:30Z"
+        ],
+        [
+          "2017-03-17T22:26:52Z",
+          "2017-03-17T22:27:54Z",
+          "2017-03-17T22:28:55Z"
+        ],
+        [
+          "2017-03-17T22:33:18Z",
+          "2017-03-17T22:34:19Z",
+          "2017-03-17T22:35:20Z"
+        ],
+        [
+          "2017-03-17T22:39:54Z",
+          "2017-03-17T22:41:02Z",
+          "2017-03-17T22:42:14Z"
+        ],
+        [
+          "2017-03-17T22:46:37Z",
+          "2017-03-17T22:47:39Z",
+          "2017-03-17T22:48:41Z"
+        ]
+      ],
+      "2017-03-20": [
+        [
+          "2017-03-20T22:00:20Z",
+          "2017-03-20T22:01:21Z",
+          "2017-03-20T22:02:23Z"
+        ],
+        [
+          "2017-03-20T22:06:45Z",
+          "2017-03-20T22:07:46Z",
+          "2017-03-20T22:08:49Z"
+        ],
+        [
+          "2017-03-20T22:13:11Z",
+          "2017-03-20T22:14:12Z",
+          "2017-03-20T22:15:14Z"
+        ],
+        [
+          "2017-03-20T22:19:36Z",
+          "2017-03-20T22:20:37Z",
+          "2017-03-20T22:21:39Z"
+        ],
+        [
+          "2017-03-20T22:26:01Z",
+          "2017-03-20T22:27:02Z",
+          "2017-03-20T22:28:04Z"
+        ],
+        [
+          "2017-03-20T22:32:26Z",
+          "2017-03-20T22:33:27Z",
+          "2017-03-20T22:34:29Z"
+        ],
+        [
+          "2017-03-20T22:38:51Z",
+          "2017-03-20T22:39:52Z",
+          "2017-03-20T22:40:54Z"
+        ],
+        [
+          "2017-03-20T22:45:16Z",
+          "2017-03-20T22:46:17Z",
+          "2017-03-20T22:47:19Z"
+        ],
+        [
+          "2017-03-20T22:51:40Z",
+          "2017-03-20T22:52:42Z",
+          "2017-03-20T22:53:43Z"
+        ]
+      ],
+      "2017-03-28": [
+        [
+          "2017-03-28T22:05:10Z",
+          "2017-03-28T22:06:11Z",
+          "2017-03-28T22:07:13Z"
+        ],
+        [
+          "2017-03-28T22:11:35Z",
+          "2017-03-28T22:12:36Z",
+          "2017-03-28T22:13:38Z"
+        ],
+        [
+          "2017-03-28T22:18:00Z",
+          "2017-03-28T22:19:01Z",
+          "2017-03-28T22:20:02Z"
+        ],
+        [
+          "2017-03-28T22:24:24Z",
+          "2017-03-28T22:25:25Z",
+          "2017-03-28T22:26:26Z"
+        ],
+        [
+          "2017-03-28T22:30:48Z",
+          "2017-03-28T22:31:49Z",
+          "2017-03-28T22:32:51Z"
+        ],
+        [
+          "2017-03-28T22:37:13Z",
+          "2017-03-28T22:38:14Z",
+          "2017-03-28T22:39:15Z"
+        ],
+        [
+          "2017-03-28T22:43:37Z",
+          "2017-03-28T22:44:38Z",
+          "2017-03-28T22:45:39Z"
+        ],
+        [
+          "2017-03-28T22:50:01Z",
+          "2017-03-28T22:51:02Z",
+          "2017-03-28T22:52:03Z"
+        ],
+        [
+          "2017-03-28T22:56:25Z",
+          "2017-03-28T22:57:27Z",
+          "2017-03-28T22:58:28Z"
+        ]
+      ],
+      "2017-11-13": [
+        [
+          "2017-11-13T22:01:52Z",
+          "2017-11-13T22:02:56Z",
+          "2017-11-13T22:04:02Z"
+        ],
+        [
+          "2017-11-13T22:08:28Z",
+          "2017-11-13T22:09:34Z",
+          "2017-11-13T22:10:40Z"
+        ],
+        [
+          "2017-11-13T22:15:06Z",
+          "2017-11-13T22:16:11Z",
+          "2017-11-13T22:17:17Z"
+        ],
+        [
+          "2017-11-13T22:21:43Z",
+          "2017-11-13T22:22:48Z",
+          "2017-11-13T22:23:54Z"
+        ],
+        [
+          "2017-11-13T22:28:19Z",
+          "2017-11-13T22:29:24Z",
+          "2017-11-13T22:30:29Z"
+        ],
+        [
+          "2017-11-13T22:34:54Z",
+          "2017-11-13T22:35:59Z",
+          "2017-11-13T22:37:03Z"
+        ],
+        [
+          "2017-11-13T22:41:28Z",
+          "2017-11-13T22:42:31Z",
+          "2017-11-13T22:43:36Z"
+        ],
+        [
+          "2017-11-13T22:48:01Z",
+          "2017-11-13T22:49:05Z",
+          "2017-11-13T22:50:11Z"
+        ],
+        [
+          "2017-11-13T22:54:35Z",
+          "2017-11-13T22:55:39Z",
+          "2017-11-13T22:56:43Z"
+        ]
+      ],
+      "2017-11-14": [
+        [
+          "2017-11-14T22:06:17Z",
+          "2017-11-14T22:07:19Z",
+          "2017-11-14T22:08:22Z"
+        ],
+        [
+          "2017-11-14T22:12:45Z",
+          "2017-11-14T22:13:47Z",
+          "2017-11-14T22:14:49Z"
+        ],
+        [
+          "2017-11-14T22:19:12Z",
+          "2017-11-14T22:20:15Z",
+          "2017-11-14T22:21:17Z"
+        ],
+        [
+          "2017-11-14T22:25:40Z",
+          "2017-11-14T22:26:42Z",
+          "2017-11-14T22:27:45Z"
+        ],
+        [
+          "2017-11-14T22:32:08Z",
+          "2017-11-14T22:33:10Z",
+          "2017-11-14T22:34:13Z"
+        ],
+        [
+          "2017-11-14T22:38:35Z",
+          "2017-11-14T22:39:37Z",
+          "2017-11-14T22:40:40Z"
+        ],
+        [
+          "2017-11-14T22:45:03Z",
+          "2017-11-14T22:46:05Z",
+          "2017-11-14T22:47:07Z"
+        ],
+        [
+          "2017-11-14T22:51:30Z",
+          "2017-11-14T22:52:32Z",
+          "2017-11-14T22:53:34Z"
+        ]
+      ],
+      "2017-11-15": [
+        [
+          "2017-11-15T22:05:33Z",
+          "2017-11-15T22:06:35Z",
+          "2017-11-15T22:07:37Z"
+        ],
+        [
+          "2017-11-15T22:12:00Z",
+          "2017-11-15T22:13:02Z",
+          "2017-11-15T22:14:04Z"
+        ],
+        [
+          "2017-11-15T22:18:26Z",
+          "2017-11-15T22:19:28Z",
+          "2017-11-15T22:20:31Z"
+        ],
+        [
+          "2017-11-15T22:24:54Z",
+          "2017-11-15T22:25:56Z",
+          "2017-11-15T22:26:58Z"
+        ],
+        [
+          "2017-11-15T22:31:21Z",
+          "2017-11-15T22:32:23Z",
+          "2017-11-15T22:33:25Z"
+        ],
+        [
+          "2017-11-15T22:37:48Z",
+          "2017-11-15T22:38:50Z",
+          "2017-11-15T22:39:52Z"
+        ],
+        [
+          "2017-11-15T22:44:16Z",
+          "2017-11-15T22:45:18Z",
+          "2017-11-15T22:46:20Z"
+        ],
+        [
+          "2017-11-15T22:50:43Z",
+          "2017-11-15T22:51:45Z",
+          "2017-11-15T22:52:47Z"
+        ],
+        [
+          "2017-11-15T22:57:10Z",
+          "2017-11-15T22:58:12Z",
+          "2017-11-15T22:59:14Z"
+        ]
+      ],
+      "2017-11-18": [
+        [
+          "2017-11-18T22:04:18Z",
+          "2017-11-18T22:05:20Z",
+          "2017-11-18T22:06:22Z"
+        ],
+        [
+          "2017-11-18T22:10:44Z",
+          "2017-11-18T22:11:46Z",
+          "2017-11-18T22:12:48Z"
+        ],
+        [
+          "2017-11-18T22:17:10Z",
+          "2017-11-18T22:18:11Z",
+          "2017-11-18T22:19:14Z"
+        ],
+        [
+          "2017-11-18T22:23:42Z",
+          "2017-11-18T22:24:44Z",
+          "2017-11-18T22:25:46Z"
+        ],
+        [
+          "2017-11-18T22:30:13Z",
+          "2017-11-18T22:31:15Z",
+          "2017-11-18T22:32:22Z"
+        ],
+        [
+          "2017-11-18T22:37:02Z",
+          "2017-11-18T22:38:32Z",
+          "2017-11-18T22:39:36Z"
+        ],
+        [
+          "2017-11-18T22:44:01Z",
+          "2017-11-18T22:45:04Z",
+          "2017-11-18T22:46:08Z"
+        ],
+        [
+          "2017-11-18T22:50:33Z",
+          "2017-11-18T22:51:34Z",
+          "2017-11-18T22:52:37Z"
+        ],
+        [
+          "2017-11-18T22:56:59Z",
+          "2017-11-18T22:58:02Z",
+          "2017-11-18T22:59:03Z"
+        ]
+      ],
+      "2017-11-20": [
+        [
+          "2017-11-20T22:04:26Z",
+          "2017-11-20T22:05:28Z",
+          "2017-11-20T22:06:30Z"
+        ],
+        [
+          "2017-11-20T22:10:53Z",
+          "2017-11-20T22:11:55Z",
+          "2017-11-20T22:12:57Z"
+        ],
+        [
+          "2017-11-20T22:17:19Z",
+          "2017-11-20T22:18:21Z",
+          "2017-11-20T22:19:22Z"
+        ],
+        [
+          "2017-11-20T22:23:45Z",
+          "2017-11-20T22:24:46Z",
+          "2017-11-20T22:25:48Z"
+        ],
+        [
+          "2017-11-20T22:30:12Z",
+          "2017-11-20T22:31:13Z",
+          "2017-11-20T22:32:15Z"
+        ],
+        [
+          "2017-11-20T22:36:38Z",
+          "2017-11-20T22:37:40Z",
+          "2017-11-20T22:38:42Z"
+        ],
+        [
+          "2017-11-20T22:43:05Z",
+          "2017-11-20T22:44:06Z",
+          "2017-11-20T22:45:09Z"
+        ],
+        [
+          "2017-11-20T22:49:34Z",
+          "2017-11-20T22:50:35Z",
+          "2017-11-20T22:51:37Z"
+        ],
+        [
+          "2017-11-20T22:56:00Z",
+          "2017-11-20T22:57:01Z",
+          "2017-11-20T22:58:03Z"
+        ]
+      ],
+      "2017-11-21": [
+        [
+          "2017-11-21T22:03:04Z",
+          "2017-11-21T22:04:06Z",
+          "2017-11-21T22:05:09Z"
+        ],
+        [
+          "2017-11-21T22:09:32Z",
+          "2017-11-21T22:10:33Z",
+          "2017-11-21T22:11:35Z"
+        ],
+        [
+          "2017-11-21T22:15:57Z",
+          "2017-11-21T22:16:59Z",
+          "2017-11-21T22:18:03Z"
+        ],
+        [
+          "2017-11-21T22:22:26Z",
+          "2017-11-21T22:23:29Z",
+          "2017-11-21T22:24:31Z"
+        ],
+        [
+          "2017-11-21T22:28:54Z",
+          "2017-11-21T22:29:55Z",
+          "2017-11-21T22:30:57Z"
+        ],
+        [
+          "2017-11-21T22:35:20Z",
+          "2017-11-21T22:36:22Z",
+          "2017-11-21T22:37:24Z"
+        ],
+        [
+          "2017-11-21T22:41:57Z",
+          "2017-11-21T22:43:01Z",
+          "2017-11-21T22:44:04Z"
+        ],
+        [
+          "2017-11-21T22:48:26Z",
+          "2017-11-21T22:49:28Z",
+          "2017-11-21T22:50:31Z"
+        ],
+        [
+          "2017-11-21T22:54:54Z",
+          "2017-11-21T22:55:56Z",
+          "2017-11-21T22:56:58Z"
+        ]
+      ]
+    }
+  },
+  "extrapolated_horizon_ratio_to_match_each_window": {
+    "transport_sha256": "b37d27aa491abe1b93b356580732a3247bed88900a712bd1fd45c3b9f262964c",
+    "hypothetical_extrapolation_only": {
+      "near_original": {
+        "20.99": {
+          "windows": 16,
+          "horizon_over_off_p10_median_p90": [
+            1.7749826603513799,
+            3.600025401411161,
+            6.325248556687951
+          ]
+        },
+        "21.6": {
+          "windows": 16,
+          "horizon_over_off_p10_median_p90": [
+            5.3243796134216055,
+            7.629380825431978,
+            10.620831377255016
+          ]
+        }
+      },
+      "combined_spectral": {
+        "20.99": {
+          "windows": 16,
+          "horizon_over_off_p10_median_p90": [
+            1.478437059545297,
+            3.1704268449265247,
+            5.490664059115478
+          ]
+        },
+        "21.6": {
+          "windows": 16,
+          "horizon_over_off_p10_median_p90": [
+            4.829195766375147,
+            6.846031684840536,
+            10.15552600314047
+          ]
+        }
+      }
+    }
+  },
+  "simultaneous_station_pairs": {
+    "heldout_inputs_sha256": {
+      "artifacts/photometer-sqm-residuals-20261126/results.json": "154b6be2a5589ce8b6c78aa79a04350a7b0c8d1a9feb7db4de25486f4162e3c0",
+      "artifacts/city-source-calibration-20261126/windows.json": "7b9038ba0d7c04a55e589e8c48864bf79c91ed9818f5e56f0b8259c8050e45be"
+    },
+    "statistics_by_minimum_measured_mag_difference": {
+      "0.0": {
+        "pairs": 65,
+        "nights": 38,
+        "mean_absolute_observed_mag_difference": 0.22769155829164447,
+        "models": {
+          "standard": {
+            "same_brightness_order": 48,
+            "mean_absolute_predicted_mag_difference": 0.25255287546112076,
+            "mean_absolute_error_of_difference_mag": 0.13597028137614384,
+            "median_observed_to_predicted_linear_contrast_when_same_order": 1.621954107483047
+          },
+          "regional": {
+            "same_brightness_order": 48,
+            "mean_absolute_predicted_mag_difference": 0.2413750803257402,
+            "mean_absolute_error_of_difference_mag": 0.13595046432347765,
+            "median_observed_to_predicted_linear_contrast_when_same_order": 1.7185290765010448
+          },
+          "spatial_vertical": {
+            "same_brightness_order": 48,
+            "mean_absolute_predicted_mag_difference": 0.2523161398426112,
+            "mean_absolute_error_of_difference_mag": 0.13625676766926592,
+            "median_observed_to_predicted_linear_contrast_when_same_order": 1.6170865849863927
+          }
+        }
+      },
+      "0.1": {
+        "pairs": 50,
+        "nights": 32,
+        "mean_absolute_observed_mag_difference": 0.2866319972740394,
+        "models": {
+          "standard": {
+            "same_brightness_order": 46,
+            "mean_absolute_predicted_mag_difference": 0.3015947289150213,
+            "mean_absolute_error_of_difference_mag": 0.14353858651688525,
+            "median_observed_to_predicted_linear_contrast_when_same_order": 1.6528678351986792
+          },
+          "regional": {
+            "same_brightness_order": 46,
+            "mean_absolute_predicted_mag_difference": 0.2873909416648748,
+            "mean_absolute_error_of_difference_mag": 0.14384017077426733,
+            "median_observed_to_predicted_linear_contrast_when_same_order": 1.7270763780131864
+          },
+          "spatial_vertical": {
+            "same_brightness_order": 46,
+            "mean_absolute_predicted_mag_difference": 0.30061057163648924,
+            "mean_absolute_error_of_difference_mag": 0.1432346177234743,
+            "median_observed_to_predicted_linear_contrast_when_same_order": 1.6735462061755886
+          }
+        }
+      },
+      "0.2": {
+        "pairs": 41,
+        "nights": 27,
+        "mean_absolute_observed_mag_difference": 0.3139182198929928,
+        "models": {
+          "standard": {
+            "same_brightness_order": 40,
+            "mean_absolute_predicted_mag_difference": 0.29693801390940483,
+            "mean_absolute_error_of_difference_mag": 0.12198216265174938,
+            "median_observed_to_predicted_linear_contrast_when_same_order": 1.81382067433699
+          },
+          "regional": {
+            "same_brightness_order": 40,
+            "mean_absolute_predicted_mag_difference": 0.2828771655756491,
+            "mean_absolute_error_of_difference_mag": 0.12353598235671136,
+            "median_observed_to_predicted_linear_contrast_when_same_order": 1.8911886427170925
+          },
+          "spatial_vertical": {
+            "same_brightness_order": 40,
+            "mean_absolute_predicted_mag_difference": 0.2954130652846666,
+            "mean_absolute_error_of_difference_mag": 0.12252596652347159,
+            "median_observed_to_predicted_linear_contrast_when_same_order": 1.835221786057284
+          }
+        }
+      },
+      "0.3": {
+        "pairs": 15,
+        "nights": 12,
+        "mean_absolute_observed_mag_difference": 0.40683354885452444,
+        "models": {
+          "standard": {
+            "same_brightness_order": 14,
+            "mean_absolute_predicted_mag_difference": 0.2726153464922554,
+            "mean_absolute_error_of_difference_mag": 0.1435583564611811,
+            "median_observed_to_predicted_linear_contrast_when_same_order": 2.287786023398512
+          },
+          "regional": {
+            "same_brightness_order": 14,
+            "mean_absolute_predicted_mag_difference": 0.25758740810083225,
+            "mean_absolute_error_of_difference_mag": 0.15828171966545312,
+            "median_observed_to_predicted_linear_contrast_when_same_order": 2.593513265777295
+          },
+          "spatial_vertical": {
+            "same_brightness_order": 14,
+            "mean_absolute_predicted_mag_difference": 0.27559284574981696,
+            "mean_absolute_error_of_difference_mag": 0.14513626895885234,
+            "median_observed_to_predicted_linear_contrast_when_same_order": 2.286263914232694
+          }
+        }
+      }
+    },
+    "pairs": [
+      {
+        "keys": [
+          "Campofontana-2022-11-26",
+          "Cattignano-2022-11-26"
+        ],
+        "utc": "2022-11-26T21:30:00Z",
+        "night": "2022-11-26",
+        "observed_mag_difference": 0.2305701250729264,
+        "observed_linear_difference_W_m2_sr": -5.873383917956587e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.3393982375472646,
+            "artificial_linear_difference_W_m2_sr": -5.185052309921248e-07
+          },
+          "regional": {
+            "mag_difference": 0.3470336586829923,
+            "artificial_linear_difference_W_m2_sr": -5.283801119123317e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.33104404548341293,
+            "artificial_linear_difference_W_m2_sr": -5.185888536877032e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2023-02-13",
+          "Cattignano-2023-02-13"
+        ],
+        "utc": "2023-02-13T23:30:00Z",
+        "night": "2023-02-13",
+        "observed_mag_difference": 0.2775960579900101,
+        "observed_linear_difference_W_m2_sr": -6.383234665322695e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.23496531542229704,
+            "artificial_linear_difference_W_m2_sr": -3.3017592970523567e-07
+          },
+          "regional": {
+            "mag_difference": 0.22038803291653153,
+            "artificial_linear_difference_W_m2_sr": -3.1531859858061683e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.2467199281484973,
+            "artificial_linear_difference_W_m2_sr": -3.530798059443066e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2023-07-14",
+          "Cattignano-2023-07-14"
+        ],
+        "utc": "2023-07-14T23:30:00Z",
+        "night": "2023-07-14",
+        "observed_mag_difference": 0.23508911330749527,
+        "observed_linear_difference_W_m2_sr": -5.67753101160628e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.34969747276160845,
+            "artificial_linear_difference_W_m2_sr": -5.192888490981783e-07
+          },
+          "regional": {
+            "mag_difference": 0.33097162429515237,
+            "artificial_linear_difference_W_m2_sr": -4.935465223388823e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.32790379564804795,
+            "artificial_linear_difference_W_m2_sr": -5.063664221895089e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2023-07-17",
+          "Cattignano-2023-07-17"
+        ],
+        "utc": "2023-07-18T00:30:00Z",
+        "night": "2023-07-17",
+        "observed_mag_difference": 0.2857442556102896,
+        "observed_linear_difference_W_m2_sr": -6.272938547820059e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.34969747276160845,
+            "artificial_linear_difference_W_m2_sr": -5.192888490981783e-07
+          },
+          "regional": {
+            "mag_difference": 0.3414407065378384,
+            "artificial_linear_difference_W_m2_sr": -5.004201380777669e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.3988558034844303,
+            "artificial_linear_difference_W_m2_sr": -6.269419711031601e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2023-08-18",
+          "Cattignano-2023-08-18"
+        ],
+        "utc": "2023-08-18T21:30:00Z",
+        "night": "2023-08-18",
+        "observed_mag_difference": 0.25584972958569097,
+        "observed_linear_difference_W_m2_sr": -6.494451620506195e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.324811473677606,
+            "artificial_linear_difference_W_m2_sr": -4.931382377793146e-07
+          },
+          "regional": {
+            "mag_difference": 0.3087037269650281,
+            "artificial_linear_difference_W_m2_sr": -4.632167056386455e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.3377485805401861,
+            "artificial_linear_difference_W_m2_sr": -5.205858482128707e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2023-09-09",
+          "Cattignano-2023-09-09"
+        ],
+        "utc": "2023-09-09T21:30:00Z",
+        "night": "2023-09-09",
+        "observed_mag_difference": 0.26240293746203847,
+        "observed_linear_difference_W_m2_sr": -8.003519541132542e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.3220600526000119,
+            "artificial_linear_difference_W_m2_sr": -4.783017543033625e-07
+          },
+          "regional": {
+            "mag_difference": 0.34698900254610976,
+            "artificial_linear_difference_W_m2_sr": -5.1566864767079e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.3297299319350735,
+            "artificial_linear_difference_W_m2_sr": -5.136116185893086e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2023-09-09",
+          "Marana-2023-09-09"
+        ],
+        "utc": "2023-09-09T21:30:00Z",
+        "night": "2023-09-09",
+        "observed_mag_difference": -0.03583443825080579,
+        "observed_linear_difference_W_m2_sr": 9.504487426191788e-08,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.08234662925610081,
+            "artificial_linear_difference_W_m2_sr": -1.091393358956986e-07
+          },
+          "regional": {
+            "mag_difference": 0.08990777785484028,
+            "artificial_linear_difference_W_m2_sr": -1.1822612488012006e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.06354356382299642,
+            "artificial_linear_difference_W_m2_sr": -8.723787556613157e-08
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2023-09-09",
+          "Montebaldo-2023-09-09"
+        ],
+        "utc": "2023-09-09T21:30:00Z",
+        "night": "2023-09-09",
+        "observed_mag_difference": -0.30074627711361046,
+        "observed_linear_difference_W_m2_sr": 7.08294430328115e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": -0.06101223007486922,
+            "artificial_linear_difference_W_m2_sr": 7.568915587146214e-08
+          },
+          "regional": {
+            "mag_difference": -0.028306695250286396,
+            "artificial_linear_difference_W_m2_sr": 3.524119996625045e-08
+          },
+          "spatial_vertical": {
+            "mag_difference": -0.06118024574921321,
+            "artificial_linear_difference_W_m2_sr": 7.930406392630268e-08
+          }
+        }
+      },
+      {
+        "keys": [
+          "Cattignano-2023-09-09",
+          "Marana-2023-09-09"
+        ],
+        "utc": "2023-09-09T21:30:00Z",
+        "night": "2023-09-09",
+        "observed_mag_difference": -0.29823737571284425,
+        "observed_linear_difference_W_m2_sr": 8.95396828375172e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": -0.2397134233439111,
+            "artificial_linear_difference_W_m2_sr": 3.6916241840766387e-07
+          },
+          "regional": {
+            "mag_difference": -0.2570812246912695,
+            "artificial_linear_difference_W_m2_sr": 3.9744252279067e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": -0.2661863681120771,
+            "artificial_linear_difference_W_m2_sr": 4.2637374302317704e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Cattignano-2023-09-09",
+          "Montebaldo-2023-09-09"
+        ],
+        "utc": "2023-09-09T21:30:00Z",
+        "night": "2023-09-09",
+        "observed_mag_difference": -0.5631492145756489,
+        "observed_linear_difference_W_m2_sr": 1.5086463844413691e-06,
+        "predicted": {
+          "standard": {
+            "mag_difference": -0.38307228267488114,
+            "artificial_linear_difference_W_m2_sr": 5.539909101748246e-07
+          },
+          "regional": {
+            "mag_difference": -0.37529569779639615,
+            "artificial_linear_difference_W_m2_sr": 5.509098476370405e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": -0.3909101776842867,
+            "artificial_linear_difference_W_m2_sr": 5.929156825156113e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Marana-2023-09-09",
+          "Montebaldo-2023-09-09"
+        ],
+        "utc": "2023-09-09T21:30:00Z",
+        "night": "2023-09-09",
+        "observed_mag_difference": -0.26491183886280467,
+        "observed_linear_difference_W_m2_sr": 6.132495560661971e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": -0.14335885933097003,
+            "artificial_linear_difference_W_m2_sr": 1.8482849176716073e-07
+          },
+          "regional": {
+            "mag_difference": -0.11821447310512667,
+            "artificial_linear_difference_W_m2_sr": 1.534673248463705e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": -0.12472380957220963,
+            "artificial_linear_difference_W_m2_sr": 1.6654193949243425e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2023-09-10",
+          "Cattignano-2023-09-10"
+        ],
+        "utc": "2023-09-10T22:30:00Z",
+        "night": "2023-09-10",
+        "observed_mag_difference": 0.2975868083928006,
+        "observed_linear_difference_W_m2_sr": -7.807872163010044e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.3220600526000119,
+            "artificial_linear_difference_W_m2_sr": -4.783017543033625e-07
+          },
+          "regional": {
+            "mag_difference": 0.3053427638129449,
+            "artificial_linear_difference_W_m2_sr": -4.526575273126743e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.3243485984074219,
+            "artificial_linear_difference_W_m2_sr": -5.075317470493115e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2023-09-10",
+          "Marana-2023-09-10"
+        ],
+        "utc": "2023-09-10T22:30:00Z",
+        "night": "2023-09-10",
+        "observed_mag_difference": -0.017485683823228015,
+        "observed_linear_difference_W_m2_sr": 3.955790384832903e-08,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.08234662925610081,
+            "artificial_linear_difference_W_m2_sr": -1.091393358956986e-07
+          },
+          "regional": {
+            "mag_difference": 0.07097251453505038,
+            "artificial_linear_difference_W_m2_sr": -9.415541908288296e-08
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.07315622168282587,
+            "artificial_linear_difference_W_m2_sr": -1.016090565667916e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Cattignano-2023-09-10",
+          "Marana-2023-09-10"
+        ],
+        "utc": "2023-09-10T22:30:00Z",
+        "night": "2023-09-10",
+        "observed_mag_difference": -0.3150724922160286,
+        "observed_linear_difference_W_m2_sr": 8.203451201493334e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": -0.2397134233439111,
+            "artificial_linear_difference_W_m2_sr": 3.6916241840766387e-07
+          },
+          "regional": {
+            "mag_difference": -0.23437024927789452,
+            "artificial_linear_difference_W_m2_sr": 3.585021082297913e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": -0.25119237672459604,
+            "artificial_linear_difference_W_m2_sr": 4.059226904825199e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2023-09-19",
+          "Cattignano-2023-09-19"
+        ],
+        "utc": "2023-09-20T00:30:00Z",
+        "night": "2023-09-19",
+        "observed_mag_difference": 0.233287447775826,
+        "observed_linear_difference_W_m2_sr": -5.41754410528595e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.3220600526000119,
+            "artificial_linear_difference_W_m2_sr": -4.783017543033625e-07
+          },
+          "regional": {
+            "mag_difference": 0.3184196590045971,
+            "artificial_linear_difference_W_m2_sr": -4.7398672906672043e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.3219185281569672,
+            "artificial_linear_difference_W_m2_sr": -5.041085397128525e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2023-11-07",
+          "Cattignano-2023-11-07"
+        ],
+        "utc": "2023-11-07T22:30:00Z",
+        "night": "2023-11-07",
+        "observed_mag_difference": 0.27506174812909734,
+        "observed_linear_difference_W_m2_sr": -7.009043664419808e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.3378381968837729,
+            "artificial_linear_difference_W_m2_sr": -5.006604477636875e-07
+          },
+          "regional": {
+            "mag_difference": 0.31048984381808964,
+            "artificial_linear_difference_W_m2_sr": -4.6465769276875093e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.3006667957008986,
+            "artificial_linear_difference_W_m2_sr": -4.567147958920841e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2023-11-08",
+          "Cattignano-2023-11-08"
+        ],
+        "utc": "2023-11-08T21:30:00Z",
+        "night": "2023-11-08",
+        "observed_mag_difference": 0.2850269606629965,
+        "observed_linear_difference_W_m2_sr": -7.30500908881661e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.3378381968837729,
+            "artificial_linear_difference_W_m2_sr": -5.006604477636875e-07
+          },
+          "regional": {
+            "mag_difference": 0.31002836050165783,
+            "artificial_linear_difference_W_m2_sr": -4.6586010753673257e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.34260736268059944,
+            "artificial_linear_difference_W_m2_sr": -5.148015057420186e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2023-11-10",
+          "Cattignano-2023-11-10"
+        ],
+        "utc": "2023-11-11T01:30:00Z",
+        "night": "2023-11-10",
+        "observed_mag_difference": 0.18079079730728154,
+        "observed_linear_difference_W_m2_sr": -3.989304889518078e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.3378381968837729,
+            "artificial_linear_difference_W_m2_sr": -5.006604477636875e-07
+          },
+          "regional": {
+            "mag_difference": 0.3210548302630869,
+            "artificial_linear_difference_W_m2_sr": -4.7674355028964094e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.31442338454839813,
+            "artificial_linear_difference_W_m2_sr": -4.6628594677177824e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2023-11-11",
+          "Cattignano-2023-11-11"
+        ],
+        "utc": "2023-11-11T21:30:00Z",
+        "night": "2023-11-11",
+        "observed_mag_difference": 0.37998360404314724,
+        "observed_linear_difference_W_m2_sr": -1.0369343947056382e-06,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.3378381968837729,
+            "artificial_linear_difference_W_m2_sr": -5.006604477636875e-07
+          },
+          "regional": {
+            "mag_difference": 0.2928577092036768,
+            "artificial_linear_difference_W_m2_sr": -4.363266496609742e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.3047939648218403,
+            "artificial_linear_difference_W_m2_sr": -4.572977870671051e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2023-12-15",
+          "Cattignano-2023-12-15"
+        ],
+        "utc": "2023-12-16T01:30:00Z",
+        "night": "2023-12-15",
+        "observed_mag_difference": -0.1219656247332459,
+        "observed_linear_difference_W_m2_sr": 3.030843639811182e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.34969747276160845,
+            "artificial_linear_difference_W_m2_sr": -5.192888490981783e-07
+          },
+          "regional": {
+            "mag_difference": 0.3000550689207806,
+            "artificial_linear_difference_W_m2_sr": -4.479522365451656e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.3261271365983234,
+            "artificial_linear_difference_W_m2_sr": -4.92958212254658e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2023-12-15",
+          "Marana-2023-12-15"
+        ],
+        "utc": "2023-12-16T01:30:00Z",
+        "night": "2023-12-15",
+        "observed_mag_difference": -0.3077692677876378,
+        "observed_linear_difference_W_m2_sr": 7.040692022637575e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.06684488976230085,
+            "artificial_linear_difference_W_m2_sr": -8.677751530844644e-08
+          },
+          "regional": {
+            "mag_difference": 0.05246994687942674,
+            "artificial_linear_difference_W_m2_sr": -6.967635489690639e-08
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.07808424585675766,
+            "artificial_linear_difference_W_m2_sr": -1.04915621475671e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Cattignano-2023-12-15",
+          "Marana-2023-12-15"
+        ],
+        "utc": "2023-12-16T01:30:00Z",
+        "night": "2023-12-15",
+        "observed_mag_difference": -0.1858036430543919,
+        "observed_linear_difference_W_m2_sr": 4.0098483828263934e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": -0.2828525829993076,
+            "artificial_linear_difference_W_m2_sr": 4.325113337897318e-07
+          },
+          "regional": {
+            "mag_difference": -0.24758512204135386,
+            "artificial_linear_difference_W_m2_sr": 3.782758816482592e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": -0.2480428907415657,
+            "artificial_linear_difference_W_m2_sr": 3.8804259077898703e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2023-12-16",
+          "Cattignano-2023-12-16"
+        ],
+        "utc": "2023-12-16T23:30:00Z",
+        "night": "2023-12-16",
+        "observed_mag_difference": 0.22905002440548827,
+        "observed_linear_difference_W_m2_sr": -6.413951931416308e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.34969747276160845,
+            "artificial_linear_difference_W_m2_sr": -5.192888490981783e-07
+          },
+          "regional": {
+            "mag_difference": 0.29724114254810274,
+            "artificial_linear_difference_W_m2_sr": -4.433064991429833e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.3299558971680021,
+            "artificial_linear_difference_W_m2_sr": -4.959146340219245e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2023-12-16",
+          "Marana-2023-12-16"
+        ],
+        "utc": "2023-12-16T23:30:00Z",
+        "night": "2023-12-16",
+        "observed_mag_difference": -0.02233075514232752,
+        "observed_linear_difference_W_m2_sr": 5.55936533110908e-08,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.06684488976230085,
+            "artificial_linear_difference_W_m2_sr": -8.677751530844644e-08
+          },
+          "regional": {
+            "mag_difference": 0.052735436879544295,
+            "artificial_linear_difference_W_m2_sr": -7.006221465126247e-08
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.09073019417018102,
+            "artificial_linear_difference_W_m2_sr": -1.2170660318741838e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Cattignano-2023-12-16",
+          "Marana-2023-12-16"
+        ],
+        "utc": "2023-12-16T23:30:00Z",
+        "night": "2023-12-16",
+        "observed_mag_difference": -0.2513807795478158,
+        "observed_linear_difference_W_m2_sr": 6.969888464527217e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": -0.2828525829993076,
+            "artificial_linear_difference_W_m2_sr": 4.325113337897318e-07
+          },
+          "regional": {
+            "mag_difference": -0.24450570566855845,
+            "artificial_linear_difference_W_m2_sr": 3.7324428449172084e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": -0.2392257029978211,
+            "artificial_linear_difference_W_m2_sr": 3.7420803083450614e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2023-12-19",
+          "Cattignano-2023-12-19"
+        ],
+        "utc": "2023-12-20T00:30:00Z",
+        "night": "2023-12-19",
+        "observed_mag_difference": 0.2380740615804129,
+        "observed_linear_difference_W_m2_sr": -5.66336427266309e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.34969747276160845,
+            "artificial_linear_difference_W_m2_sr": -5.192888490981783e-07
+          },
+          "regional": {
+            "mag_difference": 0.31180011352735804,
+            "artificial_linear_difference_W_m2_sr": -4.650720924629036e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.2917947679517212,
+            "artificial_linear_difference_W_m2_sr": -4.335867397082492e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2023-12-19",
+          "Marana-2023-12-19"
+        ],
+        "utc": "2023-12-20T00:30:00Z",
+        "night": "2023-12-19",
+        "observed_mag_difference": -0.04367875808413757,
+        "observed_linear_difference_W_m2_sr": 9.10839190751717e-08,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.06684488976230085,
+            "artificial_linear_difference_W_m2_sr": -8.677751530844644e-08
+          },
+          "regional": {
+            "mag_difference": 0.0583464943691645,
+            "artificial_linear_difference_W_m2_sr": -7.718429894969713e-08
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.08796602156214561,
+            "artificial_linear_difference_W_m2_sr": -1.1867527407300864e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Cattignano-2023-12-19",
+          "Marana-2023-12-19"
+        ],
+        "utc": "2023-12-20T00:30:00Z",
+        "night": "2023-12-19",
+        "observed_mag_difference": -0.28175281966455046,
+        "observed_linear_difference_W_m2_sr": 6.574203463414806e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": -0.2828525829993076,
+            "artificial_linear_difference_W_m2_sr": 4.325113337897318e-07
+          },
+          "regional": {
+            "mag_difference": -0.25345361915819353,
+            "artificial_linear_difference_W_m2_sr": 3.8788779351320647e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": -0.2038287463895756,
+            "artificial_linear_difference_W_m2_sr": 3.1491146563524054e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2024-01-10",
+          "Cattignano-2024-01-10"
+        ],
+        "utc": "2024-01-11T00:30:00Z",
+        "night": "2024-01-10",
+        "observed_mag_difference": -0.11329746730836021,
+        "observed_linear_difference_W_m2_sr": 3.623506510623183e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.32573400405042463,
+            "artificial_linear_difference_W_m2_sr": -4.90215599399464e-07
+          },
+          "regional": {
+            "mag_difference": 0.34551236959030973,
+            "artificial_linear_difference_W_m2_sr": -5.278194639248686e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.33529867434886285,
+            "artificial_linear_difference_W_m2_sr": -5.211709009501921e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Cattignano-2024-01-11",
+          "Marana-2024-01-11"
+        ],
+        "utc": "2024-01-12T00:30:00Z",
+        "night": "2024-01-11",
+        "observed_mag_difference": -0.19580999133531307,
+        "observed_linear_difference_W_m2_sr": 5.019426471012083e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": -0.23814720854367621,
+            "artificial_linear_difference_W_m2_sr": 3.725028608169306e-07
+          },
+          "regional": {
+            "mag_difference": -0.207015950910435,
+            "artificial_linear_difference_W_m2_sr": 3.2572811560697696e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": -0.23388573570483828,
+            "artificial_linear_difference_W_m2_sr": 3.630010581212807e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2024-01-12",
+          "Marana-2024-01-12"
+        ],
+        "utc": "2024-01-12T21:30:00Z",
+        "night": "2024-01-12",
+        "observed_mag_difference": 0.04601170243193664,
+        "observed_linear_difference_W_m2_sr": -1.1539069627379902e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.08758679550674842,
+            "artificial_linear_difference_W_m2_sr": -1.1771273858253346e-07
+          },
+          "regional": {
+            "mag_difference": 0.08273538039255257,
+            "artificial_linear_difference_W_m2_sr": -1.1030917405162365e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.09503419845152905,
+            "artificial_linear_difference_W_m2_sr": -1.2981593572140823e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2024-01-15",
+          "Cattignano-2024-01-15"
+        ],
+        "utc": "2024-01-16T01:30:00Z",
+        "night": "2024-01-15",
+        "observed_mag_difference": -0.10500000878214877,
+        "observed_linear_difference_W_m2_sr": 2.7356861617475713e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.32573400405042463,
+            "artificial_linear_difference_W_m2_sr": -4.90215599399464e-07
+          },
+          "regional": {
+            "mag_difference": 0.3374550111843284,
+            "artificial_linear_difference_W_m2_sr": -5.071392133492346e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.35308903687784365,
+            "artificial_linear_difference_W_m2_sr": -5.305416588312044e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2024-07-04",
+          "Marana-2024-07-04"
+        ],
+        "utc": "2024-07-04T23:30:00Z",
+        "night": "2024-07-04",
+        "observed_mag_difference": -0.011592788737932125,
+        "observed_linear_difference_W_m2_sr": 2.4693474904802583e-08,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.08758679550674842,
+            "artificial_linear_difference_W_m2_sr": -1.1771273858253346e-07
+          },
+          "regional": {
+            "mag_difference": 0.09016048105724295,
+            "artificial_linear_difference_W_m2_sr": -1.200401182623932e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.10819037937322662,
+            "artificial_linear_difference_W_m2_sr": -1.5056011527270897e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2024-07-08",
+          "Marana-2024-07-08"
+        ],
+        "utc": "2024-07-09T00:30:00Z",
+        "night": "2024-07-08",
+        "observed_mag_difference": -0.0716768748102119,
+        "observed_linear_difference_W_m2_sr": 1.562603151553114e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.08758679550674842,
+            "artificial_linear_difference_W_m2_sr": -1.1771273858253346e-07
+          },
+          "regional": {
+            "mag_difference": 0.07791462022990459,
+            "artificial_linear_difference_W_m2_sr": -1.0367194862666711e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.11079339432883373,
+            "artificial_linear_difference_W_m2_sr": -1.5735723710389797e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2024-08-10",
+          "Marana-2024-08-10"
+        ],
+        "utc": "2024-08-11T01:30:00Z",
+        "night": "2024-08-10",
+        "observed_mag_difference": -0.0408069048285391,
+        "observed_linear_difference_W_m2_sr": 8.272630234502171e-08,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.08758679550674842,
+            "artificial_linear_difference_W_m2_sr": -1.1771273858253346e-07
+          },
+          "regional": {
+            "mag_difference": 0.05953829676244027,
+            "artificial_linear_difference_W_m2_sr": -8.06187201124278e-08
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.1096482048249321,
+            "artificial_linear_difference_W_m2_sr": -1.529115836120815e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2024-08-29",
+          "Cattignano-2024-08-29"
+        ],
+        "utc": "2024-08-29T21:30:00Z",
+        "night": "2024-08-29",
+        "observed_mag_difference": 0.3225277380708853,
+        "observed_linear_difference_W_m2_sr": -9.54380875004526e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.32573400405042463,
+            "artificial_linear_difference_W_m2_sr": -4.90215599399464e-07
+          },
+          "regional": {
+            "mag_difference": 0.3378246330296655,
+            "artificial_linear_difference_W_m2_sr": -4.983718748724504e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.3486602361202138,
+            "artificial_linear_difference_W_m2_sr": -5.573186244341272e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2024-10-11",
+          "Cattignano-2024-10-11"
+        ],
+        "utc": "2024-10-12T00:30:00Z",
+        "night": "2024-10-11",
+        "observed_mag_difference": 0.21001538583157497,
+        "observed_linear_difference_W_m2_sr": -6.011336694094959e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.5482604273148297,
+            "artificial_linear_difference_W_m2_sr": -7.498641358517592e-07
+          },
+          "regional": {
+            "mag_difference": 0.5585110843906946,
+            "artificial_linear_difference_W_m2_sr": -7.611507104474114e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.6059696723570376,
+            "artificial_linear_difference_W_m2_sr": -8.560343978964862e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2024-10-29",
+          "Cattignano-2024-10-29"
+        ],
+        "utc": "2024-10-30T00:30:00Z",
+        "night": "2024-10-29",
+        "observed_mag_difference": 0.25320021494994194,
+        "observed_linear_difference_W_m2_sr": -6.149563332685639e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.5482604273148297,
+            "artificial_linear_difference_W_m2_sr": -7.498641358517592e-07
+          },
+          "regional": {
+            "mag_difference": 0.5579590906269054,
+            "artificial_linear_difference_W_m2_sr": -7.56460411602889e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.5745745523646164,
+            "artificial_linear_difference_W_m2_sr": -7.894110472790649e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2024-10-30",
+          "Cattignano-2024-10-30"
+        ],
+        "utc": "2024-10-31T00:30:00Z",
+        "night": "2024-10-30",
+        "observed_mag_difference": 0.20080939065572068,
+        "observed_linear_difference_W_m2_sr": -5.022863416291299e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.5482604273148297,
+            "artificial_linear_difference_W_m2_sr": -7.498641358517592e-07
+          },
+          "regional": {
+            "mag_difference": 0.5433431206697819,
+            "artificial_linear_difference_W_m2_sr": -7.467688662429072e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.5568995065994358,
+            "artificial_linear_difference_W_m2_sr": -7.519161608014095e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2024-10-31",
+          "Cattignano-2024-10-31"
+        ],
+        "utc": "2024-10-31T22:30:00Z",
+        "night": "2024-10-31",
+        "observed_mag_difference": 0.17499307358783867,
+        "observed_linear_difference_W_m2_sr": -5.175866558609285e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.5482604273148297,
+            "artificial_linear_difference_W_m2_sr": -7.498641358517592e-07
+          },
+          "regional": {
+            "mag_difference": 0.5521728650400632,
+            "artificial_linear_difference_W_m2_sr": -7.631930263823627e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.5772362081198388,
+            "artificial_linear_difference_W_m2_sr": -7.858916193696341e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2024-11-02",
+          "Cattignano-2024-11-02"
+        ],
+        "utc": "2024-11-02T21:30:00Z",
+        "night": "2024-11-02",
+        "observed_mag_difference": 0.2583218821903088,
+        "observed_linear_difference_W_m2_sr": -7.231850202531647e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.32573400405042463,
+            "artificial_linear_difference_W_m2_sr": -4.90215599399464e-07
+          },
+          "regional": {
+            "mag_difference": 0.311882707017741,
+            "artificial_linear_difference_W_m2_sr": -4.710782158901267e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.32887582905373947,
+            "artificial_linear_difference_W_m2_sr": -4.91778030842962e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2024-11-02",
+          "Montebaldo-2024-11-02"
+        ],
+        "utc": "2024-11-02T21:30:00Z",
+        "night": "2024-11-02",
+        "observed_mag_difference": -0.24502663985427375,
+        "observed_linear_difference_W_m2_sr": 5.439126871722905e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": -0.08445692620402312,
+            "artificial_linear_difference_W_m2_sr": 1.0485836658569216e-07
+          },
+          "regional": {
+            "mag_difference": -0.0903255643853349,
+            "artificial_linear_difference_W_m2_sr": 1.1300661148627745e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": -0.07005901913694856,
+            "artificial_linear_difference_W_m2_sr": 8.686214578371583e-08
+          }
+        }
+      },
+      {
+        "keys": [
+          "Cattignano-2024-11-02",
+          "Montebaldo-2024-11-02"
+        ],
+        "utc": "2024-11-02T21:30:00Z",
+        "night": "2024-11-02",
+        "observed_mag_difference": -0.5033485220445826,
+        "observed_linear_difference_W_m2_sr": 1.267097707425455e-06,
+        "predicted": {
+          "standard": {
+            "mag_difference": -0.41019093025444775,
+            "artificial_linear_difference_W_m2_sr": 5.950739659851562e-07
+          },
+          "regional": {
+            "mag_difference": -0.4022082714030759,
+            "artificial_linear_difference_W_m2_sr": 5.840848273764041e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": -0.39893484819068803,
+            "artificial_linear_difference_W_m2_sr": 5.786401766266779e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2024-11-10",
+          "Cattignano-2024-11-10"
+        ],
+        "utc": "2024-11-11T01:30:00Z",
+        "night": "2024-11-10",
+        "observed_mag_difference": 0.18660755312027177,
+        "observed_linear_difference_W_m2_sr": -5.294835762813722e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.32573400405042463,
+            "artificial_linear_difference_W_m2_sr": -4.90215599399464e-07
+          },
+          "regional": {
+            "mag_difference": 0.33198569477526974,
+            "artificial_linear_difference_W_m2_sr": -4.98335038086703e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.32270959924987963,
+            "artificial_linear_difference_W_m2_sr": -4.84788884697337e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2024-11-10",
+          "Montebaldo-2024-11-10"
+        ],
+        "utc": "2024-11-11T01:30:00Z",
+        "night": "2024-11-10",
+        "observed_mag_difference": -0.2958454376996116,
+        "observed_linear_difference_W_m2_sr": 6.734507834088832e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": -0.08445692620402312,
+            "artificial_linear_difference_W_m2_sr": 1.0485836658569216e-07
+          },
+          "regional": {
+            "mag_difference": -0.05716183769358807,
+            "artificial_linear_difference_W_m2_sr": 7.145594164485849e-08
+          },
+          "spatial_vertical": {
+            "mag_difference": -0.07522851953767784,
+            "artificial_linear_difference_W_m2_sr": 9.37616142860255e-08
+          }
+        }
+      },
+      {
+        "keys": [
+          "Cattignano-2024-11-10",
+          "Montebaldo-2024-11-10"
+        ],
+        "utc": "2024-11-11T01:30:00Z",
+        "night": "2024-11-10",
+        "observed_mag_difference": -0.48245299081988335,
+        "observed_linear_difference_W_m2_sr": 1.2029343596902554e-06,
+        "predicted": {
+          "standard": {
+            "mag_difference": -0.41019093025444775,
+            "artificial_linear_difference_W_m2_sr": 5.950739659851562e-07
+          },
+          "regional": {
+            "mag_difference": -0.3891475324688578,
+            "artificial_linear_difference_W_m2_sr": 5.697909797315615e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": -0.39793811878755747,
+            "artificial_linear_difference_W_m2_sr": 5.785504989833625e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2024-11-30",
+          "Cattignano-2024-11-30"
+        ],
+        "utc": "2024-11-30T21:30:00Z",
+        "night": "2024-11-30",
+        "observed_mag_difference": 0.29333587275058903,
+        "observed_linear_difference_W_m2_sr": -8.306009608630008e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.32573400405042463,
+            "artificial_linear_difference_W_m2_sr": -4.90215599399464e-07
+          },
+          "regional": {
+            "mag_difference": 0.32421266710958463,
+            "artificial_linear_difference_W_m2_sr": -4.80322554523443e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.31664865746403237,
+            "artificial_linear_difference_W_m2_sr": -4.852061145255886e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2024-11-30",
+          "Marana-2024-11-30"
+        ],
+        "utc": "2024-11-30T21:30:00Z",
+        "night": "2024-11-30",
+        "observed_mag_difference": -0.010812652048795002,
+        "observed_linear_difference_W_m2_sr": 2.6534537240661685e-08,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.08758679550674842,
+            "artificial_linear_difference_W_m2_sr": -1.1771273858253346e-07
+          },
+          "regional": {
+            "mag_difference": 0.12688847944810888,
+            "artificial_linear_difference_W_m2_sr": -1.7111777458617426e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.06933537472136209,
+            "artificial_linear_difference_W_m2_sr": -9.44879794666094e-08
+          }
+        }
+      },
+      {
+        "keys": [
+          "Cattignano-2024-11-30",
+          "Marana-2024-11-30"
+        ],
+        "utc": "2024-11-30T21:30:00Z",
+        "night": "2024-11-30",
+        "observed_mag_difference": -0.30414852479938403,
+        "observed_linear_difference_W_m2_sr": 8.571354981036625e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": -0.23814720854367621,
+            "artificial_linear_difference_W_m2_sr": 3.725028608169306e-07
+          },
+          "regional": {
+            "mag_difference": -0.19732418766147575,
+            "artificial_linear_difference_W_m2_sr": 3.0920477993726876e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": -0.24731328274267028,
+            "artificial_linear_difference_W_m2_sr": 3.907181350589792e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Cattignano-2024-12-01",
+          "Marana-2024-12-01"
+        ],
+        "utc": "2024-12-01T22:30:00Z",
+        "night": "2024-12-01",
+        "observed_mag_difference": -0.333569721912486,
+        "observed_linear_difference_W_m2_sr": 8.42154109408036e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": -0.23814720854367621,
+            "artificial_linear_difference_W_m2_sr": 3.725028608169306e-07
+          },
+          "regional": {
+            "mag_difference": -0.22032743236628605,
+            "artificial_linear_difference_W_m2_sr": 3.4393806508230346e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": -0.23217487911749757,
+            "artificial_linear_difference_W_m2_sr": 3.65359331813405e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2024-12-30",
+          "Cattignano-2024-12-30"
+        ],
+        "utc": "2024-12-30T22:30:00Z",
+        "night": "2024-12-30",
+        "observed_mag_difference": 0.2699692992999836,
+        "observed_linear_difference_W_m2_sr": -7.455586927030788e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.32573400405042463,
+            "artificial_linear_difference_W_m2_sr": -4.90215599399464e-07
+          },
+          "regional": {
+            "mag_difference": 0.2895659464946867,
+            "artificial_linear_difference_W_m2_sr": -4.354486794709577e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.3041645045215873,
+            "artificial_linear_difference_W_m2_sr": -4.5593210405401555e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2024-12-30",
+          "Marana-2024-12-30"
+        ],
+        "utc": "2024-12-30T22:30:00Z",
+        "night": "2024-12-30",
+        "observed_mag_difference": -0.057508639063563294,
+        "observed_linear_difference_W_m2_sr": 1.3625031098057532e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.08758679550674842,
+            "artificial_linear_difference_W_m2_sr": -1.1771273858253346e-07
+          },
+          "regional": {
+            "mag_difference": 0.083581197913702,
+            "artificial_linear_difference_W_m2_sr": -1.1400450276150572e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.05985678185069787,
+            "artificial_linear_difference_W_m2_sr": -7.992436833966355e-08
+          }
+        }
+      },
+      {
+        "keys": [
+          "Cattignano-2024-12-30",
+          "Marana-2024-12-30"
+        ],
+        "utc": "2024-12-30T22:30:00Z",
+        "night": "2024-12-30",
+        "observed_mag_difference": -0.3274779383635469,
+        "observed_linear_difference_W_m2_sr": 8.818090036836542e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": -0.23814720854367621,
+            "artificial_linear_difference_W_m2_sr": 3.725028608169306e-07
+          },
+          "regional": {
+            "mag_difference": -0.2059847485809847,
+            "artificial_linear_difference_W_m2_sr": 3.21444176709452e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": -0.2443077226708894,
+            "artificial_linear_difference_W_m2_sr": 3.76007735714352e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2025-02-02",
+          "Cattignano-2025-02-02"
+        ],
+        "utc": "2025-02-02T23:30:00Z",
+        "night": "2025-02-02",
+        "observed_mag_difference": 0.29917030967684255,
+        "observed_linear_difference_W_m2_sr": -6.609914741420374e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.335643508574595,
+            "artificial_linear_difference_W_m2_sr": -5.113076754043844e-07
+          },
+          "regional": {
+            "mag_difference": 0.3270095317595896,
+            "artificial_linear_difference_W_m2_sr": -4.977277537811027e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.3170686381772079,
+            "artificial_linear_difference_W_m2_sr": -4.870929032676976e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2025-02-20",
+          "Cattignano-2025-02-20"
+        ],
+        "utc": "2025-02-20T21:30:00Z",
+        "night": "2025-02-20",
+        "observed_mag_difference": 0.5248043310856403,
+        "observed_linear_difference_W_m2_sr": -1.439374480880519e-06,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.335643508574595,
+            "artificial_linear_difference_W_m2_sr": -5.113076754043844e-07
+          },
+          "regional": {
+            "mag_difference": 0.34091231360651264,
+            "artificial_linear_difference_W_m2_sr": -5.179324237070856e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.34444931700273784,
+            "artificial_linear_difference_W_m2_sr": -5.441117601172626e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2025-02-20",
+          "Marana-2025-02-20"
+        ],
+        "utc": "2025-02-20T21:30:00Z",
+        "night": "2025-02-20",
+        "observed_mag_difference": -0.010092626115440595,
+        "observed_linear_difference_W_m2_sr": 2.1428072131994056e-08,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.10119117492231666,
+            "artificial_linear_difference_W_m2_sr": -1.3787497214895947e-07
+          },
+          "regional": {
+            "mag_difference": 0.11502533279919547,
+            "artificial_linear_difference_W_m2_sr": -1.5691591647437748e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.10318192890976619,
+            "artificial_linear_difference_W_m2_sr": -1.452969905491e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Cattignano-2025-02-20",
+          "Marana-2025-02-20"
+        ],
+        "utc": "2025-02-20T21:30:00Z",
+        "night": "2025-02-20",
+        "observed_mag_difference": -0.5348969572010809,
+        "observed_linear_difference_W_m2_sr": 1.4608025530125131e-06,
+        "predicted": {
+          "standard": {
+            "mag_difference": -0.23445233365227836,
+            "artificial_linear_difference_W_m2_sr": 3.7343270325542494e-07
+          },
+          "regional": {
+            "mag_difference": -0.22588698080731717,
+            "artificial_linear_difference_W_m2_sr": 3.610165072327081e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": -0.24126738809297166,
+            "artificial_linear_difference_W_m2_sr": 3.988147695681626e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2025-03-19",
+          "Cattignano-2025-03-19"
+        ],
+        "utc": "2025-03-19T21:30:00Z",
+        "night": "2025-03-19",
+        "observed_mag_difference": 0.4433668834896132,
+        "observed_linear_difference_W_m2_sr": -1.1629973398825775e-06,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.335643508574595,
+            "artificial_linear_difference_W_m2_sr": -5.113076754043844e-07
+          },
+          "regional": {
+            "mag_difference": 0.3376859207179699,
+            "artificial_linear_difference_W_m2_sr": -5.119555439284311e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.34807703091250985,
+            "artificial_linear_difference_W_m2_sr": -5.357462646775693e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2025-03-19",
+          "Marana-2025-03-19"
+        ],
+        "utc": "2025-03-19T21:30:00Z",
+        "night": "2025-03-19",
+        "observed_mag_difference": -0.01582188580507804,
+        "observed_linear_difference_W_m2_sr": 3.3360032229672725e-08,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.10119117492231666,
+            "artificial_linear_difference_W_m2_sr": -1.3787497214895947e-07
+          },
+          "regional": {
+            "mag_difference": 0.11447711825531215,
+            "artificial_linear_difference_W_m2_sr": -1.5604445166672956e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.10346817913968565,
+            "artificial_linear_difference_W_m2_sr": -1.4173427927972638e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Cattignano-2025-03-19",
+          "Marana-2025-03-19"
+        ],
+        "utc": "2025-03-19T21:30:00Z",
+        "night": "2025-03-19",
+        "observed_mag_difference": -0.4591887692946912,
+        "observed_linear_difference_W_m2_sr": 1.1963573721122503e-06,
+        "predicted": {
+          "standard": {
+            "mag_difference": -0.23445233365227836,
+            "artificial_linear_difference_W_m2_sr": 3.7343270325542494e-07
+          },
+          "regional": {
+            "mag_difference": -0.22320880246265773,
+            "artificial_linear_difference_W_m2_sr": 3.559110922617016e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": -0.2446088517728242,
+            "artificial_linear_difference_W_m2_sr": 3.940119853978429e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2025-04-21",
+          "Marana-2025-04-21"
+        ],
+        "utc": "2025-04-22T00:30:00Z",
+        "night": "2025-04-21",
+        "observed_mag_difference": -0.014860380846563714,
+        "observed_linear_difference_W_m2_sr": 2.9002924528799437e-08,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.10119117492231666,
+            "artificial_linear_difference_W_m2_sr": -1.3787497214895947e-07
+          },
+          "regional": {
+            "mag_difference": 0.1147377222458914,
+            "artificial_linear_difference_W_m2_sr": -1.5408711184646297e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.09421870914814434,
+            "artificial_linear_difference_W_m2_sr": -1.3434370743648092e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2025-12-12",
+          "Marana-2025-12-12"
+        ],
+        "utc": "2025-12-12T22:30:00Z",
+        "night": "2025-12-12",
+        "observed_mag_difference": -0.044142577262491045,
+        "observed_linear_difference_W_m2_sr": 1.107735668973194e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.10119117492231666,
+            "artificial_linear_difference_W_m2_sr": -1.3787497214895947e-07
+          },
+          "regional": {
+            "mag_difference": 0.0766689227548234,
+            "artificial_linear_difference_W_m2_sr": -1.0411410561252554e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.09648481012873233,
+            "artificial_linear_difference_W_m2_sr": -1.350552067351883e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2025-12-12",
+          "Montebaldo-2025-12-12"
+        ],
+        "utc": "2025-12-12T22:30:00Z",
+        "night": "2025-12-12",
+        "observed_mag_difference": -0.24082726612290273,
+        "observed_linear_difference_W_m2_sr": 5.53104503896748e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": -0.07008879988868344,
+            "artificial_linear_difference_W_m2_sr": 8.82375946998478e-08
+          },
+          "regional": {
+            "mag_difference": -0.052077459161672834,
+            "artificial_linear_difference_W_m2_sr": 6.664109496215046e-08
+          },
+          "spatial_vertical": {
+            "mag_difference": -0.11129542883485044,
+            "artificial_linear_difference_W_m2_sr": 1.4158619048719348e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Marana-2025-12-12",
+          "Montebaldo-2025-12-12"
+        ],
+        "utc": "2025-12-12T22:30:00Z",
+        "night": "2025-12-12",
+        "observed_mag_difference": -0.19668468886041168,
+        "observed_linear_difference_W_m2_sr": 4.423309369994287e-07,
+        "predicted": {
+          "standard": {
+            "mag_difference": -0.1712799748110001,
+            "artificial_linear_difference_W_m2_sr": 2.2611256684880726e-07
+          },
+          "regional": {
+            "mag_difference": -0.12874638191649623,
+            "artificial_linear_difference_W_m2_sr": 1.70755200574676e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": -0.20778023896358278,
+            "artificial_linear_difference_W_m2_sr": 2.766413972223818e-07
+          }
+        }
+      },
+      {
+        "keys": [
+          "Campofontana-2026-04-06",
+          "Marana-2026-04-06"
+        ],
+        "utc": "2026-04-06T21:30:00Z",
+        "night": "2026-04-06",
+        "observed_mag_difference": 0.025694758003872664,
+        "observed_linear_difference_W_m2_sr": -5.307137397633885e-08,
+        "predicted": {
+          "standard": {
+            "mag_difference": 0.10753194845522174,
+            "artificial_linear_difference_W_m2_sr": -1.4456241935322969e-07
+          },
+          "regional": {
+            "mag_difference": 0.10614336243160238,
+            "artificial_linear_difference_W_m2_sr": -1.4072150490241986e-07
+          },
+          "spatial_vertical": {
+            "mag_difference": 0.10441254583020765,
+            "artificial_linear_difference_W_m2_sr": -1.4644145453455774e-07
+          }
+        }
+      }
+    ]
+  }
+}
