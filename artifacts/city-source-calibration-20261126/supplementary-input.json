@@ -1,0 +1,2746 @@
+{
+  "counts": {
+    "Arcugnano": {
+      "weather_hours": 90,
+      "no_complete_NASA_map_hours": 3,
+      "selected_nights": 30,
+      "nights_without_matching_CAMS": 3
+    },
+    "Galzignano": {
+      "weather_hours": 23,
+      "selected_nights": 6
+    },
+    "Piadera": {
+      "weather_hours": 37,
+      "selected_nights": 16,
+      "nights_without_matching_CAMS": 2
+    },
+    "Arson": {
+      "weather_hours": 8,
+      "selected_nights": 2,
+      "nights_without_matching_CAMS": 1
+    }
+  },
+  "cases": {
+    "Arcugnano-2024-04-06": {
+      "sun_max": -29.43414418528474,
+      "moon_max": -49.75912454185391,
+      "weather_max_cloud": 15,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 75,
+      "qualified_metar": true,
+      "spread": 0.12769999999999726,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2024-04-06",
+      "utc": "2024-04-06T21:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2024-04",
+      "band": "SQM",
+      "magnitude": 19.10864915332269,
+      "readings": 12,
+      "cloud_pct": 15,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.12743921585019696,
+      "native_times_utc": [
+        "2024-04-06T21:00",
+        "2024-04-07T00:00"
+      ],
+      "native_time_weight": 0.16666666666666666,
+      "sqm_file": "SQM_IT_Arcugnano-202404.dat"
+    },
+    "Arcugnano-2024-04-08": {
+      "sun_max": -28.826529257347943,
+      "moon_max": -28.220412978374014,
+      "weather_max_cloud": 11,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 89,
+      "qualified_metar": true,
+      "spread": 0.10169999999999746,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2024-04-08",
+      "utc": "2024-04-08T21:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2024-04",
+      "band": "SQM",
+      "magnitude": 18.94289769892997,
+      "readings": 12,
+      "cloud_pct": 11,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.35537417040657954,
+      "native_times_utc": [
+        "2024-04-08T21:00",
+        "2024-04-09T00:00"
+      ],
+      "native_time_weight": 0.16666666666666666,
+      "sqm_file": "SQM_IT_Arcugnano-202404.dat"
+    },
+    "Arcugnano-2024-04-11": {
+      "sun_max": -34.771198989668754,
+      "moon_max": -8.754363432430265,
+      "weather_max_cloud": 0,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 77,
+      "qualified_metar": true,
+      "spread": 0.07570000000000476,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2024-04-11",
+      "utc": "2024-04-11T23:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2024-04",
+      "band": "SQM",
+      "magnitude": 18.79995491994696,
+      "readings": 12,
+      "cloud_pct": 0,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.21837821100598073,
+      "native_times_utc": [
+        "2024-04-11T21:00",
+        "2024-04-12T00:00"
+      ],
+      "native_time_weight": 0.8333333333333334,
+      "sqm_file": "SQM_IT_Arcugnano-202404.dat"
+    },
+    "Arcugnano-2024-04-12": {
+      "sun_max": -30.414413543133158,
+      "moon_max": -6.695675698129616,
+      "weather_max_cloud": 0,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 86,
+      "qualified_metar": true,
+      "spread": 0.06040000000000134,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2024-04-12",
+      "utc": "2024-04-13T00:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2024-04",
+      "band": "SQM",
+      "magnitude": 19.64501338075828,
+      "readings": 12,
+      "cloud_pct": 0,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.10951795598798258,
+      "native_times_utc": [
+        "2024-04-13T00:00",
+        "2024-04-13T03:00"
+      ],
+      "native_time_weight": 0.16666666666666666,
+      "sqm_file": "SQM_IT_Arcugnano-202404.dat"
+    },
+    "Arcugnano-2024-05-04": {
+      "sun_max": -23.370026720384107,
+      "moon_max": -16.83089881133896,
+      "weather_max_cloud": 13,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 83,
+      "qualified_metar": true,
+      "spread": 0.12139999999999773,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2024-05-04",
+      "utc": "2024-05-05T00:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2024-05",
+      "band": "SQM",
+      "magnitude": 19.753320699640284,
+      "readings": 12,
+      "cloud_pct": 13,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.09986486368651844,
+      "native_times_utc": [
+        "2024-05-05T00:00",
+        "2024-05-05T03:00"
+      ],
+      "native_time_weight": 0.16666666666666666,
+      "sqm_file": "SQM_IT_Arcugnano-202405.dat"
+    },
+    "Arcugnano-2024-07-04": {
+      "sun_max": -21.09751575150345,
+      "moon_max": -14.14357459566177,
+      "weather_max_cloud": 5,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 80,
+      "qualified_metar": true,
+      "spread": 0.025600000000000733,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2024-07-04",
+      "utc": "2024-07-04T23:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2024-07",
+      "band": "SQM",
+      "magnitude": 19.596958132106153,
+      "readings": 12,
+      "cloud_pct": 5,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.12595482873935393,
+      "native_times_utc": [
+        "2024-07-04T21:00",
+        "2024-07-05T00:00"
+      ],
+      "native_time_weight": 0.8333333333333334,
+      "sqm_file": "SQM_IT_Arcugnano-202407.dat"
+    },
+    "Arcugnano-2024-07-08": {
+      "sun_max": -18.413771032650722,
+      "moon_max": -23.185771790747765,
+      "weather_max_cloud": 9,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 85,
+      "qualified_metar": true,
+      "spread": 0.05000000000000071,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2024-07-08",
+      "utc": "2024-07-09T00:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2024-07",
+      "band": "SQM",
+      "magnitude": 19.57591720621929,
+      "readings": 12,
+      "cloud_pct": 9,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.20819161333200994,
+      "native_times_utc": [
+        "2024-07-09T00:00",
+        "2024-07-09T03:00"
+      ],
+      "native_time_weight": 0.16666666666666666,
+      "sqm_file": "SQM_IT_Arcugnano-202407.dat"
+    },
+    "Arcugnano-2024-07-10": {
+      "sun_max": -21.812298814817787,
+      "moon_max": -14.271444933134644,
+      "weather_max_cloud": 12,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 69,
+      "qualified_metar": true,
+      "spread": 0.022700000000000387,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2024-07-10",
+      "utc": "2024-07-10T23:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2024-07",
+      "band": "SQM",
+      "magnitude": 19.5634318730822,
+      "readings": 12,
+      "cloud_pct": 12,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.2488603350840022,
+      "native_times_utc": [
+        "2024-07-10T21:00",
+        "2024-07-11T00:00"
+      ],
+      "native_time_weight": 0.8333333333333334,
+      "sqm_file": "SQM_IT_Arcugnano-202407.dat"
+    },
+    "Arcugnano-2024-08-30": {
+      "sun_max": -28.112806445321148,
+      "moon_max": -19.840267827467496,
+      "weather_max_cloud": 14,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 64,
+      "qualified_metar": true,
+      "spread": 0.029999999999997584,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2024-08-30",
+      "utc": "2024-08-30T21:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2024-08",
+      "band": "SQM",
+      "magnitude": 19.295710534951677,
+      "readings": 12,
+      "cloud_pct": 14,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.19847874021513626,
+      "native_times_utc": [
+        "2024-08-30T21:00",
+        "2024-08-31T00:00"
+      ],
+      "native_time_weight": 0.16666666666666666,
+      "sqm_file": "SQM_IT_Arcugnano-202408.dat"
+    },
+    "Arcugnano-2024-11-30": {
+      "sun_max": -55.551376723889845,
+      "moon_max": -61.97387742028117,
+      "weather_max_cloud": 7,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 92,
+      "qualified_metar": true,
+      "spread": 0.022700000000000387,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2024-11-30",
+      "utc": "2024-11-30T21:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2024-11",
+      "band": "SQM",
+      "magnitude": 19.468293197134845,
+      "readings": 12,
+      "cloud_pct": 7,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.03860158597735397,
+      "native_times_utc": [
+        "2024-11-30T21:00",
+        "2024-12-01T00:00"
+      ],
+      "native_time_weight": 0.16666666666666666,
+      "sqm_file": "SQM_IT_Arcugnano-202411.dat"
+    },
+    "Arcugnano-2024-12-01": {
+      "sun_max": -63.17349590288067,
+      "moon_max": -64.69244766363121,
+      "weather_max_cloud": 0,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 83,
+      "qualified_metar": true,
+      "spread": 0.04829999999999757,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2024-12-01",
+      "utc": "2024-12-01T22:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2024-12",
+      "band": "SQM",
+      "magnitude": 19.56315143026599,
+      "readings": 12,
+      "cloud_pct": 0,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.048015584762521345,
+      "native_times_utc": [
+        "2024-12-01T21:00",
+        "2024-12-02T00:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Arcugnano-202412.dat"
+    },
+    "Arcugnano-2024-12-26": {
+      "sun_max": -63.12628326992742,
+      "moon_max": -45.59698410321146,
+      "weather_max_cloud": 0,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 74,
+      "qualified_metar": true,
+      "spread": 0.02930000000000277,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2024-12-26",
+      "utc": "2024-12-26T22:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2024-12",
+      "band": "SQM",
+      "magnitude": 19.497184952229546,
+      "readings": 12,
+      "cloud_pct": 0,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.04143603332466363,
+      "native_times_utc": [
+        "2024-12-26T21:00",
+        "2024-12-27T00:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Arcugnano-202412.dat"
+    },
+    "Arcugnano-2024-12-28": {
+      "sun_max": -62.925376971126155,
+      "moon_max": -64.98801304877531,
+      "weather_max_cloud": 0,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 81,
+      "qualified_metar": true,
+      "spread": 0.028999999999999915,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2024-12-28",
+      "utc": "2024-12-28T22:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2024-12",
+      "band": "SQM",
+      "magnitude": 19.494105582852043,
+      "readings": 12,
+      "cloud_pct": 0,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.03899796867406195,
+      "native_times_utc": [
+        "2024-12-28T21:00",
+        "2024-12-29T00:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Arcugnano-202412.dat"
+    },
+    "Arcugnano-2024-12-29": {
+      "sun_max": -62.81520249776586,
+      "moon_max": -71.80125361665037,
+      "weather_max_cloud": 0,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 86,
+      "qualified_metar": true,
+      "spread": 0.03270000000000195,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2024-12-29",
+      "utc": "2024-12-29T22:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2024-12",
+      "band": "SQM",
+      "magnitude": 19.496561470465128,
+      "readings": 12,
+      "cloud_pct": 0,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.04573928735215312,
+      "native_times_utc": [
+        "2024-12-29T21:00",
+        "2024-12-30T00:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Arcugnano-202412.dat"
+    },
+    "Arcugnano-2024-12-30": {
+      "sun_max": -62.69870394047369,
+      "moon_max": -67.14060245780753,
+      "weather_max_cloud": 0,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 81,
+      "qualified_metar": true,
+      "spread": 0.028999999999999915,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2024-12-30",
+      "utc": "2024-12-30T22:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2024-12",
+      "band": "SQM",
+      "magnitude": 19.533854316031956,
+      "readings": 12,
+      "cloud_pct": 0,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.05712609697918345,
+      "native_times_utc": [
+        "2024-12-30T21:00",
+        "2024-12-31T00:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Arcugnano-202412.dat"
+    },
+    "Arcugnano-2025-02-04": {
+      "sun_max": -46.5663325078481,
+      "moon_max": -8.27265192136778,
+      "weather_max_cloud": 2,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 93,
+      "qualified_metar": true,
+      "spread": 0.028999999999999915,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2025-02-04",
+      "utc": "2025-02-05T01:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2025-02",
+      "band": "SQM",
+      "magnitude": 19.60743760830994,
+      "readings": 12,
+      "cloud_pct": 2,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.051082629585325036,
+      "native_times_utc": [
+        "2025-02-05T00:00",
+        "2025-02-05T03:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Arcugnano-202502.dat"
+    },
+    "Arcugnano-2025-03-01": {
+      "sun_max": -39.28691549899983,
+      "moon_max": -38.9750404310048,
+      "weather_max_cloud": 13,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 73,
+      "qualified_metar": true,
+      "spread": 0.002700000000000813,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2025-03-01",
+      "utc": "2025-03-02T01:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2025-03",
+      "band": "SQM",
+      "magnitude": 19.599914095433206,
+      "readings": 12,
+      "cloud_pct": 13,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.12686443099631936,
+      "native_times_utc": [
+        "2025-03-02T00:00",
+        "2025-03-02T03:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Arcugnano-202503.dat"
+    },
+    "Arcugnano-2025-03-02": {
+      "sun_max": -50.610782955866085,
+      "moon_max": -22.560719165011466,
+      "weather_max_cloud": 0,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 88,
+      "qualified_metar": true,
+      "spread": 0.06169999999999831,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2025-03-02",
+      "utc": "2025-03-02T23:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2025-03",
+      "band": "SQM",
+      "magnitude": 19.527523572558763,
+      "readings": 12,
+      "cloud_pct": 0,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.056130206547548925,
+      "native_times_utc": [
+        "2025-03-02T21:00",
+        "2025-03-03T00:00"
+      ],
+      "native_time_weight": 0.8333333333333334,
+      "sqm_file": "SQM_IT_Arcugnano-202503.dat"
+    },
+    "Arcugnano-2025-03-03": {
+      "sun_max": -50.22294894251902,
+      "moon_max": -10.621853029943013,
+      "weather_max_cloud": 0,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 88,
+      "qualified_metar": true,
+      "spread": 0.07560000000000144,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2025-03-03",
+      "utc": "2025-03-03T23:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2025-03",
+      "band": "SQM",
+      "magnitude": 19.575099390417193,
+      "readings": 12,
+      "cloud_pct": 0,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.05695002313777478,
+      "native_times_utc": [
+        "2025-03-03T21:00",
+        "2025-03-04T00:00"
+      ],
+      "native_time_weight": 0.8333333333333334,
+      "sqm_file": "SQM_IT_Arcugnano-202503.dat"
+    },
+    "Arcugnano-2025-03-04": {
+      "sun_max": -38.24283322097249,
+      "moon_max": -13.582635273273596,
+      "weather_max_cloud": 0,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 79,
+      "qualified_metar": true,
+      "spread": 0.016600000000000392,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2025-03-04",
+      "utc": "2025-03-05T01:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2025-03",
+      "band": "SQM",
+      "magnitude": 19.641975210659428,
+      "readings": 12,
+      "cloud_pct": 0,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.0649017009231588,
+      "native_times_utc": [
+        "2025-03-05T00:00",
+        "2025-03-05T03:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Arcugnano-202503.dat"
+    },
+    "Arcugnano-2025-03-19": {
+      "sun_max": -35.04327070018938,
+      "moon_max": -10.8608430754617,
+      "weather_max_cloud": 0,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 74,
+      "qualified_metar": true,
+      "spread": 0.062400000000003786,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2025-03-19",
+      "utc": "2025-03-19T21:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2025-03",
+      "band": "SQM",
+      "magnitude": 19.32101100384735,
+      "readings": 12,
+      "cloud_pct": 0,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.07626472221167649,
+      "native_times_utc": [
+        "2025-03-19T21:00",
+        "2025-03-20T00:00"
+      ],
+      "native_time_weight": 0.16666666666666666,
+      "sqm_file": "SQM_IT_Arcugnano-202503.dat"
+    },
+    "Arcugnano-2025-05-30": {
+      "sun_max": -18.207265769660072,
+      "moon_max": -10.663124369807493,
+      "weather_max_cloud": 14,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 86,
+      "qualified_metar": true,
+      "spread": 0.0070000000000014495,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2025-05-30",
+      "utc": "2025-05-31T00:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2025-05",
+      "band": "SQM",
+      "magnitude": 19.561994251667187,
+      "readings": 12,
+      "cloud_pct": 14,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.11071594707740123,
+      "native_times_utc": [
+        "2025-05-31T00:00",
+        "2025-05-31T03:00"
+      ],
+      "native_time_weight": 0.16666666666666666,
+      "sqm_file": "SQM_IT_Arcugnano-202505.dat"
+    },
+    "Arcugnano-2025-08-29": {
+      "sun_max": -27.670614165116532,
+      "moon_max": -8.376994902756437,
+      "weather_max_cloud": 3,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 86,
+      "qualified_metar": true,
+      "spread": 0.03200000000000003,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2025-08-29",
+      "utc": "2025-08-29T21:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2025-08",
+      "band": "SQM",
+      "magnitude": 19.579096393983832,
+      "readings": 12,
+      "cloud_pct": 3,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.12255823662169733,
+      "native_times_utc": [
+        "2025-08-29T21:00",
+        "2025-08-30T00:00"
+      ],
+      "native_time_weight": 0.16666666666666666,
+      "sqm_file": "SQM_IT_Arcugnano-202508.dat"
+    },
+    "Arcugnano-2025-09-02": {
+      "sun_max": -31.85195629449573,
+      "moon_max": -8.350764315802943,
+      "weather_max_cloud": 11,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 93,
+      "qualified_metar": true,
+      "spread": 0.019999999999999574,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2025-09-02",
+      "utc": "2025-09-03T00:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2025-09",
+      "band": "SQM",
+      "magnitude": 19.671629535780546,
+      "readings": 12,
+      "cloud_pct": 11,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.14099098307067082,
+      "native_times_utc": [
+        "2025-09-03T00:00",
+        "2025-09-03T03:00"
+      ],
+      "native_time_weight": 0.16666666666666666,
+      "sqm_file": "SQM_IT_Arcugnano-202509.dat"
+    },
+    "Arcugnano-2025-09-03": {
+      "sun_max": -25.48750344125076,
+      "moon_max": -7.424115851729156,
+      "weather_max_cloud": 2,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 89,
+      "qualified_metar": true,
+      "spread": 0.019999999999999574,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2025-09-03",
+      "utc": "2025-09-04T01:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2025-09",
+      "band": "SQM",
+      "magnitude": 19.66887855382154,
+      "readings": 12,
+      "cloud_pct": 2,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.09357055810897019,
+      "native_times_utc": [
+        "2025-09-04T00:00",
+        "2025-09-04T03:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Arcugnano-202509.dat"
+    },
+    "Arcugnano-2025-10-01": {
+      "sun_max": -40.97100092871347,
+      "moon_max": -8.91586248543617,
+      "weather_max_cloud": 12,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 85,
+      "qualified_metar": true,
+      "spread": 0.01899999999999835,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2025-10-01",
+      "utc": "2025-10-02T00:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2025-10",
+      "band": "SQM",
+      "magnitude": 19.630799029019563,
+      "readings": 12,
+      "cloud_pct": 12,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.10831139940744053,
+      "native_times_utc": [
+        "2025-10-02T00:00",
+        "2025-10-02T03:00"
+      ],
+      "native_time_weight": 0.16666666666666666,
+      "sqm_file": "SQM_IT_Arcugnano-202510.dat"
+    },
+    "Arcugnano-2025-12-12": {
+      "sun_max": -63.74142698492867,
+      "moon_max": -12.922552687452761,
+      "weather_max_cloud": 0,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 87,
+      "qualified_metar": true,
+      "spread": 0.01829999999999643,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2025-12-12",
+      "utc": "2025-12-12T22:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2025-12",
+      "band": "SQM",
+      "magnitude": 19.479711315335642,
+      "readings": 12,
+      "cloud_pct": 0,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.07394915250278135,
+      "native_times_utc": [
+        "2025-12-12T21:00",
+        "2025-12-13T00:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Arcugnano-202512.dat"
+    },
+    "Arcugnano-2025-12-13": {
+      "sun_max": -55.78270807541885,
+      "moon_max": -33.20959403188383,
+      "weather_max_cloud": 0,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 87,
+      "qualified_metar": true,
+      "spread": 0.01899999999999835,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2025-12-13",
+      "utc": "2025-12-13T21:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2025-12",
+      "band": "SQM",
+      "magnitude": 19.441314261753686,
+      "readings": 12,
+      "cloud_pct": 0,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.051898210349801244,
+      "native_times_utc": [
+        "2025-12-13T21:00",
+        "2025-12-14T00:00"
+      ],
+      "native_time_weight": 0.16666666666666666,
+      "sqm_file": "SQM_IT_Arcugnano-202512.dat"
+    },
+    "Arcugnano-2026-04-06": {
+      "sun_max": -29.584168187146823,
+      "moon_max": -8.607701673959046,
+      "weather_max_cloud": 3,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 81,
+      "qualified_metar": true,
+      "spread": 0.08430000000000248,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2026-04-06",
+      "utc": "2026-04-06T21:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2026-04",
+      "band": "SQM",
+      "magnitude": 19.18520169256554,
+      "readings": 12,
+      "cloud_pct": 3,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.1454650946108874,
+      "native_times_utc": [
+        "2026-04-06T21:00",
+        "2026-04-07T00:00"
+      ],
+      "native_time_weight": 0.16666666666666666,
+      "sqm_file": "SQM_IT_Arcugnano-202604.dat"
+    },
+    "Arcugnano-2026-04-07": {
+      "sun_max": -34.73544175289049,
+      "moon_max": -8.107660937155044,
+      "weather_max_cloud": 1,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 85,
+      "qualified_metar": true,
+      "spread": 0.055299999999995464,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2026-04-07",
+      "utc": "2026-04-07T22:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2026-04",
+      "band": "SQM",
+      "magnitude": 19.297215569239874,
+      "readings": 12,
+      "cloud_pct": 1,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.11591767361862283,
+      "native_times_utc": [
+        "2026-04-07T21:00",
+        "2026-04-08T00:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Arcugnano-202604.dat"
+    },
+    "Arson-2025-10-27": {
+      "sun_max": -54.96539252075053,
+      "moon_max": -21.349171248063623,
+      "weather_max_cloud": 5,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 88,
+      "qualified_metar": true,
+      "spread": 0.09600000000000009,
+      "closest_reference_city": "Treviso",
+      "reference_city_km": 51.46555177930717,
+      "site": "SQM_IT_Arson",
+      "night": "2025-10-27",
+      "utc": "2025-10-27T22:30:00Z",
+      "position": [
+        46.07315,
+        11.92761,
+        520.0
+      ],
+      "map_period": "2025-10",
+      "band": "SQM",
+      "magnitude": 20.773540611671645,
+      "readings": 12,
+      "cloud_pct": 5,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.0524385037287133,
+      "native_times_utc": [
+        "2025-10-27T21:00",
+        "2025-10-28T00:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Arson-202510.dat"
+    },
+    "Arson-2025-12-13": {
+      "sun_max": -63.45175186983036,
+      "moon_max": -23.323717104480526,
+      "weather_max_cloud": 0,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 76,
+      "qualified_metar": true,
+      "spread": 0.0400000000000027,
+      "closest_reference_city": "Treviso",
+      "reference_city_km": 51.46555177930717,
+      "site": "SQM_IT_Arson",
+      "night": "2025-12-13",
+      "utc": "2025-12-13T22:30:00Z",
+      "position": [
+        46.07315,
+        11.92761,
+        520.0
+      ],
+      "map_period": "2025-12",
+      "band": "SQM",
+      "magnitude": 20.581529890385493,
+      "readings": 12,
+      "cloud_pct": 0,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.051948788445598866,
+      "native_times_utc": [
+        "2025-12-13T21:00",
+        "2025-12-14T00:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Arson-202512.dat"
+    },
+    "Galzignano-2022-08-04": {
+      "sun_max": -26.9796599846823,
+      "moon_max": -13.97937737643614,
+      "weather_max_cloud": 2,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 82,
+      "qualified_metar": true,
+      "spread": 0.05100000000000193,
+      "closest_reference_city": "Padova",
+      "reference_city_km": 18.158955674802773,
+      "site": "SQM_IT_Galzignano",
+      "night": "2022-08-04",
+      "utc": "2022-08-04T23:30:00Z",
+      "position": [
+        45.31151,
+        11.69832,
+        337.0
+      ],
+      "map_period": "2022-08",
+      "band": "SQM",
+      "magnitude": 20.514476406319222,
+      "readings": 30,
+      "cloud_pct": 2,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.11485354018838424,
+      "native_times_utc": [
+        "2022-08-04T21:00",
+        "2022-08-05T00:00"
+      ],
+      "native_time_weight": 0.8333333333333334,
+      "sqm_file": "SQM_IT_Galzignano-202208.dat"
+    },
+    "Galzignano-2022-08-24": {
+      "sun_max": -26.057236469124863,
+      "moon_max": -21.154855361010938,
+      "weather_max_cloud": 10,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 76,
+      "qualified_metar": true,
+      "spread": 0.019999999999999574,
+      "closest_reference_city": "Padova",
+      "reference_city_km": 18.158955674802773,
+      "site": "SQM_IT_Galzignano",
+      "night": "2022-08-24",
+      "utc": "2022-08-24T21:30:00Z",
+      "position": [
+        45.31151,
+        11.69832,
+        337.0
+      ],
+      "map_period": "2022-08",
+      "band": "SQM",
+      "magnitude": 20.379619282094605,
+      "readings": 30,
+      "cloud_pct": 10,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.08536341805879707,
+      "native_times_utc": [
+        "2022-08-24T21:00",
+        "2022-08-25T00:00"
+      ],
+      "native_time_weight": 0.16666666666666666,
+      "sqm_file": "SQM_IT_Galzignano-202208.dat"
+    },
+    "Galzignano-2022-10-27": {
+      "sun_max": -49.25941346354173,
+      "moon_max": -37.39319020423149,
+      "weather_max_cloud": 0,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 90,
+      "qualified_metar": true,
+      "spread": 0.04100000000000037,
+      "closest_reference_city": "Padova",
+      "reference_city_km": 18.158955674802773,
+      "site": "SQM_IT_Galzignano",
+      "night": "2022-10-27",
+      "utc": "2022-10-27T21:30:00Z",
+      "position": [
+        45.31151,
+        11.69832,
+        337.0
+      ],
+      "map_period": "2022-10",
+      "band": "SQM",
+      "magnitude": 20.524544578300528,
+      "readings": 30,
+      "cloud_pct": 0,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.12791532094904962,
+      "native_times_utc": [
+        "2022-10-27T21:00",
+        "2022-10-28T00:00"
+      ],
+      "native_time_weight": 0.16666666666666666,
+      "sqm_file": "SQM_IT_Galzignano-202210.dat"
+    },
+    "Galzignano-2022-10-30": {
+      "sun_max": -50.12594778434676,
+      "moon_max": -9.913741449259039,
+      "weather_max_cloud": 10,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 88,
+      "qualified_metar": false,
+      "spread": 0.03100000000000236,
+      "closest_reference_city": "Padova",
+      "reference_city_km": 18.158955674802773,
+      "site": "SQM_IT_Galzignano",
+      "night": "2022-10-30",
+      "utc": "2022-10-30T21:30:00Z",
+      "position": [
+        45.31151,
+        11.69832,
+        337.0
+      ],
+      "map_period": "2022-10",
+      "band": "SQM",
+      "magnitude": 20.397581542883568,
+      "readings": 30,
+      "cloud_pct": 10,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.13511614580887912,
+      "native_times_utc": [
+        "2022-10-30T21:00",
+        "2022-10-31T00:00"
+      ],
+      "native_time_weight": 0.16666666666666666,
+      "sqm_file": "SQM_IT_Galzignano-202210.dat"
+    },
+    "Galzignano-2023-07-15": {
+      "sun_max": -19.431124238771115,
+      "moon_max": -6.699193060003879,
+      "weather_max_cloud": 8,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 85,
+      "qualified_metar": false,
+      "spread": 0.021000000000000796,
+      "closest_reference_city": "Padova",
+      "reference_city_km": 18.158955674802773,
+      "site": "SQM_IT_Galzignano",
+      "night": "2023-07-15",
+      "utc": "2023-07-16T00:30:00Z",
+      "position": [
+        45.31151,
+        11.69832,
+        337.0
+      ],
+      "map_period": "2023-07",
+      "band": "SQM",
+      "magnitude": 20.676950544288424,
+      "readings": 30,
+      "cloud_pct": 8,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.19977155720586273,
+      "native_times_utc": [
+        "2023-07-16T00:00",
+        "2023-07-16T03:00"
+      ],
+      "native_time_weight": 0.16666666666666666,
+      "sqm_file": "SQM_IT_Galzignano-202307.dat"
+    },
+    "Galzignano-2023-07-16": {
+      "sun_max": -22.777036249365594,
+      "moon_max": -16.268067349738764,
+      "weather_max_cloud": 14,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 87,
+      "qualified_metar": true,
+      "spread": 0.05999999999999872,
+      "closest_reference_city": "Padova",
+      "reference_city_km": 18.158955674802773,
+      "site": "SQM_IT_Galzignano",
+      "night": "2023-07-16",
+      "utc": "2023-07-16T23:30:00Z",
+      "position": [
+        45.31151,
+        11.69832,
+        337.0
+      ],
+      "map_period": "2023-07",
+      "band": "SQM",
+      "magnitude": 20.566484289955127,
+      "readings": 30,
+      "cloud_pct": 14,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.16668929873760338,
+      "native_times_utc": [
+        "2023-07-16T21:00",
+        "2023-07-17T00:00"
+      ],
+      "native_time_weight": 0.8333333333333334,
+      "sqm_file": "SQM_IT_Galzignano-202307.dat"
+    },
+    "Piadera-2023-11-15": {
+      "sun_max": -52.465863482442636,
+      "moon_max": -67.41228542923764,
+      "weather_max_cloud": 12,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 87,
+      "qualified_metar": false,
+      "spread": 0.04899999999999949,
+      "closest_reference_city": "Pordenone",
+      "reference_city_km": 27.51602275382817,
+      "site": "SQM_IT_Piadera",
+      "night": "2023-11-15",
+      "utc": "2023-11-16T00:30:00Z",
+      "position": [
+        46.01115,
+        12.31305,
+        500.0
+      ],
+      "map_period": "2023-11",
+      "band": "SQM",
+      "magnitude": 20.296440624569392,
+      "readings": 12,
+      "cloud_pct": 12,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.044595549540944336,
+      "native_times_utc": [
+        "2023-11-16T00:00",
+        "2023-11-16T03:00"
+      ],
+      "native_time_weight": 0.16666666666666666,
+      "sqm_file": "SQM_IT_Piadera-202311.dat"
+    },
+    "Piadera-2023-11-17": {
+      "sun_max": -43.71631463989349,
+      "moon_max": -58.09000077489943,
+      "weather_max_cloud": 3,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 86,
+      "qualified_metar": true,
+      "spread": 0.030000000000001137,
+      "closest_reference_city": "Pordenone",
+      "reference_city_km": 27.51602275382817,
+      "site": "SQM_IT_Piadera",
+      "night": "2023-11-17",
+      "utc": "2023-11-18T01:30:00Z",
+      "position": [
+        46.01115,
+        12.31305,
+        500.0
+      ],
+      "map_period": "2023-11",
+      "band": "SQM",
+      "magnitude": 20.3224223556183,
+      "readings": 12,
+      "cloud_pct": 3,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.02718185020426721,
+      "native_times_utc": [
+        "2023-11-18T00:00",
+        "2023-11-18T03:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Piadera-202311.dat"
+    },
+    "Piadera-2024-04-12": {
+      "sun_max": -23.159657011159613,
+      "moon_max": -12.023570941354249,
+      "weather_max_cloud": 3,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 82,
+      "qualified_metar": true,
+      "spread": 0.028999999999999915,
+      "closest_reference_city": "Pordenone",
+      "reference_city_km": 27.51602275382817,
+      "site": "SQM_IT_Piadera",
+      "night": "2024-04-12",
+      "utc": "2024-04-13T01:30:00Z",
+      "position": [
+        46.01115,
+        12.31305,
+        500.0
+      ],
+      "map_period": "2024-04",
+      "band": "SQM",
+      "magnitude": 20.405783693660563,
+      "readings": 12,
+      "cloud_pct": 3,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.10869419563683365,
+      "native_times_utc": [
+        "2024-04-13T00:00",
+        "2024-04-13T03:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Piadera-202404.dat"
+    },
+    "Piadera-2024-10-29": {
+      "sun_max": -49.825528413683024,
+      "moon_max": -46.64528670044558,
+      "weather_max_cloud": 15,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 90,
+      "qualified_metar": false,
+      "spread": 0.05000000000000071,
+      "closest_reference_city": "Pordenone",
+      "reference_city_km": 27.51602275382817,
+      "site": "SQM_IT_Piadera",
+      "night": "2024-10-29",
+      "utc": "2024-10-29T21:30:00Z",
+      "position": [
+        46.01115,
+        12.31305,
+        500.0
+      ],
+      "map_period": "2024-10",
+      "band": "SQM",
+      "magnitude": 20.15813485028419,
+      "readings": 12,
+      "cloud_pct": 15,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.09899828335802115,
+      "native_times_utc": [
+        "2024-10-29T21:00",
+        "2024-10-30T00:00"
+      ],
+      "native_time_weight": 0.16666666666666666,
+      "sqm_file": "SQM_IT_Piadera-202410.dat"
+    },
+    "Piadera-2024-11-02": {
+      "sun_max": -57.07941344397206,
+      "moon_max": -58.36961007108312,
+      "weather_max_cloud": 14,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 88,
+      "qualified_metar": true,
+      "spread": 0.0379999999999967,
+      "closest_reference_city": "Pordenone",
+      "reference_city_km": 27.51602275382817,
+      "site": "SQM_IT_Piadera",
+      "night": "2024-11-02",
+      "utc": "2024-11-02T22:30:00Z",
+      "position": [
+        46.01115,
+        12.31305,
+        500.0
+      ],
+      "map_period": "2024-11",
+      "band": "SQM",
+      "magnitude": 20.141575938511046,
+      "readings": 12,
+      "cloud_pct": 14,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.10465395097894659,
+      "native_times_utc": [
+        "2024-11-02T21:00",
+        "2024-11-03T00:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Piadera-202411.dat"
+    },
+    "Piadera-2024-11-03": {
+      "sun_max": -40.80067573823094,
+      "moon_max": -66.35385701366648,
+      "weather_max_cloud": 8,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 89,
+      "qualified_metar": true,
+      "spread": 0.019999999999999574,
+      "closest_reference_city": "Pordenone",
+      "reference_city_km": 27.51602275382817,
+      "site": "SQM_IT_Piadera",
+      "night": "2024-11-03",
+      "utc": "2024-11-04T01:30:00Z",
+      "position": [
+        46.01115,
+        12.31305,
+        500.0
+      ],
+      "map_period": "2024-11",
+      "band": "SQM",
+      "magnitude": 20.240768375917945,
+      "readings": 12,
+      "cloud_pct": 8,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.07696698454320866,
+      "native_times_utc": [
+        "2024-11-04T00:00",
+        "2024-11-04T03:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Piadera-202411.dat"
+    },
+    "Piadera-2024-11-04": {
+      "sun_max": -57.66319289330759,
+      "moon_max": -45.827416645144716,
+      "weather_max_cloud": 0,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 85,
+      "qualified_metar": false,
+      "spread": 0.028999999999999915,
+      "closest_reference_city": "Pordenone",
+      "reference_city_km": 27.51602275382817,
+      "site": "SQM_IT_Piadera",
+      "night": "2024-11-04",
+      "utc": "2024-11-04T22:30:00Z",
+      "position": [
+        46.01115,
+        12.31305,
+        500.0
+      ],
+      "map_period": "2024-11",
+      "band": "SQM",
+      "magnitude": 20.16657962333902,
+      "readings": 12,
+      "cloud_pct": 0,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.0560263417086173,
+      "native_times_utc": [
+        "2024-11-04T21:00",
+        "2024-11-05T00:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Piadera-202411.dat"
+    },
+    "Piadera-2024-11-07": {
+      "sun_max": -50.74414298661599,
+      "moon_max": -36.040571671986385,
+      "weather_max_cloud": 8,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 91,
+      "qualified_metar": false,
+      "spread": 0.019999999999999574,
+      "closest_reference_city": "Pordenone",
+      "reference_city_km": 27.51602275382817,
+      "site": "SQM_IT_Piadera",
+      "night": "2024-11-07",
+      "utc": "2024-11-08T00:30:00Z",
+      "position": [
+        46.01115,
+        12.31305,
+        500.0
+      ],
+      "map_period": "2024-11",
+      "band": "SQM",
+      "magnitude": 20.23079917051061,
+      "readings": 12,
+      "cloud_pct": 8,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.13816685252311403,
+      "native_times_utc": [
+        "2024-11-08T00:00",
+        "2024-11-08T03:00"
+      ],
+      "native_time_weight": 0.16666666666666666,
+      "sqm_file": "SQM_IT_Piadera-202411.dat"
+    },
+    "Piadera-2024-11-10": {
+      "sun_max": -42.382586065130944,
+      "moon_max": -9.742808156924065,
+      "weather_max_cloud": 1,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 65,
+      "qualified_metar": true,
+      "spread": 0.010000000000001563,
+      "closest_reference_city": "Pordenone",
+      "reference_city_km": 27.51602275382817,
+      "site": "SQM_IT_Piadera",
+      "night": "2024-11-10",
+      "utc": "2024-11-11T01:30:00Z",
+      "position": [
+        46.01115,
+        12.31305,
+        500.0
+      ],
+      "map_period": "2024-11",
+      "band": "SQM",
+      "magnitude": 20.156656422506444,
+      "readings": 12,
+      "cloud_pct": 1,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.06594992763490383,
+      "native_times_utc": [
+        "2024-11-11T00:00",
+        "2024-11-11T03:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Piadera-202411.dat"
+    },
+    "Piadera-2024-12-01": {
+      "sun_max": -63.038676350385174,
+      "moon_max": -64.81617528102389,
+      "weather_max_cloud": 0,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 67,
+      "qualified_metar": true,
+      "spread": 0.03999999999999915,
+      "closest_reference_city": "Pordenone",
+      "reference_city_km": 27.51602275382817,
+      "site": "SQM_IT_Piadera",
+      "night": "2024-12-01",
+      "utc": "2024-12-01T22:30:00Z",
+      "position": [
+        46.01115,
+        12.31305,
+        500.0
+      ],
+      "map_period": "2024-12",
+      "band": "SQM",
+      "magnitude": 20.181453237041463,
+      "readings": 12,
+      "cloud_pct": 0,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.048015584762521345,
+      "native_times_utc": [
+        "2024-12-01T21:00",
+        "2024-12-02T00:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Piadera-202412.dat"
+    },
+    "Piadera-2025-09-19": {
+      "sun_max": -41.337360975298616,
+      "moon_max": -27.19412682631606,
+      "weather_max_cloud": 15,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 91,
+      "qualified_metar": true,
+      "spread": 0.08899999999999864,
+      "closest_reference_city": "Pordenone",
+      "reference_city_km": 27.51602275382817,
+      "site": "SQM_IT_Piadera",
+      "night": "2025-09-19",
+      "utc": "2025-09-19T23:30:00Z",
+      "position": [
+        46.01115,
+        12.31305,
+        500.0
+      ],
+      "map_period": "2025-09",
+      "band": "SQM",
+      "magnitude": 20.14844709514943,
+      "readings": 12,
+      "cloud_pct": 15,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.07051592111720448,
+      "native_times_utc": [
+        "2025-09-19T21:00",
+        "2025-09-20T00:00"
+      ],
+      "native_time_weight": 0.8333333333333334,
+      "sqm_file": "SQM_IT_Piadera-202509.dat"
+    },
+    "Piadera-2025-10-01": {
+      "sun_max": -32.40825136164586,
+      "moon_max": -18.923575754523338,
+      "weather_max_cloud": 4,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 86,
+      "qualified_metar": true,
+      "spread": 0.029999999999997584,
+      "closest_reference_city": "Pordenone",
+      "reference_city_km": 27.51602275382817,
+      "site": "SQM_IT_Piadera",
+      "night": "2025-10-01",
+      "utc": "2025-10-02T01:30:00Z",
+      "position": [
+        46.01115,
+        12.31305,
+        500.0
+      ],
+      "map_period": "2025-10",
+      "band": "SQM",
+      "magnitude": 20.31325396304282,
+      "readings": 12,
+      "cloud_pct": 4,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.10186938651260727,
+      "native_times_utc": [
+        "2025-10-02T00:00",
+        "2025-10-02T03:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Piadera-202510.dat"
+    },
+    "Piadera-2025-10-26": {
+      "sun_max": -54.02364209974621,
+      "moon_max": -40.61257389054652,
+      "weather_max_cloud": 11,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 87,
+      "qualified_metar": false,
+      "spread": 0.0,
+      "closest_reference_city": "Pordenone",
+      "reference_city_km": 27.51602275382817,
+      "site": "SQM_IT_Piadera",
+      "night": "2025-10-26",
+      "utc": "2025-10-26T23:30:00Z",
+      "position": [
+        46.01115,
+        12.31305,
+        500.0
+      ],
+      "map_period": "2025-10",
+      "band": "SQM",
+      "magnitude": 20.249992324689227,
+      "readings": 12,
+      "cloud_pct": 11,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.059789122521129424,
+      "native_times_utc": [
+        "2025-10-26T21:00",
+        "2025-10-27T00:00"
+      ],
+      "native_time_weight": 0.8333333333333334,
+      "sqm_file": "SQM_IT_Piadera-202510.dat"
+    },
+    "Piadera-2025-12-13": {
+      "sun_max": -63.65876331250385,
+      "moon_max": -23.07461945267042,
+      "weather_max_cloud": 0,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 83,
+      "qualified_metar": true,
+      "spread": 0.038999999999997925,
+      "closest_reference_city": "Pordenone",
+      "reference_city_km": 27.51602275382817,
+      "site": "SQM_IT_Piadera",
+      "night": "2025-12-13",
+      "utc": "2025-12-13T22:30:00Z",
+      "position": [
+        46.01115,
+        12.31305,
+        500.0
+      ],
+      "map_period": "2025-12",
+      "band": "SQM",
+      "magnitude": 19.985714529880664,
+      "readings": 12,
+      "cloud_pct": 0,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.051948788445598866,
+      "native_times_utc": [
+        "2025-12-13T21:00",
+        "2025-12-14T00:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Piadera-202512.dat"
+    },
+    "Piadera-2026-04-06": {
+      "sun_max": -29.529775828625556,
+      "moon_max": -8.414894163215747,
+      "weather_max_cloud": 11,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 78,
+      "qualified_metar": false,
+      "spread": 0.1269999999999989,
+      "closest_reference_city": "Pordenone",
+      "reference_city_km": 27.51602275382817,
+      "site": "SQM_IT_Piadera",
+      "night": "2026-04-06",
+      "utc": "2026-04-06T21:30:00Z",
+      "position": [
+        46.01115,
+        12.31305,
+        500.0
+      ],
+      "map_period": "2026-04",
+      "band": "SQM",
+      "magnitude": 20.004019331458544,
+      "readings": 12,
+      "cloud_pct": 11,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.1454650946108874,
+      "native_times_utc": [
+        "2026-04-06T21:00",
+        "2026-04-07T00:00"
+      ],
+      "native_time_weight": 0.16666666666666666,
+      "sqm_file": "SQM_IT_Piadera-202604.dat"
+    },
+    "Piadera-2026-04-07": {
+      "sun_max": -34.469609394117825,
+      "moon_max": -7.941707599818717,
+      "weather_max_cloud": 8,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 83,
+      "qualified_metar": true,
+      "spread": 0.048999999999995936,
+      "closest_reference_city": "Pordenone",
+      "reference_city_km": 27.51602275382817,
+      "site": "SQM_IT_Piadera",
+      "night": "2026-04-07",
+      "utc": "2026-04-07T22:30:00Z",
+      "position": [
+        46.01115,
+        12.31305,
+        500.0
+      ],
+      "map_period": "2026-04",
+      "band": "SQM",
+      "magnitude": 20.128149891097806,
+      "readings": 12,
+      "cloud_pct": 8,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.11591767361862283,
+      "native_times_utc": [
+        "2026-04-07T21:00",
+        "2026-04-08T00:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Piadera-202604.dat"
+    }
+  },
+  "maps": {
+    "2024-04": {
+      "bounds": {
+        "west": 9.6,
+        "south": 43.6,
+        "east": 14.0,
+        "north": 47.6
+      },
+      "tiles": {
+        "h18v04": {
+          "filename": "VNP46A3.A2024092.h18v04.002.2025134112426.h5",
+          "sha256": "0d75677fe24578ac64bf8bcd09cc3b1302038d9833f6ed5c93d332c229b3e837"
+        },
+        "h19v04": {
+          "filename": "VNP46A3.A2024092.h19v04.002.2025119194714.h5",
+          "sha256": "e5881d59e1184edff3a04b3ef2eec36cde9e767933fb240d367544e1e3f7e32d"
+        }
+      }
+    },
+    "2024-05": {
+      "bounds": {
+        "west": 9.6,
+        "south": 43.6,
+        "east": 14.0,
+        "north": 47.6
+      },
+      "tiles": {
+        "h18v04": {
+          "filename": "VNP46A3.A2024122.h18v04.002.2025139142320.h5",
+          "sha256": "27296afc3b1c1946153ca4b6d0ba5df38917296f7e6759cf1875a9ad58093ccb"
+        },
+        "h19v04": {
+          "filename": "VNP46A3.A2024122.h19v04.002.2025139142344.h5",
+          "sha256": "d0351b5d15c95bd82edca1ce4452bb4c8a6aff6f8f614ef25e3245c8a8835941"
+        }
+      }
+    },
+    "2024-07": {
+      "bounds": {
+        "west": 9.6,
+        "south": 43.6,
+        "east": 14.0,
+        "north": 47.6
+      },
+      "tiles": {
+        "h18v04": {
+          "filename": "VNP46A3.A2024183.h18v04.002.2025139145956.h5",
+          "sha256": "7ae61812ca7d85b65554a7fa604805805bbb703ef667c799b0c48bc61b09d4fd"
+        },
+        "h19v04": {
+          "filename": "VNP46A3.A2024183.h19v04.002.2025139150014.h5",
+          "sha256": "036e5463a90ccd009bdc8878f98cd92b3e23ef092655fb0f0b1f2dfab9eb6676"
+        }
+      }
+    },
+    "2024-08": {
+      "bounds": {
+        "west": 9.6,
+        "south": 43.6,
+        "east": 14.0,
+        "north": 47.6
+      },
+      "tiles": {
+        "h18v04": {
+          "filename": "VNP46A3.A2024214.h18v04.002.2025119201409.h5",
+          "sha256": "541085adcaebecf757ad4c5c29ddd98eb44c48902ade3319e0a2b5d05240d940"
+        },
+        "h19v04": {
+          "filename": "VNP46A3.A2024214.h19v04.002.2025119201429.h5",
+          "sha256": "c9dee617f712980aa43d11b76d95ab75b03afc0db5e14671bf95b73ea8ec6710"
+        }
+      }
+    },
+    "2024-11": {
+      "bounds": {
+        "west": 9.6,
+        "south": 43.6,
+        "east": 14.0,
+        "north": 47.6
+      },
+      "tiles": {
+        "h18v04": {
+          "filename": "VNP46A3.A2024306.h18v04.002.2025139154041.h5",
+          "sha256": "67731c6a4faefecdf21c4ef215e84e3c48c4f9aa28487091e219200eef1a4b3f"
+        },
+        "h19v04": {
+          "filename": "VNP46A3.A2024306.h19v04.002.2025139154104.h5",
+          "sha256": "c1a4d4a4c10d65e08834506e512f432268d824d8c51cbdea328abad63183daac"
+        }
+      }
+    },
+    "2024-12": {
+      "bounds": {
+        "west": 9.6,
+        "south": 43.6,
+        "east": 14.0,
+        "north": 47.6
+      },
+      "tiles": {
+        "h18v04": {
+          "filename": "VNP46A3.A2024336.h18v04.002.2025119210148.h5",
+          "sha256": "4ce6af9e2e1e705830b26103af5817a7e19ea7d284b255ea3bf19448333544b1"
+        },
+        "h19v04": {
+          "filename": "VNP46A3.A2024336.h19v04.002.2025119210209.h5",
+          "sha256": "47eaf61dd40b35972c290f8bb950c684016e75b36f2905fa6f1e5d57d31eef39"
+        }
+      }
+    },
+    "2025-02": {
+      "bounds": {
+        "west": 9.6,
+        "south": 43.6,
+        "east": 14.0,
+        "north": 47.6
+      },
+      "tiles": {
+        "h18v04": {
+          "filename": "VNP46A3.A2025032.h18v04.002.2026064130219.h5",
+          "sha256": "9eb14bf39b4f82d47df03f66e561f8c480592a8b39d78b0e9cf656e1c109032b"
+        },
+        "h19v04": {
+          "filename": "VNP46A3.A2025032.h19v04.002.2026064130337.h5",
+          "sha256": "2b3e1a05f5b043e2889703d0aa188e72398e873a6a69ec8d4102ab6c0869d5c5"
+        }
+      }
+    },
+    "2025-03": {
+      "bounds": {
+        "west": 9.6,
+        "south": 43.6,
+        "east": 14.0,
+        "north": 47.6
+      },
+      "tiles": {
+        "h18v04": {
+          "filename": "VNP46A3.A2025060.h18v04.002.2026064131537.h5",
+          "sha256": "40ef115346fc368900ffae1d9ad18359071ff5b2d59dd74254ef1ff3aed2910d"
+        },
+        "h19v04": {
+          "filename": "VNP46A3.A2025060.h19v04.002.2026064131540.h5",
+          "sha256": "2fd418a78ae2e5288a4691ef96089823e1db75b96739095b56d7e76751f0fbb6"
+        }
+      }
+    },
+    "2025-05": {
+      "bounds": {
+        "west": 9.6,
+        "south": 43.6,
+        "east": 14.0,
+        "north": 47.6
+      },
+      "tiles": {
+        "h18v04": {
+          "filename": "VNP46A3.A2025121.h18v04.002.2026064133436.h5",
+          "sha256": "06fbd238b0ae764d5b077cf806aedea3fe609e9ce4b04e499e6b8789fb4af944"
+        },
+        "h19v04": {
+          "filename": "VNP46A3.A2025121.h19v04.002.2026064133432.h5",
+          "sha256": "b335cb00ea351687addccfd4b841adb6ea47949fc4c1daa7a6c642cf5117c534"
+        }
+      }
+    },
+    "2025-08": {
+      "bounds": {
+        "west": 9.6,
+        "south": 43.6,
+        "east": 14.0,
+        "north": 47.6
+      },
+      "tiles": {
+        "h18v04": {
+          "filename": "VNP46A3.A2025213.h18v04.002.2026064135214.h5",
+          "sha256": "5439f215125c816d0af158d4ad87f858316362d66951b0d0aa258fdb8515680c"
+        },
+        "h19v04": {
+          "filename": "VNP46A3.A2025213.h19v04.002.2026064135206.h5",
+          "sha256": "b757a29c62e93b7d24f15852a74aeb0033212ee0a81479542b777c3bd5c51291"
+        }
+      }
+    },
+    "2025-09": {
+      "bounds": {
+        "west": 9.6,
+        "south": 43.6,
+        "east": 14.0,
+        "north": 47.6
+      },
+      "tiles": {
+        "h18v04": {
+          "filename": "VNP46A3.A2025244.h18v04.002.2026064140114.h5",
+          "sha256": "c61eafb0d6cda050c259d9e7799e306ab0f78ba5d00dd99749ce270386a5bb2a"
+        },
+        "h19v04": {
+          "filename": "VNP46A3.A2025244.h19v04.002.2026064140231.h5",
+          "sha256": "bec3bd204af6a91512f0bcbdc9cd410a57c69da06c0e736abc55d3fbcdf53b1f"
+        }
+      }
+    },
+    "2025-10": {
+      "bounds": {
+        "west": 9.6,
+        "south": 43.6,
+        "east": 14.0,
+        "north": 47.6
+      },
+      "tiles": {
+        "h18v04": {
+          "filename": "VNP46A3.A2025274.h18v04.002.2026064141200.h5",
+          "sha256": "3e581c5c4f25407f750a23ec182a2f9167325772cd7968aeef66e94ac4ddbf89"
+        },
+        "h19v04": {
+          "filename": "VNP46A3.A2025274.h19v04.002.2026064141200.h5",
+          "sha256": "37a2454f75fbaaad489b775b99bf9fddf2dead9d93be3a0d9374ac9edf319dd3"
+        }
+      }
+    },
+    "2025-12": {
+      "bounds": {
+        "west": 9.6,
+        "south": 43.6,
+        "east": 14.0,
+        "north": 47.6
+      },
+      "tiles": {
+        "h18v04": {
+          "filename": "VNP46A3.A2025335.h18v04.002.2026071171546.h5",
+          "sha256": "338f0e365524f2a6c8bd624702a310735955c8e58172c8ad6d53a01887d7474f"
+        },
+        "h19v04": {
+          "filename": "VNP46A3.A2025335.h19v04.002.2026071171612.h5",
+          "sha256": "24c783542083b96839e8d2b25b48252f9abfc76f14f43de1607c68abfd10d9e6"
+        }
+      }
+    },
+    "2026-04": {
+      "bounds": {
+        "west": 9.6,
+        "south": 43.6,
+        "east": 14.0,
+        "north": 47.6
+      },
+      "tiles": {
+        "h18v04": {
+          "filename": "VNP46A3.A2026091.h18v04.002.2026132234328.h5",
+          "sha256": "8749296198cf75c34fe2b24897177c53f39600975a49c22c87ca00f89508e3e5"
+        },
+        "h19v04": {
+          "filename": "VNP46A3.A2026091.h19v04.002.2026132234320.h5",
+          "sha256": "44655401602336d926e110960a50dfe1b552edc58f2d415270b5e7a24d7b1567"
+        }
+      }
+    },
+    "2022-08": {
+      "bounds": {
+        "west": 9.6,
+        "south": 43.6,
+        "east": 14.0,
+        "north": 47.6
+      },
+      "tiles": {
+        "h18v04": {
+          "filename": "VNP46A3.A2022213.h18v04.002.2025155220403.h5",
+          "sha256": "a618451d1dd9272c1cf148f9323f973e27af23d97d74eeab75a5f34626be9649"
+        },
+        "h19v04": {
+          "filename": "VNP46A3.A2022213.h19v04.002.2025155220429.h5",
+          "sha256": "2a592765a05ed6f7b2e4518c937ddfcdfad795b181f69740a133e3768ee00426"
+        }
+      }
+    },
+    "2022-10": {
+      "bounds": {
+        "west": 9.6,
+        "south": 43.6,
+        "east": 14.0,
+        "north": 47.6
+      },
+      "tiles": {
+        "h18v04": {
+          "filename": "VNP46A3.A2022274.h18v04.002.2025155195741.h5",
+          "sha256": "b45e3582542bc24b5abb9d0889d83eb4f28862c47f2cd04d1384a574d0fd0f62"
+        },
+        "h19v04": {
+          "filename": "VNP46A3.A2022274.h19v04.002.2025155195819.h5",
+          "sha256": "1641cffbd4a66d1f7d14405e4fac9dc303aec2c75d48952730106ea076cd1237"
+        }
+      }
+    },
+    "2023-07": {
+      "bounds": {
+        "west": 9.6,
+        "south": 43.6,
+        "east": 14.0,
+        "north": 47.6
+      },
+      "tiles": {
+        "h18v04": {
+          "filename": "VNP46A3.A2023182.h18v04.002.2025161113757.h5",
+          "sha256": "cabfc9c1cd6923b8cccec0ba89279a95c2c06e29787091c53dd31c7536fada14"
+        },
+        "h19v04": {
+          "filename": "VNP46A3.A2023182.h19v04.002.2025161114505.h5",
+          "sha256": "b6e65716b6b6b0b5dbe847dcc505dd8218901ab3cb72bcfac4f76946778e7364"
+        }
+      }
+    },
+    "2023-11": {
+      "bounds": {
+        "west": 9.6,
+        "south": 43.6,
+        "east": 14.0,
+        "north": 47.6
+      },
+      "tiles": {
+        "h18v04": {
+          "filename": "VNP46A3.A2023305.h18v04.002.2025161122457.h5",
+          "sha256": "9699abea4fcec74610f682737b29721af02da4ba0a5a43ea53cb4ec0ba9845d4"
+        },
+        "h19v04": {
+          "filename": "VNP46A3.A2023305.h19v04.002.2025161122319.h5",
+          "sha256": "375c26e949d1ebf0e916edaa710b9e7522d1effd53ef82b9b029fc37c249ef0e"
+        }
+      }
+    },
+    "2024-10": {
+      "bounds": {
+        "west": 9.6,
+        "south": 43.6,
+        "east": 14.0,
+        "north": 47.6
+      },
+      "tiles": {
+        "h18v04": {
+          "filename": "VNP46A3.A2024275.h18v04.002.2025119203837.h5",
+          "sha256": "2a2dfafefa27171ab9e5327f66f52849b1241ea725f2ee10a2609bb6de7977ed"
+        },
+        "h19v04": {
+          "filename": "VNP46A3.A2024275.h19v04.002.2025119203911.h5",
+          "sha256": "79922143b4ace89fa685009e7195f88b9ddb23cb0ea1ff3994e24daccad831e9"
+        }
+      }
+    }
+  },
+  "source_sha256": {
+    "flex-weather-passed.json": "67683bf226f0c68611df817b725df63f9ae21869658d29ed5133843c3b00285c",
+    "initial.json": "78432dc918ec6e654ea166e8f722386148ab3b39818801816172f389121baf9e"
+  },
+  "raw_sqm_sha256": {
+    "SQM_IT_Arcugnano-202404.dat": "f0ed21958b3b1c6af283e4b7c00396e3f45f34654188bc6c095c5fd6cb3be594",
+    "SQM_IT_Arcugnano-202405.dat": "a7d2f362189f4cd352a01d9d2b206fad9039b1f3e91b83876dd40cdd97c8ace2",
+    "SQM_IT_Arcugnano-202407.dat": "fa3ae4b91636134ff77aaa1daee99a55e99c046d3fed656a1cf10ce188bca0a3",
+    "SQM_IT_Arcugnano-202408.dat": "f82625bedb45a3933008d2a9b3dcf6b6e881d0f2f125ccbc99db0f5f304ff009",
+    "SQM_IT_Arcugnano-202411.dat": "d6141e61be8b48669ad76959747569457da3dec203ad982941a43aa5e26b3d70",
+    "SQM_IT_Arcugnano-202412.dat": "a53e613e9eb28ddcaef42db8062bda97117c2097168b18e857199404212d2deb",
+    "SQM_IT_Arcugnano-202502.dat": "e9c686ebdd0258c1a800331de14810ecf4d205e21bad4079388665d27d49afda",
+    "SQM_IT_Arcugnano-202503.dat": "ed9fb966f8df21e928be6621fb29728b19fc7ded6f1c24fa6beb8c49012784f1",
+    "SQM_IT_Arcugnano-202505.dat": "819001ab8f603f2d9eaf67ffd954c945666145df4b63fc2aa11bf988b1673866",
+    "SQM_IT_Arcugnano-202508.dat": "4cb53d94cba41ed042b2b0d493514cd50cfd693d761f6eaaa7a8c5e9c6218cce",
+    "SQM_IT_Arcugnano-202509.dat": "9535cf6e2dfb974f609f35d0a13f007bd6d2647dea23311f65b6ef4f6aef2f9f",
+    "SQM_IT_Arcugnano-202510.dat": "e5171243c1dd9bee5671325fdf8e68f2c6af3558281b0179536817cf95abf84f",
+    "SQM_IT_Arcugnano-202512.dat": "ecd0d68bab6a83f52a56d90c05e043d95628de7b41081cdd3f4858a60ed9ce36",
+    "SQM_IT_Arcugnano-202604.dat": "ba2a70c718032d15b4b35a183aef83475b369af8e58461e538495d60796dfa97",
+    "SQM_IT_Arson-202510.dat": "8e227fa9dd332b1128e6c64b4f8b11d11aa05dd175d03d6452aaf948a2c88a02",
+    "SQM_IT_Arson-202512.dat": "638dadb0dc7608f757a29515c89361e6ed8fd0a48e1ea5b525a1d872e746cb0f",
+    "SQM_IT_Galzignano-202208.dat": "ba0e9aa97953c4cf7b8a74244930866315d996d465d47665e22dcdc241df467c",
+    "SQM_IT_Galzignano-202210.dat": "b3ba42a61fdaee564e8cfd3233e3a0804add317777c6d19cdeb45f56fcc9e44d",
+    "SQM_IT_Galzignano-202307.dat": "a894d0ab2ce103b31009f506dcbe53b97e56636ce3fc007f1f2d4583621876fe",
+    "SQM_IT_Piadera-202311.dat": "7e67800b1fdd730972a5ea8bd532536fe1f308601d6123fa67bd76598dc448fc",
+    "SQM_IT_Piadera-202404.dat": "06177a12de5fa45ba7df1680febb6426fe759761fc61d506333532fea2b14a33",
+    "SQM_IT_Piadera-202410.dat": "993753f642f28987f017310f635b3ac9829602fbd49457969e49fcb41da4273c",
+    "SQM_IT_Piadera-202411.dat": "94d317b7abbe2de2101b79cbe56c0eef9da4d8341bd0a5a62655bd45bc40392c",
+    "SQM_IT_Piadera-202412.dat": "705dfd66505fa3bdd469ae36cf4f8314f6baa0466b1b364afbf7c6475e4ad675",
+    "SQM_IT_Piadera-202509.dat": "d30595f966d176f98243035c2fd3f84a43113f082aa2a0fd8d5a83835bc5f69a",
+    "SQM_IT_Piadera-202510.dat": "4542235eaa8a10ce05485a48992eec81b2fce8dd55515f165e765928bbafaddf",
+    "SQM_IT_Piadera-202512.dat": "e286e9ddf1ca6e3c0a855fe8144c1c530e00e896b30e54c106dcd4f2ef40bb2f",
+    "SQM_IT_Piadera-202604.dat": "191fc1abd4b56f0b570bb74af6670303120abc5e1ce5338489001bbf6946e912"
+  },
+  "cams_requests": [
+    {
+      "sha256": "903255e0ae2a2635881bfb6af91265b2df04467db95fa2124c85d2c1a0029c5d",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0&longitude=9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2022-08-04&end_date=2022-08-24"
+    },
+    {
+      "sha256": "8327a2b3d31d3b26a3093f351885afe2027435205a2e6853aa7951a97df4f1dd",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6&longitude=10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2022-08-04&end_date=2022-08-24"
+    },
+    {
+      "sha256": "b8ea44fba30eab9244609ccd28e1c025967d824a1a24def09f0e9af37377a803",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.0%2C44.0%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8&longitude=13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2022-08-04&end_date=2022-08-24"
+    },
+    {
+      "sha256": "1806afaa67417bf7313623d1d4d8c6023c191a1c5cfa0b920a093870136deed1",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.8%2C44.8%2C44.8%2C44.8%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6&longitude=12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2022-08-04&end_date=2022-08-24"
+    },
+    {
+      "sha256": "e31e465826a4132feab2bddd744446ec4aa67c72e03847198281a901a0e6fb20",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.4%2C46.4%2C46.4%2C46.4&longitude=12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2022-08-04&end_date=2022-08-24"
+    },
+    {
+      "sha256": "38c643ef57d9100f00a0866b809b4e989b26765c73ac88ff98ffaf510632590e",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C47.2%2C47.2&longitude=11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2022-08-04&end_date=2022-08-24"
+    },
+    {
+      "sha256": "f3f31ba3c3a89b6a8d8caf71580bd6f2450d232315727f310fee7ff1da15a3f4",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0&longitude=9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2&timezone=GMT&domains=cams_global&cell_selection=nearest&hourly=aerosol_optical_depth&start_date=2022-08-23&end_date=2022-08-25"
+    },
+    {
+      "sha256": "bba4d9c3b64585bff9066624fe8c523c38cb66f760869482ab80f4c0ba8b3be8",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6&longitude=10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0&timezone=GMT&domains=cams_global&cell_selection=nearest&hourly=aerosol_optical_depth&start_date=2022-08-23&end_date=2022-08-25"
+    },
+    {
+      "sha256": "102e458bc3c44cc36cea7ba2be60dee9b3ae0ab817f91a575a21379644a18f1d",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.0%2C44.0%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8&longitude=13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4&timezone=GMT&domains=cams_global&cell_selection=nearest&hourly=aerosol_optical_depth&start_date=2022-08-23&end_date=2022-08-25"
+    },
+    {
+      "sha256": "e2594badcca8474421c22d2f9fac945192f694040dccc6eb0ea410070de806a2",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.8%2C44.8%2C44.8%2C44.8%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6&longitude=12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6&timezone=GMT&domains=cams_global&cell_selection=nearest&hourly=aerosol_optical_depth&start_date=2022-08-23&end_date=2022-08-25"
+    },
+    {
+      "sha256": "239d4d714b4555df34b0edc511dad3b8bb5fee574339cd251368d80dfbc780e7",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.4%2C46.4%2C46.4%2C46.4&longitude=12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8&timezone=GMT&domains=cams_global&cell_selection=nearest&hourly=aerosol_optical_depth&start_date=2022-08-23&end_date=2022-08-25"
+    },
+    {
+      "sha256": "fed5f776d87c3838444d6744c91b6eece3843fef2ec116ac5430e215cf75d0eb",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C47.2%2C47.2&longitude=11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0&timezone=GMT&domains=cams_global&cell_selection=nearest&hourly=aerosol_optical_depth&start_date=2022-08-23&end_date=2022-08-25"
+    },
+    {
+      "sha256": "8530aa9fbb0b5a70ff306dff307077b93f0ec638d7ac73b3e950137422d05a05",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0&longitude=9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2&timezone=GMT&domains=cams_global&cell_selection=nearest&hourly=aerosol_optical_depth&start_date=2022-10-01&end_date=2022-11-01"
+    },
+    {
+      "sha256": "47498897348a314afae19a8adcc83d9979838a5f9aa9e1173668f16f667b136d",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6&longitude=10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0&timezone=GMT&domains=cams_global&cell_selection=nearest&hourly=aerosol_optical_depth&start_date=2022-10-01&end_date=2022-11-01"
+    },
+    {
+      "sha256": "3e9bc3fc0504f7025334ea5b2f7f0f01a2e48d92ce19d1988c9833c60ebdcf82",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.0%2C44.0%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8&longitude=13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4&timezone=GMT&domains=cams_global&cell_selection=nearest&hourly=aerosol_optical_depth&start_date=2022-10-01&end_date=2022-11-01"
+    },
+    {
+      "sha256": "ab1b289c886312d41be671939b86d478d42914694034c44eabe3ae406e779d6f",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.8%2C44.8%2C44.8%2C44.8%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6&longitude=12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6&timezone=GMT&domains=cams_global&cell_selection=nearest&hourly=aerosol_optical_depth&start_date=2022-10-01&end_date=2022-11-01"
+    },
+    {
+      "sha256": "bf1b278aa9145a20fad28d86404bcf60cf0a16f01f7b2de4c0f7f2fc99a33576",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.4%2C46.4%2C46.4%2C46.4&longitude=12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8&timezone=GMT&domains=cams_global&cell_selection=nearest&hourly=aerosol_optical_depth&start_date=2022-10-01&end_date=2022-11-01"
+    },
+    {
+      "sha256": "fc739efc30283e6ca438d48885927d3de73a03c16df7db72c10f8324a3a513a2",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C47.2%2C47.2&longitude=11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0&timezone=GMT&domains=cams_global&cell_selection=nearest&hourly=aerosol_optical_depth&start_date=2022-10-01&end_date=2022-11-01"
+    },
+    {
+      "sha256": "7e530465a4c22312276147b46b97f0146db1a80aaefe50285320e478d673c7d8",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0&longitude=9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2&timezone=GMT&domains=cams_global&cell_selection=nearest&hourly=aerosol_optical_depth&start_date=2023-07-14&end_date=2023-07-18"
+    },
+    {
+      "sha256": "299083978be5589961a8127626a4ba6e3f56b4e0a03673153f45c4c60809517d",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6&longitude=10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0&timezone=GMT&domains=cams_global&cell_selection=nearest&hourly=aerosol_optical_depth&start_date=2023-07-14&end_date=2023-07-18"
+    },
+    {
+      "sha256": "b356a6e492a4030bd00075f01158d15032f4162228899c377086848263f93760",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.0%2C44.0%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8&longitude=13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4&timezone=GMT&domains=cams_global&cell_selection=nearest&hourly=aerosol_optical_depth&start_date=2023-07-14&end_date=2023-07-18"
+    },
+    {
+      "sha256": "0300fc30d7cd302e164cfdf1dce678018d0013a9eacfbd209fd5ce574be7d723",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.8%2C44.8%2C44.8%2C44.8%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6&longitude=12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6&timezone=GMT&domains=cams_global&cell_selection=nearest&hourly=aerosol_optical_depth&start_date=2023-07-14&end_date=2023-07-18"
+    },
+    {
+      "sha256": "770e74e9498ba6c5c6155a94eb2538232ffc4883f368fe252009a3e05a3c3f5c",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.4%2C46.4%2C46.4%2C46.4&longitude=12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8&timezone=GMT&domains=cams_global&cell_selection=nearest&hourly=aerosol_optical_depth&start_date=2023-07-14&end_date=2023-07-18"
+    },
+    {
+      "sha256": "3368211522172dce2e4d63ce61113d8524b7061a2592e2083c67ffeb6aaf5a75",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C47.2%2C47.2&longitude=11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0&timezone=GMT&domains=cams_global&cell_selection=nearest&hourly=aerosol_optical_depth&start_date=2023-07-14&end_date=2023-07-18"
+    },
+    {
+      "sha256": "d6f3c436d663132f379a67675d6cd5eda6b5c84bf3db3af987208f1c25c474d9",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0&longitude=9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2023-11-07&end_date=2023-11-18"
+    },
+    {
+      "sha256": "89afe13d6f8c32e60d0c2eb7f9de4ac6720ed89ee9621baa49d6b8120d283a03",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6&longitude=10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2023-11-07&end_date=2023-11-18"
+    },
+    {
+      "sha256": "185350f650b49bbb5bc4d26fe1fd107c5664bdf21b93cbd198cce45b0637b59b",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.0%2C44.0%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8&longitude=13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2023-11-07&end_date=2023-11-18"
+    },
+    {
+      "sha256": "db98960f7758372c6e1b263f0a44e0ff60b92bf1732edd04af967c7573b6c63e",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.8%2C44.8%2C44.8%2C44.8%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6&longitude=12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2023-11-07&end_date=2023-11-18"
+    },
+    {
+      "sha256": "45ea0767d91d3ffd4d0738926acf12317a76e5c576fd583c730e3cba7ff5fcb3",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.4%2C46.4%2C46.4%2C46.4&longitude=12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2023-11-07&end_date=2023-11-18"
+    },
+    {
+      "sha256": "a7742ef287bb4e90f83a9de25382089e5c34bb0af41aafe2c087ec5d8b8065cb",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C47.2%2C47.2&longitude=11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2023-11-07&end_date=2023-11-18"
+    },
+    {
+      "sha256": "c48e8b8544c181d9582579a949925b7cd25a104a6290986c468f0e3a34279acb",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0&longitude=9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-04-04&end_date=2024-04-13"
+    },
+    {
+      "sha256": "89b150dffcc8b958416f8a0cda191f7b8e8c07a2a829abe39c6cfe91058e3d5f",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6&longitude=10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-04-04&end_date=2024-04-13"
+    },
+    {
+      "sha256": "292388deaf2b8899b9d0b280d6bd868a6ae79470759ccb7e7c60b92aaf5ce07e",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.0%2C44.0%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8&longitude=13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-04-04&end_date=2024-04-13"
+    },
+    {
+      "sha256": "5d5bafa34c2673ef22806e5bad6a7c6474281709812637f8d3f2c0f29b259fe1",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.8%2C44.8%2C44.8%2C44.8%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6&longitude=12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-04-04&end_date=2024-04-13"
+    },
+    {
+      "sha256": "bc89d5a6968419c71a49e752a48f95b094b5755be407cc38c428c9a0a3e2e0c4",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.4%2C46.4%2C46.4%2C46.4&longitude=12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-04-04&end_date=2024-04-13"
+    },
+    {
+      "sha256": "4324a5a3cff6938f9818c81cc1ecf628307251e949bcaade86cc36fe7296515e",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C47.2%2C47.2&longitude=11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-04-04&end_date=2024-04-13"
+    },
+    {
+      "sha256": "9367407a989f9424d8e02fff6329f1aae80715c1ef98180cf39edb64bd737c67",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0&longitude=9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-05-05&end_date=2024-05-05"
+    },
+    {
+      "sha256": "f483b255e8b123bd00879ab229fde45e886ff2bd59f205211e6b80c86ca23d49",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6&longitude=10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-05-05&end_date=2024-05-05"
+    },
+    {
+      "sha256": "a3ad79cc6c0cae7ba4fcfca35ab04af3ce05f8257f9f9f113aac456ee1fe358a",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.0%2C44.0%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8&longitude=13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-05-05&end_date=2024-05-05"
+    },
+    {
+      "sha256": "a0e0fe28e3c43c0784cd558b3e9c1cf704e41b9f842784ccb977875f942fad99",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.8%2C44.8%2C44.8%2C44.8%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6&longitude=12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-05-05&end_date=2024-05-05"
+    },
+    {
+      "sha256": "c319f263a7a3d7abae5f52f0d719b4f60ac9b6671578b2efd13bcd538f703ebf",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.4%2C46.4%2C46.4%2C46.4&longitude=12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-05-05&end_date=2024-05-05"
+    },
+    {
+      "sha256": "be2fa362bb4db700b866a007fbd40c0f83c9330b9bca500e383f515621b00e8f",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C47.2%2C47.2&longitude=11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-05-05&end_date=2024-05-05"
+    },
+    {
+      "sha256": "06f27b365d073d44cd8e6f992b129512f3a299eaf959af58bd1d07b37979417c",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0&longitude=9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2&timezone=GMT&domains=cams_global&cell_selection=nearest&hourly=aerosol_optical_depth&start_date=2024-07-04&end_date=2024-07-05"
+    },
+    {
+      "sha256": "dbe5fe7e2be03d5253bd8d13269ad5ac616f2d263c3747ecb8583a6abea74201",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6&longitude=10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0&timezone=GMT&domains=cams_global&cell_selection=nearest&hourly=aerosol_optical_depth&start_date=2024-07-04&end_date=2024-07-05"
+    },
+    {
+      "sha256": "25657ad3476127be21d4804ee56b10e394a22926f7cbbd62ff876baf91e4e52f",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.0%2C44.0%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8&longitude=13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4&timezone=GMT&domains=cams_global&cell_selection=nearest&hourly=aerosol_optical_depth&start_date=2024-07-04&end_date=2024-07-05"
+    },
+    {
+      "sha256": "aceb41c7ac5e6fc2cba88c39b30524b39de883b4644377f8360d136fcdca4c57",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.8%2C44.8%2C44.8%2C44.8%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6&longitude=12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6&timezone=GMT&domains=cams_global&cell_selection=nearest&hourly=aerosol_optical_depth&start_date=2024-07-04&end_date=2024-07-05"
+    },
+    {
+      "sha256": "376bff8a5b9500f0f9f5c3d3f6b0eb4a3f87a52b7937862bfe82ebee8d1b3a37",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.4%2C46.4%2C46.4%2C46.4&longitude=12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8&timezone=GMT&domains=cams_global&cell_selection=nearest&hourly=aerosol_optical_depth&start_date=2024-07-04&end_date=2024-07-05"
+    },
+    {
+      "sha256": "d5c23e22aa2b3064ca9d81ef2c43cf4fc69bb8d32ad5d070665e2d147d37f8f8",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C47.2%2C47.2&longitude=11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0&timezone=GMT&domains=cams_global&cell_selection=nearest&hourly=aerosol_optical_depth&start_date=2024-07-04&end_date=2024-07-05"
+    },
+    {
+      "sha256": "e9f9d722106331aa1141e2ce4608fbe3269d2ba70db70578bb6b4421ba3ceb36",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0&longitude=9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-07-04&end_date=2024-07-11"
+    },
+    {
+      "sha256": "e2d3993fd4e2c8394d9022d2901d74ba484d0892d4e0cff5c2f7cdfa84867103",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6&longitude=10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-07-04&end_date=2024-07-11"
+    },
+    {
+      "sha256": "98a9fce7b14b20d8c17b5ef1cc09c391c2405b28f174fe25d0120299f3a6ce44",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.0%2C44.0%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8&longitude=13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-07-04&end_date=2024-07-11"
+    },
+    {
+      "sha256": "3bb0b74483fd00d10889cd759a9dfada6e014be96bb14e76305e6f035b14d8c9",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.8%2C44.8%2C44.8%2C44.8%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6&longitude=12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-07-04&end_date=2024-07-11"
+    },
+    {
+      "sha256": "27306c42f4f17771d4819f5a9f8b656e7cb92b0368ac228fb9ecd8f7128d4762",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.4%2C46.4%2C46.4%2C46.4&longitude=12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-07-04&end_date=2024-07-11"
+    },
+    {
+      "sha256": "1f0588c340f7a52a9e87780f8b612a66e28e96b1aeb7d4a337e9bcbd5b9413f7",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C47.2%2C47.2&longitude=11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-07-04&end_date=2024-07-11"
+    },
+    {
+      "sha256": "4b94b76cc37c072a186af83365d65295d5c7d357d72875ccdfbab01fd0b5934b",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0&longitude=9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-08-08&end_date=2024-08-31"
+    },
+    {
+      "sha256": "12f08f6d00c53fae18eb635cf172c52c405612e03af73a577ff822837161a04e",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6&longitude=10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-08-08&end_date=2024-08-31"
+    },
+    {
+      "sha256": "1ad6a450cfc65c84f6d8db79a7c5f002c7c59c6874d655608185ba62469717ca",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.0%2C44.0%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8&longitude=13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-08-08&end_date=2024-08-31"
+    },
+    {
+      "sha256": "ddcb3e544e90ba2dcc9febc2de446254103a7a1d6ee2b286585eae2e82eaa3d6",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.8%2C44.8%2C44.8%2C44.8%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6&longitude=12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-08-08&end_date=2024-08-31"
+    },
+    {
+      "sha256": "c07effaa79f7360a981280e37f67567b2f2a5ae755c64c3a58f6531cf311ece6",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.4%2C46.4%2C46.4%2C46.4&longitude=12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-08-08&end_date=2024-08-31"
+    },
+    {
+      "sha256": "e94da5a00c84c92ff5b9cc975d57567474b43f580d5638dccd51b9d5121ecf9a",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C47.2%2C47.2&longitude=11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-08-08&end_date=2024-08-31"
+    },
+    {
+      "sha256": "f306d4a3c6c99d25b25dff6a1f931e9201d2a4297e4df9ea7e868d2f8f8dcd36",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0&longitude=9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-10-11&end_date=2024-11-01"
+    },
+    {
+      "sha256": "1589c94bc15fc048ad0a4372e04b8e1287481618ffcaff5fa1c146d5d0a077da",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6&longitude=10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-10-11&end_date=2024-11-01"
+    },
+    {
+      "sha256": "98c8cec076335cf04297add5ee9f2c4808e198e1c941fe25a03c2a49019cfda3",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.0%2C44.0%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8&longitude=13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-10-11&end_date=2024-11-01"
+    },
+    {
+      "sha256": "b0668aa0965f648573dab48ebb315690a01a730cb9bbca973c263c920caa2c25",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.8%2C44.8%2C44.8%2C44.8%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6&longitude=12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-10-11&end_date=2024-11-01"
+    },
+    {
+      "sha256": "77e74fb03eb2b0caaaf596a498409d03bacc4ec9f79eb838e0ba976c5dc166b4",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.4%2C46.4%2C46.4%2C46.4&longitude=12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-10-11&end_date=2024-11-01"
+    },
+    {
+      "sha256": "15d548bb2707ba40fae0474d114e6ceb6448a2da4176041dbb3b33c8501e5877",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C47.2%2C47.2&longitude=11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-10-11&end_date=2024-11-01"
+    },
+    {
+      "sha256": "fefd347c8a61de869fb43414e37bcddbd16da2faa074bc74e99a461d3ace562a",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0&longitude=9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-11-02&end_date=2024-12-01"
+    },
+    {
+      "sha256": "8adb69522405054c7f0e9ed7888254b30781279ba775c6a9c6dae29dce9d459b",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6&longitude=10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-11-02&end_date=2024-12-01"
+    },
+    {
+      "sha256": "531f04f92ff41428ce3ca9580b93b748d44bdd76f073a52150c890f3d1168eb6",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.0%2C44.0%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8&longitude=13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-11-02&end_date=2024-12-01"
+    },
+    {
+      "sha256": "710fbc3a1ca95042af4c893fb0ed62b0d1630dd30c9ac6169ad147f053773928",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.8%2C44.8%2C44.8%2C44.8%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6&longitude=12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-11-02&end_date=2024-12-01"
+    },
+    {
+      "sha256": "872e42849a0ba74ae5bcd15bb77f194342ceda2243814eb8c1e797d514a0ef75",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.4%2C46.4%2C46.4%2C46.4&longitude=12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-11-02&end_date=2024-12-01"
+    },
+    {
+      "sha256": "cac5f13e9a47bfe6856840b47c9010f368d943d9e137746c04dbba62c3875cd3",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C47.2%2C47.2&longitude=11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-11-02&end_date=2024-12-01"
+    },
+    {
+      "sha256": "ad6100259994794a6f4c493db10fff5c89de5d4b71375d4861b92f4765d17ae2",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0&longitude=9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-12-01&end_date=2024-12-31"
+    },
+    {
+      "sha256": "4352c43546e99cbdfd2fb3f5e945770ed3afae38b3d845457919b37107b7cef2",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6&longitude=10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-12-01&end_date=2024-12-31"
+    },
+    {
+      "sha256": "c0dbf5643598aacceaf03021af700fa044e8660afff7820a8fd5f57fb061f23d",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.0%2C44.0%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8&longitude=13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-12-01&end_date=2024-12-31"
+    },
+    {
+      "sha256": "512dc481f9174d0d49929db6f8191f27db96a7d6cd17fa9cf7fb08df700c11ef",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.8%2C44.8%2C44.8%2C44.8%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6&longitude=12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-12-01&end_date=2024-12-31"
+    },
+    {
+      "sha256": "f56bb8b3f9258da4f46e51fc70e084c4711445cded01c42379a802d59fc4e2b0",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.4%2C46.4%2C46.4%2C46.4&longitude=12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-12-01&end_date=2024-12-31"
+    },
+    {
+      "sha256": "7874c16db088cbb7d0589ca2868df0953b780902a44cc062781f6a4172af91fa",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C47.2%2C47.2&longitude=11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2024-12-01&end_date=2024-12-31"
+    },
+    {
+      "sha256": "8e889704d74a0b4b495dcb8d014886db6c5d2b29023595ef89ad8ebe32a89508",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0&longitude=9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-02-02&end_date=2025-02-21"
+    },
+    {
+      "sha256": "4f2981a1605649dd53c8ddb236120ccbfd55f7a3bb2bcf9f0ee1359a966cbf6c",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6&longitude=10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-02-02&end_date=2025-02-21"
+    },
+    {
+      "sha256": "25eb19a918a94249b65554ec650694848407fedb8e3d65536ed8de3245eb56da",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.0%2C44.0%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8&longitude=13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-02-02&end_date=2025-02-21"
+    },
+    {
+      "sha256": "8cfc7f2fba83263b3bb16d4083b357c553c6df2a03445a64d0eac2d58cd0ce66",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.8%2C44.8%2C44.8%2C44.8%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6&longitude=12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-02-02&end_date=2025-02-21"
+    },
+    {
+      "sha256": "e786968c118c341b7c15d6c64b97c70f5fe5b71b67b060dc9da9ba455984e14a",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.4%2C46.4%2C46.4%2C46.4&longitude=12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-02-02&end_date=2025-02-21"
+    },
+    {
+      "sha256": "3507cbc0767be8229d3f66aa5d1b3a54da7911c884d6234cad1b2f0e23183603",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C47.2%2C47.2&longitude=11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-02-02&end_date=2025-02-21"
+    },
+    {
+      "sha256": "474675d8bf14a226cbbbb8d70a664c814edeae541291d4d10a547ada425f8cb0",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0&longitude=9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-03-02&end_date=2025-03-20"
+    },
+    {
+      "sha256": "1428ce169c8d957f3bb396ac5f6d372b80ffa3ff911bf5add4c0c59e06fa0d28",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6&longitude=10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-03-02&end_date=2025-03-20"
+    },
+    {
+      "sha256": "d1f26e4bc3b87747972330411b95d17eee54c4499bdc7af0c2b75247e51e53bf",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.0%2C44.0%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8&longitude=13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-03-02&end_date=2025-03-20"
+    },
+    {
+      "sha256": "54a9072f0b7bded3ded85ee38c6b19c9eddc442e384caf745443a2f91aa586a1",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.8%2C44.8%2C44.8%2C44.8%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6&longitude=12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-03-02&end_date=2025-03-20"
+    },
+    {
+      "sha256": "d8955ee418d6bc0acbced839e60a56b28740f18bc8a6a6cb9be67ab8bd7a0572",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.4%2C46.4%2C46.4%2C46.4&longitude=12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-03-02&end_date=2025-03-20"
+    },
+    {
+      "sha256": "6c3a71169d017bd5be1c2be3a606dac1172e51d3acc53bd1f6db051575bee913",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C47.2%2C47.2&longitude=11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-03-02&end_date=2025-03-20"
+    },
+    {
+      "sha256": "ec7f4088ac460863a8a5955aed31adc18a1165e8d1876e8a750a44bc0158a280",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0&longitude=9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-05-31&end_date=2025-05-31"
+    },
+    {
+      "sha256": "369f8d3142ba1c109afe164a2cb8c2f32a10ab0cee6ad5bc1d041601a0987c36",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6&longitude=10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-05-31&end_date=2025-05-31"
+    },
+    {
+      "sha256": "fb28e7f09df85aecf2b9bf968d41f97a87b245cae9067257079dfc256d64a494",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.0%2C44.0%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8&longitude=13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-05-31&end_date=2025-05-31"
+    },
+    {
+      "sha256": "0e87e786d54a33ca58642aeb85d7ec298a8f5014cdf1dd81203a3df7d9843041",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.8%2C44.8%2C44.8%2C44.8%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6&longitude=12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-05-31&end_date=2025-05-31"
+    },
+    {
+      "sha256": "4925dd7e327397bf0bd0ff6134ec9af2ab957d47bf1f860a0c7c20aeb906116c",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.4%2C46.4%2C46.4%2C46.4&longitude=12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-05-31&end_date=2025-05-31"
+    },
+    {
+      "sha256": "040a7fde7822baba10c16407a8909819b336405e8462c6302e0c69393c9c7887",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C47.2%2C47.2&longitude=11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-05-31&end_date=2025-05-31"
+    },
+    {
+      "sha256": "1c61ead0f4f1df5c903fa5cbd0c175af963bd724144a160a73b1a330f5ef7ed6",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0&longitude=9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-08-29&end_date=2025-08-31"
+    },
+    {
+      "sha256": "425490a7cdeb9b0fa4056c6e593eaa7e364c7ce94088aac25381ad61209daff6",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6&longitude=10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-08-29&end_date=2025-08-31"
+    },
+    {
+      "sha256": "82382b2ca1b3f108e50da027e283e0b4d3492cb39aa479027ea9d5529aabadd9",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.0%2C44.0%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8&longitude=13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-08-29&end_date=2025-08-31"
+    },
+    {
+      "sha256": "85787b0e1c5197d6221d1e25f9e7d0971e87572ca079eca3b106b64eb2d189e4",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.8%2C44.8%2C44.8%2C44.8%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6&longitude=12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-08-29&end_date=2025-08-31"
+    },
+    {
+      "sha256": "2002139d4991c275e715dc07dc78e950f48f3f17352212c759d3ce6cc22aea96",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.4%2C46.4%2C46.4%2C46.4&longitude=12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-08-29&end_date=2025-08-31"
+    },
+    {
+      "sha256": "daf112d9ddc8f27f677496da9a4c5d2a60b3697cb902160bcfb1ee35c348ad76",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C47.2%2C47.2&longitude=11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-08-29&end_date=2025-08-31"
+    },
+    {
+      "sha256": "98a37d0981f58e3c5791e4d4161b2a27e77505682291535452fd06faa48fcd1d",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0&longitude=9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-09-03&end_date=2025-09-21"
+    },
+    {
+      "sha256": "5f59340693e7bc40201d6df95f0198eee4a37b9f9670233b3b897fe68de9041b",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6&longitude=10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-09-03&end_date=2025-09-21"
+    },
+    {
+      "sha256": "ddf858a5c4459cb3f1d14564c93c8a7893f55a78a19b5973e7b67efbfc60da30",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.0%2C44.0%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8&longitude=13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-09-03&end_date=2025-09-21"
+    },
+    {
+      "sha256": "34864c715c4703a8c3b3bd05a98e1b0eb92f6832a49041131609c6df5cfb921a",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.8%2C44.8%2C44.8%2C44.8%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6&longitude=12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-09-03&end_date=2025-09-21"
+    },
+    {
+      "sha256": "400ff9577c018fdce37eabaa51ecab910f03cbc7232e88b2bdfeadced100649d",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.4%2C46.4%2C46.4%2C46.4&longitude=12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-09-03&end_date=2025-09-21"
+    },
+    {
+      "sha256": "4d6dc2626831c45ef76bb4acc155f6b832b9deeedc51e0fd354b52837a1681e3",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C47.2%2C47.2&longitude=11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-09-03&end_date=2025-09-21"
+    },
+    {
+      "sha256": "3fce717ad275811343f560d680539015ccb14ab01f4a7f118027282369c13268",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0&longitude=9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-10-02&end_date=2025-10-28"
+    },
+    {
+      "sha256": "4ce5a94be4b8a2471a7e3558b85bbb8c84043d40516dbde4f4d877e94d05b590",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6&longitude=10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-10-02&end_date=2025-10-28"
+    },
+    {
+      "sha256": "22298c27f5d70727edec39fb50e9b11b165f73bea34d2a6e463a170593d26931",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.0%2C44.0%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8&longitude=13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-10-02&end_date=2025-10-28"
+    },
+    {
+      "sha256": "f878776e120b65223239fb10bd17a6ecfd9a240d3f514806a0549b6bf488ac0a",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.8%2C44.8%2C44.8%2C44.8%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6&longitude=12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-10-02&end_date=2025-10-28"
+    },
+    {
+      "sha256": "a3a5cc95909431ed960ab1979373ac72c52fb93c3882052b1ff27987a91110a0",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.4%2C46.4%2C46.4%2C46.4&longitude=12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-10-02&end_date=2025-10-28"
+    },
+    {
+      "sha256": "88133131428fb6515e167e92df82d34e52bc4839c2d2a773f4a5d552440c7171",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C47.2%2C47.2&longitude=11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-10-02&end_date=2025-10-28"
+    },
+    {
+      "sha256": "712c2d5a8963a1193246babaec9df504f4b348b74f5639d68f1b8f39911996c1",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0&longitude=9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-12-12&end_date=2025-12-14"
+    },
+    {
+      "sha256": "7389c379db1e7ec9fdddc37528ad5396d60ba0c3eb18dc53f2f58a7b7b1cee5c",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6&longitude=10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-12-12&end_date=2025-12-14"
+    },
+    {
+      "sha256": "5ee173c4c30ecef9a4dad04bd9107f53099132139e73d9f420ef6d0b18c8465e",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.0%2C44.0%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8&longitude=13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-12-12&end_date=2025-12-14"
+    },
+    {
+      "sha256": "f8ba4598304f974d59bebc4d81474c2841cb89a901c03929f7165213e786e98d",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.8%2C44.8%2C44.8%2C44.8%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6&longitude=12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-12-12&end_date=2025-12-14"
+    },
+    {
+      "sha256": "2a02cc9a75e233f549017ef3b409fc33ca05f84465a922db52dac7c62d60cae5",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.4%2C46.4%2C46.4%2C46.4&longitude=12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-12-12&end_date=2025-12-14"
+    },
+    {
+      "sha256": "2acfbe105b78b122a3d0c6caf3bebbb0eaac326d3e5f5161f6e0acc4a7b2e1d2",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C47.2%2C47.2&longitude=11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2025-12-12&end_date=2025-12-14"
+    },
+    {
+      "sha256": "fa7dea596d53ecbdacc305c1d89ed95586c66576d6c1b8bb2b7a8b9eddfe38fc",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C43.6%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0%2C44.0&longitude=9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2026-04-06&end_date=2026-04-08"
+    },
+    {
+      "sha256": "f853ad3a644fc00e23af1822cfa348606919c5be75eadaa9bad4a1ef8e913405",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.2%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6%2C47.6&longitude=10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2026-04-06&end_date=2026-04-08"
+    },
+    {
+      "sha256": "7e1e8524ee107eaa103c7845bab6704cb3bd7eddde3331e1f65f0eb74dd2379b",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.0%2C44.0%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.4%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8%2C44.8&longitude=13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2026-04-06&end_date=2026-04-08"
+    },
+    {
+      "sha256": "4fccce473992ad133b629b84cdceaa1f490d8cb468ce00134481382a04de2491",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=44.8%2C44.8%2C44.8%2C44.8%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.2%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6&longitude=12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2026-04-06&end_date=2026-04-08"
+    },
+    {
+      "sha256": "7757ee7b34bf00024f4129a0b2839fed673b4555327f1b399a0611126762a783",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C45.6%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.0%2C46.4%2C46.4%2C46.4%2C46.4&longitude=12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2026-04-06&end_date=2026-04-08"
+    },
+    {
+      "sha256": "72ac36f6efcdd9676147fd688ce62d7a1b0e31a2f391204fb57aa5aba19a0048",
+      "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.4%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C46.8%2C47.2%2C47.2&longitude=11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0%2C10.4%2C10.8%2C11.2%2C11.6%2C12.0%2C12.4%2C12.8%2C13.2%2C13.6%2C14.0%2C9.6%2C10.0&domains=cams_global&hourly=aerosol_optical_depth&timezone=GMT&cell_selection=nearest&start_date=2026-04-06&end_date=2026-04-08"
+    }
+  ]
+}

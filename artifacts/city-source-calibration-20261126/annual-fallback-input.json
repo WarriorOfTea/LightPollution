@@ -1,0 +1,1454 @@
+{
+  "cases": {
+    "Galzignano-2023-07-14": {
+      "site": "SQM_IT_Galzignano",
+      "night": "2023-07-14",
+      "utc": "2023-07-14T22:30:00Z",
+      "map_period": "2023",
+      "band": "SQM",
+      "magnitude": 20.496449160343595,
+      "readings": 29,
+      "cloud_pct": 3.0,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "legacy_clear",
+      "aod": 0.13952252506635543,
+      "position": [
+        45.31151,
+        11.69832,
+        337
+      ],
+      "original_map_period": "2023-07",
+      "near_supported_fraction": 0.6536585365853659,
+      "common_fraction_of_near_DNB": 0.0,
+      "original_series": "legacy"
+    },
+    "Galzignano-2023-07-17": {
+      "site": "SQM_IT_Galzignano",
+      "night": "2023-07-17",
+      "utc": "2023-07-17T22:30:00Z",
+      "map_period": "2023",
+      "band": "SQM",
+      "magnitude": 20.6889372565807,
+      "readings": 30,
+      "cloud_pct": 7.0,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "legacy_clear",
+      "aod": 0.20052693396278246,
+      "position": [
+        45.31151,
+        11.69832,
+        337
+      ],
+      "original_map_period": "2023-07",
+      "near_supported_fraction": 0.6536585365853659,
+      "common_fraction_of_near_DNB": 0.0,
+      "original_series": "legacy"
+    },
+    "Arcugnano-2025-02-02": {
+      "site": "SQM_IT_Arcugnano",
+      "night": "2025-02-02",
+      "utc": "2025-02-02T22:30:00Z",
+      "map_period": "2025",
+      "band": "SQM",
+      "magnitude": 19.585972292686495,
+      "readings": 12,
+      "cloud_pct": 1.0,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "legacy_clear",
+      "aod": 0.09787749011945024,
+      "position": [
+        45.49744,
+        11.53481,
+        182
+      ],
+      "original_map_period": "2025-02",
+      "near_supported_fraction": 0.4199623352165725,
+      "common_fraction_of_near_DNB": 0.9995415408346076,
+      "original_series": "legacy"
+    },
+    "Galzignano-2023-07-15": {
+      "sun_max": -19.431124238771115,
+      "moon_max": -6.699193060003879,
+      "weather_max_cloud": 8,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 85,
+      "qualified_metar": false,
+      "spread": 0.021000000000000796,
+      "closest_reference_city": "Padova",
+      "reference_city_km": 18.158955674802773,
+      "site": "SQM_IT_Galzignano",
+      "night": "2023-07-15",
+      "utc": "2023-07-16T00:30:00Z",
+      "position": [
+        45.31151,
+        11.69832,
+        337.0
+      ],
+      "map_period": "2023",
+      "band": "SQM",
+      "magnitude": 20.676950544288424,
+      "readings": 30,
+      "cloud_pct": 8,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.19977155720586273,
+      "native_times_utc": [
+        "2023-07-16T00:00",
+        "2023-07-16T03:00"
+      ],
+      "native_time_weight": 0.16666666666666666,
+      "sqm_file": "SQM_IT_Galzignano-202307.dat",
+      "original_map_period": "2023-07",
+      "near_supported_fraction": 0.6536585365853659,
+      "common_fraction_of_near_DNB": 0.0,
+      "original_series": "supplementary"
+    },
+    "Galzignano-2023-07-16": {
+      "sun_max": -22.777036249365594,
+      "moon_max": -16.268067349738764,
+      "weather_max_cloud": 14,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 87,
+      "qualified_metar": true,
+      "spread": 0.05999999999999872,
+      "closest_reference_city": "Padova",
+      "reference_city_km": 18.158955674802773,
+      "site": "SQM_IT_Galzignano",
+      "night": "2023-07-16",
+      "utc": "2023-07-16T23:30:00Z",
+      "position": [
+        45.31151,
+        11.69832,
+        337.0
+      ],
+      "map_period": "2023",
+      "band": "SQM",
+      "magnitude": 20.566484289955127,
+      "readings": 30,
+      "cloud_pct": 14,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.16668929873760338,
+      "native_times_utc": [
+        "2023-07-16T21:00",
+        "2023-07-17T00:00"
+      ],
+      "native_time_weight": 0.8333333333333334,
+      "sqm_file": "SQM_IT_Galzignano-202307.dat",
+      "original_map_period": "2023-07",
+      "near_supported_fraction": 0.6536585365853659,
+      "common_fraction_of_near_DNB": 0.0,
+      "original_series": "supplementary"
+    },
+    "Arcugnano-2024-05-04": {
+      "sun_max": -23.370026720384107,
+      "moon_max": -16.83089881133896,
+      "weather_max_cloud": 13,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 83,
+      "qualified_metar": true,
+      "spread": 0.12139999999999773,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2024-05-04",
+      "utc": "2024-05-05T00:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2024",
+      "band": "SQM",
+      "magnitude": 19.753320699640284,
+      "readings": 12,
+      "cloud_pct": 13,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.09986486368651844,
+      "native_times_utc": [
+        "2024-05-05T00:00",
+        "2024-05-05T03:00"
+      ],
+      "native_time_weight": 0.16666666666666666,
+      "sqm_file": "SQM_IT_Arcugnano-202405.dat",
+      "original_map_period": "2024-05",
+      "near_supported_fraction": 0.0,
+      "common_fraction_of_near_DNB": 0.0,
+      "original_series": "supplementary"
+    },
+    "Arcugnano-2024-07-04": {
+      "sun_max": -21.09751575150345,
+      "moon_max": -14.14357459566177,
+      "weather_max_cloud": 5,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 80,
+      "qualified_metar": true,
+      "spread": 0.025600000000000733,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2024-07-04",
+      "utc": "2024-07-04T23:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2024",
+      "band": "SQM",
+      "magnitude": 19.596958132106153,
+      "readings": 12,
+      "cloud_pct": 5,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.12595482873935393,
+      "native_times_utc": [
+        "2024-07-04T21:00",
+        "2024-07-05T00:00"
+      ],
+      "native_time_weight": 0.8333333333333334,
+      "sqm_file": "SQM_IT_Arcugnano-202407.dat",
+      "original_map_period": "2024-07",
+      "near_supported_fraction": 0.0,
+      "common_fraction_of_near_DNB": 0.0,
+      "original_series": "supplementary"
+    },
+    "Arcugnano-2024-07-08": {
+      "sun_max": -18.413771032650722,
+      "moon_max": -23.185771790747765,
+      "weather_max_cloud": 9,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 85,
+      "qualified_metar": true,
+      "spread": 0.05000000000000071,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2024-07-08",
+      "utc": "2024-07-09T00:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2024",
+      "band": "SQM",
+      "magnitude": 19.57591720621929,
+      "readings": 12,
+      "cloud_pct": 9,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.20819161333200994,
+      "native_times_utc": [
+        "2024-07-09T00:00",
+        "2024-07-09T03:00"
+      ],
+      "native_time_weight": 0.16666666666666666,
+      "sqm_file": "SQM_IT_Arcugnano-202407.dat",
+      "original_map_period": "2024-07",
+      "near_supported_fraction": 0.0,
+      "common_fraction_of_near_DNB": 0.0,
+      "original_series": "supplementary"
+    },
+    "Arcugnano-2024-07-10": {
+      "sun_max": -21.812298814817787,
+      "moon_max": -14.271444933134644,
+      "weather_max_cloud": 12,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 69,
+      "qualified_metar": true,
+      "spread": 0.022700000000000387,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2024-07-10",
+      "utc": "2024-07-10T23:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2024",
+      "band": "SQM",
+      "magnitude": 19.5634318730822,
+      "readings": 12,
+      "cloud_pct": 12,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.2488603350840022,
+      "native_times_utc": [
+        "2024-07-10T21:00",
+        "2024-07-11T00:00"
+      ],
+      "native_time_weight": 0.8333333333333334,
+      "sqm_file": "SQM_IT_Arcugnano-202407.dat",
+      "original_map_period": "2024-07",
+      "near_supported_fraction": 0.0,
+      "common_fraction_of_near_DNB": 0.0,
+      "original_series": "supplementary"
+    },
+    "Piadera-2024-10-29": {
+      "sun_max": -49.825528413683024,
+      "moon_max": -46.64528670044558,
+      "weather_max_cloud": 15,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 90,
+      "qualified_metar": false,
+      "spread": 0.05000000000000071,
+      "closest_reference_city": "Pordenone",
+      "reference_city_km": 27.51602275382817,
+      "site": "SQM_IT_Piadera",
+      "night": "2024-10-29",
+      "utc": "2024-10-29T21:30:00Z",
+      "position": [
+        46.01115,
+        12.31305,
+        500.0
+      ],
+      "map_period": "2024",
+      "band": "SQM",
+      "magnitude": 20.15813485028419,
+      "readings": 12,
+      "cloud_pct": 15,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.09899828335802115,
+      "native_times_utc": [
+        "2024-10-29T21:00",
+        "2024-10-30T00:00"
+      ],
+      "native_time_weight": 0.16666666666666666,
+      "sqm_file": "SQM_IT_Piadera-202410.dat",
+      "original_map_period": "2024-10",
+      "near_supported_fraction": 0.0,
+      "common_fraction_of_near_DNB": 0.0,
+      "original_series": "supplementary"
+    },
+    "Arcugnano-2024-11-30": {
+      "sun_max": -55.551376723889845,
+      "moon_max": -61.97387742028117,
+      "weather_max_cloud": 7,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 92,
+      "qualified_metar": true,
+      "spread": 0.022700000000000387,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2024-11-30",
+      "utc": "2024-11-30T21:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2024",
+      "band": "SQM",
+      "magnitude": 19.468293197134845,
+      "readings": 12,
+      "cloud_pct": 7,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.03860158597735397,
+      "native_times_utc": [
+        "2024-11-30T21:00",
+        "2024-12-01T00:00"
+      ],
+      "native_time_weight": 0.16666666666666666,
+      "sqm_file": "SQM_IT_Arcugnano-202411.dat",
+      "original_map_period": "2024-11",
+      "near_supported_fraction": 0.0,
+      "common_fraction_of_near_DNB": 0.0,
+      "original_series": "supplementary"
+    },
+    "Piadera-2024-11-02": {
+      "sun_max": -57.07941344397206,
+      "moon_max": -58.36961007108312,
+      "weather_max_cloud": 14,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 88,
+      "qualified_metar": true,
+      "spread": 0.0379999999999967,
+      "closest_reference_city": "Pordenone",
+      "reference_city_km": 27.51602275382817,
+      "site": "SQM_IT_Piadera",
+      "night": "2024-11-02",
+      "utc": "2024-11-02T22:30:00Z",
+      "position": [
+        46.01115,
+        12.31305,
+        500.0
+      ],
+      "map_period": "2024",
+      "band": "SQM",
+      "magnitude": 20.141575938511046,
+      "readings": 12,
+      "cloud_pct": 14,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.10465395097894659,
+      "native_times_utc": [
+        "2024-11-02T21:00",
+        "2024-11-03T00:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Piadera-202411.dat",
+      "original_map_period": "2024-11",
+      "near_supported_fraction": 0.0,
+      "common_fraction_of_near_DNB": 0.0,
+      "original_series": "supplementary"
+    },
+    "Piadera-2024-11-03": {
+      "sun_max": -40.80067573823094,
+      "moon_max": -66.35385701366648,
+      "weather_max_cloud": 8,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 89,
+      "qualified_metar": true,
+      "spread": 0.019999999999999574,
+      "closest_reference_city": "Pordenone",
+      "reference_city_km": 27.51602275382817,
+      "site": "SQM_IT_Piadera",
+      "night": "2024-11-03",
+      "utc": "2024-11-04T01:30:00Z",
+      "position": [
+        46.01115,
+        12.31305,
+        500.0
+      ],
+      "map_period": "2024",
+      "band": "SQM",
+      "magnitude": 20.240768375917945,
+      "readings": 12,
+      "cloud_pct": 8,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.07696698454320866,
+      "native_times_utc": [
+        "2024-11-04T00:00",
+        "2024-11-04T03:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Piadera-202411.dat",
+      "original_map_period": "2024-11",
+      "near_supported_fraction": 0.0,
+      "common_fraction_of_near_DNB": 0.0,
+      "original_series": "supplementary"
+    },
+    "Piadera-2024-11-04": {
+      "sun_max": -57.66319289330759,
+      "moon_max": -45.827416645144716,
+      "weather_max_cloud": 0,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 85,
+      "qualified_metar": false,
+      "spread": 0.028999999999999915,
+      "closest_reference_city": "Pordenone",
+      "reference_city_km": 27.51602275382817,
+      "site": "SQM_IT_Piadera",
+      "night": "2024-11-04",
+      "utc": "2024-11-04T22:30:00Z",
+      "position": [
+        46.01115,
+        12.31305,
+        500.0
+      ],
+      "map_period": "2024",
+      "band": "SQM",
+      "magnitude": 20.16657962333902,
+      "readings": 12,
+      "cloud_pct": 0,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.0560263417086173,
+      "native_times_utc": [
+        "2024-11-04T21:00",
+        "2024-11-05T00:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Piadera-202411.dat",
+      "original_map_period": "2024-11",
+      "near_supported_fraction": 0.0,
+      "common_fraction_of_near_DNB": 0.0,
+      "original_series": "supplementary"
+    },
+    "Piadera-2024-11-07": {
+      "sun_max": -50.74414298661599,
+      "moon_max": -36.040571671986385,
+      "weather_max_cloud": 8,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 91,
+      "qualified_metar": false,
+      "spread": 0.019999999999999574,
+      "closest_reference_city": "Pordenone",
+      "reference_city_km": 27.51602275382817,
+      "site": "SQM_IT_Piadera",
+      "night": "2024-11-07",
+      "utc": "2024-11-08T00:30:00Z",
+      "position": [
+        46.01115,
+        12.31305,
+        500.0
+      ],
+      "map_period": "2024",
+      "band": "SQM",
+      "magnitude": 20.23079917051061,
+      "readings": 12,
+      "cloud_pct": 8,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.13816685252311403,
+      "native_times_utc": [
+        "2024-11-08T00:00",
+        "2024-11-08T03:00"
+      ],
+      "native_time_weight": 0.16666666666666666,
+      "sqm_file": "SQM_IT_Piadera-202411.dat",
+      "original_map_period": "2024-11",
+      "near_supported_fraction": 0.0,
+      "common_fraction_of_near_DNB": 0.0,
+      "original_series": "supplementary"
+    },
+    "Piadera-2024-11-10": {
+      "sun_max": -42.382586065130944,
+      "moon_max": -9.742808156924065,
+      "weather_max_cloud": 1,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 65,
+      "qualified_metar": true,
+      "spread": 0.010000000000001563,
+      "closest_reference_city": "Pordenone",
+      "reference_city_km": 27.51602275382817,
+      "site": "SQM_IT_Piadera",
+      "night": "2024-11-10",
+      "utc": "2024-11-11T01:30:00Z",
+      "position": [
+        46.01115,
+        12.31305,
+        500.0
+      ],
+      "map_period": "2024",
+      "band": "SQM",
+      "magnitude": 20.156656422506444,
+      "readings": 12,
+      "cloud_pct": 1,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.06594992763490383,
+      "native_times_utc": [
+        "2024-11-11T00:00",
+        "2024-11-11T03:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Piadera-202411.dat",
+      "original_map_period": "2024-11",
+      "near_supported_fraction": 0.0,
+      "common_fraction_of_near_DNB": 0.0,
+      "original_series": "supplementary"
+    },
+    "Arcugnano-2024-12-01": {
+      "sun_max": -63.17349590288067,
+      "moon_max": -64.69244766363121,
+      "weather_max_cloud": 0,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 83,
+      "qualified_metar": true,
+      "spread": 0.04829999999999757,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2024-12-01",
+      "utc": "2024-12-01T22:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2024",
+      "band": "SQM",
+      "magnitude": 19.56315143026599,
+      "readings": 12,
+      "cloud_pct": 0,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.048015584762521345,
+      "native_times_utc": [
+        "2024-12-01T21:00",
+        "2024-12-02T00:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Arcugnano-202412.dat",
+      "original_map_period": "2024-12",
+      "near_supported_fraction": 0.4387947269303202,
+      "common_fraction_of_near_DNB": 1.0,
+      "original_series": "supplementary"
+    },
+    "Arcugnano-2024-12-26": {
+      "sun_max": -63.12628326992742,
+      "moon_max": -45.59698410321146,
+      "weather_max_cloud": 0,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 74,
+      "qualified_metar": true,
+      "spread": 0.02930000000000277,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2024-12-26",
+      "utc": "2024-12-26T22:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2024",
+      "band": "SQM",
+      "magnitude": 19.497184952229546,
+      "readings": 12,
+      "cloud_pct": 0,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.04143603332466363,
+      "native_times_utc": [
+        "2024-12-26T21:00",
+        "2024-12-27T00:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Arcugnano-202412.dat",
+      "original_map_period": "2024-12",
+      "near_supported_fraction": 0.4387947269303202,
+      "common_fraction_of_near_DNB": 1.0,
+      "original_series": "supplementary"
+    },
+    "Arcugnano-2024-12-28": {
+      "sun_max": -62.925376971126155,
+      "moon_max": -64.98801304877531,
+      "weather_max_cloud": 0,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 81,
+      "qualified_metar": true,
+      "spread": 0.028999999999999915,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2024-12-28",
+      "utc": "2024-12-28T22:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2024",
+      "band": "SQM",
+      "magnitude": 19.494105582852043,
+      "readings": 12,
+      "cloud_pct": 0,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.03899796867406195,
+      "native_times_utc": [
+        "2024-12-28T21:00",
+        "2024-12-29T00:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Arcugnano-202412.dat",
+      "original_map_period": "2024-12",
+      "near_supported_fraction": 0.4387947269303202,
+      "common_fraction_of_near_DNB": 1.0,
+      "original_series": "supplementary"
+    },
+    "Arcugnano-2024-12-29": {
+      "sun_max": -62.81520249776586,
+      "moon_max": -71.80125361665037,
+      "weather_max_cloud": 0,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 86,
+      "qualified_metar": true,
+      "spread": 0.03270000000000195,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2024-12-29",
+      "utc": "2024-12-29T22:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2024",
+      "band": "SQM",
+      "magnitude": 19.496561470465128,
+      "readings": 12,
+      "cloud_pct": 0,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.04573928735215312,
+      "native_times_utc": [
+        "2024-12-29T21:00",
+        "2024-12-30T00:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Arcugnano-202412.dat",
+      "original_map_period": "2024-12",
+      "near_supported_fraction": 0.4387947269303202,
+      "common_fraction_of_near_DNB": 1.0,
+      "original_series": "supplementary"
+    },
+    "Arcugnano-2024-12-30": {
+      "sun_max": -62.69870394047369,
+      "moon_max": -67.14060245780753,
+      "weather_max_cloud": 0,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 81,
+      "qualified_metar": true,
+      "spread": 0.028999999999999915,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2024-12-30",
+      "utc": "2024-12-30T22:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2024",
+      "band": "SQM",
+      "magnitude": 19.533854316031956,
+      "readings": 12,
+      "cloud_pct": 0,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.05712609697918345,
+      "native_times_utc": [
+        "2024-12-30T21:00",
+        "2024-12-31T00:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Arcugnano-202412.dat",
+      "original_map_period": "2024-12",
+      "near_supported_fraction": 0.4387947269303202,
+      "common_fraction_of_near_DNB": 1.0,
+      "original_series": "supplementary"
+    },
+    "Arcugnano-2025-02-04": {
+      "sun_max": -46.5663325078481,
+      "moon_max": -8.27265192136778,
+      "weather_max_cloud": 2,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 93,
+      "qualified_metar": true,
+      "spread": 0.028999999999999915,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2025-02-04",
+      "utc": "2025-02-05T01:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2025",
+      "band": "SQM",
+      "magnitude": 19.60743760830994,
+      "readings": 12,
+      "cloud_pct": 2,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.051082629585325036,
+      "native_times_utc": [
+        "2025-02-05T00:00",
+        "2025-02-05T03:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Arcugnano-202502.dat",
+      "original_map_period": "2025-02",
+      "near_supported_fraction": 0.4199623352165725,
+      "common_fraction_of_near_DNB": 0.9995415408346076,
+      "original_series": "supplementary"
+    },
+    "Arcugnano-2025-05-30": {
+      "sun_max": -18.207265769660072,
+      "moon_max": -10.663124369807493,
+      "weather_max_cloud": 14,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 86,
+      "qualified_metar": true,
+      "spread": 0.0070000000000014495,
+      "closest_reference_city": "Vicenza",
+      "reference_city_km": 5.568156479471904,
+      "site": "SQM_IT_Arcugnano",
+      "night": "2025-05-30",
+      "utc": "2025-05-31T00:30:00Z",
+      "position": [
+        45.49744,
+        11.53481,
+        182.0
+      ],
+      "map_period": "2025",
+      "band": "SQM",
+      "magnitude": 19.561994251667187,
+      "readings": 12,
+      "cloud_pct": 14,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.11071594707740123,
+      "native_times_utc": [
+        "2025-05-31T00:00",
+        "2025-05-31T03:00"
+      ],
+      "native_time_weight": 0.16666666666666666,
+      "sqm_file": "SQM_IT_Arcugnano-202505.dat",
+      "original_map_period": "2025-05",
+      "near_supported_fraction": 0.0847457627118644,
+      "common_fraction_of_near_DNB": 1.0,
+      "original_series": "supplementary"
+    },
+    "Piadera-2025-09-19": {
+      "sun_max": -41.337360975298616,
+      "moon_max": -27.19412682631606,
+      "weather_max_cloud": 15,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 91,
+      "qualified_metar": true,
+      "spread": 0.08899999999999864,
+      "closest_reference_city": "Pordenone",
+      "reference_city_km": 27.51602275382817,
+      "site": "SQM_IT_Piadera",
+      "night": "2025-09-19",
+      "utc": "2025-09-19T23:30:00Z",
+      "position": [
+        46.01115,
+        12.31305,
+        500.0
+      ],
+      "map_period": "2025",
+      "band": "SQM",
+      "magnitude": 20.14844709514943,
+      "readings": 12,
+      "cloud_pct": 15,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.07051592111720448,
+      "native_times_utc": [
+        "2025-09-19T21:00",
+        "2025-09-20T00:00"
+      ],
+      "native_time_weight": 0.8333333333333334,
+      "sqm_file": "SQM_IT_Piadera-202509.dat",
+      "original_map_period": "2025-09",
+      "near_supported_fraction": 0.00390625,
+      "common_fraction_of_near_DNB": 1.0,
+      "original_series": "supplementary"
+    },
+    "Piadera-2025-10-01": {
+      "sun_max": -32.40825136164586,
+      "moon_max": -18.923575754523338,
+      "weather_max_cloud": 4,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 86,
+      "qualified_metar": true,
+      "spread": 0.029999999999997584,
+      "closest_reference_city": "Pordenone",
+      "reference_city_km": 27.51602275382817,
+      "site": "SQM_IT_Piadera",
+      "night": "2025-10-01",
+      "utc": "2025-10-02T01:30:00Z",
+      "position": [
+        46.01115,
+        12.31305,
+        500.0
+      ],
+      "map_period": "2025",
+      "band": "SQM",
+      "magnitude": 20.31325396304282,
+      "readings": 12,
+      "cloud_pct": 4,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.10186938651260727,
+      "native_times_utc": [
+        "2025-10-02T00:00",
+        "2025-10-02T03:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Piadera-202510.dat",
+      "original_map_period": "2025-10",
+      "near_supported_fraction": 0.19140625,
+      "common_fraction_of_near_DNB": 1.0,
+      "original_series": "supplementary"
+    },
+    "Piadera-2025-10-26": {
+      "sun_max": -54.02364209974621,
+      "moon_max": -40.61257389054652,
+      "weather_max_cloud": 11,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 87,
+      "qualified_metar": false,
+      "spread": 0.0,
+      "closest_reference_city": "Pordenone",
+      "reference_city_km": 27.51602275382817,
+      "site": "SQM_IT_Piadera",
+      "night": "2025-10-26",
+      "utc": "2025-10-26T23:30:00Z",
+      "position": [
+        46.01115,
+        12.31305,
+        500.0
+      ],
+      "map_period": "2025",
+      "band": "SQM",
+      "magnitude": 20.249992324689227,
+      "readings": 12,
+      "cloud_pct": 11,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.059789122521129424,
+      "native_times_utc": [
+        "2025-10-26T21:00",
+        "2025-10-27T00:00"
+      ],
+      "native_time_weight": 0.8333333333333334,
+      "sqm_file": "SQM_IT_Piadera-202510.dat",
+      "original_map_period": "2025-10",
+      "near_supported_fraction": 0.19140625,
+      "common_fraction_of_near_DNB": 1.0,
+      "original_series": "supplementary"
+    },
+    "Arson-2025-12-13": {
+      "sun_max": -63.45175186983036,
+      "moon_max": -23.323717104480526,
+      "weather_max_cloud": 0,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 76,
+      "qualified_metar": true,
+      "spread": 0.0400000000000027,
+      "closest_reference_city": "Treviso",
+      "reference_city_km": 51.46555177930717,
+      "site": "SQM_IT_Arson",
+      "night": "2025-12-13",
+      "utc": "2025-12-13T22:30:00Z",
+      "position": [
+        46.07315,
+        11.92761,
+        520.0
+      ],
+      "map_period": "2025",
+      "band": "SQM",
+      "magnitude": 20.581529890385493,
+      "readings": 12,
+      "cloud_pct": 0,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.051948788445598866,
+      "native_times_utc": [
+        "2025-12-13T21:00",
+        "2025-12-14T00:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Arson-202512.dat",
+      "original_map_period": "2025-12",
+      "near_supported_fraction": 0.03494623655913978,
+      "common_fraction_of_near_DNB": 1.0,
+      "original_series": "supplementary"
+    },
+    "Arson-2025-12-14": {
+      "sun_max": -63.45291219320318,
+      "moon_max": -33.780493001374154,
+      "weather_max_cloud": 0,
+      "weather_max_precip": 0.0,
+      "weather_max_snow": 0.0,
+      "weather_max_rh": 79,
+      "qualified_metar": true,
+      "spread": 0.038000000000000256,
+      "closest_reference_city": "Treviso",
+      "reference_city_km": 51.46555177930717,
+      "site": "SQM_IT_Arson",
+      "night": "2025-12-14",
+      "utc": "2025-12-14T22:30:00Z",
+      "position": [
+        46.07315,
+        11.92761,
+        520.0
+      ],
+      "map_period": "2025",
+      "band": "SQM",
+      "magnitude": 20.73654830841597,
+      "readings": 12,
+      "cloud_pct": 0,
+      "natural_v_relative": 1.4454397707459257,
+      "tier": "supplementary_clear",
+      "aod": 0.06347240552275837,
+      "native_times_utc": [
+        "2025-12-14T21:00",
+        "2025-12-15T00:00"
+      ],
+      "native_time_weight": 0.5,
+      "sqm_file": "SQM_IT_Arson-202512.dat",
+      "original_map_period": "2025-12",
+      "near_supported_fraction": 0.03494623655913978,
+      "common_fraction_of_near_DNB": 1.0,
+      "original_series": "recovery"
+    }
+  },
+  "maps": {
+    "2023": {
+      "tiles": {
+        "h18v04": {
+          "sha256": "06e3d79ad3a6a9dd40e151b51c001315575364a42b28307086826ce0ca6fc0f0",
+          "filename": "VNP46A4.A2023001.h18v04.002.2025161112946.h5",
+          "url": "https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/5200/VNP46A4/2023/001/VNP46A4.A2023001.h18v04.002.2025161112946.h5"
+        },
+        "h19v04": {
+          "sha256": "7cfcd42435b6fb5b5ae1b80321635609e0b73faf2796f399036276c8cd05de87",
+          "filename": "VNP46A4.A2023001.h19v04.002.2025161112948.h5",
+          "url": "https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/5200/VNP46A4/2023/001/VNP46A4.A2023001.h19v04.002.2025161112948.h5"
+        }
+      },
+      "bounds": {
+        "west": 9.6,
+        "south": 43.6,
+        "east": 14.0,
+        "north": 47.6
+      },
+      "sites": {
+        "SQM_IT_Campofontana": {
+          "land_qa_3km": 1.0,
+          "max_valid_rad_3km": 2.031013011932373,
+          "land_qa_10km": 1.0,
+          "max_valid_rad_10km": 9.943196296691895,
+          "land_qa_25km": 1.0,
+          "land_qa_50km": 0.9985138214604181,
+          "by_height": {
+            "20.0": {
+              "0.1": {
+                "near_3km": 0.164866835854098,
+                "near_10km": 0.321571055534534
+              },
+              "0.3": {
+                "near_3km": 0.28957856951109073,
+                "near_10km": 0.45949084597309975
+              }
+            },
+            "1080.0": {
+              "0.1": {
+                "near_3km": 0.08533395203673444,
+                "near_10km": 0.25072874726873484
+              },
+              "0.3": {
+                "near_3km": 0.12492198641558039,
+                "near_10km": 0.32435890304089554
+              }
+            }
+          }
+        },
+        "SQM_IT_Cattignano": {
+          "land_qa_3km": 1.0,
+          "max_valid_rad_3km": 9.248005867004395,
+          "land_qa_10km": 1.0,
+          "max_valid_rad_10km": 45.05554962158203,
+          "land_qa_25km": 1.0,
+          "land_qa_50km": 0.9987138899881283,
+          "by_height": {
+            "20.0": {
+              "0.1": {
+                "near_3km": 0.22380673558821074,
+                "near_10km": 0.49400718567077584
+              },
+              "0.3": {
+                "near_3km": 0.366186879776784,
+                "near_10km": 0.6286058753596897
+              }
+            },
+            "505.0": {
+              "0.1": {
+                "near_3km": 0.13318039571838347,
+                "near_10km": 0.43244380411665617
+              },
+              "0.3": {
+                "near_3km": 0.19126703592825212,
+                "near_10km": 0.5224007337669958
+              }
+            }
+          }
+        },
+        "SQM_IT_Marana": {
+          "land_qa_3km": 1.0,
+          "max_valid_rad_3km": 3.798981189727783,
+          "land_qa_10km": 1.0,
+          "max_valid_rad_10km": 29.936695098876953,
+          "land_qa_25km": 1.0,
+          "land_qa_50km": 0.9985206808812797,
+          "by_height": {
+            "20.0": {
+              "0.1": {
+                "near_3km": 0.17947075146227354,
+                "near_10km": 0.3819162840304362
+              },
+              "0.3": {
+                "near_3km": 0.29574464954280655,
+                "near_10km": 0.5099288652949562
+              }
+            },
+            "790.0": {
+              "0.1": {
+                "near_3km": 0.12294800269664741,
+                "near_10km": 0.3354208673173604
+              },
+              "0.3": {
+                "near_3km": 0.17966674046370146,
+                "near_10km": 0.4233458728395906
+              }
+            }
+          }
+        },
+        "SQM_IT_Montebaldo": {
+          "land_qa_3km": 1.0,
+          "max_valid_rad_3km": 3.052241802215576,
+          "land_qa_10km": 0.9923702950152594,
+          "max_valid_rad_10km": 14.016831398010254,
+          "land_qa_25km": 0.9944500504540867,
+          "land_qa_50km": 0.9984349617655216,
+          "by_height": {
+            "20.0": {
+              "0.1": {
+                "near_3km": 0.0711624949214199,
+                "near_10km": 0.33313721302589105
+              },
+              "0.3": {
+                "near_3km": 0.11514796086205925,
+                "near_10km": 0.42424737202034335
+              }
+            },
+            "1208.0": {
+              "0.1": {
+                "near_3km": 0.050063792780806415,
+                "near_10km": 0.3077182773396987
+              },
+              "0.3": {
+                "near_3km": 0.07040650304138074,
+                "near_10km": 0.37979774196146665
+              }
+            }
+          }
+        }
+      }
+    },
+    "2025": {
+      "tiles": {
+        "h18v04": {
+          "sha256": "a4541af88a7b8d61320aa9fcfde20482c663824246ef5141115bdec6e1f6c2e1",
+          "filename": "VNP46A4.A2025001.h18v04.002.2026076174006.h5",
+          "url": "https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/5200/VNP46A4/2025/001/VNP46A4.A2025001.h18v04.002.2026076174006.h5"
+        },
+        "h19v04": {
+          "sha256": "a39d70e508dfa0c2d23d2b09ffea092482aac61a3c05022f8900908c66a8432d",
+          "filename": "VNP46A4.A2025001.h19v04.002.2026076174004.h5",
+          "url": "https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/5200/VNP46A4/2025/001/VNP46A4.A2025001.h19v04.002.2026076174004.h5"
+        }
+      },
+      "bounds": {
+        "west": 9.6,
+        "south": 43.6,
+        "east": 14.0,
+        "north": 47.6
+      },
+      "sites": {
+        "SQM_IT_Campofontana": {
+          "land_qa_3km": 1.0,
+          "max_valid_rad_3km": 2.4535555839538574,
+          "land_qa_10km": 1.0,
+          "max_valid_rad_10km": 11.367521286010742,
+          "land_qa_25km": 1.0,
+          "land_qa_50km": 0.9986326073601395,
+          "by_height": {
+            "20.0": {
+              "0.1": {
+                "near_3km": 0.1327360348330835,
+                "near_10km": 0.28594526898439776
+              },
+              "0.3": {
+                "near_3km": 0.23916652364399615,
+                "near_10km": 0.4101431475097195
+              }
+            },
+            "1080.0": {
+              "0.1": {
+                "near_3km": 0.0692233257808127,
+                "near_10km": 0.2277825651694333
+              },
+              "0.3": {
+                "near_3km": 0.10194557266595305,
+                "near_10km": 0.29439199119360426
+              }
+            }
+          }
+        },
+        "SQM_IT_Cattignano": {
+          "land_qa_3km": 1.0,
+          "max_valid_rad_3km": 7.864721298217773,
+          "land_qa_10km": 1.0,
+          "max_valid_rad_10km": 45.814308166503906,
+          "land_qa_25km": 1.0,
+          "land_qa_50km": 0.9987929158009301,
+          "by_height": {
+            "20.0": {
+              "0.1": {
+                "near_3km": 0.219067998068319,
+                "near_10km": 0.47887343940043214
+              },
+              "0.3": {
+                "near_3km": 0.36168693295211085,
+                "near_10km": 0.6149336467685218
+              }
+            },
+            "505.0": {
+              "0.1": {
+                "near_3km": 0.12840408825266014,
+                "near_10km": 0.41594889087930376
+              },
+              "0.3": {
+                "near_3km": 0.18568395898555112,
+                "near_10km": 0.505108791714701
+              }
+            }
+          }
+        },
+        "SQM_IT_Marana": {
+          "land_qa_3km": 1.0,
+          "max_valid_rad_3km": 3.5250353813171387,
+          "land_qa_10km": 1.0,
+          "max_valid_rad_10km": 32.46197509765625,
+          "land_qa_25km": 1.0,
+          "land_qa_50km": 0.9986388116233651,
+          "by_height": {
+            "20.0": {
+              "0.1": {
+                "near_3km": 0.1429094610883308,
+                "near_10km": 0.37903983446265566
+              },
+              "0.3": {
+                "near_3km": 0.24240794196522097,
+                "near_10km": 0.49628848112272606
+              }
+            },
+            "790.0": {
+              "0.1": {
+                "near_3km": 0.09396670760036385,
+                "near_10km": 0.3393774931822866
+              },
+              "0.3": {
+                "near_3km": 0.13799122845099177,
+                "near_10km": 0.42070579221985605
+              }
+            }
+          }
+        },
+        "SQM_IT_Montebaldo": {
+          "land_qa_3km": 1.0,
+          "max_valid_rad_3km": 3.7459075450897217,
+          "land_qa_10km": 0.9933842239185751,
+          "max_valid_rad_10km": 14.817546844482422,
+          "land_qa_25km": 0.9947837792360761,
+          "land_qa_50km": 0.9985537394749876,
+          "by_height": {
+            "20.0": {
+              "0.1": {
+                "near_3km": 0.050995636861774885,
+                "near_10km": 0.3052304756990796
+              },
+              "0.3": {
+                "near_3km": 0.08076016142948739,
+                "near_10km": 0.38749764210942017
+              }
+            },
+            "1208.0": {
+              "0.1": {
+                "near_3km": 0.03893949124501683,
+                "near_10km": 0.2864797913771864
+              },
+              "0.3": {
+                "near_3km": 0.05496974087106299,
+                "near_10km": 0.355376036655636
+              }
+            }
+          }
+        }
+      }
+    },
+    "2024": {
+      "tiles": {
+        "h18v04": {
+          "sha256": "26117fa499c3b8964f488aee38333d7357cdc01e3ce335503a9b4fe84fbf743b",
+          "filename": "VNP46A4.A2024001.h18v04.002.2025162030818.h5",
+          "url": "https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/5200/VNP46A4/2024/001/VNP46A4.A2024001.h18v04.002.2025162030818.h5"
+        },
+        "h19v04": {
+          "sha256": "48038166d512c18b5868e2d8528fa94f5b0c1d9640c31bca7481be50187b5a17",
+          "filename": "VNP46A4.A2024001.h19v04.002.2025162032851.h5",
+          "url": "https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/5200/VNP46A4/2024/001/VNP46A4.A2024001.h19v04.002.2025162032851.h5"
+        }
+      },
+      "bounds": {
+        "west": 9.6,
+        "south": 43.6,
+        "east": 14.0,
+        "north": 47.6
+      },
+      "sites": {
+        "SQM_IT_Campofontana": {
+          "land_qa_3km": 1.0,
+          "max_valid_rad_3km": 2.055678129196167,
+          "land_qa_10km": 1.0,
+          "max_valid_rad_10km": 12.09519100189209,
+          "land_qa_25km": 1.0,
+          "land_qa_50km": 0.998256113511157,
+          "by_height": {
+            "20.0": {
+              "0.1": {
+                "near_3km": 0.15206380907666162,
+                "near_10km": 0.30081433833560667
+              },
+              "0.3": {
+                "near_3km": 0.27116744730824416,
+                "near_10km": 0.4337358332861664
+              }
+            },
+            "1080.0": {
+              "0.1": {
+                "near_3km": 0.07753674542723887,
+                "near_10km": 0.2336253788401783
+              },
+              "0.3": {
+                "near_3km": 0.11426733184946847,
+                "near_10km": 0.3027515242438753
+              }
+            }
+          }
+        },
+        "SQM_IT_Cattignano": {
+          "land_qa_3km": 1.0,
+          "max_valid_rad_3km": 9.915061950683594,
+          "land_qa_10km": 1.0,
+          "max_valid_rad_10km": 44.373863220214844,
+          "land_qa_25km": 1.0,
+          "land_qa_50km": 0.9984961810914559,
+          "by_height": {
+            "20.0": {
+              "0.1": {
+                "near_3km": 0.21170876335344657,
+                "near_10km": 0.47653560074508394
+              },
+              "0.3": {
+                "near_3km": 0.3506967285903454,
+                "near_10km": 0.6104599658106296
+              }
+            },
+            "505.0": {
+              "0.1": {
+                "near_3km": 0.12468064737889972,
+                "near_10km": 0.4163088190814388
+              },
+              "0.3": {
+                "near_3km": 0.18020488069018004,
+                "near_10km": 0.5045073769976031
+              }
+            }
+          }
+        },
+        "SQM_IT_Marana": {
+          "land_qa_3km": 1.0,
+          "max_valid_rad_3km": 3.86576509475708,
+          "land_qa_10km": 1.0,
+          "max_valid_rad_10km": 33.80699920654297,
+          "land_qa_25km": 1.0,
+          "land_qa_50km": 0.9983430318571851,
+          "by_height": {
+            "20.0": {
+              "0.1": {
+                "near_3km": 0.16336609166312155,
+                "near_10km": 0.3876211491976266
+              },
+              "0.3": {
+                "near_3km": 0.27364713963784504,
+                "near_10km": 0.5106411250298931
+              }
+            },
+            "790.0": {
+              "0.1": {
+                "near_3km": 0.10791106508994175,
+                "near_10km": 0.34303141582935726
+              },
+              "0.3": {
+                "near_3km": 0.15811858625364872,
+                "near_10km": 0.4270067406442586
+              }
+            }
+          }
+        },
+        "SQM_IT_Montebaldo": {
+          "land_qa_3km": 1.0,
+          "max_valid_rad_3km": 3.3848683834075928,
+          "land_qa_10km": 0.9913705583756345,
+          "max_valid_rad_10km": 14.47555160522461,
+          "land_qa_25km": 0.9938614194416414,
+          "land_qa_50km": 0.9981773516126476,
+          "by_height": {
+            "20.0": {
+              "0.1": {
+                "near_3km": 0.0631888732217194,
+                "near_10km": 0.31420578381441666
+              },
+              "0.3": {
+                "near_3km": 0.1029129143789389,
+                "near_10km": 0.4017336398858222
+              }
+            },
+            "1208.0": {
+              "0.1": {
+                "near_3km": 0.044890477315245425,
+                "near_10km": 0.2910667258412387
+              },
+              "0.3": {
+                "near_3km": 0.06362784291659407,
+                "near_10km": 0.3609467140381206
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "unfilled_cases": {},
+  "source_sha256": {
+    "legacy": "9913ee736b81121a908b3dfaf9c161852a7f410fe2da4ad21a8fd0515764929b",
+    "supplementary": "d9dcbf71b9d43b768d52218ee5badfe0b7ed659d5ed8dd6b16c352cada3fb909",
+    "recovery": "81cb806472c139e33e0a43c63ff61e761c14f504fde589f1333041b25ec3e3b9"
+  }
+}
