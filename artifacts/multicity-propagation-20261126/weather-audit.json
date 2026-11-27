@@ -17641,5 +17641,2583 @@
         "mae_pct": 17.078790158119965
       }
     }
+  },
+  "scenario_error_comparisons": {
+    "scenarios": {
+      "Madrid": {
+        "base": {
+          "lambert": {
+            "n": 32,
+            "signed_pct": -44.202628121364135,
+            "mae_pct": 44.202628121364135,
+            "n_bright": 0,
+            "n_dim": 32
+          },
+          "uniform_intensity": {
+            "n": 32,
+            "signed_pct": -19.295746058126188,
+            "mae_pct": 29.933753310829648,
+            "n_bright": 9,
+            "n_dim": 23
+          },
+          "half_lambert_half_uniform": {
+            "n": 32,
+            "signed_pct": -31.749187089745163,
+            "mae_pct": 34.33171989886401,
+            "n_bright": 2,
+            "n_dim": 30
+          },
+          "off_h1": {
+            "n": 32,
+            "signed_pct": -43.35378054013168,
+            "mae_pct": 43.35378054013168,
+            "n_bright": 0,
+            "n_dim": 32
+          },
+          "off_h2": {
+            "n": 32,
+            "signed_pct": -40.57674930782386,
+            "mae_pct": 40.71665848194047,
+            "n_bright": 1,
+            "n_dim": 31
+          }
+        },
+        "sodium": {
+          "lambert": {
+            "n": 32,
+            "signed_pct": -50.47751515728594,
+            "mae_pct": 50.47751515728594,
+            "n_bright": 0,
+            "n_dim": 32
+          },
+          "uniform_intensity": {
+            "n": 32,
+            "signed_pct": -28.421789721893845,
+            "mae_pct": 33.441852580892764,
+            "n_bright": 3,
+            "n_dim": 29
+          },
+          "half_lambert_half_uniform": {
+            "n": 32,
+            "signed_pct": -39.44965243958989,
+            "mae_pct": 40.27291877894858,
+            "n_bright": 1,
+            "n_dim": 31
+          },
+          "off_h1": {
+            "n": 32,
+            "signed_pct": -49.737265501269015,
+            "mae_pct": 49.737265501269015,
+            "n_bright": 0,
+            "n_dim": 32
+          },
+          "off_h2": {
+            "n": 32,
+            "signed_pct": -47.28268125540025,
+            "mae_pct": 47.28268125540025,
+            "n_bright": 0,
+            "n_dim": 32
+          }
+        },
+        "led": {
+          "lambert": {
+            "n": 32,
+            "signed_pct": -37.92774108544232,
+            "mae_pct": 37.982763451241006,
+            "n_bright": 1,
+            "n_dim": 31
+          },
+          "uniform_intensity": {
+            "n": 32,
+            "signed_pct": -10.169702394358529,
+            "mae_pct": 29.484893906626464,
+            "n_bright": 11,
+            "n_dim": 21
+          },
+          "half_lambert_half_uniform": {
+            "n": 32,
+            "signed_pct": -24.048721739900422,
+            "mae_pct": 29.403388545015343,
+            "n_bright": 5,
+            "n_dim": 27
+          },
+          "off_h1": {
+            "n": 32,
+            "signed_pct": -36.97029557899434,
+            "mae_pct": 37.301900660792974,
+            "n_bright": 1,
+            "n_dim": 31
+          },
+          "off_h2": {
+            "n": 32,
+            "signed_pct": -33.870817360247464,
+            "mae_pct": 34.99616937758941,
+            "n_bright": 2,
+            "n_dim": 30
+          }
+        },
+        "bright_natural": {
+          "lambert": {
+            "n": 32,
+            "signed_pct": -40.394386699443395,
+            "mae_pct": 40.394386699443395,
+            "n_bright": 0,
+            "n_dim": 32
+          },
+          "uniform_intensity": {
+            "n": 32,
+            "signed_pct": -15.487504636205452,
+            "mae_pct": 26.761448840680472,
+            "n_bright": 9,
+            "n_dim": 23
+          },
+          "half_lambert_half_uniform": {
+            "n": 32,
+            "signed_pct": -27.940945667824426,
+            "mae_pct": 30.643587378924185,
+            "n_bright": 2,
+            "n_dim": 30
+          },
+          "off_h1": {
+            "n": 32,
+            "signed_pct": -39.54553911821095,
+            "mae_pct": 39.54553911821095,
+            "n_bright": 0,
+            "n_dim": 32
+          },
+          "off_h2": {
+            "n": 32,
+            "signed_pct": -36.76850788590312,
+            "mae_pct": 36.98258394625561,
+            "n_bright": 1,
+            "n_dim": 31
+          }
+        },
+        "joint": {
+          "lambert": {
+            "n": 32,
+            "signed_pct": -34.11949966352159,
+            "mae_pct": 34.24868891555614,
+            "n_bright": 1,
+            "n_dim": 31
+          },
+          "uniform_intensity": {
+            "n": 32,
+            "signed_pct": -6.3614609724377935,
+            "mae_pct": 26.62528252169542,
+            "n_bright": 12,
+            "n_dim": 20
+          },
+          "half_lambert_half_uniform": {
+            "n": 32,
+            "signed_pct": -20.240480317979685,
+            "mae_pct": 25.86901772253955,
+            "n_bright": 5,
+            "n_dim": 27
+          },
+          "off_h1": {
+            "n": 32,
+            "signed_pct": -33.162054157073605,
+            "mae_pct": 33.567826125108105,
+            "n_bright": 1,
+            "n_dim": 31
+          },
+          "off_h2": {
+            "n": 32,
+            "signed_pct": -30.06257593832673,
+            "mae_pct": 31.30803685764959,
+            "n_bright": 2,
+            "n_dim": 30
+          }
+        },
+        "whole_map": {
+          "lambert": {
+            "n": 32,
+            "signed_pct": -44.202628121364135,
+            "mae_pct": 44.202628121364135,
+            "n_bright": 0,
+            "n_dim": 32
+          },
+          "uniform_intensity": {
+            "n": 32,
+            "signed_pct": 10.091177752731694,
+            "mae_pct": 21.257229907206124,
+            "n_bright": 20,
+            "n_dim": 12
+          },
+          "half_lambert_half_uniform": {
+            "n": 32,
+            "signed_pct": -17.05572518431622,
+            "mae_pct": 22.471197956514786,
+            "n_bright": 6,
+            "n_dim": 26
+          },
+          "off_h1": {
+            "n": 32,
+            "signed_pct": -38.92010857319402,
+            "mae_pct": 38.92010857319402,
+            "n_bright": 0,
+            "n_dim": 32
+          },
+          "off_h2": {
+            "n": 32,
+            "signed_pct": -32.301240382773734,
+            "mae_pct": 32.640811254362085,
+            "n_bright": 1,
+            "n_dim": 31
+          }
+        }
+      },
+      "Tucson": {
+        "base": {
+          "lambert": {
+            "n": 28,
+            "signed_pct": -21.10897369682022,
+            "mae_pct": 22.407678616036534,
+            "n_bright": 4,
+            "n_dim": 24
+          },
+          "uniform_intensity": {
+            "n": 28,
+            "signed_pct": 24.20320218970563,
+            "mae_pct": 40.65042301748316,
+            "n_bright": 17,
+            "n_dim": 11
+          },
+          "half_lambert_half_uniform": {
+            "n": 28,
+            "signed_pct": 1.5471142464426988,
+            "mae_pct": 26.610882107241775,
+            "n_bright": 13,
+            "n_dim": 15
+          },
+          "off_h1": {
+            "n": 28,
+            "signed_pct": -16.205774393963612,
+            "mae_pct": 22.131871385252868,
+            "n_bright": 8,
+            "n_dim": 20
+          },
+          "off_h2": {
+            "n": 28,
+            "signed_pct": -10.860692866544348,
+            "mae_pct": 22.655298333968577,
+            "n_bright": 11,
+            "n_dim": 17
+          }
+        },
+        "sodium": {
+          "lambert": {
+            "n": 28,
+            "signed_pct": -24.586949739587233,
+            "mae_pct": 25.02271153007653,
+            "n_bright": 2,
+            "n_dim": 26
+          },
+          "uniform_intensity": {
+            "n": 28,
+            "signed_pct": 18.289542982994305,
+            "mae_pct": 38.47265910142261,
+            "n_bright": 15,
+            "n_dim": 13
+          },
+          "half_lambert_half_uniform": {
+            "n": 28,
+            "signed_pct": -3.1487033782964695,
+            "mae_pct": 27.757179250290825,
+            "n_bright": 11,
+            "n_dim": 17
+          },
+          "off_h1": {
+            "n": 28,
+            "signed_pct": -20.015631911918838,
+            "mae_pct": 23.360660976563672,
+            "n_bright": 10,
+            "n_dim": 18
+          },
+          "off_h2": {
+            "n": 28,
+            "signed_pct": -14.951451394839287,
+            "mae_pct": 24.559813695271213,
+            "n_bright": 11,
+            "n_dim": 17
+          }
+        },
+        "led": {
+          "lambert": {
+            "n": 28,
+            "signed_pct": -17.630997654053214,
+            "mae_pct": 21.589491006233786,
+            "n_bright": 6,
+            "n_dim": 22
+          },
+          "uniform_intensity": {
+            "n": 28,
+            "signed_pct": 30.116861396416944,
+            "mae_pct": 44.322334121531775,
+            "n_bright": 18,
+            "n_dim": 10
+          },
+          "half_lambert_half_uniform": {
+            "n": 28,
+            "signed_pct": 6.242931871181864,
+            "mae_pct": 26.8431341942082,
+            "n_bright": 15,
+            "n_dim": 13
+          },
+          "off_h1": {
+            "n": 28,
+            "signed_pct": -12.395916876008387,
+            "mae_pct": 21.187454118731367,
+            "n_bright": 7,
+            "n_dim": 21
+          },
+          "off_h2": {
+            "n": 28,
+            "signed_pct": -6.769934338249404,
+            "mae_pct": 21.278189728596523,
+            "n_bright": 11,
+            "n_dim": 17
+          }
+        },
+        "bright_natural": {
+          "lambert": {
+            "n": 28,
+            "signed_pct": -9.991616909757346,
+            "mae_pct": 17.604208126196315,
+            "n_bright": 11,
+            "n_dim": 17
+          },
+          "uniform_intensity": {
+            "n": 28,
+            "signed_pct": 35.32055897676851,
+            "mae_pct": 40.244415268081056,
+            "n_bright": 23,
+            "n_dim": 5
+          },
+          "half_lambert_half_uniform": {
+            "n": 28,
+            "signed_pct": 12.66447103350558,
+            "mae_pct": 24.28239835367519,
+            "n_bright": 18,
+            "n_dim": 10
+          },
+          "off_h1": {
+            "n": 28,
+            "signed_pct": -5.088417606900733,
+            "mae_pct": 17.923118195300784,
+            "n_bright": 13,
+            "n_dim": 15
+          },
+          "off_h2": {
+            "n": 28,
+            "signed_pct": 0.25666392051853476,
+            "mae_pct": 19.12590613742532,
+            "n_bright": 16,
+            "n_dim": 12
+          }
+        },
+        "joint": {
+          "lambert": {
+            "n": 28,
+            "signed_pct": -6.513640866990339,
+            "mae_pct": 17.293993363329413,
+            "n_bright": 11,
+            "n_dim": 17
+          },
+          "uniform_intensity": {
+            "n": 28,
+            "signed_pct": 41.234218183479825,
+            "mae_pct": 44.776643393084264,
+            "n_bright": 24,
+            "n_dim": 4
+          },
+          "half_lambert_half_uniform": {
+            "n": 28,
+            "signed_pct": 17.360288658244745,
+            "mae_pct": 25.293878506049655,
+            "n_bright": 20,
+            "n_dim": 8
+          },
+          "off_h1": {
+            "n": 28,
+            "signed_pct": -1.2785600889455044,
+            "mae_pct": 17.266779348433683,
+            "n_bright": 13,
+            "n_dim": 15
+          },
+          "off_h2": {
+            "n": 28,
+            "signed_pct": 4.347422448813474,
+            "mae_pct": 18.335722332503206,
+            "n_bright": 17,
+            "n_dim": 11
+          }
+        },
+        "whole_map": {
+          "lambert": {
+            "n": 28,
+            "signed_pct": -21.108973696820218,
+            "mae_pct": 22.40767861603653,
+            "n_bright": 4,
+            "n_dim": 24
+          },
+          "uniform_intensity": {
+            "n": 28,
+            "signed_pct": 38.86301627984154,
+            "mae_pct": 43.98153554494048,
+            "n_bright": 22,
+            "n_dim": 6
+          },
+          "half_lambert_half_uniform": {
+            "n": 28,
+            "signed_pct": 8.877021291510662,
+            "mae_pct": 25.826139661420893,
+            "n_bright": 15,
+            "n_dim": 13
+          },
+          "off_h1": {
+            "n": 28,
+            "signed_pct": -15.213476606006186,
+            "mae_pct": 22.01346452896199,
+            "n_bright": 8,
+            "n_dim": 20
+          },
+          "off_h2": {
+            "n": 28,
+            "signed_pct": -7.999124101966445,
+            "mae_pct": 22.314012113627307,
+            "n_bright": 11,
+            "n_dim": 17
+          }
+        }
+      }
+    },
+    "matched_subsets": {
+      "madrid_near": {
+        "base": {
+          "lambert": {
+            "n": 9,
+            "signed_pct": -32.10394138223972,
+            "mae_pct": 32.10394138223972,
+            "n_bright": 0,
+            "n_dim": 9
+          },
+          "uniform_intensity": {
+            "n": 9,
+            "signed_pct": 15.726769612580808,
+            "mae_pct": 21.32622897558992,
+            "n_bright": 7,
+            "n_dim": 2
+          },
+          "half_lambert_half_uniform": {
+            "n": 9,
+            "signed_pct": -8.188585884829457,
+            "mae_pct": 17.370924761696465,
+            "n_bright": 2,
+            "n_dim": 7
+          },
+          "off_h1": {
+            "n": 9,
+            "signed_pct": -30.23772022185451,
+            "mae_pct": 30.23772022185451,
+            "n_bright": 0,
+            "n_dim": 9
+          },
+          "off_h2": {
+            "n": 9,
+            "signed_pct": -25.310592710637962,
+            "mae_pct": 25.80804755194148,
+            "n_bright": 1,
+            "n_dim": 8
+          }
+        },
+        "sodium": {
+          "lambert": {
+            "n": 9,
+            "signed_pct": -40.80070431411681,
+            "mae_pct": 40.80070431411681,
+            "n_bright": 0,
+            "n_dim": 9
+          },
+          "uniform_intensity": {
+            "n": 9,
+            "signed_pct": 1.1589542007789089,
+            "mae_pct": 16.69015818677281,
+            "n_bright": 3,
+            "n_dim": 6
+          },
+          "half_lambert_half_uniform": {
+            "n": 9,
+            "signed_pct": -19.82087505666895,
+            "mae_pct": 22.74804426327762,
+            "n_bright": 1,
+            "n_dim": 8
+          },
+          "off_h1": {
+            "n": 9,
+            "signed_pct": -39.169328701611974,
+            "mae_pct": 39.169328701611974,
+            "n_bright": 0,
+            "n_dim": 9
+          },
+          "off_h2": {
+            "n": 9,
+            "signed_pct": -34.835005213783255,
+            "mae_pct": 34.835005213783255,
+            "n_bright": 0,
+            "n_dim": 9
+          }
+        },
+        "led": {
+          "lambert": {
+            "n": 9,
+            "signed_pct": -23.407178450362622,
+            "mae_pct": 23.60281352875792,
+            "n_bright": 1,
+            "n_dim": 8
+          },
+          "uniform_intensity": {
+            "n": 9,
+            "signed_pct": 30.294585024382705,
+            "mae_pct": 30.642053496869757,
+            "n_bright": 7,
+            "n_dim": 2
+          },
+          "half_lambert_half_uniform": {
+            "n": 9,
+            "signed_pct": 3.443703287010049,
+            "mae_pct": 15.595112020065214,
+            "n_bright": 5,
+            "n_dim": 4
+          },
+          "off_h1": {
+            "n": 9,
+            "signed_pct": -21.306111742097038,
+            "mae_pct": 22.48515203293661,
+            "n_bright": 1,
+            "n_dim": 8
+          },
+          "off_h2": {
+            "n": 9,
+            "signed_pct": -15.786180207492666,
+            "mae_pct": 19.787431824708467,
+            "n_bright": 2,
+            "n_dim": 7
+          }
+        },
+        "bright_natural": {
+          "lambert": {
+            "n": 9,
+            "signed_pct": -31.377902810805512,
+            "mae_pct": 31.377902810805512,
+            "n_bright": 0,
+            "n_dim": 9
+          },
+          "uniform_intensity": {
+            "n": 9,
+            "signed_pct": 16.452808184015012,
+            "mae_pct": 21.783327774536136,
+            "n_bright": 7,
+            "n_dim": 2
+          },
+          "half_lambert_half_uniform": {
+            "n": 9,
+            "signed_pct": -7.462547313395257,
+            "mae_pct": 17.071940063972185,
+            "n_bright": 2,
+            "n_dim": 7
+          },
+          "off_h1": {
+            "n": 9,
+            "signed_pct": -29.511681650420307,
+            "mae_pct": 29.511681650420307,
+            "n_bright": 0,
+            "n_dim": 9
+          },
+          "off_h2": {
+            "n": 9,
+            "signed_pct": -24.58455413920376,
+            "mae_pct": 25.34571346490149,
+            "n_bright": 1,
+            "n_dim": 8
+          }
+        },
+        "joint": {
+          "lambert": {
+            "n": 9,
+            "signed_pct": -22.68113987892842,
+            "mae_pct": 23.14047944171793,
+            "n_bright": 1,
+            "n_dim": 8
+          },
+          "uniform_intensity": {
+            "n": 9,
+            "signed_pct": 31.020623595816904,
+            "mae_pct": 31.100439261307514,
+            "n_bright": 8,
+            "n_dim": 1
+          },
+          "half_lambert_half_uniform": {
+            "n": 9,
+            "signed_pct": 4.169741858444247,
+            "mae_pct": 15.842835579990817,
+            "n_bright": 5,
+            "n_dim": 4
+          },
+          "off_h1": {
+            "n": 9,
+            "signed_pct": -20.580073170662835,
+            "mae_pct": 22.02281794589662,
+            "n_bright": 1,
+            "n_dim": 8
+          },
+          "off_h2": {
+            "n": 9,
+            "signed_pct": -15.060141636058464,
+            "mae_pct": 19.488447126984184,
+            "n_bright": 2,
+            "n_dim": 7
+          }
+        },
+        "whole_map": {
+          "lambert": {
+            "n": 9,
+            "signed_pct": -32.10394138223972,
+            "mae_pct": 32.10394138223972,
+            "n_bright": 0,
+            "n_dim": 9
+          },
+          "uniform_intensity": {
+            "n": 9,
+            "signed_pct": 25.606295971304583,
+            "mae_pct": 27.544754968004472,
+            "n_bright": 7,
+            "n_dim": 2
+          },
+          "half_lambert_half_uniform": {
+            "n": 9,
+            "signed_pct": -3.248822705467571,
+            "mae_pct": 16.62395964019494,
+            "n_bright": 3,
+            "n_dim": 6
+          },
+          "off_h1": {
+            "n": 9,
+            "signed_pct": -29.266992101391676,
+            "mae_pct": 29.266992101391676,
+            "n_bright": 0,
+            "n_dim": 9
+          },
+          "off_h2": {
+            "n": 9,
+            "signed_pct": -23.10455025128799,
+            "mae_pct": 24.311913350268785,
+            "n_bright": 1,
+            "n_dim": 8
+          }
+        }
+      },
+      "madrid_far": {
+        "base": {
+          "lambert": {
+            "n": 12,
+            "signed_pct": -55.348395185488855,
+            "mae_pct": 55.348395185488855,
+            "n_bright": 0,
+            "n_dim": 12
+          },
+          "uniform_intensity": {
+            "n": 12,
+            "signed_pct": -44.012185055343984,
+            "mae_pct": 44.012185055343984,
+            "n_bright": 0,
+            "n_dim": 12
+          },
+          "half_lambert_half_uniform": {
+            "n": 12,
+            "signed_pct": -49.68029012041642,
+            "mae_pct": 49.68029012041642,
+            "n_bright": 0,
+            "n_dim": 12
+          },
+          "off_h1": {
+            "n": 12,
+            "signed_pct": -55.126141156426044,
+            "mae_pct": 55.126141156426044,
+            "n_bright": 0,
+            "n_dim": 12
+          },
+          "off_h2": {
+            "n": 12,
+            "signed_pct": -53.683611698533454,
+            "mae_pct": 53.683611698533454,
+            "n_bright": 0,
+            "n_dim": 12
+          }
+        },
+        "sodium": {
+          "lambert": {
+            "n": 12,
+            "signed_pct": -59.19049953131668,
+            "mae_pct": 59.19049953131668,
+            "n_bright": 0,
+            "n_dim": 12
+          },
+          "uniform_intensity": {
+            "n": 12,
+            "signed_pct": -48.95000161925468,
+            "mae_pct": 48.95000161925468,
+            "n_bright": 0,
+            "n_dim": 12
+          },
+          "half_lambert_half_uniform": {
+            "n": 12,
+            "signed_pct": -54.07025057528568,
+            "mae_pct": 54.07025057528568,
+            "n_bright": 0,
+            "n_dim": 12
+          },
+          "off_h1": {
+            "n": 12,
+            "signed_pct": -58.99235108267738,
+            "mae_pct": 58.99235108267738,
+            "n_bright": 0,
+            "n_dim": 12
+          },
+          "off_h2": {
+            "n": 12,
+            "signed_pct": -57.69577168661307,
+            "mae_pct": 57.69577168661307,
+            "n_bright": 0,
+            "n_dim": 12
+          }
+        },
+        "led": {
+          "lambert": {
+            "n": 12,
+            "signed_pct": -51.506290839661034,
+            "mae_pct": 51.506290839661034,
+            "n_bright": 0,
+            "n_dim": 12
+          },
+          "uniform_intensity": {
+            "n": 12,
+            "signed_pct": -39.07436849143329,
+            "mae_pct": 39.07436849143329,
+            "n_bright": 0,
+            "n_dim": 12
+          },
+          "half_lambert_half_uniform": {
+            "n": 12,
+            "signed_pct": -45.29032966554716,
+            "mae_pct": 45.29032966554716,
+            "n_bright": 0,
+            "n_dim": 12
+          },
+          "off_h1": {
+            "n": 12,
+            "signed_pct": -51.25993123017471,
+            "mae_pct": 51.25993123017471,
+            "n_bright": 0,
+            "n_dim": 12
+          },
+          "off_h2": {
+            "n": 12,
+            "signed_pct": -49.671451710453844,
+            "mae_pct": 49.671451710453844,
+            "n_bright": 0,
+            "n_dim": 12
+          }
+        },
+        "bright_natural": {
+          "lambert": {
+            "n": 12,
+            "signed_pct": -47.837733187092006,
+            "mae_pct": 47.837733187092006,
+            "n_bright": 0,
+            "n_dim": 12
+          },
+          "uniform_intensity": {
+            "n": 12,
+            "signed_pct": -36.501523056947136,
+            "mae_pct": 36.501523056947136,
+            "n_bright": 0,
+            "n_dim": 12
+          },
+          "half_lambert_half_uniform": {
+            "n": 12,
+            "signed_pct": -42.16962812201957,
+            "mae_pct": 42.16962812201957,
+            "n_bright": 0,
+            "n_dim": 12
+          },
+          "off_h1": {
+            "n": 12,
+            "signed_pct": -47.615479158029196,
+            "mae_pct": 47.615479158029196,
+            "n_bright": 0,
+            "n_dim": 12
+          },
+          "off_h2": {
+            "n": 12,
+            "signed_pct": -46.172949700136606,
+            "mae_pct": 46.172949700136606,
+            "n_bright": 0,
+            "n_dim": 12
+          }
+        },
+        "joint": {
+          "lambert": {
+            "n": 12,
+            "signed_pct": -43.99562884126418,
+            "mae_pct": 43.99562884126418,
+            "n_bright": 0,
+            "n_dim": 12
+          },
+          "uniform_intensity": {
+            "n": 12,
+            "signed_pct": -31.56370649303644,
+            "mae_pct": 31.56370649303644,
+            "n_bright": 0,
+            "n_dim": 12
+          },
+          "half_lambert_half_uniform": {
+            "n": 12,
+            "signed_pct": -37.779667667150306,
+            "mae_pct": 37.779667667150306,
+            "n_bright": 0,
+            "n_dim": 12
+          },
+          "off_h1": {
+            "n": 12,
+            "signed_pct": -43.74926923177785,
+            "mae_pct": 43.74926923177785,
+            "n_bright": 0,
+            "n_dim": 12
+          },
+          "off_h2": {
+            "n": 12,
+            "signed_pct": -42.16078971205699,
+            "mae_pct": 42.16078971205699,
+            "n_bright": 0,
+            "n_dim": 12
+          }
+        },
+        "whole_map": {
+          "lambert": {
+            "n": 12,
+            "signed_pct": -55.348395185488855,
+            "mae_pct": 55.348395185488855,
+            "n_bright": 0,
+            "n_dim": 12
+          },
+          "uniform_intensity": {
+            "n": 12,
+            "signed_pct": -9.107078293325976,
+            "mae_pct": 12.733197805431065,
+            "n_bright": 3,
+            "n_dim": 9
+          },
+          "half_lambert_half_uniform": {
+            "n": 12,
+            "signed_pct": -32.22773673940741,
+            "mae_pct": 32.22773673940741,
+            "n_bright": 0,
+            "n_dim": 12
+          },
+          "off_h1": {
+            "n": 12,
+            "signed_pct": -48.79331182076564,
+            "mae_pct": 48.79331182076564,
+            "n_bright": 0,
+            "n_dim": 12
+          },
+          "off_h2": {
+            "n": 12,
+            "signed_pct": -42.47680085534252,
+            "mae_pct": 42.47680085534252,
+            "n_bright": 0,
+            "n_dim": 12
+          }
+        }
+      },
+      "madrid_city": {
+        "base": {
+          "lambert": {
+            "n": 8,
+            "signed_pct": -32.810550761667315,
+            "mae_pct": 32.810550761667315,
+            "n_bright": 0,
+            "n_dim": 8
+          },
+          "uniform_intensity": {
+            "n": 8,
+            "signed_pct": 16.392386409410065,
+            "mae_pct": 22.69177819279532,
+            "n_bright": 6,
+            "n_dim": 2
+          },
+          "half_lambert_half_uniform": {
+            "n": 8,
+            "signed_pct": -8.209082176128629,
+            "mae_pct": 18.53921341260401,
+            "n_bright": 2,
+            "n_dim": 6
+          },
+          "off_h1": {
+            "n": 8,
+            "signed_pct": -30.973262107808733,
+            "mae_pct": 30.973262107808733,
+            "n_bright": 0,
+            "n_dim": 8
+          },
+          "off_h2": {
+            "n": 8,
+            "signed_pct": -25.96578920488363,
+            "mae_pct": 26.52542590135009,
+            "n_bright": 1,
+            "n_dim": 7
+          }
+        },
+        "sodium": {
+          "lambert": {
+            "n": 8,
+            "signed_pct": -41.46606830131763,
+            "mae_pct": 41.46606830131763,
+            "n_bright": 0,
+            "n_dim": 8
+          },
+          "uniform_intensity": {
+            "n": 8,
+            "signed_pct": 1.5912620265356665,
+            "mae_pct": 18.488989409460014,
+            "n_bright": 3,
+            "n_dim": 5
+          },
+          "half_lambert_half_uniform": {
+            "n": 8,
+            "signed_pct": -19.937403137390984,
+            "mae_pct": 23.23046849482574,
+            "n_bright": 1,
+            "n_dim": 7
+          },
+          "off_h1": {
+            "n": 8,
+            "signed_pct": -39.85787486277493,
+            "mae_pct": 39.85787486277493,
+            "n_bright": 0,
+            "n_dim": 8
+          },
+          "off_h2": {
+            "n": 8,
+            "signed_pct": -35.46397765838654,
+            "mae_pct": 35.46397765838654,
+            "n_bright": 0,
+            "n_dim": 8
+          }
+        },
+        "led": {
+          "lambert": {
+            "n": 8,
+            "signed_pct": -24.155033222016996,
+            "mae_pct": 24.375122685211707,
+            "n_bright": 1,
+            "n_dim": 7
+          },
+          "uniform_intensity": {
+            "n": 8,
+            "signed_pct": 31.19351079228446,
+            "mae_pct": 31.584412823832395,
+            "n_bright": 6,
+            "n_dim": 2
+          },
+          "half_lambert_half_uniform": {
+            "n": 8,
+            "signed_pct": 3.51923878513374,
+            "mae_pct": 17.1895736098208,
+            "n_bright": 4,
+            "n_dim": 4
+          },
+          "off_h1": {
+            "n": 8,
+            "signed_pct": -22.08864935284253,
+            "mae_pct": 23.41506968003705,
+            "n_bright": 1,
+            "n_dim": 7
+          },
+          "off_h2": {
+            "n": 8,
+            "signed_pct": -16.46760075138072,
+            "mae_pct": 20.969008820748492,
+            "n_bright": 2,
+            "n_dim": 6
+          }
+        },
+        "bright_natural": {
+          "lambert": {
+            "n": 8,
+            "signed_pct": -32.16173058663094,
+            "mae_pct": 32.16173058663094,
+            "n_bright": 0,
+            "n_dim": 8
+          },
+          "uniform_intensity": {
+            "n": 8,
+            "signed_pct": 17.04120658444644,
+            "mae_pct": 23.03804112378271,
+            "n_bright": 6,
+            "n_dim": 2
+          },
+          "half_lambert_half_uniform": {
+            "n": 8,
+            "signed_pct": -7.560262001092255,
+            "mae_pct": 18.3708288454913,
+            "n_bright": 2,
+            "n_dim": 6
+          },
+          "off_h1": {
+            "n": 8,
+            "signed_pct": -30.32444193277236,
+            "mae_pct": 30.32444193277236,
+            "n_bright": 0,
+            "n_dim": 8
+          },
+          "off_h2": {
+            "n": 8,
+            "signed_pct": -25.316969029847254,
+            "mae_pct": 26.173273271257198,
+            "n_bright": 1,
+            "n_dim": 7
+          }
+        },
+        "joint": {
+          "lambert": {
+            "n": 8,
+            "signed_pct": -23.506213046980623,
+            "mae_pct": 24.02297005511882,
+            "n_bright": 1,
+            "n_dim": 7
+          },
+          "uniform_intensity": {
+            "n": 8,
+            "signed_pct": 31.842330967320834,
+            "mae_pct": 31.93212359099777,
+            "n_bright": 7,
+            "n_dim": 1
+          },
+          "half_lambert_half_uniform": {
+            "n": 8,
+            "signed_pct": 4.168058960170111,
+            "mae_pct": 17.300289396910003,
+            "n_bright": 4,
+            "n_dim": 4
+          },
+          "off_h1": {
+            "n": 8,
+            "signed_pct": -21.439829177806153,
+            "mae_pct": 23.06291704994416,
+            "n_bright": 1,
+            "n_dim": 7
+          },
+          "off_h2": {
+            "n": 8,
+            "signed_pct": -15.818780576344343,
+            "mae_pct": 20.800624253635778,
+            "n_bright": 2,
+            "n_dim": 6
+          }
+        },
+        "whole_map": {
+          "lambert": {
+            "n": 8,
+            "signed_pct": -32.810550761667315,
+            "mae_pct": 32.810550761667315,
+            "n_bright": 0,
+            "n_dim": 8
+          },
+          "uniform_intensity": {
+            "n": 8,
+            "signed_pct": 23.380448594263907,
+            "mae_pct": 25.561214965551283,
+            "n_bright": 6,
+            "n_dim": 2
+          },
+          "half_lambert_half_uniform": {
+            "n": 8,
+            "signed_pct": -4.715051083701706,
+            "mae_pct": 17.641829055168618,
+            "n_bright": 2,
+            "n_dim": 6
+          },
+          "off_h1": {
+            "n": 8,
+            "signed_pct": -30.365164233076857,
+            "mae_pct": 30.365164233076857,
+            "n_bright": 0,
+            "n_dim": 8
+          },
+          "off_h2": {
+            "n": 8,
+            "signed_pct": -24.4450422939523,
+            "mae_pct": 25.8033257803057,
+            "n_bright": 1,
+            "n_dim": 7
+          }
+        }
+      },
+      "tucson_20": {
+        "base": {
+          "lambert": {
+            "n": 6,
+            "signed_pct": 2.2228589005737227,
+            "mae_pct": 3.644117738612564,
+            "n_bright": 3,
+            "n_dim": 3
+          },
+          "uniform_intensity": {
+            "n": 6,
+            "signed_pct": 73.67691518088715,
+            "mae_pct": 73.67691518088715,
+            "n_bright": 6,
+            "n_dim": 0
+          },
+          "half_lambert_half_uniform": {
+            "n": 6,
+            "signed_pct": 37.94988704073043,
+            "mae_pct": 37.94988704073043,
+            "n_bright": 6,
+            "n_dim": 0
+          },
+          "off_h1": {
+            "n": 6,
+            "signed_pct": 11.99203989086799,
+            "mae_pct": 11.99203989086799,
+            "n_bright": 6,
+            "n_dim": 0
+          },
+          "off_h2": {
+            "n": 6,
+            "signed_pct": 20.650391260454604,
+            "mae_pct": 20.650391260454604,
+            "n_bright": 6,
+            "n_dim": 0
+          }
+        },
+        "sodium": {
+          "lambert": {
+            "n": 6,
+            "signed_pct": -4.790766687273875,
+            "mae_pct": 5.390299408037919,
+            "n_bright": 1,
+            "n_dim": 5
+          },
+          "uniform_intensity": {
+            "n": 6,
+            "signed_pct": 61.54593434335187,
+            "mae_pct": 61.54593434335187,
+            "n_bright": 6,
+            "n_dim": 0
+          },
+          "half_lambert_half_uniform": {
+            "n": 6,
+            "signed_pct": 28.377583828038986,
+            "mae_pct": 28.377583828038986,
+            "n_bright": 6,
+            "n_dim": 0
+          },
+          "off_h1": {
+            "n": 6,
+            "signed_pct": 4.110154095038432,
+            "mae_pct": 4.110154095038432,
+            "n_bright": 6,
+            "n_dim": 0
+          },
+          "off_h2": {
+            "n": 6,
+            "signed_pct": 12.14160052564417,
+            "mae_pct": 12.14160052564417,
+            "n_bright": 6,
+            "n_dim": 0
+          }
+        },
+        "led": {
+          "lambert": {
+            "n": 6,
+            "signed_pct": 9.236484488421326,
+            "mae_pct": 9.236484488421326,
+            "n_bright": 6,
+            "n_dim": 0
+          },
+          "uniform_intensity": {
+            "n": 6,
+            "signed_pct": 85.80789601842238,
+            "mae_pct": 85.80789601842238,
+            "n_bright": 6,
+            "n_dim": 0
+          },
+          "half_lambert_half_uniform": {
+            "n": 6,
+            "signed_pct": 47.52219025342185,
+            "mae_pct": 47.52219025342185,
+            "n_bright": 6,
+            "n_dim": 0
+          },
+          "off_h1": {
+            "n": 6,
+            "signed_pct": 19.873925686697557,
+            "mae_pct": 19.873925686697557,
+            "n_bright": 6,
+            "n_dim": 0
+          },
+          "off_h2": {
+            "n": 6,
+            "signed_pct": 29.159181995265048,
+            "mae_pct": 29.159181995265048,
+            "n_bright": 6,
+            "n_dim": 0
+          }
+        },
+        "bright_natural": {
+          "lambert": {
+            "n": 6,
+            "signed_pct": 10.991400288174413,
+            "mae_pct": 10.991400288174413,
+            "n_bright": 6,
+            "n_dim": 0
+          },
+          "uniform_intensity": {
+            "n": 6,
+            "signed_pct": 82.44545656848784,
+            "mae_pct": 82.44545656848784,
+            "n_bright": 6,
+            "n_dim": 0
+          },
+          "half_lambert_half_uniform": {
+            "n": 6,
+            "signed_pct": 46.71842842833112,
+            "mae_pct": 46.71842842833112,
+            "n_bright": 6,
+            "n_dim": 0
+          },
+          "off_h1": {
+            "n": 6,
+            "signed_pct": 20.76058127846869,
+            "mae_pct": 20.76058127846869,
+            "n_bright": 6,
+            "n_dim": 0
+          },
+          "off_h2": {
+            "n": 6,
+            "signed_pct": 29.418932648055314,
+            "mae_pct": 29.418932648055314,
+            "n_bright": 6,
+            "n_dim": 0
+          }
+        },
+        "joint": {
+          "lambert": {
+            "n": 6,
+            "signed_pct": 18.005025876022017,
+            "mae_pct": 18.005025876022017,
+            "n_bright": 6,
+            "n_dim": 0
+          },
+          "uniform_intensity": {
+            "n": 6,
+            "signed_pct": 94.57643740602309,
+            "mae_pct": 94.57643740602309,
+            "n_bright": 6,
+            "n_dim": 0
+          },
+          "half_lambert_half_uniform": {
+            "n": 6,
+            "signed_pct": 56.290731641022546,
+            "mae_pct": 56.290731641022546,
+            "n_bright": 6,
+            "n_dim": 0
+          },
+          "off_h1": {
+            "n": 6,
+            "signed_pct": 28.642467074298256,
+            "mae_pct": 28.642467074298256,
+            "n_bright": 6,
+            "n_dim": 0
+          },
+          "off_h2": {
+            "n": 6,
+            "signed_pct": 37.92772338286574,
+            "mae_pct": 37.92772338286574,
+            "n_bright": 6,
+            "n_dim": 0
+          }
+        },
+        "whole_map": {
+          "lambert": {
+            "n": 6,
+            "signed_pct": 2.2228589005737303,
+            "mae_pct": 3.6441177386125716,
+            "n_bright": 3,
+            "n_dim": 3
+          },
+          "uniform_intensity": {
+            "n": 6,
+            "signed_pct": 89.81477205710499,
+            "mae_pct": 89.81477205710499,
+            "n_bright": 6,
+            "n_dim": 0
+          },
+          "half_lambert_half_uniform": {
+            "n": 6,
+            "signed_pct": 46.01881547883935,
+            "mae_pct": 46.01881547883935,
+            "n_bright": 6,
+            "n_dim": 0
+          },
+          "off_h1": {
+            "n": 6,
+            "signed_pct": 13.701177315167653,
+            "mae_pct": 13.701177315167653,
+            "n_bright": 6,
+            "n_dim": 0
+          },
+          "off_h2": {
+            "n": 6,
+            "signed_pct": 24.504486756038446,
+            "mae_pct": 24.504486756038446,
+            "n_bright": 6,
+            "n_dim": 0
+          }
+        }
+      },
+      "tucson_29": {
+        "base": {
+          "lambert": {
+            "n": 5,
+            "signed_pct": -46.543091222816344,
+            "mae_pct": 46.543091222816344,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "uniform_intensity": {
+            "n": 5,
+            "signed_pct": -30.754271010214705,
+            "mae_pct": 30.754271010214705,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "half_lambert_half_uniform": {
+            "n": 5,
+            "signed_pct": -38.648681116515526,
+            "mae_pct": 38.648681116515526,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "off_h1": {
+            "n": 5,
+            "signed_pct": -45.28203937702448,
+            "mae_pct": 45.28203937702448,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "off_h2": {
+            "n": 5,
+            "signed_pct": -42.9735154701343,
+            "mae_pct": 42.9735154701343,
+            "n_bright": 0,
+            "n_dim": 5
+          }
+        },
+        "sodium": {
+          "lambert": {
+            "n": 5,
+            "signed_pct": -48.85566869134962,
+            "mae_pct": 48.85566869134962,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "uniform_intensity": {
+            "n": 5,
+            "signed_pct": -34.95918613071631,
+            "mae_pct": 34.95918613071631,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "half_lambert_half_uniform": {
+            "n": 5,
+            "signed_pct": -41.90742741103296,
+            "mae_pct": 41.90742741103296,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "off_h1": {
+            "n": 5,
+            "signed_pct": -47.75743774514265,
+            "mae_pct": 47.75743774514265,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "off_h2": {
+            "n": 5,
+            "signed_pct": -45.66516468880487,
+            "mae_pct": 45.66516468880487,
+            "n_bright": 0,
+            "n_dim": 5
+          }
+        },
+        "led": {
+          "lambert": {
+            "n": 5,
+            "signed_pct": -44.23051375428307,
+            "mae_pct": 44.23051375428307,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "uniform_intensity": {
+            "n": 5,
+            "signed_pct": -26.54935588971309,
+            "mae_pct": 26.54935588971309,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "half_lambert_half_uniform": {
+            "n": 5,
+            "signed_pct": -35.38993482199808,
+            "mae_pct": 35.38993482199808,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "off_h1": {
+            "n": 5,
+            "signed_pct": -42.80664100890632,
+            "mae_pct": 42.80664100890632,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "off_h2": {
+            "n": 5,
+            "signed_pct": -40.28186625146373,
+            "mae_pct": 40.28186625146373,
+            "n_bright": 0,
+            "n_dim": 5
+          }
+        },
+        "bright_natural": {
+          "lambert": {
+            "n": 5,
+            "signed_pct": -29.575617828276766,
+            "mae_pct": 29.575617828276766,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "uniform_intensity": {
+            "n": 5,
+            "signed_pct": -13.78679761567512,
+            "mae_pct": 13.78679761567512,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "half_lambert_half_uniform": {
+            "n": 5,
+            "signed_pct": -21.68120772197594,
+            "mae_pct": 21.68120772197594,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "off_h1": {
+            "n": 5,
+            "signed_pct": -28.314565982484904,
+            "mae_pct": 28.314565982484904,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "off_h2": {
+            "n": 5,
+            "signed_pct": -26.00604207559472,
+            "mae_pct": 26.00604207559472,
+            "n_bright": 0,
+            "n_dim": 5
+          }
+        },
+        "joint": {
+          "lambert": {
+            "n": 5,
+            "signed_pct": -27.263040359743485,
+            "mae_pct": 27.263040359743485,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "uniform_intensity": {
+            "n": 5,
+            "signed_pct": -9.581882495173508,
+            "mae_pct": 10.25569867861135,
+            "n_bright": 1,
+            "n_dim": 4
+          },
+          "half_lambert_half_uniform": {
+            "n": 5,
+            "signed_pct": -18.4224614274585,
+            "mae_pct": 18.4224614274585,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "off_h1": {
+            "n": 5,
+            "signed_pct": -25.83916761436674,
+            "mae_pct": 25.83916761436674,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "off_h2": {
+            "n": 5,
+            "signed_pct": -23.314392856924158,
+            "mae_pct": 23.314392856924158,
+            "n_bright": 0,
+            "n_dim": 5
+          }
+        },
+        "whole_map": {
+          "lambert": {
+            "n": 5,
+            "signed_pct": -46.543091222816344,
+            "mae_pct": 46.543091222816344,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "uniform_intensity": {
+            "n": 5,
+            "signed_pct": -14.230230372154885,
+            "mae_pct": 14.230230372154885,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "half_lambert_half_uniform": {
+            "n": 5,
+            "signed_pct": -30.386660797485607,
+            "mae_pct": 30.386660797485607,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "off_h1": {
+            "n": 5,
+            "signed_pct": -44.48575783738771,
+            "mae_pct": 44.48575783738771,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "off_h2": {
+            "n": 5,
+            "signed_pct": -40.01389791942304,
+            "mae_pct": 40.01389791942304,
+            "n_bright": 0,
+            "n_dim": 5
+          }
+        }
+      },
+      "tucson_49": {
+        "base": {
+          "lambert": {
+            "n": 5,
+            "signed_pct": -22.784375488462295,
+            "mae_pct": 22.784375488462295,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "uniform_intensity": {
+            "n": 5,
+            "signed_pct": -15.026219708785423,
+            "mae_pct": 15.026219708785423,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "half_lambert_half_uniform": {
+            "n": 5,
+            "signed_pct": -18.90529759862386,
+            "mae_pct": 18.90529759862386,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "off_h1": {
+            "n": 5,
+            "signed_pct": -22.43325456533642,
+            "mae_pct": 22.43325456533642,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "off_h2": {
+            "n": 5,
+            "signed_pct": -21.40782799484649,
+            "mae_pct": 21.40782799484649,
+            "n_bright": 0,
+            "n_dim": 5
+          }
+        },
+        "sodium": {
+          "lambert": {
+            "n": 5,
+            "signed_pct": -23.8429490167192,
+            "mae_pct": 23.8429490167192,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "uniform_intensity": {
+            "n": 5,
+            "signed_pct": -16.826471676962402,
+            "mae_pct": 16.826471676962402,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "half_lambert_half_uniform": {
+            "n": 5,
+            "signed_pct": -20.334710346840804,
+            "mae_pct": 20.334710346840804,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "off_h1": {
+            "n": 5,
+            "signed_pct": -23.58049208977205,
+            "mae_pct": 23.58049208977205,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "off_h2": {
+            "n": 5,
+            "signed_pct": -22.669089910359407,
+            "mae_pct": 22.669089910359407,
+            "n_bright": 0,
+            "n_dim": 5
+          }
+        },
+        "led": {
+          "lambert": {
+            "n": 5,
+            "signed_pct": -21.7258019602054,
+            "mae_pct": 21.7258019602054,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "uniform_intensity": {
+            "n": 5,
+            "signed_pct": -13.225967740608436,
+            "mae_pct": 13.225967740608436,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "half_lambert_half_uniform": {
+            "n": 5,
+            "signed_pct": -17.475884850406914,
+            "mae_pct": 17.475884850406914,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "off_h1": {
+            "n": 5,
+            "signed_pct": -21.2860170409008,
+            "mae_pct": 21.2860170409008,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "off_h2": {
+            "n": 5,
+            "signed_pct": -20.146566079333574,
+            "mae_pct": 20.146566079333574,
+            "n_bright": 0,
+            "n_dim": 5
+          }
+        },
+        "bright_natural": {
+          "lambert": {
+            "n": 5,
+            "signed_pct": 7.520382410266097,
+            "mae_pct": 7.7102147896842705,
+            "n_bright": 4,
+            "n_dim": 1
+          },
+          "uniform_intensity": {
+            "n": 5,
+            "signed_pct": 15.278538189942985,
+            "mae_pct": 15.278538189942985,
+            "n_bright": 5,
+            "n_dim": 0
+          },
+          "half_lambert_half_uniform": {
+            "n": 5,
+            "signed_pct": 11.39946030010455,
+            "mae_pct": 11.39946030010455,
+            "n_bright": 5,
+            "n_dim": 0
+          },
+          "off_h1": {
+            "n": 5,
+            "signed_pct": 7.87150333339198,
+            "mae_pct": 7.904099908547102,
+            "n_bright": 4,
+            "n_dim": 1
+          },
+          "off_h2": {
+            "n": 5,
+            "signed_pct": 8.896929903881912,
+            "mae_pct": 8.896929903881912,
+            "n_bright": 5,
+            "n_dim": 0
+          }
+        },
+        "joint": {
+          "lambert": {
+            "n": 5,
+            "signed_pct": 8.578955938522984,
+            "mae_pct": 8.578955938522984,
+            "n_bright": 5,
+            "n_dim": 0
+          },
+          "uniform_intensity": {
+            "n": 5,
+            "signed_pct": 17.078790158119965,
+            "mae_pct": 17.078790158119965,
+            "n_bright": 5,
+            "n_dim": 0
+          },
+          "half_lambert_half_uniform": {
+            "n": 5,
+            "signed_pct": 12.82887304832149,
+            "mae_pct": 12.82887304832149,
+            "n_bright": 5,
+            "n_dim": 0
+          },
+          "off_h1": {
+            "n": 5,
+            "signed_pct": 9.018740857827611,
+            "mae_pct": 9.018740857827611,
+            "n_bright": 5,
+            "n_dim": 0
+          },
+          "off_h2": {
+            "n": 5,
+            "signed_pct": 10.158191819394826,
+            "mae_pct": 10.158191819394826,
+            "n_bright": 5,
+            "n_dim": 0
+          }
+        },
+        "whole_map": {
+          "lambert": {
+            "n": 5,
+            "signed_pct": -22.784375488462295,
+            "mae_pct": 22.784375488462295,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "uniform_intensity": {
+            "n": 5,
+            "signed_pct": 6.823559579165106,
+            "mae_pct": 7.0268067194094215,
+            "n_bright": 4,
+            "n_dim": 1
+          },
+          "half_lambert_half_uniform": {
+            "n": 5,
+            "signed_pct": -7.980407954648592,
+            "mae_pct": 8.569937665442803,
+            "n_bright": 1,
+            "n_dim": 4
+          },
+          "off_h1": {
+            "n": 5,
+            "signed_pct": -21.511437354497183,
+            "mae_pct": 21.511437354497183,
+            "n_bright": 0,
+            "n_dim": 5
+          },
+          "off_h2": {
+            "n": 5,
+            "signed_pct": -17.745412458812623,
+            "mae_pct": 17.745412458812623,
+            "n_bright": 0,
+            "n_dim": 5
+          }
+        }
+      }
+    },
+    "atmosphere": {
+      "mad_total_021": {
+        "lambert": {
+          "n": 14,
+          "signed_pct": -50.66520372738442,
+          "mae_pct": 50.66520372738442,
+          "n_bright": 0,
+          "n_dim": 14
+        },
+        "uniform_intensity": {
+          "n": 14,
+          "signed_pct": -33.07663343664101,
+          "mae_pct": 35.867384038480694,
+          "n_bright": 2,
+          "n_dim": 12
+        },
+        "half_lambert_half_uniform": {
+          "n": 14,
+          "signed_pct": -41.87091858201272,
+          "mae_pct": 41.87091858201272,
+          "n_bright": 0,
+          "n_dim": 14
+        },
+        "off_h1": {
+          "n": 14,
+          "signed_pct": -50.16111982168273,
+          "mae_pct": 50.16111982168273,
+          "n_bright": 0,
+          "n_dim": 14
+        },
+        "off_h2": {
+          "n": 14,
+          "signed_pct": -48.20157426749566,
+          "mae_pct": 48.20157426749566,
+          "n_bright": 0,
+          "n_dim": 14
+        }
+      },
+      "mad_total_0.05": {
+        "lambert": {
+          "n": 14,
+          "signed_pct": -50.153432069748774,
+          "mae_pct": 50.153432069748774,
+          "n_bright": 0,
+          "n_dim": 14
+        },
+        "uniform_intensity": {
+          "n": 14,
+          "signed_pct": -32.82140725230942,
+          "mae_pct": 37.002980395761384,
+          "n_bright": 2,
+          "n_dim": 12
+        },
+        "half_lambert_half_uniform": {
+          "n": 14,
+          "signed_pct": -41.487419661029094,
+          "mae_pct": 41.487419661029094,
+          "n_bright": 0,
+          "n_dim": 14
+        },
+        "off_h1": {
+          "n": 14,
+          "signed_pct": -49.64505453443874,
+          "mae_pct": 49.64505453443874,
+          "n_bright": 0,
+          "n_dim": 14
+        },
+        "off_h2": {
+          "n": 14,
+          "signed_pct": -47.756743514238956,
+          "mae_pct": 47.756743514238956,
+          "n_bright": 0,
+          "n_dim": 14
+        }
+      },
+      "mad_total_0.1": {
+        "lambert": {
+          "n": 14,
+          "signed_pct": -48.95723206321184,
+          "mae_pct": 48.95723206321184,
+          "n_bright": 0,
+          "n_dim": 14
+        },
+        "uniform_intensity": {
+          "n": 14,
+          "signed_pct": -30.492272178089998,
+          "mae_pct": 37.46647215297544,
+          "n_bright": 2,
+          "n_dim": 12
+        },
+        "half_lambert_half_uniform": {
+          "n": 14,
+          "signed_pct": -39.72475212065092,
+          "mae_pct": 40.102493644498246,
+          "n_bright": 1,
+          "n_dim": 13
+        },
+        "off_h1": {
+          "n": 14,
+          "signed_pct": -48.42549898764589,
+          "mae_pct": 48.42549898764589,
+          "n_bright": 0,
+          "n_dim": 14
+        },
+        "off_h2": {
+          "n": 14,
+          "signed_pct": -46.35120418550365,
+          "mae_pct": 46.35120418550365,
+          "n_bright": 0,
+          "n_dim": 14
+        }
+      },
+      "mad_h_1200": {
+        "lambert": {
+          "n": 11,
+          "signed_pct": -46.22968730228296,
+          "mae_pct": 46.22968730228296,
+          "n_bright": 0,
+          "n_dim": 11
+        },
+        "uniform_intensity": {
+          "n": 11,
+          "signed_pct": -21.498672954796767,
+          "mae_pct": 29.65567616914766,
+          "n_bright": 2,
+          "n_dim": 9
+        },
+        "half_lambert_half_uniform": {
+          "n": 11,
+          "signed_pct": -33.864180128539864,
+          "mae_pct": 36.07156838217858,
+          "n_bright": 1,
+          "n_dim": 10
+        },
+        "off_h1": {
+          "n": 11,
+          "signed_pct": -45.4230593552102,
+          "mae_pct": 45.4230593552102,
+          "n_bright": 0,
+          "n_dim": 11
+        },
+        "off_h2": {
+          "n": 11,
+          "signed_pct": -42.69746703664694,
+          "mae_pct": 42.69746703664694,
+          "n_bright": 0,
+          "n_dim": 11
+        }
+      },
+      "mad_h_400": {
+        "lambert": {
+          "n": 11,
+          "signed_pct": -47.12589177888338,
+          "mae_pct": 47.12589177888338,
+          "n_bright": 0,
+          "n_dim": 11
+        },
+        "uniform_intensity": {
+          "n": 11,
+          "signed_pct": -23.679007872692765,
+          "mae_pct": 31.68734182342696,
+          "n_bright": 2,
+          "n_dim": 9
+        },
+        "half_lambert_half_uniform": {
+          "n": 11,
+          "signed_pct": -35.402449825788075,
+          "mae_pct": 37.06470661876946,
+          "n_bright": 1,
+          "n_dim": 10
+        },
+        "off_h1": {
+          "n": 11,
+          "signed_pct": -46.26782541813428,
+          "mae_pct": 46.26782541813428,
+          "n_bright": 0,
+          "n_dim": 11
+        },
+        "off_h2": {
+          "n": 11,
+          "signed_pct": -43.66168852550219,
+          "mae_pct": 43.66168852550219,
+          "n_bright": 0,
+          "n_dim": 11
+        }
+      },
+      "mad_h_2400": {
+        "lambert": {
+          "n": 11,
+          "signed_pct": -45.76132040837866,
+          "mae_pct": 45.76132040837866,
+          "n_bright": 0,
+          "n_dim": 11
+        },
+        "uniform_intensity": {
+          "n": 11,
+          "signed_pct": -21.074580293413472,
+          "mae_pct": 27.984431462768306,
+          "n_bright": 2,
+          "n_dim": 9
+        },
+        "half_lambert_half_uniform": {
+          "n": 11,
+          "signed_pct": -33.41795035089607,
+          "mae_pct": 35.033491842814925,
+          "n_bright": 1,
+          "n_dim": 10
+        },
+        "off_h1": {
+          "n": 11,
+          "signed_pct": -44.956390787599744,
+          "mae_pct": 44.956390787599744,
+          "n_bright": 0,
+          "n_dim": 11
+        },
+        "off_h2": {
+          "n": 11,
+          "signed_pct": -42.22057791092216,
+          "mae_pct": 42.22057791092216,
+          "n_bright": 0,
+          "n_dim": 11
+        }
+      },
+      "tuc_aod_base": {
+        "lambert": {
+          "n": 28,
+          "signed_pct": -21.10897369682022,
+          "mae_pct": 22.407678616036534,
+          "n_bright": 4,
+          "n_dim": 24
+        },
+        "uniform_intensity": {
+          "n": 28,
+          "signed_pct": 24.20320218970563,
+          "mae_pct": 40.65042301748316,
+          "n_bright": 17,
+          "n_dim": 11
+        },
+        "half_lambert_half_uniform": {
+          "n": 28,
+          "signed_pct": 1.5471142464426988,
+          "mae_pct": 26.610882107241775,
+          "n_bright": 13,
+          "n_dim": 15
+        },
+        "off_h1": {
+          "n": 28,
+          "signed_pct": -16.205774393963612,
+          "mae_pct": 22.131871385252868,
+          "n_bright": 8,
+          "n_dim": 20
+        },
+        "off_h2": {
+          "n": 28,
+          "signed_pct": -10.860692866544348,
+          "mae_pct": 22.655298333968577,
+          "n_bright": 11,
+          "n_dim": 17
+        }
+      },
+      "tuc_aod_day": {
+        "lambert": {
+          "n": 28,
+          "signed_pct": -20.940882110886736,
+          "mae_pct": 22.152712674304723,
+          "n_bright": 5,
+          "n_dim": 23
+        },
+        "uniform_intensity": {
+          "n": 28,
+          "signed_pct": 25.170306855963986,
+          "mae_pct": 39.60214353357387,
+          "n_bright": 17,
+          "n_dim": 11
+        },
+        "half_lambert_half_uniform": {
+          "n": 28,
+          "signed_pct": 2.1147123725386203,
+          "mae_pct": 25.377417305748146,
+          "n_bright": 13,
+          "n_dim": 15
+        },
+        "off_h1": {
+          "n": 28,
+          "signed_pct": -16.052570896921043,
+          "mae_pct": 21.838057668326755,
+          "n_bright": 9,
+          "n_dim": 19
+        },
+        "off_h2": {
+          "n": 28,
+          "signed_pct": -10.629721292139356,
+          "mae_pct": 22.146226723915337,
+          "n_bright": 11,
+          "n_dim": 17
+        }
+      }
+    },
+    "selection_checks": {
+      "Мадрид, все точки >35 км": {
+        "lambert": {
+          "n": 12,
+          "signed_pct": -55.348395185488855,
+          "mae_pct": 55.348395185488855,
+          "n_bright": 0,
+          "n_dim": 12
+        },
+        "uniform_intensity": {
+          "n": 12,
+          "signed_pct": -44.012185055343984,
+          "mae_pct": 44.012185055343984,
+          "n_bright": 0,
+          "n_dim": 12
+        },
+        "half_lambert_half_uniform": {
+          "n": 12,
+          "signed_pct": -49.68029012041642,
+          "mae_pct": 49.68029012041642,
+          "n_bright": 0,
+          "n_dim": 12
+        },
+        "off_h1": {
+          "n": 12,
+          "signed_pct": -55.126141156426044,
+          "mae_pct": 55.126141156426044,
+          "n_bright": 0,
+          "n_dim": 12
+        },
+        "off_h2": {
+          "n": 12,
+          "signed_pct": -53.683611698533454,
+          "mae_pct": 53.683611698533454,
+          "n_bright": 0,
+          "n_dim": 12
+        }
+      },
+      "Мадрид, строгий отбор >35 км": {
+        "lambert": {
+          "n": 6,
+          "signed_pct": -55.46016295959521,
+          "mae_pct": 55.46016295959521
+        },
+        "uniform_intensity": {
+          "n": 6,
+          "signed_pct": -43.070836206223795,
+          "mae_pct": 43.070836206223795
+        },
+        "half_lambert_half_uniform": {
+          "n": 6,
+          "signed_pct": -49.265499582909506,
+          "mae_pct": 49.265499582909506
+        },
+        "off_h1": {
+          "n": 6,
+          "signed_pct": -55.18544298688817,
+          "mae_pct": 55.18544298688817
+        },
+        "off_h2": {
+          "n": 6,
+          "signed_pct": -53.60985773095807,
+          "mae_pct": 53.60985773095807
+        }
+      },
+      "Тусон, исходная выборка": {
+        "lambert": {
+          "n": 28,
+          "signed_pct": -21.10897369682022,
+          "mae_pct": 22.407678616036534,
+          "n_bright": 4,
+          "n_dim": 24
+        },
+        "uniform_intensity": {
+          "n": 28,
+          "signed_pct": 24.20320218970563,
+          "mae_pct": 40.65042301748316,
+          "n_bright": 17,
+          "n_dim": 11
+        },
+        "half_lambert_half_uniform": {
+          "n": 28,
+          "signed_pct": 1.5471142464426988,
+          "mae_pct": 26.610882107241775,
+          "n_bright": 13,
+          "n_dim": 15
+        },
+        "off_h1": {
+          "n": 28,
+          "signed_pct": -16.205774393963612,
+          "mae_pct": 22.131871385252868,
+          "n_bright": 8,
+          "n_dim": 20
+        },
+        "off_h2": {
+          "n": 28,
+          "signed_pct": -10.860692866544348,
+          "mae_pct": 22.655298333968577,
+          "n_bright": 11,
+          "n_dim": 17
+        }
+      },
+      "Тусон без 01.04": {
+        "lambert": {
+          "n": 24,
+          "signed_pct": -21.14443850236121,
+          "mae_pct": 22.659594241446907
+        },
+        "uniform_intensity": {
+          "n": 24,
+          "signed_pct": 21.929118765753536,
+          "mae_pct": 41.117543064827316
+        },
+        "half_lambert_half_uniform": {
+          "n": 24,
+          "signed_pct": 0.3923401316961568,
+          "mae_pct": 27.580072795174
+        },
+        "off_h1": {
+          "n": 24,
+          "signed_pct": -16.481448126895433,
+          "mae_pct": 22.73435916825648
+        },
+        "off_h2": {
+          "n": 24,
+          "signed_pct": -11.369770102307557,
+          "mae_pct": 23.359896962308927
+        }
+      },
+      "Тусон без 01.04 и 07.04": {
+        "lambert": {
+          "n": 18,
+          "signed_pct": -18.95654424349552,
+          "mae_pct": 20.976751895609784
+        },
+        "uniform_intensity": {
+          "n": 18,
+          "signed_pct": 24.424949214889203,
+          "mae_pct": 43.636703639904006
+        },
+        "half_lambert_half_uniform": {
+          "n": 18,
+          "signed_pct": 2.734202485696835,
+          "mae_pct": 28.681110916091672
+        },
+        "off_h1": {
+          "n": 18,
+          "signed_pct": -14.279497181961702,
+          "mae_pct": 21.735553528030096
+        },
+        "off_h2": {
+          "n": 18,
+          "signed_pct": -9.112349376944044,
+          "mae_pct": 23.25868618640566
+        }
+      }
+    },
+    "new_tucson_whole_map": {
+      "base_sha256": "df2aba95a698075a3d5404b13e7157e60f2ca4d6dc2189f96ccf5ee490b215e5",
+      "predictions": {
+        "2019-03-29/3/photopic": {
+          "distance_km": 5.5,
+          "run": "tucson-2019-03/1",
+          "relative_pct": {
+            "lambert": -7.808304928957477,
+            "uniform_intensity": 76.68279669775413,
+            "half_lambert_half_uniform": 34.43724588439834,
+            "off_h1": -0.19519617932396427,
+            "off_h2": 9.445635452243506
+          }
+        },
+        "2019-03-29/6/tess": {
+          "distance_km": 20.0,
+          "run": "tucson-2019-03/2",
+          "relative_pct": {
+            "lambert": 9.162413446944285,
+            "uniform_intensity": 104.92876347056068,
+            "half_lambert_half_uniform": 57.04558845875245,
+            "off_h1": 20.913656093240363,
+            "off_h2": 32.666292226737006
+          }
+        },
+        "2019-03-29/2/sqm": {
+          "distance_km": 29.0,
+          "run": "tucson-2019-03/3",
+          "relative_pct": {
+            "lambert": -39.99080693492741,
+            "uniform_intensity": -3.6918446335020727,
+            "half_lambert_half_uniform": -21.84132578421474,
+            "off_h1": -37.99745895155788,
+            "off_h2": -33.08405338441176
+          }
+        },
+        "2019-03-29/7/tess": {
+          "distance_km": 49.0,
+          "run": "tucson-2019-03/4",
+          "relative_pct": {
+            "lambert": -14.382433979355058,
+            "uniform_intensity": 17.330082533326085,
+            "half_lambert_half_uniform": 1.4738242769855248,
+            "off_h1": -13.716703168054378,
+            "off_h2": -9.8959275103358
+          }
+        },
+        "2019-03-31/4/sqm": {
+          "distance_km": 3.4,
+          "run": "tucson-2019-03/5",
+          "relative_pct": {
+            "lambert": -35.56204266348839,
+            "uniform_intensity": 18.663847633217113,
+            "half_lambert_half_uniform": -8.44909751513564,
+            "off_h1": -29.810495142558402,
+            "off_h2": -23.842692355636597
+          }
+        },
+        "2019-03-31/6/tess": {
+          "distance_km": 20.0,
+          "run": "tucson-2019-03/2",
+          "relative_pct": {
+            "lambert": 5.213902369004475,
+            "uniform_intensity": 97.51629000829807,
+            "half_lambert_half_uniform": 51.36509618865126,
+            "off_h1": 16.54009109515242,
+            "off_h2": 27.867622904708256
+          }
+        },
+        "2019-03-31/2/sqm": {
+          "distance_km": 29.0,
+          "run": "tucson-2019-03/3",
+          "relative_pct": {
+            "lambert": -44.2534767447597,
+            "uniform_intensity": -10.532960891743349,
+            "half_lambert_half_uniform": -27.39321881825152,
+            "off_h1": -42.40172347105382,
+            "off_h2": -37.837334854557646
+          }
+        },
+        "2019-03-31/7/tess": {
+          "distance_km": 49.0,
+          "run": "tucson-2019-03/4",
+          "relative_pct": {
+            "lambert": -21.915851749901428,
+            "uniform_intensity": 7.006307052917093,
+            "half_lambert_half_uniform": -7.454772348492167,
+            "off_h1": -21.30869803390202,
+            "off_h2": -17.824109219315453
+          }
+        },
+        "2019-04-01/3/photopic": {
+          "distance_km": 5.5,
+          "run": "tucson-2019-04/1",
+          "relative_pct": {
+            "lambert": -9.454853183377809,
+            "uniform_intensity": 73.72185639641874,
+            "half_lambert_half_uniform": 32.13350160652051,
+            "off_h1": -1.9376597237019344,
+            "off_h2": 7.5550499592576426
+          }
+        },
+        "2019-04-01/3/sqm": {
+          "distance_km": 5.5,
+          "run": "tucson-2019-04/1",
+          "relative_pct": {
+            "lambert": -32.22653152579256,
+            "uniform_intensity": 27.35279593626747,
+            "half_lambert_half_uniform": -2.436867794762554,
+            "off_h1": -26.72189170140683,
+            "off_h2": -19.96924772430265
+          }
+        },
+        "2019-04-01/5/sqm": {
+          "distance_km": 6.3,
+          "run": "tucson-2019-04/2",
+          "relative_pct": {
+            "lambert": -40.48209590708789,
+            "uniform_intensity": 11.513000708784759,
+            "half_lambert_half_uniform": -14.484547599151565,
+            "off_h1": -35.37020862835928,
+            "off_h2": -29.41636735391149
+          }
+        },
+        "2019-04-01/6/tess": {
+          "distance_km": 20.0,
+          "run": "tucson-2019-04/3",
+          "relative_pct": {
+            "lambert": -1.4212588380388413,
+            "uniform_intensity": 81.96693535184161,
+            "half_lambert_half_uniform": 40.27283825690138,
+            "off_h1": 9.893548332386516,
+            "off_h2": 20.20695651959967
+          }
+        },
+        "2019-04-03/3/photopic": {
+          "distance_km": 5.5,
+          "run": "tucson-2019-04/1",
+          "relative_pct": {
+            "lambert": -3.9156206722432807,
+            "uniform_intensity": 84.3495464347879,
+            "half_lambert_half_uniform": 40.216962881272345,
+            "off_h1": 4.061448152024538,
+            "off_h2": 14.134888309706351
+          }
+        },
+        "2019-04-03/3/sqm": {
+          "distance_km": 5.5,
+          "run": "tucson-2019-04/1",
+          "relative_pct": {
+            "lambert": -22.899053008847513,
+            "uniform_intensity": 44.88001558300123,
+            "half_lambert_half_uniform": 10.990481287076847,
+            "off_h1": -16.63682454599602,
+            "off_h2": -8.954832506191057
+          }
+        },
+        "2019-04-03/6/tess": {
+          "distance_km": 20.0,
+          "run": "tucson-2019-04/3",
+          "relative_pct": {
+            "lambert": 3.224614101610146,
+            "uniform_intensity": 90.54277280824638,
+            "half_lambert_half_uniform": 46.88369345492826,
+            "off_h1": 15.072671705453589,
+            "off_h2": 25.8721358459864
+          }
+        },
+        "2019-04-03/2/sqm": {
+          "distance_km": 29.0,
+          "run": "tucson-2019-04/4",
+          "relative_pct": {
+            "lambert": -47.199821598410765,
+            "uniform_intensity": -15.301052054577035,
+            "half_lambert_half_uniform": -31.25043682649389,
+            "off_h1": -44.955259807566875,
+            "off_h2": -40.46670278211953
+          }
+        },
+        "2019-04-03/7/tess": {
+          "distance_km": 49.0,
+          "run": "tucson-2019-04/5",
+          "relative_pct": {
+            "lambert": -24.521891447510736,
+            "uniform_intensity": 5.1447630800965705,
+            "half_lambert_half_uniform": -9.688564183707083,
+            "off_h1": -22.793651029768856,
+            "off_h2": -18.881963214122976
+          }
+        },
+        "2019-04-07/1/sqm": {
+          "distance_km": 3.5,
+          "run": "tucson-2019-04/6",
+          "relative_pct": {
+            "lambert": -43.551677591456304,
+            "uniform_intensity": 6.33572512738243,
+            "half_lambert_half_uniform": -18.60797623203694,
+            "off_h1": -37.53840167081199,
+            "off_h2": -31.774388857263535
+          }
+        },
+        "2019-04-07/3/photopic": {
+          "distance_km": 5.5,
+          "run": "tucson-2019-04/1",
+          "relative_pct": {
+            "lambert": -13.48334488496481,
+            "uniform_intensity": 65.99270600590013,
+            "half_lambert_half_uniform": 26.25468056046769,
+            "off_h1": -6.300602829215196,
+            "off_h2": 2.7697617195449054
+          }
+        },
+        "2019-04-07/3/sqm": {
+          "distance_km": 5.5,
+          "run": "tucson-2019-04/1",
+          "relative_pct": {
+            "lambert": -29.68310061946353,
+            "uniform_intensity": 32.1321446177502,
+            "half_lambert_half_uniform": 1.2245219991433354,
+            "off_h1": -23.971880382819876,
+            "off_h2": -16.965820374671924
+          }
+        },
+        "2019-04-07/6/tess": {
+          "distance_km": 20.0,
+          "run": "tucson-2019-04/3",
+          "relative_pct": {
+            "lambert": -1.4212588380388413,
+            "uniform_intensity": 81.96693535184161,
+            "half_lambert_half_uniform": 40.27283825690138,
+            "off_h1": 9.893548332386516,
+            "off_h2": 20.20695651959967
+          }
+        },
+        "2019-04-07/2/sqm": {
+          "distance_km": 29.0,
+          "run": "tucson-2019-04/4",
+          "relative_pct": {
+            "lambert": -53.58745429231544,
+            "uniform_intensity": -25.54771760408642,
+            "half_lambert_half_uniform": -39.56758594820092,
+            "off_h1": -51.61443393774541,
+            "off_h2": -47.668891244297754
+          }
+        },
+        "2019-04-07/7/tess": {
+          "distance_km": 49.0,
+          "run": "tucson-2019-04/5",
+          "relative_pct": {
+            "lambert": -24.521891447510736,
+            "uniform_intensity": 5.1447630800965705,
+            "half_lambert_half_uniform": -9.688564183707083,
+            "off_h1": -22.793651029768856,
+            "off_h2": -18.881963214122976
+          }
+        },
+        "2019-04-08/3/photopic": {
+          "distance_km": 5.5,
+          "run": "tucson-2019-04/1",
+          "relative_pct": {
+            "lambert": 0.5809389514694896,
+            "uniform_intensity": 92.9767419575982,
+            "half_lambert_half_uniform": 46.778840454533864,
+            "off_h1": 8.931318878350814,
+            "off_h2": 19.47617618626898
+          }
+        },
+        "2019-04-08/3/sqm": {
+          "distance_km": 5.5,
+          "run": "tucson-2019-04/1",
+          "relative_pct": {
+            "lambert": -19.26539732380521,
+            "uniform_intensity": 51.708000359019614,
+            "half_lambert_half_uniform": 16.221301517607188,
+            "off_h1": -12.708039125936521,
+            "off_h2": -4.664005955156981
+          }
+        },
+        "2019-04-08/6/tess": {
+          "distance_km": 20.0,
+          "run": "tucson-2019-04/3",
+          "relative_pct": {
+            "lambert": -1.4212588380388413,
+            "uniform_intensity": 81.96693535184161,
+            "half_lambert_half_uniform": 40.27283825690138,
+            "off_h1": 9.893548332386516,
+            "off_h2": 20.20695651959967
+          }
+        },
+        "2019-04-08/2/sqm": {
+          "distance_km": 29.0,
+          "run": "tucson-2019-04/4",
+          "relative_pct": {
+            "lambert": -47.6838965436684,
+            "uniform_intensity": -16.077576676865547,
+            "half_lambert_half_uniform": -31.88073661026697,
+            "off_h1": -45.45991301901455,
+            "off_h2": -41.0125073317285
+          }
+        },
+        "2019-04-08/7/tess": {
+          "distance_km": 49.0,
+          "run": "tucson-2019-04/5",
+          "relative_pct": {
+            "lambert": -28.579808818033513,
+            "uniform_intensity": -0.5081178506107897,
+            "half_lambert_half_uniform": -14.543963334322152,
+            "off_h1": -26.944483510991812,
+            "off_h2": -23.243099136165903
+          }
+        }
+      }
+    },
+    "satellite_sources": {
+      "study": "https://www.nature.com/articles/s41598-020-64673-2",
+      "guide": "https://viirsland.gsfc.nasa.gov/PDF/BlackMarbleUserGuide_Collection2.0.pdf",
+      "a1": "https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/VNP46A1",
+      "a2": "https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/VNP46A2",
+      "a3": "https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/VNP46A3",
+      "l1": "https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/VNP02DNB",
+      "geo": "https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/VNP03DNB",
+      "tucson_times": "https://journals.sagepub.com/doi/10.1177/1477153520958463",
+      "sourcework": "https://github.com/WarriorOfTea/LightPollution/blob/main/artifacts/multicity-propagation-20261126/weather-audit.md",
+      "instruments": "https://arxiv.org/html/2005.12357#S3.SS2.SSS1"
+    }
   }
 }
