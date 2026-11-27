@@ -1,0 +1,135 @@
+{
+  "site": "Paranal",
+  "model_version": "PALACE 1.0",
+  "records": [
+    {
+      "label": "Default test",
+      "example_input_date": null,
+      "month": 0,
+      "local_solar_hour": null,
+      "F107_27d_sfu": 100.0,
+      "photopic_mcd_m2": 0.13878961001299472,
+      "sqm_W_m2_sr": 3.357823233835388e-07,
+      "sqm_equivalent_mag": 22.821757642710843,
+      "tess_W_m2_sr": 5.832885088112469e-07,
+      "tess_equivalent_mag": 22.390705949524794
+    },
+    {
+      "label": "Madrid Feb",
+      "example_input_date": "2012-02-20",
+      "month": 2,
+      "local_solar_hour": 1.5,
+      "F107_27d_sfu": 106.61111111111111,
+      "photopic_mcd_m2": 0.12962872408658144,
+      "sqm_W_m2_sr": 3.1675349576333884e-07,
+      "sqm_equivalent_mag": 22.88509867583446,
+      "tess_W_m2_sr": 5.561899422265934e-07,
+      "tess_equivalent_mag": 22.44235667329533
+    },
+    {
+      "label": "Madrid Dec3 evening",
+      "example_input_date": "2013-12-03",
+      "month": 12,
+      "local_solar_hour": 21.0,
+      "F107_27d_sfu": 145.44444444444443,
+      "photopic_mcd_m2": 0.13887060034698798,
+      "sqm_W_m2_sr": 3.5241523586072333e-07,
+      "sqm_equivalent_mag": 22.769265527552122,
+      "tess_W_m2_sr": 5.774608966851124e-07,
+      "tess_equivalent_mag": 22.40160804881526
+    },
+    {
+      "label": "Madrid Dec29",
+      "example_input_date": "2013-12-29",
+      "month": 12,
+      "local_solar_hour": 1.5,
+      "F107_27d_sfu": 162.92222222222222,
+      "photopic_mcd_m2": 0.14022736921314627,
+      "sqm_W_m2_sr": 3.486034407317325e-07,
+      "sqm_equivalent_mag": 22.781073043966718,
+      "tess_W_m2_sr": 5.927435979220493e-07,
+      "tess_equivalent_mag": 22.373247321134247
+    },
+    {
+      "label": "Tucson Mar31",
+      "example_input_date": "2019-03-31",
+      "month": 3,
+      "local_solar_hour": 0.0,
+      "F107_27d_sfu": 73.74814814814815,
+      "photopic_mcd_m2": 0.12517589454154424,
+      "sqm_W_m2_sr": 3.0804510900841093e-07,
+      "sqm_equivalent_mag": 22.915366423055097,
+      "tess_W_m2_sr": 5.217704569603538e-07,
+      "tess_equivalent_mag": 22.511715787611067
+    },
+    {
+      "label": "Tucson Apr3",
+      "example_input_date": "2019-04-03",
+      "month": 4,
+      "local_solar_hour": 0.0,
+      "F107_27d_sfu": 74.06296296296297,
+      "photopic_mcd_m2": 0.14898729470260466,
+      "sqm_W_m2_sr": 3.5374772865213195e-07,
+      "sqm_equivalent_mag": 22.765168067175445,
+      "tess_W_m2_sr": 5.90702997450516e-07,
+      "tess_equivalent_mag": 22.376991564458436
+    },
+    {
+      "label": "Tucson Apr7",
+      "example_input_date": "2019-04-07",
+      "month": 4,
+      "local_solar_hour": 0.0,
+      "F107_27d_sfu": 73.17407407407407,
+      "photopic_mcd_m2": 0.1484123516919223,
+      "sqm_W_m2_sr": 3.527285203496305e-07,
+      "sqm_equivalent_mag": 22.76830077580787,
+      "tess_W_m2_sr": 5.887368152823393e-07,
+      "tess_equivalent_mag": 22.38061151542096
+    },
+    {
+      "label": "Tucson Apr8",
+      "example_input_date": "2019-04-08",
+      "month": 4,
+      "local_solar_hour": 0.0,
+      "F107_27d_sfu": 73.1037037037037,
+      "photopic_mcd_m2": 0.14836683370641407,
+      "sqm_W_m2_sr": 3.526478327416425e-07,
+      "sqm_equivalent_mag": 22.768549169327915,
+      "tess_W_m2_sr": 5.885811565172752e-07,
+      "tess_equivalent_mag": 22.380898616037534
+    },
+    {
+      "label": "April 20 h",
+      "example_input_date": "2019-04-03",
+      "month": 4,
+      "local_solar_hour": 20.0,
+      "F107_27d_sfu": 74.06296296296297,
+      "photopic_mcd_m2": 0.17937753308464977,
+      "sqm_W_m2_sr": 4.22517552928591e-07,
+      "sqm_equivalent_mag": 22.572290327605256,
+      "tess_W_m2_sr": 7.525543595535887e-07,
+      "tess_equivalent_mag": 22.114069811147626
+    },
+    {
+      "label": "April 04 h",
+      "example_input_date": "2019-04-03",
+      "month": 4,
+      "local_solar_hour": 4.0,
+      "F107_27d_sfu": 74.06296296296297,
+      "photopic_mcd_m2": 0.1690377111150057,
+      "sqm_W_m2_sr": 3.9715231533321145e-07,
+      "sqm_equivalent_mag": 22.63950947032307,
+      "tess_W_m2_sr": 6.606632431603707e-07,
+      "tess_equivalent_mag": 22.255464138666426
+    }
+  ],
+  "published_default_integral_mcd_m2": 0.13878929889480915,
+  "published_default_relative_error": 2.241653287660128e-06,
+  "comparison": "Sensitivity at Paranal. Historical dates supply proxy inputs only.",
+  "wavelength_window_nm": [
+    350,
+    950
+  ],
+  "zenith_deg": 0,
+  "pwv_mm": 2.5
+}

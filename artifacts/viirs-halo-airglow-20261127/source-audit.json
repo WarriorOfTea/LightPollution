@@ -1,0 +1,472 @@
+{
+  "files": [
+    {
+      "city": "Tucson",
+      "filename": "VNP02DNB.A2019093.0930.002.2021103103630.nc",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VNP02DNB/2019/093/VNP02DNB.A2019093.0930.002.2021103103630.nc",
+      "sha256": "7196ca5481e52f6132aa0cfcd42ff71ce604338babd0ab8cc53bce5cda6af252",
+      "size": 42494927,
+      "layers": {
+        "observation_data/DNB_observations": [
+          3248,
+          4064
+        ],
+        "observation_data/DNB_quality_flags": [
+          3248,
+          4064
+        ],
+        "scan_line_attributes/ev_mid_time": [
+          203
+        ],
+        "scan_line_attributes/scan_end_time": [
+          203
+        ],
+        "scan_line_attributes/scan_quality_flags": [
+          203
+        ],
+        "scan_line_attributes/scan_start_time": [
+          203
+        ],
+        "scan_line_attributes/scan_state_flags": [
+          203
+        ]
+      }
+    },
+    {
+      "city": "Tucson",
+      "filename": "VNP03DNB.A2019093.0930.002.2021103075718.nc",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VNP03DNB/2019/093/VNP03DNB.A2019093.0930.002.2021103075718.nc",
+      "sha256": "014209b7940d9b7007c06399283b291c302b4f514779d0883c7b4ebd0aa9013f",
+      "size": 57284224,
+      "layers": {
+        "geolocation_data/height": [
+          3248,
+          4064
+        ],
+        "geolocation_data/land_water_mask": [
+          3248,
+          4064
+        ],
+        "geolocation_data/latitude": [
+          3248,
+          4064
+        ],
+        "geolocation_data/longitude": [
+          3248,
+          4064
+        ],
+        "geolocation_data/lunar_azimuth": [
+          3248,
+          4064
+        ],
+        "geolocation_data/lunar_zenith": [
+          3248,
+          4064
+        ],
+        "geolocation_data/moon_illumination_fraction": [
+          3248,
+          4064
+        ],
+        "geolocation_data/moon_phase_angle": [
+          3248,
+          4064
+        ],
+        "geolocation_data/quality_flag": [
+          3248,
+          4064
+        ],
+        "geolocation_data/range": [
+          3248,
+          4064
+        ],
+        "geolocation_data/sensor_azimuth": [
+          3248,
+          4064
+        ],
+        "geolocation_data/sensor_zenith": [
+          3248,
+          4064
+        ],
+        "geolocation_data/solar_azimuth": [
+          3248,
+          4064
+        ],
+        "geolocation_data/solar_zenith": [
+          3248,
+          4064
+        ],
+        "navigation_data/att_ang_end": [
+          203,
+          3
+        ],
+        "navigation_data/att_ang_mid": [
+          203,
+          3
+        ],
+        "navigation_data/att_ang_start": [
+          203,
+          3
+        ],
+        "navigation_data/att_quat_ev": [
+          203,
+          4
+        ],
+        "navigation_data/earth_moon_distance": [
+          203
+        ],
+        "navigation_data/earth_sun_distance": [
+          203
+        ],
+        "navigation_data/lunar_inst": [
+          203,
+          3
+        ],
+        "navigation_data/lunar_j2000": [
+          203,
+          3
+        ],
+        "navigation_data/orb_pos_ev_end": [
+          203,
+          3
+        ],
+        "navigation_data/orb_pos_ev_mid": [
+          203,
+          3
+        ],
+        "navigation_data/orb_pos_ev_start": [
+          203,
+          3
+        ],
+        "navigation_data/orb_vel_ev_end": [
+          203,
+          3
+        ],
+        "navigation_data/orb_vel_ev_mid": [
+          203,
+          3
+        ],
+        "navigation_data/orb_vel_ev_start": [
+          203,
+          3
+        ],
+        "navigation_data/solar_inst": [
+          203,
+          3
+        ],
+        "navigation_data/solar_j2000": [
+          203,
+          3
+        ],
+        "scan_line_attributes/HAM_side": [
+          203
+        ],
+        "scan_line_attributes/ev_mid_time": [
+          203
+        ],
+        "scan_line_attributes/scan_end_time": [
+          203
+        ],
+        "scan_line_attributes/scan_quality": [
+          203
+        ],
+        "scan_line_attributes/scan_start_time": [
+          203
+        ],
+        "scan_line_attributes/sensor_mode": [
+          203
+        ]
+      }
+    },
+    {
+      "city": "Madrid",
+      "filename": "VNP02DNB.A2013363.0124.002.2021016091612.nc",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VNP02DNB/2013/363/VNP02DNB.A2013363.0124.002.2021016091612.nc",
+      "sha256": "2c7c97edd34cedd8860b570c6521836493d6a0c0a204da4b956ed6cb74c4f4ca",
+      "size": 41397197,
+      "layers": {
+        "observation_data/DNB_observations": [
+          3232,
+          4064
+        ],
+        "observation_data/DNB_quality_flags": [
+          3232,
+          4064
+        ],
+        "scan_line_attributes/ev_mid_time": [
+          202
+        ],
+        "scan_line_attributes/scan_end_time": [
+          202
+        ],
+        "scan_line_attributes/scan_quality_flags": [
+          202
+        ],
+        "scan_line_attributes/scan_start_time": [
+          202
+        ],
+        "scan_line_attributes/scan_state_flags": [
+          202
+        ]
+      }
+    },
+    {
+      "city": "Madrid",
+      "filename": "VNP03DNB.A2013363.0124.002.2021016085604.nc",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VNP03DNB/2013/363/VNP03DNB.A2013363.0124.002.2021016085604.nc",
+      "sha256": "b65362973cc694f88c84bd1e2a6c7c94b44c51e7ce9b13ccd0cb7c13f50e320c",
+      "size": 68646647,
+      "layers": {
+        "geolocation_data/height": [
+          3232,
+          4064
+        ],
+        "geolocation_data/land_water_mask": [
+          3232,
+          4064
+        ],
+        "geolocation_data/latitude": [
+          3232,
+          4064
+        ],
+        "geolocation_data/longitude": [
+          3232,
+          4064
+        ],
+        "geolocation_data/lunar_azimuth": [
+          3232,
+          4064
+        ],
+        "geolocation_data/lunar_zenith": [
+          3232,
+          4064
+        ],
+        "geolocation_data/moon_illumination_fraction": [
+          3232,
+          4064
+        ],
+        "geolocation_data/moon_phase_angle": [
+          3232,
+          4064
+        ],
+        "geolocation_data/quality_flag": [
+          3232,
+          4064
+        ],
+        "geolocation_data/range": [
+          3232,
+          4064
+        ],
+        "geolocation_data/sensor_azimuth": [
+          3232,
+          4064
+        ],
+        "geolocation_data/sensor_zenith": [
+          3232,
+          4064
+        ],
+        "geolocation_data/solar_azimuth": [
+          3232,
+          4064
+        ],
+        "geolocation_data/solar_zenith": [
+          3232,
+          4064
+        ],
+        "navigation_data/att_ang_end": [
+          202,
+          3
+        ],
+        "navigation_data/att_ang_mid": [
+          202,
+          3
+        ],
+        "navigation_data/att_ang_start": [
+          202,
+          3
+        ],
+        "navigation_data/att_quat_ev": [
+          202,
+          4
+        ],
+        "navigation_data/earth_moon_distance": [
+          202
+        ],
+        "navigation_data/earth_sun_distance": [
+          202
+        ],
+        "navigation_data/lunar_inst": [
+          202,
+          3
+        ],
+        "navigation_data/lunar_j2000": [
+          202,
+          3
+        ],
+        "navigation_data/orb_pos_ev_end": [
+          202,
+          3
+        ],
+        "navigation_data/orb_pos_ev_mid": [
+          202,
+          3
+        ],
+        "navigation_data/orb_pos_ev_start": [
+          202,
+          3
+        ],
+        "navigation_data/orb_vel_ev_end": [
+          202,
+          3
+        ],
+        "navigation_data/orb_vel_ev_mid": [
+          202,
+          3
+        ],
+        "navigation_data/orb_vel_ev_start": [
+          202,
+          3
+        ],
+        "navigation_data/solar_inst": [
+          202,
+          3
+        ],
+        "navigation_data/solar_j2000": [
+          202,
+          3
+        ],
+        "scan_line_attributes/HAM_side": [
+          202
+        ],
+        "scan_line_attributes/ev_mid_time": [
+          202
+        ],
+        "scan_line_attributes/scan_end_time": [
+          202
+        ],
+        "scan_line_attributes/scan_quality": [
+          202
+        ],
+        "scan_line_attributes/scan_start_time": [
+          202
+        ],
+        "scan_line_attributes/sensor_mode": [
+          202
+        ]
+      }
+    }
+  ],
+  "application": "Proven access to the original calibrated swath and geolocation; not used to fit the pilot.",
+  "historical_airglow": {
+    "Madrid_AstMon": {
+      "archive": "https://zenodo.org/records/4633001",
+      "instrument_region": "Pos0",
+      "time_window_minutes_either_side": 20,
+      "records": [
+        {
+          "utc_center": "2013-12-04T02:32:00Z",
+          "n_by_band": [
+            5,
+            5,
+            5
+          ],
+          "median_BVR_mag": [
+            19.264651,
+            18.031768,
+            17.305921
+          ]
+        },
+        {
+          "utc_center": "2013-12-29T01:24:00Z",
+          "n_by_band": [
+            5,
+            5,
+            5
+          ],
+          "median_BVR_mag": [
+            19.145899,
+            17.976512,
+            17.245082
+          ]
+        }
+      ]
+    },
+    "ISS_IMAP_VISI": {
+      "source": "https://data.darts.isas.jaxa.jp/pub/imap/VISI_loc/2013/",
+      "geolocation_files": 39,
+      "mapping_height_km": 250,
+      "matches": {
+        "route-3": {
+          "center_utc": "2013-12-03T21:30",
+          "candidates_within_90min": 7,
+          "nearest": {
+            "approx_km": 258.3,
+            "utc": "2013-12-03T22:09:26",
+            "file": "IMP_VI_2013-12-03-215940_P07_loc.nc"
+          }
+        },
+        "viirs-4": {
+          "center_utc": "2013-12-04T02:32",
+          "candidates_within_90min": 6,
+          "nearest": {
+            "approx_km": 140.5,
+            "utc": "2013-12-04T03:02:04",
+            "file": "IMP_VI_2013-12-04-023823_P07_loc.nc"
+          }
+        },
+        "route-28": {
+          "center_utc": "2013-12-28T22:00",
+          "candidates_within_90min": 8,
+          "nearest": {
+            "approx_km": 3116.5,
+            "utc": "2013-12-28T21:16:16",
+            "file": "IMP_VI_2013-12-28-211616_S01_loc.nc"
+          }
+        },
+        "viirs-29": {
+          "center_utc": "2013-12-29T01:24",
+          "candidates_within_90min": 6,
+          "nearest": {
+            "approx_km": 6977.6,
+            "utc": "2013-12-29T00:23:23",
+            "file": "IMP_VI_2013-12-29-002225_P10_loc.nc"
+          }
+        }
+      }
+    },
+    "UCM_TESS": {
+      "source": "https://guaix.fis.ucm.es/tess/models",
+      "stars19_file_sha256": "99d3ef2e16f623f8fc6c8894082827c1ff1b73b3a8ed1904dc6a9f247ecf0a48",
+      "stars19_march_2019_n": 163,
+      "stars19_march_2019_days": [
+        "2019-03-14"
+      ],
+      "stars19_april_2019_visible_file": false,
+      "stars227_visible_start_month": "2019-05",
+      "license": "ODbL 1.0"
+    },
+    "Cosmic_Campground_and_Mt_Lemmon": {
+      "source": "https://doi.org/10.1038/s41598-021-02365-1",
+      "available_on_request": true,
+      "published_event": "Event C, March–April 2019"
+    }
+  },
+  "source_template": {
+    "source": "https://doi.org/10.5067/VIIRS/VNP46A3.002",
+    "city_geometry": {
+      "Madrid": "GISCO Cities 2024 ES001C",
+      "Tucson": "US Census 2019 place GEOID 0477000"
+    },
+    "variables": [
+      "NearNadir_Composite_Snow_Free",
+      "NearNadir_Composite_Snow_Free_Quality",
+      "NearNadir_Composite_Snow_Free_Num",
+      "Land_Water_Mask"
+    ]
+  },
+  "palace": {
+    "source": "https://zenodo.org/records/14064023",
+    "code_md5": "840f26b56dd508c7b751b3927f0ea102",
+    "reference_md5": "861d5671f661f9a3c1378b63b18ada21",
+    "F107": "https://kp.gfz.de/app/files/Kp_ap_Ap_SN_F107_since_1932.txt"
+  }
+}

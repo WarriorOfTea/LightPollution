@@ -1,0 +1,79 @@
+{
+  "baseline_sha256": "df2aba95a698075a3d5404b13e7157e60f2ca4d6dc2189f96ccf5ee490b215e5",
+  "ground_natural_mcd_m2": [
+    0.17,
+    0.25
+  ],
+  "statistics": [
+    {
+      "group": "Мадрид, весь",
+      "model": "lambert",
+      "n": 32,
+      "baseline_bias_pct": -44.202628121364135,
+      "baseline_mae_pct": 44.202628121364135,
+      "high_background_bias_pct": -40.394386699443395,
+      "high_background_mae_pct": 40.394386699443395,
+      "median_equivalent_background_needed_mcd_m2": 1.1810245939955157
+    },
+    {
+      "group": "Мадрид, до 15 км",
+      "model": "lambert",
+      "n": 9,
+      "baseline_bias_pct": -32.10394138223972,
+      "baseline_mae_pct": 32.10394138223972,
+      "high_background_bias_pct": -31.377902810805512,
+      "high_background_mae_pct": 31.377902810805512,
+      "median_equivalent_background_needed_mcd_m2": 4.936884233802541
+    },
+    {
+      "group": "Мадрид, >35 км",
+      "model": "lambert",
+      "n": 12,
+      "baseline_bias_pct": -55.348395185488855,
+      "baseline_mae_pct": 55.348395185488855,
+      "high_background_bias_pct": -47.837733187092006,
+      "high_background_mae_pct": 47.837733187092006,
+      "median_equivalent_background_needed_mcd_m2": 0.8034932776169542
+    },
+    {
+      "group": "Тусон, весь",
+      "model": "off_h1",
+      "n": 28,
+      "baseline_bias_pct": -16.205774393963612,
+      "baseline_mae_pct": 22.131871385252868,
+      "high_background_bias_pct": -5.088417606900733,
+      "high_background_mae_pct": 17.923118195300784,
+      "median_equivalent_background_needed_mcd_m2": 0.2743630561104946
+    },
+    {
+      "group": "Танке-Верде, 20 км",
+      "model": "off_h1",
+      "n": 6,
+      "baseline_bias_pct": 11.99203989086799,
+      "baseline_mae_pct": 11.99203989086799,
+      "high_background_bias_pct": 20.76058127846869,
+      "high_background_mae_pct": 20.76058127846869,
+      "median_equivalent_background_needed_mcd_m2": 0.07492099790927394
+    },
+    {
+      "group": "Маунт-Леммон, 29 км",
+      "model": "off_h1",
+      "n": 5,
+      "baseline_bias_pct": -45.28203937702448,
+      "baseline_mae_pct": 45.28203937702448,
+      "high_background_bias_pct": -28.314565982484904,
+      "high_background_mae_pct": 28.314565982484904,
+      "median_equivalent_background_needed_mcd_m2": 0.39023185421998324
+    },
+    {
+      "group": "Оракл, 49 км",
+      "model": "off_h1",
+      "n": 5,
+      "baseline_bias_pct": -22.43325456533642,
+      "baseline_mae_pct": 22.43325456533642,
+      "high_background_bias_pct": 7.87150333339198,
+      "high_background_mae_pct": 7.904099908547102,
+      "median_equivalent_background_needed_mcd_m2": 0.23492866181303934
+    }
+  ]
+}

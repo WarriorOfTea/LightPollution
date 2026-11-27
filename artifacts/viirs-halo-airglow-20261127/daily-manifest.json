@@ -1,0 +1,186 @@
+{
+  "collection": "002",
+  "files": [
+    {
+      "city": "Tucson",
+      "day": "2019-03-29",
+      "product": "VNP46A1",
+      "tile": "h06v05",
+      "filename": "VNP46A1.A2019088.h06v05.002.2024255150609.h5",
+      "size": 45755844,
+      "sha256": "1feec7bab2a0c0f51b2a08ae028e01b6c8356d5a1ce981630998670cb1874712",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VNP46A1/2019/088/VNP46A1.A2019088.h06v05.002.2024255150609.h5"
+    },
+    {
+      "city": "Tucson",
+      "day": "2019-03-29",
+      "product": "VNP46A2",
+      "tile": "h06v05",
+      "filename": "VNP46A2.A2019088.h06v05.002.2025023082820.h5",
+      "size": 34494528,
+      "sha256": "f64a534ef9c551979dbc2bf831523d43d3c89329b0b5d87e7bdeb13906abb949",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VNP46A2/2019/088/VNP46A2.A2019088.h06v05.002.2025023082820.h5"
+    },
+    {
+      "city": "Tucson",
+      "day": "2019-03-31",
+      "product": "VNP46A1",
+      "tile": "h06v05",
+      "filename": "VNP46A1.A2019090.h06v05.002.2024255170136.h5",
+      "size": 40393014,
+      "sha256": "5114c7043c73829241ee8c86289c4ce99522e850c1ccdc4c1a59ed2fef0b630d",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VNP46A1/2019/090/VNP46A1.A2019090.h06v05.002.2024255170136.h5"
+    },
+    {
+      "city": "Tucson",
+      "day": "2019-03-31",
+      "product": "VNP46A2",
+      "tile": "h06v05",
+      "filename": "VNP46A2.A2019090.h06v05.002.2025023092411.h5",
+      "size": 36340614,
+      "sha256": "e597b97f6e63f6cdea67d5e548924a97117fa90c896a263e3f7b8af1cf886c2f",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VNP46A2/2019/090/VNP46A2.A2019090.h06v05.002.2025023092411.h5"
+    },
+    {
+      "city": "Tucson",
+      "day": "2019-04-03",
+      "product": "VNP46A1",
+      "tile": "h06v05",
+      "filename": "VNP46A1.A2019093.h06v05.002.2024255192831.h5",
+      "size": 48805501,
+      "sha256": "c24d4dffd8d5f9aaeb5ac922f0addc65d10c94fc0892a75a623463ba2d791cf0",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VNP46A1/2019/093/VNP46A1.A2019093.h06v05.002.2024255192831.h5"
+    },
+    {
+      "city": "Tucson",
+      "day": "2019-04-03",
+      "product": "VNP46A2",
+      "tile": "h06v05",
+      "filename": "VNP46A2.A2019093.h06v05.002.2025023101332.h5",
+      "size": 33190209,
+      "sha256": "939a286c348195118cf1401eff3665381f6ac770fed20e1de8d597d375a02957",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VNP46A2/2019/093/VNP46A2.A2019093.h06v05.002.2025023101332.h5"
+    },
+    {
+      "city": "Tucson",
+      "day": "2019-04-07",
+      "product": "VNP46A1",
+      "tile": "h06v05",
+      "filename": "VNP46A1.A2019097.h06v05.002.2024255221019.h5",
+      "size": 44969660,
+      "sha256": "076b41ded7b3e44d5908e2db4dc20f78d66a2419bb07c10bb2e7f198b9539a9c",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VNP46A1/2019/097/VNP46A1.A2019097.h06v05.002.2024255221019.h5"
+    },
+    {
+      "city": "Tucson",
+      "day": "2019-04-07",
+      "product": "VNP46A2",
+      "tile": "h06v05",
+      "filename": "VNP46A2.A2019097.h06v05.002.2025023113758.h5",
+      "size": 35380165,
+      "sha256": "ad92e6b4ca3f2e1358e9a59d7570dbc35e9af0d19dc233beae7e91c0ad37ab87",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VNP46A2/2019/097/VNP46A2.A2019097.h06v05.002.2025023113758.h5"
+    },
+    {
+      "city": "Tucson",
+      "day": "2019-04-08",
+      "product": "VNP46A1",
+      "tile": "h06v05",
+      "filename": "VNP46A1.A2019098.h06v05.002.2024255224814.h5",
+      "size": 46486877,
+      "sha256": "de8592b9a9ee8ef35edda7e7ecf48ff65b4c0a7725ed9d1db313db2b1668bc81",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VNP46A1/2019/098/VNP46A1.A2019098.h06v05.002.2024255224814.h5"
+    },
+    {
+      "city": "Tucson",
+      "day": "2019-04-08",
+      "product": "VNP46A2",
+      "tile": "h06v05",
+      "filename": "VNP46A2.A2019098.h06v05.002.2025023122557.h5",
+      "size": 30025165,
+      "sha256": "4fffe8a414430670787927192577daa01796643175f08e0dfd5bbe7d6c794b37",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VNP46A2/2019/098/VNP46A2.A2019098.h06v05.002.2025023122557.h5"
+    },
+    {
+      "city": "Madrid",
+      "day": "2013-12-04",
+      "product": "VNP46A1",
+      "tile": "h17v04",
+      "filename": "VNP46A1.A2013338.h17v04.002.2024171173433.h5",
+      "size": 43813948,
+      "sha256": "563ab15b552c2e9bee47132a4782477f367c0c76b09ca043fdd3225953f3adf4",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VNP46A1/2013/338/VNP46A1.A2013338.h17v04.002.2024171173433.h5"
+    },
+    {
+      "city": "Madrid",
+      "day": "2013-12-04",
+      "product": "VNP46A1",
+      "tile": "h17v05",
+      "filename": "VNP46A1.A2013338.h17v05.002.2024171173431.h5",
+      "size": 45723887,
+      "sha256": "9c6939f9a72fb309eea364952842550a4f97c7aeaf0be9236da7937acf226229",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VNP46A1/2013/338/VNP46A1.A2013338.h17v05.002.2024171173431.h5"
+    },
+    {
+      "city": "Madrid",
+      "day": "2013-12-04",
+      "product": "VNP46A2",
+      "tile": "h17v04",
+      "filename": "VNP46A2.A2013338.h17v04.002.2024202034631.h5",
+      "size": 26209207,
+      "sha256": "deeb2bf167136a5af39bf3280e97b59742dda8fc8572fa4e6b5cac5c1d90405f",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VNP46A2/2013/338/VNP46A2.A2013338.h17v04.002.2024202034631.h5"
+    },
+    {
+      "city": "Madrid",
+      "day": "2013-12-04",
+      "product": "VNP46A2",
+      "tile": "h17v05",
+      "filename": "VNP46A2.A2013338.h17v05.002.2024202034249.h5",
+      "size": 33321910,
+      "sha256": "0e9a41b138db6b317dd394e85bc0324d5717b57de4e6ceb037cbe3275d5ae671",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VNP46A2/2013/338/VNP46A2.A2013338.h17v05.002.2024202034249.h5"
+    },
+    {
+      "city": "Madrid",
+      "day": "2013-12-29",
+      "product": "VNP46A1",
+      "tile": "h17v04",
+      "filename": "VNP46A1.A2013363.h17v04.002.2024172054502.h5",
+      "size": 44377426,
+      "sha256": "9a73079eb065924a723073b357dcf32e626c4236424f3c4708e4c8da0ebf6cc1",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VNP46A1/2013/363/VNP46A1.A2013363.h17v04.002.2024172054502.h5"
+    },
+    {
+      "city": "Madrid",
+      "day": "2013-12-29",
+      "product": "VNP46A1",
+      "tile": "h17v05",
+      "filename": "VNP46A1.A2013363.h17v05.002.2024172054500.h5",
+      "size": 41192382,
+      "sha256": "038a40ca1e6b047cd86dd8c1ff3fab59181ce628cc5db4f5b9715860478e78f3",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VNP46A1/2013/363/VNP46A1.A2013363.h17v05.002.2024172054500.h5"
+    },
+    {
+      "city": "Madrid",
+      "day": "2013-12-29",
+      "product": "VNP46A2",
+      "tile": "h17v04",
+      "filename": "VNP46A2.A2013363.h17v04.002.2024206033424.h5",
+      "size": 28329834,
+      "sha256": "6e3c9a9f90414a08d4bf76412ae0c0eb14ec95108152b16580f451eb68f36148",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VNP46A2/2013/363/VNP46A2.A2013363.h17v04.002.2024206033424.h5"
+    },
+    {
+      "city": "Madrid",
+      "day": "2013-12-29",
+      "product": "VNP46A2",
+      "tile": "h17v05",
+      "filename": "VNP46A2.A2013363.h17v05.002.2024206033424.h5",
+      "size": 29799948,
+      "sha256": "d7f4746f904c21b6289fe86038becf66614c0a4bd08be1f13ff1b6f57542d837",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VNP46A2/2013/363/VNP46A2.A2013363.h17v05.002.2024206033424.h5"
+    }
+  ],
+  "retrieved_at": "2026-11-27T14:57:52+00:00"
+}

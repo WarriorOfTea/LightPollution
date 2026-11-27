@@ -1,0 +1,2485 @@
+{
+  "scenes": {
+    "Tucson/2019-03-29": {
+      "city": "Tucson",
+      "night": "2019-03-29",
+      "bounds": {
+        "west": -111.75,
+        "south": 31.6,
+        "east": -110.15,
+        "north": 32.85
+      },
+      "source_altitude_m": 700,
+      "utc": "2019-03-29T09:25:36.527252+00:00",
+      "zenith_deg": 25.319999434053898,
+      "azimuth_deg": -77.48870857244506,
+      "lunar_altitude_core_deg": -1.719997949898243,
+      "solar_altitude_core_deg": -44.92999698407948,
+      "source_template_files": {
+        "VNP46A3.A2019060.h06v05.002.2025133160905.h5": "a8036082d46eaed9132ed20ae234cc013e2ea326ba2401091322120ebe0e0173"
+      },
+      "files": [
+        {
+          "filename": "VNP46A1.A2019088.h06v05.002.2024255150609.h5",
+          "sha256": "1feec7bab2a0c0f51b2a08ae028e01b6c8356d5a1ce981630998670cb1874712",
+          "tile": "h06v05",
+          "product": "VNP46A1"
+        },
+        {
+          "filename": "VNP46A2.A2019088.h06v05.002.2025023082820.h5",
+          "sha256": "f64a534ef9c551979dbc2bf831523d43d3c89329b0b5d87e7bdeb13906abb949",
+          "tile": "h06v05",
+          "product": "VNP46A2"
+        }
+      ],
+      "support": {
+        "city_core": {
+          "candidate_cells": 1755,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "halo_18_to_43_km": {
+          "candidate_cells": 13837,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "dark_control_46_to_65_km": {
+          "candidate_cells": 28234,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "bright_neighbor_sources": {
+          "candidate_cells": 3532,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        }
+      },
+      "sensor_zenith_05_95_deg": null,
+      "status": "excluded_by_clear_dark_support"
+    },
+    "Tucson/2019-03-31": {
+      "city": "Tucson",
+      "night": "2019-03-31",
+      "bounds": {
+        "west": -111.75,
+        "south": 31.6,
+        "east": -110.15,
+        "north": 32.85
+      },
+      "source_altitude_m": 700,
+      "utc": "2019-03-31T08:47:54.768448+00:00",
+      "zenith_deg": 36.75999917834997,
+      "azimuth_deg": 97.25121139853461,
+      "lunar_altitude_core_deg": -25.94999740831554,
+      "solar_altitude_core_deg": -49.049996891990304,
+      "source_template_files": {
+        "VNP46A3.A2019060.h06v05.002.2025133160905.h5": "a8036082d46eaed9132ed20ae234cc013e2ea326ba2401091322120ebe0e0173"
+      },
+      "files": [
+        {
+          "filename": "VNP46A1.A2019090.h06v05.002.2024255170136.h5",
+          "sha256": "5114c7043c73829241ee8c86289c4ce99522e850c1ccdc4c1a59ed2fef0b630d",
+          "tile": "h06v05",
+          "product": "VNP46A1"
+        },
+        {
+          "filename": "VNP46A2.A2019090.h06v05.002.2025023092411.h5",
+          "sha256": "e597b97f6e63f6cdea67d5e548924a97117fa90c896a263e3f7b8af1cf886c2f",
+          "tile": "h06v05",
+          "product": "VNP46A2"
+        }
+      ],
+      "support": {
+        "city_core": {
+          "candidate_cells": 1755,
+          "a1_cells": 1755,
+          "paired_a1_a2_cells": 1754,
+          "a1_median": 20.39409065246582,
+          "a2_median": 21.538159370422363,
+          "a1_minus_a2_median": -1.258467674255371
+        },
+        "halo_18_to_43_km": {
+          "candidate_cells": 13837,
+          "a1_cells": 13837,
+          "paired_a1_a2_cells": 13823,
+          "a1_median": 0.313813179731369,
+          "a2_median": 0.3165455758571625,
+          "a1_minus_a2_median": -4.842877388000488e-06
+        },
+        "dark_control_46_to_65_km": {
+          "candidate_cells": 28234,
+          "a1_cells": 28221,
+          "paired_a1_a2_cells": 27963,
+          "a1_median": 0.2368651181459427,
+          "a2_median": 0.2325335144996643,
+          "a1_minus_a2_median": 0.0065584927797317505
+        },
+        "bright_neighbor_sources": {
+          "candidate_cells": 3532,
+          "a1_cells": 3532,
+          "paired_a1_a2_cells": 3522,
+          "a1_median": 4.367242336273193,
+          "a2_median": 4.724363088607788,
+          "a1_minus_a2_median": -0.36913180351257324
+        }
+      },
+      "sensor_zenith_05_95_deg": [
+        33.14999925903976,
+        40.47999909520149
+      ],
+      "halo_scatter_medians": {
+        "single": 0.059073274462842475,
+        "multiple": 0.017480813113329708,
+        "multiple_share_of_scatter_mean_signal": 0.21354656262856803
+      },
+      "atmosphere": {
+        "reference_wavelength_nm": 650.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1538.4615384615386,
+        "aerosol_optical_depth": 0.03821396996074503,
+        "aerosol_single_scattering_albedo": 0.935,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 0.9162188716508777,
+        "top_m": 80000.0
+      },
+      "samples": 1048576,
+      "seed": 18115,
+      "source_1x_equivalent_DNB_W": 281762.5892280372,
+      "kernel_ground_hits": [
+        66964,
+        6502
+      ],
+      "kernel_outside_window": 602,
+      "scenarios": {
+        "direct": {
+          "coefficients": [
+            1.023234387442682,
+            0.0,
+            1.0235228278867639,
+            0.2754707068021762
+          ],
+          "below_10deg_fraction": 0.030153689607045803,
+          "equivalent_upward_DNB_W": 288309.1703930147,
+          "weighted_training_loss": 0.3495011295638275,
+          "condition": 1.024667498115473,
+          "test": {
+            "city_core": {
+              "n": 40,
+              "mean_observed": 24.088928367626156,
+              "mean_predicted": 23.81750543555567,
+              "bias": -0.2714229320704845,
+              "mae": 2.837289590380263
+            },
+            "halo_18_to_43_km": {
+              "n": 291,
+              "mean_observed": 0.3346831838551792,
+              "mean_predicted": 0.2754707068021762,
+              "bias": -0.05921247705300297,
+              "mae": 0.07520465247916969
+            },
+            "dark_control_46_to_65_km": {
+              "n": 606,
+              "mean_observed": 0.23980761336816922,
+              "mean_predicted": 0.2754707068021762,
+              "bias": 0.03566309343400704,
+              "mae": 0.04672834741800144
+            },
+            "bright_neighbor_sources": {
+              "n": 75,
+              "mean_observed": 9.594772738031645,
+              "mean_predicted": 9.036533634825876,
+              "bias": -0.5582391032057699,
+              "mae": 1.6528572716795475
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 75,
+              "mean_observed": 23.94705401543017,
+              "mean_predicted": 23.5625255073942,
+              "bias": -0.38452850803596833,
+              "mae": 2.8434156370915633
+            },
+            "halo_18_to_43_km": {
+              "n": 599,
+              "mean_observed": 0.3322609223105977,
+              "mean_predicted": 0.2754707068021762,
+              "bias": -0.05679021550842143,
+              "mae": 0.07840685647184797
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1203,
+              "mean_observed": 0.24160422039724974,
+              "mean_predicted": 0.2754707068021762,
+              "bias": 0.03386648640492647,
+              "mae": 0.04718460477902976
+            },
+            "bright_neighbor_sources": {
+              "n": 132,
+              "mean_observed": 8.117656711378578,
+              "mean_predicted": 8.03374970243649,
+              "bias": -0.08390700894208679,
+              "mae": 1.048705774645193
+            }
+          }
+        },
+        "all_lambert": {
+          "coefficients": [
+            0.9786563238621435,
+            0.0,
+            0.97820140169028,
+            0.26716605227638224
+          ],
+          "below_10deg_fraction": 0.030153689607045803,
+          "equivalent_upward_DNB_W": 275748.7397757901,
+          "weighted_training_loss": 0.32054235921753876,
+          "condition": 1.0445999162267074,
+          "test": {
+            "city_core": {
+              "n": 40,
+              "mean_observed": 24.088928367626156,
+              "mean_predicted": 24.040725182318816,
+              "bias": -0.04820318530733738,
+              "mae": 2.7719291720431984
+            },
+            "halo_18_to_43_km": {
+              "n": 291,
+              "mean_observed": 0.3346831838551792,
+              "mean_predicted": 0.2852166054709627,
+              "bias": -0.049466578384216496,
+              "mae": 0.0668863137636853
+            },
+            "dark_control_46_to_65_km": {
+              "n": 606,
+              "mean_observed": 0.23980761336816922,
+              "mean_predicted": 0.2706890493075287,
+              "bias": 0.0308814359393595,
+              "mae": 0.043482014141077135
+            },
+            "bright_neighbor_sources": {
+              "n": 75,
+              "mean_observed": 9.594772738031645,
+              "mean_predicted": 9.119051118797735,
+              "bias": -0.47572161923391015,
+              "mae": 1.627784866150996
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 75,
+              "mean_observed": 23.94705401543017,
+              "mean_predicted": 23.752222049774815,
+              "bias": -0.19483196565535213,
+              "mae": 2.79614891581574
+            },
+            "halo_18_to_43_km": {
+              "n": 599,
+              "mean_observed": 0.3322609223105977,
+              "mean_predicted": 0.2830900458137425,
+              "bias": -0.04917087649685517,
+              "mae": 0.07176082694716357
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1203,
+              "mean_observed": 0.24160422039724974,
+              "mean_predicted": 0.27079814681217906,
+              "bias": 0.029193926414929336,
+              "mae": 0.044201753270119555
+            },
+            "bright_neighbor_sources": {
+              "n": 132,
+              "mean_observed": 8.117656711378578,
+              "mean_predicted": 8.110244208099353,
+              "bias": -0.007412503279224694,
+              "mae": 1.0425026745293582
+            }
+          }
+        },
+        "single_mixture": {
+          "coefficients": [
+            0.2870347891893492,
+            3.7308273906937317,
+            0.948747840632231,
+            0.22872784818894837
+          ],
+          "below_10deg_fraction": 0.2528640852756271,
+          "equivalent_upward_DNB_W": 1132083.2509652628,
+          "weighted_training_loss": 0.27728891757672247,
+          "condition": 8.933417755559013,
+          "test": {
+            "city_core": {
+              "n": 40,
+              "mean_observed": 24.088928367626156,
+              "mean_predicted": 24.45917704445453,
+              "bias": 0.370248676828377,
+              "mae": 2.774529388986698
+            },
+            "halo_18_to_43_km": {
+              "n": 291,
+              "mean_observed": 0.3346831838551792,
+              "mean_predicted": 0.3210728588836966,
+              "bias": -0.013610324971482594,
+              "mae": 0.0541559757257057
+            },
+            "dark_control_46_to_65_km": {
+              "n": 606,
+              "mean_observed": 0.23980761336816922,
+              "mean_predicted": 0.2507009739440581,
+              "bias": 0.010893360575888921,
+              "mae": 0.03569215259611481
+            },
+            "bright_neighbor_sources": {
+              "n": 75,
+              "mean_observed": 9.594772738031645,
+              "mean_predicted": 9.097959406548421,
+              "bias": -0.496813331483222,
+              "mae": 1.6535499407146022
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 75,
+              "mean_observed": 23.94705401543017,
+              "mean_predicted": 23.913282475115302,
+              "bias": -0.03377154031486335,
+              "mae": 2.7347665166384303
+            },
+            "halo_18_to_43_km": {
+              "n": 599,
+              "mean_observed": 0.3322609223105977,
+              "mean_predicted": 0.31585855519930794,
+              "bias": -0.016402367111289694,
+              "mae": 0.057930459876529075
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1203,
+              "mean_observed": 0.24160422039724974,
+              "mean_predicted": 0.25123185078265947,
+              "bias": 0.009627630385409727,
+              "mae": 0.0370504288917542
+            },
+            "bright_neighbor_sources": {
+              "n": 132,
+              "mean_observed": 8.117656711378578,
+              "mean_predicted": 8.177784309207563,
+              "bias": 0.060127597828985566,
+              "mae": 1.1164288716291617
+            }
+          }
+        },
+        "all_mixture": {
+          "coefficients": [
+            0.41411585784350013,
+            3.0108799197748937,
+            0.9495486472015345,
+            0.22466166230299
+          ],
+          "below_10deg_fraction": 0.24099891136315005,
+          "equivalent_upward_DNB_W": 965035.6783968534,
+          "weighted_training_loss": 0.27497617467526647,
+          "condition": 7.607638105083329,
+          "test": {
+            "city_core": {
+              "n": 40,
+              "mean_observed": 24.088928367626156,
+              "mean_predicted": 24.413689021793704,
+              "bias": 0.32476065416755,
+              "mae": 2.76350667665504
+            },
+            "halo_18_to_43_km": {
+              "n": 291,
+              "mean_observed": 0.3346831838551792,
+              "mean_predicted": 0.3226010754855393,
+              "bias": -0.01208210836963991,
+              "mae": 0.0533222708582123
+            },
+            "dark_control_46_to_65_km": {
+              "n": 606,
+              "mean_observed": 0.23980761336816922,
+              "mean_predicted": 0.2497531469728022,
+              "bias": 0.009945533604633005,
+              "mae": 0.035729695550969325
+            },
+            "bright_neighbor_sources": {
+              "n": 75,
+              "mean_observed": 9.594772738031645,
+              "mean_predicted": 9.111636396671543,
+              "bias": -0.4831363413601006,
+              "mae": 1.6524553496159045
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 75,
+              "mean_observed": 23.94705401543017,
+              "mean_predicted": 23.899865516405196,
+              "bias": -0.04718849902497394,
+              "mae": 2.731963445557958
+            },
+            "halo_18_to_43_km": {
+              "n": 599,
+              "mean_observed": 0.3322609223105977,
+              "mean_predicted": 0.31757497838765175,
+              "bias": -0.014685943922945859,
+              "mae": 0.057401893192163184
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1203,
+              "mean_observed": 0.24160422039724974,
+              "mean_predicted": 0.2502092342585366,
+              "bias": 0.008605013861286809,
+              "mae": 0.03682677886465571
+            },
+            "bright_neighbor_sources": {
+              "n": 132,
+              "mean_observed": 8.117656711378578,
+              "mean_predicted": 8.18160408149527,
+              "bias": 0.0639473701166928,
+              "mae": 1.110959328259964
+            }
+          }
+        }
+      },
+      "status": "evaluated"
+    },
+    "Tucson/2019-04-03": {
+      "city": "Tucson",
+      "night": "2019-04-03",
+      "bounds": {
+        "west": -111.75,
+        "south": 31.6,
+        "east": -110.15,
+        "north": 32.85
+      },
+      "source_altitude_m": 700,
+      "utc": "2019-04-03T09:31:48.730316+00:00",
+      "zenith_deg": 34.139999236911535,
+      "azimuth_deg": -76.75804825778641,
+      "lunar_altitude_core_deg": -38.30999713204801,
+      "solar_altitude_core_deg": -42.239997044205666,
+      "source_template_files": {
+        "VNP46A3.A2019091.h06v05.002.2025133164421.h5": "2db37a019a102593d4f31b1007a8eec784200f2afb87ee756e47213543671559"
+      },
+      "files": [
+        {
+          "filename": "VNP46A1.A2019093.h06v05.002.2024255192831.h5",
+          "sha256": "c24d4dffd8d5f9aaeb5ac922f0addc65d10c94fc0892a75a623463ba2d791cf0",
+          "tile": "h06v05",
+          "product": "VNP46A1"
+        },
+        {
+          "filename": "VNP46A2.A2019093.h06v05.002.2025023101332.h5",
+          "sha256": "939a286c348195118cf1401eff3665381f6ac770fed20e1de8d597d375a02957",
+          "tile": "h06v05",
+          "product": "VNP46A2"
+        }
+      ],
+      "support": {
+        "city_core": {
+          "candidate_cells": 1974,
+          "a1_cells": 1974,
+          "paired_a1_a2_cells": 1974,
+          "a1_median": 19.160682678222656,
+          "a2_median": 20.559083938598633,
+          "a1_minus_a2_median": -1.3396801948547363
+        },
+        "halo_18_to_43_km": {
+          "candidate_cells": 15916,
+          "a1_cells": 15916,
+          "paired_a1_a2_cells": 15890,
+          "a1_median": 0.30791300535202026,
+          "a2_median": 0.2944730967283249,
+          "a1_minus_a2_median": 0.010514780879020691
+        },
+        "dark_control_46_to_65_km": {
+          "candidate_cells": 26954,
+          "a1_cells": 26954,
+          "paired_a1_a2_cells": 26954,
+          "a1_median": 0.2562529295682907,
+          "a2_median": 0.2443104237318039,
+          "a1_minus_a2_median": 0.01111169159412384
+        },
+        "bright_neighbor_sources": {
+          "candidate_cells": 3483,
+          "a1_cells": 3482,
+          "paired_a1_a2_cells": 3481,
+          "a1_median": 4.3176984786987305,
+          "a2_median": 4.68875789642334,
+          "a1_minus_a2_median": -0.3328251838684082
+        }
+      },
+      "sensor_zenith_05_95_deg": [
+        29.839999333024025,
+        37.739999156445265
+      ],
+      "halo_scatter_medians": {
+        "single": 0.042018570918578614,
+        "multiple": 0.015243660555758293,
+        "multiple_share_of_scatter_mean_signal": 0.24543268811336277
+      },
+      "atmosphere": {
+        "reference_wavelength_nm": 650.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1538.4615384615386,
+        "aerosol_optical_depth": 0.04192526469366544,
+        "aerosol_single_scattering_albedo": 0.935,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 0.9162188716508777,
+        "top_m": 80000.0
+      },
+      "samples": 1048576,
+      "seed": 18115,
+      "source_1x_equivalent_DNB_W": 308865.97787283896,
+      "kernel_ground_hits": [
+        68716,
+        6712
+      ],
+      "kernel_outside_window": 563,
+      "scenarios": {
+        "direct": {
+          "coefficients": [
+            1.0449764462026163,
+            0.0,
+            1.0765612981792534,
+            0.28414206425308774
+          ],
+          "below_10deg_fraction": 0.030153689607045803,
+          "equivalent_upward_DNB_W": 322757.67191045516,
+          "weighted_training_loss": 0.28697411105113246,
+          "condition": 1.0246676019805112,
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mean_observed": 24.527840808492893,
+              "mean_predicted": 22.914733685204478,
+              "bias": -1.6131071232884153,
+              "mae": 2.627111035686558
+            },
+            "halo_18_to_43_km": {
+              "n": 352,
+              "mean_observed": 0.3255833181488509,
+              "mean_predicted": 0.2841420642530878,
+              "bias": -0.041441253895763114,
+              "mae": 0.06553943620475686
+            },
+            "dark_control_46_to_65_km": {
+              "n": 573,
+              "mean_observed": 0.2552233250570476,
+              "mean_predicted": 0.2841420642530878,
+              "bias": 0.028918739196040166,
+              "mae": 0.038611246050145084
+            },
+            "bright_neighbor_sources": {
+              "n": 71,
+              "mean_observed": 9.601975656525937,
+              "mean_predicted": 9.95752383783601,
+              "bias": 0.3555481813100734,
+              "mae": 1.2079532558940878
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mean_observed": 24.015025524951916,
+              "mean_predicted": 23.845388651468078,
+              "bias": -0.16963687348383594,
+              "mae": 2.4387642259158824
+            },
+            "halo_18_to_43_km": {
+              "n": 678,
+              "mean_observed": 0.321547355748508,
+              "mean_predicted": 0.28414206425308786,
+              "bias": -0.03740529149542025,
+              "mae": 0.06086888623195687
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1140,
+              "mean_observed": 0.2575545281992692,
+              "mean_predicted": 0.2841420642530878,
+              "bias": 0.026587536053818535,
+              "mae": 0.040163054661490755
+            },
+            "bright_neighbor_sources": {
+              "n": 136,
+              "mean_observed": 9.03785333489717,
+              "mean_predicted": 9.068192426821172,
+              "bias": 0.030339091924003258,
+              "mae": 1.1810852224239268
+            }
+          }
+        },
+        "all_lambert": {
+          "coefficients": [
+            0.9929453624195438,
+            0.0,
+            1.0243185719057208,
+            0.27398238797295793
+          ],
+          "below_10deg_fraction": 0.030153689607045803,
+          "equivalent_upward_DNB_W": 306687.04033801286,
+          "weighted_training_loss": 0.2678742835082879,
+          "condition": 1.0485209730707992,
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mean_observed": 24.527840808492893,
+              "mean_predicted": 23.149442052751645,
+              "bias": -1.3783987557412518,
+              "mae": 2.6189962203120816
+            },
+            "halo_18_to_43_km": {
+              "n": 352,
+              "mean_observed": 0.3255833181488509,
+              "mean_predicted": 0.2930452085379874,
+              "bias": -0.03253810961086347,
+              "mae": 0.05849305517399706
+            },
+            "dark_control_46_to_65_km": {
+              "n": 573,
+              "mean_observed": 0.2552233250570476,
+              "mean_predicted": 0.27828041682796834,
+              "bias": 0.023057091770920767,
+              "mae": 0.0351391563063879
+            },
+            "bright_neighbor_sources": {
+              "n": 71,
+              "mean_observed": 9.601975656525937,
+              "mean_predicted": 10.001181803330736,
+              "bias": 0.3992061468047981,
+              "mae": 1.2115132109261344
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mean_observed": 24.015025524951916,
+              "mean_predicted": 24.007315461456628,
+              "bias": -0.0077100634952827546,
+              "mae": 2.448635223350308
+            },
+            "halo_18_to_43_km": {
+              "n": 678,
+              "mean_observed": 0.321547355748508,
+              "mean_predicted": 0.2922583955142378,
+              "bias": -0.02928896023427018,
+              "mae": 0.05475051064317714
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1140,
+              "mean_observed": 0.2575545281992692,
+              "mean_predicted": 0.2782302744974003,
+              "bias": 0.020675746298131105,
+              "mae": 0.036894542399683636
+            },
+            "bright_neighbor_sources": {
+              "n": 136,
+              "mean_observed": 9.03785333489717,
+              "mean_predicted": 9.124736877652564,
+              "bias": 0.08688354275539548,
+              "mae": 1.2048364168189682
+            }
+          }
+        },
+        "single_mixture": {
+          "coefficients": [
+            0.5692305128519823,
+            2.5914330647386974,
+            1.001011771362077,
+            0.2458940210025074
+          ],
+          "below_10deg_fraction": 0.2268028481499508,
+          "equivalent_upward_DNB_W": 976221.4466196109,
+          "weighted_training_loss": 0.2510368556567158,
+          "condition": 7.865385666236891,
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mean_observed": 24.527840808492893,
+              "mean_predicted": 23.312191918474216,
+              "bias": -1.2156488900186808,
+              "mae": 2.711618967307221
+            },
+            "halo_18_to_43_km": {
+              "n": 352,
+              "mean_observed": 0.3255833181488509,
+              "mean_predicted": 0.31411399543247837,
+              "bias": -0.011469322716372465,
+              "mae": 0.05077211293741724
+            },
+            "dark_control_46_to_65_km": {
+              "n": 573,
+              "mean_observed": 0.2552233250570476,
+              "mean_predicted": 0.2641111313258896,
+              "bias": 0.00888780626884201,
+              "mae": 0.0302943408192051
+            },
+            "bright_neighbor_sources": {
+              "n": 71,
+              "mean_observed": 9.601975656525937,
+              "mean_predicted": 10.002401275110397,
+              "bias": 0.40042561858446274,
+              "mae": 1.2386220817315639
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mean_observed": 24.015025524951916,
+              "mean_predicted": 24.11080541152848,
+              "bias": 0.09577988657656808,
+              "mae": 2.4750027940293413
+            },
+            "halo_18_to_43_km": {
+              "n": 678,
+              "mean_observed": 0.321547355748508,
+              "mean_predicted": 0.3121122871941942,
+              "bias": -0.009435068554313752,
+              "mae": 0.05001840006759398
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1140,
+              "mean_observed": 0.2575545281992692,
+              "mean_predicted": 0.26403172888619264,
+              "bias": 0.006477200686923419,
+              "mae": 0.032811408248227564
+            },
+            "bright_neighbor_sources": {
+              "n": 136,
+              "mean_observed": 9.03785333489717,
+              "mean_predicted": 9.15072105839619,
+              "bias": 0.11286772349902166,
+              "mae": 1.2472921020200831
+            }
+          }
+        },
+        "all_mixture": {
+          "coefficients": [
+            0.6772488720061067,
+            1.893337906210294,
+            1.003097935548661,
+            0.2437069765171671
+          ],
+          "below_10deg_fraction": 0.2068088095494087,
+          "equivalent_upward_DNB_W": 793966.7989607992,
+          "weighted_training_loss": 0.25028988447599726,
+          "condition": 6.472445045576697,
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mean_observed": 24.527840808492893,
+              "mean_predicted": 23.282735011212523,
+              "bias": -1.245105797280373,
+              "mae": 2.6972402840366496
+            },
+            "halo_18_to_43_km": {
+              "n": 352,
+              "mean_observed": 0.3255833181488509,
+              "mean_predicted": 0.3149190291064618,
+              "bias": -0.01066428904238906,
+              "mae": 0.050652290420274075
+            },
+            "dark_control_46_to_65_km": {
+              "n": 573,
+              "mean_observed": 0.2552233250570476,
+              "mean_predicted": 0.2635780010308347,
+              "bias": 0.00835467597378705,
+              "mae": 0.030304275554233352
+            },
+            "bright_neighbor_sources": {
+              "n": 71,
+              "mean_observed": 9.601975656525937,
+              "mean_predicted": 10.010033110198796,
+              "bias": 0.4080574536728598,
+              "mae": 1.2358298972775985
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mean_observed": 24.015025524951916,
+              "mean_predicted": 24.08706451941134,
+              "bias": 0.07203899445942724,
+              "mae": 2.469032489955868
+            },
+            "halo_18_to_43_km": {
+              "n": 678,
+              "mean_observed": 0.321547355748508,
+              "mean_predicted": 0.31292406837613634,
+              "bias": -0.008623287372371615,
+              "mae": 0.04992068918868918
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1140,
+              "mean_observed": 0.2575545281992692,
+              "mean_predicted": 0.26345074520469597,
+              "bias": 0.005896217005426744,
+              "mae": 0.03278819010898254
+            },
+            "bright_neighbor_sources": {
+              "n": 136,
+              "mean_observed": 9.03785333489717,
+              "mean_predicted": 9.153723404624332,
+              "bias": 0.11587006972716149,
+              "mae": 1.2439181888994821
+            }
+          }
+        }
+      },
+      "status": "evaluated"
+    },
+    "Tucson/2019-04-07": {
+      "city": "Tucson",
+      "night": "2019-04-07",
+      "bounds": {
+        "west": -111.75,
+        "south": 31.6,
+        "east": -110.15,
+        "north": 32.85
+      },
+      "source_altitude_m": 700,
+      "utc": "2019-04-07T09:56:44.903412+00:00",
+      "zenith_deg": 58.299998696893454,
+      "azimuth_deg": -73.29129021451219,
+      "lunar_altitude_core_deg": -45.90999696217477,
+      "solar_altitude_core_deg": -37.01999716088176,
+      "source_template_files": {
+        "VNP46A3.A2019091.h06v05.002.2025133164421.h5": "2db37a019a102593d4f31b1007a8eec784200f2afb87ee756e47213543671559"
+      },
+      "files": [
+        {
+          "filename": "VNP46A1.A2019097.h06v05.002.2024255221019.h5",
+          "sha256": "076b41ded7b3e44d5908e2db4dc20f78d66a2419bb07c10bb2e7f198b9539a9c",
+          "tile": "h06v05",
+          "product": "VNP46A1"
+        },
+        {
+          "filename": "VNP46A2.A2019097.h06v05.002.2025023113758.h5",
+          "sha256": "ad92e6b4ca3f2e1358e9a59d7570dbc35e9af0d19dc233beae7e91c0ad37ab87",
+          "tile": "h06v05",
+          "product": "VNP46A2"
+        }
+      ],
+      "support": {
+        "city_core": {
+          "candidate_cells": 1974,
+          "a1_cells": 1974,
+          "paired_a1_a2_cells": 1974,
+          "a1_median": 24.7001953125,
+          "a2_median": 29.748476028442383,
+          "a1_minus_a2_median": -5.147564888000488
+        },
+        "halo_18_to_43_km": {
+          "candidate_cells": 15886,
+          "a1_cells": 15877,
+          "paired_a1_a2_cells": 15862,
+          "a1_median": 0.5560509562492371,
+          "a2_median": 0.6100364327430725,
+          "a1_minus_a2_median": -0.05085375905036926
+        },
+        "dark_control_46_to_65_km": {
+          "candidate_cells": 26954,
+          "a1_cells": 26952,
+          "paired_a1_a2_cells": 26952,
+          "a1_median": 0.45074325799942017,
+          "a2_median": 0.5027894377708435,
+          "a1_minus_a2_median": -0.049070656299591064
+        },
+        "bright_neighbor_sources": {
+          "candidate_cells": 3483,
+          "a1_cells": 3483,
+          "paired_a1_a2_cells": 3483,
+          "a1_median": 5.5000786781311035,
+          "a2_median": 6.490846157073975,
+          "a1_minus_a2_median": -0.9127964973449707
+        }
+      },
+      "sensor_zenith_05_95_deg": [
+        56.00999874807894,
+        60.26999865286052
+      ],
+      "halo_scatter_medians": {
+        "single": 0.05895027132346332,
+        "multiple": 0.02058058712415886,
+        "multiple_share_of_scatter_mean_signal": 0.24936965644708825
+      },
+      "atmosphere": {
+        "reference_wavelength_nm": 650.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1538.4615384615386,
+        "aerosol_optical_depth": 0.04724313881559823,
+        "aerosol_single_scattering_albedo": 0.935,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 0.9162188716508777,
+        "top_m": 80000.0
+      },
+      "samples": 1048576,
+      "seed": 18115,
+      "source_1x_equivalent_DNB_W": 308865.97787283896,
+      "kernel_ground_hits": [
+        104755,
+        13742
+      ],
+      "kernel_outside_window": 1099,
+      "scenarios": {
+        "direct": {
+          "coefficients": [
+            1.3053257954759805,
+            0.0,
+            1.2179905008400191,
+            0.5039800318594453
+          ],
+          "below_10deg_fraction": 0.030153689607045803,
+          "equivalent_upward_DNB_W": 403170.7282623301,
+          "weighted_training_loss": 0.2615214113510743,
+          "condition": 1.035730803381153,
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mean_observed": 27.552841842154432,
+              "mean_predicted": 26.748184228496864,
+              "bias": -0.8046576136575656,
+              "mae": 2.6946075242014778
+            },
+            "halo_18_to_43_km": {
+              "n": 352,
+              "mean_observed": 0.5802730945515809,
+              "mean_predicted": 0.5039800318594453,
+              "bias": -0.07629306269213572,
+              "mae": 0.12328461000799962
+            },
+            "dark_control_46_to_65_km": {
+              "n": 573,
+              "mean_observed": 0.4586611898960811,
+              "mean_predicted": 0.5039800318594453,
+              "bias": 0.045318841963364206,
+              "mae": 0.07675233456031764
+            },
+            "bright_neighbor_sources": {
+              "n": 71,
+              "mean_observed": 10.905727797147025,
+              "mean_predicted": 10.664327206525147,
+              "bias": -0.24140059062187616,
+              "mae": 1.5876338613543308
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mean_observed": 28.807803315377463,
+              "mean_predicted": 27.827444522718455,
+              "bias": -0.9803587926590108,
+              "mae": 3.080523228265979
+            },
+            "halo_18_to_43_km": {
+              "n": 675,
+              "mean_observed": 0.5742465973773215,
+              "mean_predicted": 0.5039800318594453,
+              "bias": -0.07026656551787622,
+              "mae": 0.11501384144625873
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1140,
+              "mean_observed": 0.4559217671462432,
+              "mean_predicted": 0.5039800318594452,
+              "bias": 0.04805826471320206,
+              "mae": 0.07822882986138203
+            },
+            "bright_neighbor_sources": {
+              "n": 136,
+              "mean_observed": 10.069306630942904,
+              "mean_predicted": 9.730226175392241,
+              "bias": -0.3390804555506637,
+              "mae": 1.523521167513034
+            }
+          }
+        },
+        "all_lambert": {
+          "coefficients": [
+            1.211942173835337,
+            0.0,
+            1.1308323880111624,
+            0.4796349166675187
+          ],
+          "below_10deg_fraction": 0.030153689607045803,
+          "equivalent_upward_DNB_W": 374327.70464698557,
+          "weighted_training_loss": 0.2250067915338198,
+          "condition": 1.0729948320629976,
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mean_observed": 27.552841842154432,
+              "mean_predicted": 27.323030323424895,
+              "bias": -0.22981151872953265,
+              "mae": 2.4338774103253806
+            },
+            "halo_18_to_43_km": {
+              "n": 352,
+              "mean_observed": 0.5802730945515809,
+              "mean_predicted": 0.5251889619618387,
+              "bias": -0.05508413258974227,
+              "mae": 0.1021820961949109
+            },
+            "dark_control_46_to_65_km": {
+              "n": 573,
+              "mean_observed": 0.4586611898960811,
+              "mean_predicted": 0.49119098340888934,
+              "bias": 0.03252979351280828,
+              "mae": 0.0693138376019129
+            },
+            "bright_neighbor_sources": {
+              "n": 71,
+              "mean_observed": 10.905727797147025,
+              "mean_predicted": 10.740378201412778,
+              "bias": -0.16534959573424535,
+              "mae": 1.4956412523462095
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mean_observed": 28.807803315377463,
+              "mean_predicted": 28.200131915783164,
+              "bias": -0.6076713995942972,
+              "mae": 2.8119397790461687
+            },
+            "halo_18_to_43_km": {
+              "n": 675,
+              "mean_observed": 0.5742465973773215,
+              "mean_predicted": 0.5225234929060844,
+              "bias": -0.051723104471237125,
+              "mae": 0.09553377126883997
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1140,
+              "mean_observed": 0.4559217671462432,
+              "mean_predicted": 0.4911827893298414,
+              "bias": 0.035261022183598154,
+              "mae": 0.07042410209261231
+            },
+            "bright_neighbor_sources": {
+              "n": 136,
+              "mean_observed": 10.069306630942904,
+              "mean_predicted": 9.840894406090372,
+              "bias": -0.22841222485253,
+              "mae": 1.4955219766436425
+            }
+          }
+        },
+        "single_mixture": {
+          "coefficients": [
+            0.0,
+            1.4269610101823063,
+            1.112345375497652,
+            0.46287821356835573
+          ],
+          "below_10deg_fraction": 0.26999852350519127,
+          "equivalent_upward_DNB_W": 440739.7077963721,
+          "weighted_training_loss": 0.2221508502706854,
+          "condition": 32.66052503893709,
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mean_observed": 27.552841842154432,
+              "mean_predicted": 27.402016885328692,
+              "bias": -0.15082495682574007,
+              "mae": 2.272256201729367
+            },
+            "halo_18_to_43_km": {
+              "n": 352,
+              "mean_observed": 0.5802730945515809,
+              "mean_predicted": 0.5371002354920287,
+              "bias": -0.04317285905955231,
+              "mae": 0.0992943685258853
+            },
+            "dark_control_46_to_65_km": {
+              "n": 573,
+              "mean_observed": 0.4586611898960811,
+              "mean_predicted": 0.4835710517718948,
+              "bias": 0.024909861875813653,
+              "mae": 0.06621121313017982
+            },
+            "bright_neighbor_sources": {
+              "n": 71,
+              "mean_observed": 10.905727797147025,
+              "mean_predicted": 10.790039677414375,
+              "bias": -0.11568811973264759,
+              "mae": 1.4767520384396757
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mean_observed": 28.807803315377463,
+              "mean_predicted": 28.36462141974223,
+              "bias": -0.4431818956352333,
+              "mae": 2.7065981688237817
+            },
+            "halo_18_to_43_km": {
+              "n": 675,
+              "mean_observed": 0.5742465973773215,
+              "mean_predicted": 0.5344082253562396,
+              "bias": -0.03983837202108196,
+              "mae": 0.09242014652072497
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1140,
+              "mean_observed": 0.4559217671462432,
+              "mean_predicted": 0.4832171687508858,
+              "bias": 0.027295401604642562,
+              "mae": 0.06740577845730038
+            },
+            "bright_neighbor_sources": {
+              "n": 136,
+              "mean_observed": 10.069306630942904,
+              "mean_predicted": 9.858224262519858,
+              "bias": -0.21108236842304642,
+              "mae": 1.5192168720404295
+            }
+          }
+        },
+        "all_mixture": {
+          "coefficients": [
+            0.0,
+            1.4136725950258113,
+            1.1043130877864564,
+            0.4488927919991492
+          ],
+          "below_10deg_fraction": 0.26999852350519127,
+          "equivalent_upward_DNB_W": 436635.36845468107,
+          "weighted_training_loss": 0.216532839072046,
+          "condition": 26.36946434659523,
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mean_observed": 27.552841842154432,
+              "mean_predicted": 27.442528478741778,
+              "bias": -0.11031336341264959,
+              "mae": 2.2422655875000737
+            },
+            "halo_18_to_43_km": {
+              "n": 352,
+              "mean_observed": 0.5802730945515809,
+              "mean_predicted": 0.5467068773126521,
+              "bias": -0.033566217238928844,
+              "mae": 0.09656520139778196
+            },
+            "dark_control_46_to_65_km": {
+              "n": 573,
+              "mean_observed": 0.4586611898960811,
+              "mean_predicted": 0.4774781320057424,
+              "bias": 0.018816942109661408,
+              "mae": 0.06409188762396731
+            },
+            "bright_neighbor_sources": {
+              "n": 71,
+              "mean_observed": 10.905727797147025,
+              "mean_predicted": 10.809623499881578,
+              "bias": -0.09610429726544538,
+              "mae": 1.4741871337934451
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mean_observed": 28.807803315377463,
+              "mean_predicted": 28.386607171005984,
+              "bias": -0.4211961443714829,
+              "mae": 2.7005522143393645
+            },
+            "halo_18_to_43_km": {
+              "n": 675,
+              "mean_observed": 0.5742465973773215,
+              "mean_predicted": 0.5434555762264575,
+              "bias": -0.030791021150864014,
+              "mae": 0.08932531020324928
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1140,
+              "mean_observed": 0.4559217671462432,
+              "mean_predicted": 0.47714146188610557,
+              "bias": 0.021219694739862318,
+              "mae": 0.06522774934788853
+            },
+            "bright_neighbor_sources": {
+              "n": 136,
+              "mean_observed": 10.069306630942904,
+              "mean_predicted": 9.880697340910373,
+              "bias": -0.18860929003253002,
+              "mae": 1.5273822678133964
+            }
+          }
+        }
+      },
+      "status": "evaluated"
+    },
+    "Tucson/2019-04-08": {
+      "city": "Tucson",
+      "night": "2019-04-08",
+      "bounds": {
+        "west": -111.75,
+        "south": 31.6,
+        "east": -110.15,
+        "north": 32.85
+      },
+      "source_altitude_m": 700,
+      "utc": "2019-04-08T09:38:00.250168+00:00",
+      "zenith_deg": 41.66999906860292,
+      "azimuth_deg": -75.95326108887323,
+      "lunar_altitude_core_deg": -43.859997007995844,
+      "solar_altitude_core_deg": -39.58999710343778,
+      "source_template_files": {
+        "VNP46A3.A2019091.h06v05.002.2025133164421.h5": "2db37a019a102593d4f31b1007a8eec784200f2afb87ee756e47213543671559"
+      },
+      "files": [
+        {
+          "filename": "VNP46A1.A2019098.h06v05.002.2024255224814.h5",
+          "sha256": "de8592b9a9ee8ef35edda7e7ecf48ff65b4c0a7725ed9d1db313db2b1668bc81",
+          "tile": "h06v05",
+          "product": "VNP46A1"
+        },
+        {
+          "filename": "VNP46A2.A2019098.h06v05.002.2025023122557.h5",
+          "sha256": "4fffe8a414430670787927192577daa01796643175f08e0dfd5bbe7d6c794b37",
+          "tile": "h06v05",
+          "product": "VNP46A2"
+        }
+      ],
+      "support": {
+        "city_core": {
+          "candidate_cells": 1974,
+          "a1_cells": 1974,
+          "paired_a1_a2_cells": 1969,
+          "a1_median": 20.335594177246094,
+          "a2_median": 21.876474380493164,
+          "a1_minus_a2_median": -1.4805736541748047
+        },
+        "halo_18_to_43_km": {
+          "candidate_cells": 15916,
+          "a1_cells": 15916,
+          "paired_a1_a2_cells": 15910,
+          "a1_median": 0.3532249927520752,
+          "a2_median": 0.34499216079711914,
+          "a1_minus_a2_median": 0.007218509912490845
+        },
+        "dark_control_46_to_65_km": {
+          "candidate_cells": 26954,
+          "a1_cells": 26951,
+          "paired_a1_a2_cells": 26858,
+          "a1_median": 0.2880106568336487,
+          "a2_median": 0.28031906485557556,
+          "a1_minus_a2_median": 0.00966259092092514
+        },
+        "bright_neighbor_sources": {
+          "candidate_cells": 3483,
+          "a1_cells": 3482,
+          "paired_a1_a2_cells": 3481,
+          "a1_median": 4.317413330078125,
+          "a2_median": 4.679426193237305,
+          "a1_minus_a2_median": -0.30794858932495117
+        }
+      },
+      "sensor_zenith_05_95_deg": [
+        37.97999915108085,
+        44.789998998865485
+      ],
+      "halo_scatter_medians": {
+        "single": 0.059273569970162476,
+        "multiple": 0.016381146397809927,
+        "multiple_share_of_scatter_mean_signal": 0.20276090200127692
+      },
+      "atmosphere": {
+        "reference_wavelength_nm": 650.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1538.4615384615386,
+        "aerosol_optical_depth": 0.03213062725475904,
+        "aerosol_single_scattering_albedo": 0.935,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 0.9162188716508777,
+        "top_m": 80000.0
+      },
+      "samples": 1048576,
+      "seed": 18115,
+      "source_1x_equivalent_DNB_W": 308865.97787283896,
+      "kernel_ground_hits": [
+        64795,
+        6395
+      ],
+      "kernel_outside_window": 623,
+      "scenarios": {
+        "direct": {
+          "coefficients": [
+            1.09073350154635,
+            0.0,
+            1.0305239577659406,
+            0.32392415007268155
+          ],
+          "below_10deg_fraction": 0.0301536896070458,
+          "equivalent_upward_DNB_W": 336890.4695537791,
+          "weighted_training_loss": 0.24037120509482715,
+          "condition": 1.028114623339268,
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mean_observed": 24.888399065327555,
+              "mean_predicted": 23.969751676599724,
+              "bias": -0.9186473887278269,
+              "mae": 2.384894206219746
+            },
+            "halo_18_to_43_km": {
+              "n": 352,
+              "mean_observed": 0.3710666612446561,
+              "mean_predicted": 0.3239241500726816,
+              "bias": -0.047142511171974516,
+              "mae": 0.07494601971531939
+            },
+            "dark_control_46_to_65_km": {
+              "n": 572,
+              "mean_observed": 0.2919643698276636,
+              "mean_predicted": 0.32392415007268155,
+              "bias": 0.03195978024501793,
+              "mae": 0.045735784505405386
+            },
+            "bright_neighbor_sources": {
+              "n": 71,
+              "mean_observed": 9.746176832205707,
+              "mean_predicted": 9.593163927173352,
+              "bias": -0.15301290503235548,
+              "mae": 1.2500030482602797
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mean_observed": 25.246226872055356,
+              "mean_predicted": 24.9421569582452,
+              "bias": -0.3040699138101625,
+              "mae": 1.952425373280731
+            },
+            "halo_18_to_43_km": {
+              "n": 678,
+              "mean_observed": 0.3678887141882853,
+              "mean_predicted": 0.3239241500726816,
+              "bias": -0.04396456411560372,
+              "mae": 0.06970280425804283
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1140,
+              "mean_observed": 0.2935413015412458,
+              "mean_predicted": 0.32392415007268155,
+              "bias": 0.030382848531435733,
+              "mae": 0.04863306644866337
+            },
+            "bright_neighbor_sources": {
+              "n": 135,
+              "mean_observed": 8.972314729938716,
+              "mean_predicted": 8.746534921753678,
+              "bias": -0.22577980818503818,
+              "mae": 1.1497780782480584
+            }
+          }
+        },
+        "all_lambert": {
+          "coefficients": [
+            1.0444480872530642,
+            0.0,
+            0.9857603796545857,
+            0.3121816895524743
+          ],
+          "below_10deg_fraction": 0.030153689607045803,
+          "equivalent_upward_DNB_W": 322594.4798068339,
+          "weighted_training_loss": 0.2148406076732982,
+          "condition": 1.0527180032952737,
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mean_observed": 24.888399065327555,
+              "mean_predicted": 24.256981252998525,
+              "bias": -0.6314178123290249,
+              "mae": 2.309533021074115
+            },
+            "halo_18_to_43_km": {
+              "n": 352,
+              "mean_observed": 0.3710666612446561,
+              "mean_predicted": 0.3345749640101074,
+              "bias": -0.036491697234548676,
+              "mae": 0.0655298789707445
+            },
+            "dark_control_46_to_65_km": {
+              "n": 572,
+              "mean_observed": 0.2919643698276636,
+              "mean_predicted": 0.31725343278987067,
+              "bias": 0.02528906296220706,
+              "mae": 0.04176265187158291
+            },
+            "bright_neighbor_sources": {
+              "n": 71,
+              "mean_observed": 9.746176832205707,
+              "mean_predicted": 9.634605824692665,
+              "bias": -0.11157100751304426,
+              "mae": 1.2419723656416184
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mean_observed": 25.246226872055356,
+              "mean_predicted": 25.141834078770273,
+              "bias": -0.10439279328508201,
+              "mae": 1.9334097979199574
+            },
+            "halo_18_to_43_km": {
+              "n": 678,
+              "mean_observed": 0.3678887141882853,
+              "mean_predicted": 0.33359019602955464,
+              "bias": -0.03429851815873063,
+              "mae": 0.060565839079985063
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1140,
+              "mean_observed": 0.2935413015412458,
+              "mean_predicted": 0.3171957200462318,
+              "bias": 0.023654418504985997,
+              "mae": 0.044326147521750965
+            },
+            "bright_neighbor_sources": {
+              "n": 135,
+              "mean_observed": 8.972314729938716,
+              "mean_predicted": 8.807662868247535,
+              "bias": -0.16465186169118232,
+              "mae": 1.1515984457630424
+            }
+          }
+        },
+        "single_mixture": {
+          "coefficients": [
+            0.3269636282848543,
+            2.8684696026384233,
+            0.9571756840603153,
+            0.2746612875688598
+          ],
+          "below_10deg_fraction": 0.2454570821889359,
+          "equivalent_upward_DNB_W": 986960.6095964834,
+          "weighted_training_loss": 0.19059814791383733,
+          "condition": 10.237480445251565,
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mean_observed": 24.888399065327555,
+              "mean_predicted": 24.427786205227623,
+              "bias": -0.4606128600999342,
+              "mae": 2.3213011940334622
+            },
+            "halo_18_to_43_km": {
+              "n": 352,
+              "mean_observed": 0.3710666612446561,
+              "mean_predicted": 0.364187569598062,
+              "bias": -0.00687909164659409,
+              "mae": 0.055411997754632104
+            },
+            "dark_control_46_to_65_km": {
+              "n": 572,
+              "mean_observed": 0.2919643698276636,
+              "mean_predicted": 0.29836506728297807,
+              "bias": 0.006400697455314472,
+              "mae": 0.03494286137251615
+            },
+            "bright_neighbor_sources": {
+              "n": 71,
+              "mean_observed": 9.746176832205707,
+              "mean_predicted": 9.655587380682542,
+              "bias": -0.09058945152316891,
+              "mae": 1.2514231700611351
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mean_observed": 25.246226872055356,
+              "mean_predicted": 25.257326382385315,
+              "bias": 0.011099510329961293,
+              "mae": 2.0160946431739273
+            },
+            "halo_18_to_43_km": {
+              "n": 678,
+              "mean_observed": 0.3678887141882853,
+              "mean_predicted": 0.36100930301069284,
+              "bias": -0.006879411177592401,
+              "mae": 0.05354670569388263
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1140,
+              "mean_observed": 0.2935413015412458,
+              "mean_predicted": 0.29851009436814313,
+              "bias": 0.004968792826897301,
+              "mae": 0.03709755362798811
+            },
+            "bright_neighbor_sources": {
+              "n": 135,
+              "mean_observed": 8.972314729938716,
+              "mean_predicted": 8.85098885437121,
+              "bias": -0.12132587556750954,
+              "mae": 1.2050742572651676
+            }
+          }
+        },
+        "all_mixture": {
+          "coefficients": [
+            0.4683511988388668,
+            2.279578201213256,
+            0.9589905774717092,
+            0.2718389687132269
+          ],
+          "below_10deg_fraction": 0.22911988394138932,
+          "equivalent_upward_DNB_W": 848741.9012726226,
+          "weighted_training_loss": 0.1896954060592465,
+          "condition": 8.72022858872907,
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mean_observed": 24.888399065327555,
+              "mean_predicted": 24.407021487946967,
+              "bias": -0.4813775773805856,
+              "mae": 2.313174367468277
+            },
+            "halo_18_to_43_km": {
+              "n": 352,
+              "mean_observed": 0.3710666612446561,
+              "mean_predicted": 0.3656204794616116,
+              "bias": -0.005446181783044451,
+              "mae": 0.05549554810358992
+            },
+            "dark_control_46_to_65_km": {
+              "n": 572,
+              "mean_observed": 0.2919643698276636,
+              "mean_predicted": 0.29758879610020217,
+              "bias": 0.0056244262725385265,
+              "mae": 0.034853705632293036
+            },
+            "bright_neighbor_sources": {
+              "n": 71,
+              "mean_observed": 9.746176832205707,
+              "mean_predicted": 9.659621210128721,
+              "bias": -0.08655562207698982,
+              "mae": 1.2521582103461562
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mean_observed": 25.246226872055356,
+              "mean_predicted": 25.235466429959672,
+              "bias": -0.01076044209567977,
+              "mae": 2.0039325583204954
+            },
+            "halo_18_to_43_km": {
+              "n": 678,
+              "mean_observed": 0.3678887141882853,
+              "mean_predicted": 0.36234008560391984,
+              "bias": -0.005548628584365412,
+              "mae": 0.053314726733597134
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1140,
+              "mean_observed": 0.2935413015412458,
+              "mean_predicted": 0.2976020541735331,
+              "bias": 0.0040607526322872485,
+              "mae": 0.03696776157673936
+            },
+            "bright_neighbor_sources": {
+              "n": 135,
+              "mean_observed": 8.972314729938716,
+              "mean_predicted": 8.85502125481342,
+              "bias": -0.11729347512529709,
+              "mae": 1.2002461926681767
+            }
+          }
+        }
+      },
+      "status": "evaluated"
+    },
+    "Madrid/2013-12-04": {
+      "city": "Madrid",
+      "night": "2013-12-04",
+      "bounds": {
+        "west": -4.5,
+        "south": 39.8,
+        "east": -2.9,
+        "north": 41.05
+      },
+      "source_altitude_m": 500,
+      "utc": "2013-12-04T02:32:52.667313+00:00",
+      "zenith_deg": 31.189999302849174,
+      "azimuth_deg": -74.86193602362339,
+      "lunar_altitude_core_deg": -63.15999657660723,
+      "solar_altitude_core_deg": -53.93999678269029,
+      "source_template_files": {
+        "VNP46A3.A2013335.h17v04.002.2025087065708.h5": "f851b452336795afd976af1e3830ee960e771fcc8b12a781c7464f1a314a69d6",
+        "VNP46A3.A2013335.h17v05.002.2025087065715.h5": "dcb255159df09bf6a2f0acab39b31462f3b5b8a8889dfdb5e74330afc0f3bdf2"
+      },
+      "files": [
+        {
+          "filename": "VNP46A1.A2013338.h17v04.002.2024171173433.h5",
+          "sha256": "563ab15b552c2e9bee47132a4782477f367c0c76b09ca043fdd3225953f3adf4",
+          "tile": "h17v04",
+          "product": "VNP46A1"
+        },
+        {
+          "filename": "VNP46A1.A2013338.h17v05.002.2024171173431.h5",
+          "sha256": "9c6939f9a72fb309eea364952842550a4f97c7aeaf0be9236da7937acf226229",
+          "tile": "h17v05",
+          "product": "VNP46A1"
+        },
+        {
+          "filename": "VNP46A2.A2013338.h17v04.002.2024202034631.h5",
+          "sha256": "deeb2bf167136a5af39bf3280e97b59742dda8fc8572fa4e6b5cac5c1d90405f",
+          "tile": "h17v04",
+          "product": "VNP46A2"
+        },
+        {
+          "filename": "VNP46A2.A2013338.h17v05.002.2024202034249.h5",
+          "sha256": "0e9a41b138db6b317dd394e85bc0324d5717b57de4e6ceb037cbe3275d5ae671",
+          "tile": "h17v05",
+          "product": "VNP46A2"
+        }
+      ],
+      "support": {
+        "city_core": {
+          "candidate_cells": 4065,
+          "a1_cells": 4065,
+          "paired_a1_a2_cells": 4062,
+          "a1_median": 56.84431457519531,
+          "a2_median": 58.075782775878906,
+          "a1_minus_a2_median": -1.1743965148925781
+        },
+        "halo_18_to_43_km": {
+          "candidate_cells": 1637,
+          "a1_cells": 1637,
+          "paired_a1_a2_cells": 1637,
+          "a1_median": 0.5679101943969727,
+          "a2_median": 0.5568962693214417,
+          "a1_minus_a2_median": 0.01008516550064087
+        },
+        "dark_control_46_to_65_km": {
+          "candidate_cells": 11968,
+          "a1_cells": 10719,
+          "paired_a1_a2_cells": 10686,
+          "a1_median": 0.37407301366329193,
+          "a2_median": 0.35620972514152527,
+          "a1_minus_a2_median": 0.017147324979305267
+        },
+        "bright_neighbor_sources": {
+          "candidate_cells": 13739,
+          "a1_cells": 13707,
+          "paired_a1_a2_cells": 13695,
+          "a1_median": 9.716131210327148,
+          "a2_median": 9.931475639343262,
+          "a1_minus_a2_median": -0.18456554412841797
+        }
+      },
+      "sensor_zenith_05_95_deg": [
+        27.25999939069152,
+        34.82999922148883
+      ],
+      "halo_scatter_medians": {
+        "single": 0.16425278703394836,
+        "multiple": 0.057563645216685895,
+        "multiple_share_of_scatter_mean_signal": 0.2489371465996372
+      },
+      "atmosphere": {
+        "reference_wavelength_nm": 650.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.06185957909949058,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 0.9394130628134758,
+        "top_m": 80000.0
+      },
+      "samples": 1048576,
+      "seed": 18115,
+      "source_1x_equivalent_DNB_W": 1415731.8077831268,
+      "kernel_ground_hits": [
+        84688,
+        9083
+      ],
+      "kernel_outside_window": 524,
+      "scenarios": {
+        "direct": {
+          "coefficients": [
+            1.106838062693015,
+            0.0,
+            1.1298883601886802,
+            0.4494406046263579
+          ],
+          "below_10deg_fraction": 0.0301536896070458,
+          "equivalent_upward_DNB_W": 1566985.851419556,
+          "weighted_training_loss": 0.2370891922697787,
+          "condition": 1.0136622848285295,
+          "test": {
+            "city_core": {
+              "n": 89,
+              "mean_observed": 59.73858909374355,
+              "mean_predicted": 62.42854500527926,
+              "bias": 2.6899559115357135,
+              "mae": 4.264830846361384
+            },
+            "halo_18_to_43_km": {
+              "n": 16,
+              "mean_observed": 0.5606638064452758,
+              "mean_predicted": 0.4494406046263579,
+              "bias": -0.11122320181891786,
+              "mae": 0.11635132768755874
+            },
+            "dark_control_46_to_65_km": {
+              "n": 223,
+              "mean_observed": 0.37891556094581746,
+              "mean_predicted": 0.449440604626358,
+              "bias": 0.07052504368054043,
+              "mae": 0.09621204529722764
+            },
+            "bright_neighbor_sources": {
+              "n": 267,
+              "mean_observed": 20.09622981611992,
+              "mean_predicted": 20.11007925181129,
+              "bias": 0.013849435691365205,
+              "mae": 2.6990978320241545
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 169,
+              "mean_observed": 64.49356833050959,
+              "mean_predicted": 64.66554618597837,
+              "bias": 0.17197785546877106,
+              "mae": 4.711319845065599
+            },
+            "halo_18_to_43_km": {
+              "n": 83,
+              "mean_observed": 0.586807154687932,
+              "mean_predicted": 0.44944060462635793,
+              "bias": -0.13736655006157414,
+              "mae": 0.14569039361563657
+            },
+            "dark_control_46_to_65_km": {
+              "n": 483,
+              "mean_observed": 0.38874130621968533,
+              "mean_predicted": 0.4494406046263579,
+              "bias": 0.060699298406672576,
+              "mae": 0.08723418535464757
+            },
+            "bright_neighbor_sources": {
+              "n": 547,
+              "mean_observed": 25.760481076670324,
+              "mean_predicted": 25.590700754912266,
+              "bias": -0.169780321758058,
+              "mae": 2.6768442830570733
+            }
+          }
+        },
+        "all_lambert": {
+          "coefficients": [
+            1.035763253761649,
+            0.0,
+            1.0666590055015701,
+            0.3833112654798655
+          ],
+          "below_10deg_fraction": 0.030153689607045803,
+          "equivalent_upward_DNB_W": 1466362.983683313,
+          "weighted_training_loss": 0.14538039716097337,
+          "condition": 1.1078579711848582,
+          "test": {
+            "city_core": {
+              "n": 89,
+              "mean_observed": 59.73858909374355,
+              "mean_predicted": 63.20580328288597,
+              "bias": 3.4672141891424295,
+              "mae": 4.613785708560204
+            },
+            "halo_18_to_43_km": {
+              "n": 16,
+              "mean_observed": 0.5606638064452758,
+              "mean_predicted": 0.5005649148483545,
+              "bias": -0.060098891596921264,
+              "mae": 0.06516383900311651
+            },
+            "dark_control_46_to_65_km": {
+              "n": 223,
+              "mean_observed": 0.37891556094581746,
+              "mean_predicted": 0.42286813505919335,
+              "bias": 0.043952574113375976,
+              "mae": 0.07025497639438626
+            },
+            "bright_neighbor_sources": {
+              "n": 267,
+              "mean_observed": 20.09622981611992,
+              "mean_predicted": 20.31321824883882,
+              "bias": 0.21698843271889356,
+              "mae": 2.753183921816907
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 169,
+              "mean_observed": 64.49356833050959,
+              "mean_predicted": 65.44310008414256,
+              "bias": 0.949531753632972,
+              "mae": 4.872254440795528
+            },
+            "halo_18_to_43_km": {
+              "n": 83,
+              "mean_observed": 0.586807154687932,
+              "mean_predicted": 0.5109295129629404,
+              "bias": -0.07587764172499156,
+              "mae": 0.08461796884351108
+            },
+            "dark_control_46_to_65_km": {
+              "n": 483,
+              "mean_observed": 0.38874130621968533,
+              "mean_predicted": 0.42217291570461185,
+              "bias": 0.033431609484926565,
+              "mae": 0.06416124113891433
+            },
+            "bright_neighbor_sources": {
+              "n": 547,
+              "mean_observed": 25.760481076670324,
+              "mean_predicted": 25.80902232419341,
+              "bias": 0.048541247523088686,
+              "mae": 2.7307507918926013
+            }
+          }
+        },
+        "single_mixture": {
+          "coefficients": [
+            0.7837311556857501,
+            1.674302313677444,
+            1.0591308872724883,
+            0.3321980127670851
+          ],
+          "below_10deg_fraction": 0.19352524875155297,
+          "equivalent_upward_DNB_W": 3479916.1671729856,
+          "weighted_training_loss": 0.12300597253570934,
+          "condition": 4.206266765973785,
+          "test": {
+            "city_core": {
+              "n": 89,
+              "mean_observed": 59.73858909374355,
+              "mean_predicted": 63.21848392214718,
+              "bias": 3.4798948284036384,
+              "mae": 4.643058278339407
+            },
+            "halo_18_to_43_km": {
+              "n": 16,
+              "mean_observed": 0.5606638064452758,
+              "mean_predicted": 0.5701590133508343,
+              "bias": 0.009495206905558478,
+              "mae": 0.04609147047352502
+            },
+            "dark_control_46_to_65_km": {
+              "n": 223,
+              "mean_observed": 0.37891556094581746,
+              "mean_predicted": 0.4001139294925562,
+              "bias": 0.02119836854673883,
+              "mae": 0.058050530886315295
+            },
+            "bright_neighbor_sources": {
+              "n": 267,
+              "mean_observed": 20.09622981611992,
+              "mean_predicted": 20.28645511856155,
+              "bias": 0.19022530244162617,
+              "mae": 2.7665265060559547
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 169,
+              "mean_observed": 64.49356833050959,
+              "mean_predicted": 65.4071404852626,
+              "bias": 0.9135721547530175,
+              "mae": 4.969041445847502
+            },
+            "halo_18_to_43_km": {
+              "n": 83,
+              "mean_observed": 0.586807154687932,
+              "mean_predicted": 0.5695675984582952,
+              "bias": -0.017239556229636712,
+              "mae": 0.05562276934458029
+            },
+            "dark_control_46_to_65_km": {
+              "n": 483,
+              "mean_observed": 0.38874130621968533,
+              "mean_predicted": 0.39632992974382425,
+              "bias": 0.007588623524138996,
+              "mae": 0.055532147049198836
+            },
+            "bright_neighbor_sources": {
+              "n": 547,
+              "mean_observed": 25.760481076670324,
+              "mean_predicted": 25.732644963137833,
+              "bias": -0.02783611353249124,
+              "mae": 2.7427151476018286
+            }
+          }
+        },
+        "all_mixture": {
+          "coefficients": [
+            0.8665427923899944,
+            1.067066786662536,
+            1.0576273370655778,
+            0.3231963568753808
+          ],
+          "below_10deg_fraction": 0.16251259958447248,
+          "equivalent_upward_DNB_W": 2737472.58489881,
+          "weighted_training_loss": 0.11964311853619833,
+          "condition": 3.82128814164612,
+          "test": {
+            "city_core": {
+              "n": 89,
+              "mean_observed": 59.73858909374355,
+              "mean_predicted": 63.16747357673671,
+              "bias": 3.4288844829931673,
+              "mae": 4.595666030149315
+            },
+            "halo_18_to_43_km": {
+              "n": 16,
+              "mean_observed": 0.5606638064452758,
+              "mean_predicted": 0.5690879424378902,
+              "bias": 0.008424135992614368,
+              "mae": 0.043071645894703595
+            },
+            "dark_control_46_to_65_km": {
+              "n": 223,
+              "mean_observed": 0.37891556094581746,
+              "mean_predicted": 0.3980827837127251,
+              "bias": 0.019167222766907677,
+              "mae": 0.05660860581206931
+            },
+            "bright_neighbor_sources": {
+              "n": 267,
+              "mean_observed": 20.09622981611992,
+              "mean_predicted": 20.293308780548152,
+              "bias": 0.19707896442822517,
+              "mae": 2.767182174856612
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 169,
+              "mean_observed": 64.49356833050959,
+              "mean_predicted": 65.36637878510444,
+              "bias": 0.8728104545948492,
+              "mae": 4.929373694449526
+            },
+            "halo_18_to_43_km": {
+              "n": 83,
+              "mean_observed": 0.586807154687932,
+              "mean_predicted": 0.5719088723368383,
+              "bias": -0.014898282351093708,
+              "mae": 0.052518881504658346
+            },
+            "dark_control_46_to_65_km": {
+              "n": 483,
+              "mean_observed": 0.38874130621968533,
+              "mean_predicted": 0.3952931008067641,
+              "bias": 0.006551794587078809,
+              "mae": 0.054731374934421775
+            },
+            "bright_neighbor_sources": {
+              "n": 547,
+              "mean_observed": 25.760481076670324,
+              "mean_predicted": 25.743353652271736,
+              "bias": -0.01712742439858685,
+              "mae": 2.7438540783395404
+            }
+          }
+        }
+      },
+      "status": "evaluated"
+    },
+    "Madrid/2013-12-29": {
+      "city": "Madrid",
+      "night": "2013-12-29",
+      "bounds": {
+        "west": -4.5,
+        "south": 39.8,
+        "east": -2.9,
+        "north": 41.05
+      },
+      "source_altitude_m": 500,
+      "utc": "2013-12-29T01:24:21.689329+00:00",
+      "zenith_deg": 56.74999873153865,
+      "azimuth_deg": 93.82235208363872,
+      "lunar_altitude_core_deg": -29.08999733813107,
+      "solar_altitude_core_deg": -67.69999647513032,
+      "source_template_files": {
+        "VNP46A3.A2013335.h17v04.002.2025087065708.h5": "f851b452336795afd976af1e3830ee960e771fcc8b12a781c7464f1a314a69d6",
+        "VNP46A3.A2013335.h17v05.002.2025087065715.h5": "dcb255159df09bf6a2f0acab39b31462f3b5b8a8889dfdb5e74330afc0f3bdf2"
+      },
+      "files": [
+        {
+          "filename": "VNP46A1.A2013363.h17v04.002.2024172054502.h5",
+          "sha256": "9a73079eb065924a723073b357dcf32e626c4236424f3c4708e4c8da0ebf6cc1",
+          "tile": "h17v04",
+          "product": "VNP46A1"
+        },
+        {
+          "filename": "VNP46A1.A2013363.h17v05.002.2024172054500.h5",
+          "sha256": "038a40ca1e6b047cd86dd8c1ff3fab59181ce628cc5db4f5b9715860478e78f3",
+          "tile": "h17v05",
+          "product": "VNP46A1"
+        },
+        {
+          "filename": "VNP46A2.A2013363.h17v04.002.2024206033424.h5",
+          "sha256": "6e3c9a9f90414a08d4bf76412ae0c0eb14ec95108152b16580f451eb68f36148",
+          "tile": "h17v04",
+          "product": "VNP46A2"
+        },
+        {
+          "filename": "VNP46A2.A2013363.h17v05.002.2024206033424.h5",
+          "sha256": "d7f4746f904c21b6289fe86038becf66614c0a4bd08be1f13ff1b6f57542d837",
+          "tile": "h17v05",
+          "product": "VNP46A2"
+        }
+      ],
+      "support": {
+        "city_core": {
+          "candidate_cells": 4065,
+          "a1_cells": 4065,
+          "paired_a1_a2_cells": 4057,
+          "a1_median": 68.08999633789062,
+          "a2_median": 71.97604370117188,
+          "a1_minus_a2_median": -3.4808349609375
+        },
+        "halo_18_to_43_km": {
+          "candidate_cells": 1482,
+          "a1_cells": 1462,
+          "paired_a1_a2_cells": 1450,
+          "a1_median": 1.1716909408569336,
+          "a2_median": 1.1944966912269592,
+          "a1_minus_a2_median": -0.02676260471343994
+        },
+        "dark_control_46_to_65_km": {
+          "candidate_cells": 8084,
+          "a1_cells": 6874,
+          "paired_a1_a2_cells": 6789,
+          "a1_median": 0.7641560435295105,
+          "a2_median": 0.7844704985618591,
+          "a1_minus_a2_median": -0.016845226287841797
+        },
+        "bright_neighbor_sources": {
+          "candidate_cells": 12372,
+          "a1_cells": 12159,
+          "paired_a1_a2_cells": 11778,
+          "a1_median": 13.413006782531738,
+          "a2_median": 14.266750812530518,
+          "a1_minus_a2_median": -0.6941409111022949
+        }
+      },
+      "sensor_zenith_05_95_deg": [
+        54.669998778030276,
+        57.81999870762229
+      ],
+      "halo_scatter_medians": {
+        "single": 0.3637860759283732,
+        "multiple": 0.06832045001705722,
+        "multiple_share_of_scatter_mean_signal": 0.1543480197579718
+      },
+      "atmosphere": {
+        "reference_wavelength_nm": 650.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.018114056739732133,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 0.9394130628134758,
+        "top_m": 80000.0
+      },
+      "samples": 1048576,
+      "seed": 18115,
+      "source_1x_equivalent_DNB_W": 1415731.8077831268,
+      "kernel_ground_hits": [
+        65891,
+        7227
+      ],
+      "kernel_outside_window": 1070,
+      "scenarios": {
+        "direct": {
+          "coefficients": [
+            1.2377376271340268,
+            0.0,
+            1.2975638943306889,
+            0.9227290267974867
+          ],
+          "below_10deg_fraction": 0.030153689607045803,
+          "equivalent_upward_DNB_W": 1752304.5284236534,
+          "weighted_training_loss": 0.382825068567069,
+          "condition": 1.0206185831099732,
+          "test": {
+            "city_core": {
+              "n": 89,
+              "mean_observed": 70.55825081819172,
+              "mean_predicted": 70.60199520489165,
+              "bias": 0.04374438669994311,
+              "mae": 7.008495170008024
+            },
+            "halo_18_to_43_km": {
+              "n": 13,
+              "mean_observed": 1.325566601322029,
+              "mean_predicted": 0.9227290267974868,
+              "bias": -0.4028375745245425,
+              "mae": 0.42086299693351237
+            },
+            "dark_control_46_to_65_km": {
+              "n": 135,
+              "mean_observed": 0.7906067384455735,
+              "mean_predicted": 0.9227290267974865,
+              "bias": 0.13212228835191323,
+              "mae": 0.17687489098923773
+            },
+            "bright_neighbor_sources": {
+              "n": 241,
+              "mean_observed": 28.301602570649,
+              "mean_predicted": 24.72097767320879,
+              "bias": -3.58062489744021,
+              "mae": 6.584710659513373
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 169,
+              "mean_observed": 74.11216904994552,
+              "mean_predicted": 73.11691700342287,
+              "bias": -0.9952520465226616,
+              "mae": 7.284414089619286
+            },
+            "halo_18_to_43_km": {
+              "n": 74,
+              "mean_observed": 1.2180781780275374,
+              "mean_predicted": 0.9227290267974866,
+              "bias": -0.2953491512300506,
+              "mae": 0.3161428919360966
+            },
+            "dark_control_46_to_65_km": {
+              "n": 308,
+              "mean_observed": 0.794773394218648,
+              "mean_predicted": 0.9227290267974867,
+              "bias": 0.12795563257883866,
+              "mae": 0.17347649131350662
+            },
+            "bright_neighbor_sources": {
+              "n": 491,
+              "mean_observed": 33.26841443451279,
+              "mean_predicted": 31.429411053731936,
+              "bias": -1.839003380780851,
+              "mae": 6.239288021211259
+            }
+          }
+        },
+        "all_lambert": {
+          "coefficients": [
+            1.1924766309051789,
+            0.0,
+            1.2631294874321366,
+            0.8062671561677678
+          ],
+          "below_10deg_fraction": 0.030153689607045807,
+          "equivalent_upward_DNB_W": 1688227.0964105213,
+          "weighted_training_loss": 0.28404155550646626,
+          "condition": 1.1126261618862296,
+          "test": {
+            "city_core": {
+              "n": 89,
+              "mean_observed": 70.55825081819172,
+              "mean_predicted": 71.59338466004354,
+              "bias": 1.0351338418518288,
+              "mae": 6.772444404044535
+            },
+            "halo_18_to_43_km": {
+              "n": 13,
+              "mean_observed": 1.325566601322029,
+              "mean_predicted": 1.1104940120437745,
+              "bias": -0.21507258927825465,
+              "mae": 0.22995036146254927
+            },
+            "dark_control_46_to_65_km": {
+              "n": 135,
+              "mean_observed": 0.7906067384455735,
+              "mean_predicted": 0.867961478190538,
+              "bias": 0.07735473974496451,
+              "mae": 0.12698866745942852
+            },
+            "bright_neighbor_sources": {
+              "n": 241,
+              "mean_observed": 28.301602570649,
+              "mean_predicted": 25.07887812426889,
+              "bias": -3.2227244463801132,
+              "mae": 6.522054895834964
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 169,
+              "mean_observed": 74.11216904994552,
+              "mean_predicted": 74.09525981905236,
+              "bias": -0.016909230893163606,
+              "mae": 7.128250841126815
+            },
+            "halo_18_to_43_km": {
+              "n": 74,
+              "mean_observed": 1.2180781780275374,
+              "mean_predicted": 1.046675010591254,
+              "bias": -0.17140316743628348,
+              "mae": 0.19025706573204404
+            },
+            "dark_control_46_to_65_km": {
+              "n": 308,
+              "mean_observed": 0.794773394218648,
+              "mean_predicted": 0.8693577394667162,
+              "bias": 0.07458434524806819,
+              "mae": 0.13065791352238693
+            },
+            "bright_neighbor_sources": {
+              "n": 491,
+              "mean_observed": 33.26841443451279,
+              "mean_predicted": 31.80056453832113,
+              "bias": -1.4678498961916622,
+              "mae": 6.25726157971032
+            }
+          }
+        },
+        "single_mixture": {
+          "coefficients": [
+            0.0,
+            1.6104889116642809,
+            1.2519569364192054,
+            0.7217995570029367
+          ],
+          "below_10deg_fraction": 0.26999852350519127,
+          "equivalent_upward_DNB_W": 2280020.3783251527,
+          "weighted_training_loss": 0.25964911161559356,
+          "condition": 21.7865635761131,
+          "test": {
+            "city_core": {
+              "n": 89,
+              "mean_observed": 70.55825081819172,
+              "mean_predicted": 72.06477810521022,
+              "bias": 1.506527287018523,
+              "mae": 6.977967931212176
+            },
+            "halo_18_to_43_km": {
+              "n": 13,
+              "mean_observed": 1.325566601322029,
+              "mean_predicted": 1.19782182025605,
+              "bias": -0.12774478106597925,
+              "mae": 0.16518851800250844
+            },
+            "dark_control_46_to_65_km": {
+              "n": 135,
+              "mean_observed": 0.7906067384455735,
+              "mean_predicted": 0.8400843274396441,
+              "bias": 0.04947758899407065,
+              "mae": 0.10891361948725667
+            },
+            "bright_neighbor_sources": {
+              "n": 241,
+              "mean_observed": 28.301602570649,
+              "mean_predicted": 25.069310712657597,
+              "bias": -3.232291857991402,
+              "mae": 6.572347223740247
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 169,
+              "mean_observed": 74.11216904994552,
+              "mean_predicted": 74.62371700198413,
+              "bias": 0.5115479520386085,
+              "mae": 7.109221885665876
+            },
+            "halo_18_to_43_km": {
+              "n": 74,
+              "mean_observed": 1.2180781780275374,
+              "mean_predicted": 1.1300655235625487,
+              "bias": -0.08801265446498863,
+              "mae": 0.13757274821871085
+            },
+            "dark_control_46_to_65_km": {
+              "n": 308,
+              "mean_observed": 0.794773394218648,
+              "mean_predicted": 0.8337558424822274,
+              "bias": 0.03898244826357931,
+              "mae": 0.11165275454059044
+            },
+            "bright_neighbor_sources": {
+              "n": 491,
+              "mean_observed": 33.26841443451279,
+              "mean_predicted": 31.752674417515717,
+              "bias": -1.515740016997073,
+              "mae": 6.269299926763784
+            }
+          }
+        },
+        "all_mixture": {
+          "coefficients": [
+            0.0,
+            1.5995114155744938,
+            1.2484778313071505,
+            0.680876915958978
+          ],
+          "below_10deg_fraction": 0.26999852350519127,
+          "equivalent_upward_DNB_W": 2264479.1879410264,
+          "weighted_training_loss": 0.2541304880877411,
+          "condition": 18.6941428331427,
+          "test": {
+            "city_core": {
+              "n": 89,
+              "mean_observed": 70.55825081819172,
+              "mean_predicted": 71.89917145808988,
+              "bias": 1.3409206398981817,
+              "mae": 6.953869098688411
+            },
+            "halo_18_to_43_km": {
+              "n": 13,
+              "mean_observed": 1.325566601322029,
+              "mean_predicted": 1.2362943292334423,
+              "bias": -0.08927227208858662,
+              "mae": 0.1408339836013155
+            },
+            "dark_control_46_to_65_km": {
+              "n": 135,
+              "mean_observed": 0.7906067384455735,
+              "mean_predicted": 0.8285727134271971,
+              "bias": 0.03796597498162356,
+              "mae": 0.10181170804182882
+            },
+            "bright_neighbor_sources": {
+              "n": 241,
+              "mean_observed": 28.301602570649,
+              "mean_predicted": 25.075009453342293,
+              "bias": -3.2265931173067073,
+              "mae": 6.577662172272906
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 169,
+              "mean_observed": 74.11216904994552,
+              "mean_predicted": 74.4489236575336,
+              "bias": 0.3367546075880669,
+              "mae": 7.125657374980266
+            },
+            "halo_18_to_43_km": {
+              "n": 74,
+              "mean_observed": 1.2180781780275374,
+              "mean_predicted": 1.1617197093664007,
+              "bias": -0.05635846866113675,
+              "mae": 0.12511287233487284
+            },
+            "dark_control_46_to_65_km": {
+              "n": 308,
+              "mean_observed": 0.794773394218648,
+              "mean_predicted": 0.8202757988000037,
+              "bias": 0.025502404581355758,
+              "mae": 0.10512657854158855
+            },
+            "bright_neighbor_sources": {
+              "n": 491,
+              "mean_observed": 33.26841443451279,
+              "mean_predicted": 31.74436346721235,
+              "bias": -1.5240509673004377,
+              "mae": 6.269511513640222
+            }
+          }
+        }
+      },
+      "status": "evaluated"
+    }
+  },
+  "held_out_dates": {
+    "2019-03-31 → 2019-04-03": {
+      "background_from_target_dark_blocks": 0.22732707836344862,
+      "test": {
+        "city_core": {
+          "n": 43,
+          "mean_observed": 24.527840808492893,
+          "mean_predicted": 21.597781952106157,
+          "bias": -2.930058856386739,
+          "mae": 3.5763462775195696
+        },
+        "halo_18_to_43_km": {
+          "n": 352,
+          "mean_observed": 0.3255833181488509,
+          "mean_predicted": 0.32816254345051454,
+          "bias": 0.0025792253016636694,
+          "mae": 0.053263683158032205
+        },
+        "dark_control_46_to_65_km": {
+          "n": 573,
+          "mean_observed": 0.2552233250570476,
+          "mean_predicted": 0.25613331779765325,
+          "bias": 0.0009099927406056671,
+          "mae": 0.030095812124018722
+        },
+        "bright_neighbor_sources": {
+          "n": 71,
+          "mean_observed": 9.601975656525937,
+          "mean_predicted": 9.624130233376151,
+          "bias": 0.02215457685021451,
+          "mae": 1.1787329848494086
+        }
+      }
+    },
+    "2019-04-03 → 2019-03-31": {
+      "background_from_target_dark_blocks": 0.21929251236316002,
+      "test": {
+        "city_core": {
+          "n": 40,
+          "mean_observed": 24.088928367626156,
+          "mean_predicted": 25.555232016853683,
+          "bias": 1.4663036492275254,
+          "mae": 3.0094892262919553
+        },
+        "halo_18_to_43_km": {
+          "n": 291,
+          "mean_observed": 0.3346831838551792,
+          "mean_predicted": 0.2884741544917771,
+          "bias": -0.04620902936340206,
+          "mae": 0.05970109616361209
+        },
+        "dark_control_46_to_65_km": {
+          "n": 606,
+          "mean_observed": 0.23980761336816922,
+          "mean_predicted": 0.23655145971432873,
+          "bias": -0.0032561536538404695,
+          "mae": 0.03371357784360741
+        },
+        "bright_neighbor_sources": {
+          "n": 75,
+          "mean_observed": 9.594772738031645,
+          "mean_predicted": 9.482519250204662,
+          "bias": -0.11225348782698139,
+          "mae": 1.7278101864373316
+        }
+      }
+    }
+  },
+  "city_boundaries_sha256": "2503c55f23838af39facd6484d843692a8619defbb8494932969d7c640c90dcb",
+  "aod_factor": 1.0,
+  "lambert_and_low_angle_fraction_below_10": [
+    0.030153689607045803,
+    0.26999852350519127
+  ],
+  "validation_policy": "Spatially blocked; date transfer freezes all artificial components and updates only dark-block background.",
+  "version": "Research prototype grey atmosphere, no directional fit from A2."
+}
