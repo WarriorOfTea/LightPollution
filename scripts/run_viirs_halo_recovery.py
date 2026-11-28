@@ -97,7 +97,7 @@ def region_masks(radiance, mapped, city_mask, bounds, lat, lon):
     halo = weak & (18 < r) & (r <= 43)
     background = weak & (46 <= r) & (r <= 65)
     neighbors = ~city_mask & (r <= 60) & (radiance >= 2.0)
-    return (core, halo, background, neighbors), north, east
+    return (core, halo, background, neighbors), north, east, weak
 
 
 def preflight(
@@ -110,12 +110,13 @@ def preflight(
     location=None,
     minimum_class_cells=160,
     compare_a2=True,
+    a1_product='VNP46A1',
 ):
     lat, lon, bounds, ref = CITY[city][:4] if location is None else location
-    a1, manifest = read_daily_region(directory, night, bounds, 'VNP46A1')
+    a1, manifest = read_daily_region(directory, night, bounds, a1_product)
     corrected = np.full(bounds.shape, np.nan)
     if compare_a2:
-        a2, more = read_daily_region(directory, night, bounds, 'VNP46A2')
+        a2, more = read_daily_region(directory, night, bounds, a1_product[:-1] + '2')
         manifest.extend(more)
         good = (a2['Mandatory_Quality_Flag'] == 0) & (a2['Snow_Flag'] == 0)
         corrected = np.where(
@@ -126,7 +127,9 @@ def preflight(
     radiance, mapped, city_mask, paired, off, map_hash = source_template(
         maps, bounds, night, geometry, city
     )
-    masks, north, east = region_masks(radiance, mapped, city_mask, bounds, lat, lon)
+    masks, north, east, weak = region_masks(
+        radiance, mapped, city_mask, bounds, lat, lon
+    )
     passes = a1['UTC_Time'][masks[0] & np.isfinite(a1['UTC_Time'])]
     if not len(passes):
         raise ValueError(f'No overpass crosses the urban support on {night} {city}.')
@@ -193,6 +196,7 @@ def preflight(
         'east': east,
         'near_radiance': radiance,
         'city_mask': city_mask,
+        'weak_surface': weak,
         'sensor_zenith': a1['Sensor_Zenith'],
         'city_flux': np.where(city_mask, np.pi * radiance, 0.0),
         'paired_city_near': np.where(city_mask & paired, radiance, 0.0),

@@ -1,0 +1,6170 @@
+{
+  "satellite": {
+    "core": {
+      "h2": {
+        "scenes": 15,
+        "halo_mae": 0.060923668273586785,
+        "halo_n": 8290,
+        "halo_scenes": 15,
+        "radial_mae": 0.008895174909612365,
+        "radial_n": 161,
+        "radial_scenes": 15,
+        "sides_mae": 0.05911873855654386,
+        "sides_n": 94,
+        "sides_scenes": 15,
+        "core_mae": 3.5318508638858943,
+        "core_n": 890,
+        "core_scenes": 15,
+        "halo_bias": -0.020550419562303846
+      },
+      "core": {
+        "scenes": 15,
+        "halo_mae": 0.06096297289812912,
+        "halo_n": 8290,
+        "halo_scenes": 15,
+        "radial_mae": 0.0088923846584927,
+        "radial_n": 161,
+        "radial_scenes": 15,
+        "sides_mae": 0.05888695765525972,
+        "sides_n": 94,
+        "sides_scenes": 15,
+        "core_mae": 2.8646884665966983,
+        "core_n": 890,
+        "core_scenes": 15,
+        "halo_bias": -0.02052053424664167
+      }
+    },
+    "annular": {
+      "h2": {
+        "scenes": 15,
+        "halo_mae": 0.060923668273586785,
+        "halo_n": 8290,
+        "halo_scenes": 15,
+        "radial_mae": 0.008895174909612365,
+        "radial_n": 161,
+        "radial_scenes": 15,
+        "sides_mae": 0.05911873855654386,
+        "sides_n": 94,
+        "sides_scenes": 15,
+        "core_mae": 3.5318508638858943,
+        "core_n": 890,
+        "core_scenes": 15,
+        "halo_bias": -0.020550419562303846
+      },
+      "core": {
+        "scenes": 15,
+        "halo_mae": 0.06096297289812912,
+        "halo_n": 8290,
+        "halo_scenes": 15,
+        "radial_mae": 0.0088923846584927,
+        "radial_n": 161,
+        "radial_scenes": 15,
+        "sides_mae": 0.05888695765525972,
+        "sides_n": 94,
+        "sides_scenes": 15,
+        "core_mae": 2.8646884665966983,
+        "core_n": 890,
+        "core_scenes": 15,
+        "halo_bias": -0.02052053424664167
+      },
+      "annular": {
+        "scenes": 15,
+        "halo_mae": 0.059330826837540145,
+        "halo_n": 8290,
+        "halo_scenes": 15,
+        "radial_mae": 0.008772890496032328,
+        "radial_n": 161,
+        "radial_scenes": 15,
+        "sides_mae": 0.059333427127357216,
+        "sides_n": 94,
+        "sides_scenes": 15,
+        "core_mae": 2.8700497313451163,
+        "core_n": 890,
+        "core_scenes": 15,
+        "halo_bias": -0.015745879845562357
+      }
+    },
+    "radial": {
+      "h2": {
+        "scenes": 15,
+        "halo_mae": 0.060923668273586785,
+        "halo_n": 8290,
+        "halo_scenes": 15,
+        "radial_mae": 0.008895174909612365,
+        "radial_n": 161,
+        "radial_scenes": 15,
+        "sides_mae": 0.05911873855654386,
+        "sides_n": 94,
+        "sides_scenes": 15,
+        "core_mae": 3.5318508638858943,
+        "core_n": 890,
+        "core_scenes": 15,
+        "halo_bias": -0.020550419562303846
+      },
+      "core": {
+        "scenes": 15,
+        "halo_mae": 0.06096297289812912,
+        "halo_n": 8290,
+        "halo_scenes": 15,
+        "radial_mae": 0.0088923846584927,
+        "radial_n": 161,
+        "radial_scenes": 15,
+        "sides_mae": 0.05888695765525972,
+        "sides_n": 94,
+        "sides_scenes": 15,
+        "core_mae": 2.8646884665966983,
+        "core_n": 890,
+        "core_scenes": 15,
+        "halo_bias": -0.02052053424664167
+      },
+      "radial": {
+        "scenes": 15,
+        "halo_mae": 0.05931872004753692,
+        "halo_n": 8290,
+        "halo_scenes": 15,
+        "radial_mae": 0.008752389961431014,
+        "radial_n": 161,
+        "radial_scenes": 15,
+        "sides_mae": 0.059341012233472344,
+        "sides_n": 94,
+        "sides_scenes": 15,
+        "core_mae": 2.867624968929913,
+        "core_n": 890,
+        "core_scenes": 15,
+        "halo_bias": -0.01666108571527187
+      }
+    },
+    "sides": {
+      "h2": {
+        "scenes": 15,
+        "halo_mae": 0.060923668273586785,
+        "halo_n": 8290,
+        "halo_scenes": 15,
+        "radial_mae": 0.008895174909612365,
+        "radial_n": 161,
+        "radial_scenes": 15,
+        "sides_mae": 0.05911873855654386,
+        "sides_n": 94,
+        "sides_scenes": 15,
+        "core_mae": 3.5318508638858943,
+        "core_n": 890,
+        "core_scenes": 15,
+        "halo_bias": -0.020550419562303846
+      },
+      "core": {
+        "scenes": 15,
+        "halo_mae": 0.06096297289812912,
+        "halo_n": 8290,
+        "halo_scenes": 15,
+        "radial_mae": 0.0088923846584927,
+        "radial_n": 161,
+        "radial_scenes": 15,
+        "sides_mae": 0.05888695765525972,
+        "sides_n": 94,
+        "sides_scenes": 15,
+        "core_mae": 2.8646884665966983,
+        "core_n": 890,
+        "core_scenes": 15,
+        "halo_bias": -0.02052053424664167
+      },
+      "sides": {
+        "scenes": 15,
+        "halo_mae": 0.06038656502778987,
+        "halo_n": 8290,
+        "halo_scenes": 15,
+        "radial_mae": 0.008853464608329205,
+        "radial_n": 161,
+        "radial_scenes": 15,
+        "sides_mae": 0.057573977219644905,
+        "sides_n": 94,
+        "sides_scenes": 15,
+        "core_mae": 2.8723271606595424,
+        "core_n": 890,
+        "core_scenes": 15,
+        "halo_bias": -0.016516753816936392
+      }
+    },
+    "joint": {
+      "h2": {
+        "scenes": 15,
+        "halo_mae": 0.060923668273586785,
+        "halo_n": 8290,
+        "halo_scenes": 15,
+        "radial_mae": 0.008895174909612365,
+        "radial_n": 161,
+        "radial_scenes": 15,
+        "sides_mae": 0.05911873855654386,
+        "sides_n": 94,
+        "sides_scenes": 15,
+        "core_mae": 3.5318508638858943,
+        "core_n": 890,
+        "core_scenes": 15,
+        "halo_bias": -0.020550419562303846
+      },
+      "core": {
+        "scenes": 15,
+        "halo_mae": 0.06096297289812912,
+        "halo_n": 8290,
+        "halo_scenes": 15,
+        "radial_mae": 0.0088923846584927,
+        "radial_n": 161,
+        "radial_scenes": 15,
+        "sides_mae": 0.05888695765525972,
+        "sides_n": 94,
+        "sides_scenes": 15,
+        "core_mae": 2.8646884665966983,
+        "core_n": 890,
+        "core_scenes": 15,
+        "halo_bias": -0.02052053424664167
+      },
+      "joint": {
+        "scenes": 15,
+        "halo_mae": 0.059208021233752926,
+        "halo_n": 8290,
+        "halo_scenes": 15,
+        "radial_mae": 0.008766811442769322,
+        "radial_n": 161,
+        "radial_scenes": 15,
+        "sides_mae": 0.059629464208364215,
+        "sides_n": 94,
+        "sides_scenes": 15,
+        "core_mae": 2.864863172681237,
+        "core_n": 890,
+        "core_scenes": 15,
+        "halo_bias": -0.016897589331157797
+      }
+    },
+    "lower_bound": {
+      "h2": {
+        "scenes": 15,
+        "halo_mae": 0.060923668273586785,
+        "halo_n": 8290,
+        "halo_scenes": 15,
+        "radial_mae": 0.008895174909612365,
+        "radial_n": 161,
+        "radial_scenes": 15,
+        "sides_mae": 0.05911873855654386,
+        "sides_n": 94,
+        "sides_scenes": 15,
+        "core_mae": 3.5318508638858943,
+        "core_n": 890,
+        "core_scenes": 15,
+        "halo_bias": -0.020550419562303846
+      },
+      "core": {
+        "scenes": 15,
+        "halo_mae": 0.06096297289812912,
+        "halo_n": 8290,
+        "halo_scenes": 15,
+        "radial_mae": 0.0088923846584927,
+        "radial_n": 161,
+        "radial_scenes": 15,
+        "sides_mae": 0.05888695765525972,
+        "sides_n": 94,
+        "sides_scenes": 15,
+        "core_mae": 2.8646884665966983,
+        "core_n": 890,
+        "core_scenes": 15,
+        "halo_bias": -0.02052053424664167
+      },
+      "lower_bound": {
+        "scenes": 15,
+        "halo_mae": 0.061484942195205436,
+        "halo_n": 8290,
+        "halo_scenes": 15,
+        "radial_mae": 0.008937837568371547,
+        "radial_n": 161,
+        "radial_scenes": 15,
+        "sides_mae": 0.05882685970664245,
+        "sides_n": 94,
+        "sides_scenes": 15,
+        "core_mae": 2.862160629984942,
+        "core_n": 890,
+        "core_scenes": 15,
+        "halo_bias": -0.022200049316129792
+      }
+    },
+    "upper_bound": {
+      "h2": {
+        "scenes": 15,
+        "halo_mae": 0.060923668273586785,
+        "halo_n": 8290,
+        "halo_scenes": 15,
+        "radial_mae": 0.008895174909612365,
+        "radial_n": 161,
+        "radial_scenes": 15,
+        "sides_mae": 0.05911873855654386,
+        "sides_n": 94,
+        "sides_scenes": 15,
+        "core_mae": 3.5318508638858943,
+        "core_n": 890,
+        "core_scenes": 15,
+        "halo_bias": -0.020550419562303846
+      },
+      "core": {
+        "scenes": 15,
+        "halo_mae": 0.06096297289812912,
+        "halo_n": 8290,
+        "halo_scenes": 15,
+        "radial_mae": 0.0088923846584927,
+        "radial_n": 161,
+        "radial_scenes": 15,
+        "sides_mae": 0.05888695765525972,
+        "sides_n": 94,
+        "sides_scenes": 15,
+        "core_mae": 2.8646884665966983,
+        "core_n": 890,
+        "core_scenes": 15,
+        "halo_bias": -0.02052053424664167
+      },
+      "upper_bound": {
+        "scenes": 15,
+        "halo_mae": 0.059459956716209295,
+        "halo_n": 8290,
+        "halo_scenes": 15,
+        "radial_mae": 0.008692257530157965,
+        "radial_n": 161,
+        "radial_scenes": 15,
+        "sides_mae": 0.059191361071313724,
+        "sides_n": 94,
+        "sides_scenes": 15,
+        "core_mae": 2.877613364885106,
+        "core_n": 890,
+        "core_scenes": 15,
+        "halo_bias": -0.012207791637360403
+      }
+    },
+    "paired_difference": {
+      "h2": {
+        "scenes": 10,
+        "halo_mae": 0.051648659337162464,
+        "halo_n": 6202,
+        "halo_scenes": 10,
+        "radial_mae": 0.006240198985281718,
+        "radial_n": 128,
+        "radial_scenes": 10,
+        "sides_mae": 0.06313646765906947,
+        "sides_n": 73,
+        "sides_scenes": 10,
+        "core_mae": 3.014109528236226,
+        "core_n": 421,
+        "core_scenes": 10,
+        "halo_bias": -0.030683737904643044
+      },
+      "core": {
+        "scenes": 10,
+        "halo_mae": 0.051723406472917025,
+        "halo_n": 6202,
+        "halo_scenes": 10,
+        "radial_mae": 0.006264358699618866,
+        "radial_n": 128,
+        "radial_scenes": 10,
+        "sides_mae": 0.06342541313932146,
+        "sides_n": 73,
+        "sides_scenes": 10,
+        "core_mae": 2.3434600102936454,
+        "core_n": 421,
+        "core_scenes": 10,
+        "halo_bias": -0.03066002578330864
+      },
+      "paired_difference": {
+        "scenes": 10,
+        "halo_mae": 0.05038837736380234,
+        "halo_n": 6202,
+        "halo_scenes": 10,
+        "radial_mae": 0.006015457574872965,
+        "radial_n": 128,
+        "radial_scenes": 10,
+        "sides_mae": 0.06400392002066234,
+        "sides_n": 73,
+        "sides_scenes": 10,
+        "core_mae": 2.3444411721585596,
+        "core_n": 421,
+        "core_scenes": 10,
+        "halo_bias": -0.027862591755060024
+      }
+    },
+    "other_platform": {
+      "h2": {
+        "scenes": 10,
+        "halo_mae": 0.051648659337162464,
+        "halo_n": 6202,
+        "halo_scenes": 10,
+        "radial_mae": 0.006240198985281718,
+        "radial_n": 128,
+        "radial_scenes": 10,
+        "sides_mae": 0.06313646765906947,
+        "sides_n": 73,
+        "sides_scenes": 10,
+        "core_mae": 3.014109528236226,
+        "core_n": 421,
+        "core_scenes": 10,
+        "halo_bias": -0.030683737904643044
+      },
+      "core": {
+        "scenes": 10,
+        "halo_mae": 0.051723406472917025,
+        "halo_n": 6202,
+        "halo_scenes": 10,
+        "radial_mae": 0.006264358699618866,
+        "radial_n": 128,
+        "radial_scenes": 10,
+        "sides_mae": 0.06342541313932146,
+        "sides_n": 73,
+        "sides_scenes": 10,
+        "core_mae": 2.3434600102936454,
+        "core_n": 421,
+        "core_scenes": 10,
+        "halo_bias": -0.03066002578330864
+      },
+      "other_platform": {
+        "scenes": 10,
+        "halo_mae": 0.04896081251708277,
+        "halo_n": 6202,
+        "halo_scenes": 10,
+        "radial_mae": 0.006060164574474968,
+        "radial_n": 128,
+        "radial_scenes": 10,
+        "sides_mae": 0.0644546483869896,
+        "sides_n": 73,
+        "sides_scenes": 10,
+        "core_mae": 2.3468718441130942,
+        "core_n": 421,
+        "core_scenes": 10,
+        "halo_bias": -0.024003056943121683
+      }
+    },
+    "another_night": {
+      "h2": {
+        "scenes": 8,
+        "halo_mae": 0.0706689244194123,
+        "halo_n": 4092,
+        "halo_scenes": 8,
+        "radial_mae": 0.010985914005105634,
+        "radial_n": 76,
+        "radial_scenes": 8,
+        "sides_mae": 0.06975913723181064,
+        "sides_n": 44,
+        "sides_scenes": 8,
+        "core_mae": 3.6914378051404393,
+        "core_n": 545,
+        "core_scenes": 8,
+        "halo_bias": -0.01536211436301131
+      },
+      "core": {
+        "scenes": 8,
+        "halo_mae": 0.07068592152887705,
+        "halo_n": 4092,
+        "halo_scenes": 8,
+        "radial_mae": 0.010971587279336288,
+        "radial_n": 76,
+        "radial_scenes": 8,
+        "sides_mae": 0.06899994866264084,
+        "sides_n": 44,
+        "sides_scenes": 8,
+        "core_mae": 3.031059668370383,
+        "core_n": 545,
+        "core_scenes": 8,
+        "halo_bias": -0.015385855895057579
+      },
+      "another_night": {
+        "scenes": 8,
+        "halo_mae": 0.06923893581590278,
+        "halo_n": 4092,
+        "halo_scenes": 8,
+        "radial_mae": 0.01074548377427046,
+        "radial_n": 76,
+        "radial_scenes": 8,
+        "sides_mae": 0.0705761721222201,
+        "sides_n": 44,
+        "sides_scenes": 8,
+        "core_mae": 3.0317036636772823,
+        "core_n": 545,
+        "core_scenes": 8,
+        "halo_bias": -0.012550318507930435
+      }
+    }
+  },
+  "ground": {
+    "all": {
+      "h2": {
+        "n": 72,
+        "mae_pct": 28.387051046087564,
+        "bias_pct": -23.183585046168268,
+        "positive": 15
+      },
+      "core": {
+        "n": 72,
+        "mae_pct": 27.90516480520076,
+        "bias_pct": -22.105151825671076,
+        "positive": 16
+      },
+      "old_free_tail": {
+        "n": 72,
+        "mae_pct": 55.942379290184704,
+        "bias_pct": 35.80528912087839,
+        "positive": 42
+      },
+      "lower_bound": {
+        "n": 72,
+        "mae_pct": 28.104208214201194,
+        "bias_pct": -22.632011302642415,
+        "positive": 16
+      },
+      "upper_bound": {
+        "n": 72,
+        "mae_pct": 27.05519168724619,
+        "bias_pct": -19.497466248513312,
+        "positive": 20
+      },
+      "annular": {
+        "n": 72,
+        "mae_pct": 27.829811257775834,
+        "bias_pct": -21.17055322032792,
+        "positive": 17
+      },
+      "radial": {
+        "n": 72,
+        "mae_pct": 27.974664304965657,
+        "bias_pct": -21.436861797028754,
+        "positive": 17
+      },
+      "sides": {
+        "n": 72,
+        "mae_pct": 27.469550586781097,
+        "bias_pct": -20.468887174932046,
+        "positive": 19
+      },
+      "joint": {
+        "n": 72,
+        "mae_pct": 28.09718773347764,
+        "bias_pct": -21.527659472673342,
+        "positive": 17
+      },
+      "another_night": {
+        "n": 46,
+        "mae_pct": 31.133205865217636,
+        "bias_pct": -25.57084006444202,
+        "positive": 9
+      },
+      "joint_fixed_power": {
+        "n": 72,
+        "mae_pct": 28.694525597276183,
+        "bias_pct": -22.54363094071672,
+        "positive": 15
+      },
+      "stress_nominal": {
+        "n": 72,
+        "mae_pct": 28.09718773347764,
+        "bias_pct": -21.527659472673342,
+        "positive": 17
+      },
+      "stress_without_weak": {
+        "n": 72,
+        "mae_pct": 27.053823289185477,
+        "bias_pct": -19.499885150821697,
+        "positive": 20
+      },
+      "stress_constant_background": {
+        "n": 72,
+        "mae_pct": 27.90132881104087,
+        "bias_pct": -21.30072515858499,
+        "positive": 17
+      },
+      "stress_brighter_edge": {
+        "n": 72,
+        "mae_pct": 27.829984577555326,
+        "bias_pct": -21.17065482292979,
+        "positive": 17
+      },
+      "stress_shallow": {
+        "n": 72,
+        "mae_pct": 28.07259863670715,
+        "bias_pct": -21.63448107525382,
+        "positive": 17
+      },
+      "stress_deep": {
+        "n": 72,
+        "mae_pct": 28.14241052140099,
+        "bias_pct": -21.39600175578813,
+        "positive": 17
+      },
+      "stress_more_aod": {
+        "n": 72,
+        "mae_pct": 28.177045501375076,
+        "bias_pct": -21.154607401258122,
+        "positive": 17
+      },
+      "stress_alternative_phase": {
+        "n": 72,
+        "mae_pct": 28.078456717711635,
+        "bias_pct": -21.457424235200293,
+        "positive": 17
+      },
+      "paired_difference": {
+        "n": 28,
+        "mae_pct": 21.86441547997796,
+        "bias_pct": -11.450965421664023,
+        "positive": 11
+      },
+      "other_platform": {
+        "n": 28,
+        "mae_pct": 21.807710917014443,
+        "bias_pct": -10.03330109713221,
+        "positive": 11
+      }
+    },
+    "same_utc_night": {
+      "h2": {
+        "n": 68,
+        "mae_pct": 28.79567281871371,
+        "bias_pct": -24.3618308377092,
+        "positive": 13
+      },
+      "core": {
+        "n": 68,
+        "mae_pct": 28.47525441421444,
+        "bias_pct": -22.89765876327281,
+        "positive": 15
+      },
+      "old_free_tail": {
+        "n": 68,
+        "mae_pct": 54.49196047848813,
+        "bias_pct": 33.17033559334028,
+        "positive": 38
+      },
+      "lower_bound": {
+        "n": 68,
+        "mae_pct": 28.679966463662566,
+        "bias_pct": -23.426639610853567,
+        "positive": 15
+      },
+      "upper_bound": {
+        "n": 68,
+        "mae_pct": 27.58913236104424,
+        "bias_pct": -20.279473484043116,
+        "positive": 18
+      },
+      "annular": {
+        "n": 68,
+        "mae_pct": 28.409317788663866,
+        "bias_pct": -22.050977336552698,
+        "positive": 15
+      },
+      "radial": {
+        "n": 68,
+        "mae_pct": 28.56269160333544,
+        "bias_pct": -22.3329511236477,
+        "positive": 15
+      },
+      "sides": {
+        "n": 68,
+        "mae_pct": 28.00797603462952,
+        "bias_pct": -21.136272887395524,
+        "positive": 18
+      },
+      "joint": {
+        "n": 68,
+        "mae_pct": 28.692422292348137,
+        "bias_pct": -22.429089839036088,
+        "positive": 15
+      },
+      "another_night": {
+        "n": 46,
+        "mae_pct": 31.133205865217636,
+        "bias_pct": -25.57084006444202,
+        "positive": 9
+      },
+      "joint_fixed_power": {
+        "n": 68,
+        "mae_pct": 29.048921264143367,
+        "bias_pct": -23.843692682646097,
+        "positive": 13
+      },
+      "stress_nominal": {
+        "n": 68,
+        "mae_pct": 28.692422292348137,
+        "bias_pct": -22.429089839036088,
+        "positive": 15
+      },
+      "stress_without_weak": {
+        "n": 68,
+        "mae_pct": 27.587438157992853,
+        "bias_pct": -20.282335889337013,
+        "positive": 18
+      },
+      "stress_constant_background": {
+        "n": 68,
+        "mae_pct": 28.485597721800815,
+        "bias_pct": -22.188124398426176,
+        "positive": 15
+      },
+      "stress_brighter_edge": {
+        "n": 68,
+        "mae_pct": 28.409528504955393,
+        "bias_pct": -22.051051515691366,
+        "positive": 15
+      },
+      "stress_shallow": {
+        "n": 68,
+        "mae_pct": 28.6700442052288,
+        "bias_pct": -22.537704151502126,
+        "positive": 15
+      },
+      "stress_deep": {
+        "n": 68,
+        "mae_pct": 28.731975371629716,
+        "bias_pct": -22.299915707914856,
+        "positive": 15
+      },
+      "stress_more_aod": {
+        "n": 68,
+        "mae_pct": 28.75898138465463,
+        "bias_pct": -22.05619084998882,
+        "positive": 15
+      },
+      "stress_alternative_phase": {
+        "n": 68,
+        "mae_pct": 28.682437099848606,
+        "bias_pct": -22.342631300626017,
+        "positive": 15
+      },
+      "paired_difference": {
+        "n": 24,
+        "mae_pct": 22.51211802119441,
+        "bias_pct": -12.32556911785691,
+        "positive": 9
+      },
+      "other_platform": {
+        "n": 24,
+        "mae_pct": 22.44596269773697,
+        "bias_pct": -10.67162740590313,
+        "positive": 9
+      }
+    },
+    "Berlin": {
+      "h2": {
+        "n": 12,
+        "mae_pct": 8.882187545424104,
+        "bias_pct": -5.555228767542548,
+        "positive": 3
+      },
+      "core": {
+        "n": 12,
+        "mae_pct": 10.61235409792941,
+        "bias_pct": 1.8352259482085047,
+        "positive": 5
+      },
+      "old_free_tail": {
+        "n": 12,
+        "mae_pct": 127.40841220768158,
+        "bias_pct": 127.40841220768158,
+        "positive": 12
+      },
+      "lower_bound": {
+        "n": 12,
+        "mae_pct": 10.664368604973477,
+        "bias_pct": 0.9981724142703404,
+        "positive": 5
+      },
+      "upper_bound": {
+        "n": 12,
+        "mae_pct": 11.075131598357713,
+        "bias_pct": 5.97821382859586,
+        "positive": 8
+      },
+      "annular": {
+        "n": 12,
+        "mae_pct": 10.664368604973477,
+        "bias_pct": 0.9981724142703404,
+        "positive": 5
+      },
+      "radial": {
+        "n": 12,
+        "mae_pct": 10.664368604973477,
+        "bias_pct": 0.9981724142703404,
+        "positive": 5
+      },
+      "sides": {
+        "n": 12,
+        "mae_pct": 11.075131598357713,
+        "bias_pct": 5.97821382859586,
+        "positive": 8
+      },
+      "joint": {
+        "n": 12,
+        "mae_pct": 10.664368604973477,
+        "bias_pct": 0.9981724142703404,
+        "positive": 5
+      },
+      "another_night": {
+        "n": 12,
+        "mae_pct": 10.664368604973477,
+        "bias_pct": 0.9981724142703404,
+        "positive": 5
+      },
+      "joint_fixed_power": {
+        "n": 12,
+        "mae_pct": 9.198968642341535,
+        "bias_pct": -6.287567713960603,
+        "positive": 3
+      },
+      "stress_nominal": {
+        "n": 12,
+        "mae_pct": 10.664368604973477,
+        "bias_pct": 0.9981724142703404,
+        "positive": 5
+      },
+      "stress_without_weak": {
+        "n": 12,
+        "mae_pct": 11.050512808014195,
+        "bias_pct": 5.939818643324119,
+        "positive": 8
+      },
+      "stress_constant_background": {
+        "n": 12,
+        "mae_pct": 10.670679562928571,
+        "bias_pct": 1.0124626962191454,
+        "positive": 5
+      },
+      "stress_brighter_edge": {
+        "n": 12,
+        "mae_pct": 10.665697779637584,
+        "bias_pct": 1.0011821444641387,
+        "positive": 5
+      },
+      "stress_shallow": {
+        "n": 12,
+        "mae_pct": 10.555151979588944,
+        "bias_pct": 0.7508666357580133,
+        "positive": 5
+      },
+      "stress_deep": {
+        "n": 12,
+        "mae_pct": 10.839060580335621,
+        "bias_pct": 1.3937379686415834,
+        "positive": 5
+      },
+      "stress_more_aod": {
+        "n": 12,
+        "mae_pct": 11.05549497359335,
+        "bias_pct": 1.8838233922937888,
+        "positive": 5
+      },
+      "stress_alternative_phase": {
+        "n": 12,
+        "mae_pct": 11.046292622416594,
+        "bias_pct": 1.8629859546426957,
+        "positive": 5
+      }
+    },
+    "Berlin/near": {
+      "h2": {
+        "n": 5,
+        "mae_pct": 8.208405867512152,
+        "bias_pct": -0.22370480059642475,
+        "positive": 3
+      },
+      "core": {
+        "n": 5,
+        "mae_pct": 14.357686942361951,
+        "bias_pct": 13.180343490432657,
+        "positive": 4
+      },
+      "old_free_tail": {
+        "n": 5,
+        "mae_pct": 188.0111617963875,
+        "bias_pct": 188.0111617963875,
+        "positive": 5
+      },
+      "lower_bound": {
+        "n": 5,
+        "mae_pct": 13.681991791187624,
+        "bias_pct": 12.385101983600189,
+        "positive": 4
+      },
+      "upper_bound": {
+        "n": 5,
+        "mae_pct": 17.70203316234755,
+        "bias_pct": 17.116383171535382,
+        "positive": 4
+      },
+      "annular": {
+        "n": 5,
+        "mae_pct": 13.681991791187624,
+        "bias_pct": 12.385101983600189,
+        "positive": 4
+      },
+      "radial": {
+        "n": 5,
+        "mae_pct": 13.681991791187624,
+        "bias_pct": 12.385101983600189,
+        "positive": 4
+      },
+      "sides": {
+        "n": 5,
+        "mae_pct": 17.70203316234755,
+        "bias_pct": 17.116383171535382,
+        "positive": 4
+      },
+      "joint": {
+        "n": 5,
+        "mae_pct": 13.681991791187624,
+        "bias_pct": 12.385101983600189,
+        "positive": 4
+      },
+      "another_night": {
+        "n": 5,
+        "mae_pct": 13.681991791187624,
+        "bias_pct": 12.385101983600189,
+        "positive": 4
+      },
+      "joint_fixed_power": {
+        "n": 5,
+        "mae_pct": 7.906824592174476,
+        "bias_pct": -0.9194623640602396,
+        "positive": 3
+      },
+      "stress_nominal": {
+        "n": 5,
+        "mae_pct": 13.681991791187624,
+        "bias_pct": 12.385101983600189,
+        "positive": 4
+      },
+      "stress_without_weak": {
+        "n": 5,
+        "mae_pct": 17.657925693387718,
+        "bias_pct": 17.048918998082563,
+        "positive": 4
+      },
+      "stress_constant_background": {
+        "n": 5,
+        "mae_pct": 13.6988254768518,
+        "bias_pct": 12.411197613198256,
+        "positive": 4
+      },
+      "stress_brighter_edge": {
+        "n": 5,
+        "mae_pct": 13.68553719723335,
+        "bias_pct": 12.390598082600116,
+        "positive": 4
+      },
+      "stress_shallow": {
+        "n": 5,
+        "mae_pct": 13.390670195621947,
+        "bias_pct": 11.933494379450796,
+        "positive": 4
+      },
+      "stress_deep": {
+        "n": 5,
+        "mae_pct": 14.147960638108486,
+        "bias_pct": 13.107448276388975,
+        "positive": 4
+      },
+      "stress_more_aod": {
+        "n": 5,
+        "mae_pct": 14.725272128526129,
+        "bias_pct": 14.002398266379142,
+        "positive": 4
+      },
+      "stress_alternative_phase": {
+        "n": 5,
+        "mae_pct": 14.700726015529767,
+        "bias_pct": 13.964346808985667,
+        "positive": 4
+      }
+    },
+    "Berlin/mid": {
+      "h2": {
+        "n": 3,
+        "mae_pct": 6.310837938939177,
+        "bias_pct": -6.310837938939177,
+        "positive": 0
+      },
+      "core": {
+        "n": 3,
+        "mae_pct": 5.235957115563624,
+        "bias_pct": -1.3423543190029734,
+        "positive": 1
+      },
+      "old_free_tail": {
+        "n": 3,
+        "mae_pct": 125.35802368448924,
+        "bias_pct": 125.35802368448924,
+        "positive": 3
+      },
+      "lower_bound": {
+        "n": 3,
+        "mae_pct": 5.727193960882197,
+        "bias_pct": -2.5221861752199426,
+        "positive": 1
+      },
+      "upper_bound": {
+        "n": 3,
+        "mae_pct": 4.497211351551766,
+        "bias_pct": 4.497211351551766,
+        "positive": 3
+      },
+      "annular": {
+        "n": 3,
+        "mae_pct": 5.727193960882197,
+        "bias_pct": -2.5221861752199426,
+        "positive": 1
+      },
+      "radial": {
+        "n": 3,
+        "mae_pct": 5.727193960882197,
+        "bias_pct": -2.5221861752199426,
+        "positive": 1
+      },
+      "sides": {
+        "n": 3,
+        "mae_pct": 4.497211351551766,
+        "bias_pct": 4.497211351551766,
+        "positive": 3
+      },
+      "joint": {
+        "n": 3,
+        "mae_pct": 5.727193960882197,
+        "bias_pct": -2.5221861752199426,
+        "positive": 1
+      },
+      "another_night": {
+        "n": 3,
+        "mae_pct": 5.727193960882197,
+        "bias_pct": -2.5221861752199426,
+        "positive": 1
+      },
+      "joint_fixed_power": {
+        "n": 3,
+        "mae_pct": 7.3430739710448885,
+        "bias_pct": -7.3430739710448885,
+        "positive": 0
+      },
+      "stress_nominal": {
+        "n": 3,
+        "mae_pct": 5.727193960882197,
+        "bias_pct": -2.5221861752199426,
+        "positive": 1
+      },
+      "stress_without_weak": {
+        "n": 3,
+        "mae_pct": 4.4695439233886445,
+        "bias_pct": 4.4695439233886445,
+        "positive": 3
+      },
+      "stress_constant_background": {
+        "n": 3,
+        "mae_pct": 5.728594351719425,
+        "bias_pct": -2.512730465211988,
+        "positive": 1
+      },
+      "stress_brighter_edge": {
+        "n": 3,
+        "mae_pct": 5.727488902479646,
+        "bias_pct": -2.5201946724618693,
+        "positive": 1
+      },
+      "stress_shallow": {
+        "n": 3,
+        "mae_pct": 5.70295897745341,
+        "bias_pct": -2.6858254745201506,
+        "positive": 1
+      },
+      "stress_deep": {
+        "n": 3,
+        "mae_pct": 5.765957813117492,
+        "bias_pct": -2.2604451413711146,
+        "positive": 1
+      },
+      "stress_more_aod": {
+        "n": 3,
+        "mae_pct": 5.813984236892737,
+        "bias_pct": -1.9361614315196303,
+        "positive": 1
+      },
+      "stress_alternative_phase": {
+        "n": 3,
+        "mae_pct": 5.811942250817005,
+        "bias_pct": -1.9499493167722448,
+        "positive": 1
+      }
+    },
+    "Berlin/far": {
+      "h2": {
+        "n": 4,
+        "mae_pct": 11.652926847677733,
+        "bias_pct": -11.652926847677733,
+        "positive": 0
+      },
+      "core": {
+        "n": 4,
+        "mae_pct": 9.962985779163077,
+        "bias_pct": -9.962985779163077,
+        "positive": 0
+      },
+      "old_free_tail": {
+        "n": 4,
+        "mae_pct": 53.19276661419334,
+        "bias_pct": 53.19276661419334,
+        "positive": 4
+      },
+      "lower_bound": {
+        "n": 4,
+        "mae_pct": 10.595220605274255,
+        "bias_pct": -10.595220605274255,
+        "positive": 0
+      },
+      "upper_bound": {
+        "n": 4,
+        "mae_pct": 7.724944828474878,
+        "bias_pct": -6.83374599229547,
+        "positive": 1
+      },
+      "annular": {
+        "n": 4,
+        "mae_pct": 10.595220605274255,
+        "bias_pct": -10.595220605274255,
+        "positive": 0
+      },
+      "radial": {
+        "n": 4,
+        "mae_pct": 10.595220605274255,
+        "bias_pct": -10.595220605274255,
+        "positive": 0
+      },
+      "sides": {
+        "n": 4,
+        "mae_pct": 7.724944828474878,
+        "bias_pct": -6.83374599229547,
+        "positive": 1
+      },
+      "joint": {
+        "n": 4,
+        "mae_pct": 10.595220605274255,
+        "bias_pct": -10.595220605274255,
+        "positive": 0
+      },
+      "another_night": {
+        "n": 4,
+        "mae_pct": 10.595220605274255,
+        "bias_pct": -10.595220605274255,
+        "positive": 0
+      },
+      "joint_fixed_power": {
+        "n": 4,
+        "mae_pct": 12.206069708522843,
+        "bias_pct": -12.206069708522843,
+        "positive": 0
+      },
+      "stress_nominal": {
+        "n": 4,
+        "mae_pct": 10.595220605274255,
+        "bias_pct": -10.595220605274255,
+        "positive": 0
+      },
+      "stress_without_weak": {
+        "n": 4,
+        "mae_pct": 7.7269733647664545,
+        "bias_pct": -6.843850760172332,
+        "positive": 1
+      },
+      "stress_constant_background": {
+        "n": 4,
+        "mae_pct": 10.592061078931394,
+        "bias_pct": -10.592061078931394,
+        "positive": 0
+      },
+      "stress_brighter_edge": {
+        "n": 4,
+        "mae_pct": 10.594555165511327,
+        "bias_pct": -10.594555165511327,
+        "positive": 0
+      },
+      "stress_shallow": {
+        "n": 4,
+        "mae_pct": 10.64989896114934,
+        "bias_pct": -10.64989896114934,
+        "positive": 0
+      },
+      "stress_deep": {
+        "n": 4,
+        "mae_pct": 10.507762583533136,
+        "bias_pct": -10.507762583533136,
+        "positive": 0
+      },
+      "stress_more_aod": {
+        "n": 4,
+        "mae_pct": 10.399406582452839,
+        "bias_pct": -10.399406582452839,
+        "positive": 0
+      },
+      "stress_alternative_phase": {
+        "n": 4,
+        "mae_pct": 10.404013659724814,
+        "bias_pct": -10.404013659724814,
+        "positive": 0
+      }
+    },
+    "Berlin/dominant": {
+      "h2": {
+        "n": 6,
+        "mae_pct": 7.272188509437754,
+        "bias_pct": -0.618270953674647,
+        "positive": 3
+      },
+      "core": {
+        "n": 6,
+        "mae_pct": 12.938139817775122,
+        "bias_pct": 11.957020274500708,
+        "positive": 5
+      },
+      "old_free_tail": {
+        "n": 6,
+        "mae_pct": 186.68374817826,
+        "bias_pct": 186.68374817826,
+        "positive": 6
+      },
+      "lower_bound": {
+        "n": 6,
+        "mae_pct": 12.202911772405251,
+        "bias_pct": 11.122170266082387,
+        "positive": 5
+      },
+      "upper_bound": {
+        "n": 6,
+        "mae_pct": 16.577143486939786,
+        "bias_pct": 16.089101827929642,
+        "positive": 5
+      },
+      "annular": {
+        "n": 6,
+        "mae_pct": 12.202911772405251,
+        "bias_pct": 11.122170266082387,
+        "positive": 5
+      },
+      "radial": {
+        "n": 6,
+        "mae_pct": 12.202911772405251,
+        "bias_pct": 11.122170266082387,
+        "positive": 5
+      },
+      "sides": {
+        "n": 6,
+        "mae_pct": 16.577143486939786,
+        "bias_pct": 16.089101827929642,
+        "positive": 5
+      },
+      "joint": {
+        "n": 6,
+        "mae_pct": 12.202911772405251,
+        "bias_pct": 11.122170266082387,
+        "positive": 5
+      },
+      "another_night": {
+        "n": 6,
+        "mae_pct": 12.202911772405251,
+        "bias_pct": 11.122170266082387,
+        "positive": 5
+      },
+      "joint_fixed_power": {
+        "n": 6,
+        "mae_pct": 7.171483890246063,
+        "bias_pct": -1.3486820334841998,
+        "positive": 3
+      },
+      "stress_nominal": {
+        "n": 6,
+        "mae_pct": 12.202911772405251,
+        "bias_pct": 11.122170266082387,
+        "positive": 5
+      },
+      "stress_without_weak": {
+        "n": 6,
+        "mae_pct": 16.5330476053187,
+        "bias_pct": 16.02554202589774,
+        "positive": 5
+      },
+      "stress_constant_background": {
+        "n": 6,
+        "mae_pct": 12.21965386900336,
+        "bias_pct": 11.146630649292073,
+        "positive": 5
+      },
+      "stress_brighter_edge": {
+        "n": 6,
+        "mae_pct": 12.206437888532236,
+        "bias_pct": 11.127321959671207,
+        "positive": 5
+      },
+      "stress_shallow": {
+        "n": 6,
+        "mae_pct": 11.913175205418272,
+        "bias_pct": 10.698862025275645,
+        "positive": 5
+      },
+      "stress_deep": {
+        "n": 6,
+        "mae_pct": 12.666345366360332,
+        "bias_pct": 11.799251731594074,
+        "positive": 5
+      },
+      "stress_more_aod": {
+        "n": 6,
+        "mae_pct": 13.240515808448384,
+        "bias_pct": 12.638120923325895,
+        "positive": 5
+      },
+      "stress_alternative_phase": {
+        "n": 6,
+        "mae_pct": 13.216103246452661,
+        "bias_pct": 12.602453907665913,
+        "positive": 5
+      }
+    },
+    "Madrid": {
+      "h2": {
+        "n": 32,
+        "mae_pct": 40.71665848194047,
+        "bias_pct": -40.57674930782385,
+        "positive": 1
+      },
+      "core": {
+        "n": 32,
+        "mae_pct": 39.715075786020385,
+        "bias_pct": -39.55424828404135,
+        "positive": 1
+      },
+      "old_free_tail": {
+        "n": 32,
+        "mae_pct": 26.160783947547145,
+        "bias_pct": -11.79096209265837,
+        "positive": 10
+      },
+      "lower_bound": {
+        "n": 32,
+        "mae_pct": 40.13447576447574,
+        "bias_pct": -40.0032354755784,
+        "positive": 1
+      },
+      "upper_bound": {
+        "n": 32,
+        "mae_pct": 37.639259894532145,
+        "bias_pct": -37.33199078488772,
+        "positive": 1
+      },
+      "annular": {
+        "n": 32,
+        "mae_pct": 39.53619005074293,
+        "bias_pct": -39.228920941098515,
+        "positive": 1
+      },
+      "radial": {
+        "n": 32,
+        "mae_pct": 39.83850949006119,
+        "bias_pct": -39.620189411240325,
+        "positive": 1
+      },
+      "sides": {
+        "n": 32,
+        "mae_pct": 38.584835703359744,
+        "bias_pct": -38.35964871940361,
+        "positive": 1
+      },
+      "joint": {
+        "n": 32,
+        "mae_pct": 40.13447576447574,
+        "bias_pct": -40.0032354755784,
+        "positive": 1
+      },
+      "joint_fixed_power": {
+        "n": 32,
+        "mae_pct": 41.112947130842336,
+        "bias_pct": -41.0025174470138,
+        "positive": 1
+      },
+      "stress_nominal": {
+        "n": 32,
+        "mae_pct": 40.13447576447574,
+        "bias_pct": -40.0032354755784,
+        "positive": 1
+      },
+      "stress_without_weak": {
+        "n": 32,
+        "mae_pct": 37.64258990276525,
+        "bias_pct": -37.33773125349808,
+        "positive": 1
+      },
+      "stress_constant_background": {
+        "n": 32,
+        "mae_pct": 39.684864976128246,
+        "bias_pct": -39.42347959986458,
+        "positive": 1
+      },
+      "stress_brighter_edge": {
+        "n": 32,
+        "mae_pct": 39.53631168784469,
+        "bias_pct": -39.22920323902517,
+        "positive": 1
+      },
+      "stress_shallow": {
+        "n": 32,
+        "mae_pct": 40.15370864180281,
+        "bias_pct": -40.03295167325986,
+        "positive": 1
+      },
+      "stress_deep": {
+        "n": 32,
+        "mae_pct": 40.08553536717296,
+        "bias_pct": -39.924615067903304,
+        "positive": 1
+      },
+      "stress_more_aod": {
+        "n": 32,
+        "mae_pct": 40.01830192770018,
+        "bias_pct": -39.81726287426602,
+        "positive": 1
+      },
+      "stress_alternative_phase": {
+        "n": 32,
+        "mae_pct": 40.02900904065719,
+        "bias_pct": -39.83668188089366,
+        "positive": 1
+      },
+      "another_night": {
+        "n": 25,
+        "mae_pct": 44.919146805857835,
+        "bias_pct": -44.919146805857835,
+        "positive": 0
+      }
+    },
+    "Madrid/near": {
+      "h2": {
+        "n": 9,
+        "mae_pct": 25.808047551941485,
+        "bias_pct": -25.310592710637966,
+        "positive": 1
+      },
+      "core": {
+        "n": 9,
+        "mae_pct": 23.243068329694907,
+        "bias_pct": -22.67123721154723,
+        "positive": 1
+      },
+      "old_free_tail": {
+        "n": 9,
+        "mae_pct": 25.992645594847435,
+        "bias_pct": 23.562280470013796,
+        "positive": 8
+      },
+      "lower_bound": {
+        "n": 9,
+        "mae_pct": 23.203033720857338,
+        "bias_pct": -22.7364015825557,
+        "positive": 1
+      },
+      "upper_bound": {
+        "n": 9,
+        "mae_pct": 23.44121921549274,
+        "bias_pct": -22.34870682564591,
+        "positive": 1
+      },
+      "annular": {
+        "n": 9,
+        "mae_pct": 22.96224485788195,
+        "bias_pct": -21.86973246803511,
+        "positive": 1
+      },
+      "radial": {
+        "n": 9,
+        "mae_pct": 23.08391775158121,
+        "bias_pct": -22.307668582440353,
+        "positive": 1
+      },
+      "sides": {
+        "n": 9,
+        "mae_pct": 23.45008749505945,
+        "bias_pct": -22.649422663215418,
+        "positive": 1
+      },
+      "joint": {
+        "n": 9,
+        "mae_pct": 23.203033720857338,
+        "bias_pct": -22.7364015825557,
+        "positive": 1
+      },
+      "joint_fixed_power": {
+        "n": 9,
+        "mae_pct": 25.774807866572278,
+        "bias_pct": -25.382168990737494,
+        "positive": 1
+      },
+      "stress_nominal": {
+        "n": 9,
+        "mae_pct": 23.203033720857338,
+        "bias_pct": -22.7364015825557,
+        "positive": 1
+      },
+      "stress_without_weak": {
+        "n": 9,
+        "mae_pct": 23.44640976825729,
+        "bias_pct": -22.362467904196198,
+        "positive": 1
+      },
+      "stress_constant_background": {
+        "n": 9,
+        "mae_pct": 23.016769045384002,
+        "bias_pct": -22.087398818668735,
+        "positive": 1
+      },
+      "stress_brighter_edge": {
+        "n": 9,
+        "mae_pct": 22.962366846092525,
+        "bias_pct": -21.870425694734234,
+        "positive": 1
+      },
+      "stress_shallow": {
+        "n": 9,
+        "mae_pct": 23.24835074205554,
+        "bias_pct": -22.818992631680572,
+        "positive": 1
+      },
+      "stress_deep": {
+        "n": 9,
+        "mae_pct": 23.10739361404177,
+        "bias_pct": -22.53523254997187,
+        "positive": 1
+      },
+      "stress_more_aod": {
+        "n": 9,
+        "mae_pct": 22.976432770534178,
+        "bias_pct": -22.261627247212715,
+        "positive": 1
+      },
+      "stress_alternative_phase": {
+        "n": 9,
+        "mae_pct": 22.994477909022518,
+        "bias_pct": -22.31064800764105,
+        "positive": 1
+      },
+      "another_night": {
+        "n": 6,
+        "mae_pct": 26.905684714259138,
+        "bias_pct": -26.905684714259138,
+        "positive": 0
+      }
+    },
+    "Madrid/mid": {
+      "h2": {
+        "n": 11,
+        "mae_pct": 38.768845733838205,
+        "bias_pct": -38.768845733838205,
+        "positive": 0
+      },
+      "core": {
+        "n": 11,
+        "mae_pct": 38.44808933618477,
+        "bias_pct": -38.44808933618477,
+        "positive": 0
+      },
+      "old_free_tail": {
+        "n": 11,
+        "mae_pct": 17.722360656831906,
+        "bias_pct": -16.464182041132855,
+        "positive": 2
+      },
+      "lower_bound": {
+        "n": 11,
+        "mae_pct": 38.97065010082044,
+        "bias_pct": -38.97065010082044,
+        "positive": 0
+      },
+      "upper_bound": {
+        "n": 11,
+        "mae_pct": 35.861680191639564,
+        "bias_pct": -35.861680191639564,
+        "positive": 0
+      },
+      "annular": {
+        "n": 11,
+        "mae_pct": 37.42719163966853,
+        "bias_pct": -37.42719163966853,
+        "positive": 0
+      },
+      "radial": {
+        "n": 11,
+        "mae_pct": 38.207115822840414,
+        "bias_pct": -38.207115822840414,
+        "positive": 0
+      },
+      "sides": {
+        "n": 11,
+        "mae_pct": 37.60555830428309,
+        "bias_pct": -37.60555830428309,
+        "positive": 0
+      },
+      "joint": {
+        "n": 11,
+        "mae_pct": 38.97065010082044,
+        "bias_pct": -38.97065010082044,
+        "positive": 0
+      },
+      "joint_fixed_power": {
+        "n": 11,
+        "mae_pct": 39.28044854616613,
+        "bias_pct": -39.28044854616613,
+        "positive": 0
+      },
+      "stress_nominal": {
+        "n": 11,
+        "mae_pct": 38.97065010082044,
+        "bias_pct": -38.97065010082044,
+        "positive": 0
+      },
+      "stress_without_weak": {
+        "n": 11,
+        "mae_pct": 35.865895173803196,
+        "bias_pct": -35.865895173803196,
+        "positive": 0
+      },
+      "stress_constant_background": {
+        "n": 11,
+        "mae_pct": 37.8164034028458,
+        "bias_pct": -37.8164034028458,
+        "positive": 0
+      },
+      "stress_brighter_edge": {
+        "n": 11,
+        "mae_pct": 37.427438749661356,
+        "bias_pct": -37.427438749661356,
+        "positive": 0
+      },
+      "stress_shallow": {
+        "n": 11,
+        "mae_pct": 38.983797969077074,
+        "bias_pct": -38.983797969077074,
+        "positive": 0
+      },
+      "stress_deep": {
+        "n": 11,
+        "mae_pct": 38.9176725530295,
+        "bias_pct": -38.9176725530295,
+        "positive": 0
+      },
+      "stress_more_aod": {
+        "n": 11,
+        "mae_pct": 38.84351898456234,
+        "bias_pct": -38.84351898456234,
+        "positive": 0
+      },
+      "stress_alternative_phase": {
+        "n": 11,
+        "mae_pct": 38.8586225381025,
+        "bias_pct": -38.8586225381025,
+        "positive": 0
+      },
+      "another_night": {
+        "n": 7,
+        "mae_pct": 44.96368457062978,
+        "bias_pct": -44.96368457062978,
+        "positive": 0
+      }
+    },
+    "Madrid/far": {
+      "h2": {
+        "n": 12,
+        "mae_pct": 53.68361169853345,
+        "bias_pct": -53.68361169853345,
+        "positive": 0
+      },
+      "core": {
+        "n": 12,
+        "mae_pct": 53.23048562394715,
+        "bias_pct": -53.23048562394715,
+        "positive": 0
+      },
+      "old_free_tail": {
+        "n": 12,
+        "mae_pct": 34.02210906189423,
+        "bias_pct": -34.02210906189423,
+        "positive": 0
+      },
+      "lower_bound": {
+        "n": 12,
+        "mae_pct": 53.899897488873556,
+        "bias_pct": -53.899897488873556,
+        "positive": 0
+      },
+      "upper_bound": {
+        "n": 12,
+        "mae_pct": 49.91723846479656,
+        "bias_pct": -49.91723846479656,
+        "positive": 0
+      },
+      "annular": {
+        "n": 12,
+        "mae_pct": 53.899897488873556,
+        "bias_pct": -53.899897488873556,
+        "positive": 0
+      },
+      "radial": {
+        "n": 12,
+        "mae_pct": 53.899897488873556,
+        "bias_pct": -53.899897488873556,
+        "positive": 0
+      },
+      "sides": {
+        "n": 12,
+        "mae_pct": 50.83356780873854,
+        "bias_pct": -50.83356780873854,
+        "positive": 0
+      },
+      "joint": {
+        "n": 12,
+        "mae_pct": 53.899897488873556,
+        "bias_pct": -53.899897488873556,
+        "positive": 0
+      },
+      "another_night": {
+        "n": 12,
+        "mae_pct": 53.899897488873556,
+        "bias_pct": -53.899897488873556,
+        "positive": 0
+      },
+      "joint_fixed_power": {
+        "n": 12,
+        "mae_pct": 54.29634194833139,
+        "bias_pct": -54.29634194833139,
+        "positive": 0
+      },
+      "stress_nominal": {
+        "n": 12,
+        "mae_pct": 53.899897488873556,
+        "bias_pct": -53.899897488873556,
+        "positive": 0
+      },
+      "stress_without_weak": {
+        "n": 12,
+        "mae_pct": 49.91836183852812,
+        "bias_pct": -49.91836183852812,
+        "positive": 0
+      },
+      "stress_constant_background": {
+        "n": 12,
+        "mae_pct": 53.89869336636199,
+        "bias_pct": -53.89869336636199,
+        "positive": 0
+      },
+      "stress_brighter_edge": {
+        "n": 12,
+        "mae_pct": 53.89990384582688,
+        "bias_pct": -53.89990384582688,
+        "positive": 0
+      },
+      "stress_shallow": {
+        "n": 12,
+        "mae_pct": 53.905145183278535,
+        "bias_pct": -53.905145183278535,
+        "positive": 0
+      },
+      "stress_deep": {
+        "n": 12,
+        "mae_pct": 53.8896825949862,
+        "bias_pct": -53.8896825949862,
+        "positive": 0
+      },
+      "stress_more_aod": {
+        "n": 12,
+        "mae_pct": 53.876588160117706,
+        "bias_pct": -53.876588160117706,
+        "positive": 0
+      },
+      "stress_alternative_phase": {
+        "n": 12,
+        "mae_pct": 53.87776168339167,
+        "bias_pct": -53.87776168339167,
+        "positive": 0
+      }
+    },
+    "Madrid/dominant": {
+      "h2": {
+        "n": 8,
+        "mae_pct": 26.52542590135009,
+        "bias_pct": -25.965789204883627,
+        "positive": 1
+      },
+      "core": {
+        "n": 8,
+        "mae_pct": 23.655527235097388,
+        "bias_pct": -23.012217227181257,
+        "positive": 1
+      },
+      "old_free_tail": {
+        "n": 8,
+        "mae_pct": 27.82806379222098,
+        "bias_pct": 25.09390302678314,
+        "positive": 7
+      },
+      "lower_bound": {
+        "n": 8,
+        "mae_pct": 23.534881201477816,
+        "bias_pct": -23.00992004588847,
+        "positive": 1
+      },
+      "upper_bound": {
+        "n": 8,
+        "mae_pct": 24.252663541004893,
+        "bias_pct": -23.023587102427207,
+        "positive": 1
+      },
+      "annular": {
+        "n": 8,
+        "mae_pct": 23.71381738869275,
+        "bias_pct": -22.48474095011506,
+        "positive": 1
+      },
+      "radial": {
+        "n": 8,
+        "mae_pct": 23.623399238048552,
+        "bias_pct": -22.750118922765086,
+        "positive": 1
+      },
+      "sides": {
+        "n": 8,
+        "mae_pct": 24.05288787361176,
+        "bias_pct": -23.152139937787226,
+        "positive": 1
+      },
+      "joint": {
+        "n": 8,
+        "mae_pct": 23.534881201477816,
+        "bias_pct": -23.00992004588847,
+        "positive": 1
+      },
+      "joint_fixed_power": {
+        "n": 8,
+        "mae_pct": 26.412699431220272,
+        "bias_pct": -25.970980695906135,
+        "positive": 1
+      },
+      "stress_nominal": {
+        "n": 8,
+        "mae_pct": 23.534881201477816,
+        "bias_pct": -23.00992004588847,
+        "positive": 1
+      },
+      "stress_without_weak": {
+        "n": 8,
+        "mae_pct": 24.256585306381673,
+        "bias_pct": -23.037150709312947,
+        "positive": 1
+      },
+      "stress_constant_background": {
+        "n": 8,
+        "mae_pct": 23.66100009560557,
+        "bias_pct": -22.615458590550894,
+        "positive": 1
+      },
+      "stress_brighter_edge": {
+        "n": 8,
+        "mae_pct": 23.713826814061186,
+        "bias_pct": -22.485393018783103,
+        "positive": 1
+      },
+      "stress_shallow": {
+        "n": 8,
+        "mae_pct": 23.57994163335259,
+        "bias_pct": -23.09691375918075,
+        "positive": 1
+      },
+      "stress_deep": {
+        "n": 8,
+        "mae_pct": 23.449288989211,
+        "bias_pct": -22.805607792132363,
+        "positive": 1
+      },
+      "stress_more_aod": {
+        "n": 8,
+        "mae_pct": 23.331699581521143,
+        "bias_pct": -22.5275433677845,
+        "positive": 1
+      },
+      "stress_alternative_phase": {
+        "n": 8,
+        "mae_pct": 23.34554190790387,
+        "bias_pct": -22.576233268849716,
+        "positive": 1
+      },
+      "another_night": {
+        "n": 6,
+        "mae_pct": 26.905684714259138,
+        "bias_pct": -26.905684714259138,
+        "positive": 0
+      }
+    },
+    "Tucson": {
+      "h2": {
+        "n": 28,
+        "mae_pct": 22.655298333968574,
+        "bias_pct": -10.860692866544344,
+        "positive": 11
+      },
+      "core": {
+        "n": 28,
+        "mae_pct": 21.819328273094623,
+        "bias_pct": -12.423489204910576,
+        "positive": 10
+      },
+      "old_free_tail": {
+        "n": 28,
+        "mae_pct": 59.35018843141468,
+        "bias_pct": 50.942523470576205,
+        "positive": 20
+      },
+      "lower_bound": {
+        "n": 28,
+        "mae_pct": 21.82954798927073,
+        "bias_pct": -12.90640526939247,
+        "positive": 10
+      },
+      "upper_bound": {
+        "n": 28,
+        "mae_pct": 21.807710917014443,
+        "bias_pct": -10.03330109713221,
+        "positive": 11
+      },
+      "annular": {
+        "n": 28,
+        "mae_pct": 21.807710917014443,
+        "bias_pct": -10.03330109713221,
+        "positive": 11
+      },
+      "radial": {
+        "n": 28,
+        "mae_pct": 21.834682250567404,
+        "bias_pct": -10.270930614200855,
+        "positive": 11
+      },
+      "sides": {
+        "n": 28,
+        "mae_pct": 21.792547162872673,
+        "bias_pct": -11.356774411333658,
+        "positive": 10
+      },
+      "joint": {
+        "n": 28,
+        "mae_pct": 21.81149532455304,
+        "bias_pct": -10.066643420900562,
+        "positive": 11
+      },
+      "paired_difference": {
+        "n": 28,
+        "mae_pct": 21.86441547997796,
+        "bias_pct": -11.450965421664023,
+        "positive": 11
+      },
+      "other_platform": {
+        "n": 28,
+        "mae_pct": 21.807710917014443,
+        "bias_pct": -10.03330109713221,
+        "positive": 11
+      },
+      "joint_fixed_power": {
+        "n": 28,
+        "mae_pct": 22.857282539601155,
+        "bias_pct": -8.414644887844108,
+        "positive": 11
+      },
+      "stress_nominal": {
+        "n": 28,
+        "mae_pct": 21.81149532455304,
+        "bias_pct": -10.066643420900562,
+        "positive": 11
+      },
+      "stress_without_weak": {
+        "n": 28,
+        "mae_pct": 21.81093736559628,
+        "bias_pct": -10.016505516682614,
+        "positive": 11
+      },
+      "stress_constant_background": {
+        "n": 28,
+        "mae_pct": 21.818994300131994,
+        "bias_pct": -10.15180059203866,
+        "positive": 11
+      },
+      "stress_brighter_edge": {
+        "n": 28,
+        "mae_pct": 21.807447936332238,
+        "bias_pct": -10.034529619132465,
+        "positive": 11
+      },
+      "stress_shallow": {
+        "n": 28,
+        "mae_pct": 21.773092912505614,
+        "bias_pct": -10.201377982252,
+        "positive": 11
+      },
+      "stress_deep": {
+        "n": 28,
+        "mae_pct": 21.90884638668961,
+        "bias_pct": -9.987474995269237,
+        "positive": 11
+      },
+      "stress_more_aod": {
+        "n": 28,
+        "mae_pct": 21.9819883831957,
+        "bias_pct": -9.69947148648563,
+        "positive": 11
+      },
+      "stress_alternative_phase": {
+        "n": 28,
+        "mae_pct": 21.720181532328876,
+        "bias_pct": -10.44701986434059,
+        "positive": 11
+      },
+      "another_night": {
+        "n": 9,
+        "mae_pct": 20.130708488209276,
+        "bias_pct": -7.250893532125695,
+        "positive": 4
+      }
+    },
+    "Tucson/near": {
+      "h2": {
+        "n": 12,
+        "mae_pct": 15.71160737195737,
+        "bias_pct": -8.841252541755445,
+        "positive": 5
+      },
+      "core": {
+        "n": 12,
+        "mae_pct": 15.264128693173774,
+        "bias_pct": -10.228993948139149,
+        "positive": 4
+      },
+      "old_free_tail": {
+        "n": 12,
+        "mae_pct": 65.27547411784279,
+        "bias_pct": 65.27547411784279,
+        "positive": 12
+      },
+      "lower_bound": {
+        "n": 12,
+        "mae_pct": 15.277065067892607,
+        "bias_pct": -10.834907642698736,
+        "positive": 4
+      },
+      "upper_bound": {
+        "n": 12,
+        "mae_pct": 15.291018629245142,
+        "bias_pct": -7.230030331904643,
+        "positive": 5
+      },
+      "annular": {
+        "n": 12,
+        "mae_pct": 15.291018629245142,
+        "bias_pct": -7.230030331904643,
+        "positive": 5
+      },
+      "radial": {
+        "n": 12,
+        "mae_pct": 15.284115962060925,
+        "bias_pct": -7.559945840568659,
+        "positive": 5
+      },
+      "sides": {
+        "n": 12,
+        "mae_pct": 15.661026659159155,
+        "bias_pct": -8.745679859743227,
+        "positive": 4
+      },
+      "joint": {
+        "n": 12,
+        "mae_pct": 15.29005010072663,
+        "bias_pct": -7.276321507520248,
+        "positive": 5
+      },
+      "paired_difference": {
+        "n": 12,
+        "mae_pct": 14.99367939751903,
+        "bias_pct": -9.14467749243418,
+        "positive": 5
+      },
+      "other_platform": {
+        "n": 12,
+        "mae_pct": 15.291018629245142,
+        "bias_pct": -7.230030331904643,
+        "positive": 5
+      },
+      "joint_fixed_power": {
+        "n": 12,
+        "mae_pct": 16.217698834735607,
+        "bias_pct": -5.8276684954237306,
+        "positive": 5
+      },
+      "stress_nominal": {
+        "n": 12,
+        "mae_pct": 15.29005010072663,
+        "bias_pct": -7.276321507520248,
+        "positive": 5
+      },
+      "stress_without_weak": {
+        "n": 12,
+        "mae_pct": 15.288395255868592,
+        "bias_pct": -7.203857253016139,
+        "positive": 5
+      },
+      "stress_constant_background": {
+        "n": 12,
+        "mae_pct": 15.2876655273632,
+        "bias_pct": -7.393713376724629,
+        "positive": 5
+      },
+      "stress_brighter_edge": {
+        "n": 12,
+        "mae_pct": 15.291305391528107,
+        "bias_pct": -7.2320235712163425,
+        "positive": 5
+      },
+      "stress_shallow": {
+        "n": 12,
+        "mae_pct": 15.313122414474817,
+        "bias_pct": -7.485961118772238,
+        "positive": 5
+      },
+      "stress_deep": {
+        "n": 12,
+        "mae_pct": 15.248139826746579,
+        "bias_pct": -7.128718679896976,
+        "positive": 5
+      },
+      "stress_more_aod": {
+        "n": 12,
+        "mae_pct": 15.215168454396034,
+        "bias_pct": -6.697468717951651,
+        "positive": 5
+      },
+      "stress_alternative_phase": {
+        "n": 12,
+        "mae_pct": 15.343097191400418,
+        "bias_pct": -7.857869558817299,
+        "positive": 5
+      },
+      "another_night": {
+        "n": 5,
+        "mae_pct": 15.91278937667579,
+        "bias_pct": -7.607197028751456,
+        "positive": 2
+      }
+    },
+    "Tucson/mid": {
+      "h2": {
+        "n": 11,
+        "mae_pct": 30.797265901218108,
+        "bias_pct": -8.269566344358536,
+        "positive": 6
+      },
+      "core": {
+        "n": 11,
+        "mae_pct": 29.05191771571534,
+        "bias_pct": -10.628110718557338,
+        "positive": 6
+      },
+      "old_free_tail": {
+        "n": 11,
+        "mae_pct": 75.53045815438198,
+        "bias_pct": 62.43935323572505,
+        "positive": 7
+      },
+      "lower_bound": {
+        "n": 11,
+        "mae_pct": 28.900140461633644,
+        "bias_pct": -11.03267618397321,
+        "positive": 6
+      },
+      "upper_bound": {
+        "n": 11,
+        "mae_pct": 29.803137677980473,
+        "bias_pct": -8.625718097197153,
+        "positive": 6
+      },
+      "annular": {
+        "n": 11,
+        "mae_pct": 29.803137677980473,
+        "bias_pct": -8.625718097197153,
+        "positive": 6
+      },
+      "radial": {
+        "n": 11,
+        "mae_pct": 29.75982454828157,
+        "bias_pct": -8.751187788249196,
+        "positive": 6
+      },
+      "sides": {
+        "n": 11,
+        "mae_pct": 29.175480703310974,
+        "bias_pct": -10.155710207847221,
+        "positive": 6
+      },
+      "joint": {
+        "n": 11,
+        "mae_pct": 29.797060316835882,
+        "bias_pct": -8.64332302740018,
+        "positive": 6
+      },
+      "paired_difference": {
+        "n": 11,
+        "mae_pct": 29.548077906207087,
+        "bias_pct": -9.421843472409618,
+        "positive": 6
+      },
+      "other_platform": {
+        "n": 11,
+        "mae_pct": 29.803137677980473,
+        "bias_pct": -8.625718097197153,
+        "positive": 6
+      },
+      "joint_fixed_power": {
+        "n": 11,
+        "mae_pct": 31.57940718194859,
+        "bias_pct": -6.150908074907244,
+        "positive": 6
+      },
+      "stress_nominal": {
+        "n": 11,
+        "mae_pct": 29.797060316835882,
+        "bias_pct": -8.64332302740018,
+        "positive": 6
+      },
+      "stress_without_weak": {
+        "n": 11,
+        "mae_pct": 29.814758677375075,
+        "bias_pct": -8.612064519615696,
+        "positive": 6
+      },
+      "stress_constant_background": {
+        "n": 11,
+        "mae_pct": 29.77794833561669,
+        "bias_pct": -8.691221242984813,
+        "positive": 6
+      },
+      "stress_brighter_edge": {
+        "n": 11,
+        "mae_pct": 29.802165030087032,
+        "bias_pct": -8.62668039028228,
+        "positive": 6
+      },
+      "stress_shallow": {
+        "n": 11,
+        "mae_pct": 29.684666209742772,
+        "bias_pct": -8.768113255318188,
+        "positive": 6
+      },
+      "stress_deep": {
+        "n": 11,
+        "mae_pct": 29.982303751863036,
+        "bias_pct": -8.49454509753801,
+        "positive": 6
+      },
+      "stress_more_aod": {
+        "n": 11,
+        "mae_pct": 30.204744128603014,
+        "bias_pct": -8.232191740371274,
+        "positive": 6
+      },
+      "stress_alternative_phase": {
+        "n": 11,
+        "mae_pct": 29.50851669289922,
+        "bias_pct": -8.978898955383356,
+        "positive": 6
+      },
+      "another_night": {
+        "n": 3,
+        "mae_pct": 26.91850596086441,
+        "bias_pct": -2.1217150058208936,
+        "positive": 2
+      }
+    },
+    "Tucson/far": {
+      "h2": {
+        "n": 5,
+        "mae_pct": 21.407827994846492,
+        "bias_pct": -21.407827994846492,
+        "positive": 0
+      },
+      "core": {
+        "n": 5,
+        "mae_pct": 21.64011049113912,
+        "bias_pct": -21.64011049113912,
+        "positive": 0
+      },
+      "old_free_tail": {
+        "n": 5,
+        "mae_pct": 9.532909393459189,
+        "bias_pct": -8.749583566191077,
+        "positive": 1
+      },
+      "lower_bound": {
+        "n": 5,
+        "mae_pct": 22.000203561379813,
+        "bias_pct": -22.000203561379813,
+        "positive": 0
+      },
+      "upper_bound": {
+        "n": 5,
+        "mae_pct": 19.85783353353549,
+        "bias_pct": -19.85783353353549,
+        "positive": 0
+      },
+      "annular": {
+        "n": 5,
+        "mae_pct": 19.85783353353549,
+        "bias_pct": -19.85783353353549,
+        "positive": 0
+      },
+      "radial": {
+        "n": 5,
+        "mae_pct": 20.120728288011783,
+        "bias_pct": -20.120728288011783,
+        "positive": 0
+      },
+      "sides": {
+        "n": 5,
+        "mae_pct": 20.26574258282084,
+        "bias_pct": -20.26574258282084,
+        "positive": 0
+      },
+      "joint": {
+        "n": 5,
+        "mae_pct": 19.89472087871415,
+        "bias_pct": -19.89472087871415,
+        "positive": 0
+      },
+      "paired_difference": {
+        "n": 5,
+        "mae_pct": 21.45012474017533,
+        "bias_pct": -21.45012474017533,
+        "positive": 0
+      },
+      "other_platform": {
+        "n": 5,
+        "mae_pct": 19.85783353353549,
+        "bias_pct": -19.85783353353549,
+        "positive": 0
+      },
+      "joint_fixed_power": {
+        "n": 5,
+        "mae_pct": 19.60360921811411,
+        "bias_pct": -19.60360921811411,
+        "positive": 0
+      },
+      "stress_nominal": {
+        "n": 5,
+        "mae_pct": 19.89472087871415,
+        "bias_pct": -19.89472087871415,
+        "positive": 0
+      },
+      "stress_without_weak": {
+        "n": 5,
+        "mae_pct": 19.856631543029376,
+        "bias_pct": -19.856631543029376,
+        "positive": 0
+      },
+      "stress_constant_background": {
+        "n": 5,
+        "mae_pct": 19.984484476710783,
+        "bias_pct": -19.984484476710783,
+        "positive": 0
+      },
+      "stress_brighter_edge": {
+        "n": 5,
+        "mae_pct": 19.85781243760156,
+        "bias_pct": -19.85781243760156,
+        "positive": 0
+      },
+      "stress_shallow": {
+        "n": 5,
+        "mae_pct": 19.87156085385782,
+        "bias_pct": -19.87156085385782,
+        "positive": 0
+      },
+      "stress_deep": {
+        "n": 5,
+        "mae_pct": 20.132935927171363,
+        "bias_pct": -20.132935927171363,
+        "positive": 0
+      },
+      "stress_more_aod": {
+        "n": 5,
+        "mae_pct": 20.132293572418764,
+        "bias_pct": -20.132293572418764,
+        "positive": 0
+      },
+      "stress_alternative_phase": {
+        "n": 5,
+        "mae_pct": 19.890846597302406,
+        "bias_pct": -19.890846597302406,
+        "positive": 0
+      },
+      "another_night": {
+        "n": 1,
+        "mae_pct": 20.856911627911302,
+        "bias_pct": -20.856911627911302,
+        "positive": 0
+      }
+    },
+    "Tucson/dominant": {
+      "h2": {
+        "n": 18,
+        "mae_pct": 17.357868668123118,
+        "bias_pct": 0.9892953923145742,
+        "positive": 11
+      },
+      "core": {
+        "n": 18,
+        "mae_pct": 15.805582377914126,
+        "bias_pct": -1.1898327162944886,
+        "positive": 10
+      },
+      "old_free_tail": {
+        "n": 18,
+        "mae_pct": 85.44479756770937,
+        "bias_pct": 85.44479756770937,
+        "positive": 18
+      },
+      "lower_bound": {
+        "n": 18,
+        "mae_pct": 15.644213018991316,
+        "bias_pct": -1.7637687880695794,
+        "positive": 10
+      },
+      "upper_bound": {
+        "n": 18,
+        "mae_pct": 16.664890624736106,
+        "bias_pct": 1.650857983969586,
+        "positive": 11
+      },
+      "annular": {
+        "n": 18,
+        "mae_pct": 16.664890624736106,
+        "bias_pct": 1.650857983969586,
+        "positive": 11
+      },
+      "radial": {
+        "n": 18,
+        "mae_pct": 16.608716318050508,
+        "bias_pct": 1.3793417829641201,
+        "positive": 11
+      },
+      "sides": {
+        "n": 18,
+        "mae_pct": 16.252280979720027,
+        "bias_pct": -0.018856699548226195,
+        "positive": 10
+      },
+      "joint": {
+        "n": 18,
+        "mae_pct": 16.65700868336755,
+        "bias_pct": 1.6127609445362978,
+        "positive": 11
+      },
+      "paired_difference": {
+        "n": 18,
+        "mae_pct": 16.145469008673025,
+        "bias_pct": 0.05323108203755152,
+        "positive": 11
+      },
+      "other_platform": {
+        "n": 18,
+        "mae_pct": 16.664890624736106,
+        "bias_pct": 1.650857983969586,
+        "positive": 11
+      },
+      "joint_fixed_power": {
+        "n": 18,
+        "mae_pct": 18.581618394753033,
+        "bias_pct": 3.8847068413134784,
+        "positive": 11
+      },
+      "stress_nominal": {
+        "n": 18,
+        "mae_pct": 16.65700868336755,
+        "bias_pct": 1.6127609445362978,
+        "positive": 11
+      },
+      "stress_without_weak": {
+        "n": 18,
+        "mae_pct": 16.670864496561094,
+        "bias_pct": 1.6760294906379416,
+        "positive": 11
+      },
+      "stress_constant_background": {
+        "n": 18,
+        "mae_pct": 16.63494362987965,
+        "bias_pct": 1.5140243604877621,
+        "positive": 11
+      },
+      "stress_brighter_edge": {
+        "n": 18,
+        "mae_pct": 16.664490567625748,
+        "bias_pct": 1.6489379257961128,
+        "positive": 11
+      },
+      "stress_shallow": {
+        "n": 18,
+        "mae_pct": 16.599917234612946,
+        "bias_pct": 1.4005282124482408,
+        "positive": 11
+      },
+      "stress_deep": {
+        "n": 18,
+        "mae_pct": 16.731130584430367,
+        "bias_pct": 1.8132249133346636,
+        "positive": 11
+      },
+      "stress_more_aod": {
+        "n": 18,
+        "mae_pct": 16.857281088223722,
+        "bias_pct": 2.248856306658599,
+        "positive": 11
+      },
+      "stress_alternative_phase": {
+        "n": 18,
+        "mae_pct": 16.50167021406346,
+        "bias_pct": 1.0343590472516493,
+        "positive": 11
+      },
+      "another_night": {
+        "n": 7,
+        "mae_pct": 16.679876187992033,
+        "bias_pct": -0.12011410159885726,
+        "positive": 4
+      }
+    }
+  },
+  "matched_ground": {
+    "core": {
+      "h2": {
+        "n": 72,
+        "mae_pct": 28.387051046087564,
+        "bias_pct": -23.183585046168268,
+        "positive": 15
+      },
+      "core": {
+        "n": 72,
+        "mae_pct": 27.90516480520076,
+        "bias_pct": -22.105151825671076,
+        "positive": 16
+      }
+    },
+    "annular": {
+      "h2": {
+        "n": 72,
+        "mae_pct": 28.387051046087564,
+        "bias_pct": -23.183585046168268,
+        "positive": 15
+      },
+      "core": {
+        "n": 72,
+        "mae_pct": 27.90516480520076,
+        "bias_pct": -22.105151825671076,
+        "positive": 16
+      },
+      "annular": {
+        "n": 72,
+        "mae_pct": 27.829811257775834,
+        "bias_pct": -21.17055322032792,
+        "positive": 17
+      }
+    },
+    "radial": {
+      "h2": {
+        "n": 72,
+        "mae_pct": 28.387051046087564,
+        "bias_pct": -23.183585046168268,
+        "positive": 15
+      },
+      "core": {
+        "n": 72,
+        "mae_pct": 27.90516480520076,
+        "bias_pct": -22.105151825671076,
+        "positive": 16
+      },
+      "radial": {
+        "n": 72,
+        "mae_pct": 27.974664304965657,
+        "bias_pct": -21.436861797028754,
+        "positive": 17
+      }
+    },
+    "sides": {
+      "h2": {
+        "n": 72,
+        "mae_pct": 28.387051046087564,
+        "bias_pct": -23.183585046168268,
+        "positive": 15
+      },
+      "core": {
+        "n": 72,
+        "mae_pct": 27.90516480520076,
+        "bias_pct": -22.105151825671076,
+        "positive": 16
+      },
+      "sides": {
+        "n": 72,
+        "mae_pct": 27.469550586781097,
+        "bias_pct": -20.468887174932046,
+        "positive": 19
+      }
+    },
+    "joint": {
+      "h2": {
+        "n": 72,
+        "mae_pct": 28.387051046087564,
+        "bias_pct": -23.183585046168268,
+        "positive": 15
+      },
+      "core": {
+        "n": 72,
+        "mae_pct": 27.90516480520076,
+        "bias_pct": -22.105151825671076,
+        "positive": 16
+      },
+      "joint": {
+        "n": 72,
+        "mae_pct": 28.09718773347764,
+        "bias_pct": -21.527659472673342,
+        "positive": 17
+      }
+    },
+    "joint_fixed_power": {
+      "h2": {
+        "n": 72,
+        "mae_pct": 28.387051046087564,
+        "bias_pct": -23.183585046168268,
+        "positive": 15
+      },
+      "core": {
+        "n": 72,
+        "mae_pct": 27.90516480520076,
+        "bias_pct": -22.105151825671076,
+        "positive": 16
+      },
+      "joint_fixed_power": {
+        "n": 72,
+        "mae_pct": 28.694525597276183,
+        "bias_pct": -22.54363094071672,
+        "positive": 15
+      }
+    },
+    "paired_difference": {
+      "h2": {
+        "n": 28,
+        "mae_pct": 22.655298333968574,
+        "bias_pct": -10.860692866544344,
+        "positive": 11
+      },
+      "core": {
+        "n": 28,
+        "mae_pct": 21.819328273094623,
+        "bias_pct": -12.423489204910576,
+        "positive": 10
+      },
+      "paired_difference": {
+        "n": 28,
+        "mae_pct": 21.86441547997796,
+        "bias_pct": -11.450965421664023,
+        "positive": 11
+      }
+    },
+    "other_platform": {
+      "h2": {
+        "n": 28,
+        "mae_pct": 22.655298333968574,
+        "bias_pct": -10.860692866544344,
+        "positive": 11
+      },
+      "core": {
+        "n": 28,
+        "mae_pct": 21.819328273094623,
+        "bias_pct": -12.423489204910576,
+        "positive": 10
+      },
+      "other_platform": {
+        "n": 28,
+        "mae_pct": 21.807710917014443,
+        "bias_pct": -10.03330109713221,
+        "positive": 11
+      }
+    },
+    "another_night": {
+      "h2": {
+        "n": 46,
+        "mae_pct": 31.205888361761314,
+        "bias_pct": -27.97320505832902,
+        "positive": 7
+      },
+      "core": {
+        "n": 46,
+        "mae_pct": 30.842128420735204,
+        "bias_pct": -25.616108103041206,
+        "positive": 9
+      },
+      "another_night": {
+        "n": 46,
+        "mae_pct": 31.133205865217636,
+        "bias_pct": -25.57084006444202,
+        "positive": 9
+      }
+    }
+  },
+  "directions": {
+    "Berlin/2017-03-28": {
+      "away": {
+        "bins": 4,
+        "decline_nw_per_km": 0.00025591230475301564,
+        "raw_decline_nw_per_km": 0.003625255634653415,
+        "outer_to_inner_ratio": 0.3686769208832505
+      },
+      "left": {
+        "bins": 5,
+        "decline_nw_per_km": 0.0008912533997407681,
+        "raw_decline_nw_per_km": 0.006009527392184828,
+        "outer_to_inner_ratio": null
+      },
+      "right": {
+        "bins": 4,
+        "decline_nw_per_km": -0.0022400900042456665,
+        "raw_decline_nw_per_km": 0.010520078590911705,
+        "outer_to_inner_ratio": null
+      },
+      "toward": {
+        "bins": 4,
+        "decline_nw_per_km": -0.007773899003040526,
+        "raw_decline_nw_per_km": 0.008951379604538437,
+        "outer_to_inner_ratio": null
+      }
+    },
+    "Berlin/2017-03-29": {
+      "away": {
+        "bins": 4,
+        "decline_nw_per_km": 0.004459589631389745,
+        "raw_decline_nw_per_km": 0.007186815430165509,
+        "outer_to_inner_ratio": 0.45822226737742244
+      },
+      "left": {
+        "bins": 5,
+        "decline_nw_per_km": 0.0038659986353203955,
+        "raw_decline_nw_per_km": 0.009311370994646986,
+        "outer_to_inner_ratio": null
+      },
+      "right": {
+        "bins": 4,
+        "decline_nw_per_km": 0.003119506819039297,
+        "raw_decline_nw_per_km": 0.017533696760175323,
+        "outer_to_inner_ratio": null
+      },
+      "toward": {
+        "bins": 4,
+        "decline_nw_per_km": -0.00955988938625475,
+        "raw_decline_nw_per_km": 0.00941400850648302,
+        "outer_to_inner_ratio": null
+      }
+    },
+    "Madrid/2012-02-20": {
+      "away": {
+        "bins": 3,
+        "decline_nw_per_km": 0.023304665619813678,
+        "raw_decline_nw_per_km": 0.031544695767652925,
+        "outer_to_inner_ratio": null
+      },
+      "left": {
+        "bins": 2,
+        "decline_nw_per_km": null,
+        "raw_decline_nw_per_km": null,
+        "outer_to_inner_ratio": null
+      },
+      "right": {
+        "bins": 1,
+        "decline_nw_per_km": null,
+        "raw_decline_nw_per_km": null,
+        "outer_to_inner_ratio": null
+      },
+      "toward": {
+        "bins": 1,
+        "decline_nw_per_km": null,
+        "raw_decline_nw_per_km": null,
+        "outer_to_inner_ratio": null
+      }
+    },
+    "Madrid/2013-12-04": {
+      "away": {
+        "bins": 1,
+        "decline_nw_per_km": null,
+        "raw_decline_nw_per_km": null,
+        "outer_to_inner_ratio": null
+      },
+      "left": {
+        "bins": 1,
+        "decline_nw_per_km": null,
+        "raw_decline_nw_per_km": null,
+        "outer_to_inner_ratio": null
+      },
+      "right": {
+        "bins": 2,
+        "decline_nw_per_km": null,
+        "raw_decline_nw_per_km": null,
+        "outer_to_inner_ratio": null
+      },
+      "toward": {
+        "bins": 3,
+        "decline_nw_per_km": -0.014570473695118024,
+        "raw_decline_nw_per_km": 0.008960785803008357,
+        "outer_to_inner_ratio": null
+      }
+    },
+    "Madrid/2013-12-29": {
+      "left": {
+        "bins": 3,
+        "decline_nw_per_km": -0.009895189223634094,
+        "raw_decline_nw_per_km": 0.019716644957061637,
+        "outer_to_inner_ratio": null
+      },
+      "right": {
+        "bins": 1,
+        "decline_nw_per_km": null,
+        "raw_decline_nw_per_km": null,
+        "outer_to_inner_ratio": null
+      },
+      "toward": {
+        "bins": 1,
+        "decline_nw_per_km": null,
+        "raw_decline_nw_per_km": null,
+        "outer_to_inner_ratio": null
+      }
+    },
+    "Tucson/2019-03-31": {
+      "away": {
+        "bins": 4,
+        "decline_nw_per_km": 0.004394153005631313,
+        "raw_decline_nw_per_km": 0.00872884417899588,
+        "outer_to_inner_ratio": 0.716496690647842
+      },
+      "left": {
+        "bins": 4,
+        "decline_nw_per_km": 0.0087954073148106,
+        "raw_decline_nw_per_km": 0.015299881050155019,
+        "outer_to_inner_ratio": 0.30621613635562495
+      },
+      "right": {
+        "bins": 4,
+        "decline_nw_per_km": 0.002072568907030884,
+        "raw_decline_nw_per_km": 0.008034907398713655,
+        "outer_to_inner_ratio": 0.8136908178912517
+      },
+      "toward": {
+        "bins": 5,
+        "decline_nw_per_km": 0.00465119789269973,
+        "raw_decline_nw_per_km": 0.004957091936720098,
+        "outer_to_inner_ratio": null
+      }
+    },
+    "Tucson/2019-03-31/NOAA20": {
+      "away": {
+        "bins": 5,
+        "decline_nw_per_km": 0.004021924345340499,
+        "raw_decline_nw_per_km": 0.004961688349841564,
+        "outer_to_inner_ratio": 0.3512046831448448
+      },
+      "left": {
+        "bins": 4,
+        "decline_nw_per_km": 0.005326145562032461,
+        "raw_decline_nw_per_km": 0.009547221082007569,
+        "outer_to_inner_ratio": 0.44611684798072304
+      },
+      "right": {
+        "bins": 4,
+        "decline_nw_per_km": 0.0029035516966752386,
+        "raw_decline_nw_per_km": 0.008049267299080556,
+        "outer_to_inner_ratio": 0.4054851979940165
+      },
+      "toward": {
+        "bins": 4,
+        "decline_nw_per_km": 0.004568692585017384,
+        "raw_decline_nw_per_km": 0.007293342958939327,
+        "outer_to_inner_ratio": 0.4044527328723591
+      }
+    },
+    "Tucson/2019-04-01": {
+      "away": {
+        "bins": 3,
+        "decline_nw_per_km": 0.014087836442184852,
+        "raw_decline_nw_per_km": 0.015329855963875589,
+        "outer_to_inner_ratio": 0.5727735060583634
+      },
+      "left": {
+        "bins": 2,
+        "decline_nw_per_km": null,
+        "raw_decline_nw_per_km": null,
+        "outer_to_inner_ratio": null
+      },
+      "right": {
+        "bins": 2,
+        "decline_nw_per_km": null,
+        "raw_decline_nw_per_km": null,
+        "outer_to_inner_ratio": null
+      },
+      "toward": {
+        "bins": 5,
+        "decline_nw_per_km": 0.009342064930766416,
+        "raw_decline_nw_per_km": 0.010659951857480966,
+        "outer_to_inner_ratio": 0.24510238134044357
+      }
+    },
+    "Tucson/2019-04-01/NOAA20": {
+      "away": {
+        "bins": 5,
+        "decline_nw_per_km": 0.004307095267003732,
+        "raw_decline_nw_per_km": 0.004775613065354384,
+        "outer_to_inner_ratio": 0.3917071124415576
+      },
+      "left": {
+        "bins": 3,
+        "decline_nw_per_km": 0.004251037780609853,
+        "raw_decline_nw_per_km": 0.006600567735945143,
+        "outer_to_inner_ratio": null
+      },
+      "right": {
+        "bins": 3,
+        "decline_nw_per_km": 0.0004379964424984632,
+        "raw_decline_nw_per_km": 0.010818504718989581,
+        "outer_to_inner_ratio": 1.2244425799202068
+      },
+      "toward": {
+        "bins": 4,
+        "decline_nw_per_km": 0.004917031971965467,
+        "raw_decline_nw_per_km": 0.006064446019799441,
+        "outer_to_inner_ratio": 0.59791280123855
+      }
+    },
+    "Tucson/2019-04-03": {
+      "away": {
+        "bins": 5,
+        "decline_nw_per_km": 0.0051148385116653984,
+        "raw_decline_nw_per_km": 0.00591125538392258,
+        "outer_to_inner_ratio": null
+      },
+      "left": {
+        "bins": 5,
+        "decline_nw_per_km": 0.0027473480790967657,
+        "raw_decline_nw_per_km": 0.0059306763715314915,
+        "outer_to_inner_ratio": 0.6615330761004272
+      },
+      "right": {
+        "bins": 4,
+        "decline_nw_per_km": 0.0029597186939361348,
+        "raw_decline_nw_per_km": 0.011095592035839257,
+        "outer_to_inner_ratio": null
+      },
+      "toward": {
+        "bins": 4,
+        "decline_nw_per_km": 0.003418714606807859,
+        "raw_decline_nw_per_km": 0.003436959169778342,
+        "outer_to_inner_ratio": 0.21266121462033377
+      }
+    },
+    "Tucson/2019-04-03/NOAA20": {
+      "away": {
+        "bins": 4,
+        "decline_nw_per_km": 0.004615239513484596,
+        "raw_decline_nw_per_km": 0.004968825541503019,
+        "outer_to_inner_ratio": 0.7724021266454073
+      },
+      "left": {
+        "bins": 4,
+        "decline_nw_per_km": -0.0006509922401641872,
+        "raw_decline_nw_per_km": 0.006953468278237474,
+        "outer_to_inner_ratio": null
+      },
+      "right": {
+        "bins": 5,
+        "decline_nw_per_km": 0.00320720915678575,
+        "raw_decline_nw_per_km": 0.006707430167990917,
+        "outer_to_inner_ratio": 0.6512947216142332
+      },
+      "toward": {
+        "bins": 5,
+        "decline_nw_per_km": 0.0034396413542093396,
+        "raw_decline_nw_per_km": 0.004377935461119441,
+        "outer_to_inner_ratio": null
+      }
+    },
+    "Tucson/2019-04-07": {
+      "away": {
+        "bins": 5,
+        "decline_nw_per_km": 0.011877737851562863,
+        "raw_decline_nw_per_km": 0.013591283401012445,
+        "outer_to_inner_ratio": 0.18639595576941226
+      },
+      "left": {
+        "bins": 5,
+        "decline_nw_per_km": 0.004731476121472037,
+        "raw_decline_nw_per_km": 0.01066877491393896,
+        "outer_to_inner_ratio": 0.46802601619668993
+      },
+      "right": {
+        "bins": 4,
+        "decline_nw_per_km": -0.0018120518425313494,
+        "raw_decline_nw_per_km": 0.014523890753714007,
+        "outer_to_inner_ratio": null
+      },
+      "toward": {
+        "bins": 4,
+        "decline_nw_per_km": 0.0006638446553387456,
+        "raw_decline_nw_per_km": 0.0013264390774058918,
+        "outer_to_inner_ratio": 2.2848448733892384
+      }
+    },
+    "Tucson/2019-04-07/NOAA20": {
+      "away": {
+        "bins": 4,
+        "decline_nw_per_km": 0.00115213136152683,
+        "raw_decline_nw_per_km": 0.0010145846890830556,
+        "outer_to_inner_ratio": 1.3273698313230362
+      },
+      "left": {
+        "bins": 4,
+        "decline_nw_per_km": -0.0032006971236523012,
+        "raw_decline_nw_per_km": 0.005288986633881643,
+        "outer_to_inner_ratio": null
+      },
+      "right": {
+        "bins": 5,
+        "decline_nw_per_km": 0.0023725824839728625,
+        "raw_decline_nw_per_km": 0.006082196502415373,
+        "outer_to_inner_ratio": 0.9621337471143481
+      },
+      "toward": {
+        "bins": 5,
+        "decline_nw_per_km": 0.002081568073336397,
+        "raw_decline_nw_per_km": 0.002460939469259476,
+        "outer_to_inner_ratio": null
+      }
+    },
+    "Tucson/2019-04-08": {
+      "away": {
+        "bins": 5,
+        "decline_nw_per_km": 0.0062585480573723856,
+        "raw_decline_nw_per_km": 0.0066880028418866465,
+        "outer_to_inner_ratio": 0.32967104242812045
+      },
+      "left": {
+        "bins": 5,
+        "decline_nw_per_km": 0.0024090226942560114,
+        "raw_decline_nw_per_km": 0.006638926156068882,
+        "outer_to_inner_ratio": 0.7442930744379704
+      },
+      "right": {
+        "bins": 4,
+        "decline_nw_per_km": -0.0015704979382442856,
+        "raw_decline_nw_per_km": 0.009337128216057068,
+        "outer_to_inner_ratio": null
+      },
+      "toward": {
+        "bins": 4,
+        "decline_nw_per_km": 0.0029012038175906005,
+        "raw_decline_nw_per_km": 0.003330086053201006,
+        "outer_to_inner_ratio": 1.1453446088451351
+      }
+    },
+    "Tucson/2019-04-08/NOAA20": {
+      "away": {
+        "bins": 4,
+        "decline_nw_per_km": 0.0035116208479226635,
+        "raw_decline_nw_per_km": 0.003661183544320387,
+        "outer_to_inner_ratio": 0.8375614520723008
+      },
+      "left": {
+        "bins": 4,
+        "decline_nw_per_km": -0.004323160208244042,
+        "raw_decline_nw_per_km": 0.005420416354294829,
+        "outer_to_inner_ratio": null
+      },
+      "right": {
+        "bins": 5,
+        "decline_nw_per_km": 0.002191246472989432,
+        "raw_decline_nw_per_km": 0.0065140702460552095,
+        "outer_to_inner_ratio": 0.8276425698243518
+      },
+      "toward": {
+        "bins": 5,
+        "decline_nw_per_km": 0.0032425169138623035,
+        "raw_decline_nw_per_km": 0.0038688188262636595,
+        "outer_to_inner_ratio": 0.43396397460749647
+      }
+    }
+  },
+  "fractions": {
+    "Berlin/2017-03-28": {
+      "power_equivalent_w": 394437.04305170814,
+      "case_fractions": {
+        "nominal": [
+          0.025005065054546992,
+          0.22369092526142823
+        ],
+        "without_weak": [
+          0.16199558989543067,
+          0.26931052458741045
+        ],
+        "constant_background": [
+          0.025005065054546992,
+          0.22369092526142823
+        ],
+        "brighter_edge": [
+          0.025005065054546992,
+          0.22369092526142823
+        ],
+        "shallow": [
+          0.025005065054546992,
+          0.22369092526142823
+        ],
+        "deep": [
+          0.025005065054546992,
+          0.22369092526142823
+        ],
+        "more_aod": [
+          0.025005065054546992,
+          0.22369092526142823
+        ],
+        "alternative_phase": [
+          0.025005065054546992,
+          0.22369092526142823
+        ]
+      },
+      "reference_fractions": [
+        0.04803065729244525,
+        0.23135874238495877
+      ],
+      "cases_at_bound": 8
+    },
+    "Berlin/2017-03-29": {
+      "power_equivalent_w": 547119.2122002526,
+      "case_fractions": {
+        "nominal": [
+          0.025005065054546992,
+          0.22369092526142823
+        ],
+        "without_weak": [
+          0.16199558989543067,
+          0.26931052458741045
+        ],
+        "constant_background": [
+          0.025005065054546992,
+          0.22369092526142823
+        ],
+        "brighter_edge": [
+          0.025005065054546992,
+          0.22369092526142823
+        ],
+        "shallow": [
+          0.025005065054546992,
+          0.22369092526142823
+        ],
+        "deep": [
+          0.025005065054546992,
+          0.22369092526142823
+        ],
+        "more_aod": [
+          0.025005065054546992,
+          0.22369092526142823
+        ],
+        "alternative_phase": [
+          0.025005065054546992,
+          0.22369092526142823
+        ]
+      },
+      "reference_fractions": [
+        0.04803065729244525,
+        0.23135874238495877
+      ],
+      "cases_at_bound": 8
+    },
+    "Madrid/2012-02-20": {
+      "power_equivalent_w": 1852342.9487244678,
+      "case_fractions": {
+        "nominal": [
+          0.025883570627467753,
+          0.23230695026717427
+        ],
+        "without_weak": [
+          0.16905918309174117,
+          0.2799862629894141
+        ],
+        "constant_background": [
+          0.13315832115366216,
+          0.26803081615121216
+        ],
+        "brighter_edge": [
+          0.16905918309174117,
+          0.2799862629894141
+        ],
+        "shallow": [
+          0.026714930051291233,
+          0.23258380360323352
+        ],
+        "deep": [
+          0.025883570627467753,
+          0.23230695026717427
+        ],
+        "more_aod": [
+          0.025883570627467753,
+          0.23230695026717427
+        ],
+        "alternative_phase": [
+          0.025883570627467753,
+          0.23230695026717427
+        ]
+      },
+      "reference_fractions": [
+        0.04994876254379094,
+        0.2403209673986561
+      ],
+      "cases_at_bound": 6
+    },
+    "Madrid/2013-12-04": {
+      "power_equivalent_w": 1606034.058905601,
+      "case_fractions": {
+        "nominal": [
+          0.02588952507779087,
+          0.23235296351342494
+        ],
+        "without_weak": [
+          0.16908461079743053,
+          0.2800387610791123
+        ],
+        "constant_background": [
+          0.02588952507779087,
+          0.23235296351342494
+        ],
+        "brighter_edge": [
+          0.02588952507779087,
+          0.23235296351342494
+        ],
+        "shallow": [
+          0.02588952507779087,
+          0.23235296351342494
+        ],
+        "deep": [
+          0.02588952507779087,
+          0.23235296351342494
+        ],
+        "more_aod": [
+          0.02588952507779087,
+          0.23235296351342494
+        ],
+        "alternative_phase": [
+          0.02588952507779087,
+          0.23235296351342494
+        ]
+      },
+      "reference_fractions": [
+        0.04995799009083464,
+        0.24036807062803606
+      ],
+      "cases_at_bound": 8
+    },
+    "Madrid/2013-12-29": {
+      "power_equivalent_w": 1804378.1301564847,
+      "case_fractions": {
+        "nominal": [
+          0.02588952507779087,
+          0.23235296351342494
+        ],
+        "without_weak": [
+          0.16908461079743053,
+          0.2800387610791123
+        ],
+        "constant_background": [
+          0.02588952507779087,
+          0.23235296351342494
+        ],
+        "brighter_edge": [
+          0.02588952507779087,
+          0.23235296351342494
+        ],
+        "shallow": [
+          0.02588952507779087,
+          0.23235296351342494
+        ],
+        "deep": [
+          0.02588952507779087,
+          0.23235296351342494
+        ],
+        "more_aod": [
+          0.02588952507779087,
+          0.23235296351342494
+        ],
+        "alternative_phase": [
+          0.02588952507779087,
+          0.23235296351342494
+        ]
+      },
+      "reference_fractions": [
+        0.04995799009083464,
+        0.24036807062803606
+      ],
+      "cases_at_bound": 8
+    },
+    "Tucson/2019-03-31": {
+      "power_equivalent_w": 302533.2588295496,
+      "case_fractions": {
+        "nominal": [
+          0.17180042789093486,
+          0.28463363098324757
+        ],
+        "without_weak": [
+          0.17180042789093486,
+          0.28463363098324757
+        ],
+        "constant_background": [
+          0.17180042789093486,
+          0.28463363098324757
+        ],
+        "brighter_edge": [
+          0.17180042789093486,
+          0.28463363098324757
+        ],
+        "shallow": [
+          0.17180042789093486,
+          0.28463363098324757
+        ],
+        "deep": [
+          0.17180042789093486,
+          0.28463363098324757
+        ],
+        "more_aod": [
+          0.17180042789093486,
+          0.28463363098324757
+        ],
+        "alternative_phase": [
+          0.17180042789093486,
+          0.28463363098324757
+        ]
+      },
+      "reference_fractions": [
+        0.05077641231221144,
+        0.24433108373820572
+      ],
+      "cases_at_bound": 8
+    },
+    "Tucson/2019-03-31/NOAA20": {
+      "power_equivalent_w": 289658.16853743873,
+      "case_fractions": {
+        "nominal": [
+          0.17180042789093486,
+          0.28463363098324757
+        ],
+        "without_weak": [
+          0.17180042789093486,
+          0.28463363098324757
+        ],
+        "constant_background": [
+          0.17180042789093486,
+          0.28463363098324757
+        ],
+        "brighter_edge": [
+          0.17180042789093486,
+          0.28463363098324757
+        ],
+        "shallow": [
+          0.17180042789093486,
+          0.28463363098324757
+        ],
+        "deep": [
+          0.17180042789093486,
+          0.28463363098324757
+        ],
+        "more_aod": [
+          0.17180042789093486,
+          0.28463363098324757
+        ],
+        "alternative_phase": [
+          0.17180042789093486,
+          0.28463363098324757
+        ]
+      },
+      "reference_fractions": [
+        0.05077641231221144,
+        0.24433108373820572
+      ],
+      "cases_at_bound": 8
+    },
+    "Tucson/2019-04-01": {
+      "power_equivalent_w": 381873.0232782094,
+      "case_fractions": {
+        "nominal": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "without_weak": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "constant_background": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "brighter_edge": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "shallow": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "deep": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "more_aod": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "alternative_phase": [
+          0.17189680081846354,
+          0.28468576507245896
+        ]
+      },
+      "reference_fractions": [
+        0.05078714050960183,
+        0.2443546970353563
+      ],
+      "cases_at_bound": 8
+    },
+    "Tucson/2019-04-01/NOAA20": {
+      "power_equivalent_w": 326315.0771099148,
+      "case_fractions": {
+        "nominal": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "without_weak": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "constant_background": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "brighter_edge": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "shallow": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "deep": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "more_aod": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "alternative_phase": [
+          0.17189680081846354,
+          0.28468576507245896
+        ]
+      },
+      "reference_fractions": [
+        0.05078714050960183,
+        0.2443546970353563
+      ],
+      "cases_at_bound": 8
+    },
+    "Tucson/2019-04-03": {
+      "power_equivalent_w": 341349.1658018928,
+      "case_fractions": {
+        "nominal": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "without_weak": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "constant_background": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "brighter_edge": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "shallow": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "deep": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "more_aod": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "alternative_phase": [
+          0.17189680081846354,
+          0.28468576507245896
+        ]
+      },
+      "reference_fractions": [
+        0.05078714050960183,
+        0.2443546970353563
+      ],
+      "cases_at_bound": 8
+    },
+    "Tucson/2019-04-03/NOAA20": {
+      "power_equivalent_w": 342674.89621631295,
+      "case_fractions": {
+        "nominal": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "without_weak": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "constant_background": [
+          0.09999493802421976,
+          0.26074152385376836
+        ],
+        "brighter_edge": [
+          0.14887340043086789,
+          0.2770186778631521
+        ],
+        "shallow": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "deep": [
+          0.07238356052806608,
+          0.2515465815051932
+        ],
+        "more_aod": [
+          0.12080256819269312,
+          0.26767073120085694
+        ],
+        "alternative_phase": [
+          0.17189680081846354,
+          0.28468576507245896
+        ]
+      },
+      "reference_fractions": [
+        0.05078714050960183,
+        0.2443546970353563
+      ],
+      "cases_at_bound": 4
+    },
+    "Tucson/2019-04-07": {
+      "power_equivalent_w": 401391.6412416596,
+      "case_fractions": {
+        "nominal": [
+          0.16420910451649895,
+          0.28212566374105075
+        ],
+        "without_weak": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "constant_background": [
+          0.14555221281725278,
+          0.2759126798505485
+        ],
+        "brighter_edge": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "shallow": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "deep": [
+          0.10970250046205074,
+          0.2639742664785607
+        ],
+        "more_aod": [
+          0.10493137653711149,
+          0.26238542110372076
+        ],
+        "alternative_phase": [
+          0.17189680081846354,
+          0.28468576507245896
+        ]
+      },
+      "reference_fractions": [
+        0.05078714050960183,
+        0.2443546970353563
+      ],
+      "cases_at_bound": 4
+    },
+    "Tucson/2019-04-07/NOAA20": {
+      "power_equivalent_w": 355716.7266184405,
+      "case_fractions": {
+        "nominal": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "without_weak": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "constant_background": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "brighter_edge": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "shallow": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "deep": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "more_aod": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "alternative_phase": [
+          0.17189680081846354,
+          0.28468576507245896
+        ]
+      },
+      "reference_fractions": [
+        0.05078714050960183,
+        0.2443546970353563
+      ],
+      "cases_at_bound": 8
+    },
+    "Tucson/2019-04-08": {
+      "power_equivalent_w": 345936.01858020603,
+      "case_fractions": {
+        "nominal": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "without_weak": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "constant_background": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "brighter_edge": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "shallow": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "deep": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "more_aod": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "alternative_phase": [
+          0.17189680081846354,
+          0.28468576507245896
+        ]
+      },
+      "reference_fractions": [
+        0.05078714050960183,
+        0.2443546970353563
+      ],
+      "cases_at_bound": 8
+    },
+    "Tucson/2019-04-08/NOAA20": {
+      "power_equivalent_w": 337116.7296433195,
+      "case_fractions": {
+        "nominal": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "without_weak": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "constant_background": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "brighter_edge": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "shallow": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "deep": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "more_aod": [
+          0.17189680081846354,
+          0.28468576507245896
+        ],
+        "alternative_phase": [
+          0.17189680081846354,
+          0.28468576507245896
+        ]
+      },
+      "reference_fractions": [
+        0.05078714050960183,
+        0.2443546970353563
+      ],
+      "cases_at_bound": 8
+    }
+  },
+  "shape_resolution": {
+    "Berlin/2017-03-28": {
+      "bins": 17,
+      "maximum_mean_bin_difference": 0.006307335259763791,
+      "typical_bin_difference": 0.002817159340771924
+    },
+    "Berlin/2017-03-29": {
+      "bins": 17,
+      "maximum_mean_bin_difference": 0.02003206147702774,
+      "typical_bin_difference": 0.004973171989222258
+    },
+    "Madrid/2012-02-20": {
+      "bins": 7,
+      "maximum_mean_bin_difference": 0.02459454131908745,
+      "typical_bin_difference": 0.01635745788932519
+    },
+    "Madrid/2013-12-04": {
+      "bins": 7,
+      "maximum_mean_bin_difference": 0.028277283968979106,
+      "typical_bin_difference": 0.011853972430892867
+    },
+    "Madrid/2013-12-29": {
+      "bins": 5,
+      "maximum_mean_bin_difference": 0.04805267287139792,
+      "typical_bin_difference": 0.03457945474102497
+    },
+    "Tucson/2019-03-31": {
+      "bins": 17,
+      "maximum_mean_bin_difference": 0.020825511774404393,
+      "typical_bin_difference": 0.005406816437524303
+    },
+    "Tucson/2019-03-31/NOAA20": {
+      "bins": 17,
+      "maximum_mean_bin_difference": 0.0338470346954825,
+      "typical_bin_difference": 0.00590625214396634
+    },
+    "Tucson/2019-04-01": {
+      "bins": 12,
+      "maximum_mean_bin_difference": 0.09219960358444246,
+      "typical_bin_difference": 0.01543262488691205
+    },
+    "Tucson/2019-04-01/NOAA20": {
+      "bins": 15,
+      "maximum_mean_bin_difference": 0.017478330526976782,
+      "typical_bin_difference": 0.005191687649854948
+    },
+    "Tucson/2019-04-03": {
+      "bins": 18,
+      "maximum_mean_bin_difference": 0.022696926123142114,
+      "typical_bin_difference": 0.007001847245679843
+    },
+    "Tucson/2019-04-03/NOAA20": {
+      "bins": 18,
+      "maximum_mean_bin_difference": 0.03286161017532585,
+      "typical_bin_difference": 0.008451494652444685
+    },
+    "Tucson/2019-04-07": {
+      "bins": 18,
+      "maximum_mean_bin_difference": 0.11621311445894877,
+      "typical_bin_difference": 0.014227607803314113
+    },
+    "Tucson/2019-04-07/NOAA20": {
+      "bins": 18,
+      "maximum_mean_bin_difference": 0.011914765510524783,
+      "typical_bin_difference": 0.00599370602472335
+    },
+    "Tucson/2019-04-08": {
+      "bins": 18,
+      "maximum_mean_bin_difference": 0.03399139746518931,
+      "typical_bin_difference": 0.007842951238877793
+    },
+    "Tucson/2019-04-08/NOAA20": {
+      "bins": 18,
+      "maximum_mean_bin_difference": 0.02003772304480317,
+      "typical_bin_difference": 0.007265818044689787
+    }
+  },
+  "rows": [
+    {
+      "key": "berlin-2017-03/1",
+      "city": "Berlin",
+      "night": "2017-03-29",
+      "site": "Museumsinsel",
+      "band": "photopic",
+      "distance_km": 0.3,
+      "calendar_offset_days": 0,
+      "city_dominant": true,
+      "fitted_scene": "Berlin/2017-03-29",
+      "relative_pct": {
+        "h2": -14.78599229881069,
+        "core": -2.943358629823234,
+        "old_free_tail": 119.66779231308907,
+        "lower_bound": -3.242224518968595,
+        "upper_bound": -1.4641249770304232,
+        "annular": -3.242224518968595,
+        "radial": -3.242224518968595,
+        "sides": -1.4641249770304232,
+        "joint": -3.242224518968595,
+        "another_night": -3.242224518968595,
+        "joint_fixed_power": -15.04747035427899,
+        "stress_nominal": -3.242224518968595,
+        "stress_without_weak": -1.5225167382628801,
+        "stress_constant_background": -3.2190696591338552,
+        "stress_brighter_edge": -3.237347786583089,
+        "stress_shallow": -3.642939540427881,
+        "stress_deep": -2.601280904298775,
+        "stress_more_aod": -1.8071846553674664,
+        "stress_alternative_phase": -1.8409480163602554
+      }
+    },
+    {
+      "key": "berlin-2017-03/2",
+      "city": "Berlin",
+      "night": "2017-03-29",
+      "site": "Waldeckpark",
+      "band": "photopic",
+      "distance_km": 1.5,
+      "calendar_offset_days": 0,
+      "city_dominant": true,
+      "fitted_scene": "Berlin/2017-03-29",
+      "relative_pct": {
+        "h2": 7.3999774840168175,
+        "core": 22.21258922985523,
+        "old_free_tail": 188.33204387062685,
+        "lower_bound": 21.565296993605855,
+        "upper_bound": 25.416355513754585,
+        "annular": 21.565296993605855,
+        "radial": 21.565296993605855,
+        "sides": 25.416355513754585,
+        "joint": 21.565296993605855,
+        "another_night": 21.565296993605855,
+        "joint_fixed_power": 6.83366088047872,
+        "stress_nominal": 21.565296993605855,
+        "stress_without_weak": 25.34249780498854,
+        "stress_constant_background": 21.59419168788792,
+        "stress_brighter_edge": 21.571382614178837,
+        "stress_shallow": 21.065249136614604,
+        "stress_deep": 22.365123463301728,
+        "stress_more_aod": 23.3560674166301,
+        "stress_alternative_phase": 23.31393449072232
+      }
+    },
+    {
+      "key": "berlin-2017-03/3",
+      "city": "Berlin",
+      "night": "2017-03-29",
+      "site": "Park am Gleisdreieck",
+      "band": "photopic",
+      "distance_km": 3.3,
+      "calendar_offset_days": 0,
+      "city_dominant": true,
+      "fitted_scene": "Berlin/2017-03-29",
+      "relative_pct": {
+        "h2": 10.718335493581543,
+        "core": 25.866049510449486,
+        "old_free_tail": 219.3761504169674,
+        "lower_bound": 25.003517554103617,
+        "upper_bound": 30.13514258120602,
+        "annular": 25.003517554103617,
+        "radial": 25.003517554103617,
+        "sides": 30.13514258120602,
+        "joint": 25.003517554103617,
+        "another_night": 25.003517554103617,
+        "joint_fixed_power": 9.963705450756954,
+        "stress_nominal": 25.003517554103617,
+        "stress_without_weak": 30.059011021559854,
+        "stress_constant_background": 25.03301670609521,
+        "stress_brighter_edge": 25.009730481795224,
+        "stress_shallow": 24.493009029858428,
+        "stress_deep": 25.82007585944963,
+        "stress_more_aod": 26.831749698564167,
+        "stress_alternative_phase": 26.788735379981322
+      }
+    },
+    {
+      "key": "berlin-2017-03/4",
+      "city": "Berlin",
+      "night": "2017-03-29",
+      "site": "Hans Baluschek Park",
+      "band": "photopic",
+      "distance_km": 6.9,
+      "calendar_offset_days": 0,
+      "city_dominant": true,
+      "fitted_scene": "Berlin/2017-03-29",
+      "relative_pct": {
+        "h2": 1.8434396896909622,
+        "core": 15.318448633101323,
+        "old_free_tail": 216.41819977131766,
+        "lower_bound": 13.978410737807456,
+        "upper_bound": 21.95095245079908,
+        "annular": 13.978410737807456,
+        "radial": 13.978410737807456,
+        "sides": 21.95095245079908,
+        "joint": 13.978410737807456,
+        "another_night": 13.978410737807456,
+        "joint_fixed_power": 0.6710392390499198,
+        "stress_nominal": 13.978410737807456,
+        "stress_without_weak": 21.881506140066833,
+        "stress_constant_background": 14.004511873363734,
+        "stress_brighter_edge": 13.983907996438006,
+        "stress_shallow": 13.526707848254604,
+        "stress_deep": 14.700909439584265,
+        "stress_more_aod": 15.59604825648979,
+        "stress_alternative_phase": 15.557988770559096
+      }
+    },
+    {
+      "key": "berlin-2017-03/5",
+      "city": "Berlin",
+      "night": "2017-03-29",
+      "site": "Gemeindepark Lankwitz",
+      "band": "photopic",
+      "distance_km": 10.5,
+      "calendar_offset_days": 0,
+      "city_dominant": true,
+      "fitted_scene": "Berlin/2017-03-29",
+      "relative_pct": {
+        "h2": -6.294284371460757,
+        "core": 5.447988708580476,
+        "old_free_tail": 196.26162260993675,
+        "lower_bound": 4.620509151452601,
+        "upper_bound": 9.543590288947644,
+        "annular": 4.620509151452601,
+        "radial": 4.620509151452601,
+        "sides": 9.543590288947644,
+        "joint": 4.620509151452601,
+        "another_night": 4.620509151452601,
+        "joint_fixed_power": -7.018247036307801,
+        "stress_nominal": 4.620509151452601,
+        "stress_without_weak": 9.484096762060478,
+        "stress_constant_background": 4.643337457778274,
+        "stress_brighter_edge": 4.6253171071716,
+        "stress_shallow": 4.2254454229542215,
+        "stress_deep": 5.252413523908039,
+        "stress_more_aod": 6.035310615579115,
+        "stress_alternative_phase": 6.002023420025848
+      }
+    },
+    {
+      "key": "berlin-2017-03/6",
+      "city": "Berlin",
+      "night": "2017-03-29",
+      "site": "Gut Osdorf",
+      "band": "photopic",
+      "distance_km": 15.0,
+      "calendar_offset_days": 0,
+      "city_dominant": true,
+      "fitted_scene": "Berlin/2017-03-29",
+      "relative_pct": {
+        "h2": -2.591101719065758,
+        "core": 5.840404194840976,
+        "old_free_tail": 180.04668008762255,
+        "lower_bound": 4.807511678493381,
+        "upper_bound": 10.952695109900956,
+        "annular": 4.807511678493381,
+        "radial": 4.807511678493381,
+        "sides": 10.952695109900956,
+        "joint": 4.807511678493381,
+        "another_night": 4.807511678493381,
+        "joint_fixed_power": -3.494780380604001,
+        "stress_nominal": 4.807511678493381,
+        "stress_without_weak": 10.908657164973622,
+        "stress_constant_background": 4.823795829761157,
+        "stress_brighter_edge": 4.810941345026665,
+        "stress_shallow": 4.525700254399889,
+        "stress_deep": 5.258269007619565,
+        "stress_more_aod": 5.81673420805966,
+        "stress_alternative_phase": 5.792989401067139
+      }
+    },
+    {
+      "key": "berlin-2017-03/7",
+      "city": "Berlin",
+      "night": "2017-03-29",
+      "site": "Wietstock",
+      "band": "photopic",
+      "distance_km": 28.0,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Berlin/2017-03-29",
+      "relative_pct": {
+        "h2": -6.930652216424571,
+        "core": -3.5524454238253567,
+        "old_free_tail": 98.96547842633503,
+        "lower_bound": -4.778630681046514,
+        "upper_bound": 2.516545929542735,
+        "annular": -4.778630681046514,
+        "radial": -4.778630681046514,
+        "sides": 2.516545929542735,
+        "joint": -4.778630681046514,
+        "another_night": -4.778630681046514,
+        "joint_fixed_power": -8.003442883900602,
+        "stress_nominal": -4.778630681046514,
+        "stress_without_weak": 2.4964596087725166,
+        "stress_constant_background": -4.772305520554976,
+        "stress_brighter_edge": -4.7772985151326335,
+        "stress_shallow": -4.8880930936973215,
+        "stress_deep": -4.6035455689901195,
+        "stress_more_aod": -4.3866240995417805,
+        "stress_alternative_phase": -4.395847160209721
+      }
+    },
+    {
+      "key": "berlin-2017-03/8",
+      "city": "Berlin",
+      "night": "2017-03-29",
+      "site": "Christinendorf",
+      "band": "photopic",
+      "distance_km": 34.5,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Berlin/2017-03-29",
+      "relative_pct": {
+        "h2": -9.410759881327202,
+        "core": -6.315021728024539,
+        "old_free_tail": 97.06191253951016,
+        "lower_bound": -7.595439523106695,
+        "upper_bound": 0.02239301521160808,
+        "annular": -7.595439523106695,
+        "radial": -7.595439523106695,
+        "sides": 0.02239301521160808,
+        "joint": -7.595439523106695,
+        "another_night": -7.595439523106695,
+        "joint_fixed_power": -10.530998648630064,
+        "stress_nominal": -7.595439523106695,
+        "stress_without_weak": 0.0035149964197955796,
+        "stress_constant_background": -7.589681704842144,
+        "stress_brighter_edge": -7.594226847279639,
+        "stress_shallow": -7.695083584263019,
+        "stress_deep": -7.436058862742789,
+        "stress_more_aod": -7.23859440307677,
+        "stress_alternative_phase": -7.246990191174152
+      }
+    },
+    {
+      "key": "berlin-2017-03/9",
+      "city": "Berlin",
+      "night": "2017-03-29",
+      "site": "Alexanderdorf",
+      "band": "photopic",
+      "distance_km": 38.3,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Berlin/2017-03-29",
+      "relative_pct": {
+        "h2": -6.57009570453615,
+        "core": -3.9615297858084264,
+        "old_free_tail": 90.99150824896579,
+        "lower_bound": -5.122038799195594,
+        "upper_bound": 1.7823976723588153,
+        "annular": -5.122038799195594,
+        "radial": -5.122038799195594,
+        "sides": 1.7823976723588153,
+        "joint": -5.122038799195594,
+        "another_night": -5.122038799195594,
+        "joint_fixed_power": -7.585426162761544,
+        "stress_nominal": -5.122038799195594,
+        "stress_without_weak": 1.7662452091882441,
+        "stress_constant_background": -5.117207100650923,
+        "stress_brighter_edge": -5.121021176936679,
+        "stress_shallow": -5.205655551783773,
+        "stress_deep": -4.988293816400457,
+        "stress_more_aod": -4.8225906457624035,
+        "stress_alternative_phase": -4.829636008305593
+      }
+    },
+    {
+      "key": "berlin-2017-03/10",
+      "city": "Berlin",
+      "night": "2017-03-29",
+      "site": "Sperenberg",
+      "band": "photopic",
+      "distance_km": 43.5,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Berlin/2017-03-29",
+      "relative_pct": {
+        "h2": -15.131404515309422,
+        "core": -13.490516811740195,
+        "old_free_tail": 46.90389776732302,
+        "lower_bound": -14.007182248550832,
+        "upper_bound": -10.933286531795316,
+        "annular": -14.007182248550832,
+        "radial": -14.007182248550832,
+        "sides": -10.933286531795316,
+        "joint": -14.007182248550832,
+        "another_night": -14.007182248550832,
+        "joint_fixed_power": -15.583435605679895,
+        "stress_nominal": -14.007182248550832,
+        "stress_without_weak": -10.942805758828511,
+        "stress_constant_background": -14.004090578452855,
+        "stress_brighter_edge": -14.006531100247644,
+        "stress_shallow": -14.060686292993363,
+        "stress_deep": -13.921602537763977,
+        "stress_more_aod": -13.815573667571556,
+        "stress_alternative_phase": -13.820081799960793
+      }
+    },
+    {
+      "key": "berlin-2017-03/11",
+      "city": "Berlin",
+      "night": "2017-03-29",
+      "site": "Stülpe",
+      "band": "photopic",
+      "distance_km": 51.5,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Berlin/2017-03-29",
+      "relative_pct": {
+        "h2": -9.42252928229369,
+        "core": -7.824691714641563,
+        "old_free_tail": 54.63914828626144,
+        "lower_bound": -8.326932916059492,
+        "upper_bound": -5.338854039820462,
+        "annular": -8.326932916059492,
+        "radial": -8.326932916059492,
+        "sides": -5.338854039820462,
+        "joint": -8.326932916059492,
+        "another_night": -8.326932916059492,
+        "joint_fixed_power": -9.86194059516835,
+        "stress_nominal": -8.326932916059492,
+        "stress_without_weak": -5.3481209091677755,
+        "stress_constant_background": -8.323922145411345,
+        "stress_brighter_edge": -8.32629880629463,
+        "stress_shallow": -8.37903692504458,
+        "stress_deep": -8.243592561769585,
+        "stress_more_aod": -8.140338139365689,
+        "stress_alternative_phase": -8.1447283078653
+      }
+    },
+    {
+      "key": "berlin-2017-03/12",
+      "city": "Berlin",
+      "night": "2017-03-29",
+      "site": "Petkus",
+      "band": "photopic",
+      "distance_km": 58.5,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Berlin/2017-03-29",
+      "relative_pct": {
+        "h2": -15.487677888571671,
+        "core": -14.575204804462128,
+        "old_free_tail": 20.236512154223107,
+        "lower_bound": -14.924728457291103,
+        "upper_bound": -12.845241069924917,
+        "annular": -14.924728457291103,
+        "radial": -14.924728457291103,
+        "sides": -12.845241069924917,
+        "joint": -14.924728457291103,
+        "another_night": -14.924728457291103,
+        "joint_fixed_power": -15.793476470481583,
+        "stress_nominal": -14.924728457291103,
+        "stress_without_weak": -12.850721581881286,
+        "stress_constant_background": -14.923024491210457,
+        "stress_brighter_edge": -14.924369578566354,
+        "stress_shallow": -14.954217074775645,
+        "stress_deep": -14.877561418198527,
+        "stress_more_aod": -14.819123877111707,
+        "stress_alternative_phase": -14.821608522767571
+      }
+    },
+    {
+      "key": "madrid-2012-02/1",
+      "city": "Madrid",
+      "night": "2012-02-19",
+      "site": "01",
+      "band": "sqm",
+      "distance_km": 2.4859113218532856,
+      "calendar_offset_days": 0,
+      "city_dominant": true,
+      "fitted_scene": "Madrid/2012-02-20",
+      "relative_pct": {
+        "h2": -24.772353103333188,
+        "core": -24.512308398675575,
+        "old_free_tail": 16.580134825091484,
+        "lower_bound": -24.745096703910296,
+        "upper_bound": -23.360125069676396,
+        "annular": -23.360125069676396,
+        "radial": -24.059964357699705,
+        "sides": -24.005936450298194,
+        "joint": -24.745096703910296,
+        "joint_fixed_power": -25.004293859780823,
+        "stress_nominal": -24.745096703910296,
+        "stress_without_weak": -23.389817126531952,
+        "stress_constant_background": -23.72895647168185,
+        "stress_brighter_edge": -23.3621040901127,
+        "stress_shallow": -24.88034623094425,
+        "stress_deep": -24.37543064906571,
+        "stress_more_aod": -23.875749503701215,
+        "stress_alternative_phase": -23.98425658719092
+      }
+    },
+    {
+      "key": "madrid-2012-02/2",
+      "city": "Madrid",
+      "night": "2012-02-19",
+      "site": "02",
+      "band": "sqm",
+      "distance_km": 6.491835135652341,
+      "calendar_offset_days": 0,
+      "city_dominant": true,
+      "fitted_scene": "Madrid/2012-02-20",
+      "relative_pct": {
+        "h2": 2.238546785865836,
+        "core": 2.5732400316645254,
+        "old_free_tail": 65.6155284445515,
+        "lower_bound": 2.099844622357394,
+        "upper_bound": 4.916305754310746,
+        "annular": 4.916305754310746,
+        "radial": 3.493121261133858,
+        "sides": 3.602991743298145,
+        "joint": 2.099844622357394,
+        "joint_fixed_power": 1.7668749412565354,
+        "stress_nominal": 2.099844622357394,
+        "stress_without_weak": 4.8777383882749215,
+        "stress_constant_background": 4.182166020218703,
+        "stress_brighter_edge": 4.913735181112333,
+        "stress_shallow": 1.9321114966873498,
+        "stress_deep": 2.574724788314553,
+        "stress_more_aod": 3.2166248549465815,
+        "stress_alternative_phase": 3.0772345562166015
+      }
+    },
+    {
+      "key": "madrid-2012-02/3",
+      "city": "Madrid",
+      "night": "2012-02-19",
+      "site": "03",
+      "band": "sqm",
+      "distance_km": 13.610506302201532,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Madrid/2012-02-20",
+      "relative_pct": {
+        "h2": -20.06902075667263,
+        "core": -19.943397086475034,
+        "old_free_tail": 11.309300015859058,
+        "lower_bound": -20.548253875893508,
+        "upper_bound": -16.94966461139552,
+        "annular": -16.94966461139552,
+        "radial": -18.768065859842498,
+        "sides": -18.62768446664097,
+        "joint": -20.548253875893508,
+        "joint_fixed_power": -20.67167534938834,
+        "stress_nominal": -20.548253875893508,
+        "stress_without_weak": -16.965005463262194,
+        "stress_constant_background": -17.862920643611446,
+        "stress_brighter_edge": -16.950687102343252,
+        "stress_shallow": -20.595623611679137,
+        "stress_deep": -20.372230612687925,
+        "stress_more_aod": -20.13429828263846,
+        "stress_alternative_phase": -20.185965917971682
+      }
+    },
+    {
+      "key": "madrid-2012-02/4",
+      "city": "Madrid",
+      "night": "2012-02-19",
+      "site": "04",
+      "band": "sqm",
+      "distance_km": 17.51909105272113,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Madrid/2012-02-20",
+      "relative_pct": {
+        "h2": -23.269432922470113,
+        "core": -23.177580443139313,
+        "old_free_tail": 3.20157845582123,
+        "lower_bound": -23.60783334004851,
+        "upper_bound": -21.04804814308445,
+        "annular": -21.04804814308445,
+        "radial": -22.34153185455905,
+        "sides": -22.24167433100348,
+        "joint": -23.60783334004851,
+        "joint_fixed_power": -23.698119330373146,
+        "stress_nominal": -23.60783334004851,
+        "stress_without_weak": -21.05924063906741,
+        "stress_constant_background": -21.69787902781566,
+        "stress_brighter_edge": -21.048794139846862,
+        "stress_shallow": -23.642906670236496,
+        "stress_deep": -23.47906778419606,
+        "stress_more_aod": -23.30501414960171,
+        "stress_alternative_phase": -23.342810357114885
+      }
+    },
+    {
+      "key": "madrid-2012-02/5",
+      "city": "Madrid",
+      "night": "2012-02-19",
+      "site": "05",
+      "band": "sqm",
+      "distance_km": 21.525656124509215,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Madrid/2012-02-20",
+      "relative_pct": {
+        "h2": -27.199333668973846,
+        "core": -27.111231969179496,
+        "old_free_tail": 3.7184039305235617,
+        "lower_bound": -28.001266342915788,
+        "upper_bound": -22.706015965647275,
+        "annular": -22.706015965647275,
+        "radial": -25.381756148573555,
+        "sides": -25.175187804515666,
+        "joint": -28.001266342915788,
+        "joint_fixed_power": -28.086127555379115,
+        "stress_nominal": -28.001266342915788,
+        "stress_without_weak": -22.717718011688206,
+        "stress_constant_background": -24.041923649858465,
+        "stress_brighter_edge": -22.70679592469067,
+        "stress_shallow": -28.01748933486593,
+        "stress_deep": -27.88023758580891,
+        "stress_more_aod": -27.716641856147927,
+        "stress_alternative_phase": -27.75216710192028
+      }
+    },
+    {
+      "key": "madrid-2012-02/6",
+      "city": "Madrid",
+      "night": "2012-02-19",
+      "site": "06",
+      "band": "sqm",
+      "distance_km": 26.65615138782987,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Madrid/2012-02-20",
+      "relative_pct": {
+        "h2": -29.412702765077736,
+        "core": -29.353542324627902,
+        "old_free_tail": -7.35228069501237,
+        "lower_bound": -30.481556928598607,
+        "upper_bound": -23.770445612565283,
+        "annular": -23.770445612565283,
+        "radial": -27.161633741740143,
+        "sides": -26.89983249485437,
+        "joint": -30.481556928598607,
+        "joint_fixed_power": -30.536610429877065,
+        "stress_nominal": -30.481556928598607,
+        "stress_without_weak": -23.779377478858944,
+        "stress_constant_background": -25.45924972431982,
+        "stress_brighter_edge": -23.771040934944455,
+        "stress_shallow": -30.473098490294692,
+        "stress_deep": -30.403039822364832,
+        "stress_more_aod": -30.29690749817806,
+        "stress_alternative_phase": -30.319954413332507
+      }
+    },
+    {
+      "key": "madrid-2012-02/7",
+      "city": "Madrid",
+      "night": "2012-02-19",
+      "site": "07",
+      "band": "sqm",
+      "distance_km": 31.339134641203657,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Madrid/2012-02-20",
+      "relative_pct": {
+        "h2": -31.477504271646207,
+        "core": -31.435307034420145,
+        "old_free_tail": -16.69846378046901,
+        "lower_bound": -31.840702503053542,
+        "upper_bound": -29.42880632064835,
+        "annular": -29.42880632064835,
+        "radial": -30.647560311963318,
+        "sides": -30.55347195637246,
+        "joint": -31.840702503053542,
+        "joint_fixed_power": -31.881423753599847,
+        "stress_nominal": -31.840702503053542,
+        "stress_without_weak": -29.434368826562128,
+        "stress_constant_background": -30.03745900387933,
+        "stress_brighter_edge": -29.429177070069112,
+        "stress_shallow": -31.84923514855521,
+        "stress_deep": -31.78262600145293,
+        "stress_more_aod": -31.704123438238796,
+        "stress_alternative_phase": -31.721170477655548
+      }
+    },
+    {
+      "key": "madrid-2013-12/1",
+      "city": "Madrid",
+      "night": "2013-12-03",
+      "site": "01",
+      "band": "sqm",
+      "distance_km": 4.334810113894982,
+      "calendar_offset_days": 0,
+      "city_dominant": true,
+      "fitted_scene": "Madrid/2013-12-04",
+      "relative_pct": {
+        "h2": -34.93525645985047,
+        "core": -34.932476973031314,
+        "old_free_tail": 0.435902529837473,
+        "lower_bound": -34.85960377445985,
+        "upper_bound": -35.2931621218845,
+        "annular": -34.85960377445985,
+        "radial": -34.85960377445985,
+        "sides": -34.85960377445985,
+        "joint": -34.85960377445985,
+        "another_night": -34.85960377445985,
+        "joint_fixed_power": -34.862386542082724,
+        "stress_nominal": -34.85960377445985,
+        "stress_without_weak": -35.2962245458404,
+        "stress_constant_background": -34.868714485522155,
+        "stress_brighter_edge": -34.85981316165806,
+        "stress_shallow": -34.9212160240407,
+        "stress_deep": -34.722012131985224,
+        "stress_more_aod": -34.49601850534758,
+        "stress_alternative_phase": -34.5477285157101
+      }
+    },
+    {
+      "key": "madrid-2013-12/2",
+      "city": "Madrid",
+      "night": "2013-12-03",
+      "site": "02",
+      "band": "sqm",
+      "distance_km": 8.702585902059381,
+      "calendar_offset_days": 0,
+      "city_dominant": true,
+      "fitted_scene": "Madrid/2013-12-04",
+      "relative_pct": {
+        "h2": -8.56633289064056,
+        "core": -8.562457160207082,
+        "old_free_tail": 41.99392025010942,
+        "lower_bound": -8.290577218315121,
+        "upper_bound": -9.908124143869834,
+        "annular": -8.290577218315121,
+        "radial": -8.290577218315121,
+        "sides": -8.290577218315121,
+        "joint": -8.290577218315121,
+        "another_night": -8.290577218315121,
+        "joint_fixed_power": -8.294465188978739,
+        "stress_nominal": -8.290577218315121,
+        "stress_without_weak": -9.912352355396548,
+        "stress_constant_background": -8.30330633627806,
+        "stress_brighter_edge": -8.2908697656616,
+        "stress_shallow": -8.37665936794253,
+        "stress_deep": -8.098339726005399,
+        "stress_more_aod": -7.7825905476292085,
+        "stress_alternative_phase": -7.854837688084926
+      }
+    },
+    {
+      "key": "madrid-2013-12/3",
+      "city": "Madrid",
+      "night": "2013-12-03",
+      "site": "03",
+      "band": "sqm",
+      "distance_km": 12.647915525729212,
+      "calendar_offset_days": 0,
+      "city_dominant": true,
+      "fitted_scene": "Madrid/2013-12-04",
+      "relative_pct": {
+        "h2": -44.28225633097769,
+        "core": -44.28005471216757,
+        "old_free_tail": -10.936643061751361,
+        "lower_bound": -44.46837381391644,
+        "upper_bound": -43.34797124969134,
+        "annular": -44.46837381391644,
+        "radial": -44.46837381391644,
+        "sides": -44.46837381391644,
+        "joint": -44.46837381391644,
+        "another_night": -44.46837381391644,
+        "joint_fixed_power": -44.470566954465426,
+        "stress_nominal": -44.46837381391644,
+        "stress_without_weak": -43.35045774297962,
+        "stress_constant_background": -44.47555410079943,
+        "stress_brighter_edge": -44.46853883508136,
+        "stress_shallow": -44.51693134411053,
+        "stress_deep": -44.35993579421468,
+        "stress_more_aod": -44.181826856076825,
+        "stress_alternative_phase": -44.2225802842765
+      }
+    },
+    {
+      "key": "madrid-2013-12/4",
+      "city": "Madrid",
+      "night": "2013-12-03",
+      "site": "04",
+      "band": "sqm",
+      "distance_km": 17.29853053775648,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Madrid/2013-12-04",
+      "relative_pct": {
+        "h2": -36.06056317971033,
+        "core": -36.05908049856199,
+        "old_free_tail": -2.270657882823912,
+        "lower_bound": -36.657745900266136,
+        "upper_bound": -33.095992233468166,
+        "annular": -36.657745900266136,
+        "radial": -36.657745900266136,
+        "sides": -36.657745900266136,
+        "joint": -36.657745900266136,
+        "another_night": -36.657745900266136,
+        "joint_fixed_power": -36.65920162906837,
+        "stress_nominal": -36.657745900266136,
+        "stress_without_weak": -33.097783287259,
+        "stress_constant_background": -36.66251191967549,
+        "stress_brighter_edge": -36.65785543545431,
+        "stress_shallow": -36.68997666418219,
+        "stress_deep": -36.585768594201305,
+        "stress_more_aod": -36.4675462069935,
+        "stress_alternative_phase": -36.494596885185395
+      }
+    },
+    {
+      "key": "madrid-2013-12/5",
+      "city": "Madrid",
+      "night": "2013-12-03",
+      "site": "05",
+      "band": "sqm",
+      "distance_km": 23.77785506699455,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Madrid/2013-12-04",
+      "relative_pct": {
+        "h2": -42.678288076642424,
+        "core": -42.67755919355655,
+        "old_free_tail": -21.454436269452724,
+        "lower_bound": -43.150446873020265,
+        "upper_bound": -40.337006474562365,
+        "annular": -43.150446873020265,
+        "radial": -43.150446873020265,
+        "sides": -43.150446873020265,
+        "joint": -43.150446873020265,
+        "another_night": -43.150446873020265,
+        "joint_fixed_power": -43.15115446636336,
+        "stress_nominal": -43.150446873020265,
+        "stress_without_weak": -40.33793105551192,
+        "stress_constant_background": -43.15276351579189,
+        "stress_brighter_edge": -43.15050011533427,
+        "stress_shallow": -43.16611344082815,
+        "stress_deep": -43.11546050567785,
+        "stress_more_aod": -43.05799556161306,
+        "stress_alternative_phase": -43.07114421937514
+      }
+    },
+    {
+      "key": "madrid-2013-12/6",
+      "city": "Madrid",
+      "night": "2013-12-03",
+      "site": "06",
+      "band": "sqm",
+      "distance_km": 27.551040561207007,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Madrid/2013-12-04",
+      "relative_pct": {
+        "h2": -42.23162973155225,
+        "core": -42.23134589611212,
+        "old_free_tail": -32.87707183626027,
+        "lower_bound": -42.40966140645463,
+        "upper_bound": -41.348775106692706,
+        "annular": -42.40966140645463,
+        "radial": -42.40966140645463,
+        "sides": -42.40966140645463,
+        "joint": -42.40966140645463,
+        "another_night": -42.40966140645463,
+        "joint_fixed_power": -42.409937214002504,
+        "stress_nominal": -42.40966140645463,
+        "stress_without_weak": -41.34913370879056,
+        "stress_constant_background": -42.41056439341511,
+        "stress_brighter_edge": -42.40968215938034,
+        "stress_shallow": -42.415767961431115,
+        "stress_deep": -42.396024330470695,
+        "stress_more_aod": -42.37362549720643,
+        "stress_alternative_phase": -42.378750614748185
+      }
+    },
+    {
+      "key": "madrid-2013-12/7",
+      "city": "Madrid",
+      "night": "2013-12-03",
+      "site": "07",
+      "band": "sqm",
+      "distance_km": 32.44185984318041,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Madrid/2013-12-04",
+      "relative_pct": {
+        "h2": -45.649694374275796,
+        "core": -45.64909854814376,
+        "old_free_tail": -23.953457449127956,
+        "lower_bound": -46.29280557090246,
+        "upper_bound": -42.46307724164207,
+        "annular": -46.29280557090246,
+        "radial": -46.29280557090246,
+        "sides": -46.29280557090246,
+        "joint": -46.29280557090246,
+        "another_night": -46.29280557090246,
+        "joint_fixed_power": -46.293372416882285,
+        "stress_nominal": -46.29280557090246,
+        "stress_without_weak": -42.46389654436105,
+        "stress_constant_background": -46.294661410353996,
+        "stress_brighter_edge": -46.29284822278994,
+        "stress_shallow": -46.30535590234069,
+        "stress_deep": -46.26477834047451,
+        "stress_more_aod": -46.21874374611177,
+        "stress_alternative_phase": -46.22927700488967
+      }
+    },
+    {
+      "key": "madrid-2013-12/8",
+      "city": "Madrid",
+      "night": "2013-12-03",
+      "site": "08",
+      "band": "sqm",
+      "distance_km": 37.14179918360613,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Madrid/2013-12-04",
+      "relative_pct": {
+        "h2": -49.92240924154927,
+        "core": -49.92205187767347,
+        "old_free_tail": -35.22267156781629,
+        "lower_bound": -50.27465234308119,
+        "upper_bound": -48.176859490837344,
+        "annular": -50.27465234308119,
+        "radial": -50.27465234308119,
+        "sides": -50.27465234308119,
+        "joint": -50.27465234308119,
+        "another_night": -50.27465234308119,
+        "joint_fixed_power": -50.274993832630955,
+        "stress_nominal": -50.27465234308119,
+        "stress_without_weak": -48.177342622834864,
+        "stress_constant_background": -50.27577037126043,
+        "stress_brighter_edge": -50.27467803819834,
+        "stress_shallow": -50.28221313946099,
+        "stress_deep": -50.25776767486359,
+        "stress_more_aod": -50.23003468660614,
+        "stress_alternative_phase": -50.23638032179731
+      }
+    },
+    {
+      "key": "madrid-2013-12/9",
+      "city": "Madrid",
+      "night": "2013-12-03",
+      "site": "09",
+      "band": "sqm",
+      "distance_km": 43.852204478763355,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Madrid/2013-12-04",
+      "relative_pct": {
+        "h2": -52.898366520953076,
+        "core": -52.89813160961572,
+        "old_free_tail": -43.44228744263482,
+        "lower_bound": -53.284126665044184,
+        "upper_bound": -50.98765304200752,
+        "annular": -53.284126665044184,
+        "radial": -53.284126665044184,
+        "sides": -53.284126665044184,
+        "joint": -53.284126665044184,
+        "another_night": -53.284126665044184,
+        "joint_fixed_power": -53.28434419860708,
+        "stress_nominal": -53.284126665044184,
+        "stress_without_weak": -50.98800871056399,
+        "stress_constant_background": -53.28483886444653,
+        "stress_brighter_edge": -53.28414303318893,
+        "stress_shallow": -53.28894299683517,
+        "stress_deep": -53.27337089802819,
+        "stress_more_aod": -53.25570460121324,
+        "stress_alternative_phase": -53.25974685853243
+      }
+    },
+    {
+      "key": "madrid-2013-12/10",
+      "city": "Madrid",
+      "night": "2013-12-03",
+      "site": "10",
+      "band": "sqm",
+      "distance_km": 47.276402859611274,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Madrid/2013-12-04",
+      "relative_pct": {
+        "h2": -56.989866624084875,
+        "core": -56.989568286621484,
+        "old_free_tail": -45.15256799629872,
+        "lower_bound": -57.62141446298632,
+        "upper_bound": -53.862252117686936,
+        "annular": -57.62141446298632,
+        "radial": -57.62141446298632,
+        "sides": -57.62141446298632,
+        "joint": -57.62141446298632,
+        "another_night": -57.62141446298632,
+        "joint_fixed_power": -57.62168435428132,
+        "stress_nominal": -57.62141446298632,
+        "stress_without_weak": -53.862738793700075,
+        "stress_constant_background": -57.622298080284025,
+        "stress_brighter_edge": -57.62143477074814,
+        "stress_shallow": -57.62739002835193,
+        "stress_deep": -57.60806991122976,
+        "stress_more_aod": -57.58615154763531,
+        "stress_alternative_phase": -57.5911667280431
+      }
+    },
+    {
+      "key": "madrid-2013-12/11",
+      "city": "Madrid",
+      "night": "2013-12-03",
+      "site": "11",
+      "band": "sqm",
+      "distance_km": 50.04426742079426,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Madrid/2013-12-04",
+      "relative_pct": {
+        "h2": -55.45747397287963,
+        "core": -55.457267566270986,
+        "old_free_tail": -45.99065146929869,
+        "lower_bound": -55.93504354868559,
+        "upper_bound": -53.09252024196167,
+        "annular": -55.93504354868559,
+        "radial": -55.93504354868559,
+        "sides": -55.93504354868559,
+        "joint": -55.93504354868559,
+        "another_night": -55.93504354868559,
+        "joint_fixed_power": -55.93522844547659,
+        "stress_nominal": -55.93504354868559,
+        "stress_without_weak": -53.09286698537677,
+        "stress_constant_background": -55.935648896119304,
+        "stress_brighter_edge": -55.93505746110168,
+        "stress_shallow": -55.93913728153621,
+        "stress_deep": -55.92590147985026,
+        "stress_more_aod": -55.91088567471915,
+        "stress_alternative_phase": -55.914321468243436
+      }
+    },
+    {
+      "key": "madrid-2013-12/12",
+      "city": "Madrid",
+      "night": "2013-12-28",
+      "site": "01",
+      "band": "sqm",
+      "distance_km": 4.786083021685179,
+      "calendar_offset_days": 0,
+      "city_dominant": true,
+      "fitted_scene": "Madrid/2013-12-29",
+      "relative_pct": {
+        "h2": -31.64955579124514,
+        "core": -23.64886060998932,
+        "old_free_tail": 31.081386716040683,
+        "lower_bound": -23.445953231892446,
+        "upper_bound": -24.653148596614795,
+        "annular": -23.445953231892446,
+        "radial": -23.445953231892446,
+        "sides": -24.653148596614795,
+        "joint": -23.445953231892446,
+        "another_night": -23.445953231892446,
+        "joint_fixed_power": -31.468960890762776,
+        "stress_nominal": -23.445953231892446,
+        "stress_without_weak": -24.663733067129336,
+        "stress_constant_background": -23.415980874300722,
+        "stress_brighter_edge": -23.445953231892446,
+        "stress_shallow": -23.514312736375675,
+        "stress_deep": -23.323741028699175,
+        "stress_more_aod": -23.197568037390546,
+        "stress_alternative_phase": -23.18954457858964
+      }
+    },
+    {
+      "key": "madrid-2013-12/13",
+      "city": "Madrid",
+      "night": "2013-12-28",
+      "site": "02",
+      "band": "sqm",
+      "distance_km": 6.565143203983865,
+      "calendar_offset_days": 0,
+      "city_dominant": true,
+      "fitted_scene": "Madrid/2013-12-29",
+      "relative_pct": {
+        "h2": -24.138690690263942,
+        "core": -15.267349931225338,
+        "old_free_tail": 43.373214396044176,
+        "lower_bound": -14.98353866650416,
+        "upper_bound": -16.672070874849098,
+        "annular": -14.98353866650416,
+        "radial": -14.98353866650416,
+        "sides": -16.672070874849098,
+        "joint": -14.98353866650416,
+        "another_night": -14.98353866650416,
+        "joint_fixed_power": -23.886088406459237,
+        "stress_nominal": -14.98353866650416,
+        "stress_without_weak": -16.68376421314095,
+        "stress_constant_background": -14.95028051499423,
+        "stress_brighter_edge": -14.98353866650416,
+        "stress_shallow": -15.059392250937398,
+        "stress_deep": -14.847928647915365,
+        "stress_more_aod": -14.70792363000637,
+        "stress_alternative_phase": -14.699020579666822
+      }
+    },
+    {
+      "key": "madrid-2013-12/14",
+      "city": "Madrid",
+      "night": "2013-12-28",
+      "site": "03",
+      "band": "sqm",
+      "distance_km": 10.901645965501348,
+      "calendar_offset_days": 0,
+      "city_dominant": true,
+      "fitted_scene": "Madrid/2013-12-29",
+      "relative_pct": {
+        "h2": -41.62041515862389,
+        "core": -35.46747006381838,
+        "old_free_tail": 12.607780114341761,
+        "lower_bound": -35.38606158046683,
+        "upper_bound": -35.87040051714244,
+        "annular": -35.38606158046683,
+        "radial": -35.38606158046683,
+        "sides": -35.87040051714244,
+        "joint": -35.38606158046683,
+        "another_night": -35.38606158046683,
+        "joint_fixed_power": -41.54795866597591,
+        "stress_nominal": -35.38606158046683,
+        "stress_without_weak": -35.878595011759664,
+        "stress_constant_background": -35.36304196104941,
+        "stress_brighter_edge": -35.38606158046683,
+        "stress_shallow": -35.43856361578227,
+        "stress_deep": -35.29219914748789,
+        "stress_more_aod": -35.195294717070816,
+        "stress_alternative_phase": -35.18913247349544
+      }
+    },
+    {
+      "key": "madrid-2013-12/15",
+      "city": "Madrid",
+      "night": "2013-12-28",
+      "site": "04",
+      "band": "sqm",
+      "distance_km": 17.035780185815618,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Madrid/2013-12-29",
+      "relative_pct": {
+        "h2": -65.93234059095826,
+        "core": -64.45063088002475,
+        "old_free_tail": -43.28961855313437,
+        "lower_bound": -64.74714642060697,
+        "upper_bound": -62.983030253337205,
+        "annular": -64.74714642060697,
+        "radial": -64.74714642060697,
+        "sides": -62.983030253337205,
+        "joint": -64.74714642060697,
+        "another_night": -64.74714642060697,
+        "joint_fixed_power": -66.19625013946842,
+        "stress_nominal": -64.74714642060697,
+        "stress_without_weak": -62.98523439705799,
+        "stress_constant_background": -64.74173285792627,
+        "stress_brighter_edge": -64.74714642060697,
+        "stress_shallow": -64.75949341270497,
+        "stress_deep": -64.7250726341085,
+        "stress_more_aod": -64.70228345594748,
+        "stress_alternative_phase": -64.70083427074401
+      }
+    },
+    {
+      "key": "madrid-2013-12/16",
+      "city": "Madrid",
+      "night": "2013-12-28",
+      "site": "05",
+      "band": "sqm",
+      "distance_km": 23.896024362059563,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Madrid/2013-12-29",
+      "relative_pct": {
+        "h2": -41.41415652107272,
+        "core": -40.17701534380763,
+        "old_free_tail": -13.944066807943978,
+        "lower_bound": -40.54775392024514,
+        "upper_bound": -38.34204856247607,
+        "annular": -40.54775392024514,
+        "radial": -40.54775392024514,
+        "sides": -38.34204856247607,
+        "joint": -40.54775392024514,
+        "another_night": -40.54775392024514,
+        "joint_fixed_power": -41.744127254245086,
+        "stress_nominal": -40.54775392024514,
+        "stress_without_weak": -38.343978818182364,
+        "stress_constant_background": -40.54328450791197,
+        "stress_brighter_edge": -40.54775392024514,
+        "stress_shallow": -40.55794753986595,
+        "stress_deep": -40.529529904114725,
+        "stress_more_aod": -40.51071526393353,
+        "stress_alternative_phase": -40.509518823326204
+      }
+    },
+    {
+      "key": "madrid-2013-12/17",
+      "city": "Madrid",
+      "night": "2013-12-28",
+      "site": "06",
+      "band": "sqm",
+      "distance_km": 33.66254312963145,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Madrid/2013-12-29",
+      "relative_pct": {
+        "h2": -41.13165696984067,
+        "core": -40.60659056645884,
+        "old_free_tail": -26.185931564581566,
+        "lower_bound": -40.94023190291285,
+        "upper_bound": -38.955236193911304,
+        "annular": -40.94023190291285,
+        "radial": -40.94023190291285,
+        "sides": -38.955236193911304,
+        "joint": -40.94023190291285,
+        "another_night": -40.94023190291285,
+        "joint_fixed_power": -41.428609818568276,
+        "stress_nominal": -40.94023190291285,
+        "stress_without_weak": -38.95618414449557,
+        "stress_constant_background": -40.938407420355894,
+        "stress_brighter_edge": -40.94023190291285,
+        "stress_shallow": -40.944393094542505,
+        "stress_deep": -40.93279258045413,
+        "stress_more_aod": -40.925112156213316,
+        "stress_alternative_phase": -40.92462375083568
+      }
+    },
+    {
+      "key": "madrid-2013-12/18",
+      "city": "Madrid",
+      "night": "2013-12-28",
+      "site": "07",
+      "band": "sqm",
+      "distance_km": 38.642242686911274,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Madrid/2013-12-29",
+      "relative_pct": {
+        "h2": -45.848871170302594,
+        "core": -45.002951484760224,
+        "old_free_tail": -18.06910208173259,
+        "lower_bound": -45.98689306673243,
+        "upper_bound": -40.13294271729097,
+        "annular": -45.98689306673243,
+        "radial": -45.98689306673243,
+        "sides": -40.13294271729097,
+        "joint": -45.98689306673243,
+        "another_night": -45.98689306673243,
+        "joint_fixed_power": -46.724614742287955,
+        "stress_nominal": -45.98689306673243,
+        "stress_without_weak": -40.134795870454454,
+        "stress_constant_background": -45.98413708558383,
+        "stress_brighter_edge": -45.98689306673243,
+        "stress_shallow": -45.99317877532598,
+        "stress_deep": -45.97565556140444,
+        "stress_more_aod": -45.96405385858727,
+        "stress_alternative_phase": -45.963316095428866
+      }
+    },
+    {
+      "key": "madrid-2013-12/19",
+      "city": "Madrid",
+      "night": "2013-12-28",
+      "site": "08",
+      "band": "sqm",
+      "distance_km": 44.15757642237428,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Madrid/2013-12-29",
+      "relative_pct": {
+        "h2": -53.4612460825996,
+        "core": -52.26527689543875,
+        "old_free_tail": -13.322932175162483,
+        "lower_bound": -53.29634403976357,
+        "upper_bound": -47.162020640482375,
+        "annular": -53.29634403976357,
+        "radial": -53.29634403976357,
+        "sides": -47.162020640482375,
+        "joint": -53.29634403976357,
+        "another_night": -53.29634403976357,
+        "joint_fixed_power": -54.37893310840644,
+        "stress_nominal": -53.29634403976357,
+        "stress_without_weak": -47.16437777800399,
+        "stress_constant_background": -53.292299702768034,
+        "stress_brighter_edge": -53.29634403976357,
+        "stress_shallow": -53.305568168100216,
+        "stress_deep": -53.279853267118526,
+        "stress_more_aod": -53.2628280432927,
+        "stress_alternative_phase": -53.261745393348946
+      }
+    },
+    {
+      "key": "madrid-2013-12/20",
+      "city": "Madrid",
+      "night": "2013-12-28",
+      "site": "09",
+      "band": "sqm",
+      "distance_km": 47.71781750716552,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Madrid/2013-12-29",
+      "relative_pct": {
+        "h2": -61.027228514822774,
+        "core": -60.11803724038089,
+        "old_free_tail": -26.514599151174966,
+        "lower_bound": -61.401517546714636,
+        "upper_bound": -53.76546462911785,
+        "annular": -61.401517546714636,
+        "radial": -61.401517546714636,
+        "sides": -53.76546462911785,
+        "joint": -61.401517546714636,
+        "another_night": -61.401517546714636,
+        "joint_fixed_power": -62.16957237815319,
+        "stress_nominal": -61.401517546714636,
+        "stress_without_weak": -53.767621354787785,
+        "stress_constant_background": -61.39864824694119,
+        "stress_brighter_edge": -61.401517546714636,
+        "stress_shallow": -61.40806170695048,
+        "stress_deep": -61.38981798501477,
+        "stress_more_aod": -61.37773925099231,
+        "stress_alternative_phase": -61.37697115297236
+      }
+    },
+    {
+      "key": "madrid-2013-12/21",
+      "city": "Madrid",
+      "night": "2013-12-28",
+      "site": "10",
+      "band": "sqm",
+      "distance_km": 52.899105653042476,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Madrid/2013-12-29",
+      "relative_pct": {
+        "h2": -51.880003779367975,
+        "core": -51.22114590749841,
+        "old_free_tail": -29.21956519763298,
+        "lower_bound": -52.043878350714955,
+        "upper_bound": -47.14904011874312,
+        "annular": -52.043878350714955,
+        "radial": -52.043878350714955,
+        "sides": -47.14904011874312,
+        "joint": -52.043878350714955,
+        "another_night": -52.043878350714955,
+        "joint_fixed_power": -52.61226539104469,
+        "stress_nominal": -52.043878350714955,
+        "stress_without_weak": -47.15052463552058,
+        "stress_constant_background": -52.04175497001441,
+        "stress_brighter_edge": -52.043878350714955,
+        "stress_shallow": -52.048721254783324,
+        "stress_deep": -52.035220271922235,
+        "stress_more_aod": -52.02628159254552,
+        "stress_alternative_phase": -52.025713173544204
+      }
+    },
+    {
+      "key": "madrid-2013-12/22",
+      "city": "Madrid",
+      "night": "2013-12-28",
+      "site": "11",
+      "band": "sqm",
+      "distance_km": 56.68270952739402,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Madrid/2013-12-29",
+      "relative_pct": {
+        "h2": -55.829634579841404,
+        "core": -55.296340408437075,
+        "old_free_tail": -39.295779013253885,
+        "lower_bound": -55.48641121366642,
+        "upper_bound": -54.35558690755189,
+        "annular": -55.48641121366642,
+        "radial": -55.48641121366642,
+        "sides": -54.35558690755189,
+        "joint": -55.48641121366642,
+        "another_night": -55.48641121366642,
+        "joint_fixed_power": -55.998804466500765,
+        "stress_nominal": -55.48641121366642,
+        "stress_without_weak": -54.35644107309825,
+        "stress_constant_background": -55.48449701459612,
+        "stress_brighter_edge": -55.48641121366642,
+        "stress_shallow": -55.490777026383256,
+        "stress_deep": -55.47860607237865,
+        "stress_more_aod": -55.470547973448014,
+        "stress_alternative_phase": -55.47003555138279
+      }
+    },
+    {
+      "key": "madrid-2013-12/23",
+      "city": "Madrid",
+      "night": "2013-12-28",
+      "site": "12",
+      "band": "sqm",
+      "distance_km": 63.613070221435926,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Madrid/2013-12-29",
+      "relative_pct": {
+        "h2": -56.53834387017651,
+        "core": -56.03006989915736,
+        "old_free_tail": -38.34399678601106,
+        "lower_bound": -56.36969304057118,
+        "upper_bound": -54.34910864431786,
+        "annular": -56.36969304057118,
+        "radial": -56.36969304057118,
+        "sides": -54.34910864431786,
+        "joint": -56.36969304057118,
+        "another_night": -56.36969304057118,
+        "joint_fixed_power": -56.840620741527424,
+        "stress_nominal": -56.36969304057118,
+        "stress_without_weak": -54.35003843589512,
+        "stress_constant_background": -56.367933748538434,
+        "stress_brighter_edge": -56.36969304057118,
+        "stress_shallow": -56.37370554880421,
+        "stress_deep": -56.36251953229029,
+        "stress_more_aod": -56.35511353702689,
+        "stress_alternative_phase": -56.354642582845194
+      }
+    },
+    {
+      "key": "madrid-2013-12/24",
+      "city": "Madrid",
+      "night": "2013-12-28",
+      "site": "13",
+      "band": "sqm",
+      "distance_km": 68.12278603563905,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Madrid/2013-12-29",
+      "relative_pct": {
+        "h2": -50.78896187583734,
+        "core": -50.30354590969062,
+        "old_free_tail": -32.85038998671346,
+        "lower_bound": -51.079173910458955,
+        "upper_bound": -46.46458307567233,
+        "annular": -51.079173910458955,
+        "radial": -51.079173910458955,
+        "sides": -46.46458307567233,
+        "joint": -51.079173910458955,
+        "another_night": -51.079173910458955,
+        "joint_fixed_power": -51.47929883117084,
+        "stress_nominal": -51.079173910458955,
+        "stress_without_weak": -46.46580053559529,
+        "stress_constant_background": -51.07767912350189,
+        "stress_brighter_edge": -51.079173910458955,
+        "stress_shallow": -51.082583148300195,
+        "stress_deep": -51.073078920875005,
+        "stress_more_aod": -51.06678639813418,
+        "stress_alternative_phase": -51.06638625071401
+      }
+    },
+    {
+      "key": "madrid-2013-12/25",
+      "city": "Madrid",
+      "night": "2013-12-28",
+      "site": "14",
+      "band": "sqm",
+      "distance_km": 71.62033199285094,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Madrid/2013-12-29",
+      "relative_pct": {
+        "h2": -53.560934149986394,
+        "core": -53.26144040182087,
+        "old_free_tail": -40.840765875000706,
+        "lower_bound": -54.01962167806326,
+        "upper_bound": -49.50882995188891,
+        "annular": -54.01962167806326,
+        "radial": -54.01962167806326,
+        "sides": -49.50882995188891,
+        "joint": -54.01962167806326,
+        "another_night": -54.01962167806326,
+        "joint_fixed_power": -54.23574288988948,
+        "stress_nominal": -54.01962167806326,
+        "stress_without_weak": -49.509785266506235,
+        "stress_constant_background": -54.018814292289804,
+        "stress_brighter_edge": -54.01962167806326,
+        "stress_shallow": -54.02146312451039,
+        "stress_deep": -54.01632956485869,
+        "stress_more_aod": -54.01293075721188,
+        "stress_alternative_phase": -54.01271462384734
+      }
+    },
+    {
+      "key": "tucson-2019-03/1",
+      "city": "Tucson",
+      "night": "2019-03-29",
+      "site": "3",
+      "band": "photopic",
+      "distance_km": 5.5,
+      "calendar_offset_days": 2,
+      "city_dominant": true,
+      "fitted_scene": "Tucson/2019-03-31",
+      "relative_pct": {
+        "h2": 7.196517367928057,
+        "core": -2.6740850362302226,
+        "old_free_tail": 135.71406801768626,
+        "lower_bound": -3.324575398642038,
+        "upper_bound": 0.5455103403062989,
+        "annular": 0.5455103403062989,
+        "radial": 0.5455103403062989,
+        "sides": -3.324575398642038,
+        "joint": 0.5455103403062989,
+        "paired_difference": 0.5455103403062989,
+        "other_platform": 0.5455103403062989,
+        "joint_fixed_power": 10.789385020900632,
+        "stress_nominal": 0.5455103403062989,
+        "stress_without_weak": 0.5546159554519203,
+        "stress_constant_background": 0.5248922247483412,
+        "stress_brighter_edge": 0.5445006670632857,
+        "stress_shallow": 0.40975154668971836,
+        "stress_deep": 0.8547040512799198,
+        "stress_more_aod": 1.2135048498372214,
+        "stress_alternative_phase": 0.17997885182823303
+      }
+    },
+    {
+      "key": "tucson-2019-03/2",
+      "city": "Tucson",
+      "night": "2019-03-29",
+      "site": "6",
+      "band": "tess",
+      "distance_km": 20.0,
+      "calendar_offset_days": 2,
+      "city_dominant": true,
+      "fitted_scene": "Tucson/2019-03-31",
+      "relative_pct": {
+        "h2": 29.377631275012895,
+        "core": 19.162215131053383,
+        "old_free_tail": 180.5923179293152,
+        "lower_bound": 18.385975820609836,
+        "upper_bound": 23.004203636038877,
+        "annular": 23.004203636038877,
+        "radial": 23.004203636038877,
+        "sides": 18.385975820609836,
+        "joint": 23.004203636038877,
+        "paired_difference": 23.004203636038877,
+        "other_platform": 23.004203636038877,
+        "joint_fixed_power": 33.66505084433287,
+        "stress_nominal": 23.004203636038877,
+        "stress_without_weak": 23.013679891345795,
+        "stress_constant_background": 22.982746268925382,
+        "stress_brighter_edge": 23.003152864479294,
+        "stress_shallow": 22.86291883892295,
+        "stress_deep": 23.325982944477673,
+        "stress_more_aod": 23.69938857573548,
+        "stress_alternative_phase": 22.623793345012277
+      }
+    },
+    {
+      "key": "tucson-2019-03/3",
+      "city": "Tucson",
+      "night": "2019-03-29",
+      "site": "2",
+      "band": "sqm",
+      "distance_km": 29.0,
+      "calendar_offset_days": 2,
+      "city_dominant": false,
+      "fitted_scene": "Tucson/2019-03-31",
+      "relative_pct": {
+        "h2": -36.04605694156484,
+        "core": -37.39203941199941,
+        "old_free_tail": 4.13329584093356,
+        "lower_bound": -37.80534841459576,
+        "upper_bound": -35.346370743048816,
+        "annular": -35.346370743048816,
+        "radial": -35.346370743048816,
+        "sides": -37.80534841459576,
+        "joint": -35.346370743048816,
+        "paired_difference": -35.346370743048816,
+        "other_platform": -35.346370743048816,
+        "joint_fixed_power": -33.76321828334855,
+        "stress_nominal": -35.346370743048816,
+        "stress_without_weak": -35.34496350433648,
+        "stress_constant_background": -35.3495571955756,
+        "stress_brighter_edge": -35.34652678426643,
+        "stress_shallow": -35.36735175606797,
+        "stress_deep": -35.29858601321616,
+        "stress_more_aod": -35.24313469381898,
+        "stress_alternative_phase": -35.40286226536099
+      }
+    },
+    {
+      "key": "tucson-2019-03/4",
+      "city": "Tucson",
+      "night": "2019-03-29",
+      "site": "7",
+      "band": "tess",
+      "distance_km": 49.0,
+      "calendar_offset_days": 2,
+      "city_dominant": false,
+      "fitted_scene": "Tucson/2019-03-31",
+      "relative_pct": {
+        "h2": -13.141718061266427,
+        "core": -13.626226228590077,
+        "old_free_tail": 1.958314568170283,
+        "lower_bound": -13.749372259583625,
+        "upper_bound": -13.016716211323065,
+        "annular": -13.016716211323065,
+        "radial": -13.016716211323065,
+        "sides": -13.749372259583625,
+        "joint": -13.016716211323065,
+        "paired_difference": -13.016716211323065,
+        "other_platform": -13.016716211323065,
+        "joint_fixed_power": -12.461542893554133,
+        "stress_nominal": -13.016716211323065,
+        "stress_without_weak": -13.016222726706328,
+        "stress_constant_background": -13.01783362323773,
+        "stress_brighter_edge": -13.016770931208033,
+        "stress_shallow": -13.02407374567588,
+        "stress_deep": -12.999959261076521,
+        "stress_more_aod": -12.980513823098782,
+        "stress_alternative_phase": -13.036526423331196
+      }
+    },
+    {
+      "key": "tucson-2019-03/5",
+      "city": "Tucson",
+      "night": "2019-03-31",
+      "site": "4",
+      "band": "sqm",
+      "distance_km": 3.4,
+      "calendar_offset_days": 0,
+      "city_dominant": true,
+      "fitted_scene": "Tucson/2019-03-31",
+      "relative_pct": {
+        "h2": -25.254800596968284,
+        "core": -32.00833815605009,
+        "old_free_tail": 52.890486084954745,
+        "lower_bound": -32.381692852923706,
+        "upper_bound": -30.160422913454134,
+        "annular": -30.160422913454134,
+        "radial": -30.160422913454134,
+        "sides": -32.381692852923706,
+        "joint": -30.160422913454134,
+        "paired_difference": -30.160422913454134,
+        "other_platform": -30.160422913454134,
+        "joint_fixed_power": -23.192642429844756,
+        "stress_nominal": -30.160422913454134,
+        "stress_without_weak": -30.154229365653006,
+        "stress_constant_background": -30.17444714819665,
+        "stress_brighter_edge": -30.16110968303468,
+        "stress_shallow": -30.252764678863652,
+        "stress_deep": -29.950112462364952,
+        "stress_more_aod": -29.706059769449165,
+        "stress_alternative_phase": -30.409053753929648
+      }
+    },
+    {
+      "key": "tucson-2019-03/2",
+      "city": "Tucson",
+      "night": "2019-03-31",
+      "site": "6",
+      "band": "tess",
+      "distance_km": 20.0,
+      "calendar_offset_days": 0,
+      "city_dominant": true,
+      "fitted_scene": "Tucson/2019-03-31",
+      "relative_pct": {
+        "h2": 24.697916030577737,
+        "core": 14.85200146263268,
+        "old_free_tail": 170.44301982619854,
+        "lower_bound": 14.103839485949333,
+        "upper_bound": 18.55502149216739,
+        "annular": 18.55502149216739,
+        "radial": 18.55502149216739,
+        "sides": 14.103839485949333,
+        "joint": 18.55502149216739,
+        "paired_difference": 18.55502149216739,
+        "other_platform": 18.55502149216739,
+        "joint_fixed_power": 28.83025544794171,
+        "stress_nominal": 18.55502149216739,
+        "stress_without_weak": 18.56415498206745,
+        "stress_constant_background": 18.534340258972847,
+        "stress_brighter_edge": 18.554008728041072,
+        "stress_shallow": 18.418847104110235,
+        "stress_deep": 18.865161728842338,
+        "stress_more_aod": 19.225060913833246,
+        "stress_alternative_phase": 18.188371012790718
+      }
+    },
+    {
+      "key": "tucson-2019-03/3",
+      "city": "Tucson",
+      "night": "2019-03-31",
+      "site": "2",
+      "band": "sqm",
+      "distance_km": 29.0,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Tucson/2019-03-31",
+      "relative_pct": {
+        "h2": -40.58893659667548,
+        "core": -41.83930906890422,
+        "old_free_tail": -3.263668419161403,
+        "lower_bound": -42.22325923966977,
+        "upper_bound": -39.938951636960255,
+        "annular": -39.938951636960255,
+        "radial": -39.938951636960255,
+        "sides": -42.22325923966977,
+        "joint": -39.938951636960255,
+        "paired_difference": -39.938951636960255,
+        "other_platform": -39.938951636960255,
+        "joint_fixed_power": -38.46825621675072,
+        "stress_nominal": -39.938951636960255,
+        "stress_without_weak": -39.937644359498314,
+        "stress_constant_background": -39.9419117442507,
+        "stress_brighter_edge": -39.93909659400637,
+        "stress_shallow": -39.95844229281563,
+        "stress_deep": -39.89456122914435,
+        "stress_more_aod": -39.84304881732177,
+        "stress_alternative_phase": -39.9914303623263
+      }
+    },
+    {
+      "key": "tucson-2019-03/4",
+      "city": "Tucson",
+      "night": "2019-03-31",
+      "site": "7",
+      "band": "tess",
+      "distance_km": 49.0,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Tucson/2019-03-31",
+      "relative_pct": {
+        "h2": -20.78430538404318,
+        "core": -21.226182084398815,
+        "old_free_tail": -7.012911951368961,
+        "lower_bound": -21.33849259948859,
+        "upper_bound": -20.670302341955292,
+        "annular": -20.670302341955292,
+        "radial": -20.670302341955292,
+        "sides": -21.33849259948859,
+        "joint": -20.670302341955292,
+        "paired_difference": -20.670302341955292,
+        "other_platform": -20.670302341955292,
+        "joint_fixed_power": -20.16397825842885,
+        "stress_nominal": -20.670302341955292,
+        "stress_without_weak": -20.66985227863577,
+        "stress_constant_background": -20.671321433733493,
+        "stress_brighter_edge": -20.670352247083525,
+        "stress_shallow": -20.677012493035996,
+        "stress_deep": -20.6550198216959,
+        "stress_more_aod": -20.637285371484182,
+        "stress_alternative_phase": -20.688369470036648
+      }
+    },
+    {
+      "key": "tucson-2019-04/1",
+      "city": "Tucson",
+      "night": "2019-04-01",
+      "site": "3",
+      "band": "photopic",
+      "distance_km": 5.5,
+      "calendar_offset_days": 0,
+      "city_dominant": true,
+      "fitted_scene": "Tucson/2019-04-01",
+      "relative_pct": {
+        "h2": 5.154029773177116,
+        "core": 8.139984254070232,
+        "old_free_tail": 76.86542597412105,
+        "lower_bound": 7.24135510917876,
+        "upper_bound": 12.587739989276558,
+        "annular": 12.587739989276558,
+        "radial": 12.587739989276558,
+        "sides": 7.24135510917876,
+        "joint": 12.587739989276558,
+        "paired_difference": 12.587739989276558,
+        "another_night": 12.587739989276558,
+        "other_platform": 12.587739989276558,
+        "joint_fixed_power": 9.463286737574306,
+        "stress_nominal": 12.587739989276558,
+        "stress_without_weak": 12.64868499361329,
+        "stress_constant_background": 12.562566478676796,
+        "stress_brighter_edge": 12.575351829121683,
+        "stress_shallow": 12.084754159868494,
+        "stress_deep": 13.592978488536023,
+        "stress_more_aod": 14.506813066588586,
+        "stress_alternative_phase": 11.287253898910897
+      }
+    },
+    {
+      "key": "tucson-2019-04/1",
+      "city": "Tucson",
+      "night": "2019-04-01",
+      "site": "3",
+      "band": "sqm",
+      "distance_km": 5.5,
+      "calendar_offset_days": 0,
+      "city_dominant": true,
+      "fitted_scene": "Tucson/2019-04-01",
+      "relative_pct": {
+        "h2": -21.687399942664154,
+        "core": -19.496798792572314,
+        "old_free_tail": 29.428698987214432,
+        "lower_bound": -19.979844659093526,
+        "upper_bound": -17.105968230931722,
+        "annular": -17.105968230931722,
+        "radial": -17.105968230931722,
+        "sides": -19.979844659093526,
+        "joint": -17.105968230931722,
+        "paired_difference": -17.105968230931722,
+        "another_night": -17.105968230931722,
+        "other_platform": -17.105968230931722,
+        "joint_fixed_power": -19.371017510307986,
+        "stress_nominal": -17.105968230931722,
+        "stress_without_weak": -17.061786600728336,
+        "stress_constant_background": -17.124217581281986,
+        "stress_brighter_edge": -17.114948936025097,
+        "stress_shallow": -17.470604088362617,
+        "stress_deep": -16.377228014668777,
+        "stress_more_aod": -15.71475039514947,
+        "stress_alternative_phase": -18.048746005000428
+      }
+    },
+    {
+      "key": "tucson-2019-04/2",
+      "city": "Tucson",
+      "night": "2019-04-01",
+      "site": "5",
+      "band": "sqm",
+      "distance_km": 6.3,
+      "calendar_offset_days": 0,
+      "city_dominant": true,
+      "fitted_scene": "Tucson/2019-04-01",
+      "relative_pct": {
+        "h2": -30.780472089118927,
+        "core": -28.839431188748442,
+        "old_free_tail": 15.058700548842396,
+        "lower_bound": -29.16761355828822,
+        "upper_bound": -27.21509591694906,
+        "annular": -27.21509591694906,
+        "radial": -27.21509591694906,
+        "sides": -29.16761355828822,
+        "joint": -27.21509591694906,
+        "paired_difference": -27.21509591694906,
+        "another_night": -27.21509591694906,
+        "other_platform": -27.21509591694906,
+        "joint_fixed_power": -29.206717031683706,
+        "stress_nominal": -27.21509591694906,
+        "stress_without_weak": -27.176247725698786,
+        "stress_constant_background": -27.231142274888697,
+        "stress_brighter_edge": -27.222992505359755,
+        "stress_shallow": -27.535714315613102,
+        "stress_deep": -26.57432645772332,
+        "stress_more_aod": -25.99182062569254,
+        "stress_alternative_phase": -28.044065131188333
+      }
+    },
+    {
+      "key": "tucson-2019-04/3",
+      "city": "Tucson",
+      "night": "2019-04-01",
+      "site": "6",
+      "band": "tess",
+      "distance_km": 20.0,
+      "calendar_offset_days": 0,
+      "city_dominant": true,
+      "fitted_scene": "Tucson/2019-04-01",
+      "relative_pct": {
+        "h2": 16.088924450745612,
+        "core": 18.871397456873297,
+        "old_free_tail": 89.19254704424566,
+        "lower_bound": 18.476977207483934,
+        "upper_bound": 20.823576435571912,
+        "annular": 20.823576435571912,
+        "radial": 20.823576435571912,
+        "sides": 18.476977207483934,
+        "joint": 20.823576435571912,
+        "paired_difference": 20.823576435571912,
+        "another_night": 20.823576435571912,
+        "other_platform": 20.823576435571912,
+        "joint_fixed_power": 17.98031448215358,
+        "stress_nominal": 20.823576435571912,
+        "stress_without_weak": 20.87903657471375,
+        "stress_constant_background": 20.80066846443063,
+        "stress_brighter_edge": 20.81230317218672,
+        "stress_shallow": 20.365857802372545,
+        "stress_deep": 21.738346524546248,
+        "stress_more_aod": 22.569938767470465,
+        "stress_alternative_phase": 19.64013014151331
+      }
+    },
+    {
+      "key": "tucson-2019-04/1",
+      "city": "Tucson",
+      "night": "2019-04-03",
+      "site": "3",
+      "band": "photopic",
+      "distance_km": 5.5,
+      "calendar_offset_days": 0,
+      "city_dominant": true,
+      "fitted_scene": "Tucson/2019-04-03",
+      "relative_pct": {
+        "h2": 11.586982182830297,
+        "core": 3.9572517498583704,
+        "old_free_tail": 92.04572632728767,
+        "lower_bound": 3.1048428451166954,
+        "upper_bound": 8.17624088053428,
+        "annular": 8.17624088053428,
+        "radial": 8.17624088053428,
+        "sides": 8.17624088053428,
+        "joint": 8.17624088053428,
+        "paired_difference": 3.1048428451166954,
+        "another_night": 8.17624088053428,
+        "other_platform": 8.17624088053428,
+        "joint_fixed_power": 16.159864279167092,
+        "stress_nominal": 8.17624088053428,
+        "stress_without_weak": 8.186588437377274,
+        "stress_constant_background": 8.16022403753447,
+        "stress_brighter_edge": 8.173890501652226,
+        "stress_shallow": 8.0122794589909,
+        "stress_deep": 8.50228438276317,
+        "stress_more_aod": 8.776913527155505,
+        "stress_alternative_phase": 7.789101674249133
+      }
+    },
+    {
+      "key": "tucson-2019-04/1",
+      "city": "Tucson",
+      "night": "2019-04-03",
+      "site": "3",
+      "band": "sqm",
+      "distance_km": 5.5,
+      "calendar_offset_days": 0,
+      "city_dominant": true,
+      "fitted_scene": "Tucson/2019-04-03",
+      "relative_pct": {
+        "h2": -10.909449350997157,
+        "core": -16.91014652718945,
+        "old_free_tail": 50.57356639388888,
+        "lower_bound": -17.401357700027443,
+        "upper_bound": -14.478901865687332,
+        "annular": -14.478901865687332,
+        "radial": -14.478901865687332,
+        "sides": -14.478901865687332,
+        "joint": -14.478901865687332,
+        "paired_difference": -17.401357700027443,
+        "another_night": -14.478901865687332,
+        "other_platform": -14.478901865687332,
+        "joint_fixed_power": -8.274269491546725,
+        "stress_nominal": -14.478901865687332,
+        "stress_without_weak": -14.470860055224122,
+        "stress_constant_background": -14.49134967511495,
+        "stress_brighter_edge": -14.480728509577556,
+        "stress_shallow": -14.606327759097127,
+        "stress_deep": -14.225510646149841,
+        "stress_more_aod": -14.012077121658816,
+        "stress_alternative_phase": -14.77977483184294
+      }
+    },
+    {
+      "key": "tucson-2019-04/3",
+      "city": "Tucson",
+      "night": "2019-04-03",
+      "site": "6",
+      "band": "tess",
+      "distance_km": 20.0,
+      "calendar_offset_days": 0,
+      "city_dominant": true,
+      "fitted_scene": "Tucson/2019-04-03",
+      "relative_pct": {
+        "h2": 21.560026904900198,
+        "core": 14.544353569332591,
+        "old_free_tail": 102.49502449743319,
+        "lower_bound": 14.175172800683654,
+        "upper_bound": 16.371609996993364,
+        "annular": 16.371609996993364,
+        "radial": 16.371609996993364,
+        "sides": 16.371609996993364,
+        "joint": 16.371609996993364,
+        "paired_difference": 14.175172800683654,
+        "another_night": 16.371609996993364,
+        "other_platform": 16.371609996993364,
+        "joint_fixed_power": 23.540555402286365,
+        "stress_nominal": 16.371609996993364,
+        "stress_without_weak": 16.380901651469237,
+        "stress_constant_background": 16.357227570957278,
+        "stress_brighter_edge": 16.369499459328217,
+        "stress_shallow": 16.22437979575164,
+        "stress_deep": 16.66438283340117,
+        "stress_more_aod": 16.91098782020306,
+        "stress_alternative_phase": 16.023975884569943
+      }
+    },
+    {
+      "key": "tucson-2019-04/4",
+      "city": "Tucson",
+      "night": "2019-04-03",
+      "site": "2",
+      "band": "sqm",
+      "distance_km": 29.0,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Tucson/2019-04-03",
+      "relative_pct": {
+        "h2": -43.63218820148441,
+        "core": -44.52663485805507,
+        "old_free_tail": -21.839306300024873,
+        "lower_bound": -44.72186779281082,
+        "upper_bound": -43.56033145002796,
+        "annular": -43.56033145002796,
+        "radial": -43.56033145002796,
+        "sides": -43.56033145002796,
+        "joint": -43.56033145002796,
+        "paired_difference": -44.72186779281082,
+        "another_night": -43.56033145002796,
+        "other_platform": -43.56033145002796,
+        "joint_fixed_power": -42.58483031139938,
+        "stress_nominal": -43.56033145002796,
+        "stress_without_weak": -43.55906710513362,
+        "stress_constant_background": -43.5622885123546,
+        "stress_brighter_edge": -43.560618637581925,
+        "stress_shallow": -43.580365530472456,
+        "stress_deep": -43.52049292160724,
+        "stress_more_aod": -43.48693659891031,
+        "stress_alternative_phase": -43.607635126276456
+      }
+    },
+    {
+      "key": "tucson-2019-04/5",
+      "city": "Tucson",
+      "night": "2019-04-03",
+      "site": "7",
+      "band": "tess",
+      "distance_km": 49.0,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Tucson/2019-04-03",
+      "relative_pct": {
+        "h2": -22.99096405195742,
+        "core": -23.32784191749614,
+        "old_free_tail": -12.42286113232467,
+        "lower_bound": -23.827071215463214,
+        "upper_bound": -20.856911627911302,
+        "annular": -20.856911627911302,
+        "radial": -20.856911627911302,
+        "sides": -20.856911627911302,
+        "joint": -20.856911627911302,
+        "paired_difference": -23.827071215463214,
+        "another_night": -20.856911627911302,
+        "other_platform": -20.856911627911302,
+        "joint_fixed_power": -20.312769694834586,
+        "stress_nominal": -20.856911627911302,
+        "stress_without_weak": -20.856206366740782,
+        "stress_constant_background": -20.858003292118966,
+        "stress_brighter_edge": -20.85707182330687,
+        "stress_shallow": -20.86808678991655,
+        "stress_deep": -20.834689394633077,
+        "stress_more_aod": -20.81597142335021,
+        "stress_alternative_phase": -20.883297977261638
+      }
+    },
+    {
+      "key": "tucson-2019-04/6",
+      "city": "Tucson",
+      "night": "2019-04-07",
+      "site": "1",
+      "band": "sqm",
+      "distance_km": 3.5,
+      "calendar_offset_days": 0,
+      "city_dominant": true,
+      "fitted_scene": "Tucson/2019-04-07",
+      "relative_pct": {
+        "h2": -33.225844324750994,
+        "core": -28.297329624056978,
+        "old_free_tail": 14.054064994856642,
+        "lower_bound": -28.63608240649945,
+        "upper_bound": -26.620676202018668,
+        "annular": -26.620676202018668,
+        "radial": -27.379193087469076,
+        "sides": -26.989237326149464,
+        "joint": -26.727105385945116,
+        "paired_difference": -28.63608240649945,
+        "other_platform": -26.620676202018668,
+        "joint_fixed_power": -31.778493556700084,
+        "stress_nominal": -26.727105385945116,
+        "stress_without_weak": -26.59292919325369,
+        "stress_constant_background": -26.979170395623598,
+        "stress_brighter_edge": -26.619269939829636,
+        "stress_shallow": -26.91277227257678,
+        "stress_deep": -27.040287295201427,
+        "stress_more_aod": -26.656975532591034,
+        "stress_alternative_phase": -27.27944033008636
+      }
+    },
+    {
+      "key": "tucson-2019-04/1",
+      "city": "Tucson",
+      "night": "2019-04-07",
+      "site": "3",
+      "band": "photopic",
+      "distance_km": 5.5,
+      "calendar_offset_days": 0,
+      "city_dominant": true,
+      "fitted_scene": "Tucson/2019-04-07",
+      "relative_pct": {
+        "h2": 0.4755665841162715,
+        "core": 8.011872631071682,
+        "old_free_tail": 75.64565980289773,
+        "lower_bound": 7.109336934627408,
+        "upper_bound": 12.478963803118281,
+        "annular": 12.478963803118281,
+        "radial": 10.4580547480289,
+        "sides": 11.497010035974963,
+        "joint": 12.19540557831358,
+        "paired_difference": 7.109336934627408,
+        "other_platform": 12.478963803118281,
+        "joint_fixed_power": 4.331728957229175,
+        "stress_nominal": 12.19540557831358,
+        "stress_without_weak": 12.522209147884599,
+        "stress_constant_background": 11.51691155255683,
+        "stress_brighter_edge": 12.481155545432255,
+        "stress_shallow": 12.023714901041217,
+        "stress_deep": 10.866327155229838,
+        "stress_more_aod": 11.382964982779109,
+        "stress_alternative_phase": 11.452241172247057
+      }
+    },
+    {
+      "key": "tucson-2019-04/1",
+      "city": "Tucson",
+      "night": "2019-04-07",
+      "site": "3",
+      "band": "sqm",
+      "distance_km": 5.5,
+      "calendar_offset_days": 0,
+      "city_dominant": true,
+      "fitted_scene": "Tucson/2019-04-07",
+      "relative_pct": {
+        "h2": -18.748452123922743,
+        "core": -12.744957695457037,
+        "old_free_tail": 39.43239888910814,
+        "lower_bound": -13.271747929246501,
+        "upper_bound": -10.137614836717745,
+        "annular": -10.137614836717745,
+        "radial": -11.31717500014615,
+        "sides": -10.710759651489965,
+        "joint": -10.303121535373872,
+        "paired_difference": -13.271747929246501,
+        "other_platform": -10.137614836717745,
+        "joint_fixed_power": -16.49769496709742,
+        "stress_nominal": -10.303121535373872,
+        "stress_without_weak": -10.103573355837925,
+        "stress_constant_background": -10.697158801511875,
+        "stress_brighter_edge": -10.135889560749245,
+        "stress_shallow": -10.495973565948692,
+        "stress_deep": -10.93698941385659,
+        "stress_more_aod": -10.490700810227615,
+        "stress_alternative_phase": -10.945821107162212
+      }
+    },
+    {
+      "key": "tucson-2019-04/3",
+      "city": "Tucson",
+      "night": "2019-04-07",
+      "site": "6",
+      "band": "tess",
+      "distance_km": 20.0,
+      "calendar_offset_days": 0,
+      "city_dominant": true,
+      "fitted_scene": "Tucson/2019-04-07",
+      "relative_pct": {
+        "h2": 16.088924450745612,
+        "core": 23.438660800882218,
+        "old_free_tail": 96.28650492620132,
+        "lower_bound": 23.024080609062803,
+        "upper_bound": 25.490621207853504,
+        "annular": 25.490621207853504,
+        "radial": 24.562315693723313,
+        "sides": 25.039560288330964,
+        "joint": 25.360368605441597,
+        "paired_difference": 23.024080609062803,
+        "other_platform": 25.490621207853504,
+        "joint_fixed_power": 17.86025442985928,
+        "stress_nominal": 25.360368605441597,
+        "stress_without_weak": 25.531807022731524,
+        "stress_constant_background": 25.053510789581424,
+        "stress_brighter_edge": 25.492708569942813,
+        "stress_shallow": 25.057053222543637,
+        "stress_deep": 25.09361880619423,
+        "stress_more_aod": 25.681610708050794,
+        "stress_alternative_phase": 24.51279553818606
+      }
+    },
+    {
+      "key": "tucson-2019-04/4",
+      "city": "Tucson",
+      "night": "2019-04-07",
+      "site": "2",
+      "band": "sqm",
+      "distance_km": 29.0,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Tucson/2019-04-07",
+      "relative_pct": {
+        "h2": -50.45142420461932,
+        "core": -49.588928688059354,
+        "old_free_tail": -30.57493975602351,
+        "lower_bound": -49.79072933822901,
+        "upper_bound": -48.59011843995765,
+        "annular": -48.59011843995765,
+        "radial": -49.04197952739994,
+        "sides": -48.80967641359432,
+        "joint": -48.653520069779034,
+        "paired_difference": -49.79072933822901,
+        "other_platform": -48.59011843995765,
+        "joint_fixed_power": -49.58921335011268,
+        "stress_nominal": -48.653520069779034,
+        "stress_without_weak": -48.5849599787291,
+        "stress_constant_background": -48.806243957375386,
+        "stress_brighter_edge": -48.58985700100252,
+        "stress_shallow": -48.64442217654226,
+        "stress_deep": -49.023422631366884,
+        "stress_more_aod": -48.982098165700684,
+        "stress_alternative_phase": -48.71258963107509
+      }
+    },
+    {
+      "key": "tucson-2019-04/5",
+      "city": "Tucson",
+      "night": "2019-04-07",
+      "site": "7",
+      "band": "tess",
+      "distance_km": 49.0,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Tucson/2019-04-07",
+      "relative_pct": {
+        "h2": -22.99096405195742,
+        "core": -22.621412629821336,
+        "old_free_tail": -12.02562810000024,
+        "lower_bound": -23.208455128654382,
+        "upper_bound": -19.715851803269324,
+        "annular": -19.715851803269324,
+        "radial": -21.030325575650778,
+        "sides": -20.354550743902234,
+        "joint": -19.900288529162637,
+        "paired_difference": -23.208455128654382,
+        "other_platform": -19.715851803269324,
+        "joint_fixed_power": -20.482773844814762,
+        "stress_nominal": -19.900288529162637,
+        "stress_without_weak": -19.71257836176057,
+        "stress_constant_background": -20.34721182220236,
+        "stress_brighter_edge": -19.715685900088165,
+        "stress_shallow": -19.750311712443967,
+        "stress_deep": -21.165510508215647,
+        "stress_more_aod": -21.238267143427937,
+        "stress_alternative_phase": -19.793569219930752
+      }
+    },
+    {
+      "key": "tucson-2019-04/1",
+      "city": "Tucson",
+      "night": "2019-04-08",
+      "site": "3",
+      "band": "photopic",
+      "distance_km": 5.5,
+      "calendar_offset_days": 0,
+      "city_dominant": true,
+      "fitted_scene": "Tucson/2019-04-08",
+      "relative_pct": {
+        "h2": 16.809033073159817,
+        "core": 10.101699835207455,
+        "old_free_tail": 125.3438999019314,
+        "lower_bound": 9.197409662240364,
+        "upper_bound": 14.577474770807575,
+        "annular": 14.577474770807575,
+        "radial": 14.577474770807575,
+        "sides": 14.577474770807575,
+        "joint": 14.577474770807575,
+        "paired_difference": 11.746581321182138,
+        "other_platform": 14.577474770807575,
+        "joint_fixed_power": 21.595917041000035,
+        "stress_nominal": 14.577474770807575,
+        "stress_without_weak": 14.595129482787627,
+        "stress_constant_background": 14.599118610315,
+        "stress_brighter_edge": 14.58079237860117,
+        "stress_shallow": 14.43246770762514,
+        "stress_deep": 14.90023280328867,
+        "stress_more_aod": 15.22600199230586,
+        "stress_alternative_phase": 14.202790198263383
+      }
+    },
+    {
+      "key": "tucson-2019-04/1",
+      "city": "Tucson",
+      "night": "2019-04-08",
+      "site": "3",
+      "band": "sqm",
+      "distance_km": 5.5,
+      "calendar_offset_days": 0,
+      "city_dominant": true,
+      "fitted_scene": "Tucson/2019-04-08",
+      "relative_pct": {
+        "h2": -6.71074105385463,
+        "core": -11.987648827573006,
+        "old_free_tail": 76.25299349132402,
+        "lower_bound": -12.508921758827164,
+        "upper_bound": -9.407613801140036,
+        "annular": -9.407613801140036,
+        "radial": -9.407613801140036,
+        "sides": -9.407613801140036,
+        "joint": -9.407613801140036,
+        "paired_difference": -11.03946624261094,
+        "other_platform": -9.407613801140036,
+        "joint_fixed_power": -3.9513689937753282,
+        "stress_nominal": -9.407613801140036,
+        "stress_without_weak": -9.393888756912505,
+        "stress_constant_background": -9.390787547909241,
+        "stress_brighter_edge": -9.405034641890763,
+        "stress_shallow": -9.520344519020352,
+        "stress_deep": -9.15669674989642,
+        "stress_more_aod": -8.903438779317474,
+        "stress_alternative_phase": -9.698899342096368
+      }
+    },
+    {
+      "key": "tucson-2019-04/3",
+      "city": "Tucson",
+      "night": "2019-04-08",
+      "site": "6",
+      "band": "tess",
+      "distance_km": 20.0,
+      "calendar_offset_days": 0,
+      "city_dominant": true,
+      "fitted_scene": "Tucson/2019-04-08",
+      "relative_pct": {
+        "h2": 16.088924450745612,
+        "core": 10.462310063594838,
+        "old_free_tail": 115.69125258126122,
+        "lower_bound": 10.10500760334283,
+        "upper_bound": 12.230774925683207,
+        "annular": 12.230774925683207,
+        "radial": 12.230774925683207,
+        "sides": 12.230774925683207,
+        "joint": 12.230774925683207,
+        "paired_difference": 11.112234412361444,
+        "other_platform": 12.230774925683207,
+        "joint_fixed_power": 17.98031448215358,
+        "stress_nominal": 12.230774925683207,
+        "stress_without_weak": 12.245237745348847,
+        "stress_constant_background": 12.248505656607712,
+        "stress_brighter_edge": 12.233492724948025,
+        "stress_shallow": 12.111984485634174,
+        "stress_deep": 12.495179761325993,
+        "stress_more_aod": 12.762051349981562,
+        "stress_alternative_phase": 11.923831634264959
+      }
+    },
+    {
+      "key": "tucson-2019-04/4",
+      "city": "Tucson",
+      "night": "2019-04-08",
+      "site": "2",
+      "band": "sqm",
+      "distance_km": 29.0,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Tucson/2019-04-08",
+      "relative_pct": {
+        "h2": -44.14897140632748,
+        "core": -44.89324436148166,
+        "old_free_tail": -16.323162577403338,
+        "lower_bound": -45.08928676553234,
+        "upper_bound": -43.922934493482266,
+        "annular": -43.922934493482266,
+        "radial": -43.922934493482266,
+        "sides": -43.922934493482266,
+        "joint": -43.922934493482266,
+        "paired_difference": -44.536648071342974,
+        "other_platform": -43.922934493482266,
+        "joint_fixed_power": -43.111215751095756,
+        "stress_nominal": -43.922934493482266,
+        "stress_without_weak": -43.92089263575174,
+        "stress_constant_background": -43.920431272751934,
+        "stress_brighter_edge": -43.922550795173976,
+        "stress_shallow": -43.93970530193695,
+        "stress_deep": -43.88560587637112,
+        "stress_more_aod": -43.847929003606865,
+        "stress_alternative_phase": -43.96626868051532
+      }
+    },
+    {
+      "key": "tucson-2019-04/5",
+      "city": "Tucson",
+      "night": "2019-04-08",
+      "site": "7",
+      "band": "tess",
+      "distance_km": 49.0,
+      "calendar_offset_days": 0,
+      "city_dominant": false,
+      "fitted_scene": "Tucson/2019-04-08",
+      "relative_pct": {
+        "h2": -27.131188425008023,
+        "core": -27.39888959538922,
+        "old_free_tail": -14.244831215431796,
+        "lower_bound": -27.87762660370925,
+        "upper_bound": -25.029385683218464,
+        "annular": -25.029385683218464,
+        "radial": -25.029385683218464,
+        "sides": -25.029385683218464,
+        "joint": -25.029385683218464,
+        "paired_difference": -26.528078803480692,
+        "other_platform": -25.029385683218464,
+        "joint_fixed_power": -24.596981398938233,
+        "stress_nominal": -25.029385683218464,
+        "stress_without_weak": -25.028297981303428,
+        "stress_constant_background": -25.028052212261375,
+        "stress_brighter_edge": -25.029181286321222,
+        "stress_shallow": -25.0383195282167,
+        "stress_deep": -25.009500650235662,
+        "stress_more_aod": -24.98943010073271,
+        "stress_alternative_phase": -25.052469895951802
+      }
+    }
+  ],
+  "ground_n_previous": 80,
+  "no_new_satellite_fit": [
+    {
+      "city": "Balaguer",
+      "n": 8,
+      "baseline": {
+        "n": 8,
+        "mae_pct": 11.265433503667735,
+        "bias_pct": 10.151843418363296
+      }
+    }
+  ],
+  "sources_sha256": {
+    "profiles-final.json": "56e91965ae76b79a49e9d166ad6396dfcc475e387edcf54beba2c05c34693f76",
+    "results.json": "88ae62819fc803480c60cd910e9a83cd6d367e5d5a8d52b934b2cbbea49a9117",
+    "ground-response.json": "14cd7f316bf5fe5ff694be1636ff81a2bdfb50eae89da9bc35f3fa269cd61183"
+  }
+}

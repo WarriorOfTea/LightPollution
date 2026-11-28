@@ -2,6 +2,13 @@ import numpy as np
 
 from lightpollution.adapters.viirs_daily import clear_dark_a1
 from lightpollution.models.all_orders import AllOrderSettings
+from lightpollution.models.halo_profiles import (
+    KAPPA_BOUNDS,
+    pool_profile_fits,
+    profile_normal_terms,
+    redistribution_flux_below,
+    redistribution_radiance,
+)
 from lightpollution.models.satellite_halo import (
     build_halo_kernel,
     emission_radiance,
@@ -17,6 +24,44 @@ def test_satellite_templates_conserve_upward_flux():
     flux = 2 * np.pi * np.trapezoid(mu[:, None] * emission_radiance(mu), mu, axis=0)
     np.testing.assert_allclose(flux, [1, 1], rtol=1e-7)
     np.testing.assert_allclose(flux_below(10), [0.0301537, 0.270002], atol=5e-5)
+
+
+def test_redistribution_preserves_h2_power_and_positivity():
+    mu = np.linspace(0, 1, 50_001)
+    perturbation = redistribution_radiance(mu)
+    h2 = 1 + np.maximum(0, 1 - 2 * mu)
+    for kappa in KAPPA_BOUNDS:
+        trial = h2 + kappa * perturbation
+        assert np.min(trial) >= 0
+        np.testing.assert_allclose(
+            np.trapezoid(mu * trial, mu), np.trapezoid(mu * h2, mu), atol=1e-9
+        )
+    assert not np.any(perturbation[mu >= 0.5])
+    for angle in (10, 25, 30):
+        nodes = np.linspace(0, np.sin(np.deg2rad(angle)), 10_001)
+        np.testing.assert_allclose(
+            np.trapezoid(nodes * redistribution_radiance(nodes), nodes),
+            redistribution_flux_below(angle),
+            atol=1e-9,
+        )
+
+
+def test_profile_fit_cancels_offsets_and_accounts_for_redundant_differences():
+    d = np.array([[1, -1, 0], [0, 1, -1], [1, 0, -1]])
+    covariance = np.array([[0.04, 0.01, 0], [0.01, 0.06, 0], [0, 0, 0.05]])
+    angular = np.array([0.11, 0.05, -0.01])
+    for rows in (d[:2], d):
+        baseline = profile_normal_terms(rows, covariance, 3.2 * angular, angular)
+        shifted = profile_normal_terms(rows, covariance, 3.2 * angular + 0.7, angular)
+        assert baseline['rank'] == shifted['rank'] == 2
+        np.testing.assert_allclose(
+            [baseline['numerator'], baseline['denominator']],
+            [shifted['numerator'], shifted['denominator']],
+            atol=1e-12,
+        )
+        fit = pool_profile_fits([shifted, shifted])
+        np.testing.assert_allclose(fit['kappa'], 3.2)
+        assert not fit['at_bound']
 
 
 def test_satellite_transfer_in_vacuum_is_only_direct():

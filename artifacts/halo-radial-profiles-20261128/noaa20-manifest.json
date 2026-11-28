@@ -1,0 +1,44 @@
+{
+  "files": [
+    {
+      "day": "2019-03-31",
+      "city": "Tucson",
+      "filename": "VJ146A1.A2019090.h06v05.002.2024228154413.h5",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VJ146A1/2019/090/VJ146A1.A2019090.h06v05.002.2024228154413.h5",
+      "size": 44469533,
+      "sha256": "5dde059bc9af42f494d04aa7a2ab0a3909e92bf7543f602abb6bc8ef45922c35"
+    },
+    {
+      "day": "2019-04-01",
+      "city": "Tucson",
+      "filename": "VJ146A1.A2019091.h06v05.002.2024228164538.h5",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VJ146A1/2019/091/VJ146A1.A2019091.h06v05.002.2024228164538.h5",
+      "size": 46004080,
+      "sha256": "f4885d8cd63ad31ee7389539f8bf2587507faf89976945170e52124bb048e7f4"
+    },
+    {
+      "day": "2019-04-03",
+      "city": "Tucson",
+      "filename": "VJ146A1.A2019093.h06v05.002.2024228185233.h5",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VJ146A1/2019/093/VJ146A1.A2019093.h06v05.002.2024228185233.h5",
+      "size": 44571927,
+      "sha256": "d5c7d6504d35e8c0c0d1ae207a6d53e02aecb06cb0eb8ffad438b76bf7a9b590"
+    },
+    {
+      "day": "2019-04-07",
+      "city": "Tucson",
+      "filename": "VJ146A1.A2019097.h06v05.002.2024228231628.h5",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VJ146A1/2019/097/VJ146A1.A2019097.h06v05.002.2024228231628.h5",
+      "size": 42611801,
+      "sha256": "00baf134383a9759031dabd0a9dd888d5405bd11202ac9659d89665a174ade96"
+    },
+    {
+      "day": "2019-04-08",
+      "city": "Tucson",
+      "filename": "VJ146A1.A2019098.h06v05.002.2024229002129.h5",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/allData/5200/VJ146A1/2019/098/VJ146A1.A2019098.h06v05.002.2024229002129.h5",
+      "size": 42869021,
+      "sha256": "e04ac5057884ec0cad624f210cef7e9b7b6228c57a2bf86d66b08bff30a304cd"
+    }
+  ]
+}

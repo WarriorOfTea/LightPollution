@@ -22,11 +22,17 @@ A1_FIELDS = (
     'QF_DNB',
 )
 A2_FIELDS = ('DNB_BRDF-Corrected_NTL', 'Mandatory_Quality_Flag', 'Snow_Flag')
+DAILY_FIELDS = {
+    'VNP46A1': A1_FIELDS,
+    'VJ146A1': A1_FIELDS,
+    'VNP46A2': A2_FIELDS,
+    'VJ146A2': A2_FIELDS,
+}
 
 
 def read_daily_region(directory: Path, day: date, bounds: Bounds, product: str):
     """Return native grid arrays and pinned file records. A2 excludes its gap-filled layer."""
-    fields = {'VNP46A1': A1_FIELDS, 'VNP46A2': A2_FIELDS}[product]
+    fields = DAILY_FIELDS[product]
     result = {name: np.full(bounds.shape, np.nan) for name in fields}
     manifest = []
     p = PIXELS_PER_DEGREE

@@ -290,11 +290,15 @@ class Report:
             'small',
         )
 
-    def save(self):
+    def save(
+        self,
+        filename='pochemu-podgonka-oreola-zavysila-yarkost.pdf',
+        title='Почему подгонка ореола завысила яркость',
+    ):
         doc = SimpleDocTemplate(
-            str(self.output / 'pochemu-podgonka-oreola-zavysila-yarkost.pdf'),
+            str(self.output / filename),
             pagesize=A4,
-            title='Почему подгонка ореола завысила яркость',
+            title=title,
             author='LightPollution',
             leftMargin=18 * mm,
             rightMargin=18 * mm,
