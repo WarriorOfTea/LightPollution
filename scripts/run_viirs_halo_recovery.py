@@ -63,12 +63,18 @@ def source_template(directory, bounds, night, geometry, city):
     valid = good_mask(
         fields[near], fields[near + '_Quality'], fields[near + '_Num']
     ) & np.isin(fields['Land_Water_Mask'], [0, 1, 5])
+    off = 'OffNadir_Composite_Snow_Free'
+    paired = valid & good_mask(
+        fields[off], fields[off + '_Quality'], fields[off + '_Num']
+    )
     radiance = np.where(valid, fields[near], 0.0)
     city_mask = grid_city_indices(bounds, {city: geometry[city]}, (city,)) == 1
     return (
         radiance,
         valid,
         city_mask,
+        paired,
+        np.where(paired, fields[off], 0.0),
         {v['filename']: v['sha256'] for v in tiles.values()},
     )
 
@@ -94,11 +100,30 @@ def region_masks(radiance, mapped, city_mask, bounds, lat, lon):
     return (core, halo, background, neighbors), north, east
 
 
-def preflight(directory, city, night, geometry, maps):
-    lat, lon, bounds, ref, _ = CITY[city]
+def preflight(
+    directory,
+    city,
+    night,
+    geometry,
+    maps,
+    *,
+    location=None,
+    minimum_class_cells=160,
+    compare_a2=True,
+):
+    lat, lon, bounds, ref = CITY[city][:4] if location is None else location
     a1, manifest = read_daily_region(directory, night, bounds, 'VNP46A1')
-    a2, more = read_daily_region(directory, night, bounds, 'VNP46A2')
-    radiance, mapped, city_mask, map_hash = source_template(
+    corrected = np.full(bounds.shape, np.nan)
+    if compare_a2:
+        a2, more = read_daily_region(directory, night, bounds, 'VNP46A2')
+        manifest.extend(more)
+        good = (a2['Mandatory_Quality_Flag'] == 0) & (a2['Snow_Flag'] == 0)
+        corrected = np.where(
+            good & (a2['DNB_BRDF-Corrected_NTL'] >= 0),
+            a2['DNB_BRDF-Corrected_NTL'],
+            np.nan,
+        )
+    radiance, mapped, city_mask, paired, off, map_hash = source_template(
         maps, bounds, night, geometry, city
     )
     masks, north, east = region_masks(radiance, mapped, city_mask, bounds, lat, lon)
@@ -115,13 +140,6 @@ def preflight(directory, city, night, geometry, maps):
         np.rad2deg(np.arctan2(np.mean(np.sin(radians)), np.mean(np.cos(radians))))
     )
     raw = a1['DNB_At_Sensor_Radiance']
-    corrected = np.where(
-        (a2['Mandatory_Quality_Flag'] == 0)
-        & (a2['Snow_Flag'] == 0)
-        & (a2['DNB_BRDF-Corrected_NTL'] >= 0),
-        a2['DNB_BRDF-Corrected_NTL'],
-        np.nan,
-    )
     groups = {}
     for name, region in zip(LABELS, masks, strict=True):
         valid = ok & region
@@ -154,7 +172,7 @@ def preflight(directory, city, night, geometry, maps):
             90 - np.nanmedian(a1['Solar_Zenith'][geometry_mask])
         ),
         'source_template_files': map_hash,
-        'files': manifest + more,
+        'files': manifest,
         'support': groups,
         'sensor_zenith_05_95_deg': np.percentile(
             a1['Sensor_Zenith'][ok], [5, 95]
@@ -162,7 +180,7 @@ def preflight(directory, city, night, geometry, maps):
         if ok.any()
         else None,
     }
-    if min(v['a1_cells'] for v in groups.values()) < 160:
+    if min(v['a1_cells'] for v in groups.values()) < minimum_class_cells:
         return info, None
     local = {
         'bounds': bounds,
@@ -174,6 +192,8 @@ def preflight(directory, city, night, geometry, maps):
         'north': north,
         'east': east,
         'city_flux': np.where(city_mask, np.pi * radiance, 0.0),
+        'paired_city_near': np.where(city_mask & paired, radiance, 0.0),
+        'paired_city_off': np.where(city_mask & paired, off, 0.0),
         'neighbor_flux': np.where(
             ~city_mask & (radiance >= 2.0), np.pi * radiance, 0.0
         ),

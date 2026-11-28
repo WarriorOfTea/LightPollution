@@ -1,0 +1,4246 @@
+{
+  "boundaries_sha256": "da448971bc2ab502e470feef85be3b5647df807cf67b09835af36b53e19a17bb",
+  "scenes": {
+    "Madrid/2012-02-19": {
+      "city": "Madrid",
+      "night": "2012-02-19",
+      "status": "missing_daily_a1",
+      "missing_tiles": [
+        "h17v04",
+        "h17v05"
+      ]
+    },
+    "Tucson/2019-03-29": {
+      "city": "Tucson",
+      "night": "2019-03-29",
+      "bounds": {
+        "west": -111.75,
+        "south": 31.6,
+        "east": -110.15,
+        "north": 32.85
+      },
+      "source_altitude_m": 700,
+      "utc": "2019-03-29T09:25:36.527252+00:00",
+      "zenith_deg": 25.319999434053898,
+      "azimuth_deg": -77.48870857244506,
+      "lunar_altitude_core_deg": -1.719997949898243,
+      "solar_altitude_core_deg": -44.92999698407948,
+      "source_template_files": {
+        "VNP46A3.A2019060.h06v05.002.2025133160905.h5": "a8036082d46eaed9132ed20ae234cc013e2ea326ba2401091322120ebe0e0173"
+      },
+      "files": [
+        {
+          "filename": "VNP46A1.A2019088.h06v05.002.2024255150609.h5",
+          "sha256": "1feec7bab2a0c0f51b2a08ae028e01b6c8356d5a1ce981630998670cb1874712",
+          "tile": "h06v05",
+          "product": "VNP46A1"
+        }
+      ],
+      "support": {
+        "city_core": {
+          "candidate_cells": 1755,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "halo_18_to_43_km": {
+          "candidate_cells": 13837,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "dark_control_46_to_65_km": {
+          "candidate_cells": 28234,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "bright_neighbor_sources": {
+          "candidate_cells": 3532,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        }
+      },
+      "sensor_zenith_05_95_deg": null,
+      "status": "excluded_by_clear_dark_support"
+    },
+    "Balaguer/2016-05-03": {
+      "city": "Balaguer",
+      "night": "2016-05-03",
+      "bounds": {
+        "west": -0.2,
+        "south": 41.15,
+        "east": 1.8,
+        "north": 42.45
+      },
+      "source_altitude_m": 250,
+      "utc": "2016-05-03T02:12:46.825104+00:00",
+      "zenith_deg": 27.10999939404428,
+      "azimuth_deg": -74.85092405328216,
+      "lunar_altitude_core_deg": -8.129997806623578,
+      "solar_altitude_core_deg": -24.119997449219227,
+      "source_template_files": {
+        "VNP46A3.A2016122.h17v04.002.2025101123155.h5": "92dd0e1000b71618b28431e04a773582208117b298350aae59a377145259a9c1",
+        "VNP46A3.A2016122.h18v04.002.2025101123217.h5": "aaa4520f9512ce9010f6bf83fc0b0081e12fff9679223d0d833366d1eefb825c"
+      },
+      "files": [
+        {
+          "filename": "VNP46A1.A2016124.h17v04.002.2024234112220.h5",
+          "sha256": "021fbb3221ed98f8a3f8ad83550b7b2b8578f09157e8537b892bd3353630872f",
+          "tile": "h17v04",
+          "product": "VNP46A1"
+        },
+        {
+          "filename": "VNP46A1.A2016124.h18v04.002.2024234112547.h5",
+          "sha256": "6274e8e687f49e3974f0a28b5024b53662fd1775bd10c488012a419f753f2dce",
+          "tile": "h18v04",
+          "product": "VNP46A1"
+        }
+      ],
+      "support": {
+        "city_core": {
+          "candidate_cells": 64,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "halo_18_to_43_km": {
+          "candidate_cells": 10366,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "dark_control_46_to_65_km": {
+          "candidate_cells": 21623,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "bright_neighbor_sources": {
+          "candidate_cells": 3773,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        }
+      },
+      "sensor_zenith_05_95_deg": null,
+      "status": "excluded_by_clear_dark_support"
+    },
+    "Balaguer/2016-05-04": {
+      "city": "Balaguer",
+      "night": "2016-05-04",
+      "bounds": {
+        "west": -0.2,
+        "south": 41.15,
+        "east": 1.8,
+        "north": 42.45
+      },
+      "source_altitude_m": 250,
+      "utc": "2016-05-04T01:53:58.833904+00:00",
+      "zenith_deg": 0.6499999854713678,
+      "azimuth_deg": 113.66200420404238,
+      "lunar_altitude_core_deg": -17.849997589364648,
+      "solar_altitude_core_deg": -25.849997410550714,
+      "source_template_files": {
+        "VNP46A3.A2016122.h17v04.002.2025101123155.h5": "92dd0e1000b71618b28431e04a773582208117b298350aae59a377145259a9c1",
+        "VNP46A3.A2016122.h18v04.002.2025101123217.h5": "aaa4520f9512ce9010f6bf83fc0b0081e12fff9679223d0d833366d1eefb825c"
+      },
+      "files": [
+        {
+          "filename": "VNP46A1.A2016125.h17v04.002.2024234131535.h5",
+          "sha256": "385252b184f92ef12777aa8eebff536d0b82b310c7d93f8fe6394fe514138fb9",
+          "tile": "h17v04",
+          "product": "VNP46A1"
+        },
+        {
+          "filename": "VNP46A1.A2016125.h18v04.002.2024234132047.h5",
+          "sha256": "9b1152c66da1301499da5f821a197e57badfc5991aff355e5f3d39671c55a12d",
+          "tile": "h18v04",
+          "product": "VNP46A1"
+        }
+      ],
+      "support": {
+        "city_core": {
+          "candidate_cells": 64,
+          "a1_cells": 3,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "halo_18_to_43_km": {
+          "candidate_cells": 10366,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "dark_control_46_to_65_km": {
+          "candidate_cells": 21623,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "bright_neighbor_sources": {
+          "candidate_cells": 3773,
+          "a1_cells": 37,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        }
+      },
+      "sensor_zenith_05_95_deg": [
+        1.0399999767541885,
+        6.439999856054783
+      ],
+      "status": "excluded_by_clear_dark_support"
+    },
+    "Berlin/2017-03-28": {
+      "city": "Berlin",
+      "night": "2017-03-28",
+      "bounds": {
+        "west": 12.25,
+        "south": 51.9,
+        "east": 14.55,
+        "north": 53.15
+      },
+      "source_altitude_m": 45,
+      "utc": "2017-03-28T00:58:55.137105+00:00",
+      "zenith_deg": 22.80999949015677,
+      "azimuth_deg": 100.60689538969521,
+      "lunar_altitude_core_deg": -33.829997232183814,
+      "solar_altitude_core_deg": -30.079997316002846,
+      "source_template_files": {
+        "VNP46A3.A2017060.h19v03.002.2025101152327.h5": "61e268c810a4a75f88750ac54039b41dea47294966f5aa613af1b59bf092a341"
+      },
+      "files": [
+        {
+          "filename": "VNP46A1.A2017087.h19v03.002.2024242070306.h5",
+          "sha256": "bd3007897aeaebec6f5eb50702b98d2f947f7ccc8bb2b3854a76c1c88aa82f14",
+          "tile": "h19v03",
+          "product": "VNP46A1"
+        }
+      ],
+      "support": {
+        "city_core": {
+          "candidate_cells": 4763,
+          "a1_cells": 4763,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "halo_18_to_43_km": {
+          "candidate_cells": 11676,
+          "a1_cells": 11676,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "dark_control_46_to_65_km": {
+          "candidate_cells": 35582,
+          "a1_cells": 35582,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "bright_neighbor_sources": {
+          "candidate_cells": 4750,
+          "a1_cells": 4750,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        }
+      },
+      "sensor_zenith_05_95_deg": [
+        17.939999599009752,
+        27.439999386668205
+      ],
+      "status": "evaluated",
+      "samples": 1048576,
+      "seed": 18115,
+      "atmosphere": {
+        "reference_wavelength_nm": 650.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.13448510537672542,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 0.9943907906910809,
+        "top_m": 80000.0
+      },
+      "free_power_fraction_below_10": 0.24623590061733774,
+      "scenarios": {
+        "a1_lambert": {
+          "coefficients": [
+            0.7809722294489377,
+            1.1017838561074282,
+            0.33666874197888197
+          ],
+          "test": {
+            "city_core": {
+              "n": 99,
+              "mae": 4.979385964648491,
+              "bias": -4.67609459019507
+            },
+            "halo_18_to_43_km": {
+              "n": 263,
+              "mae": 0.10559766387354189,
+              "bias": -0.028929955474368576
+            },
+            "dark_control_46_to_65_km": {
+              "n": 754,
+              "mae": 0.10715451990334604,
+              "bias": 0.02045870757013089
+            },
+            "bright_neighbor_sources": {
+              "n": 99,
+              "mae": 1.096622278179258,
+              "bias": -0.20679310887401647
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 211,
+              "mae": 5.624930365570538,
+              "bias": -3.6908803430084904
+            },
+            "halo_18_to_43_km": {
+              "n": 493,
+              "mae": 0.10480880383950177,
+              "bias": -0.026897610063311126
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1549,
+              "mae": 0.10659779194917618,
+              "bias": 0.02001923696658282
+            },
+            "bright_neighbor_sources": {
+              "n": 162,
+              "mae": 1.4605403445836183,
+              "bias": -0.027055335799236004
+            }
+          }
+        },
+        "a1_free": {
+          "coefficients": [
+            0.3718066682311411,
+            3.3809738646663416,
+            1.079446721128541,
+            0.28269142996501173
+          ],
+          "test": {
+            "city_core": {
+              "n": 99,
+              "mae": 4.184932582559901,
+              "bias": -3.69023274819032
+            },
+            "halo_18_to_43_km": {
+              "n": 263,
+              "mae": 0.11141323009079308,
+              "bias": 0.010223857950940347
+            },
+            "dark_control_46_to_65_km": {
+              "n": 754,
+              "mae": 0.09621264185416183,
+              "bias": -0.007066491768370913
+            },
+            "bright_neighbor_sources": {
+              "n": 99,
+              "mae": 1.1768638264080653,
+              "bias": 0.012517914817539496
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 211,
+              "mae": 4.99864185729423,
+              "bias": -2.99272662934587
+            },
+            "halo_18_to_43_km": {
+              "n": 493,
+              "mae": 0.11091353561835288,
+              "bias": 0.010993213778769995
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1549,
+              "mae": 0.0947734326463575,
+              "bias": -0.007147041171090483
+            },
+            "bright_neighbor_sources": {
+              "n": 162,
+              "mae": 1.5520305237011072,
+              "bias": 0.08202378907057994
+            }
+          }
+        },
+        "h1": {
+          "coefficients": [
+            1.100555296610809,
+            0.3350820846282042
+          ],
+          "test": {
+            "city_core": {
+              "n": 99,
+              "mae": 2.1633812656907607,
+              "bias": -0.2805909585964254
+            },
+            "halo_18_to_43_km": {
+              "n": 263,
+              "mae": 0.10525184229126562,
+              "bias": -0.028824099999496366
+            },
+            "dark_control_46_to_65_km": {
+              "n": 754,
+              "mae": 0.10657412266312392,
+              "bias": 0.01923173807928729
+            },
+            "bright_neighbor_sources": {
+              "n": 99,
+              "mae": 1.0994435553772224,
+              "bias": -0.19856359258004216
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 211,
+              "mae": 3.8677850925566655,
+              "bias": 0.8388418892505553
+            },
+            "halo_18_to_43_km": {
+              "n": 493,
+              "mae": 0.10436457242008608,
+              "bias": -0.026784634070741716
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1549,
+              "mae": 0.10601872473988001,
+              "bias": 0.01879641592075676
+            },
+            "bright_neighbor_sources": {
+              "n": 162,
+              "mae": 1.4655607850957177,
+              "bias": -0.023613815753304464
+            }
+          }
+        },
+        "h2": {
+          "coefficients": [
+            1.0999184521611425,
+            0.33356907301855093
+          ],
+          "test": {
+            "city_core": {
+              "n": 99,
+              "mae": 2.1599232767749816,
+              "bias": -0.19892093233304076
+            },
+            "halo_18_to_43_km": {
+              "n": 263,
+              "mae": 0.10494284437586898,
+              "bias": -0.027772223054277533
+            },
+            "dark_control_46_to_65_km": {
+              "n": 754,
+              "mae": 0.10620411251909849,
+              "bias": 0.018458125254594306
+            },
+            "bright_neighbor_sources": {
+              "n": 99,
+              "mae": 1.101290661055832,
+              "bias": -0.19243574418737314
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 211,
+              "mae": 3.862630024183293,
+              "bias": 0.9158568411873901
+            },
+            "halo_18_to_43_km": {
+              "n": 493,
+              "mae": 0.10400615345864922,
+              "bias": -0.02574006487007407
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1549,
+              "mae": 0.10564081935827642,
+              "bias": 0.018032941496812428
+            },
+            "bright_neighbor_sources": {
+              "n": 162,
+              "mae": 1.4675427143135475,
+              "bias": -0.020574714293765776
+            }
+          }
+        },
+        "a1_anchored": {
+          "coefficients": [
+            6.445831648734272,
+            1.0970871489514962,
+            0.326842478119453
+          ],
+          "test": {
+            "city_core": {
+              "n": 99,
+              "mae": 2.1730056745022575,
+              "bias": 0.16417025518167594
+            },
+            "halo_18_to_43_km": {
+              "n": 263,
+              "mae": 0.10422807766213485,
+              "bias": -0.023095755240648757
+            },
+            "dark_control_46_to_65_km": {
+              "n": 754,
+              "mae": 0.10461917479371032,
+              "bias": 0.015018772874708528
+            },
+            "bright_neighbor_sources": {
+              "n": 99,
+              "mae": 1.1095025819403526,
+              "bias": -0.16519236186458558
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 211,
+              "mae": 3.8625100263331307,
+              "bias": 1.2582523519339222
+            },
+            "halo_18_to_43_km": {
+              "n": 493,
+              "mae": 0.10264810342535323,
+              "bias": -0.021096086058451775
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1549,
+              "mae": 0.10401586013030717,
+              "bias": 0.014638662739842573
+            },
+            "bright_neighbor_sources": {
+              "n": 162,
+              "mae": 1.4766593420767113,
+              "bias": -0.0070633808412148965
+            }
+          },
+          "kappa": 5.445831648734272
+        }
+      }
+    },
+    "Berlin/2017-03-29": {
+      "city": "Berlin",
+      "night": "2017-03-29",
+      "bounds": {
+        "west": 12.25,
+        "south": 51.9,
+        "east": 14.55,
+        "north": 53.15
+      },
+      "source_altitude_m": 45,
+      "utc": "2017-03-29T00:40:00.468278+00:00",
+      "zenith_deg": 41.39999907463789,
+      "azimuth_deg": 96.98730841856309,
+      "lunar_altitude_core_deg": -33.23999724537134,
+      "solar_altitude_core_deg": -31.06999729387462,
+      "source_template_files": {
+        "VNP46A3.A2017060.h19v03.002.2025101152327.h5": "61e268c810a4a75f88750ac54039b41dea47294966f5aa613af1b59bf092a341"
+      },
+      "files": [
+        {
+          "filename": "VNP46A1.A2017088.h19v03.002.2024242074050.h5",
+          "sha256": "1e3e8cfa04d26bcf0a68f24f8fa71f4acef814f627bc0988ec11d8308fcb2685",
+          "tile": "h19v03",
+          "product": "VNP46A1"
+        }
+      ],
+      "support": {
+        "city_core": {
+          "candidate_cells": 4763,
+          "a1_cells": 4763,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "halo_18_to_43_km": {
+          "candidate_cells": 11672,
+          "a1_cells": 11672,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "dark_control_46_to_65_km": {
+          "candidate_cells": 35584,
+          "a1_cells": 35584,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "bright_neighbor_sources": {
+          "candidate_cells": 4750,
+          "a1_cells": 4750,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        }
+      },
+      "sensor_zenith_05_95_deg": [
+        37.859999153763056,
+        44.69999900087714
+      ],
+      "status": "evaluated",
+      "samples": 1048576,
+      "seed": 18115,
+      "atmosphere": {
+        "reference_wavelength_nm": 650.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.13448510537672542,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 0.9943907906910809,
+        "top_m": 80000.0
+      },
+      "free_power_fraction_below_10": 0.26999852350519127,
+      "scenarios": {
+        "a1_lambert": {
+          "coefficients": [
+            0.8039032225729772,
+            1.104607022868722,
+            0.3267254412647532
+          ],
+          "test": {
+            "city_core": {
+              "n": 99,
+              "mae": 6.168157849582329,
+              "bias": -5.82517492461006
+            },
+            "halo_18_to_43_km": {
+              "n": 263,
+              "mae": 0.1277302759251286,
+              "bias": -0.05672916464916395
+            },
+            "dark_control_46_to_65_km": {
+              "n": 754,
+              "mae": 0.11087138469577701,
+              "bias": 0.03800367702040313
+            },
+            "bright_neighbor_sources": {
+              "n": 99,
+              "mae": 1.148319674450277,
+              "bias": -0.5265228592770381
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 211,
+              "mae": 6.246504394574212,
+              "bias": -4.354119023255952
+            },
+            "halo_18_to_43_km": {
+              "n": 493,
+              "mae": 0.12438787925059411,
+              "bias": -0.05413991214926005
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1549,
+              "mae": 0.11448967920293206,
+              "bias": 0.03130915693372941
+            },
+            "bright_neighbor_sources": {
+              "n": 162,
+              "mae": 1.5266888696037308,
+              "bias": -0.3654979883355111
+            }
+          }
+        },
+        "a1_free": {
+          "coefficients": [
+            0.0,
+            2.874768823089115,
+            1.0784813173493597,
+            0.27321968490085186
+          ],
+          "test": {
+            "city_core": {
+              "n": 99,
+              "mae": 4.7904738077808675,
+              "bias": -4.394788165687616
+            },
+            "halo_18_to_43_km": {
+              "n": 263,
+              "mae": 0.11386828099301587,
+              "bias": -0.012936374863579242
+            },
+            "dark_control_46_to_65_km": {
+              "n": 754,
+              "mae": 0.09958083007019168,
+              "bias": 0.013111226795989186
+            },
+            "bright_neighbor_sources": {
+              "n": 99,
+              "mae": 1.1339708516409301,
+              "bias": -0.2563154184610773
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 211,
+              "mae": 5.071755935521647,
+              "bias": -3.249918757601399
+            },
+            "halo_18_to_43_km": {
+              "n": 493,
+              "mae": 0.11581766273345498,
+              "bias": -0.009564676247033565
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1549,
+              "mae": 0.10323313396330737,
+              "bias": 0.006199961345348487
+            },
+            "bright_neighbor_sources": {
+              "n": 162,
+              "mae": 1.5017721851538555,
+              "bias": -0.24206774834364428
+            }
+          }
+        },
+        "h1": {
+          "coefficients": [
+            1.1029634864292526,
+            0.3255322092162646
+          ],
+          "test": {
+            "city_core": {
+              "n": 99,
+              "mae": 2.5432853779641924,
+              "bias": -2.324827118733866
+            },
+            "halo_18_to_43_km": {
+              "n": 263,
+              "mae": 0.127038991634972,
+              "bias": -0.05596761859656235
+            },
+            "dark_control_46_to_65_km": {
+              "n": 754,
+              "mae": 0.11050652934460165,
+              "bias": 0.03722360440811562
+            },
+            "bright_neighbor_sources": {
+              "n": 99,
+              "mae": 1.1427913758839912,
+              "bias": -0.5167336199742399
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 211,
+              "mae": 2.6015349200252618,
+              "bias": -2.288832429549208
+            },
+            "halo_18_to_43_km": {
+              "n": 493,
+              "mae": 0.12382373426404149,
+              "bias": -0.05346567314587948
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1549,
+              "mae": 0.11410329812498379,
+              "bias": 0.03053092996778119
+            },
+            "bright_neighbor_sources": {
+              "n": 162,
+              "mae": 1.524332226205656,
+              "bias": -0.3609858212955512
+            }
+          }
+        },
+        "h2": {
+          "coefficients": [
+            1.1019741034671982,
+            0.3236651319812404
+          ],
+          "test": {
+            "city_core": {
+              "n": 99,
+              "mae": 2.4484647157717205,
+              "bias": -2.176968862679226
+            },
+            "halo_18_to_43_km": {
+              "n": 263,
+              "mae": 0.1262497904578961,
+              "bias": -0.05447138210593909
+            },
+            "dark_control_46_to_65_km": {
+              "n": 754,
+              "mae": 0.11007247142274028,
+              "bias": 0.0363369006985132
+            },
+            "bright_neighbor_sources": {
+              "n": 99,
+              "mae": 1.1382011778045895,
+              "bias": -0.5068375244305717
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 211,
+              "mae": 2.507324954872528,
+              "bias": -2.1491962152378306
+            },
+            "halo_18_to_43_km": {
+              "n": 493,
+              "mae": 0.123030350601061,
+              "bias": -0.051921657611346574
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1549,
+              "mae": 0.11365274091274921,
+              "bias": 0.029641274205779496
+            },
+            "bright_neighbor_sources": {
+              "n": 162,
+              "mae": 1.521555292192228,
+              "bias": -0.3563979128419121
+            }
+          }
+        },
+        "a1_anchored": {
+          "coefficients": [
+            27.727240741842945,
+            1.076520009816539,
+            0.27563038647216315
+          ],
+          "test": {
+            "city_core": {
+              "n": 99,
+              "mae": 2.527487870072633,
+              "bias": 1.6270160865075654
+            },
+            "halo_18_to_43_km": {
+              "n": 263,
+              "mae": 0.11323475345688633,
+              "bias": -0.015977345704940017
+            },
+            "dark_control_46_to_65_km": {
+              "n": 754,
+              "mae": 0.09995534418260282,
+              "bias": 0.013524460894890279
+            },
+            "bright_neighbor_sources": {
+              "n": 99,
+              "mae": 1.1417568350350331,
+              "bias": -0.2522382919743783
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 211,
+              "mae": 2.471046298051103,
+              "bias": 1.4432582866305563
+            },
+            "halo_18_to_43_km": {
+              "n": 493,
+              "mae": 0.11512392353531187,
+              "bias": -0.012198398245269724
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1549,
+              "mae": 0.1035431172535491,
+              "bias": 0.006752886239397801
+            },
+            "bright_neighbor_sources": {
+              "n": 162,
+              "mae": 1.510760038211474,
+              "bias": -0.23836368755367127
+            }
+          },
+          "kappa": 26.727240741842945
+        }
+      }
+    },
+    "Madrid/2012-02-20": {
+      "city": "Madrid",
+      "night": "2012-02-20",
+      "bounds": {
+        "west": -4.5,
+        "south": 39.8,
+        "east": -2.9,
+        "north": 41.05
+      },
+      "source_altitude_m": 500,
+      "utc": "2012-02-20T01:33:51.182814+00:00",
+      "zenith_deg": 46.67999895662069,
+      "azimuth_deg": 95.77623679861235,
+      "lunar_altitude_core_deg": -47.31999693065882,
+      "solar_altitude_core_deg": -57.42999670468271,
+      "source_template_files": {
+        "VNP46A3.A2012032.h17v04.002.2025086155144.h5": "b095816dbaa12e1986f9b846f9c16cbc412cf2129601cbf6241a8a56692e77d9",
+        "VNP46A3.A2012032.h17v05.002.2025086155032.h5": "351a792b4306f8dd11ab7c146c2057a36ba78ae4d9ed7e63c01f58e10d41c8b7"
+      },
+      "files": [
+        {
+          "filename": "VNP46A1.A2012051.h17v04.002.2024130061038.h5",
+          "sha256": "5c5bcdd0ed047481070a6aaed6e1549307c42503da30c8c6a7a577bbd08bbc14",
+          "tile": "h17v04",
+          "product": "VNP46A1"
+        },
+        {
+          "filename": "VNP46A1.A2012051.h17v05.002.2024130061041.h5",
+          "sha256": "f3852bad3b33547716e8398241c2bd30e1d015b8186d040ba992064ca7c6f124",
+          "tile": "h17v05",
+          "product": "VNP46A1"
+        }
+      ],
+      "support": {
+        "city_core": {
+          "candidate_cells": 4286,
+          "a1_cells": 4286,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "halo_18_to_43_km": {
+          "candidate_cells": 1250,
+          "a1_cells": 1250,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "dark_control_46_to_65_km": {
+          "candidate_cells": 9280,
+          "a1_cells": 8725,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "bright_neighbor_sources": {
+          "candidate_cells": 14842,
+          "a1_cells": 14703,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        }
+      },
+      "sensor_zenith_05_95_deg": [
+        43.979999016970396,
+        49.24999889917672
+      ],
+      "status": "evaluated",
+      "samples": 1048576,
+      "seed": 18115,
+      "atmosphere": {
+        "reference_wavelength_nm": 650.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.08461538461538462,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 0.9394130628134758,
+        "top_m": 80000.0
+      },
+      "free_power_fraction_below_10": 0.20119641760093138,
+      "scenarios": {
+        "a1_lambert": {
+          "coefficients": [
+            1.055588411973899,
+            1.117375170357496,
+            0.6362655658891977
+          ],
+          "test": {
+            "city_core": {
+              "n": 93,
+              "mae": 5.7466055554894115,
+              "bias": 0.45131446709898254
+            },
+            "halo_18_to_43_km": {
+              "n": 14,
+              "mae": 0.14279158566045072,
+              "bias": -0.14161900020489543
+            },
+            "dark_control_46_to_65_km": {
+              "n": 190,
+              "mae": 0.08278775916061236,
+              "bias": 0.052339409042465534
+            },
+            "bright_neighbor_sources": {
+              "n": 272,
+              "mae": 4.75026982689796,
+              "bias": -2.1122353467176302
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 176,
+              "mae": 6.250740785455701,
+              "bias": -0.19859202935795242
+            },
+            "halo_18_to_43_km": {
+              "n": 66,
+              "mae": 0.11591032472666264,
+              "bias": -0.11274572605056896
+            },
+            "dark_control_46_to_65_km": {
+              "n": 367,
+              "mae": 0.08187091557966367,
+              "bias": 0.04982986693874821
+            },
+            "bright_neighbor_sources": {
+              "n": 590,
+              "mae": 4.516477592867398,
+              "bias": -0.9979601674529892
+            }
+          }
+        },
+        "a1_free": {
+          "coefficients": [
+            0.539453605144655,
+            1.3410870937362582,
+            1.1020715523753266,
+            0.5446087117185927
+          ],
+          "test": {
+            "city_core": {
+              "n": 93,
+              "mae": 5.863363539617146,
+              "bias": 0.9033116559422157
+            },
+            "halo_18_to_43_km": {
+              "n": 14,
+              "mae": 0.09544131030669369,
+              "bias": -0.04347149000604108
+            },
+            "dark_control_46_to_65_km": {
+              "n": 190,
+              "mae": 0.06145022957825786,
+              "bias": 0.01826102733728964
+            },
+            "bright_neighbor_sources": {
+              "n": 272,
+              "mae": 4.777644165445179,
+              "bias": -2.0611392025535995
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 176,
+              "mae": 6.366124676472992,
+              "bias": 0.3251829427083334
+            },
+            "halo_18_to_43_km": {
+              "n": 66,
+              "mae": 0.0555141909641248,
+              "bias": -0.02196728448308364
+            },
+            "dark_control_46_to_65_km": {
+              "n": 367,
+              "mae": 0.060716457390457466,
+              "bias": 0.010530679023619649
+            },
+            "bright_neighbor_sources": {
+              "n": 590,
+              "mae": 4.6133001316760875,
+              "bias": -0.9889884467604099
+            }
+          }
+        },
+        "h1": {
+          "coefficients": [
+            1.1173031739586612,
+            0.6360950124196592
+          ],
+          "test": {
+            "city_core": {
+              "n": 93,
+              "mae": 4.855859173901732,
+              "bias": 0.16005389086088553
+            },
+            "halo_18_to_43_km": {
+              "n": 14,
+              "mae": 0.14244834971868767,
+              "bias": -0.14124895006714247
+            },
+            "dark_control_46_to_65_km": {
+              "n": 190,
+              "mae": 0.08271527875826154,
+              "bias": 0.05222500371337325
+            },
+            "bright_neighbor_sources": {
+              "n": 272,
+              "mae": 4.749600055915082,
+              "bias": -2.112419204734246
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 176,
+              "mae": 4.5503307273345905,
+              "bias": 0.1631788395618897
+            },
+            "halo_18_to_43_km": {
+              "n": 66,
+              "mae": 0.11566490148092497,
+              "bias": -0.11251187944905813
+            },
+            "dark_control_46_to_65_km": {
+              "n": 367,
+              "mae": 0.08178291072500928,
+              "bias": 0.04970144786775896
+            },
+            "bright_neighbor_sources": {
+              "n": 590,
+              "mae": 4.516667068744026,
+              "bias": -0.998258607366932
+            }
+          }
+        },
+        "h2": {
+          "coefficients": [
+            1.1159193842197477,
+            0.628168486955196
+          ],
+          "test": {
+            "city_core": {
+              "n": 93,
+              "mae": 4.854831248311544,
+              "bias": 0.6719261643576873
+            },
+            "halo_18_to_43_km": {
+              "n": 14,
+              "mae": 0.13440696579073083,
+              "bias": -0.1320772929270204
+            },
+            "dark_control_46_to_65_km": {
+              "n": 190,
+              "mae": 0.08058018954062326,
+              "bias": 0.04920676475153552
+            },
+            "bright_neighbor_sources": {
+              "n": 272,
+              "mae": 4.749545030794,
+              "bias": -2.107943064647658
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 176,
+              "mae": 4.584262649000108,
+              "bias": 0.6899758806284272
+            },
+            "halo_18_to_43_km": {
+              "n": 66,
+              "mae": 0.10812960565143206,
+              "bias": -0.10459775571751512
+            },
+            "dark_control_46_to_65_km": {
+              "n": 367,
+              "mae": 0.07933776368162912,
+              "bias": 0.04623905023529957
+            },
+            "bright_neighbor_sources": {
+              "n": 590,
+              "mae": 4.523914403179347,
+              "bias": -0.9979238075897711
+            }
+          }
+        },
+        "a1_anchored": {
+          "coefficients": [
+            9.32391505656417,
+            1.1057846257158002,
+            0.5701152877597787
+          ],
+          "test": {
+            "city_core": {
+              "n": 93,
+              "mae": 6.239768035335406,
+              "bias": 4.420835215258655
+            },
+            "halo_18_to_43_km": {
+              "n": 14,
+              "mae": 0.08974801030873444,
+              "bias": -0.06490485510483247
+            },
+            "dark_control_46_to_65_km": {
+              "n": 190,
+              "mae": 0.06645771658491853,
+              "bias": 0.02710143897462732
+            },
+            "bright_neighbor_sources": {
+              "n": 272,
+              "mae": 4.771136970038871,
+              "bias": -2.0751601948721965
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 176,
+              "mae": 6.106911258267383,
+              "bias": 4.5481926614491
+            },
+            "halo_18_to_43_km": {
+              "n": 66,
+              "mae": 0.05902105509493167,
+              "bias": -0.046635385760551665
+            },
+            "dark_control_46_to_65_km": {
+              "n": 367,
+              "mae": 0.06473319912359662,
+              "bias": 0.020880744083121912
+            },
+            "bright_neighbor_sources": {
+              "n": 590,
+              "mae": 4.583368396410649,
+              "bias": -0.9954717624608782
+            }
+          },
+          "kappa": 8.32391505656417
+        }
+      }
+    },
+    "Madrid/2013-12-04": {
+      "city": "Madrid",
+      "night": "2013-12-04",
+      "bounds": {
+        "west": -4.5,
+        "south": 39.8,
+        "east": -2.9,
+        "north": 41.05
+      },
+      "source_altitude_m": 500,
+      "utc": "2013-12-04T02:32:52.667313+00:00",
+      "zenith_deg": 31.189999302849174,
+      "azimuth_deg": -74.86193602362339,
+      "lunar_altitude_core_deg": -63.15999657660723,
+      "solar_altitude_core_deg": -53.93999678269029,
+      "source_template_files": {
+        "VNP46A3.A2013335.h17v04.002.2025087065708.h5": "f851b452336795afd976af1e3830ee960e771fcc8b12a781c7464f1a314a69d6",
+        "VNP46A3.A2013335.h17v05.002.2025087065715.h5": "dcb255159df09bf6a2f0acab39b31462f3b5b8a8889dfdb5e74330afc0f3bdf2"
+      },
+      "files": [
+        {
+          "filename": "VNP46A1.A2013338.h17v04.002.2024171173433.h5",
+          "sha256": "563ab15b552c2e9bee47132a4782477f367c0c76b09ca043fdd3225953f3adf4",
+          "tile": "h17v04",
+          "product": "VNP46A1"
+        },
+        {
+          "filename": "VNP46A1.A2013338.h17v05.002.2024171173431.h5",
+          "sha256": "9c6939f9a72fb309eea364952842550a4f97c7aeaf0be9236da7937acf226229",
+          "tile": "h17v05",
+          "product": "VNP46A1"
+        }
+      ],
+      "support": {
+        "city_core": {
+          "candidate_cells": 4065,
+          "a1_cells": 4065,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "halo_18_to_43_km": {
+          "candidate_cells": 1637,
+          "a1_cells": 1637,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "dark_control_46_to_65_km": {
+          "candidate_cells": 11968,
+          "a1_cells": 10719,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "bright_neighbor_sources": {
+          "candidate_cells": 13739,
+          "a1_cells": 13707,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        }
+      },
+      "sensor_zenith_05_95_deg": [
+        27.25999939069152,
+        34.82999922148883
+      ],
+      "status": "evaluated",
+      "samples": 1048576,
+      "seed": 18115,
+      "atmosphere": {
+        "reference_wavelength_nm": 650.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.06185957909949058,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 0.9394130628134758,
+        "top_m": 80000.0
+      },
+      "free_power_fraction_below_10": 0.1625125995844729,
+      "scenarios": {
+        "a1_lambert": {
+          "coefficients": [
+            1.0357632537616492,
+            1.0666590055015701,
+            0.3833112654798652
+          ],
+          "test": {
+            "city_core": {
+              "n": 89,
+              "mae": 4.613785708560211,
+              "bias": 3.4672141891424424
+            },
+            "halo_18_to_43_km": {
+              "n": 16,
+              "mae": 0.06516383900311673,
+              "bias": -0.06009889159692153
+            },
+            "dark_control_46_to_65_km": {
+              "n": 223,
+              "mae": 0.0702549763943861,
+              "bias": 0.0439525741133757
+            },
+            "bright_neighbor_sources": {
+              "n": 267,
+              "mae": 2.753183921816907,
+              "bias": 0.2169884327188936
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 169,
+              "mae": 4.872254440795532,
+              "bias": 0.9495317536329865
+            },
+            "halo_18_to_43_km": {
+              "n": 83,
+              "mae": 0.08461796884351126,
+              "bias": -0.07587764172499183
+            },
+            "dark_control_46_to_65_km": {
+              "n": 483,
+              "mae": 0.06416124113891421,
+              "bias": 0.033431609484926295
+            },
+            "bright_neighbor_sources": {
+              "n": 547,
+              "mae": 2.7307507918926013,
+              "bias": 0.048541247523088686
+            }
+          }
+        },
+        "a1_free": {
+          "coefficients": [
+            0.8665427923899925,
+            1.0670667866625414,
+            1.0576273370655775,
+            0.32319635687538006
+          ],
+          "test": {
+            "city_core": {
+              "n": 89,
+              "mae": 4.595666030149281,
+              "bias": 3.4288844829931024
+            },
+            "halo_18_to_43_km": {
+              "n": 16,
+              "mae": 0.04307164589470372,
+              "bias": 0.008424135992614257
+            },
+            "dark_control_46_to_65_km": {
+              "n": 223,
+              "mae": 0.056608605812069085,
+              "bias": 0.019167222766907115
+            },
+            "bright_neighbor_sources": {
+              "n": 267,
+              "mae": 2.7671821748566114,
+              "bias": 0.19707896442822118
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 169,
+              "mae": 4.929373694449514,
+              "bias": 0.8728104545947821
+            },
+            "halo_18_to_43_km": {
+              "n": 83,
+              "mae": 0.05251888150465842,
+              "bias": -0.014898282351093872
+            },
+            "dark_control_46_to_65_km": {
+              "n": 483,
+              "mae": 0.054731374934421644,
+              "bias": 0.006551794587078239
+            },
+            "bright_neighbor_sources": {
+              "n": 547,
+              "mae": 2.7438540783395404,
+              "bias": -0.017127424398591995
+            }
+          }
+        },
+        "h1": {
+          "coefficients": [
+            1.0665140631866274,
+            0.38275323732094174
+          ],
+          "test": {
+            "city_core": {
+              "n": 89,
+              "mae": 3.825953842152566,
+              "bias": 2.4518606644947174
+            },
+            "halo_18_to_43_km": {
+              "n": 16,
+              "mae": 0.06413220219970273,
+              "bias": -0.05906515865912197
+            },
+            "dark_control_46_to_65_km": {
+              "n": 223,
+              "mae": 0.0700583721980961,
+              "bias": 0.04363014413693944
+            },
+            "bright_neighbor_sources": {
+              "n": 267,
+              "mae": 2.753114658360814,
+              "bias": 0.21733820711851884
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 169,
+              "mae": 4.374106844268683,
+              "bias": 0.8421685997465689
+            },
+            "halo_18_to_43_km": {
+              "n": 83,
+              "mae": 0.08385102457744512,
+              "bias": -0.07508097244815212
+            },
+            "dark_control_46_to_65_km": {
+              "n": 483,
+              "mae": 0.06399088053762775,
+              "bias": 0.03308437310749726
+            },
+            "bright_neighbor_sources": {
+              "n": 547,
+              "mae": 2.7308256835844253,
+              "bias": 0.04747409007953314
+            }
+          }
+        },
+        "h2": {
+          "coefficients": [
+            1.0655948157565176,
+            0.37667888628150115
+          ],
+          "test": {
+            "city_core": {
+              "n": 89,
+              "mae": 3.9384664767494035,
+              "bias": 2.651897817048311
+            },
+            "halo_18_to_43_km": {
+              "n": 16,
+              "mae": 0.05735193470497196,
+              "bias": -0.05206336856968305
+            },
+            "dark_control_46_to_65_km": {
+              "n": 223,
+              "mae": 0.06842539743043317,
+              "bias": 0.041077808063489915
+            },
+            "bright_neighbor_sources": {
+              "n": 267,
+              "mae": 2.7539717215860193,
+              "bias": 0.2151922765261528
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 169,
+              "mae": 4.431886946451796,
+              "bias": 1.0473047659714927
+            },
+            "halo_18_to_43_km": {
+              "n": 83,
+              "mae": 0.07815286924028783,
+              "bias": -0.06883124231566354
+            },
+            "dark_control_46_to_65_km": {
+              "n": 483,
+              "mae": 0.06266273011165487,
+              "bias": 0.030321821995059384
+            },
+            "bright_neighbor_sources": {
+              "n": 547,
+              "mae": 2.7316963004190176,
+              "bias": 0.04067780197996101
+            }
+          }
+        },
+        "a1_anchored": {
+          "coefficients": [
+            10.365204726642311,
+            1.0579051228092118,
+            0.32586569625508865
+          ],
+          "test": {
+            "city_core": {
+              "n": 89,
+              "mae": 4.997717469775792,
+              "bias": 4.325249551093711
+            },
+            "halo_18_to_43_km": {
+              "n": 16,
+              "mae": 0.042495896599773444,
+              "bias": 0.006508038981449613
+            },
+            "dark_control_46_to_65_km": {
+              "n": 223,
+              "mae": 0.05679401381686814,
+              "bias": 0.019726994277890805
+            },
+            "bright_neighbor_sources": {
+              "n": 267,
+              "mae": 2.7660523180366474,
+              "bias": 0.19724112779189973
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 169,
+              "mae": 5.22073234011978,
+              "bias": 2.763310793281518
+            },
+            "halo_18_to_43_km": {
+              "n": 83,
+              "mae": 0.05168683630946745,
+              "bias": -0.016550970271130252
+            },
+            "dark_control_46_to_65_km": {
+              "n": 483,
+              "mae": 0.054684612491532204,
+              "bias": 0.007212516371703769
+            },
+            "bright_neighbor_sources": {
+              "n": 547,
+              "mae": 2.7428738448113243,
+              "bias": -0.016174539354134522
+            }
+          },
+          "kappa": 9.365204726642311
+        }
+      }
+    },
+    "Madrid/2013-12-29": {
+      "city": "Madrid",
+      "night": "2013-12-29",
+      "bounds": {
+        "west": -4.5,
+        "south": 39.8,
+        "east": -2.9,
+        "north": 41.05
+      },
+      "source_altitude_m": 500,
+      "utc": "2013-12-29T01:24:21.689329+00:00",
+      "zenith_deg": 56.74999873153865,
+      "azimuth_deg": 93.82235208363872,
+      "lunar_altitude_core_deg": -29.08999733813107,
+      "solar_altitude_core_deg": -67.69999647513032,
+      "source_template_files": {
+        "VNP46A3.A2013335.h17v04.002.2025087065708.h5": "f851b452336795afd976af1e3830ee960e771fcc8b12a781c7464f1a314a69d6",
+        "VNP46A3.A2013335.h17v05.002.2025087065715.h5": "dcb255159df09bf6a2f0acab39b31462f3b5b8a8889dfdb5e74330afc0f3bdf2"
+      },
+      "files": [
+        {
+          "filename": "VNP46A1.A2013363.h17v04.002.2024172054502.h5",
+          "sha256": "9a73079eb065924a723073b357dcf32e626c4236424f3c4708e4c8da0ebf6cc1",
+          "tile": "h17v04",
+          "product": "VNP46A1"
+        },
+        {
+          "filename": "VNP46A1.A2013363.h17v05.002.2024172054500.h5",
+          "sha256": "038a40ca1e6b047cd86dd8c1ff3fab59181ce628cc5db4f5b9715860478e78f3",
+          "tile": "h17v05",
+          "product": "VNP46A1"
+        }
+      ],
+      "support": {
+        "city_core": {
+          "candidate_cells": 4065,
+          "a1_cells": 4065,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "halo_18_to_43_km": {
+          "candidate_cells": 1482,
+          "a1_cells": 1462,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "dark_control_46_to_65_km": {
+          "candidate_cells": 8084,
+          "a1_cells": 6874,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "bright_neighbor_sources": {
+          "candidate_cells": 12372,
+          "a1_cells": 12159,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        }
+      },
+      "sensor_zenith_05_95_deg": [
+        54.669998778030276,
+        57.81999870762229
+      ],
+      "status": "evaluated",
+      "samples": 1048576,
+      "seed": 18115,
+      "atmosphere": {
+        "reference_wavelength_nm": 650.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1200.0,
+        "aerosol_optical_depth": 0.018114056739732133,
+        "aerosol_single_scattering_albedo": 0.9,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 0.9394130628134758,
+        "top_m": 80000.0
+      },
+      "free_power_fraction_below_10": 0.26999852350519127,
+      "scenarios": {
+        "a1_lambert": {
+          "coefficients": [
+            1.192476630905179,
+            1.2631294874321353,
+            0.8062671561677668
+          ],
+          "test": {
+            "city_core": {
+              "n": 89,
+              "mae": 6.7724444040445375,
+              "bias": 1.0351338418518414
+            },
+            "halo_18_to_43_km": {
+              "n": 13,
+              "mae": 0.22995036146255027,
+              "bias": -0.21507258927825587
+            },
+            "dark_control_46_to_65_km": {
+              "n": 135,
+              "mae": 0.12698866745942783,
+              "bias": 0.07735473974496346
+            },
+            "bright_neighbor_sources": {
+              "n": 241,
+              "mae": 6.522054895834968,
+              "bias": -3.2227244463801394
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 169,
+              "mae": 7.128250841126815,
+              "bias": -0.01690923089315154
+            },
+            "halo_18_to_43_km": {
+              "n": 74,
+              "mae": 0.19025706573204487,
+              "bias": -0.1714031674362846
+            },
+            "dark_control_46_to_65_km": {
+              "n": 308,
+              "mae": 0.13065791352238634,
+              "bias": 0.07458434524806715
+            },
+            "bright_neighbor_sources": {
+              "n": 491,
+              "mae": 6.257261579710315,
+              "bias": -1.467849896191696
+            }
+          }
+        },
+        "a1_free": {
+          "coefficients": [
+            0.0,
+            1.5995114155744938,
+            1.2484778313071498,
+            0.6808769159589777
+          ],
+          "test": {
+            "city_core": {
+              "n": 89,
+              "mae": 6.953869098688411,
+              "bias": 1.3409206398981812
+            },
+            "halo_18_to_43_km": {
+              "n": 13,
+              "mae": 0.14083398360131566,
+              "bias": -0.08927227208858707
+            },
+            "dark_control_46_to_65_km": {
+              "n": 135,
+              "mae": 0.10181170804182862,
+              "bias": 0.0379659749816232
+            },
+            "bright_neighbor_sources": {
+              "n": 241,
+              "mae": 6.577662172272907,
+              "bias": -3.22659311730672
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 169,
+              "mae": 7.125657374980266,
+              "bias": 0.33675460758806647
+            },
+            "halo_18_to_43_km": {
+              "n": 74,
+              "mae": 0.12511287233487292,
+              "bias": -0.05635846866113718
+            },
+            "dark_control_46_to_65_km": {
+              "n": 308,
+              "mae": 0.10512657854158843,
+              "bias": 0.025502404581355397
+            },
+            "bright_neighbor_sources": {
+              "n": 491,
+              "mae": 6.269511513640221,
+              "bias": -1.5240509673004539
+            }
+          }
+        },
+        "h1": {
+          "coefficients": [
+            1.264190728994887,
+            0.8101275588407618
+          ],
+          "test": {
+            "city_core": {
+              "n": 89,
+              "mae": 9.625357213099647,
+              "bias": -8.101125830681436
+            },
+            "halo_18_to_43_km": {
+              "n": 13,
+              "mae": 0.2377273231116283,
+              "bias": -0.22282347026360166
+            },
+            "dark_control_46_to_65_km": {
+              "n": 135,
+              "mae": 0.12859496636132167,
+              "bias": 0.0795924655443713
+            },
+            "bright_neighbor_sources": {
+              "n": 241,
+              "mae": 6.5211336671461355,
+              "bias": -3.2222841635778408
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 169,
+              "mae": 8.925045527180941,
+              "bias": -7.601290073817227
+            },
+            "halo_18_to_43_km": {
+              "n": 74,
+              "mae": 0.1938148962107815,
+              "bias": -0.17502517223912104
+            },
+            "dark_control_46_to_65_km": {
+              "n": 308,
+              "mae": 0.13219762442069652,
+              "bias": 0.07700590808308566
+            },
+            "bright_neighbor_sources": {
+              "n": 491,
+              "mae": 6.258949627201715,
+              "bias": -1.4601730468260494
+            }
+          }
+        },
+        "h2": {
+          "coefficients": [
+            1.2627402822168625,
+            0.8003628604045704
+          ],
+          "test": {
+            "city_core": {
+              "n": 89,
+              "mae": 9.405545662399218,
+              "bias": -7.779506898598708
+            },
+            "halo_18_to_43_km": {
+              "n": 13,
+              "mae": 0.22597364973158113,
+              "bias": -0.21017941474263432
+            },
+            "dark_control_46_to_65_km": {
+              "n": 135,
+              "mae": 0.12589305712720056,
+              "bias": 0.07597969365448155
+            },
+            "bright_neighbor_sources": {
+              "n": 241,
+              "mae": 6.524238997742495,
+              "bias": -3.2216665621962246
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 169,
+              "mae": 8.714743626536343,
+              "bias": -7.262355704566598
+            },
+            "halo_18_to_43_km": {
+              "n": 74,
+              "mae": 0.18517728137031186,
+              "bias": -0.1650604601117636
+            },
+            "dark_control_46_to_65_km": {
+              "n": 308,
+              "mae": 0.12947171586737374,
+              "bias": 0.07272004679688554
+            },
+            "bright_neighbor_sources": {
+              "n": 491,
+              "mae": 6.258293753847321,
+              "bias": -1.466399678092449
+            }
+          }
+        },
+        "a1_anchored": {
+          "coefficients": [
+            18.038983879955314,
+            1.2394765897254012,
+            0.6437470195938659
+          ],
+          "test": {
+            "city_core": {
+              "n": 89,
+              "mae": 6.617330531744673,
+              "bias": -2.621066031435401
+            },
+            "halo_18_to_43_km": {
+              "n": 13,
+              "mae": 0.1425892519691367,
+              "bias": -0.007381612064584516
+            },
+            "dark_control_46_to_65_km": {
+              "n": 135,
+              "mae": 0.09112174133260736,
+              "bias": 0.018034503550579103
+            },
+            "bright_neighbor_sources": {
+              "n": 241,
+              "mae": 6.61091686493742,
+              "bias": -3.2117608635921044
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 169,
+              "mae": 6.407870120215543,
+              "bias": -1.826192819792957
+            },
+            "halo_18_to_43_km": {
+              "n": 74,
+              "mae": 0.126733244100353,
+              "bias": -0.005236602932686563
+            },
+            "dark_control_46_to_65_km": {
+              "n": 308,
+              "mae": 0.09697364543997429,
+              "bias": 0.003979186715792251
+            },
+            "bright_neighbor_sources": {
+              "n": 491,
+              "mae": 6.270109424493887,
+              "bias": -1.5662685166004833
+            }
+          },
+          "kappa": 17.038983879955314
+        }
+      }
+    },
+    "Tucson/2019-03-31": {
+      "city": "Tucson",
+      "night": "2019-03-31",
+      "bounds": {
+        "west": -111.75,
+        "south": 31.6,
+        "east": -110.15,
+        "north": 32.85
+      },
+      "source_altitude_m": 700,
+      "utc": "2019-03-31T08:47:54.768448+00:00",
+      "zenith_deg": 36.75999917834997,
+      "azimuth_deg": 97.25121139853461,
+      "lunar_altitude_core_deg": -25.94999740831554,
+      "solar_altitude_core_deg": -49.049996891990304,
+      "source_template_files": {
+        "VNP46A3.A2019060.h06v05.002.2025133160905.h5": "a8036082d46eaed9132ed20ae234cc013e2ea326ba2401091322120ebe0e0173"
+      },
+      "files": [
+        {
+          "filename": "VNP46A1.A2019090.h06v05.002.2024255170136.h5",
+          "sha256": "5114c7043c73829241ee8c86289c4ce99522e850c1ccdc4c1a59ed2fef0b630d",
+          "tile": "h06v05",
+          "product": "VNP46A1"
+        }
+      ],
+      "support": {
+        "city_core": {
+          "candidate_cells": 1755,
+          "a1_cells": 1755,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "halo_18_to_43_km": {
+          "candidate_cells": 13837,
+          "a1_cells": 13837,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "dark_control_46_to_65_km": {
+          "candidate_cells": 28234,
+          "a1_cells": 28221,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "bright_neighbor_sources": {
+          "candidate_cells": 3532,
+          "a1_cells": 3532,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        }
+      },
+      "sensor_zenith_05_95_deg": [
+        33.14999925903976,
+        40.47999909520149
+      ],
+      "status": "evaluated",
+      "samples": 1048576,
+      "seed": 18115,
+      "atmosphere": {
+        "reference_wavelength_nm": 650.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1538.4615384615386,
+        "aerosol_optical_depth": 0.03821396996074503,
+        "aerosol_single_scattering_albedo": 0.935,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 0.9162188716508777,
+        "top_m": 80000.0
+      },
+      "free_power_fraction_below_10": 0.24099891136315005,
+      "scenarios": {
+        "a1_lambert": {
+          "coefficients": [
+            0.9786563238621443,
+            0.97820140169028,
+            0.26716605227638246
+          ],
+          "test": {
+            "city_core": {
+              "n": 40,
+              "mae": 2.7719291720431967,
+              "bias": -0.04820318530731891
+            },
+            "halo_18_to_43_km": {
+              "n": 291,
+              "mae": 0.0668863137636852,
+              "bias": -0.04946657838421627
+            },
+            "dark_control_46_to_65_km": {
+              "n": 606,
+              "mae": 0.04348201414107727,
+              "bias": 0.030881435939359714
+            },
+            "bright_neighbor_sources": {
+              "n": 75,
+              "mae": 1.6277848661509964,
+              "bias": -0.4757216192339096
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 75,
+              "mae": 2.79614891581574,
+              "bias": -0.19483196565533384
+            },
+            "halo_18_to_43_km": {
+              "n": 599,
+              "mae": 0.07176082694716351,
+              "bias": -0.049170876496854934
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1203,
+              "mae": 0.04420175327011968,
+              "bias": 0.029193926414929558
+            },
+            "bright_neighbor_sources": {
+              "n": 132,
+              "mae": 1.0425026745293584,
+              "bias": -0.007412503279224263
+            }
+          }
+        },
+        "a1_free": {
+          "coefficients": [
+            0.41411585784349936,
+            3.0108799197748914,
+            0.9495486472015346,
+            0.22466166230299023
+          ],
+          "test": {
+            "city_core": {
+              "n": 40,
+              "mae": 2.763506676655042,
+              "bias": 0.32476065416752037
+            },
+            "halo_18_to_43_km": {
+              "n": 291,
+              "mae": 0.053322270858212305,
+              "bias": -0.012082108369639754
+            },
+            "dark_control_46_to_65_km": {
+              "n": 606,
+              "mae": 0.03572969555096939,
+              "bias": 0.00994553360463321
+            },
+            "bright_neighbor_sources": {
+              "n": 75,
+              "mae": 1.6524553496159045,
+              "bias": -0.48313634136009936
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 75,
+              "mae": 2.7319634455579562,
+              "bias": -0.04718849902500195
+            },
+            "halo_18_to_43_km": {
+              "n": 599,
+              "mae": 0.057401893192163184,
+              "bias": -0.014685943922945704
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1203,
+              "mae": 0.036826778864655754,
+              "bias": 0.00860501386128701
+            },
+            "bright_neighbor_sources": {
+              "n": 132,
+              "mae": 1.110959328259964,
+              "bias": 0.06394737011669369
+            }
+          }
+        },
+        "h1": {
+          "coefficients": [
+            0.976795246507775,
+            0.26622835648395676
+          ],
+          "test": {
+            "city_core": {
+              "n": 40,
+              "mae": 3.3049898695460245,
+              "bias": 3.077121026086574
+            },
+            "halo_18_to_43_km": {
+              "n": 291,
+              "mae": 0.06636123814075161,
+              "bias": -0.04892878306905342
+            },
+            "dark_control_46_to_65_km": {
+              "n": 606,
+              "mae": 0.04309876584246785,
+              "bias": 0.03021593547396914
+            },
+            "bright_neighbor_sources": {
+              "n": 75,
+              "mae": 1.625653218291039,
+              "bias": -0.4783173958769342
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 75,
+              "mae": 3.515625101149911,
+              "bias": 3.013437059068402
+            },
+            "halo_18_to_43_km": {
+              "n": 599,
+              "mae": 0.07128606390712756,
+              "bias": -0.048741549715029045
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1203,
+              "mae": 0.04383336165046075,
+              "bias": 0.028534160027665356
+            },
+            "bright_neighbor_sources": {
+              "n": 132,
+              "mae": 1.0423212826541963,
+              "bias": -0.0068016194925900305
+            }
+          }
+        },
+        "h2": {
+          "coefficients": [
+            0.9757105534102838,
+            0.2645866671796063
+          ],
+          "test": {
+            "city_core": {
+              "n": 40,
+              "mae": 3.348022322700332,
+              "bias": 3.1408322494211793
+            },
+            "halo_18_to_43_km": {
+              "n": 291,
+              "mae": 0.06527713431463598,
+              "bias": -0.04746783336682373
+            },
+            "dark_control_46_to_65_km": {
+              "n": 606,
+              "mae": 0.042650364422609534,
+              "bias": 0.02939315779380499
+            },
+            "bright_neighbor_sources": {
+              "n": 75,
+              "mae": 1.6256831527754707,
+              "bias": -0.47837373753919243
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 75,
+              "mae": 3.55357272568073,
+              "bias": 3.068867667739767
+            },
+            "halo_18_to_43_km": {
+              "n": 599,
+              "mae": 0.0702677195636807,
+              "bias": -0.04739489916104202
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1203,
+              "mae": 0.04340421064573035,
+              "bias": 0.027723796804811383
+            },
+            "bright_neighbor_sources": {
+              "n": 132,
+              "mae": 1.0430067838870016,
+              "bias": -0.003955529971362443
+            }
+          }
+        },
+        "a1_anchored": {
+          "coefficients": [
+            17.68592063770949,
+            0.9586961435667699,
+            0.23883525903978683
+          ],
+          "test": {
+            "city_core": {
+              "n": 40,
+              "mae": 4.212888821324147,
+              "bias": 4.1402014423791975
+            },
+            "halo_18_to_43_km": {
+              "n": 291,
+              "mae": 0.05302793143517258,
+              "bias": -0.024551492281965553
+            },
+            "dark_control_46_to_65_km": {
+              "n": 606,
+              "mae": 0.03714574404478099,
+              "bias": 0.016487132400269357
+            },
+            "bright_neighbor_sources": {
+              "n": 75,
+              "mae": 1.6381879432776194,
+              "bias": -0.47925750838192926
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 75,
+              "mae": 4.190762637492154,
+              "bias": 3.9383477962587405
+            },
+            "halo_18_to_43_km": {
+              "n": 599,
+              "mae": 0.058280386073306926,
+              "bias": -0.026271445444476002
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1203,
+              "mae": 0.038106599152522014,
+              "bias": 0.015012503603403416
+            },
+            "bright_neighbor_sources": {
+              "n": 132,
+              "mae": 1.0798143308218788,
+              "bias": 0.04068800438646946
+            }
+          },
+          "kappa": 16.68592063770949
+        }
+      }
+    },
+    "Tucson/2019-04-01": {
+      "city": "Tucson",
+      "night": "2019-04-01",
+      "bounds": {
+        "west": -111.75,
+        "south": 31.6,
+        "east": -110.15,
+        "north": 32.85
+      },
+      "source_altitude_m": 700,
+      "utc": "2019-04-01T08:28:59.661026+00:00",
+      "zenith_deg": 55.859998751431704,
+      "azimuth_deg": 94.82775380861523,
+      "lunar_altitude_core_deg": -37.63999714702368,
+      "solar_altitude_core_deg": -50.53999685868621,
+      "source_template_files": {
+        "VNP46A3.A2019091.h06v05.002.2025133164421.h5": "2db37a019a102593d4f31b1007a8eec784200f2afb87ee756e47213543671559"
+      },
+      "files": [
+        {
+          "filename": "VNP46A1.A2019091.h06v05.002.2024255175315.h5",
+          "sha256": "53597be0c2283f6f3e4a618e2b5b9a40bdd1c3ae846f0eb01364a34510892dce",
+          "tile": "h06v05",
+          "product": "VNP46A1"
+        }
+      ],
+      "support": {
+        "city_core": {
+          "candidate_cells": 1974,
+          "a1_cells": 1974,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "halo_18_to_43_km": {
+          "candidate_cells": 15885,
+          "a1_cells": 9073,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "dark_control_46_to_65_km": {
+          "candidate_cells": 26401,
+          "a1_cells": 15726,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "bright_neighbor_sources": {
+          "candidate_cells": 3483,
+          "a1_cells": 2435,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        }
+      },
+      "sensor_zenith_05_95_deg": [
+        53.52999880351126,
+        57.76999870873988
+      ],
+      "status": "evaluated",
+      "samples": 1048576,
+      "seed": 18115,
+      "atmosphere": {
+        "reference_wavelength_nm": 650.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1538.4615384615386,
+        "aerosol_optical_depth": 0.06824001582017676,
+        "aerosol_single_scattering_albedo": 0.935,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 0.9162188716508777,
+        "top_m": 80000.0
+      },
+      "free_power_fraction_below_10": 0.26999852350519127,
+      "scenarios": {
+        "a1_lambert": {
+          "coefficients": [
+            1.1498891866493288,
+            1.0777652213299511,
+            0.5302424735736049
+          ],
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mae": 2.3093801449281104,
+              "bias": -0.9165830847362607
+            },
+            "halo_18_to_43_km": {
+              "n": 202,
+              "mae": 0.13174418395548793,
+              "bias": -0.09642004033756357
+            },
+            "dark_control_46_to_65_km": {
+              "n": 342,
+              "mae": 0.07304496415566633,
+              "bias": 0.05733540184467057
+            },
+            "bright_neighbor_sources": {
+              "n": 50,
+              "mae": 1.7235525591397307,
+              "bias": -0.8985920942822071
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mae": 2.8051084125450747,
+              "bias": -0.4243683264141225
+            },
+            "halo_18_to_43_km": {
+              "n": 385,
+              "mae": 0.12646851030688333,
+              "bias": -0.084931545990941
+            },
+            "dark_control_46_to_65_km": {
+              "n": 660,
+              "mae": 0.0736343345264879,
+              "bias": 0.05370470907041251
+            },
+            "bright_neighbor_sources": {
+              "n": 88,
+              "mae": 1.6115287817024808,
+              "bias": -0.6531161003796856
+            }
+          }
+        },
+        "a1_free": {
+          "coefficients": [
+            0.0,
+            1.6072353669014816,
+            1.0397470547590348,
+            0.4850144288991927
+          ],
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mae": 2.4151350996070726,
+              "bias": -0.36777415297384314
+            },
+            "halo_18_to_43_km": {
+              "n": 202,
+              "mae": 0.1172303074972219,
+              "bias": -0.05058708460387056
+            },
+            "dark_control_46_to_65_km": {
+              "n": 342,
+              "mae": 0.06074187279048374,
+              "bias": 0.03410605766398879
+            },
+            "bright_neighbor_sources": {
+              "n": 50,
+              "mae": 1.872652141393762,
+              "bias": -1.0118058015930087
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mae": 2.6940767979118574,
+              "bias": -0.306512598700823
+            },
+            "halo_18_to_43_km": {
+              "n": 385,
+              "mae": 0.11187835726763973,
+              "bias": -0.04700007935050284
+            },
+            "dark_control_46_to_65_km": {
+              "n": 660,
+              "mae": 0.0627598886832961,
+              "bias": 0.030419885447396898
+            },
+            "bright_neighbor_sources": {
+              "n": 88,
+              "mae": 1.6841778887984136,
+              "bias": -0.5270122113833767
+            }
+          }
+        },
+        "h1": {
+          "coefficients": [
+            1.0787927192200308,
+            0.5304826802655063
+          ],
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mae": 2.1260104923241965,
+              "bias": -1.1433824292493033
+            },
+            "halo_18_to_43_km": {
+              "n": 202,
+              "mae": 0.1321393277845971,
+              "bias": -0.09666846992285413
+            },
+            "dark_control_46_to_65_km": {
+              "n": 342,
+              "mae": 0.07318673166000411,
+              "bias": 0.05755157786506548
+            },
+            "bright_neighbor_sources": {
+              "n": 50,
+              "mae": 1.7252796431194253,
+              "bias": -0.8954319230861472
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mae": 2.2916146775078023,
+              "bias": -0.7987310016558443
+            },
+            "halo_18_to_43_km": {
+              "n": 385,
+              "mae": 0.1267823125264279,
+              "bias": -0.08510470571505482
+            },
+            "dark_control_46_to_65_km": {
+              "n": 660,
+              "mae": 0.07375822223888416,
+              "bias": 0.053917344426518236
+            },
+            "bright_neighbor_sources": {
+              "n": 88,
+              "mae": 1.6091649145013058,
+              "bias": -0.6485173003025092
+            }
+          }
+        },
+        "h2": {
+          "coefficients": [
+            1.0742312522696527,
+            0.5268023487755922
+          ],
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mae": 2.040045023929106,
+              "bias": -0.8767138500228259
+            },
+            "halo_18_to_43_km": {
+              "n": 202,
+              "mae": 0.12948786208261528,
+              "bias": -0.09270585019316434
+            },
+            "dark_control_46_to_65_km": {
+              "n": 342,
+              "mae": 0.07183357542798456,
+              "bias": 0.055503570788843146
+            },
+            "bright_neighbor_sources": {
+              "n": 50,
+              "mae": 1.7322610288598224,
+              "bias": -0.9063123121843865
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mae": 2.244977627737303,
+              "bias": -0.5611653827518052
+            },
+            "halo_18_to_43_km": {
+              "n": 385,
+              "mae": 0.12424363970533857,
+              "bias": -0.08188682237474051
+            },
+            "dark_control_46_to_65_km": {
+              "n": 660,
+              "mae": 0.07256164696555739,
+              "bias": 0.051865979772860574
+            },
+            "bright_neighbor_sources": {
+              "n": 88,
+              "mae": 1.6095660454892482,
+              "bias": -0.638205368395361
+            }
+          }
+        },
+        "a1_anchored": {
+          "coefficients": [
+            10.960425437935893,
+            1.0333585677731794,
+            0.49382501287333025
+          ],
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mae": 2.285972529719758,
+              "bias": 1.512750070776323
+            },
+            "halo_18_to_43_km": {
+              "n": 202,
+              "mae": 0.1096485765914359,
+              "bias": -0.05719909156638422
+            },
+            "dark_control_46_to_65_km": {
+              "n": 342,
+              "mae": 0.06192489891883831,
+              "bias": 0.0371525560859886
+            },
+            "bright_neighbor_sources": {
+              "n": 50,
+              "mae": 1.838115650313729,
+              "bias": -1.0038052274348972
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mae": 2.558252500103958,
+              "bias": 1.5675236320549355
+            },
+            "halo_18_to_43_km": {
+              "n": 385,
+              "mae": 0.10639588328076456,
+              "bias": -0.05305321863587736
+            },
+            "dark_control_46_to_65_km": {
+              "n": 660,
+              "mae": 0.06355171686564977,
+              "bias": 0.03348487974774462
+            },
+            "bright_neighbor_sources": {
+              "n": 88,
+              "mae": 1.6787191521345144,
+              "bias": -0.545806071420293
+            }
+          },
+          "kappa": 9.960425437935893
+        }
+      }
+    },
+    "Tucson/2019-04-03": {
+      "city": "Tucson",
+      "night": "2019-04-03",
+      "bounds": {
+        "west": -111.75,
+        "south": 31.6,
+        "east": -110.15,
+        "north": 32.85
+      },
+      "source_altitude_m": 700,
+      "utc": "2019-04-03T09:31:48.730316+00:00",
+      "zenith_deg": 34.139999236911535,
+      "azimuth_deg": -76.75804825778641,
+      "lunar_altitude_core_deg": -38.30999713204801,
+      "solar_altitude_core_deg": -42.239997044205666,
+      "source_template_files": {
+        "VNP46A3.A2019091.h06v05.002.2025133164421.h5": "2db37a019a102593d4f31b1007a8eec784200f2afb87ee756e47213543671559"
+      },
+      "files": [
+        {
+          "filename": "VNP46A1.A2019093.h06v05.002.2024255192831.h5",
+          "sha256": "c24d4dffd8d5f9aaeb5ac922f0addc65d10c94fc0892a75a623463ba2d791cf0",
+          "tile": "h06v05",
+          "product": "VNP46A1"
+        }
+      ],
+      "support": {
+        "city_core": {
+          "candidate_cells": 1974,
+          "a1_cells": 1974,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "halo_18_to_43_km": {
+          "candidate_cells": 15916,
+          "a1_cells": 15916,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "dark_control_46_to_65_km": {
+          "candidate_cells": 26954,
+          "a1_cells": 26954,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "bright_neighbor_sources": {
+          "candidate_cells": 3483,
+          "a1_cells": 3482,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        }
+      },
+      "sensor_zenith_05_95_deg": [
+        29.839999333024025,
+        37.739999156445265
+      ],
+      "status": "evaluated",
+      "samples": 1048576,
+      "seed": 18115,
+      "atmosphere": {
+        "reference_wavelength_nm": 650.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1538.4615384615386,
+        "aerosol_optical_depth": 0.04192526469366544,
+        "aerosol_single_scattering_albedo": 0.935,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 0.9162188716508777,
+        "top_m": 80000.0
+      },
+      "free_power_fraction_below_10": 0.20680880954940817,
+      "scenarios": {
+        "a1_lambert": {
+          "coefficients": [
+            0.992945362419543,
+            1.0243185719057202,
+            0.2739823879729578
+          ],
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mae": 2.618996220312086,
+              "bias": -1.3783987557412694
+            },
+            "halo_18_to_43_km": {
+              "n": 352,
+              "mae": 0.0584930551739971,
+              "bias": -0.03253810961086359
+            },
+            "dark_control_46_to_65_km": {
+              "n": 573,
+              "mae": 0.035139156306387836,
+              "bias": 0.023057091770920652
+            },
+            "bright_neighbor_sources": {
+              "n": 71,
+              "mae": 1.2115132109261324,
+              "bias": 0.39920614680479183
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mae": 2.4486352233503066,
+              "bias": -0.00771006349530152
+            },
+            "halo_18_to_43_km": {
+              "n": 678,
+              "mae": 0.05475051064317717,
+              "bias": -0.029288960234270304
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1140,
+              "mae": 0.03689454239968358,
+              "bias": 0.02067574629813099
+            },
+            "bright_neighbor_sources": {
+              "n": 136,
+              "mae": 1.2048364168189682,
+              "bias": 0.08688354275538968
+            }
+          }
+        },
+        "a1_free": {
+          "coefficients": [
+            0.6772488720061091,
+            1.8933379062102784,
+            1.0030979355486607,
+            0.24370697651716713
+          ],
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mae": 2.697240284036651,
+              "bias": -1.2451057972803805
+            },
+            "halo_18_to_43_km": {
+              "n": 352,
+              "mae": 0.05065229042027403,
+              "bias": -0.010664289042389469
+            },
+            "dark_control_46_to_65_km": {
+              "n": 573,
+              "mae": 0.03030427555423332,
+              "bias": 0.008354675973786951
+            },
+            "bright_neighbor_sources": {
+              "n": 71,
+              "mae": 1.235829897277597,
+              "bias": 0.4080574536728561
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mae": 2.4690324899558678,
+              "bias": 0.07203899445942046
+            },
+            "halo_18_to_43_km": {
+              "n": 678,
+              "mae": 0.04992068918868912,
+              "bias": -0.008623287372372012
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1140,
+              "mae": 0.03278819010898252,
+              "bias": 0.005896217005426644
+            },
+            "bright_neighbor_sources": {
+              "n": 136,
+              "mae": 1.243918188899481,
+              "bias": 0.11587006972715756
+            }
+          }
+        },
+        "h1": {
+          "coefficients": [
+            1.0229137667859955,
+            0.273038726069515
+          ],
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mae": 2.8135220854252485,
+              "bias": 0.8709732536166963
+            },
+            "halo_18_to_43_km": {
+              "n": 352,
+              "mae": 0.058057257970619135,
+              "bias": -0.03202140328175842
+            },
+            "dark_control_46_to_65_km": {
+              "n": 573,
+              "mae": 0.034830960537499504,
+              "bias": 0.022442193887036943
+            },
+            "bright_neighbor_sources": {
+              "n": 71,
+              "mae": 1.2113584045080537,
+              "bias": 0.39634068140163986
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mae": 3.1139196877090822,
+              "bias": 2.230372664103775
+            },
+            "halo_18_to_43_km": {
+              "n": 678,
+              "mae": 0.05443505736035536,
+              "bias": -0.028806694917927544
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1140,
+              "mae": 0.036615932985508894,
+              "bias": 0.02005494429919885
+            },
+            "bright_neighbor_sources": {
+              "n": 136,
+              "mae": 1.2061273423215866,
+              "bias": 0.08673248999371216
+            }
+          }
+        },
+        "h2": {
+          "coefficients": [
+            1.0216548035992232,
+            0.2712155232147679
+          ],
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mae": 2.8460914877996695,
+              "bias": 0.9327598257239647
+            },
+            "halo_18_to_43_km": {
+              "n": 352,
+              "mae": 0.05724008636349077,
+              "bias": -0.030694204828858818
+            },
+            "dark_control_46_to_65_km": {
+              "n": 573,
+              "mae": 0.03439687449000785,
+              "bias": 0.021545328173021114
+            },
+            "bright_neighbor_sources": {
+              "n": 71,
+              "mae": 1.2117602943985435,
+              "bias": 0.39695145643304447
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mae": 3.1581040143993264,
+              "bias": 2.290708427943713
+            },
+            "halo_18_to_43_km": {
+              "n": 678,
+              "mae": 0.05377321568934546,
+              "bias": -0.027556190176554814
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1140,
+              "mae": 0.03622381539537722,
+              "bias": 0.019153390898338035
+            },
+            "bright_neighbor_sources": {
+              "n": 136,
+              "mae": 1.2079628731568968,
+              "bias": 0.0886533585925608
+            }
+          }
+        },
+        "a1_anchored": {
+          "coefficients": [
+            11.473840959785086,
+            1.0097275865935214,
+            0.2539427893314675
+          ],
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mae": 3.215513531093796,
+              "bias": 1.5181159833185125
+            },
+            "halo_18_to_43_km": {
+              "n": 352,
+              "mae": 0.051568677489029206,
+              "bias": -0.01812053776401506
+            },
+            "dark_control_46_to_65_km": {
+              "n": 573,
+              "mae": 0.03127061559898977,
+              "bias": 0.01304856503615115
+            },
+            "bright_neighbor_sources": {
+              "n": 71,
+              "mae": 1.2251997744127696,
+              "bias": 0.4027378419428137
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mae": 3.578108566863023,
+              "bias": 2.862319858750442
+            },
+            "halo_18_to_43_km": {
+              "n": 678,
+              "mae": 0.049851083255345305,
+              "bias": -0.015709107137332236
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1140,
+              "mae": 0.03346376761562393,
+              "bias": 0.010612217361829433
+            },
+            "bright_neighbor_sources": {
+              "n": 136,
+              "mae": 1.2299759294580297,
+              "bias": 0.10685136220272717
+            }
+          },
+          "kappa": 10.473840959785086
+        }
+      }
+    },
+    "Tucson/2019-04-07": {
+      "city": "Tucson",
+      "night": "2019-04-07",
+      "bounds": {
+        "west": -111.75,
+        "south": 31.6,
+        "east": -110.15,
+        "north": 32.85
+      },
+      "source_altitude_m": 700,
+      "utc": "2019-04-07T09:56:44.903412+00:00",
+      "zenith_deg": 58.299998696893454,
+      "azimuth_deg": -73.29129021451219,
+      "lunar_altitude_core_deg": -45.90999696217477,
+      "solar_altitude_core_deg": -37.01999716088176,
+      "source_template_files": {
+        "VNP46A3.A2019091.h06v05.002.2025133164421.h5": "2db37a019a102593d4f31b1007a8eec784200f2afb87ee756e47213543671559"
+      },
+      "files": [
+        {
+          "filename": "VNP46A1.A2019097.h06v05.002.2024255221019.h5",
+          "sha256": "076b41ded7b3e44d5908e2db4dc20f78d66a2419bb07c10bb2e7f198b9539a9c",
+          "tile": "h06v05",
+          "product": "VNP46A1"
+        }
+      ],
+      "support": {
+        "city_core": {
+          "candidate_cells": 1974,
+          "a1_cells": 1974,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "halo_18_to_43_km": {
+          "candidate_cells": 15886,
+          "a1_cells": 15877,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "dark_control_46_to_65_km": {
+          "candidate_cells": 26954,
+          "a1_cells": 26952,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "bright_neighbor_sources": {
+          "candidate_cells": 3483,
+          "a1_cells": 3483,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        }
+      },
+      "sensor_zenith_05_95_deg": [
+        56.00999874807894,
+        60.26999865286052
+      ],
+      "status": "evaluated",
+      "samples": 1048576,
+      "seed": 18115,
+      "atmosphere": {
+        "reference_wavelength_nm": 650.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1538.4615384615386,
+        "aerosol_optical_depth": 0.04724313881559823,
+        "aerosol_single_scattering_albedo": 0.935,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 0.9162188716508777,
+        "top_m": 80000.0
+      },
+      "free_power_fraction_below_10": 0.26999852350519127,
+      "scenarios": {
+        "a1_lambert": {
+          "coefficients": [
+            1.2119421738353369,
+            1.1308323880111628,
+            0.4796349166675183
+          ],
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mae": 2.433877410325382,
+              "bias": -0.2298115187295376
+            },
+            "halo_18_to_43_km": {
+              "n": 352,
+              "mae": 0.10218209619491096,
+              "bias": -0.05508413258974265
+            },
+            "dark_control_46_to_65_km": {
+              "n": 573,
+              "mae": 0.06931383760191273,
+              "bias": 0.032529793512807895
+            },
+            "bright_neighbor_sources": {
+              "n": 71,
+              "mae": 1.49564125234621,
+              "bias": -0.16534959573424177
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mae": 2.8119397790461704,
+              "bias": -0.6076713995943025
+            },
+            "halo_18_to_43_km": {
+              "n": 675,
+              "mae": 0.09553377126884006,
+              "bias": -0.05172310447123749
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1140,
+              "mae": 0.07042410209261214,
+              "bias": 0.035261022183597765
+            },
+            "bright_neighbor_sources": {
+              "n": 136,
+              "mae": 1.4955219766436425,
+              "bias": -0.22841222485252666
+            }
+          }
+        },
+        "a1_free": {
+          "coefficients": [
+            0.0,
+            1.4136725950258113,
+            1.1043130877864564,
+            0.4488927919991487
+          ],
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mae": 2.242265587500073,
+              "bias": -0.11031336341265006
+            },
+            "halo_18_to_43_km": {
+              "n": 352,
+              "mae": 0.09656520139778196,
+              "bias": -0.03356621723892934
+            },
+            "dark_control_46_to_65_km": {
+              "n": 573,
+              "mae": 0.0640918876239672,
+              "bias": 0.018816942109660905
+            },
+            "bright_neighbor_sources": {
+              "n": 71,
+              "mae": 1.4741871337934451,
+              "bias": -0.09610429726544613
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mae": 2.7005522143393645,
+              "bias": -0.4211961443714835
+            },
+            "halo_18_to_43_km": {
+              "n": 675,
+              "mae": 0.08932531020324935,
+              "bias": -0.030791021150864514
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1140,
+              "mae": 0.06522774934788839,
+              "bias": 0.02121969473986182
+            },
+            "bright_neighbor_sources": {
+              "n": 136,
+              "mae": 1.5273822678133964,
+              "bias": -0.1886092900325306
+            }
+          }
+        },
+        "h1": {
+          "coefficients": [
+            1.1331011797863269,
+            0.48085780105645853
+          ],
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mae": 2.454655525086217,
+              "bias": -1.8206093040787272
+            },
+            "halo_18_to_43_km": {
+              "n": 352,
+              "mae": 0.10314033718857564,
+              "bias": -0.05584839707305935
+            },
+            "dark_control_46_to_65_km": {
+              "n": 573,
+              "mae": 0.0696900184118602,
+              "bias": 0.03330030279467982
+            },
+            "bright_neighbor_sources": {
+              "n": 71,
+              "mae": 1.4980616802319477,
+              "bias": -0.15311146566837638
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mae": 3.271502226958774,
+              "bias": -2.380944877682987
+            },
+            "halo_18_to_43_km": {
+              "n": 675,
+              "mae": 0.09626054088790942,
+              "bias": -0.05224001060323038
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1140,
+              "mae": 0.07080418150926357,
+              "bias": 0.03602368657456958
+            },
+            "bright_neighbor_sources": {
+              "n": 136,
+              "mae": 1.4963482306267257,
+              "bias": -0.22265642481109735
+            }
+          }
+        },
+        "h2": {
+          "coefficients": [
+            1.1291890794526085,
+            0.4774917667843987
+          ],
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mae": 2.3177479935412264,
+              "bias": -1.5939657630534225
+            },
+            "halo_18_to_43_km": {
+              "n": 352,
+              "mae": 0.10148693792864308,
+              "bias": -0.053346379139569494
+            },
+            "dark_control_46_to_65_km": {
+              "n": 573,
+              "mae": 0.0689299911183429,
+              "bias": 0.031730460075042474
+            },
+            "bright_neighbor_sources": {
+              "n": 71,
+              "mae": 1.4899907351331938,
+              "bias": -0.15259152157547684
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mae": 3.1180618286194814,
+              "bias": -2.153552039664627
+            },
+            "halo_18_to_43_km": {
+              "n": 675,
+              "mae": 0.09470113075950139,
+              "bias": -0.04992472984841931
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1140,
+              "mae": 0.07005298048092669,
+              "bias": 0.034428679570719836
+            },
+            "bright_neighbor_sources": {
+              "n": 136,
+              "mae": 1.4946695251287356,
+              "bias": -0.2206956186796564
+            }
+          }
+        },
+        "a1_anchored": {
+          "coefficients": [
+            11.82994295849135,
+            1.0907333563242652,
+            0.4444038418937256
+          ],
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mae": 1.7830517089887905,
+              "bias": 0.6339273171358178
+            },
+            "halo_18_to_43_km": {
+              "n": 352,
+              "mae": 0.08977475101429794,
+              "bias": -0.02875168557223976
+            },
+            "dark_control_46_to_65_km": {
+              "n": 573,
+              "mae": 0.06331917247462034,
+              "bias": 0.01629899568720659
+            },
+            "bright_neighbor_sources": {
+              "n": 71,
+              "mae": 1.482031165546719,
+              "bias": -0.14748050080063782
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mae": 2.2665885480377734,
+              "bias": 0.08170658722531617
+            },
+            "halo_18_to_43_km": {
+              "n": 675,
+              "mae": 0.08482476108960466,
+              "bias": -0.02716565209573149
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1140,
+              "mae": 0.06430672077106585,
+              "bias": 0.018749851704484732
+            },
+            "bright_neighbor_sources": {
+              "n": 136,
+              "mae": 1.5296858819237664,
+              "bias": -0.20142100625489978
+            }
+          },
+          "kappa": 10.82994295849135
+        }
+      }
+    },
+    "Tucson/2019-04-08": {
+      "city": "Tucson",
+      "night": "2019-04-08",
+      "bounds": {
+        "west": -111.75,
+        "south": 31.6,
+        "east": -110.15,
+        "north": 32.85
+      },
+      "source_altitude_m": 700,
+      "utc": "2019-04-08T09:38:00.250168+00:00",
+      "zenith_deg": 41.66999906860292,
+      "azimuth_deg": -75.95326108887323,
+      "lunar_altitude_core_deg": -43.859997007995844,
+      "solar_altitude_core_deg": -39.58999710343778,
+      "source_template_files": {
+        "VNP46A3.A2019091.h06v05.002.2025133164421.h5": "2db37a019a102593d4f31b1007a8eec784200f2afb87ee756e47213543671559"
+      },
+      "files": [
+        {
+          "filename": "VNP46A1.A2019098.h06v05.002.2024255224814.h5",
+          "sha256": "de8592b9a9ee8ef35edda7e7ecf48ff65b4c0a7725ed9d1db313db2b1668bc81",
+          "tile": "h06v05",
+          "product": "VNP46A1"
+        }
+      ],
+      "support": {
+        "city_core": {
+          "candidate_cells": 1974,
+          "a1_cells": 1974,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "halo_18_to_43_km": {
+          "candidate_cells": 15916,
+          "a1_cells": 15916,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "dark_control_46_to_65_km": {
+          "candidate_cells": 26954,
+          "a1_cells": 26951,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "bright_neighbor_sources": {
+          "candidate_cells": 3483,
+          "a1_cells": 3482,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        }
+      },
+      "sensor_zenith_05_95_deg": [
+        37.97999915108085,
+        44.789998998865485
+      ],
+      "status": "evaluated",
+      "samples": 1048576,
+      "seed": 18115,
+      "atmosphere": {
+        "reference_wavelength_nm": 650.0,
+        "rayleigh_scale_height_m": 8000.0,
+        "aerosol_scale_height_m": 1538.4615384615386,
+        "aerosol_optical_depth": 0.03213062725475904,
+        "aerosol_single_scattering_albedo": 0.935,
+        "aerosol_g": 0.8,
+        "rayleigh_multiplier": 0.9162188716508777,
+        "top_m": 80000.0
+      },
+      "free_power_fraction_below_10": 0.22911988394138916,
+      "scenarios": {
+        "a1_lambert": {
+          "coefficients": [
+            1.0444480872530633,
+            0.9857603796545852,
+            0.3121816895524738
+          ],
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mae": 2.30953302107412,
+              "bias": -0.6314178123290454
+            },
+            "halo_18_to_43_km": {
+              "n": 352,
+              "mae": 0.06552987897074462,
+              "bias": -0.036491697234549196
+            },
+            "dark_control_46_to_65_km": {
+              "n": 572,
+              "mae": 0.04176265187158268,
+              "bias": 0.02528906296220656
+            },
+            "bright_neighbor_sources": {
+              "n": 71,
+              "mae": 1.241972365641619,
+              "bias": -0.11157100751304998
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mae": 1.9334097979199591,
+              "bias": -0.10439279328510366
+            },
+            "halo_18_to_43_km": {
+              "n": 678,
+              "mae": 0.0605658390799852,
+              "bias": -0.034298518158731146
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1140,
+              "mae": 0.04432614752175073,
+              "bias": 0.02365441850498549
+            },
+            "bright_neighbor_sources": {
+              "n": 135,
+              "mae": 1.1515984457630424,
+              "bias": -0.16465186169118767
+            }
+          }
+        },
+        "a1_free": {
+          "coefficients": [
+            0.4683511988388679,
+            2.2795782012132486,
+            0.9589905774717097,
+            0.27183896871322705
+          ],
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mae": 2.3131743674682785,
+              "bias": -0.4813775773806042
+            },
+            "halo_18_to_43_km": {
+              "n": 352,
+              "mae": 0.05549554810358992,
+              "bias": -0.005446181783044526
+            },
+            "dark_control_46_to_65_km": {
+              "n": 572,
+              "mae": 0.03485370563229304,
+              "bias": 0.005624426272538621
+            },
+            "bright_neighbor_sources": {
+              "n": 71,
+              "mae": 1.2521582103461562,
+              "bias": -0.08655562207698649
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mae": 2.003932558320497,
+              "bias": -0.010760442095699185
+            },
+            "halo_18_to_43_km": {
+              "n": 678,
+              "mae": 0.05331472673359711,
+              "bias": -0.005548628584365484
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1140,
+              "mae": 0.03696776157673938,
+              "bias": 0.004060752632287346
+            },
+            "bright_neighbor_sources": {
+              "n": 135,
+              "mae": 1.2002461926681767,
+              "bias": -0.11729347512529424
+            }
+          }
+        },
+        "h1": {
+          "coefficients": [
+            0.9849623896915332,
+            0.31144404546161947
+          ],
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mae": 2.175789009920725,
+              "bias": 1.5308561616578396
+            },
+            "halo_18_to_43_km": {
+              "n": 352,
+              "mae": 0.06518647206578504,
+              "bias": -0.03619074394518666
+            },
+            "dark_control_46_to_65_km": {
+              "n": 572,
+              "mae": 0.04150905207834857,
+              "bias": 0.024796228415846288
+            },
+            "bright_neighbor_sources": {
+              "n": 71,
+              "mae": 1.242588696926762,
+              "bias": -0.11253662768474273
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mae": 2.725761513701691,
+              "bias": 1.9954535356879493
+            },
+            "halo_18_to_43_km": {
+              "n": 678,
+              "mae": 0.060253698981270455,
+              "bias": -0.03400667656678044
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1140,
+              "mae": 0.0440594832436769,
+              "bias": 0.02316034875068331
+            },
+            "bright_neighbor_sources": {
+              "n": 135,
+              "mae": 1.1526691336674832,
+              "bias": -0.16422777394485938
+            }
+          }
+        },
+        "h2": {
+          "coefficients": [
+            0.9835333827220067,
+            0.3093538645232508
+          ],
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mae": 2.227874370581461,
+              "bias": 1.6013506424873125
+            },
+            "halo_18_to_43_km": {
+              "n": 352,
+              "mae": 0.06404249363502312,
+              "bias": -0.034565569066821504
+            },
+            "dark_control_46_to_65_km": {
+              "n": 572,
+              "mae": 0.04095479311677905,
+              "bias": 0.02376136514124358
+            },
+            "bright_neighbor_sources": {
+              "n": 71,
+              "mae": 1.2424038141647078,
+              "bias": -0.11145313185081998
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mae": 2.7761365106571247,
+              "bias": 2.0644609966665985
+            },
+            "halo_18_to_43_km": {
+              "n": 678,
+              "mae": 0.05921948653004226,
+              "bias": -0.03250561289812321
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1140,
+              "mae": 0.04348988944732739,
+              "bias": 0.022128120735362862
+            },
+            "bright_neighbor_sources": {
+              "n": 135,
+              "mae": 1.1546635076316947,
+              "bias": -0.16167824485002877
+            }
+          }
+        },
+        "a1_anchored": {
+          "coefficients": [
+            14.208413249518838,
+            0.9660874751015874,
+            0.2838360718613803
+          ],
+          "test": {
+            "city_core": {
+              "n": 43,
+              "mae": 2.9079146558440714,
+              "bias": 2.4619763962638
+            },
+            "halo_18_to_43_km": {
+              "n": 352,
+              "mae": 0.05554553725712133,
+              "bias": -0.014724762549001987
+            },
+            "dark_control_46_to_65_km": {
+              "n": 572,
+              "mae": 0.03598384804324208,
+              "bias": 0.011127326628144607
+            },
+            "bright_neighbor_sources": {
+              "n": 71,
+              "mae": 1.2478380515079477,
+              "bias": -0.09822536695613861
+            }
+          },
+          "train": {
+            "city_core": {
+              "n": 86,
+              "mae": 3.4222165303016676,
+              "bias": 2.906932597593991
+            },
+            "halo_18_to_43_km": {
+              "n": 678,
+              "mae": 0.052786031138715536,
+              "bias": -0.01418000731731578
+            },
+            "dark_control_46_to_65_km": {
+              "n": 1140,
+              "mae": 0.03816672315827262,
+              "bias": 0.009526254556601303
+            },
+            "bright_neighbor_sources": {
+              "n": 135,
+              "mae": 1.1836990284837743,
+              "bias": -0.13055254006864864
+            }
+          },
+          "kappa": 13.208413249518838
+        }
+      }
+    },
+    "Balaguer/2016-05-02": {
+      "city": "Balaguer",
+      "night": "2016-05-02",
+      "bounds": {
+        "west": -0.2,
+        "south": 41.15,
+        "east": 1.8,
+        "north": 42.45
+      },
+      "source_altitude_m": 250,
+      "utc": "2016-05-02T02:31:31.590786+00:00",
+      "zenith_deg": 47.0199989490211,
+      "azimuth_deg": -71.6949972107214,
+      "lunar_altitude_core_deg": 1.800001971423626,
+      "solar_altitude_core_deg": -22.179997492581606,
+      "source_template_files": {
+        "VNP46A3.A2016122.h17v04.002.2025101123155.h5": "92dd0e1000b71618b28431e04a773582208117b298350aae59a377145259a9c1",
+        "VNP46A3.A2016122.h18v04.002.2025101123217.h5": "aaa4520f9512ce9010f6bf83fc0b0081e12fff9679223d0d833366d1eefb825c"
+      },
+      "files": [
+        {
+          "filename": "VNP46A1.A2016123.h17v04.002.2024234093651.h5",
+          "sha256": "4216ccd4e38fd2e007e75c58044bb9f2fbf40bf324a4fb278a278f9cca5c7317",
+          "tile": "h17v04",
+          "product": "VNP46A1"
+        },
+        {
+          "filename": "VNP46A1.A2016123.h18v04.002.2024234093934.h5",
+          "sha256": "7129b9a55b405123bd85ac6864e22966dff9d08d38170ab048f5e6b07df68795",
+          "tile": "h18v04",
+          "product": "VNP46A1"
+        }
+      ],
+      "support": {
+        "city_core": {
+          "candidate_cells": 64,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "halo_18_to_43_km": {
+          "candidate_cells": 10366,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "dark_control_46_to_65_km": {
+          "candidate_cells": 21623,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "bright_neighbor_sources": {
+          "candidate_cells": 3773,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        }
+      },
+      "sensor_zenith_05_95_deg": null,
+      "status": "excluded_by_clear_dark_support"
+    },
+    "Balaguer/2016-05-05": {
+      "city": "Balaguer",
+      "night": "2016-05-05",
+      "bounds": {
+        "west": -0.2,
+        "south": 41.15,
+        "east": 1.8,
+        "north": 42.45
+      },
+      "source_altitude_m": 250,
+      "utc": "2016-05-05T01:35:07.672334+00:00",
+      "zenith_deg": 28.559999361634254,
+      "azimuth_deg": 98.01889973564042,
+      "lunar_altitude_core_deg": -26.33999739959836,
+      "solar_altitude_core_deg": -27.33999737724662,
+      "source_template_files": {
+        "VNP46A3.A2016122.h17v04.002.2025101123155.h5": "92dd0e1000b71618b28431e04a773582208117b298350aae59a377145259a9c1",
+        "VNP46A3.A2016122.h18v04.002.2025101123217.h5": "aaa4520f9512ce9010f6bf83fc0b0081e12fff9679223d0d833366d1eefb825c"
+      },
+      "files": [
+        {
+          "filename": "VNP46A1.A2016126.h17v04.002.2024234150807.h5",
+          "sha256": "b1fb6151f1a5f9d88026a8d3e1ad0f9d44b27a9bf9d6dd0332f9bd10fb2c34d5",
+          "tile": "h17v04",
+          "product": "VNP46A1"
+        },
+        {
+          "filename": "VNP46A1.A2016126.h18v04.002.2024234151403.h5",
+          "sha256": "74058d9001564bb482c91787ba066476dd794b3e2cbf67fae2562c7a992b4b44",
+          "tile": "h18v04",
+          "product": "VNP46A1"
+        }
+      ],
+      "support": {
+        "city_core": {
+          "candidate_cells": 64,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "halo_18_to_43_km": {
+          "candidate_cells": 10366,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "dark_control_46_to_65_km": {
+          "candidate_cells": 21623,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "bright_neighbor_sources": {
+          "candidate_cells": 3773,
+          "a1_cells": 7,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        }
+      },
+      "sensor_zenith_05_95_deg": [
+        22.73999949172139,
+        32.25999927893281
+      ],
+      "status": "excluded_by_clear_dark_support"
+    },
+    "Balaguer/2016-05-06": {
+      "city": "Balaguer",
+      "night": "2016-05-06",
+      "bounds": {
+        "west": -0.2,
+        "south": 41.15,
+        "east": 1.8,
+        "north": 42.45
+      },
+      "source_altitude_m": 250,
+      "utc": "2016-05-06T01:16:13.284817+00:00",
+      "zenith_deg": 48.64999891258776,
+      "azimuth_deg": 95.34249792889469,
+      "lunar_altitude_core_deg": -32.319997265934944,
+      "solar_altitude_core_deg": -28.569997349753976,
+      "source_template_files": {
+        "VNP46A3.A2016122.h17v04.002.2025101123155.h5": "92dd0e1000b71618b28431e04a773582208117b298350aae59a377145259a9c1",
+        "VNP46A3.A2016122.h18v04.002.2025101123217.h5": "aaa4520f9512ce9010f6bf83fc0b0081e12fff9679223d0d833366d1eefb825c"
+      },
+      "files": [
+        {
+          "filename": "VNP46A1.A2016127.h17v04.002.2024234171453.h5",
+          "sha256": "465f4b98d0b3b1477f03213ccc674eed116ba7d9804514c1ee099fced39dad2e",
+          "tile": "h17v04",
+          "product": "VNP46A1"
+        },
+        {
+          "filename": "VNP46A1.A2016127.h18v04.002.2024234171802.h5",
+          "sha256": "e5144675e83d0f96a61236f21c994953b3169bb32aecd7ab70fa81a76f152517",
+          "tile": "h18v04",
+          "product": "VNP46A1"
+        }
+      ],
+      "support": {
+        "city_core": {
+          "candidate_cells": 64,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "halo_18_to_43_km": {
+          "candidate_cells": 10364,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "dark_control_46_to_65_km": {
+          "candidate_cells": 21608,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "bright_neighbor_sources": {
+          "candidate_cells": 3763,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        }
+      },
+      "sensor_zenith_05_95_deg": null,
+      "status": "excluded_by_clear_dark_support"
+    },
+    "Balaguer/2016-05-07": {
+      "city": "Balaguer",
+      "night": "2016-05-07",
+      "bounds": {
+        "west": -0.2,
+        "south": 41.15,
+        "east": 1.8,
+        "north": 42.45
+      },
+      "source_altitude_m": 250,
+      "utc": "2016-05-07T02:37:46.451168+00:00",
+      "zenith_deg": 51.949998838827014,
+      "azimuth_deg": -70.63327875832212,
+      "lunar_altitude_core_deg": -26.409997398033738,
+      "solar_altitude_core_deg": -20.129997538402677,
+      "source_template_files": {
+        "VNP46A3.A2016122.h17v04.002.2025101123155.h5": "92dd0e1000b71618b28431e04a773582208117b298350aae59a377145259a9c1",
+        "VNP46A3.A2016122.h18v04.002.2025101123217.h5": "aaa4520f9512ce9010f6bf83fc0b0081e12fff9679223d0d833366d1eefb825c"
+      },
+      "files": [
+        {
+          "filename": "VNP46A1.A2016128.h17v04.002.2024234193243.h5",
+          "sha256": "53791df4d7af4a759e059e712ce573164b865296b4f4b6c0411f3888938d8976",
+          "tile": "h17v04",
+          "product": "VNP46A1"
+        },
+        {
+          "filename": "VNP46A1.A2016128.h18v04.002.2024234193554.h5",
+          "sha256": "f0a0a4a9e29af4e401a92d3e7f6324918fdfa88327fde90a3a6447afc3709f84",
+          "tile": "h18v04",
+          "product": "VNP46A1"
+        }
+      ],
+      "support": {
+        "city_core": {
+          "candidate_cells": 64,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "halo_18_to_43_km": {
+          "candidate_cells": 9855,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "dark_control_46_to_65_km": {
+          "candidate_cells": 20564,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "bright_neighbor_sources": {
+          "candidate_cells": 3307,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        }
+      },
+      "sensor_zenith_05_95_deg": null,
+      "status": "excluded_by_clear_dark_support"
+    },
+    "Balaguer/2016-05-08": {
+      "city": "Balaguer",
+      "night": "2016-05-08",
+      "bounds": {
+        "west": -0.2,
+        "south": 41.15,
+        "east": 1.8,
+        "north": 42.45
+      },
+      "source_altitude_m": 250,
+      "utc": "2016-05-08T02:19:02.688847+00:00",
+      "zenith_deg": 34.73999922350049,
+      "azimuth_deg": -73.91687354090075,
+      "lunar_altitude_core_deg": -30.59999730437994,
+      "solar_altitude_core_deg": -22.129997493699193,
+      "source_template_files": {
+        "VNP46A3.A2016122.h17v04.002.2025101123155.h5": "92dd0e1000b71618b28431e04a773582208117b298350aae59a377145259a9c1",
+        "VNP46A3.A2016122.h18v04.002.2025101123217.h5": "aaa4520f9512ce9010f6bf83fc0b0081e12fff9679223d0d833366d1eefb825c"
+      },
+      "files": [
+        {
+          "filename": "VNP46A1.A2016129.h17v04.002.2024234212750.h5",
+          "sha256": "98d4b31280bf6fc1924d641cf780d749525a7009a0a59ce85bae69c091f17ad0",
+          "tile": "h17v04",
+          "product": "VNP46A1"
+        },
+        {
+          "filename": "VNP46A1.A2016129.h18v04.002.2024234212941.h5",
+          "sha256": "571646bc74fb904769a135e99afa019c0eef159579a137fbb04aeb15d240d2b5",
+          "tile": "h18v04",
+          "product": "VNP46A1"
+        }
+      ],
+      "support": {
+        "city_core": {
+          "candidate_cells": 64,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "halo_18_to_43_km": {
+          "candidate_cells": 10366,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "dark_control_46_to_65_km": {
+          "candidate_cells": 21623,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "bright_neighbor_sources": {
+          "candidate_cells": 3773,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        }
+      },
+      "sensor_zenith_05_95_deg": [
+        34.82999922148883,
+        34.82999922148883
+      ],
+      "status": "excluded_by_clear_dark_support"
+    },
+    "Balaguer/2016-05-09": {
+      "city": "Balaguer",
+      "night": "2016-05-09",
+      "bounds": {
+        "west": -0.2,
+        "south": 41.15,
+        "east": 1.8,
+        "north": 42.45
+      },
+      "source_altitude_m": 250,
+      "utc": "2016-05-09T02:00:15.705299+00:00",
+      "zenith_deg": 9.21999979391694,
+      "azimuth_deg": -77.05173559150836,
+      "lunar_altitude_core_deg": -30.999997295439243,
+      "solar_altitude_core_deg": -23.919997453689575,
+      "source_template_files": {
+        "VNP46A3.A2016122.h17v04.002.2025101123155.h5": "92dd0e1000b71618b28431e04a773582208117b298350aae59a377145259a9c1",
+        "VNP46A3.A2016122.h18v04.002.2025101123217.h5": "aaa4520f9512ce9010f6bf83fc0b0081e12fff9679223d0d833366d1eefb825c"
+      },
+      "files": [
+        {
+          "filename": "VNP46A1.A2016130.h17v04.002.2024234231700.h5",
+          "sha256": "6f5f413542d3aac8c9b6668262a37773e8fd19412a788db8655f87190ebe3f10",
+          "tile": "h17v04",
+          "product": "VNP46A1"
+        },
+        {
+          "filename": "VNP46A1.A2016130.h18v04.002.2024234232034.h5",
+          "sha256": "9131085bbe2ada35e18988a8cd2d4382d9bea727520042fe2602393a4e7e87c9",
+          "tile": "h18v04",
+          "product": "VNP46A1"
+        }
+      ],
+      "support": {
+        "city_core": {
+          "candidate_cells": 64,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "halo_18_to_43_km": {
+          "candidate_cells": 10366,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "dark_control_46_to_65_km": {
+          "candidate_cells": 21623,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "bright_neighbor_sources": {
+          "candidate_cells": 3773,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        }
+      },
+      "sensor_zenith_05_95_deg": null,
+      "status": "excluded_by_clear_dark_support"
+    },
+    "Balaguer/2016-05-10": {
+      "city": "Balaguer",
+      "night": "2016-05-10",
+      "bounds": {
+        "west": -0.2,
+        "south": 41.15,
+        "east": 1.8,
+        "north": 42.45
+      },
+      "source_altitude_m": 250,
+      "utc": "2016-05-10T01:41:25.609961+00:00",
+      "zenith_deg": 19.89999955520034,
+      "azimuth_deg": 99.2043742023457,
+      "lunar_altitude_core_deg": -27.65999737009406,
+      "solar_altitude_core_deg": -25.48999741859734,
+      "source_template_files": {
+        "VNP46A3.A2016122.h17v04.002.2025101123155.h5": "92dd0e1000b71618b28431e04a773582208117b298350aae59a377145259a9c1",
+        "VNP46A3.A2016122.h18v04.002.2025101123217.h5": "aaa4520f9512ce9010f6bf83fc0b0081e12fff9679223d0d833366d1eefb825c"
+      },
+      "files": [
+        {
+          "filename": "VNP46A1.A2016131.h17v04.002.2024235005329.h5",
+          "sha256": "e12db5eac6197041ba95de453dbee45ee469d12f6ff7d543563c2e36c9d4d768",
+          "tile": "h17v04",
+          "product": "VNP46A1"
+        },
+        {
+          "filename": "VNP46A1.A2016131.h18v04.002.2024235005613.h5",
+          "sha256": "808a2ece466dc5320d7726fbc438b6f04c92077b3473ced92e202ead89086215",
+          "tile": "h18v04",
+          "product": "VNP46A1"
+        }
+      ],
+      "support": {
+        "city_core": {
+          "candidate_cells": 64,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "halo_18_to_43_km": {
+          "candidate_cells": 10366,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "dark_control_46_to_65_km": {
+          "candidate_cells": 21623,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "bright_neighbor_sources": {
+          "candidate_cells": 3773,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        }
+      },
+      "sensor_zenith_05_95_deg": [
+        14.789999669417739,
+        16.439999632537365
+      ],
+      "status": "excluded_by_clear_dark_support"
+    },
+    "Balaguer/2016-05-11": {
+      "city": "Balaguer",
+      "night": "2016-05-11",
+      "bounds": {
+        "west": -0.2,
+        "south": 41.15,
+        "east": 1.8,
+        "north": 42.45
+      },
+      "source_altitude_m": 250,
+      "utc": "2016-05-11T01:22:32.175808+00:00",
+      "zenith_deg": 42.85999904200435,
+      "azimuth_deg": 96.16405840521757,
+      "lunar_altitude_core_deg": -21.379997510463,
+      "solar_altitude_core_deg": -26.80999738909304,
+      "source_template_files": {
+        "VNP46A3.A2016122.h17v04.002.2025101123155.h5": "92dd0e1000b71618b28431e04a773582208117b298350aae59a377145259a9c1",
+        "VNP46A3.A2016122.h18v04.002.2025101123217.h5": "aaa4520f9512ce9010f6bf83fc0b0081e12fff9679223d0d833366d1eefb825c"
+      },
+      "files": [
+        {
+          "filename": "VNP46A1.A2016132.h17v04.002.2024235022832.h5",
+          "sha256": "4620135e1537a0fea847b1c1a19fc9969d915b5ef7e3257cf91a058cd4f18905",
+          "tile": "h17v04",
+          "product": "VNP46A1"
+        },
+        {
+          "filename": "VNP46A1.A2016132.h18v04.002.2024235023134.h5",
+          "sha256": "0017dfb0a2ef2fd073cd0db68bf9260cca5d850f62c1ab7111f723da6eb9bddc",
+          "tile": "h18v04",
+          "product": "VNP46A1"
+        }
+      ],
+      "support": {
+        "city_core": {
+          "candidate_cells": 64,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "halo_18_to_43_km": {
+          "candidate_cells": 10183,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "dark_control_46_to_65_km": {
+          "candidate_cells": 20170,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "bright_neighbor_sources": {
+          "candidate_cells": 3672,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        }
+      },
+      "sensor_zenith_05_95_deg": [
+        38.52749913884327,
+        43.139999035745845
+      ],
+      "status": "excluded_by_clear_dark_support"
+    },
+    "Balaguer/2016-05-12": {
+      "city": "Balaguer",
+      "night": "2016-05-12",
+      "bounds": {
+        "west": -0.2,
+        "south": 41.15,
+        "east": 1.8,
+        "north": 42.45
+      },
+      "source_altitude_m": 250,
+      "utc": "2016-05-12T02:44:00.672970+00:00",
+      "zenith_deg": 56.249998742714524,
+      "azimuth_deg": -69.65827971836387,
+      "lunar_altitude_core_deg": -25.969997407868505,
+      "solar_altitude_core_deg": -18.20999758131802,
+      "source_template_files": {
+        "VNP46A3.A2016122.h17v04.002.2025101123155.h5": "92dd0e1000b71618b28431e04a773582208117b298350aae59a377145259a9c1",
+        "VNP46A3.A2016122.h18v04.002.2025101123217.h5": "aaa4520f9512ce9010f6bf83fc0b0081e12fff9679223d0d833366d1eefb825c"
+      },
+      "files": [
+        {
+          "filename": "VNP46A1.A2016133.h17v04.002.2024235040016.h5",
+          "sha256": "cd4a22835107297ec04036802e871f26346c619d7349f75d964d539cd2d26a4f",
+          "tile": "h17v04",
+          "product": "VNP46A1"
+        },
+        {
+          "filename": "VNP46A1.A2016133.h18v04.002.2024235040050.h5",
+          "sha256": "d466634d0de55d8c4a7fadba6f5f779e324f178f4cd5554e10575dbbef071a06",
+          "tile": "h18v04",
+          "product": "VNP46A1"
+        }
+      ],
+      "support": {
+        "city_core": {
+          "candidate_cells": 64,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "halo_18_to_43_km": {
+          "candidate_cells": 8675,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "dark_control_46_to_65_km": {
+          "candidate_cells": 14394,
+          "a1_cells": 0,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        },
+        "bright_neighbor_sources": {
+          "candidate_cells": 2778,
+          "a1_cells": 7,
+          "paired_a1_a2_cells": 0,
+          "a1_median": null,
+          "a2_median": null,
+          "a1_minus_a2_median": null
+        }
+      },
+      "sensor_zenith_05_95_deg": [
+        54.10999879054725,
+        56.489998737350106
+      ],
+      "status": "excluded_by_clear_dark_support"
+    }
+  }
+}

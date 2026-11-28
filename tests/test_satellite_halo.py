@@ -29,6 +29,23 @@ def test_satellite_transfer_in_vacuum_is_only_direct():
     assert not np.any(kernel.single) and not np.any(kernel.multiple)
 
 
+def test_satellite_kernel_can_score_an_extra_shape_on_the_same_trajectories():
+    def with_extra(mu):
+        return np.concatenate(
+            (emission_radiance(mu), np.maximum(0, 1 - 2 * np.asarray(mu))[..., None]),
+            axis=-1,
+        )
+
+    arguments = (50, 117, 400, 460, 5000, Atmosphere(), AllOrderSettings(samples=8192))
+    base = build_halo_kernel(*arguments)
+    extended = build_halo_kernel(*arguments, angular_radiance=with_extra)
+    np.testing.assert_array_equal(extended.direct[:2], base.direct)
+    np.testing.assert_array_equal(extended.single[:2], base.single)
+    np.testing.assert_array_equal(extended.multiple[:2], base.multiple)
+    assert extended.direct[2] == 0
+    assert extended.single[2].sum() > 0
+
+
 def test_satellite_kernel_keeps_azimuth_and_does_not_wrap():
     source = np.zeros((4, 5))
     source[1, -1] = 3

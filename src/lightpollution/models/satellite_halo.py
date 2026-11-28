@@ -56,6 +56,8 @@ def build_halo_kernel(
     radius_m,
     atmosphere: Atmosphere,
     settings: AllOrderSettings,
+    *,
+    angular_radiance=emission_radiance,
 ) -> HaloKernel:
     """Backtrace an observed pixel. Approximates translation of the kernel on a local grid.
 
@@ -87,10 +89,11 @@ def build_halo_kernel(
     distance = np.sqrt(projection**2 + top_r**2 - EARTH_RADIUS_M**2) - projection
     # Start just inside the atmospheric boundary. The path beyond it is vacuum.
     entry = ground + (distance - 1e-3) * outward
-    direct = emission_radiance(mu) * np.exp(
+    direct = angular_radiance(mu) * np.exp(
         -atmosphere.optical_depth(ground, entry, order=48)
     )
-    scores = np.zeros((2, 2, np.prod(shape)))
+    templates = len(direct)
+    scores = np.zeros((2, templates, np.prod(shape)))
     hit_counts = [0, 0]
     outside = 0
     for batch, offset in enumerate(range(0, settings.samples, settings.batch_size)):
@@ -131,10 +134,10 @@ def build_halo_kernel(
                 outside += int((~inside).sum())
                 index = y[inside] * shape[1] + x[inside]
                 value = (
-                    emission_radiance(outgoing_mu[inside])
+                    angular_radiance(outgoing_mu[inside])
                     * weights[reached][inside, None]
                 )
-                for template in range(2):
+                for template in range(templates):
                     scores[order_bin, template] += np.bincount(
                         index, value[:, template], minlength=np.prod(shape)
                     )
@@ -166,7 +169,7 @@ def build_halo_kernel(
                 phase_rng,
             )
             order += 1
-    single, multiple = scores.reshape((2, 2, *shape)) / settings.samples
+    single, multiple = scores.reshape((2, templates, *shape)) / settings.samples
     return HaloKernel(direct, single, multiple, tuple(hit_counts), outside)
 
 
