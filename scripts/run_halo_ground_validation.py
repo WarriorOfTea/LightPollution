@@ -113,14 +113,14 @@ def setup_boundary(value):
     _BOUNDARY = value
 
 
-def replay(job):
+def replay(job, *, include_orders=False):
     lat, lon, height, aperture, reference, case, samples, bands, old = job
     observer = Observer(lat, lon, height)
     base = Atmosphere(
         **case['parameters'], rayleigh_multiplier=float(np.exp(-reference / 8000))
     )
     _BOUNDARY.at(observer)
-    new, covariances = [], []
+    new, covariances, by_order = [], [], []
     for band, previous in zip(bands, old, strict=True):
         wave = band['wavelength_nm']
         model = wavelength_atmosphere(base, wave, case['angstrom'])
@@ -142,6 +142,10 @@ def replay(job):
         )
         new.append(means)
         covariances.append(computed['mean_covariance'])
+        if include_orders:
+            by_order.append(computed['category_mean_radiance'])
+    if include_orders:
+        return np.array(new), np.array(covariances), np.array(by_order)
     return np.array(new), np.array(covariances)
 
 
@@ -149,7 +153,7 @@ def collect_tasks(berlin, reference, inputs):
     groups = defaultdict(list)
     tasks = {}
     for row in berlin['rows']:
-        key = f"berlin-2017-03/{row['stop']}"
+        key = f'berlin-2017-03/{row["stop"]}'
         old = row['atmospheres']['aeronet']['spectral_radiance_runs']
         bands = berlin['spectral_bands']
         case = {
@@ -338,6 +342,30 @@ def compare_pairs(rows):
     return values
 
 
+def period_boundary(
+    period, city, maps, geometry, berlin, reference, inputs, boundary_type
+):
+    year, month = map(int, period.split('-')[-2:])
+    bounds = (
+        Bounds(**berlin['bounds'])
+        if city == 'Berlin'
+        else Bounds(*inputs['cities'][city]['bounds'])
+    )
+    raster, sha1 = map_layers(maps, period, month, bounds=bounds, year=year)
+    annual, sha2 = map_layers(
+        maps, f'{city.lower()}-{year}', None, bounds=bounds, year=year
+    )
+    recorded = (
+        berlin['tiles_sha256']
+        if city == 'Berlin'
+        else reference['map_diagnostics'][period]['tile_sha256']
+    )
+    if (sha1 | sha2) != recorded:
+        raise ValueError(f'Map hash mismatch for {period}.')
+    city_mask = grid_city_indices(bounds, {city: geometry[city]}, (city,)) == 1
+    return boundary_type(raster, annual, city_mask, bounds=bounds)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     for name in ('maps', 'boundaries', 'satellite', 'output'):
@@ -356,26 +384,16 @@ def main():
     rows = []
     for period, readings in groups.items():
         city = readings[0]['city']
-        year, month = map(int, period.split('-')[-2:])
-        bounds = (
-            Bounds(**berlin['bounds'])
-            if city == 'Berlin'
-            else Bounds(*inputs['cities'][city]['bounds'])
+        boundary = period_boundary(
+            period,
+            city,
+            args.maps,
+            geometry,
+            berlin,
+            reference,
+            inputs,
+            LowAngleBoundary,
         )
-        raster, sha1 = map_layers(args.maps, period, month, bounds=bounds, year=year)
-        annual, sha2 = map_layers(
-            args.maps, f'{city.lower()}-{year}', None, bounds=bounds, year=year
-        )
-        recorded = (
-            berlin['tiles_sha256']
-            if city == 'Berlin'
-            else reference['map_diagnostics'][period]['tile_sha256']
-        )
-        if (sha1 | sha2) != recorded:
-            raise ValueError(f'Map hash mismatch for {period}.')
-        city_mask = grid_city_indices(bounds, {city: geometry[city]}, (city,)) == 1
-        boundary = LowAngleBoundary(raster, annual, city_mask, bounds=bounds)
-        del raster, annual
         keys = list(dict.fromkeys(row['key'] for row in readings))
         computed = {}
         with ProcessPoolExecutor(

@@ -191,6 +191,9 @@ def preflight(
         'masks': masks,
         'north': north,
         'east': east,
+        'near_radiance': radiance,
+        'city_mask': city_mask,
+        'sensor_zenith': a1['Sensor_Zenith'],
         'city_flux': np.where(city_mask, np.pi * radiance, 0.0),
         'paired_city_near': np.where(city_mask & paired, radiance, 0.0),
         'paired_city_off': np.where(city_mask & paired, off, 0.0),
@@ -215,9 +218,8 @@ def block_measurements(data, features):
         count = blocks(support).sum(axis=(1, 3))
         ii, jj = np.where(count >= 8)
         divisor = count[ii, jj]
-        avg = (
-            lambda a: blocks(np.where(support, a, 0.0)).sum(axis=(1, 3))[ii, jj]
-            / divisor
+        avg = lambda a: (
+            blocks(np.where(support, a, 0.0)).sum(axis=(1, 3))[ii, jj] / divisor
         )
         result.append(
             (

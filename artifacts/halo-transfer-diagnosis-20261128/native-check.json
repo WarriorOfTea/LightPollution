@@ -1,0 +1,160 @@
+{
+  "Madrid/2013-12-29": {
+    "paired_native_centres": {
+      "city_core": {
+        "n": 1196,
+        "native_mean": 72.63896632573278,
+        "a1_mean": 72.60773898705989,
+        "median_difference": 0.0,
+        "mae": 0.22699994347167254,
+        "correlation": 0.9992191901427818,
+        "native_terrain_p10_p90_m": [
+          597.0,
+          707.0
+        ]
+      },
+      "halo_18_to_43_km": {
+        "n": 454,
+        "native_mean": 1.2007785675809246,
+        "a1_mean": 1.1992029613335227,
+        "median_difference": 0.0,
+        "mae": 0.002946173041927657,
+        "correlation": 0.9977052560441669,
+        "native_terrain_p10_p90_m": [
+          587.0,
+          1062.1999999999998
+        ]
+      },
+      "dark_control_46_to_65_km": {
+        "n": 2039,
+        "native_mean": 0.7953685760761138,
+        "a1_mean": 0.7980133436689663,
+        "median_difference": 0.0,
+        "mae": 0.005433092373384454,
+        "correlation": 0.9084308178689848,
+        "native_terrain_p10_p90_m": [
+          524.0,
+          918.2
+        ]
+      },
+      "bright_neighbor_sources": {
+        "n": 3527,
+        "native_mean": 29.479467188869215,
+        "a1_mean": 29.46127328172702,
+        "median_difference": 0.0,
+        "mae": 0.11966149822861877,
+        "correlation": 0.9991247943194069,
+        "native_terrain_p10_p90_m": [
+          560.0,
+          893.0
+        ]
+      }
+    },
+    "same_scan_satellite_position_spread": {
+      "as_written": {
+        "n": 33889,
+        "median_km": 0.21265425706564736,
+        "p90_km": 0.71241399673911
+      },
+      "azimuth_reversed": {
+        "n": 33889,
+        "median_km": 75.62562012313813,
+        "p90_km": 137.82116751093992
+      }
+    },
+    "files": {
+      "VNP02DNB.A2013363.0124.002.2021016091612.nc": "2c7c97edd34cedd8860b570c6521836493d6a0c0a204da4b956ed6cb74c4f4ca",
+      "VNP03DNB.A2013363.0124.002.2021016085604.nc": "b65362973cc694f88c84bd1e2a6c7c94b44c51e7ce9b13ccd0cb7c13f50e320c"
+    },
+    "a1_files": [
+      {
+        "filename": "VNP46A1.A2013363.h17v04.002.2024172054502.h5",
+        "sha256": "9a73079eb065924a723073b357dcf32e626c4236424f3c4708e4c8da0ebf6cc1",
+        "tile": "h17v04",
+        "product": "VNP46A1"
+      },
+      {
+        "filename": "VNP46A1.A2013363.h17v05.002.2024172054500.h5",
+        "sha256": "038a40ca1e6b047cd86dd8c1ff3fab59181ce628cc5db4f5b9715860478e78f3",
+        "tile": "h17v05",
+        "product": "VNP46A1"
+      }
+    ]
+  },
+  "Tucson/2019-04-03": {
+    "paired_native_centres": {
+      "city_core": {
+        "n": 661,
+        "native_mean": 24.30444636954482,
+        "a1_mean": 24.30777335004619,
+        "median_difference": 0.0,
+        "mae": 0.0033269805013682588,
+        "correlation": 0.9999912632149625,
+        "native_terrain_p10_p90_m": [
+          714.0,
+          829.0
+        ]
+      },
+      "halo_18_to_43_km": {
+        "n": 5220,
+        "native_mean": 0.32261759242287325,
+        "a1_mean": 0.3226025293842565,
+        "median_difference": 0.0,
+        "mae": 0.00023386580905238331,
+        "correlation": 0.9991572724861764,
+        "native_terrain_p10_p90_m": [
+          680.0,
+          1733.0
+        ]
+      },
+      "dark_control_46_to_65_km": {
+        "n": 8870,
+        "native_mean": 0.25668488249759264,
+        "a1_mean": 0.2566464400527174,
+        "median_difference": 0.0,
+        "mae": 0.00017822197603803073,
+        "correlation": 0.9983700445857518,
+        "native_terrain_p10_p90_m": [
+          846.0,
+          1460.0
+        ]
+      },
+      "bright_neighbor_sources": {
+        "n": 1135,
+        "native_mean": 8.915892140245647,
+        "a1_mean": 8.917833158413218,
+        "median_difference": 0.0,
+        "mae": 0.0019410181675713492,
+        "correlation": 0.9999935200727611,
+        "native_terrain_p10_p90_m": [
+          692.4,
+          947.6
+        ]
+      }
+    },
+    "same_scan_satellite_position_spread": {
+      "as_written": {
+        "n": 37896,
+        "median_km": 0.38160349694296214,
+        "p90_km": 0.7406872945810155
+      },
+      "azimuth_reversed": {
+        "n": 37896,
+        "median_km": 77.38314298262443,
+        "p90_km": 153.14913769490022
+      }
+    },
+    "files": {
+      "VNP02DNB.A2019093.0930.002.2021103103630.nc": "7196ca5481e52f6132aa0cfcd42ff71ce604338babd0ab8cc53bce5cda6af252",
+      "VNP03DNB.A2019093.0930.002.2021103075718.nc": "014209b7940d9b7007c06399283b291c302b4f514779d0883c7b4ebd0aa9013f"
+    },
+    "a1_files": [
+      {
+        "filename": "VNP46A1.A2019093.h06v05.002.2024255192831.h5",
+        "sha256": "c24d4dffd8d5f9aaeb5ac922f0addc65d10c94fc0892a75a623463ba2d791cf0",
+        "tile": "h06v05",
+        "product": "VNP46A1"
+      }
+    ]
+  }
+}
